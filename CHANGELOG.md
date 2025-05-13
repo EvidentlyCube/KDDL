@@ -1,10 +1,11 @@
 ## 1.6.4 — 2025-05-13
- - KDDL Episode 1 ⟶ Adjusted thresholds for the counting achievements
- - The Ancient Palace ⟶ Restored it to the original state (removed the secret room and minor changes in Entrance)
- - Pause menu's "Restart Room" option now restarts the room from the start, not from the checkpoint
- - Released the source code
- - Achievement for killing X roaches now activates in rooms that contain queens
- - Pressing "Enter" now closes "Your Stats" window
+ - [OTHER] KDDL Episode 1 ⟶ Adjusted thresholds for the counting achievements
+ - [OTHER] The Ancient Palace ⟶ Restored it to the original state (removed the secret room and minor changes in Entrance)
+ - [BUGFIX] Pause menu's "Restart Room" option now restarts the room from the start, not from the checkpoint
+ - [BUGFIX] Achievement for killing X roaches now activates in rooms that contain queens
+ - [BUGFIX] It is no longer possible to cause the game to crash by using "Restore to a Different Room". This happened because the last played room was not updated on Restore, only when going between rooms/walking down the stairs/Go To Entrance command; on the other hand the commands are updated on every move. You could enter one room, use "Restore to a Different Room", make some moves without triggering save then reload the game. On pressing continue it would input those moves into the last saved room (the one before you restored) which could cause ASSERTs by dying/leaving the room in the middle of playing the moves back. Note that existing saves can still be broken, it's just no longer possible to create such a situation - use Restore if you have a problematic save.
+ - [FEATURE] Pressing "Enter" now closes "Your Stats" window
+ - [OTHER] Released the source code
 
 ## 1.6.3 — 2025-05-12
  - Initial release of Beta 8 of KDDL JS

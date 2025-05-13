@@ -1014,7 +1014,7 @@ export class Game {
 		CueEvents.add(C.CID_ENTER_ROOM, intAttr(entrance, 'RoomID'));
 	}
 
-	public static loadFromRoom(roomID: number, x: number, y: number, o: number) {
+	public static loadFromRoom(roomId: number, x: number, y: number, o: number) {
 		if (Game.room) {
 			Game.room.clear();
 		}
@@ -1023,7 +1023,8 @@ export class Game {
 
 		Game.checkpointTurns.length = 0;
 
-		Game.room.loadRoom(roomID);
+		Progress.roomEntered(roomId, x, y, o);
+		Game.room.loadRoom(roomId);
 		if (PlatformOptions.isGame) {
 			TWidgetLevelName.update(Game.room.roomId, Game.room.levelId);
 		}
@@ -1043,7 +1044,7 @@ export class Game {
 
 		Game.levelStatsLoad();
 
-		CueEvents.add(C.CID_ENTER_ROOM, roomID);
+		CueEvents.add(C.CID_ENTER_ROOM, roomId);
 
 		Commands.fromString(PermanentStore.holds[HoldInfo().id].currentStateCommands.value);
 		if (Commands.count()) {
