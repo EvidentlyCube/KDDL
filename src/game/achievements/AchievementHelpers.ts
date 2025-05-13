@@ -797,7 +797,8 @@ export const AchievementFactory = {
 			init: () => AchievementHelpers.hasMonster(...initMonsterTypes)
 				|| (monsterType === C.M_TARBABY && AchievementHelpers.hasTile(C.T_TAR))
 				|| (monsterType === C.M_TARBABY && AchievementHelpers.hasMonster(C.M_TARMOTHER))
-				|| (monsterType === C.M_ROACH_EGG && AchievementHelpers.hasMonster(C.M_QROACH)),
+				|| (monsterType === C.M_ROACH_EGG && AchievementHelpers.hasMonster(C.M_QROACH))
+				|| (monsterType === C.M_ROACH && AchievementHelpers.hasMonster(C.M_QROACH)),
 
 			count: [count, () => AchievementHelpers.evKilledCount(monsterType)],
 		});
