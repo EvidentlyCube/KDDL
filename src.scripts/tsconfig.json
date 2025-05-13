@@ -1,8 +1,8 @@
 {
     "compilerOptions": {
         "outDir": "bin/",
-        "target": "es2017",
-        "module": "none",
+        "target": "ES2024",
+        "module": "ES2022",
         "removeComments": true,
         "preserveConstEnums": true,
         "sourceMap": true,
@@ -19,9 +19,6 @@
         "strict": true,
         "esModuleInterop": true,
         "baseUrl": "./",
-        "typeRoots": ["./types", "./node_modules/@types"],
-    },
-    "exclude": [
-        "src.scripts/"
-    ]
+        "typeRoots": ["../types", "../node_modules/@types"],
+    }
 }

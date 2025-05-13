@@ -1,7 +1,6 @@
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
-import { RecamelLang } from 'src.framework/net/retrocade/camel/RecamelLang';
-import { parseMinimalYaml } from "src/utils/MicroYaml";
+import { RecamelLang } from '../src.framework/net/retrocade/camel/RecamelLang';
 
 const rootDir = dirname(import.meta.dirname)
 
