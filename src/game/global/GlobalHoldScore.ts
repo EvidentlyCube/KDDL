@@ -9,6 +9,8 @@ import { getEmptyHoldScores, PermanentStore } from "./store/PermanentStore";
 const VISIT_ROOM_VALUE = 1;
 const CONQUER_ROOM_VALUE = 5;
 const ACHIEVEMENT_VALUE = 10;
+const MASTERED_VALUE = 5;
+const COMPLETED_VALUE = 10;
 
 export type HoldScores = Record<HoldId, number>;
 
@@ -38,10 +40,14 @@ export const GlobalHoldScore = {
 
 		const maxScore = totalRooms * VISIT_ROOM_VALUE
 			+ totalRequiredRooms * CONQUER_ROOM_VALUE
-			+ totalAchievements * ACHIEVEMENT_VALUE;
+			+ totalAchievements * ACHIEVEMENT_VALUE
+			+ COMPLETED_VALUE
+			+ MASTERED_VALUE;
 		const score = visitedRooms * VISIT_ROOM_VALUE
 			+ conqueredRooms * CONQUER_ROOM_VALUE
-			+ doneAchievements * ACHIEVEMENT_VALUE;
+			+ doneAchievements * ACHIEVEMENT_VALUE
+			+ (Progress.isGameCompleted ? COMPLETED_VALUE : 0)
+			+ (Progress.isGameMastered ? MASTERED_VALUE : 0);
 
 		return maxScore > 0 ? score / maxScore : 0;
 	},

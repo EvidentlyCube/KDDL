@@ -7,6 +7,7 @@
  - [BUGFIX] When continuing game and there were any moves restored the minimap will now draw.
  - [BUGFIX] Hold Completion and Mastery is no longer lost when you change episode form a Completed/Mastered hold and switch to another/same Completed/Mastered one.
  - [FEATURE] Pressing "Enter" now closes "Your Stats" window
+ - [FEATURE] Changed slightly how the global score for holds is calculated so that having hold completion and hold mastery has value.
  - [OTHER] Released the source code
 
 ## 1.6.3 — 2025-05-12

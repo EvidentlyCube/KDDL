@@ -205,6 +205,8 @@ export class Progress {
 				Progress._roomIdToDemo.set(demo.roomId, demo);
 			}
 
+			GlobalHoldScore.updateHoldScore();
+
 		} catch (e) {
 			PermanentStore.holds[HoldInfo().id].isCompleted.value = false;
 			PermanentStore.holds[HoldInfo().id].isMastered.value = false;
