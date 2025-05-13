@@ -147,11 +147,6 @@ scroll.lvl_1.entrance.13x6: Head up these stairs to go to a tutorial section.
 scroll.lvl_4.1n2w.23x17: Orbs in the bottom section each toggle the corresponding door in the top section.
 scroll.lvl_4.1n2w.23x18: This room is not required in order to exit this level but is required to drop the blue door.
 scroll.lvl_5.1s.13x2: The diagonal line of crumbly walls continues through the tar.
-scroll.lvl_7.entrance.9x13: |
-    Required rooms show up red on the minimap.
-    Unrequired rooms are pink.
-    Cleared rooms are white.
-scroll.lvl_7.entrance.9x11: Blue doors drop when all required rooms on a level are cleared.
 scroll.lvl_7.entrance.18x14: |
     Snakes can't be killed with your sword, but only by being trapped in a dead end.
 
