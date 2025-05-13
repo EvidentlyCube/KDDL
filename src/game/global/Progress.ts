@@ -123,8 +123,8 @@ export class Progress {
 	}
 
 	private static saveProgress_gameCompleted() {
-		PermanentStore.holds[HoldInfo().id].isMastered.value = Progress._isGameMastered;
-		PermanentStore.holds[HoldInfo().id].isCompleted.value = Progress._isGameCompleted;
+		PermanentStore.holds[HoldInfo().id].isMastered.value = Progress.isGameMastered;
+		PermanentStore.holds[HoldInfo().id].isCompleted.value = Progress.isGameCompleted;
 	}
 
 	private static saveProgress_global() {
@@ -189,10 +189,7 @@ export class Progress {
 				Progress.levelStats.unpack(UtilsBase64.decodeByteArray(globalStatsSave));
 			}
 
-			// Game mastered
 			Progress._isGameCompleted = store.isCompleted.value;
-
-			// Game completed
 			Progress._isGameMastered = store.isMastered.value;
 
 			if (!Progress.checkHoldMastery()) {
@@ -277,8 +274,8 @@ export class Progress {
 
 		Progress._currentState.clear();
 
-		Progress.isGameCompleted = false;
-		Progress.isGameMastered = false;
+		Progress._isGameCompleted = false;
+		Progress._isGameMastered = false;
 	}
 
 	public static restartHold() {

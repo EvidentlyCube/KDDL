@@ -5,6 +5,7 @@
  - [BUGFIX] Achievement for killing X roaches now activates in rooms that contain queens
  - [BUGFIX] It is no longer possible to cause the game to crash by using "Restore to a Different Room". This happened because the last played room was not updated on Restore, only when going between rooms/walking down the stairs/Go To Entrance command; on the other hand the commands are updated on every move. You could enter one room, use "Restore to a Different Room", make some moves without triggering save then reload the game. On pressing continue it would input those moves into the last saved room (the one before you restored) which could cause ASSERTs by dying/leaving the room in the middle of playing the moves back. This should fix existing broken saves by just dropping the stored moves.
  - [BUGFIX] When continuing game and there were any moves restored the minimap will now draw.
+ - [BUGFIX] Hold Completion and Mastery is no longer lost when you change episode form a Completed/Mastered hold and switch to another/same Completed/Mastered one.
  - [FEATURE] Pressing "Enter" now closes "Your Stats" window
  - [OTHER] Released the source code
 
