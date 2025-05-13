@@ -3,6 +3,7 @@
  - Adjusted thresholds for counting achievements in Episode 1
  - Released the source code
  - Achievement for killing X roaches now activates in rooms that contain queens
+ - Pressing "Enter" now closes "Your Stats" window
 
 ## 1.6.3 — 2025-05-12
  - Initial release of Beta 8 of KDDL JS

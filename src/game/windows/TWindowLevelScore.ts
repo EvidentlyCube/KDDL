@@ -157,7 +157,8 @@ export class TWindowLevelScore extends RecamelWindow {
 	}
 
 	public update() {
-		if (RawInput.isKeyPressed('Escape') && this.interactiveChildren) {
+		const requestingClose = RawInput.isKeyPressed('Escape') || RawInput.isKeyPressed('Enter');
+		if (requestingClose && this.interactiveChildren) {
 			RawInput.flushAll();
 			this.onClose();
 		}
