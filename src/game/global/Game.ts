@@ -504,6 +504,13 @@ export class Game {
 
 		let command: number = Commands.getFirst();
 		while (count--) {
+			// Protection for when the room was changed and broke save
+			if (!Game.isGameActive || CueEvents.hasOccurred(C.CID_EXIT_ROOM)) {
+				Commands.unfreeze();
+				Commands.truncate(Game.turnNo);
+				break;
+			}
+
 			const answeringQuestion = this.pendingQuestions.shift();
 
 			if (answeringQuestion) {
@@ -587,7 +594,9 @@ export class Game {
 		Commands.unfreeze();
 
 		if (turnNo) {
-			Game.playCommandsToTurn(turnNo);
+			return Game.playCommandsToTurn(turnNo);
+		} else {
+			return false;
 		}
 	}
 
@@ -1044,11 +1053,16 @@ export class Game {
 
 		Game.levelStatsLoad();
 
-		CueEvents.add(C.CID_ENTER_ROOM, roomId);
-
 		Commands.fromString(PermanentStore.holds[HoldInfo().id].currentStateCommands.value);
 		if (Commands.count()) {
-			this.setTurn(Commands.count());
+			if (this.setTurn(Commands.count())) {
+				CueEvents.clear();
+				CueEvents.add(C.CID_ENTER_ROOM, roomId);
+			} else {
+				this.restartRoom();
+			}
+		} else {
+			CueEvents.add(C.CID_ENTER_ROOM, roomId);
 		}
 	}
 
