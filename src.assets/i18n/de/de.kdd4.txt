@@ -1,0 +1,244 @@
+# Level Names
+Thirteenth Level=Dreizehnter Level
+Fourteenth Level=Vierzehnter Level
+Fifteenth Level=Fünfzehnter Level
+Sixteenth Level=Sechzehnter Level
+Mastery Level=Meisterlevel
+Original 13th Level=Originaler 13. Level
+Tutorial Level=Übungslevel
+
+# Level Entrances
+entrTut=Beethro Budkin, professioneller Kerkerjäger der fünften Generation, wurde von König Dugan angestellt um den königlichen weitläufigen Kerker von einem erheblichen Monsterbefall zu befreien.///
+     Beethro veranschlagt einen Festbetrag pro Raum, und als Profi ist er per Vertrag daran gebunden, die Monster aus ausnahmslos jedem Raum des Kerkers zu beseitigen, bevor er ausbezahlt wird.///
+    Die einzige Waffe, die Beethro benötigt um seine Aufgabe zu erfüllen, ist ein echt großes Schwert, welches jedes Monster mit einem einzigen Schlag vernichtet.
+entr13=„Ich hätte dieses Stockwerk vielleicht auslassen sollen, aber ein Vertrag ist ein Vertrag. Wo habe ich noch gleich die Brotkrumen gelassen?“ -Beethro
+entr14=Auf diesem Stockwerk triffst du endlich auf jemanden, der deinem Schwert den gebührenden Respekt entgegenbringt.
+entr15=Dieses Stockwerk ist so wie damals, als du den Rasen mähen musstest und nur gerade knapp genug Benzin im Mäher hattest, und dann machtest du einen Fehler und musstest den Kanister nachfüllen gehen. Und da lag eine Riesenschlange vor der Tankstelle, und du wolltest zum Zahlen reingehen, aber die Tür war verschlossen und du musstest einen Imitattrank nehmen um reinzukommen, und die Schaben... \n\nNa ja, die Metapher hat ihre Schwächen.
+entr16=Diese Schaben brauchen einen Anführer mit natürlicher Autorität. Jemanden mit Charisma und Charakterstärke. Jemanden wie dich!
+entrMaster=Beethro stieg die Stufen hinab, einzig dafür um einen nicht verzeichneten Verbindungsgang vorzufinden...////
+    Er würde nicht für die Säuberung hier bezahlt werden, aber seine Berufsehre drängte ihn vorwärts.
+entrMasterBack=Beethro kam zurück, um sich wieder der vertraglich festgelegten und budgetierten Kammerjägerei zu widmen.
+entrOriginal13Enter=Beethro stieg hinab in die mystischen, todbringenden, zweckfreien Gänge.
+entrOriginal13Success=Voller Stolz auf seine Leistung, wenn auch geistig deutlich weniger stabil, trat Beethro aus dem gefürchteten 13. Stockwerk von König Dugans Kerker heraus.
+entrOriginal13Escape=Beethro floh vor der Herausforderung, als wäre er ein dürres kleines Kätzchen.
+
+# Achievement Names
+
+
+achName0=Einweg-Wald
+achName1=Stoische Schlangen
+achName2=Die Teerwehr
+achName36=Stiertür
+achName3=Goblin-Verhauer
+achName4=Goblin-Quetscher
+achName5=Goblin-Zerstörer
+achName6=Aus dem Weg!
+achName7=Grüne Mama
+achName8=Goblin-Mörder
+achName34=Opferbereitschaft
+achName35=Klare Vorschriften
+achName32=Gelassener Meuchler
+achName33=Einen Schritt voraus
+achName39=Schiefe Spinne
+achName9=Wachstum!
+achName37=Schleichjagd
+achName38=Jagdmethoden
+achName10=Forschergeist
+achName11=Goblin-Ragout
+achName12=Muttermord
+achName13=Amateur-Absteiger
+achName14=Totschläger-Geselle
+achName15=Kammerjäger auf Abruf
+achName16=Ich bin vom Fach!
+achName17=Meisterschaft
+achName18=Über-Meisterschaft
+achName19=Gebackene Schaben
+achName20=Flambierte Krone
+achName21=Eier im Glas
+achName22=Linsensalat
+achName23=Flederkebab
+achName24=Schlangensushi
+achName25=Stimmgabel
+achName26=Nieder mit den Grünen
+achName27=Befriedungsexperte
+achName28=Phoenix
+achName29=Herr der Zeit
+achName30=Parkettballett
+achName31=Langstreckenläufer
+
+# Achievement Descriptions
+
+achDesc0=2S 1W im 13. Level gelöst, ohne das Schwert zu schwingen
+achDesc1=1S im 13. Level gelöst, ohne das Schwert zu schwingen
+achDesc2=1S 1O im 13. Level gelöst, ohne das Schwert zu schwingen
+achDesc36=1S 2W im 13. Level gelöst, ohne das Schwert zu schwingen
+achDesc3=1S im 14. Level gelöst mit dem Schwert immer nach NW
+achDesc4=2S im 14. Level gelöst mit dem Schwert immer nach O
+achDesc5=1N im 14. Level gelöst mit dem Schwert immer nach S
+achDesc6=2O im 14. Level gelöst, ohne auf die Falltür zu treten
+achDesc7=2N im 14. Level gelöst, ohne die Teermutter wachsen zu lassen
+achDesc8=1N 3O im 14. Level gelöst, ohne das Schwert zu schwingen
+achDesc34=In 1N 1O im 14. Level den Goblin als letztes Monster getötet
+achDesc35=2N 2O im 14. Level gelöst, ohne dass der Goblin auf die graue Strasse tritt
+achDesc32=Eingang im 15. Level gelöst, ohne das Schwert zu schwingen
+achDesc33=Eingang im 15. Level: alle Falltüren ausgelöst, bevor das letzte Monster tot ist
+achDesc39=1N im 15. Level: Nach gehauener Schaltkugel nur noch diagonal bewegt und alle Spinnen getötet
+achDesc9=1S 1O im 16. Level gelöst, ohne die Teermutter wachsen zu lassen
+achDesc37=2N im Meister-Level gelöst, ohne dass ein Stierauge erwacht oder eine Königin Eier legt
+achDesc38=1N 1O im Meister-Level: den Fledergeist getötet, ohne alle Falltüren auszulösen
+achDesc10=Jeden Raum im Original-13. Level besucht (%% / 56)
+achDesc11=40 Goblins getötet
+achDesc12=Eine Schabenkönigin getötet, während ihre Eier heranwachsen
+achDesc13=Den 13. Level geräumt
+achDesc14=Den 14. Level geräumt
+achDesc15=Den 15. Level geräumt
+achDesc16=Den 16. Level geräumt
+achDesc17=Die Feste gemeistert
+achDesc18=Die Feste übermeistert
+achDesc19=100 Schaben erschlagen
+achDesc20=25 Schabenköniginnen erlegt
+achDesc21=10 Schabeneier erledigt
+achDesc22=80 Stieraugen zerhackt
+achDesc23=40 Fledergeister bezwungen
+achDesc24=25 Panzerschlangen totgetrieben
+achDesc25=Eine Schaltkugel drei aufeinanderfolgende Züge lang gehauen
+achDesc26=20 grüne Tore geöffnet
+achDesc27=Insgesamt 3000 Monster getötet
+achDesc28=Insgesamt 80 Mal gestorben
+achDesc29=Insgesamt 500 Züge zurückgenommen
+achDesc30=Insgesamt 500 Falltüren ausgelöst
+achDesc31=Insgesamt 10000 Schritte gegangen
+
+# Scrolls
+sc_13_entr_1=Abkürzung zum Ausgang
+sc_13_entr_2=Ein wahrer Hackmeister wird die Schriftrolle dort oben erst nach dem Meistern des Stockwerks lesen.
+sc_13_entr_3=Steine liegen vor Sand, vor ihnen liegen Steinplatten, weiter vorne Gras welches auf Kacheln wächst, auf Lehm gebaut.\n-Unbekannter Poet
+sc_13_2S2W_3=Abkürzung zum Eingang
+sc_14_1N3E=Dieser Bursche in dem anderen Raum ist nicht sehr clever. Er fällt immer auf den selben alten Trick hinein.
+sc_mast_entr_1=Das unveränderte 13. Stockwerk
+sc_mast_entr_2=Einige neue Rätsel.
+sc_mast_entr_3=Schwierigere Versionen von bekannten Räumen.
+sc_mast_1W=Es gibt nur Nichts hier.
+sc_o13_orb=Diese Schaltkugel diente im unveränderten Stockwerk einem Zweck.
+sc_o13_orbs=Diese Schaltkugeln dienten im unveränderten Stockwerk einem Zweck.
+sc_o13_orb2=Diese Schaltkugel war ursprünglich nicht hier, und das gesamte gelbe Tor war in einem Raum.
+sc_o13_orbs_gates=In diesem Raum befand sich ursprünglich eine Schaltkugel und die Tore hatten einen Nutzen.
+sc_o13_broken_wall=Im unveränderten Stockwerk war hier eine feste Wand welche das Betreten des folgenden Bereichs unmöglich machte.
+sc_o13_edge=Hier gab es ursprünglich keine Trennkante.
+sc_o13_roach=Im unveränderten 13. Stockwerk war die Schabe oben im selben Raum und der Korridor war ein bisschen anders.
+
+scM1s1=Das war nun aber eine Errungenschaft!
+scM1s2=Wie war das Spiel? Konnten Sie alle Errungenschaften bekommen?
+scM1s3=Besuchen Sie ruhig CaravelGames.com um mehr Episoden von KDDL zu spielen, oder um eines der vollwertigen DROD-Spiele für Windows, MacOS oder Linux herunterzuladen.
+scM1s4=Rocken Sie weiter!
+scM1s5=Hier ist eine kleine Belohnung! Töten sie alle Augen und Goblins ohne auf das Gras zu treten.
+scM1s6=Die Schabenköniginnen werden sterben, wenn Sie auf den Rücksetzpunkt in der oberen rechten Ecke treten.
+scM1s7=Fabelhaft!
+
+# Speeches
+sp_14_1E=Ahh… es gibt nichts besseres als Teer, der nicht da ist!
+sp_14_2N2E_1=Bah… sieht so aus, als müsste ich diesen Goblin lange genug am Leben halten, dass er mir die Schlange da oben abräumen kann.
+sp_14_2N2E_2=Ich helfse nichts! Du schnittsts michs, ich weiss - ganz gleichs ob jetzt oder späters!
+sp_14_2N2E_3=Tu nicht so mutig. Goblins sind nie mutig.
+sp_14_2N2E_4=Nein, nein nein! Nimms das Spitzdings weg!
+sp_14_2N2E_5=Du denkst wohl, du könntest dich hinter mich schleichen, wenn ich nicht hinsehe. Ha!
+sp_14_2N2E_6=Gnade!
+sp_14_2N2E_7=Schau, Du würdest an meiner Stelle dasselbe tun!
+sp_14_2N2E_8=Das ist der unangenehme Teil des Geschäfts. Ich hoffe, ich muss das nicht nochmal tun!
+sp_14_2N2E_9=Ruhe dich dort ein bisschen aus, während ich die Passage öffne, Goblin.
+sp_14_2N2E_10=(Ich hätte ihn dort vermutlich nicht einsperren müssen...aber Vorsicht ist besser als Nachsicht!)
+sp_14_1N1E=Schau sich das einer an...nicht eine einzige Wand zerstört!
+sp_15_1S2W=Oh Junge, hier kann ich mich nicht einfach durchpflügen.  Lass mich meine Schritte vorausplanen bevor ich mich bewege.
+sp_16_2S1E_1=Brillant!  Manchmal beeindrucke ich sogar mich selbst.
+sp_16_2S1E_2=Ha!  Alles sauber!
+sp_16_2S1E_3=Jetzt muss ich hier noch rauskommen...
+sp_16_2S1E_4=Hmm...über welchen Weg bin ich nochmal reingekommen?
+sp_16_2S1E_5=Ah, ist doch egal.
+spM1s=Sie sind gescheitert...
+
+sp_o13_1=Kommmmm, Schabi Schabi…
+sp_o13_2=Pöh! Eine popelige kleine Schabe die ich zerquetschen muss.
+
+# Tutorial:
+
+sp_tut_entr_1=Willkommen bei DROD.
+sp_tut_entr_2=Wenn dieses das erste Mal ist, dass Sie ein Spiel der Serie spielen, begeben Sie sich bitte nach Osten.
+sp_tut_entr_3=Dort finden Sie eine Reihe einfacherer Rätsel um Ihnen das Konzept nahezubringen.
+sp_tut_entr_4=Benutzen Sie die Stufen wenn Ihnen das Spiel vertraut ist.
+sp_tut_entr_5=Benutzen Sie den Ziffernblock oder die Tasten 789 uio jkl um sich zu bewegen.
+sp_tut_entr_6=Die Tastenbelegung kann über das Optionenmenü geändert werden welches Sie durch Drücken von `Escape` erreichen.
+sp_tut_1E_1=Schaltkugeln beeinflussen gelbe Türen. Streifen Sie sie mit Ihrem Schwert um sie zu aktivieren.
+sp_tut_1E_2=Klicken Sie eine Schaltkugel mit der Maus an um zu sehen welche Türen sie beeinflusst.
+sp_tut_1E_3=Rotieren Sie Ihr Schwert mittels `Q` und `W`.
+sp_tut_1E_4=Treffen Sie die Schabe mit Ihrem Schwert um sie zu töten.
+sp_tut_1E_5=Streifen Sie die Schaltkugel und warten ein paar Züge um zu sehen wie Monster sich verhalten, wenn sie sich diagonal auf eine Ecke zubewegen.
+sp_tut_1E_6=Warten Sie...
+sp_tut_1E_7=Wie Sie sehen, bevorzugen Monster die Fortbewegegung in vertikaler Richtung wenn sie auf eine Ecke treffen.
+sp_tut_1E_8=Töten Sie die Schaben um das grüne Tor zu öffnen und folgen Sie dem Weg nach Osten.
+sp_tut_2E_1=Sie lernen hier den Durchgangshieb. Nach dem Streifen der Schaltkugel gibt es nur einen Weg, die Schaben zu töten - bewegen Sie sich direkt nach Nordwesten oder Südwesten.
+sp_tut_2E_2=Sie sollten dies ein paar Male wiederholen um sich daran zu erinnern, denn es ist eine sehr wichtige Technik.
+sp_tut_2E_3=Sie können sich sogar durch sehr enge Passagen diagonal hindurchbewegen.
+sp_tut_2E_4=Rissige und Geheimgang-Wände können mit Ihrem Schwert zerstört werden.
+sp_tut_2E_5=Richtungspfeile verhindern die Bewegung aller Dinge gegen die Richtung in welche sie zeigen.
+sp_tut_2E_6=Treten Sie auf den Rücksetzpunkt um hier neuzustarten falls Sie sterben.
+sp_tut_2E_7=Schabenköniginnen legen alle 30 Züge Eier. Benutzen Sie den Eiablage-Zähler auf der linken Seite des Spielbildschirms um zu wissen wann die nächste Eiablage stattfinden wird.
+sp_tut_3E_1=Stieraugen bleiben ruhend bis Sie in ihrer Sehlinie stehenbleiben - einmal erwacht greifen sie wie Schaben an.
+sp_tut_3E_2=Panzerschlangen können nicht mit Ihrem Schwert verletzt werden. Der einzige Weg sie zu töten ist sie in eine Sackgasse zu bekommen.
+sp_tut_3E_3=Benutzen Sie rissige Wände um eine Sackgasse für Panzerschlangen zu formen.
+sp_tut_3E_4=Sie können die Rücktaste benutzen um bis zu drei drei Züge rückgängig zu machen.
+sp_tut_3E_5=Panzerschlangen können sich, anders als andere Monster, nicht diagonal bewegen.
+sp_tut_3E_6=Sie haben immer eine bestimmte Präferenzrichtung die alle fünf Züge wechselt.
+sp_tut_3E_7=Sie können die Präferenzrichtung unterhalb des Eiablage-Zählers ablesen.
+sp_tut_4E_1=Wenn Sie auf eine Falltür treten, wird sie herunterfallen und einen Abgrund zurücklassen.
+sp_tut_4E_2=Um das rote Tor zu öffnen müssen Sie alle Falltüren auslösen.
+sp_tut_4E_3=Denken Sie daran, dass Sie Abgründe die durch ausgelöste Falltüren entstehen nutzen können um sich gegen Schaben abzuschirmen.
+sp_tut_5E_1=Teer ist eine sehr eigentümliche Substanz. Er kann nur an flachen Kanten zerstört werden.
+sp_tut_5E_2=Sie müssen nicht alles davon säubern um einen Raum zu erobern.
+sp_tut_6E_1=Teermütter sind furchterregende Gegner. Obwohl sie an einem Ort bleiben, versteckt im Teer, lassen sie den Teer alle 30 Züge wachsen.
+sp_tut_6E_2=Das schwarze Tor wird sich erst öffnen wenn Sie den gesamten Teer in einem Raum entfernt haben.
+sp_tut_7E_1=Das Trinken dieses Tranks erlaubt es Ihnen, ein Imitat zu platzieren.
+sp_tut_7E_2=Imitate ahmen alle Ihre Bewegungen nach und lösen genauso wie Beethro Falltüren aus.
+sp_tut_8E_1=Wenn Sie den Unsichtbarkeitstrank trinken, werden sich Monster nicht mehr bewegen so lange sie außerhalb der Riechreichweite sind.
+sp_tut_8E_2=Lassen Sie die Schabenkönigin nicht auf die Pfeile entkommen oder Sie können sie nicht mehr töten.
+sp_tut_8E_3=Das haben Sie gut gemacht, Gratulation!
+sp_tut_8E_4=Es scheint als haben Sie versagt.
+sp_tut_8E_5=Sie können "R" benutzen um den Raum neuzustarten oder warten um einige Hinweise zu hören.
+sp_tut_8E_6=...
+sp_tut_8E_7=Es gibt drei verschiedene Wege den Raum zu lösen.
+sp_tut_8E_8=Der schnellste erfordert, dass Sie die Königin auf den Pfeilen nahe der grünen Tür in der Art festsetzen, dass Sie sie durch Treten auf oder neben den diagonalen Pfeil töten können.
+sp_tut_8E_9=Der andere, fast so schnell wie der vorherige, kann erreicht werden indem Sie horizontal in Richtung Königin gehen sodass das grüne Tor sie blockiert.
+sp_tut_8E_10=Der letzte erfordert, dass sie komplett im Kreis durch den Raum laufen und die Königin im Eingangskorridor festsetzen.
+sp_tut_8E_11=Wenn Sie es noch immer nicht tun können, warten Sie ein paar Züge bis der Notfall-Imitattrank da ist.
+sp_tut_9E=Viel Glück!
+
+sc_tut_emergency_potion=Notfall-Imitattrank, zur Verwendung falls der Raum zu schwierig ist.
+sc_tut_tricky=Dieser knifflige Raum ist nicht gefordert
+
+outro=Die letzten vier Stockwerke waren eine echte Plage für Beethro: mit all dem Teer, den Türen, Toren und den Tieren...  Während er die Stufen hinabstieg, roch er mehr von diesem blauen Glibber. Es ließ ihn erschaudern aber etwas ganz tief hinten in seinem Kopf sagte ihm, dass noch viel schlimmere Gefahren vor ihm liegen...////
+    ///
+    <font size="32" color="#FFFF00">Gratulation!</font>////
+    Sie haben die vierte Episode von Deadly Rooms of Death, King Dugan's Dungeon Lite Serie, abgeschlossen. Wir hoffen aufrichtig, dass Sie diese Erfahrung genossen haben.///
+    Jetzt, da Sie die letzten Stufen dieser Sammlung hinabgestiegen sind, möchten Sie vielleicht versuchen, das Spiel zu meistern und dann zu übermeistern!  Halten Sie dafür Ausschau nach Gemeinräumen. Die Anzahl der noch unentdeckten Geheimräume je Stockwerk wird jetzt im Wiederherstellungs-Bildschirm angezeigt.///
+    Sobald Sie alle davon erobert haben, wird eine spezielle Meisterzone geöffnet. Finden Sie heraus wie man ihn betritt?///
+    Sie möchten vielleicht auch die nächste Episode in der DROD:KDDL Serie spielen.///
+    ///
+    Bevor wir Sie in einem Gefühl des vollkommenden Ruhms schwelgen lassen, möchten wir ein paar Leuten danken, die das Spielen des Spiels für Sie möglich gemacht haben:///
+    ///
+    <font size="26" color="#FFFF00">Erik Hermansen</font> - Der Schöpfer, Vater und Erfinder von DROD. Ohne ihn hätte diese einzigartige Spielidee nie das Licht des Tages gesehen.////
+    <font size="26" color="#FFFF00">Mike Rimer</font> - Er programmierte fast alles von DROD: JtRH und DROD: TCB im Alleingang. Dank seiner vorzüglichen Codebasis war das Bauen von Flash DROD ein reines Vergnügen.////
+    <font size="26" color="#FFFF00">Matt Schikore</font> - Oberhaupt des Caravel-Forums und Chef-Programmierer von CaravelNet. Dank ihm können Sie um Highscores kämpfen und vieles mehr!////
+    ///
+    <font size="23" color="#FFFF00">Programmierung, Entwicklung</font> - %%////
+    <font size="23" color="#FFFF00">Design & Musik</font> - %% (geringfügig)////
+    <font size="23" color="#FFFF00">Serverseitige Entwicklung</font> - %%////
+    <font size="23" color="#FFFF00">Festen-Architekten</font> - %%////
+    <font size="23" color="#FFFF00">Primäre Tester</font> - %%////
+    <font size="23" color="#FFFF00">Tester</font> - %%////
+    <font size="23" color="#FFFF00">Übersetzungen</font> - %%////
+    <font size="23" color="#FFFF00">Sprecher</font> - %%////
+    <font size="23" color="#FFFF00">Ursprüngliche Programierung, Idee & Levels</font> - %%///
+    ////
+    Bis zum nächsten Mal!////
+    <font size="18" color="#AAAAAA">-Maurycy</font>
+
+complNextGame=Spielen Sie die nächste Levelsammlung: KDD Lite 5. Ein neues Fenster wird sich dafür öffnen. Dieses Fenster hier können Sie unbesorgt schließen, Ihr Fortschritt wurde gespeichert.

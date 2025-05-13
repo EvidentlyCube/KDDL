@@ -1,0 +1,236 @@
+﻿# src/../src.assets/i18n/en.kdd2.txt
+# Level Names
+Fifth Level=Cinquième Niveau
+Sixth Level=Sixième Niveau
+Seventh Level=Septième Niveau
+Eighth Level=Huitième Niveau
+Mastery Level=Niveau Maître
+Tutorial=Tutoriel
+# Level entrances
+entr5=Beethro Budkin, maître exterminateur de cinquième génération, a été embauché par le Roi Dugan pour qu'il nettoie ses vastes oubliettes infestées de monstres.///
+    Beethro est payé à la pièce et, en tant que professionnel, son contrat l'oblige à éliminer tous les monstres de chacune des pièces des oubliettes pour être payé.///
+    La seule arme dont Beethro a besoin pour son travail est une Très Grosse Épée, laquelle tuera presque n'importe quel monstre en un seul coup.////
+    -----////
+    Le niveau précédent avait mis Beethro en nage : « j'ai l'impression que ce boulot va être plus difficile que ce que je croyais ». Heureusement, une brise fraiche provenait du niveau inférieur.
+entr6=Peut-être que l'architecte de ce niveau était un peu trop fier de son idée, quelle qu'elle fût. En tout cas, estimez-vous heureux qu'il n'y ait pas d'autre niveau comme celui-ci dans les oubliettes du Roi Dugan.
+entr6Back=Beethro revint sur ses pas pour terminer la tâche pour laquelle il avait été embauché.
+entr7=Alors que Beethro descendait l'escalier, il entendit un sifflement bruyant. En tant que professionnel aguerri, il reconnut instantanément ce que c'était, mais il fut quand même effrayé par le volume sonore. « Mazette ! Combien y a-t-il de ces sales bestioles là-dessous ? »
+entr8=Certains monstres sont vicieux et sanguinaires, d'autres sont surtout salissants.
+entrMaster=Beethro descendit les escaliers et se retrouva dans un couloir ne figurant pas sur la carte…////
+    Il ne serait pas payé pour le nettoyage de ces pièces, mais son honneur professionnel le poussait à continuer.
+entrTut=Tutoriel
+entrTutLeave=Beethro quitta la zone de tutoriel fort de nouvelles connaissances.
+entrPremaster=Beethro s'engagea en trébuchant dans une succession d'escaliers mal éclairés : « Ce truc est dangereux et il n'y a même pas de cafards ! Quelqu'un devrait au moins installer une rampe ou qu... ». À ce moment précis, Beethro perdit l'équilibre et alla s'assommer plusieurs étages plus bas, restant dans les vapes pendant une heure. Après d'horribles rêves de pudding aux yeux, Beethro se réveilla douloureusement dans une nouvelle pièce. « Bon sang ! est-ce que ce serait si difficile que ça de marquer ces endroits sur la carte, pour une fois ? »
+# Scrolls
+sc51n2w=J'espère que vous vous êtes laissé un chemin de retour.
+sc63e=Passage Secret.
+sc61s1w=Ceci est un mur maître.///
+    Il s'ouvrira lorsque vous aurez fini le dernier niveau et conquis toutes les pièces secrètes.
+sc72n1w=Aux faibles d'esprit – revenez sur vos pas ! Cette pièce ne peut être conquise que par un intellect supérieur.///
+    (Cette pièce n'est pas requise)
+sc71n1=Je pensais que vous ne réussiriez jamais le puzzle précédent.
+sc71n2=D'accord, j'avoue que ce n'est pas EXACTEMENT la même chose que les light cycles.////
+    – Erik
+sc71n3=Mon hommage à Tron.////
+    – Erik
+sc81s1=Le goudron vivant ne peut être attaqué que sur les côtés plats
+sc81s2=Tout morceau qui ne fait pas au moins 2 cases de haut et de large est instable et formera des petits en se brisant.
+sc81s3=Amusez-vous à tester comment ça marche.
+sc81s1e=Il serait sage de nettoyer la pièce au nord avant de suivre ce couloir.
+sc83s=Nettoyez les passages au sud et au nord avant de continuer vers là pour éviter d'avoir à revenir sur vos pas.
+scMe1=Versions plus difficiles d'anciens puzzles.
+scMe2=Derniers mots.
+scMe3=Nouveaux puzzles.
+scM1s1=Bien ! À part peut-être quelques exploits, vous devriez avoir terminé le jeu.
+scM1s2=Toutes mes sincères félicitations, ce n'est pas rien !
+scM1s3=Sur le site CaravelGames.com, vous pourrez trouver les prochains épisodes de KDDL ou télécharger l'un des jeux DROD complets pour Windows, Mac OS ou Linux.
+scM1s4=Continuez à jouer !
+scM1s5=Voilà une petite récompense ! Tuez tous les yeux sans marcher sur le sol marron.
+scM1s6=Les deux reines du bas seront tuées lorsque vous marcherez sur le point de sauvegarde en haut à droite.
+scM1s7=Toutes mes félicitations !
+scT1=Allez vers la droite et regardez comment le cafard se comporte lorsqu'il se déplace en diagonale vers un coin.
+scT2=Les serpents ont leurs propres règles de mouvements, plus complexes. Leur préférence actuelle est affichée sous le compteur du cycle d'éclosion.
+scT3=Si une créature se déplace en diagonale vers un coin, elle préfèrera se déplacer verticalement si possible.
+scT4='Échap' ouvre le menu pause, depuis lequel vous pouvez cliquer sur 'Aide Générale' pour revoir les touches quand vous le souhaitez.
+scT5=Vous pouvez verrouiller/déverrouiller une pièce en appuyant sur 'X'. Un petit cadenas apparaîtra sur la carte pour indiquer que la pièce est verrouillée.
+scT6='Maj' + une touche fera l'action de la touche et son opposé///
+    'Maj' + 'Attendre un tour' vous fera attendre jusqu'à la prochaine éclosion.///
+    '+ (Pavé numérique)' ou '=' fera l'inverse de la dernière action.
+scT7='F3' affiche un compteur de mouvements pour vous aider à optimiser vos scores.
+scT8=Toutes les touches peuvent être réattribuées depuis le menu options.
+scT9=Les scores des utilisateurs sans compte CaravelNet ne seront pas stockés dans le classement, mais ils sauront quelle place ils auraient pu atteindre.
+scT10=Cliquez sur les orbes pour savoir quelles portes elles affectent et sur les mauvais yeux pour voir leur ligne de mire.
+scT11=La barre d'espace fait disparaître les dialogues et exploits de l'écran.
+scT13=Contrairement aux cafards, les spectres ailés fuient Beethro et essaient de rester à cinq cases de distance.
+scT14=Ils ne sont pas aussi timides en plus grand nombre, et n'hésiteront pas à attaquer s’ils peuvent encercler leur proie.
+sc1_6n3w1=Utilisez la technique du coup arrière pour vous débarrasser de ce cafard.
+sc1_6n3w2=Placez-vous sur le sol vert et assurez-vous que le cafard soit sur le sol sablonneux juste au nord de vous…
+sc1_6n3w3=Placez-vous sur le sol vert et assurez-vous que le cafard soit sur le sol sablonneux juste au sud de vous…
+sc1_6n3w4=… puis allez vers le nord-est pour le tuer.
+sc1_6n3w5=… puis allez vers le sud-est pour le tuer.
+sc1_6n3w6=Refaites-le pour analyser le coup arrière. La maîtrise de cette technique est cruciale pour l'avenir.
+# Speeches
+sp5e1=Cette zone conduit à un tutoriel.
+sp5e2=Allez-y si vous n'avez jamais joué à ce jeu auparavant.
+sp5e3=Déplacez-vous en utilisant le pavé numérique ou les touches 789, UIO, JKL.
+sp52n1=Si j'arrivais à nettoyer cette pièce sans ouvrir une seule porte, là je pourrais me vanter.
+sp52n2=Ha ! Installer des orbes inutiles comme ça, c'est ce que j'appelle du mauvais design d'oubliette !
+sp51n2w1=Crénom, regardez-moi tous ces mauvais yeux !
+sp51n2w2=Ha ! Ça me file toujours la chair de poule quand un de ces trucs se réveille !
+sp63e=Je commence à saisir le modèle…
+sp63n=Ça me rappelle quelque chose…
+sp63w=Dugan a intérêt à me payer pour chacune de ces pièces !
+sp72n1w1=Nom de Zeus ! Ce serpent doit faire au moins mille quatre cent cinquante-cinq pieds de long !
+sp72n1w2=Mais mon contrat stipule que je ne suis pas obligé de m'occuper des monstres qui font plus de mille quatre cent cinquante-quatre pieds.
+sp72n1w3=Je pourrais laisser cette pièce comme elle est.
+sp71n1e1=Ma lame ne fera pas une égratignure à cette bestiole.
+sp71n1e2=Mais si je la conduis dans un cul-de-sac, elle est morte.
+sp84s1=Des mères goudron, en plus ? Pourquoi, pourquoi, pourquoi… ?
+sp83s1e=Je déteste les mères goudrons.
+sp82s2e=Il faut que je fasse attention… Je ne pourrais pas passer si le goudron bloque le passage.
+sp84s3e1=Laisse tomber… On s'en va !
+sp84s3e2=Et un mur ici…
+sp84s3e3=Bien. À ce rythme, on aura fini de cartographier le niveau dans quelques minutes.
+sp84s3e4=Tu as entendu ça ? C'est la police du goudron ! Il faut se cacher !
+sp84s3e5=Mince ! J'ai failli faire tomber la carte !
+sp84s3e6=Attends ! Est-ce que la carte est bien orientée ?
+sp85s2e1=Cette pièce… elle me paraît… familière…
+sp85s2e2=Elle me rend… furieux… et frustré !
+sp86s3e=Mince… J'espère qu'il n'y pas pas de trucs cachés, comme une pièce secrète derrière un mur !
+sp88s3e1=Oh bon sang… cette pièce va me donner des cauchemars…
+sp88s3e2=Plus jamais… plus jamais…
+spM1s=Vous avez échoué…
+spT2=Tournez votre épée avec 'Q' et 'W'.
+spT3=Maintenant, frappez l'orbe avec votre épée.
+spT4=Les orbes peuvent interagir de trois façons avec les portes : elles peuvent les ouvrir, les fermer, ou les basculer entre les deux.
+spT5=Faites un clic gauche sur l'orbe pour voir quelle porte elle affecte, et de quelle façon.
+spT6=Le but du jeu de DROD est de débarrasser chaque niveau de tous ses monstres.
+spT7=Touchez le cafard avec votre épée pour le tuer.
+spT8=Les flèches au sol vous empêchent de bouger dans la direction opposée.
+spT9=Marchez sur le point de sauvegarde. Si vous mourez ou appuyez sur 'R', vous reviendrez au moment où vous avez marché dessus.
+spT10=Si vous mourez ou que vous êtes dans une situation sans issues, vous pouvez annuler jusqu'à trois mouvements en appuyant sur 'Retour Arrière'.
+spT11=Cette potion vous permettra de placer un double. Les doubles singent tout ce que vous faites et ils bougent juste après vous, mais avant les monstres.
+spT12=Placez le double sur la case avec un point de sauvegarde. Servez-vous-en pour faire tomber toutes les trappes et la porte rouge s'ouvrira.
+spT13=Félicitations, vous avez conquis cette pièce !
+spT14=Votre progression est sauvegardée dès que vous quittez la pièce. Vous pouvez afficher votre meilleur score pour la pièce et vous pouvez voir quelle place vous avez atteinte au classement général.
+spT15=Si vous vous êtes connecté avec un compte du forum Caravel, votre meilleur score sera envoyé au classement.
+spT16=Il restera au classement pendant deux semaines, sauf si vous avez un compte CaravelNet, auquel cas votre score restera indéfiniment.
+spT17=Vous pouvez maintenant quitter la pièce du tutoriel.
+# Achievements
+achName0=Où est le Maître ?
+achName1=Cap à l'est
+achName2=Netteté
+achName3=Esquive d'orbe
+achName4=Mains Statiques
+achName5=Acuité Visuelle Parfaite
+achName6=Murmurer à l'oreille des Spectres
+achName7=Dédoublement Contrôlé
+achName8=Je Déteste le Jaune
+achName9=Non diagonal
+achName10=Mains Immobiles
+achName11=Ssssserpent
+achName12=Mains Figées
+achName13=Intellect Supérieur
+achName14=Tu Quoque Fili
+achName15=Spécialiste du Goudron
+achName16=Vise les Yeux !
+achName17=Le Ninja
+achName18=Apprenti Exterminateur
+achName19=Pourfendeur Débutant
+achName20=Exterminateur de Métier
+achName21=Je suis un Professionnel !
+achName22=Maîtrise
+achName23=Post-maîtrise
+achName24=Reines Frites
+achName25=Œufs à la Coque
+achName26=Gelée d'yeux
+achName27=Spectres Ailés Grillés
+achName28=Sushi de Serpent
+achName29=Diapason
+achName30=À Bas le Vert
+achName31=Tueur en Série
+achName32=Immortel
+achName33=Faille Spatio-temporelle
+achName34=Nettoyage du Sol
+achName35=Marathonien
+achDesc0=Trouvez le mur maître
+achDesc1=Nettoyez le niveau cinq, 1O, en faisant face à l'est
+achDesc2=Faites tomber toutes les trappes et nettoyez le niveau cinq, 1N 2O lors de la męme visite
+achDesc3=Nettoyez le niveau cinq, 2N, sans activer d'orbes
+achDesc4=Nettoyez le niveau cinq, 1S, sans tourner
+achDesc5=Conquérez le niveau cinq, 2S, sans boire la potion d'invisibilité
+achDesc6=Ne frappez pas l'orbe en nettoyant le niveau cinq, 3E
+achDesc7=Nettoyez le niveau cinq, 1S 1O, sans quitter la zone délimitée
+achDesc8=Nettoyez le niveau cinq, 2S 2E, sans marcher sur une porte jaune ouverte
+achDesc9=Conquérez le niveau sept, 1S, sans déplacement en diagonale
+achDesc10=Nettoyez le niveau sept, 1E, sans tourner
+achDesc11=Dans le niveau sept, 1N 2E, tuez le serpent avant de tuer le moindre cafard
+achDesc12=Ne tournez pas votre épée dans le niveau sept, 3N 1E
+achDesc13=Nettoyez la pièce « Intellect Supérieur » niveau sept, 2N 1O
+achDesc14=Nettoyez le niveau huit, 4S 3E, sans boire la potion de dédoublement
+achDesc15=Éliminez complètement le goudron de n'importe quelle pièce du niveau huit
+achDesc16=Tuez une mère goudron avant qu'elle ait grandi
+achDesc17=Nettoyez une pièce contenant des mauvais yeux sans en réveiller un seul
+achDesc18=Nettoyez le cinquième niveau
+achDesc19=Nettoyez le sixième niveau
+achDesc20=Nettoyez le septième niveau
+achDesc21=Nettoyez le huitième niveau
+achDesc22=Maîtrisez l'antre
+achDesc23=Post-maîtrisez l'antre
+achDesc24=Tuez 20 reines cafards
+achDesc25=Tuez 15 œufs de cafards
+achDesc26=Tuez 15 mauvais yeux
+achDesc27=Tuez 5 spectres ailés
+achDesc28=Tuez 10 serpents
+achDesc29=Frappez un orbe trois fois de suite
+achDesc30=Abaissez cinq portes vertes
+achDesc31=Tuez un total de 2 500 monstres
+achDesc32=Mourez 70 fois en tout
+achDesc33=Annulez un total de 350 mouvements
+achDesc34=Faites tomber un total de 200 trappes
+achDesc35=Faites 7 000 pas en tout
+# Game completion
+outro=Le goudron n'était pas quelque chose que Beethro s'attendait à rencontrer, ni quelque chose qu'il voulait rencontrer. Mais alors qu'il descendait l'escalier vers le neuvième niveau, il était sûr d'une chose : l'odeur de cette substance gluante avait disparu. Mais peut-être que quelque chose de pire l'attendait…////
+    ///
+    <font size="32" color="#FFFF00">Félicitations !</font>////
+    Vous venez de terminer le deuxième épisode de l'antre « King Dugan's Dungeon Lite ». J'espère sincèrement que cela vous a plu.//
+    Maintenant que vous avez descendu les derniers escaliers de ce set, vous pouvez essayer de maîtriser, puis post-maîtriser le jeu ! Pour ce faire, trouvez les pièces secrètes. Le nombre de pièces secrètes restant à trouver est maintenant affiché dans l'écran de chargement.//
+    Une fois que vous les aurez toutes conquises, une zone de maîtrise spéciale sera ouverte. À vous de trouver comment y accéder !//
+    Vous pouvez aussi choisir de jouer à l'épisode suivant de KDDL.////
+      Avant de vous laisser à votre gloire et votre joie d'avoir fini ce jeu, j'aimerais remercier un certain nombre de personnes sans qui ce jeu n'aurait jamais existé :////
+	///
+    <font size="26" color="#FFFF00">Erik Hermansen</font> - Le créateur, père et inventeur de DROD. Sans lui, l'idée de ce jeu n'aurait jamais vu le jour.////
+    <font size="26" color="#FFFF00">Mike Rimer</font> - Il a codé la plupart de DROD : JtRH et DROD : TCB à lui tout seul. Grâce à cette superbe base de code, la création de Flash DROD a été un vrai plaisir.////
+    <font size="26" color="#FFFF00">Matt Schikore</font> - Maître suprême du forum Caravel et codeur en chef de CaravelNet. Grâce à lui vous pouvez entrer en compétition pour les meilleurs scores, et bien plus encore !////
+    ///
+    <font size="23" color="#FFFF00">Programmation, Développement</font> - %%////
+    <font size="23" color="#FFFF00">Graphismes et musique</font> - %%////
+    <font size="23" color="#FFFF00">Développement du serveur</font> - %%////
+    <font size="23" color="#FFFF00">Développement des niveaux</font> - %%////
+    <font size="23" color="#FFFF00">Testeurs Principaux</font> - %%////
+    <font size="23" color="#FFFF00">Testeurs</font> - %%////
+    <font size="23" color="#FFFF00">Traductions</font> - %%////
+    <font size="23" color="#FFFF00">Doublage</font> - %%////
+    <font size="23" color="#FFFF00">Code originel, concept et niveaux</font> - %%///
+    ////
+    À bientôt !////
+    <font size="18" color="#AAAAAA">-Maurycy</font>
+complNextGame=Jouer au set de niveaux suivant – « KDD Lite 3 ». Ce lien s'ouvrira dans une nouvelle fenêtre, et vous pourrez alors fermer la fenêtre : votre progression a été sauvegardée.
+
+sp_new71e2=Ah, ça c'est de l'efficacité ! J'ai hâte de raconter ça à la guilde des exterminateurs !
+sp_new71e1=Ces yeux auraient pu être exterminés sans tourner l'épée. Eh oui !
+
+# Tutorial crap
+defCont=Contrôles par défaut :
+sc_diago=Vous pouvez vous déplacer en diagonale, męme ŕ travers des couloirs trčs étroits.
+sc_broken=Fracassez ces murs secrets fęlés avec votre épée.
+sc_queens1=Les reines des cafards pondent des śufs tous les 30 tours (le tour aprčs que le compteur vire au rouge).
+
+sc_queens2=Les śufs deviennent des cafards adultes 5 tours aprčs avoir été pondus.
+sc_queens3=Les śufs n'apparaissent pas sur les flčches, les trappes et les portes jaunes. Appuyez sur « i » ou « 5 » du pavé numérique pour attendre un tour.
+sc_mimics=Aprčs avoir pris une potion dédoublement, utilisez la souris ou la touche « attendre » pour choisi la case oů vous voulez placer le double.
+sc_shiftwait=Vous pouvez appuyer sur « Maj + attendre » pour attendre automatiquement jusqu'ŕ la prochaine ponte.
+sp_mother1=Les mčres goudrons feront s'étendre le goudron d'une case dans toutes les directions tous les trente tours.
+sp_mother2=Il est relativement sans danger de se faire entourer par du goudron, mais faites attention aux bébés qui peuvent apparaître lors de l'extension.
+sc_backswipe=Suivez le chemin sablonneux pour apprendre la technique du coup arričre !Déplacez-vous en diagonale et ne tournez pas votre épée.
+sc_trapdoors=Ces cases rose-violette sont des trappes et elles tombent si vous ou un double passez dessus.

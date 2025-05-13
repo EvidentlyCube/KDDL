@@ -1,0 +1,522 @@
+# Keys
+keyBackspace=Rücktaste
+keyTab=Tabulator
+keyEnter=Enter
+keyShift=Umschalt
+keyControl=Steuerung
+keyAlt=Alt
+keyPause=Pause/Untbr
+keyCapsLock=Umschalt-Feststell
+keyEscape=Escape
+"key "=Leertaste
+keyPageUp=Bild-Nach-Oben
+keyPageDown=Bild-Nach-Unten
+keyEnd=Ende
+keyHome=Pos 1
+keyArrowLeft=Links
+keyArrowUp=Oben
+keyArrowRight=Rechts
+keyArrowDown=Unten
+keyInsert=Einfügen
+keyDelete=Entfernen
+key0=0
+key1=1
+key2=2
+key3=3
+key4=4
+key5=5
+key6=6
+key7=7
+key8=8
+key9=9
+keya=A
+keyb=B
+keyc=C
+keyd=D
+keye=E
+keyf=F
+keyg=G
+keyh=H
+keyi=I
+keyj=J
+keyk=K
+keyl=L
+keym=M
+keyn=N
+keyo=O
+keyp=P
+keyq=Q
+keyr=R
+keys=S
+keyt=T
+keyu=U
+keyv=V
+keyw=W
+keyx=X
+keyy=Y
+keyz=Z
+key91=L.Win/Cmd
+key92=R.Win
+key93=Menü
+keyNumpad0=Ziffernblock 0
+keyNumpad1=Ziffernblock 1
+keyNumpad2=Ziffernblock 2
+keyNumpad3=Ziffernblock 3
+keyNumpad4=Ziffernblock 4
+keyNumpad5=Ziffernblock 5
+keyNumpad6=Ziffernblock 6
+keyNumpad7=Ziffernblock 7
+keyNumpad8=Ziffernblock 8
+keyNumpad9=Ziffernblock 9
+keyNumpadMul=Ziffernblock *
+keyNumpadAdd=Ziffernblock +
+keyNumpadSub=Ziffernblock -
+keyNumpadDot=Ziffernblock ,
+keyNumpadDiv=Ziffernblock /
+keyF1=F1
+keyF2=F2
+keyF3=F3
+keyF4=F4
+keyF5=F5
+keyF6=F6
+keyF7=F7
+keyF8=F8
+keyF9=F9
+keyF10=F10
+keyF11=F11
+keyF12=F12
+keyF13=F13
+keyF14=F14
+keyF15=F15
+key144=Num-Feststell
+key145=Rollen-Feststell
+key;=Ü
+"key="=+
+key,=,
+key-=-
+key.=.
+key/=#
+key~=Ö
+key[=ß
+key\=^
+key]=´
+key'=Ä
+
+numpad=Ziffernblock
+notebook=Notebook
+
+# Key names
+keyUp=nach Norden
+keyUpLeft=nach Nordwesten
+keyUpRight=nach Nordosten
+keyLeft=nach Westen
+keyRight=nach Osten
+keyDown=nach Süden
+keyDownLeft=nach Südwesten
+keyDownRight=nach Südosten
+keyWait=einen Zug abwarten
+keyCW=im Uhrzeigersinn drehen
+keyCCW=im Gegenuhrzeigersinn drehen
+keyUndo=einen Zug zurücknehmen
+keyRestart=Raum neu beginnen
+keyBattle=Schlachttaste
+keyLock=Ausgänge verschließen/öffnen
+# Global buttons
+close=Schließen
+# Global messages
+cnetError=Verbindungsversuch fehlgeschlagen.///
+      Dies könnte an ungültigen Benutzerangaben liegen, an Fehlern in der  Internetverbindung, oder an einem vorübergehenden Serverproblem. Die  CaravelNet-Funktionen sind deaktiviert. Um sie wiederherzustellen öffnen  Sie den Optionen-Bildschirm, aktualisieren Sie falls nötig Ihre  Benutzerangaben, und klicken Sie "Verbinden!"
+cnetHeader=Erhalten Sie mehr Informationen///
+    über oder kaufen Sie ein CaravelNet-Abo.///
+    Öffnet sich in einem neuen Fenster.
+# Preloader
+prlStartGame=Spiel beginnen
+prlLoading=Laden: %% / %%
+prlWaitApi=Warte auf API für die Verbindung ...
+prlLanguage=Sprache ändern
+# Initialize screen
+initAssets=Medien vorbereiten %% / %%
+# Title Screen and submenus
+tsStartNew=Neues Spiel beginnen
+tsStartNewKey=N
+tsStartNewKeyCode=78
+tsContinue=Weiterspielen
+tsContinueKey=W
+tsContinueKeyCode=87
+tsRestore=Anderen Raum laden
+tsRestoreKey=R
+tsRestoreKeyCode=82
+tsAchievements=Errungenschaften ansehen
+tsAchievementsKey=E
+tsAchievementsKeyCode=69
+tsOptions=Optionen
+tsOptionsKey=O
+tsOptionsKeyCode=79
+tsHelp=Hilfe und Hintergrundgeschichte
+tsHelpKey=H
+tsHelpKeyCode=72
+tsBrowse=Festen ansehen
+tsBrowseKey=F
+tsBrowseKeyCode=70
+# Options
+optHeader=Optionen:
+optUploadAll=Alle Ergebnisse hochladen
+optConnect=Verbinden!
+optRedefine=Tastenbelegung ändern
+optCnetHeader=CaravelNet-Benutzerangaben
+optCnetUser=CaravelNet-Name
+optCnetKey=CNet-Schlüssel
+optCnetVolume=Lautstärke
+optCnetMusic=Musik
+optCnetSound=Geräusche
+optCnetVoices=Stimmen
+optMoveAnim=Bewegungsanimation
+optMoveSmooth=Glatt
+opyMoveFast=Schnell
+uploadAll=Lädt Ergebnisse hoch ...
+uploadDone=Erledigt!
+uploadError=Fehler! Bitte Verbindung herstellen und noch einmal versuchen.
+uploadAlreadyHas=Sind schon hochgeladen
+uploadRoomEntrance=Eingang
+cnetDescription=Benutzer mit CaravelNet können hier ihre Angaben eintragen, um an den Online-Ranglisten teilzunehmen. Die Punkte pro Raum sind die minimale Anzahl der benötigten Züge. Ohne Angaben erfahren Sie nur, welchen Rang Sie als Abonnent erreicht hätten. Sie können die erreichten Ergebnisse mit dem Schalter "Alle Ergebnisse hochladen" auch nachträglich übertragen.
+redefineScreen=Sie ändern die Belegung für "%%"///
+    Gewünschte Taste (aktuell: %%)///
+    Abbrechen mit Escape
+redefineInvalidKey=%% ist für andere Funktionen reserviert///
+    Gewünschte Taste:///
+    Abbrechen mit Escape
+redefineReservedKey=%% wird in einem alternativen Satz Bewegungstasten verwendet///
+    Gewünschte Taste:///
+    Abbrechen mit Escape
+# Help and Backstory
+abButCnet=Über CaravelNet
+abButHowto=Spielanleitung
+abButHistory=Zur Geschichte von DROD
+abButBackstory=Hintergrundgeschichte
+abButCredits=Mitwirkende
+h&bTextWidth=450
+h&bText=\tDROD  wurde in den Neunzigern von Erik Hermansen erfunden. Es ist im  Wesentlichen ein Denkspiel, in dem man durch einen Kerker rennt und mit  einem echt großen Schwert Monster tothaut. Wie das geht? Das sehen Sie  gleich, wenn Sie selbst losspielen.////
+       \tFlash DROD ist eine Umsetzung des ersten DROD-Spiels. Es verwendet  dabei Grafiken und Musik aus den neueren DROD-Teilen, welche Sie bei  CaravelGames.com herunterladen und auf Ihrem eigenen Computer spielen  können.////
+      \tDank der  integrierten CaravelNet-Funktionen können Spieler nicht nur die Rätsel  lösen, sondern auch miteinander wetteifern, wer jeden Raum in den  wenigsten Spielzügen schafft.
+      
+creditsWidth=620
+credits=<font  size="20">Programmierung und Entwicklung: </font><font  color="#444444">%%</font>///
+     <font size="20">Grafik und Musik: </font><font  color="#444444">%%</font>///
+    <font size="20">Serverprogrammierung: </font><font color="#444444">%%</font>///
+     <font size="20">Leveldesign: </font><font  color="#444444">%%</font>///
+     <font size="20">Haupttester: </font><font  color="#444444">%%</font>///
+     <font size="20">Tester: </font><font  color="#444444">%%</font>///
+     <font size="20">Übersetzungen: </font><font  color="#444444">%%</font>///
+     <font size="20">Stimmen: </font><font  color="#444444">%%</font>///
+     <font size="20">Konzept, Original-Programm und -Levels:  </font><font color="#444444">%%</font>
+controlsWindowWidth=650
+controlsWindow=<font  size="18">`Ziffernblock` und `789 UIO JKL`</font><font  color="#444444"> - Bewegen</font>///
+    <font size="18">`Q` und `W`</font><font color="#444444"> - Schwert schwingen</font>///
+    <font size="18">`Rücktaste`</font><font color="#444444"> - Letzten Zug zurücknehmen</font>///
+     <font size="18">`R'</font><font color="#444444"> -  Zurück zum letzten Rücksetzpunkt oder zum Raumeingang</font>///
+    <font size="18">`Shift+R`</font><font color="#444444"> - Raum von vorne beginnen</font>///
+    <font size="18">`Escape`</font><font color="#444444"> - Pausenmenü</font>///
+     <font size="18">`Eingabe`</font><font  color="#444444"> - Ergebnisse für aktuellen Raum und  Level</font>///
+    <font size="18">`X`</font><font color="#444444"> - Ausgänge verschliessen</font>///
+     <font size="18">`Leertaste`</font><font  color="#444444"> - Texte und Errungenschaften vom Bildschirm  löschen</font>///
+    <font size="18">`F3`</font><font color="#444444"> - Anzahl Züge anzeigen</font>///
+     <font size="18">`Shift+Taste`</font><font  color="#444444"> - Aktion und ihr Gegenteil ausführen</font>///
+     <font size="18">`Shift+Warten`</font><font  color="#444444"> - Warten bis zur nächsten Eiablage</font>///
+     <font size="18">`Mausklick`</font><font  color="#444444"> - Information über die angeklickte Stelle  anzeigen</font>////
+     \tIhre Aufgabe ist es, jede Ebene von König Dugans Kerker von Monstern  zu befreien. Sie benötigen dafür Ihr echt großes Schwert™ und etwas  Köpfchen. Jeder Raum ist ein separater Bereich, der auf einen Rutsch  entmonstert werden muss. Wenn Sie einen Raum verlassen, bevor Sie alle  Monster darin besiegt haben, wird bei Ihrem nächsten Besuch wieder alles  auf Anfang stehen.
+cnetInfoWidth=500
+cnetInfo=\tMit CaravelNet können Spieler aus aller Welt um Bestleistungen wetteifern.////
+      \tAlle können ihre Ergebnisse anonym abgeben und sehen, wo sie im Vergleich mit anderen Spielern stehen.//
+     Allerdings werden anonyme Ergebnisse nicht auf dem Caravel-Server  gespeichert, und sie fliessen nicht in die Bestenliste ein. Die  Ergebnisse von registrierten Benutzern des Caravel-Forums werden  kostenlos zwei Wochen ab dem Hochladen gespeichert. Und die Ergebnisse  von Benutzern mit einem CaravelNet-Abo werden gar nie entfernt.////
+       \tSolange Ihr Spielstand nicht von Ihrem Computer gelöscht wird, können  Sie auch nachträglich alle Ihre Ergebnisse zum Server hochladen, sobald  Sie ein Caravel-Konto angelegt haben. ////
+      \tUm sich bei Caravel zu registrieren, besuchen Sie CaravelGames.com und erstellen Sie im Forum ein Benutzerkonto.
+# Backstory
+backstory1=\tBeethro Budkin schlenderte in den Großen Speisesaal, wo König Dugan sein wuchtiges Morgenmahl beendete.////
+        \t„Hinfort, schmutziger Untertan! Du störst meine Verdauung mit deiner  armseligen Hygiene!“, brüllte der König, Schweinefleischbröckchen und  Kartoffelflocken von sich gebend.////
+      \t„Aber Herr“, protestierte Beethro, „Ihr hattet nach mir verlangt.“////
+        \tDer Ausdruck im beträchtlichen Gesicht des Königs wechselte innerhalb  von nur zwei Sekunden von Wut über Verwirrung und Wiedererkennung nach  Freundlichkeit.////
+        \t„Ich hätte Dich wirklich früher kommen lassen sollen“, sagte König  Dugan. „Es ist unglaublich! Da erlaubt man seinen Wachen, ihre  Mahlzeiten unten im Kerker zu sich zu nehmen, sie verteilen überall  Krumen, und wie aus dem Nichts wimmelt es in der gesamten Örtlichkeit  von riesigen Schaben, nicht zu vergessen Goblins, Panzerschlangen,  Stieraugen und anderen garstigen Sachen. Es ist völlig außer Kontrolle geraten.“////
+        \tBeethro streckte sich stolz. „Fürchtet Euch nicht. Ich bin ein  ausgebildeter Profi aus einer langen Linie von Kerkerjägern. Ich vereine  fünf Generationen überlieferten Wissens mit hochmoderner Ausrüstung um  eine effiziente Säuberung zu einem erschwinglichen Preis zu bieten.“////
+      \t„Welche Art von Ausrüstung nutzt Du?“////
+      \t„Ich besitze ein echt großes Schwert.“
+backstory2=\t„Gut! Wann kannst Du loslegen?“////
+        \t„Sobald wir die Einzelheiten zur Bezahlung geklärt haben. Hier sind  meine Standardgebühren für eine Kerkersäuberung. Ihr müsst nur unten  drunter unterschreiben.“ Beethro überreichte dem König einen  Vertrag.////
+       \t„Diese Preise sind ungeheuerlich! Ist das Privilegium, im ehrenwerten  Dienste der Krone zu stehen, heutzutage gar nichts mehr wert?“////
+      \t„Ich kann auch gehen.“////
+        \t„Nein, nein, nein. Der Kerker muss gesäubert werden, damit die  Gefangenen ihre Folter in einer sauberen und sicheren Umgebung erhalten  können.“////
+      \t„Nun, ich würde einen Rabatt gewähren, wenn Ihr eine Prinzessin dazugebt.“////
+      \t„Du bist hässlich und riechst schlecht. Keine meiner Töchter würde dich wollen!“////
+      \tBeethro zuckte mit den Schultern. „Wie Ihr meint.“////
+      \tDer König unterzeichnete am Ende des Vertrags. „Recht so. Lass mich Dich zum Eingang weisen.“
+backstory3=\tWährend  er hinabstieg, dachte Beethro über den Auftrag nach, den er angenommen  hatte. Dugans Kerker war außerordentlich groß und, den Berichten  vorheriger Kerkerjäger nach zu urteilen, irrwitzig gut für einen  Schädlingsbefall geeignet. Er wurde auch mehrere Male im Geheimen  ausgebaut - zum Entsetzen der ersten Person, die den Kerker säubern  sollte, denn dessen Vertrag hatte diese Möglichkeit nicht abgedeckt. (Er  war nur für die Bereiche bezahlt worden, von denen er wusste.)////
+        \tManche sagten, böse Mächte steckten hinter den Kerkererweiterungen.  Der Legende nach hatte ein vergangener König genug von seinem nervigen  jungen Sohn und schlug scherzhaft vor, dass der Bursche in den  Burgverliesen spielen gehen solle. Da er seinen Vater beim Wort nahm,  wanderte der Junge tief in die Kerkerkammern und wurde nie wieder  gesehen. Es wird gesagt, dass er nicht ums Leben kam, sondern aus  eigenen Stücken den Rest seines Lebens in den Kerkern verbrachte; dass  er durch seine Anpassung an den neuen Lebensraum all die Geheimnisse der  unterirdischen Welt erlernte und Bündnisse mit den Monstern einging,  die dort hausten. Er entsandte sie zum Arbeiten, um neue Gänge anzulegen und neue, bessere Monster zu züchten.  Er nannte sich selbst den Unterfahren und schmiedete den Plan, aus den  Kerkern hinaufzusteigen und den Thron für sich zu beanspruchen sobald  seine Kräfte dies zuließen.
+backstory4=\tBeethro  war sich bei all dem nicht sicher. Zunächst einmal war der königliche  Thron nicht mehr das was er einst gewesen war,  seitdem dessen Befugnisse größtenteils dem Parlament zugewiesen wurden.  Abgesehen davon blieb die Frage, wer freiwillig im Untergrund leben  wolle oder wie man sich mit den Kreaturen dort anfreunden kann, die  zweifelsohne nicht sehr gesprächig sind. Aber es war wahr, dass Kerker  oftmals unnötig kompliziert gebaut waren, leicht von Ungeziefern befallen wurden und manchmal sogar ohne jegliche Vorwarnung wuchsen -  kein Kerkerarchitekt würde den Grund nennen, um seine Ehre zu wahren -  und dies war, mehr als alles Andere, was Männern wie Beethro fortwährend  Arbeit verschaffte.////
+        \tWie auch immer, ein Kerkerjäger hatte eine Fülle von konkreteren  Bedenken, wie etwa die schnell vermehrende und mannsgroße Kerkerschabe.  Das Wichtigste für Beethro war es, genug Geld und genügend tote Monster  mit dieser Tätigkeit zu machen, um sich endlich aus diesem undankbaren  Geschäft zurück zu ziehen und ein Restaurant zu eröffnen.////
+      \t„Ich werde es ‚Beethros Rostbratschaben-Grill‘ nennen!“
+backstoryNext=Nächste
+backstoryPrev=Vorherige
+backstory1width=550
+backstory2width=550
+backstory3width=550
+backstory4width=550
+drodHistoryWidth=650
+drodHistory=\t"Deadly  Rooms of Death" (DROD) wurde in den Neunzigern von Erik Hermansen  entwickelt. Das Spiel erschien beim Verlag Webfoot und wird oft als  `Webfoot DROD` bezeichnet. Diese Version ist vergriffen und nicht mehr  auf legalen Wegen erhältlich. Glücklicherweise hatte Erik aber die  Erlaubnis, eine neue Version des Spiels nachzuprogrammieren, und so kam  es im Jahr 2002 zu `Caravel DROD`.////
+       \t2003 erschien dann die "DROD: Architect's Edition", welche einen  Leveleditor enthielt. Die Spieler konnten damit ihre eigenen `Festen`//
+     (Level-Sammlungen) erstellen und diese im CaravelGames-Forum  untereinander austauschen. Die Fangemeinde wuchs an, und es entstand der  Plan, ein weiteres Spiel zu entwickeln. ////
+       \tAm ersten April 2005 erschien denn auch "DROD: Journey to Rooted  Hold"! Die Liste der Neuerungen war beachtlich. Es gab neue Grafik,  Script-Programmierungs-Möglichkeiten, über ein Dutzend neue  Spielelemente, eine packende Handlung und einen Gegenspieler, dessen  Stimme einen erschauern liess. ////
+      \tGenau zwei Jahre später erblickte "DROD: The City Beneath" das Licht der Welt. Jener  Tag brach den Rekord für gleichzeitig aktive Benutzer im Caravel-Forum.  In TCB gab es noch mehr neue Spielelemente und weitere Verbesserungen  gegenüber JtRH, und auch schwierigere Rätsel.////
+       \t2008 kam "DROD RPG" mit einem anderen Spielprinzip heraus. Es fand  nicht so viele Anhänger wie die Spiele aus der Hauptreihe, ist aber  durchaus ein Schmuckstück in seiner Art. Bei diesem Spiel handelt es  sich um ein raumübergreifendes strategisches  Ressourcenverwaltungs-Rätsel. Jedes Monster hat seine eigenen  Stärkewerte. Der Spieler muss abschätzen, mit welchen Monstern er es  gerade aufnehmen kann, das weitere Vorgehen planen, zusätzliche  Ressourcen finden und sie für sich zugänglich machen.////
+       \t"DROD 4: Gunthro and the Epic Blunder" ist die neueste Ausgabe,  erschienen am ersten April 2012. Dieses Spiel richtet sich vor allem  an neue Spieler und ist mit seinen einfacheren Rätseln, intuitiven  Tutorials und übersichtlicheren Verbindungslevels um einiges  anfängerfreundlicher als die früheren Teile.
+# Restore Screen
+rstHeader=Spielstand laden
+rstToRoom=Diesen Raum laden
+rstReturn=Zurück zum Titelmenü
+rstSecrets=Geheimräume: %% von %%
+# Ingame messages
+roomLocked=Sie haben die Raumausgänge verschlossen.//
+    Drücken Sie noch einmal %%, um die Ausgänge zu öffnen.
+ingLevelCompleted=Level abgeschlossen
+ingSecretFound=Geheimraum gefunden
+ingHoldMastered=Feste gemeistert
+# Achievements popup
+achievementHeader=Errungenschaft!
+achievementDismiss=Weg mit Klick oder Leertaste
+# Achievements list
+achlistHeader=Errungenschaften:
+# Browse released holds
+browseHeader=Verfügbare Festen durchsehen
+browseOpen=In neuem Fenster öffnen
+# Level/Room score
+scrStats=Spielstatistik
+scrYourBest=Bester Rang:
+scrTop=Beste Ergebnisse (dieser Raum):
+scrNoScore=Keiner!
+scrFetching=Lade vom Server...
+scrOnlyForCnet=Raumergebnisse stehen nur CaravelNet-Abonnenten und registrierten CaravelGames-Forumnutzern zur Verfügung.///
+     Anscheinend haben Sie Ihre CaravelNet-Benutzerangaben noch nicht  eingegeben. Mit einem CaravelGames-Konto können Sie Ihre Ergebnisse für  jeden Raum nachverfolgen und mit anderen Spielern aus aller Welt  vergleichen.///
+    Um sich bei CaravelGames zu registrieren, verwenden Sie den Schalter im Optionen-Bildschirm.
+scrMovesRoom=Züge (dieser Raum): %%
+scrMovesLevel=Züge (ganzer Level): %%
+scrDeaths=Tode (Level): %%
+scrKills=Erlegte Monster (Level): %%
+scrTime=Zeit (Level): %%
+scrNoScores=Noch keine Ergebnisse für diesen Raum.
+scrCnetProblems=Die  CaravelNet-Funktionen sind wegen Verbindungsproblemen  deaktiviert.////Stellen Sie sicher, dass Ihre Internetverbindung  funktioniert und dass Sie gültige CaravelNet-Benutzerangaben eingetragen  haben. Öffnen Sie danach den Optionen-Bildschirm und klicken Sie  "Verbinden!"
+# Login Window
+loginConnected=\tSie sind jetzt als registrierter Benutzer mit CaravelNet verbunden!////
+       \tWenn Sie ein Forenkonto erstellt, aber kein CaravelNet-Abo gekauft  haben, werden Ihre Ergebnisse zwei Wochen nach dem Hochladen wieder vom  Server gelöscht.////
+      \tDie Ergebnisse von CaravelNet-Abonnenten bleiben permanent gespeichert.
+loginConnectedAnonymous=\tSie  sind jetzt als anonymer Benutzer mit CaravelNet verbunden. So können  Sie Ihre Ergebnisse mit der aktuellen Rangliste vergleichen und sehen,  wo Sie stehen würden. Ihr Ergebnis wird aber nicht auf dem Server  gespeichert. Damit Ihre Ergebnisse gespeichert werden, brauchen Sie ein  CaravelGames-Konto (zugänglich über den Optionen-Bildschirm).///
+       \tWenn Sie später ein Konto erstellen, können Sie mit dem "Alle  Ergebnisse hochladen"-Schalter Ihren bisherigen Fortschritt an unsere  Server übertragen.
+loginFailed=\tVerbindungsfehler!////
+    1. Überprüfen Sie, ob Ihre Internetverbindung funktioniert.///
+    2. Stellen Sie sicher, dass Ihre Firewall die Verbindung für dieses Spiel nicht blockiert.///
+    3. Laden Sie http://forum.caravelgames.com um zu sehen, ob unser Server überhaupt antwortet. Wenn nicht, warten Sie einige Minuten und versuchen Sie's noch einmal.\n
+loginFailedBadCredentials=4. Überprüfen Sie, ob Ihre Benutzerangaben richtig eingegeben sind.
+loginFailedMissingCrentials=4.  Vergewissern Sie sich, dass Sie einen gültigen Benutzernamen und  CaravelNet-Schlüssel eingegeben haben.
+# Pause window
+pauseHeader=DROD macht Pause.
+pauseContinue=Weiterspielen
+pauseContinueTip=Weiterspielen.///
+    (Escape, Eingabe)
+pauseRestart=Raum von vorne beginnen
+pauseRestartTip=Startet den aktuellen Raum neu.///
+    (Im Spiel: F5).
+pauseRoomHelp=Nach Hilfe für diesen Raum suchen
+pauseRoomHelpTip=Holen Sie sich Online-Hilfe für den Raum, den Sie gerade spielen.///
+    (Im Spiel: F2)
+pauseHelp=Allgemeine Hilfe
+pauseHelpTip=Öffnet das Fenster zur Allgemeinen Hilfe.///
+    (Im Spiel: F1)
+pauseAchievements=Errungenschaften ansehen
+pauseAchievementsTip=Zeigt eine Liste aller Errungenschaften an.///
+    (Im Spiel: Tab)
+pauseOptions=Optionen
+pauseOptionsTip=Einstellungen ändern///
+    (Im Spiel: ??????)
+pauseReturn=Zurück zum Titelmenü
+pauseReturnTip=Der Spielfortschritt wird gespeichert,///
+    aber der Stand im aktuellen Raum geht///
+    verloren, wenn Sie das Spiel verlassen.
+# Misc
+achHidden=???
+levelCreatedDate=Fertiggestellt am %%.%%.%%
+# Scored Places
+score1NoTie=Erster Rang!!
+score1=Rang 1
+score2=Rang 2
+score3=Rang 3
+score4=Rang 4
+score5=Rang 5
+score6=Rang 6
+score7=Rang 7
+score8=Rang 8
+score9=Rang 9
+score10=Rang 10
+score11=Rang 11
+score12=Rang 12
+score13=Rang 13
+score14=Rang 14
+score15=Rang 15
+score16=Rang 16
+score17=Rang 17
+score18=Rang 18
+score19=Rang 19
+score20=Rang 20
+score21=Rang 21
+score22=Rang 22
+score23=Rang 23
+score24=Rang 24
+score25=Rang 25
+scoreTie=%% Gleichstand!
+scoreNoCnet=(anonym)
+# Game Stats
+resultHoldTotals=Gesamtergebnis Feste:\n
+resultLevelTotals=Gesamtergebnis Level:\n
+resultMoves=Züge: %%\n
+resultKills=Erlegte Monster: %%\n
+resultDeaths=Tode: %%\n
+resultTime=Zeit: %%\n
+resultSecrets=Gefundene Geheimräume: %%\n
+resultSecretsBetter=Gefundene Geheimräume: %% von %%\n
+# Scroll Clock
+spawnCycle=Eiablage-Zyklus:
+snakesPrefer=Schlangen-Streben:
+clcHo=HO
+clcRiz=RIZ
+clcOn=ON
+clcTal=TAL
+clcVe=VE
+clcRt=RT
+clcIc=IK
+clcAl=AL
+# Tiles list
+tile1=Boden
+tile2=Grube
+tile3=Treppe abwärts
+tile4=Wand
+tile5=Rissige Wand
+tile6=Level-gelöst-Tor
+tile7=Raum-gelöst-Tor
+tile8=Falltüren-Tor
+tile9=Gelbe Tür
+tile10=Gelbe Tür (geöffnet)
+tile11=Falltür
+tile12=Hindernis
+tile13=Richtungspfeil (Nord)
+tile14=Richtungspfeil (Nordost)
+tile15=Richtungspfeil (Ost)
+tile16=Richtungspfeil (Südost)
+tile17=Richtungspfeil (Süd)
+tile18=Richtungspfeil (Südwest)
+tile19=Richtungspfeil (West)
+tile20=Richtungspfeil (Nordwest)
+tile21=Unsichtbarkeitstrank
+tile22=Imitattrank
+tile23=Schriftrolle
+tile24=Schaltkugel
+tile35=Teer
+tile37=Zähstoff-Tor
+tile54=Mosaik
+tile55=Strasse
+tile56=Gras
+tile57=Erde
+tile58=Fussboden
+tile59=Meistermauer
+tile61=Treppe aufwärts
+tile62=Geheimgang-Wand
+tile66=Wand
+tile68=Raum-gelöst-Tor (geöffnet)
+tile69=Level-gelöst-Tor (geöffnet)
+tile70=Falltüren-Tor (geöffnet)
+tile71=Zähstoff-Tor (geöffnet)
+tileCheckpoint=Rücksetzpunkt
+# Monsters list
+monsterPlayer=Spieler
+monster0=Schabe
+monster1=Schabenkönigin
+monster2=Schabenei
+monster3=Goblin
+monster5=Fledergeist
+monster6=Stierauge
+monster7=Panzerschlange
+monster8=Teermutter
+monster9=Teerbaby
+monster10=Hirn
+monster11=Imitat
+monster12=Spinne
+monster29=Figur
+sword=Schwert
+swords=Schwerter (%%)
+# Room position
+roomS=S
+roomSouth=Süd
+roomN=N
+roomNorth=Nord
+roomE=O
+roomEast=Ost
+roomW=W
+roomWest=West
+roomEntrance=Der Eingang
+room1=Einmal
+room2=Zweimal
+room3=Dreimal
+room4=Viermal
+room5=Fünfmal
+room6=Sechsmal
+room7=Siebenmal
+room8=Achtmal
+room9=Neunmal
+room10=Zehnmal
+room11=Elfmal
+room12=Zwölfmal
+room13=Dreizehnmal
+room14=Vierzehnmal
+room15=Fünfzehnmal
+room16=Sechszehnmal
+room17=Siebzehnmal
+room18=Achtzehnmal
+room19=Neunzehnmal
+roomMore=%%-mal
+# Game completion
+complButtNextGame=Nächste Level-Sammlung
+complButtLearnMore=Weitere Informationen
+complButtContinue=Weiterspielen
+complHeader=Was nun?
+complLearnMore=Erfahren Sie mehr über die DROD-Reihe - die Welt und die Spiele: Journey to Rooted Hold, The City Beneath, Gunthro and the Epic Blunder, und die neuesten Teile der Reihe!
+complContinue=Spielen  Sie weiter, um diese Feste zu meistern - finden Sie die Geheimräume,  und verschaffen Sie sich Zugang zu der Meisterzone. Sie finden Links zu  diesen zwei Möglichkeiten auch im Titelmenü.
+
+rstFarthest=Fortgeschrittensten Speicherstand wählen
+rstHelpTooltip=Klicken Sie für eine Kurzeinführung zum Laden von Spielständen
+rstHelp=Spielstände laden geht wie in Ihrem Lieblings-Videospiel. In DROD können Sie allerdings nicht //
+    an beliebigen Stellen speichern, aber das Spiel speichert automatisch, wenn Sie einen uneroberten Raum betreten.////
+    Um einen früheren Spielstand wiederherzustellen, wählen Sie erst einen Level aus der Liste links, dann wählen Sie den gewünschten Raum in der Karte unten.//
+    Auf der Karte werden jene Räume grau dargestellt, welche Sie in dem Speicherstand noch nicht besucht hatten. Jene mit weissem Hintergrund sind erobert, //
+    jene mit rotem Hintergrund noch nicht.////
+    Sie können später Ihren Spielstand mit den meisten eroberten Räumen laden, indem Sie "Fortgeschrittensten Spielstand laden" wählen.////
+    Diese Laden-Funktion ist vor Allem dazu da, zu einem bestimmten Raum zurückzuspringen um Ihr Spielresultat zu verbessern, den Raum nach Geheimnissen abzusuchen, oder um ihn einfach aus Freude noch einmal durchzuspielen.
+rstWarning=Sie haben einen älteren Spielstand geladen - manche Räume wurden dadurch auf "nicht erobert" zurückgesetzt.////
+    Sie können immer zu Ihrem Speicherstand mit den meisten eroberten Räumen zurückkehren, indem Sie "Fortgeschrittensten Spielstand laden" klicken.
+    
+optDelayText=Verzögerung für Tastenwiederholung:
+optDelayShort=kurz
+optDelayLong=lang
+optGetPass=CNet-Schlüssel anfordern
+optGetPassTooltip=Spieler mit einem Benutzerkonto im Caravel Games-Forum können einen CaravelNet-Schlüssel anfordern und damit///
+    ihre Resultate zu einer Online-Bestenliste schicken. Solche Resultate werden nach zwei Wochen gelöscht.////
+    Die Resultate von Spielern mit bezahltem Abo bleiben ewig gespeichert, auch wenn das Abo ausläuft.
+    
+optDelayTooltip=Verzögerung beim Tasten-Gedrückthalten, bis die //
+     Aktion wiederholt wird
+optRateTooltip=Glättung für Bewegungen und Wiederholungsrate,//
+    wenn eine Taste gedrückt bleibt
+    
+achAddInfo=Grau aber nicht halbtransparent dargestellte Errungenschaften sind "aktiv". Das bedeutet, dass Sie sie im gegenwärtigen Raum//
+    erreichen oder darauf hinarbeiten können (das gilt allerdings nicht immer: lesen Sie die Errungenschafts-Beschreibungen genau).//
+    Beachten Sie, dass gewisse Errungenschaften in allen oder fast allen Räumen aktiv sind.
+ 
+pauseRestore=Spielstand eines anderen Raumes laden
+cnetDescriptionKong=Wegen der Regeln bei Kongregate ist diese Funktion leider deaktiviert - Sie können Ihre Resultate nicht //
+    an die Online-Bestenliste senden. Wenn Sie das möchten, spielen Sie doch Flash DROD einfach auf caravelgames.com!
+
+defCont=Standard-Tastenbelegung:

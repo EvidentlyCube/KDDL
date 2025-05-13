@@ -1,0 +1,210 @@
+# src/../src.assets/i18n/de.kdd3.txt
+# Level Names
+Ninth Level=Neunter Level
+Tenth Level=Zehnter Level
+Eleventh Level=Elfter Level
+Twelfth Level=Zwölfter Level
+Mastery Level=Meister-Level
+Tutorial=Übungsbereich
+# Level Entrances
+entr9=Beethro Budkin, professioneller Kerkerjäger der fünften Generation, wurde von König Dugan angestellt um den königlichen weitläufigen Kerker von einem erheblichen Monsterbefall zu befreien.///
+     Beethro veranschlagt einen Festbetrag pro Raum, und als Profi ist er per Vertrag daran gebunden, die Monster aus ausnahmslos jedem Raum des Kerkers zu beseitigen, bevor er ausbezahlt wird.///
+    Die einzige Waffe, die Beethro benötigt um seine Aufgabe zu erfüllen, ist ein echt großes Schwert, welches jedes Monster mit einem einzigen Schlag vernichtet.////
+    -----////
+     Beethro setzte sich unten auf die Stufen, um zu verschnaufen. Er zog drei Flaschen aus seinem Rucksack. Die Zehn-Tassen-Flasche war randvoll mit erfrischendem Blattsaft gefüllt, und die anderen zwei Flaschen, welche Zwei-Tassen- und Fünf-Tassen-Maße hatten, waren leer. Beethro wollte exakt vier Tassen Blattsaft in einem ununterbrochenen Schluck trinken. Er fing an, mit den Flaschen herumzuhantieren, goss Saft von einer in die andere und wieder zurück, doch nach einer Weile gab er auf.  „Das ist zu viel Arbeit! Ich lass' es sein!“
+entr10=Wie viele erfahrene Kerkerjäger wissen, verweilen hier unten einige Tierchen die in der Lage sind, sich der Umgebung optisch anzugleichen.
+entr11=Beim Erhaschen eines flüchtigen Blicks in den vor ihm liegenden Raum grunzte Beethro vor Missbilligung. „Ich weiß nicht wie, aber der Teer bleibt immer auf diese Weise übrig, und ich hasse es.“
+entr12=Beethro hörte erneut lautes Zischen von unten und wusste, dass er Panzerschlangen zu erwarten hatte. Aber dieses Mal war der Ton leicht anders, und er hielt für einen Moment inne um zu horchen und zu beurteilen, was vor ihm lag. „Du meine Güte! Diese Schuppenwürste müssen sich hier unten eine elendig schrecklich lange Zeit aufgehalten haben, mit einigen fetten Speisen zwischendurch.“
+entr12Back=Beethro kam zurück, um jene einwandfreie Totschlag-Arbeit abzuliefern, für die er engagiert wurde.
+entrMaster=Beethro stieg die Stufen hinab, einzig dafür um einen nicht verzeichneten Verbindungsgang vorzufinden...////
+    Er würde nicht für die Säuberung hier bezahlt werden, aber seine Berufsehre drängte ihn vorwärts.
+entrTutorial=Übungsbereich
+entrTutorialLeft=Beethro verließ den Übungsbereich, reich an neuem Wissen.
+# Scrolls
+sc93n3e=Seid Ihr Euch sicher, dass Ihr sie Euch in der richtigen Reihenfolge vornehmt?
+sc94n3e=Die Reihenfolge ist der Schlüssel.
+sc10e=Unsichtbar üble Spinnen lauern auf dieser Ebene. Nehmt Euch in Acht, denn sie sind kaum zu sehen.
+sc111s2e=Psst... Dieser Durchgang bringt Euch zur Treppe. Ihr solltet alle anderen Räume säubern bevor Ihr dort hingeht!
+sc121n1e1=Wenn sich eine Schlange nach Westen bewegt und sie lieber horizontal geht, betreten Sie das Feld östlich ihres Kopfes um sie dazu zu zwingen, sich nach Norden zu bewegen.
+sc121n1e2=Das klappt auch vertikal, aber die Schlange bevorzugt dann Ostwärts- bewegungen.
+sc12e=Ihr Zähler gibt an, welche Richtung Schlangen bevorzugen. Dies hilft Ihnen, diese launischen Kreaturen zu kontrollieren.
+scMe1=Andere Rätsel
+scMe2=Letzte Worte
+scM1s1=Hierher zu gelangen ist eine sagenhafte Leistung!
+scM1s2=Na wie hat es Ihnen gefallen? Konnten Sie alle Errungenschaften einsacken?
+scM1s3=Besuchen Sie auch gerne CaravelGames.com um weitere Episoden von KDDL spielen zu können oder die vollwertigen DROD-Spiele für Windows, MacOS oder Linux herunterzuladen.
+scM1s4=Bleiben Sie spielfreudig!
+scM1s5=Hier ist eine kleine Belohnung! Töten Sie alle Augen ohne auf das Gras zu treten.
+scM1s6=Die Schabenköniginnen werden getötet, sobald Sie auf den Rücksetzpunkt in der ganz rechten Ecke treten.
+scM1s7=Wirklich gut, gratuliere!
+scT1=Wussten Sie, dass sich Panzerschlangen nicht über Schriftrollen bewegen können?
+scT2=Bewegen Sie sich ganz nach rechts und beachten Sie, wie sich die Schabe verhält, wenn sie diagonal auf eine Ecke läuft.
+scT3=Schlangen bewegen sich nach ihren eigenen, komplexeren Regeln. Ihre gegenwärtige Präferenzrichtung ist unterhalb des Eiablage-Zählers angegeben.
+scT4=Wenn sich ein Monster diagonal in ein Eckhindernis bewegt, gleitet es mit Vorliebe vertikal am Hindernis vorbei, wenn dies möglich ist.
+scT5=`Escape` öffnet ein Pausenmenü, in dem Sie unter dem Punkt `Allgemeine Hilfe` jederzeit die Steuerung nachschlagen können.
+scT6=Um zu verhindern, dass Sie versehentlich den Raum verlassen, drücken Sie X um ihn zu ver- und entriegeln. Ein kleines Schloss auf der Übersichtskarte zeigt an, ob ein Raum verriegelt ist.
+scT7=Umschalt+Tasten-druck führt die Aktion der Taste und dessen Umkehraktion aus.///
+    Umschalt+Warten wartet bis zur nächsten Eiablage.///
+    ZB '+' oder '=' führt die Umkeh-rung Ihres vor-herigen Zugs aus.
+scT8=F3 zeigt einen Bewegungszähler an, der Ihnen dabei hilft, die Spielzüge für bessere Ergebnisse zu optimieren.
+scT9=Alle Tastenbelegungen können in den Spieloptionen geändert werden.
+scT10=Wenn Sie kein CaravelNet-Abo besitzen, werden Ihre Ergebnisse nicht in der Rangliste veröffentlicht, aber Sie erfahren, welchen Platz Sie erlangt hätten.
+scT11=Klicken Sie auf Elemente um zu erfahren, was Schaltkugeln verändern und was Stieraugen sehen.
+scT12=Die Leertaste entfernt alle Sprachabschnitte und eingeblendeten Errungenschaften vom Bildschirm.
+scT13=Anders als eine Schabe hält ein Fledergeist Abstand von Beethro und versucht, fünf Schritte von ihm entfernt zu bleiben.
+scT14=Zu mehreren sind sie allerdings nicht so scheu, und sie greifen sofort an, wenn sie ihr Opfer umzingelt haben.
+sc1_6n3w1=Verwenden Sie den Durchgangshieb, um diese Schabe zu besiegen.
+sc1_6n3w2=Stellen Sie sich auf den grünen Boden und stellen Sie sicher, dass sich die Schabe auf dem Sandfeld direkt nördlich von Ihnen befindet...
+sc1_6n3w3=Stellen Sie sich auf den grünen Boden und stellen Sie sicher, dass sich die Schabe auf dem Sandfeld direkt südlich von Ihnen befindet...
+sc1_6n3w4=...dann bewegen Sie sich nach Nordosten um sie zu töten.
+sc1_6n3w5=...dann bewegen Sie sich nach Südosten um sie zu töten.
+sc1_6n3w6=Wiederholen Sie die Prozedur, um den Durchgangshieb zu analysieren. Meistern Sie diese Technik, denn sie wird sich bei Ihrem weiteren Unterfangen als unverzichtbar herausstellen.
+# Speeches
+sp9e1=Dies ist ein Übungsbereich.
+sp9e2=Besuchen Sie ihn, wenn Sie dieses Spiel noch nicht kennen.
+sp9e3=Bewegen Sie sich mit dem Ziffernblock oder 789, UIO, JKL
+sp9e4=Du heiße Grillschabe! Endlich kein Teer mehr!
+sp91n1e=Das war einfach nur scheußlich. Vielleicht ist Teer gar nicht so übel ...
+sp94n4e1=Ah-ha! Um Beethro reinzulegen, müsst ihr schon früher aufstehen!
+sp94n4e2=Das finde ich jetzt nicht lustig.
+sp93n=Hrm. Seltsame Tür, das. Da kann ich gar nicht durch.
+sp92n2e=Eine unpassierbare Tür. Was da wohl auf der anderen Seite liegt?
+sp11e1=Und ich hasse es wirklich, wenn mir der Teer über den Kopf wächst ... da kann einem ja angst und bange werden.
+sp11e2=Gah! Der Teer hat die Wände überwachsen!
+sp11n1w=Hmm...es könnte schlechter laufen...wäre etwa eine Teermutter hier drin...
+sp11n2w1=Da habe ich mich wohl zu früh gefreut.
+sp11n2w2=Sieht aus, als sei hier noch etwas anders in diesem Raum...
+sp12e1=Sachte, Beethro, sachte ...
+sp12e2=Pfuh!
+sp12e3=Das gibt ein Paar tolle Steaks.
+sp121s2e1=Galoppierende Großgoblins!
+sp121s2e2=Seh sich einer die lange Schlange an!
+spM1s=Ihr habt Versagt ...
+spT2=Schwingen Sie Ihr Schwert mit `Q` und `W`.
+spT3=Gehen Sie jetzt und hauen Sie die Schaltkugel mit dem Schwert.
+spT4=Schaltkugeln können die verbundenen Türen auf drei Arten beeinflussen: sie immer öffnen, sie immer schließen, oder hin- und her schalten.
+spT5=Klicken Sie mit der Maus auf eine Schaltkugel, um zu sehen, welche Türen sie beeinflusst, und wie.
+spT6=Ihr Ziel in DROD ist es, jede Ebene von allen Monstern zu befreien.
+spT7=Hauen Sie die Schabe mit dem Schwert, um sie zu töten.
+spT8=Richtungspfeile versperren den Weg in die entgegengesetzte Richtung.
+spT9=Treten Sie auf den Rücksetzpunkt. Wenn Sie sterben oder mit der Taste `R` neu starten, kehren Sie zu dem Spielzug zurück, als Sie darauftraten.
+spT10=Wenn Sie sterben oder in der Klemme sitzen, können sie mit der Rücktaste bis zu drei Züge zurücknehmen.
+spT11=Mit diesem Trank können Sie ein Imitat einsetzen. Imitate ahmen jeden Ihrer Züge nach. Sie bewegen sich sofort nach Ihnen, vor allen Monstern.
+spT12=Setzen Sie das Imitat auf die Stelle, die mit dem Rücksetzpunkt markiert ist. Lösen Sie mit dem Imitat alle Falltüren aus, und das rote Tor wird sich öffnen.
+spT13=Panzerschlangen können Sie mit Ihrem Schwert nicht verletzen. Sie schrumpfen sich aber zu Tode, wenn sie in einer Sackgasse feststecken.
+spT14=Entfernen Sie den ganzen blauen Teer, um das Stierauge zuoberst zu erreichen.
+spT15=Beachten Sie, dass Sie den Teer nur an den flachen Seiten einschneiden können. Jedes Feld Teer, welches nicht mehr stabil ist, verwandelt sich in ein Teerbaby.
+spT16=Ein Feld mit Teer ist dann stabil, wenn es zu einem Quadrat von vier benachbarten Teer-Feldern gehört.
+spT17=Gratuliere, Sie haben den Raum gelöst!
+spT18=Wenn Sie den Raum verlassen, wird Ihr Erfolg gespeichert. Sie werden Ihr bestes Resultat für diesen Raum sehen, und auch wie es im Vergleich mit anderen Spielern auf der Rangliste dasteht.
+spT19=Wenn Sie gültige Benutzerangaben für ein Caravel-Forenkonto angegeben haben, fliesst auch Ihre Bestleistung in die Rangliste ein.
+spT20=Ihr Ergebnis bleibt zwei Wochen auf der Rangliste, außer, wenn Sie ein zahlender CaravelNet-Abonnent sind. In jenem Fall bleiben Ihre Ergebnisse permanent gespeichert.
+spT21=Sie können den Einführungsraum jetzt verlassen.
+# Achievements
+achName0=Läuft wie'n Uhrwerk
+achName1=Uhrt wie'n Laufwerk
+achName2=Verhedderte Hände
+achName3=Verschränkte Arme
+achName4=Verklebtes Schwert
+achName5=Einsamer Streiter
+achName6=Raffiniert
+achName7=Teer-Techniker
+achName8=Herr der Schlangen
+achName9=Solo für Schlangen-Beschwörer
+achName10=Geräuschloser Jäger
+achName11=Der Ninja
+achName12=Muttermord
+achName13=Amateur-Absteiger
+achName14=Totschläger-Geselle
+achName15=Kammerjäger auf Abruf
+achName16=Ich bin vom Fach!
+achName17=Meisterschaft
+achName18=Über-Meisterschaft
+achName19=Geröstete Schaben
+achName20=Königinpasteten
+achName21=Flambierte Eier
+achName22=Augensenf
+achName23=Fledergeist-Filet
+achName24=Panzer-schlangen-Rollen
+achName25=Stimmgabel
+achName26=Absteigendes Grün
+achName27=Kontrollierte Meute
+achName28=Wieder-belebungs-Künstler
+achName29=Herr der Zeit
+achName30=Bewahrer des Raums
+achName31=Endloser Läufer
+achDesc0=4N 3O im neunten Level gelöst, ohne einen der markierten Bereiche mehr als einmal zu betreten
+achDesc1=3N 3O im neunten Level gelöst, ohne einen der markierten Bereiche mehr als einmal zu betreten
+achDesc2=1N 1O im zehnten Level gelöst, ohne das Schwert zu schwingen
+achDesc3=Das Schwert in 1O im zehnten Level nicht geschwungen
+achDesc4=Beim Lösen von 1S 1W im zehnten Level das Schwert nicht geschwungen
+achDesc5=1S im zehnten Level gelöst, ohne den Imitattrank zu trinken
+achDesc6=1S 2O im elften Level in weniger als 150 Zügen gelöst
+achDesc7=Einen beliebigen Raum im elften Level völlig von Teer befreit
+achDesc8=1S 2O im zwölften Level gelöst, ohne sich diagonal zu bewegen
+achDesc9=2S 1O im zwölften Level gelöst, ohne den Imitattrank zu trinken
+achDesc10=Exakt ein Auge beim Lösen vom zwölften Level 1S aufgeweckt
+achDesc11=Einen Raum mit Stieraugen gelöst, ohne ein einziges von ihnen aufzuwecken
+achDesc12=Eine Schabenkönigin getötet, während ihre Eier heranwachsen
+achDesc13=Den neunten Level gelöst
+achDesc14=Den zehnten Level gelöst
+achDesc15=Den elften Level gelöst
+achDesc16=Den zwölften Level gelöst
+achDesc17=Die Feste gemeistert
+achDesc18=Die Feste übermeistert
+achDesc19=35 Schaben erschlagen
+achDesc20=20 Schabenköniginnen erlegt
+achDesc21=15 Schabeneier erledigt
+achDesc22=15 Stieraugen zerhackt
+achDesc23=5 Fledergeister bezwungen
+achDesc24=10 Panzerschlangen totgetrieben
+achDesc25=Eine Schaltkugel drei aufeinanderfolgende Züge lang gehauen
+achDesc26=10 grüne Tore geöffnet
+achDesc27=Insgesamt 2500 Monster getötet
+achDesc28=Insgesamt 100 Mal gestorben
+achDesc29=Insgesamt 450 Züge zurückgenommen
+achDesc30=Insgesamt 200 Falltüren ausgelöst
+achDesc31=Insgesamt 8000 Schritte gegangen
+# Game completion
+outro=Wenn er nur eine Karte von Dugans Kerker hätte, wüsste Beethro, dass was sich im dreizehnten Stockwerk befindet selbst die stärksten Krieger besiegen kann. Aber zumindest wird es dort keinen Teer oder Panzerschlangen geben...////
+    ///
+    <font size="32" color="#FFFF00">Glückwünsche!</font>////
+     Sie haben die dritte Episode der Feste Deadly Rooms of Death, King Dugan's Dungeon Lite abgeschlossen. Ich hoffe aufrichtig, dass Sie die Erfahrung unterhaltsam fanden.///
+     Jetzt, da Sie die letzte Treppe in dieser Levelsammlung hinabgestiegen sind, wollen Sie vielleicht versuchen, dieses Spiel zu meistern oder gar zu übermeistern. Wenn Sie das möchten, dann suchen Sie nach geheimen Räumen! Ab jetzt können Sie im "Anderen Raum laden"-Menü für jeden Level nachsehen, wie viele Geheimräume noch zu finden bleiben.///
+    Wenn Sie auch diese Räume alle gelöst haben, erhalten Sie Zugang zu einem speziellen Bereich nur für Meister-Kammerjäger. Finden Sie den Eingang?///
+    Vielleicht wollen Sie aber auch mit dem nächsten Abschnitt von König Dugans Kerker fortfahren.///
+    ///
+     Bevor ich Sie nun der wohligen Wärme des Erfolgs überlasse, möchte ich einigen Leuten danken, ohne die dieses Spiel niemals fertig geworden wäre:///
+    ///
+    <font size="26" color="#FFFF00">Erik Hermansen</font> - Der Erschaffer, geistige Vater und Erfinder von DROD. Ohne ihn wäre dieses einzigartige Spielprinzip wohl nie erfunden worden.////
+    <font size="26" color="#FFFF00">Mike Rimer</font> - Er hat die Spiele DROD: JtRH und DROD: TCB beinahe im Alleingang programmiert. Dank seiner soliden Arbeit war die Umsetzung von DROD in Flash für mich ein reines Vergnügen.////
+    <font size="26" color="#FFFF00">Matt Schikore</font> - Der Große Anführer des Caravel-Forums und Hauptentwickler von CaravelNet. Dank ihm können Sie Ihre Ergebnisse online mit anderen vergleichen, und vieles mehr!////
+    ///
+    <font size="23" color="#FFFF00">Programmierung und Entwicklung</font> - %%////
+    <font size="23" color="#FFFF00">Grafik und Musik</font> - %%////
+    <font size="23" color="#FFFF00">Serverprogrammierung</font> - %%////
+    <font size="23" color="#FFFF00">Leveldesign</font> - %%////
+    <font size="23" color="#FFFF00">Haupttester</font> - %%////
+    <font size="23" color="#FFFF00">Tester</font> - %%////
+    <font size="23" color="#FFFF00">Übersetzungen</font> - %%////
+    <font size="23" color="#FFFF00">Stimmen</font> - %%////
+    <font size="23" color="#FFFF00">Konzept, Original-Programm und -Levels</font> - %%///
+    ////
+    Bis zum nächsten Mal!////
+    <font size="18" color="#AAAAAA">-Maurycy</font>
+complNextGame=Spielen Sie die nächste Levelsammlung: KDD Lite 4. Ein neues Fenster wird sich dafür öffnen. Dieses Fenster hier können Sie unbesorgt schließen, Ihr Fortschritt wurde gespeichert.
+
+
+# Tutorial crap
+defCont=Standard-Tastenbelegung:
+sc_diago=Sie können sich diagonal bewegen, auch durch sehr enge Gänge.
+sc_broken=Zerschlagen Sie diese gerissenen und geheimen Mauern mit Ihrem Schwert.
+sc_queens1=Schabenköniginnen legen alle 30 Züge Eier (im Zug, nachdem der Zugzähler rot wird).
+sc_queens2=Eier reifen über fünf Züge zu ausgewachsenen Schaben heran.
+sc_queens3=Auf Pfeilen, Falltüren und gelben Toren erscheinen keine Eier. Mit der Taste "I" oder der 5 im Ziffernblock warten Sie einen Zug.
+sc_mimics=Wenn Sie auf einen Imitat-Trank treten, wählen Sie mit der Maus oder der Warten-Taste den Ort, wo das Imitat erscheinen soll.
+sc_shiftwait=Mit Umschalt-Warten können Sie automatisch bis zur nächsten Eiablage warten.
+sp_mother1=Alle dreissig Züge lassen Teermütter ihren Teerfleck um ein Feld in jeder Richtung wachsen.
+sp_mother2=Es ist eigentlich ungefährlich, vom wachsenden Teer eingeschlossen zu werden, aber Vorsicht vor beim Wachsen entstehenden Teerbabies.
+sc_backswipe=Folgen Sie dem Sandpfad, um die Durchgangshieb-Technik zu lernen! Nutzen Sie diagonale Bewegungen, und schwingen Sie Ihr Schwert nicht.
+sc_trapdoors=Diese rosa-violetten Felder sind Falltüren. Sie fallen in die Tiefe, sobald Sie oder ein Imitat davon hinabtreten.

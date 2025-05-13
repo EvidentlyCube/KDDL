@@ -1,0 +1,5 @@
+Copyright Caravel Games
+Permission granted to include those assets in this repository and forks for the purpose of archiving full source code of the project
+
+Permission received from Mike Rimer via email on December 9, 2024
+

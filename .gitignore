@@ -1,0 +1,12 @@
+dist.web
+node_modules
+.idea
+.history
+TransNeuronica.iml
+*.wav
+src/../src.assets/sheets
+src/../src.assets/__sheet_ingame_tmp
+bin/
+dist/
+dist*/
+*.swf

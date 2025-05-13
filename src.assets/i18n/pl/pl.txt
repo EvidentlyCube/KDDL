@@ -1,0 +1,598 @@
+# Welcome!
+# Lines starting with # are comments
+# Translation works in such way: [identificationName]=[translation]
+# DO NOT modify the parts before "="
+# ///
+ is replaced by a new-line, \t is replaced by two spaces
+# // at the end of the line allows you to continue the same line in the next:
+#
+# longText=Hello, this is a//
+#   long line.
+# will become:
+# Hello, this is a long line.
+# (notice that space was inserted after a, and the spaces before "long" were trimmed)
+#
+# /// does the same but inserts a line feed (so /// = ///
+ //)
+# //// doest the same but inserts two line feeds (so //// = ///
+ /// = ////
+ //)
+#
+# Sometimes you will encounter %%. This is a token which is replaced by something, for example number:
+# score=You have scored %% points
+# will become
+# You have scored 1000 points
+#
+# You can freely move the %% around in the line
+#
+# If you have any questions just look around to see how everything looks already in the code
+
+# GLOBAL STUFF/LISTS
+
+# Keys
+
+keyBackspace=Backspace
+keyTab=Tabulacja
+keyEnter=Enter
+keyShift=Shift
+keyControl=Control
+keyAlt=Alt
+keyPause=Pause/Brk
+keyCapsLock=Caps Lock
+keyEscape=Escape
+"key "=Spacja
+keyPageUp=Page Up
+keyPageDown=Page Down
+keyEnd=End
+keyHome=Home
+keyArrowLeft=Lewo
+keyArrowUp=Góra
+keyArrowRight=Prawo
+keyArrowDown=Dół
+keyInsert=Insert
+keyDelete=Delete
+key0=0
+key1=1
+key2=2
+key3=3
+key4=4
+key5=5
+key6=6
+key7=7
+key8=8
+key9=9
+keya=A
+keyb=B
+keyc=C
+keyd=D
+keye=E
+keyf=F
+keyg=G
+keyh=H
+keyi=I
+keyj=J
+keyk=K
+keyl=L
+keym=M
+keyn=N
+keyo=O
+keyp=P
+keyq=Q
+keyr=R
+keys=S
+keyt=T
+keyu=U
+keyv=V
+keyw=W
+keyx=X
+keyy=Y
+keyz=Z
+key91=L.Win/Cmd
+key92=P.Win
+key93=Menu
+keyNumpad0=Numeryczne 0
+keyNumpad1=Numeryczna 1
+keyNumpad2=Numeryczna 2
+keyNumpad3=Numeryczna 3
+keyNumpad4=Numeryczna 4
+keyNumpad5=Numeryczna 5
+keyNumpad6=Numeryczna 6
+keyNumpad7=Numeryczna 7
+keyNumpad8=Numeryczna 8
+keyNumpad9=Numeryczna 9
+keyNumpadMul=Numeryczna *
+keyNumpadAdd=Numeryczny +
+keyNumpadSub=Numeryczny -
+keyNumpadDot=Numeryczna .
+keyNumpadDiv=Numeryczny /
+keyF1=F1
+keyF2=F2
+keyF3=F3
+keyF4=F4
+keyF5=F5
+keyF6=F6
+keyF7=F7
+keyF8=F8
+keyF9=F9
+keyF10=F10
+keyF11=F11
+keyF12=F12
+keyF13=F13
+keyF14=F14
+keyF15=F15
+key144=Numlock
+key145=Scroll Lock
+key;=;
+"key="==
+key,=,
+key-=-
+key.=.
+key/=/
+key~=~
+key[=[
+key\=\
+key]=]
+key'='
+
+numpad=Numeryczna
+notebook=Laptop
+
+# Key names
+
+keyUp=Ruch N
+keyUpLeft=Ruch NW
+keyUpRight=Ruch NE
+keyLeft=Ruch W
+keyRight=Ruch E
+keyDown=Ruch S
+keyDownLeft=Ruch SW
+keyDownRight=Ruch SE
+keyWait=Czekaj
+keyCW=Obrót w Prawo
+keyCCW=Obrót w Lewo
+keyUndo=Cofnij Ruch
+keyRestart=Powtórz Pomieszczenie
+keyBattle=Klawisz Walki
+keyLock=Blokowanie Pomieszczenia
+
+# Global buttons
+close=Zamknij
+
+# Global messages
+cnetError=Nieudane połączenie.///
+ Błąd może być spowodowany niewłaściwymi danymi do logowania, niedziałającym łączem internetowym lub tymczasowymi problemami serwera. Opcje CaravelNet zostały wyłączone. By je przywrócić, przejdź do ekranu opcji. Jeżeli trzeba wpisz dane do logowania i kliknij przycisk "Połącz!"
+
+
+# Preloader
+prlStartGame=Zacznij Grę
+prlLanguage=Zmień Język
+prlLoading=Wczytywanie... %% / %%
+prlWaitApi=Czekanie na połączenie z API...
+
+# Initialize screen
+initAssets=Wczytywanie i inicjalizowanie zasobów %% / %%
+
+# Title Screen and submenus
+
+tsStartNew=Zacznij Nową Grę
+tsStartNewKey=N
+tsStartNewKeyCode=78
+tsContinue=Kontynuuj Grę
+tsContinueKey=K
+tsContinueKeyCode=75
+tsRestore=Przywróć do Wcześniejszego Stanu
+tsRestoreKey=P
+tsRestoreKeyCode=80
+tsAchievements=Wyświetl Osiągnięcia
+tsAchievementsKey=W
+tsAchievementsKeyCode=87
+tsOptions=Opcje
+tsOptionsKey=O
+tsOptionsKeyCode=79
+tsHelp=Pomoc i Fabuła
+tsHelpKey=F
+tsHelpKeyCode=70
+tsBrowse=Przeglądaj Holdy
+tsBrowseKey=H
+tsBrowseKeyCode=72
+
+# Options
+optHeader=Opcje:
+optUploadAll=Wyślij Wszystkie Wyniki
+optConnect=Połącz!
+optRedefine=Zmień Sterowanie
+optCnetHeader=Dane do CaravelNetu
+optCnetUser=Login CNetu
+optCnetKey=Klucz CNetu
+optCnetVolume=Głośność
+optCnetMusic=Muzyka
+optCnetSound=Dźwięki
+optCnetVoices=Głosy
+optMoveAnim=Animacja ruchu
+optMoveSmooth=Płynna
+opyMoveFast=Szybka
+uploadAll=Wysyłanie wszystkich wyników
+uploadDone=Zrobione!
+uploadError=Błąd! Połącz się z internetem i spróbuj ponownie!
+uploadAlreadyHas=Już wysłany
+uploadRoomEntrance=Wejście
+cnetHeader=Przeczytaj informację o CaravelNet///
+ lub kup subskrypcję.///
+ Link otwiera się w nowym oknie.
+cnetDescription=Użytkownicy z subskrypcją CaravelNet mogą wpisać swoje dane, by konkurować o najlepsze miejsce w tabeli wyników. Każde pomieszczenie ocenianie jest pod względem ilości ruchów potrzebnych, by je pokonać. Jeżeli nie podasz tych danych będziesz jedynie otrzymywać informację, które miejsce zająłby Twój wynik. Wszystkie wyniki można wysłać przyciskiem `Wyślij Wszystkie Wyniki`.
+redefineScreen=Zmieniasz klawisz dla `%%`///
+ Wciśnij nowy klawisz (teraz: %%)///
+ Wciśnij Escape, by anulować zmianę sterowania
+redefineInvalidKey=%% jest zarezerwowany///
+ Wciśnij nowy klawisz///
+ Wciśnij `Escape`, by anulować zmianę sterowania
+redefineReservedKey=%% jest zarezerwowany dla alternatywnych klawiszy ruchu///
+ Wciśnij inny klawisz///
+ Wciśnij `Escape`, by anulować
+
+# Help and Backstory
+
+abButCnet=O subskrypcji CaravelNet
+abButHowto=Jak Grać
+abButHistory=Historia DRODa
+abButBackstory=Fabuła
+abButCredits=Twórcy
+
+h&bTextWidth=450
+h&bText=\t DROD został wymyślony przez Erika Hermansesa w latach 90tych Jest to gra logiczna, w której biegasz po korytarzach lochów, zamków i innych miejsc uśmiercając potwory przy pomocy Naprawdę Wielkiego Miecza. Jak to działa? Zobaczysz na własne oczy, jak tylko rozpoczniesz rozgrywkę.////
+\t Flash DROD to port oryginalnej gry do przeglądarek. Gra używa grafik i muzyk dostępnych w nowszych wersjach DRODa, które można ściągnąć ze strony CaravelGames.com.////
+\t Dzięki integracji z CaravelNet, poza czystym pokonywaniem pomieszczeń, możesz jeszcze konkurować z innymi graczami o jak najlepszy wynik.
+
+creditsWidth=620
+credits=<font size="20">Programowanie i Produkcja: </font><font color="#444444">%%</font>///
+ <font size="20">Grafika i Muzyka: </font><font color="#444444">%%</font>///
+ <font size="20">Programowanie serwerowe: </font><font color="#444444">%%</font>///
+ <font size="20">Tworzenie Etapów: </font><font color="#444444">%%</font>///
+ <font size="20">Główni Testerzy: </font><font color="#444444">%%</font>///
+ <font size="20">Testerzy: </font><font color="#444444">%%</font>///
+ <font size="20">Tłumaczenia: </font><font color="#444444">%%</font>///
+ <font size="20">Dubbing: </font><font color="#444444">%%</font>///
+ <font size="20">Oryginalny Kod, Pomysł i Etapy: </font><font color="#444444">%%</font>
+
+controlsWindowWidth=650
+controlsWindow=<font size="18">`Numeryczna` and `789 UIO JKL`</font><font color="#444444"> - Ruch</font>///
+ <font size="18">`Q` and `W` </font><font color="#444444"> - Obrót mieczem</font>///
+ <font size="18">`Backspace` </font><font color="#444444">- Cofnięcie ruchu</font>///
+ <font size="18">`R' </font><font color="#444444">- Powrót do początku lub pkt. kontr.</font>///
+ <font size="18">`Shift`+`R` </font><font color="#444444">- Powtórz pomieszczenie</font>///
+ <font size="18">`Escape` </font><font color="#444444">- Menu pauzy</font>///
+ <font size="18">`Enter` </font><font color="#444444">- Wynik piętra i pomieszczenia</font>///
+ <font size="18">`X` </font><font color="#444444">- Przełącz blokadę pomieszczenia</font>///
+ <font size="18">`Space` </font><font color="#444444">- Wyczyść ekran z tekstu</font>///
+ <font size="18">`F3` </font><font color="#444444">- Wyświetl licznik ruchów</font>///
+ <font size="18">`Shift`+Klawisz </font><font color="#444444">- Wykonaj akcję i jej przeciwność</font>///
+ <font size="18">`Shift`+Czekaj </font><font color="#444444">- Czekaj do kolejnej tury mnożenia</font>///
+ <font size="18">`Klik Myszy` </font><font color="#444444">- Pokaż informacje o klikniętym polu</font>////
+ \t Twoje zadanie to oczyścić lochy Dugana z potworów. Dokonać tego możesz wykorzystując jedynie swój Naprawdę Wielki Miecz™ oraz spryt. Każde pomieszczenie to osobny obszar, który musi być oczyszczony w całości przy jednym podejściu. W przypadku opuszczenia pomieszczenia zbyt wcześnie, po powrocie do niego wróci ono do stanu początkowego.
+
+cnetInfoWidth=500
+cnetInfo=\t CaravelNet pozwala graczom z całego świata walczyć o pierwsze miejsce w tabeli.////
+\t Każdy może wysyłać swoje wyniki i zobaczyć, jak się plasuje w porównaniu do innych graczy. Niestety, anonimowe wyniki nie są trzymane na serwerach. Wyniki każdego zarejestrowanego użytkownika forum Caravel trzymane są za darmo przez dwa tygodnie od wysłania. Wyniki graczy posiadających płatną subskrypcję CaravelNet nigdy nie są usuwane.////
+\t Tak długo, jak nie usuniesz swoich wyników z dysku, możesz je wszystkie załadować na serwer po utworzeniu konta.////
+\t By stworzyć konto, wejdź na stronę CaravelGames.com!
+
+# Backstory
+backstory1=\t Beethro Budkin wspacerował do Wielkiej Izby Jadalnej, gdzie Król Dugan kończył swe obfite śniadanie.////
+\t "Odejdź, cuchnący wieśniaku! Twój brak higieny źle mi działa na trawienie!" zagrzmiał król, a kawałki świni i ziemniaków wystrzeliły z jego ust.////
+\t "Ale, Panie" zaprotestował Beethro, "Sam po mnie posłałeś."////
+\t Wyraz wielkiej twarzy władcy zmienił się ze złości w zdziwienie, a potem w aprobatę dla swego geniuszu w czasie dwóch sekund.////
+\t "Powinienem był kazać Ci przyjść szybciej" powiedział Król Dugan. "To karygodne! Pozwalasz strażnikom jeść posiłki w lochach, nakruszą i ani się obejrzysz, a ściany ruszają się od olbrzymich karaluchów, nie mówiąc już o goblinach, wężach, obserwatorach i innych okropieństwach. Po prawdzie to wymknęło się nam wszystko spod kontroli."////
+\t Beethro wyprostował się dumnie. "Nie bój nic. Jestem wyćwiczonym profesjonalistą z rodziny o długiej tradycji w sztuce eksterminatorów lochów. Łącze pięć pokoleń wiedzy z najbardziej zaawansowanym sprzętem po to, by oferować swe skuteczne usługi w przystępnej cenie.////
+\t "Jaki zaawansowany sprzęt?"////
+\t "Mam naprawdę wielki miecz."
+backstory2=\t "Dobrze! Kiedy możesz zacząć?"////
+\t "Jak tylko rozwiążemy sprawę płatności. Tu są moje standardowe stawki. Wystarczy podpisać na dole." Beethro podał kontrakt Królowi.////
+\t "Te ceny są oburzające! Czy przywilej pracy dla korony nic już nie znaczy w dzisiejszych czasach?"////
+\t "Mogę sobie pójść."////
+\t "Nie, nie, nie. Musimy oczyścić te lochy jak najszybciej, żeby więźniowie mogli być torturowani w czystym i bezpiecznym otoczeniu."////
+\t "Dam Ci zniżkę, jeżeli dorzucisz księżniczkę."////
+\t "Jesteś brzydki i śmierdzisz. Żadna z moich córek cię nie zechce!"////
+\t Beethro wzruszył ramionami, "Bywa."////
+\t Król podpisał się na dole kontraktu. "Dobrze. Pokażę ci wejście."
+backstory3=\t Schodząc po schodach, Beethro rozmyślał o zleceniu, którego się podjął. Lochy Dugana były nadspodziewanie wielkie i, patrząc na raporty poprzednich eksterminatorów, bardzo łatwo ulegały pladze robactwa. Nie mówiąc już o tym, że pogłębiano je w sekrecie kilka razy, co było nie na rękę pierwszemu eksterminatorowi, gdyż jego kontrakt nie obejmował takiej sytuacji. (Zapłacono mu tylko za te części, o których wiedział.)////
+\t Niektórzy mówili, że to złe moce są odpowiedzialne za powiększenia, Legenda mówi, że dawny król zmęczył się swoim denerwującym synem i żartobliwie zasugerował mu zabawę w zamkowych lochach. Biorąc sugestię na poważnie, chłopak zawędrował tak głęboko, że już nigdy go nie odnaleziono. Mówi się, że nie zginął, tylko pozostał tam z wyboru - stając się panem tego miejsca. Poznał wszystkie sekrety podziemnego świata i zawarł przymierze z żyjącymi tam potworami. Następnie nakazał im drążyć nowe tunele i hodować nowe, lepsze gatunki stworów. Nazwał sam siebie 'Neather' i knuł plan, by wynieść siebie z lochów na tron, kiedy już będzie dostatecznie potężny.
+backstory4=\t Beethro nie wiedział, co o tym myśleć. Po pierwsze wartość tronu gwałtownie spadła, odkąd większość władzy przeszła w ręce parlamentu. Nie mówiąc już o tym, kto przy zdrowych zmysłach mieszkałby tyle lat pod ziemią i byłby w stanie dogadać się z mieszkańcami lochów, którzy nie są zbyt rozmowni. Niemniej jednak prawdą było, że lochy miały w zwyczaju być niemiłosiernie skomplikowane i podatne na napływy potworów. Czasem nawet rosły same z siebie - żaden Architekt Lochów nie chciał wyjawić czemu, sprawa zasad - i właśnie to pozwalało ludziom takim jak Beethro pozostać w biznesie.////
+\t W każdym razie, eksterminator miał dużo bardziej przyziemne problemy na swojej głowie, jak na przykład urodzaj karaluchów wielkości rosłego mężczyzny. Ale co najbardziej interesowało Beethro, to świadomość, że zarobi dość pieniędzy i trucheł potworów, by pozwolić sobie na przejście na emeryturę i otworzenie restauracji.////
+\t "Nazwę ją 'Pieczone Karaluchy z Rożna Beethro'!"
+backstory1width=550
+backstory2width=550
+backstory3width=550
+backstory4width=550
+
+backstoryNext=Następna
+backstoryPrev=Poprzednia
+
+drodHistoryWidth=650
+drodHistory=\t "Deadly Rooms of Death" (DROD, Zabójcze Pomieszczenia Śmierci) - został stworzony przez Erika Hermansena w latach 90-tych. Oryginalnie wydana przez firmę Webfoot, nazywała się 'Webfoot DROD".  W tej wersji nie jest już obecnie na sprzedaż i nie można jej w legalny sposób dystrybuować i sprzedawać. Na szczęście Erik otrzymał pozwolenie, by wydać grę na nowo i tak w 2002 roku powstał 'Caravel DROD'.///
+\t Rok później narodził się 'DROD: Architect's Edition" (Wydanie Architektów), który zawierał w sobie edytor etapów pozwalający każdemu tworzyć swoje własne 'Holdy' (zestawy etapów) i publikować je na łamach forum CaravelGames. Gra uzyskała dość pokaźną rzeszę fanów i wtedy narodził się pomysł, by stworzyć sequel.///
+\t Pierwszego kwietnia (w Prima Aprilis!) 2005 roku światło dzienne ujrzał 'DROD: Journey to Rooted Hold' (Podroż do Zakorzenionego Miejsca)! Lista nowych funkcjonalności naprawdę robiła wrażenie. Nowe grafiki w wyższej rozdzielczości, wbudowany język skryptowy, ponad tuzin nowych elementów etapów, wciągająca fabuła i antagonista, którego głos wywołuje dreszcz.///
+\t Minęły dokładnie dwa lata i na stronie pojawił się 'DROD: The City Beneath" (Miasto Pod Spodem). Tego samego dnia pobito rekord największej ilości użytkowników odwiedzających forum w tym samym czasie. TCB zawierał więcej nowych elementów i ulepszeń niż JtrH, nie mówiąc już o wyższym poziomie trudności.///
+\t W 2008 roku wyszedł 'DROD RPG'. Nie tak popularny jak reszta tytułów, niemniej jednak gra pokazała klasę sama w sobie. Główną różnicą było przejście do rozgrywki opartej na zarządzaniu zasobami na wielopomieszczeniowej przestrzeni. Każdy potwór posiadał zestaw statystyk, a gracz musiał oceniać, które potwory opłaca się i kiedy pokonać, co zdobyć następnie, które zasoby zebrać, a które zostawić na później oraz jak się do nich dostać w najbardziej optymalny sposób.///
+\t 'DROD 4: Gunthro and the Epic Blunder" (Gunthro i Epicka Gafa) to najnowsza wydana część serii, która ukazała się pierwszego kwietnia 2012 roku. Grupą docelową tej gry są nowi gracze, których wejście w świat jest ułatwione o wiele niższym poziomem trudności etapów i bardziej intuicyjnemu samouczkowi.
+
+# Restore Screen
+rstHeader=Przywróć Stan
+rstToRoom=Przywróć do tego pomieszczenia
+rstReturn=Wróć do ekranu tytułowego
+rstSecrets=Pokonane sekrety: %% / %%
+
+# Ingame messages
+roomLocked=Zablokowałeś wychodzenie z pomieszczenia. Wciśnij ponownie %%, by odblokować.
+ingLevelCompleted=Piętro Oczyszczone
+ingSecretFound=Znaleziono Sekret
+ingHoldMastered=Mistrzostwo w Holdzie
+
+# Achievements popup
+achievementHeader=Osiągnięcie!
+achievementDismiss=`Klik` lub `Spacja` by ukryć
+
+# Achievements list
+achlistHeader=Osiągnięcia:
+
+# Browse released holds
+browseHeader=Przeglądaj wszystkie wydane Holdy
+browseOpen=Otwórz w nowym oknie
+
+# Level/Room score
+scrStats=Statystyki gracza
+scrYourBest=Twój najlepszy wyniki:
+scrTop=Najlepsze wyniki dla pomieszczenia:
+scrNoScore=Brak!
+scrFetching=Łączenie...
+scrOnlyForCnet=Wyniki pomieszczeń są dostępne tylko dla subskrybentów CaravelNet i członków forum CaravelGames.////
+ Wygląda na to, że nie masz w opcjach wypełnionych danych do logowania do CaravelNet. Utworzenie konta na forum CaravelGames pozwoli Ci walczyć o pierwsze miejsce w tabeli wyników dla każdego pomieszczenia w grze.
+scrMovesRoom=Kroków w pomieszczeniu: %%
+scrMovesLevel=Kroków na piętrze: %%
+scrDeaths=Śmierci na piętrze: %%
+scrKills=Zabójstw na piętrze %%
+scrTime=Czas na piętrze: %%
+scrNoScores=Brak wyników dla tego pomieszczenia.
+scrCnetProblems=Funkcje CaravelNetu zostały wyłączone ze względu na problemy z łączem.////
+ Upewnij się, że Twój Internet działa,a dane do logowania są uzupełnione w opcjach. Następnie w opcjach wciśnij przycisk `Połącz! `
+
+# Login Window
+loginConnected=\t Udało Ci się połączyć z CaravelNet jako zarejestrowany użytkownik!////
+\t Jeżeli nie korzystasz z płatnej subskrypcji, twoje wyniki będą usunięte po dwóch tygodniach od wysłania.////
+\t Wyniki posiadaczy płatnej subskrypcji nigdy nie są usuwane.
+loginConnectedAnonymous=\t Jesteś teraz połączony do CaravelNet jako anonimowy użytkownik. Twoje wyniki będą wysyłane na serwer w celu poinformowania Cię, jak dobrze Ci poszło, ale nie zostaną na nim zapisane. Jeżeli chcesz, by zostały one zapisane, załóż konto na forum CaravelGames (link w opcjach)///
+\t W każdej chwili możesz wysłać wszystkie wyniki na serwer przy pomocy przycisku `Wyślij Wszystkie Wyniki`.
+loginFailed=\t Błąd połączenia!////
+ 1. Sprawdź łącze internetowe.///
+ 2. Upewnij się, że zapora systemowa nie blokuje gry.///
+ 3. Wejdź na stronę http://forum.caravelgames.com, by zobaczyć czy w ogóle się wczytuje. Jeżeli nie, odczekaj kilka minut i spróbuj ponownie.///
+
+loginFailedBadCredentials=4. Sprawdź, czy dane do CaravelNetu są poprawne.
+loginFailedMissingCrentials=4. Upewnij się, że dane do CaravelNetu są poprawne.
+
+# Pause window
+pauseHeader=DROD jest spauzowany
+pauseContinue=Kontynuuj Grę
+pauseContinueTip=Kontynuuj grę.///
+ (Escape, Enter)
+pauseRestart=Powtórz pomieszczenie
+pauseRestartTip=Powtórz pomieszczenie.///
+ (W grze: F5)
+pauseRoomHelp=Podpowiedź do aktualnego pomieszczenia
+pauseRoomHelpTip=Otwiera w nowym oknie stronę forum o aktualnym pomieszczeniu.///
+ (W grze: F2)
+pauseHelp=Pomoc
+pauseHelpTip=Otwiera okno pomocy.///
+ (W grze: F1)
+pauseAchievements=Wyświetl Osiągnięcia
+pauseAchievementsTip=Wyświetl listę wszystkich osiągnięć.///
+ (W grze: Tabulator)
+pauseOptions=Opcje
+pauseOptionsTip=Pozwala zmienić ustawienia
+pauseReturn=Wróć do ekranu tytułowego
+pauseReturnTip=Postęp w grze zostanie zapisany///
+ zaś postęp w aktualnym pomieszczeniu zostanie///
+ utracony dopiero po wyjściu z gry.
+
+# Misc
+
+achHidden=???
+levelCreatedDate=Utworzono %%.%%.%%
+
+# Scored Places
+score1NoTie=Pierwsze Miejsce!!
+score1=1. Miejsce
+score2=2. Miejsce
+score3=3. Miejsce
+score4=4. Miejsce
+score5=5. Miejsce
+score6=6. Miejsce
+score7=7. Miejsce
+score8=8. Miejsce
+score9=9. Miejsce
+score10=8. Miejsce
+score11=11. Miejsce
+score12=12. Miejsce
+score13=13. Miejsce
+score14=14. Miejsce
+score15=15. Miejsce
+score16=16. Miejsce
+score17=17. Miejsce
+score18=18. Miejsce
+score19=19. Miejsce
+score20=20. Miejsce
+score21=21. Miejsce
+score22=22. Miejsce
+score23=23. Miejsce
+score24=24. Miejsce
+score25=25. Miejsce
+scoreTie=%%. remis!
+scoreNoCnet=(anonimowy)
+
+
+# Game Stats
+resultHoldTotals=Wyniki Holda:///
+
+resultLevelTotals=Wyniki Piętra:///
+
+resultMoves=Ruchy: %%///
+
+resultKills=Zabite potwory: %%///
+
+resultDeaths=Zginięcia: %%///
+
+resultTime=Czas: %%///
+
+resultSecrets=Znalezione Sekrety: %%///
+
+resultSecretsBetter=Znalezione Sekrety: %% / %%///
+
+
+# Scroll Clock
+spawnCycle=Płodo-cykl:
+snakesPrefer=Węże wolą:
+clcHo=PO
+clcRiz=ZI
+clcOn=O
+clcTal=MO
+clcVe=PI
+clcRt=O
+clcIc=NO
+clcAl=WO
+
+
+# Tiles list
+tile1=Podłoga
+tile2=Dziura
+tile3=Schody
+tile4=Ściana
+tile5=Uszkodzona Ściana
+tile6=Brama Pokonania Piętra
+tile7=Brama Pokonania Pomieszczenia
+tile8=Brama Zapadni
+tile9=Żółta Brama
+tile10=Żółta Brama (Otwarta)
+tile11=Zapadnia
+tile12=Przeszkoda
+tile13=Strzałka (Północ)
+tile14=Strzałka (Północny Wschód)
+tile15=Strzałka (Północny Zachód)
+tile16=Strzałka (Południowy Wschód)
+tile17=Strzałka (Południe)
+tile18=Strzałka (Południowy Zachód)
+tile19=Strzałka (Zachód)
+tile20=Strzałka (Północny Zachód)
+tile21=Mikstura Niewidzialności
+tile22=Mikstura Mimika
+tile23=Zwój
+tile24=Sfera
+tile35=Smoła
+tile37=Smolna Brama
+tile54=Mozaika
+tile55=Droga
+tile56=Trawa
+tile57=Grunt
+tile58=Alternatywna Podłoga
+tile59=Ściana Mistrzów
+tile61=Schody w Górę
+tile62=Sekretna Ściana
+tile66=Ściana
+tile68=Brama Pokonania Pomieszczenia (Otwarta)
+tile69=Brama Pokonania Piętra (Otwarta)
+tile70=Brama Zapadni (Otwarta)
+tile71=Smolna Brama (Otwarta)
+tileCheckpoint=Punkt Kontrolny
+
+# Monsters list
+monsterPlayer=Gracz
+monster0=Karaluch
+monster1=Królowa Karaluchów
+monster2=Karalusze Jajo
+monster3=Goblin
+monster5=Zjawoskrzydlak
+monster6=Obserwator
+monster7=Wąż
+monster8=Smolna Matka
+monster9=Smolątko
+monster10=Mózg
+monster11=Mimik
+monster12=Pająk
+monster29=Postać
+sword=Miecz
+swords=Miecze (%%)
+
+# Room position
+roomS=S
+roomSouth=Południe
+roomN=N
+roomNorth=Północ
+roomE=E
+roomEast=Wschód
+roomW=W
+roomWest=Zachód
+roomEntrance=Wejście
+room1=1
+room2=2
+room3=3
+room4=4
+room5=5
+room6=6
+room7=7
+room8=8
+room9=9
+room10=10
+room11=11
+room12=12
+room13=13
+room14=14
+room15=15
+room16=16
+room17=17
+room18=18
+room19=19
+roomMore=%%
+
+
+# Game completion
+
+complButtNextGame=Zagraj w kolejnego Holda
+complButtLearnMore=Dowiedz się więcej
+complButtContinue=Kontynuuj Grę
+complHeader=Co dalej?
+complLearnMore=Dowiedz się więcej o świecie DRODa - historii i głównych grach: Journey to Rooted Hold, The City Beneath, Gunthro and the Epic Blunder oraz innych grach ze świata DRODa!
+complContinue=Kontynuuj grę w tym Holdzie - znajdź wszystkie sekrety i uzyskaj dostęp do Strefy Mistrzów. Linki do dwóch powyższych opcji dostępne są na ekranie tytułowym.
+
+
+
+# Changes-additions
+# Common
+rstFarthest=Wybierz najdalszy stan
+rstHelpTooltip=Krótka instrukcja obsługi przywracania stanu.
+
+rstHelp=Przywracanie stanu jest bardzo podobne do zapisywania i wczytywania z innych gier komputerowych. Główna różnica polega na tym, że nie możesz zapisać, kiedy chcesz - gra robi to za Ciebie zawsze po wejściu do niepokonanego pomieszczenia.////
+ By wczytać starszy stan, najpierw wybierz piętro z listy po lewej, a następnie pomieszczenie z mini-mapki poniżej. Mini-mapka wyszarzy nieodwiedzone pomieszczenia w aktualnie wybranym stanie. Pomieszczenia z białym tłem są już pokonane w danym stanie, a z czerwonym jeszcze nie.////
+ W każdej chwili możesz wczytać stan, w którym masz pokonane najwięcej pomieszczeń wciskając `Wybierz najdalszy stan`.////
+ Przywracanie przydaje się, kiedy chcesz poprawić swój wynik w którymś z pomieszczeń, szukasz sekretnych przejść lub po prostu masz ochotę ponownie zagrać w ulubioną zagadkę.
+
+rstWarning=Przywróciłeś stary stan gry - niektóre pomieszczenia zostały oznaczone jako niepokonane.////
+ Zawsze możesz cofnąć się do stanu z największą ilością pokonanych pomieszczeń wciskając `Wybierz najdalszy stan`.
+    
+optDelayText=Opóźnienie trzymania klawisza:
+optDelayShort=Krótkie
+optDelayLong=Długie
+optGetPass=Zdobądź Klucz CNet
+optGetPassTooltip=Jeżeli posiadasz konto na forum CaravelGames możesz otrzymać klucz CaravelNet, który///
+ pozwoli Ci wysyłać wyniki do internetowej tabeli wyników. Takie wyniki są usuwane po dwóch tygodniach.////
+ Posiadacze płatnej subskrypcji nigdy nie będą mieli usuniętych wyników.
+    
+optDelayTooltip=Odstęp pomiędzy wciśnięciem i przytrzymaniem klawisza,///
+ a momentem samo-powtarzania.
+optRateTooltip=Płynność ruchu i szybkość powtarzania akcji przy wciśniętym klawiszu. 
+    
+achAddInfo=Wyszarzone osiągnięcia, które nie są na wpół-przeźroczyste są "aktywne". Oznacza to, że w aktualnym pomieszczeniu możesz w jakiś sposób zapracować na zdobycie osiągnięcia lub na popchnięcie go do przodu (ale nie zawsze, należy uważnie czytać opisy osiągnięć). Niektóre osiągnięcia mogą być aktywne podczas podczas całej gry.
+ 
+pauseRestore=Przywróć do wcześniejszego stanu
+
+cnetDescriptionKong=Niestety ze względu na regulamin serwisu Kongregate, logowanie do CaravelNetu jest wyłączone - wyników zdobytych w tej grze nie będzie można wysłać. Jeżeli chcesz, zawsze możesz zagrać w tę grę na stronie CaravelGames.com!
+
+
+defCont=Domyślne sterowanie:

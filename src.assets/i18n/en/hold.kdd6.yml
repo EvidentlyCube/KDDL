@@ -1,0 +1,348 @@
+# Common
+
+hold_name: King Dugan's Dungeon Lite 6
+
+
+# Level Names
+
+level_name_1: Twenty-First Level
+level_name_2: Twenty-Second Level
+level_name_3: Twenty-Third Level
+level_name_4: Twenty-Fourth Level
+level_name_5: Twenty-Fifth Level
+level_name_6: Mastery Level
+
+
+# Achievements
+
+achievement.name.l1.1n: The Race
+achievement.description.l1.1n: |
+    Twenty-First Level: 1N
+    Drink the potion before killing any monster then clear the room
+
+achievement.name.l1.1s: Last Goblin Standing
+achievement.description.l1.1s: |
+    Twenty-First Level: 1S
+    Kill the goblin last without trapping it on an arrow
+
+achievement.name.l1.1n1w: Uber Party
+achievement.description.l1.1n1w: |
+    Twenty-First Level: 1N1W
+    Kill all brains before killing any roach queen, don't drop
+    any trapdoor and clear the room
+
+achievement.name.l1.1n1e: Who Let The Goblins Out
+achievement.description.l1.1n1e: |
+    Twenty-First Level: 1N1E
+    Release the goblins before killing any monster then clear the room
+
+achievement.name.l1.1s1e: Go East
+achievement.description.l1.1s1e: |
+    Twenty-First Level: 1S1E
+    Kill the easternmost roach queen before killing any other monster
+    then clear the room
+
+achievement.name.l2.1e: Not Two Be
+achievement.description.l2.1e: |
+    Twenty-Second Level: 1E
+    Clear the room without hitting any of the two northernmost orbs
+
+achievement.name.l3.1n1w: Goblin Feet
+achievement.description.l3.1n1w: |
+    Twenty-Third Level: 1N1W
+    Kill a serpent in the goblin's starting alcove then clear the room
+
+achievement.name.l3.1w: Single Purpose
+achievement.description.l3.1w: |
+    Twenty-Third Level: 1W
+    Clear the room without turning
+
+achievement.name.l3.2s: Slowpoke
+achievement.description.l3.2s: |
+    Twenty-Third Level: 2S
+    Do not drop any trapdoors until the serpent dies then clear the room
+
+achievement.name.l3.1n: Two is Better than One...
+achievement.description.l3.1n: |
+    Twenty-Third Level: 1N
+    Go past red gates with both goblins alive then clear the room
+
+achievement.name.l3.1n_2: ...But One will Suffice
+achievement.description.l3.1n_2: |
+    Twenty-Third Level: 1N
+    Go past red gates with only one goblin alive then clear the room
+
+achievement.name.l3.1s1w: iSolution
+achievement.description.l3.1s1w: |
+    Twenty-Third Level: 1S1W
+    Kill all goblins before waking up any evil eye then clear the room
+
+achievement.name.l3.1s2w: Keeping It Clean
+achievement.description.l3.1s2w: |
+    Twenty-Third Level: 1S2W
+    Drop all trapdoors before killing any monster then clear the room
+
+achievement.name.l3.1s3w: Goblins Are Passe
+achievement.description.l3.1s3w: |
+    Twenty-Third Level: 1S3W
+    Clear the room without letting the goblin step on a trapdoor
+
+achievement.name.l4.1w: Small Brain Time
+achievement.description.l4.1w: |
+    Twenty-Fourth Level: 1W
+    Kill all brains before killing all serpents then clear the room
+
+achievement.name.l4.2w: Mimic-Free Zone
+achievement.description.l4.2w: |
+    Twenty-Fourth Level: 2W
+    Clear the room without hitting any orb with a mimic
+
+achievement.name.l4.1n: Ladies Last
+achievement.description.l4.1n: |
+    Twenty-Fourth Level: 1N
+    Kill the tar mother last
+
+achievement.name.l5.2w: Impossibly Careful
+achievement.description.l5.2w: |
+    Twenty-Fifth Level: 2W
+    Go past the trapdoors without killing any goblin
+
+achievement.name.l5.stuck_neather: Softlocked
+achievement.description.l5.stuck_neather: |
+    Twenty-Fifth Level
+    Get 'Neather stuck and unable to move because of a monster
+
+achievement.name.l5.stab_neather: Impossibly Careful
+achievement.description.l5.stab_neather: |
+    Twenty-Fifth Level
+    Stab Neather in a room in a place where it should be impossible
+
+# Custom names for common achievements
+
+achievement.name.level_1: Amateur Delver
+achievement.description.level_1: Clear Twenty-First Level
+achievement.name.level_2: Fledgling Smiter
+achievement.description.level_2: Clear Twenty-Second Level
+achievement.name.level_3: Contract Exterminator
+achievement.description.level_3: Clear Twenty-Third Level
+achievement.name.level_4: I'm a Professional!
+achievement.description.level_4: Clear Twenty-Fourth Level
+achievement.name.level_5: Beethro Budkin
+achievement.description.level_5: Clear Twenty-Fifth Level
+
+achievement.name.tuning_fork_in_sequence: Tuning Bork
+achievement.name.l2.tuning_fork: Tuning Torque
+achievement.description.l2.tuning_fork: |
+    Twenty-Second Level: 1N1W
+    Perform a combo of 4 unique orb hits in sequence in this room
+    The same rules as in "Tuning Bork" achievement
+
+achievement.name.monster_kills_0: Fried Roaches
+achievement.name.monster_kills_1: Queen Cutlets
+achievement.name.monster_kills_2: Kogel Mogel
+achievement.name.monster_kills_3: Goblin Ragout
+achievement.name.monster_kills_5: Wraithwing Nuggets
+achievement.name.monster_kills_6: Evil Eye Cream
+achievement.name.monster_kills_7: Serpent Uramaki
+achievement.name.monster_kills_8: Tar Sofrito
+achievement.name.monster_kills_9: Baby Momo
+achievement.name.monster_kills_10: Brain Parfait
+achievement.name.monster_kills_11: Mimic Mignon
+achievement.name.monster_kills_12: Spider Mandibles
+
+achievement.name.rooms: True Delver
+achievement.name.total_kills: Smitemaster
+achievement.name.trapdoors: Gone Beneath
+achievement.name.steps: Rooted Path
+achievement.name.deaths: Deathsperience
+achievement.name.undo: Backstep
+achievement.name.cut_tar: Tarminator
+
+
+# Entrances
+
+entrance.lvl_1.entrance.13x12: >
+    "I hope this next one doesn't have many critters. The hands are starting to
+    blister from all this hacking." -Beethro
+entrance.lvl_2.entrance.10x11: >
+    Question: You are starving to death, with no hope to find food in time. But
+    you do have a mimic potion. Would you make a mimic, kill the mimic, and eat
+    an exact copy of yourself to survive?
+
+
+    These are the kinds of questions a dungeon exterminator must answer every working day of his life.
+entrance.lvl_3.entrance.14x22: |
+    You're probably the sort that uses people when it's convenient, and gets \
+    rid of them afterward.
+
+    I bet you are.
+
+    We'll see!
+entrance.lvl_4.entrance.11x9: >
+    "Wow, I didn't expect to find a whole city down here. Good deal! Maybe
+    they've got a restroom somewhere." -Beethro
+entrance.lvl_5.2n1w.13x13: >
+    Beethro came back to finish the proper smiting business he was hired to do.
+entrance.lvl_5.entrance.16x22: >
+    "There better not be more than 25 levels to this place. That's plenty big
+    enough, and all I'm down for in the contract," said Beethro as he arrived
+    on the final level of Dugan's Dungeon. Just a short distance in front of
+    him was a small man holding a mallet.
+
+
+    Beethro called out, "Hey there, little buddy! How'd you end up so deep below?"
+
+    The man shook his mallet angrily and raced off.
+
+
+    "Hold up! I want to talk to you!" But he didn't stop.
+entrance.lvl_6.entrance.18x12: >
+    Beethro descended the stairs only to find himself in an uncharted corridor...
+
+
+# Scrolls
+
+scroll.lvl_4.entrance.12x9: >
+    Welcome to the subterranean town of Neatherville. The locals are always glad to have visitors.
+
+
+    -Neatherville Board of Tourism
+scroll.lvl_5.1n2w.24x18: Caution can be deadly.
+scroll.lvl_5.2s2w.15x17: |
+    Are you still alive?
+
+    I must be talking too much.
+
+    I'm not going to let any more secrets slip!
+scroll.lvl_5.2w.25x22: Stalemate.
+scroll.lvl_6.1s.11x6: Well well well. By now you have undoubtedly completed almost everything there is to do - maybe some straggling achievements are left in this or earlier episodes?
+scroll.lvl_6.1s.12x7: My most sincere congratulations and I hope you won't stop there.
+scroll.lvl_6.1s.13x8: >
+    If you haven't yet played other holds bundled in this game I highly
+    recommend them. That or maybe grab a copy of DROD: The Second Sky and play
+    the big, main game?
+scroll.lvl_6.1s.14x9: Good Luck!
+scroll.lvl_6.1s.18x8: Woo-hoo!
+scroll.lvl_6.1s.6x8: Clear the room without stepping on the grass tiles.
+scroll.lvl_6.1s.7x8: As a final token of gratitude here is a tiny bonus room in the same theme as the other rooms in the previous episodes.
+scroll.lvl_6.entrance.10x12: Original puzzles
+scroll.lvl_6.entrance.15x9: Harder versions of existing puzzles
+
+
+# Speeches
+
+# Twenty-First Level: 1N1W -- (9, 9)
+speech.10025263: Let's get this party started!
+speech.10025264: Brains, you're gonna wish you could run!
+
+# Twenty-First Level: 2S -- (21, 15)
+speech.10025265: Now... should I take out that brain first, or watch my back?
+
+# Twenty-First Level: 2S1W -- (26, 2)
+speech.10025266: This looks bad.
+speech.10025267: Oh no... back again...
+speech.10025268: This brings new meaning to the term 'running the gauntlet'.
+
+# Twenty-Second Level: 2N -- (10, 2)
+speech.10025270: Well, it's settled... I gotta be more careful what I hope for.
+
+# Twenty-Second Level: Entrance -- (8, 9)
+speech.10025269: I hope there aren't any brains on this level!
+
+# Twenty-Third Level: 2S1W -- (17, 5)
+speech.10025272: These goblins just get a smiting, quick and simple. No fiddling around.
+speech.10025273: Hoodey! This sounds not so good.
+
+# Twenty-Third Level: Entrance -- (11, 19)
+speech.10025271: Twenty-three levels... I gotta be near the end, I just gotta!
+
+# Twenty-Fourth Level: 1S2W -- (0, 0)
+speech.10025379: Ohhhh, this kind of thing really tires me out.
+speech.10025380: Now... how do I get out of here?
+
+# Twenty-Fourth Level: 3N -- (11, 22)
+speech.10025275: This tiled floor gives me a case of the scarbs.
+speech.10025276: If I never see this room again for as long as I live, it'll be too soon!
+
+# Twenty-Fourth Level: Entrance -- (12, 8)
+speech.10025274: So there's an entire monster city down here!
+
+# Twenty-Fifth Level: 1N -- (17, 22)
+speech.10025278: Ha! You'll have to get by my roaches first!
+speech.10025279: Get him, boys!
+speech.10025280: I guess I'll have to come up with something more difficult.
+
+# Twenty-Fifth Level: 1N1W -- (25, 9)
+speech.10025381: Impressive. I thought you'd be stuck there all day.
+speech.10025382: You stay there while I go release some roaches.
+speech.10025287: Flaming fegundo! Brain, go get him!!!
+speech.10025288: ????
+speech.10025289: Stupid brain.
+speech.10025290: CHARGE!
+speech.10025291: Finish him, my drones.
+
+# Twenty-Fifth Level: 1N2W -- (26, 3)
+speech.10025304: I don't want you to go that way.
+speech.10025305: Surround him!
+speech.10025306: Pssst! Come here! I've got something to show you.
+speech.10025307: Ah, the ever-gullible delver walks right into my trap... as expected.
+speech.10025308: I'll just sneak through the other side.
+speech.10025309: I'll lock the door behind me so he can't follow.
+
+# Twenty-Fifth Level: 1S1W -- (18, 12)
+speech.10025340: You'll never catch me!
+speech.10025341: You'll never catch me!
+
+# Twenty-Fifth Level: 1S2W -- (13, 10)
+speech.10025333: Tar Mother, EXPAND!
+
+# Twenty-Fifth Level: 1S2W -- (18, 1)
+speech.10025332: You killed a poor defenseless mother??!!?
+
+# Twenty-Fifth Level: 2W -- (13, 6)
+speech.10025316: My roach queens may have failed, but my goblins will make sure you don't leave this room alive.
+speech.10025317: Stay out of here!
+speech.10025318: Stay out of here!
+speech.10025319: Ha! You can't get me in here. I can wait until you go away.
+
+# Twenty-Fifth Level: Entrance -- (14, 18)
+speech.10025277: You'll never catch me, exterminator!
+
+# Mastery Level: 1S -- (5, 11)
+speech.10025372: You have failed...
+
+
+# Outro
+
+outro: >
+    The legend goes that a king of past grew tired of his annoying young son and
+    jokingly suggested that the lad go play in the castle dungeons. Taking his
+    father seriously, the boy wandered deep into the dungeon chambers and was
+    never found again.
+    <p> </p><p> </p>
+    <p> </p><p> </p>
+
+    Was 'Neather that long-lost prince? Is there a way he could have avoided
+    killing the curious fellow?
+    <p> </p><p> </p>
+    <p> </p><p> </p>
+    <p> </p><p> </p>
+
+    All Beethro knows is that there was no Twenty-Sixth floor - the final stairs
+    ended with a wall. With no convenient elevator in sight he was forced to
+    once again traverse the dungeon.
+    <p> </p><p> </p>
+    <p> </p><p> </p>
+    <p> </p><p> </p>
+
+    <font size="32" color="#FFFF00">Congratulations!</font>
+    <p> </p><p> </p>
+    <p> </p><p> </p>
+    <p> </p><p> </p>
+
+
+    That's the final episode of King Dugan's Dungeon Lite! Beethro did manage
+    to retire as a delver and open his Roaster Roach Grill. Not for long though,
+    as a number of years later he acquired a portable orb that could open the
+    mysterious door on Tenth Level. You can explore that story in DROD: Journey
+    to Rooted Hold!

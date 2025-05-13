@@ -1,0 +1,248 @@
+# Level Names
+Thirteenth Level=Niveau treize
+Fourteenth Level=Niveau quatorze
+Fifteenth Level=Niveau quinze
+Sixteenth Level=Niveau seize
+Mastery Level=Niveau Maître
+Original 13th Level=Niveau treize d’origine
+Tutorial Level=Niveau tutoriel
+
+# Level Entrances
+entrTut=Beethro Budkin, maître exterminateur de cinquième génération, a été embauché par le Roi Dugan pour qu'il nettoie ses vastes oubliettes infestées de monstres.///
+    Beethro est payé à la pièce et, en tant que professionnel, son contrat l'oblige à éliminer tous les monstres de chacune des pièces des oubliettes pour être payé.///
+    La seule arme dont Beethro a besoin pour son travail est une Très Grosse Épée, laquelle tuera presque n'importe quel monstre en un seul coup.
+entr13=« J’aurais probablement mieux fait de sauter ce niveau, mais un contrat est un contrat. Bon, qu’est-ce que j’ai fait de mes morceaux de pain ? » -Beethro
+entr14=Dans ce niveau, vous allez enfin rencontrer des créatures qui respectent votre lame.
+entr15=Ce niveau vous rappelle la fois où vous aviez tondu votre pelouse avec la quantité exacte d’essence nécessaire pour terminer, mais après vous aviez raté et aviez été forcé d’aller en racheter. Il y avait un énorme serpent à la station essence et vous vouliez entrer pour payer le pompiste, mais la porte d’entrée était verrouillée alors il vous a fallu boire une potion de dédoublement pour pouvoir entrer, puis les cafards…\n\nBon, je crois que la métaphore ne marche plus.
+entr16=Ces cafards ont besoin d’une figure d’autorité pour les guider. Quelqu’un de charismatique et plein de caractère. Quelqu’un comme vous !
+entrMaster=Beethro descendit les escaliers et se retrouva dans un couloir ne figurant pas sur la carte…////
+    Il ne serait pas payé pour le nettoyage de ces pièces, mais son honneur professionnel le poussait à continuer.
+entrMasterBack=Beethro revint sur ses pas pour terminer la tâche d’extermination pour laquelle il avait été engagé.
+entrOriginal13Enter=Beethro s’engagea dans les méandres des couloirs surnaturels, dangereux et absurdes.
+entrOriginal13Success=Fier de son succès, mais ayant perdu quelques cases, Beethro émergea du tristement célèbre niveau treize des oubliettes du roi Dugan.
+entrOriginal13Escape=Face à ce défi, Beethro s’enfuit comme un petit chaton effrayé.
+
+# Achievement Names
+
+
+achName0=Forêt à sens unique
+achName1=Serpents stoïques
+achName2=Goudron immobile
+achName36=Les portes ont des yeux
+achName3=Ennemi des gobelins
+achName4=Opprimeur des gobelins
+achName5=Destructeur de gobelins
+achName6=Place !
+achName7=Maman verte
+achName8=Tueur de gobelins
+achName34=Sacrifice ultime
+achName35=Règles strictes
+achName32=Assassin calme
+achName33=Coup d’avance
+achName39=Traversée d’araignées
+achName9=Grandir !
+achName37=Maître des yeux
+achName38=Hunter Games
+achName10=L’explorateur
+achName11=Fricassée de gobelins
+achName12=Matricide
+achName13=Apprenti Exterminateur
+achName14=Pourfendeur Débutant
+achName15=Exterminateur de Métier
+achName16=Je suis un Professionnel !
+achName17=Maîtrise
+achName18=Post-maîtrise
+achName19=Cafards flambés
+achName20=Reines cuisinées
+achName21=Œufs crus
+achName22=Mauvais œil maison
+achName23=Kebabs de spectres ailés
+achName24=Sushi de serpent
+achName25=Diapason
+achName26=Verdure
+achName27=Maintien de la paix
+achName28=Phoenix
+achName29=Maître du temps
+achName30=Technicien de surface
+achName31=Vers l’infini et au-delà
+
+# Achievement Descriptions
+
+achDesc0=Niveau 13, 2S 1O : nettoyez la pièce sans faire tourner votre épée
+achDesc1=Niveau 13, 1S : nettoyez la pièce sans faire tourner votre épée
+achDesc2=Niveau 13, 1S 1E : nettoyez la pièce sans faire tourner votre épée
+achDesc36=Niveau 13, 1S 2O : nettoyez la pièce sans faire tourner votre épée
+achDesc3=Niveau 14, 1S : nettoyez la pièce en faisant toujours face au nord-ouest
+achDesc4=Niveau 14, 2S : nettoyez la pièce en faisant toujours face à l’est
+achDesc5=Niveau 14, 1N : nettoyez la pièce en faisant toujours face au sud
+achDesc6=Niveau 14, 2E : nettoyez la pièce sans marcher sur la trappe
+achDesc7=Niveau 14, 2N : nettoyez la pièce sans laisser la mère goudron créer des bébés
+achDesc8=Niveau 14, 1N 3E : nettoyez la pièce sans faire tourner votre épée
+achDesc34=Niveau 14, 1N 1E : tuez un gobelin en dernier
+achDesc35=Niveau 14, 2N 2E : nettoyez la pièce sans laisser le gobelin aller sur la route grise
+achDesc32=Entrée du niveau 15 : nettoyez la pièce sans faire tourner votre épée
+achDesc33=Entrée du niveau 15 : faites tomber toutes les trappes avant de terminer la pièce
+achDesc39=Niveau 15,, 1N : après avoir frappé l’orbe, tuez toutes les araignées en ne vous déplaçant qu’en diagonale
+achDesc9=Niveau seize, 1S 1E : nettoyez la pièce sans laisser la mère goudron créer des bébés
+achDesc37=Niveau maître, 2N : nettoyez la pièce sans réveiller les yeux et sans que des œufs soient pondus
+achDesc38=Niveau maître, 1N 1E : tuez le spectre ailé sans faire tomber toutes les trappes
+achDesc10=Visitez chaque pièce du niveau 13 d’origine (%% / 56)
+achDesc11=Tuez 40 gobelins
+# <OLD>
+achDesc26=Ouvrez 20 portes vertes
+achDesc27=Tuez 3 000 monstres en tout
+achDesc28=Mourez 80 fois
+achDesc29=Annulez un total de 500 mouvements
+achDesc30=Faites tomber 500 trappes en tout
+achDesc31=Faites 10 000 pas en tout
+achDesc12=Tuez une reine cafard pendant que ses œufs éclosent
+achDesc17=Maîtrisez cet antre
+achDesc18=Post-maîtrisez cet antre
+achDesc19=Tuez 100 cafards
+achDesc20=Tuez 25 reines cafards
+achDesc21=Tuez 10 œufs de cafards
+achDesc22=Tuez 80 mauvais yeux
+achDesc23=Tuez 40 spectres ailés
+achDesc24=Tuez 25 serpents
+achDesc25=Frappez un orbe pendant trois tours consécutifs
+achDesc27=Tuez un total de 3 000 monstres
+achDesc28=Mourez 80 fois en tout
+achDesc29=Annulez un total de 500 mouvements
+achDesc30=Faites tomber un total de 500 trappes
+achDesc31=Faites 10 000 pas en tout
+# </OLD>
+
+# Scrolls
+sc_13_entr_1=Raccourci vers la sortie
+sc_13_entr_2=Un véritable Maître épéiste ne lira pas le parchemin ci-dessus avant d’avoir conquis le niveau.
+sc_13_entr_3=Les pierres existent avant le sable, avant elles existaient des dalles précédées par l’herbe qui pousse sur les carreaux, eux-mêmes posés sur la terre.\n-Poète anonyme
+sc_13_2S2W_3=Raccourci vers l’entrée
+sc_14_1N3E=Le gars dans la pièce d’à côté n’est pas très malin. Il se laisse toujours avoir par le même truc.
+sc_mast_entr_1=Le niveau 13 d’origine
+sc_mast_entr_2=Quelques nouveaux puzzles.
+sc_mast_entr_3=Versions plus difficiles de pièces existantes.
+sc_mast_1W=Il n’y a ici rien.
+sc_o13_orb=Cet orbe servait à quelque chose dans le niveau d’origine.
+sc_o13_orbs=Ces orbes servaient à quelque chose dans le niveau d’origine.
+sc_o13_orb2=Cet orbe n’était pas ici à l’origine, et toute la porte jaune était dans une pièce.
+sc_o13_orbs_gates=Il y avait un orbe dans la pièce d’origine et les portes servaient à quelque chose.
+sc_o13_broken_wall=Dans le niveau d’origine, un mur empêchait d’accéder à la zone suivante.
+sc_o13_edge=Il n’y avait initialement pas de bordure de pièce ici.
+sc_o13_roach=Dans le niveau 13 d’origine, le cafard ci-dessus était dans la même pièce et ce couloir était un peu différent.
+
+scM1s1=Alors ça c’est un exploit !
+scM1s2=Comment avez-vous trouvé le jeu ? Avez-vous réussi à obtenir tous les exploits ?
+scM1s3=Allez sur CaravelGames.com pour jouer à d’autres épisodes de KDDL, ou pour télécharger l’un des jeux DROD complets pour Windows, Mac OS ou Linux.
+scM1s4=Continuez à jouer !
+scM1s5=Voilà une petite récompense ! Tuez tous les yeux et les gobelins sans marcher sur l’herbe.
+scM1s6=Les reines cafards seront tuées dès que vous marcherez sur le point de sauvegarde tout à droite.
+scM1s7=Fantastique !
+
+# Speeches
+sp_14_1E=Ahh… rien de tel que le spectacle d’une pièce vide de tout goudron !
+sp_14_2N2E_1=Bon, je vais devoir garder ce gobelin en vie assez longtemps pour m’en servir pour supprimer ce serpent tout là-bas.
+sp_14_2N2E_2=Pas d’aide de moi ! Toi me trancher, je le sais – que c’est maintenant ou plus tard.
+sp_14_2N2E_3=Ne fais pas le héros. Parce que je sais que les gobelins ne sont pas héroïques.
+sp_14_2N2E_4=Non, non, non ! Garder le pointu loin de moi !
+sp_14_2N2E_5=Tu te dis que tu pourras te faufiler derrière moi quand je ne regarderai pas. Ouais.
+sp_14_2N2E_6=Pitié !
+sp_14_2N2E_7=Écoute, tu ferais la même chose à ma place !
+sp_14_2N2E_8=Une sale affaire. J’espère que je n’aurais pas à le refaire !
+sp_14_2N2E_9=Repose-toi ici pendant que j’ouvre le passage, gobelin.
+sp_14_2N2E_10=(Je n’avais probablement pas besoin de l’enfermer là… mais mieux vaut être prudent !)
+sp_14_1N1E=Regardez-moi ça… pas un seul mur de détruit !
+sp_15_1S2W=Houla, ça ne va pas être facile, ici. Je ferais mieux de planifier mes mouvements avant de commencer.
+sp_16_2S1E_1=Superbe ! Parfois je m’impressionne moi-même.
+sp_16_2S1E_2=Ha ! Terminé !
+sp_16_2S1E_3=Maintenant, je dois repartir…
+sp_16_2S1E_4=Euh… par où je suis entré, déjà ?
+sp_16_2S1E_5=Bah, peu importe.
+spM1s=Vous avez échoué…
+
+sp_o13_1=Viens ici, petit cafard…
+sp_o13_2=Bah ! Un misérable cafard que je vais devoir écraser.
+
+# Tutorial:
+
+sp_tut_entr_1=Bienvenue dans DROD.
+sp_tut_entr_2=Si c’est la première fois que vous jouez à un jeu DROD, veuillez continuer vers l’est.
+sp_tut_entr_3=Vous trouverez là-bas quelques puzzles simples qui vous présenteront le concept.
+sp_tut_entr_4=Prenez les escaliers si vous connaissez le jeu.
+sp_tut_entr_5=Utilisez le pavé numérique ou les touches 789 uio jkl pour vous déplacer.
+sp_tut_entr_6=Les touches peuvent être réassignées dans les options accessibles en appuyant sur « Ech ».
+sp_tut_1E_1=Les orbes ont un effet sur les portes jaunes. Frappez-les avec votre épée pour les activer.
+sp_tut_1E_2=Cliquez sur un orbe pour voir sur quelles portes il agit.
+sp_tut_1E_3=Faites tourner votre épée avec les touches « Q » « W ».
+sp_tut_1E_4=Frappez le cafard avec votre épée pour le tuer.
+sp_tut_1E_5=Frappez l’orbe et attendez quelques tours pour voir comment les monstres réagissent lorsqu’ils approchent un coin en arrivant en diagonale.
+sp_tut_1E_6=Attendez…
+sp_tut_1E_7=Comme vous le voyez, lorsqu’un monstre arrive sur un coin en se déplaçant en diagonale, il préfère se déplacer verticalement.
+sp_tut_1E_8=Tuez les cafards pour abaisser la porte verte et allez vers l’est.
+sp_tut_2E_1=Vous allez apprendre la technique du coup arrière. Après avoir frappé l’orbe, il n’existe qu’un moyen de tuer les cafards – déplacez-vous vers le nord-ouest ou le sud-ouest.
+sp_tut_2E_2=Vous pouvez répéter le mouvement plusieurs fois pour vous aider à vous en souvenir, car cette technique est très importante.
+sp_tut_2E_3=Vous pouvez vous déplacer en diagonale, même à travers des passages très étroits.
+sp_tut_2E_4=Les murs fissurés et secrets peuvent être détruits avec votre épée.
+sp_tut_2E_5=Les flèches au sol empêchent les déplacements de toute créature dans la direction opposée.
+sp_tut_2E_6=Marchez sur le point de sauvegarde pour revenir ici si vous mourez.
+sp_tut_2E_7=Les reines des cafards pondent des œufs tous les 30 tours. Regardez le compteur à gauche de l’écran de jeu pour savoir quand les prochains œufs seront pondus.
+sp_tut_3E_1=Les mauvais yeux dorment jusqu’à ce que vous traversiez leur ligne de vision – une fois réveillés, ils vous attaqueront comme le font les cafards.
+sp_tut_3E_2=Les serpents ne peuvent pas être blessés par votre épée. La seule façon de les tuer est de les faire s’engager dans une impasse.
+sp_tut_3E_3=Utilisez les murs fissurés pour créer un cul-de-sac pour les serpents.
+sp_tut_3E_4=Vous pouvez appuyer sur « Retour Arrière » pour annuler jusqu’à trois coups.
+sp_tut_3E_5=Les serpents, contrairement aux autres monstres, ne peuvent pas se déplacer en diagonale.
+sp_tut_3E_6=Les serpents ont une préférence de mouvement qui change tous les cinq tours.
+sp_tut_3E_7=Leur préférence actuelle est affichée sous le compteur du cycle d'éclosion.
+sp_tut_4E_1=Lorsque vous quittez une case occupée par une trappe, elle tombe, laissant un vide derrière elle.
+sp_tut_4E_2=Pour ouvrir la porte rouge, vous devez faire tomber toutes les trappes.
+sp_tut_4E_3=Vous pouvez vous servir des vides laissés par les trappes tombées pour vous protéger des cafards.
+sp_tut_5E_1=Le goudron est une substance très étrange qui ne peut être endommagée que sur ses bords plats.
+sp_tut_5E_2=Vous n’avez pas besoin de supprimer tout le goudron pour nettoyer une pièce.
+sp_tut_6E_1=Les mères goudrons sont de redoutables adversaires. Elles restent sur place, cachées dans le goudron, et créent du goudron tous les 30 tours.
+sp_tut_6E_2=La porte noire ne s’ouvrira qu’une fois que tout le goudron de la pièce sera éliminé.
+sp_tut_7E_1=Boire cette potion vous permettra de placer un double.
+sp_tut_7E_2=Les doubles copieront tous vos mouvements et peuvent faire tomber les trappes comme Beethro.
+sp_tut_8E_1=Lorsque vous buvez la potion d’invisibilité, les monstres ne bougeront pas sauf si vous êtes à portée d’odorat.
+sp_tut_8E_2=Ne laissez pas les reines s’enfuir sur les flèches ou vous ne pourrez pas les tuer.
+sp_tut_8E_3=Vous avez bien joué, félicitations !
+sp_tut_8E_4=Vous semblez avoir échoué.
+sp_tut_8E_5=Vous pouvez appuyer sur « R » pour recommencer une pièce ou attendre pour écouter quelques conseils.
+sp_tut_8E_6=...
+sp_tut_8E_7=Il existe trois façons différentes de terminer cette pièce.
+sp_tut_8E_8=La plus rapide consiste à piéger la reine sur les flèches près de la porte verte de sorte que vous puissiez la tuer en allant sur ou à côté de la flèche diagonale.
+sp_tut_8E_9=La deuxième méthode, presque aussi rapide, consiste à marcher horizontalement vers la reine pour que la porte verte la bloque.
+sp_tut_8E_10=Enfin, la dernière nécessite que vous fassiez tout le tour de la pièce pour emprisonner la reine dans le couloir d’entrée.
+sp_tut_8E_11=Si vous n’y arrivez toujours pas, attendez quelques tours pour que la potion de dédoublement d’urgence soit disponible.
+sp_tut_9E=Bonne chance !
+
+sc_tut_emergency_potion=Potion de dédoublement d’urgence ; utilisez si la pièce est trop difficile.
+sc_tut_tricky=Cette pièce difficile n’est pas obligatoire.
+
+outro=Les quatre dernières étages ont été l’enfer pour Beethro, avec du goudron, des portes, des cafards… Alors qu’il descendait les escaliers, il sentit encore plus de cette gelée bleue. Il fit la grimace, mais dans son esprit une voix lui disait qu’un danger encore plus grand l’attendait…////
+    ///
+    <font size="32" color="#FFFF00">Félicitations !</font>////
+    Vous avez terminé le quatrième épisode de Deadly Rooms of Death : King Dugan's Dungeon Lite. Nous espérons sincèrement que cela vous a plu.///
+    Maintenant que vous avez descendu les derniers marches de ce set, vous pouvez essayer de maîtriser, puis post-maîtriser le jeu ! Pour ce faire, trouvez les pièces secrètes. Le nombre de pièces secrètes restant à trouver est maintenant affiché dans l'écran de chargement.///
+    Une fois que vous les aurez toutes conquises, une zone de maîtrise spéciale sera ouverte. À vous de trouver comment y accéder !///
+    Vous pouvez aussi jouer au prochain épisode de la série DROD:KDDL.///
+    ///
+    Avant de vous laisser à votre gloire et votre joie d'avoir fini ce jeu, j'aimerais remercier un certain nombre de personnes sans qui ce jeu n'aurait jamais existé :///
+    ///
+    <font size="26" color="#FFFF00">Erik Hermansen</font> - Le créateur, père et inventeur de DROD. Sans lui, l'idée de ce jeu n'aurait jamais vu le jour.////
+    <font size="26" color="#FFFF00">Mike Rimer</font> - Il a codé la plupart de DROD : JtRH et DROD : TCB à lui tout seul. Grâce à cette superbe base de code, la création de Flash DROD a été un vrai plaisir////
+    <font size="26" color="#FFFF00">Matt Schikore</font> - Maître suprême du forum Caravel et codeur en chef de CaravelNet. Grâce à lui vous pouvez entrer en compétition pour les meilleurs scores, et bien plus encore !////
+    ///
+    <font size="23" color="#FFFF00">Programmation, Développement</font> - %%////
+    <font size="23" color="#FFFF00">Graphismes et musique</font> - %% (contribution mineure)////
+    <font size="23" color="#FFFF00">Développement du serveur</font> - %%////
+    <font size="23" color="#FFFF00">Architectes des antres</font> - %%////
+    <font size="23" color="#FFFF00">Testeurs Principaux</font> - %%////
+    <font size="23" color="#FFFF00">Testeurs</font> - %%////
+    <font size="23" color="#FFFF00">Traductions</font> - %%////
+    <font size="23" color="#FFFF00">Doublages</font> - %%////
+    <font size="23" color="#FFFF00">Code d’origine, concept et niveaux</font> - %%///
+    ////
+    À bientôt !////
+    <font size="18" color="#AAAAAA">-Maurycy</font>
+
+# -- OLD PARTIALLY
+complNextGame=Jouer au set de niveaux suivant – « KDD Lite 5 ». Ce lien s'ouvrira dans une nouvelle fenêtre, et vous pourrez alors fermer la fenêtre : votre progression a été sauvegardée.

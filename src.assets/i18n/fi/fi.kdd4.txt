@@ -1,0 +1,254 @@
+# Level Names
+Thirteenth Level=Kerros 13
+Fourteenth Level=Kerros 14
+Fifteenth Level=Kerros 15
+Sixteenth Level=Kerros 16
+Mastery Level=Mestaruuskerros
+Original 13th Level=Alkuperäinen kerros 13
+Tutorial Level=Harjoittelukerros
+
+# Level Entrances
+entrTut=Beethro Budkin, vankityrmien tuholaistorjunnan ammattilainen viidennessä polvessa, on saanut tehtävän Kuningas Duganilta siivota  kuninkaan monikerroksinen vankityrmä, joka kärsii vakavasta  hirviöongelmasta.///
+     Beethro veloittaa joka huoneesta erikseen, ja ammattilaisena häntä  sitoo sopimuksen ehto, joka vaatii jokaisen huoneen tyhjentämistä  kaikista hirviöistä palkkionsa vastineeksi.///
+     Beethro tarvitsee vain Hyvin suuren miekan työnsä tekoon, koska sen  avulla voi kukistaa miltei joka hirviön yhdellä iskulla.
+entr13="Minun olisi varmaan kannattanut ohittaa tämä kerros, mutta sopimus on sopimus. Missäs ne leivänmurut ovatkaan?" -Beethro
+entr14=Tässä kerroksessa tapaat viimeinkin väkeä, joilla on terve kunnioitus miekkaasi kohtaan.
+
+entr15=Tämä kerros on kuin se kerta, kun leikkasit nurmikkoasi ja sinulla oli juuri tarpeeksi bensiiniä ruohonleikkuriin, mutta sitten mokasit ja sinun piti ostaa lisää. Mutta huoltoasemalla oli valtava käärme, ja kun halusit mennä maksamaan kassalle, etuovi oli lukossa, joten joit matkijajuomaa, ja sitten torakat...\n\nOkei, tämä vertaus ei nyt oikein toimi.
+entr16=Nämä torakat tarvitsevat auktoriteetin oppaakseen. Jonkun, jolla on karismaa ja luonnetta. Jonkun - sinun kaltaisesi!
+entrMaster=Beethro laskeutui portaita ja päätyi käytävään, jota ei näkynyt kartassa...////
+    Hänelle ei makseta tämän paikan puhdistamisesta, mutta ammattilaisen kunnia ajaa häntä eteenpäin.
+entrMasterBack=Beethro palasi tekemään kunnolla loppuun työnsä, johon hänet oli palkattu.
+entrOriginal13Enter=Beethro laskeutui alemmas salaperäisiin, tappaviin ja tarkoituksettomiin käytäviin.
+entrOriginal13Success=Ylpeänä suorituksestaan - mutta mielenrauha järkkyneenä - Beethro poistui pahamaineisesta Kuningas Duganin tyrmän kolmannestatoista kerroksesta.
+entrOriginal13Escape=Beethro pakeni haastetta kuin pieni hento kissanpoikanen.
+
+# Achievement Names
+
+
+
+achName0=Yksisuuntainen metsä
+achName1=Tyynet käärmeet
+achName2=Tervan pysäyttäjä
+achName36=Silmäovet
+achName3=Peikonpeittoaja
+achName4=Peikonmurskaaja
+achName5=Peikontuhoaja
+achName6=Väisty syrjään!
+achName7=Vihreä äiti
+achName8=Peikonsurmaaja
+achName34=Äärimmäinen uhraus
+achName35=Tiukat käytännöt
+achName32=Tyyni murhamies
+achName33=Käy eteenpäin
+achName39=Hämähäkkejä vastaan
+achName9=Kasvaa!
+achName37=Silmäin herra
+achName38=Metsästysäpeli
+achName10=Tutkimusmatkailija
+achName11=Peikkohakkelus
+achName12=Äidinsurma
+achName13=Amatöörikoluaja
+achName14=Nouseva sivaltaja
+achName15=Palkattu tuholaistorjuja
+achName16=Olen ammattilainen!
+achName17=Mestaruus
+achName18=Jälkimestaruus
+achName19=Liekitetyt torakat
+achName20=Paistetut emot
+achName21=Raa’at munat
+achName22=Pahaa silmää talon tapaan
+achName23=Pirunsiipi-kebab
+achName24=Käärmekääryleet
+achName25=Äänirauta
+achName26=Vihreän pudotus
+achName27=Rauhantekijä
+achName28=Feenikslintu
+achName29=Ajan herra
+achName30=Lattianputsaaja
+achName31=Kohti ääretöntä ja sen taa!
+
+# Achievement Descriptions
+
+achDesc0=Kerros 13, huone 2E1L: Älä käännä miekkaasi, kun puhdistat huoneen
+achDesc1=Kerros 13, huone 1E: Älä käännä miekkaasi, kun puhdistat huoneen
+achDesc2=Kerros 13, huone 1E1I: Älä käännä miekkaasi, kun puhdistat huoneen
+achDesc36=Kerros 13, huone 1E2L: Älä käännä miekkaasi, kun puhdistat huoneen
+achDesc3=Kerros 14, huone 1E: Puhdista huone katsoen koko ajan luoteeseen
+achDesc4=Kerros 14, huone 2E: Puhdista huone katsoen koko ajan itään
+achDesc5=Kerros 14, huone 1P: Puhdista huone katsoen koko ajan etelään
+achDesc6=Kerros 14, huone 2I: Puhdista huone astumatta ansaluukun päälle
+achDesc7=Kerros 14, huone 2P: Puhdista huone antamatta tervaemon kasvattaa tervaa
+achDesc8=Kerros 14, huone 1P3I: Älä käännä miekkaasi, kun puhdistat huoneen
+achDesc34=Kerros 14, huone 1P1I: Tapa peikko viimeisenä
+achDesc35=Kerros 14, huone 2P2I: Älä päästä peikkoa harmaan tien päälle puhdistaessasi huonetta
+achDesc32=Kerros 15, sisäänkäynti: Älä käännä miekkaasi, kun puhdistat huoneen
+achDesc33=Kerros 15, sisäänkäynti: Pudota kaikki ansaluukut, ennen kuin puhdistat huoneen
+achDesc39=Kerros 15, 1P: Kun olet iskenyt kuulaa, tapa kaikki hämähäkit liikkuen vain vinottain
+achDesc9=Kerros 16, 1E1I: Puhdista huone päästämättä tervaemoa kasvattamasta tervaa
+achDesc37=Mestaruuskerros, huone 2P: Puhdista huone niin, että silmät eivät herää ja munia ei munita
+achDesc38=Mestaruuskerros, huone 1P1I: Tapa pirunsiipi, mutta älä pudota kaikkia ansaluukkuja
+achDesc10=Käy jokaisessa huoneessa alkuperäisessä kerroksessa 13 (%% / 56)
+achDesc11=Tapa 40 peikkoa
+achDesc13=Puhdista kerros 13
+achDesc14=Puhdista kerros 14
+achDesc15=Puhdista kerros 15
+achDesc16=Puhdista kerros 16
+achDesc12=Tapa torakkaemo torakanmunien kasvaessa
+achDesc17=Läpäise mestaruushaaste
+achDesc18=Läpäise jälkimestaruus
+achDesc19=Tapa 100 torakkaa
+achDesc20=Tapa 25 torakkaemoa
+achDesc21=Tapa 10 torakanmunaa
+achDesc22=Tapa 80 pahaa silmää
+achDesc23=Tapa 40 pirunsiipeä
+achDesc24=Tapa 25 käärmettä
+achDesc25=Iske kuulaa kolmen vuoron ajan
+achDesc26=Pudota 20 vihreää porttia
+achDesc27=Tapa 3000 hirviötä
+achDesc28=Kuole 80 kertaa
+achDesc29=Peru 500 liikettä
+achDesc30=Pudota 500 ansaluukkua
+achDesc31=Tee yhteensä 10000 siirtoa
+
+# Scrolls
+sc_13_entr_1=Oikotie uloskäyntiin
+sc_13_entr_2=Taitava sivaltaja ei lue yläpuolella olevaa kääröä ennen kuin puhdistaa koko kerroksen.
+
+sc_13_entr_3=Kivet makasivat hiekan edessä, ja niiden edessä makasivat kivilaatat, joita edelsi kasvava ruoho; tämä oli maan tomuun rakennettu.\n-Tuntematon runoilija
+sc_13_2S2W_3=Oikotie sisäänkäyntiin
+sc_14_1N3E=Seuraavan huoneen asukki ei ole kovin nokkela. Häntä voi huijata samalla tempulla joka kerta.
+sc_mast_entr_1=Alkuperäinen kerros 13
+sc_mast_entr_2=Joitakin uusi pulmia.
+sc_mast_entr_3=Vaikeampia versioita tutuista huoneista.
+sc_mast_1W=Täältä et löydä yhtään mitään.
+sc_o13_orb=Tällä kuulalla oli tehtävä alkuperäisessä kerroksessa.
+sc_o13_orbs=Näillä kuulilla oli tehtävät alkuperäisessä kerroksessa.
+sc_o13_orb2=Tämä kuula ei ollut alunperin tässä, ja keltainen portti oli kokonaan yhdessä huoneessa.
+sc_o13_orbs_gates=Alkuperäisessä huoneessa oli kuula, ja porteilla oli siinä tarkoitus.
+sc_o13_broken_wall=Alkuperäisessä huoneessa seinä oli tavallinen, joten sen takaiseen alueeseen ei voinut mennä.
+sc_o13_edge=Tässä ei ollut alunperin huoneen reunaa.
+sc_o13_roach=Alkuperäisessä kerros 13:ssa yläpuolinen torakka oli samassa huoneessa, ja tämä käytävä oli hieman erilainen.
+
+scM1s1=Tämäpä vasta on saavutus!
+scM1s2=Millainen peli oli? Onnistuitko suorittamaan kaikki erityissuoritukset?
+scM1s3=Ole hyvä ja vieraile CaravelGames.com -sivulla, pelaa lisää KDDL-sarjan pelejä tai lataa varsinaisia DROD-pelejä Windows-, MacOS- tai Linux-koneelle.
+scM1s4=Jatka samaan malliin!
+scM1s5=Tässä on palkinto tarjolla! Tapa kaikki pahat silmät ja peikot astumatta ruohon päälle.
+scM1s6=Torakkaemot kuolevat, kun astut oikealla nurkassa olevaan tallennuspisteeseen.
+scM1s7=Loistavaa!
+
+# Speeches
+sp_14_1E=Aah...mikään ei ole niin tyydyttävää kuin se, ettei näe tervaa yhtään missään!
+sp_14_2N2E_1=Pah...minun näköjään pitää säästää tämä peikko, kunnes se auttaa poistamaan tuon käärmeen.
+sp_14_2N2E_2=Ei oo apuja luvassa! Tiiän minä, aiot silpoa minua--eikä väliä teetkö nyt vai kohta.
+sp_14_2N2E_3=Älähän esitä rohkeaa. Tiedän kyllä, etteivät peikot ole rohkeita.
+sp_14_2N2E_4=Eijeijei! Pitää terävän kepin pois!
+sp_14_2N2E_5=Sinä mietit vilahtavasi selkäni taakse sopivalla hetkellä. Jep.
+sp_14_2N2E_6=Armoa!
+sp_14_2N2E_7=Kuule, tekisit itsekin saman asemassani!
+sp_14_2N2E_8=Olipa ikävä homma. Toivottavasti minun ei tarvitse tehdä sitä uudelleen!
+sp_14_2N2E_9=Lepääpä tässä hetki, peikko. Aukaisen reitin sillä välin.
+sp_14_2N2E_10=(Ehkäpä minun ei olisi tarvinnut lukita sitä tuonne...mutta ei vara venettä kaada!)
+sp_14_1N1E=Kappas kappas...ei tarvinnut tuhota seinän seinää!
+sp_15_1S2W=Voi pojat, tämä ei ole helppoa hommaa. Täytyypä suunnitella jalkatyö tarkkaan ennen kuin käyn matkaan.
+sp_16_2S1E_1=Mahtavaa! Joskus teen jopa itseeni vaikutuksen.
+sp_16_2S1E_2=Haa! Puhdasta tuli!
+sp_16_2S1E_3=Nyt pitää päästä pois täältä...
+sp_16_2S1E_4=Hmm...mistä suunnasta tulinkaan?
+#sp_16_2S1E_5=Ah, it doesn't matter.
+sp_16_2S1E_5=Jaa, eipä sillä ole väliä.
+spM1s=Epäonnistuit...
+
+sp_o13_1=Tules tänne torakka, pikku torakka...
+sp_o13_2=Parsa! Yksi pienenpieni torakka pitää vielä liiskata.
+
+# Tutorial:
+
+sp_tut_entr_1=Tervetuloa. Tämä on DROD.
+sp_tut_entr_2=Jos pelaat ensimmäistä kertaa, jatka itään.
+sp_tut_entr_3=Löydät sieltä helpompia pulmia, joiden avulla peli-idea tulee tutuksi.
+sp_tut_entr_4=Jos osaat jo pelata, kulje portaita.
+sp_tut_entr_5=Liiku numeronäppäinten tai näppäinten 789 uio jkl avulla.
+sp_tut_entr_6=Voit vaihtaa näppäinasetuksia toimintovalikosta, johon pääset escape-näppäimen painalluksella.
+sp_tut_1E_1=Kuula hallitsee keltaisia ovia. Käytä sitä lyömällä sitä miekalla.
+sp_tut_1E_2=Napsauta kuulaa hiirellä, niin näet, mihin oviin se vaikuttaa.
+sp_tut_1E_3=Käännä miekkaasi Q- ja W-näppäimillä.
+sp_tut_1E_4=Iske torakkaa miekalla ja tapat sen.
+sp_tut_1E_5=Iske kuulaa ja odota pari vuoroa, niin näet miten hirviöt käyttäytyvät liikkuessaan vinottain nurkkaa vasten.
+sp_tut_1E_6=Odota hetki...
+sp_tut_1E_7=Kuten näet, vinottaisen liikkeen estyessä hirviöt liikkuvat mieluiten pystysuunnassa.
+sp_tut_1E_8=Tapa kaikki torakat avataksesi vihreän oven ja jatka itään.
+sp_tut_2E_1=Opit takaiskutekniikan täällä. Kun olet iskenyt kuulaa, voit tappaa torakat vain yhdellä tavalla - liiku suoraan pohjoiseen, länteen tai lounaaseen.
+sp_tut_2E_2=Liikettä kannattaa harjoitella muistaaksesi sen varmasti, sillä se on hyvin tärkeä tekniikka.
+sp_tut_2E_3=Jopa hyvin kapeista paikoista voi liikkua vinottain.
+sp_tut_2E_4=Rikkinäiset ja salaiset seinät voi särkeä miekalla.
+sp_tut_2E_5=Nuolet estävät kaikkia liikkumasta vastakkaisiin suuntiin niiden osoittamasta suunnasta.
+sp_tut_2E_6=Astu tallenuspisteeseen, jotta voit palata tähän tilanteeseen, mikäli kuolet.
+sp_tut_2E_7=Emotorakat munivat 30 vuoron välein. Käytä sikiämislaskuria vasemmalla seurataksesi milloin se tapahtuu.
+sp_tut_3E_1=Pahat silmät uinuvat paikallaan, kunnes astut niiden näkökenttään - herättyään ne käyvät kimppuusi torakoiden tavalla.
+sp_tut_3E_2=Miekkasi ei vahingoita käärmettä. Ne voi tappaa vain johdattamalla ne umpikujaan.
+sp_tut_3E_3=Muodosta umpikuja käärmeille rikkinäisistä seinistä.
+sp_tut_3E_4=Voit peruuttaa enintään kolme siirtoa backspace-näppäimellä.
+sp_tut_3E_5=Toisin kuin muut hirviöt, käärmeet eivät liiku vinottain.
+sp_tut_3E_6=Joka hetkellä niillä on ensisijainen suunta, joka muuttuu viiden vuoron välein.
+sp_tut_3E_7=Tämänhetkinen ensisijainen suunta näkyy sikiämislaskurin alla.
+sp_tut_4E_1=Kun astut ansaluukun päältä, se putoaa ja jäljelle jää kuoppa.
+sp_tut_4E_2=Avaa punainen portti pudottamalla kaikki ansaluukut.
+sp_tut_4E_3=Huomaa, että voit käyttää ansaluukuista avautuneita kuoppia suojaamaan itseäsi torakoilta.
+sp_tut_5E_1=Terva on hyvin erikoista ainetta. Sitä voi vahingoittaa vain tasaisilta laidoilta.
+sp_tut_5E_2=Kaikkea tervaa ei täydä poistaa puhdistaessa huonetta.
+sp_tut_6E_1=Tervaemot ovat pelottavia vihollisia. Vaikka ne pysyvät paikallaan tervan keskellä, ne kasvattavat tervaa 30 vuoron välein.
+sp_tut_6E_2=Musta portti aukeaa vasta kun tyhjennät koko huoneen tervasta.
+sp_tut_7E_1=Juo tämä juoma, ja voit sijoittaa matkijan.
+sp_tut_7E_2=Matkijat tekevät kaikki liikkeesi samalla tavalla ja voivat tiputtaa ansaluukkuja kuten Beethro.
+sp_tut_8E_1=Kun juot näkymättömyysjuoman, hirviöt eivät liiku ellet ole niin lähellä, että ne haistavat sinut.
+sp_tut_8E_2=Älä päästä torakkaemoa pakenemaan nuolten luo, tai et voi tappaa sitä!
+sp_tut_8E_3=Selvisit hyvin, onneksi olkoon!
+sp_tut_8E_4=Näytät epäonnistuneen...
+sp_tut_8E_5=Paina "R" aloittaaksesi huone alusta, tai odota hetki, niin saat vinkkejä.
+sp_tut_8E_6=...
+sp_tut_8E_7=Huoneen voi ratkaista kolmella tavalla.
+sp_tut_8E_8=Nopeimmassa tavassa torakkaemo tulee saada satimeen nuolten päälle vihreän oven vieressä sillä tavalla, että sen voi tappaa astumalla vinonuolen päälle tai viereen.
+sp_tut_8E_9=Toinen tapa on melkein yhtä nopea ja vaatii torakkaemon lähestymistä vaakasuunnassa niin, että vihreä ovi pysäyttää sen.
+sp_tut_8E_10=Viimeinen tapa vaatii koko huoneen kiertämistä, jotta torakkaemon saa ajettua sisäänkäynnin viereiseen käytävään.
+sp_tut_8E_11=Jos ei vieläkään onnistu, odota pari vuoroa, ja matkijajuoma tulee tarjolle hätäavuksi.
+sp_tut_9E=Onnea!
+
+
+sc_tut_emergency_potion=Matkijajuoma hätäavuksi, käytettävä jos huone on muuten liian vaikea.
+sc_tut_tricky=Tätä hankalaa huonetta ei ole pakko ratkaista
+
+
+outro=Viimeiset neljä kerrosta olivat Beethrolle yhtä tuskaa kaiken tervan, porttien ja torakoiden kera… Kun hän laskeutui portaita, hän tunsi taas sinisen liejun hajun, mikä aiheutti väristyksiä, mutta jokin vaisto varoitti vielä suuremman vaaran olevan edessä… ////
+///
+    <font size="32" color="#FFFF00">Onnittelut!</font>////
+    Olet päihittänyt neljännen jakson Deadly Rooms of Death, King Dugan’s Dungeon Lite -pelistä. Toivoaksemme nautit tästä.///
+    Kun nyt laskeuduit alas viimeiset portaat tässä pelissä, voit kokeilla Mestarihaastetta ja sitä seuraavaa Jälkimestarihaastetta! Tämä onnistuu, jos löydät kaikki salahuoneet. Tästä lähtien tallennusruudusta näkyy kaikkien kerrosten salahuoneiden lukumäärä.///
+    Kunhan ratkaiset kaikki, reitti Mestaruuskerrokseen aukeaa. Löydätkö tiesi sinne?///
+    Sinua voi myös kiinnostaa seuraava jakso DROD:KDDL-pelisarjassa.///
+    ///
+    Ennen kuin jätämme sinut paistattelemaan maineessa ja kunniassa, haluaisimme antaa kiitokset heille, joiden ansioista saatoit pelata tätä peliä:///
+    ///
+    <font size="26" color="#FFFF00">Erik Hermansen</font> - DROD:in luoja, isä ja keksijä. Ilman häntä tätä ainutlaatuinen peli-idea ei olisi ikinä nähnyt päivänvaloa.////
+    <font size="26" color="#FFFF00">Mike Rimer</font> - Hän ohjelmoi suurimman osan DROD: JtRH and DROD: TCB -peleistä. Hienon koodin pohjalta Flash DROD -pelin tekeminen oli silkkaa nautintoa.////
+    <font size="26" color="#FFFF00">Matt Schikore</font> - Caravel-foorumin ylin hallitsija ja CaravelNet:in pääohjelmoija. Hänen ansiotaan on mahdollisuus kilpailla ennätyksistä muiden pelaajien kanssa ja monta muuta asiaa!////
+    ///
+    <font size="23" color="#FFFF00">Ohjelmointi, kehitys</font> - %%////
+    <font size="23" color="#FFFF00">Taide & musiikki</font> - %% (minor)////
+    <font size="23" color="#FFFF00">Palvelinpuolen kehityst</font> - %%////
+    <font size="23" color="#FFFF00">Arkkitehdit</font> - %%////
+    <font size="23" color="#FFFF00">Päätestaajat</font> - %%////
+    <font size="23" color="#FFFF00">Testaajat</font> - %%////
+    <font size="23" color="#FFFF00">Käännökset</font> - %%////
+    <font size="23" color="#FFFF00">Ääninäyttely</font> - %%////
+    <font size="23" color="#FFFF00">Alkuperäinen ohjelmointi, pelin idea ja alkuperäiset kerrokset</font> - %%///
+    ////
+    Nähdään ensi kerralla!////
+    <font size="18" color="#AAAAAA">-Maurycy</font>
+
+
+# -- OLD PARTIALLY
+complNextGame=Pelaa seuraava jaksoa, KDD Lite 5:ttä. Tästä voit aukaista uuden ikkunan, ja tämän ikkunan sulkeminen on turvallista. Pelitilanteesi on talletettu.
+
+

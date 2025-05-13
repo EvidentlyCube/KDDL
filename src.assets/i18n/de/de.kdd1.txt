@@ -1,0 +1,275 @@
+# src/../src.assets/i18n/de.kdd1.txt
+# Level Names
+First Level=Erster Level
+Second Level=Zweiter Level
+Third Level=Dritter Level
+Fourth Level=Vierter Level
+Mastery Level=Meisterlevel
+# Level Entrances
+entr1=Beethro Budkin, professioneller Kerkerjäger der fünften Generation, wurde von König Dugan angestellt um den weitläufigen königlichen Kerker von einem erheblichen Monsterbefall zu befreien.///
+     Beethro veranschlagt einen Festbetrag pro Raum, und als Profi ist er per Vertrag daran gebunden, die Monster aus ausnahmslos jedem Raum des Kerkers zu beseitigen, bevor er ausbezahlt wird.///
+    Die einzige Waffe, die Beethro benötigt um seine Aufgabe zu erfüllen, ist ein echt großes Schwert, welches jedes Monster mit einem einzigen Schlag vernichtet.////
+    -----////
+    „Ich hoffe Du berechnest mir nicht das oberste Stockwerk. Ich habe dieses bereits saubergemacht. Na gut, größtenteils.“ -König Dugan
+entr2=Beethro ist ein wenig eingerostet, aber die nächste Etage sollte ihn gut in Hackform bringen.
+entr3=„Hmm...“, grübelte Beethro. „Bis jetzt sehe ich fast nur Schaben hier unten. Das sieht nach einem kinderleichten Auftrag aus.“
+entr4=„Ich wünschte, ich hätte einige von diesen Imitaten hier unten bei mir!“, sagte Beethro. „Es würde um einiges schneller gehen.“
+entr4Back=Beethro kam zurück, um jene einwandfreie Totschlag-Arbeit abzuliefern, für die er engagiert wurde.
+entrMaster=Beethro stieg die Stufen hinab, einzig dafür um einen nicht verzeichneten Verbindungsgang vorzufinden...////
+    Er würde nicht für die Säuberung hier bezahlt werden, aber seine Berufsehre drängte ihn vorwärts.
+# Scrolls
+sc1e0=Benutzen Sie den Ziffernblock oder 789uiojkl, um sich zu bewegen. Die Tastenbelegung kann über das Pausenmenü verändert werden (Escape).
+sc1e1=Um die Steuerung zu einem späteren Zeitpunkt nachzuschlagen, drücken Sie `Escape`, wählen `Allgemeine Hilfe` und den Unterpunkt `Spielanleitung`.
+sc1_1n=Diese gelbe Tür wird später noch ihrem Zweck dienen. ////
+    //
+    Gehen Sie fürs Erste weiter nach Westen.
+sc1_1n1w1=Rotieren Sie Ihr Schwert mittels `Q` und `W`.
+sc1_1n1w2=Streifen Sie die Schaltkugel mit Ihrem Schwert um Türen in diesem Raum zu öffnen.
+sc1_1n1w3=Einige Schaltkugeln schalten zwischen dem geöffneten und geschlossenen Zustand der Türen hin- und her.
+sc1_2n1w1=Sie können feststellen was eine Schaltkugel tut, indem Sie sie mit der Maus anklicken. Die unterschiedlichen Farben der markierten Türen kennzeichnen unterschiedliche Effekte.
+sc1_2n1w2=Anstatt eine gelbe Tür abwechselnd zu öffnen und zu schließen, kann eine Schaltkugel sie auch jedes Mal öffnen oder jedes Mal schließen.
+sc1_3n1w1=Blaue Tore öffnen sich, sobald Sie alle geforderten Räume einer gegebenen Ebene (Etage) erobert haben.
+sc1_3n1w2=Geforderte Räume sind durch einen roten Hintergrund auf der Übersichtskarte markiert.
+sc1_3n2w1=Das gerade Gesprochene und eingeblendete Texte können mit der Leertaste übersprungen werden.
+sc1_3n2w2=Sobald Sie einen von allen Monstern befreiten Raum verlassen, wird er als erobert markiert.
+sc1_3n2w3=Auf der Übersichtskarte sind eroberte Räume weiß dargestellt - im Gegensatz zu den nicht eroberten, welche rot sind.
+sc1_3n2w4=Erobern Sie alle geforderten Räume, um Ihren Weg zur nächsten Ebene freizumachen.
+sc1_4n3w=Richtungspfeile blockieren sowohl Beethros als auch die Monster-bewegungen in die entgegengesetzte Richtung.
+sc1_4n1w=Grüne Tore öffnen sich sobald Sie einen Raum von allen Monstern befreit haben.
+sc1_5n1w1=Beachten Sie, wie sich die südliche Schabe verhält wenn sie versucht, sich diagonal auf eine Ecke zu bewegen.
+sc1_5n1w2=Die meisten Monster werden, wenn sie sich auf eine Ecke bewegen wollen, vertikal entlanggleiten, wenn dies möglich ist.
+sc1_5n2w1=Denken Sie daran, dass Sie mit der Maus auf eine Schaltkugel klicken können um zu erfahren, welche Türen sie beeinflusst.
+sc1_5n2w2=Vorsicht! Hier ist es gefährlich.////
+    Wenn Sie einen Fehler machen, drücken Sie die `Rücktaste`, um bis zu drei ihrer letzten Aktionen rückgängig zu machen.
+sc1_5n2w3=Sie können ihre Aktion auch dann zurücknehmen (und neu beginnen) wenn die Todesanimation abgespielt wird!
+sc1_5n2w4=Mit Berühren eines Rücksetz-punkts 'X' können Sie den Raumzustand speichern.///
+    Drücken Sie `R`, um zum letzten Rücksetzpunkt zurückzukehren oder den Raum neu zu beginnen.
+sc1_6n2w=Ein guter Schwertkämpfer kann all diese Schaben besiegen, ohne den südlichen Alkoven zur Deckung zu nutzen!
+sc1_6n3w1=Verwenden Sie den Durchgangshieb, um diese Schabe zu besiegen.
+sc1_6n3w2=Stellen Sie sich auf den grünen Boden und stellen Sie sicher, dass sich die Schabe auf dem Sandfeld direkt nördlich von Ihnen befindet...
+sc1_6n3w3=Stellen Sie sich auf den grünen Boden und stellen Sie sicher, dass sich die Schabe auf dem Sandfeld direkt südlich von Ihnen befindet...
+sc1_6n3w4=...dann bewegen Sie sich nach Nordosten um sie zu töten.
+sc1_6n3w5=...dann bewegen Sie sich nach Südosten um sie zu töten.
+sc1_6n3w6=Wiederholen Sie die Prozedur, um den Durchgangshieb zu analysieren. Meistern Sie diese Technik, denn sie wird sich bei Ihrem weiteren Unterfangen als unverzichtbar herausstellen.
+sc1_5n1=Der Notausgang ist außer Betrieb.
+sc1_5n2=Tschuldige'err wir werden's Bau'n net fertigkrie'n wenn de große' Schabens hier frei rumlofen!
+sc1_4n=Bitte halten Sie die Gewächshaustüren geschlossen.
+sc1_1n1e=Diese Stufen führen zur nächsten Ebene. Nehmen Sie sich vor dem in Acht, was Sie dort erwartet...
+sc2_2n1=Wussten Sie, dass Sie die Umschalttaste während der Ausführung einer Aktion gedrückt halten können, um automatisch auch dessen Umkehrung auszuführen?
+sc2_2n2=Umschalt+Warten lässt sie bis zur nächsten Eiablage warten, und `Ziffernblock +` oder `=` führt die Umkehrung Ihrer letzten Aktion aus!
+sc2_1n1e=Sie sollten nicht so zerstörerisch sein.
+sc2e=Es empfiehlt sich die Räume im Norden zuerst zu bewältigen.
+sc2_1s3e1=Sie können es verhindern einen Raum versehentlich zu verlassen, indem Sie `X` drücken um ihn zu verriegeln.
+sc2_1s3e2=Ein kleines Schloss auf der Übersichtskarte zeigt an, dass ein Raum verriegelt wurde.
+sc2_1s=Tut es nicht! Es ist offensichtlich, was passieren wird!
+sc2_2s3e=Gutes Timing macht die Dinge wesentlich einfacher.
+sc3_3n=Ich muss Euch vor Imitaten warnen. Sie sind weder Eure Freunde noch Eure Feinde--sie bewegen sich ganz einfach exakt so wie Ihr. Dreht ihnen nicht den Rücken zu.
+sc3_3n1e=Alle Gefangenen wurden von Kerkerschaben verspeist, und ich bin der nächste! Ihr könnt mir gar nicht genug zahlen um diesen Job zu machen. Ich bin raus hier!////
+    -Der Aufseher
+sc3_2n=Es ist möglich in diesen Durchgang zu gelangen, ohne den Raum nach der Eroberung erneut zu betreten.
+sc3_1n1w=Nach Verwendung des Unsichtbarkeits- tranks können sie Euch nicht sehen, aber sie können Euch noch immer riechen wenn Ihr ihnen zu nahe kommt.
+sc3_1e=So ein langer Weg. Er erscheint beinahe unnötig.
+sc3_1s=Die Acht Tore des Toren--in der Tat ein eindrucksvolles Rätsel. Es war einst wesentlich schwieriger, aber ich kann nun die Schaltkugeln überprüfen um zu sehen was sie bewirken.
+sc3_2s1w=Hier ist etwas das ich Euch erzählen werde--wann immer Ihr lange und mühselige Pfade seht, solltet Ihr nach Abkürzungen Ausschau halten.
+sc3_2s1=Kehrt um! Wusstet Ihr, dass allein im letzten Jahr kerkerbezogene Tode um 32 Prozent gestiegen sind?
+sc3_2s2=Seht den Tatsachen ins Auge--Kerkererkundung ist NICHT sicher, besonders in Verbindung mit Rauschgiften.///
+    -EGTIK (Eltern Gegen Tode Im Kerker)
+sc4_2n1e1=Dies ist eine Meistermauer. Sie wird sich erst öffnen wenn Sie die Feste bezwungen und alle Geheimnisse erobert haben.
+sc4_2n1e2=Im ursprünglichen "King Dugan's Dungeon" war dies ein Warp-Raum, mit dessen Hilfe Sie ein oder zwei Level überspringen konnten.
+sc4_1n1=Hinweis:////
+    Sie benötigen nicht die Hilfe der Imitate um die Schaben am Eingang zu bekämpfen.
+sc4_1n2=Hinweis:////
+    Denken Sie scharf nach, Sie können den sehr hilf-reichen DURCH-GANGSHIEB einsetzen -- gut, wenn sich zu beiden Seiten neben Ihnen ein Monster befindet!
+sc4_2e=Wenn Sie Stil bewiesen haben, sollten sich alle 9 Imitate in einer Linie rechts von Ihnen befinden.
+scMe1=Schwierigere Versionen von vorherigen Rätseln.
+scMe2=Letzte Worte!
+scMe3=Schwierige, neue Räume.
+scM_1s1=Das war's. Sie haben nun alles vollendet, was es in diesem Spiel zu sehen gab. Es sind höchstens noch ein paar Errungenschaften übrig.
+scM_1s2=Ich gratuliere Ihnen aufrichtig und lade Sie dazu ein, die Reise fortzusetzen.
+scM_1s3=Auf der CaravelGames.com-Website finden Sie die nächsten Episoden von KDDL oder Sie können dort eines der vollwertigen DROD-Spiele für Windows, MacOS oder Linux herunterladen.
+scM_1s4=Bleiben Sie verspielt!
+scM_1s5=Hier ist eine kleine Belohnung! Töten Sie alle Augen ohne auf das braune Gras zu treten.
+scM_1s6=Die Schabenköniginnen werden sterben, wenn Sie auf den Rücksetzpunkt in der oberen rechten Ecke treten.
+scM_1s7=Sehr hübsch, weiter so!
+# Speeches
+sp1e0=Bewegen Sie sich mit dem Ziffernblock.
+sp1e1=Wenn Sie auf einem Notebook spielen, können Sie folgende Bewegungstasten verwenden: 789, UIO, JKL
+sp1e2=Gehen Sie zum Fortsetzen nach Norden.
+sp1_3n2w1=Aha, die erste Schabe dieses Kerkers!
+sp1_3n2w2=Komm zu Beethro, kleiner Schabenburger in spe!
+sp1_3n2w3=Glatt entzwei! Dieser Auftrag wird gut ablaufen, ich spür's!
+sp1_6n2w=Ich hätte diese Schaben auch erledigen können, ohne mich in der Nische zu verstecken, aber heute bin ich etwas faul drauf.
+sp1_6n3w1=Sie haben einen Geheimraum entdeckt!
+sp1_6n3w2=Finden und lösen Sie alle Geheimräume, um eine besondere Meisterzone mit weiteren Aufgaben zu eröffnen.
+sp2_2e=Die Königin da wird massenweise Schaben produzieren, bis ich zur Schaltkugel und zurück bin!
+sp2_1s1e1=Heda, ein Fledergeist!
+sp2_1s1e2=Und dann auch noch nur ein einziger ... den muss ich wohl durch den ganzen Raum jagen.
+sp2_1s1e3=Anders als eine Schabe hält ein Fledergeist Abstand von Beethro und versucht, fünf Schritte von ihm entfernt zu bleiben.
+sp2_1s1e4=Zu mehreren sind sie allerdings nicht so scheu, und sie greifen sofort an, wenn sie ihr Opfer umzingelt haben.
+sp2_2s2e1=Hmmm ... kann ich diese Königinnen plätten, ehe sie Eier legen?
+sp2_2s2e2=Hach ... zu langsam!
+sp2_2s2e3=Ha! Kein Thema.
+sp2_2s3e1=Es muss eine bessere Methode geben, diese Schabenköniginnen zu erledigen.
+sp2_2s3e2=Das war ja mal ein Paradestück.
+sp3_3n1e=Keine Gefangenen mehr da? Das wird ein einsamer Auftrag, wenn man mit keinem schwatzen kann.
+sp3_2n=Aber ernsthaft.
+sp3_1n2w0=Großgütiger! Ich denke, dieses Mal brauche ich den Trank!
+sp3_1n2w1=Pfuh! Jetzt werden diese Königinnen keine Eier legen, bis ich nahe an sie rankomme.
+sp3_1n2w2=Das war jetzt nicht ganz einfach, aber ein kompetenter Absteiger wie ich schafft auch das!
+sp3_1n2w3=Ha! Dem Absteigör ist nichts zu schwör!
+sp3_1n1w1=He, das ist ja klasse!
+sp3_1n1w2=Ich hätte diesen Raum natürlich auch sichtbar lösen können, aber es macht auch so Spaß.
+sp3_1n1w3=Gar nicht so schwer ... was wohl der Trank da soll?
+sp3_1s=Ich hätte die Türen auch schneller öffnen können.
+sp3_3s1w1=Sieht gefährlich aus ... vermutlich eine Falle ...
+sp3_3s1w2=Ich könnte diesen Raum lösen, ohne mein Schwert zu schwingen, nachdem ich die Schaltkugel haue. Nur so zur Übung!
+sp3_3s1w3=Na, vielleicht habe ich mein Schwert geschwungen, aber immerhin lebe ich noch.
+sp3_3s1w4=Wow! Das hätte jetzt jemand sehen müssen.
+sp4_2n1e=Noch ein geheimer Raum wo ihn niemand erwartet hätte ... außer mir natürlich.
+sp4_1n1=Diesen Raum hätte ich auch lösen können, ohne mich in den Eingangskorridor zurückzuziehen.
+sp4_1n2=Beethro Budkin bewältigt jede Herausforderung!
+sp4_2e1=Heilige Habuffsen! Vielleicht kann man doch zu viele Imitate haben!
+sp4_1s2e=Woran liegt es, dass ein Raum besser aussieht, wenn erst alle Falltüren ausgelöst sind?
+spM_1s=Ihr habt versagt ...
+# Achievements
+achName0=Unter Beobachtung
+achName1=Muttermord
+achName2=Nieder mit allem!
+achName3=Wahrer Hackmeister
+achName4=Ruhiges Händchen
+achName5=Königinnen-Burger
+achName6=Einbahn
+achName7=Aber flott!
+achName8=Aber schnell!
+achName9=Ruhiges Ärmchen
+achName10=Schnapp die Rolle
+achName11=Sichtbar
+achName12=Ununsichtbar
+achName13=Überhöhte Ge-schwindigkeit
+achName14=Die Acht Tore des Toren
+achName15=Der Schaben-Flüsterer
+achName16=O magnum mysterium
+achName17=Dreh dich nicht um
+achName18=Alleine unter Schaben
+achName19=Ich mag Gruben
+achName20=Die unerträgliche Leere des Nichts
+achName21=Hat Stil
+achName22=Amateur-Absteiger
+achName23=Totschläger-Geselle
+achName24=Kammerjäger auf Abruf
+achName25=Ich bin vom Fach!
+achName26=Meisterschaft
+achName27=Über-Meisterschaft
+achName28=Gegrillte Schaben
+achName29=Gehobelte Königinnen
+achName30=Rührei
+achName31=Augenpudding
+achName32=Fledergeister-Dip
+achName33=Stimmgabel
+achName34=Nieder mit den Grünen!
+achName35=Horde unter Kontrolle
+achName36=Stehauf-Männchen
+achName37=Die Zeit läuft rückwärts
+achName38=Grubengräber
+achName39=Zu Fuß zum Mond
+achDesc0=Drei Stieraugen in einem Zug geweckt
+achDesc1=Eine Schabenkönigin getötet, während ihre Eier heranwachsen
+achDesc2=Doch, Sie sollten so zerstörerisch sein.
+achDesc3=In 6N 2W im ersten Level nicht in der Nische versteckt
+achDesc4=Bis auf einen alle monsterbefallenen, nicht-geheimen Räume auf dem ersten Level gelöst, ohne das Schwert zu schwingen\nBisher %% von 6.
+achDesc5=In 2O im zweiten Level die Königin getötet, bevor sie die Ecke erreicht
+achDesc6=In 1S im zweiten Level das Schwert nach dem Schaltkugel-Hauen nicht mehr geschwungen
+achDesc7=In 2S 2O im zweiten Level alle Königinnen erschlagen, bevor sie Eier legen konnten
+achDesc8=2S 3O im zweiten Level gelöst, bevor Eier gelegt werden
+achDesc9=3N im zweiten Level gelöst, ohne das Schwert zu schwingen
+achDesc10=Die Schriftrolle in 2N im dritten Level erreicht, ohne zurück in den Raum zu kommen
+achDesc11=In 1N 1W im dritten Level alle Schaben getötet, ohne den Trank zu benutzen
+achDesc12=1N 2W im dritten Level gelöst, ohne den Trank zu benutzen
+achDesc13=1N 1O im dritten Level gelöst, ohne dass Königinnen Eier legen
+achDesc14=Die Acht Tore des Toren mit fünf Mal Schaltkugeln hauen gelöst (1S im dritten Level)
+achDesc15=In 2N 1O im dritten Level alle drei Schaben gleichzeitig aus dem Irrgarten befreit
+achDesc16=3N im dritten Level gelöst, ohne den Trank zu benutzen
+achDesc17=1N im vierten Level gelöst, ohne zurück in den Eingangskorridor zu treten
+achDesc18=1S 1O im vierten Level gelöst, ohne den Imitattrank zu benutzen
+achDesc19=In 1S 2O im vierten Level im selben Durchgang alle Falltüren ausgelöst und den Raum gelöst
+achDesc20=2S 1O im vierten Level gelöst und im selben Durchgang alle Falltüren ausgelöst
+achDesc21=In 2O im vierten Level Stil bewiesen
+achDesc22=Den ersten Level gelöst
+achDesc23=Den zweiten Level gelöst
+achDesc24=Den dritten Level gelöst
+achDesc25=Den vierten Level gelöst
+achDesc26=Die Feste gemeistert
+achDesc27=Die Feste übermeistert
+achDesc28=35 Schaben erschlagen
+achDesc29=20 Schabenköniginnen erlegt
+achDesc30=15 Schabeneier erledigt
+achDesc31=15 Stieraugen zerhackt
+achDesc32=5 Fledergeister bezwungen
+achDesc33=Eine Schaltkugel drei aufeinanderfolgende Züge lang gehauen
+achDesc34=5 grüne Tore geöffnet
+achDesc35=Insgesamt 2500 Monster getötet
+achDesc36=Insgesamt 50 Mal gestorben
+achDesc37=Insgesamt 250 Züge zurückgenommen
+achDesc38=Insgesamt 100 Falltüren ausgelöst
+achDesc39=Insgesamt 5000 Schritte gegangen
+# Game completion
+outro=Was steht Beethro als nächstes bevor? Werden die Gefahren noch gefährlicher werden? Wird er König Dugans Kerker komplett entmonstern und endlich seine Bezahlung einfordern können?///
+    ///
+    <font size="32" color="#FFFF00">Gut gemacht!!</font>////
+     Sie haben die erste Episode der Feste Deadly Rooms of Death, King Dugan's Dungeon Lite abgeschlossen. Ich hoffe sehr, dass Sie dabei Ihren Spaß hatten.///
+     Jetzt, da Sie die letzte Treppe in dieser Levelsammlung hinabgestiegen sind, wollen Sie vielleicht versuchen, dieses Spiel zu meistern oder gar zu übermeistern. Wenn Sie das möchten, dann suchen Sie nach geheimen Räumen! Ab jetzt können Sie im "Anderen Raum laden"-Menü für jeden Level nachsehen, wie viele Geheimräume noch zu finden bleiben.///
+    Wenn Sie auch diese Räume alle gelöst haben, erhalten Sie Zugang zu einem speziellen Bereich nur für Meister-Kammerjäger. Finden Sie den Eingang?///
+    Vielleicht wollen Sie aber auch mit dem nächsten Abschnitt von König Dugans Kerker fortfahren.///
+    ///
+     Bevor ich Sie nun der wohligen Wärme des Erfolgs überlasse, möchte ich einigen Leuten danken, ohne die dieses Spiel niemals fertig geworden wäre:///
+    ///
+    <font size="26" color="#FFFF00">Erik Hermansen</font> - Der Erschaffer, geistige Vater und Erfinder von DROD. Ohne ihn wäre dieses einzigartige Spielprinzip wohl nie erfunden worden.////
+    <font size="26" color="#FFFF00">Mike Rimer</font> - Er hat die Spiele DROD: JtRH und DROD: TCB beinahe im Alleingang programmiert. Dank seiner soliden Arbeit war die Umsetzung von DROD in Flash für mich ein reines Vergnügen.////
+    <font size="26" color="#FFFF00">Matt Schikore</font> - Der Große Anführer des Caravel-Forums und Hauptentwickler von CaravelNet. Dank ihm können Sie Ihre Ergebnisse online mit anderen vergleichen, und vieles mehr!////
+    ///
+    <font size="23" color="#FFFF00">Programmierung und Entwicklung</font> - %%////
+    <font size="23" color="#FFFF00">Grafik und Musik</font> - %%////
+    <font size="23" color="#FFFF00">Serverprogrammierung</font> - %%////
+    <font size="23" color="#FFFF00">Leveldesign</font> - %%////
+    <font size="23" color="#FFFF00">Haupttester</font> - %%////
+    <font size="23" color="#FFFF00">Tester</font> - %%////
+    <font size="23" color="#FFFF00">Übersetzungen</font> - %%////
+    <font size="23" color="#FFFF00">Stimmen</font> - %%////
+    <font size="23" color="#FFFF00">Konzept, Original-Programm und -Levels</font> - %%///
+    ////
+    Bis zum nächsten Mal!////
+    <font size="18" color="#AAAAAA">-Maurycy</font>
+
+complNextGame=Spielen Sie die nächste Levelsammlung: KDD Lite 2. Ein neues Fenster wird sich dafür öffnen. Dieses Fenster hier können Sie unbesorgt schließen, Ihr Fortschritt wurde gespeichert.
+
+scNew1=Beobachten Sie genau, was während des Eiablage-Zugs geschieht.
+scNew2=Eier erscheinen nie auf Falltüren, Pfeilen und offenen gelben Türen.
+scNew3=Und wenn eine Königin sich im Eiablage-Zug bewegt, erscheint kein Ei auf dem Feld, von dem Sie sich gerade wegbewegt hat.
+sc2_1s3e1=Sie können verhindern, dass Sie unbeabsichtigt einen Raum verlassen, indem Sie auf Ihrer Tastatur 'X' drücken.
+sc2e=Erledigen Sie zuerst die Räume nach Norden hin, sonst müssen Sie dazu nochmal hierher zurück.
+sc1_New1N1W=Ich weiss nicht, ob Sie's wussten: Königinnen fliehen vor Ihnen und legen keine Eier auf offene gelbe Türen.
+sc1_New3N1=Schabenköniginnen legen alle 30 Züge Eier (im Zug, nachdem der Zugzähler rot wird).
+sc1_New3N2=Eier reifen über fünf Züge zu ausgewachsenen Schaben heran.
+sc1_New3E=Schabenköniginnen rennen immer vor Beethro weg. Dieses Verhalten kann man für sich nutzen.
+sc1_new6n2w1=Gerissene Mauern und Geheimwände lassen sich genau gleich mit dem Schwert durchbrechen.
+sc1_new6n2w2=Geheimwände sind aber schwerer zu entdecken.
+sc1_new6n2w3=Übersehen Sie also nicht die hier in der Ecke, wenn Sie noch mal zurückkommen.
+sc1_5n1w3=Dieses Spiel ist völlig zufallsunabhängig. Nichts geschieht mal so, mal so.
+sc1_new6N=Um die Feste zu meistern, müssen Sie alle Geheimnisse erobern - aber nicht unbedingt in einem einzigen Durchgang.
+sc_evileyes=Auf diesem Level werden Sie den Stieraugen begegnen. Wenn Sie in ihr Gesichtsfeld treten, erwachen sie und jagen Sie, gleich wie die Schaben.
+sc1_5n1w1=Beobachten Sie, wie sich die südliche Schabe verhält, wenn sie auf eine Ecke aufläuft. Mit "I" oder der 5 im Ziffernblock können Sie einen Zug warten.
+
+
+# Tutorial crap
+defCont=Standard-Tastenbelegung:
+sc_diago=Sie können sich diagonal bewegen, auch durch sehr enge Gänge.
+sc_broken=Zerschlagen Sie diese gerissenen und geheimen Mauern mit Ihrem Schwert.
+sc_queens1=Schabenköniginnen legen alle 30 Züge Eier (im Zug, nachdem der Zugzähler rot wird).
+sc_queens2=Eier reifen über fünf Züge zu ausgewachsenen Schaben heran.
+sc_queens3=Auf Pfeilen, Falltüren und gelben Toren erscheinen keine Eier. Mit der Taste "I" oder der 5 im Ziffernblock warten Sie einen Zug.
+sc_mimics=Wenn Sie auf einen Imitat-Trank treten, wählen Sie mit der Maus oder der Warten-Taste den Ort, wo das Imitat erscheinen soll.
+sc_shiftwait=Mit Umschalt-Warten können Sie automatisch bis zur nächsten Eiablage warten.
+sp_mother1=Alle dreissig Züge lassen Teermütter ihren Teerfleck um ein Feld in jeder Richtung wachsen.
+sp_mother2=Es ist eigentlich ungefährlich, vom wachsenden Teer eingeschlossen zu werden, aber Vorsicht vor beim Wachsen entstehenden Teerbabies.
+sc_backswipe=Folgen Sie dem Sandpfad, um die Durchgangshieb-Technik zu lernen! Nutzen Sie diagonale Bewegungen, und schwingen Sie Ihr Schwert nicht.
+sc_trapdoors=Diese rosa-violetten Felder sind Falltüren. Sie fallen in die Tiefe, sobald Sie oder ein Imitat davon hinabtreten.

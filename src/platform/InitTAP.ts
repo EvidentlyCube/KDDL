@@ -1,0 +1,47 @@
+import {PlatformOptions} from "./PlatformOptions";
+import {C, HoldId} from "../C";
+
+import * as HoldPath from "../../src.assets/level/TheAncientPalace.tss.hold";
+import * as SubtitlePath from "../../src.assets/gfx/by_maurycy/ui/logo_tap.png";
+import * as LocalEnPath from "../../src.assets/i18n/en/hold.tap.yml";
+import {HoldOptions} from "./PlatformSpecific";
+import { AchievementsListTAP } from "src/game/achievements/AchievementsListTAP";
+
+export const TAPHoldOptions: HoldOptions = {
+	id: HoldId.TheAncientPalace,
+	holdDisplayName: "The Ancient Palace",
+	defaultStyle: 'Foundation',
+	styleAbo: true,
+	styleCit: true,
+	styleDee: true,
+	styleFor: true,
+	styleFou: true,
+	styleIce: true,
+	isHoldKdd1: false,
+	isHoldKdd2: false,
+	isHoldKdd3: false,
+	isHoldKdd4: false,
+	isHoldKdd5: false,
+	isHoldKdd6: false,
+	saveStorageName: 'drod-lite/tap',
+	supportedLanguages: ['en'],
+	achievementsInRow: 6,
+	achievementsSetter: AchievementsListTAP,
+	music: {
+		ambient: "RES_MUSIC_AMBIENT_1",
+		winLevel: "RES_MUSIC_WIN_LEVEL_1",
+		attack1: "RES_MUSIC_ATTACK_1",
+		attack2: "RES_MUSIC_ATTACK_2",
+		puzzle1: "RES_MUSIC_PUZZLE_1",
+		puzzle2: "RES_MUSIC_PUZZLE_2",
+	},
+	resources: {
+		lang: {
+			'en': LocalEnPath.default,
+		},
+		subtitle: SubtitlePath.default,
+		hold: HoldPath.default,
+	},
+};
+
+PlatformOptions.isGame = true;

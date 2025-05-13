@@ -1,0 +1,222 @@
+# Level Names
+Ninth Level=Ninth Level
+Tenth Level=Tenth Level
+Eleventh Level=Eleventh Level
+Twelfth Level=Twelfth Level
+Mastery Level=Mastery Level
+Tutorial=Tutorial
+
+# Level Entrances
+entr9=Beethro Budkin, fifth-generation professional dungeon exterminator, was hired by King Dugan to clear the king's multi-level dungeon of a large monster infestation.///
+    Beethro charges by the room, and as a professional, he is contract-bound to clear all the monsters from each and every room in the dungeon to get paid.///
+    The only weapon Beethro needs to do his job is a Really Big Sword, which will defeat almost any monster in a single hit.////
+    -----////
+    Beethro sat down on the steps for a break. He pulled three bottles out of his pack. The ten-cup bottle was filled with refreshing leaf juice, and the other two bottles, which were in two-cup and five-cup sizes, were empty. Beethro wanted to drink exactly four cups of leaf juice in one uninterrupted gulp. He started messing around with the cups, pouring juice from one to another and back, but after a while gave up.  "This is too much work!  Forget it!"
+entr10=As many experienced dungeon exterminators know, beneath dwell some beasties that are able to blend into their surroundings.
+entr11=Catching a glimpse of the room ahead, Beethro grunted in disapproval.  "I don't know how, but the tar always ends up that way, and I hate it."
+entr12=Again, Beethro heard loud hissing below, and knew to expect serpents. But this time the sound was slightly different, and he stopped a moment to listen and judge what lay ahead. "Good Gob!  Those slitherbags must've been down there a gawdawful long time, with some big meals along the way."
+entr12Back=Beethro came back to finish the proper smiting business he was hired to do.
+entrMaster=Beethro descended the stairs only to find himself in an uncharted corridor...////
+    He won't get paid for clean-up here, but his professional honor urges him onward.
+entrTutorial=Tutorial
+entrTutorialLeft=Beethro left the tutorial floor rich with new knowledge.
+
+# Scrolls
+
+sc93n3e=Are you sure you are doing them in the correct order?
+sc94n3e=The order is the key.
+sc10e=Invisibly evil spiders lurk on this level. Beware, for they are hard to see.
+sc111s2e=Psst... This passage takes you to the stairs. You might want to clear all other rooms before going there!
+sc121n1e1=If a serpent moves west and it prefers horizontal movement, step to the east of its head to force it to move north.
+sc121n1e2=It works the same vertically, but then the snake prefers eastward movement.
+sc12e=Your clock tells you which direction snakes currently prefer. This will help you to control these erratic creatures.
+scMe1=Other puzzles
+scMe2=Final words
+scM1s1=Getting here is a fabulous feat!
+scM1s2=So how did you like it? Did you manage to get all of the achievements?
+scM1s3=Feel free to visit CaravelGames.com to play more episodes of KDDL, or to download any of the full DROD games for Windows, MacOS, or Linux.
+scM1s4=Game on!
+scM1s5=Here is a small reward! Kill all the eyes without stepping on the grass.
+scM1s6=Roach queens will be killed once you step on the checkpoint in the far-right corner.
+scM1s7=Really nice, congrats!
+scT1=Did you know that serpents can't move over scrolls?
+scT2=Move to the far right and observe how the roach behaves when walking onto a corner diagonally.
+scT3=Snakes move by their own, much more complex, movement rules. Their current preference is shown beneath the spawn cycle timer.
+scT4=If a monster moves diagonally into a corner obstacle, it prefers to slide vertically, if possible.
+scT5=`Escape` opens up the pause menu, where you can view `General Help` to refer to the controls anytime you wish.
+scT6=To prevent yourself from accidentally leaving a room hit X to lock and unlock it. A small lock icon on the minimap indicates that a room is locked.
+scT7=Shift+Key performs the key's action followed by its inverse.///
+    Shift+Wait waits until the next spawn.///
+    Numpad '+' or '=' performs the opposite of your previous move.
+scT8=F3 displays a move counter to help you optimize for better scores.
+scT9=All keys can be remapped from within game options.
+scT10=Those without CaravelNet subscriptions won't have their scores stored on the leaderboard but will know what place they would have attained.
+scT11=Click on elements to see what orbs do and what the evil eyes see.
+scT12=The spacebar will clear all speech and achievements from the screen.
+scT13=Wraithwings, unlike roaches, run away from Beethro and try to keep themselves at a distance of five tiles.
+scT14=They are not as shy in bigger numbers, and won't hesitate to attack if they surround their prey.
+sc1_6n3w1=Use the backswipe technique to get rid of the roach.
+sc1_6n3w2=Place yourself on the green floor and make sure the roach stands on the sand tile directly north of you...
+sc1_6n3w3=Place yourself on the green floor and make sure the roach stands on the sand tile directly south of you...
+sc1_6n3w4=...then move northeast to kill it.
+sc1_6n3w5=...then move southeast to kill it.
+sc1_6n3w6=Repeat to analyze the backswipe. Master this technique, for it will prove crucial in your further endeavors.
+
+# Speeches
+
+sp9e1=This is a tutorial area.
+sp9e2=Visit it if you haven't played this game before.
+sp9e3=Move around using the numpad or 789, UIO, JKL
+sp9e4=Hot griddled roaches!  No more tar!
+sp91n1e=That was just nasty. Maybe tar isn't so bad after all...
+sp94n4e1=Ah-ha!  Gotta get up early in the morning to pull one over on Beethro!
+sp94n4e2=I am not amused.
+sp93n=Hrm. This is a very strange door. I can't get through.
+sp92n2e=A door I can't get through. I wonder what's on the other side.
+sp11e1=And I really hate it when the tar grows so high above me... gives me the creeps.
+sp11e2=Gah!  The tar's grown all the way over the walls!
+sp11n1w=Hmm...it could be worse...could be a tar mother in here...
+sp11n2w1=Guess I spoke too soon.
+sp11n2w2=Looks like there's something else different about this room...
+sp12e1=Careful, Beethro, careful...
+sp12e2=Whew!
+sp12e3=These will make some great steaks.
+sp121s2e1=Great galloping goblins!
+sp121s2e2=Look at the size of that serpent!
+spM1s=You have failed...
+spT2=Turn your sword with `Q` and `W`.
+spT3=Now go hit the orb with your sword.
+spT4=Orbs interact with doors in three ways - they can open, close, or toggle their state.
+spT5=Click on the orb with the mouse to see which doors it affects and in what way.
+spT6=Your objective in DROD is to clear each level of all monsters.
+spT7=Hit the roach with your sword to kill it.
+spT8=Force arrows block your movement in a direction opposite to theirs.
+spT9=Step on the checkpoint. You will go back to the exact moment you stepped on it should you die or restart using `R`.
+spT10=If you die or are in a situation where each move results with death, you can undo with `Backspace`.
+spT11=This potion will allow you to place a mimic. Mimics copy every move you make and move immediately after you, but before monsters.
+spT12=Place the mimic at the tile marked with a checkpoint below. Use it to drop all trapdoors and the red gate will open.
+spT13=Serpents can't be damaged by your sword but they will shrink to death if stuck at a dead end.
+spT14=Remove all of the blue living tar to reach the evil eye at the top.
+spT15=Try to keep in mind that the tarstuff can only be damaged on flat edges and any tile which is not stable will turn into tar babies.
+spT16=Tar is stable when it can form a square blob of at least four tiles with its neighbours.
+spT17=Congratulations, you have completed this room!
+spT18=After you leave the room your success will be permanent. You will always be able to see your best score for the room, and you will be able to see how you've placed in comparison to the scores on the leaderboard.
+spT19=If you have connected the game using valid Caravel forum account credentials, your best score will be submitted to the leaderboard.
+spT20=Your score will remain on the leaderboard for two weeks unless you are a paid subscriber of CaravelNet, in which case your score will remain on the leaderboard forever.
+spT21=You can now leave the tutorial room.
+
+# Achievements
+
+achName0=Working Like a Clock
+achName1=Clocking Like a Work
+achName2=Entangled Hands
+achName3=Locked Arms
+achName4=Glued Sword
+achName5=Forever Alone
+achName6=Sneaky
+achName7=Tar Technician
+achName8=Lord of the Snakes
+achName9=Alone in the Hiss
+achName10=Silent Hunter
+achName11=The Ninja
+achName12=Matricide
+achName13=Amateur Delver
+achName14=Fledgling Smiter
+achName15=Contract Exterminator
+achName16=I'm a Professional!
+achName17=Mastery
+achName18=Post-mastery
+achName19=Roasted Roaches
+achName20=Queens a la King
+achName21=Eggs on Fire
+achName22=Evil Eye Mustard
+achName23=Wraithwing Fillets
+achName24=Serpent Rolls
+achName25=Tuning Fork
+achName26=Descending Green
+achName27=Mob Controller
+achName28=Reanimator
+achName29=Time Lord
+achName30=Space Keeper
+achName31=Endless Walker
+
+achDesc0=Clear Ninth Level 4N 3E while stepping on each of the marked areas no more than once
+achDesc1=Clear Ninth Level 3N 3E while stepping on each of the marked areas no more than once
+achDesc2=Clear Tenth Level 1N 1E without turning
+achDesc3=Don't turn your sword in Tenth Level 1E
+achDesc4=Don't turn your sword while clearing Tenth Level 1S 1W
+achDesc5=Clear Tenth Level 1S without drinking the mimic potion
+achDesc6=Clear Eleventh Level 1S 2E in less than 150 moves
+achDesc7=Clear all tar in any Eleventh Level room
+achDesc8=Clear Twelfth Level 1S 2E without moving diagonally
+achDesc9=Clear Twelfth Level 2S 1E without drinking the mimic potion
+achDesc10=Wake exactly one eye while clearing Twelfth Level 1S
+achDesc11=Clear a room with evil eyes without waking any of them
+achDesc12=Kill a roach queen while her eggs are growing
+achDesc13=Clear Ninth Level
+achDesc14=Clear Tenth Level
+achDesc15=Clear Eleventh Level
+achDesc16=Clear Twelfth Level
+achDesc17=Master the hold
+achDesc18=Post-master the hold
+achDesc19=Kill 35 roaches
+achDesc20=Kill 20 roach queens
+achDesc21=Kill 15 roach eggs
+achDesc22=Kill 15 evil eyes
+achDesc23=Kill 5 wraithwings
+achDesc24=Kill 10 serpents
+achDesc25=Strike an orb for three consecutive turns
+achDesc26=Lower a green gate 9 times
+achDesc27=Kill a total of 2501 monsters
+achDesc28=Die a total of 101 times
+achDesc29=Undo a total of 444 moves
+achDesc30=Drop a total of 197 trapdoors
+achDesc31=Take a total of 8421 steps
+
+
+
+# Game completion
+
+outro=If only he had a map of Dugan's Dungeon, Beethro would have known that what lies on the thirteenth floor is something which might defeat even the strongest warriors. But at least there won't be any Tar or Serpents there...////
+    ///
+    <font size="32" color="#FFFF00">Congratulations!</font>////
+    You have completed the third episode in the Deadly Rooms of Death, King Dugan's Dungeon Lite hold. I sincerely hope you have found this experience enjoyable.///
+    Now that you have descended the final flight of stairs available in this set, you may want to try to Master, and then Post-Master, this game!  To do this, go hunt for secret rooms. The number of secret rooms left on each level is now displayed on the Restore Screen.///
+    Once you manage to conquer them all, a special Mastery Area will be opened. Can you find out how to access it?///
+    You may also wish to play the next episode in the DROD:KDDL series.///
+    ///
+    Before I leave you to bask in your feeling of utter glory, I'd like to thank a couple of people, who made it possible for you to play this game:///
+    ///
+    <font size="26" color="#FFFF00">Erik Hermansen</font> - The creator, father and inventor of DROD. Without him, this unique game idea would have never seen the light of day.////
+    <font size="26" color="#FFFF00">Mike Rimer</font> - He coded most of DROD: JtRH and DROD: TCB singlehandedly. Thanks to the splendid codebase, making Flash DROD was pure pleasure.////
+    <font size="26" color="#FFFF00">Matt Schikore</font> - Overlord of the Caravel Forum and lead coder of CaravelNet. Thanks to him, you can battle for high scores, and so much more!////
+    ///
+    <font size="23" color="#FFFF00">Programming, Development</font> - %%////
+    <font size="23" color="#FFFF00">Art & Music</font> - %%////
+    <font size="23" color="#FFFF00">Server-side development</font> - %%////
+    <font size="23" color="#FFFF00">Hold architects</font> - %%////
+    <font size="23" color="#FFFF00">Primary Testers</font> - %%////
+    <font size="23" color="#FFFF00">Testers</font> - %%////
+    <font size="23" color="#FFFF00">Translations</font> - %%////
+    <font size="23" color="#FFFF00">Voice Talents</font> - %%////
+    <font size="23" color="#FFFF00">Original Coding, Idea & Levels</font> - %%///
+    ////
+    See you next time!////
+    <font size="18" color="#AAAAAA">-Maurycy</font>
+
+complNextGame=Play the next levelset, KDD Lite 4. This will open in a new window, and you can safely close this window now. Your progress has been saved.
+
+
+# Tutorial crap
+defCont=Default controls:
+sc_diago=You can move diagonally even through very narrow corridors.
+sc_broken=Break these broken and secret walls with your sword.
+sc_queens1=Roach queens spawn roach eggs every 30 turns (the turn after the spawn counter becomes red).
+sc_queens2=Eggs will hatch into fully grown-up roaches 5 turns after being spawned.
+sc_queens3=Eggs won't appear on arrows, trapdoors, or yellow gates. Use key "I" or Numpad 5 to wait a turn.
+sc_mimics=After stepping on a mimic potion, use your mouse or wait key to choose the tile where you want to place the mimic.
+sc_shiftwait=You might find it useful that Shift+Wait waits until the next spawn.
+sp_mother1=Every thirty turns tar mothers will make the tar grow by one tile in each direction.
+sp_mother2=It is relatively safe to be surrounded by growing tar, but you have to watch out for tar babies which might spawn during the growth.
+sc_backswipe=Follow the sandy path to learn the backswipe technique! Remember about diagonal movement and don't turn your sword.
+sc_trapdoors=These pink-purple tiles are trapdoors and they fall if you or a mimic step off them.

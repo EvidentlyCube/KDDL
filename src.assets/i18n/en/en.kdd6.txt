@@ -1,0 +1,189 @@
+# Level Entrances
+entr_21="I hope this next one doesn't have many critters.  The hands are starting to blister from all this hacking." -Beethro
+entr_22=Question: You are starving to death, with no hope to find food in time.  But you do have a mimic potion.  Would you make a mimic, kill the mimic, and eat an exact copy of yourself to survive?///
+///
+These are the kinds of questions a dungeon exterminator must answer every working day of his life.
+entr_23=You're probably the sort that uses people when it's convenient, and gets rid of them afterward.///
+///
+I bet you are.///
+///
+We'll see!
+entr_24="Wow, I didn't expect to find a whole city down here.  Good deal!  Maybe they've got a restroom somewhere." -Beethro
+entr_25="There better not be more than 25 levels to this place. That's plenty big enough, and all I'm down for in the contract," said Beethro as he arrived on the final level of Dugan's Dungeon.  Just a short distance in front of him was a small man holding a mallet.///
+///
+Beethro called out, "Hey there, little buddy! How'd you end up so deep below?"///
+The man shook his mallet angrily and raced off.///
+///
+"Hold up! I want to talk to you!" But he didn't stop.
+entr_master=Beethro descended the stairs only to find himself in an uncharted corridor...////
+    He won't get paid for clean-up here, but his professional honor urges him onward.
+entr_master_back=Beethro came back to finish the proper smiting business he was hired to do.
+
+
+# Achievement Names
+
+achName0=Obsessive Compulsive
+achName1=To the Heart of the Matter
+achName2=Spare the Innocents
+achName3=Sterilization
+achName4b=Aim North!
+achName4=Straight Ways
+achName5=Eastern Solutions
+achName9=Straight Man
+achName6=I Can Do It Myself Mommy!
+achName7=Traps first
+achName8=Not Thirsty
+achName10=Straight For The Top
+achName11=Swine before Pearls
+achName12=Pearls before Swine
+achName13=Raw Stupidity
+achName14=Patient Execution
+achName15=Slithering Eliminatation
+achName16=Run Beethro, Run!
+achName16b=Aim for the Eyes
+achName17=Amateur Delver
+achName18=Fledgling Smiter
+achName19=Contract Exterminator
+achName20=I'm a Professional!
+achName21=Mastery
+achName22=Post-mastery
+achName23=Roach Cake
+achName24=Queen Dish
+achName25=Eggs without Bacon
+achName26=Eyes with Evil Sauce
+achName27=Goblin Cheeks
+achName28=Tar Paste
+achName29=Snake Rations
+achName30=Dried Brains
+achName31=Tuning Fork
+achName32=Lowering Green
+achName33=Peace Maker
+achName34=Again and Again and Again and...
+achName35=Chronomancer
+achName36=Stairway to Hell
+achName37=Marathon
+
+# Achievement Descriptions
+
+achDesc0=17th Level 1N1W: Clear all tar, drop all trapdoors, conquer the room and leave north
+achDesc1=17th Level 1N1W: Conquer the room allowing at most one tar growth to occur
+achDesc2=17th Level 2S1E: Kill the tar mother before killing any tar baby
+achDesc3=17th Level 1S2E: Kill the serpent before any tar baby appears in the room
+achDesc4b=18th Level 1N: Conquer the room without turning your sword
+achDesc4=18th Level 2N1E: Conquer the room without moving diagonally
+achDesc5=18th Level 1N2E: Conquer the room when entering from the east entrance and without turning your sword
+achDesc6=18th Level 1E: Use the goblin in only one of the serpent chambers and conquer the room
+achDesc7=18th Level 1E: Drop all trapdoors before any serpent dies and conquer the room
+achDesc8=18th Level 1N1E: Conquer the room without drinking the mimic potion
+achDesc14=20th Level Entrance: Don't turn your sword after you kill first monster and conquer the room
+achDesc10=20th Level 1N: Kill the brain before killing any roach queen
+achDesc11=20th Level 3N1W: Kill all brains before killing any goblin
+achDesc13=20th Level 3N: Kill all brains before killing any roach queen
+achDesc15=20th Level 2N2W: Kill all serpents before killing any roach queen
+achDesc16=20th Level 1N2W: Kill the serpent last
+achDesc16b=20th Level 2N1W: Kill all evil eyes before killing any roach queen
+achDesc17=Clear Seventeenth Level
+achDesc18=Clear Eighteenth Level
+achDesc19=Clear Nineteenth Level
+achDesc20=Clear Twentieth Level
+achDesc21=Master the hold
+achDesc22=Post-master the hold
+achDesc23=Kill 200 roaches
+achDesc24=Kill 20 roach queens
+achDesc25=Kill 15 roach eggs
+achDesc26=Kill 45 evil eyes
+achDesc27=Kill 20 goblins
+achDesc28=Kill 201 tar babies
+achDesc29=Kill 20 serpents
+achDesc30=Kill 10 brains
+achDesc31=Strike an orb for three consecutive turns
+achDesc32=Lower a green gate 15 times
+achDesc33=Kill a total of 5000 monsters
+achDesc34=Die a total of 103 times
+achDesc35=Undo a total of 550 moves
+achDesc36=Drop a total of 121 trapdoors
+achDesc37=Take a total of 5000 steps
+# </OLD>
+
+# Scrolls
+sc_24_entr_1=Welcome to the subterranean town of Neatherville. The locals are always glad to have visitors.///
+///
+-Neatherville Board of Tourism
+sc_25_2s2w_1=Are you still alive?///
+///
+I must be talking to much.///
+///
+I'm not going to let any more secrets slip!
+
+sc_mast_ent_1=Original Puzzles
+sc_mast_ent_2=Harder versions of existing puzzles
+
+scM1s1=You have achieved quite a feat!
+scM1s2=Did you enjoy the game? Have you acquired all of the achievements?
+scM1s3=Feel free to visit CaravelGames.com to play more episodes of KDDL, or to download any of the full DROD games for Windows, MacOS, or Linux.
+scM1s4=Rock on!
+scM1s5=Here is a small reward! Kill all the enemies without stepping on the brown grass
+scM1s6=The two corner roach queens will be killed once you step on the checkpoint in the far-right corner.
+scM1s7=Awesome!
+
+# Speeches
+sc_21_1n1w_1=Let's get this party started!
+sc_21_1n1w_2=Brains, you're gonna wish you could run!
+sc_21_2s_1=Now... Should I take out the brain first, or watch my back?
+sp_22_2n_1=Well, it's settled... I gotta be more careful what I hope for.
+sp_22_entr_1=I hope there aren't any brains on this level!
+sp_23_entr_1=Twenty-three levels... I gotta be near the end, I just gotta!
+sp_24_entr_1=So there's an entire monster city down here!
+sp_24_3n_1=This tiled floor gives me a case of the scarbs.
+sp_24_3n_2=If I never see this room again for as long as I live, it'll be too soon!
+sp_25_entr_1=You'll never catch me, exterminator!
+sp_25_1n_1=Ha! You'll have to get by my roaches first!
+sp_25_1n_2=Get him, boys!
+sp_25_1n_3=I guess I'll have to come up with something more difficult.
+sp_25_1n1w_1=Flaming fegundo! Brain, go get him!!!
+sp_25_1n1w_2=???
+sp_25_1n1w_3=Stupid brain.
+sp_25_1n1w_4=CHARGE!
+sp_25_1n1w_5=Finish him, my drones!
+sp_25_1n2w_1=I don't want you to go that way.
+sp_25_1n2w_2=Surround him!
+sp_25_1n2w_3=Pssst! Come here! I've got something to show you.
+sp_25_1n2w_4=Ah, the ever-gullible delver walks right into my trap... as expected
+sp_25_1n2w_5=I'll just sneak through the other side.
+sp_25_1n2w_6=I'll lock the door behind me so he can't follow.
+sp_25_2w_1=My roach queens may have failed, but my goblins will make sure you don't leave this room alive.
+sp_25_2w_2=Stay out of here!
+sp_25_2w_3=Ha! You can't get me in here. I can wait until you go away.
+sp_25_1s2w_1=Tar Mother, EXPAND!
+sp_25_1s2w_2=You killed a poor defenseless mother??!!?
+sp_25_1s1w_1=You'll never catch me!
+
+outro=Those brains were a real pain but Beethro, being a professional smitemaster, can handle anything without breaking a sweat. But what about this strange feeling that something much scarier lurks ahead of him?////
+    ///
+    <font size="32" color="#FFFF00">Congratulations!</font>////
+    You have completed the fifth episode in the Deadly Rooms of Death, King Dugan's Dungeon Lite series. We sincerely hope you have found this experience enjoyable.///
+    Now that you have descended the final flight of stairs available in this set, you may want to try to Master, and then Post-Master, this game!  To do this, go hunt for secret rooms. The number of secret rooms left on each level is now displayed on the Restore Screen.///
+    Once you manage to conquer them all, a special Mastery Area will be opened. Can you find out how to access it?///
+    You may also wish to play the next episode in the DROD:KDDL series.///
+    ///
+    Before we leave you to bask in your feeling of utter glory, we'd like to thank a couple of people, who made it possible for you to play this game:///
+    ///
+    <font size="26" color="#FFFF00">Erik Hermansen</font> - The creator, father and inventor of DROD. Without him, this unique game idea would have never seen the light of day.////
+    <font size="26" color="#FFFF00">Mike Rimer</font> - He coded most of DROD: JtRH and DROD: TCB singlehandedly. Thanks to the splendid codebase, making Flash DROD was pure pleasure.////
+    <font size="26" color="#FFFF00">Matt Schikore</font> - Overlord of the Caravel Forum and lead coder of CaravelNet. Thanks to him, you can battle for high scores, and so much more!////
+    ///
+    <font size="23" color="#FFFF00">Programming, Development</font> - %%////
+    <font size="23" color="#FFFF00">Art & Music</font> - %% (minor)////
+    <font size="23" color="#FFFF00">Server-side development</font> - %%////
+    <font size="23" color="#FFFF00">Hold architects</font> - %%////
+    <font size="23" color="#FFFF00">Primary Testers</font> - %%////
+    <font size="23" color="#FFFF00">Testers</font> - %%////
+    <font size="23" color="#FFFF00">Translations</font> - %%////
+    <font size="23" color="#FFFF00">Voice Talents</font> - %%////
+    <font size="23" color="#FFFF00">Original Coding, Idea & Levels</font> - %%///
+    ////
+    See you next time!////
+    <font size="18" color="#AAAAAA">-Maurycy</font>
+
+# -- OLD PARTIALLY
+complNextGame=Play the final level set, KDD Lite 6. This will open in a new window, and you can safely close this window now. Your progress has been saved.

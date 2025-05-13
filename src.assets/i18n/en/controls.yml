@@ -1,0 +1,16 @@
+
+controls_move_n: Move North
+controls_move_nw: Move Northwest
+controls_move_ne: Move Northeast
+controls_move_w: Move West
+controls_move_e: Move East
+controls_move_s: Move South
+controls_move_sw: Move Southwest
+controls_move_se: Move Southeast
+controls_wait: Wait for One Turn
+controls_turn_cw: Turn Clockwise
+controls_turn_ccw: Turn Counter-clockwise
+controls_undo: Undo Last Move
+controls_restart: Restart Room
+controls_battle: Battle Key
+controls_lock: Lock/Unlock Room

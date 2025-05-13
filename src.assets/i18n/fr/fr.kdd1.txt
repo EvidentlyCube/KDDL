@@ -1,0 +1,275 @@
+﻿# src/../src.assets/i18n/en.kdd1.txt
+# Level Names
+First Level=Premier niveau
+Second Level=Second Niveau
+Third Level=Troisième Niveau
+Fourth Level=Quatrième Niveau
+Mastery Level=Niveau Maître
+# Level Entrances
+entr1=Beethro Budkin, maître exterminateur de cinquième génération, a été embauché par le Roi Dugan pour qu'il nettoie ses vastes oubliettes infestées de monstres.///
+    Beethro est payé à la pièce et, en tant que professionnel, son contrat l'oblige à éliminer tous les monstres de chacune des pièces des oubliettes pour être payé.///
+    La seule arme dont Beethro a besoin pour son travail est une Très Grosse Épée, laquelle tuera presque n'importe quel monstre en un seul coup.////
+    -----////
+    « J'espère que vous n'allez pas me faire payer pour le premier niveau. Je l'ai déjà fait nettoyer. Enfin, plus ou moins. » – le Roi Dugan
+entr2=Beethro est un peu rouillé, mais le prochain niveau devrait le remettre en forme.
+entr3=« Hmm, se dit Beethro, jusqu'ici j'ai surtout vu des cafards. Ce travail va être un jeu d'enfant. »
+entr4=« J'aimerais avoir quelques doubles de plus ici avec moi, dit Beethro, ça irait bien plus vite. »
+entr4Back=Beethro revint sur ses pas pour terminer la tâche pour laquelle il avait été embauché.
+entrMaster=Beethro descendit les escaliers et se retrouva dans un couloir ne figurant pas sur la carte…////
+    Il ne serait pas payé pour le nettoyage de ces pièces, mais son honneur professionnel le poussait à continuer.
+# Scrolls
+sc1e0=Utilisez le pavé numérique ou les touches 789 uio jkl pour vous déplacer. Les touches peuvent être changées depuis le menu pause (échap).
+sc1e1=Pour revoir les touches, appuyez sur 'échap', cliquez sur 'Aide générale' puis 'Comment Jouer'.
+sc1_1n=Cette porte jaune vous sera utile plus tard.////
+    //
+    Pour le moment, continuez vers l'ouest.
+sc1_1n1w1=Appuyez sur 'Q' ou 'W' pour tourner votre épée.
+sc1_1n1w2=Frappez l'orbe pour ouvrir certaines portes de cette pièce.
+sc1_1n1w3=Certains orbes basculent les portes jaunes entre leur état ouvert et fermé.
+sc1_2n1w1=Vous pouvez voir quel effet a un orbe en cliquant dessus. Les portes seront surlignées de différentes couleurs en fonction de l'effet.
+sc1_2n1w2=Au lieu de basculer une porte, un orbe peut aussi exclusivement l'ouvrir ou la fermer.
+sc1_3n1w1=Les portes bleues s'ouvrent une fois que toutes les pièces requises d'un niveau ont été conquises.
+sc1_3n1w2=Les pièces requises sont affichées avec un fond rouge sur la carte en bas à gauche.
+sc1_3n2w1=Les dialogues en cours et les textes en surimpression peuvent être passés avec la barre d'espace.
+sc1_3n2w2=Une fois que vous quittez une pièce dont vous avez tué tous les monstres, elle sera conquise.
+sc1_3n2w3=Les pièces conquises sont affichées avec un fond blanc sur la carte, par opposition à celles non conquises en rouge.
+sc1_3n2w4=Vous devez conquérir toutes les pièces requises pour ouvrir le chemin vers le niveau suivant.
+sc1_4n3w=Les flèches au sol empêchent les déplacements de Beethro et des monstres dans la direction opposée.
+sc1_4n1w=Les portes vertes s'ouvrent dès que vous avez éliminé tous les monstres de la pièce.
+sc1_5n1w1=Observez comment le cafard d'en bas fait pour se déplacer en diagonale contre un obstacle.
+sc1_5n1w2=La plupart des monstres essaient de se déplacer à la verticale lorsqu'ils rencontrent un obstacle en diagonale.
+sc1_5n2w1=Souvenez-vous que vous pouvez voir quelle porte est activée par un orbe en cliquant dessus.
+sc1_5n2w2=Faites attention ! C'est dangereux par ici.////
+    Si vous faites une erreur, appuyez sur 'Retour Arrière' pour annuler les derniers mouvements.
+sc1_5n2w3=Vous pouvez aussi annuler et recommencer pendant l'animation de mort.
+sc1_5n2w4=Toucher un point de sauvegarde (X) vous permettra de revenir jusqu'au dernier moment où vous l'avez touché.///
+    Appuyez sur 'R' pour recommencer la pièce ou revenir au dernier point de sauvegarde que vous avez activé.
+sc1_6n2w=Un bon épéiste peut tuer tous les cafards sans utiliser le recoin en bas comme couverture !
+sc1_6n3w1=Utilisez la technique du coup arrière pour vous débarrasser de ce cafard.
+sc1_6n3w2=Placez-vous sur le sol vert et assurez-vous que le cafard soit sur le sol sablonneux juste au nord de vous…
+sc1_6n3w3=Placez-vous sur le sol vert et assurez-vous que le cafard soit sur le sol sablonneux juste au sud de vous…
+sc1_6n3w4=… puis allez vers le nord-est pour le tuer.
+sc1_6n3w5=… puis allez vers le sud-est pour le tuer.
+sc1_6n3w6=Refaites-le pour analyser le coup arrière. La maîtrise de cette technique est cruciale pour l'avenir.
+sc1_5n1=La sortie de secours est hors d'usage.
+sc1_5n2=Dézolé, on va pa finr l'batimant avek lé groz cayous partou !
+sc1_4n=Veuillez garder les portes de la serre fermées.
+sc1_1n1e=Ces escaliers conduisent au prochain niveau. Attention à ce que vous allez y trouver.
+sc2_2n1=Saviez-vous que vous pouvez garder 'Maj' appuyée en faisant une action pour automatiquement faire son contraire ?
+sc2_2n2='Maj' + 'Attendre un tour' vous fera attendre jusqu'à la prochaine éclosion et '+ (Pavé numérique)' ou '=' fera l'inverse de la dernière action.
+sc2_1n1e=Vous ne devriez pas être si violent.
+sc2e=Il peut être préférable de faire les pièces du nord en premier.
+sc2_1s3e1=Vous pouvez éviter de quitter une pièce en la verrouillant en appuyant sur 'X'.
+sc2_1s3e2=Un petit cadenas apparaîtra sur la carte pour indiquer que la pièce est verrouillée. Appuyez à nouveau sur 'X' pour la déverrouiller.
+sc2_1s=Ne faites pas ça ! Vous voyez bien ce qui va arriver !
+sc2_2s3e=Un bon timing rend les choses bien plus faciles.
+sc3_3n=Attention aux doubles. Ils ne sont ni vos amis ni vos ennemis – ils ne font que bouger comme vous. Ne leur tournez pas le dos.
+sc3_3n1e=Tous les prisonniers ont été dévorés par les cafards, et je suis le prochain ! Je ne suis pas assez payé pour ça, je me tire !////
+    – Le directeur de la prison
+sc3_2n=Il est possible d'emprunter ce passage sans avoir besoin de revenir dans la pièce après l'avoir conquise.
+sc3_1n1w=Avec la potion d'invisibilité, ils ne peuvent plus vous voir, mais ils peuvent toujours vous sentir si vous êtes assez près.
+sc3_1e=Quel long chemin. Ça paraît presque inutile.
+sc3_1s=Les Portes aux Huit Clefs – Un magnifique puzzle. Il était plus ardu auparavant, mais maintenant je peux inspecter les orbes pour voir ce qu'ils font.
+sc3_2s1w=Voilà un petit conseil pour vous : lorsque vous voyez de longs et laborieux chemins, vous devriez chercher des raccourcis.
+sc3_2s1=Faites demi-tour ! Saviez-vous que rien que l'année passée, les morts en oubliettes ont augmenté de 32 pour cent ?
+sc3_2s2=Regardez la réalité en face – l'exploration d'oubliettes est DANGEREUSE, surtout combinée avec des stupéfiants.///
+    – PUCMO (Parents Unis contre la Mort en Oubliettes)
+sc4_2n1e1=Ceci est un mur maître. Il ne s'ouvrira qu'une fois que vous aurez conquis l'antre et tous ses secrets.
+sc4_2n1e2=Dans la version originelle de « King Dugan's Dungeon », cette pièce permettait de sauter un niveau ou deux.
+sc4_1n1=Astuce :////
+    Vous n'avez pas besoin de l'aide du double pour éliminer les cafards à l'entrée.
+sc4_1n2=Astuce :////
+    Essayez de maîtriser la technique du coup arrière – très utile lorsque l'on se retrouve avec un monstre de chaque côté !
+sc4_2e=Si votre style est bon, les 9 doubles doivent être alignés à votre droite.
+scMe1=Versions plus difficiles de puzzles existants.
+scMe2=Derniers mots.
+scMe3=Pièces originales et difficiles.
+scM_1s1=Et voilà. Vous avez maintenant terminé tout ce qu'il y avait à terminer dans le jeu. Il ne reste peut-être que quelques exploits.
+scM_1s2=Je vous félicite sincèrement et vous invite à continuer votre voyage.
+scM_1s3=Sur le site CaravelGames.com, vous pourrez trouver les prochains épisodes de KDDL ou télécharger l'un des jeux DROD complets pour Windows, Mac OS ou Linux.
+scM_1s4=N'arrêtez pas de jouer !
+scM_1s5=Voilà une petite récompense ! Tuez tous les yeux sans marcher sur le sol marron.
+scM_1s6=Les reines seront tuées lorsque vous marcherez sur le point de sauvegarde en haut à droite.
+scM_1s7=Très joli, c'était bien joué.
+# Speeches
+sp1e0=Utilisez le pavé numérique pour vous déplacer.
+sp1e1=Si vous jouez sur un portable, vous pouvez utiliser les touches 789, UIO, JKL
+sp1e2=Allez au nord pour continuer.
+sp1_3n2w1=Ha, le premier cafard de l'antre !
+sp1_3n2w2=Viens voir Beethro, cafard-burger en devenir !
+sp1_3n2w3=Et d'un ! Ce job va être parfait, je le sens !
+sp1_6n2w=J'aurais pu tuer ces cafards sans me cacher dans le recoin, mais j'ai la flemme aujourd'hui.
+sp1_6n3w1=Vous avez trouvé une pièce secrète !
+sp1_6n3w2=Trouvez-les toutes et conquérez-les pour avoir accès à une zone de défis spéciale.
+sp2_2e=Cette reine va faire des tonnes de petits le temps que j'aille jusqu'à l'orbe et que je revienne !
+sp2_1s1e1=Hé, un spectre ailé !
+sp2_1s1e2=Et il est tout seul... ce qui veut dire que je vais peut-être devoir le chasser à travers toute la pièce.
+sp2_1s1e3=Contrairement aux cafards, les spectres ailés fuient Beethro et essaient de rester à cinq cases de distance.
+sp2_1s1e4=Ils ne sont pas aussi timides en plus grand nombre, et n'hésiteront pas à attaquer s’ils peuvent encercler leur proie.
+sp2_2s2e1=Hmm… est-ce que je peux tuer ces reines avant qu'elles pondent ?
+sp2_2s2e2=Ha, j'ai été trop lent !
+sp2_2s2e3=Ha ! Facile
+sp2_2s3e1=Je suis sûr qu'il y avait un moyen plus propre pour éliminer ces reines.
+sp2_2s3e2=Ça c'est ce que j'appelle de l'épéisme !
+sp3_3n1e=Plus aucun prisonnier ? Ce boulot va être du genre solitaire, avec personne à qui parler…
+sp3_2n=Sans blague.
+sp3_1n2w1=Ouf ! Maintenant les reines ne pondront pas d'œufs tant que je ne m'approche pas d'elles !
+sp3_1n2w2=Ça a été rude, mais rien d'insurmontable pour un bon exterminateur comme moi !
+sp3_1n2w3=Ha! Rien n'est trop ardu pour moi !
+sp3_1n1w1=Hé, c'est pas mal, ça !
+sp3_1n1w2=Je sais que j'aurais pu nettoyer cette pièce sans l'invisibilité, mais c'était quand même marrant.
+sp3_1n1w3=C'était pas si dur… je me demande pourquoi cette potion est là.
+sp3_1n2w0=Mince ! Je crois que j'ai besoin de la potion cette fois !
+sp3_1s=J'aurais pu ouvrir toutes les portes plus rapidement.
+sp3_3s1w1=Ça a l'air dangereux, ici… comme une sorte de piège…
+sp3_3s1w2=Après avoir frappé l'orbe, je pourrais nettoyer la pièce sans tourner mon épée. Pour montrer ce que je sais faire !
+sp3_3s1w3=Bon, j'ai peut-être tourné mon épée, mais au moins je suis toujours en vie !
+sp3_3s1w4=Ouah ! Il aurait fallu que quelqu'un soit là pour voir ça.
+sp4_2n1e=Encore une chambre secrète là où personne ne l'attend, sauf moi.
+sp4_1n1=J'aurais pu nettoyer cette pièce sans revenir dans le couloir d'entrée.
+sp4_1n2=Beethro Budkin peut relever n'importe quel défi !
+sp4_2e1=Nom d'une pipe en pierre! Vous croyez qu'il y a assez de doubles, là ?
+sp4_1s2e=Comment se fait-il qu'une pièce soit plus jolie une fois que toutes les trappes sont tombées ?
+spM_1s=Vous avez échoué…
+# Achievements
+achName0=Je t'ai à l'œil
+achName1=Matricide
+achName2=La Haine me fit voir Rouge
+achName3=Maître Épéiste
+achName4=Main assurée
+achName5=Reineburger
+achName6=Aller Simple
+achName7=Vite !
+achName8=Soyez Rapide !
+achName9=Bras Inflexible
+achName10=Atteignez le Parchemin
+achName11=Visibilité
+achName12=Invisibilité
+achName13=En Vitesse
+achName14=Les Portes aux Huit Clefs
+achName15=Cafards sous Contrôle
+achName16=Le Mystère
+achName17=Ne Regardez pas en Arrière
+achName18=Seul avec les Cafards
+achName19=L'attraction du Vide
+achName20=Le Vide du Rien
+achName21=Bon Style
+achName22=Apprenti Exterminateur
+achName23=Pourfendeur Débutant
+achName24=Exterminateur de Métier
+achName25=Je suis un Professionnel !
+achName26=Maîtrise
+achName27=Post-maîtrise
+achName28=Cafards Grillés
+achName29=Émincé de Reines
+achName30=Fondue d'œufs
+achName31=Pudding de Mauvais Œil
+achName32=Sauté de Spectre Ailé
+achName33=Diapason
+achName34=Allez les Verts
+achName35=Gestion de la Horde
+achName36=Renaissance
+achName37=Retour vers le Passé !
+achName38=Faire de la Place
+achName39=Terre-Lune à Pied
+achDesc0=Réveillez trois mauvais yeux lors du même tour
+achDesc1=Tuez une reine cafard pendant que ses œufs éclosent
+achDesc2=Vous devriez être si violent
+achDesc3=Ne vous cachez pas dans l'alcôve du niveau un, 6N 2O
+achDesc4=Dans le niveau un, nettoyez toutes les pièces non secrètes, sauf une, sans tourner votre épée.\n %% sur 6.
+achDesc5=Tuez la reine du second niveau, 2E, avant qu'elle atteigne le coin
+achDesc6=Dans le niveau deux, 1S, ne tournez pas votre épée après avoir frappé l'orbe
+achDesc7=Tuez toutes les reines du niveau deux, 2S 2E, avant qu'elles pondent
+achDesc8=Nettoyez le second niveau, 2S 3E, avant que les reines pondent
+achDesc9=Nettoyez le second niveau, 3N, sans tourner votre épée
+achDesc10=Atteignez le parchemin du troisième niveau, 2N, sans revenir dans la pièce
+achDesc11=Tuez tous les cafards du troisième niveau, 1N 1O, sans boire la potion
+achDesc12=Nettoyez le troisième niveau, 1N 2O, sans boire la potion
+achDesc13=Nettoyez le troisième niveau, 1N 1E, avant que les reines pondent
+achDesc14=Ouvrez les Portes aux Huit Clefs en frappant cinq orbes dans le troisième niveau, 1S
+achDesc15=Faites sortir les trois cafards avant de les tuer dans le troisième niveau, 2N 1E
+achDesc16=Nettoyez le troisième niveau, 3N, sans boire la potion
+achDesc17=Nettoyez le quatrième niveau, 1N, sans revenir au couloir d'entrée
+achDesc18=Nettoyez le quatrième niveau, 1S 1E, sans boire la potion de dédoublement
+achDesc19=Faites tomber toutes les trappes du quatrième niveau, 1S 2E, et nettoyez la pièce lors du même passage
+achDesc20=Nettoyez le quatrième niveau, 2S 1E, et faites tomber toutes les trappes lors du même passage
+achDesc21=Soignez votre style au quatrième niveau, 2E
+achDesc22=Nettoyez le premier niveau
+achDesc23=Nettoyez le second niveau
+achDesc24=Nettoyez le troisième niveau
+achDesc25=Nettoyez le quatrième niveau
+achDesc26=Maîtrisez cet antre
+achDesc27=Post-maîtrisez cet antre
+achDesc28=Tuez 35 cafards
+achDesc29=Tuez 20 reines cafards
+achDesc30=Tuez15 œufs de cafards
+achDesc31=Tuez 15 mauvais yeux
+achDesc32=Tuez 5 spectres ailés
+achDesc33=Frappez un orbe pendant trois tours consécutifs
+achDesc34=Abaissez cinq portes vertes
+achDesc35=Tuez un total de 2 500 monstres
+achDesc36=Mourez 50 fois en tout
+achDesc37=Annulez un total de 250 mouvements
+achDesc38=Faites tomber un total de 100 trappes
+achDesc39=Faites 5 000 pas en tout
+# Game completion
+outro=Qu'est-ce que le futur réserve à Beethro ? Va-t-il au-devant de nouveaux dangers encore plus grands ? Arrivera-t-il à nettoyer les oubliettes du Roi Dugan et à se faire payer ?////
+    ///
+    <font size="32" color="#FFFF00">Félicitations !</font>////
+    Vous venez de terminer le premier épisode de l'antre « King Dugan's Dungeon Lite ». J'espère sincèrement que cela vous a plu.//
+    Maintenant que vous avez descendu les derniers escaliers de ce set, vous pouvez essayer de maîtriser, puis post-maîtriser le jeu ! Pour ce faire, trouvez les pièces secrètes. Le nombre de pièces secrètes restant à trouver est maintenant affiché dans l'écran de chargement.//
+    Une fois que vous les aurez toutes conquises, une zone de maîtrise spéciale sera ouverte. À vous de trouver comment y accéder !////
+    Avant de vous laisser à votre gloire et votre joie d'avoir fini ce jeu, j'aimerais remercier un certain nombre de personnes sans qui ce jeu n'aurait jamais existé :////
+	///
+    <font size="26" color="#FFFF00">Erik Hermansen</font> - Le créateur, père et inventeur de DROD. Sans lui, l'idée de ce jeu n'aurait jamais vu le jour.////
+    <font size="26" color="#FFFF00">Mike Rimer</font> - Il a codé la plupart de DROD : JtRH et DROD : TCB à lui tout seul. Grâce à cette superbe base de code, la création de Flash DROD a été un vrai plaisir.////
+    <font size="26" color="#FFFF00">Matt Schikore</font> - Maître suprême du forum Caravel et codeur en chef de CaravelNet. Grâce à lui vous pouvez entrer en compétition pour les meilleurs scores, et bien plus encore !////
+    ///
+    <font size="23" color="#FFFF00">Programmation, Développement</font> - %%////
+    <font size="23" color="#FFFF00">Graphismes et musique</font> - %%////
+    <font size="23" color="#FFFF00">Développement du serveur</font> - %%////
+    <font size="23" color="#FFFF00">Développement des niveaux</font> - %%////
+    <font size="23" color="#FFFF00">Testeurs Principaux</font> - %%////
+    <font size="23" color="#FFFF00">Testeurs</font> - %%////
+    <font size="23" color="#FFFF00">Traductions</font> - %%////
+    <font size="23" color="#FFFF00">Doublage</font> - %%////
+    <font size="23" color="#FFFF00">Code originel, concept et niveaux</font> - %%///
+    ////
+    À bientôt !////
+    <font size="18" color="#AAAAAA">-Maurycy</font>
+
+complNextGame=Jouer au set de niveaux suivant – « KDD Lite 2 ». Ce lien s'ouvrira dans une nouvelle fenêtre, et vous pourrez alors fermer la fenêtre : votre progression a été sauvegardée.
+
+
+scNew1=Observez attentivement ce qui se passe lors du tour de ponte.
+scNew2=Aucun śuf n'apparaîtra sur les trappes, les flčches ou les portes jaunes ouvertes.
+scNew3=Et si une reine se déplace lors du tour de ponte, aucun śuf n'apparaîtra sur la case qu'elle vient de quitter.
+sc2_1s3e1=Vous pouvez verrouiller une pičce afin de ne pas la quitter par erreur en appuyant sur « x ».
+sc2e=Commencez par les pičces au nord afin d'éviter d'avoir ŕ revenir sur vos pas.
+sc1_New1N1W=Si vous n'aviez pas encore remarqué, les reines cherchent toujours ŕ s'éloigner de vous et ne pondent jamais sur les portes jaunes ouvertes.
+sc1_New3N1=Les reines des cafards pondent des śufs tous les 30 tours (le tour aprčs que le compteur vire au rouge).
+sc1_New3N2=Les śufs deviennent des cafards adultes 5 tours aprčs avoir été pondus.
+sc1_New3E=Les reines des cafards fuient toujours Beethro. Ce comportement peut ętre utilisé pour les manipuler.
+sc1_new6n2w1=Les murs secrets et fęlés peuvent ętre détruits par votre épée.
+sc1_new6n2w2=Les murs secrets sont cependant plus difficiles ŕ discerner.
+sc1_new6n2w3=Alors ne ratez pas ceux dans le coin quand vous reviendrez.
+sc1_5n1w3=Ce jeu est entičrement déterministe ; aucun comportement n'est imprévisible ou laissé au hasard.
+sc1_new6N=Il n'est pas nécessaire de conquérir les pičces secrčtes dans l'ordre pour que l'antre soit maîtrisé.
+sc_evileyes=Dans ce niveau vous allez croiser des mauvais yeux. Dčs que vous ętes dans leur ligne de mire ils se réveilleront et vous pourchasseront comme le font les cafards.
+sc1_5n1w1=Observez comment le cafard se comporte lorsqu'il tente de se déplacer en diagonale vers un coin. Appuyez sur « i » ou « 5 » du pavé numérique pour attendre un tour.
+
+
+# Tutorial crap
+defCont=Contrôles par défaut :
+sc_diago=Vous pouvez vous déplacer en diagonale, męme ŕ travers des couloirs trčs étroits.
+sc_broken=Fracassez ces murs secrets fęlés avec votre épée.
+sc_queens1=Les reines des cafards pondent des śufs tous les 30 tours (le tour aprčs que le compteur vire au rouge).
+
+sc_queens2=Les śufs deviennent des cafards adultes 5 tours aprčs avoir été pondus.
+sc_queens3=Les śufs n'apparaissent pas sur les flčches, les trappes et les portes jaunes. Appuyez sur « i » ou « 5 » du pavé numérique pour attendre un tour.
+sc_mimics=Aprčs avoir pris une potion dédoublement, utilisez la souris ou la touche « attendre » pour choisi la case oů vous voulez placer le double.
+sc_shiftwait=Vous pouvez appuyer sur « Maj + attendre » pour attendre automatiquement jusqu'ŕ la prochaine ponte.
+sp_mother1=Les mčres goudrons feront s'étendre le goudron d'une case dans toutes les directions tous les trente tours.
+sp_mother2=Il est relativement sans danger de se faire entourer par du goudron, mais faites attention aux bébés qui peuvent apparaître lors de l'extension.
+sc_backswipe=Suivez le chemin sablonneux pour apprendre la technique du coup arričre !Déplacez-vous en diagonale et ne tournez pas votre épée.
+sc_trapdoors=Ces cases rose-violette sont des trappes et elles tombent si vous ou un double passez dessus.

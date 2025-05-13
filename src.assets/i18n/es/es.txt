@@ -1,0 +1,561 @@
+# GLOBAL STUFF/LISTS
+# Keys
+keyBackspace=Backspace
+keyTab=Tab
+keyEnter=Enter
+keyShift=Shift
+keyControl=Control
+keyAlt=Alt
+keyPause=Pause/Brk
+keyCapsLock=Caps Lock
+keyEscape=Escape
+"key "=Espacio
+keyPageUp=Page Up
+keyPageDown=Page Down
+keyEnd=Fin
+keyHome=Inicio
+keyArrowLeft=Left
+keyArrowUp=Up
+keyArrowRight=Right
+keyArrowDown=Down
+keyInsert=Insert
+keyDelete=Supr
+key0=0
+key1=1
+key2=2
+key3=3
+key4=4
+key5=5
+key6=6
+key7=7
+key8=8
+key9=9
+keya=A
+keyb=B
+keyc=C
+keyd=D
+keye=E
+keyf=F
+keyg=G
+keyh=H
+keyi=I
+keyj=J
+keyk=K
+keyl=L
+keym=M
+keyn=N
+keyo=O
+keyp=P
+keyq=Q
+keyr=R
+keys=S
+keyt=T
+keyu=U
+keyv=V
+keyw=W
+keyx=X
+keyy=Y
+keyz=Z
+key91=L.Win/Cmd
+key92=R.Win
+key93=Menu
+keyNumpad0=Numpad 0
+keyNumpad1=Numpad 1
+keyNumpad2=Numpad 2
+keyNumpad3=Numpad 3
+keyNumpad4=Numpad 4
+keyNumpad5=Numpad 5
+keyNumpad6=Numpad 6
+keyNumpad7=Numpad 7
+keyNumpad8=Numpad 8
+keyNumpad9=Numpad 9
+keyNumpadMul=Numpad *
+keyNumpadAdd=Numpad +
+keyNumpadSub=Numpad -
+keyNumpadDot=Numpad .
+keyNumpadDiv=Numpad /
+keyF1=F1
+keyF2=F2
+keyF3=F3
+keyF4=F4
+keyF5=F5
+keyF6=F6
+keyF7=F7
+keyF8=F8
+keyF9=F9
+keyF10=F10
+keyF11=F11
+keyF12=F12
+keyF13=F13
+keyF14=F14
+keyF15=F15
+key144=Numlock
+key145=Scroll Lock
+key;=;
+"key="==
+key,=,
+key-=-
+key.=.
+key/=/
+key~=~
+key[=[
+key\=\
+key]=]
+key'='
+
+numpad=Numpad
+notebook=Notebook
+
+# Key names
+keyUp=Moverse hacia el Norte
+keyUpLeft=Moverse hacia el Noroeste
+keyUpRight=Moverse hacia el Noreste
+keyLeft=Moverse hacia el Oeste
+keyRight=Moverse hacia el Este
+keyDown=Moverse hacia el Sur
+keyDownLeft=Moverse hacia el Suroeste
+keyDownRight=Moverse hacia el Sureste
+keyWait=Esperar un turno
+keyCW=Girar hacia la derecha
+keyCCW=Girar hacia la izquierda
+keyUndo=Retroceder un turno
+keyRestart=Reiniciar Cuarto
+keyBattle=Tecla de Batalla
+keyLock=Bloquear/Desbloquear Cuarto
+# Global buttons
+close=Cerrar
+# Global messages
+cnetError=La conexión ha fallado.///
+     Esto puede deberse a credenciales inválidas, conexión defectuosa o problemas con el servidor. Las funciones de CaravelNet han sido desactivadas. Para reanudar, ve a "Opciones", actualiza tus credenciales si es necesario, y pulsa "¡Conectar!"
+# Preloader
+prlStartGame=Comenzar Juego
+prlLoading=Cargando: %% / %%
+prlWaitApi=Conectando API
+prlLanguage=Cambiar Idioma
+# Initialize screen
+initAssets=Inicializando %% / %%
+# Title Screen and submenus
+tsStartNew=Juego Nuevo
+tsStartNewKey=J
+tsStartNewKeyCode=74
+tsContinue=Continuar
+tsContinueKey=C
+tsContinueKeyCode=67
+tsRestore=Restaurar a un Cuarto Distinto
+tsRestoreKey=R
+tsRestoreKeyCode=82
+tsAchievements=Ver Logros
+tsAchievementsKey=V
+tsAchievementsKeyCode=86
+tsOptions=Opciones
+tsOptionsKey=O
+tsOptionsKeyCode=79
+tsHelp=Ayuda e Historia
+tsHelpKey=A
+tsHelpKeyCode=65
+tsBrowse=Ver Dominios
+tsBrowseKey=D
+tsBrowseKeyCode=68
+# Options
+optHeader=Opciones:
+optUploadAll=Subir Todos los Puntajes
+optConnect=¡Conectar!
+optRedefine=Redefinir Teclas
+optCnetHeader=Credenciales de CaravelNet
+optCnetUser=Nombre de CNet
+optCnetKey=Contraseña CNet
+optCnetVolume=Volúmen
+optCnetMusic=Música
+optCnetSound=Efectos
+optCnetVoices=Voces
+optMoveAnim=Animación de Movimiento
+optMoveSmooth=Suave
+opyMoveFast=Rápido
+uploadAll=Subiendo puntajes
+uploadDone=¡Listo!
+uploadError=¡Error! ¡Por favor conéctate e intenta otra vez!
+uploadAlreadyHas=Ya ha sido subido
+uploadRoomEntrance=Entrada
+cnetDescription=Usuarios suscritos a CaravelNet pueden llenar su información aquí para participar en clasificaciones en línea. Cada cuarto posee un puntaje por la menor cantidad de movimientos usados en completarlo. Si no completas estos detalles, solo serás notificado de qué lugar pudo haber obtenido tu puntaje. Puedes publicar todos tus puntajes más tarde a través del botón "Subir Todos los Puntajes".
+cnetHeader=Conseguir más información//
+    o comprar una suscripción a CaravelNet.///
+    Se abre en otra ventana.
+redefineScreen=Estás cambiando la tecla para "%%"///
+    Presiona la tecla que quieras usar (actualmente: %%)///
+    Presiona "Escape" para cancelar
+redefineInvalidKey=%% ya está en uso para otra función///
+    Presiona la tecla que quieras usar///
+    Presiona "Escape" para cancelar
+redefineReservedKey=%% ya está en uso para un movimiento///
+    Presiona una tecla distinta///
+    Presiona "Escape" para cancelar
+# Help and Backstory
+abButCnet=Sobre CaravelNet
+abButHowto=Cómo Jugar
+abButHistory=Cronología de DROD
+abButBackstory=Historia de DROD
+abButCredits=Créditos
+h&bTextWidth=450
+h&bText=\tDROD fue concebido por Erik Hermansen en los 90. Es mayormente conocido como//
+    un juego de acertijos donde exploras cuartos en una mazmorra, asesinando monstruos con//
+    una Espada Realmente Grande. ¿Cómo funciona esto?  Lo verás por ti mismo cuando//
+    empieces a jugar.////
+      \tFlash DROD es un puerto del DROD original. Usa los medios de//
+    motores de los DROD más nuevos, los cuales puedes descargar para jugarlos en tu computadora a través de//
+    CaravelGames.com.////
+      \tGracias a las integradas capacidades de CaravelNet, además de completar los//
+    acertijos, los jugadores pueden competir entre sí por la puntuación más alta completando cada//
+    cuarto en la menor cantidad de movimientos posible.
+creditsWidth=620
+credits=<font size="20">Programación, Desarrollo: </font><font color="#444444">%%</font>///
+    <font size="20">Arte y Música: </font><font color="#444444">%%</font>///
+    <font size="20">Desarrollo del Servidor: </font><font color="#444444">%%</font>///
+    <font size="20">Desarrollo de Niveles: </font><font color="#444444">%%</font>///
+    <font size="20">Testers Primarios: </font><font color="#444444">%%</font>///
+    <font size="20">Testers: </font><font color="#444444">%%</font>///
+    <font size="20">Traducciones: </font><font color="#444444">%%</font>///
+    <font size="20">Actores de Voz: </font><font color="#444444">%%</font>///
+    <font size="20">Codificación, Idea y Niveles: </font><font color="#444444">%%</font>
+controlsWindowWidth=650
+controlsWindow=<font size="18">`Teclado Numérico` y `789 UIO JKL`</font><font color="#444444"> - Movimiento</font>///
+    <font size="18">`Q` y `W`</font><font color="#444444"> - Rotar espada</font>///
+    <font size="18">`Backspace`</font><font color="#444444"> - Deshacer el último movimiento</font>///
+    <font size="18">`R'</font><font color="#444444"> - Regresar al último punto de control o reiniciar</font>///
+    <font size="18">`Shift+R`</font><font color="#444444"> - Reiniciar cuarto</font>///
+    <font size="18">`Escape`</font><font color="#444444"> - Menú de pausa</font>///
+    <font size="18">`Enter`</font><font color="#444444"> - Puntajes del cuarto y nivel</font>///
+    <font size="18">`X`</font><font color="#444444"> - Bloquear/Desbloquear Cuarto</font>///
+    <font size="18">`Barra espaciadora`</font><font color="#444444"> - Saltear diálogos y logros en pantalla</font>///
+    <font size="18">`F3`</font><font color="#444444"> - Mostrar conteo de movimientos</font>///
+    <font size="18">`Shift+Tecla`</font><font color="#444444"> - Realizar acción y su opuesto</font>///
+    <font size="18">`Shift+Esperar`</font><font color="#444444"> - Esperar hasta el movimiento 30</font>///
+    <font size="18">`Click`</font><font color="#444444"> - Mostrar información sobre el cuadro clickeado</font>////
+    \tTu objetivo es deshacerte de los monstruos de cada nivel de la Mazmorra del Rey Dugan. Esto puede//
+    realizarse usando solamente tu Espada Realmente Grande™ y tu ingenio. Cada cuarto es un área//
+    separada que debe ser completada en una sola sesión. Si abandonas un cuarto sin limpiarla//
+    por completo, volverá a su estado inicial cuando regreses.
+cnetInfoWidth=500
+cnetInfo=\tCaravelNet permite a usuarios de todo el mundo competir por los mejores puntajes.////
+      \tTodos pueden publicar sus puntajes de manera anónima para compararlos con otros jugadores.//
+    Sin embargo, los puntajes anónimos no son almacenados en el servidor de CaravelNet y son solo para//
+    propósitos informativos. Cada puntaje de usuarios registrados de Caravel son almacenados por dos//
+    semanas luego de su publicación sin ningún precio. A aquellos con una suscripción a CaravelNet nunca//
+    se les borrarán sus puntajes.////
+      \tPor favor nota que, siempre y cuando tu puntaje no sea borrado del disco, puedes elegir//
+    publicar todos tus puntajes al servidor luego de haber registrado una cuenta en Caravel.////
+      \tPara registrarte en Caravel, por favor visita CaravelGames.com y créate una cuenta en el foro!
+# Backstory
+backstory1=\tBeethro Budkin caminó hacia la Gran Sala de Comida donde el Rey Dugan terminaba de comer su masivo desayuno.////
+       \t"¡Largo, sucio plebeyo! ¡Interrumpes mi digestión con tu mala higiene!" exclamó el Rey, con pedazos de cerdo y patatas estallando desde su boca.////
+      \t"Pero señor," protestó Beethro, "usted me envió."////
+       \tLa expresión en la larga cara del Rey cambió de furia a confusión a reconocimiento a simpatía al cabo de dos segundos.////
+       \t"Realmente deberías haber llegado más temprano," dijo el Rey Dugan. "¡Es increíble! Dejas a tus guardias merendar en las mazmorras, dejan caer migajas por todo el lugar, y de repente el lugar está enjambrado de cucarachas gigantes, sin mencionar duendes, serpientes, ojos y otras asquerosidades. Realmente se nos ha ido de las manos."////
+       \tBeethro se enderezó con orgullo. "No hay nada que temer. Soy un profesional entrenado de una larga línea de exterminadores de mazmorras. Combino cinco generaciones distintas de conocimiento con el más ingenioso equipo para ofrecer un servicio de exterminación eficiente y al mejor precio."////
+      \t"¿Qué clase de equipo usas?"////
+      \t"Tengo una espada realmente grande."
+backstory2=\t"¡Bien! ¿Cuándo podrás empezar?"////
+       \t"Tan pronto como arreglemos los detalles del pago. Aquí están mis cargos comunes de exterminación. Solo firme abajo." Beethro le entregó un contrato al Rey.////
+      \t"¡Estos precios son indignantes! ¿Acaso el privilegio de un servicio honorable a la Corona no vale nada hoy en día?////
+      \t"Puedo marcharme."////
+       \t"No, no, no. Necesitamos esa mazmorra limpia para que los prisioneros puedan recibir su tortura en un ambiente limpio y seguro."////
+      \t"Bueno, le daré un descuento si añade a una princesa"////
+      \t"Eres feo y hueles mal. ¡Ninguna de mis hijas te querría!"////
+      \tBeethro se encogió de hombros. "Es bastante justo."////
+      \tEl Rey firmó el contrato. "Muy bien. Déjame mostrarte la entrada."
+backstory3=\tMientras descendía, Beethro reflexionó sobre el trabajo que acababa de tomar. La Mazmorra de Dugan era excepcionalmente grande y, guiándose por los relatos de exterminadores pasados, ridículamente adaptado a infestaciones. También había sido expandida en secreto múltiples veces, para la desgracia de la primera persona que la limpió, cuyo contrato no cubría esa posibilidad. (Solo fue pagado por las partes de la mazmorra que sí conocía.)////
+       \tAlgunos han dicho que fuerzas siniestras estaban detrás de la expansión. La leyenda decía que un rey pasado se había cansado de su molesto y joven hijo, así que sugirió que el niño juegue en las mazmorras de los castillos, en tono de broma. Tomando a su padre en serio, el niño se aventuró al fondo de la mazmorra y nunca fue vuelto a ver. Se decía que no pereció, sino que vivó el resto de su vida en la mazmorra por preferencia. Convertido en maestro de su nuevo hábitat, aprendió todos los secretos del mundo subterráneo y formó alianzas con los monstruos que allí vivían, poniéndolos a trabajar creando nuevos pasadizos y criando mejores especímenes de monstruos. Se llamó a sí mismo El de Abajo, y planeó alzarse de las mazmorras para reclamar el trono cuando tenga el poder necesario.
+backstory4=\tBeethro no estaba seguro de todo eso. Para los principiantes, el trono real no era lo que era antes, ahora que su poder era mayormente transferido a un parlamento. Sin importarles quién querría vivir bajo tierra, o cómo podrían aliarse con las criaturas de allí, quienes no eran grandes conversadores. Pero era verdad que las mazmorras tendían a ser innecesariamente complicadas y fácilmente infestadas, y a veces crecía sin aviso - ningún Arquitecto de Mazmorras diría "por qué", como materia de honor - y esto, más que nada, mantenía a hombres como Beethro trabajando.////
+       \tDe cualquier manera, un exterminador tendría muchas más preocupaciones prácticas, como la prolífica y gigantesca cucaracha de mazmorra. Lo importante en la mente de Beethro era hacer suficiente dinero y monstruos muertos en este trabajo para finalmente retirarse de este ingrato negocio y abrir un restaurante.////
+      \t"¡Lo llamaré 'La Parrilla de Cucarachas Asadas de Beethro'!"
+backstory1width=550
+backstory2width=550
+backstory3width=550
+backstory4width=550
+backstoryNext=Siguiente
+backstoryPrev=Anterior
+drodHistoryWidth=650
+drodHistory=\t"Deadly Rooms of Death" (DROD) fue creado por Erik Hermansen en los años//
+    90. El juego fue lanzado por Webfoot y fue conocido como "Webfoot DROD", sin embargo este juego ya no está//
+    en venta actualmente y no puede ser legalmente obtenido. Por suerte, a Erik se le dio el permiso de reconstruir el juego por su//
+    cuenta, y así nació "Caravel DROD" en el 2002.////
+      \tLuego, en el 2003, "DROD: Architect's Edition" fue,//
+    lanzado, incluyendo un editor de niveles que permitía a cualquier jugador crear sus propios 'dominios'//
+    (sets de niveles) y compartirlos públicamente en el foro de CaravelGames. El juego tuvo una gran//
+    cantidad de fans y un plan de crear un nuevo juego fue concebido.////
+      \tEl 1 de Abril de 2005 ¡"DROD: Journey to Rooted Hold" fue lanzado! La lista de nuevas inclusiones//
+    fue increíble. Incluyó nuevas gráficas, secuencias de comandos y diálogos, alrededor de una docena de nuevos elementos, una//
+    cautivadora historia y un antagonista cuya voz produce escalofríos.////
+      \tExactamente dos años más tarde, "DROD: The City Beneath" vio la luz del día. Ese día se produjo//
+    el récord de la mayor cantidad de usuarios activos en el foro de Caravel al mismo tiempo. TCB incluyó aún más elementos//
+    nuevos y mejoras que JtRH, y un mayor nivel de dificultad.////
+      \tEn el 2008, "DROD RPG" fue lanzado. A pesar de no ser tan popular como los títulos anteriores, aún así fue una brillante//
+    gema. La gran diferencia estaba en que el juego era un estratégico reto de varios cuartos donde había que tener un buen manejo de recursos.//
+    Cada monstruo tenía estadísticas y debías calcular qué monstruos podían ser derrotados en un momento dado, planear//
+    dónde ir luego, qué recursos tomar, cómo y cuándo.////
+      \t"DROD 4: Gunthro and the Epic Blunder" es la más reciente entrega de la saga, lanzado el 1 de Abril de 2012. Este juego está dirigido a nuevos jugadores, y es mejor para principiantes debido a sus acertijos más fáciles, tutoriales más intuitivos y más niveles de base.
+# Restore Screen
+rstHeader=Restaurar Juego
+rstToRoom=Restaurar a este cuarto
+rstReturn=Restaurar a pantalla de inicio
+rstSecrets=Secretos completados: %% / %%
+# Ingame messages
+roomLocked=Has bloqueado la salida del cuarto.//
+    Presiona %% de nuevo para desbloquear.
+ingLevelCompleted=Nivel Completado
+ingSecretFound=Secreto Encontrado
+ingHoldMastered=Dominio Masterizado
+# Achievements popup
+achievementHeader=¡Logro!
+achievementDismiss=Click o Barra Espaciadora para ignorar
+# Achievements list
+achlistHeader=Logros:
+# Browse released holds
+browseHeader=Ver dominios lanzados de Flash DROD
+browseOpen=Abrir en una nueva ventana
+# Level/Room score
+scrStats=Estadísticas del jugador
+scrYourBest=Tu mejor puntaje:
+scrTop=Mejores puntajes del cuarto:
+scrNoScore=¡Ninguno!
+scrFetching=Buscando...
+scrOnlyForCnet=Los puntajes de los cuartos solo están disponibles para suscriptores de CaravelNet y//
+    registrados en el foro de Caravel.////
+    Parece que no has completado tus datos de la cuenta de CaravelNet aún. Crear una//
+    cuenta de Caravel te permitirá competir contra otros jugadores alrededor del//
+    mundo y seguir el rastro de los puntajes de cada cuarto.////
+    Para registrarte a Caravel usa el botón ubicado en la pantalla de opciones.
+scrMovesRoom=Movimientos del cuarto: %%
+scrMovesLevel=Movimientos del nivel: %%
+scrDeaths=Muertes del nivel: %%
+scrKills=Matanzas del nivel: %%
+scrTime=Tiempo del nivel: %%
+scrNoScores=No hay puntajes para este cuarto aún.
+scrCnetProblems=Las funciones de CaravelNet se han desactivado debido a problemas con tu conexión.////
+    Primero asegúrate de que tu conexión a internet esté funcionando y que hayas ingresado credenciales//
+    de CaravelNet válidas. Luego ve a "Opciones" y pulsa "¡Conectar!"
+    
+# Login Window
+loginConnected=\t¡Ahora estás conectado a CaravelNet como un usuario registrado!////
+      \tSi solo te has registrado al foro pero no a CaravelNet, tus//
+    puntajes serán borrados luego de dos semanas del día que fueron subidos.////
+      \tLos puntajes subidos por suscriptores de CaravelNet son permanentes.
+loginConnectedAnonymous=\tAhora estás conectado a CaravelNet como un usuario anónimo. Puedes publicar tus//
+    puntajes para saber qué lugar conseguiste en la clasificación, pero el puntaje no es//
+    almacenado en el servidor. Para hacer tus publicaciones persistentes, tienes que//
+    crear una cuenta en Caravelgames (accesible desde la pantalla de opciones).///
+      \tSi luego decides crearte una cuenta, usa el botón de "Subir tus Puntajes" para//
+    subir todo tu progreso a nuestro servidor.
+loginFailed=\t¡Conexión fallida!.////
+    1. Revisa si estás conectado a internet.///
+    2. Asegúrate de que tu firewall no esté bloqueando el juego.///
+    3. Visita http://forum.caravelgames.com para ver si el servidor carga. Si no, espera//
+    un par de minutos e intenta de nuevo.\n
+loginFailedBadCredentials=4. Revisa si las credenciales que has introducido son correctas.
+loginFailedMissingCrentials=4. Asegúrate de haber introducido un nombre de usuario y contraseña de CaravelNet válidos.
+# Pause window
+pauseHeader=DROD ha sido pausado
+pauseContinue=Continuar jugando
+pauseContinueTip=Continúa jugando.///
+    (Escape, Enter)
+pauseRestart=Reiniciar cuarto
+pauseRestartTip=Reinicia el cuarto actual.///
+    (Atajo: F5).
+pauseRoomHelp=Conseguir ayuda para el cuarto actual
+pauseRoomHelpTip=Consigue ayuda en línea para este cuarto.///
+    (Atajo: F2)
+pauseHelp=Ver ayuda general
+pauseHelpTip=Abre una ventana de ayuda general.///
+    (Atajo: F1)
+pauseAchievements=Ver logros
+pauseAchievementsTip=Muestra una lista de todos los logros.///
+    (Atajo: Tab)
+pauseOptions=Opciones
+pauseOptionsTip=Te permite cambiar algunos ajustes.
+pauseReturn=Regresar a la pantalla de inicio
+pauseReturnTip=El progreso del juego queda guardado,///
+    pero el progreso de este cuarto///
+    se perderá si sales del juego.
+# Misc
+achHidden=???
+levelCreatedDate=Creado %%.%%.%%
+# Scored Places
+score1NoTie=¡¡Primer lugar!!
+score1=1er lugar
+score2=2do lugar
+score3=3er lugar
+score4=4to lugar
+score5=5to lugar
+score6=6to lugar
+score7=7mo lugar
+score8=8vo lugar
+score9=9no lugar
+score10=10mo lugar
+score11=11er lugar
+score12=12do lugar
+score13=13er lugar
+score14=14to lugar
+score15=15to lugar
+score16=16to lugar
+score17=17mo lugar
+score18=18vo lugar
+score19=19no lugar
+score20=20mo lugar
+score21=21er lugar
+score22=22do lugar
+score23=23er lugar
+score24=24to lugar
+score25=25to lugar
+scoreTie=%% ¡Empate!
+scoreNoCnet=(anónimo)
+# Game Stats
+resultHoldTotals=Totales del Dominio:\n
+resultLevelTotals=Totales del Nivel:\n
+resultMoves=Movimientos: %%\n
+resultKills=Matanzas: %%\n
+resultDeaths=Muertes: %%\n
+resultTime=Tiempo: %%\n
+resultSecrets=Secretos encontrados: %%\n
+resultSecretsBetter=Secretos encontrados: %% / %%\n
+# Scroll Clock
+spawnCycle=Ciclo de freza:
+snakesPrefer=Las serpientes prefieren:
+clcHo=HO
+clcRiz=RIZ
+clcOn=ON
+clcTal=TAL
+clcVe=VE
+clcRt=RT
+clcIc=IC
+clcAl=AL
+# Tiles list
+tile1=Suelo
+tile2=Hoyo
+tile3=Escaleras hacia Abajo
+tile4=Pared
+tile5=Pared Destruida
+tile6=Puerta de Nivel
+tile7=Puerta de Cuarto
+tile8=Puerta de Trampilla
+tile9=Puerta Amarilla
+tile10=Puerta Amarilla (Abierta)
+tile11=Trampilla
+tile12=Obstáculo
+tile13=Flecha de Fuerza (Norte)
+tile14=Flecha de Fuerza (Noreste)
+tile15=Flecha de Fuerza (Este)
+tile16=Flecha de Fuerza (Sureste)
+tile17=Flecha de Fuerza (Sur)
+tile18=Flecha de Fuerza (Suroeste)
+tile19=Flecha de Fuerza (Oeste)
+tile20=Flecha de Fuerza (Noroeste)
+tile21=Poción de Invisibilidad
+tile22=Poción de Mímica
+tile23=Nota
+tile24=Orbe
+tile35=Brea
+tile37=Puerta de Brea
+tile54=Mosaico
+tile55=Calle
+tile56=Pasto
+tile57=Baldío
+tile58=Suelo Alterno
+tile59=Pared Maestra
+tile61=Escaleras hacia Arriba
+tile62=Pared Secreta
+tile66=Pared
+tile68=Puerta de Cuarto (Abierta)
+tile69=Puerta de Nivel (Abierta)
+tile70=Puerta de Trampilla (Abierta)
+tile71=Puerta de Brea (Abierta)
+tileCheckpoint=Punto de Control
+# Monsters list
+monsterPlayer=Jugador
+monster0=Cucaracha
+monster1=Reina Cucaracha
+monster2=Huevo de Cucaracha
+monster3=Duende
+monster5=Espectro Alado
+monster6=Ojo del Mal
+monster7=Serpiente
+monster8=Madre Brea
+monster9=Bebé Brea
+monster10=Cerebro
+monster11=Mímica
+monster12=Araña
+monster29=Personaje
+sword=Espada
+swords=Espadas (%%)
+# Room position
+roomS=S
+roomSouth=Sur
+roomN=N
+roomNorth=Norte
+roomE=E
+roomEast=Este
+roomW=O
+roomWest=Oeste
+roomEntrance=Entrada
+room1=Una vez al
+room2=Dos veces
+room3=Tres veces
+room4=Cuatro veces
+room5=Cinco veces
+room6=Seis veces
+room7=Siete veces
+room8=Ocho veces
+room9=Nueve veces
+room10=Diez veces
+room11=Once veces
+room12=Doce veces
+room13=Trece veces
+room14=Catorce veces
+room15=Quince veces
+room16=Dieciséis veces
+room17=Diecisiete veces
+room18=Dieciocho veces
+room19=Diecinueve veces
+roomMore=%% veces
+# Game completion
+complButtNextGame=Jugar siguiente set
+complButtLearnMore=Aprender más
+complButtContinue=Continuar jugando
+complHeader=¿Qué sigue?
+complLearnMore=Aprende más sobre la franquicia de DROD - su mundo, y sus juegos principales: Journey to Rooted Hold, The City Beneath, Gunthro and the Epic Blunder ¡Y los más recientes títulos de la franquicia!
+complContinue=Continuar masterizando este dominio - encuentra secretos, y gana el acceso al Área Maestra. Puedes encontrar enlaces a ambas opciones en la Pantalla de Inicio.
+
+# Changes-additions
+# Common
+rstFarthest=Seleccionar el último guardado
+rstHelpTooltip=Haz click para una rápida introducción a cómo funciona la restauración.
+rstHelp=Restaurar funciona casi como guardar partidas en tus videojuegos favoritos. La diferencia es que aunque//
+    no puedas guardar cuando tú quieras, el juego lo hace automáticamente cuando accedes a un cuarto sin conquistar.////
+    Para restaurar a un estado previo, primero selleciona un nivel de la lista a la izquierda, luego elige un cuarto en el mini-mapa debajo.//
+    El mini-mapa mostrará en gris los cuartos que no visitaste   cuando se guardó. Aquellos con un fondo blanco están conquistados y//
+    aquellos con uno rojo no lo están.////
+    Luego siempre puedes cargar tu mejor estado haciendo click en el botón de "Seleccionar el último guardado".////
+    Restaurar es mayoritariamente útil si quieres mejorar tus puntajes para un cuarto, buscar secretos, o simplemente volver a jugar un cuarto favorito.
+rstWarning=Has escogido volver a un estado previo - algunos cuartos se restaurarán a su estado sin conquistar.////
+    Siempre puedes restaurar a tu mejor/más reciente estado haciendo click "Seleccionar el último guardado".
+    
+optDelayText=Retraso de repetición:
+optDelayShort=Corto
+optDelayLong=Largo
+optGetPass=Obtener clave CNet
+optGetPassTooltip=Las personas con una cuenta en el foro de Caravel Games pueden pedir una clave de CaravelNet la cual les permite///
+    publicar puntajes en la clasificación en línea. Dichos puntajes son eliminados luego de dos semanas.////
+    Los puntajes de suscriptores que han pagado se retendrán siempre, incluso si su suscripción se acaba.
+    
+optDelayTooltip=El retraso entre mantener presionada la///
+   tecla y la acción que se repite.
+optRateTooltip=La fluidez del movimiento y la//
+    velocidad de repetición al mantener presionada una tecla. 
+    
+achAddInfo=Logros en gris que no están semi-transparentes están "activos". Esto significa que en el cuarto actual//
+    es posible que consigas dicho logro (pero no siempre, por lo tanto lee bien las descripciones de los logros).//
+    Nota que algunos logros pueden estar activos en todos o la mayoría del os cuartos del juego.
+ 
+pauseRestore=Restaurar a un cuarto distinto
+cnetDescriptionKong=Desafortunadamente debido a las políticas de Kongregate, la interfaz de login está desactivada - no puedes publicar tus puntajes//
+    en las clasificaciones en línea. Si lo deseas ¡Puedes jugar Flash DROD en caravelgames.com!
+
+defCont=Controles predeterminados:

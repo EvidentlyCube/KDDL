@@ -1,0 +1,17 @@
+Title.mp3
+---------
+Copyright Emmett Plant, All Rights Reserved, Permission given to include those
+assets in this repository and forks for the purpose of archiving full source
+code of the project.
+
+Permission obtained from Emmett Plant via Email on 2025-04-07
+
+
+
+*.mp3
+-----
+Copyright Erik Hermansen, Caravel Games
+Permission granted to include those assets in this repository and forks for the purpose of archiving full source code of the project
+
+Permission received from Mike Rimer via email on December 9, 2024
+

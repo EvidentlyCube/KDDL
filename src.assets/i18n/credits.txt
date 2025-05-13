@@ -1,0 +1,9 @@
+credits_Programming=Maurycy Zarzycki
+credits_ArtAndMusic=Erik Hermansen, Emmett Plant, Maurycy Zarzycki
+credits_serverSide=Matt Schikore
+credits_levelDevelopment=Jacob Grinfeld, Larrymurk, Tom Brouws
+credits_primaryTesters=Adrienne E. Siskind, Jason Mayeaux
+credits_testers=Sam Benner, Tom Brouws, Jacob Grinfeld, Logan West, George Wanfried (Chaco), 12th Archivist, DiMono, Dischorran, Jatopian, Neather2, Panther, Pearls, Snacko, N. K. Tiitto, Tim, Daniel Higgins, Lamkin, Robin Knabe
+credits_translations=Bombadil (es), Damien Poussier (fr), DyRsOfDh14 (es), Martin Coors (de), Guilherme Töws (pt), Jutt (nl), Maurog (ru), Pekka (fi), Robin Knabe (nl), The Architest (fi), Xander Deubelbeiss (de)
+credits_voiceTalents=Sten Ryason, Johannah West, Logan West
+credits_original=Mike Rimer, Erik Hermansen, Lucas Swineford

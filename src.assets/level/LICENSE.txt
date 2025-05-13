@@ -1,0 +1,23 @@
+TheAncientPalace.tss.hold
+-------------------------
+Copyright Jacob Grinfeld
+
+
+kdd1.tss.hold
+kdd2.tss.hold
+kdd3.tss.hold
+kdd4.tss.hold
+kdd5.tss.hold
+kdd6.tss.hold
+-------------
+Copyright Caravel Games, Maurycy Zarzycki and the individual contributors
+Permission granted to include those assets in this repository and forks for the purpose of archiving full source code of the project
+
+Permission received from Mike Rimer via email on December 9, 2024
+
+
+
+player.player
+-------------
+File generated from DROD: The Second Sky
+

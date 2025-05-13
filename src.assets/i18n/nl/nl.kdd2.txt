@@ -1,0 +1,237 @@
+# src/../src.assets/i18n/en.kdd2.txt
+# Level Names
+Fifth Level=Vijfde Level
+Sixth Level=Zesde Level
+Seventh Level=Zevende Level
+Eighth Level=Achtste Level
+Mastery Level=Meesterlevel
+Tutorial=Oefenlevel
+# Level entrances
+entr5=Beethro Budkin, vijfde generatie professionele kerkerverdelger, was door Koning Dugan ingehuurd om zijn meerdere niveaus diepe kerker te ontdoen van een grote kolonie monsters.///
+    Beethro rekent zijn kosten per kamer en als professional is hij per contract gebonden om alle monsters uit elke kamer in de kerker te verwijderen om betaald te worden.///
+    Het enige wapen dat Beethro nodig heeft om zijn werk te doen is een Heel Groot Zwaard, dat bijna ieder monster verslaat in één enkele slag.////
+    -----////
+    Het vorige level had Beethro zich in het zweet gewerkt. "Ik geloof dat dit toch hard werken wordt" Gelukkig kwam hem een koele bries uit het volgende level tegemoet.
+entr6=Misschien wilde de architect van dit level iets te fanatiek zijn punt maken, wat dat punt dan ook was. In ieder geval mag je blij zijn dat er geen andere levels als deze in Dugan's Kerker zijn.
+entr6Back=Beethro kwam terug om netjes het opruimwerk af te maken waar hij voor ingehuurd was.
+entr7=Terwijl Beethro de trap afdaalde, hoorde hij een luid gesis. Als geharde professional wist hij direct wat het was, maar was desondanks ontsteld door de immense hoeveelheid. "Jemig! Hoeveel van die akelige gevallen zitten daar beneden wel niet?"
+entr8=Sommige monsters zijn geslepen en dodelijk, en andere laten alleen maar een hoop rotzooi achter.
+entrMaster=Beethro daalde de trap af, maar kwam terecht in een onbekende gang...////
+    Hij wordt niet betaald om het hier op te ruimen, maar zijn professionele eer drijft hem voort.
+entrTut=Oefeningen
+entrTutLeave=Beethro verliet het oefenlevel met veel nieuwe inzichten.
+entrPremaster=Beethro strompelde een aantal slecht verlichte trappen op en af. "Het is hier levensgevaarlijk en er lopen hier niet eens kakkerlakken rond! Iemand zou hier op zijn minst een leuning moeten maken ofz-" dacht Beethro vlak voordat hij twaalf treden omlaag viel en ruim een uur buiten westen raakte. Na werkelijk afschuwelijke dromen over oogbalpudding werd Beethro versuft wakker in een kamer. "Gob! Is het te veel gevraagd om deze plekken voor één keer op de kaart te zetten?"
+# Scrolls
+sc51n2w=Ik hoop dat je een weg terug hebt vrijgehouden.
+sc63e=Geheime Doorgang
+sc61s1w=Dit is een Meesterdeur.///
+    Hij gaat open als je het laatste level hebt opgelost en ook alle geheime kamers hebt overwonnen.
+sc72n1w=Voor de zwakkeren van geest, ga terug! Deze kamer kan alleen worden opgelost met een meesterlijk intellect.///
+    (Deze kamer is niet verplicht.)
+sc71n1=Ik had niet gedacht dat je die laatste zou uitdokteren.
+sc71n2=Okee, ik geef toe dat het niet PRECIES hetzelfde is als light cycles.////
+    -Erik
+sc71n3=Mijn eerbetoon aan Tron.////
+    -Erik
+sc81s1=De levende teer kan alleen beschadigd worden op platte zijden.
+sc81s2=Elke blob die niet ten minste 2 tegels breed en lang is, is instabiel en zal uiteenvallen in teerbaby's
+sc81s3=Probeer het maar eens uit.
+sc81s1e=Een verstandig man ruimt de noordelijke kamer op voordat hij deze gang volgt.
+sc83s=Ruim de doorgangen naar het zuiden en westen op voordat je verder gaat, zodat je hier niet hoeft terug te komen.
+scMe1=Moeilijkere versies van oude puzzels.
+scMe2=Laatste woorden.
+scMe3=Nieuwe puzzels
+scM1s1=Kijk aan! Op misschien nog een paar prestaties na, heb je alles in het spel gedaan.
+scM1s2=Ik bied je mijn hartelijke felicitaties aan, je hebt een behoorlijke prestatie geleverd!
+scM1s3=Op caravelgames.com kun je de volgende afleveringen van KDDL vinden en elk van de volledige DROD games downloaden voor Windows, MacOS en Linux.
+scM1s4=Ga zo door!
+scM1s5=Hier is een kleine beloning! Dood alle ogen zonder op het bruine gras te stappen.
+scM1s6=De onderste twee kakkerlakkoninginnen worden automatisch gedood zodra je op het checkpoint stapt in de hoek rechtsboven.
+scM1s7=Hartelijke felicitaties!
+scT1=Loop helemaal naar rechts en let op hoe de kakkerlak zich gedraagt als hij diagonaal tegen een hoek oploopt.
+scT2=Slangen bewegen volgens hun eigen, veel complexere regels. Hun huidige voorkeur wordt weergegeven onder de broedcyclus klok.
+scT3=Als een DROD monster diagonaal tegen de hoek van een obstakel oploopt, glijdt hij er liever verticaal langs indien mogelijk.
+scT4='Escape' opent het pauzemenu, waar je 'Algemene Hulp' kunt vinden om de besturing na te kijken wanneer je wilt.
+scT5=Om te voorkomen dat je per ongeluk een kamer verlaat toets je 'X' om hem te vergrendelen en ontgrendelen. Een klein slot op de mini-kaart geeft aan dat een kamer vergrendeld is.
+scT6=Shift+Toets voert een actie en zijn omgekeerde uit.///
+    Shift+Wachten wacht tot de volgende broedcyclus.///
+    Cijferblok '+' of '=' voert het omgekeerde van de vorige zet uit.
+scT7=F3 toont een zetteller om je te helpen met optimaliseren voor betere scores.
+scT8=Alle toetsen kunnen veranderd worden vanuit de spelopties.
+scT9=Als je geen CaravelNet lidmaatschap hebt, worden je scores niet opgeslagen in de ranglijsten, maar krijg je alleen te zien welke plaats je gekregen zou hebben.
+scT10=Klik op elementen om te zien wat sferen doen en wat boze ogen zien.
+scT11=Spatiebalk verwijdert alle dialogen en prestaties van het scherm.
+scT13=In tegenstelling tot kakkerlakken, vluchten schaduwvlerken voor Beethro en proberen op een afstand van vijf tegels te blijven.
+scT14=Ze zijn niet zo bang in grotere aantallen, en zullen niet aarzelen om aan te vallen als ze hun prooi omsingelen.
+sc1_6n3w1=gebruik de achterwaartse zwaai techniek om de kakkerlak te doden.
+sc1_6n3w2=Ga op de groene vloer staan en zorg dat de kakkerlak op de zandtegel staat direct ten noorden van je...
+sc1_6n3w3=Ga op de groene vloer staan en zorg dat de kakkerlak op de zandtegel staat direct ten zuiden van je...
+sc1_6n3w4=...en stap dan noordoost om hem te doden.
+sc1_6n3w5=...en stap dan zuidoost om hem te doden.
+sc1_6n3w6=Herhaal om de achterwaartse zwaai te begrijpen. Leer deze techniek goed, want hij zal cruciaal zijn bij je komende inspanningen.
+# Speeches
+sp5e1=Dit is een oefenruimte.
+sp5e2=Ga hierheen als je het spel niet eerder hebt gespeeld.
+sp5e3=Loop rond met het cijferblok of 789, UIO, JKL
+sp52n1=Het oplossen van deze kamer zonder een van die deuren te openen is iets om trots op te zijn.
+sp52n2=Ha! Slordig kerkerontwerp met al die onnodige sferen!
+sp51n2w1=Ai, moet je al die boze ogen zien!
+sp51n2w2=Ah! Ik voel me nog steeds ongemakkelijk als een van die gevallen wakker wordt!
+sp63e=Begin hier een patroon te zien...
+sp63n=Maar dit ziet er bekend uit...
+sp63w=Dugan kan me maar beter betalen voor al deze kamers.
+sp72n1w1=Jemig! Dat serpent moet zo'n duizend vierhonderd en vijfenveertig voet lang zijn!
+sp72n1w2=Maar mijn contract zegt dat ik niet verplicht ben om monsters aan te pakken langer dan duizend vierhonderd en vierenveertig
+sp72n1w3=Ik kan deze kamer laten zitten.
+sp71n1e1=Mijn zwaard kan dat kronkelende geval geen schrammetje toebrengen.
+sp71n1e2=Maar lok hem gewoon in een doodlopend eind en ik ben van hem af.
+sp84s1=Teermoeders ook nog? Waarom, waarom, waarom...?
+sp83s1e=Ik haat teermoeders.
+sp82s2e=Ik moet oppassen hier... Ik kom er niet door als de teer die doorgang blokkeert!
+sp84s3e1=Laat maar. Daar gaan we!
+sp84s3e2=En hier een muur...
+sp84s3e3=Mooi. In dit tempo hebben we dit level in een paar minuten in kaart gebracht.
+sp84s3e4=Hoor je dat? Het is de teerautoriteit! We moeten ons verstoppen!
+sp84s3e5=Aaaah! I liet bijna de kaart vallen!
+sp84s3e6=Wacht! Heb ik de kaart met de goede kant omhoog?
+sp85s2e1=Deze kamer... hij ziet er... op een of andere manier... bekend uit...
+sp85s2e2=Ik word er... boos van... en gefrustreerd!
+sp86s3e=Verdraaid... Ik hoop dat er geen slinkse trucs zijn, zoals kamers ergens verborgen achter een geheime muur!
+sp88s3e1=Oh gob... van deze kamer ga ik nachtmerries krijgen...
+sp88s3e2=Nooit meer... nooit meer...
+spM1s=Je hebt gefaald...
+spT2=Draai je zwaard met 'Q' en 'W'.
+spT3=Sla nu de sfeer aan met je zwaard.
+spT4=Sferen beïnvloeden deuren op drie manieren - ze kunnen ze openen, sluiten, of hun positie verwisselen.
+spT5=Klik op de sfeer met de muis om te zien welke deuren hij beïnvloedt
+spT6=Je doel in DROD is om elk level van monsters te ontdoen.
+spT7=Steek de kakkerlak neer met je zwaard om het te doden.
+spT8=Pijlen blokkeren je bewegingen in een tegengestelde richting.
+spT9=Stap op het checkpoint. Je gaat terug naar het exacte moment dat je erop gestapt bent als je dood gaat of herstart met 'R'.
+spT10=Als je dood gaat of in een situatie bent waar elke zet tot je dood leidt, kun je tot drie zetten ongedaan maken met 'Backspace'.
+spT11=Deze drank laat je een mimicus plaatsen. Mimici kopiëren elke beweging die je maakt en ze bewegen direct na jou, maar vóór de monsters.
+spT12=Plaats een mimicus op de tegel beneden gemarkeerd met een checkpoint. Gebruik hem om alle valluiken te laten vallen en de rode poort gaat open.
+spT13=Gefeliciteerd, je hebt deze kamer opgelost!
+spT14=Nadat je de kamer verlaat is je overwinning permanent. Je kunt altijd je beste score voor de kamer zien, en je kunt zien hoe je je geplaatst hebt vergeleken met de scores op de ranglijst.
+spT15=Als je het spel verbonden hebt met geldige Caravel forum gebruikersinformatie, wordt je score toegevoegd aan de ranglijst.
+spT16=Je score blijft op de ranglijst gedurende twee weken, tenzij je betaalt voor een Caravel lidmaatschap. In dat geval blijft je score voor altijd op de ranglijst staan.
+spT17=Je kunt nu de oefenkamer verlaten.
+# Achievements
+achName0=Waar is Meester?
+achName1=Oosterwijk
+achName2=Opgeruimdheid
+achName3=Sfeerontwijker
+achName4=Statische Handen
+achName5=Perfect Zicht
+achName6=Schaduwvlerk Fluisteraar
+achName7=Gecontroleerde Nabootsing
+achName8=Hekel aan Geel
+achName9=Niet Diagonaal
+achName10=Bewegingloze Handen
+achName11=Glibbersssss
+achName12=Handen van Steen
+achName13=Meesterlijk Intellect
+achName14=Onderkruiper
+achName15=Teertechnicus
+achName16=Oogsteker
+achName17=De Ninja
+achName18=Amateurdelver
+achName19=Onervaren Opruimer
+achName20=Verdelger op Contractbasis
+achName21=Ik Ben een Professional!
+achName22=Overmeestering
+achName23=Post-overmeestering
+achName24=Gebakken Koninginnen
+achName25=Eieren Al Dente
+achName26=Boze Ogenjam
+achName27=Geroosterde Schaduwvlerken
+achName28=Serpent Sushi
+achName29=Stemvork
+achName30=Groen naar de Grond
+achName31=Meute Vermorzelaar
+achName32=Onsterfelijk
+achName33=Scheur in de Ruimtetijd
+achName34=Vloer Schoonmaken
+achName35=Marathonmeester
+achDesc0=Vind de meestermuur
+achDesc1=Ontruim Vijfde Level 1W terwijl altijd naar het Oosten gedraaid.
+achDesc2=Laat alle valluiken vallen en ontruim Vijfde Level 1N 2W zonder tussendoor de kamer te verlaten
+achDesc3=Ontruim Vijfde Level 2N zonder een sfeer aan te slaan
+achDesc4=Ontruim Vijfde Level 1Z zonder draaien
+achDesc5=Overwin Vijfde Level 2Z zonder de onzichtbaarheidsdrank te drinken
+achDesc6=Sla de sfeer niet aan bij het ontruimen van Vijfde Level 3O
+achDesc7=Ontruim Vijfde Level 1Z 1W zonder het gemarkeerde gebied te verlaten.
+achDesc8=Ontruim Vijfde Level 2Z 2O zonder op open gele deuren te stappen
+achDesc9=Maak geen diagonale bewegingen in Zevende Level 1Z
+achDesc10=Draai niet tijdens het ontruimen van Zevende Level 1O
+achDesc11=Dood de slang voordat je een kakkerlak doodt in Zevende Level 1N 1O
+achDesc12=Draai je zwaard niet in Zevende Level 3N 1O
+achDesc13=Ontruim de Meesterintellect kamer (Zevende Level 2N 1W)
+achDesc14=Ontruim Achtste Level 4Z 3O zonder de mimicusdrank te drinken
+achDesc15=Verwijder alle teer in één van de kamers in Achtste Level
+achDesc16=Dood een teermoeder voordat ze de kans heeft om te groeien
+achDesc17=Ontruim een kamer met boze ogen zonder er één waker te maken
+achDesc18=Ontruim Vijfde Level
+achDesc19=Ontruim Zesde Level
+achDesc20=Ontruim Zevende Level
+achDesc21=Ontruim Achtste Level
+achDesc22=Overmeester de hold
+achDesc23=Post-overmeester de hold
+achDesc24=Dood 20 kakkerlakkoninginnen
+achDesc25=Dood 15 Kakkerlak-eieren
+achDesc26=Dood 15 boze ogen
+achDesc27=Dood 5 schaduwvlerken
+achDesc28=Dood 10 serpenten
+achDesc29=Sla een sfeer drie zetten achter elkaar aan
+achDesc30=Open 5 keer een groene poort
+achDesc31=Dood 2500 monsters
+achDesc32=Ga 70 keer dood
+achDesc33=Maak 350 zetten ongedaan
+achDesc34=Laat 200 valluiken vallen
+achDesc35=Zet 7000 stappen
+outro=Teer was niet iets wat Beethro had verwacht. Of tegen had willen komen. Maar terwijl hij de trap afloopt naar de negende verdieping weet hij één ding zeker - hij ruikt de slijmerige substantie hier niet. Maar wat als hem er iets veel ergers te wachten staat?////
+    ///
+    <font size="32" color="#FFFF00">Gefeliciteeerd!</font>////
+    Je hebt de tweede aflevering uitgespeeld van de Deadly Rooms of Death, King Dugan's Dungeon Lite hold. Ik hoop oprecht dat je van deze ervaring genoten hebt.///
+    Nu je de laatste trappen in deze set bent afgedaald, wil je misschien proberen om dit spel te Overmeesteren en dan te Post-overmeesteren! Om dit te doen moet je op zoek naar de geheime kamers. Het aantal geheime kamers in elk level wordt nu weergegeven op het Herstelscherm.///
+    Wanneer je ze allemaal weet te overwinnen, wordt er een speciale Meesterlocatie geopend. Kun je uitvinden hoe je er komt?///
+    ///
+    Je wilt misschien ook de volgende aflevering in de DROD:KDDL serie spelen.///
+    ///
+    Voordat ik je laat genieten van je gevoel van uitzinnige vreugde, wil ik graag een aantal mensen bedanken, zonder wie dit spel nooit het daglicht had gezien.///
+    ///
+    <font size="26" color="#FFFF00">Erik Hermansen</font> - De maker, vader en uitvinder van DROD. Zonder hem zou dit unieke spelidee nooit het daglicht hebben gezien.////
+    <font size="26" color="#FFFF00">Mike Rimer</font> - Hij heeft DROD: JtRH en DROD: TCB grotendeels in zijn eentje geprogrammeerd. Bedankt voor de fantastische basis voor de code, het maken van Flash DROD was een genoegen.////
+    <font size="26" color="#FFFF00">Matt Schikore</font> - Heer en meester van het Caravel Forum en de hoofdprogrammeur van CaravelNet. Dankzij hem kun je om scores strijden en nog veel meer!////
+    ///
+    <font size="23" color="#FFFF00">Programmeren, Ontwikkeling</font> - %%////
+    <font size="23" color="#FFFF00">Grafische onderdelen & Muziek</font> - %%////
+    <font size="23" color="#FFFF00">Server-side ontwikkeling</font> - %%////
+    <font size="23" color="#FFFF00">Level ontwikkeling</font> - %%////
+    <font size="23" color="#FFFF00">Primaire Testers</font> - %%////
+    <font size="23" color="#FFFF00">Testers</font> - %%////
+    <font size="23" color="#FFFF00">Vertalingen</font> - %%////
+    <font size="23" color="#FFFF00">Acteurs</font> - %%////
+    <font size="23" color="#FFFF00">Originele Programmatuur, Idee & Levels</font> - %%///
+    ////
+    Tot volgende keer!////
+    <font size="18" color="#AAAAAA">-Maurycy</font>
+
+complNextGame=Speel de volgende levelset - KDD Lite 3. Dit opent in een nieuw venster en je kunt dit venster veilig sluiten. Je voortgang is opgeslagen.
+
+sp_new71e1=Die ogen hadden netter opgeruimd kunnen worden zonder te draaien. Zeker weten!
+sp_new71e2=Ha! Dat is nou efficientie! Wacht maar tot ik dat staaltje aan het Zwaardmeestersgilde vertel!
+
+# Tutorial crap
+defCont=Standaard besturing:
+sc_diago=Je kunt diagonaal bewegen, zelfs door heel smalle gangen.
+sc_broken=Breek deze gebriken en geheime muren met je zwaard.
+sc_queens1=Kakkerlakkoninginnen werpen elke 30 zetten kakkerlak-eieren (de zet nadat de broedklok rood wordt).
+sc_queens2=5 zetten nadat ze gelegd zijn, kruipen de volgroeide kakkerlakken uit de eieren.
+sc_queens3=Eieren worden niet op pijlen, valluiken of gele deuren gelegd. Gebruik de "I" toets of Cijferblok 5 om een zet te wachten.
+sc_mimics=Als je op een mimicusdrank stapt, gebruik je de muis of de wacht toets om de tegel te selecteren waar je de mimicus neer wilt zetten.
+sc_shiftwait=Het kan handig zijn om met Shift+Wachten te wachten tot de volgende broedcyclus.
+sp_mother1=Elke dertig zetten laten de teermoeders de teer één tegel in alle richtingen groeien.
+sp_mother2=Het is relatief veilig om omringd te worden door groeiende teer, maar je moet oppassen voor teerbaby's die kunnen ontstaan bij de groei.
+sc_backswipe=Volg het zandpad om de achterwaartse zwaai te leren! Onthoud dat je diagonaal kunt bewegen en draai je zwaard niet.
+sc_trapdoors=Deze roze-paarze tegels zijn valluiken en ze vallen als jij of een mimicus ervanaf stapt.

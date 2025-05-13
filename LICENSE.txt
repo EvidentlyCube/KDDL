@@ -1,0 +1,32 @@
+public/
+src/
+src.evidently_audio/
+src.framework/
+src.scripts/
+src.tn/
+--------------------
+Copyright Maurycy Zarzycki
+Licensed under the MIT License
+
+
+src.assets/
+-----------
+Check LICENSE.txt in subdirectories for license information
+
+
+types/
+------
+Check LICENSE.txt in subdirectories for license information
+
+
+.editorconfig
+.gitignore
+cspell.config.yaml
+package-lock.json
+package.json
+TODO.txt
+tsconfig.json
+webpack.config.js
+------------------
+Configurations, generated files and other artifacts
+Public domain

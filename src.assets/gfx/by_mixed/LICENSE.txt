@@ -1,0 +1,9 @@
+Files in this folder include original works by Caravel Games being transformed by Maurycy Zarzycki and integrated with works copyright by Maurycy Zarzycki.
+
+---
+
+Copyright Maurycy Zarzycki and Caravel Games
+Permission granted to include those assets in this repository and forks for the purpose of archiving full source code of the project
+
+Permission received from Mike Rimer via email on December 9, 2024
+

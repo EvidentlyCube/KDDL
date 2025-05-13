@@ -1,0 +1,481 @@
+# Commons
+
+ui.common.close: Close
+ui.common.yes: Yes
+ui.common.no: No
+
+
+# Preloader
+
+# [UNUSED] ui.preloader.button.start_game: Start Game
+# [UNUSED] ui.preloader.button.language: Change Language
+# [UNUSED] ui.preloader.info.loading: "Loading: %% / %%"
+# [UNUSED] ui.preloader.info.waitApi: Waiting for an API to connect...
+
+
+# Hold Initialization
+
+ui.hold_initialize.initializing_assets: "Initializing assets: %% / %%"
+
+
+# Default controls dialog
+
+ui.default_controls.header: "Default controls:"
+ui.default_controls.numpad.header: "Numpad:"
+ui.default_controls.notebook.header: "Notebook:"
+
+
+# Caravelnet
+
+# [UNUSED] ui.caravelnet.connection_error: >
+# [UNUSED]     Connection failed.
+# [UNUSED]
+# [UNUSED]     This might be caused by invalid credentials, a faulty internet connection or
+# [UNUSED]     temporary server problems. CaravelNet functions have been disabled. To
+# [UNUSED]     restore them, go to the options screen, update your credentials if
+# [UNUSED]     necessary, and hit "Connect!"
+
+
+# Title Screen
+
+ui.title_screen.start_new_game: Start New Game
+ui.title_screen.start_new_game.shortcut_highlight_index: 0
+ui.title_screen.start_new_game.shortcut_key_name: s
+
+ui.title_screen.continue: Continue Playing
+ui.title_screen.continue.shortcut_highlight_index: 0
+ui.title_screen.continue.shortcut_key_name: c
+
+ui.title_screen.restore: Restore To a Different Room
+ui.title_screen.restore.shortcut_highlight_index: 0
+ui.title_screen.restore.shortcut_key_name: r
+
+ui.title_screen.achievements: View Achievements
+ui.title_screen.achievements.shortcut_highlight_index: 5
+ui.title_screen.achievements.shortcut_key_name: a
+
+ui.title_screen.options: Options
+ui.title_screen.options.shortcut_highlight_index: 0
+ui.title_screen.options.shortcut_key_name: o
+
+ui.title_screen.help: Help and Backstory
+ui.title_screen.help.shortcut_highlight_index: 0
+ui.title_screen.help.shortcut_key_name: h
+
+ui.title_screen.change_hold: Change Episode
+ui.title_screen.change_hold.shortcut_highlight_index: 7
+ui.title_screen.change_hold.shortcut_key_name: e
+
+# [UNUSED] ui.title_screen.browse: Browse Holds
+# [UNUSED] ui.title_screen.browse.shortcut_highlight_index: B
+# [UNUSED] ui.title_screen.browse.shortcut_key_name: 66
+
+
+# Options
+
+ui.options.header: "Options:"
+ui.options.volume.header: Volume
+ui.options.volume.music.button: Music
+ui.options.volume.sfx.button: Effects
+ui.options.volume.voices.button: Voices
+
+ui.options.key_repeat_rate.header: "Key repeat rate:"
+ui.options.key_repeat_rate.tooltip: The smoothness of movement and repeat rate when holding a key.
+ui.options.key_repeat_rate.smooth.label: Smooth
+ui.options.key_repeat_rate.fast.label: Fast
+
+ui.options.key_repeat_delay.header: "Key repeat delay:"
+ui.options.key_repeat_delay.tooltip: |
+    The delay between holding the key
+    down and the action being repeated.
+ui.options.key_repeat_delay.short.label: Short
+ui.options.key_repeat_delay.long.label: Long
+
+ui.options.redefine.button: Redefine Keys
+
+# [UNUSED] ui.options.caravelnet.header: CaravelNet Credentials
+# [UNUSED] ui.options.caravelnet.tooltip: |
+# [UNUSED]     Get more information about
+# [UNUSED]     or purchase a CaravelNet subscription.
+# [UNUSED]     Opens in a new window.
+# [UNUSED] ui.options.caravelnet.info: >
+# [UNUSED]     Users who subscribe to CaravelNet can fill in their information here to
+# [UNUSED]     participate in online leaderboards. Each room is scored for least number
+# [UNUSED]     of moves used to complete it. If you do not fill in these details you will
+# [UNUSED]     only be notified what place your score would have attained. You can later
+# [UNUSED]     submit all your scores via the Upload All Scores button.
+# [UNUSED] ui.options.caravelnet.user.label: CaravelNet Name
+# [UNUSED] ui.options.caravelnet.key.label: CaravelNet Key
+# [UNUSED] ui.options.caravelnet.upload_all_scores.button: Upload All Scores
+# [UNUSED] ui.options.caravelnet.connect.button: Connect!
+# [UNUSED] ui.options.caravelnet.get_password.button: Get CNet Key
+# [UNUSED] ui.options.caravelnet.get_password.tooltip: |
+# [UNUSED]     People with a Caravel Games forum account can request a CaravelNet key
+# [UNUSED]     which allows them to submit scores to the online leaderboard. Such scores
+# [UNUSED]     are deleted after two weeks after submission.
+# [UNUSED]     The scores of paid subscribers are retained for eternity, even if their
+# [UNUSED]     subscription runs out.
+# [UNUSED] ui.options.caravelnet.kongregate_info: >
+# [UNUSED]     Unfortunately due to Kongregate policies login interface is disabled -
+# [UNUSED]     you won't be able to submit your scores
+# [UNUSED]
+# [UNUSED]     to the online leaderboards. If you wish to, feel free to play Flash DROD on
+# [UNUSED]     caravelgames.com!
+# [UNUSED] ui.options.caravelnet.upload_all.button: Uploading all scores
+# [UNUSED] ui.options.caravelnet.info: Done!
+# [UNUSED] ui.options.caravelnet.uploadError: Error! Please connect and try again!
+# [UNUSED] ui.options.caravelnet.uploadAlreadyHas: Already uploaded
+# [UNUSED] ui.options.caravelnet.uploadRoomEntrance: Entrance
+
+
+# Redefine controls
+
+ui.redefine.changing_prompt: |
+    You are changing mapping for "%control_name%"
+    Press desired key (now: %current_key%)
+    Hit Escape to cancel
+ui.redefine.invalid_key: |
+    %pressed_key% is reserved for other functions
+
+    You are changing mapping for "%control_name%"
+    Press desired key (now: %current_key%)
+    Hit escape to cancel
+ui.redefine.reserved_key: |
+    %pressed_key% is reserved for an alternate movement set
+
+    You are changing mapping for "%control_name%"
+    Press desired key (now: %current_key%)
+    Hit escape to cancel
+
+
+# Help & Backstory
+
+ui.help.description.width: 450
+ui.help.description: >
+    \tDROD was conceived by Erik Hermansen back in the '90s. It is largely known as
+    a puzzle game in which you run around rooms in a dungeon, slaying monsters with
+    a Really Big Sword. How does this work?  You will see for yourself as soon as
+    you get around to playing the game.
+
+
+    \tFlash DROD is a port of the original DROD game. It uses the media found in the
+    newer DROD game engines that you can download to play on your computer from
+    CaravelGames.com.
+
+
+    Thanks to integrated CaravelNet capabilities, besides just completing the
+    puzzles, players can compete with each other for high scores by completing each
+    room in the fewest moves possible.
+
+ui.help.buttons.caravelnet: About CaravelNet
+ui.help.buttons.how_to_play: How to Play
+ui.help.buttons.history: DROD History
+ui.help.buttons.backstory: Backstory
+ui.help.buttons.credits: Credits
+
+ui.help.credits.body.width: 620
+ui.help.credits.body: |
+    [h]Programming, Development: [/h][g]%%[/g]
+    [h]Art & Music: [/h][g]%%[/g]
+    [h]Server-side development: [/h][g]%%[/g]
+    [h]Level Development: [/h][g]%%[/g]
+    [h]Primary Testers: [/h][g]%%[/g]
+    [h]Testers: [/h][g]%%[/g]
+    [h]Translations: [/h][g]%%[/g]
+    [h]Voice Talents: [/h][g]%%[/g]
+    [h]Original Coding, Idea & Levels: [/h][g]%%[/g]
+
+
+ui.help.controls.body.width: 650
+ui.help.controls.body: |
+    [b]Numpad[/b][g] and [/g][b]%keymap.all_moves%[/b][g] - Move around[/g]
+    [b]%keymap.turn_ccw%[/b][g] and [/g][b]%keymap.turn_cw%[/b][g] - Rotate your sword[/g]
+    [b]%keymap.undo%[/b][g] - Undo last move[/g]
+    [b]%keymap.restart%[/b][g] - Go back to last checkpoint or restart[/g]
+    [b]Shift + %keymap.restart%[/b][g] - Restart the room[/g]
+    [b]Escape[/b][g] - Pause menu[/g]
+    [b]Enter[/b][g] - Level and room score[/g]
+    [b]%keymap.lock%[/b][g] - Toggle room lock[/g]
+    [b]Space[/b][g] - Clear speech and achievements from the screen[/g]
+    [b]F3[/b][g] - Display move count[/g]
+    [b]Shift + Action[/b] [g] - Do the action and its opposite[/g]
+    [b]Shift + %keymap.wait%[/b][g] - Wait until next spawn turn[/g]
+    [b]Left mouse click[/b][g] - Highlight connections[/g]
+    [b]Right mouse click[/b][g] - Show tile contents[/g]
+
+    \tYour objective is to clear each level of King Dugan's Dungeon of monsters. This feat can \
+    be accomplished using only your Really Big Sword™ and your wits. Each room is a separate \
+    area that has to be cleared in a single session. Should you leave a room without completely \
+    clearing it, it will be restored to its initial state when you return.
+
+ui.help.backstory.page_1.width: 550
+ui.help.backstory.page_1.body: >
+    \tBeethro Budkin strolled into the Grand Dining Chamber where King Dugan
+    was finishing his massive morning meal.
+
+
+    \t"Away, foul commoner! You disrupt my digestion with your poor hygiene!"
+    bellowed the King, with bits of pork and potatoes erupting from his mouth.
+
+
+    \t"But sir," protested Beethro, "you sent for me."
+
+
+    \tThe expression on the King's large face changed from anger to confusion
+    to recognition to geniality in the space of two seconds.
+
+
+    \t"I really should have had you come in sooner," said King Dugan. "It's
+    unbelievable! You let your guards eat their meals down in the dungeon,
+    they spread crumbs all over the place, and all of a sudden the place is
+    just swarming with giant cockroaches, not to mention goblins, serpents,
+    evil eyes, and other nasty things. It's really gotten out of hand."
+
+
+    \tBeethro straightened with pride. "Not to fear. I am a trained
+    professional from a long line of dungeon exterminators. I combine five
+    generations of passed-down knowledge with the most state-of-the-art
+    equipment to offer efficient extermination service at an affordable price."
+
+
+    \t"What kind of equipment do you use?"
+
+
+    \t"I've got a really big sword."
+ui.help.backstory.page_2.width: 550
+ui.help.backstory.page_2.body: >
+    \t"Good! When can you start?"
+
+
+    \t"As soon as we handle the details of payment. Here are my standard
+    extermination fees. Just sign at the bottom." Beethro handed a
+    contract to the King.
+
+
+    \t"These prices are outrageous! Is the privilege of honorable service to the
+    Crown worth nothing these days?"
+
+
+    \t"I can leave."
+
+
+    \t"No, no, no. We need that dungeon cleared so that the prisoners can
+    receive their torture in a clean and safe environment."
+
+
+    \t"Well, I'll give you a discount if you'll throw in a princess."
+
+
+    \t"You're ugly and you smell bad. None of my daughters will have you!"
+
+
+    \tBeethro shrugged. "Fair enough."
+
+
+    \tThe King signed at the bottom of the contract. "Right then. Let me show you to the entrance."
+ui.help.backstory.page_3.width: 550
+ui.help.backstory.page_3.body: >
+    \tAs he descended, Beethro reflected on the job he had taken. Dugan's
+    Dungeon was exceptionally large and, going by the reports of past
+    exterminators, ridiculously well suited to infestation. It had also been
+    secretly expanded several times, to the dismay of the first person to clear
+    it out, whose contract hadn't covered the possibility. (He'd only gotten
+    paid for the parts he'd known about.)
+
+
+    \tSome said sinister forces were behind the expansion. The legend went that
+    a king of past grew tired of his annoying young son and jokingly suggested
+    that the lad go play in the castle dungeons. Taking his father seriously,
+    the boy wandered deep into the dungeon chambers and was never found again.
+    It was said that he did not perish, but lived the rest of his life in the
+    dungeons by preference; that becoming a master of his new habitat, he
+    learned all of the secrets of the underground world and formed alliances
+    with the monsters that dwelt there, setting them to work creating new
+    passageways and breeding better specimens of monster. He named himself the
+    'Neather, and schemed to rise from the dungeons to claim the throne when
+    his powers were able.
+ui.help.backstory.page_4.width: 550
+ui.help.backstory.page_4.body: >
+    \tBeethro wasn't sure about all that. For starters, the royal throne wasn't
+    what it had been, now that its power was mostly transferred to a parliament.
+    Never mind the question of who would want to live underground, or how they'd
+    befriend the creatures there, who weren't great conversationalists. But it
+    was true that dungeons tended to be unnecessarily complicated and easily
+    infested, and even sometimes grow without warning - no Dungeon Architect
+    would say why, as a matter of honor - and this more than anything was what
+    kept men like Beethro in work.
+
+
+    \tAnyway, an exterminator had plenty of more practical concerns, like the
+    prolific and man-sized dungeon roach. The important thing in Beethro's mind
+    was that he ought to make enough money and dead monsters on this job to
+    finally retire from this thankless trade and open a restaurant.
+
+
+    \t"I'll call it 'Beethro's Roasted Roach Grill'!"
+
+ui.help.backstory.buttons.next: Next
+ui.help.backstory.buttons.prev: Prev
+
+ui.help.history.width: 650
+ui.help.history.body: >
+    \t"Deadly Rooms of Death", now almost exclusively called DROD, was created
+    by Erik Hermansen in the 90s. Initially released as a shareware title by
+    Webfoot, later Erik got permission to release it on his own which ultimately
+    led to release DROD: Architect's Edition which featured a level editor.
+
+
+    \tThe game had multiple sequels which expanded the number of elements in the
+    game as well as lore: Journey to Rooted Hold (2005), The City Beneath
+    (2007), Gunthro and the Epic Blunder (2012) and The Second Sky (2014).
+    Tendry's Tale (2008) is a spinoff that features an RPG-like experience,
+    usually called "Tower of the Sorcerer"-like. Beyond that multiple
+    Smitemaster's Selections were released - official, canon holds that expand
+    the lore.
+
+
+    \tThe history of this release starts in late 2011 when Maurycy Zarzycki
+    first mailed Mike Rimer (current owner of the DROD IP) with a proof of
+    concept showing that Flash is capable of supporting what he considered to
+    be the most computationally-intensive part of DROD - pathfinding. At some
+    point a decision was made to release the game in 6 episodes. Ultimately
+    only 4 of those were released - first in 2012, last in 2014.
+
+
+    \tThe idea to port this project to JavaScript started in mid 2021, continued
+    a little in early 2022 and then, finally, it was finished and open sourced
+    in mid 2025.
+
+
+# [UNUSED] ui.help.caravelnet.width: 500
+# [UNUSED] ui.help.caravelnet.body: >
+# [UNUSED]     \tCaravelNet allows users from all over the world to compete for the best
+# [UNUSED]     scores.
+# [UNUSED]
+# [UNUSED]
+# [UNUSED]     \tEveryone can submit their scores anonymously to see how they compare to
+# [UNUSED]     other players. However, anonymous scores are not stored on the Caravel
+# [UNUSED]     server and are only for informational purposes. Every registered Caravel
+# [UNUSED]     forum user's scores are stored for two weeks after submission without any
+# [UNUSED]     fee. Those with a CaravelNet subscription will never have their scores
+# [UNUSED]     removed.
+# [UNUSED]
+# [UNUSED]
+# [UNUSED]     \tPlease note that, as long as your progress is not deleted from your disk,
+# [UNUSED]     you can choose to submit all of your scores to the server after you have
+# [UNUSED]     registered a Caravel account.
+# [UNUSED]
+# [UNUSED]
+# [UNUSED]     \tTo register with Caravel, please visit CaravelGames.com and create a
+# [UNUSED]     forum user account!
+
+# Restore screen
+
+ui.restore.header: Restore Game
+ui.restore.buttons.restore: Restore to this room
+ui.restore.buttons.return: Return to title screen
+ui.restore.info.secrets: "Secrets done: %% / %%"
+ui.restore.buttons.farthest: Select the farthest save
+ui.restore.buttons.help.tooltip: Click for quick introduction to how restore works.
+ui.restore.help.body: >
+    Restoring works almost like saves in your favorite video games. The
+    difference is that though you cannot save whenever you wish as the game
+    autosaves when entering any unconquered room.
+
+
+    To restore to a previous state, first select a level from the list on the
+    left, then choose a room on the minimap below. The minimap will grey out
+    rooms which were not yet visited in the save. Those with a white background
+    are conquered, those with a red one are not.
+
+
+    Later you can always load up your best state by clicking the "Select the
+    farthest save" button.
+
+
+    Restore is the most useful if you want to improve your score for a room,
+    search for secrets, or simply replay a favorite room.
+ui.restore.warning: >
+    You have chosen to go back to a previous state - some rooms will be
+    restored to their unconquered state.
+
+
+    You can always restore to your most recent/best state by clicking
+    "Select the farthest save".
+
+
+# Game completed dialog
+
+ui.game_completed.header: What next?
+ui.game_completed.description: >
+    Continue mastering this hold - use restore to find and clear all the secrets.
+ui.game_completed.button.continue: Continue playing
+# [UNUSED] ui.game_completed.play_next.button: Play next set
+# [UNUSED] ui.game_completed.learn_more.desc: Learn more
+# [UNUSED] ui.game_completed.learn_more.button: >
+# [UNUSED]     Learn more about the DROD franchise - the world, and the primary games:
+# [UNUSED]     Journey to Rooted Hold, The City Beneath, Gunthro and the Epic Blunder,
+# [UNUSED]     and the latest installments in the DROD franchise!
+
+
+# Achievements
+
+
+ui.achievement_list.header: "Achievements:"
+ui.achievement_list.info: >
+    Lighted up achievements are acquired.
+
+    Greyed-out achievements which are not semi-transparent are "active". This
+    means that in the current room you might be able to get or work toward this
+    achievement (but not always, so read the achievement descriptions carefully).
+    Do note that some achievements may be active in all or most rooms in the game.
+
+ui.achievement_growl.header: Achievement!
+ui.achievement_growl.dismiss: Click or Space to dismiss
+
+
+# Pause window
+
+ui.pause.header: DROD is now paused
+ui.pause.continue.button: Continue playing
+ui.pause.continue.tooltip: |
+    Continue playing.
+    (Escape, Enter)
+ui.pause.restart.button: Restart room
+ui.pause.restart.tooltip: |
+    Restart current room.
+    (In-game: F5).
+ui.pause.room_help.button: Get help for current room
+ui.pause.room_help.tooltip: |
+    Get online help for currently played room.
+    (In-game: F2)
+ui.pause.help.button: Get general help
+ui.pause.help.tooltip: |
+    Open up general help window.
+    (In-game: F1)
+ui.pause.achievements.button: View achievements
+ui.pause.achievements.tooltip: |
+    Show a list of all achievements.
+    (Ingame: Tab)
+ui.pause.options.button: Options
+ui.pause.return_to_title.button: Return to title screen
+ui.pause.return_to_title.tooltip: |
+    Game progress is saved,
+    but the current room's progress will
+    be lost if you quit the game.
+ui.pause.restore.button: Restore to a different room
+
+
+# Scores window
+
+ui.score_window.header: "Your Stats"
+ui.score_window.best_score: "Best room score:"
+ui.score_window.best_score.none: "None yet!"
+ui.score_window.best_score.unrequired: Unrequired room
+
+
+ui.score_window.stats.moves_room: "Moves in room:"
+ui.score_window.stats.moves_level: "Level moves:"
+ui.score_window.stats.deaths: "Level deaths:"
+ui.score_window.stats.kills: "Level kills:"
+ui.score_window.stats.time: "Level time:"

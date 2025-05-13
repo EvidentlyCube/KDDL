@@ -1,0 +1,3 @@
+FUTURE IMPROVEMENTS:
+ - The firefox flicker bug
+ - Add console tool for better debugging

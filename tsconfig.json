@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "outDir": "bin/",
+        "target": "es2017",
+        "module": "none",
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "allowJs": false,
+        "alwaysStrict": true,
+        "newLine": "LF",
+        "moduleResolution": "node",
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "strict": true,
+        "esModuleInterop": true,
+        "baseUrl": "./",
+        "typeRoots": ["./types", "./node_modules/@types"]
+    }
+}

@@ -1,0 +1,257 @@
+# Level Names
+Thirteenth Level=Thirteenth Level
+Fourteenth Level=Fourteenth Level
+Fifteenth Level=Fifteenth Level
+Sixteenth Level=Sixteenth Level
+# -- OLD
+Mastery Level=Mastery Level
+Original 13th Level=Original 13th Level
+Tutorial Level=Tutorial Level
+
+# Level Entrances
+# -- OLD PARTIALLY
+entrTut=Beethro Budkin, fifth-generation professional dungeon exterminator, was hired by King Dugan to clear the king's multi-level dungeon of a large monster infestation.///
+    Beethro charges by the room, and as a professional, he is contract-bound to clear all the monsters from each and every room in the dungeon to get paid.///
+    The only weapon Beethro needs to do his job is a Really Big Sword, which will defeat almost any monster in a single hit.
+entr13="I probably ought to have skipped past this level, but a contract is a contract.  Where'd I put those bread crumbs?" -Beethro
+entr14=On this level, you'll finally meet some folks with a healthy respect for your blade.
+entr15=This level is like the time you mowed the lawn and had exactly the amount of gas needed to finish, but then you screwed up, and had to go buy some more gas.  And there was a big serpent at the gas station, and you wanted to go in to pay the attendant, but the front door was locked, so you drank a mimic potion to get in, and then the roaches...\n\nWell, I guess the metaphor breaks down.
+entr16=These roaches need an authority figure to guide them.  Someone with charisma and character.  Someone like you!
+# -- OLD
+entrMaster=Beethro descended the stairs only to find himself in an uncharted corridor...////
+    He won't get paid for clean-up here, but his professional honor urges him onward.
+entrMasterBack=Beethro came back to finish the proper smiting business he was hired to do.
+entrOriginal13Enter=Beethro descended into the mystical set of deadly, pointless corridors.
+entrOriginal13Success=Proud of his achievement, but a whole lot less sane, Beethro emerged from the infamous 13th level of King Dugan's Dungeon.
+entrOriginal13Escape=Beethro ran away from the challenge like a little, scrawny kitten.
+
+# Achievement Names
+
+
+achName0=One-directional Forest
+achName1=Stoic Snakes
+achName2=Tar Stayer
+achName36=Eyedoors
+achName3=Goblin Beater
+achName4=Goblin Crusher
+achName5=Goblin Destroyer
+achName6=Step Aside!
+achName7=Green Mommy
+achName8=Goblin Killer
+achName35=Strict Policies
+achName34=Extreme Sacrifice
+achName32=Calm Assassin
+achName33=Step Ahead
+achName39=Crossing Spiders
+achName9=Growing!
+achName37=Master of Eyeion
+achName38=Hunter Games
+achName10=The Explorer
+achName12=Matricide
+# <OLD>
+achName13=Amateur Delver
+achName14=Fledgling Smiter
+achName15=Contract Exterminator
+achName16=I'm a Professional!
+achName17=Mastery
+achName18=Post-mastery
+# </OLD>
+achName19=Flamed Roaches
+achName20=Baked Queens
+achName21=Raw Eggs
+achName11=Goblin Fricassee
+achName22=Evil Eye a la Mode
+achName23=Wraithwing Kebabs
+achName24=Serpent Sushi
+achName25=Tuning Fork
+achName26=Lowering Green
+achName27=Peace Maker
+achName28=Phoenix
+achName29=Master of Time
+achName30=Floor Cleaner
+achName31=To Infinity and Beyond
+
+# Achievement Descriptions
+
+achDesc0=13th Level 2S1W: Clear the room without turning your sword
+achDesc1=13th Level 1S: Clear the room without turning your sword
+achDesc2=13th Level 1S1E: Clear the room without turning your sword
+achDesc36=13th Level 1S2W: Clear the room without turning your sword
+achDesc3=14th Level 1S: Clear the room constantly facing NW
+achDesc4=14th Level 2S: Clear the room constantly facing E
+achDesc5=14th Level 1N: Clear the room constantly facing S
+achDesc6=14th Level 2E: Clear the room without stepping on the trapdoor
+achDesc7=14th Level 2N: Clear the room without letting the tar mother spawn
+achDesc8=14th Level 1N3E: Clear the room without turning your sword
+achDesc35=14th Level 2N2E: Clear the room without letting the goblin stand on gray road
+achDesc34=14th Level 1N1E: Kill goblin as the last monster
+achDesc32=15th Level Entrance: Clear the room without turning your sword
+achDesc33=15th Level Entrance: Drop all trapdoors before clearing the room
+achDesc39=15th Level 1N: After hitting the orb, kill all spiders while moving only diagonally
+achDesc9=16th Level 1S1E: Clear the room without letting the tar mother spawn
+achDesc37=Mastery Level 2N: Clear the room without eyes waking or eggs being laid
+achDesc38=Mastery Level 1N1E: Kill the wraithwing without dropping all trapdoors
+achDesc10=Visit each room in the original 13th level (%% / 56)
+achDesc12=Kill a roach queen while her eggs are growing
+# <OLD>
+achDesc13=Clear Thirteenth Level
+achDesc14=Clear Fourteenth Level
+achDesc15=Clear Fifteenth Level
+achDesc16=Clear Sixteenth Level
+achDesc17=Master the hold
+achDesc18=Post-master the hold
+achDesc19=Kill 100 roaches
+achDesc20=Kill 25 roach queens
+achDesc21=Kill 10 roach eggs
+achDesc11=Kill 40 goblins
+achDesc22=Kill 80 evil eyes
+achDesc23=Kill 40 wraithwings
+achDesc24=Kill 25 serpents
+achDesc25=Strike an orb for three consecutive turns
+achDesc26=Lower a green gate 20 times
+achDesc27=Kill a total of 3001 monsters
+achDesc28=Die a total of 81 times
+achDesc29=Undo a total of 503 moves
+achDesc30=Drop a total of 499 trapdoors
+achDesc31=Take a total of 10001 steps
+# </OLD>
+
+# Scrolls
+sc_13_entr_1=Shortcut to the exit
+sc_13_entr_2=A true Smitemaster will not read the scroll above without conquering the level first.
+sc_13_entr_3=Stones lay before sand, before them lay slabs which are preceded by grass which grows on tile, on dirt built.\n-Unknown Poet
+sc_13_2S2W_3=Shortcut to the entrance
+sc_14_1N3E=This fellow in the other room is not so clever.  He always falls for the same old trick.
+sc_mast_entr_1=The Original 13th Level
+sc_mast_entr_2=Some new puzzles.
+sc_mast_entr_3=Harder versions of existing rooms.
+sc_mast_1W=There is but naught here.
+sc_o13_orb=This orb served a purpose in the original level.
+sc_o13_orbs=These orbs served a purpose in the original level.
+sc_o13_orb2=This orb was not here originally, and the whole yellow gate was in one room.
+sc_o13_orbs_gates=There was an orb in the original room and the gates served a purpose.
+sc_o13_broken_wall=There was a regular wall in the original level making the following area impossible to reach.
+sc_o13_edge=There was no room edge here originally.
+sc_o13_roach=In the original 13th level, the roach above was in the same room and this corridor was a little bit different.
+
+scM1s1=Now that's some achievement!
+scM1s2=How was the game? Did you manage to get all of the achievements?
+scM1s3=Feel free to visit CaravelGames.com to play more episodes of KDDL, or to download any of the full DROD games for Windows, MacOS, or Linux.
+scM1s4=Rock on!
+scM1s5=Here is a small reward! Kill all the eyes and goblins without stepping on the grass.
+scM1s6=Roach queens will be killed once you step on the checkpoint in the far-right corner.
+scM1s7=Fabulous!
+
+# Speeches
+sp_14_1E=Ahh...nothing satisfies like the sweet sight of no tar at all!
+sp_14_2N2E_1=Bah...looks like I need to keep this goblin alive long enough to remove that serpent up there for me.
+sp_14_2N2E_2=No helpings from me!  You cuts me up, I know it--don't matter now or later.
+sp_14_2N2E_3=Don't act all brave.  Because I know goblins aren't brave.
+sp_14_2N2E_4=No, No, No!  Keeps pointy thing away!
+sp_14_2N2E_5=You're thinking you'll sneak behind when I'm not looking.  Yeah.
+sp_14_2N2E_6=Mercy!
+sp_14_2N2E_7=Look, you'd do the same in my place!
+sp_14_2N2E_8=That's nasty business. Hope I don't have to do that again!
+sp_14_2N2E_9=Rest there a bit while I open the passage, goblin.
+sp_14_2N2E_10=(I probably didn't need to lock him up there...but better safe than sorry!)
+sp_14_1N1E=Look at that...not a single wall destroyed!
+sp_15_1S2W=Hoo boy, no simple plow here.  Let's plan the footwork ahead before I get moving.
+sp_16_2S1E_1=Brilliant!  Sometimes I even impress myself.
+sp_16_2S1E_2=Ha!  All clear!
+sp_16_2S1E_3=Now to get out of here...
+sp_16_2S1E_4=Hmm...which way did I come in again?
+sp_16_2S1E_5=Ah, it doesn't matter.
+spM1s=You have failed...
+
+sp_o13_1=Here, roachie, roachie...
+sp_o13_2=Greb! One measly little roachie I've gotta squish.
+
+# Tutorial:
+
+sp_tut_entr_1=Welcome to DROD.
+sp_tut_entr_2=If this is your first time playing a game in the series, please continue east.
+sp_tut_entr_3=There you'll find a couple of easier puzzles to get yourself introduced to the concept.
+sp_tut_entr_4=Take the stairs if you're familiar with the game.
+sp_tut_entr_5=Use numerical keyboard or keys 789 uio jkl to move around.
+sp_tut_entr_6=Keys can be changed from the options menu which you can access by hitting `escape`.
+sp_tut_1E_1=Orbs affect yellow doors. Hit it with your sword to activate it.
+sp_tut_1E_2=Click an orb with your mouse to see which doors it affects.
+sp_tut_1E_3=Rotate your sword using keys `Q` and `W`.
+sp_tut_1E_4=Hit the roach with your sword to kill it.
+sp_tut_1E_5=Hit the orb and wait for a couple of turns to see how monsters behave when diagonally approaching a corner.
+sp_tut_1E_6=Wait for it...
+sp_tut_1E_7=As you can see, when approaching a corner diagonally, monsters prefer vertical movement.
+sp_tut_1E_8=Kill the roaches to drop the green door and follow East.
+sp_tut_2E_1=You'll learn the backswipe here. After hitting the orb, there is only one way to kill the roaches - move directly North West or South West.
+sp_tut_2E_2=You might want to repeat it a couple of times to help you remember it, as it is a very important technique.
+sp_tut_2E_3=You can move diagonally even through very narrow passages.
+sp_tut_2E_4=Broken and secret walls can be destroyed with your sword.
+sp_tut_2E_5=Arrows block movement of all entities against the direction they face
+sp_tut_2E_6=Step on the checkpoint to restore here if you die.
+sp_tut_2E_7=Roach queens lay eggs every 30 turns. Use the spawn timer on the left side of the game screen to know when the next spawn will happen.
+sp_tut_3E_1=Evil Eyes remain dormant unless you stop in their line of sight - once awakened, they'll attack you like roaches.
+sp_tut_3E_2=Serpents cannot be damaged by your sword. The only way to kill them is to place them in a dead end.
+sp_tut_3E_3=Use the broken walls to forge a dead end for the serpents.
+sp_tut_3E_4=You can use backspace to undo a move.
+sp_tut_3E_5=Serpents, unlike other monsters, cannot move diagonally.
+sp_tut_3E_6=At any given moment they have a movement preference which changes every five turns.
+sp_tut_3E_7=You can see their current movement preference under the spawn timer.
+sp_tut_4E_1=When you step off a trapdoor, it will fall down, leaving a pit behind.
+sp_tut_4E_2=To open the red gate, you will need to drop all the trapdoors.
+sp_tut_4E_3=Remember that you can use the pits left behind by dropped trapdoors to shield yourself against roaches.
+sp_tut_5E_1=Tar is a very peculiar substance. It can only be damaged on flat edges.
+sp_tut_5E_2=You do not need to clear all of it to conquer a room.
+sp_tut_6E_1=Tar mothers are fearsome enemies. Despite staying in one place, hidden in tar, they make tar grow every 30 turns.
+sp_tut_6E_2=The black door won't open until you clear all the tar from a room.
+sp_tut_7E_1=Drinking this potion will allow you to place a mimic.
+sp_tut_7E_2=Mimics will repeat all your moves and can drop trapdoors just like Beethro.
+sp_tut_8E_1=When you drink the invisibility potion, monsters won't move unless they are in the smell range.
+sp_tut_8E_2=Don't let the roach queen escape onto the arrows or you won't be able to kill her.
+sp_tut_8E_3=You did well, congratulations!
+sp_tut_8E_4=It seems you have failed.
+sp_tut_8E_5=You can use "R" to restart the room or wait to hear some hints.
+sp_tut_8E_6=...
+sp_tut_8E_7=There are three different ways to solve this room.
+sp_tut_8E_8=The fastest one requires you trap the queen on arrows near the green door in such a way, that you can kill it by stepping on or next to the diagonal arrow.
+sp_tut_8E_9=The other one, nearly as quick the previous can be achieved by walking horizontally towards the queen so that the green door blocks it.
+sp_tut_8E_10=The last one requires full circle around the room and trapping the queen in the room entrance corridor.
+sp_tut_8E_11=If you still can't do this, wait a couple of turns for the emergency mimic potion to open.
+sp_tut_9E=Good luck!
+
+sc_tut_emergency_potion=Emergency mimic potion, use if room is too difficult.
+sc_tut_tricky=This tricky room is not required
+
+# As Beethro descended yet another set of stairs, he decided that he wasnt be paid nearly enough for this nonsense. Something was horribly wrong. Clear out King Dugans Dungeon. Bah! What a bunch of hooey!
+# The further he delved into the depths of this labyrinth, the less sense everything made. The walls looked funny. Where was the mold!? The dust!? It was cleaner down here than some of the first few floors. He could see his face in the floor and, all things considered, thats never pleasant.
+# He was no longer certain he was actually cleaning out King Dugans personal property.
+# But until he had some answers well, a jobs a job!
+
+outro=The last four floors were a real pain for Beethro with the tar, the doors, the roaches... As he descended the stairs he smelled more of the blue goo which made him cringe but in the very far back of his head something told him that there is even worse danger ahead of him...////
+    ///
+    <font size="32" color="#FFFF00">Congratulations!</font>////
+    You have completed the fourth episode in the Deadly Rooms of Death, King Dugan's Dungeon Lite series. We sincerely hope you have found this experience enjoyable.///
+    Now that you have descended the final flight of stairs available in this set, you may want to try to Master, and then Post-Master, this game!  To do this, go hunt for secret rooms. The number of secret rooms left on each level is now displayed on the Restore Screen.///
+    Once you manage to conquer them all, a special Mastery Area will be opened. Can you find out how to access it?///
+    You may also wish to play the next episode in the DROD:KDDL series.///
+    ///
+    Before we leave you to bask in your feeling of utter glory, we'd like to thank a couple of people, who made it possible for you to play this game:///
+    ///
+    <font size="26" color="#FFFF00">Erik Hermansen</font> - The creator, father and inventor of DROD. Without him, this unique game idea would have never seen the light of day.////
+    <font size="26" color="#FFFF00">Mike Rimer</font> - He coded most of DROD: JtRH and DROD: TCB singlehandedly. Thanks to the splendid codebase, making Flash DROD was pure pleasure.////
+    <font size="26" color="#FFFF00">Matt Schikore</font> - Overlord of the Caravel Forum and lead coder of CaravelNet. Thanks to him, you can battle for high scores, and so much more!////
+    ///
+    <font size="23" color="#FFFF00">Programming, Development</font> - %%////
+    <font size="23" color="#FFFF00">Art & Music</font> - %% (minor)////
+    <font size="23" color="#FFFF00">Server-side development</font> - %%////
+    <font size="23" color="#FFFF00">Hold architects</font> - %%////
+    <font size="23" color="#FFFF00">Primary Testers</font> - %%////
+    <font size="23" color="#FFFF00">Testers</font> - %%////
+    <font size="23" color="#FFFF00">Translations</font> - %%////
+    <font size="23" color="#FFFF00">Voice Talents</font> - %%////
+    <font size="23" color="#FFFF00">Original Coding, Idea & Levels</font> - %%///
+    ////
+    See you next time!////
+    <font size="18" color="#AAAAAA">-Maurycy</font>
+
+# -- OLD PARTIALLY
+complNextGame=Play the next level set, KDD Lite 5. This will open in a new window, and you can safely close this window now. Your progress has been saved.

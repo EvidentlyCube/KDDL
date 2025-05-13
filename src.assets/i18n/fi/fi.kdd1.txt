@@ -1,0 +1,272 @@
+# Level Names
+First Level=Ensimmäinen kerros
+Second Level=Toinen kerros
+Third Level=Kolmas kerros
+Fourth Level=Neljäs kerros
+Mastery Level=Mestaruuskerros
+# Level Entrances
+entr1=Beethro Budkin, vankityrmien tuholaistorjunnan ammattilainen viidennessä polvessa, on saanut tehtävän Kuningas Duganilta siivota kuninkaan monikerroksinen vankityrmä, joka kärsii vakavasta hirviöongelmasta.///
+    Beethro veloittaa joka huoneesta erikseen, ja ammattilaisena häntä sitoo sopimuksen ehto, joka vaatii jokaisen huoneen tyhjentämistä kaikista hirviöistä palkkionsa vastineeksi.///
+    Beethro tarvitsee vain Hyvin suuren miekan työnsä tekoon, koska sen avulla voi kukistaa miltei joka hirviön yhdellä iskulla.////
+    -----////
+    "Toivottavasti et veloita ylimmästä kerroksesta. Puhdistutin sen jo etukäteen. Ainakin lähes kokonaan." --Kuningas Dugan
+entr2=Beethron taidot ovat hieman ruosteessa, mutta seuraavan tason pitäisi palauttaa hänet hyvään iskuterään.
+entr3="Hmm..." Beehtro pohti. "Tähän mennessä olen nähnyt enimmäkseen torakoita. Tämä vaikuttaa helpolta hommalta."
+entr4="Olisipa minulla täällä apuna hieman useampi matkija!" Beethro sanoi. "Tämä sujuisi paljon nopeammin."
+entr4Back=Beethro palasi tekemään kunnolla miekkamiehen työnsä, joka hänet oli palkattu tekemään.
+entrMaster=Beethro laskeutui portaita ja päätyi käytävään, jota ei näkynyt kartassa...////
+    Hänelle ei makseta tämän paikan puhdistamisesta, mutta ammattilaisen kunnia ajaa häntä eteenpäin.
+# Scrolls
+sc1e0=Käytä numeronäppäimistöä tai näppäimiä 789uiojkl liikkumiseen. Näppäinvalinnat voi vaihtaa taukovalikosta (Escape).
+sc1e1=Tarkistaaksesi näppäinvalinnat, paina `Escape`-nappia, klikkaa `Yleiset ohjeet`-kohtaa ja valitse `Miten pelataan?`-kohta.
+sc1_1n=Tämän keltaisen oven tarkoitus selviää myöhemmin. ////
+    //
+    Nyt voit jatkaa länteen.
+sc1_1n1w1=Käännä miekkaasi `Q`- ja `W`-näppäimillä.
+sc1_1n1w2=Iske kuulaa miekallasi avataksesi huoneen ovet.
+sc1_1n1w3=Jotkin kuulat vaihtavat keltaisten ovien tilaa avoimesta suljetuksi ja takaisin.
+sc1_2n1w1=Voit selvittää kuulan vaikutukset klikkaamalla sitä hiirellä. Eri värit ovissa tarkoittavat erilaisia vaikutuksia.
+sc1_2n1w2=Oven tilan toistuvan vaihtamisen sijasta kuula voi vain avata tai sulkea sen.
+sc1_3n1w1=Siniset portit aukeavat, kun olet ratkaissut kaikki kerroksen vaaditut huoneet.
+sc1_3n1w2=Huoneet, joiden ratkaiseminen vaaditaan, merkitään punaisella taustavärillä pikkukartassa.
+sc1_3n2w1=Aktiivisen puhe- tai tekstinäytön ohi voi siirtyä välilyönnillä.
+sc1_3n2w2=Kun poistut huoneesta, josta kaikki hirviöt on puhdistettu, se merkitään ratkaistuksi.
+sc1_3n2w3=Ratkaistut huoneet merkitään valkoisella pikkukartassa, kun taas ratkaisemattomat ovat punaisia.
+sc1_3n2w4=Ratkaise kaikki vaaditut huoneet, jotta reitti seuraavaan kerrokseen aukeaa.
+sc1_4n3w=Voimanuolet estävät Beethron ja hirviöiden liikkeet vastakkaiseen suuntaan.
+sc1_4n1w=Vihreät portit aukeavat, kun huone on puhdistettu kaikista hirviöistä.
+sc1_5n1w1=Tarkkaile, miten etelänpuoleinen torakka käyttäytyy, kun se yrittää liikkua vinosuunnassa kohti estettä.
+sc1_5n1w2=Kun useimmat hirviöt liikkuvat esteeseen vinosuunnassa, ne siirtyvät pystysuuntaan jos mahdollista.
+sc1_5n2w1=Muista, että voit klikata kuulaa ja nähdä, mihin oviin se vaikuttaa.
+sc1_5n2w2=Ole varovainen! Tämä on vaarallinen paikka!////
+    Jos teet virheen, paina `Backspace`-näppäintä peruaksesi enintään kolme viimeistä liikettä.
+sc1_5n2w3=Voit myös perua liikkeen tai aloittaa uudestaan, kun kuolinanimaatiota näytetään!
+sc1_5n2w4=Voit palata takaisin tilanteeseen, jossa koskit 'X':llä merkittyä tallennuspistettä.///
+    Paina `R` palataksesi alkuun tai tilanteeseen, jossa viimeksi koskit tallennuspistettä.
+sc1_6n2w=Taitava miekkamies voi kukistaa kaikki torakat turvautumatta eteläiseen nurkkaukseen!
+sc1_6n3w1=Käytä takasivallus-tekniikkaa torakan surmaamiseen.
+sc1_6n3w2=Asetu vihreän alustan päälle ja päästä torakka seisomaan hiekkaruudulle suoraan pohjoispuolellesi...
+sc1_6n3w3=Asetu vihreän alustan päälle ja päästä torakka seisomaan hiekkaruudulle suoraan eteläpuolellesi...
+sc1_6n3w4=... ja liiku sitten koilliseen tappaaksesi sen.
+sc1_6n3w5=... ja liiku sitten kaakkoon tappaaksesi sen.
+sc1_6n3w6=Toista tämä ja harjoittele takasivallusta. Tämän tekniikan hallitseminen on hyvin tärkeää tulevissa koitoksissa.
+sc1_5n1=Hätäkulkutie ei ole käytössä.
+sc1_5n2=Anteeks' vaa, muttei myö saaha tätä rakennosta valmiiks', ku näitä isoja russakoita juoksee iha raivona!
+sc1_4n=Pidä kasvihuoneen ovet kiinni.
+sc1_1n1e=Nämä portaat vievät seuraavaan kerrokseen. Varo sieltä löytyviä vaaroja...
+sc2_2n1=Tiesitkö, että voit painaa Shift-näppäintä samalla kun teet minkä tahasta toiminnon, ja teet tällöin myös vastakkaisen toiminnon sen jälkeen.
+sc2_2n2=Shift+Odota odottaa seuraavan sikiämisvaiheeseen asti, ja `Num.näpp. +` tai `=` suorittaa edellisen toiminnon vastakohdan.
+sc2_1n1e=Ei pitäisi harrastaa tällaista ilkivaltaa.
+sc2e=Halunnet aloittaa pohjoisen suunnassa olevista huoneista.
+sc2_1s3e1=Voit välttää astumasta pois huoneesta vahingossa, jos painat `X`-näppäintä lukitaksesi huoneen.
+sc2_1s3e2=Lukon kuva pikkukartassa tarkoittaa, että huone on lukittu.
+sc2_1s=Älä tee sitä! On selvää, mitä tapahtuu!
+sc2_2s3e=Tarkka ajoitus tekee asioista helpompia.
+sc3_3n=Minun täytyy varoittaa sinua matkijoista. Ne eivät ole ystäviäsi tai vihollisiasi -- ne vain matkivat jokaista liikettäsi. Älä käännä niille selkääsi.
+sc3_3n1e=Kaikki vangit ovat päätyneet jättiläistorakoiden suihin, ja minä olen seuraava! Minulle ei makseta tarpeeksi tällaisesta työstä. Häivyn täältä!////
+   --Vankilanjohtaja
+sc3_2n=Tähän käytävään voi päästä ilman, että poistuu välillä huoneesta sen puhdistamisen jälkeen.
+sc3_1n1w=Näkymättömyysjuoman ansiosta sinua ei voi nähdä, mutta sinut voi silti haistaa tarpeeksi läheltä.
+sc3_1e=Niin pitkä reissu. Se melkein vaikuttaisi tarpeettomalta.
+sc3_1s=Haastava pulma: Billin kahdeksan porttia. Se oli ennen paljon vaikeampi, mutta nykyään voin tutkia kuulia ja nähdä, mitä ne tekevät.
+sc3_2s1w=Haluan kertoa sinulle tämän: aina kun näet pitkiä ja vaikeita reittejä, sinun kannattaa etsiä oikoteitä.
+sc3_2s1=Käänny takaisin! Etkö tiedä, että viime vuoden aikana vankityrmiin liittyvien kuolintapauksien määrä nousi 32 prosenttia?
+sc3_2s2=Pidä mielessä: tyrmien tutkiminen EI ole turvallista, varsinkin jos se tapahtuu päihteiden vaikutuksen alaisena.///
+    -TKVV (Tyrmäkuolemia vastustavat vanhemmat)
+sc4_2n1e1=Tämä on mestariportti. Se ei aukea ennen kuin olet läpäissyt koko holviston ja ratkaissut kaikki salahuoneet.
+sc4_2n1e2=Alkuperäisessä "King Dugan's Dungeon" -pelissä tämä oli hyppyhuone, jonka kautta saattoi ohittaa kerroksen tai pari.
+sc4_1n1=Vihje:////
+    Et tarvitse matkijan apua torakoita vastaan sisäänkäynnin luona.
+sc4_1n2=Vihje:////
+    Harjoittele huolellisesti ja tarkasti TAKASIVALLUS-tekniikkaa -- se on hyvä osata, kun molemmilla puolillasi on hirviö!
+sc4_2e=Jos olet tyylitaituri, kaikki yhdeksän matkijaa ovat rivissä oikealla puolellasi.
+scMe1=Vaikeampia versioita nykyisistä pulmista.
+scMe2=Viimeiset sanat!
+scMe3=Vaikeita uusia huoneita.
+scM_1s1=Siinä se. Olet nyt ratkaissut kaiken tässä pelissä. Jäljellä voi olla vielä pari saavusta.
+scM_1s2=Haluan vilpittömästi onnitella sinua ja kehottaa jatkamaan matkaasi.
+scM_1s3=CaravelGames.com-sivulta löytyvät seuraavat jaksot KDDL-pelistä. Voit myös ladata sieltä koko DROD-pelisarjan pelit Windows-, MacOS- tai Linux-koneille.
+scM_1s4=Hyviä pelejä!
+scM_1s5=Tässä on pieni palkinto! Tapa kaikki silmät astumatta kertaakaan ruskealle ruoholle.
+scM_1s6=Torakkaemot kuolevat, kun astut tallennuspisteelle oikeassa ylänurkassa.
+scM_1s7=Hienoa, hyvin menee!
+# Speeches
+sp1e0=Käytä numeronäppäimiä liikkumiseen.
+sp1e1=Jos pelaat kannettavalla tietokoneella, voit liikkua numeronäppäimiä vastaavilla näppäimillä: 789, UIO, JKL
+sp1e2=Jatka menemällä pohjoiseen.
+sp1_3n2w1=Ahaa, vankityrmän ensimmäinen torakka!
+sp1_3n2w2=Tule Beethron luo, tuleva torakkapurilainen.
+sp1_3n2w3=Puhdas tappo! Tämä syö sujuu hyvin, se on varmaa!
+sp1_6n2w=Olisin voinut tappaa nuo torakat suojautumatta soppeen, mutta tänään on laiska olo.
+sp1_6n3w1=Löysit salahuoneen!
+sp1_6n3w2=Etsi ja ratkaise ne kaikki, niin pääset erityiselle mestarihaastealueelle.
+sp2_2e=Tuo emo tekee lauman uusia torakoita siinä ajassa, mikä minulla menee kuulan luona käymiseen!
+sp2_1s1e1=Hei, se on pirunsiipi!
+sp2_1s1e2=Ja ihan yksinään... se tarkoittaa, että voin joutua ajamaan sitä takaa ympäri koko huonetta.
+sp2_1s1e3=Pirunsiivet, toisin kuin torakat, karkaavat pois Beethron läheltä ja pyrkivät pysymään viiden ruudun etäisyydellä.
+sp2_1s1e4=Ne eivät ole niin varovaisia suuremmassa parvessa, eivätkä ne epäröi hyökätä ympäröimänsä saaliin kimppuun.
+sp2_2s2e1=Hmmm...kerkeänkö tappaa nuo emot ennen kuin ne munivat munia?
+sp2_2s2e2=Äh...olin liian hidas!
+sp2_2s2e3=Ha! Helposti.
+sp2_2s3e1=Olen varma, että nämä torakkaemot olisi voinut tappaa helpommin.
+sp2_2s3e2=TÄMÄPÄ oli hieno sivallusmestarin taidonnäyte.
+sp3_3n1e=Eikö vankeja ole jäljellä? Tästä tulee yksinäinen työ, jos ei ole ketään juttukaveria...
+sp3_2n=Eipä ollut mikään vitsi.
+sp3_1n2w0=Hui!  Tällä kertaa taidan tarvita taikajuomaa!
+sp3_1n2w1=Huh! Nyt torakkaemot eivät muni ellen ole niiden lähellä!
+sp3_1n2w2=Olipa hankalaa, mutta ei liian hankalaa minun kaltaiselle koluajalle!
+sp3_1n2w3=Ha! Mikään ei ole liian kova pala tälle koluajalle!
+sp3_1n1w1=Hei, tämä on melko hienoa!
+sp3_1n1w2=Joo, tiedän että olisi voinut puhdistaa tämän huoneen ilman näkymättömyyttä, mutta se oli hauskaa näinkin.
+sp3_1n1w3=Se ei ollut kovin vaikeaa...Miksikähän tämä taikajuoma on täällä?
+sp3_1s=Joo, olisin voinut avata kaikki ovet nopeamminkin.
+sp3_3s1w1=Vaikuttaa vaaralliselta...se on jokin ansa...
+sp3_3s1w2=Kuulan iskemisen jälkeen voin puhdistaa koko huoneen ilman miekankääntöjä. Ihan vain taidonnäytteenä!
+sp3_3s1w3=No, käänsin miekkaani, mutta olen sentään yhä elossa.
+sp3_3s1w4=Vau! Olisipa joku ollut näkemässä.
+sp4_2n1e=Taas yksi salakammio paikassa, jossa kukaan muu kuin minä ei odota sellaista.
+sp4_1n1=Joo, olisin voinut puhdistaa tämän huoneen menemättä takaisin sisäänkäyntiin.
+sp4_1n2=Beethro Budkin voittaa vaikeimmatkin haasteet!
+sp4_2e1=Hyvät hykkyräiset! Matkijoitakin voi olla liikaa!
+sp4_1s2e=Mistä johtuu, että kaikkien ansaluukkujen tiputtaminen tekee huoneesta paremman näköisen?
+spM_1s=Epäonnistuit...
+# Achievements
+achName0=Pidän sinua silmällä
+achName1=Äidinsurmaaja
+achName2=Heräsin ja vihasin kaikkea
+achName3=Todellinen sivallusmestari
+achName4=Vakaa käsi
+achName5=Emopurilainen
+achName6=Kertalippu
+achName7=Ole ketterä!
+achName8=Ole nopea!
+achName9=Rauhallinen tyyli
+achName10=Lue käärö
+achName11=Näkyvyys
+achName12=Näkymättömyys
+achName13=Ylinopeus
+achName14=Billin kahdeksan porttia
+achName15=Tarkka torakoiden hallinta
+achName16=Mysteeri
+achName17=Älä katso taaksesi
+achName18=Yksin torakoiden kanssa
+achName19=Rotkot ovat kauniita
+achName20=Olemattomuuden tyhjyys
+achName21=Hyvä tyyli
+achName22=Amatöörikoluaja
+achName23=Nouseva sivaltaja
+achName24=Palkattu tuholaistorjuja
+achName25=Olen ammattilainen
+achName26=Mestaruus
+achName27=Jälkimestaruus
+achName28=Paistetut torakat
+achName29=Viipaloidut torakkaemot
+achName30=Munakokkeli
+achName31=Pahan silmän vanukas
+achName32=Pirunsiiven kastike
+achName33=Äänirauta
+achName34=Alas vihreät
+achName35=Lauman hallinta
+achName36=Uudelleensyntyjä
+achName37=Aika on nollassa!
+achName38=Tilan tekijä
+achName39=Kuukävelyllä
+achDesc0=Herätä kolme pahaa silmää yhden vuoron aikana
+achDesc1=Tapa torakkaemo samaan aikaan, kun sillä on munia
+achDesc2=Kyllä, sinun pitää harrastaa ilkivaltaa
+achDesc3=Älä piiloudu nurkkaukseen Ensimmäisen kerroksen huoneessa 6P 2L
+achDesc4=Puhdista hirviöistä kaikki paitsi yksi ei-salaisista huoneista Ensimmäisessä kerroksessa kääntämättä miekkaasi.\nOnnistunut %%/6 huoneessa.
+achDesc5=Tapa torakkaemo Toisen kerroksen huoneessa 2I ennen kuin se pääsee nurkkaan
+achDesc6=Älä käännä miekkaasi Toisen kerrokseen huoneessa 1E sen jälkeen, kun isket kuulaa
+achDesc7=Tapa kaikki torakkaemot ennen kuin ne munivat Toisen kerroksen huoneessa 2E 2I
+achDesc8=Puhdista Toisen kerroksen huone 2E 3I ennen kuin yhtään munaa munitaan
+achDesc9=Puhdista Toisen kerroksen huone 3P kääntämättä miekkaasi
+achDesc10=Lue käärö Kolmannen kerroksen huoneessa 2P ilman, että poistut välillä huoneeta
+achDesc11=Tapa kaikki torakat ilman taikajuomaa Kolmannen kerroksen huoneessa 1P 1L
+achDesc12=Puhdista Kolmannen kerroksen huone 1P 2L ilman taikajuomaa
+achDesc13=Puhdista Kolmannen kerroksen huone 1P 1I ilman, että emot munivat yhtään munaa
+achDesc14=Ratkaise Billin kahdeksan porttia iskemällä kuulia viisi kertaa (Kolmas kerros 1E)
+achDesc15=Houkuttele kaikki kolme torakkaa ulos ennen kuin tapat yhtään Kolmannen kerroksen huoneessa 2P 1I
+achDesc16=Puhdista Kolmannen kerroksen huone 3P ilman taikajuomaa
+achDesc17=Puhdista Neljännen kerroksen huone 1P ilman, että palaat sisääntulokäytävään
+achDesc18=Puhdista Neljännen kerroksen huone 1E 1I ilman matkijajuomaa
+achDesc19=Pudota kaikki ansaluukut Neljännen kerroksen huoneessa 1E 2I ja puhdista huone samalla kerralla
+achDesc20=Puhdista Neljännen kerroksen huone 2E 1I ja pudota kaikki ansaluukut samalla kerralla
+achDesc21=Ratkaise Neljännen kerroksen huone 2I tyylikkäästi
+achDesc22=Puhdista koko Ensimmäinen kerros
+achDesc23=Puhdista koko Toinen kerros
+achDesc24=Puhdista koko Kolmas kerros
+achDesc25=Puhdista koko Neljäs kerros
+achDesc26=Ratkaise mestaruushaaste
+achDesc27=Ratkaise jälkimestaruushaaste
+achDesc28=Tapa 35 torakkaa
+achDesc29=Tapa 20 torakkaemoa
+achDesc30=Tapa 15 torakanmunaa
+achDesc31=Tapa 15 pahaa silmää
+achDesc32=Tapa 5 pirunsiipeä
+achDesc33=Iske kuulaa kolmen peräkkäisen vuoron aikana
+achDesc34=Avaa vihreä portti viisi kertaa
+achDesc35=Tapa yhteensä 2500 hirviötä
+achDesc36=Kuole yhteensä 50 kertaa
+achDesc37=Peru yhteensä 250 liikettä
+achDesc38=Pudota yhteensä 100 ansaluukkua
+achDesc39=Liiku yhteensä 5000:n askeleen verran
+# Game completion
+outro=Mitä haasteita Beethro kohtaa seuraavaksi? Onko luvassa pahempia vaaroja? Onnistuuko hän puhdistamaan koko Kuningas Duganin vankityrmän ja saako hän maksunsa?////
+    ///
+    <font size="32" color="#FFFF00">Onneksi olkoon!</font>////
+    Olet selvittänyt ensimmäisen osan Deadly Rooms of Death, King Dugan's Dungeon Lite -holvistosta. Toivottavasti nautit kokemuksesta.///
+    Nyt kun olet laskeutunut viimeisiä portaita tässä tasokokoelmassa, voit yrittää ratkaista Mestarihaastetta ja sen jälkeen Jälkimestarihaastetta. Aloita etsimällä kaikki salahuoneet. Löytymättömien salahuoneiden määrä jokaisessa kerroksessa näkyy nyt Lataus-ruudussa.///
+    Kun onnistut ratkaisemaan jokaisen huoneen, erityinen Mestaruusalue aukeaa. Löydätkö tiesi sinne?///
+    Voit myös pelata seuraava jaksoa DROD:KDDL-sarjassa.////
+    Ennen kuin jätän sinut nauttimaan ylevästä voitontunteestasi, haluan vielä kiittää muutamaa ihmistä, joiden ansiosta tämä peli näki päivänvalon:///
+    ///
+    <font size="26" color="#FFFF00">Erik Hermansen</font> - Pelin luoja, isä ja keksijä. Ilman häntä tämä ainutlaatuinen peli-idea ei olisi ikinä toteutunut.////
+    <font size="26" color="#FFFF00">Mike Rimer</font> - Hän koodasi suurimman osan DROD:JtRH- ja DROD:TCB -peleistä. Kiitos tämän hienon esimerkin, Flash DROD -pelin teko oli pelkkää iloa.////
+    <font size="26" color="#FFFF00">Matt Schikore</font> - Caravel-foorumin herra ja CaravelNetin pääkoodaaja. Hänen ansiostaan voit kilpailla parhaista tuloksista, ja tehdä paljon muutakin!////
+    ///
+    <font size="23" color="#FFFF00">Ohjelmointi ja kehitys</font> - %%////
+    <font size="23" color="#FFFF00">Grafiikka ja musiikki</font> - %%////
+    <font size="23" color="#FFFF00">Palvelintoimintojen kehitys</font> - %%////
+    <font size="23" color="#FFFF00">Pelisisällön kehitys</font> - %%////
+    <font size="23" color="#FFFF00">Päätestaajat</font> - %%////
+    <font size="23" color="#FFFF00">Testaajat</font> - %%////
+    <font size="23" color="#FFFF00">Käännökset</font> - %%////
+    <font size="23" color="#FFFF00">Ääninäytteleminen</font> - %%////
+    <font size="23" color="#FFFF00">Alkuperäinen koodaus, idea ja sisältö</font> - %%///
+    ////
+    Nähdään ensi kerralla!////
+    <font size="18" color="#AAAAAA">-Maurycy</font>
+    
+complNextGame=Pelaa seuraavaa kerroskokoelmaa - KDD Lite 2:ta. Uusi peli aukeaa uuteen ikkunaan, ja voit sulkea tämän ikkunan sen jälkeen. Saavuttamasi tilanne on tallennettu.
+
+
+scNew1=Katso tarkkaan mitä sikiämiskierroksella tapahtuu.
+scNew2=Torakanmunia ei ikinä ilmesty ansaluukkujen, voimanuolten tai avattujen keltaisten porttien päälle.
+scNew3=Lisäksi, jos torakkaemo liikkuu sikiämiskierroksen aikana, se ei muni munaa ruutuun, josta se juuri siirtyi pois.
+sc2_1s3e1=Voit estää huoneesta poistumisen vahingossa painamalla 'X'-näppäintä.
+sc2e=Aloita pohjoisesta välttääksesi palaamasta turhaan ratkaistujen huoneiden läpi.
+sc1_New1N1W=Jos et ole vielä huomannut, torakkaemot liikkuvat pois päin sinusta eivätkä muni munia avointen keltaisten porttien päälle.
+sc1_New3N1=Torakkaemot munivat munia 30 vuoron välein (sillä vuorolla, joka seuraa sikiämislaskurin muuttumista punaisen väriseksi).
+sc1_New3N2=Munista kuoriutuu aikuisia torakoita viiden kierroksen jälkeen.
+sc1_New3E=Torakkaemot juoksevat aina pois päin Beethrosta; tätä voi käyttää niiden ohjailuun.
+sc1_new6n2w1=Murtuneita ja salaisia seiniä voi vahingoittaa lyömällä niitä miekalla.
+sc1_new6n2w2=Salaseinät on kuitenkin vaikeampi erottaa tavallisista seinistä.
+sc1_new6n2w3=Huomaa siis nurkassa olevat salaseinät, kun tulet takaisin.
+sc1_5n1w3=Tämä peli on täysin ennakoitava - siinä ei ole mitään satunnaisia tai ennalta-arvaamattomia toimintoja.
+sc1_new6N=Salahuoneiden ratkaisemista ei vaadita yhdellä läpipeluukerralla Mestarihaasteen saavuttamiseksi.
+sc_evileyes=Tässä kerroksessa kohtaat pahoja silmiä. Ne heräävät astuttuasi niiden näkökenttään ja ajavat sinua takaa samalla tavalla kuin torkata.
+sc1_5n1w1=Tarkkaile miten etelänpuoleinen torakka käyttäytyy, kun se yrittää liikkua vinottain nurkkaa päin. Voit odottaa kierroksen ajan painamalla "I" tai num.näpp. 5.
+
+defCont=Oletuskontrollit:
+sc_diago=Voit liikkua vinottain jopa hyvin kapeista kohdista.
+sc_broken=Tuhoa nämä murtuneet seinät ja salaseinät miekallasi.
+sc_queens1=Torakkaemot munivat joka 30. vuoro (seuraavalla vuorolla sen jälkeen, kun sikiämislaskuri on punainen).
+sc_queens2=Torakan munista kuoriutuu aikuisia torakoita viisi kierrosta niiden munimisen jälkeen.
+sc_queens3=Munat eivät ilmesty voimanuolten, ansaluukkujen tai keltaisten porttien päälle. Paina "I" tai num.näpp 5 odottaaksesi yhden kierroksen ajan.
+sc_mimics=Kun olet astunut matkijajuoman ruutuun, valitse matkijan sijoituskohta hiiren tai odotusnäppäimen avulla.
+sc_shiftwait=Odottaminen seuraavaan sikiämisvaiheeseen Shift+odotus-nappien avulla voi olla hyödyllistä.
+sp_mother1=Tervamaammot saavat tervan kasvamaan yhden ruudun verran kaikkiin suuntiin joka 30. kierros.
+sp_mother2=Kasvavan tervan keskellä on melko turvallista olla, mutta sinun täytyy varoa tervahisia, joita voi syntyä kasvuvaiheessa.
+sc_backswipe=Kävele hiekkaista polkua pitkin oppiaksesi takasivallus-tekniikan! Muista, että voit liikkua vinottain, äläkä käännä miekkaasi.
+sc_trapdoors=Nämä vaaleanpunaisen violetit ruudut ovat ansaluukkuja, ja ne putoavat jos sinä astut tai matkija astuu pois niiden päältä.

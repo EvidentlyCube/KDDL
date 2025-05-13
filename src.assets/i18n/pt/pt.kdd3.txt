@@ -1,0 +1,210 @@
+# src/../src.assets/i18n/en.kdd3.txt
+# Level Names
+Ninth Level=Nono Nível
+Tenth Level=Décimo Nível
+Eleventh Level=Décimo Primeiro Nível
+Twelfth Level=Décimo Segundo Nível
+Mastery Level=Nível de Maestria
+Tutorial=Nível Tutorial
+# Level Entrances
+entr9=Beethro Budkin, exterminador de masmorras profissional de quinta geração, foi contratado pelo rei Dugan para limpar a masmorra multi-nível real, infestada por uma grande quantidade de monstros.///
+    Beethro cobra por sala, e sendo um profissional, ele é obrigado pelo seu contrato a eliminar todos os monstros de cada sala para ser pago.///
+    A única arma que Beethro precisa para fazer seu trabalho é uma Espada Muito Grande, que pode derrotar quase qualquer monstro com um único golpe.////
+    -----////
+    Beethro sentou nos degraus para uma pausa. Ele tirou três garrafas da sua mochila. A garrafa de dez xícaras de tamaho estava cheia de refrescante suco de folha, e as outras duas garrafas, com tamanhos de duas e cinco xícaras, estavam vazias. Beethro queria beber exatamente quatro xícaras de suco de folhas em um gole. Ele começou a mexer com as garrafas, derramando suco pra lá e pra cá, mas logo desistiu. "Isso é trabalho demais! Esquece!"
+entr10=Como muitos exterminadores de masmorras sabem, nas profundezas existem alguns seres capazes de camuflar-se em seus arredores.
+entr11=Dando uma olhada na sala a seguir, Beethro grunhiu de desaprovação. "Eu não sei como, mas o piche sempre fica desse jeito, e eu odeio isso."
+entr12=Novamente, Beethro ouviu sibilos abaixo, e sabia que viriam mais serpentes. Mas o som era um pouco diferente, e ele parou um momento para escutar e julgar o que via a frente. "Meu Beus! Esses sacos deslizantes devem estar aqui faz muito tempo, e andam comendo muito bem."
+entr12Back=Beethro voltou pra terminar o negócio de limpeza que ele foi contratado para fazer.
+entrMaster=Beethro desceu as escadas, só para encontrar um corredor fora do mapa...////
+    Ele não vai receber pela limpeza deste nível, mas a sua honra profissional o empurra pra frente.
+entrTutorial=Tutorial
+entrTutorialLeft=Beethro saiu do andar de tutorial, rico com novos conhecimentos.
+# Scrolls
+sc93n3e=Tem certeza que está fazendo na ordem certa?
+sc94n3e=A ordem é chave.
+sc10e=Aranhas invisíveis espreitam por esse nível. Cuidado, porque elas são difíceis de ver.
+sc111s2e=Psst... Essa passagem leva você para as escadas. Você deveria limpar todas as outras salas antes de ir por ali!
+sc121n1e1=Se uma serpente está indo para oeste e prefere movimento horizontal, mova-se para o leste da sua cabeça para fazê-la virar para o norte.
+sc121n1e2=Funciona da mesma forma verticalmente, mas a serpente prefere virar para o leste.
+sc12e=O seu relógio diz qual direção as cobras preferem no momento. Isso vai ajudá-lo a controlar essas criaturas erráticas.
+scMe1=Outros quebra-cabeças
+scMe2=Últimas palavras
+scM1s1=Chegar aqui é um feito fabuloso!
+scM1s2=Então o que você achou? Conseguiu achar todas as conquistas?
+scM1s3=Você pode encontrar os novos episódios de KDDL e pegar qualquer dos jogos DROD completos para Windows, MacOS ou Linux em caravelgames.com
+scM1s4=E bola pra frente!
+scM1s5=Aqui está uma pequena recompensa! Mate todos os olhos sem pisar na grama marrom.
+scM1s6=As duas Baratas Rainhas de baixo vão ser mortas automaticamente quando você pisar no ponto de verificação do canto direito.
+scM1s7=Muito bom, parabéns!
+scT1=Sabia que serpentes não podem andar sobre pergaminhos?
+scT2=Mova-se para o lado direito e observe como a barata se comporta quando ela tenta ir em direção a uma quina diagonalmente.
+scT3=Cobras movem-se pelas suas próprias regras, muito mais complexas. A direção de movimento preferida delas é mostrada abaixo do relógio de ciclo de desova.
+scT4=Se um monstro do DROD se move diagonalmente para uma quina, ele prefere mover-se verticalmente se possível.
+scT5='Esc' abre o menu de pausa, onde você pode ver "Ajuda Geral" para verificar os controles a qualquer momento.
+scT6=Para evitar sair de uma sala acidentalmente, aperte X para trancá-la e destrancá-la. Um pequeno cadeado no mini-mapa indica se uma sala está trancada.
+scT7=Shift+Tecla executa uma ação e o seu inverso em seguida.///
+    Shift+Espera espera até a próxima desova.///
+    '+' or '=' no teclado numérico executa o oposto do seu último movimento.
+scT8=F3 mostra um contador de movimentos para lhe ajudar a otimizar sua pontuação.
+scT9=Todas as teclas podem ser remapeadas a partir das opções do jogo.
+scT10=Aqueles sem assinaturas CaravelNet não terão suas pontuações guardadas na tela de líderes, mas saberão qual lugar obteriam.
+scT11=Clique com o mouse para descobrir o que orbes fazem e o que olhos gordos vêem.
+scT12=A tecla de espaço irá remover todas as falas e conquistas da tela.
+scT13=Asas-fantasmas, ao invés de baratas, fogem do Beethro e tentam manter uma distância de cinco quadrados.
+scT14=Elas não são tão tímidas em maiores números, e não hesitarão em atacar se conseguirem cercar uma presa.
+sc1_6n3w1=Você usará a técnica de corte traseiro para se livrar desta barata. Siga para o próximo pergaminho.
+sc1_6n3w2=Pise no piso verde e verifique que a barata está no quadrado de areia diretamente ao norte de você...
+sc1_6n3w3=Pise no piso verde e verifique que a barata está no quadrado de areia diretamente ao sul de você...
+sc1_6n3w4=...então mova-se para o nordeste para matá-la.
+sc1_6n3w5=...então mova-se para o sudeste para matá-la.
+sc1_6n3w6=Repita a sala para analisar o corte traseiro. Aprenda esta técnica, porque será crucial nos seus esforços futuros.
+# Speeches
+sp9e1=Esta é uma área de tutorial.
+sp9e2=Visite ela se você nunca jogou este jogo.
+sp9e3=Mova-se com o numpad ou 789, UIO, JKL
+sp9e4=Baratas assadas! Chega de piche!
+sp91n1e=Essa foi pesada. Talvez piche não seja tão ruim afinal...
+sp94n4e1=Ah-ha!  Tem que acordar muito cedo pra passar a perna em Beethro!
+sp94n4e2=Não achei engraçado.
+sp93n=Hrm. Essa porta é muito estranha. Eu não consigo atravessar.
+sp92n2e=Uma porta que eu não consigo atravessar. O que será que tem do outro lado?
+sp11e1=E eu odeio quando o piche cresce tão alto em cima de mim... me dá arrepios.
+sp11e2=Gah!  O piche está crescendo por cima das paredes!
+sp11n1w=Hmm...poderia ser pior... poderia ter uma mãe de piche aqui...
+sp11n2w1=Falei cedo demais.
+sp11n2w2=Parece que tem algo diferente nesta sala...
+sp12e1=Cuidado, Beethro, cuidado...
+sp12e2=Whew!
+sp12e3=Esses vão dar uns bons filés.
+sp121s2e1=Grandes goblins galopantes!
+sp121s2e2=Olha o tamanho dessa serpente!
+spM1s=Você falhou...
+spT2=Gire sua espada com 'Q' e 'W'.
+spT3=Agora atinja a orbe com a sua espada.
+spT4=Orbes interagem com portas de três maneiras - elas podem abrir, fechar, ou alternar o seu estado.
+spT5=Clique na orbe com o mouse para ver quais portas ela afeta, e de que maneira.
+spT6=Seu objetivo em DROD é limpar cada nível de todos os seus monstros.
+spT7=Acerte a barata com a sua espada para matá-la.
+spT8=Flechas obrigatórias bloqueiam o seu movimento numa direção oposta a elas.
+spT9=Pise no ponto de verificação. Você irá voltar ao momento exato que você pisou nele se morrer ou reiniciar com 'R'.
+spT10=Se você morrer ou estiver numa situação de morte certa, você pode desfazer até três movimentos com 'Backspace'.
+spT11=Esta poção lhe permitirá colocar um duplo. Duplos copiam todos os movimentos que você faz. Eles se movem imediatamente depois de você, mas antes dos monstros.
+spT12=Coloque o duplo no quadrado marcado com o ponto de verificação. Use ele para abrir todos alçapões e o portão vermelho abrirá.
+spT13=Serpentes não são danificadas pela sua espada mas vão encolher até morrer se ficarem presas num beco sem saída.
+spT14=Remova todo o piche vivo azul para alcançar o olho gordo no topo.
+spT15=Tenha em mente que o piche só pode ser danificado nos lados planos e qualquer quadrado que não seja estável vai virar bebês de piche.
+spT16=Piche é estável quando pode formar uma massa quadrada de pelo menos quatro quadrados com os seus vizinhos.
+spT17=Parabéns, você completou esta sala!
+spT18=Depois de você deixar esta sala seu sucesso será permanente. Você sempre poderá ver seu recorde para a sala, e você poderá ver sua posição em comparação com as pontuações do quadro de líderes.
+spT19=Se você conectou-se ao jogo usando credenciais válidas de conta do fórum Caravel, seu recorde será submetida ao quadro de líderes.
+spT20=Sua pontuação irá ser mantida no quadro de líderes por duas semanas a não ser que você seja um(a) assinante do CaravelNet. Neste caso, suas pontuações serão mantidas para sempre.
+spT21=Você agora pode sair da sala de tutorial.
+# Achievements
+achName0=Trabalhar Como Relógio
+achName1=Relogiar Como Trabalho
+achName2=Mãos Amarradas
+achName3=Chave de Braço
+achName4=Espada Colada
+achName5=Forever Alone
+achName6=Sorrateiro
+achName7=Técnico de Piche
+achName8=Senhor das Cobras
+achName9=Só com os Silvos
+achName10=Caçador Silencioso
+achName11=O Ninja
+achName12=Matricídio
+achName13=Explorador Amador
+achName14=Golpeador Inciante
+achName15=Exterminador Contratado
+achName16=Sou um Profissional!
+achName17=Maestria
+achName18=Pós-Maestria
+achName19=Baratas Assadas
+achName20=Rainhas Gratinadas
+achName21=Ovos Flambé
+achName22=Mostarda de Olho Gordo
+achName23=Filé de Asa-Fantasma
+achName24=Bolinho de Serpente
+achName25=Diapasão
+achName26=Descendo Verde
+achName27=Controlador de Multidão
+achName28=Reanimador
+achName29=Senhor do Tempo
+achName30=Guardião do Espaço
+achName31=Andarilho Eterno
+achDesc0=Limpe o Nono Nível 4N 3E pisando só uma vez em cada uma das áreas marcadas
+achDesc1=Limpe o Nono Nível 3N 3E pisando só uma vez em cada uma das áreas marcadas
+achDesc2=Limpe o Décimo Nível 1N 1E sem girar a espada
+achDesc3=Não gire a espada no Décimo Nível 1E
+achDesc4=Não gire a espada enquanto limpa o Décimo Nível 1S 1O
+achDesc5=Conquiste o Décimo Nível 1S sem beber a poção de duplo
+achDesc6=Limpe o Décimo Primeiro Nível 1S 2E em menos de 150 turnos
+achDesc7=Limpe todo o piche em qualquer sala do Décimo Primeiro Nível
+achDesc8=Conquer Décimo Segundo Nível 1S 2E sem se mover diagonalmente
+achDesc9=Conquer Décimo Segundo Nível 2S 1E sem beber a poção de duplo
+achDesc10=Acorde um olho só enquanto limpa Décimo Segundo Nível 1S
+achDesc11=Limpe uma sala com Olhos Gordos sem acordar nenhum deles
+achDesc12=Mate uma barata rainha enquanto seus ovos estão crescendo
+achDesc13=Limpe o nono nível
+achDesc14=Limpe o décimo nível
+achDesc15=Limpe o décimo primeiro nível
+achDesc16=Limpe o décimo segundo nível
+achDesc17=Mestre do forte
+achDesc18=Pós-mestre do forte
+achDesc19=Mate 35 baratas
+achDesc20=Mate 20 baratas rainhas
+achDesc21=Mate 15 ovos de barata
+achDesc22=Mate 15 olhos gordos
+achDesc23=Mate 5 asas-fantasmas
+achDesc24=Mate 10 serpentes
+achDesc25=Acerte uma orbe por três rodadas consecutivas
+achDesc26=Baixe um portão verde 10 vezes
+achDesc27=Mate um total de 2500 monstros
+achDesc28=Morra um total de 100 vezes
+achDesc29=Desfaça um total de 450 movimentos
+achDesc30=Abra um total de 200 alçapões
+achDesc31=Ande um total de 8000 passos
+# Game completion
+outro=Se pelo menos ele tivesse um mapa da Masmorra de Dugan, Beethro saberia que o que espera no décimo terceiro andar é algo capaz de derrotar até os maiores guerreiros. Mas pelo menos não haverá Piche ou Serpentes lá...////
+    ///
+    <font size="32" color="#FFFF00">Parabéns!</font>////
+    Você completou o terceiro episódio de Deadly Rooms of Death, forte King Dugan's Dungeon Lite (Masmorra do Rei Dugan Light). Espero sinceramente que você tenha apreciado esta experiência.///
+    Agora que você desceu o último lance de escadas disponível neste conjunto, você talvez queira tentar tornar-se Mestre, ou até Pós-Mestre deste jogo! Para fazer isso, vá caçar salas secretas. O número de salas secretas remanescentes em cada nível agora é visível na tela de Restaurar.///
+    Quando você conseguir conquistar todas as salas, uma Área de Maestria especial será aberta. Consegue descobrir como acessá-la?///
+    E, claro, você pode querer jogar o próximo episódio da série DROD:KDDL.///
+    ///
+    Antes de eu deixá-lo sobre os louros da sua glória, eu gostaria de agradecer algumas pessoas, sem as quais este jogo nunca viria a luz do dia:///
+    ///
+    <font size="26" color="#FFFF00">Erik Hermansen</font> - O criador, pai e inventor do DROD. Sem ele, esta idéia única nunca teria visto a luz do dia.////
+    <font size="26" color="#FFFF00">Mike Rimer</font> - Ele programou a maior parte de DROD 2: JtRH e DROD 3: TCB sozinho. Graças à esplêndida base de código, fazer Flash DROD foi puro prazer.////
+    <font size="26" color="#FFFF00">Matt Schikore</font> - Senhor absoluto do Fórum Caravel e programador principal da CaravelNet. Graças a ele, você pode disputar recordes, e muito mais!////
+    ///
+    <font size="23" color="#FFFF00">Programação, Desenvolvimento</font> - %%////
+    <font size="23" color="#FFFF00">Arte e Música</font> - %%////
+    <font size="23" color="#FFFF00">Desenvolvimento do Lado do Servidor</font> - %%////
+    <font size="23" color="#FFFF00">Desenvolvimento de Níveis</font> - %%////
+    <font size="23" color="#FFFF00">Testadores Principais</font> - %%////
+    <font size="23" color="#FFFF00">Testadores</font> - %%////
+    <font size="23" color="#FFFF00">Traduções</font> - %%////
+    <font size="23" color="#FFFF00">Vozes</font> - %%////
+    <font size="23" color="#FFFF00">Código, Idéia e Níveis Originais</font> - %%///
+    ////
+    Até a próxima vez!////
+    <font size="18" color="#AAAAAA">-Maurycy</font>
+complNextGame=Jogue o próximo conjunto de níveis - KDD Lite 4. Isto vai abrir uma janela nova, e você pode fechar esta janela a seguir. Seu progresso foi gravado.
+
+
+# Tutorial crap
+defCont=Controles padrão:
+sc_diago=Você pode mover-se diagonalmente até através de cantos muito estreitos.
+sc_broken=Quebre estas paredes rachadas e escretas com a sua espada.
+sc_queens1=Baratas rainhas botam ovos de barata a cada 30 turnos (no turno após o contador de desova ficar vermelho).
+sc_queens2=Ovos irão virar baratas 5 turnos depois de serem colocados.
+sc_queens3=Ovos não vão aparecer em setas, alçapões, ou portões amarelos. Use a tecla "I" ou 5 no NumPad para esperar um turno.
+sc_mimics=Após pisar numa poção de duplo, use o mouse ou tecla de espera para escolher o quadrado onde você quer colocar o duplo.
+sc_shiftwait=Você pode achar útil que Shift+Espera aguarda até a próxima desova.
+sp_mother1=Cada 30 turnos as mães de piche irão fazer o piche crescer um quadrado em cada direção.
+sp_mother2=Geralmente é seguro ser cercado por piche crescendo, mas cuidado com bebês de piche que podem aparecer durante o crescimento.
+sc_backswipe=Siga o caminho de areia para aprender a técnica de corte traseiro! Lembre o movimento diagonal e não gire sua espada.
+sc_trapdoors=Estes quadrados rosa arroxeado são alçapões e irão cair se você ou um duplo pisarem neles.

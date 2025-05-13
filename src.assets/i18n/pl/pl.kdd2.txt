@@ -1,0 +1,211 @@
+# Level Names
+Fifth Level=Piąte Piętro
+Sixth Level=Szóste Piętro
+Seventh Level=Siódme Piętro
+Eighth Level=Ósme Piętro
+Mastery Level=Mistrzowskie Piętro
+Tutorial=Piętro z Samouczkiem
+
+# Level entrances
+entr5=Beethro Budkin, profesjonalny eksterminator lochów z dziada pradziada został zatrudniony przez Króla Dugana by wyczyścić wielo-poziomowe, królewskie lochy z gigantycznego ataku robactwa i bestii. Beethro otrzymuje zapłatę od oczyszczonego pomieszczenia i, jako profesjonalista, jest zobowiązany kontraktem by oczyścić każde pomieszczenie na każdym piętrze by w ogóle zobaczyć pieniądze. Jedyną potrzebną mu bronią jest Naprawdę Wielki Miecz, którym jest w stanie pokonać prawie każdą bestie jednym ciosem.\n\n -----\n\n Beethro w końcu spocił się po ostatnim piętrze. "Wygląda na to, że jednak nie będzie to kaszka z mleczkiem." Na kolejnym piętrze powitał go chłodny powiew wiatru.
+entr6=Prawdopodobnie architekt tego piętra chciał coś bardzo udowodnić, czymkolwiek by to nie było. W każdym razie możesz cieszyć się, że w lochach Dugana nie ma więcej takich miejsc.
+entr6Back=Beethro wrócił, by dokończyć zlecenie.
+entr7=Schodząc po schodach, Beethro usłyszał głośny syk. Chociaż jako zaprawiony profesjonalista od razu odgadł, z czym ma do czynienia, to i tak zszokowała go sama głośność tego dźwięku. "Dzibus! Ile tego tałatajstwa tu jest?"
+entr8=Niektóre potwory są przebiegłe i zabójcze, a wadą innych jest jedynie pozostawiona przez nie ilość roboty, by po nich posprzątać.
+entrMaster=Beethro zszedłszy po schodach, znalazł się w nieoznaczonym korytarzu...\n\n Dugan nie zapłaci mu za jego oczyszczenie, ale honor profesjonalisty popycha go naprzód.
+entrTut=Samouczek
+entrTutLeave=Beethro opuścił piętro samouczka bogatszy o nowo zdobytą wiedzę.
+entrPremaster=Beethro potknął się kilka razy, schodząc słabo oświetlonymi schodami. "To jest niezgodne z wszelkimi zasadami bezpieczeństwa, nie mówiąc już o tym, że nie ma tu nawet karaluchów! Ktoś powinien tu dać jakąś poręcz albo co-" pomyślał Beethro moment przed tym, jak spadł dwanaście pięter w dół i znokautował się na pełną godzinę. Śniły mu się straszliwie okropne sny o puddingu z obserwatorów, nim obudził się oszołomiony. "Doże! Czy tak trudno umieścić któreś z tych miejsc na mapie? Byłaby to miła odmiana."
+
+# Scrolls
+sc51n2w=Mam nadzieję, że została Ci jakaś droga powrotna.
+sc63e=Sekretny Korytarz
+sc61s1w=To jest Ściana Mistrzów.\n Otworzy się dopiero, gdy pokonasz cały Hold i wszystkie sekretne pomieszczenia.
+sc72n1w=Ci o ułomnym rozumie, niech odejdą! Zaprawdę, pomieszczenie to pokona jedynie prawdziwy geniusz.\n (To pomieszczenie nie jest wymagane do przejścia gry.)
+sc71n1=Nie podejrzewałem, że rozgryziesz tę zagadkę.
+sc71n2=Dobrze, przyznaję, to nie dokładnie to samo co Lightcycle.\n\n -Erik
+sc71n3=Mój ukłon w stronę Trona.\n\n -Erik
+sc81s1=Ożywiona smoła może być uszkodzona tylko na płaskich krawędziach.
+sc81s2=Każda kupka, które nie jest wysoka i szeroka na 2 pola, jest niestabilna i rozpadnie się na smolątka.
+sc81s3=Nie krępuj się, by trochę poeksperymentować.
+sc81s1e=Mądry człowiek wpierw ruszy na północ, nim podąży tym korytarzem.
+sc83s=Wyczyść pomieszczenia na południe i zachód stąd, nim podążysz tą drogą dalej, by nie musieć się wracać.
+scMe1=Trudniejsze wersje istniejących pomieszczeń.
+scMe2=Ostatnie słowa
+scMe3=Nowe pomieszczenia.
+scM1s1=No proszę! Zapewne, nie licząc kilku osiągnięć, nie pozostało Ci nic więcej do odkrycia w tej grze.
+scM1s2=Proszę, przyjmij moje najszczersze gratulacje, gdyż udało Ci się dokonać naprawdę niezwykłego czynu!
+scM1s3=Na stronie CaravelGames.com możesz znaleźć kolejne części tej gry, albo ściągnąć którąś z pełnych wersji gry na Windowsa, Maca lub Linuxa.
+scM1s4=Nie zatrzymuj się!
+scM1s5=A oto mała nagroda! Zabij wszystkich obserwatorów nie stając na brązowej trawie.
+scM1s6=Obie królowe zostaną automatycznie zabite, jak tylko dotrzesz do punktu kontrolnego w rogu po prawej.
+scM1s7=Szczere gratulacje!
+scT1=Idź w prawo i zwróć uwagę, jak zachowa się karaluch, gdy wchodzi skośnie na ścianę.
+scT2=Węże mają własną, o wiele bardziej skomplikowaną mechanikę ruchu. Ich aktualnie preferowany kierunek wyświetla się poniżej licznika cyklu płodowego.
+scT3=Potwory w DRODzie zawsze preferują ruch pionowo, gdy coś zablokuje im ruch po skosie.
+scT4=`Escape` otwiera menu pauzy, gdzie możesz wybrać `Pomoc`, by w każdej chwili przypomnieć sobie sterowanie.
+scT5=Możesz uniemożliwić sobie przypadkowe wyjście z pomieszczenie wciskając klawisz `X`. Mała kłódka na mini-mapie oznacza, że pomieszczenie jest zablokowane.
+scT6=`Shift`+Klawisz wykonuje akcje oraz natychmiastowo jej odwrotność.\n `Shift`+Czekaj czeka do kolejnego cyklu płodowego.\n Numeryczny `+` lub `=` wykonuje odwrotność ostatniego ruchu.
+scT7=F3 wyświetla licznik ruchów, pomagający w optymalizacji wyniku.
+scT8=Sterowanie można zmienić z poziomu opcji.
+scT9=Wyniki graczy nieposiadających subskrypcji CaravelNet, nie są zapisywane w tabeli wyników, ale otrzymują oni informacje, jaki wynik by zajęli.
+scT10=Klikaj myszką, by zobaczyć, co robią sfery i co widzą obserwatorzy.
+scT11=`Spacja` ukrywa dialogi i okna zdobytych osiągnięć.
+scT13=Zjawoskrzydlaki, w przeciwieństwie do karaluchów, uciekają od Beethro i starają się utrzymać dystans pięciu kroków.
+scT14=Jednakże w większej grupie nie są już takie strachliwe i zaatakują otoczoną ofiarę.
+sc1_6n3w1=Wykorzystaj technikę zakroku, by pozbyć się karalucha.
+sc1_6n3w2=Stań na zielonej podłodze i upewnij się, że karaluch stoi na piaskowym polu dokładnie na północ od Beethro...
+sc1_6n3w3=Stań na zielonej podłodze i upewnij się, że karaluch stoi na piaskowym polu dokładnie na południe od Beethro...
+sc1_6n3w4=...i zrób krok na północny-wschód, by go zabić.
+sc1_6n3w5=...i zrób krok na południowy-wschód, by go zabić.
+sc1_6n3w6=Powtórz sobie kilka razy, by zapamiętać technikę zakroku. Opanowanie zakroku jest niezbędne, by osiągnąć sukces.
+
+# Speeches
+sp5e1=Te schody prowadzą do samouczka.
+sp5e2=Odwiedź go, jeżeli grasz po raz pierwszy w grę z serii DROD.
+sp5e3=Poruszaj się używając klawiatury numerycznej lub klawiszy 789, UIO, JKL.
+sp52n1=Wyczyszczenie tego pomieszczenia bez otwierania drzwi byłoby dobrym powodem do przechwałek.
+sp52n2=Ha! Co za niechlujny architekt umieścił te zbędne sfery.
+sp51n2w1=Oj, ilu obserwatorów!
+sp51n2w2=Ach! To już tyle lat, a wciąż mam dreszcze, gdy któreś z nich się budzi!
+sp63e=Zaczynam zauważać pewną zależność...
+sp63n=Wygląda znajomo...
+sp63w=Lepiej, żeby Dugan zapłacił mi za każde z tych pomieszczeń.
+sp72n1w1=Dzibus! Ten wąż musi mieć co najmniej tysiąc czterysta czterdzieści pięć stóp długości!
+sp72n1w2=Ale mój kontrakt obejmuje tylko potwory krótsze niż tysiąc czterysta czterdzieści cztery stopy.
+sp72n1w3=Mógłbym po prostu olać to pomieszczenie.
+sp71n1e1=Moje ostrze nawet nie zadraśnie tego wijącego się ohydztwa.
+sp71n1e2=Ale wystarczy zaprowadzić go w ślepy zaułek, by sam się zabił.
+sp84s1=Smolne matki też? Czemu, czemu, czemu...?
+sp83s1e=Nienawidzę smolnych matek.
+sp82s2e=Lepiej tu uważać... Nie będę mógł wyjść, jeżeli smoła zapcha mi przejście!
+sp84s3e1=Nieważne. Chodźmy!
+sp84s3e2=I jeszcze mur tutaj...
+sp84s3e3=Dobrze. W tym tempie skończymy sporządzanie tego piętra za kilka minut.
+sp84s3e4=Słyszałeś to? To muszą być administratorzy smoły! Musimy się ukryć!
+sp84s3e5=Aaaaaa! Prawie upuściłem mapę!
+sp84s3e6=Czekaj! Czy nie mamy tej mapy do góry nogami?
+sp85s2e1=To pomieszczenie... Zdaje się... Znajome... Jakoś tak...
+sp85s2e2=Czuję się... Wściekły... I wkurzony!
+sp86s3e=Kurka... Mam nadzieję, że nie ma tu żadnych podstępnych trików, jak pomieszczenie ukryte za sekretną ścianą!
+sp88s3e1=O dorze... To miejsce będzie mi się śniło po nocach..
+sp88s3e2=Nigdy więcej... Nigdy więcej...
+spM1s=Nie udało Ci się...
+spT2=Obróć się przy pomocy `Q` i `W`.
+spT3=Teraz uderz tą sferę swoim mieczem.
+spT4=Sfery mogą wpływać na bramy na trzy sposoby - otwierać, zamykać lub odwracać aktualny stan.
+spT5=Kliknij sferę myszką, by zobaczyć, na które bramy i w jaki sposób wpływa.
+spT6=W tej grze Twoim celem jest oczyścić każde piętro z potworów.
+spT7=Uderz karalucha mieczem, by go zabić.
+spT8=Strzałki blokują Twój ruch oraz potworów w kierunku przeciwnym do wskazywanego.
+spT9=Stań na punkcie kontrolnym. Wrócisz dokładnie do ostatniego momentu stanięcia na takim punkcie, gdy zginiesz lub zrestartujesz klawiszem `R`.
+spT10=Jeżeli zginiesz lub znajdziesz się w sytuacji, gdzie każdy ruch oznacza śmierć, możesz użyć klawisza `Backspace`, by cofnąć do trzech ruchów.
+spT11=Ta mikstura pozwoli Ci postawić mimika. Mimiki kopiują każdy Twój ruch i ruszają się od razu po Tobie, a zaraz przed potworami.
+spT12=Połóż mimika na polu z punktem kontrolnym poniżej. Wykorzystaj go do zrzucenia wszystkich zapadni, by otworzyć czerwoną bramę.
+spT13=Gratulacje, udało Ci się przejść to pomieszczenie!
+spT14=Jeżeli teraz je opuścisz, Twoje osiągnięcie zostanie zapisane. Możesz w każdej chwili zobaczyć swój najlepszy wynik w danym pomieszczeniu oraz to, jak dobrze Ci poszło w stosunku do innych graczy.
+spT15=Jeżeli masz wpisane w opcjach dane do konta CaravelNet, Twoje wyniki zostaną wysłane na tablicę internetową.
+spT16=Twoje wyniki przetrwają dwa tygodnie od momentu wysłania, chyba że wykupisz płatną subskrypcję CaravelNet.
+spT17=Możesz teraz opuścić samouczka.
+
+# Achievements
+
+achName0=Gdzie jest Mistrz?
+achName1=Wschodniogród
+achName2=Czystość
+achName3=Sferoomijacz
+achName4=Statyczne Dłonie
+achName5=Perfekcyjna Wizja
+achName6=Zaklinasz Zjawoskrzydlaków
+achName7=Kontrolowane Mimikowanie
+achName8=Nie Znoszę Żółtego
+achName9=Bez-skosów
+achName10=Zamarłe Ręce
+achName11=Śśślizganie
+achName12=Ramiona Wykute w Kamieniu
+achName13=Mistrz Intelektu
+achName14=Nożem w Plecy
+achName15=Technik Smoły
+achName16=Zasztyletowane Oczy
+achName17=Ninja
+achName18=Amatorski Szperacz
+achName19=Niedoświadczony Likwidator
+achName20=Kontraktowy Eksterminator
+achName21=Jestem Profesjonalistą!
+achName22=Mistrzostwo
+achName23=Arcymistrzostwo
+achName24=Smażone Królowe
+achName25=Jaja Al Dente
+achName26=Galaretka z Obserwatorów
+achName27=Pieczone Zjawoskrzydlaki
+achName28=Wężowe Sushi
+achName29=Kamerton
+achName30=Zielonym w Glebę
+achName31=Miażdżenie Tłumu
+achName32=Nieśmiertelny
+achName33=Dziura w Kontinuum Czasoprzestrzennym
+achName34=Czyszczenie
+achName35=Mistrz Maratonu
+
+achDesc0=Znajdź Ścianę Mistrzów
+achDesc1=Wyczyść Piąte Piętro 1W cały czas patrząc na wschód
+achDesc2=Zrzuć wszystkie zapadnie i wyczyść Piąte Piętro 1N 2W w czasie jednej wizyty
+achDesc3=Wyczyść Piąte Piętro 2N nie uderzając żadnej sfery
+achDesc4=Wyczyść Piąte Piętro 1S bez odwracania się
+achDesc5=Wyczyść Piąte Piętro 2S bez używania mikstury niewidzialności
+achDesc6=Wyczyść Piąte Piętro 3E bez uderzania sfery
+achDesc7=Wyczyść Piąte Piętro 1S 1W nie opuszczając oznaczonej podłogi
+achDesc8=Wyczyść Piąte Piętro 2S 2E bez stawania na otwarte żółte bramy
+achDesc9=Pokonaj Siódme Piętro 1S bez chodzenia po skosie
+achDesc10=Wyczyść Siódme Piętro 1E bez odwracania się
+achDesc11=Zabij węża przed zabiciem któregokolwiek karalucha w Siódmym Piętrze 1N 2E
+achDesc12=Wyczyść Siódme Piętro 3N 1E bez odwracania się
+achDesc13=Pokonaj pomieszczenie Mistrza Intelektu (Siódme Piętro 2N 1W)
+achDesc14=Wyczyść Ósme Piętro 4S 3E bez wypijania mikstury
+achDesc15=Wyczyść całą smołę w którymkolwiek pomieszczeniu na Ósmym Piętrze
+achDesc16=Zabij Smolną Matkę zanim będzie miała czas, by się rozrosnąć
+achDesc17=Wyczyść pomieszczenie z obserwatorami nie budząc żadnego z nich
+achDesc18=Pokonaj Piąte Piętro
+achDesc19=Pokonaj Szóste Piętro
+achDesc20=Pokonaj Siódme Piętro
+achDesc21=Pokonaj Ósme Piętro
+achDesc22=Znajdź i pokonaj wszystkie sekretne pomieszczenia
+achDesc23=Zostań arcymistrzem Holdu
+achDesc24=Zabij 20 królowych karaluchów
+achDesc25=Zabij 15 karaluszych jaj
+achDesc26=Zabij 15 obserwatorów
+achDesc27=Zabij 5 zjawoskrzydlaków
+achDesc28=Zabij 10 węży
+achDesc29=Uderzaj sferę przez trzy tury pod rząd
+achDesc30=Opuść pięć razy zieloną bramę
+achDesc31=Zabij w sumie 2 500 potworów
+achDesc32=Zgiń w sumie 70 razy
+achDesc33=Cofnij w sumie 350 ruchów
+achDesc34=Zrzuć w sumie 200 zapadni
+achDesc35=Zrób w sumie 7 000 ruchów
+
+# Game completion
+
+outro=Smoła nie była czymś, czego Beethro się spodziewał. Albo chciał spotkać. Ale kiedy schodzi schodami na dziewiąte piętro, wie jedno - nie czuje tam tej oślizłej substancji. Tylko co jeśli czeka tam na niego coś gorszego?\n\n \n <font size="32" color="#FFFF00">Gratulacje!</font>\n\n Udało Ci się przejść drugą cześć KDDL. Mam szczerą nadzieję, że granie w tę grę sprawiło Ci przyjemność.\n Teraz, gdy Beethro zszedł ostatnimi schodami dostępnymi w tej części, nadszedł czas, by sięgnąć po Mistrzostwo i Arcymistrzostwo! By tego dokonać, znajdź i pokonaj wszystkie sekretne pomieszczenia. Liczba sekretnych pomieszczeń na każdym piętrze jest od teraz widoczna na ekranie Przywracania.\n Kiedy już pokonasz je wszystkie, zostanie odblokowana specjalna Strefa Mistrzów. Tylko czy uda Ci się ją znaleźć?\n Możesz także uruchomić kolejną część z serii KDDL.\n\n Zanim pozwolę Ci odejść i rozpłynąć się w uczuciu ostatecznego spełnienia, chciałbym podziękować kilku osobom, które umożliwiły Ci zagranie w tę grę:\n\n <font size="26" color="#FFFF00">Erik Hermansen</font> - Twórca, ojciec i wynalazca DRODa. Bez niego ta niezwykła gra nigdy nie ujrzałaby światła dziennego.\n\n <font size="26" color="#FFFF00">Mike Rimer</font> - Zaprogragramował DROD: JtRH i DROD: TCB w większości własnoręcznie.  Dzięki jego naprawdę porządnemu kodowaniu, tworzenie Flashowego DRODa było czystą przyjemnością.\n\n <font size="26" color="#FFFF00">Matt Schikore</font> - Opiekun forum Caravel i programista CaravelNetu. Dzięki niemu możesz walczyć o pierwsze miejsce w rankingu oraz robić wiele innych rzeczy!\n\n / <font size="23" color="#FFFF00">Programowanie i stworzenie gry</font> - %%\n\n <font size="23" color="#FFFF00">Grafika i Muzyka</font> - %%\n\n <font size="23" color="#FFFF00">Oprogramowanie serwerów</font> - %%\n\n <font size="23" color="#FFFF00">Twórcy Holdów</font> - %%\n\n <font size="23" color="#FFFF00">Główni Testerzy</font> - %%\n\n <font size="23" color="#FFFF00">Testerzy</font> - %%\n\n <font size="23" color="#FFFF00">Tłumaczenia</font> - %%\n\n <font size="23" color="#FFFF00">Dubbing</font> - %%\n\n <font size="23" color="#FFFF00">Oryginalny Kod, Pomysł i Etapy</font> - %% \n\n Do zobaczenia w kolejnej częsci!\n\n <font size="18" color="#AAAAAA">-Maurycy</font>
+
+complNextGame=Uruchom kolejny zestaw etapów, KDDL 3. Link otworzy się w nowym oknie i będzie można zamknąć aktualne okno. Stan gry został zapisany.
+
+# Kdd2
+achDesc2=Zrzuć wszystkie zapadnie i wyczyść Piąte Piętro 1N 2W w czasie jednej wizyty
+sp_new71e1=Ci obserwatorzy mogli być zabici bez odwracania się. Aż trudno uwierzyć!
+sp_new71e2=Ha! No, to się nazywa wydajność! Niech no tylko w Gildii Mistrzów Likwidacji o tym usłyszą!
+
+
+# Tutorial crap
+defCont=Domyślne sterowanie:
+sc_diago=Możesz chodzić na skos nawet przez bardzo wąskie korytarze.
+sc_broken=Zniszcz te uszkodzone i sekretne ściany przy pomocy miecza.
+sc_queens1=Królowe składają jaja co 30 tur (turę po tym, jak licznik czasu stanie się czerwony).
+sc_queens2=W 5 tur po złożeniu z jaj wyklują się w pełni dorosłe karaluchy.
+sc_queens3=Jaja nie pojawią się na strzałkach, zapadniach i otwartych, żółtych bramach. Użyj klawisza `I` lub Numerycznej 5, by odczekać turę.
+sc_mimics=Po wypiciu mikstury mimików, wskaż myszką lub klawiaturą, gdzie chcesz postawić nowego mimika.
+sc_shiftwait=Pamiętaj, że wciśnięcie `Shift`+Czekaj czeka do kolejnego cyklu rozpłodowego.
+sp_mother1=Co 30 tur smolne matki spowodują rozrost smoły o jedno pole w każdym kierunku.
+sp_mother2=Bycie otaczanym przez rosnącą smołę jest względnie bezpieczne, ale trzeba uważać na smolątka, które mogą się pojawić.
+sc_backswipe=Podążaj piaskową ścieżką, by nauczyć się techniki zakroku. Pamiętaj o tym, że możesz chodzić po skosie, lecz nie odwracaj się.
+sc_trapdoors=Różowo-fioletowe kafelki to zapadnie, które spadają, gdy Beethro lub mimik z nich zejdzie.

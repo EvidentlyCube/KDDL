@@ -1,0 +1,273 @@
+# Level Names
+First Level=Eerste Level
+Second Level=Tweede Level
+Third Level=Derde Level
+Fourth Level=Vierde Level
+Mastery Level=Meesterlevel
+# Level Entrances
+entr1=Beethro Budkin, vijfde generatie professionele kerkerverdelger, was door Koning Dugan ingehuurd om zijn meerdere niveaus diepe kerker te ontdoen van een grote kolonie monsters.///
+    Beethro rekent zijn kosten per kamer en als professional is hij per contract gebonden om alle monsters uit elke kamer in de kerker te verwijderen om betaald te worden.///
+    Het enige wapen dat Beethro nodig heeft om zijn werk te doen is een Heel Groot Zwaard, dat bijna ieder monster verslaat in één enkele slag.////
+    -----////
+    "Ik hoop dat je niets rekent voor de bovenste verdieping. Die heb ik al laten opruimen. Nou ja, grotendeels."
+entr2=Beethro is een beetje uit vorm, maar het volgende level moet hem in goede conditie brengen.
+entr3="Hmm..." dacht Beethro. "Tot nu toe zie ik hier vooral kakkerlakken". Dit ziet er uit als een makkelijk klusje."
+entr4="Ik wou dat ik wat meer van deze mimici hier bij me had!" zei Beethro. "Het zou er een stuk sneller mee gaan."
+entr4Back=Beethro kwam terug om netjes het opruimwerk af te maken waar hij voor ingehuurd was.
+entrMaster=Beethro daalde de trap af, maar kwam terecht in een onbekende gang...////
+    Hij wordt niet betaald om het hier op te ruimen, maar zijn professionele eer drijft hem voort.
+# Scrolls
+sc1e0=Gebruik de cijfertoetsen of 789uiojkl om te lopen. Toetsen kunnen worden gewijzigd vanuit het pauzemenu (escape).
+sc1e1=Wanneer je de besturing wilt nalezen, Toets 'Escape', klik 'Zoek algemene hulp' en ga naar 'Speluitleg'.
+sc1_1n=Deze gele deur zal later een doel hebben.////
+    Ga nu gewoon verder naar het westen.
+sc1_1n1w1=Draai je zwaard met 'Q' en 'W'.
+sc1_1n1w2=Sla de sfeer aan met je zwaard om deuren in de kamer te openen.
+sc1_1n1w3=Sommige sferen wisselen de positie van deuren tussen open en gesloten.
+sc1_2n1w1=Je kunt zien wat een sfeer doet door er met je muis op te klikken. Met verschillende kleuren gemarkeerde deuren tonen de verschillende effecten.
+sc1_2n1w2=In plaats van te wisselen, kan een sfeer een gele deur altijd openen of sluiten.
+sc1_3n1w1=Blauwe poorten gaan open zodra je alle verplichte kamers overwint in een level (verdieping).
+sc1_3n1w2=Verplichte kamers zijn gemarkeerd met een rode achtergrond op de mini-kaart.
+sc1_3n2w1=De huidige dialogen en zwevende tekst kun je overslaan met de spatiebalk.
+sc1_3n2w2=Zodra je een kamer verlaat met alle monsters verwijderd, wordt deze gemarkeerd als overwonnen.
+sc1_3n2w3=Op de mini-kaart zijn overwonnen kamers gemarkeerd met wit, tegenover de onoverwonnen rode kamers.
+sc1_3n2w4=Overwin alle verplichte kamers om de weg vrij te maken naar het volgende level.
+sc1_4n3w=Pijlen blokkeren de bewegingen van zowel Beethro als monsters in tegengestelde richting.
+sc1_4n1w=Groene poorten openen zodra je alle monsters in een kamer opruimt.
+sc1_5n1w1=Kijk hoe de zuidelijke kakkerlak zich gedraagt wanneer hij probeert diagonaal tegen een hoek op te lopen.
+sc1_5n1w2=Als ze diagonaal tegen een hoek oplopen, bewegen de meeste monster verticaal indien mogelijk.
+sc1_5n2w1=Onthoud dat je op een sfeer kunt klikken met de muis om te zien welke deuren hij beïnvloedt.
+sc1_5n2w2=Pas op! Het is hier gevaarlijk.////
+    Als je een fout maakt, kun je 'Backspace' toetsen om maximaal drie zetten ongedaan te maken.
+sc1_5n2w3=Je kunt ook ongedaan maken (en herstarten) tijdens de animatie als je dood gaat!
+sc1_5n2w4=Een checkpoint 'X' laat je terugspoelen naar wanneer je er het laatst op bent gestapt.//
+    Druk 'R' om de kamer te herstarten of om terug te gaan naar het laatst aangeraakte checkpoint.
+sc1_6n2w=Een goede zwaardvechter kan kan alle kakkerlakken verslaan zonder in de zuidelijke inham te schuilen.
+sc1_6n3w1=gebruik de achterwaartse zwaai techniek om de kakkerlak te doden.
+sc1_6n3w2=Ga op de groene vloer staan en zorg dat de kakkerlak op de zandtegel staat direct ten noorden van je...
+sc1_6n3w3=Ga op de groene vloer staan en zorg dat de kakkerlak op de zandtegel staat direct ten zuiden van je...
+sc1_6n3w4=...en stap dan noordoost om hem te doden.
+sc1_6n3w5=...en stap dan zuidoost om hem te doden.
+sc1_6n3w6=Herhaal om de achterwaartse zwaai te begrijpen. Leer deze techniek goed, want hij zal cruciaal zijn bij je komende inspanningen.
+sc1_5n1=Nooduitgang is buiten gebruik.
+sc1_5n2=Sorry m'neer, w'mak'n 't gebouw njet af meddie grote kakk'rlakk'n overal!
+sc1_4n=Houd de kasdeuren gesloten a.u.b..
+sc1_1n1e=Deze trap leidt naar het volgende level. Hoed je voor wat je daar zult vinden...
+sc2_2n1=Wist je dat je Shift kunt indrukken terwijl je een actie uitvoert om automatisch daarna de omgekeerde actie te doen?
+sc2_2n2=Met Shift+Wachten wacht je tot de volgende broedcyclus, en 'Cijferblok +' of '=' doet het omgekeerde van de vorige actie!
+sc2_1n1e=Je moet niet zo vernielzuchtig zijn.
+sc2e=Misschien kun je beter eerst de kamers noord opruimen.
+sc2_1s3e1=Je kunt voorkomen dat je per ongeluk de kamer verlaat door 'X' te toetsen om hem te vergrendelen.
+sc2_1s3e2=Een klein slot op de mini-kaart geeft aan dat een kamer vergrendeld is.
+sc2_1s=Doe het niet! Het is duidelijk wat er gebeurt!
+sc2_2s3e=Goede timing maakt het een stuk simpeler.
+sc3_3n=Ik moet je waarschuwen voor mimici. Ze zijn je vriend noch je vijand -- ze houden er gewoon van om precies te bewegen zoals jij. Keer ze niet de rug toe.
+sc3_3n1e=Alle gevangenen zijn opgegeten door kerkerkakkerlakken en ik ben de volgende. Je kunt me niet genoeg betalen voor deze baan. Ik ben hier weg!////
+    -Gevangenbewaarder
+sc3_2n=Het is mogelijk om in deze gang te komen zonder in de kamer terug te komen nadat je hem overwonnen hebt.
+sc3_1n1w=Met de onzichtbaarheidsdrank kunnen ze je niet zien, maar nog steeds ruiken als je dichtbij komt.
+sc3_1e=Zo'n eind lopen. Het lijkt haast overbodig.
+sc3_1s=De Acht Poorten van Bill -- een werkelijk formidabele puzzel. Hij was een stuk lastiger, maar nu kan ik nakijken wat de sferen doen.
+sc3_2s1w=Ik zal je hier iets vertellen -- wanneer je lange en moeilijke paden ziet, moet je altijd naar een kortere weg zoeken.
+sc3_2s1=Ga terug! Wist je dat er alleen het afgelopen jaar al 32 procent meer kerkergerelateerde sterfgevallen waren?
+sc3_2s2=Wees eerlijk -- verkennen van kerkers is NIET veilig, zeker niet in combinatie met verdovende middelen.///
+    -OTSK (Ouders Tegen Sterfgevallen in Kerkers)
+sc4_2n1e1=Dit is een meestermuur. Hij gaat niet open totdat je de hold overwint en ook al zijn geheimen.
+sc4_2n1e2=In de originele "King Dugan's Dungeon" was deze kamer een doorsteek waarmee je een level of twee kon overslaan.
+sc4_1n1=Hint:////
+    Je hoeft niet de hulp van de mimicus te gebruiken om de kakkerlakken bij de entree te verslaan.
+sc4_1n2=hint:////
+    Denk goed na hoe je de heel nuttige ACHTERWAART- SE ZWAAI techniek kunt gebruiken -- handig wanneer er een moster aan beide kanten van je staat.
+sc4_2e=Als je stijlvol te werk gaat, staan alle 9 mimici op één lijn rechts van je.
+scMe1=Moeilijkere versies van bestaande puzzels.
+scMe2=Laatste woorden!
+scMe3=Moeilijke originele kamers.
+scM_1s1=Dat is het. Je hebt nu alles wat er in dit spel te vinden is opgelost. Er zijn misschien alleen nog een paar prestaties over.
+scM_1s2=Ik feliciteer je hartelijk en nodig je uit om verder te gaan op deze reis.
+scM_1s3=Op de CaravelGames.com website kun je de volgende afleveringen van KDDL vinden, of elk van de volledige DROD spellen downloaden voor Windows, MacOS of Linux.
+scM_1s4=Blijf spelen!
+scM_1s5=Hier is een kleine beloning! Dood alle ogen zonder op het bruine gras te stappen.
+scM_1s6=Kakkerlakkoninginnen worden gedood zodra je op het checkpoint stapt in de hoek rechtsboven.
+scM_1s7=Heel mooi, goed gedaan!
+# Speeches
+sp1e0=Gebruikt de cijfertoetsen om rond te lopen.
+sp1e1=Als je op een notebook speelt, kun je bewegen met het cijferblok van de laptop: 789, UIO, JKL
+sp1e2=Ga verder naar het noorden.
+sp1_3n2w1=Ah, de eerste kakkerlak van de kerker!
+sp1_3n2w2=Kom maar bij Beethro, aanstaande kakkerlakburger!
+sp1_3n2w3=Netjes gedood! Deze klus wordt een succes, dat weet ik zeker!
+sp1_6n2w=I had de kakkerlakken kunnen opruimen zonder de schuilen in de inham, maar ik ben lui vandaag.
+sp1_6n3w1=Je hebt een geheime kamer gevonden!
+sp1_6n3w2=Vind en overwin ze allemaal om toegang te krijgen tot een speciale uitdagende meesterlocatie.
+sp2_2e=Die koningin maakt stapels nieuwe kakkerlakken tegen de tijd ik naar die sfeer en terug ben gelopen!
+sp2_1s1e1=Hee, een schaduwvlerk!
+sp2_1s1e2=Helemaal alleen ook... dat betekent dat ik hem misschien door de hele kamer moet najagen.
+sp2_1s1e3=In tegenstelling tot kakkerlakken, vluchten schaduwvlerken voor Beethro en proberen op een afstand van vijf tegels te blijven.
+sp2_1s1e4=Ze zijn niet zo bang in grotere aantallen, en zullen niet aarzelen om aan te vallen als ze hun prooi omsingelen.
+sp2_2s2e1=Hmmm... kan ik deze koninginnen doden voordat ze eieren leggen?
+sp2_2s2e2=Aaah... te langzaam!
+sp2_2s2e3=Ha! Makkelijk.
+sp2_2s3e1=Ik weet zeker dat er een nettere manier was om deze koninginnen uit te schakelen.
+sp2_2s3e2=DAT was nu een mooi staaltje zwaardmeesterschap.
+sp3_3n1e=Geen gevangenen meer? Dit word een eenzame klus met niemand om mee te praten.
+sp3_2n=Werkelijk.
+sp3_1n2w0=Oei! Ik denk dat ik deze keer de drank nodig heb!
+sp3_1n2w1=Poeh! Die koninginnen zullen nu geen eieren leggen tenzij ik dicht bij ze ben.
+sp3_1n2w2=Dat was een beetje ruig, maar geen probleem voor een goede delver zoals ik.
+sp3_1n2w3=Ha! Niets is deze delver te moeilijk!
+sp3_1n1w1=Hee, dit is best handig!
+sp3_1n1w2=Ik weet dat ik deze kamer had kunnen opruimen zonder onzichtbaar te zijn, maar het was toch leuk.
+sp3_1n1w3=Dat was niet zo moeilijk... Ik vraag me af waarom die drank daar staat.
+sp3_1s=Ik had alle deuren sneller open kunnen krijgen.
+sp3_3s1w1=Dit ziet er gevaarlijk uit... het lijkt me een val...
+sp3_3s1w2=Nadat ik de sfeer aansla, zou ik de kamer kunnen opruimen zonder mijn zwaard te draaien. Gewoon behendig zijn!
+sp3_3s1w3=Nou ja, Ik heb misschien mijn zwaard gedraaid, maar ik leef tenminste nog.
+sp3_3s1w4=Wauw! Iemand had me hier moeten zien!
+sp4_2n1e=Nog een geheime kamer waar iedereen behalve ik hem het minst verwacht.
+sp4_1n1=Ik had deze kamer kunnen opruimen zonder terug te gaan naar de entreehal.
+sp4_1n2=Beethro Budkin overwint elke uitdaging!
+sp4_2e1=Goede Genade! Misschien bestaat er zoiets als te veel mimici!
+sp4_1s2e=Waarom ziet een kamer er beter uit als je alle valluiken laat vallen?
+spM_1s=Je hebt gefaald...
+# Achievements
+achName0=Ik Heb Je In het Oog
+achName1=Moedermoord
+achName2=Ik Werd Wakker en Had Overal een Hekel Aan
+achName3=Echte Zwaardmeester
+achName4=Vaste Hand
+achName5=Koninginnenburger
+achName6=Enkele Reis
+achName7=Wees Vlug!
+achName8=Wees Snel!
+achName9=Armen Stil
+achName10=Pak het Perkament
+achName11=Zichtbaarheid
+achName12=Onzichtbaarloos
+achName13=Maak Haast
+achName14=De Acht Poorten van Bill
+achName15=Prima Kakkerlakbeheersing
+achName16=Het Mysterie
+achName17=Niet Achterom Kijken
+achName18=Alleen met de Kakkerlakken
+achName19=Afgronden zijn Prachtig
+achName20=Ongevulde Leegte
+achName21=Met Stijl
+achName22=Amateurdelver
+achName23=Onervaren Opruimer
+achName24=Verdelger op Contractbasis
+achName25=Ik Ben een Professional!
+achName26=Overmeestering
+achName27=Post-overmeestering
+achName28=Gegrilde Kakkerlakken
+achName29=Gesneden Koninginnen
+achName30=Eierfondue
+achName31=Boze Ogenpudding
+achName32=Schaduwvlerk Dip
+achName33=Stemvork
+achName34=Omlaag met het Groen
+achName35=Horde Management
+achName36=Herlever
+achName37=Tijd is Niets!
+achName38=Maak Ruimte
+achName39=Loop naar de Maan
+achDesc0=Maak drie boze ogen wakker in één zet
+achDesc1=Dood een kakkerlakkoningin terwijl haar eieren groeien
+achDesc2=Ja, Je moet wel vernielzuchtig zijn
+achDesc3=Verschuil je niet in de inham in 6N 2W in het Eerste Level
+achDesc4=Ontruim op één na alle niet geheime kamers met monsters in het Eerste Level, zonder dat je je zwaard draait. %% van de 6 gedaan
+achDesc5=Dood de kakkerlakkoningin in Tweede Level 2O voordat ze de hoek bereikt
+achDesc6=Draai je zwaard niet in Tweede Level 1Z nadat je de sfeer aanslaat
+achDesc7=Dood alle kakkerlakkoninginen voordat ze eieren leggen in Tweede Level 2Z 2O
+achDesc8=Ontruim Tweede Level 2Z 3E voordat er eieren worden gelegd
+achDesc9=Ontruim Tweede Level 3N zonder je zwaard te draaien
+achDesc10=Bereik het perkament in Derde Level 2N zonder de kamer opnieuw binnen te komen
+achDesc11=Dood alle kakkerlakken zonder de drank te drinken in Derde Level 1N 1W
+achDesc12=Ontruim Derde Level 1N 2W zonder de drank te drinken
+achDesc13=Ontruim Derde Level 1N 1O zonder dat de koninginnen eieren leggen
+achDesc14=Los De Acht Poorten van Bill op door 5 sferen aan te slaan (Derde Level 1Z)
+achDesc15=Leid alle drie de kakkerlakken naar buiten voordat je er één doodt in Derde Level 2N 1E
+achDesc16=Ontruim Derde Level 3N zonder de drank te drinken
+achDesc17=Ontruim Vierde Level 1N zonder terug te keren naar de entreehal
+achDesc18=Ontruim Vierde Level 1Z 1O zonder de mimicusdrank te drinken
+achDesc19=Laat alle valluiken vallen in Vierde Level 1Z 1O en ontruim de kamer tijdens hetzelfde bezoek
+achDesc20=Ontruim Vierde Level 2Z 1O en laat alle valluiken vallen tijdens hetzelfde bezoek
+achDesc21=Wees stijlvol in Vierde Level 2O
+achDesc22=Eerste level ontruimd
+achDesc23=Tweede level ontruimd
+achDesc24=Derde level ontruimd
+achDesc25=Vierde level ontruimd
+achDesc26=Overmeester de hold
+achDesc27=Post-overmeester de hold
+achDesc28=Dood 35 kakkerlakken
+achDesc29=Dood 20 kakkerlakkoninginnen
+achDesc30=Dood 15 kakkerlak-eieren
+achDesc31=Dood 15 boze ogen
+achDesc32=Dood 5 schaduwvlerken
+achDesc33=Sla een sfeer drie zetten achter elkaar aan
+achDesc34=Open 5 keer een groene poort
+achDesc35=Dood 2500 monsters
+achDesc36=Ga 50 keer dood
+achDesc37=Maak 250 zetten ongedaan
+achDesc38=Laat 100 valluiken vallen
+achDesc39=Zet 5000 stappen
+# Game completion
+outro=Wat staat Beethro te wachten? Zullen de gevaren nog hachelijker worden? Krijgt hij het voor elkaar om Koning Dugan's Kerker helemaal op te ruimen zodat hij eindelijk betaald wordt?////
+    ///
+    <font size="32" color="#FFFF00">Gefeliciteeerd!</font>////
+    Je hebt de eerste aflevering uitgespeeld van de Deadly Rooms of Death, King Dugan's Dungeon Lite hold. Ik hoop oprecht dat je van deze ervaring genoten hebt.///
+    Nu je de laatste trappen in deze set bent afgedaald, wil je misschien proberen om dit spel te Overmeesteren en dan te Post-overmeesteren! Om dit te doen moet je op zoek naar de geheime kamers. Het aantal geheime kamers in elk level wordt nu weergegeven op het Herstelscherm.///
+    Wanneer je ze allemaal weet te overwinnen, wordt er een speciale Meesterlocatie geopend. Kun je uitvinden hoe je er komt?///
+    Je wilt misschien ook de volgende aflevering in de DROD:KDDL serie spelen.///
+    ///
+    Voordat ik je laat genieten van je gevoel van uitzinnige vreugde, wil ik graag een aantal mensen bedanken, zonder wie dit spel nooit het daglicht had gezien.///
+    ///
+    <font size="26" color="#FFFF00">Erik Hermansen</font> - De maker, vader en uitvinder van DROD. Zonder hem zou dit unieke spelidee nooit het daglicht hebben gezien.////
+    <font size="26" color="#FFFF00">Mike Rimer</font> - Hij heeft DROD: JtRH en DROD: TCB grotendeels in zijn eentje geprogrammeerd. Bedankt voor de fantastische basis voor de code, het maken van Flash DROD was een genoegen.////
+    <font size="26" color="#FFFF00">Matt Schikore</font> - Heer en meester van het Caravel Forum en de hoofdprogrammeur van CaravelNet. Dankzij hem kun je om scores strijden en nog veel meer!////
+    ///
+    <font size="23" color="#FFFF00">Programmeren, Ontwikkeling</font> - %%////
+    <font size="23" color="#FFFF00">Grafische onderdelen & Muziek</font> - %%////
+    <font size="23" color="#FFFF00">Server-side ontwikkeling</font> - %%////
+    <font size="23" color="#FFFF00">Level ontwikkeling</font> - %%////
+    <font size="23" color="#FFFF00">Primaire Testers</font> - %%////
+    <font size="23" color="#FFFF00">Testers</font> - %%////
+    <font size="23" color="#FFFF00">Vertalingen</font> - %%////
+    <font size="23" color="#FFFF00">Acteurs</font> - %%////
+    <font size="23" color="#FFFF00">Originele Programmatuur, Idee & Levels</font> - %%///
+    ////
+    Tot volgende keer!////
+    <font size="18" color="#AAAAAA">-Maurycy</font>
+complNextGame=Speel de volgende levelset - KDD Lite 2. Dit opent in een nieuw venster en je kunt dit venster veilig sluiten. Je voortgang is opgeslagen.
+
+
+scNew1=Let goed op wat er gebeurt tijdens []
+scNew2=Eieren worden nooit op pijlen, valluiken of gele deuren gelegd.
+scNew3=bovendien, als een koningin beweegt op de zet dat ze broed, verschijnt er geen ei op de tegel waar ze vandaan komt.
+sc2_1s3e1=Je kunt voorkomen dat je perongeluk de kamer verlaat door op "X" te drukken.
+sc2e=Begin met de noordelijke kamers zodat je hiet later niet helemaal hoeft terug te komen.
+sc1_New1N1W=Als je het nog niet wist: Koninginnen lopen weg van je en leggen geen eieren op open gele deuren.
+sc1_New3N1=Kakkerlakkoninginnen leggen elke 30 zetten eieren (de zet nadat de broedklok rood wordt)
+sc1_New3N2=5 zetten nadat ze gelegd zijn, kruipen de volgroeide kakkerlakken uit de eieren.
+sc1_New3E=Kakkerlakkoninginnen rennen altijd weg van Beethro; dit gedrag kan gebruikt worden om ze te manipuleren.
+sc1_new6n2w1=Gebroken en geheime muren kunnen worden gebroken met je zwaard.
+sc1_new6n2w2=Geheime muren lijken echter veel meer op gewone muren.
+sc1_new6n2w3=Dus mis niet de geheime muren in de hoek wanneer je terugkomt.
+sc1_5n1w3=Dit spel is helemaal deterministisch - er is geen willekeurig of onvoorspelbaar gedrag.
+sc1_new6N=De geheimen hoeven niet overwonnen te worden in één spel om de hold te Overmeesteren.
+sc_evileyes=Op dit level zul je boze ogen tegenkomen. Zodra je in hun gezichtslijn stapt, worden ze wakker en achtervolgen ze je als roaches.
+sc1_5n1w1=Bekijk hoe de zuidelijke kakkerlak zich gedraagt als hij probeert om diagonaal tegen een hoek op te lopen. Druk "I" of Cijferblok 5 om een zet te wachten.
+
+
+# Tutorial crap
+defCont=Standaard besturing:
+sc_diago=Je kunt diagonaal bewegen, zelfs door heel smalle gangen.
+sc_broken=Breek deze gebriken en geheime muren met je zwaard.
+sc_queens1=Kakkerlakkoninginnen werpen elke 30 zetten kakkerlak-eieren (de zet nadat de broedklok rood wordt).
+sc_queens2=5 zetten nadat ze gelegd zijn, kruipen de volgroeide kakkerlakken uit de eieren.
+sc_queens3=Eieren worden niet op pijlen, valluiken of gele deuren gelegd. Gebruik de "I" toets of Cijferblok 5 om een zet te wachten.
+sc_mimics=Als je op een mimicusdrank stapt, gebruik je de muis of de wacht toets om de tegel te selecteren waar je de mimicus neer wilt zetten.
+sc_shiftwait=Het kan handig zijn om met Shift+Wachten te wachten tot de volgende broedcyclus.
+sp_mother1=Elke dertig zetten laten de teermoeders de teer één tegel in alle richtingen groeien.
+sp_mother2=Het is relatief veilig om omringd te worden door groeiende teer, maar je moet oppassen voor teerbaby's die kunnen ontstaan bij de groei.
+sc_backswipe=Volg het zandpad om de achterwaartse zwaai te leren! Onthoud dat je diagonaal kunt bewegen en draai je zwaard niet.
+sc_trapdoors=Deze roze-paarze tegels zijn valluiken en ze vallen als jij of een mimicus ervanaf stapt.
