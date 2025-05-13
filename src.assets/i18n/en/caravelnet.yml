@@ -1,90 +1,90 @@
 # All strings here are unused
 
 # Login Window
-
-ui.login.connected: |
-    \tYou are now connected to CaravelNet as a registered user!
-
-    \tIf you have only created a forum account but not subscribed to CaravelNet, your
-    scores will be deleted after two weeks from the day they are uploaded.
-
-    \tScores uploaded by CaravelNet subscribers are permanent.
-ui.login.connected_anonymous: >
-    \tYou are now connected to CaravelNet as anonymous user. You can submit your
-    scores to know what place in the leaderboard you'd have gotten but the score is not
-    stored on the server. To make your submissions persistent you have to
-    create a Caravel Games account (accessible from the options screen).
-
-    \tIf you later decide to create an account, use the "Upload your Scores" button to
-    upload all your progress to our servers.
-ui.login.failed: |
-    \tFailed to connect!.
-
-    1. Check if you are connected to the internet.
-    2. Make sure your firewall is not blocking this game.
-    3. Visit http://forum.caravelgames.com to see if the server even loads. If not wait \
-    a couple of minutes and try again.
-ui.login.failed.bad_credentials: 4. Check to see if the credentials you have entered are correct.
-ui.login.failed.missing_credentials: 4. Make sure you have entered a valid username and CaravelNet key.
-caravelnet.connection_problem: >
-    CaravelNet functions are disabled due to problems with your connection.
-
-
-    First make sure that your internet connection is working and that you have
-    entered valid CaravelNet credentials. Afterwards go to the options screen
-    and hit "Connect!"
-
+#ui.login.connected: |
+#
+#
+#    \tYou are now connected to CaravelNet as a registered user!    \tIf you have only created a forum account but not subscribed to CaravelNet, your
+#
+#
+#    scores will be deleted after two weeks from the day they are uploaded.    \tScores uploaded by CaravelNet subscribers are permanent.
+#
+#ui.login.connected_anonymous: >
+#    \tYou are now connected to CaravelNet as anonymous user. You can submit your
+#    scores to know what place in the leaderboard you'd have gotten but the score is not
+#    stored on the server. To make your submissions persistent you have to
+#
+#    create a Caravel Games account (accessible from the options screen).    \tIf you later decide to create an account, use the "Upload your Scores" button to
+#
+#    upload all your progress to our servers.
+#ui.login.failed: |
+#
+#    \tFailed to connect!.    1. Check if you are connected to the internet.
+#
+#    2. Make sure your firewall is not blocking this game.
+#    3. Visit http://forum.caravelgames.com to see if the server even loads. If not wait \
+#    a couple of minutes and try again.
+#ui.login.failed.bad_credentials: 4. Check to see if the credentials you have entered are correct.
+#ui.login.failed.missing_credentials: 4. Make sure you have entered a valid username and CaravelNet key.
+#caravelnet.connection_problem: >
+#
+#    CaravelNet functions are disabled due to problems with your connection.
+#    First make sure that your internet connection is working and that you have
+#
+#    entered valid CaravelNet credentials. Afterwards go to the options screen
+#
+#    and hit "Connect!"
 
 # Scored Places
 
-caravelnet.score.place_1.no_tie: First Place!!
-caravelnet.score.place_1: 1st place
-caravelnet.score.place_2: 2nd place
-caravelnet.score.place_3: 3rd place
-caravelnet.score.place_4: 4th place
-caravelnet.score.place_5: 5th place
-caravelnet.score.place_6: 6th place
-caravelnet.score.place_7: 7th place
-caravelnet.score.place_8: 8th place
-caravelnet.score.place_9: 9th place
-caravelnet.score.place_10: 10th place
-caravelnet.score.place_11: 11th place
-caravelnet.score.place_12: 12th place
-caravelnet.score.place_13: 13th place
-caravelnet.score.place_14: 14th place
-caravelnet.score.place_15: 15th place
-caravelnet.score.place_16: 16th place
-caravelnet.score.place_17: 17th place
-caravelnet.score.place_18: 18th place
-caravelnet.score.place_19: 19th place
-caravelnet.score.place_20: 20th place
-caravelnet.score.place_21: 21st place
-caravelnet.score.place_22: 22nd place
-caravelnet.score.place_23: 23rd place
-caravelnet.score.place_24: 24th place
-caravelnet.score.place_25: 25th place
-caravelnet.score.place_tie: "%% tie!"
-caravelnet.score.place.no_caravelnet: (anonymous)
+#caravelnet.score.place_1.no_tie: First Place!!
+#caravelnet.score.place_1: 1st place
+#caravelnet.score.place_2: 2nd place
+#caravelnet.score.place_3: 3rd place
+#caravelnet.score.place_4: 4th place
+#caravelnet.score.place_5: 5th place
+#caravelnet.score.place_6: 6th place
+#caravelnet.score.place_7: 7th place
+#caravelnet.score.place_8: 8th place
+#caravelnet.score.place_9: 9th place
+#caravelnet.score.place_10: 10th place
+#caravelnet.score.place_11: 11th place
+#caravelnet.score.place_12: 12th place
+#caravelnet.score.place_13: 13th place
+#caravelnet.score.place_14: 14th place
+#caravelnet.score.place_15: 15th place
+#caravelnet.score.place_16: 16th place
+#caravelnet.score.place_17: 17th place
+#caravelnet.score.place_18: 18th place
+#caravelnet.score.place_19: 19th place
+#caravelnet.score.place_20: 20th place
+#caravelnet.score.place_21: 21st place
+#caravelnet.score.place_22: 22nd place
+#caravelnet.score.place_23: 23rd place
+#caravelnet.score.place_24: 24th place
+#caravelnet.score.place_25: 25th place
+#caravelnet.score.place_tie: "%% tie!"
+#caravelnet.score.place.no_caravelnet: (anonymous)
 
 
 
 # Browse released holds
 
-caravelnet.browser.header: Browse released Flash DROD Holds
-caravelnet.browser.open: Open in a new window
+#caravelnet.browser.header: Browse released Flash DROD Holds
+#caravelnet.browser.open: Open in a new window
 
 # Level/Room score
-caravelnet.score.stats: Player stats
-caravelnet.score.your_best_score: "Your best score:"
-caravelnet.score.top_score: "Top scores for room:"
-caravelnet.score.no_score: None!
-caravelnet.score.fetching: Fetching...
-caravelnet.score.only_for_subscribers: >
-    Room scores are only available for CaravelNet subscribers and
-    Caravel Games forum members.
-
-
-    It seems you haven't filled your CaravelNet account details yet. Creating a
-    Caravel Games account will allow you to compete against other players from
-    around the world and track the scores for each room.
-caravelnet.score.no_scores: No scores for this room yet.
+#caravelnet.score.stats: Player stats
+#caravelnet.score.your_best_score: "Your best score:"
+#caravelnet.score.top_score: "Top scores for room:"
+#caravelnet.score.no_score: None!
+#caravelnet.score.fetching: Fetching...
+#caravelnet.score.only_for_subscribers: >
+#    Room scores are only available for CaravelNet subscribers and
+#    Caravel Games forum members.
+#
+#
+#    It seems you haven't filled your CaravelNet account details yet. Creating a
+#    Caravel Games account will allow you to compete against other players from
+#    around the world and track the scores for each room.
+#caravelnet.score.no_scores: No scores for this room yet.
