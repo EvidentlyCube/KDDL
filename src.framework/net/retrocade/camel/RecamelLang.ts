@@ -78,12 +78,14 @@ export const RecamelLang = {
 	 * @param code Language code
 	 */
 	loadLanguageFile(fileString: string, code: ValidLanguage, isYaml: boolean): void {
+		for (const [key, value] of Object.entries(RecamelLang.parseLanguageFile(fileString, code, isYaml))) {
+			RecamelLang.set(code, key, value);
+		}
+	},
+
+	parseLanguageFile(fileString: string, code: ValidLanguage, isYaml: boolean): Record<string, string> {
 		if (isYaml) {
-			const data = parseMinimalYaml(fileString);
-			for (const [key, value] of Object.entries(data)) {
-				RecamelLang.set(code, key, value);
-			}
-			return;
+			return parseMinimalYaml(fileString);
 		}
 
 		fileString = fileString.replace(/(\x0D\x0A|\x0D)/gm, "\x0A");
@@ -95,6 +97,7 @@ export const RecamelLang = {
 
 		let lineBreak: number;
 
+		const output: Record<string, string> = {};
 		for (let line of lines) {
 			const firstChar = line.charAt(0);
 			if (firstChar == "#") {
@@ -112,7 +115,7 @@ export const RecamelLang = {
 				continue;
 			}
 
-			let name = line.substr(0, lineBreak);
+			let name = line.substring(0, lineBreak);
 			if (name.charAt(0) === '"' && name.charAt(name.length - 1) === '"') {
 				name = name.substring(1, name.length - 1);
 			}
@@ -120,8 +123,10 @@ export const RecamelLang = {
 			line = line.replace(/\\n/g, "\n");
 			line = line.replace(/\\t/g, "  ");
 
-			RecamelLang.set(code, name, line.substr(lineBreak + 1));
+			output[name] = line.substring(lineBreak + 1);
 		}
+
+		return output;
 	},
 
 	checkLangAgainstLang(sourceLang: ValidLanguage, checkedLang: ValidLanguage) {

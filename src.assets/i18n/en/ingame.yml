@@ -43,7 +43,7 @@ ingame.tile.71: Tarstuff Gate (Open)
 ingame.tile.checkpoint: Checkpoint
 
 ingame.tile.sword: Sword
-ingame.tile.swords: Sword
+ingame.tile.swords: "%% Swords"
 
 
 # Monster names
