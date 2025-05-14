@@ -1,5 +1,6 @@
 ## 1.6.6 — ????-??-??
- - [BUGFIX] KDDL Episode 2 ⟶ Level 5: 2S2E, removed duplicate achievement
+ - [BUGFIX] KDDL Episode 2 ⟶ Level 5: 2S2E, removed duplicate achievement "Can't Stand Yellow"
+ - [BUGFIX] KDDL Episode 2 ⟶ Level 5: 2N, updated achievement "Orb Avoider" to reward at the room edge to ensure the player is not stuck
 
 ## 1.6.5 — 2025-05-14
  - [BUGFIX] KDDL Episode 1 ⟶ Third Level: 3S1W, fixed incorrectly assigned translation keys which would have caused strings in this room to not be translatable

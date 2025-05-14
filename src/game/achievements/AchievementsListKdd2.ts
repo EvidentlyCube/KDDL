@@ -1,42 +1,19 @@
-import {Achievements} from "./Achievements";
-import {Progress} from "../global/Progress";
-import {CueEvents} from "../global/CueEvents";
-import {BitmapDataWritable, C} from "../../C";
-import {Game} from "../global/Game";
-import {TMonster} from "../objects/actives/TMonster";
-import {TStateGame} from "../states/TStateGame";
-import {ASSERT} from "../../ASSERT";
-import {Achievement} from "./Achievement";
-import {_} from "../../../src.framework/_";
-import {UtilsBitmapData} from "../../../src.framework/net/retrocade/utils/UtilsBitmapData";
-import {Gfx} from "../global/Gfx";
-import {T} from 'src/T';
+import { T } from 'src/T';
+import { ASSERT } from "../../ASSERT";
+import { C } from "../../C";
+import { Achievement } from "./Achievement";
 
-import {AchievementFactory, AchievementHelpers, addAchievement} from './AchievementHelpers';
+import { AchievementFactory, AchievementHelpers, addAchievement } from './AchievementHelpers';
 
 const {
-	levPos,
-	roomPos,
-	roomO,
 	playerTileO,
-	roomConquered,
 	ev,
-	evConquered,
 	player,
 	playerAt,
-	playerIn,
 	room,
-	evKilled,
-	levelID,
-	getLevID,
-	isLevelCompleted,
 	getMonster,
-	isUndo,
 	hasTile,
-	roomID,
-	percDesc,
-	anyMonsterIn,
-	hasMonsterAt,
+	playerAtEdge,
 } = AchievementHelpers;
 
 export function AchievementsListKdd2(to: Achievement[]) {
@@ -86,6 +63,7 @@ export function AchievementsListKdd2(to: Achievement[]) {
 		in: [1, "2N"],
 
 		failOn: () => ev(C.CID_ORB_ACTIVATED_BY_DOUBLE, C.CID_ORB_ACTIVATED_BY_PLAYER),
+		winOn: () => playerAtEdge()
 	});
 
 	// Fifth Level: 1S -- Clear the room without turning
