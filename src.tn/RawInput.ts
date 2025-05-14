@@ -1,4 +1,5 @@
 import { _ } from "src.framework/_";
+import { DebugConsole } from "src/game/DebugConsole";
 
 /** Location & Keyname -> New Keyname */
 const keyMap = new Map<number, Map<string, string>>();
@@ -185,6 +186,10 @@ class RawInput
 
 	private handleMouseEvent = (event: MouseEvent): void =>
 	{
+		if (DebugConsole.isVisible) {
+			return;
+		}
+
 		event.preventDefault();
 
 		this._isAltDown = event.altKey;
@@ -226,6 +231,17 @@ class RawInput
 
 	private handleKeyboardEvent = (event: KeyboardEvent): void =>
 	{
+		if (DebugConsole.isVisible) {
+			return;
+		}
+
+		if (event.type === 'keydown' && event.key === '`') {
+			event.preventDefault();
+			event.stopPropagation();
+			DebugConsole.show();
+			return;
+		}
+
 		if (event.key !== 'F11' && event.key !== 'F12') {
 			event.preventDefault();
 		}

@@ -190,5 +190,28 @@ export const UtilsString = {
 		}
 
 		return string;
+	},
+
+	tableToFormattedString(table: string[][]): string {
+		// Calculate table widths
+		const maxWidths = table[0].map(() => 0);
+		for (const row of table) {
+			for (let i = 0; i < row.length; i++) {
+				maxWidths[i] = Math.max(maxWidths[i], row[i].length);
+			}
+		}
+
+		const newTable: string[][] = [];
+		// Update cells to width
+		for (const oldRow of table) {
+			const row = [...oldRow];
+			newTable.push(row);
+
+			for (let i = 0; i < row.length; i++) {
+				row[i] = row[i].padStart(maxWidths[i], " ");
+			}
+		}
+
+		return newTable.map(row => row.join(" | ")).join("\n");
 	}
 }

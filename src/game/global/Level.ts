@@ -12,7 +12,8 @@ import { Progress } from "./Progress";
 import { _, _def, _has } from 'src.framework/_';
 import { PackedVars } from './PackedVars';
 import { VOCharacterCommand } from '../managers/VOCharacterCommand';
-import { ASSERT, assertDefined } from 'src/ASSERT';
+import { assertDefined } from 'src/ASSERT';
+import { DebugConsole } from '../DebugConsole';
 
 
 const nothingElement = document.createElement('nothingfound');
@@ -607,6 +608,7 @@ export class Level {
 			'Level Names': Level.getAllLevels().map(xml => `${textAttr(xml, 'NameMessage')} (Order=${attr(xml, 'OrderIndex')})`),
 			'Room Count': Level.getAllRooms().length,
 			'Required Room Count': Level.getAllRooms().filter(xml => xml.getAttribute('IsRequired') === '1').length,
+			'Secret Room Count': Level.getAllRooms().filter(xml => xml.getAttribute('IsRequired') === '1').length,
 			'Monster Counts': Level.getMonsterCounts(Level.hold),
 			'Trapdoors Count': Level.getTrapdoorCount(UtilsXPath.getAllElements('//Rooms', Level.hold)),
 			'i18n': Level.getAllTranslatableStrings(),
@@ -615,7 +617,7 @@ export class Level {
 		console.debug(info);
 	}
 
-	private static getMonsterCounts(context: Element | Document): Record<string, number> {
+	public static getMonsterCounts(context: Element | Document): Record<string, number> {
 		const monsterCounts: Record<string, number> = {};
 		for (const monsterXml of UtilsXPath.getAllElements('.//Monsters', Level.hold, context)) {
 			const type = monsterXml.getAttribute('Type');
@@ -628,7 +630,7 @@ export class Level {
 		return monsterCounts
 	}
 
-	private static getTrapdoorCount(roomXmls: Element[]): number {
+	public static getTrapdoorCount(roomXmls: readonly Element[]): number {
 		let trapdoorCount = 0;
 		for (const roomXml of roomXmls) {
 			const squaresBA = UtilsBase64.decodeByteArray(attr(roomXml, 'Squares'));
@@ -664,3 +666,27 @@ export class Level {
 		return trapdoorCount;
 	}
 }
+
+
+
+DebugConsole.registerAction('log-hold-stats', "Print information about the current hold", () => {
+	const { appendLine } = DebugConsole;
+
+	if (!Level.getHold()) {
+		throw new Error("No hold is currently loaded");
+	}
+
+	appendLine(` ‣ **Levels:** ${Level.getAllLevels().length}`);
+	for (const xml of Level.getAllLevels()) {
+		appendLine(`   ↳ **Level #${attr(xml, 'OrderIndex')}:** ${textAttr(xml, 'NameMessage')}`);
+	}
+	appendLine(` ‣ **Rooms:** ${Level.getAllRooms().length}`);
+	appendLine(` ‣ **Required Rooms:** ${Level.getAllRooms().filter(xml => xml.getAttribute('IsRequired') === '1').length}`);
+	appendLine(` ‣ **Secret Rooms:** ${Level.getAllSecretRooms().length}`);
+	appendLine(` ‣ **Trapdoor count:** ${Level.getTrapdoorCount(Level.getAllRooms())}`);
+	appendLine(` ‣ **Monster counts:**`);
+	const monsterCounts = Object.entries(Level.getMonsterCounts(Level.getHold())).sort((l, r) => l[0].localeCompare(r[0]));
+	for (const [monster, count] of monsterCounts) {
+		appendLine(`   ↳ **${monster}:** ${count}`);
+	}
+})

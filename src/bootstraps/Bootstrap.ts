@@ -20,6 +20,7 @@ import {TAPHoldOptions} from "../platform/InitTAP";
 import {PlatformOptions} from "../platform/PlatformOptions";
 import { Kddl6HoldOptions } from "src/platform/InitKDDL6";
 import { PermanentStoreSlot } from "src/game/global/store/PermanentStoreSlot";
+import { DebugConsole } from "src/game/DebugConsole";
 
 require('../../src.assets/font/toms-new-roman.css');
 
@@ -48,6 +49,7 @@ export class Bootstrap {
 			]
 		]
 
+		DebugConsole.init();
 		RecamelLang.initialize();
 		ResourcesCommon();
 

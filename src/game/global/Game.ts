@@ -933,8 +933,8 @@ export class Game {
 
 		Game.levelStatsSave();
 
-		const wasMastered: boolean = Progress.isGameMastered;
-		const conquered: boolean = Game.wasRoomConqueredOnThisVisit();
+		const wasMastered = Progress.isGameMastered;
+		const conquered = Game.wasRoomConqueredOnThisVisit();
 		if (conquered) {
 			Progress.storeDemo();
 

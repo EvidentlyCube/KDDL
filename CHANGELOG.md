@@ -1,3 +1,6 @@
+## 1.6.5 — ????-??-??
+ - [FEATURE] Added debug console that can be opened with backtick
+
 ## 1.6.4 — 2025-05-13
  - [OTHER] KDDL Episode 1 ⟶ Adjusted thresholds for the counting achievements
  - [OTHER] The Ancient Palace ⟶ Restored it to the original state (removed the secret room and minor changes in Entrance)

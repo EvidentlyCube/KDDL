@@ -1,5 +1,6 @@
 import {Core} from "./Core";
 import RawInput from "../../../src.tn/RawInput";
+import { DebugConsole } from "../DebugConsole";
 
 const COOLDOWN_KEYS = ['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Home', 'End', 'PageDown', "PageUp"];
 
@@ -19,6 +20,10 @@ export class DrodInput {
 	}
 
 	private static onKeyDown(e: KeyboardEvent) {
+		if (DebugConsole.isVisible) {
+			return;
+		}
+
 		if (DrodInput._shiftCooldownFrame == DrodInput._currentFrame && COOLDOWN_KEYS.indexOf(e.key) !== -1) {
 			DrodInput._isShiftDown = true;
 		}
@@ -37,6 +42,10 @@ export class DrodInput {
 	}
 
 	private static onKeyUp(e: KeyboardEvent) {
+		if (DebugConsole.isVisible) {
+			return;
+		}
+
 		if (e.key == 'Shift') {
 			DrodInput._isShiftDown = false;
 			DrodInput._shiftCooldownFrame = DrodInput._currentFrame;
