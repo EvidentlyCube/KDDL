@@ -1,0 +1,1505 @@
+File Name,Old Key,Translation
+fi.kdd1.txt,First Level,Ensimmäinen kerros
+fi.kdd1.txt,Second Level,Toinen kerros
+fi.kdd1.txt,Third Level,Kolmas kerros
+fi.kdd1.txt,Fourth Level,Neljäs kerros
+fi.kdd1.txt,Mastery Level,Mestaruuskerros
+fi.kdd1.txt,entr1,"Beethro Budkin, vankityrmien tuholaistorjunnan ammattilainen viidennessä polvessa, on saanut tehtävän Kuningas Duganilta siivota kuninkaan monikerroksinen vankityrmä, joka kärsii vakavasta hirviöongelmasta.
+Beethro veloittaa joka huoneesta erikseen, ja ammattilaisena häntä sitoo sopimuksen ehto, joka vaatii jokaisen huoneen tyhjentämistä kaikista hirviöistä palkkionsa vastineeksi.
+Beethro tarvitsee vain Hyvin suuren miekan työnsä tekoon, koska sen avulla voi kukistaa miltei joka hirviön yhdellä iskulla.
+
+-----
+
+""Toivottavasti et veloita ylimmästä kerroksesta. Puhdistutin sen jo etukäteen. Ainakin lähes kokonaan."" --Kuningas Dugan"
+fi.kdd1.txt,entr2,"Beethron taidot ovat hieman ruosteessa, mutta seuraavan tason pitäisi palauttaa hänet hyvään iskuterään."
+fi.kdd1.txt,entr3,"""Hmm..."" Beehtro pohti. ""Tähän mennessä olen nähnyt enimmäkseen torakoita. Tämä vaikuttaa helpolta hommalta."""
+fi.kdd1.txt,entr4,"""Olisipa minulla täällä apuna hieman useampi matkija!"" Beethro sanoi. ""Tämä sujuisi paljon nopeammin."""
+fi.kdd1.txt,entr4Back,"Beethro palasi tekemään kunnolla miekkamiehen työnsä, joka hänet oli palkattu tekemään."
+fi.kdd1.txt,entrMaster,"Beethro laskeutui portaita ja päätyi käytävään, jota ei näkynyt kartassa...
+
+Hänelle ei makseta tämän paikan puhdistamisesta, mutta ammattilaisen kunnia ajaa häntä eteenpäin."
+fi.kdd1.txt,sc1e0,Käytä numeronäppäimistöä tai näppäimiä 789uiojkl liikkumiseen. Näppäinvalinnat voi vaihtaa taukovalikosta (Escape).
+fi.kdd1.txt,sc1e1,"Tarkistaaksesi näppäinvalinnat, paina `Escape`-nappia, klikkaa `Yleiset ohjeet`-kohtaa ja valitse `Miten pelataan?`-kohta."
+fi.kdd1.txt,sc1_1n,"Tämän keltaisen oven tarkoitus selviää myöhemmin. 
+
+ Nyt voit jatkaa länteen."
+fi.kdd1.txt,sc1_1n1w1,Käännä miekkaasi `Q`- ja `W`-näppäimillä.
+fi.kdd1.txt,sc1_1n1w2,Iske kuulaa miekallasi avataksesi huoneen ovet.
+fi.kdd1.txt,sc1_1n1w3,Jotkin kuulat vaihtavat keltaisten ovien tilaa avoimesta suljetuksi ja takaisin.
+fi.kdd1.txt,sc1_2n1w1,Voit selvittää kuulan vaikutukset klikkaamalla sitä hiirellä. Eri värit ovissa tarkoittavat erilaisia vaikutuksia.
+fi.kdd1.txt,sc1_2n1w2,Oven tilan toistuvan vaihtamisen sijasta kuula voi vain avata tai sulkea sen.
+fi.kdd1.txt,sc1_3n1w1,"Siniset portit aukeavat, kun olet ratkaissut kaikki kerroksen vaaditut huoneet."
+fi.kdd1.txt,sc1_3n1w2,"Huoneet, joiden ratkaiseminen vaaditaan, merkitään punaisella taustavärillä pikkukartassa."
+fi.kdd1.txt,sc1_3n2w1,Aktiivisen puhe- tai tekstinäytön ohi voi siirtyä välilyönnillä.
+fi.kdd1.txt,sc1_3n2w2,"Kun poistut huoneesta, josta kaikki hirviöt on puhdistettu, se merkitään ratkaistuksi."
+fi.kdd1.txt,sc1_3n2w3,"Ratkaistut huoneet merkitään valkoisella pikkukartassa, kun taas ratkaisemattomat ovat punaisia."
+fi.kdd1.txt,sc1_3n2w4,"Ratkaise kaikki vaaditut huoneet, jotta reitti seuraavaan kerrokseen aukeaa."
+fi.kdd1.txt,sc1_4n3w,Voimanuolet estävät Beethron ja hirviöiden liikkeet vastakkaiseen suuntaan.
+fi.kdd1.txt,sc1_4n1w,"Vihreät portit aukeavat, kun huone on puhdistettu kaikista hirviöistä."
+fi.kdd1.txt,sc1_5n1w1,"Tarkkaile miten etelänpuoleinen torakka käyttäytyy, kun se yrittää liikkua vinottain nurkkaa päin. Voit odottaa kierroksen ajan painamalla ""I"" tai num.näpp. 5."
+fi.kdd1.txt,sc1_5n1w2,"Kun useimmat hirviöt liikkuvat esteeseen vinosuunnassa, ne siirtyvät pystysuuntaan jos mahdollista."
+fi.kdd1.txt,sc1_5n2w1,"Muista, että voit klikata kuulaa ja nähdä, mihin oviin se vaikuttaa."
+fi.kdd1.txt,sc1_5n2w2,"Ole varovainen! Tämä on vaarallinen paikka!
+
+Jos teet virheen, paina `Backspace`-näppäintä peruaksesi enintään kolme viimeistä liikettä."
+fi.kdd1.txt,sc1_5n2w3,"Voit myös perua liikkeen tai aloittaa uudestaan, kun kuolinanimaatiota näytetään!"
+fi.kdd1.txt,sc1_5n2w4,"Voit palata takaisin tilanteeseen, jossa koskit 'X':llä merkittyä tallennuspistettä.
+Paina `R` palataksesi alkuun tai tilanteeseen, jossa viimeksi koskit tallennuspistettä."
+fi.kdd1.txt,sc1_6n2w,Taitava miekkamies voi kukistaa kaikki torakat turvautumatta eteläiseen nurkkaukseen!
+fi.kdd1.txt,sc1_6n3w1,Käytä takasivallus-tekniikkaa torakan surmaamiseen.
+fi.kdd1.txt,sc1_6n3w2,Asetu vihreän alustan päälle ja päästä torakka seisomaan hiekkaruudulle suoraan pohjoispuolellesi...
+fi.kdd1.txt,sc1_6n3w3,Asetu vihreän alustan päälle ja päästä torakka seisomaan hiekkaruudulle suoraan eteläpuolellesi...
+fi.kdd1.txt,sc1_6n3w4,... ja liiku sitten koilliseen tappaaksesi sen.
+fi.kdd1.txt,sc1_6n3w5,... ja liiku sitten kaakkoon tappaaksesi sen.
+fi.kdd1.txt,sc1_6n3w6,Toista tämä ja harjoittele takasivallusta. Tämän tekniikan hallitseminen on hyvin tärkeää tulevissa koitoksissa.
+fi.kdd1.txt,sc1_5n1,Hätäkulkutie ei ole käytössä.
+fi.kdd1.txt,sc1_5n2,"Anteeks' vaa, muttei myö saaha tätä rakennosta valmiiks', ku näitä isoja russakoita juoksee iha raivona!"
+fi.kdd1.txt,sc1_4n,Pidä kasvihuoneen ovet kiinni.
+fi.kdd1.txt,sc1_1n1e,Nämä portaat vievät seuraavaan kerrokseen. Varo sieltä löytyviä vaaroja...
+fi.kdd1.txt,sc2_2n1,"Tiesitkö, että voit painaa Shift-näppäintä samalla kun teet minkä tahasta toiminnon, ja teet tällöin myös vastakkaisen toiminnon sen jälkeen."
+fi.kdd1.txt,sc2_2n2,"Shift+Odota odottaa seuraavan sikiämisvaiheeseen asti, ja `Num.näpp. +` tai `=` suorittaa edellisen toiminnon vastakohdan."
+fi.kdd1.txt,sc2_1n1e,Ei pitäisi harrastaa tällaista ilkivaltaa.
+fi.kdd1.txt,sc2e,Aloita pohjoisesta välttääksesi palaamasta turhaan ratkaistujen huoneiden läpi.
+fi.kdd1.txt,sc2_1s3e1,"Voit estää huoneesta poistumisen vahingossa painamalla 'X'-näppäintä."
+fi.kdd1.txt,sc2_1s3e2,"Lukon kuva pikkukartassa tarkoittaa, että huone on lukittu."
+fi.kdd1.txt,sc2_1s,"Älä tee sitä! On selvää, mitä tapahtuu!"
+fi.kdd1.txt,sc2_2s3e,Tarkka ajoitus tekee asioista helpompia.
+fi.kdd1.txt,sc3_3n,Minun täytyy varoittaa sinua matkijoista. Ne eivät ole ystäviäsi tai vihollisiasi -- ne vain matkivat jokaista liikettäsi. Älä käännä niille selkääsi.
+fi.kdd1.txt,sc3_3n1e,"Kaikki vangit ovat päätyneet jättiläistorakoiden suihin, ja minä olen seuraava! Minulle ei makseta tarpeeksi tällaisesta työstä. Häivyn täältä!
+
+--Vankilanjohtaja"
+fi.kdd1.txt,sc3_2n,"Tähän käytävään voi päästä ilman, että poistuu välillä huoneesta sen puhdistamisen jälkeen."
+fi.kdd1.txt,sc3_1n1w,"Näkymättömyysjuoman ansiosta sinua ei voi nähdä, mutta sinut voi silti haistaa tarpeeksi läheltä."
+fi.kdd1.txt,sc3_1e,Niin pitkä reissu. Se melkein vaikuttaisi tarpeettomalta.
+fi.kdd1.txt,sc3_1s,"Haastava pulma: Billin kahdeksan porttia. Se oli ennen paljon vaikeampi, mutta nykyään voin tutkia kuulia ja nähdä, mitä ne tekevät."
+fi.kdd1.txt,sc3_2s1w,"Haluan kertoa sinulle tämän: aina kun näet pitkiä ja vaikeita reittejä, sinun kannattaa etsiä oikoteitä."
+fi.kdd1.txt,sc3_2s1,"Käänny takaisin! Etkö tiedä, että viime vuoden aikana vankityrmiin liittyvien kuolintapauksien määrä nousi 32 prosenttia?"
+fi.kdd1.txt,sc3_2s2,"Pidä mielessä: tyrmien tutkiminen EI ole turvallista, varsinkin jos se tapahtuu päihteiden vaikutuksen alaisena.
+-TKVV (Tyrmäkuolemia vastustavat vanhemmat)"
+fi.kdd1.txt,sc4_2n1e1,Tämä on mestariportti. Se ei aukea ennen kuin olet läpäissyt koko holviston ja ratkaissut kaikki salahuoneet.
+fi.kdd1.txt,sc4_2n1e2,"Alkuperäisessä ""King Dugan's Dungeon"" -pelissä tämä oli hyppyhuone, jonka kautta saattoi ohittaa kerroksen tai pari."
+fi.kdd1.txt,sc4_1n1,"Vihje:
+
+Et tarvitse matkijan apua torakoita vastaan sisäänkäynnin luona."
+fi.kdd1.txt,sc4_1n2,"Vihje:
+
+Harjoittele huolellisesti ja tarkasti TAKASIVALLUS-tekniikkaa -- se on hyvä osata, kun molemmilla puolillasi on hirviö!"
+fi.kdd1.txt,sc4_2e,"Jos olet tyylitaituri, kaikki yhdeksän matkijaa ovat rivissä oikealla puolellasi."
+fi.kdd1.txt,scMe1,Vaikeampia versioita nykyisistä pulmista.
+fi.kdd1.txt,scMe2,Viimeiset sanat!
+fi.kdd1.txt,scMe3,Vaikeita uusia huoneita.
+fi.kdd1.txt,scM_1s1,Siinä se. Olet nyt ratkaissut kaiken tässä pelissä. Jäljellä voi olla vielä pari saavusta.
+fi.kdd1.txt,scM_1s2,Haluan vilpittömästi onnitella sinua ja kehottaa jatkamaan matkaasi.
+fi.kdd1.txt,scM_1s3,"CaravelGames.com-sivulta löytyvät seuraavat jaksot KDDL-pelistä. Voit myös ladata sieltä koko DROD-pelisarjan pelit Windows-, MacOS- tai Linux-koneille."
+fi.kdd1.txt,scM_1s4,Hyviä pelejä!
+fi.kdd1.txt,scM_1s5,Tässä on pieni palkinto! Tapa kaikki silmät astumatta kertaakaan ruskealle ruoholle.
+fi.kdd1.txt,scM_1s6,"Torakkaemot kuolevat, kun astut tallennuspisteelle oikeassa ylänurkassa."
+fi.kdd1.txt,scM_1s7,"Hienoa, hyvin menee!"
+fi.kdd1.txt,sp1e0,Käytä numeronäppäimiä liikkumiseen.
+fi.kdd1.txt,sp1e1,"Jos pelaat kannettavalla tietokoneella, voit liikkua numeronäppäimiä vastaavilla näppäimillä: 789, UIO, JKL"
+fi.kdd1.txt,sp1e2,Jatka menemällä pohjoiseen.
+fi.kdd1.txt,sp1_3n2w1,"Ahaa, vankityrmän ensimmäinen torakka!"
+fi.kdd1.txt,sp1_3n2w2,"Tule Beethron luo, tuleva torakkapurilainen."
+fi.kdd1.txt,sp1_3n2w3,"Puhdas tappo! Tämä syö sujuu hyvin, se on varmaa!"
+fi.kdd1.txt,sp1_6n2w,"Olisin voinut tappaa nuo torakat suojautumatta soppeen, mutta tänään on laiska olo."
+fi.kdd1.txt,sp1_6n3w1,Löysit salahuoneen!
+fi.kdd1.txt,sp1_6n3w2,"Etsi ja ratkaise ne kaikki, niin pääset erityiselle mestarihaastealueelle."
+fi.kdd1.txt,sp2_2e,"Tuo emo tekee lauman uusia torakoita siinä ajassa, mikä minulla menee kuulan luona käymiseen!"
+fi.kdd1.txt,sp2_1s1e1,"Hei, se on pirunsiipi!"
+fi.kdd1.txt,sp2_1s1e2,"Ja ihan yksinään... se tarkoittaa, että voin joutua ajamaan sitä takaa ympäri koko huonetta."
+fi.kdd1.txt,sp2_1s1e3,"Pirunsiivet, toisin kuin torakat, karkaavat pois Beethron läheltä ja pyrkivät pysymään viiden ruudun etäisyydellä."
+fi.kdd1.txt,sp2_1s1e4,"Ne eivät ole niin varovaisia suuremmassa parvessa, eivätkä ne epäröi hyökätä ympäröimänsä saaliin kimppuun."
+fi.kdd1.txt,sp2_2s2e1,Hmmm...kerkeänkö tappaa nuo emot ennen kuin ne munivat munia?
+fi.kdd1.txt,sp2_2s2e2,Äh...olin liian hidas!
+fi.kdd1.txt,sp2_2s2e3,Ha! Helposti.
+fi.kdd1.txt,sp2_2s3e1,"Olen varma, että nämä torakkaemot olisi voinut tappaa helpommin."
+fi.kdd1.txt,sp2_2s3e2,TÄMÄPÄ oli hieno sivallusmestarin taidonnäyte.
+fi.kdd1.txt,sp3_3n1e,"Eikö vankeja ole jäljellä? Tästä tulee yksinäinen työ, jos ei ole ketään juttukaveria..."
+fi.kdd1.txt,sp3_2n,Eipä ollut mikään vitsi.
+fi.kdd1.txt,sp3_1n2w0,Hui!  Tällä kertaa taidan tarvita taikajuomaa!
+fi.kdd1.txt,sp3_1n2w1,Huh! Nyt torakkaemot eivät muni ellen ole niiden lähellä!
+fi.kdd1.txt,sp3_1n2w2,"Olipa hankalaa, mutta ei liian hankalaa minun kaltaiselle koluajalle!"
+fi.kdd1.txt,sp3_1n2w3,Ha! Mikään ei ole liian kova pala tälle koluajalle!
+fi.kdd1.txt,sp3_1n1w1,"Hei, tämä on melko hienoa!"
+fi.kdd1.txt,sp3_1n1w2,"Joo, tiedän että olisi voinut puhdistaa tämän huoneen ilman näkymättömyyttä, mutta se oli hauskaa näinkin."
+fi.kdd1.txt,sp3_1n1w3,Se ei ollut kovin vaikeaa...Miksikähän tämä taikajuoma on täällä?
+fi.kdd1.txt,sp3_1s,"Joo, olisin voinut avata kaikki ovet nopeamminkin."
+fi.kdd1.txt,sp3_3s1w1,Vaikuttaa vaaralliselta...se on jokin ansa...
+fi.kdd1.txt,sp3_3s1w2,Kuulan iskemisen jälkeen voin puhdistaa koko huoneen ilman miekankääntöjä. Ihan vain taidonnäytteenä!
+fi.kdd1.txt,sp3_3s1w3,"No, käänsin miekkaani, mutta olen sentään yhä elossa."
+fi.kdd1.txt,sp3_3s1w4,Vau! Olisipa joku ollut näkemässä.
+fi.kdd1.txt,sp4_2n1e,"Taas yksi salakammio paikassa, jossa kukaan muu kuin minä ei odota sellaista."
+fi.kdd1.txt,sp4_1n1,"Joo, olisin voinut puhdistaa tämän huoneen menemättä takaisin sisäänkäyntiin."
+fi.kdd1.txt,sp4_1n2,Beethro Budkin voittaa vaikeimmatkin haasteet!
+fi.kdd1.txt,sp4_2e1,Hyvät hykkyräiset! Matkijoitakin voi olla liikaa!
+fi.kdd1.txt,sp4_1s2e,"Mistä johtuu, että kaikkien ansaluukkujen tiputtaminen tekee huoneesta paremman näköisen?"
+fi.kdd1.txt,spM_1s,Epäonnistuit...
+fi.kdd1.txt,achName0,Pidän sinua silmällä
+fi.kdd1.txt,achName1,Äidinsurmaaja
+fi.kdd1.txt,achName2,Heräsin ja vihasin kaikkea
+fi.kdd1.txt,achName3,Todellinen sivallusmestari
+fi.kdd1.txt,achName4,Vakaa käsi
+fi.kdd1.txt,achName5,Emopurilainen
+fi.kdd1.txt,achName6,Kertalippu
+fi.kdd1.txt,achName7,Ole ketterä!
+fi.kdd1.txt,achName8,Ole nopea!
+fi.kdd1.txt,achName9,Rauhallinen tyyli
+fi.kdd1.txt,achName10,Lue käärö
+fi.kdd1.txt,achName11,Näkyvyys
+fi.kdd1.txt,achName12,Näkymättömyys
+fi.kdd1.txt,achName13,Ylinopeus
+fi.kdd1.txt,achName14,Billin kahdeksan porttia
+fi.kdd1.txt,achName15,Tarkka torakoiden hallinta
+fi.kdd1.txt,achName16,Mysteeri
+fi.kdd1.txt,achName17,Älä katso taaksesi
+fi.kdd1.txt,achName18,Yksin torakoiden kanssa
+fi.kdd1.txt,achName19,Rotkot ovat kauniita
+fi.kdd1.txt,achName20,Olemattomuuden tyhjyys
+fi.kdd1.txt,achName21,Hyvä tyyli
+fi.kdd1.txt,achName22,Amatöörikoluaja
+fi.kdd1.txt,achName23,Nouseva sivaltaja
+fi.kdd1.txt,achName24,Palkattu tuholaistorjuja
+fi.kdd1.txt,achName25,Olen ammattilainen
+fi.kdd1.txt,achName26,Mestaruus
+fi.kdd1.txt,achName27,Jälkimestaruus
+fi.kdd1.txt,achName28,Paistetut torakat
+fi.kdd1.txt,achName29,Viipaloidut torakkaemot
+fi.kdd1.txt,achName30,Munakokkeli
+fi.kdd1.txt,achName31,Pahan silmän vanukas
+fi.kdd1.txt,achName32,Pirunsiiven kastike
+fi.kdd1.txt,achName33,Äänirauta
+fi.kdd1.txt,achName34,Alas vihreät
+fi.kdd1.txt,achName35,Lauman hallinta
+fi.kdd1.txt,achName36,Uudelleensyntyjä
+fi.kdd1.txt,achName37,Aika on nollassa!
+fi.kdd1.txt,achName38,Tilan tekijä
+fi.kdd1.txt,achName39,Kuukävelyllä
+fi.kdd1.txt,achDesc0,Herätä kolme pahaa silmää yhden vuoron aikana
+fi.kdd1.txt,achDesc1,"Tapa torakkaemo samaan aikaan, kun sillä on munia"
+fi.kdd1.txt,achDesc2,"Kyllä, sinun pitää harrastaa ilkivaltaa"
+fi.kdd1.txt,achDesc3,Älä piiloudu nurkkaukseen Ensimmäisen kerroksen huoneessa 6P 2L
+fi.kdd1.txt,achDesc4,"Puhdista hirviöistä kaikki paitsi yksi ei-salaisista huoneista Ensimmäisessä kerroksessa kääntämättä miekkaasi.
+Onnistunut %%/6 huoneessa."
+fi.kdd1.txt,achDesc5,Tapa torakkaemo Toisen kerroksen huoneessa 2I ennen kuin se pääsee nurkkaan
+fi.kdd1.txt,achDesc6,"Älä käännä miekkaasi Toisen kerrokseen huoneessa 1E sen jälkeen, kun isket kuulaa"
+fi.kdd1.txt,achDesc7,Tapa kaikki torakkaemot ennen kuin ne munivat Toisen kerroksen huoneessa 2E 2I
+fi.kdd1.txt,achDesc8,Puhdista Toisen kerroksen huone 2E 3I ennen kuin yhtään munaa munitaan
+fi.kdd1.txt,achDesc9,Puhdista Toisen kerroksen huone 3P kääntämättä miekkaasi
+fi.kdd1.txt,achDesc10,"Lue käärö Kolmannen kerroksen huoneessa 2P ilman, että poistut välillä huoneeta"
+fi.kdd1.txt,achDesc11,Tapa kaikki torakat ilman taikajuomaa Kolmannen kerroksen huoneessa 1P 1L
+fi.kdd1.txt,achDesc12,Puhdista Kolmannen kerroksen huone 1P 2L ilman taikajuomaa
+fi.kdd1.txt,achDesc13,"Puhdista Kolmannen kerroksen huone 1P 1I ilman, että emot munivat yhtään munaa"
+fi.kdd1.txt,achDesc14,Ratkaise Billin kahdeksan porttia iskemällä kuulia viisi kertaa (Kolmas kerros 1E)
+fi.kdd1.txt,achDesc15,Houkuttele kaikki kolme torakkaa ulos ennen kuin tapat yhtään Kolmannen kerroksen huoneessa 2P 1I
+fi.kdd1.txt,achDesc16,Puhdista Kolmannen kerroksen huone 3P ilman taikajuomaa
+fi.kdd1.txt,achDesc17,"Puhdista Neljännen kerroksen huone 1P ilman, että palaat sisääntulokäytävään"
+fi.kdd1.txt,achDesc18,Puhdista Neljännen kerroksen huone 1E 1I ilman matkijajuomaa
+fi.kdd1.txt,achDesc19,Pudota kaikki ansaluukut Neljännen kerroksen huoneessa 1E 2I ja puhdista huone samalla kerralla
+fi.kdd1.txt,achDesc20,Puhdista Neljännen kerroksen huone 2E 1I ja pudota kaikki ansaluukut samalla kerralla
+fi.kdd1.txt,achDesc21,Ratkaise Neljännen kerroksen huone 2I tyylikkäästi
+fi.kdd1.txt,achDesc22,Puhdista koko Ensimmäinen kerros
+fi.kdd1.txt,achDesc23,Puhdista koko Toinen kerros
+fi.kdd1.txt,achDesc24,Puhdista koko Kolmas kerros
+fi.kdd1.txt,achDesc25,Puhdista koko Neljäs kerros
+fi.kdd1.txt,achDesc26,Ratkaise mestaruushaaste
+fi.kdd1.txt,achDesc27,Ratkaise jälkimestaruushaaste
+fi.kdd1.txt,achDesc28,Tapa 35 torakkaa
+fi.kdd1.txt,achDesc29,Tapa 20 torakkaemoa
+fi.kdd1.txt,achDesc30,Tapa 15 torakanmunaa
+fi.kdd1.txt,achDesc31,Tapa 15 pahaa silmää
+fi.kdd1.txt,achDesc32,Tapa 5 pirunsiipeä
+fi.kdd1.txt,achDesc33,Iske kuulaa kolmen peräkkäisen vuoron aikana
+fi.kdd1.txt,achDesc34,Avaa vihreä portti viisi kertaa
+fi.kdd1.txt,achDesc35,Tapa yhteensä 2500 hirviötä
+fi.kdd1.txt,achDesc36,Kuole yhteensä 50 kertaa
+fi.kdd1.txt,achDesc37,Peru yhteensä 250 liikettä
+fi.kdd1.txt,achDesc38,Pudota yhteensä 100 ansaluukkua
+fi.kdd1.txt,achDesc39,Liiku yhteensä 5000:n askeleen verran
+fi.kdd1.txt,outro,"Mitä haasteita Beethro kohtaa seuraavaksi? Onko luvassa pahempia vaaroja? Onnistuuko hän puhdistamaan koko Kuningas Duganin vankityrmän ja saako hän maksunsa?
+
+
+<font size=""32"" color=""#FFFF00"">Onneksi olkoon!</font>
+
+Olet selvittänyt ensimmäisen osan Deadly Rooms of Death, King Dugan's Dungeon Lite -holvistosta. Toivottavasti nautit kokemuksesta.
+Nyt kun olet laskeutunut viimeisiä portaita tässä tasokokoelmassa, voit yrittää ratkaista Mestarihaastetta ja sen jälkeen Jälkimestarihaastetta. Aloita etsimällä kaikki salahuoneet. Löytymättömien salahuoneiden määrä jokaisessa kerroksessa näkyy nyt Lataus-ruudussa.
+Kun onnistut ratkaisemaan jokaisen huoneen, erityinen Mestaruusalue aukeaa. Löydätkö tiesi sinne?
+Voit myös pelata seuraava jaksoa DROD:KDDL-sarjassa.
+
+Ennen kuin jätän sinut nauttimaan ylevästä voitontunteestasi, haluan vielä kiittää muutamaa ihmistä, joiden ansiosta tämä peli näki päivänvalon:
+
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - Pelin luoja, isä ja keksijä. Ilman häntä tämä ainutlaatuinen peli-idea ei olisi ikinä toteutunut.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - Hän koodasi suurimman osan DROD:JtRH- ja DROD:TCB -peleistä. Kiitos tämän hienon esimerkin, Flash DROD -pelin teko oli pelkkää iloa.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Caravel-foorumin herra ja CaravelNetin pääkoodaaja. Hänen ansiostaan voit kilpailla parhaista tuloksista, ja tehdä paljon muutakin!
+
+
+<font size=""23"" color=""#FFFF00"">Ohjelmointi ja kehitys</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Grafiikka ja musiikki</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Palvelintoimintojen kehitys</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Pelisisällön kehitys</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Päätestaajat</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testaajat</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Käännökset</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Ääninäytteleminen</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Alkuperäinen koodaus, idea ja sisältö</font> - %%
+
+
+Nähdään ensi kerralla!
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+fi.kdd1.txt,complNextGame,"Pelaa seuraavaa kerroskokoelmaa - KDD Lite 2:ta. Uusi peli aukeaa uuteen ikkunaan, ja voit sulkea tämän ikkunan sen jälkeen. Saavuttamasi tilanne on tallennettu."
+fi.kdd1.txt,scNew1,Katso tarkkaan mitä sikiämiskierroksella tapahtuu.
+fi.kdd1.txt,scNew2,"Torakanmunia ei ikinä ilmesty ansaluukkujen, voimanuolten tai avattujen keltaisten porttien päälle."
+fi.kdd1.txt,scNew3,"Lisäksi, jos torakkaemo liikkuu sikiämiskierroksen aikana, se ei muni munaa ruutuun, josta se juuri siirtyi pois."
+fi.kdd1.txt,sc1_New1N1W,"Jos et ole vielä huomannut, torakkaemot liikkuvat pois päin sinusta eivätkä muni munia avointen keltaisten porttien päälle."
+fi.kdd1.txt,sc1_New3N1,"Torakkaemot munivat munia 30 vuoron välein (sillä vuorolla, joka seuraa sikiämislaskurin muuttumista punaisen väriseksi)."
+fi.kdd1.txt,sc1_New3N2,Munista kuoriutuu aikuisia torakoita viiden kierroksen jälkeen.
+fi.kdd1.txt,sc1_New3E,Torakkaemot juoksevat aina pois päin Beethrosta; tätä voi käyttää niiden ohjailuun.
+fi.kdd1.txt,sc1_new6n2w1,Murtuneita ja salaisia seiniä voi vahingoittaa lyömällä niitä miekalla.
+fi.kdd1.txt,sc1_new6n2w2,Salaseinät on kuitenkin vaikeampi erottaa tavallisista seinistä.
+fi.kdd1.txt,sc1_new6n2w3,"Huomaa siis nurkassa olevat salaseinät, kun tulet takaisin."
+fi.kdd1.txt,sc1_5n1w3,Tämä peli on täysin ennakoitava - siinä ei ole mitään satunnaisia tai ennalta-arvaamattomia toimintoja.
+fi.kdd1.txt,sc1_new6N,Salahuoneiden ratkaisemista ei vaadita yhdellä läpipeluukerralla Mestarihaasteen saavuttamiseksi.
+fi.kdd1.txt,sc_evileyes,Tässä kerroksessa kohtaat pahoja silmiä. Ne heräävät astuttuasi niiden näkökenttään ja ajavat sinua takaa samalla tavalla kuin torkata.
+fi.kdd1.txt,defCont,Oletuskontrollit:
+fi.kdd1.txt,sc_diago,Voit liikkua vinottain jopa hyvin kapeista kohdista.
+fi.kdd1.txt,sc_broken,Tuhoa nämä murtuneet seinät ja salaseinät miekallasi.
+fi.kdd1.txt,sc_queens1,"Torakkaemot munivat joka 30. vuoro (seuraavalla vuorolla sen jälkeen, kun sikiämislaskuri on punainen)."
+fi.kdd1.txt,sc_queens2,Torakan munista kuoriutuu aikuisia torakoita viisi kierrosta niiden munimisen jälkeen.
+fi.kdd1.txt,sc_queens3,"Munat eivät ilmesty voimanuolten, ansaluukkujen tai keltaisten porttien päälle. Paina ""I"" tai num.näpp 5 odottaaksesi yhden kierroksen ajan."
+fi.kdd1.txt,sc_mimics,"Kun olet astunut matkijajuoman ruutuun, valitse matkijan sijoituskohta hiiren tai odotusnäppäimen avulla."
+fi.kdd1.txt,sc_shiftwait,Odottaminen seuraavaan sikiämisvaiheeseen Shift+odotus-nappien avulla voi olla hyödyllistä.
+fi.kdd1.txt,sp_mother1,Tervamaammot saavat tervan kasvamaan yhden ruudun verran kaikkiin suuntiin joka 30. kierros.
+fi.kdd1.txt,sp_mother2,"Kasvavan tervan keskellä on melko turvallista olla, mutta sinun täytyy varoa tervahisia, joita voi syntyä kasvuvaiheessa."
+fi.kdd1.txt,sc_backswipe,"Kävele hiekkaista polkua pitkin oppiaksesi takasivallus-tekniikan! Muista, että voit liikkua vinottain, äläkä käännä miekkaasi."
+fi.kdd1.txt,sc_trapdoors,"Nämä vaaleanpunaisen violetit ruudut ovat ansaluukkuja, ja ne putoavat jos sinä astut tai matkija astuu pois niiden päältä."
+fi.kdd2.txt,Fifth Level,Viides kerros
+fi.kdd2.txt,Sixth Level,Kuudes kerros
+fi.kdd2.txt,Seventh Level,Seitsemäs kerros
+fi.kdd2.txt,Eighth Level,Kahdeksas kerros
+fi.kdd2.txt,Mastery Level,Mestaruuskerros
+fi.kdd2.txt,Tutorial,Harjoituskerros
+fi.kdd2.txt,entr5,"Beethro Budkin, vankityrmien tuholaistorjunnan ammattilainen viidennessä polvessa, on saanut tehtävän Kuningas Duganilta siivota kuninkaan monikerroksinen vankityrmä, joka kärsii vakavasta hirviöongelmasta.
+Beethro veloittaa joka huoneesta erikseen, ja ammattilaisena häntä sitoo sopimuksen ehto, joka vaatii jokaisen huoneen tyhjentämistä kaikista hirviöistä palkkionsa vastineeksi.
+Beethro tarvitsee vain Hyvin suuren miekan työnsä tekoon, koska sen avulla voi kukistaa miltei joka hirviön yhdellä iskulla.
+
+-----
+
+Edellinen kerros jätti Beethron henkihieveriin. ""Tästä näköjään tuleekin rankka pesti."" Onneksi seuraavasta kerroksesta puhalsi viileä tuulahdus."
+fi.kdd2.txt,entr6,"Ehkäpä arkkitehti yritti liikaa saadakseen pointtinsa lävitse, mikä se vain olikin. Joka tapauksessa, voit olla tyytyväinen, ettei Duganin vankityrmässä ole toista samanlaista kerrosta kuin tämä."
+fi.kdd2.txt,entr6Back,"Beethro palasi tekemään kunnolla miekkamiehen työnsä, joka hänet oli palkattu tekemään."
+fi.kdd2.txt,entr7,"Kun Beethro asteli alas portaita, kuuli hän äänekästä sihinää. Koska hän oli kokenut ammattilainen, tiesi hän heti mistä oli kyse, vaikka olikin häkellyksissään metelistä. ""Jeeveli!  Kuinka monta noita kammotuksia onkaan tuolla alhaalla?"""
+fi.kdd2.txt,entr8,"Jotkin pedot ovat ovelia ja tappavia, ja toiset tuskastuttavan vaikeita putsata pois."
+fi.kdd2.txt,entrMaster,"Beethro asteli alas vain löytääkseen itsensä kartoittamattomalta alueelta...
+
+Hänelle ei makseta tästä, mutta ammattilaisen kunnia pakotti hänet etenemään."
+fi.kdd2.txt,entrTut,Harjoitus
+fi.kdd2.txt,entrTutLeave,Beethro jätti harjoitustason jälkeensä ajatuksen rikkaampana.
+fi.kdd2.txt,entrPremaster,"Beethro asteli ylös ja alas huonosti valaistuissa portaikoissa. ""Tämä on turvallisuushaitta ja täällä ei edes ole torakoita! Jonkun pitäisi laittaa tänne edes kaide tai-"" ajatteli Beethro ennen putoamistaan kaksitoista kertaa alas. Hän löi itsensä kanveesiin kokonaiseksi tunniksi. Uneksittuaan kauhean kauheita unia silmävanukkaasta, Beethro hiljalleen heräsi huoneesta. ""Voi lumpe! Olisiko se niin kauhean vaikeaa kartoittaa nämä alueet?"""
+fi.kdd2.txt,sc51n2w,Jätithän itsellesi tien takaisin.
+fi.kdd2.txt,sc63e,Salainen kulkutie
+fi.kdd2.txt,sc61s1w,"Tämä on Mestariportti
+Se aukeaa kun olet läpäissyt kaikki huoneet, sisältäen salaiset sellaiset."
+fi.kdd2.txt,sc72n1w,"Heikkomieliset, palatkaa takaisin!  Tämän huoneen voi ratkaista vain älyllinen eliömuoto.
+(Tämä huone ei ole pakollinen.)"
+fi.kdd2.txt,sc71n1,En uskonut sinun pystyvän siihen.
+fi.kdd2.txt,sc71n2,"No, myönnän etteivät ne ole AIVAN samanlaisia kuin valopyörät
+
+-Erik"
+fi.kdd2.txt,sc71n3,"Kunnianosoitukseni Tronille.
+
+-Erik"
+fi.kdd2.txt,sc81s1,Elävää tervaa voi vahingoittaa vain sen tasaisista reunakohdista.
+fi.kdd2.txt,sc81s2,"Jokainen möykky, joka ei ole 2 ruutua leveä ja korkea, on epävakaa ja hajoaa tervahisiksi."
+fi.kdd2.txt,sc81s3,Harjoittele vain rauhassa.
+fi.kdd2.txt,sc81s1e,Viisas mies hoitaa pohjoisen huoneen ennen kuin kulkee tätä käytävää.
+fi.kdd2.txt,sc83s,Hoida eteläinen ja läntinen polku ennen jatkamista eteenpäin. Muuten voi tulla monta mutkaa matkaan.
+fi.kdd2.txt,scMe1,Vanhoista pulmista vaikeampia versioita.
+fi.kdd2.txt,scMe2,Viimeiset sanat.
+fi.kdd2.txt,scMe3,Uudet kujeet.
+fi.kdd2.txt,scM1s1,Kappas kummaa! Muutamasta saavutuksesta välittämättä olet läpäissyt näköjään kaiken.
+fi.kdd2.txt,scM1s2,"Hyväksy onnitteluni, sillä olet tehnyt rankan pestin!"
+fi.kdd2.txt,scM1s3,"Löydät seuraavat KDDL:n episodit ja ladattavat DROD -pelit Windows, MacOS, ja Linux -käyttöjärjestelmille osoitteesta caravelgames.com"
+fi.kdd2.txt,scM1s4,Anna mennä!
+fi.kdd2.txt,scM1s5,Tässä pikku palkinto! Surmaa kaikki silmät astumatta ruskealle ruoholle.
+fi.kdd2.txt,scM1s6,Kaksi torakkaemoa alhaalla kuolevat kun astut tallennuspisteeseen yläoikeassa nurkassa.
+fi.kdd2.txt,scM1s7,Vilpittömät onnitteluni!
+fi.kdd2.txt,scT1,"Liiku kauas oikealle, ja katso, miten torakka käyttäytyy liikkuessaan nurkkaa vasten vinosuuntaisesti."
+fi.kdd2.txt,scT2,"Käärmeet liikkuvat noudattaen omia, mutkikkaita sääntöjä. Niiden suosiman kulkusuunnan näet kellon alapuolella."
+fi.kdd2.txt,scT3,"Kun DROD hirviö liikkuu nurkkaa vastaan vinosuuntaisesti, se suosii pystysuuntaista liukumaliikkettä, jos mahdollista."
+fi.kdd2.txt,scT4,"`Escape pysäyttää pelin ja avaa valikon. Painamalla ""Yleiset neuvot""-kohtaa, voit lukea lisää ja saada selville näppäinyhdistelmät."
+fi.kdd2.txt,scT5,"Jotta voisit välttää huoneesta vahingossa poistumisen, paina X lukitaksesi tai avataksesi huoneen. Pieni lukko pikkukartalla kuvastaa, onko huone lukittu."
+fi.kdd2.txt,scT6,"Shift+Näppäin suorittaa kyseisen liikkeen ja sen vastakohdan..
+Shift+Odota odottaa seuraavaan kasvukauteen.
+Num.näpp. '+' tai '=' suorittaa vastakohtaiset liikkeen."
+fi.kdd2.txt,scT7,F3 näyttää siirtojen määrän. Käytä sitä parantamaan ennätyksiäsi!
+fi.kdd2.txt,scT8,Näppäimet voi vaihtaa asetuksista.
+fi.kdd2.txt,scT9,"CaravelNet:iä käyttämättömät ihmiset eivät pääse pistelistoille, mutta näkevät sijan, minkä olisivat saaneet."
+fi.kdd2.txt,scT10,"Paina pelielementtejä tietääksesi, mitä kuulat tekevät tai mitä silmät näkevät."
+fi.kdd2.txt,scT11,Välilyönti poistaa puheen ja saavutukset pois näkyviltä.
+fi.kdd2.txt,scT13,"Pirunsiivet, toisin kuin torakat, karkaavat pois Beethron läheltä ja pyrkivät pysymään viiden ruudun etäisyydellä."
+fi.kdd2.txt,scT14,"Ne eivät ole niin varovaisia suuremmassa parvessa, eivätkä ne epäröi hyökätä ympäröimänsä saaliin kimppuun."
+fi.kdd2.txt,sc1_6n3w1,Käytä takasivallus-tekniikkaa torakan surmaamiseen.
+fi.kdd2.txt,sc1_6n3w2,Asetu vihreän alustan päälle ja päästä torakka seisomaan hiekkaruudulle suoraan pohjoispuolellesi...
+fi.kdd2.txt,sc1_6n3w3,Asetu vihreän alustan päälle ja päästä torakka seisomaan hiekkaruudulle suoraan eteläpuolellesi...
+fi.kdd2.txt,sc1_6n3w4,... ja liiku sitten koilliseen tappaaksesi sen.
+fi.kdd2.txt,sc1_6n3w5,... ja liiku sitten kaakkoon tappaaksesi sen.
+fi.kdd2.txt,sc1_6n3w6,Toista tämä ja harjoittele takasivallusta. Tämän tekniikan hallitseminen on hyvin tärkeää tulevissa koitoksissa.
+fi.kdd2.txt,sp5e1,Tämä on harjoitusalue.
+fi.kdd2.txt,sp5e2,Käy täällä jos et ole aiemmin pelannut.
+fi.kdd2.txt,sp5e3,"Liiku numeronäppäimistön avulla tai näppäimillä 789, UIO, JKL."
+fi.kdd2.txt,sp52n1,"Saat loistavan syyn rehvastella, jos läpäisen tämän huoneen aukomatta ovia."
+fi.kdd2.txt,sp52n2,Ha! Surkeaa arkkitehtuuria. Laittaa nyt turhia kuulia tänne!
+fi.kdd2.txt,sp51n2w1,"Oi, paljon pahoja silmiä."
+fi.kdd2.txt,sp51n2w2,"Ah! Minua vieläkin kylmää se, kun tuollainen herää."
+fi.kdd2.txt,sp63e,Tässä on jokin kuvio...
+fi.kdd2.txt,sp63n,Vaikuttaa tutulta...
+fi.kdd2.txt,sp63w,Duganin on parasta maksaakin näistä huoneista!
+fi.kdd2.txt,sp72n1w1,Jeeveli! Tuon käärmeen täytyy olla noin tuhannenneljänsadanneljänkymmenenviiden jalanmitan pituinen!
+fi.kdd2.txt,sp72n1w2,"Mutta sopimukseni mukaan minua ei velvoiteta käsittelemään hirviöitä, jotka ovat yli tuhannenneljänsaanneljänkymmenenneljän jalanmitan pituisia."
+fi.kdd2.txt,sp72n1w3,Voisin jättää tämän huoneen väliinkin.
+fi.kdd2.txt,sp71n1e1,Miekkani ei viillä palastakaan tuosta matelijanpeijoonista.
+fi.kdd2.txt,sp71n1e2,"Jos johdatan sen umpikujaan, se kuolee sinne."
+fi.kdd2.txt,sp84s1,"Tervamaammoja?! Voi ei, ei, ei..."
+fi.kdd2.txt,sp83s1e,Minä vihaan tervamaammoja.
+fi.kdd2.txt,sp82s2e,"Parempia olla varovainen nyt... Jos en varo, terva tukkii pääsyn tuohon käytävään!"
+fi.kdd2.txt,sp84s3e1,"No jaa, mennään!"
+fi.kdd2.txt,sp84s3e2,Seinä...
+fi.kdd2.txt,sp84s3e3,Hyvä. Tällä menolla tämä kerros onkin kartoitettu muutamassa minuutissa.
+fi.kdd2.txt,sp84s3e4,Kuulitko? Se on tervaristoa! Pitää mennä piiloon!
+fi.kdd2.txt,sp84s3e5,Ääk! Melkein pudotin karttani!
+fi.kdd2.txt,sp84s3e6,Hetki! Osoittaako kartta edes oikeaan suuntaan?
+fi.kdd2.txt,sp85s2e1,Tämä huone... se näyttää niin... jotenkin... tutulta...
+fi.kdd2.txt,sp85s2e2,Se tekee minut... hermostuneeksi... vihaiseksi!
+fi.kdd2.txt,sp86s3e,"Ruttolainen... toivon ettei täällä ole mitään temppuja, kuten huoneita salaseinien takana."
+fi.kdd2.txt,sp88s3e1,Voi lumpe... tämä huone tulee olemaan painajainen!
+fi.kdd2.txt,sp88s3e2,Ei koskaan enää... ei koskaan enää...
+fi.kdd2.txt,spM1s,Epäonnistuit...
+fi.kdd2.txt,spT2,Käännä miekkaa painamalla Q tai W-
+fi.kdd2.txt,spT3,Mene lyömään kuulia miekallasi.
+fi.kdd2.txt,spT4,"Kuulat toimivat ovien kanssa seuraavaksi - ne aukaisevat, sulkevat tai vaihtelevat niitä."
+fi.kdd2.txt,spT5,Klikkaa kuulaa nähdäksesi miten se vaikuttaa oviin.
+fi.kdd2.txt,spT6,Tehtävänäsi on puhdistaa kaikki kerrokset hirviöistä.
+fi.kdd2.txt,spT7,Surmaa torakka lyömällä sitä miekallasi.
+fi.kdd2.txt,spT8,Voimanuolet estävät liikkumisen vastakkaiseen suuntaan.
+fi.kdd2.txt,spT9,"Astu tallennuspisteelle. Palaat siihen kun kuolet tai painat ""R""."
+fi.kdd2.txt,spT10,"Jos kuolet tai joudut kuolemanvaaraan, voit perua enintään kolme siirtoa kertaa painamalla ""Backspace"" tai ""E""."
+fi.kdd2.txt,spT11,"Juomalla tämän voit luoda matkijan. Matkijat tekevät jokaisen liikkeen samalla tavalla kuin sinä heti sinun jälkeesi, mutta ennen hirviöitä."
+fi.kdd2.txt,spT12,"Aseta matkija tallenuspisteeseen alhaalla. Käytä sitä pudottaaksesi kaikki ansaluukut, jotta punainen ovi aukeaisi."
+fi.kdd2.txt,spT13,"Onnittelut, läpäisit tämän huoneen!"
+fi.kdd2.txt,spT14,"Poistuessasi huoneesta sinun suorituksestasi tulee pysyvä. Voit aina nähdä omat ja muiden pisteytykset kyseisestä huoneesta, ja voit näin vertailla tuloksiasi virallisessa pistetaulukossa."
+fi.kdd2.txt,spT15,"Jos olet ottanut yhteyden Caravel-foorumin tunnuksen tiedoilla, ennätyksesti lähetetään ennätystaulukkoon."
+fi.kdd2.txt,spT16,"Tuloksesi pysyy ennätystaulukossa kaksi viikkoa, ellet ole maksanut CaravelNet-tunnuksesta, jolloin tuloksesi pysyy siellä ikuisesti."
+fi.kdd2.txt,spT17,Voit nyt poistu harjoitteluhuoneesta.
+fi.kdd2.txt,achName0,Missä mestarini?
+fi.kdd2.txt,achName1,Itämaalainen
+fi.kdd2.txt,achName2,Puhtaana
+fi.kdd2.txt,achName3,Kuulakammoinen
+fi.kdd2.txt,achName4,Staattiset kädet
+fi.kdd2.txt,achName5,Näkijä
+fi.kdd2.txt,achName6,Pirunkuiskaaja
+fi.kdd2.txt,achName7,Matkijataitaja
+fi.kdd2.txt,achName8,Keltakuume
+fi.kdd2.txt,achName9,Ristikielto
+fi.kdd2.txt,achName10,Järkkymätön
+fi.kdd2.txt,achName11,Sssssihisijä
+fi.kdd2.txt,achName12,Käsi kivellä
+fi.kdd2.txt,achName13,Älyllinen elämänmuoto
+fi.kdd2.txt,achName14,Selkäänpuukottaja
+fi.kdd2.txt,achName15,Tervateknikko
+fi.kdd2.txt,achName16,Silmäniskijä
+fi.kdd2.txt,achName17,Ninjailua
+fi.kdd2.txt,achName18,Amatööri
+fi.kdd2.txt,achName19,Nouseva sivaltaja
+fi.kdd2.txt,achName20,Sopimuksenalainen
+fi.kdd2.txt,achName21,"Hei, olen ammattilainen.!"
+fi.kdd2.txt,achName22,Mestaruus
+fi.kdd2.txt,achName23,Jälkimestaruus
+fi.kdd2.txt,achName24,Paistettuja kuningattaria
+fi.kdd2.txt,achName25,Ei se ole kananmunaa
+fi.kdd2.txt,achName26,Pahan silmän vanukasta
+fi.kdd2.txt,achName27,Pirunkoipea
+fi.kdd2.txt,achName28,Käärmettä vesikielellä
+fi.kdd2.txt,achName29,Kuulansoitto
+fi.kdd2.txt,achName30,Viidesti kyykkyyn
+fi.kdd2.txt,achName31,Joukkomurskaaja
+fi.kdd2.txt,achName32,Voittamaton
+fi.kdd2.txt,achName33,Revennyt aika-avaruus
+fi.kdd2.txt,achName34,Lattianpuhdistaja
+fi.kdd2.txt,achName35,Maratoonari
+fi.kdd2.txt,achDesc0,Löydä mestariportti
+fi.kdd2.txt,achDesc1,Päihitä Viidennen tason huone 1L miekka itäänpäin kääntyneenä
+fi.kdd2.txt,achDesc2,Pudota kaikki ansaluukut ja puhdista Viidennen kerroksen huone 1P 2L samalla kerralla
+fi.kdd2.txt,achDesc3,Läpäise Viidennen tason huone 2P lyömättä kuulan kuulaa
+fi.kdd2.txt,achDesc4,Läpäise Viidennen tason huone 1E kääntymättä
+fi.kdd2.txt,achDesc5,Päihitä Viidennen tason huone 2E juomatta näkymättömyysjuomaa
+fi.kdd2.txt,achDesc6,Älä lyö kuulia Viidennen tason huoneessa 3I
+fi.kdd2.txt,achDesc7,Läpäise Viidennen tason huone 1E 1L astumatta pois merkityltä alueelta
+fi.kdd2.txt,achDesc8,Läpäise Viidennen tason huone 2E 2I astumatta keltaisten ovien päälle
+fi.kdd2.txt,achDesc9,Älä liiku vinosuuntaan Seitsemännen tason huoneessa 1E
+fi.kdd2.txt,achDesc10,Älä käänny Seitsemännen tason huoneessa 1I
+fi.kdd2.txt,achDesc11,Tapa käärme ennen torakoita Seitsemännen tason huoneessa 1P 2I
+fi.kdd2.txt,achDesc12,Älä käännä miekkaasi Seitsemännen tason huoneessa 3P 1I
+fi.kdd2.txt,achDesc13,"Läpäise ""älyllinen elämänmuoto"" huone (Seitsemäs taso, huone2P 1L)"
+fi.kdd2.txt,achDesc14,Läpäise Kahdeksannen tason huone 4E 3I juomatta matkijajuomaa
+fi.kdd2.txt,achDesc15,Puhdista jokin Kahdeksannen tason huone kaikesta tervasta
+fi.kdd2.txt,achDesc16,Surmaa tervamaammo ennen kuin se kasvaa kertaakaan
+fi.kdd2.txt,achDesc17,Puhdista huone herättämättä pahoja silmiä
+fi.kdd2.txt,achDesc18,Läpäise Viides kerros
+fi.kdd2.txt,achDesc19,Nujerra Kuudes kerros
+fi.kdd2.txt,achDesc20,Voita Seitsemäs kerros
+fi.kdd2.txt,achDesc21,Päihitä Kahdeksas kerros
+fi.kdd2.txt,achDesc22,Läpäise holvisto
+fi.kdd2.txt,achDesc23,Läpäise mestarihaaste
+fi.kdd2.txt,achDesc24,Surmaa 20 torakkaemoa
+fi.kdd2.txt,achDesc25,Surmaa 15 torakanmunaa.
+fi.kdd2.txt,achDesc26,Tapa 15 pahaa silmää
+fi.kdd2.txt,achDesc27,Tapa 5 pirunsiipeä
+fi.kdd2.txt,achDesc28,Surmaa 10 käärmettä
+fi.kdd2.txt,achDesc29,Iske kuulaa kolmen vuoron aikana
+fi.kdd2.txt,achDesc30,Pudota vihreä portti 5 kertaa
+fi.kdd2.txt,achDesc31,"Tapa 2,500 petoa"
+fi.kdd2.txt,achDesc32,Kuole 70 kertaa
+fi.kdd2.txt,achDesc33,Peru 350 siirtoa
+fi.kdd2.txt,achDesc34,Pudota 200 ansaluukkua
+fi.kdd2.txt,achDesc35,"Tee 7,000 siirtoa"
+fi.kdd2.txt,outro,"Tervaa Beethro ei odottanut. Tai halunnut edes nähdä. Mutta kävellessään alemmas yhdeksänteen kerrokseen, hän tiesi jotain - hän ei enää haistanut tuota limaista ainesta. Mutta jos alhaalla odottaa jotakin vielä pahempaa?
+
+
+<font size=""32"" color=""#FFFF00"">Onneksi olkoon!</font>
+
+Olet selvittänyt toisen osan Deadly Rooms of Death, King Dugan's Dungeon Lite -holvistosta. Toivottavasti nautit kokemuksesta.
+Nyt kun olet laskeutunut viimeisiä portaita tässä tasokokelmassa, voit haluta yrittää Mestarihaastetta ja sen jälkeen Jälkimestarihaastetta. Aloita etsimällä kaikki salahuoneet. Löytymättömien salahuoneiden määrä jokaisessa kerroksessa näkyy nyt Lataus-ruudussa.
+Kun onnistut ratkaisemaan jokaisen huoneen, erityinen Mestaruusalue aukeaa. Löydätkö tiesi sinne?
+Voit myös pelata seuraava jaksoa DROD:KDDL-sarjassa.
+
+Ennen kuin jätän sinut nauttimaan ylevästä voitontunteestasi, haluan vielä kiittää muutamaa ihmistä, joiden ansiosta tämä peli näki päivänvalon:
+
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - Pelin luoja, isä ja keksijä. Ilman häntä tämä ainutlaatuinen peli-idea ei olisi ikinä toteutunut.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - Hän koodasi suurimman osan DROD:JtRH- ja DROD:TCB -peleistä. Kiitos tämän hienon esimerkin, Flash DROD -pelin teko oli pelkkää iloa.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Caravel-foorumin herra ja CaravelNetin pääkoodaaja. Hänen ansiostaan voit kilpailla parhaista tuloksista, ja tehdä paljon muutakin!
+
+
+<font size=""23"" color=""#FFFF00"">Ohjelmointi ja kehitys</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Grafiikka ja musiikki</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Palvelintoimintojen kehitys</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Pelisisällön kehitys</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Päätestaajat</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testaajat</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Käännökset</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Ääninäytteleminen</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Alkuperäinen koodaus, idea ja sisältö</font> - %%
+
+
+Nähdään ensi kerralla!
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+fi.kdd2.txt,complNextGame,"Pelaa seuraavaa kerroskokoelmaa - KDD Lite 3:ta. Uusi peli aukeaa uuteen ikkunaan, ja voit sulkea tämän ikkunan sen jälkeen. Saavuttamasi tilanne on tallennettu."
+fi.kdd2.txt,sp_new71e1,Nuo silmät ois kaikki voinu silpoa ilman kääntymistä. Usko pois!
+fi.kdd2.txt,sp_new71e2,"Haa! Tämä on oikeaa tehokkuutta! En malta odottaa, että pääsen kertomaan Sivallusmestareiden killalle tästä tempauksesta!"
+fi.kdd2.txt,defCont,Oletuskontrollit:
+fi.kdd2.txt,sc_diago,Voit liikkua vinottain jopa hyvin kapeista kohdista.
+fi.kdd2.txt,sc_broken,Tuhoa nämä murtuneet seinät ja salaseinät miekallasi.
+fi.kdd2.txt,sc_queens1,"Torakkaemot munivat joka 30. vuoro (seuraavalla vuorolla sen jälkeen, kun sikiämislaskuri on punainen)."
+fi.kdd2.txt,sc_queens2,Torakan munista kuoriutuu aikuisia torakoita viisi kierrosta niiden munimisen jälkeen.
+fi.kdd2.txt,sc_queens3,"Munat eivät ilmesty voimanuolten, ansaluukkujen tai keltaisten porttien päälle. Paina ""I"" tai num.näpp 5 odottaaksesi yhden kierroksen ajan."
+fi.kdd2.txt,sc_mimics,"Kun olet astunut matkijajuoman ruutuun, valitse matkijan sijoituskohta hiiren tai odotusnäppäimen avulla."
+fi.kdd2.txt,sc_shiftwait,Odottaminen seuraavaan sikiämisvaiheeseen Shift+odotus-nappien avulla voi olla hyödyllistä.
+fi.kdd2.txt,sp_mother1,Tervamaammot saavat tervan kasvamaan yhden ruudun verran kaikkiin suuntiin joka 30. kierros.
+fi.kdd2.txt,sp_mother2,"Kasvavan tervan keskellä on melko turvallista olla, mutta sinun täytyy varoa tervahisia, joita voi syntyä kasvuvaiheessa."
+fi.kdd2.txt,sc_backswipe,"Kävele hiekkaista polkua pitkin oppiaksesi takasivallus-tekniikan! Muista, että voit liikkua vinottain, äläkä käännä miekkaasi."
+fi.kdd2.txt,sc_trapdoors,"Nämä vaaleanpunaisen violetit ruudut ovat ansaluukkuja, ja ne putoavat jos sinä astut tai matkija astuu pois niiden päältä."
+fi.kdd3.txt,Ninth Level,Yhdeksäs kerros
+fi.kdd3.txt,Tenth Level,Kymmenes kerros
+fi.kdd3.txt,Eleventh Level,Yhdestoista kerros
+fi.kdd3.txt,Twelfth Level,Kahdestoista kerros
+fi.kdd3.txt,Mastery Level,Mestaruuskerros
+fi.kdd3.txt,Tutorial,Harjoituskerros
+fi.kdd3.txt,entr9,"Beethro Budkin, vankityrmien tuholaistorjunnan ammattilainen viidennessä polvessa, on saanut tehtävän Kuningas Duganilta siivota  kuninkaan monikerroksinen vankityrmä, joka kärsii vakavasta  hirviöongelmasta.
+Beethro veloittaa joka huoneesta erikseen, ja ammattilaisena häntä  sitoo sopimuksen ehto, joka vaatii jokaisen huoneen tyhjentämistä  kaikista hirviöistä palkkionsa vastineeksi.
+Beethro tarvitsee vain Hyvin suuren miekan työnsä tekoon, koska sen  avulla voi kukistaa miltei joka hirviön yhdellä iskulla.
+
+-----
+
+Beethro istui portaille lepäämään. Hän otti kolme pulloa repustaan. Kymmenen kupin kokoinen pullo oli täynnä virkistävää lehtijuomaa, ja kaksi muuta pulloa, kokoa kaksi ja viisi kuppia, olivat tyhjiä. Beethro halusi juoda täsmälleen neljä kuppia lehtijuomaa yhdellä kertaa. Hän alkoi temppuilla kupeilla, kaataen juomaa yhdestä toiseen ja takaisin, mutta antoi hetken kuluttua periksi. ""Tämä on liian hankalaa! Antaa olla!"""
+fi.kdd3.txt,entr10,"Kuten useat kokeneet vankityrmien tuholaistorjujat tietävät, maan alla asuu joitakin petoja, jotka pystyvät piiloutumaan ympäristöönsä."
+fi.kdd3.txt,entr11,"Vilkaistessaan edessään olevaan huoneeseen, Beethro päästi pettyneen murahduksen. ""En tiedä miten, mutta terva päätyy aina tuollaisiin muotoihin, ja minä vihaan sitä."""
+fi.kdd3.txt,entr12,"Beethro kuuli jälleen voimakasta sihinää altaan ja tiesi odottaa kohtaavansa käärmeitä. Tällä kertaa ääni oli kuitenkin hieman erilainen ja hän pysähtyi hetkeksi kuuntelemaan ja arvioimaan mitä edessä odotta. ""Voi lumpe! Noiden luikeroiden on täytynyt elää tälälä herraties kuinka kauan aikaa ja syödä melko isoja aterioita sinä aikana."""
+fi.kdd3.txt,entr12Back,"Beethro palasi tekemään kunnolla miekkamiehen työnsä, joka hänet oli palkattu tekemään."
+fi.kdd3.txt,entrMaster,"Beethro laskeutui portaita ja päätyi käytävään, jota ei näkynyt kartassa...
+
+Hänelle ei makseta tämän paikan puhdistamisesta, mutta ammattilaisen kunnia ajaa häntä eteenpäin."
+fi.kdd3.txt,entrTutorial,Harjoituskerros
+fi.kdd3.txt,entrTutorialLeft,Beethro poistui harjoituskerroksesta pää täynnä uutta tietoa.
+fi.kdd3.txt,sc93n3e,Teetkö kaiken varmasti oikeassa järjestyksessä?
+fi.kdd3.txt,sc94n3e,Oikea järjestys on tärkeä.
+fi.kdd3.txt,sc10e,"Näkymättömiä ja ilkeitä hämähäkkejä väijyy tässä kerroksessa. Ole tarkkana, sillä niitä on vaikea nähdä."
+fi.kdd3.txt,sc111s2e,Psst... Tämä käytävä vie sinun portaiden luokse. Sinun kannattaa ehkä puhdistaa kaikki muut huoneet ennen sinne menemistä!
+fi.kdd3.txt,sc121n1e1,"Jos käärme liikkuu länteen ja suosii vaakasuoraa liikettä, astu sen pään itäpuolelle ja pakotat sen liikkumaan pohjoiseen."
+fi.kdd3.txt,sc121n1e2,"Sama toimii pystysuoraan, mutta siinä tapauksessa käärme suosii idän suuntaista liikettä."
+fi.kdd3.txt,sc12e,Kello kertoo minkäsuuntaista liikettä käärmeet tällä hetkellä suosivat. Tämä auttaa näiden arvaamattomien olioiden hallintaa.
+fi.kdd3.txt,scMe1,Muita pulmia
+fi.kdd3.txt,scMe2,Loppusanat
+fi.kdd3.txt,scM1s1,Tänne pääseminen on satumainen suoritus!
+fi.kdd3.txt,scM1s2,"No, mitäs pidit tästä kaikesta? Saitko hankittua kaikki saavutukset?"
+fi.kdd3.txt,scM1s3,"CaravelGames.com-sivulta löytyvät seuraavat  jaksot KDDL-pelistä. Voit myös ladata sieltä koko DROD-pelisarjan pelit  Windows-, MacOS- tai Linux-koneille."
+fi.kdd3.txt,scM1s4,Hyviä pelejä!
+fi.kdd3.txt,scM1s5,Tässä on pieni palkinto! Tapa kaikki silmät astumatta kertaakaan ruoholle.
+fi.kdd3.txt,scM1s6,"Torakkaemot kuolevat, kun astut tallenuspisteelle oikeassa ylänurkassa."
+fi.kdd3.txt,scM1s7,"Oikein hienoa, onneksi olkoon!"
+fi.kdd3.txt,scT1,"Tiesitkö, että käärmeet eivät voi liikkua kääröjen päälle?"
+fi.kdd3.txt,scT2,"Siirry oikeaan laitaan ja tarkkaile, miten torakka käyttäytyy, kun se yrittää liikkua vinosuunnassa kohti estettä."
+fi.kdd3.txt,scT3,Käärmeet liikkuvat omien monimutkaisten sääntöjensä mukaan. Niiden tällä hetkellä suosima suunta näkyy sikiämiskellon alla.
+fi.kdd3.txt,scT4,"Jos hirviö liikkuu esteeseen vinosuunnassa, se siirtyy vaakasuuntaan mikäli mahdollista."
+fi.kdd3.txt,scT5,"`Escape` opens up the pause menu, where you can view `General Help` to refer to the controls anytime you wish."
+fi.kdd3.txt,,"`Escape` avaa taukovalikon, missä voit katsoa `Yleiset ohjeet`-kohdasta ohjaukseen käytetyt näppäimet milloin vain."
+fi.kdd3.txt,scT6,"Jotta et astu vahingossa pois huoneesta, paina `X`-näppäintä lukitaksesi se tai poistaaksesi lukitus. Lukon kuva pikkukartassa tarkoittaa, että huone on lukittu."
+fi.kdd3.txt,scT7,"Shift+Näppäin suorittaa näppäimen toiminnon ja sen jälkeen sen vastakohdat.
+Shift+Odota odottaa seuraavaan sikiämisvaiheeseen.
+Numeronäppäimistön '+' tai '=' suorittaa edellisen toiminnon vastakohdan."
+fi.kdd3.txt,scT8,"F3 näyttää siirtolaskurin, joka auttaa parantamaan ennätyksiä."
+fi.kdd3.txt,scT9,Kaikki näppäimet voi määrittää uudelleen Asetus-valikossa.
+fi.kdd3.txt,scT10,"Käyttäjät, jotka eivät ole tilanneet CaravelNetiä, eivät saa pisteitään ennätystauluun, mutta saavat tietää minkä sijan olisivat saavuttaneet."
+fi.kdd3.txt,scT11,Klikkaa pelielementtejä nähdäksesi mitä kuulat tekevät ja mitä pahat silmät näkevät.
+fi.kdd3.txt,scT12,Välilyönti piilottaa kaikki puheet ja saavutukset ruudulta.
+fi.kdd3.txt,scT13,"Pirunsiivet, toisin kuin torakat, karkaavat pois Beethron läheltä ja pyrkivät pysymään viiden ruudun etäisyydellä."
+fi.kdd3.txt,scT14,"Ne eivät ole niin varovaisia suuremmassa parvessa, eivätkä ne epäröi hyökätä ympäröimänsä saaliin kimppuun."
+fi.kdd3.txt,sc1_6n3w1,Käytä takasivallus-tekniikkaa torakan surmaamiseen.
+fi.kdd3.txt,sc1_6n3w2,Asetu vihreän alustan päälle ja päästä torakka seisomaan hiekkaruudulle suoraan pohjoispuolellesi...
+fi.kdd3.txt,sc1_6n3w3,Asetu vihreän alustan päälle ja päästä torakka seisomaan hiekkaruudulle suoraan eteläpuolellesi...
+fi.kdd3.txt,sc1_6n3w4,... ja liiku sitten koilliseen tappaaksesi sen.
+fi.kdd3.txt,sc1_6n3w5,... ja liiku sitten kaakkoon tappaaksesi sen.
+fi.kdd3.txt,sc1_6n3w6,Toista tämä ja harjoittele takasivallusta. Tämän tekniikan hallitseminen on hyvin tärkeää tulevissa koitoksissa.
+fi.kdd3.txt,sp9e1,Tämä on harjoitusalue.
+fi.kdd3.txt,sp9e2,"Vieraile täällä, jos et ole pelannut peliä ennen."
+fi.kdd3.txt,sp9e3,"Voit liikkua eri suuntiin numeronäppäimistön tai näppäinten 789, UIO, JKL avulla"
+fi.kdd3.txt,sp9e4,Tirisevät torakat! Ei enää tervaa!
+fi.kdd3.txt,sp91n1e,Olipa keljua. Ehkä terva ei olekaan niin ikävää kuin sanotaan...
+fi.kdd3.txt,sp94n4e1,"Ha-haa! Täytyy nousta aikaisin aamulla, jos aikoo huijata Beethroa!"
+fi.kdd3.txt,sp94n4e2,Tämä ei ole huvittavaa.
+fi.kdd3.txt,sp93n,Hmm. Tämä on hyvin kummallinen portti. En pääse siitä läpi.
+fi.kdd3.txt,sp92n2e,"Portti, josta en pääse läpi. Mitähän sen toisella puolella mahtaa olla?"
+fi.kdd3.txt,sp11e1,Sitä minä vasta vihaan kun terva kasvaa niin korkealle yläpuolelleni...alkaa puistattaa.
+fi.kdd3.txt,sp11e2,Ääk! Terva on kasvanut koko matkan seinien yli!
+fi.kdd3.txt,sp11n1w,Hm...asiat voisivat olla huonommin. Täällä voisi olla tervamaammo.
+fi.kdd3.txt,sp11n2w1,Puhuin liian aikaisin.
+fi.kdd3.txt,sp11n2w2,"Näyttää siltä, että tässä huoneessa on jotakin muutakin erilaista..."
+fi.kdd3.txt,sp12e1,"Varovaisesti, Beethro, varovaisesti..."
+fi.kdd3.txt,sp12e2,Huh!
+fi.kdd3.txt,sp12e3,Näistä tulee hienoja pihvejä.
+fi.kdd3.txt,sp121s2e1,Voi pomppivat peikot!
+fi.kdd3.txt,sp121s2e2,Katsopa tuon käärmeen kokoa!
+fi.kdd3.txt,spM1s,Epäonnistuit...
+fi.kdd3.txt,spT2,Käännä miekkaasi näppäimillä `Q` ja `W`.
+fi.kdd3.txt,spT3,Mene ja iske kuulaa miekallasi.
+fi.kdd3.txt,spT4,"Kuulat vaikuttavat oviin kolmella tavalla -- ne voivat avata, sulkea tai vaihtaa niiden tilaa."
+fi.kdd3.txt,spT5,Klikkaa kuulaa hiirellä nähdäksesi mihin oviin se vaikuttaa ja miten.
+fi.kdd3.txt,spT6,Tavoitteesi DROD:issa on puhdistaa jokainen kerros kaikista hirviöistä.
+fi.kdd3.txt,spT7,Iske torakkaa miekallasi ja tapa se.
+fi.kdd3.txt,spT8,Voimanuolet estävät liikkumisen vastakkaiseen suuntaan.
+fi.kdd3.txt,spT9,"Astu tallenuspisteen päälle. Palaat tallennuspisteelle, jos kuolet tai painat `R`-näppäintä."
+fi.kdd3.txt,spT10,"Jos kuolet tai päädyt tilanteeseen, jossa jokainen liike johtaa kuolemaan, voit perua enintään kolme siirtoa `Backspace`- tai `E`-näppäimillä."
+fi.kdd3.txt,spT11,"Tämä taikajuoma sallii sinun asettaa matkijan huoneeseen. Matkijat tekevät jokaisen liikkeen samalla tavalla kuin sinä heti sinun jälkeesi, mutta ennen hirviöitä."
+fi.kdd3.txt,spT12,Sijoita matkija alapuoliseen tallenuspisteeseen. Pudota kaikki ansaluukut sen avulla ja punainen portti aukeaa.
+fi.kdd3.txt,spT13,"Et voi vahingoittaa käärmeitä miekallasi, mutta ne kutistuvat ja kuolevat juuttuessaan umpikujaan."
+fi.kdd3.txt,spT14,"Poista kaikki sininen elävä terva, jotta pääset yläpuolisen pahan silmän luokse."
+fi.kdd3.txt,spT15,"Pidä mielessä, että terva voi vahingoittaa vain tasaisilta laidoilta, ja jokainen epävakaa kohta muuttuu tervahiseksi."
+fi.kdd3.txt,spT16,"Terva on vakaata, kun se kuuluu ainakin neljästä kohdasta muodostuvaan neliönmuotoiseen möykkyyn naapureidensa kanssa."
+fi.kdd3.txt,spT17,"Onneksi olkoon, olet ratkaissut tämän huoneen!"
+fi.kdd3.txt,spT18,"Kun lähdet huoneesta, ratkaisusi talletetaan. Voit aina nähdä, mikä on ennätyksesi kussakin huoneessa, ja voit vertailla tulostasi ennätystaulussa oleviin parhaisiin tuloksiin."
+fi.kdd3.txt,spT19,"Jos olet ottanut yhteyden pätevillä Caravel-foorumin käyttäjätiedoilla, ennätyksesi lähetetään lisättäväksi ennätystauluun."
+fi.kdd3.txt,spT20,"Ennätyksesi jää ennätystauluun kahdeksi viikoksi, ellet ole tilannut maksullista CaravelNet-tunnusta, jolloin se jää ennätystauluun pysyvästi."
+fi.kdd3.txt,spT21,Voit nyt poistua harjoitushuoneesta.
+fi.kdd3.txt,achName0,Tee työtä kuin kello
+fi.kdd3.txt,achName1,Tee kelloa kuin työtä
+fi.kdd3.txt,achName2,Kietoutuneet kädet
+fi.kdd3.txt,achName3,Lukkiutuneet käsivarret
+fi.kdd3.txt,achName4,Liimautunut miekka
+fi.kdd3.txt,achName5,Ikuisesti yksin
+fi.kdd3.txt,achName6,Hiipijä
+fi.kdd3.txt,achName7,Tervateknikko
+fi.kdd3.txt,achName8,Käärmeiden herra
+fi.kdd3.txt,achName9,Yksin sihinän keskellä
+fi.kdd3.txt,achName10,Hiljainen metsästäjä
+fi.kdd3.txt,achName11,Ninja
+fi.kdd3.txt,achName12,Äidinsurma
+fi.kdd3.txt,achName13,Amatöörikoluaja
+fi.kdd3.txt,achName14,Nouseva sivaltaja
+fi.kdd3.txt,achName15,Palkattu tuholaistorjuja
+fi.kdd3.txt,achName16,Olen ammattilainen!
+fi.kdd3.txt,achName17,Mestaruus
+fi.kdd3.txt,achName18,Jälkimestaruus
+fi.kdd3.txt,achName19,Paistetut torakat
+fi.kdd3.txt,achName20,Torakkaemoja kuninkaan tapaan
+fi.kdd3.txt,achName21,Leimuavat torakanmunat
+fi.kdd3.txt,achName22,Pahan silmän sinappi
+fi.kdd3.txt,achName23,Pirunsiiven fileet
+fi.kdd3.txt,achName24,Käärmekääryleet
+fi.kdd3.txt,achName25,Äänirauta
+fi.kdd3.txt,achName26,Laskeutuva vihreys
+fi.kdd3.txt,achName27,Laumanhallitsija
+fi.kdd3.txt,achName28,Henkiinpalauttaja
+fi.kdd3.txt,achName29,Aikaherra
+fi.kdd3.txt,achName30,Tilan hallitsija
+fi.kdd3.txt,achName31,Ikiliikkuja
+fi.kdd3.txt,achDesc0,"Puhdista Yhdeksännen kerroksen huone 4P 3I siten, että astut jokaiselle merkitylle alueelle vain kerran"
+fi.kdd3.txt,achDesc1,"Puhdista Yhdeksännen kerroksen huone 3P 3I siten, että astut jokaiselle merkitylle alueelle vain kerran"
+fi.kdd3.txt,achDesc2,Puhdista Kymmenennen kerroksen huone 1P 1I kääntymättä kertaakaan
+fi.kdd3.txt,achDesc3,Älä käännä miekkaasi Kymmenennen kerroksen huoneessa 1I
+fi.kdd3.txt,achDesc4,Älä käännä miekkaasi sillä välin kuin puhdistat Kymmenennen kerroksen huonetta 1E 1L
+fi.kdd3.txt,achDesc5,Ratkaise Kymmenennen kerroksen huone 1E ilman matkijajuomaa
+fi.kdd3.txt,achDesc6,Läpäise Yhdennentoista kerroksen huone 1E 2I alle 150:llä siirrolla
+fi.kdd3.txt,achDesc7,Puhdista mikä tahansa Yhdennentoista kerroksen huone kokonaan tervasta
+fi.kdd3.txt,achDesc8,Läpäise Kahdennentoista kerroksen 1E 2I liikkumatta vinottain
+fi.kdd3.txt,achDesc9,Puhdista Kahdennentoista kerroksen huone 2E 1I juomatta matkijajuomaa
+fi.kdd3.txt,achDesc10,Herätä vain yksi paha silmä Kahdennentoista kerroksen huoneesta 1E
+fi.kdd3.txt,achDesc11,Puhdista huone herättämättä yhtäkään pahaa silmää
+fi.kdd3.txt,achDesc12,Tapa torakkaemo torakanmunien kasvaessa
+fi.kdd3.txt,achDesc13,Puhdista Yhdeksäs kerros
+fi.kdd3.txt,achDesc14,Puhdista Kymmenes kerros
+fi.kdd3.txt,achDesc15,Puhdista Yhdestoista kerros
+fi.kdd3.txt,achDesc16,Puhdista Kahdestoista kerros
+fi.kdd3.txt,achDesc17,Läpäise mestaruushaaste
+fi.kdd3.txt,achDesc18,Läpäise jälkimestaruus
+fi.kdd3.txt,achDesc19,Tapa 35 torakkaa
+fi.kdd3.txt,achDesc20,Tapa 20 torakkaemoa
+fi.kdd3.txt,achDesc21,Tapa 15 torakanmunaa
+fi.kdd3.txt,achDesc22,Tapa 15 pahaa silmää
+fi.kdd3.txt,achDesc23,Tapa 5 pirunsiipeä
+fi.kdd3.txt,achDesc24,Tapa 10 käärmettä
+fi.kdd3.txt,achDesc25,Iske kuulaa kolmen vuoron ajan
+fi.kdd3.txt,achDesc26,Pudota 10 vihreää porttia
+fi.kdd3.txt,achDesc27,Tapa 2500 hirviötä
+fi.kdd3.txt,achDesc28,Kuole 100 kertaa
+fi.kdd3.txt,achDesc29,Peru 450 liikettä
+fi.kdd3.txt,achDesc30,Pudota 200 ansaluukkua
+fi.kdd3.txt,achDesc31,Tee yhteensä 8000 siirtoa
+fi.kdd3.txt,outro,"Jos hänellä vain olisi ollut kartta Duganin tyrmästä, Beethro olisi tietänyt, että kolmannessatoista kerroksessa  odotti sellaista, joka saattoi päihittää jopa vahvimmat soturit.  Ainakaan siellä ei olisi yhtään Tervaa tai Käärmeitä...
+
+
+<font size=""32"" color=""#FFFF00"">Onneksi olkoon!</font>
+
+Olet ratkaissut kolmannen jakson Deadly Rooms of Death, King Dugan's Dungeon Lite -holvistosta. Toivon vilpittömästi, että nautit tästä kokemuksesta!
+Nyt kun olet laskeutunut viimeisiä portaita tässä tasokokoelmassa, voit yrittää ratkaista Mestarihaastetta ja sen jälkeen Jälkimestarihaastetta. Aloita etsimällä kaikki salahuoneet. Löytymättömien salahuoneiden määrä jokaisessa kerroksessa näkyy nyt Lataus-ruudussa.
+Kun onnistut ratkaisemaan jokaisen huoneen, erityinen Mestaruusalue aukeaa. Löydätkö tiesi sinne?
+Voit myös pelata seuraava jaksoa DROD:KDDL-sarjassa.
+
+Ennen kuin jätän sinut nauttimaan ylevästä voitontunteestasi, haluan vielä kiittää muutamaa ihmistä, joiden ansiosta tämä peli näki päivänvalon:
+
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - Pelin luoja, isä ja keksijä. Ilman häntä tämä ainutlaatuinen peli-idea ei olisi ikinä toteutunut.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - Hän koodasi suurimman osan DROD:JtRH- ja DROD:TCB -peleistä. Kiitos tämän hienon esimerkin, Flash DROD -pelin teko oli pelkkää iloa.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Caravel-foorumin herra ja CaravelNetin pääkoodaaja. Hänen ansiostaan voit kilpailla parhaista tuloksista, ja tehdä paljon muutakin!
+
+
+<font size=""23"" color=""#FFFF00"">Ohjelmointi ja kehitys</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Grafiikka ja musiikki</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Palvelintoimintojen kehitys</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Pelisisällön kehitys</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Päätestaajat</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testaajat</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Käännökset</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Ääninäytteleminen</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Alkuperäinen koodaus, idea ja sisältö</font> - %%
+
+
+Nähdään ensi kerralla!
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+fi.kdd3.txt,complNextGame,"Pelaa seuraavaa kerroskokoelmaa - KDD Lite 4:ää. Uusi peli aukeaa uuteen ikkunaan, ja voit sulkea tämän ikkunan sen jälkeen. Saavuttamasi tilanne on tallennettu."
+fi.kdd3.txt,defCont,Oletuskontrollit:
+fi.kdd3.txt,sc_diago,Voit liikkua vinottain jopa hyvin kapeista kohdista.
+fi.kdd3.txt,sc_broken,Tuhoa nämä murtuneet seinät ja salaseinät miekallasi.
+fi.kdd3.txt,sc_queens1,"Torakkaemot munivat joka 30. vuoro (seuraavalla vuorolla sen jälkeen, kun sikiämislaskuri on punainen)."
+fi.kdd3.txt,sc_queens2,Torakan munista kuoriutuu aikuisia torakoita viisi kierrosta niiden munimisen jälkeen.
+fi.kdd3.txt,sc_queens3,"Munat eivät ilmesty voimanuolten, ansaluukkujen tai keltaisten porttien päälle. Paina ""I"" tai num.näpp 5 odottaaksesi yhden kierroksen ajan."
+fi.kdd3.txt,sc_mimics,"Kun olet astunut matkijajuoman ruutuun, valitse matkijan sijoituskohta hiiren tai odotusnäppäimen avulla."
+fi.kdd3.txt,sc_shiftwait,Odottaminen seuraavaan sikiämisvaiheeseen Shift+odotus-nappien avulla voi olla hyödyllistä.
+fi.kdd3.txt,sp_mother1,Tervamaammot saavat tervan kasvamaan yhden ruudun verran kaikkiin suuntiin joka 30. kierros.
+fi.kdd3.txt,sp_mother2,"Kasvavan tervan keskellä on melko turvallista olla, mutta sinun täytyy varoa tervahisia, joita voi syntyä kasvuvaiheessa."
+fi.kdd3.txt,sc_backswipe,"Kävele hiekkaista polkua pitkin oppiaksesi takasivallus-tekniikan! Muista, että voit liikkua vinottain, äläkä käännä miekkaasi."
+fi.kdd3.txt,sc_trapdoors,"Nämä vaaleanpunaisen violetit ruudut ovat ansaluukkuja, ja ne putoavat jos sinä astut tai matkija astuu pois niiden päältä."
+fi.kdd4.txt,Thirteenth Level,Kerros 13
+fi.kdd4.txt,Fourteenth Level,Kerros 14
+fi.kdd4.txt,Fifteenth Level,Kerros 15
+fi.kdd4.txt,Sixteenth Level,Kerros 16
+fi.kdd4.txt,Mastery Level,Mestaruuskerros
+fi.kdd4.txt,Original 13th Level,Alkuperäinen kerros 13
+fi.kdd4.txt,Tutorial Level,Harjoittelukerros
+fi.kdd4.txt,entrTut,"Beethro Budkin, vankityrmien tuholaistorjunnan ammattilainen viidennessä polvessa, on saanut tehtävän Kuningas Duganilta siivota  kuninkaan monikerroksinen vankityrmä, joka kärsii vakavasta  hirviöongelmasta.
+Beethro veloittaa joka huoneesta erikseen, ja ammattilaisena häntä  sitoo sopimuksen ehto, joka vaatii jokaisen huoneen tyhjentämistä  kaikista hirviöistä palkkionsa vastineeksi.
+Beethro tarvitsee vain Hyvin suuren miekan työnsä tekoon, koska sen  avulla voi kukistaa miltei joka hirviön yhdellä iskulla."
+fi.kdd4.txt,entr13,"""Minun olisi varmaan kannattanut ohittaa tämä kerros, mutta sopimus on sopimus. Missäs ne leivänmurut ovatkaan?"" -Beethro"
+fi.kdd4.txt,entr14,"Tässä kerroksessa tapaat viimeinkin väkeä, joilla on terve kunnioitus miekkaasi kohtaan."
+fi.kdd4.txt,entr15,"Tämä kerros on kuin se kerta, kun leikkasit nurmikkoasi ja sinulla oli juuri tarpeeksi bensiiniä ruohonleikkuriin, mutta sitten mokasit ja sinun piti ostaa lisää. Mutta huoltoasemalla oli valtava käärme, ja kun halusit mennä maksamaan kassalle, etuovi oli lukossa, joten joit matkijajuomaa, ja sitten torakat...
+
+Okei, tämä vertaus ei nyt oikein toimi."
+fi.kdd4.txt,entr16,"Nämä torakat tarvitsevat auktoriteetin oppaakseen. Jonkun, jolla on karismaa ja luonnetta. Jonkun - sinun kaltaisesi!"
+fi.kdd4.txt,entrMaster,"Beethro laskeutui portaita ja päätyi käytävään, jota ei näkynyt kartassa...
+
+Hänelle ei makseta tämän paikan puhdistamisesta, mutta ammattilaisen kunnia ajaa häntä eteenpäin."
+fi.kdd4.txt,entrMasterBack,"Beethro palasi tekemään kunnolla loppuun työnsä, johon hänet oli palkattu."
+fi.kdd4.txt,entrOriginal13Enter,"Beethro laskeutui alemmas salaperäisiin, tappaviin ja tarkoituksettomiin käytäviin."
+fi.kdd4.txt,entrOriginal13Success,Ylpeänä suorituksestaan - mutta mielenrauha järkkyneenä - Beethro poistui pahamaineisesta Kuningas Duganin tyrmän kolmannestatoista kerroksesta.
+fi.kdd4.txt,entrOriginal13Escape,Beethro pakeni haastetta kuin pieni hento kissanpoikanen.
+fi.kdd4.txt,achName0,Yksisuuntainen metsä
+fi.kdd4.txt,achName1,Tyynet käärmeet
+fi.kdd4.txt,achName2,Tervan pysäyttäjä
+fi.kdd4.txt,achName36,Silmäovet
+fi.kdd4.txt,achName3,Peikonpeittoaja
+fi.kdd4.txt,achName4,Peikonmurskaaja
+fi.kdd4.txt,achName5,Peikontuhoaja
+fi.kdd4.txt,achName6,Väisty syrjään!
+fi.kdd4.txt,achName7,Vihreä äiti
+fi.kdd4.txt,achName8,Peikonsurmaaja
+fi.kdd4.txt,achName34,Äärimmäinen uhraus
+fi.kdd4.txt,achName35,Tiukat käytännöt
+fi.kdd4.txt,achName32,Tyyni murhamies
+fi.kdd4.txt,achName33,Käy eteenpäin
+fi.kdd4.txt,achName39,Hämähäkkejä vastaan
+fi.kdd4.txt,achName9,Kasvaa!
+fi.kdd4.txt,achName37,Silmäin herra
+fi.kdd4.txt,achName38,Metsästysäpeli
+fi.kdd4.txt,achName10,Tutkimusmatkailija
+fi.kdd4.txt,achName11,Peikkohakkelus
+fi.kdd4.txt,achName12,Äidinsurma
+fi.kdd4.txt,achName13,Amatöörikoluaja
+fi.kdd4.txt,achName14,Nouseva sivaltaja
+fi.kdd4.txt,achName15,Palkattu tuholaistorjuja
+fi.kdd4.txt,achName16,Olen ammattilainen!
+fi.kdd4.txt,achName17,Mestaruus
+fi.kdd4.txt,achName18,Jälkimestaruus
+fi.kdd4.txt,achName19,Liekitetyt torakat
+fi.kdd4.txt,achName20,Paistetut emot
+fi.kdd4.txt,achName21,Raa’at munat
+fi.kdd4.txt,achName22,Pahaa silmää talon tapaan
+fi.kdd4.txt,achName23,Pirunsiipi-kebab
+fi.kdd4.txt,achName24,Käärmekääryleet
+fi.kdd4.txt,achName25,Äänirauta
+fi.kdd4.txt,achName26,Vihreän pudotus
+fi.kdd4.txt,achName27,Rauhantekijä
+fi.kdd4.txt,achName28,Feenikslintu
+fi.kdd4.txt,achName29,Ajan herra
+fi.kdd4.txt,achName30,Lattianputsaaja
+fi.kdd4.txt,achName31,Kohti ääretöntä ja sen taa!
+fi.kdd4.txt,achDesc0,"Kerros 13, huone 2E1L: Älä käännä miekkaasi, kun puhdistat huoneen"
+fi.kdd4.txt,achDesc1,"Kerros 13, huone 1E: Älä käännä miekkaasi, kun puhdistat huoneen"
+fi.kdd4.txt,achDesc2,"Kerros 13, huone 1E1I: Älä käännä miekkaasi, kun puhdistat huoneen"
+fi.kdd4.txt,achDesc36,"Kerros 13, huone 1E2L: Älä käännä miekkaasi, kun puhdistat huoneen"
+fi.kdd4.txt,achDesc3,"Kerros 14, huone 1E: Puhdista huone katsoen koko ajan luoteeseen"
+fi.kdd4.txt,achDesc4,"Kerros 14, huone 2E: Puhdista huone katsoen koko ajan itään"
+fi.kdd4.txt,achDesc5,"Kerros 14, huone 1P: Puhdista huone katsoen koko ajan etelään"
+fi.kdd4.txt,achDesc6,"Kerros 14, huone 2I: Puhdista huone astumatta ansaluukun päälle"
+fi.kdd4.txt,achDesc7,"Kerros 14, huone 2P: Puhdista huone antamatta tervaemon kasvattaa tervaa"
+fi.kdd4.txt,achDesc8,"Kerros 14, huone 1P3I: Älä käännä miekkaasi, kun puhdistat huoneen"
+fi.kdd4.txt,achDesc34,"Kerros 14, huone 1P1I: Tapa peikko viimeisenä"
+fi.kdd4.txt,achDesc35,"Kerros 14, huone 2P2I: Älä päästä peikkoa harmaan tien päälle puhdistaessasi huonetta"
+fi.kdd4.txt,achDesc32,"Kerros 15, sisäänkäynti: Älä käännä miekkaasi, kun puhdistat huoneen"
+fi.kdd4.txt,achDesc33,"Kerros 15, sisäänkäynti: Pudota kaikki ansaluukut, ennen kuin puhdistat huoneen"
+fi.kdd4.txt,achDesc39,"Kerros 15, 1P: Kun olet iskenyt kuulaa, tapa kaikki hämähäkit liikkuen vain vinottain"
+fi.kdd4.txt,achDesc9,"Kerros 16, 1E1I: Puhdista huone päästämättä tervaemoa kasvattamasta tervaa"
+fi.kdd4.txt,achDesc37,"Mestaruuskerros, huone 2P: Puhdista huone niin, että silmät eivät herää ja munia ei munita"
+fi.kdd4.txt,achDesc38,"Mestaruuskerros, huone 1P1I: Tapa pirunsiipi, mutta älä pudota kaikkia ansaluukkuja"
+fi.kdd4.txt,achDesc10,Käy jokaisessa huoneessa alkuperäisessä kerroksessa 13 (%% / 56)
+fi.kdd4.txt,achDesc11,Tapa 40 peikkoa
+fi.kdd4.txt,achDesc13,Puhdista kerros 13
+fi.kdd4.txt,achDesc14,Puhdista kerros 14
+fi.kdd4.txt,achDesc15,Puhdista kerros 15
+fi.kdd4.txt,achDesc16,Puhdista kerros 16
+fi.kdd4.txt,achDesc12,Tapa torakkaemo torakanmunien kasvaessa
+fi.kdd4.txt,achDesc17,Läpäise mestaruushaaste
+fi.kdd4.txt,achDesc18,Läpäise jälkimestaruus
+fi.kdd4.txt,achDesc19,Tapa 100 torakkaa
+fi.kdd4.txt,achDesc20,Tapa 25 torakkaemoa
+fi.kdd4.txt,achDesc21,Tapa 10 torakanmunaa
+fi.kdd4.txt,achDesc22,Tapa 80 pahaa silmää
+fi.kdd4.txt,achDesc23,Tapa 40 pirunsiipeä
+fi.kdd4.txt,achDesc24,Tapa 25 käärmettä
+fi.kdd4.txt,achDesc25,Iske kuulaa kolmen vuoron ajan
+fi.kdd4.txt,achDesc26,Pudota 20 vihreää porttia
+fi.kdd4.txt,achDesc27,Tapa 3000 hirviötä
+fi.kdd4.txt,achDesc28,Kuole 80 kertaa
+fi.kdd4.txt,achDesc29,Peru 500 liikettä
+fi.kdd4.txt,achDesc30,Pudota 500 ansaluukkua
+fi.kdd4.txt,achDesc31,Tee yhteensä 10000 siirtoa
+fi.kdd4.txt,sc_13_entr_1,Oikotie uloskäyntiin
+fi.kdd4.txt,sc_13_entr_2,Taitava sivaltaja ei lue yläpuolella olevaa kääröä ennen kuin puhdistaa koko kerroksen.
+fi.kdd4.txt,sc_13_entr_3,"Kivet makasivat hiekan edessä, ja niiden edessä makasivat kivilaatat, joita edelsi kasvava ruoho; tämä oli maan tomuun rakennettu.
+-Tuntematon runoilija"
+fi.kdd4.txt,sc_13_2S2W_3,Oikotie sisäänkäyntiin
+fi.kdd4.txt,sc_14_1N3E,Seuraavan huoneen asukki ei ole kovin nokkela. Häntä voi huijata samalla tempulla joka kerta.
+fi.kdd4.txt,sc_mast_entr_1,Alkuperäinen kerros 13
+fi.kdd4.txt,sc_mast_entr_2,Joitakin uusi pulmia.
+fi.kdd4.txt,sc_mast_entr_3,Vaikeampia versioita tutuista huoneista.
+fi.kdd4.txt,sc_mast_1W,Täältä et löydä yhtään mitään.
+fi.kdd4.txt,sc_o13_orb,Tällä kuulalla oli tehtävä alkuperäisessä kerroksessa.
+fi.kdd4.txt,sc_o13_orbs,Näillä kuulilla oli tehtävät alkuperäisessä kerroksessa.
+fi.kdd4.txt,sc_o13_orb2,"Tämä kuula ei ollut alunperin tässä, ja keltainen portti oli kokonaan yhdessä huoneessa."
+fi.kdd4.txt,sc_o13_orbs_gates,"Alkuperäisessä huoneessa oli kuula, ja porteilla oli siinä tarkoitus."
+fi.kdd4.txt,sc_o13_broken_wall,"Alkuperäisessä huoneessa seinä oli tavallinen, joten sen takaiseen alueeseen ei voinut mennä."
+fi.kdd4.txt,sc_o13_edge,Tässä ei ollut alunperin huoneen reunaa.
+fi.kdd4.txt,sc_o13_roach,"Alkuperäisessä kerros 13:ssa yläpuolinen torakka oli samassa huoneessa, ja tämä käytävä oli hieman erilainen."
+fi.kdd4.txt,scM1s1,Tämäpä vasta on saavutus!
+fi.kdd4.txt,scM1s2,Millainen peli oli? Onnistuitko suorittamaan kaikki erityissuoritukset?
+fi.kdd4.txt,scM1s3,"Ole hyvä ja vieraile CaravelGames.com -sivulla, pelaa lisää KDDL-sarjan pelejä tai lataa varsinaisia DROD-pelejä Windows-, MacOS- tai Linux-koneelle."
+fi.kdd4.txt,scM1s4,Jatka samaan malliin!
+fi.kdd4.txt,scM1s5,Tässä on palkinto tarjolla! Tapa kaikki pahat silmät ja peikot astumatta ruohon päälle.
+fi.kdd4.txt,scM1s6,"Torakkaemot kuolevat, kun astut oikealla nurkassa olevaan tallennuspisteeseen."
+fi.kdd4.txt,scM1s7,Loistavaa!
+fi.kdd4.txt,sp_14_1E,"Aah...mikään ei ole niin tyydyttävää kuin se, ettei näe tervaa yhtään missään!"
+fi.kdd4.txt,sp_14_2N2E_1,"Pah...minun näköjään pitää säästää tämä peikko, kunnes se auttaa poistamaan tuon käärmeen."
+fi.kdd4.txt,sp_14_2N2E_2,"Ei oo apuja luvassa! Tiiän minä, aiot silpoa minua--eikä väliä teetkö nyt vai kohta."
+fi.kdd4.txt,sp_14_2N2E_3,"Älähän esitä rohkeaa. Tiedän kyllä, etteivät peikot ole rohkeita."
+fi.kdd4.txt,sp_14_2N2E_4,Eijeijei! Pitää terävän kepin pois!
+fi.kdd4.txt,sp_14_2N2E_5,Sinä mietit vilahtavasi selkäni taakse sopivalla hetkellä. Jep.
+fi.kdd4.txt,sp_14_2N2E_6,Armoa!
+fi.kdd4.txt,sp_14_2N2E_7,"Kuule, tekisit itsekin saman asemassani!"
+fi.kdd4.txt,sp_14_2N2E_8,Olipa ikävä homma. Toivottavasti minun ei tarvitse tehdä sitä uudelleen!
+fi.kdd4.txt,sp_14_2N2E_9,"Lepääpä tässä hetki, peikko. Aukaisen reitin sillä välin."
+fi.kdd4.txt,sp_14_2N2E_10,(Ehkäpä minun ei olisi tarvinnut lukita sitä tuonne...mutta ei vara venettä kaada!)
+fi.kdd4.txt,sp_14_1N1E,Kappas kappas...ei tarvinnut tuhota seinän seinää!
+fi.kdd4.txt,sp_15_1S2W,"Voi pojat, tämä ei ole helppoa hommaa. Täytyypä suunnitella jalkatyö tarkkaan ennen kuin käyn matkaan."
+fi.kdd4.txt,sp_16_2S1E_1,Mahtavaa! Joskus teen jopa itseeni vaikutuksen.
+fi.kdd4.txt,sp_16_2S1E_2,Haa! Puhdasta tuli!
+fi.kdd4.txt,sp_16_2S1E_3,Nyt pitää päästä pois täältä...
+fi.kdd4.txt,sp_16_2S1E_4,Hmm...mistä suunnasta tulinkaan?
+fi.kdd4.txt,sp_16_2S1E_5,"Jaa, eipä sillä ole väliä."
+fi.kdd4.txt,spM1s,Epäonnistuit...
+fi.kdd4.txt,sp_o13_1,"Tules tänne torakka, pikku torakka..."
+fi.kdd4.txt,sp_o13_2,Parsa! Yksi pienenpieni torakka pitää vielä liiskata.
+fi.kdd4.txt,sp_tut_entr_1,Tervetuloa. Tämä on DROD.
+fi.kdd4.txt,sp_tut_entr_2,"Jos pelaat ensimmäistä kertaa, jatka itään."
+fi.kdd4.txt,sp_tut_entr_3,"Löydät sieltä helpompia pulmia, joiden avulla peli-idea tulee tutuksi."
+fi.kdd4.txt,sp_tut_entr_4,"Jos osaat jo pelata, kulje portaita."
+fi.kdd4.txt,sp_tut_entr_5,Liiku numeronäppäinten tai näppäinten 789 uio jkl avulla.
+fi.kdd4.txt,sp_tut_entr_6,"Voit vaihtaa näppäinasetuksia toimintovalikosta, johon pääset escape-näppäimen painalluksella."
+fi.kdd4.txt,sp_tut_1E_1,Kuula hallitsee keltaisia ovia. Käytä sitä lyömällä sitä miekalla.
+fi.kdd4.txt,sp_tut_1E_2,"Napsauta kuulaa hiirellä, niin näet, mihin oviin se vaikuttaa."
+fi.kdd4.txt,sp_tut_1E_3,Käännä miekkaasi Q- ja W-näppäimillä.
+fi.kdd4.txt,sp_tut_1E_4,Iske torakkaa miekalla ja tapat sen.
+fi.kdd4.txt,sp_tut_1E_5,"Iske kuulaa ja odota pari vuoroa, niin näet miten hirviöt käyttäytyvät liikkuessaan vinottain nurkkaa vasten."
+fi.kdd4.txt,sp_tut_1E_6,Odota hetki...
+fi.kdd4.txt,sp_tut_1E_7,"Kuten näet, vinottaisen liikkeen estyessä hirviöt liikkuvat mieluiten pystysuunnassa."
+fi.kdd4.txt,sp_tut_1E_8,Tapa kaikki torakat avataksesi vihreän oven ja jatka itään.
+fi.kdd4.txt,sp_tut_2E_1,"Opit takaiskutekniikan täällä. Kun olet iskenyt kuulaa, voit tappaa torakat vain yhdellä tavalla - liiku suoraan pohjoiseen, länteen tai lounaaseen."
+fi.kdd4.txt,sp_tut_2E_2,"Liikettä kannattaa harjoitella muistaaksesi sen varmasti, sillä se on hyvin tärkeä tekniikka."
+fi.kdd4.txt,sp_tut_2E_3,Jopa hyvin kapeista paikoista voi liikkua vinottain.
+fi.kdd4.txt,sp_tut_2E_4,Rikkinäiset ja salaiset seinät voi särkeä miekalla.
+fi.kdd4.txt,sp_tut_2E_5,Nuolet estävät kaikkia liikkumasta vastakkaisiin suuntiin niiden osoittamasta suunnasta.
+fi.kdd4.txt,sp_tut_2E_6,"Astu tallenuspisteeseen, jotta voit palata tähän tilanteeseen, mikäli kuolet."
+fi.kdd4.txt,sp_tut_2E_7,Emotorakat munivat 30 vuoron välein. Käytä sikiämislaskuria vasemmalla seurataksesi milloin se tapahtuu.
+fi.kdd4.txt,sp_tut_3E_1,"Pahat silmät uinuvat paikallaan, kunnes astut niiden näkökenttään - herättyään ne käyvät kimppuusi torakoiden tavalla."
+fi.kdd4.txt,sp_tut_3E_2,Miekkasi ei vahingoita käärmettä. Ne voi tappaa vain johdattamalla ne umpikujaan.
+fi.kdd4.txt,sp_tut_3E_3,Muodosta umpikuja käärmeille rikkinäisistä seinistä.
+fi.kdd4.txt,sp_tut_3E_4,Voit peruuttaa enintään kolme siirtoa backspace-näppäimellä.
+fi.kdd4.txt,sp_tut_3E_5,"Toisin kuin muut hirviöt, käärmeet eivät liiku vinottain."
+fi.kdd4.txt,sp_tut_3E_6,"Joka hetkellä niillä on ensisijainen suunta, joka muuttuu viiden vuoron välein."
+fi.kdd4.txt,sp_tut_3E_7,Tämänhetkinen ensisijainen suunta näkyy sikiämislaskurin alla.
+fi.kdd4.txt,sp_tut_4E_1,"Kun astut ansaluukun päältä, se putoaa ja jäljelle jää kuoppa."
+fi.kdd4.txt,sp_tut_4E_2,Avaa punainen portti pudottamalla kaikki ansaluukut.
+fi.kdd4.txt,sp_tut_4E_3,"Huomaa, että voit käyttää ansaluukuista avautuneita kuoppia suojaamaan itseäsi torakoilta."
+fi.kdd4.txt,sp_tut_5E_1,Terva on hyvin erikoista ainetta. Sitä voi vahingoittaa vain tasaisilta laidoilta.
+fi.kdd4.txt,sp_tut_5E_2,Kaikkea tervaa ei täydä poistaa puhdistaessa huonetta.
+fi.kdd4.txt,sp_tut_6E_1,"Tervaemot ovat pelottavia vihollisia. Vaikka ne pysyvät paikallaan tervan keskellä, ne kasvattavat tervaa 30 vuoron välein."
+fi.kdd4.txt,sp_tut_6E_2,Musta portti aukeaa vasta kun tyhjennät koko huoneen tervasta.
+fi.kdd4.txt,sp_tut_7E_1,"Juo tämä juoma, ja voit sijoittaa matkijan."
+fi.kdd4.txt,sp_tut_7E_2,Matkijat tekevät kaikki liikkeesi samalla tavalla ja voivat tiputtaa ansaluukkuja kuten Beethro.
+fi.kdd4.txt,sp_tut_8E_1,"Kun juot näkymättömyysjuoman, hirviöt eivät liiku ellet ole niin lähellä, että ne haistavat sinut."
+fi.kdd4.txt,sp_tut_8E_2,"Älä päästä torakkaemoa pakenemaan nuolten luo, tai et voi tappaa sitä!"
+fi.kdd4.txt,sp_tut_8E_3,"Selvisit hyvin, onneksi olkoon!"
+fi.kdd4.txt,sp_tut_8E_4,Näytät epäonnistuneen...
+fi.kdd4.txt,sp_tut_8E_5,"Paina ""R"" aloittaaksesi huone alusta, tai odota hetki, niin saat vinkkejä."
+fi.kdd4.txt,sp_tut_8E_6,...
+fi.kdd4.txt,sp_tut_8E_7,Huoneen voi ratkaista kolmella tavalla.
+fi.kdd4.txt,sp_tut_8E_8,"Nopeimmassa tavassa torakkaemo tulee saada satimeen nuolten päälle vihreän oven vieressä sillä tavalla, että sen voi tappaa astumalla vinonuolen päälle tai viereen."
+fi.kdd4.txt,sp_tut_8E_9,"Toinen tapa on melkein yhtä nopea ja vaatii torakkaemon lähestymistä vaakasuunnassa niin, että vihreä ovi pysäyttää sen."
+fi.kdd4.txt,sp_tut_8E_10,"Viimeinen tapa vaatii koko huoneen kiertämistä, jotta torakkaemon saa ajettua sisäänkäynnin viereiseen käytävään."
+fi.kdd4.txt,sp_tut_8E_11,"Jos ei vieläkään onnistu, odota pari vuoroa, ja matkijajuoma tulee tarjolle hätäavuksi."
+fi.kdd4.txt,sp_tut_9E,Onnea!
+fi.kdd4.txt,sc_tut_emergency_potion,"Matkijajuoma hätäavuksi, käytettävä jos huone on muuten liian vaikea."
+fi.kdd4.txt,sc_tut_tricky,Tätä hankalaa huonetta ei ole pakko ratkaista
+fi.kdd4.txt,outro,"Viimeiset neljä kerrosta olivat Beethrolle yhtä tuskaa kaiken tervan, porttien ja torakoiden kera… Kun hän laskeutui portaita, hän tunsi taas sinisen liejun hajun, mikä aiheutti väristyksiä, mutta jokin vaisto varoitti vielä suuremman vaaran olevan edessä… 
+
+
+<font size=""32"" color=""#FFFF00"">Onnittelut!</font>
+
+Olet päihittänyt neljännen jakson Deadly Rooms of Death, King Dugan’s Dungeon Lite -pelistä. Toivoaksemme nautit tästä.
+Kun nyt laskeuduit alas viimeiset portaat tässä pelissä, voit kokeilla Mestarihaastetta ja sitä seuraavaa Jälkimestarihaastetta! Tämä onnistuu, jos löydät kaikki salahuoneet. Tästä lähtien tallennusruudusta näkyy kaikkien kerrosten salahuoneiden lukumäärä.
+Kunhan ratkaiset kaikki, reitti Mestaruuskerrokseen aukeaa. Löydätkö tiesi sinne?
+Sinua voi myös kiinnostaa seuraava jakso DROD:KDDL-pelisarjassa.
+
+Ennen kuin jätämme sinut paistattelemaan maineessa ja kunniassa, haluaisimme antaa kiitokset heille, joiden ansioista saatoit pelata tätä peliä:
+
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - DROD:in luoja, isä ja keksijä. Ilman häntä tätä ainutlaatuinen peli-idea ei olisi ikinä nähnyt päivänvaloa.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - Hän ohjelmoi suurimman osan DROD: JtRH and DROD: TCB -peleistä. Hienon koodin pohjalta Flash DROD -pelin tekeminen oli silkkaa nautintoa.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Caravel-foorumin ylin hallitsija ja CaravelNet:in pääohjelmoija. Hänen ansiotaan on mahdollisuus kilpailla ennätyksistä muiden pelaajien kanssa ja monta muuta asiaa!
+
+
+<font size=""23"" color=""#FFFF00"">Ohjelmointi, kehitys</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Taide & musiikki</font> - %% (minor)
+
+<font size=""23"" color=""#FFFF00"">Palvelinpuolen kehityst</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Arkkitehdit</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Päätestaajat</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testaajat</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Käännökset</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Ääninäyttely</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Alkuperäinen ohjelmointi, pelin idea ja alkuperäiset kerrokset</font> - %%
+
+
+Nähdään ensi kerralla!
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+fi.kdd4.txt,complNextGame,"Pelaa seuraava jaksoa, KDD Lite 5:ttä. Tästä voit aukaista uuden ikkunan, ja tämän ikkunan sulkeminen on turvallista. Pelitilanteesi on talletettu."
+fi.txt,keyBackspace,Backspace
+fi.txt,keyTab,Tab
+fi.txt,keyEnter,Enter
+fi.txt,keyShift,Shift
+fi.txt,keyControl,Control
+fi.txt,keyAlt,Alt
+fi.txt,keyPause,Pause/Brk
+fi.txt,keyCapsLock,Caps Lock
+fi.txt,keyEscape,Escape
+fi.txt,key ,Välilyönti
+fi.txt,keyPageUp,Page Up
+fi.txt,keyPageDown,Page Down
+fi.txt,keyEnd,End
+fi.txt,keyHome,Home
+fi.txt,keyArrowLeft,Left=Vasen
+fi.txt,keyArrowUp,Up=Ylös
+fi.txt,keyArrowRight,Right=Oikea
+fi.txt,keyArrowDown,Down=Alas
+fi.txt,keyInsert,Insert
+fi.txt,keyDelete,Delete
+fi.txt,key0,0
+fi.txt,key1,1
+fi.txt,key2,2
+fi.txt,key3,3
+fi.txt,key4,4
+fi.txt,key5,5
+fi.txt,key6,6
+fi.txt,key7,7
+fi.txt,key8,8
+fi.txt,key9,9
+fi.txt,keya,A
+fi.txt,keyb,B
+fi.txt,keyc,C
+fi.txt,keyd,D
+fi.txt,keye,E
+fi.txt,keyf,F
+fi.txt,keyg,G
+fi.txt,keyh,H
+fi.txt,keyi,I
+fi.txt,keyj,J
+fi.txt,keyk,K
+fi.txt,keyl,L
+fi.txt,keym,M
+fi.txt,keyn,N
+fi.txt,keyo,O
+fi.txt,keyp,P
+fi.txt,keyq,Q
+fi.txt,keyr,R
+fi.txt,keys,S
+fi.txt,keyt,T
+fi.txt,keyu,U
+fi.txt,keyv,V
+fi.txt,keyw,W
+fi.txt,keyx,X
+fi.txt,keyy,Y
+fi.txt,keyz,Z
+fi.txt,key91,L.Win/Cmd
+fi.txt,key92,R.Win
+fi.txt,key93,Menu
+fi.txt,keyNumpad0,Num.näpp. 0
+fi.txt,keyNumpad1,Num.näpp. 1
+fi.txt,keyNumpad2,Num.näpp. 2
+fi.txt,keyNumpad3,Num.näpp. 3
+fi.txt,keyNumpad4,Num.näpp. 4
+fi.txt,keyNumpad5,Num.näpp. 5
+fi.txt,keyNumpad6,Num.näpp. 6
+fi.txt,keyNumpad7,Num.näpp. 7
+fi.txt,keyNumpad8,Num.näpp. 8
+fi.txt,keyNumpad9,Num.näpp. 9
+fi.txt,keyNumpadMul,Num.näpp. *
+fi.txt,keyNumpadAdd,Num.näpp. +
+fi.txt,keyNumpadSub,Num.näpp. -
+fi.txt,keyNumpadDot,Num.näpp. .
+fi.txt,keyNumpadDiv,Num.näpp. /
+fi.txt,keyF1,F1
+fi.txt,keyF2,F2
+fi.txt,keyF3,F3
+fi.txt,keyF4,F4
+fi.txt,keyF5,F5
+fi.txt,keyF6,F6
+fi.txt,keyF7,F7
+fi.txt,keyF8,F8
+fi.txt,keyF9,F9
+fi.txt,keyF10,F10
+fi.txt,keyF11,F11
+fi.txt,keyF12,F12
+fi.txt,keyF13,F13
+fi.txt,keyF14,F14
+fi.txt,keyF15,F15
+fi.txt,key144,Numlock
+fi.txt,key145,Scroll Lock
+fi.txt,key;,;
+fi.txt,key=,=
+fi.txt,"key,",","
+fi.txt,key-,-
+fi.txt,key.,.
+fi.txt,key/,/
+fi.txt,key~,~
+fi.txt,key[,[
+fi.txt,key\,\
+fi.txt,key],]
+fi.txt,"key'","'"
+fi.txt,numpad,Num.näpp.
+fi.txt,notebook,Läppäri
+fi.txt,keyUp,Liiku pohjoiseen
+fi.txt,keyUpLeft,Liiku luoteeseen
+fi.txt,keyUpRight,Liiku koilliseen
+fi.txt,keyLeft,Liiku länteen
+fi.txt,keyRight,Liiku itään
+fi.txt,keyDown,Liiku etelään
+fi.txt,keyDownLeft,Liiku lounaaseen
+fi.txt,keyDownRight,Liiku kaakkoon
+fi.txt,keyWait,Odota vuoro
+fi.txt,keyCW,Käänny myötäpäivään
+fi.txt,keyCCW,Käänny vastapäivään
+fi.txt,keyUndo,Peruuta siirto
+fi.txt,keyRestart,Aloita huone alusta
+fi.txt,keyBattle,Toistonäppäin
+fi.txt,keyLock,Lukitse/Vapauta Huone
+fi.txt,close,Sulje
+fi.txt,cnetError,"Yhteysvirhe.
+Tämä voi johtua vääristä käyttäjätiedoista, toimimattomasta Internet-yhteydestä tai väliaikaisesta palvelinongelmasta. CaravelNetin toiminnot on poistettu käytöstä. Palauttaaksesi ne mene asetuksiin, päivitä käyttäjätiedot jos tarpeellista, ja paina ""Yhdistä!"""
+fi.txt,prlStartGame,Aloita peli
+fi.txt,prlLoading,Ladataan: %% / %%
+fi.txt,prlWaitApi,Odotetaan APIn yhdistävän...
+fi.txt,initAssets,Valmistellaan %% / %%
+fi.txt,prlLanguage,Vaihda kieltä
+fi.txt,tsStartNew,Aloita uusi peli
+fi.txt,tsStartNewKey,A
+fi.txt,tsStartNewKeyCode,65
+fi.txt,tsContinue,Jatka pelaamista
+fi.txt,tsContinueKey,J
+fi.txt,tsContinueKeyCode,74
+fi.txt,tsRestore,Palauta pelitilanne toisessa huoneessa
+fi.txt,tsRestoreKey,P
+fi.txt,tsRestoreKeyCode,80
+fi.txt,tsAchievements,Näytä saavutukset
+fi.txt,tsAchievementsKey,N
+fi.txt,tsAchievementsKeyCode,78
+fi.txt,tsOptions,Asetukset
+fi.txt,tsOptionsKey,s
+fi.txt,tsOptionsKeyCode,83
+fi.txt,tsHelp,Tietoa ja taustaa
+fi.txt,tsHelpKey,T
+fi.txt,tsHelpKeyCode,84
+fi.txt,tsBrowse,Holvistolista
+fi.txt,tsBrowseKey,H
+fi.txt,tsBrowseKeyCode,72
+fi.txt,optHeader,Asetukset:
+fi.txt,optUploadAll,Lähetä tulokset
+fi.txt,optConnect,Yhdistä!
+fi.txt,optRedefine,Määritä näppäimet
+fi.txt,optCnetHeader,CaravelNetin käyttäjätiedot
+fi.txt,optCnetUser,CNetin tunnus
+fi.txt,optCnetKey,CNetin avain
+fi.txt,optCnetVolume,Äänenvoimakkuus
+fi.txt,optCnetMusic,Musiikki
+fi.txt,optCnetSound,Äänitehosteet
+fi.txt,optCnetVoices,Ääninäyttely
+fi.txt,optMoveAnim,Animaatiot
+fi.txt,optMoveSmooth,Sulavuus
+fi.txt,opyMoveFast,Nopeus
+fi.txt,uploadAll,Lähetetään kaikki tulokset
+fi.txt,uploadDone,Valmis!
+fi.txt,uploadError,Virhe! Yritä uudestaan.
+fi.txt,uploadAlreadyHas,Lähetetty jo aiemmin
+fi.txt,uploadRoomEntrance,Sisäänkäynti
+fi.txt,cnetHeader,Lue lisää CaravelNetistä tai tilaa jäsenyys. Aukeaa uuteen ikkunaan.
+fi.txt,cnetDescription,"CaravelNetin tilanneet käyttäjät voivat täyttää tietonsa täällä osallistuakseen online-pistetaulukoihin. Jokainen huone pisteytetään vähimpien siirtojen mukaan. Jos et täytä näitä tietoja, ilmoitetaan sinulle minkä sijan olisit saanut. Voit myöhemmin lähettää kaikki tulokset valitsemalla ""Lähetä tulokset""."
+fi.txt,redefineScreen,"Vaihdat näppäintä ""%%""
+Valitse näppäin (nyt: %%)
+Paina Escape peruuttaaksesi"
+fi.txt,redefineInvalidKey,"%% on jo käytössä.
+Valitse uusi näppäin.
+Paina Escape peruuttaaksesi"
+fi.txt,redefineReservedKey,"%% on varattu toiselle näppäinkomentojoukolle
+Paina jotain toista nappia
+Paina Escape peruuttaaksesi"
+fi.txt,abButCnet,Tietoa CaravelNetistä
+fi.txt,abButHowto,Miten pelataan?
+fi.txt,abButHistory,DROD Historia
+fi.txt,abButBackstory,Taustajuoni
+fi.txt,abButCredits,Lopputekstit
+fi.txt,h&bTextWidth,450
+fi.txt,h&bText,"  DRODin loi Erik Hermansen 1990-luvulla. Se tunnetaan älypelinä, jossa kuljetaan huoneesta huoneeseen ja surmataan hirviöitä Hyvin suurella miekalla. Miten tämä toimii? Näet sen itse käytännössä heti kun rupeat pelaamaan tätä peliä.
+
+  Flash DROD on flash-versio alkuperäisestä DROD-pelistä. Se käyttää mediaa uusimmista DROD-pelimoottoreista, jotka voit ladata osoitteesta CaravelGames.com.
+
+  Peliin kuuluvan CaravelNet-palvelun ansiosta voit yksin pelaamisen lisäksi kilpailla muiden pelaajien kanssa parhaista tuloksista ratkaisemalla huoneet mahdollisimman pienillä siirtomäärillä.`"
+fi.txt,creditsWidth,620
+fi.txt,credits,"<font size=""20"">Ohjelmointi ja kehitys: </font><font color=""#444444"">%%</font>
+<font size=""20"">Grafiikka ja musiikki: </font><font color=""#444444"">%%</font>
+<font size=""20"">Palvelintoimintojen kehitys: </font><font color=""#444444"">%%</font>
+<font size=""20"">Pelisisällön kehitys: </font><font color=""#444444"">%%</font>
+<font size=""20"">Päätestaajat: </font><font color=""#444444"">%%</font>
+<font size=""20"">Testaajat: </font><font color=""#444444"">%%</font>
+<font size=""20"">Käännökset: </font><font color=""#444444"">%%</font>
+<font size=""20"">Ääninäytteleminen: </font><font color=""#444444"">%%</font>
+<font size=""20"">Alkuperäinen koodaus, idea ja sisältö: </font><font color=""#444444"">%%</font>"
+fi.txt,controlsWindowWidth,650
+fi.txt,controlsWindow,"<font size=""18"">`Numpad` and `789 UIO JKL`</font><font color=""#444444""> - Liikuta hahmoa</font>
+<font size=""18"">`Q` and `W`</font><font color=""#444444""> - Käännä miekkaa</font>
+<font size=""18"">`Backspace`</font><font color=""#444444""> - Peru edellinen siirto</font>
+<font size=""18"">`R'</font><font color=""#444444""> - Palaa tallennuspisteeseen tai aloita alusta</font>
+<font size=""18"">`Shift+R`</font><font color=""#444444""> - Aloita huone alusta</font>
+<font size=""18"">`Escape`</font><font color=""#444444""> - Taukovalikko</font>
+<font size=""18"">`Enter`</font><font color=""#444444""> - Tason ja huoneen pisteet</font>
+<font size=""18"">`X`</font><font color=""#444444""> - Huoneen lukitus/avaus</font>
+<font size=""18"">`Space`</font><font color=""#444444""> - Piilota puhekuplat ja saavutusilmoitukset</font>
+<font size=""18"">`F3`</font><font color=""#444444""> - Näytä siirtojen määrä</font>
+<font size=""18"">`Shift+Key`</font><font color=""#444444""> - Tee siirto ja sen vastakohta</font>
+<font size=""18"">`Shift+Wait`</font><font color=""#444444""> - Odota seuraavaan sikiämisvaiheeseen</font>
+<font size=""18"">`Mouse click`</font><font color=""#444444""> - Näytä tietoja ympäristöstä</font>
+
+  Tehtävänäsi on puhdistaa Kuningas Duganin vankityrmä läpikotaisin ja tehtävän voit ratkaista vain Hyvin suurella miekalla™ ja nokkeluudella. Jokainen huone pitää ratkaista erikseen. Jos lähdet huoneesta ratkaisematta sitä kokonaan se palautuu takaisin alkuperäiseen tilaan."
+fi.txt,cnetInfoWidth,500
+fi.txt,cnetInfo,"  CaravelNetin avulla käyttäjät kaikkialla maailmassa voivat kilpailla parhaista tuloksista.   Kuka tahansa voi lähettää tuloksensa nimettömänä nähdäkseen kuinka hyviä ne ovat verrattuna muiden pelaajien tuloksiin.   Nimettömänä lähettettyjä tuloksia ei kuitenkaan tallenneta Caravelin palvelimeen, vaan niitä vain vertaillaan tallennettuihin tuloksiin. Kaikkien Caravel-foorumiin rekisteröityneiden käyttäjien tulokset tallennetaan veloituksetta kahdeksi viikoksi niiden lähettämisen jälkeen. CaravelNet-palvelun tilanneiden tuloksia ei poisteta koskaan.
+
+  Huom! Niin kauan kuin saavutettuja tuloksia ei poisteta omasta koneestasi, voit lähettää ne palvelimeen hankittuasi Caravel-tilin.
+
+  Voit rekisteröidä Caravel-tilin CaravelGames.com-osoitteessa. Käy sivulla ja luo käyttäjätunnus foorumille."
+fi.txt,backstory1,"  Beethro Budkin asteli Suureen ruokasaliin, missä Kuningas Dugan juuri lopetteli valtavaa aamiastaan.
+
+  ""Pois, kurja alamainen! Häiritset ruoansulatustani heikolla hygieniallasi!"", mylvi Kuningas, samalla kun porsaankyljyksen palasia ja perunoita sinkoili hänen suustaan.
+
+  ""Mutta herra,"" huomautti Beethro, ""te kutsuitte minut paikalle.""
+
+  Kuninkaan kookkaiden kasvojen ilme muuttui raivostuneesta hämmentyneeksi ja ymmärtäväisestä sydämelliseksi kahden sekunnin aikana.
+
+  ""Minun olisi pitänyt kutsua sinut jo aiemmin"", sanoi Kuningas Dugan. ""On uskomatonta, mitä tapahtuu, jos antaa vartijoidensa syödä ateriansa alhaalla vankityrmissä! He levittävät ruoanmuruja ympäriinsä, ja yhtäkkiä kaikkialla vilisee jättiläiskokoisia torakoita, puhumattakaan peikoista, käärmeistä, pahoista silmistä ja muista ilkeistä otuksista. Tilanne on karannut käsistä.""
+
+Beethro suoristautui ylpeän näköisenä. ""Ei syytä huoleen. Olen koulutettu ammattilainen vanhasta tuholaistorjujien suvusta. Voin luottaa sekä viiden sukupolven kokoamaan tietoon, että kaikkein uusimpiin välineisiin, ja tarjoan tehokkaan hävityspalvelun edulliseen hintaan.""
+
+  ""Minkälaisia välineitä sinä käytät?""
+
+  ""Minulla on hyvin suuri miekka."""
+fi.txt,backstory2,"  ""Erinomaista! Milloin voit aloittaa?""
+
+  ""Heti kun teemme maksusopimuksen. Tässä ovat minun tuholaistorjuntapalveluitteni vakiohinnat. Voitte kirjoittaa nimenne alle."" Beethro ojensi sopimuksen Kuninkaalle.
+
+  ""Nämä hinnat ovat hävyttömiä! Eikö Kruunun kunniallinen palveleminen ole sentään arvokas etuoikeus näinä päivinä?""
+
+  ""Voin lähteä.""
+
+  ""Ei, ei, ei. Vankityrmät täytyy siistiä, jotta vankeja voidaan kiduttaa puhtaassa ja turvallisessa ympäristössä.""
+
+  ""No, voin antaa teille alennusta, jos tarjoatte mukaan prinsessan.""
+
+  ""Olet ruma ja haiset pahalle. Et kelpaa yhdellekään tyttäristäni!""
+
+  Beethro kohotti olkapäitään. ""Ei sitten.""
+
+  Kuningas allekirjoitti sopimuksen. ""Selvä. Näytän sinulle missä vankityrmä on."""
+fi.txt,backstory3,"  Laskeutuessaan portaita Beethro mietti työtä, jonka oli ottanut vastaan. Duganin vankityrmä oli hyvin suuri ja edellisten tuholaistorjujien mukaan suorastaan naurettavan houkutteleva tuholaisille. Lisäksi sitä oli salaa laajennettu useita kertoja, mikä oli ollut ikävä yllätys ensimmäiselle puhdistajalle, jonka sopimuksessa tätä mahdollisuutta ei ollut mainittu. (Hänelle oli maksettu vain luolan osista, joista hän oli tiennyt.)
+
+  Sanottiin, että pimeät voimat olivat laajennuksen takana. Tarina kertoi, että ammoin elänyt kuningas kyllästyi nuoren poikansa ärsyttävään käytökseen ja neuvoi leikillään, että poikanen menisi leikkimään linnan vankityrmiin. Poika uskoi isäänsä ja vaelsi syvälle tyrmän kammioihin, eikä häntä sen koommin nähty. Kerrottiin, että hän ei kuollut, vaan eli mielellään loppuelämänsä maanalaisissa luolissa. Kerrottiin myös, että hänestä tuli uuden ympäristönsä hallitsija, oppien kaikki maanalaisen maailman salaisuudet ja liittoutui siellä asuvien hirviöiden kanssa, laittaen ne kaivamaan uusia käytäviä ja kasvattamaan vahvempia hirviöyksilöitä. Hän nimesi itsensä Allakaiseksi, ja suunnitteli nousevansa luolista ja riistävänsä valtaistuimen, kun hänen voimansa riittäisivät."
+fi.txt,backstory4,"  Beetho ei tiennyt mitä ajatella tästä. Ensinnäkin, kuninkaallinen valtaistuin ei ollut entisaikojen veroinen, koska suurin osa sen vallasta oli siirtynyt parlamentille. Puhumattakaan siitä, miksi kukaan haluaisi elää maan alla, tai miten kukaan voisi ystävystyä maanalaisten olioiden kanssa, jotka eivät olleet erityisen keskustelutaitoisia. Oli kuitenkin totta, että vankityrmät olivat usein turhan monimutkaisia ja tuholaisia houkuttelevia, ja ne saattoivat joskus laajentua yllättäen – oli Tyrmäarkkitehtien kunniakysymys olla kertomatta miksi –, mikä ennen kaikkea tarjosi Beethrolle ja hänen kaltaisilleen jatkuvasti töitä.
+
+  Joka tapauksessa, tuholaistorjujilla oli paljon muitakin ongelmia, kuten nopeasti sikiävä, ihmisen kokoinen vankityrmien torakka. Tärkeimpänä ajatuksena Beethron mielessä oli, että hänen pitäisi ansaita tarpeeksi rahaa ja tappaa tarpeeksi hirviöitä työnsä aikana, jotta voisi viimeinkin lopettaa kiittämättömän työnsä ja avata oman ravintolansa.
+
+  ""Annan sen nimeksi 'Beethron paistetut torakat -grilli'!"""
+fi.txt,backstory1width,550
+fi.txt,backstory2width,550
+fi.txt,backstory3width,550
+fi.txt,backstory4width,550
+fi.txt,backstoryNext,Seur.
+fi.txt,backstoryPrev,Edel.
+fi.txt,drodHistoryWidth,650
+fi.txt,drodHistory,"  ""Deadly Rooms of Death"" -pelin (DROD) loi alunperin Erik Hermansen 1990-luvulla. Webfoot julkaisi pelin. Tämä julkaisu tunnetaan nimellä ""Webfoot DROD"", mutta se ei ole enää myynnissä, eikä sitä voi hankkia tai levittää laillisesti. Onneksi Erik sai luvan kehittää itse uuden version, ja ""Caravel DROD"" syntyi vuonna 2002.
+
+  Sen jälkeen, vuonna 2003, julkaistiin ""DROD: Architect's Edition"". Siinä oli tasoeditori, joka salli jokaisen tehdä omia holvistoja (tasokokoelmia) ja jakaa niitä CaravelGames-foorumin kautta. Peli keräsi laajan fanijoukon, ja seuraavaa peliä ruvettiin suunnitelemaan.
+
+  Huhtikuun ensimmäisenä 2005 julkaistiin ""DROD: Journey to Rooted Hold"". Uusia ominaisuuksia oli hämmästyttävän paljon. Peli esitteli uudet grafiikat, pelihahmoja ohjaavat komentosarjat, yli kymmenen uutta pelielementtiä, mukaansatempaavan tarinan ja päävastustajan, jonka pelkkä ääni sai aikaan kylmiä väreitä.
+
+  Tasan kaksi vuotta tämän jälkeen ""DROD: The City Beneath"" näki päivänvalon. Julkaisupäivänä Caravel-foorumilla vieraili ennätysmäärä käyttäjiä samaan aikaan. TCB esitteli vielä enemmän pelielementtejä ja parannuksia JtRH:n tuomien lisäksi ja oli pelinä haastavampi.
+
+  Vuonna 2008 julkaistiin ""DROD RPG"". Vaikka siitä ei tullut yhtä suosittu kuin varsinaisesta pelisarjasta, on se silti loistava helmi. Suurimpana erona muihin DROD-sarjan peleihin DROD RPG:ssä on resurssienhallinnan ja useista huoneista koostuvien strategisten haasteiden painottaminen.
+
+  ""DROD 4: Gunthro and the Epic Blunder"" on sarjan uusin peli, joka julkaistiin huhtikuun ensimmäisenä 2012. Se on suunnattu uusille pelaajille, ja sen helpommat pulmat, intuitiivisemmat oppaat ja selkeä tasorakenne tekevät siitä sopivan aloittelijoille."
+fi.txt,rstHeader,Palauta peli
+fi.txt,rstToRoom,Palauta tähän huoneeseen
+fi.txt,rstReturn,Palaa päävalikkoon
+fi.txt,rstSecrets,Ratkaistuja salahuoneita: %% / %%
+fi.txt,roomLocked,"Olet lukinnut huoneen.
+Paina %% avataksesi sen."
+fi.txt,ingLevelCompleted,Kerros läpäisty
+fi.txt,ingSecretFound,Salahuone löytyi
+fi.txt,ingHoldMastered,Holviston mestarihaaste ratkaistu
+fi.txt,achievementHeader,Saavutus!
+fi.txt,achievementDismiss,Klikkaa tai paina välilyöntiä
+fi.txt,achlistHeader,Saavutukset:
+fi.txt,browseHeader,Selaa Flash DROD -holvistoja
+fi.txt,browseOpen,Avaa uudessa ikkunassa
+fi.txt,scrStats,Pelaajan tiedot:
+fi.txt,scrYourBest,Ennätyksesi:
+fi.txt,scrTop,Huoneen parhaimmat tulokset:
+fi.txt,scrNoScore,Ei yhtään!
+fi.txt,scrFetching,Noudetaan...
+fi.txt,scrOnlyForCnet,"Huoneiden tulokset ovat vain CaravelNetin tilaajien ja Caravel-foorumin käyttäjien nähtävissä.
+
+Et ole vielä täyttänyt CaravelNetin lomaketta. Luomalla Caravelgames-tunnuksen voit kilpailla muita pelaajia vastaan ympäri maailmaa ja seurata kaikkien huoneiden parhaita tuloksia.
+
+Rekisteröidy Caravelgames:iin painamalla Asetukset-valikosta löytyvää nappia."
+fi.txt,scrMovesRoom,Siirtoja tässä huoneessa: %%
+fi.txt,scrMovesLevel,Siirtoja koko kerroksessa: %%
+fi.txt,scrDeaths,Kuolemat: %%
+fi.txt,scrKills,Tapot: %%
+fi.txt,scrTime,Aika: %%
+fi.txt,scrNoScores,Ei vielä tuloksia nykyiselle huoneelle.
+fi.txt,scrCnetProblems,"CaravelNetin toiminnot on poistettu käytöstä yhteysongelmien takia.
+
+Varmista ensin Internet-yhteyden toimivuus ja CaravelNetin käyttäjätietosi. Sen jälkeen mene Asetukset-valikkoon ja paina ""Yhdistä!"""
+fi.txt,loginConnected,"Sinulla on nyt yhteys CaravelNetiin rekisteröitynä käyttäjänä!
+
+  Jos olet vain luonut foorumitunnuksen, mutta et tilannut CaravelNet-palvelua, ennätyksesi poistetaan kahden viikon jälkeen palvelimelle lähettämisestä."
+fi.txt,loginConnectedAnonymous,"  Sinulla on nyt yhteys CaravelNetiin nimettömänä käyttäjänä. Voit lähettää tuloksesi ja nähdä minkä sijan ennätystaulussa olisit saanut, mutta tuloksiasi ei talleteta palvelimelle. Tuloksistasi tulee pysyviä, jos hankit Caravelgames-tunnuksen (sen voit tehdä Asetukset-valikosta).
+  Jos päätät hankkia tunnuksen myöhemmin, käytä ""Lähetä tulokset""-nappia lähettääksesi kaikki tuloksesi meidän palvelimillemme."
+fi.txt,loginFailed,"Yhteyden muodostaminen ei onnistunut!
+
+1. Tarkista, että Internet-yhteytesi toimii.
+2. Varmista, ettei palomuurisi estä pelin yhteydenottoa.
+3. Vieraile osoitteessa http://forum.caravelgames.com ja varmista, että palvelin toimii. Jos se ei toimi juuri nyt, odota hetken aikaa ja yritä uudestaan."
+fi.txt,loginFailedBadCredentials,"4. Tarkista, että olet antanut oikeat käyttäjätiedot."
+fi.txt,loginFailedMissingCrentials,"4. Varmista, että olet antanut käyttäjätunnuksen ja CaravelNetin avaimen oikein."
+fi.txt,pauseHeader,DROD on nyt taukotilassa.
+fi.txt,pauseContinue,Jatka pelaamista.
+fi.txt,pauseContinueTip,"Jatka pelaamista.
+(Escape, Enter)"
+fi.txt,pauseRestart,Aloita huone alusta
+fi.txt,pauseRestartTip,"Aloita huone alusta.
+(Paina: F5)."
+fi.txt,pauseRoomHelp,Hanki vinkkejä nykyiseen huoneeseen
+fi.txt,pauseRoomHelpTip,"Hanki online-vinkkejä nykyiseen huoneeseen.
+(Paina: F2)"
+fi.txt,pauseHelp,Lue Yleisiä neuvoja
+fi.txt,pauseHelpTip,"Avaa Yleiset neuvot.
+(Paina: F1)"
+fi.txt,pauseAchievements,Näytä saavutukset
+fi.txt,pauseAchievementsTip,"Näytä luettelo kaikista saavutuksista.
+(Paina: Tab)"
+fi.txt,pauseOptions,Asetukset
+fi.txt,pauseOptionsTip,Voit muuttaa joitain asetuksia
+fi.txt,pauseReturn,Palaa takaisin päävalikkoon
+fi.txt,pauseReturnTip,"Pelisi on tallennettu,
+mutta nykyisen huoneen tiedot katoavat
+jos lopetat pelaamisen."
+fi.txt,achHidden,???
+fi.txt,levelCreatedDate,Luotu %%.%%.%%
+fi.txt,score1NoTie,Ensimmäinen sija!
+fi.txt,score1,1. sija
+fi.txt,score2,2. sija
+fi.txt,score3,3. sija
+fi.txt,score4,4. sija
+fi.txt,score5,5. sija
+fi.txt,score6,6. sija
+fi.txt,score7,7. sija
+fi.txt,score8,8. sija
+fi.txt,score9,9. sija
+fi.txt,score10,10. sija
+fi.txt,score11,11. sija
+fi.txt,score12,12. sija
+fi.txt,score13,13. sija
+fi.txt,score14,14. sija
+fi.txt,score15,15. sija
+fi.txt,score16,16. sija
+fi.txt,score17,17. sija
+fi.txt,score18,18. sija
+fi.txt,score19,19. sija
+fi.txt,score20,20. sija
+fi.txt,score21,21. sija
+fi.txt,score22,22. sija
+fi.txt,score23,23. sija
+fi.txt,score24,24. sija
+fi.txt,score25,25. sija
+fi.txt,scoreTie,%% tasatulos!
+fi.txt,scoreNoCnet,(nimetön)
+fi.txt,resultHoldTotals,Holviston yhteispisteet:
+fi.txt,resultLevelTotals,"Kerroksen yhteispisteet:
+"
+fi.txt,resultMoves,"Siirrot: %%
+"
+fi.txt,resultKills,"Tapot: %%
+"
+fi.txt,resultDeaths,"Kuolemat: %%
+"
+fi.txt,resultTime,"Aika: %%
+"
+fi.txt,resultSecrets,"Löytyneitä salahuoneita: %%
+"
+fi.txt,resultSecretsBetter,"Löytyneitä salahuoneita %% / %%
+"
+fi.txt,spawnCycle,Sikiämisvaihe:
+fi.txt,snakesPrefer,Käärmeet suosivat:
+fi.txt,clcHo,SI
+fi.txt,clcRiz,VU
+fi.txt,clcOn,SUUN
+fi.txt,clcTal,TA
+fi.txt,clcVe,PYS
+fi.txt,clcRt,TY
+fi.txt,clcIc,SUUN
+fi.txt,clcAl,TA
+fi.txt,tile1,Lattia
+fi.txt,tile2,Rotko
+fi.txt,tile3,Portaat alas
+fi.txt,tile4,Seinä
+fi.txt,tile5,Murtunut seinä
+fi.txt,tile6,Kerrosportti
+fi.txt,tile7,Huoneportti
+fi.txt,tile8,Ansaluukkuportti
+fi.txt,tile9,Keltainen portti
+fi.txt,tile10,Avoin keltainen portti
+fi.txt,tile11,Ansaluukku
+fi.txt,tile12,Este
+fi.txt,tile13,Voimanuoli (Pohjoinen)
+fi.txt,tile14,Voimanuoli (Koillinen)
+fi.txt,tile15,Voimanuoli (Itä)
+fi.txt,tile16,Voimanuoli (Kaakko)
+fi.txt,tile17,Voimanuoli (Etelä)
+fi.txt,tile18,Voimanuoli (Lounas)
+fi.txt,tile19,Voimanuoli (Länsi)
+fi.txt,tile20,Voimanuoli (Luode)
+fi.txt,tile21,Näkymättömyysjuoma
+fi.txt,tile22,Matkijajuoma
+fi.txt,tile23,Käärö
+fi.txt,tile24,Kuula
+fi.txt,tile35,Terva
+fi.txt,tile37,Tervaportti
+fi.txt,tile54,Mosaiikki
+fi.txt,tile55,Tie
+fi.txt,tile56,Ruoho
+fi.txt,tile57,Sora
+fi.txt,tile58,Lattia
+fi.txt,tile59,Mestariportti
+fi.txt,tile61,Portaat ylös
+fi.txt,tile62,Salaseinä
+fi.txt,tile66,Seinä
+fi.txt,tile68,Aukinainen huoneportti
+fi.txt,tile69,Aukinainen tasoportti
+fi.txt,tile70,Aukinainen ansaluukkuportti
+fi.txt,tile71,Aukinainen tervaportti
+fi.txt,tileCheckpoint,Tallennuspiste
+fi.txt,monsterPlayer,Pelaaja
+fi.txt,monster0,Torakka
+fi.txt,monster1,Torakkaemo
+fi.txt,monster2,Torakanmuna
+fi.txt,monster3,Peikko
+fi.txt,monster5,Pirunsiipi
+fi.txt,monster6,Paha silmä
+fi.txt,monster7,Käärme
+fi.txt,monster8,Tervamaammo
+fi.txt,monster9,Tervahinen
+fi.txt,monster10,Aivot
+fi.txt,monster11,Kaksoisolento
+fi.txt,monster12,Hämähäkki
+fi.txt,monster29,Henkilö
+fi.txt,sword,Miekka
+fi.txt,swords,Miekat (%%)
+fi.txt,roomS,E
+fi.txt,roomSouth,etelään
+fi.txt,roomN,P
+fi.txt,roomNorth,pohjoiseen
+fi.txt,roomE,I
+fi.txt,roomEast,itään
+fi.txt,roomW,L
+fi.txt,roomWest,länteen
+fi.txt,roomEntrance,Sisäänkäynti
+fi.txt,room1,1
+fi.txt,room2,2
+fi.txt,room3,3
+fi.txt,room4,4
+fi.txt,room5,5
+fi.txt,room6,6
+fi.txt,room7,7
+fi.txt,room8,8
+fi.txt,room9,9
+fi.txt,room10,10
+fi.txt,room11,11
+fi.txt,room12,12
+fi.txt,room13,13
+fi.txt,room14,14
+fi.txt,room15,15
+fi.txt,room16,16
+fi.txt,room17,17
+fi.txt,room18,18
+fi.txt,room19,19
+fi.txt,roomMore,%%
+fi.txt,complButtNextGame,Pelaa seuraava osa
+fi.txt,complButtLearnMore,Lue lisää
+fi.txt,complButtContinue,Jatka pelaamista
+fi.txt,complHeader,Mitä seuraavaksi?
+fi.txt,complLearnMore,"Syvenny DROD-sarjaan - sen maailmaan ja keskeisiin peleihin: Journey to Rooted Hold, The City Beneath, Gunthro and the Epic Blunder, sekä tuleviin peleihin!"
+fi.txt,complContinue,Jatka holviston tutkintaa - etsi salahuoneet ja löydä tiesi mestarihaastealueelle. Muihin vaihtoehtoihin löydät linkit päävalikosta.
+fi.txt,rstFarthest,Valitse viimeisin tallennus.
+fi.txt,rstHelpTooltip,Näet palautustoiminnon pikaesittelyn klikkaamalla.
+fi.txt,rstHelp,"Pelitilanteen palauttaminen toimii melkein kuin tallentaminen suosikkipelissäsi. Vaikka et voi tallentaa milloin vain haluat, peli tallentaa tilanteen automaattisesti aina tullessasi ratkaisemattomaan huoneeseen.
+
+Palauttaaksesi aiemman pelitilanteen valitse ensin kerros vasemmanpuoleisesta luettelosta ja valitse sitten huone pikkukartasta alhaalla. Pikkukartassa merkitään harmaalla ne huoneet, joissa et ole vielä käynyt. Valkoinen tausta merkitsee ratkaistuja huoneita ja punainen ratkaisemattomia.
+
+Voit aina ladata parhaimman pelitilanteen klikkaamalla nappia nimeltä ""Valitse viimeisin tallennus.""
+
+Pelitilanteiden palauttaminen on tarpeen, jos haluat parantaa jonkin huoneen tulosta, etsiä salahuoneita tai pelata uudelleen suosikkihuoneesi."
+fi.txt,rstWarning,"Olet päättänyt palata aiempaan pelitilanteeseen - jotkin huoneet palautetaan niiden ratkaisemattomaan tilaan.
+
+Voit aina palata viimeisimpään ja parhaaseen pelitilanteeseen klikkaamalla nappia nimeltä ""Valitse viimeisin tallennus."""
+fi.txt,optDelayText,Näppäintoistotauko:
+fi.txt,optDelayShort,Lyhyt
+fi.txt,optDelayLong,Pitkä
+fi.txt,optGetPass,Hanki CNet-avain
+fi.txt,optGetPassTooltip,"Caravel Games -foorumin tunnuksen haltijat voivat hankkia CaravelNet-avaimen, jonka avulla on mahdollista lähettää tuloksia yhteiseen ennätyslistaan. Nämä tulokset poistetaan kahden viikon päästä. Maksullisen tilauksen hankkineiden tulokset säilytetään ikuisesti, vaikka tilausaika myöhemmin loppuisi."
+fi.txt,optDelayTooltip,Tauko näppäimen painamisen ja toiminnon toiston välillä.
+fi.txt,optRateTooltip,Liikkumisen tasaisuus ja toistonopeus näppäintä painaessa.
+fi.txt,achAddInfo,"Harmaalla merkityt mutta ei läpinäkyvät saavutukset ovat ""aktiivisia"". Se tarkoittaa, että tässä huoneessa voi olla mahdollista hankkia kyseinen saavutus tai suorittaa osa sen vaatimuksista (mutta ei aina, joten lue saavutuksien kuvaukset tarkkaan). Huomaa, että jotkin saavutukset voivat olla aktiivisia kaikissa tai useimmissa pelin huoneissa."
+fi.txt,pauseRestore,Palauta pelitilanne eri huoneeseen.
+fi.txt,cnetDescriptionKong,"Valitettavasti Kongregaten käytäntöjen takia kirjautuminen ei ole käytössä, etkä voi lähettää tuloksia yhteiseen ennätyslistaan. Jos haluat, voit pelata Flash DROD -peliä caravelgames.com -osoitteessa!"
+fi.txt,defCont,Oletuskontrollit:

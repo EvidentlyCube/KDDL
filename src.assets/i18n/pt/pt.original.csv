@@ -1,0 +1,1516 @@
+File Name,Old Key,Translation
+pt.kdd1.txt,First Level,Primeiro Nível
+pt.kdd1.txt,Second Level,Segundo Nível
+pt.kdd1.txt,Third Level,Terceiro Nível
+pt.kdd1.txt,Fourth Level,Quarto Nível
+pt.kdd1.txt,Mastery Level,Nível de Maestria
+pt.kdd1.txt,entr1,"Beethro Budkin, exterminador de masmorras profissional de quinta geração, foi contratado pelo rei Dugan para limpar a masmorra multi-nível real, infestada por uma grande quantidade de monstros.
+Beethro cobra por sala, e sendo um profissional, ele é obrigado pelo seu contrato a eliminar todos os monstros de cada sala para ser pago.
+A única arma que Beethro precisa para fazer seu trabalho é uma Espada Muito Grande, que pode derrotar quase qualquer monstro com um único golpe.
+
+-----
+
+""Espero que você não me cobre pelo nível superior. Eu já arranjei a limpeza dele. Bom, a maior parte."" -Rei Dugan"
+pt.kdd1.txt,entr2,"Beethro está meio enferrujado, mas o próximo nível deve deixá-lo em forma."
+pt.kdd1.txt,entr3,"""Hmm..."" Beethro pensou. ""Até agora, a maioria desses monstros são baratas. Este trabalho parece bolinho."""
+pt.kdd1.txt,entr4,"""Queria ter mais alguns destes duplos aqui comigo!"" disse Beethro.  ""Ia ser muito mais rápido."""
+pt.kdd1.txt,entr4Back,Beethro voltou pra terminar o negócio de limpeza que ele foi contratado para fazer.
+pt.kdd1.txt,entrMaster,"Beethro desceu as escadas, só para encontrar um corredor fora do mapa...
+
+Ele não vai receber pela limpeza deste nível, mas a sua honra profissional o empurra pra frente."
+pt.kdd1.txt,sc1e0,Use o teclado numérico ou 789uiojkl para se movimentar. Teclas podem ser remapeadas do menu de pausa (Esc).
+pt.kdd1.txt,sc1e1,"Para rever os controles quando quiser, tecle 'Esc', clique em 'Ajuda Geral' e vá para 'Como Jogar'."
+pt.kdd1.txt,sc1_1n,"Esta porta amarela vai ser usada mais tarde. 
+
+ Por enquanto continue para o oeste."
+pt.kdd1.txt,sc1_1n1w1,"Gire sua espada usando 'Q' e 'W'."
+pt.kdd1.txt,sc1_1n1w2,Acerte a orbe com a sua espada para abrir portas na sala.
+pt.kdd1.txt,sc1_1n1w3,Algumas orbes alternam as portas amarelas entre o estado de aberta e fechada.
+pt.kdd1.txt,sc1_2n1w1,Você pode descobrir o que uma orbe faz se clicar nela com o mouse. Portas iluminadas em cores diferentes indicam efeitos diferentes.
+pt.kdd1.txt,sc1_2n1w2,"Em vez de alternar uma porta amarela, uma orbe pode somente abrí-la ou fechá-la."
+pt.kdd1.txt,sc1_3n1w1,Portões azuis abrem quando você conquistar todas as salas requeridas de um nível (andar).
+pt.kdd1.txt,sc1_3n1w2,Salas requeridas estão marcadas com um fundo vermelho no mini-mapa.
+pt.kdd1.txt,sc1_3n2w1,Texto de fala e texto informativo na tela pode ser removido da tela com a barra de espaço.
+pt.kdd1.txt,sc1_3n2w2,"Quando você sair de uma sala que foi limpa de monstros, ela será marcada como conquistada."
+pt.kdd1.txt,sc1_3n2w3,"No mini-mapa, salas conquistadas estão marcadas em branco ao invés de vermelho."
+pt.kdd1.txt,sc1_3n2w4,Conquiste todas as salas requeridas para abrir a passagem para o próximo nível.
+pt.kdd1.txt,sc1_4n3w,Flechas obrigatórias bloqueiam o movimento de Beethro e dos monstros na direção contrária.
+pt.kdd1.txt,sc1_4n1w,Portões verdes abrem quando você limpar os monstros de uma sala.
+pt.kdd1.txt,sc1_5n1w1,"Observe como a barata de baixo se comporta quando tenta passar por um canto diagonalmente. Para esperar um turno aperte 'I' ou 5 no Numpad."
+pt.kdd1.txt,sc1_5n1w2,"A maioria dos monstros que encontrarem uma quina quando tentarem andar na diagonal vão deslizar verticalmente, se possível."
+pt.kdd1.txt,sc1_5n2w1,Lembre-se que você pode clicar numa orbe com o mouse para ver quais portas ela afeta.
+pt.kdd1.txt,sc1_5n2w2,"Cuidado! Aqui é perigoso.
+
+Se você cometer um erro, aperte 'Backspace' para desfazer até três jogadas."
+pt.kdd1.txt,sc1_5n2w3,Você também pode desfazer (ou reiniciar) enquanto a animação de morte está passando!
+pt.kdd1.txt,sc1_5n2w4,"Tocar um ponto de verificação 'X' permite que você retorne ao ponto em que você pisou no mesmo.
+Pressione 'R' para reiniciar a sala ou voltar ao último ponto de verificação tocado."
+pt.kdd1.txt,sc1_6n2w,Um espadachim de qualidade pode derrotar todas as baratas sem se esconder no beco ao sul!
+pt.kdd1.txt,sc1_6n3w1,Você usará a técnica de corte traseiro para se livrar desta barata. Siga para o próximo pergaminho.
+pt.kdd1.txt,sc1_6n3w2,Pise no piso verde e verifique que a barata está no quadrado de areia diretamente ao norte de você...
+pt.kdd1.txt,sc1_6n3w3,Pise no piso verde e verifique que a barata está no quadrado de areia diretamente ao sul de você...
+pt.kdd1.txt,sc1_6n3w4,...então mova-se para o nordeste para matá-la.
+pt.kdd1.txt,sc1_6n3w5,...então mova-se para o sudeste para matá-la.
+pt.kdd1.txt,sc1_6n3w6,"Repita a sala para analisar o corte traseiro. Aprenda esta técnica, porque será crucial nos seus esforços futuros."
+pt.kdd1.txt,sc1_5n1,A saída de emergência está fora de funcionamento.
+pt.kdd1.txt,sc1_5n2,"Zculpa nhô, nóinum vamterminá di cunztrui cumessa baratada currenduzolta!"
+pt.kdd1.txt,sc1_4n,Favor manter as portas da estufa fechadas.
+pt.kdd1.txt,sc1_1n1e,Estas escadas levam ao próximo nível. Cuidado com o que você irá encontrar lá...
+pt.kdd1.txt,sc2_2n1,Você sabia que pode segurar Shift enquanto aperta qualquer tecla de ação para executar o inverso daquela ação em seguida?
+pt.kdd1.txt,sc2_2n2,"Shift+Espera faz você esperar até a próxima desova, e + ou = no teclado numérico irá executar o inverso da última ação!"
+pt.kdd1.txt,sc2_1n1e,Você não deveria ser tão destrutivo.
+pt.kdd1.txt,sc2e,Start with the rooms to the north to avoid unnecessary backtracking.
+pt.kdd1.txt,sc2_1s3e1,"Você pode evitar sair de uma sala acidentalmente apertando a tecla 'X' do seu teclado."
+pt.kdd1.txt,sc2_1s3e2,Um cadeado no mini-mapa indica se a sala está trancada.
+pt.kdd1.txt,sc2_1s,Não faça isso! É óbvio o que vai acontecer!
+pt.kdd1.txt,sc2_2s3e,A escolha correta do momento simplifica muito as coisas.
+pt.kdd1.txt,sc3_3n,Preciso te avisar sobre duplos. Eles não são amigos nem inimigos--eles apenas gostam de se mexer como você. Não dê as costas para eles.
+pt.kdd1.txt,sc3_3n1e,"Todos os prisoneiros foram comidos por baratas, e eu sou o próximo! Não tem dinheiro que valha isto. Estou caindo fora!
+
+-Guarda da Prisão"
+pt.kdd1.txt,sc3_2n,É possível chegar nesta passagem sem sair da sala conquistada e entrar de volta.
+pt.kdd1.txt,sc3_1n1w,"Com a poção de invisibilidade eles não podem te ver, mas ainda podem sentir seu cheiro se você chegar perto."
+pt.kdd1.txt,sc3_1e,Que caminhada comprida. Parece até desnecessária.
+pt.kdd1.txt,sc3_1s,"Os Oito Portôes de Bill - um quebra-cabeças formidável. Costumava ser mais difícil, mas agora eu posso inspecionar as orbes para ver o que elas fazem."
+pt.kdd1.txt,sc3_2s1w,"Vou te contar algo--sempre que você ver caminhos longos e trabalhosos, você deve procurar atalhos."
+pt.kdd1.txt,sc3_2s1,"Meia volta! Você sabia que no último ano, mortes relacionadas a masmorras subiram em 32 porcento?"
+pt.kdd1.txt,sc3_2s2,"Encare os fatos--explorar masmorras NÃO é seguro, ainda mais quando combinado com intoxicantes.
+Se Beber, Não Explore!"
+pt.kdd1.txt,sc4_2n1e1,Esta é uma parede mestra. Ela não vai abrir até que você conquiste o forte e todos os seus segredos.
+pt.kdd1.txt,sc4_2n1e2,"Na versão original da ""Masmorra do Rei Dugan"", esta era uma sala de ""warp"" que permitia pular uma ou duas fases."
+pt.kdd1.txt,sc4_1n1,"Dica:
+
+Você não precisa da ajuda do duplo para lutar contra as baratas da entrada."
+pt.kdd1.txt,sc4_1n2,"Dica:
+
+Pratique a técnica muito útil de CORTE TRASEIRO -- boa para quando tem monstros dos dois lados de você!"
+pt.kdd1.txt,sc4_2e,"Se você tem estilo, todos os 9 duplos vão estar em fila à sua direita."
+pt.kdd1.txt,scMe1,Versões mais difíceis das salas normais.
+pt.kdd1.txt,scMe2,Últimas palavras!
+pt.kdd1.txt,scMe3,Salas difíceis jamais vistas.
+pt.kdd1.txt,scM_1s1,"É isso. Agora você completou tudo que existe neste jogo, exceto talvez uma ou duas conquistas."
+pt.kdd1.txt,scM_1s2,Eu lhe dou meus mais sinceros parabéns e convido-o a continuar sua jornada.
+pt.kdd1.txt,scM_1s3,"No site CaravelGames.com, você pode encontrar os próximos episódios deste jogo, ou baixar toda a coleção de jogos DROD para Windows, MacOS, ou Linux."
+pt.kdd1.txt,scM_1s4,E bola pra frente!
+pt.kdd1.txt,scM_1s5,Aqui está uma pequena recompensa! Mate todos os olhos sem pisar na grama marrom.
+pt.kdd1.txt,scM_1s6,As Baratas Rainhas vão ser mortas quando você pisar no ponto de verificação no canto nordeste.
+pt.kdd1.txt,scM_1s7,"Ótimo, foi muito bem!"
+pt.kdd1.txt,sp1e0,Use o teclado numérico para se mover.
+pt.kdd1.txt,sp1e1,"Se você estiver jogando num notebook, você pode usar o teclado numérico de laptop: 789, UIO, JKL"
+pt.kdd1.txt,sp1e2,Mova-se para o norte para continuar.
+pt.kdd1.txt,sp1_3n2w1,"Ah, a primeira barata da masmorra!"
+pt.kdd1.txt,sp1_3n2w2,"Venha pro Beethro, pré-baratobúrger!"
+pt.kdd1.txt,sp1_3n2w3,"Morta em um golpe! Esse trabalho vai ser ótimo, estou sentindo!"
+pt.kdd1.txt,sp1_6n2w,"Eu podia ter acabado com essas baratas sem se esconder no beco, mas estou com preguiça."
+pt.kdd1.txt,sp1_6n3w1,Você encontrou uma sala secreta!
+pt.kdd1.txt,sp1_6n3w2,Encontre e conquiste todas as salas secretas para acessar um novo nível.
+pt.kdd1.txt,sp2_2e,Aquela rainha vai fazer dúzias de baratas novas antes de eu conseguir chegar na orbe e voltar!
+pt.kdd1.txt,sp2_1s1e1,"Ei, uma asa-fantasma!"
+pt.kdd1.txt,sp2_1s1e2,E ela está sozinha... Isso quer dizer que eu posso acabar perseguindo ela pela sala toda.
+pt.kdd1.txt,sp2_1s1e3,"Asas-fantasmas, ao invés de baratas, fogem do Beethro e tentam manter uma distância de cinco quadrados."
+pt.kdd1.txt,sp2_1s1e4,"Elas não são tão tímidas em maiores números, e não hesitarão em atacar se conseguirem cercar uma presa."
+pt.kdd1.txt,sp2_2s2e1,Hmmm...será que eu consigo matar estas rainhas antes de elas porem ovos?
+pt.kdd1.txt,sp2_2s2e2,Argh... devagar demais!
+pt.kdd1.txt,sp2_2s2e3,Ha!  Fácil.
+pt.kdd1.txt,sp2_2s3e1,Tenho certeza que tinha um jeito mais fácil de alcançar estas baratas rainhas.
+pt.kdd1.txt,sp2_2s3e2,Agora ISSO foi um bom exemplo de golpeagem.
+pt.kdd1.txt,sp3_3n1e,Não sobrou nenhum prisioneiro? Vai ser um trabalho chato sem ninguém pra conversar...
+pt.kdd1.txt,sp3_2n,Sem brincadeira.
+pt.kdd1.txt,sp3_1n2w1,Ufa! Agora aquelas rainhas não vão botar ovos até eu chegar perto!
+pt.kdd1.txt,sp3_1n2w2,"Essa foi meio dura, mas nada que um bom explorador como eu não consiga dar conta!"
+pt.kdd1.txt,sp3_1n2w3,Ha!  Nada é demais pra este explorador!
+pt.kdd1.txt,sp3_1n1w1,"Hey, isto é legal!"
+pt.kdd1.txt,sp3_1n1w2,"Eu sei que eu podia ter limpado a sala sem ficar invisível, mas ainda foi divertido."
+pt.kdd1.txt,sp3_1n1w3,Não foi tão difícil... por que será que aquela poção está ali?
+pt.kdd1.txt,sp3_1s,Eu podia ter aberto todas as portas mais rápido que isso.
+pt.kdd1.txt,sp3_3s1w1,Parece perigoso... algum tipo de armadilha?
+pt.kdd1.txt,sp3_3s1w2,"Depois de bater na orbe, eu podia ter limpado a sala sem girar a espada. Só para mostrar o talento!"
+pt.kdd1.txt,sp3_3s1w3,"Bom, eu posso ter girado a espada, mas pelo menos estou vivo!"
+pt.kdd1.txt,sp3_3s1w4,Uau!  Alguém devia ter visto isso.
+pt.kdd1.txt,sp4_2n1e,"Outra câmara secreta onde ninguém espera, menos eu."
+pt.kdd1.txt,sp4_1n1,Eu podia ter limpado esta sala sem voltar pro hall de entrada.
+pt.kdd1.txt,sp4_1n2,Beethro Budkin supera qualquer desafio!
+pt.kdd1.txt,sp4_2e1,Santa Barbuchinha! Talvez seja possível ter duplos demais!
+pt.kdd1.txt,sp4_1s2e,Porque será que abrir todos os alçapões deixa a sala tão mais limpa?
+pt.kdd1.txt,sp3_1n2w0,Yikes! Acho que preciso da poção desta vez!
+pt.kdd1.txt,spM_1s,Você falhou...
+pt.kdd1.txt,achName0,Estou de Olho em Você
+pt.kdd1.txt,achName1,Matricídio
+pt.kdd1.txt,achName2,Eu Acordei Odiando Tudo
+pt.kdd1.txt,achName3,Golpeador Mestre
+pt.kdd1.txt,achName4,Mão Firme
+pt.kdd1.txt,achName5,Rainhobúrger
+pt.kdd1.txt,achName6,Passagem de Ida
+pt.kdd1.txt,achName7,Seja Ágil!
+pt.kdd1.txt,achName8,Seja Rápido!
+pt.kdd1.txt,achName9,Braço Calmo
+pt.kdd1.txt,achName10,Pegue o Pergaminho
+pt.kdd1.txt,achName11,Visibilidade
+pt.kdd1.txt,achName12,Desinvisível
+pt.kdd1.txt,achName13,Sem Freios
+pt.kdd1.txt,achName14,Os Oito Portões de Bill
+pt.kdd1.txt,achName15,Controle Fino de Barata
+pt.kdd1.txt,achName16,O Mistério
+pt.kdd1.txt,achName17,Não Olhe para Trás
+pt.kdd1.txt,achName18,Só com as Baratas
+pt.kdd1.txt,achName19,Poços são Bonitos
+pt.kdd1.txt,achName20,O Vazio do Nada
+pt.kdd1.txt,achName21,Estiloso
+pt.kdd1.txt,achName22,Explorador Amador
+pt.kdd1.txt,achName23,Golpeador Principiante
+pt.kdd1.txt,achName24,Exterminador Contratado
+pt.kdd1.txt,achName25,Sou um Profissional!
+pt.kdd1.txt,achName26,Maestria
+pt.kdd1.txt,achName27,Pós-Maestria
+pt.kdd1.txt,achName28,Baratas Grelhadas
+pt.kdd1.txt,achName29,Rainhas Fatiadas
+pt.kdd1.txt,achName30,Fondue de Ovo
+pt.kdd1.txt,achName31,Pudim de Olho Gordo
+pt.kdd1.txt,achName32,Molho de Asa-Fantasma
+pt.kdd1.txt,achName33,Diapasão
+pt.kdd1.txt,achName34,Abaixo o Verde
+pt.kdd1.txt,achName35,Controle de Horda
+pt.kdd1.txt,achName36,Ressucitador
+pt.kdd1.txt,achName37,O Tempo é Nulo!
+pt.kdd1.txt,achName38,Abrindo Espaço
+pt.kdd1.txt,achName39,Andando pra Lua
+pt.kdd1.txt,achDesc0,Acorde três olhos gordos no mesmo turno
+pt.kdd1.txt,achDesc1,Mate uma barata rainha enquanto os ovos dela estão crescendo
+pt.kdd1.txt,achDesc2,"Sim, você devia ser tão destrutivo."
+pt.kdd1.txt,achDesc3,Não se esconda na alcova em 6N 2O no Primeiro Nível
+pt.kdd1.txt,achDesc4,"Limpe todas as salas não-secretas do Primeiro Nível, menos uma, sem girar a espada.
+Conseguiu %% de 6."
+pt.kdd1.txt,achDesc5,Mate a barata rainha no Segundo Nível 2E antes dela chegar no canto.
+pt.kdd1.txt,achDesc6,Não gire a sua espada no Segundo Nível 1S após atingir a orbe
+pt.kdd1.txt,achDesc7,Mate todas as baratas rainha antes delas botarem ovos no Segundo Nível 2S 2E
+pt.kdd1.txt,achDesc8,Limpe o Segundo Nível 2S 3E antes de qualquer ovo aparecer
+pt.kdd1.txt,achDesc9,Limpe o Segundo Nível 3N sem girar a espada
+pt.kdd1.txt,achDesc10,Chegue no pergaminho no Terceiro Nível 2N sem sair da sala
+pt.kdd1.txt,achDesc11,Mate todas as baratas sem beber a poção no Terceiro Nível 1N 1O
+pt.kdd1.txt,achDesc12,Limpe o Terceiro Nível 1N 2O sem beber a poção
+pt.kdd1.txt,achDesc13,Limpe o Terceiro Nível 1N 1E sem as rainhas botarem ovos
+pt.kdd1.txt,achDesc14,Abra os Oito Portais de Bill atingindo 5 orbes (Terceiro Nível 1S)
+pt.kdd1.txt,achDesc15,Solte as três baratas antes de matar qualquer delas no Terceiro Nível 2N 1E
+pt.kdd1.txt,achDesc16,Limpe o Terceiro Nível 3N sem beber a poção
+pt.kdd1.txt,achDesc17,Limpe o Quarto Nível 1N sem voltar pro corredor de entrada
+pt.kdd1.txt,achDesc18,Limpe o Quarto Nível 1S 1E sem beber a poção de duplo
+pt.kdd1.txt,achDesc19,Abra todos os alçapões do Quarto Nível 1S 2E e limpe a sala na mesma visita
+pt.kdd1.txt,achDesc20,Limpe o Quarto Nível 2S 1E e abra todos os alçapões na mesma visita
+pt.kdd1.txt,achDesc21,Tenha estilo no Quarto Nível 2E
+pt.kdd1.txt,achDesc22,Limpou o primeiro nível
+pt.kdd1.txt,achDesc23,Limpou o segundo nível
+pt.kdd1.txt,achDesc24,Limpou o terceiro nível
+pt.kdd1.txt,achDesc25,Limpou o quarto nível
+pt.kdd1.txt,achDesc26,Mestre do forte
+pt.kdd1.txt,achDesc27,Pós-mestre do forte
+pt.kdd1.txt,achDesc28,Mate 35 baratas
+pt.kdd1.txt,achDesc29,Mate 20 baratas rainhas
+pt.kdd1.txt,achDesc30,Mate 15 ovos de barata
+pt.kdd1.txt,achDesc31,Mate 15 olhos gordos
+pt.kdd1.txt,achDesc32,Mate 5 asas-fantasmas
+pt.kdd1.txt,achDesc33,Acerte uma orbe por três rodadas consecutivas
+pt.kdd1.txt,achDesc34,Baixe um portão verde 5 vezes
+pt.kdd1.txt,achDesc35,Mate um total de 2500 monstros
+pt.kdd1.txt,achDesc36,Morra um total de 50 vezes
+pt.kdd1.txt,achDesc37,Desfaça um total de 250 movimentos
+pt.kdd1.txt,achDesc38,Abra um total de 100 alçapões
+pt.kdd1.txt,achDesc39,Ande um total de 5000 passos
+pt.kdd1.txt,outro,"O que Beethro irá encarar em seguida? Ficarão os desafios mais arduosos? Ele vai conseguir limpar toda a Masmorra do Rei Dugan e finalmente ser pago?
+
+
+<font size=""32"" color=""#FFFF00"">Parabéns!</font>
+
+Você completou o primeiro episódio de Deadly Rooms of Death, forte King Dugan's Dungeon Lite (Masmorra do Rei Dugan Light). Espero sinceramente que você tenha apreciado esta experiência.
+Agora que você desceu o último lance de escadas disponível neste conjunto, você talvez queira tentar tornar-se Mestre, ou até Pós-Mestre deste jogo! Para fazer isso, vá caçar salas secretas. O número de salas secretas remanescentes em cada nível agora é visível na tela de Restaurar.
+Quando você conseguir conquistar todas as salas, uma Área de Maestria especial será aberta. Consegue descobrir como acessá-la?
+E, claro, você pode querer jogar o próximo episódio da série DROD:KDDL.
+
+Antes de eu deixá-lo sobre os louros da sua glória, eu gostaria de agradecer algumas pessoas, sem as quais este jogo nunca viria a luz do dia:
+
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - O criador, pai e inventor do DROD. Sem ele, esta idéia única nunca teria visto a luz do dia.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - Ele programou a maior parte de DROD 2: JtRH e DROD 3: TCB sozinho. Graças à esplêndida base de código, fazer Flash DROD foi puro prazer.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Senhor absoluto do Fórum Caravel e programador principal da CaravelNet. Graças a ele, você pode disputar recordes, e muito mais!
+
+
+<font size=""23"" color=""#FFFF00"">Programação, Desenvolvimento</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Arte e Música</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Desenvolvimento do Lado do Servidor</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Desenvolvimento de Níveis</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testadores Principais</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testadores</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Traduções</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Vozes</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Código, Idéia e Níveis Originais</font> - %%
+
+
+Até a próxima vez!
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+pt.kdd1.txt,complNextGame,"Jogue o próximo conjunto de níveis - KDD Lite 2. Isto vai abrir uma janela nova, e você pode fechar esta janela a seguir. Seu progresso foi gravado."
+pt.kdd1.txt,scNew1,Observe com cuidado o que ocorre no turno de desova.
+pt.kdd1.txt,scNew2,"Ovos nunca irão aparecer em alçapões, setas, ou portões amarelos abertos."
+pt.kdd1.txt,scNew3,"Also, if a queen is moving on the spawn turn, no egg will appear on the tile she has just moved from."
+pt.kdd1.txt,sc1_New1N1W,"Se você ainda não sabe, Rainhas se afastam de você e não botam ovos em portões amarelos abertos."
+pt.kdd1.txt,sc1_New3N1,Baratas rainhas botam ovos a cada 30 rodadas (a rodada após o contador de desova ficar vermelho).
+pt.kdd1.txt,sc1_New3N2,Ovos irão virar baratas 5 turnos depois de serem colocados.
+pt.kdd1.txt,sc1_New3E,Baratas rainhas sempre fogem de Beethro; este comportamento pode ser utilizado para manipulá-las.
+pt.kdd1.txt,sc1_new6n2w1,Paredes quebradas e secretas podem ser danificadas pela sua espada.
+pt.kdd1.txt,sc1_new6n2w2,"Porém, paredes secretas se misturam com as paredes normais muito melhor."
+pt.kdd1.txt,sc1_new6n2w3,Então não perca de vista as que estão no canto quando voltar.
+pt.kdd1.txt,sc1_5n1w3,Este jogo é totalmente determinístico - não existe comportamento aleatório ou imprevisível.
+pt.kdd1.txt,sc1_new6N,Os segredos não precisam ser conquistados todos de uma única vez para a maestria d oforte.
+pt.kdd1.txt,sc_evileyes,Neste nível você vai encontrar olhos gordos. Quando você entrar na linha de visão deles eles irão acordar e perseguí-lo como baratas.
+pt.kdd1.txt,defCont,Controles padrão:
+pt.kdd1.txt,sc_diago,Você pode mover-se diagonalmente até através de cantos muito estreitos.
+pt.kdd1.txt,sc_broken,Quebre estas paredes rachadas e escretas com a sua espada.
+pt.kdd1.txt,sc_queens1,Baratas rainhas botam ovos de barata a cada 30 turnos (no turno após o contador de desova ficar vermelho).
+pt.kdd1.txt,sc_queens2,Ovos irão virar baratas 5 turnos depois de serem colocados.
+pt.kdd1.txt,sc_queens3,"Ovos não vão aparecer em setas, alçapões, ou portões amarelos. Use a tecla ""I"" ou 5 no NumPad para esperar um turno."
+pt.kdd1.txt,sc_mimics,"Após pisar numa poção de duplo, use o mouse ou tecla de espera para escolher o quadrado onde você quer colocar o duplo."
+pt.kdd1.txt,sc_shiftwait,Você pode achar útil que Shift+Espera aguarda até a próxima desova.
+pt.kdd1.txt,sp_mother1,Cada 30 turnos as mães de piche irão fazer o piche crescer um quadrado em cada direção.
+pt.kdd1.txt,sp_mother2,"Geralmente é seguro ser cercado por piche crescendo, mas cuidado com bebês de piche que podem aparecer durante o crescimento."
+pt.kdd1.txt,sc_backswipe,Siga o caminho de areia para aprender a técnica de corte traseiro! Lembre o movimento diagonal e não gire sua espada.
+pt.kdd1.txt,sc_trapdoors,Estes quadrados rosa arroxeado são alçapões e irão cair se você ou um duplo pisarem neles.
+pt.kdd2.txt,Fifth Level,Quinto Nível
+pt.kdd2.txt,Sixth Level,Sexto Nível
+pt.kdd2.txt,Seventh Level,Sétimo Nível
+pt.kdd2.txt,Eighth Level,Oitavo Nível
+pt.kdd2.txt,Mastery Level,Nível de Maestria
+pt.kdd2.txt,Tutorial,Nível Tutorial
+pt.kdd2.txt,entr5,"Beethro Budkin, exterminador de masmorras profissional de quinta geração, foi contratado pelo rei Dugan para limpar a masmorra multi-nível real, infestada por uma grande quantidade de monstros.
+Beethro cobra por sala, e sendo um profissional, ele é obrigado pelo seu contrato a eliminar todos os monstros de cada sala para ser pago.
+A única arma que Beethro precisa para fazer seu trabalho é uma Espada Muito Grande, que pode derrotar quase qualquer monstro com um único golpe.
+
+-----
+
+O último nível deixou Beethro suando. ""Acho que vai ser trabalho duro afinal."" Por sorte, havia uma brisa fresca saindo do próximo nível."
+pt.kdd2.txt,entr6,"Talvez o arquiteto do nível estava tentando fazer seu ponto claramente, qualquer que fosse. De qualquer forma, você pode agradecer que não existem outros níveis na Masmorra de Dugan como este."
+pt.kdd2.txt,entr6Back,Beethro voltou pra terminar o negócio de limpeza que ele foi contratado para fazer.
+pt.kdd2.txt,entr7,"Quando Beethro desceu as escadas ele ouviu um chiado alto. Como um profissional experiente, ele sabia exatamente o que era, mas ainda se admirou com o volume. ""Jeebus! Quantas dessas coisas nojentas estão aí embaixo?"""
+pt.kdd2.txt,entr8,"Alguns monstros são espertos e letais, e outros são só um saco para limpar."
+pt.kdd2.txt,entrMaster,"Beethro desceu as escadas, só para encontrar um corredor fora do mapa...
+
+Ele não vai receber pela limpeza deste nível, mas a sua honra profissional o empurra pra frente."
+pt.kdd2.txt,entrTut,Tutorial
+pt.kdd2.txt,entrTutLeave,"Beethro saiu do piso de tutorial, rico em novos conhecimentos."
+pt.kdd2.txt,entrPremaster,"Beethro cambaleou por uma série de escadas mal iluminadas. ""Isto é um perigo e não tem nem baratas aqui! Alguém devia colocar um corrimão ou--"" pensou Beethro antes de cair doze lances e perder os sentidos por uma hora inteira. Após de sonhar sonhos horríveis sobre pudim de olho gordo, Beethro acordou grogue em uma sala. ""Geus! Seria tão difícil colocar estes lugares no mapa?"""
+pt.kdd2.txt,sc51n2w,Espero que você tenha deixado um caminho de volta.
+pt.kdd2.txt,sc63e,Passagem Secreta
+pt.kdd2.txt,sc61s1w,"Esta é uma Parede Mestra.
+Ela vai sumir quando você terminar o último nível e também conquistar todas as salas secretas."
+pt.kdd2.txt,sc72n1w,"Mentes simples, afastem-se! Esta sala só pode ser completada por um intelecto mestre.
+(Isso quer dizer que essa sala não é requerida.)"
+pt.kdd2.txt,sc71n1,Eu não achei que você ia resolver essa última.
+pt.kdd2.txt,sc71n2,"OK, eu admito que não é EXATAMENTE o mesmo que motos de luz.
+
+-Erik"
+pt.kdd2.txt,sc71n3,"Meu tributo a Tron.
+
+-Erik"
+pt.kdd2.txt,sc81s1,O piche vivo só pode ser danificado nas bordas retas.
+pt.kdd2.txt,sc81s2,Todas as bolhas que tiverem menos de 2 quadrados de largura e de altura são instáveis e vão virar bebês de piche.
+pt.kdd2.txt,sc81s3,Fique à vontade para brincar com ele um pouco.
+pt.kdd2.txt,sc81s1e,Um homem sábio vai limpar a sala do norte antes de descer por este corredor.
+pt.kdd2.txt,sc83s,"Limpe as salas ao sul e ao oeste antes de continuar, para não ter que voltar depois."
+pt.kdd2.txt,scMe1,Versões mais difíceis de salas anteriores.
+pt.kdd2.txt,scMe2,Últimas palavras.
+pt.kdd2.txt,scMe3,Novos quebra-cabeças.
+pt.kdd2.txt,scM1s1,"Então! Exceto uma ou duas conquistas, você deve ter terminado tudo neste jogo."
+pt.kdd2.txt,scM1s2,"Por favor aceite meus parabéns mais sinceros, você conseguiu um grande feito!"
+pt.kdd2.txt,scM1s3,"Você pode encontrar os novos episódios de KDDL e pegar qualquer dos jogos DROD completos para Windows, MacOS ou Linux em caravelgames.com"
+pt.kdd2.txt,scM1s4,Siga em frente!
+pt.kdd2.txt,scM1s5,Aqui está uma pequena recompensa! Mate todos os olhos sem pisar na grama marrom.
+pt.kdd2.txt,scM1s6,As duas Baratas Rainhas de baixo vão ser mortas automaticamente quando você pisar no ponto de verificação do canto direito.
+pt.kdd2.txt,scM1s7,Sinceras congratulações!
+pt.kdd2.txt,scT1,Mova-se para o lado direito e observe como a barata se comporta quando ela tenta ir em direção a uma quina diagonalmente.
+pt.kdd2.txt,scT2,"Cobras movem-se pelas suas próprias regras, muito mais complexas. A direção de movimento preferida delas é mostrada abaixo do relógio de ciclo de desova."
+pt.kdd2.txt,scT3,"Se um monstro do DROD se move diagonalmente para uma quina, ele prefere mover-se verticalmente se possível."
+pt.kdd2.txt,scT4,"'Esc' abre o menu de pausa, onde você pode ver ""Ajuda Geral"" para verificar os controles a qualquer momento."
+pt.kdd2.txt,scT5,"Para evitar sair de uma sala acidentalmente, aperte X para trancá-la e destrancá-la. Um pequeno cadeado no mini-mapa indica se uma sala está trancada."
+pt.kdd2.txt,scT6,"Shift+Tecla executa uma ação e o seu inverso em seguida.
+Shift+Espera espera até a próxima desova.
+'+' or '=' no teclado numérico executa o oposto do seu último movimento."
+pt.kdd2.txt,scT7,F3 mostra um contador de movimentos para lhe ajudar a otimizar sua pontuação.
+pt.kdd2.txt,scT8,Todas as teclas podem ser remapeadas a partir das opções do jogo.
+pt.kdd2.txt,scT9,"Aqueles sem assinaturas CaravelNet não terão suas pontuações guardadas na tela de líderes, mas saberão qual lugar obteriam."
+pt.kdd2.txt,scT10,Clique com o mouse para descobrir o que orbes fazem e o que olhos gordos vêem.
+pt.kdd2.txt,scT11,A tecla de espaço irá remover todas as falas e conquistas da tela.
+pt.kdd2.txt,scT13,"Asas-fantasmas, ao invés de baratas, fogem do Beethro e tentam manter uma distância de cinco quadrados."
+pt.kdd2.txt,scT14,"Elas não são tão tímidas em maiores números, e não hesitarão em atacar se conseguirem cercar uma presa."
+pt.kdd2.txt,sc1_6n3w1,Você usará a técnica de corte traseiro para se livrar desta barata. Siga para o próximo pergaminho.
+pt.kdd2.txt,sc1_6n3w2,Pise no piso verde e verifique que a barata está no quadrado de areia diretamente ao norte de você...
+pt.kdd2.txt,sc1_6n3w3,Pise no piso verde e verifique que a barata está no quadrado de areia diretamente ao sul de você...
+pt.kdd2.txt,sc1_6n3w4,...então mova-se para o nordeste para matá-la.
+pt.kdd2.txt,sc1_6n3w5,...então mova-se para o sudeste para matá-la.
+pt.kdd2.txt,sc1_6n3w6,"Repita a sala para analisar o corte traseiro. Aprenda esta técnica, porque será crucial nos seus esforços futuros."
+pt.kdd2.txt,sp5e1,Esta é uma área de tutorial.
+pt.kdd2.txt,sp5e2,Visite ela se você nunca jogou este jogo.
+pt.kdd2.txt,sp5e3,"Mova-se com o numpad ou 789, UIO, JKL"
+pt.kdd2.txt,sp52n1,Limpar este lugar sem nenhuma porta abrir seria um fato de se gabar.
+pt.kdd2.txt,sp52n2,"Ha! Isso é design desnecessário de masmorra, colocando um monte de orbes inúteis!"
+pt.kdd2.txt,sp51n2w1,"Ay, olhe pra todos esses olhos gordos!"
+pt.kdd2.txt,sp51n2w2,Ah! Eu ainda me assusto quando uma dessas coisas acorda!
+pt.kdd2.txt,sp63e,Estou vendo um padrão aqui...
+pt.kdd2.txt,sp63n,Agora isto parece familiar...
+pt.kdd2.txt,sp63w,Dugan melhor me pagar por cada uma destas salas.
+pt.kdd2.txt,sp72n1w1,Jeebus! Essa serpente deve ter uns quatrocentos e quarenta e dois metros de comprimento!
+pt.kdd2.txt,sp72n1w2,Mas o meu contrato diz que eu não preciso mexer com nenhum monstro com mais de quatrocentos e quarenta e um metros.
+pt.kdd2.txt,sp72n1w3,Então eu poderia deixar essa sala pra lá.
+pt.kdd2.txt,sp71n1e1,A minha espada não vai nem arranhar aquele bicho deslizante.
+pt.kdd2.txt,sp71n1e2,"Mas se eu conseguir levar ele para um beco sem saída, eu vou me livrar dele."
+pt.kdd2.txt,sp84s1,"Mâes de piche, também? Por que, por que, por que...?"
+pt.kdd2.txt,sp83s1e,Odeio mâes de piche.
+pt.kdd2.txt,sp82s2e,Melhor cuidar aqui... eu não vou poder atravessar se o piche entupir aquela passagem!
+pt.kdd2.txt,sp84s3e1,Deixa pra lá. Vamos!
+pt.kdd2.txt,sp84s3e2,E uma parede aqui...
+pt.kdd2.txt,sp84s3e3,"Bom. Nesse ritmo, vamos terminar de mapear a sala em alguns minutos."
+pt.kdd2.txt,sp84s3e4,Ouviu aquilo? É a autoridade do piche! Vamos nos esconder!
+pt.kdd2.txt,sp84s3e5,Aaargh! Eu quase deixei o mapa cair!
+pt.kdd2.txt,sp84s3e6,Espere um minuto! Este mapa não está de cabeça pra baixo?
+pt.kdd2.txt,sp85s2e1,Esta sala... parece... familiar...
+pt.kdd2.txt,sp85s2e2,Isto me faz sentir-se... furioso... e frustrado!
+pt.kdd2.txt,sp86s3e,"Ratos... Espero que não tenha nenhum truque sujo, como salas escondidas atrás de alguma parede secreta por aí!"
+pt.kdd2.txt,sp88s3e1,Ah meu geus... essa sala vai me dar pesadelos...
+pt.kdd2.txt,sp88s3e2,Nunca mais... nunca mais...
+pt.kdd2.txt,spM1s,Você falhou...
+pt.kdd2.txt,spT2,"Gire sua espada com 'Q' e 'W'."
+pt.kdd2.txt,spT3,Agora atinja a orbe com a sua espada.
+pt.kdd2.txt,spT4,"Orbes interagem com portas de três maneiras - elas podem abrir, fechar, ou alternar o seu estado."
+pt.kdd2.txt,spT5,"Clique na orbe com o mouse para ver quais portas ela afeta, e de que maneira."
+pt.kdd2.txt,spT6,Seu objetivo em DROD é limpar cada nível de todos os seus monstros.
+pt.kdd2.txt,spT7,Acerte a barata com a sua espada para matá-la.
+pt.kdd2.txt,spT8,Flechas obrigatórias bloqueiam o seu movimento numa direção oposta a elas.
+pt.kdd2.txt,spT9,"Pise no ponto de verificação. Você irá voltar ao momento exato que você pisou nele se morrer ou reiniciar com 'R'."
+pt.kdd2.txt,spT10,"Se você morrer ou estiver numa situação de morte certa, você pode desfazer até três movimentos com 'Backspace'."
+pt.kdd2.txt,spT11,"Esta poção lhe permitirá colocar um duplo. Duplos copiam todos os movimentos que você faz. Eles se movem imediatamente depois de você, mas antes dos monstros."
+pt.kdd2.txt,spT12,Coloque o duplo no quadrado marcado com o ponto de verificação. Use ele para abrir todos alçapões e o portão vermelho abrirá.
+pt.kdd2.txt,spT13,"Parabéns, você completou esta sala!"
+pt.kdd2.txt,spT14,"Depois de você deixar esta sala seu sucesso será permanente. Você sempre poderá ver seu recorde para a sala, e você poderá ver sua posição em comparação com as pontuações do quadro de líderes."
+pt.kdd2.txt,spT15,"Se você conectou-se ao jogo usando credenciais válidas de conta do fórum Caravel, seu recorde será submetida ao quadro de líderes."
+pt.kdd2.txt,spT16,"Sua pontuação irá ser mantida no quadro de líderes por duas semanas a não ser que você seja um(a) assinante do CaravelNet. Neste caso, suas pontuações serão mantidas para sempre."
+pt.kdd2.txt,spT17,Você agora pode sair da sala de tutorial.
+pt.kdd2.txt,achName0,Onde foi o Mestre?
+pt.kdd2.txt,achName1,Cidade do Oriente
+pt.kdd2.txt,achName2,Limpeza
+pt.kdd2.txt,achName3,Evitador de Orbe
+pt.kdd2.txt,achName4,Mãos Estáticas
+pt.kdd2.txt,achName5,Visão Perfeita
+pt.kdd2.txt,achName6,Encantador de Asa-Fantasma
+pt.kdd2.txt,achName7,Imitação Controlada
+pt.kdd2.txt,achName8,Odeio Amarelo
+pt.kdd2.txt,achName9,Sem Diagonal
+pt.kdd2.txt,achName10,Mãos Imóveis
+pt.kdd2.txt,achName11,E Mostre o Pau
+pt.kdd2.txt,achName12,Mãos de Pedra
+pt.kdd2.txt,achName13,Intelecto Mestre
+pt.kdd2.txt,achName14,Facada nas Costas
+pt.kdd2.txt,achName15,Técnico de Piche
+pt.kdd2.txt,achName16,Fura-Olho
+pt.kdd2.txt,achName17,O Ninja
+pt.kdd2.txt,achName18,Explorador Amador
+pt.kdd2.txt,achName19,Golpeador Principiante
+pt.kdd2.txt,achName20,Exterminador Contratado
+pt.kdd2.txt,achName21,Sou um Profissional!
+pt.kdd2.txt,achName22,Maestria
+pt.kdd2.txt,achName23,Pós-Maestria
+pt.kdd2.txt,achName24,Rainhas Fritas
+pt.kdd2.txt,achName25,Ovos Al Dente
+pt.kdd2.txt,achName26,Geléia de Olho Gordo
+pt.kdd2.txt,achName27,Asa-Fantasma Assada
+pt.kdd2.txt,achName28,Sushi de Serpente
+pt.kdd2.txt,achName29,Diapasão
+pt.kdd2.txt,achName30,Verde até o Chão
+pt.kdd2.txt,achName31,Esmagador de Multidão
+pt.kdd2.txt,achName32,Imortal
+pt.kdd2.txt,achName33,Minhoca Espaço-Buracal
+pt.kdd2.txt,achName34,Limpando o Chão
+pt.kdd2.txt,achName35,Maratonista
+pt.kdd2.txt,achDesc0,Encontre a parede mestra
+pt.kdd2.txt,achDesc1,Limpe o Quinto Nível 1O com a espada virada pra Leste todo o tempo
+pt.kdd2.txt,achDesc2,Abra todos os alçapões e limpe o Quinto Nível 1N 2O na mesma visita
+pt.kdd2.txt,achDesc3,Limpe o Quinto Nível 2N sem atingir nenhuma orbe
+pt.kdd2.txt,achDesc4,Limpe o Quinto Nível 1S sem girar a espada
+pt.kdd2.txt,achDesc5,Conquiste o Quinto Nível 2S sem beber a poção de invisibilidade
+pt.kdd2.txt,achDesc6,Não atinja a orbe enquanto limpa o Quinto Nível 3E
+pt.kdd2.txt,achDesc7,Limpe o Quinto Nível 1S 1O sem sair da área marcada
+pt.kdd2.txt,achDesc8,Limpe o Quinto Nível 2S 2E sem pisar em portas amarelas abertas
+pt.kdd2.txt,achDesc9,Não se mova diagonalmente no Sétimo Nível 1S
+pt.kdd2.txt,achDesc10,Não gire a espada enquanto limpa o Sétimo Nível 1E
+pt.kdd2.txt,achDesc11,Mate a cobra antes de matar qualquer barata no Sétimo Nível 1N 2E
+pt.kdd2.txt,achDesc12,Não gire sua espada no Sétimo Nível 3N 1E
+pt.kdd2.txt,achDesc13,Limpe a sala do Intelecto Mestre (Sétimo Nível 2N 1O)
+pt.kdd2.txt,achDesc14,Limpe o Oitavo Nível 4S 3E sem beber a poção de duplo
+pt.kdd2.txt,achDesc15,Limpe todo o piche em qualquer sala do Oitavo Nível
+pt.kdd2.txt,achDesc16,Mate uma Mãe de Piche antes de ela ter chance de crescer
+pt.kdd2.txt,achDesc17,Limpe uma sala com Olhos Gordos sem acordar nenhum deles
+pt.kdd2.txt,achDesc18,Limpe o quinto nível
+pt.kdd2.txt,achDesc19,Limpe o sexto nível
+pt.kdd2.txt,achDesc20,Limpe o sétimo nível
+pt.kdd2.txt,achDesc21,Limpe o oitavo nível
+pt.kdd2.txt,achDesc22,Mestre do forte
+pt.kdd2.txt,achDesc23,Pós-mestre do forte
+pt.kdd2.txt,achDesc24,Mate 20 baratas rainhas
+pt.kdd2.txt,achDesc25,Mate 15 ovos de barata
+pt.kdd2.txt,achDesc26,Mate 15 olhos gordos
+pt.kdd2.txt,achDesc27,Mate 5 asas-fantasmas
+pt.kdd2.txt,achDesc28,Mate 10 serpentes
+pt.kdd2.txt,achDesc29,Acerte uma orbe por três rodadas consecutivas
+pt.kdd2.txt,achDesc30,Baixe um portão verde 5 vezes
+pt.kdd2.txt,achDesc31,Mate um total de 2500 monstros
+pt.kdd2.txt,achDesc32,Morra um total de 70 vezes
+pt.kdd2.txt,achDesc33,Desfaça um total de 350 movimentos
+pt.kdd2.txt,achDesc34,Abra um total de 200 alçapões
+pt.kdd2.txt,achDesc35,Ande um total de 7000 passos
+pt.kdd2.txt,outro,"Piche não era algo que Beethro esperava. Ou queria encontrar. Mas descendo as escadas para o nono andar ele sabe de uma coisa - ele não sente mais cheiro da gosma ali. Mas se houver algo muito pior esperando?
+
+
+<font size=""32"" color=""#FFFF00"">Parabéns!</font>
+
+Você completou o segundo episódio de Deadly Rooms of Death, forte King Dugan's Dungeon Lite (Masmorra do Rei Dugan Light). Espero sinceramente que você tenha apreciado esta experiência.
+Agora que você desceu o último lance de escadas disponível neste conjunto, você talvez queira tentar tornar-se Mestre, ou até Pós-Mestre deste jogo! Para fazer isso, vá caçar salas secretas. O número de salas secretas remanescentes em cada nível agora é visível na tela de Restaurar.
+Quando você conseguir conquistar todas as salas, uma Área de Maestria especial será aberta. Consegue descobrir como acessá-la?
+E, claro, você pode querer jogar o próximo episódio da série DROD:KDDL.
+
+Antes de eu deixá-lo sobre os louros da sua glória, eu gostaria de agradecer algumas pessoas, sem as quais este jogo nunca viria a luz do dia:
+
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - O criador, pai e inventor do DROD. Sem ele, esta idéia única nunca teria visto a luz do dia.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - Ele programou a maior parte de DROD 2: JtRH e DROD 3: TCB sozinho. Graças à esplêndida base de código, fazer Flash DROD foi puro prazer.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Senhor absoluto do Fórum Caravel e programador principal da CaravelNet. Graças a ele, você pode disputar recordes, e muito mais!
+
+
+<font size=""23"" color=""#FFFF00"">Programação, Desenvolvimento</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Arte e Música</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Desenvolvimento do Lado do Servidor</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Desenvolvimento de Níveis</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testadores Principais</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testadores</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Traduções</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Vozes</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Código, Idéia e Níveis Originais</font> - %%
+
+
+Até a próxima vez!
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+pt.kdd2.txt,complNextGame,"Jogue o próximo conjunto de níveis - KDD Lite 3. Isto vai abrir uma janela nova, e você pode fechar esta janela a seguir. Seu progresso foi gravado."
+pt.kdd2.txt,sp_new71e1,Aqueles olhos poderiam ter apanhado sem eu girar. Acredite!
+pt.kdd2.txt,sp_new71e2,Ha!  Isso que é eficiência! Espera só até eu contar para a Guilda dos Golpeadores sobre este feito!
+pt.kdd2.txt,defCont,Controles padrão:
+pt.kdd2.txt,sc_diago,Você pode mover-se diagonalmente até através de cantos muito estreitos.
+pt.kdd2.txt,sc_broken,Quebre estas paredes rachadas e escretas com a sua espada.
+pt.kdd2.txt,sc_queens1,Baratas rainhas botam ovos de barata a cada 30 turnos (no turno após o contador de desova ficar vermelho).
+pt.kdd2.txt,sc_queens2,Ovos irão virar baratas 5 turnos depois de serem colocados.
+pt.kdd2.txt,sc_queens3,"Ovos não vão aparecer em setas, alçapões, ou portões amarelos. Use a tecla ""I"" ou 5 no NumPad para esperar um turno."
+pt.kdd2.txt,sc_mimics,"Após pisar numa poção de duplo, use o mouse ou tecla de espera para escolher o quadrado onde você quer colocar o duplo."
+pt.kdd2.txt,sc_shiftwait,Você pode achar útil que Shift+Espera aguarda até a próxima desova.
+pt.kdd2.txt,sp_mother1,Cada 30 turnos as mães de piche irão fazer o piche crescer um quadrado em cada direção.
+pt.kdd2.txt,sp_mother2,"Geralmente é seguro ser cercado por piche crescendo, mas cuidado com bebês de piche que podem aparecer durante o crescimento."
+pt.kdd2.txt,sc_backswipe,Siga o caminho de areia para aprender a técnica de corte traseiro! Lembre o movimento diagonal e não gire sua espada.
+pt.kdd2.txt,sc_trapdoors,Estes quadrados rosa arroxeado são alçapões e irão cair se você ou um duplo pisarem neles.
+pt.kdd3.txt,Ninth Level,Nono Nível
+pt.kdd3.txt,Tenth Level,Décimo Nível
+pt.kdd3.txt,Eleventh Level,Décimo Primeiro Nível
+pt.kdd3.txt,Twelfth Level,Décimo Segundo Nível
+pt.kdd3.txt,Mastery Level,Nível de Maestria
+pt.kdd3.txt,Tutorial,Nível Tutorial
+pt.kdd3.txt,entr9,"Beethro Budkin, exterminador de masmorras profissional de quinta geração, foi contratado pelo rei Dugan para limpar a masmorra multi-nível real, infestada por uma grande quantidade de monstros.
+Beethro cobra por sala, e sendo um profissional, ele é obrigado pelo seu contrato a eliminar todos os monstros de cada sala para ser pago.
+A única arma que Beethro precisa para fazer seu trabalho é uma Espada Muito Grande, que pode derrotar quase qualquer monstro com um único golpe.
+
+-----
+
+Beethro sentou nos degraus para uma pausa. Ele tirou três garrafas da sua mochila. A garrafa de dez xícaras de tamaho estava cheia de refrescante suco de folha, e as outras duas garrafas, com tamanhos de duas e cinco xícaras, estavam vazias. Beethro queria beber exatamente quatro xícaras de suco de folhas em um gole. Ele começou a mexer com as garrafas, derramando suco pra lá e pra cá, mas logo desistiu. ""Isso é trabalho demais! Esquece!"""
+pt.kdd3.txt,entr10,"Como muitos exterminadores de masmorras sabem, nas profundezas existem alguns seres capazes de camuflar-se em seus arredores."
+pt.kdd3.txt,entr11,"Dando uma olhada na sala a seguir, Beethro grunhiu de desaprovação. ""Eu não sei como, mas o piche sempre fica desse jeito, e eu odeio isso."""
+pt.kdd3.txt,entr12,"Novamente, Beethro ouviu sibilos abaixo, e sabia que viriam mais serpentes. Mas o som era um pouco diferente, e ele parou um momento para escutar e julgar o que via a frente. ""Meu Beus! Esses sacos deslizantes devem estar aqui faz muito tempo, e andam comendo muito bem."""
+pt.kdd3.txt,entr12Back,Beethro voltou pra terminar o negócio de limpeza que ele foi contratado para fazer.
+pt.kdd3.txt,entrMaster,"Beethro desceu as escadas, só para encontrar um corredor fora do mapa...
+
+Ele não vai receber pela limpeza deste nível, mas a sua honra profissional o empurra pra frente."
+pt.kdd3.txt,entrTutorial,Tutorial
+pt.kdd3.txt,entrTutorialLeft,"Beethro saiu do andar de tutorial, rico com novos conhecimentos."
+pt.kdd3.txt,sc93n3e,Tem certeza que está fazendo na ordem certa?
+pt.kdd3.txt,sc94n3e,A ordem é chave.
+pt.kdd3.txt,sc10e,"Aranhas invisíveis espreitam por esse nível. Cuidado, porque elas são difíceis de ver."
+pt.kdd3.txt,sc111s2e,Psst... Essa passagem leva você para as escadas. Você deveria limpar todas as outras salas antes de ir por ali!
+pt.kdd3.txt,sc121n1e1,"Se uma serpente está indo para oeste e prefere movimento horizontal, mova-se para o leste da sua cabeça para fazê-la virar para o norte."
+pt.kdd3.txt,sc121n1e2,"Funciona da mesma forma verticalmente, mas a serpente prefere virar para o leste."
+pt.kdd3.txt,sc12e,O seu relógio diz qual direção as cobras preferem no momento. Isso vai ajudá-lo a controlar essas criaturas erráticas.
+pt.kdd3.txt,scMe1,Outros quebra-cabeças
+pt.kdd3.txt,scMe2,Últimas palavras
+pt.kdd3.txt,scM1s1,Chegar aqui é um feito fabuloso!
+pt.kdd3.txt,scM1s2,Então o que você achou? Conseguiu achar todas as conquistas?
+pt.kdd3.txt,scM1s3,"Você pode encontrar os novos episódios de KDDL e pegar qualquer dos jogos DROD completos para Windows, MacOS ou Linux em caravelgames.com"
+pt.kdd3.txt,scM1s4,E bola pra frente!
+pt.kdd3.txt,scM1s5,Aqui está uma pequena recompensa! Mate todos os olhos sem pisar na grama marrom.
+pt.kdd3.txt,scM1s6,As duas Baratas Rainhas de baixo vão ser mortas automaticamente quando você pisar no ponto de verificação do canto direito.
+pt.kdd3.txt,scM1s7,"Muito bom, parabéns!"
+pt.kdd3.txt,scT1,Sabia que serpentes não podem andar sobre pergaminhos?
+pt.kdd3.txt,scT2,Mova-se para o lado direito e observe como a barata se comporta quando ela tenta ir em direção a uma quina diagonalmente.
+pt.kdd3.txt,scT3,"Cobras movem-se pelas suas próprias regras, muito mais complexas. A direção de movimento preferida delas é mostrada abaixo do relógio de ciclo de desova."
+pt.kdd3.txt,scT4,"Se um monstro do DROD se move diagonalmente para uma quina, ele prefere mover-se verticalmente se possível."
+pt.kdd3.txt,scT5,"'Esc' abre o menu de pausa, onde você pode ver ""Ajuda Geral"" para verificar os controles a qualquer momento."
+pt.kdd3.txt,scT6,"Para evitar sair de uma sala acidentalmente, aperte X para trancá-la e destrancá-la. Um pequeno cadeado no mini-mapa indica se uma sala está trancada."
+pt.kdd3.txt,scT7,"Shift+Tecla executa uma ação e o seu inverso em seguida.
+Shift+Espera espera até a próxima desova.
+'+' or '=' no teclado numérico executa o oposto do seu último movimento."
+pt.kdd3.txt,scT8,F3 mostra um contador de movimentos para lhe ajudar a otimizar sua pontuação.
+pt.kdd3.txt,scT9,Todas as teclas podem ser remapeadas a partir das opções do jogo.
+pt.kdd3.txt,scT10,"Aqueles sem assinaturas CaravelNet não terão suas pontuações guardadas na tela de líderes, mas saberão qual lugar obteriam."
+pt.kdd3.txt,scT11,Clique com o mouse para descobrir o que orbes fazem e o que olhos gordos vêem.
+pt.kdd3.txt,scT12,A tecla de espaço irá remover todas as falas e conquistas da tela.
+pt.kdd3.txt,scT13,"Asas-fantasmas, ao invés de baratas, fogem do Beethro e tentam manter uma distância de cinco quadrados."
+pt.kdd3.txt,scT14,"Elas não são tão tímidas em maiores números, e não hesitarão em atacar se conseguirem cercar uma presa."
+pt.kdd3.txt,sc1_6n3w1,Você usará a técnica de corte traseiro para se livrar desta barata. Siga para o próximo pergaminho.
+pt.kdd3.txt,sc1_6n3w2,Pise no piso verde e verifique que a barata está no quadrado de areia diretamente ao norte de você...
+pt.kdd3.txt,sc1_6n3w3,Pise no piso verde e verifique que a barata está no quadrado de areia diretamente ao sul de você...
+pt.kdd3.txt,sc1_6n3w4,...então mova-se para o nordeste para matá-la.
+pt.kdd3.txt,sc1_6n3w5,...então mova-se para o sudeste para matá-la.
+pt.kdd3.txt,sc1_6n3w6,"Repita a sala para analisar o corte traseiro. Aprenda esta técnica, porque será crucial nos seus esforços futuros."
+pt.kdd3.txt,sp9e1,Esta é uma área de tutorial.
+pt.kdd3.txt,sp9e2,Visite ela se você nunca jogou este jogo.
+pt.kdd3.txt,sp9e3,"Mova-se com o numpad ou 789, UIO, JKL"
+pt.kdd3.txt,sp9e4,Baratas assadas! Chega de piche!
+pt.kdd3.txt,sp91n1e,Essa foi pesada. Talvez piche não seja tão ruim afinal...
+pt.kdd3.txt,sp94n4e1,Ah-ha!  Tem que acordar muito cedo pra passar a perna em Beethro!
+pt.kdd3.txt,sp94n4e2,Não achei engraçado.
+pt.kdd3.txt,sp93n,Hrm. Essa porta é muito estranha. Eu não consigo atravessar.
+pt.kdd3.txt,sp92n2e,Uma porta que eu não consigo atravessar. O que será que tem do outro lado?
+pt.kdd3.txt,sp11e1,E eu odeio quando o piche cresce tão alto em cima de mim... me dá arrepios.
+pt.kdd3.txt,sp11e2,Gah!  O piche está crescendo por cima das paredes!
+pt.kdd3.txt,sp11n1w,Hmm...poderia ser pior... poderia ter uma mãe de piche aqui...
+pt.kdd3.txt,sp11n2w1,Falei cedo demais.
+pt.kdd3.txt,sp11n2w2,Parece que tem algo diferente nesta sala...
+pt.kdd3.txt,sp12e1,"Cuidado, Beethro, cuidado..."
+pt.kdd3.txt,sp12e2,Whew!
+pt.kdd3.txt,sp12e3,Esses vão dar uns bons filés.
+pt.kdd3.txt,sp121s2e1,Grandes goblins galopantes!
+pt.kdd3.txt,sp121s2e2,Olha o tamanho dessa serpente!
+pt.kdd3.txt,spM1s,Você falhou...
+pt.kdd3.txt,spT2,"Gire sua espada com 'Q' e 'W'."
+pt.kdd3.txt,spT3,Agora atinja a orbe com a sua espada.
+pt.kdd3.txt,spT4,"Orbes interagem com portas de três maneiras - elas podem abrir, fechar, ou alternar o seu estado."
+pt.kdd3.txt,spT5,"Clique na orbe com o mouse para ver quais portas ela afeta, e de que maneira."
+pt.kdd3.txt,spT6,Seu objetivo em DROD é limpar cada nível de todos os seus monstros.
+pt.kdd3.txt,spT7,Acerte a barata com a sua espada para matá-la.
+pt.kdd3.txt,spT8,Flechas obrigatórias bloqueiam o seu movimento numa direção oposta a elas.
+pt.kdd3.txt,spT9,"Pise no ponto de verificação. Você irá voltar ao momento exato que você pisou nele se morrer ou reiniciar com 'R'."
+pt.kdd3.txt,spT10,"Se você morrer ou estiver numa situação de morte certa, você pode desfazer até três movimentos com 'Backspace'."
+pt.kdd3.txt,spT11,"Esta poção lhe permitirá colocar um duplo. Duplos copiam todos os movimentos que você faz. Eles se movem imediatamente depois de você, mas antes dos monstros."
+pt.kdd3.txt,spT12,Coloque o duplo no quadrado marcado com o ponto de verificação. Use ele para abrir todos alçapões e o portão vermelho abrirá.
+pt.kdd3.txt,spT13,Serpentes não são danificadas pela sua espada mas vão encolher até morrer se ficarem presas num beco sem saída.
+pt.kdd3.txt,spT14,Remova todo o piche vivo azul para alcançar o olho gordo no topo.
+pt.kdd3.txt,spT15,Tenha em mente que o piche só pode ser danificado nos lados planos e qualquer quadrado que não seja estável vai virar bebês de piche.
+pt.kdd3.txt,spT16,Piche é estável quando pode formar uma massa quadrada de pelo menos quatro quadrados com os seus vizinhos.
+pt.kdd3.txt,spT17,"Parabéns, você completou esta sala!"
+pt.kdd3.txt,spT18,"Depois de você deixar esta sala seu sucesso será permanente. Você sempre poderá ver seu recorde para a sala, e você poderá ver sua posição em comparação com as pontuações do quadro de líderes."
+pt.kdd3.txt,spT19,"Se você conectou-se ao jogo usando credenciais válidas de conta do fórum Caravel, seu recorde será submetida ao quadro de líderes."
+pt.kdd3.txt,spT20,"Sua pontuação irá ser mantida no quadro de líderes por duas semanas a não ser que você seja um(a) assinante do CaravelNet. Neste caso, suas pontuações serão mantidas para sempre."
+pt.kdd3.txt,spT21,Você agora pode sair da sala de tutorial.
+pt.kdd3.txt,achName0,Trabalhar Como Relógio
+pt.kdd3.txt,achName1,Relogiar Como Trabalho
+pt.kdd3.txt,achName2,Mãos Amarradas
+pt.kdd3.txt,achName3,Chave de Braço
+pt.kdd3.txt,achName4,Espada Colada
+pt.kdd3.txt,achName5,Forever Alone
+pt.kdd3.txt,achName6,Sorrateiro
+pt.kdd3.txt,achName7,Técnico de Piche
+pt.kdd3.txt,achName8,Senhor das Cobras
+pt.kdd3.txt,achName9,Só com os Silvos
+pt.kdd3.txt,achName10,Caçador Silencioso
+pt.kdd3.txt,achName11,O Ninja
+pt.kdd3.txt,achName12,Matricídio
+pt.kdd3.txt,achName13,Explorador Amador
+pt.kdd3.txt,achName14,Golpeador Inciante
+pt.kdd3.txt,achName15,Exterminador Contratado
+pt.kdd3.txt,achName16,Sou um Profissional!
+pt.kdd3.txt,achName17,Maestria
+pt.kdd3.txt,achName18,Pós-Maestria
+pt.kdd3.txt,achName19,Baratas Assadas
+pt.kdd3.txt,achName20,Rainhas Gratinadas
+pt.kdd3.txt,achName21,Ovos Flambé
+pt.kdd3.txt,achName22,Mostarda de Olho Gordo
+pt.kdd3.txt,achName23,Filé de Asa-Fantasma
+pt.kdd3.txt,achName24,Bolinho de Serpente
+pt.kdd3.txt,achName25,Diapasão
+pt.kdd3.txt,achName26,Descendo Verde
+pt.kdd3.txt,achName27,Controlador de Multidão
+pt.kdd3.txt,achName28,Reanimador
+pt.kdd3.txt,achName29,Senhor do Tempo
+pt.kdd3.txt,achName30,Guardião do Espaço
+pt.kdd3.txt,achName31,Andarilho Eterno
+pt.kdd3.txt,achDesc0,Limpe o Nono Nível 4N 3E pisando só uma vez em cada uma das áreas marcadas
+pt.kdd3.txt,achDesc1,Limpe o Nono Nível 3N 3E pisando só uma vez em cada uma das áreas marcadas
+pt.kdd3.txt,achDesc2,Limpe o Décimo Nível 1N 1E sem girar a espada
+pt.kdd3.txt,achDesc3,Não gire a espada no Décimo Nível 1E
+pt.kdd3.txt,achDesc4,Não gire a espada enquanto limpa o Décimo Nível 1S 1O
+pt.kdd3.txt,achDesc5,Conquiste o Décimo Nível 1S sem beber a poção de duplo
+pt.kdd3.txt,achDesc6,Limpe o Décimo Primeiro Nível 1S 2E em menos de 150 turnos
+pt.kdd3.txt,achDesc7,Limpe todo o piche em qualquer sala do Décimo Primeiro Nível
+pt.kdd3.txt,achDesc8,Conquer Décimo Segundo Nível 1S 2E sem se mover diagonalmente
+pt.kdd3.txt,achDesc9,Conquer Décimo Segundo Nível 2S 1E sem beber a poção de duplo
+pt.kdd3.txt,achDesc10,Acorde um olho só enquanto limpa Décimo Segundo Nível 1S
+pt.kdd3.txt,achDesc11,Limpe uma sala com Olhos Gordos sem acordar nenhum deles
+pt.kdd3.txt,achDesc12,Mate uma barata rainha enquanto seus ovos estão crescendo
+pt.kdd3.txt,achDesc13,Limpe o nono nível
+pt.kdd3.txt,achDesc14,Limpe o décimo nível
+pt.kdd3.txt,achDesc15,Limpe o décimo primeiro nível
+pt.kdd3.txt,achDesc16,Limpe o décimo segundo nível
+pt.kdd3.txt,achDesc17,Mestre do forte
+pt.kdd3.txt,achDesc18,Pós-mestre do forte
+pt.kdd3.txt,achDesc19,Mate 35 baratas
+pt.kdd3.txt,achDesc20,Mate 20 baratas rainhas
+pt.kdd3.txt,achDesc21,Mate 15 ovos de barata
+pt.kdd3.txt,achDesc22,Mate 15 olhos gordos
+pt.kdd3.txt,achDesc23,Mate 5 asas-fantasmas
+pt.kdd3.txt,achDesc24,Mate 10 serpentes
+pt.kdd3.txt,achDesc25,Acerte uma orbe por três rodadas consecutivas
+pt.kdd3.txt,achDesc26,Baixe um portão verde 10 vezes
+pt.kdd3.txt,achDesc27,Mate um total de 2500 monstros
+pt.kdd3.txt,achDesc28,Morra um total de 100 vezes
+pt.kdd3.txt,achDesc29,Desfaça um total de 450 movimentos
+pt.kdd3.txt,achDesc30,Abra um total de 200 alçapões
+pt.kdd3.txt,achDesc31,Ande um total de 8000 passos
+pt.kdd3.txt,outro,"Se pelo menos ele tivesse um mapa da Masmorra de Dugan, Beethro saberia que o que espera no décimo terceiro andar é algo capaz de derrotar até os maiores guerreiros. Mas pelo menos não haverá Piche ou Serpentes lá...
+
+
+<font size=""32"" color=""#FFFF00"">Parabéns!</font>
+
+Você completou o terceiro episódio de Deadly Rooms of Death, forte King Dugan's Dungeon Lite (Masmorra do Rei Dugan Light). Espero sinceramente que você tenha apreciado esta experiência.
+Agora que você desceu o último lance de escadas disponível neste conjunto, você talvez queira tentar tornar-se Mestre, ou até Pós-Mestre deste jogo! Para fazer isso, vá caçar salas secretas. O número de salas secretas remanescentes em cada nível agora é visível na tela de Restaurar.
+Quando você conseguir conquistar todas as salas, uma Área de Maestria especial será aberta. Consegue descobrir como acessá-la?
+E, claro, você pode querer jogar o próximo episódio da série DROD:KDDL.
+
+Antes de eu deixá-lo sobre os louros da sua glória, eu gostaria de agradecer algumas pessoas, sem as quais este jogo nunca viria a luz do dia:
+
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - O criador, pai e inventor do DROD. Sem ele, esta idéia única nunca teria visto a luz do dia.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - Ele programou a maior parte de DROD 2: JtRH e DROD 3: TCB sozinho. Graças à esplêndida base de código, fazer Flash DROD foi puro prazer.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Senhor absoluto do Fórum Caravel e programador principal da CaravelNet. Graças a ele, você pode disputar recordes, e muito mais!
+
+
+<font size=""23"" color=""#FFFF00"">Programação, Desenvolvimento</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Arte e Música</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Desenvolvimento do Lado do Servidor</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Desenvolvimento de Níveis</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testadores Principais</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testadores</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Traduções</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Vozes</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Código, Idéia e Níveis Originais</font> - %%
+
+
+Até a próxima vez!
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+pt.kdd3.txt,complNextGame,"Jogue o próximo conjunto de níveis - KDD Lite 4. Isto vai abrir uma janela nova, e você pode fechar esta janela a seguir. Seu progresso foi gravado."
+pt.kdd3.txt,defCont,Controles padrão:
+pt.kdd3.txt,sc_diago,Você pode mover-se diagonalmente até através de cantos muito estreitos.
+pt.kdd3.txt,sc_broken,Quebre estas paredes rachadas e escretas com a sua espada.
+pt.kdd3.txt,sc_queens1,Baratas rainhas botam ovos de barata a cada 30 turnos (no turno após o contador de desova ficar vermelho).
+pt.kdd3.txt,sc_queens2,Ovos irão virar baratas 5 turnos depois de serem colocados.
+pt.kdd3.txt,sc_queens3,"Ovos não vão aparecer em setas, alçapões, ou portões amarelos. Use a tecla ""I"" ou 5 no NumPad para esperar um turno."
+pt.kdd3.txt,sc_mimics,"Após pisar numa poção de duplo, use o mouse ou tecla de espera para escolher o quadrado onde você quer colocar o duplo."
+pt.kdd3.txt,sc_shiftwait,Você pode achar útil que Shift+Espera aguarda até a próxima desova.
+pt.kdd3.txt,sp_mother1,Cada 30 turnos as mães de piche irão fazer o piche crescer um quadrado em cada direção.
+pt.kdd3.txt,sp_mother2,"Geralmente é seguro ser cercado por piche crescendo, mas cuidado com bebês de piche que podem aparecer durante o crescimento."
+pt.kdd3.txt,sc_backswipe,Siga o caminho de areia para aprender a técnica de corte traseiro! Lembre o movimento diagonal e não gire sua espada.
+pt.kdd3.txt,sc_trapdoors,Estes quadrados rosa arroxeado são alçapões e irão cair se você ou um duplo pisarem neles.
+pt.kdd4.txt,Thirteenth Level,Décimo Terceiro Nível
+pt.kdd4.txt,Fourteenth Level,Décimo Quarto Nível
+pt.kdd4.txt,Fifteenth Level,Décimo Quinto Nível
+pt.kdd4.txt,Sixteenth Level,Décimo Sexto Nível
+pt.kdd4.txt,Mastery Level,Nível de Maestria
+pt.kdd4.txt,Original 13th Level,Décimo Terceiro Nível Original
+pt.kdd4.txt,Tutorial Level,Nível de Tutorial
+pt.kdd4.txt,entrTut,"Beethro Budkin, exterminador de masmorras profissional de quinta geração, foi contratado pelo rei Dugan para limpar a masmorra multi-nível real, infestada por uma grande quantidade de monstros.
+Beethro cobra por sala, e sendo um profissional, ele é obrigado pelo seu contrato a eliminar todos os monstros de cada sala para ser pago.
+A única arma que Beethro precisa para fazer seu trabalho é uma Espada Muito Grande, que pode derrotar quase qualquer monstro com um único golpe."
+pt.kdd4.txt,entr13,"”Eu provavelmente deveria ter pulado este nível, mas um contrato é um contrato. Onde eu coloquei aquelas migalhas de pão?” - Beethro"
+pt.kdd4.txt,entr14,"Neste nível, você finalmente vai encontrar um pessoal com devido respeito pela sua espada."
+pt.kdd4.txt,entr15,"Este nível é como a vez que você cortou a grama e tinha exatamente a quantidade de combustível para terminar, mas fez uma bobagem, e teve que comprar mais. E tinha uma grande serpente no posto, e você queria entrar para pagar, mas a porta da frente estava trancada, então você bebeu uma poção de duplo para entrar, e então as a baratas...
+
+Bom, acho que a metáfora pára de funcionar."
+pt.kdd4.txt,entr16,Estas baratas precisam de uma figura de autoridade para guiá-las. Alguém com carisma e caráter. Alguém como você!
+pt.kdd4.txt,entrMaster,"Beethro desceu as escadas, só para encontrar um corredor fora do mapa...
+
+Ele não vai receber pela limpeza deste nível, mas a sua honra profissional o empurra pra frente."
+pt.kdd4.txt,entrMasterBack,Beethro voltou para terminar o trabalho de extermínio que ele foi contratado para fazer.
+pt.kdd4.txt,entrOriginal13Enter,Beethro desceu para o conjunto místico de corredores mortais e inúteis.
+pt.kdd4.txt,entrOriginal13Success,"Orgulhoso do seu feito, mas muito mais louco, Beethro emergiu do infame 13o nível da Masmorra do Rei Dugan."
+pt.kdd4.txt,entrOriginal13Escape,Beethro fugiu do desafio como um gatinho pequeno e franzino.
+pt.kdd4.txt,achName0,Floresta Unidimensional
+pt.kdd4.txt,achName1,Serpentes Estóicas
+pt.kdd4.txt,achName2,Piche Parado
+pt.kdd4.txt,achName36,Olho Mágico
+pt.kdd4.txt,achName3,Socador de Goblins
+pt.kdd4.txt,achName4,Esmagador de Goblins
+pt.kdd4.txt,achName5,Destruidor de Goblins
+pt.kdd4.txt,achName6,Sai da Frente!
+pt.kdd4.txt,achName7,Mãe Verde
+pt.kdd4.txt,achName8,Assassino de Goblins
+pt.kdd4.txt,achName34,Sacrifício Extremo
+pt.kdd4.txt,achName35,Políticas Estritas
+pt.kdd4.txt,achName32,Assassino Calmo
+pt.kdd4.txt,achName33,Passo à Frente
+pt.kdd4.txt,achName39,Cruzando Aranhas
+pt.kdd4.txt,achName9,Crescendo!
+pt.kdd4.txt,achName37,Master of Olhion
+pt.kdd4.txt,achName38,Jogos Fantasmintos
+pt.kdd4.txt,achName10,O Explorador
+pt.kdd4.txt,achName11,Fricassé de Goblin
+pt.kdd4.txt,achName12,Matricídio
+pt.kdd4.txt,achName13,Explorador Amador
+pt.kdd4.txt,achName14,Golpeador Inciante
+pt.kdd4.txt,achName15,Exterminador Contratado
+pt.kdd4.txt,achName16,Sou um Profissional!
+pt.kdd4.txt,achName17,Maestria
+pt.kdd4.txt,achName18,Pós-Maestria
+pt.kdd4.txt,achName19,Baratas Flambadas
+pt.kdd4.txt,achName20,Rainhas Assadas
+pt.kdd4.txt,achName21,Ovos Crus
+pt.kdd4.txt,achName22,Olho Gordo a la Mode
+pt.kdd4.txt,achName23,Kebab de Asa-Fantasma
+pt.kdd4.txt,achName24,Sushi de Serpente
+pt.kdd4.txt,achName25,Diapasão
+pt.kdd4.txt,achName26,Abaixo o Verde
+pt.kdd4.txt,achName27,Pacificador
+pt.kdd4.txt,achName28,Fênix
+pt.kdd4.txt,achName29,Mestre do Tempo
+pt.kdd4.txt,achName30,Limpa-Carpete
+pt.kdd4.txt,achName31,Ao Infinito e Além
+pt.kdd4.txt,achDesc0,13o Nível 2S1O: Limpe a sala sem girar a sua espada
+pt.kdd4.txt,achDesc1,13o Nível 1S: Limpe a sala sem girar a sua espada
+pt.kdd4.txt,achDesc2,13o Nível 1S1E: Limpe a sala sem girar a sua espada
+pt.kdd4.txt,achDesc36,13o Nível 1S2O: Limpe a sala sem girar a sua espada
+pt.kdd4.txt,achDesc3,14o Nível 1S: Limpe a sala sem sair da orientação NO
+pt.kdd4.txt,achDesc4,14o Nível 2S: Limpe a sala sem sair da orientação E
+pt.kdd4.txt,achDesc5,14o Nível 1N: Limpe a sala sem sair da orientação S
+pt.kdd4.txt,achDesc6,14o Nível 2E: Limpe a sala sem pisar no alçapão
+pt.kdd4.txt,achDesc7,14o Nível 2N: Limpe a sala sem deixar a mãe de piche reproduzir-se
+pt.kdd4.txt,achDesc8,14o Nível 1N3E: Limpe a sala sem girar a sua espada
+pt.kdd4.txt,achDesc34,14o Nível 1N1E: Mate o goblin por último
+pt.kdd4.txt,achDesc35,14o Nível 2N2E: Limpe a sala sem deixar o goblin pisar na estrada cinza
+pt.kdd4.txt,achDesc32,15o Nível Entrance: Limpe a sala sem girar a sua espada
+pt.kdd4.txt,achDesc33,15o Nível Entrance: Abra todos os alçapões antes de limpar a sala
+pt.kdd4.txt,achDesc39,"15o Nível 1N: Depois de atingir a orbe, mate todas as aranhas movendo-se só diagonalmente"
+pt.kdd4.txt,achDesc9,16o Nível 1S1E: Limpe a sala sem deixar a mãe de piche reproduzir-se
+pt.kdd4.txt,achDesc37,Nível de Maestria Level 2N: Limpe a sala sem nenhum olho acordar e sem nenhum ovo ser posto
+pt.kdd4.txt,achDesc38,Nível de Maestria 1N1E: Mate a asa-fantasma sem abrir todos os alçapões
+pt.kdd4.txt,achDesc10,Visite cada sala do 13o Nível original (%% / 56)
+pt.kdd4.txt,achDesc11,Mate 40 goblins
+pt.kdd4.txt,achDesc13,Limpe o Décimo Terceiro Nível
+pt.kdd4.txt,achDesc14,Limpe o Décimo Quarto Nível
+pt.kdd4.txt,achDesc15,Limpe o Décimo Quinto Nível
+pt.kdd4.txt,achDesc16,Limpe o Décimo Sexto Nível
+pt.kdd4.txt,achDesc12,Mate uma barata rainha enquanto seus ovos estão crescendo
+pt.kdd4.txt,achDesc17,Mestre do forte
+pt.kdd4.txt,achDesc18,Pós-mestre do forte
+pt.kdd4.txt,achDesc19,Mate 100 baratas
+pt.kdd4.txt,achDesc20,Mate 25 baratas rainhas
+pt.kdd4.txt,achDesc21,Mate 10 ovos de barata
+pt.kdd4.txt,achDesc22,Mate 80 olhos gordos
+pt.kdd4.txt,achDesc23,Mate 40 asas-fantasmas
+pt.kdd4.txt,achDesc24,Mate 25 serpentes
+pt.kdd4.txt,achDesc25,Acerte uma orbe por três rodadas consecutivas
+pt.kdd4.txt,achDesc26,Baixe um portão verde 20 vezes
+pt.kdd4.txt,achDesc27,Mate um total de 3000 monstros
+pt.kdd4.txt,achDesc28,Morra um total de 80 vezes
+pt.kdd4.txt,achDesc29,Desfaça um total de 500 movimentos
+pt.kdd4.txt,achDesc30,Abra um total de 500 alçapões
+pt.kdd4.txt,achDesc31,Ande um total de 10000 passos
+pt.kdd4.txt,sc_13_entr_1,Atalho para a saída
+pt.kdd4.txt,sc_13_entr_2,Um verdadeiro Mestre Exterminador não vai ler o pergaminho acima antes de conquistar o nível.
+pt.kdd4.txt,sc_13_entr_3,"Pedras repousam antes da areia, antes delas estão pranchas de pedras precedidas por grama que cresce nos ladrilhos, construídos na terra.
+-Poeta Desconhecido"
+pt.kdd4.txt,sc_13_2S2W_3,Atalho para a entrada
+pt.kdd4.txt,sc_14_1N3E,O cara na outra sala não é tão esperto. Ele sempre cai no mesmo velho truque.
+pt.kdd4.txt,sc_mast_entr_1,O 13o Nível Original
+pt.kdd4.txt,sc_mast_entr_2,Alguns quebra-cabeças novos.
+pt.kdd4.txt,sc_mast_entr_3,Versões mais difíceis de salas antigas.
+pt.kdd4.txt,sc_mast_1W,Não há nada aqui.
+pt.kdd4.txt,sc_o13_orb,Esta orbe tinha um propósito no nível original.
+pt.kdd4.txt,sc_o13_orbs,Esta orbes tinham um propósito no nível original.
+pt.kdd4.txt,sc_o13_orb2,"Esta orbe não estava aqui originalmente, e o portão amarelo inteiro estava em uma sala."
+pt.kdd4.txt,sc_o13_orbs_gates,Havia uma orbe na sala original e os portões serviam um objetivo.
+pt.kdd4.txt,sc_o13_broken_wall,"Havia uma parede normal no nível original aqui, fazendo a área a seguir impossível de alcançar."
+pt.kdd4.txt,sc_o13_edge,Não havia borda da sala aqui originalmente.
+pt.kdd4.txt,sc_o13_roach,"No nível 13o original, a barata acima estava na mesma sala e este corredor era um pouco diferente."
+pt.kdd4.txt,scM1s1,Agora isso é que é uma conquista!
+pt.kdd4.txt,scM1s2,Como foi o jogo? Conseguiu obter todas as conquistas?
+pt.kdd4.txt,scM1s3,"Sinta-se livre para visitar CaravelGames.com para jogar mais episódios de KDDL, ou baixar qualquer um dos jogos da série DROD para Windows, MacOS ou Linux."
+pt.kdd4.txt,scM1s4,E bola pra frente!
+pt.kdd4.txt,scM1s5,Aqui está uma pequena recompensa! Mate todos os olhos e goblins sem pisar na grama.
+pt.kdd4.txt,scM1s6,As baratas rainhas vão ser mortas quando você pisar no ponto de verificação no canto à extrema direita.
+pt.kdd4.txt,scM1s7,Fabuloso!
+pt.kdd4.txt,sp_14_1E,Ahh...nada satisfaz como a doce visão de nenhum piche à vista!
+pt.kdd4.txt,sp_14_2N2E_1,Bah...parece que eu vou precisar deixar este goblin vivo por tempo suficiente para ele remover aquela serpente lá em cima para mim.
+pt.kdd4.txt,sp_14_2N2E_2,"Sim ajuda di mim! Cê mi corta qui eu sei, mais cedu ou mais tardi."
+pt.kdd4.txt,sp_14_2N2E_3,"Não se faça de valente, que eu sei que goblins não são valentes."
+pt.kdd4.txt,sp_14_2N2E_4,Numnãonão! Coisa puntuda pralonji di mim!
+pt.kdd4.txt,sp_14_2N2E_5,Você está achando que vai me pegar pelas costas quando eu não estiver vendo. Certo.
+pt.kdd4.txt,sp_14_2N2E_6,Misiricórja!
+pt.kdd4.txt,sp_14_2N2E_7,"Olha, você faria o mesmo no meu lugar!"
+pt.kdd4.txt,sp_14_2N2E_8,Essa foi dureza. Espero não ter que fazer isso de novo!
+pt.kdd4.txt,sp_14_2N2E_9,"Descanse aí no canto um pouco enquanto eu abro a passagem, goblin."
+pt.kdd4.txt,sp_14_2N2E_10,"(Provavelmente não precisava trancar ele ali, mas mais vale previnir do que curar!)"
+pt.kdd4.txt,sp_14_1N1E,Olhe só... Nem uma parede destruída!
+pt.kdd4.txt,sp_15_1S2W,"Rapaz, esse corte não vai ser simples. Vamos planejar o caminho antes de eu começar a me mexer."
+pt.kdd4.txt,sp_16_2S1E_1,Brilhante!  Às vezes eu mesmo me impressiono.
+pt.kdd4.txt,sp_16_2S1E_2,Ha!  Tudo limpo!
+pt.kdd4.txt,sp_16_2S1E_3,Agora para sair daqui...
+pt.kdd4.txt,sp_16_2S1E_4,Hmm...por onde eu entrei mesmo?
+pt.kdd4.txt,sp_16_2S1E_5,"Ah, não importa."
+pt.kdd4.txt,spM1s,Você falhou...
+pt.kdd4.txt,sp_o13_1,"Aqui, baratinha, baratinha..."
+pt.kdd4.txt,sp_o13_2,Greb! Uma miserável baratinha que eu tenho que esmagar.
+pt.kdd4.txt,sp_tut_entr_1,Bem-vindo(a) a DROD.
+pt.kdd4.txt,sp_tut_entr_2,"Se esta for a sua primeira vez jogando um jogo nesta série, por favor continue para o este (leste)."
+pt.kdd4.txt,sp_tut_entr_3,Ali você vai encontrar um par de quebra-cabeças mais simples para introduzir-lhe os conceitos.
+pt.kdd4.txt,sp_tut_entr_4,Use as escadas se você já for familiar com o jogo.
+pt.kdd4.txt,sp_tut_entr_5,"Use o teclado numérico ou as teclas 789, UIO, JKL para se movimentar."
+pt.kdd4.txt,sp_tut_entr_6,"As teclas podem ser alteradas do menu de opções, que você pode acessar apertando a tecla `ESC`."
+pt.kdd4.txt,sp_tut_1E_1,Orbes afetam portões amarelos. Atinja uma orbe com a sua espada para ativá-la.
+pt.kdd4.txt,sp_tut_1E_2,Clique uma orbe com o mouse para ver quais portões ela afeta.
+pt.kdd4.txt,sp_tut_1E_3,Gire sua espada com as teclas `Q` e `W`.
+pt.kdd4.txt,sp_tut_1E_4,Acerte a barata com a sua espada para matá-la.
+pt.kdd4.txt,sp_tut_1E_5,Acerte a orbe e aguarde algumas rodadas para ver como monstros se comportam quando encontram um canto diagonalmente.
+pt.kdd4.txt,sp_tut_1E_6,Espere...
+pt.kdd4.txt,sp_tut_1E_7,"Como pode ver, quando aproximam-se de um canto diagonalmente, monstros preferem o movimento vertical."
+pt.kdd4.txt,sp_tut_1E_8,Mate as baratas para baixar a porta verde e siga para o Este.
+pt.kdd4.txt,sp_tut_2E_1,"Você vai aprender o golpe traseiro aqui. Após atingir a orbe, só existe uma maneira de matar as baratas - mova-se diretamente para o Noroeste ou Sudoeste."
+pt.kdd4.txt,sp_tut_2E_2,"Você pode querer repetir algumas vezes até decorar, já que é uma técnica muito importante."
+pt.kdd4.txt,sp_tut_2E_3,Você pode mover-se diagonalmente até através de passagens muito estreitas.
+pt.kdd4.txt,sp_tut_2E_4,Paredes quebradas ou secretas podem ser destruídas com a sua espada.
+pt.kdd4.txt,sp_tut_2E_5,Flechas bloqueiam o movimento de todas as entidades contra a direção que apontam.
+pt.kdd4.txt,sp_tut_2E_6,Pise no ponto de verificação para retornar deste ponto se morrer.
+pt.kdd4.txt,sp_tut_2E_7,Baratas rainhas botam ovos a cada 30 rodadas. Use o relógio no lado esquerdo da tela para saber quando a próxima chocagem acontecerá.
+pt.kdd4.txt,sp_tut_3E_1,"Olhos Gordos mantém-se dormentes a menos que você pise na linha de visão deles - uma vez despertados, eles irão atacá-los como baratas."
+pt.kdd4.txt,sp_tut_3E_2,Serpentes não podem ser danificadas pela sua espada. A única maneira de matá-las é trazendo-as para um beco sem saída.
+pt.kdd4.txt,sp_tut_3E_3,Use as paredes quebradas para criar um beco sem saída para as serpentes.
+pt.kdd4.txt,sp_tut_3E_4,Você pode usar a tecla de apagar (Backspace) para desfazer até três rodadas. 
+pt.kdd4.txt,sp_tut_3E_5,"Serpentes, diferentemente de todos os outros monstros, não podem se mover diagonalmente."
+pt.kdd4.txt,sp_tut_3E_6,Elas tem uma preferência de movimento horizontal/vertical que muda a cada cinco rodadas.
+pt.kdd4.txt,sp_tut_3E_7,Você pode ver a preferência corrente delas sob o relógio de chocagem.
+pt.kdd4.txt,sp_tut_4E_1,"Quando você sai de cima de um alçapão, ele cai, deixando um poço."
+pt.kdd4.txt,sp_tut_4E_2,"Para abrir o portão vermelho, você terá de abrir todos os alçapões."
+pt.kdd4.txt,sp_tut_4E_3,Lembre que você pode usar os poços deixados por alçapões abertos como escudo contra baratas.
+pt.kdd4.txt,sp_tut_5E_1,Piche é uma substância muito peculiar. Ele só pode ser danificado nos lados retos.
+pt.kdd4.txt,sp_tut_5E_2,Você não precisa limpar todo o piche para conquistar uma sala.
+pt.kdd4.txt,sp_tut_6E_1,"Mães do piche são inimigos temíveis. Apesar de ficar em um lugar, escondidas sob o piche, elas fazem o piche crescer a cada 30 rodadas."
+pt.kdd4.txt,sp_tut_6E_2,A porta negra não irá abrir até você limpar todo o piche de uma área.
+pt.kdd4.txt,sp_tut_7E_1,Beber esta poção vai deixá-lo criar um duplo.
+pt.kdd4.txt,sp_tut_7E_2,Duplos imitam todos os seus movimentos e podem abrir alçapões assim como o Beethro.
+pt.kdd4.txt,sp_tut_8E_1,"Quando você beber a poção de invisibilidade, monstros não vão se mexer a menos que estejam perto o suficiente para cheirar Beethro."
+pt.kdd4.txt,sp_tut_8E_2,Não deixe a barata rainha escapar pelas flechas ou você não vai poder matá-la.
+pt.kdd4.txt,sp_tut_8E_3,"Você foi bem, parabéns!"
+pt.kdd4.txt,sp_tut_8E_4,Parece que você falhou.
+pt.kdd4.txt,sp_tut_8E_5,Você pode usar `R` para reiniciar ou esperar para ouvir algumas dicas.
+pt.kdd4.txt,sp_tut_8E_6,...
+pt.kdd4.txt,sp_tut_8E_7,Existem três maneiras de resolver esta sala.
+pt.kdd4.txt,sp_tut_8E_8,A mais rápida requer que você prenda a rainha nas flechas perto da porta verde de tal forma que você possa matá-la pisando na flecha diagonal ou perto dela.
+pt.kdd4.txt,sp_tut_8E_9,"A outra, quase tão rápida, pode ser obtida andando horizontalmente em direção à rainha de forma que a porta verde bloqueie ela."
+pt.kdd4.txt,sp_tut_8E_10,A última requer dar uma volta completa na sala e prender a rainha no corredor de entrada da sala.
+pt.kdd4.txt,sp_tut_8E_11,"Se você ainda não conseguir fazer isto, espere algumas rodadas com a tecla I ou 5 para acessar a poção de duplo de emergência."
+pt.kdd4.txt,sp_tut_9E,Boa sorte!
+pt.kdd4.txt,sc_tut_emergency_potion,"Poção de duplo de emergência, use se a sala for difícil demais."
+pt.kdd4.txt,sc_tut_tricky,Esta sala complicada não é exigida.
+pt.kdd4.txt,outro,"Os últimos quatro andares foram um verdadeiro problema para o Beethro com o piche, as portas, as baratas... Conforme ele descia as escadas ele sentiu o cheiro de mais da gosma azul que fez ele fazer uma careta de nojo, mas algo no fundo da cabeça dele lhe dizia que havia ainda mais perigo à frente...
+
+
+<font size=""32"" color=""#FFFF00"">Parabéns!</font>
+
+Você completou o quarto episódio da série Deadly Rooms of Death: King Dugan’s Dungeon Lite. Sinceramente esperamos que você tenha achado esta experiência agradável.
+Agora que você desceu o último lance de escadas deste conjunto, você pode querer tentar a Maestria e depois Pós-Maestria deste jogo! Para fazer isso, procure salas secretas. O número de salas secretas remanescentes em cada nível agora aparece na tela de Restaurar.
+Quando você conseguir conquistar todas elas, uma área especial de Maestria será aberta. Você consegue descobrir como acessá-la?
+Você também pode se interessar em jogar o próximo episódio da série DROD:KDDL.
+
+Antes de deixá-lo aproveitar o sentimento de glória, nós gostaríamos de agradecer algumas pessoas que tornaram possível a você jogar este jogo:
+
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - O criador, pai e inventor do DROD. Sem ele, esta idéia única nunca teria visto a luz do dia.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - Ele escreveu a maior parte do código de DROD: JtRH e DROD: TCB sozinho. Graças à esplêndida base de código, fazer Flash DROD foi um prazer puro.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Senhor supremo do Fórum Caravel e programador chefe da CaravelNet. Graças a ele, você pode disputar por recordes, e muito mais!
+
+
+<font size=""23"" color=""#FFFF00"">Programação, Desenvolvimento</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Arte & Música</font> - %% (minor)
+
+<font size=""23"" color=""#FFFF00"">Desenvolvimento de Servidor</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Arquitetos do Forte</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testadores Primários</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testadores</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Traduções</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Talentos de Voz</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Código, Idéia e Níveis Originais</font> - %%
+
+
+Até a próxima!
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+pt.kdd4.txt,complNextGame,"Jogue o próximo conjunto de níveis - KDD Lite 5. Isto vai abrir uma janela nova, e você pode fechar esta janela a seguir. Seu progresso foi gravado."
+pt.txt,backstoryNext,Próx
+pt.txt,backstoryPrev,Ant
+pt.txt,prlLanguage,Mudar linguagem
+pt.txt,keyBackspace,Backspace
+pt.txt,keyTab,Tab
+pt.txt,keyEnter,Enter
+pt.txt,keyShift,Shift
+pt.txt,keyControl,Control
+pt.txt,keyAlt,Alt
+pt.txt,keyPause,Pause/Brk
+pt.txt,keyCapsLock,Caps Lock
+pt.txt,keyEscape,Esc
+pt.txt,key ,Espaço
+pt.txt,keyPageUp,Page Up
+pt.txt,keyPageDown,Page Down
+pt.txt,keyEnd,End
+pt.txt,keyHome,Home
+pt.txt,keyArrowLeft,Esquerda
+pt.txt,keyArrowUp,Cima
+pt.txt,keyArrowRight,Direita
+pt.txt,keyArrowDown,Baixo
+pt.txt,keyInsert,Insert
+pt.txt,keyDelete,Delete
+pt.txt,key0,0
+pt.txt,key1,1
+pt.txt,key2,2
+pt.txt,key3,3
+pt.txt,key4,4
+pt.txt,key5,5
+pt.txt,key6,6
+pt.txt,key7,7
+pt.txt,key8,8
+pt.txt,key9,9
+pt.txt,keya,A
+pt.txt,keyb,B
+pt.txt,keyc,C
+pt.txt,keyd,D
+pt.txt,keye,E
+pt.txt,keyf,F
+pt.txt,keyg,G
+pt.txt,keyh,H
+pt.txt,keyi,I
+pt.txt,keyj,J
+pt.txt,keyk,K
+pt.txt,keyl,L
+pt.txt,keym,M
+pt.txt,keyn,N
+pt.txt,keyo,O
+pt.txt,keyp,P
+pt.txt,keyq,Q
+pt.txt,keyr,R
+pt.txt,keys,S
+pt.txt,keyt,T
+pt.txt,keyu,U
+pt.txt,keyv,V
+pt.txt,keyw,W
+pt.txt,keyx,X
+pt.txt,keyy,Y
+pt.txt,keyz,Z
+pt.txt,key91,Win E/Cmd
+pt.txt,key92,Win D
+pt.txt,key93,Menu
+pt.txt,keyNumpad0,Numpad 0
+pt.txt,keyNumpad1,Numpad 1
+pt.txt,keyNumpad2,Numpad 2
+pt.txt,keyNumpad3,Numpad 3
+pt.txt,keyNumpad4,Numpad 4
+pt.txt,keyNumpad5,Numpad 5
+pt.txt,keyNumpad6,Numpad 6
+pt.txt,keyNumpad7,Numpad 7
+pt.txt,keyNumpad8,Numpad 8
+pt.txt,keyNumpad9,Numpad 9
+pt.txt,keyNumpadMul,Numpad *
+pt.txt,keyNumpadAdd,Numpad +
+pt.txt,keyNumpadSub,Numpad -
+pt.txt,keyNumpadDot,Numpad .
+pt.txt,keyNumpadDiv,Numpad /
+pt.txt,keyF1,F1
+pt.txt,keyF2,F2
+pt.txt,keyF3,F3
+pt.txt,keyF4,F4
+pt.txt,keyF5,F5
+pt.txt,keyF6,F6
+pt.txt,keyF7,F7
+pt.txt,keyF8,F8
+pt.txt,keyF9,F9
+pt.txt,keyF10,F10
+pt.txt,keyF11,F11
+pt.txt,keyF12,F12
+pt.txt,keyF13,F13
+pt.txt,keyF14,F14
+pt.txt,keyF15,F15
+pt.txt,key144,Numlock
+pt.txt,key145,Scroll Lock
+pt.txt,key;,;
+pt.txt,key=,=
+pt.txt,"key,",","
+pt.txt,key-,-
+pt.txt,key.,.
+pt.txt,key/,/
+pt.txt,key~,~
+pt.txt,key[,[
+pt.txt,key\,\
+pt.txt,key],]
+pt.txt,"key'","'"
+pt.txt,numpad,Numpad
+pt.txt,notebook,Notebook
+pt.txt,keyUp,Mover para Norte
+pt.txt,keyUpLeft,Mover para Noroeste
+pt.txt,keyUpRight,Mover para Nordeste
+pt.txt,keyLeft,Mover para Oeste
+pt.txt,keyRight,Mover para Leste
+pt.txt,keyDown,Mover para Sul
+pt.txt,keyDownLeft,Mover para Sudoeste
+pt.txt,keyDownRight,Mover para Sudeste
+pt.txt,keyWait,Esperar Um Turno
+pt.txt,keyCW,Girar com o Relógio
+pt.txt,keyCCW,Girar contra o Relógio
+pt.txt,keyUndo,Desfazer Último Movimento
+pt.txt,keyRestart,Reiniciar Sala
+pt.txt,keyBattle,Tecla de Batalha
+pt.txt,keyLock,Trancar/Destrancar Sala
+pt.txt,close,Fechar
+pt.txt,cnetError,"Conexão falhou.
+Isto pode ser causado por credenciais inválidas, uma conexão de internet falha ou problemas temporários no servidor. Funções da CaravelNet foram desativadas. Para restaurá-las, vá à tela de opções, atualize suas credenciaics se necessário, e pressione ""Conectar!"""
+pt.txt,prlStartGame,Iniciar Jogo
+pt.txt,prlLoading,Carregando: %% / %%
+pt.txt,prlWaitApi,Aguardando conexão de API...
+pt.txt,initAssets,Inicializando recursos %% / %%
+pt.txt,tsStartNew,Iniciar Novo Jogo
+pt.txt,tsStartNewKey,I
+pt.txt,tsStartNewKeyCode,73
+pt.txt,tsContinue,Continuar a Jogar
+pt.txt,tsContinueKey,C
+pt.txt,tsContinueKeyCode,67
+pt.txt,tsRestore,Restaurar Sala Diferente
+pt.txt,tsRestoreKey,R
+pt.txt,tsRestoreKeyCode,82
+pt.txt,tsAchievements,Ver Conquistas
+pt.txt,tsAchievementsKey,V
+pt.txt,tsAchievementsKeyCode,86
+pt.txt,tsOptions,Opções
+pt.txt,tsOptionsKey,O
+pt.txt,tsOptionsKeyCode,79
+pt.txt,tsHelp,Ajuda e História
+pt.txt,tsHelpKey,A
+pt.txt,tsHelpKeyCode,65
+pt.txt,tsBrowse,Navegar Fortes
+pt.txt,tsBrowseKey,N
+pt.txt,tsBrowseKeyCode,78
+pt.txt,optHeader,Opções:
+pt.txt,optUploadAll,Enviar Todas as Pontuações
+pt.txt,optConnect,Conectar!
+pt.txt,optRedefine,Redefinir Teclas
+pt.txt,optCnetHeader,Credenciais de CaravelNet
+pt.txt,optCnetUser,Nome CaravelNet
+pt.txt,optCnetKey,Chave CaravelNet
+pt.txt,optCnetVolume,Volume
+pt.txt,optCnetMusic,Música
+pt.txt,optCnetSound,Efeitos
+pt.txt,optCnetVoices,Vozes
+pt.txt,optMoveAnim,Animação de movimento
+pt.txt,optMoveSmooth,Suave
+pt.txt,opyMoveFast,Rápida
+pt.txt,uploadAll,Enviando todas as pontuações
+pt.txt,uploadDone,Pronto!
+pt.txt,uploadError,Erro! Por favor conecte e tente de novo!
+pt.txt,uploadAlreadyHas,Já enviado
+pt.txt,uploadRoomEntrance,Entrada
+pt.txt,cnetDescription,Usuários que se inscreverem na CaravelNet podem preencher suas informações aqui para participar nos quadros online de líderes. Cada sala é pontuada com base no menor número de movimentos usados para completá-la. Se você não preencher estes detalhes você será somente notificado(a) de qual lugar você teria atingido. Você pode submeter suas pontuações depois por meio do botão de Enviar Todas as Pontuações.
+pt.txt,cnetHeader,"Obtenha mais informações sobre ou compre uma assinatura CaravelNet.
+Abre em uma nova janela."
+pt.txt,redefineScreen,"Você está mudando o mapeamento para ""%%""
+Pressione a tecla desejada (agora: %%)
+Pressione Esc para cancelar"
+pt.txt,redefineInvalidKey,"%% está reservada para outras funções
+Pressione uma tecla diferente
+Pressione Esc para cancelar"
+pt.txt,redefineReservedKey,"%% está reservada para um modo alternativo de movimento
+Pressione uma tecla diferente
+Pressione Esc para cancelar"
+pt.txt,abButCnet,Sobre CaravelNet
+pt.txt,abButHowto,Como Jogar
+pt.txt,abButHistory,História do DROD
+pt.txt,abButBackstory,Estória
+pt.txt,abButCredits,Créditos
+pt.txt,h&bTextWidth,450
+pt.txt,h&bText,"  DROD foi concebido por Erik Hermansen nos anos 90. É conhecido como um jogo de puzzle (quebra-cabeça) onde você corre por salas em uma masmorra, matando monstros com uma Espada Muito Grande. Como isto funciona? Você verá assim que você for e jogar o jogo.
+
+  Flash DROD é uma conversão do jogo DROD original. Ele usa imagens e sons das engines mais novas, que você pode copiar para jogar em seu computador do site CaravelGames.com.
+
+  Graças às capacidades integradas da CaravelNet, além de completar puzzles, jogadores podem competir entre si para completar salas no menor número de movimentos."
+pt.txt,creditsWidth,620
+pt.txt,credits,"<font size=""20"">Programação, Desenvolvimento: </font><font color=""#444444"">%%</font>
+<font size=""20"">Arte e Música: </font><font color=""#444444"">%%</font>
+<font size=""20"">Desenvolvimento do Lado do Servidor: </font><font color=""#444444"">%%</font>
+<font size=""20"">Desenvolvimento de Níveis: </font><font color=""#444444"">%%</font>
+<font size=""20"">Testadores Principais: </font><font color=""#444444"">%%</font>
+<font size=""20"">Testadores: </font><font color=""#444444"">%%</font>
+<font size=""20"">Traduções: </font><font color=""#444444"">%%</font>
+<font size=""20"">Vozes: </font><font color=""#444444"">%%</font>
+<font size=""20"">Código, Idéia e Níveis Originais: </font><font color=""#444444"">%%</font>"
+pt.txt,controlsWindowWidth,650
+pt.txt,controlsWindow,"<font size=""18"">`Numpad` e `789 UIO JKL`</font><font color=""#444444""> - Movimente-se</font>
+<font size=""18"">`Q` e `W`</font><font color=""#444444""> - Gire sua espada</font>
+<font size=""18"">`Backspace`</font><font color=""#444444""> - Desfaça o último movimento</font>
+<font size=""18"">`R'</font><font color=""#444444""> - Volte para o último ponto de verificação ou reinicie</font>
+<font size=""18"">`Shift+R`</font><font color=""#444444""> - Reinicie a sala</font>
+<font size=""18"">`Esc`</font><font color=""#444444""> - Menu de pausa</font>
+<font size=""18"">`Enter`</font><font color=""#444444""> - Pontuação de nível e sala</font>
+<font size=""18"">`X`</font><font color=""#444444""> - Tranque ou destranque a sala</font>
+<font size=""18"">`Space`</font><font color=""#444444""> - Limpe a tela de falas e conquistas</font>
+<font size=""18"">`F3`</font><font color=""#444444""> - Mostre a quantidade de movimentos</font>
+<font size=""18"">`Shift+Tecla`</font><font color=""#444444""> - Faça a ação e depois seu oposto</font>
+<font size=""18"">`Shift+I`</font><font color=""#444444""> - Espere até a rodada de desova</font>
+<font size=""18"">`Clique do mouse`</font><font color=""#444444""> - Mostre informações sobre o quadrado clicado</font>
+
+  Seu objetivo é limpar cada nível da Masmorra do Rei Dugan de monstros. Esse feito pode ser conseguido usando somente a sua Espada Muito Grande™ e a sua esperteza. Cada sala é uma área separada que deve ser limpa em uma única sessão. Caso você saia de uma sala sem limpar-la completamente, ela será restaurada ao seu estado original quando você retornar."
+pt.txt,cnetInfoWidth,500
+pt.txt,cnetInfo,"  CaravelNet permite a usuários de todo o mundo competirem pelas melhores pontuações.
+
+  Todos podem submeter suas pontuações anonimamente para ver como se comparam com outros jogadores. No entanto, pontuações anônimas não são guardadas nos servidores da Caravel e servem somente para informação. As pontuações de usuários dos fórums da Caravel são guardadas por duas semanas sem taxa, e aqueles que tenham uma assinatura CaravelNet nunca terão suas pontuações removidas.
+
+  Note que, desde que você não apague o seu progresso do seu disco local, você pode enviar todas as suas pontuações ao servidor depois de registrar uma conta Caravel.
+
+  Para registrar com a Caravel, por favor visite CaravelGames.com e crie uma conta de usuário de fórum!"
+pt.txt,backstory1,"  Beethro Budkin entrou na Grande Câmara de Jantar onde o Rei Dugan estava terminando sua enorme refeição matutina.
+
+  ""Fora, sujo plebeu! Você atrapalha a minha digestão com a sua higiene deficiente!"" berrou o Rei, com pedaços de pernil e batatas saindo pela boca.
+
+  ""Mas senhor,"" protestou Beethro, ""você pediu por mim.""
+
+  A expressão no rosto do rei mudou de fúria para confusão para reconhecimento para amiabilidade no espaço de dois segundos.
+
+  ""Eu realmente devia ter lhe chamado antes,"" disse o Rei Dugan. ""É inacreditável! Você deixa os guardas comerem na masmorra, eles espalham ciscos por toda parte, e quando você vê o lugar está cheio de baratas gigantes, sem contar goblins, serpentes, olhos gordos e outras coisas nojentas. Está mesmo fora de controle.""
+
+  Beethro endireitou-se com orgulho. ""Não se preocupe. Eu sou um profissional treinado de uma longa linhagem de exterminadores de masmorras. Eu combino cinco gerações de conhecimento familiar com o melhor equipamento para oferecer serviços de extermínio eficiente por um preço módico.""
+
+  ""Que equipamento você usa?""
+
+  ""Eu tenho uma espada bem grande."""
+pt.txt,backstory2,"  ""Ótimo! Quando pode começar?""
+
+  ""Assim que cuidarmos dos detalhes do pagamento. Aqui está o meu orçamento padrão. Só assinar embaixo."" Beethro passou um contrato para o Rei.
+
+  ""Estes preços são ultrajantes! O privilégio de servir a Coroa não vale nada ultimamente?""
+
+  ""Eu posso ir embora.""
+
+  ""Não, não, não. Precisamos da masmorra limpa para os prisioneiros receberem suas torturas num ambiente limpo e seguro.""
+
+  ""Bom, posso te dar um desconto se você tiver uma princesa disponível.""
+
+  ""Você é feio e fedido. Nenhuma das minhas filhas iria querer você!""
+
+  Beethro deu de ombros. ""Valeu a tentativa.""
+
+  O rei assinou o contrato. ""Certo. Deixe-me mostrá-lo a entrada."""
+pt.txt,backstory3,"  Enquanto descia, Beethro refletiu sobre o trabalho que ele conseguiu. A Masmorra de Dugan era excepcionalmente grande, e de acordo com relatos de exterminadores passados, ridiculamente propícia à infestação. Ela também tinha sido ampliada secretamente várias vezes, para a tristeza da primeira pessoa que a limpou, cujo contrato cobrava um preço fixo.
+
+  Alguns disseram que forças sinistras estavam atrás da expansão. A lenda diz que um antigo rei de Dugandy cansou-se do seu filho chato e mandou ele ir brincar na masmorras. Levando seu pai a sério, o garoto aprofundou-se tanto nas câmaras que nunca mais foi visto. Dizem que ele não pereceu, mas viveu o resto de sua vida nas masmorras por escolha; tornando-se um mestre do seu novo habitat, ele aprendeu todos os segredos do mundo subterrâneo e formou alianças com os monstros que lá vivem, empregando-os para criar novas passagens e cruzando novas espécies de monstro. Ele se nomeou o Fundador, e planejou voltar das masmorras para reclamar o trono quando suas forças fossem capazes."
+pt.txt,backstory4,"  Beethro não tinha muita certeza de tudo isso. Para começar, o trono real não era o que costumava ser, agora que o seu poder tinha sido transferido para um parlamento. Sem contar a questão de quem iria querer morar debaixo da terra e como eles iriam fazer amizade com as criaturas de lá, que não eram muito boas de conversa. Mas era verdade que masmorras costumavam ser desnecessariamente complexas e facilmente infestadas, e até crescer sem aviso - nenhum Arquiteto de Masmorra jamais disse como, por motivos de honra - e isso, mais do que tudo, era o que mantinha homens como Beethro empregados.
+
+  De qualquer forma, um exterminador tinha muitas mais preocupações práticas, como a prolífica barata de masmorra, do tamanho de um homem. A coisa mais importante na mente de Beethro era que ele iria conseguir dinheiro e monstros mortos suficientes para finalmente se aposentar dessa carreira inglória e abrir um restaurante.
+
+  ""Vou chamá-lo de 'Beethro's Barata Assada Grill'!"""
+pt.txt,backstory1width,550
+pt.txt,backstory2width,550
+pt.txt,backstory3width,550
+pt.txt,backstory4width,550
+pt.txt,drodHistoryWidth,650
+pt.txt,drodHistory,"  ""Deadly Rooms of Death"" (Salas Mortais da Morte) (DROD) foi criado por Erik Hermansen nos anos 90. O jogo foi lançado pela Webfoot e é conhecido como 'Webfoot DROD'. Este jogo não está mais à venda e não pode mais ser obtido ou distribuído legalmente.// Por sorte, Erik teve permissão para redesenhar o jogo por conta própria e então 'Caravel DROD' nasceu em 2002.
+
+  Então, em 2003, ""DROD: Architect's Edition"" foi lançado, contendo um editor de níveis que permitiu a todos criarem seus próprios 'Fortes' (conjuntos de níveis) e compartilhá-los no fórum da CaravelGames. O jogo conseguiu uma grande quantidade de fâs e um plano para criar outro jogo foi concebido.
+
+  Em 1o de Abril, 2005, ""DROD: Journey to Rooted Hold"" foi lançado! A lista de novos aspectos era incrível. Ele tinha novos gráficos, programação por script dentro do jogo, mas de uma dúzia de novos elementos de jogo, uma história cativante e um antagonista cuja voz arrepiou os cabelos de todos.
+
+  Exatamente dois anos depois ""DROD: The City Beneath"" viu a luz do dia. Aquele dia marcou um recorde para o maior número de usuários ativos no Fórum Caravel de uma vez só. TCB introduziu ainda mais elementos novos e melhorias no JtRH, e um nível de dificuldade aumentado.
+
+  Em 2008, ""DROD RPG"" foi lançado. Apesar de não ser tão popular quanto os títulos principais, ainda era uma gema brilhante. A diferença principal era que o jogo era um desafio estratégico de controle de recursos entre salas. Cada monstro tinha estatísticas e o jogador deveria calcular quais monstros poderiam ser derrotados no momento, planejar onde ir a seguir, quais recursos coletar e onde conseguí-los.
+
+  ""DROD 4: Gunthro and the Epic Blunder"" é o episódio mais recente, lançado em 1o de Abril de 2012. Este jogo é direcionado a novos jogadores, e é muito mais amigável ao iniciante com quebr-cabeças mais fáceis, tutoriais mais intuitivos e níveis de eixo mais aparentes."
+pt.txt,rstHeader,Restaurar Jogo
+pt.txt,rstToRoom,Retornar para esta sala
+pt.txt,rstReturn,Retornar à tela de título
+pt.txt,rstSecrets,Segredos concluídos: %% / %%
+pt.txt,roomLocked,Você trancou a saída da sala. Aperte %% novamente para destrancar.
+pt.txt,ingLevelCompleted,Nível Completo
+pt.txt,ingSecretFound,Segredo Encontrado
+pt.txt,ingHoldMastered,Mestre do Forte
+pt.txt,achievementHeader,Conquista!
+pt.txt,achievementDismiss,Clique ou Espaço para retirar
+pt.txt,achlistHeader,Conquistas:
+pt.txt,browseHeader,Navegar fortes disponíveis
+pt.txt,browseOpen,Abrir em uma nova janela
+pt.txt,scrStats,Estatísticas
+pt.txt,scrYourBest,Seu recorde:
+pt.txt,scrTop,Recordes para a sala:
+pt.txt,scrNoScore,Nenhuma!
+pt.txt,scrFetching,Pegando...
+pt.txt,scrOnlyForCnet,"Pontuações de sala estão disponíveis apenas para assinantes da CaravelNet e usuários do fórum CaravelGames.
+
+Aparentemente você não preencheu os detalhes da sua conta CaravelNet ainda. Criar uma conta CaravelGames vai lhe permitir competir com outros jogadores de todo o mundo e acompanhar as pontuações de cada sala.
+
+Para registrar-se com a CaravelGames use o botão localizado na tela de opções."
+pt.txt,scrMovesRoom,Movimentos na sala: %%
+pt.txt,scrMovesLevel,Movimentos no nível: %%
+pt.txt,scrDeaths,Mortes no nível: %%
+pt.txt,scrKills,Monstros mortos: %%
+pt.txt,scrTime,Tempo da sala: %%
+pt.txt,scrNoScores,Não há pontuações para esta sala ainda.
+pt.txt,scrCnetProblems,"Funções de CaravelNet estão desativadas devido a problemas com a sua conexão.
+
+Primeiro tenha certeza que a sua conexão com a Internet está funcionando e que você entrou credenciais válidas da CaravelNet. Após isso saia para a tela de opções e pressione ""Conectar!"""
+pt.txt,loginConnected,"  Você agora está conectado(a) à CaravelNet como um(a) usuário(a) registrado(a)!
+
+  Se você só criou uma conta de fórum mas não assinou a CaravelNet, suas pontuações serão apagadas duas semanas após serem enviadas.
+
+  Pontuações enviadas por assinantes da CaravelNet são permanentes."
+pt.txt,loginConnectedAnonymous,"  Você está conectado(a) à CaravelNet como um(a) usuário(a) anônimo(a). Você pode submeter pontuações para saber qual lugar você teria conseguido no quadro de recordes, mas a pontuação não será guardada no servidor. Para fazer suas pontuações persistirem você terá que criar uma conta CaravelGames (acessível da tela de opções).
+  Se você decidir criar uma conta mais tarde, use o botão de ""Enviar suas Pontuações"" para enviar todo seu progresso para nossos servidores."
+pt.txt,loginFailed,"  Falha de conexão!
+
+1. Verifique se está conectado à Internet.
+2. Assegure-se que a sua firewall não está bloqueando este jogo.
+3. Visite http://forum.caravelgames.com para checar se o nosso servidor está de pé. Se não, espere alguns minutos e tente de novo.
+"
+pt.txt,loginFailedBadCredentials,4. Cheque se as credenciais que você forneceu estão corretas.
+pt.txt,loginFailedMissingCrentials,4. Tenha certeza que você entrou com um nome e chave CaravelNet válidos.
+pt.txt,pauseHeader,DROD está pausado
+pt.txt,pauseContinue,Continue jogando
+pt.txt,pauseContinueTip,"Continue jogando de onde parou.
+(Esc, Enter)"
+pt.txt,pauseRestart,Reinicie sala
+pt.txt,pauseRestartTip,"Reinicie a sala corrente.
+(No jogo: F5)."
+pt.txt,pauseRoomHelp,Consiga ajuda para a sala corrente
+pt.txt,pauseRoomHelpTip,"Consiga ajuda online para a sala em que você está.
+(No jogo: F2)"
+pt.txt,pauseHelp,Consiga ajuda geral
+pt.txt,pauseHelpTip,"Abra a janela de ajuda geral do jogo.
+(No jogo: F1)"
+pt.txt,pauseAchievements,Veja conquistas
+pt.txt,pauseAchievementsTip,"Veja uma lista de todas as conquistas.
+(No jogo: Tab)"
+pt.txt,pauseOptions,Opções
+pt.txt,pauseOptionsTip,"Permite a você mudar os ajustes do jogo.
+(No jogo: ??????)"
+pt.txt,pauseReturn,Retorne à Tela de Título
+pt.txt,pauseReturnTip,"O progresso geral do jogo será salvo,
+mas o progresso da sala atual será
+perdido se você sair do jogo."
+pt.txt,achHidden,???
+pt.txt,levelCreatedDate,Criado %%.%%.%%
+pt.txt,score1NoTie,Primeiro Lugar!!
+pt.txt,score1,1o lugar
+pt.txt,score2,2o lugar
+pt.txt,score3,3o lugar
+pt.txt,score4,4o lugar
+pt.txt,score5,5o lugar
+pt.txt,score6,6o lugar
+pt.txt,score7,7o lugar
+pt.txt,score8,8o lugar
+pt.txt,score9,9o lugar
+pt.txt,score10,10o lugar
+pt.txt,score11,11o lugar
+pt.txt,score12,12o lugar
+pt.txt,score13,13o lugar
+pt.txt,score14,14o lugar
+pt.txt,score15,15o lugar
+pt.txt,score16,16o lugar
+pt.txt,score17,17o lugar
+pt.txt,score18,18o lugar
+pt.txt,score19,19o lugar
+pt.txt,score20,20o lugar
+pt.txt,score21,21o lugar
+pt.txt,score22,22o lugar
+pt.txt,score23,23o lugar
+pt.txt,score24,24o lugar
+pt.txt,score25,25o lugar
+pt.txt,scoreTie,"%%, empate!"
+pt.txt,scoreNoCnet,(anônimo)
+pt.txt,resultHoldTotals,"Totais do Forte:
+"
+pt.txt,resultLevelTotals,"Totais do Andar:
+"
+pt.txt,resultMoves,"Movimentos: %%
+"
+pt.txt,resultKills,"Monstros Mortos: %%
+"
+pt.txt,resultDeaths,"Mortes: %%
+"
+pt.txt,resultTime,"Tempo: %%
+"
+pt.txt,resultSecrets,"Segredos encontrados: %%
+"
+pt.txt,resultSecretsBetter,"Segredos encontrados: %% / %%
+"
+pt.txt,spawnCycle,Ciclo de desova:
+pt.txt,snakesPrefer,Cobras preferem:
+pt.txt,clcHo,HO
+pt.txt,clcRiz,RIZ
+pt.txt,clcOn,ON
+pt.txt,clcTal,TAL
+pt.txt,clcVe,VE
+pt.txt,clcRt,RT
+pt.txt,clcIc,IC
+pt.txt,clcAl,AL
+pt.txt,tile1,Chão
+pt.txt,tile2,Poço
+pt.txt,tile3,Escadas Descendo
+pt.txt,tile4,Parede
+pt.txt,tile5,Parede Rachada
+pt.txt,tile6,Portão de Nível Limpo
+pt.txt,tile7,Portão de Sala Limpa
+pt.txt,tile8,Portão de Alçapões
+pt.txt,tile9,Portão Amarelo
+pt.txt,tile10,Portão Amarelo Aberto
+pt.txt,tile11,Alçapão
+pt.txt,tile12,Obstáculo
+pt.txt,tile13,Seta Obrigatória (N)
+pt.txt,tile14,Seta Obrigatória (NE)
+pt.txt,tile15,Seta Obrigatória (E)
+pt.txt,tile16,Seta Obrigatória (SE)
+pt.txt,tile17,Seta Obrigatória (S)
+pt.txt,tile18,Seta Obrigatória (SO)
+pt.txt,tile19,Seta Obrigatória (O)
+pt.txt,tile20,Seta Obrigatória (NO)
+pt.txt,tile21,Poção de Invisibilidade
+pt.txt,tile22,Poção de Duplo
+pt.txt,tile23,Pergaminho
+pt.txt,tile24,Orbe
+pt.txt,tile35,Piche
+pt.txt,tile37,Portão de Piche
+pt.txt,tile54,Mosaico
+pt.txt,tile55,Estrada
+pt.txt,tile56,Grama
+pt.txt,tile57,Terra
+pt.txt,tile58,Piso Alternativo
+pt.txt,tile59,Parede Mestra
+pt.txt,tile61,Escadas Para Cima
+pt.txt,tile62,Parede Secreta
+pt.txt,tile66,Parede
+pt.txt,tile68,Portão de Sala Limpa Aberto
+pt.txt,tile69,Portão de Nível Limpo Aberto
+pt.txt,tile70,Portão de Alçapões Aberto
+pt.txt,tile71,Portão de Piche Aberto
+pt.txt,tileCheckpoint,Ponto de Verificação
+pt.txt,monsterPlayer,Jogador
+pt.txt,monster0,Barata
+pt.txt,monster1,Barata Rainha
+pt.txt,monster2,Ovo de Barata
+pt.txt,monster3,Goblin
+pt.txt,monster5,Asa-Fantasma
+pt.txt,monster6,Olho Gordo
+pt.txt,monster7,Serpente
+pt.txt,monster8,Mãe de Piche
+pt.txt,monster9,Bebê de Piche
+pt.txt,monster10,Cérebro
+pt.txt,monster11,Duplo
+pt.txt,monster12,Aranha
+pt.txt,monster29,Personagem
+pt.txt,sword,Espada
+pt.txt,swords,Espadas (%%)
+pt.txt,roomS,S
+pt.txt,roomSouth,Sul
+pt.txt,roomN,N
+pt.txt,roomNorth,Norte
+pt.txt,roomE,E
+pt.txt,roomEast,Este
+pt.txt,roomW,O
+pt.txt,roomWest,Oeste
+pt.txt,roomEntrance,Entrada
+pt.txt,room1,Único
+pt.txt,room2,Duplo
+pt.txt,room3,Triplo
+pt.txt,room4,Quádruplo
+pt.txt,room5,Quíntuplo
+pt.txt,room6,Sêxtuplo
+pt.txt,room7,Séptuplo
+pt.txt,room8,Óctuplo
+pt.txt,room9,Nônuplo
+pt.txt,room10,Décuplo
+pt.txt,room11,Undécuplo
+pt.txt,room12,Duodécuplo
+pt.txt,room13,Tridécuplo
+pt.txt,room14,Quadrudécuplo
+pt.txt,room15,Quintudécuplo
+pt.txt,room16,Sextudécuplo
+pt.txt,room17,Septudécuplo
+pt.txt,room18,Octudécuplo
+pt.txt,room19,Nonudécuplo
+pt.txt,roomMore,%% Vezes
+pt.txt,complButtNextGame,Jogar próximo conjunto
+pt.txt,complButtLearnMore,Aprender mais
+pt.txt,complButtContinue,Continuar a jogar
+pt.txt,complHeader,E agora?
+pt.txt,complLearnMore,"Aprenda mais sobre a franquia DROD - o mundo, e os jogos principais: Jornada ao Forte Enraizado, A Cidade Abaixo, Gunthro e a Bobagem Épica, e os últimos lançamentos da franquia DROD!"
+pt.txt,complContinue,"Continue a aperfeiçoar-se neste forte - encontre segredos, e ganhe acesso à área de maestria. Você pode encontrar links para as opções acima na Tela de Título."
+pt.txt,rstFarthest,Arquivo salvo mais adiantado
+pt.txt,rstHelpTooltip,Clique para uma introdução rápida à restauração
+pt.txt,rstHelp,"Restaurar funciona como salvar o jogo em seu videogame favorito. A diferença é que apesar de você não poder salvar quando quiser, o jogo salva automaticamente ao entrar em uma sala não conquistada.
+
+Para restaurar um estado anterior, selecione um nível da lista da esquerda, então escolha uma sala no minimapa abaixo. O minimapa irá esmaecer salas que ainda não foram visitadas naquele jogo salvo. As salas com fundo branco foram conquistadas e as com fundo vermelho não foram.
+
+Mais tarde você pode carregar seu estado mais avançado clicando o botão de ""Arquivo salvo mais adiantado"".
+
+Restaurar é útil principalmente para melhorar a pontuação de uma sala, procurar segredos, ou retornar a uma sala favorita."
+pt.txt,rstWarning,"Você escolheu retornar a um estado anterior do jogo - algumas salas vão retornar ao estado não-conquistado.
+
+Você sempre pode voltar ao seu estado mais avançado clicando o botão de ""Arquivo salvo mais adiantado""."
+pt.txt,optDelayText,Espera de repetição de tecla:
+pt.txt,optDelayShort,Curta
+pt.txt,optDelayLong,Longa
+pt.txt,optGetPass,Obtenha Chave CNet
+pt.txt,optGetPassTooltip,"Usuários com uma conta do fórum Caravel Games podem pedir uma chave CaravelNet que lhes permite
+submeter pontuações ao quadro online de líderes. Estas pontuações são apagadas duas semanas após serem submetidas.
+
+As pontuações de assinantes pagos são mantidas para sempre, mesmo depois de sua assinatura apagar."
+pt.txt,optDelayTooltip,"O tempo de espera entre segurar uma tecla
+e a ação correspondente ser repetida."
+pt.txt,optRateTooltip,"A frequência de repetição de movimento
+enquanto uma tecla é segurada."
+pt.txt,achAddInfo,"Conquistas em cinza e não transparentes estão ""ativas"". Isto quer dizer que na sala corrente você pode adquirir ou trabalhar em direção à esta conquista (mas nem sempre, então leia a descrição da conquista com cuidado). Note que algumas conquistas podem estar ativas na maioria ou em todas as salas do jogo."
+pt.txt,pauseRestore,Restaurar uma sala diferente
+pt.txt,cnetDescriptionKong,"Infelizmente, devido à política do Kongregate, a interface de login está desativada. Se quiser usar os quadros de líderes online, você pode jogar Flash DROD em caravelgames.com."
+pt.txt,    defCont,Controles padrão:

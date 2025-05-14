@@ -1,0 +1,1843 @@
+File Name,Old Key,Translation
+en.kdd1.txt,First Level,First Level
+en.kdd1.txt,Second Level,Second Level
+en.kdd1.txt,Third Level,Third Level
+en.kdd1.txt,Fourth Level,Fourth Level
+en.kdd1.txt,Mastery Level,Mastery Level
+en.kdd1.txt,entr1,"Beethro Budkin, fifth-generation professional dungeon exterminator, was hired by King Dugan to clear the king's multi-level dungeon of a large monster infestation.
+Beethro charges by the room, and as a professional, he is contract-bound to clear all the monsters from each and every room in the dungeon to get paid.
+The only weapon Beethro needs to do his job is a Really Big Sword, which will defeat almost any monster in a single hit.
+
+-----
+
+""I hope you're not going to charge me for the top level. I already have that cleaned up. Well, mostly."" -King Dugan"
+en.kdd1.txt,entr2,"Beethro's a bit rusty, but the next level should get him in good chopping form."
+en.kdd1.txt,entr3,"""Hmm..."" pondered Beethro. ""So far, I see mostly roaches down here. This looks like a cake job."""
+en.kdd1.txt,entr4,"""I wish I had some more of those mimics down here with me!"" said Beethro.  ""It would go a lot quicker."""
+en.kdd1.txt,entr4Back,Beethro came back to finish the proper smiting business he was hired to do.
+en.kdd1.txt,entrMaster,"Beethro descended the stairs, only to find himself in an uncharted corridor...
+
+He won't get paid for clean-up here, but his professional honor urges him onward."
+en.kdd1.txt,sc1e0,Use numerical keyboard or 789uiojkl to move around. Keys can be remapped from within the pause menu (escape).
+en.kdd1.txt,sc1e1,"To reference the controls anytime you wish, hit `Escape`, click `Get General Help` and go to `How to Play`."
+en.kdd1.txt,sc1_1n,"This yellow door will serve its purpose later.
+
+For now just continue west."
+en.kdd1.txt,sc1_1n1w1,Rotate your sword using `Q` and `W`.
+en.kdd1.txt,sc1_1n1w2,Strike the orb with your sword to open doors in the room.
+en.kdd1.txt,sc1_1n1w3,Some orbs toggle the yellow doors between their open and closed states.
+en.kdd1.txt,sc1_2n1w1,You can find out what an orb does by clicking it with your mouse. Differently colored highlighted doors indicate the different effects.
+en.kdd1.txt,sc1_2n1w2,"Instead of toggling a yellow door, an orb might always open or close it."
+en.kdd1.txt,sc1_3n1w1,Blue gates open once you conquer all the required rooms on a given level (floor).
+en.kdd1.txt,sc1_3n1w2,Required rooms are marked with a red background on the minimap.
+en.kdd1.txt,sc1_3n2w1,Current speech and hovering text can be skipped with the space bar.
+en.kdd1.txt,sc1_3n2w2,"Once you leave a room cleared of all monsters, it will be marked as conquered."
+en.kdd1.txt,sc1_3n2w3,"On the minimap, conquered rooms are marked with white as opposed to the unconquered ones which are red."
+en.kdd1.txt,sc1_3n2w4,Conquer all the required rooms to open your way to the next level.
+en.kdd1.txt,sc1_4n3w,"Force arrows block both Beethro's and monsters' movement in the opposite direction."
+en.kdd1.txt,sc1_4n1w,Green gates open once you clear a room of all monsters.
+en.kdd1.txt,sc1_5n1w1,"Observe how the southern roach behaves when it tries to move onto a corner diagonally. To wait a turn hit ""I"" or Numpad 5."
+en.kdd1.txt,sc1_5n1w2,Most monsters when moving onto a corner diagonally will slide vertically if possible.
+en.kdd1.txt,sc1_5n2w1,Remember that you can click an orb with the mouse to see what doors it affects.
+en.kdd1.txt,sc1_5n2w2,"Look out!  It's dangerous here.
+
+If you make a mistake, hit `Backspace` in order to undo up to your last three moves."
+en.kdd1.txt,sc1_5n2w3,You can also undo (and restart) when the death animation is playing!
+en.kdd1.txt,sc1_5n2w4,"Touching a checkpoint 'X' allows you to rewind to when you last stepped on it.
+Hit `R` to restart the room or go back to the last checkpoint you have touched."
+en.kdd1.txt,sc1_6n2w,A fine swordsman can defeat all the roaches without using the southern nook for cover!
+en.kdd1.txt,sc1_6n3w1,Use the backswipe technique to get rid of the roach.
+en.kdd1.txt,sc1_6n3w2,Place yourself on the green floor and make sure the roach stands on the sand tile directly north of you...
+en.kdd1.txt,sc1_6n3w3,Place yourself on the green floor and make sure the roach stands on the sand tile directly south of you...
+en.kdd1.txt,sc1_6n3w4,...then move northeast to kill it.
+en.kdd1.txt,sc1_6n3w5,...then move southeast to kill it.
+en.kdd1.txt,sc1_6n3w6,"Repeat to analyze the backswipe. Master this technique, for it will prove crucial in your further endeavors."
+en.kdd1.txt,sc1_5n1,Emergency exit is out of commission.
+en.kdd1.txt,sc1_5n2,"Sorry'ir, we'r nyet goin' to fin'sh ze buildn' wiz ze grand' roche'z runin' wild!"
+en.kdd1.txt,sc1_4n,Please keep the greenhouse doors closed.
+en.kdd1.txt,sc1_1n1e,These stairs lead to the next level. Beware of what you will meet there...
+en.kdd1.txt,sc2_2n1,Did you know that you can hold Shift while performing any action to automatically follow it with its inverse?
+en.kdd1.txt,sc2_2n2,"Shift+Wait makes you wait until the next spawn, and `Numpad +` or `=` will perform the inverse of the last action!"
+en.kdd1.txt,sc2_1n1e,"You shouldn't be so destructive."
+en.kdd1.txt,sc2e,Start with the rooms to the north to avoid unnecessary backtracking.
+en.kdd1.txt,sc2_1s3e1,"You can prevent yourself from accidentally leaving a room by hitting the 'X' key on your keyboard."
+en.kdd1.txt,sc2_1s3e2,A small lock on the minimap indicates that a room is locked.
+en.kdd1.txt,sc2_1s,"Don't do it! It's obvious what will happen!"
+en.kdd1.txt,sc2_2s3e,Good timing makes things a lot easier.
+en.kdd1.txt,sc3_3n,"I must warn you about mimics. They are neither your friends nor your enemies--they simply like to move exactly as you do. Don't turn your back on them."
+en.kdd1.txt,sc3_3n1e,"All of the prisoners have been eaten by dungeon roaches, and I'm next! You can't pay me enough to work this job. I'm outta here!
+
+-Prison Warden"
+en.kdd1.txt,sc3_2n,"It is possible to get to this passage without reentering the room after you've conquered it."
+en.kdd1.txt,sc3_1n1w,"With the invisible potion they can't see you, but they can still smell you if you get close."
+en.kdd1.txt,sc3_1e,Such a long walk. It almost seems unnecessary.
+en.kdd1.txt,sc3_1s,"The Eight Gates of Bill--a formidable puzzle indeed. It used to be a lot harder, but I can now inspect the orbs to see what they do."
+en.kdd1.txt,sc3_2s1w,"Here is something that I will tell you--whenever you see long and laborious paths, you should look for shortcuts."
+en.kdd1.txt,sc3_2s1,"Turn back! Did you know that in just the last year, dungeon-related deaths were up by 32 percent?"
+en.kdd1.txt,sc3_2s2,"Face the facts--dungeon exploration is NOT safe, especially when combined with intoxicants.
+-PADD (Parents Against Dungeon Deaths)"
+en.kdd1.txt,sc4_2n1e1,"This is a master wall. It won't open until you conquer the hold and also all of its secrets."
+en.kdd1.txt,sc4_2n1e2,"In the original ""King Dugan's Dungeon"", this was a warp room which allowed you to skip a level or two."
+en.kdd1.txt,sc4_1n1,"Hint:
+
+You don't need the mimic's help to fight the roaches at the entrance."
+en.kdd1.txt,sc4_1n2,"Hint:
+
+Think hard to develop the very useful BACKSWIPING technique -- good for when there's a monster on each side of you!"
+en.kdd1.txt,sc4_2e,"If you have good style, all 9 mimics will be lined up to the right of you."
+en.kdd1.txt,scMe1,Harder versions of existing puzzles.
+en.kdd1.txt,scMe2,Last words!
+en.kdd1.txt,scMe3,"Difficult, original rooms."
+en.kdd1.txt,scM_1s1,"That's it. By now you have completed everything there is in this game. There may only be a couple of achievements left."
+en.kdd1.txt,scM_1s2,I sincerely congratulate you and invite you to continue your journey.
+en.kdd1.txt,scM_1s3,"On the CaravelGames.com website, you can find the next episodes of KDDL, or download any of the full DROD games for Windows, MacOS, or Linux."
+en.kdd1.txt,scM_1s4,Game on!
+en.kdd1.txt,scM_1s5,Here is a small reward! Kill all the eyes without stepping on the brown grass.
+en.kdd1.txt,scM_1s6,Roach Queens will be killed once you step on the checkpoint in the right-top corner.
+en.kdd1.txt,scM_1s7,"Very nice, way to go!"
+en.kdd1.txt,sp1e0,Use the numerical keypad to move around.
+en.kdd1.txt,sp1e1,"If you are playing on a notebook, you can move using the laptop's numpad: 789, UIO, JKL"
+en.kdd1.txt,sp1e2,Go north to continue.
+en.kdd1.txt,sp1_3n2w1,"Ah, the first roach of the dungeon!"
+en.kdd1.txt,sp1_3n2w2,"Come to Beethro, roachburger-to-be!"
+en.kdd1.txt,sp1_3n2w3,"A clean kill!  This job's gonna turn out great, I just know it!"
+en.kdd1.txt,sp1_6n2w,"I coulda cleared those roaches without hiding in the alcove, but I feel lazy today."
+en.kdd1.txt,sp1_6n3w1,You have found a secret room!
+en.kdd1.txt,sp1_6n3w2,Find and conquer them all to gain access to a special master challenge area.
+en.kdd1.txt,sp2_2e,"That queen'll make tons of new roaches by the time I get to the orb and back!"
+en.kdd1.txt,sp2_1s1e1,"Hey, a wraithwing!"
+en.kdd1.txt,sp2_1s1e2,All by himself too... that means I could be chasing him all over the room.
+en.kdd1.txt,sp2_1s1e3,"Wraithwings, unlike roaches, run away from Beethro and try to keep themselves at a distance of five tiles."
+en.kdd1.txt,sp2_1s1e4,"They are not as shy in bigger numbers, and won't hesitate to attack if they surround their prey."
+en.kdd1.txt,sp2_2s2e1,Hmmm... can I kill off those queens before they dump eggs?
+en.kdd1.txt,sp2_2s2e2,Argh... too slow!
+en.kdd1.txt,sp2_2s2e3,Ha!  Easily.
+en.kdd1.txt,sp2_2s3e1,"I'm sure there was a cleaner way to take out these roach queens."
+en.kdd1.txt,sp2_2s3e2,Now THAT was a fine piece of smitemitery.
+en.kdd1.txt,sp3_3n1e,No prisoners left? This is gonna be a lonely job with no one to talk to...
+en.kdd1.txt,sp3_2n,No kidding.
+en.kdd1.txt,sp3_1n2w0,Yikes!  I think I need the potion this time!
+en.kdd1.txt,sp3_1n2w1,"Whew!  Now those queens won't lay their eggs unless I'm close to them!"
+en.kdd1.txt,sp3_1n2w2,"That was a bit rough, but nothing a good delver like me can't handle!"
+en.kdd1.txt,sp3_1n2w3,"Ha!  Nothing's too tough for this delver!"
+en.kdd1.txt,sp3_1n1w1,"Hey, this is pretty neat!"
+en.kdd1.txt,sp3_1n1w2,"I know I coulda cleared this room without being invisible, but it was still fun."
+en.kdd1.txt,sp3_1n1w3,"That wasn't so hard... I wonder why that potion is there?"
+en.kdd1.txt,sp3_1s,I coulda opened all the doors sooner than this.
+en.kdd1.txt,sp3_3s1w1,This looks dangerous... some kind of trap...
+en.kdd1.txt,sp3_3s1w2,"After I strike the orb, I could clear this room without any sword-turning. Just to be skillful!"
+en.kdd1.txt,sp3_3s1w3,"Well, I may have turned my sword, but at least I'm still alive!"
+en.kdd1.txt,sp3_3s1w4,Wow!  Somebody shoulda been here to see me.
+en.kdd1.txt,sp4_2n1e,Another secret chamber where everyone but me least expects it.
+en.kdd1.txt,sp4_1n1,I coulda cleared this room without going back to the entrance hallway.
+en.kdd1.txt,sp4_1n2,Beethro Budkin surmounts any challenge!
+en.kdd1.txt,sp4_2e1,Holy Hoobuffins! Maybe there is such a thing as too many mimics!
+en.kdd1.txt,sp4_1s2e,Why is it that dropping every trapdoor makes a room look better?
+en.kdd1.txt,spM_1s,You have failed...
+en.kdd1.txt,achName0,"I've Got an Eye on You"
+en.kdd1.txt,achName1,Matricide
+en.kdd1.txt,achName2,I Woke Up and Just Hated Everything
+en.kdd1.txt,achName3,True Smitemaster
+en.kdd1.txt,achName4,Steady Hand
+en.kdd1.txt,achName5,Queenburger
+en.kdd1.txt,achName6,One-way Ticket
+en.kdd1.txt,achName7,Be Quick!
+en.kdd1.txt,achName8,Be Fast!
+en.kdd1.txt,achName9,Calm Arm
+en.kdd1.txt,achName10,Get the Scroll
+en.kdd1.txt,achName11,Visibility
+en.kdd1.txt,achName12,Invisibless
+en.kdd1.txt,achName13,Speeding
+en.kdd1.txt,achName14,The Eight Gates of Bill
+en.kdd1.txt,achName15,Fine Roach Control
+en.kdd1.txt,achName16,The Mystery
+en.kdd1.txt,achName17,"Don't Look Back"
+en.kdd1.txt,achName18,Alone with the Roaches
+en.kdd1.txt,achName19,Pits are Pretty
+en.kdd1.txt,achName20,Emptiness of Nothingness
+en.kdd1.txt,achName21,Good Style
+en.kdd1.txt,achName22,Amateur Delver
+en.kdd1.txt,achName23,Fledgling Smiter
+en.kdd1.txt,achName24,Contract Exterminator
+en.kdd1.txt,achName25,"I'm a Professional!"
+en.kdd1.txt,achName26,Mastery
+en.kdd1.txt,achName27,Post-mastery
+en.kdd1.txt,achName28,Grilled Roaches
+en.kdd1.txt,achName29,Sliced Queens
+en.kdd1.txt,achName30,Egg Fondue
+en.kdd1.txt,achName31,Evil Eye Pudding
+en.kdd1.txt,achName32,Wraithwing Dip
+en.kdd1.txt,achName33,Tuning Fork
+en.kdd1.txt,achName34,Down with the Green
+en.kdd1.txt,achName35,Horde Management
+en.kdd1.txt,achName36,Respawner
+en.kdd1.txt,achName37,Time is Null!
+en.kdd1.txt,achName38,Making Room
+en.kdd1.txt,achName39,"Walkin' to the Moon"
+en.kdd1.txt,achDesc0,Wake up three evil eyes in the same turn
+en.kdd1.txt,achDesc1,Kill a roach queen while her eggs are growing
+en.kdd1.txt,achDesc2,"Yes, you should be so destructive"
+en.kdd1.txt,achDesc3,"Don't hide in the alcove in 6N 2W on First Level"
+en.kdd1.txt,achDesc4,"Clear all but 1 infested, non-secret rooms on the First Level without turning your sword.
+Got %% out of 7."
+en.kdd1.txt,achDesc5,Kill the roach queen in Second Level 2E before she reaches the northeast corner
+en.kdd1.txt,achDesc6,"Don't rotate your sword in Second Level 1S after you hit the orb"
+en.kdd1.txt,achDesc7,Clear Second Level 2S 2E before queens lay eggs
+en.kdd1.txt,achDesc8,Clear Second Level 2S 3E before queens lay eggs
+en.kdd1.txt,achDesc9,Clear Second Level 3N without turning your sword
+en.kdd1.txt,achDesc10,Get to the scroll in Third Level 2N without reentering the room
+en.kdd1.txt,achDesc11,Kill all roaches without drinking the potion in Third Level 1N 1W
+en.kdd1.txt,achDesc12,Clear Third Level 1N 2W without drinking the potion
+en.kdd1.txt,achDesc13,Clear Third Level 1N 1E without queens laying any eggs
+en.kdd1.txt,achDesc14,Solve The Eight Gates of Bill (Third Level 1S) in 5 orb hits
+en.kdd1.txt,achDesc15,Get all three roaches out before killing any of them in Third Level 2N 1E
+en.kdd1.txt,achDesc16,Clear Third Level 3N without drinking the potion
+en.kdd1.txt,achDesc17,Clear Fourth Level 1N without returning to the entrance corridor
+en.kdd1.txt,achDesc18,Clear Fourth Level 1S 1E without drinking the mimic potion
+en.kdd1.txt,achDesc19,Drop all trapdoors in Fourth Level 1S 2E and clear the room on the same visit
+en.kdd1.txt,achDesc20,Clear Fourth Level 2S 1E and drop all the trapdoors on the same visit
+en.kdd1.txt,achDesc21,Have good style in Fourth Level 2E
+en.kdd1.txt,achDesc22,Clear First Level
+en.kdd1.txt,achDesc23,Clear Second Level
+en.kdd1.txt,achDesc24,Clear Third Level
+en.kdd1.txt,achDesc25,Clear Fourth Level
+en.kdd1.txt,achDesc26,Master the hold
+en.kdd1.txt,achDesc27,Post-master the hold
+en.kdd1.txt,achDesc28,Kill 35 roaches
+en.kdd1.txt,achDesc29,Kill 20 roach queens
+en.kdd1.txt,achDesc30,Kill 15 roach eggs
+en.kdd1.txt,achDesc31,Kill 15 evil eyes
+en.kdd1.txt,achDesc32,Kill 5 wraithwings
+en.kdd1.txt,achDesc33,Strike an orb for three consecutive turns
+en.kdd1.txt,achDesc34,Lower a green gate 5 times
+en.kdd1.txt,achDesc35,Kill a total of 2500 monsters
+en.kdd1.txt,achDesc36,Die a total of 50 times
+en.kdd1.txt,achDesc37,Undo a total of 250 moves
+en.kdd1.txt,achDesc38,Drop a total of 100 trapdoors
+en.kdd1.txt,achDesc39,Take a total of 5000 steps
+en.kdd1.txt,outro,"What will Beethro face next? Will the dangers become more hazardous? Will he manage to clean up the whole of King Dugan's Dungeon and finally get paid?
+
+
+<font size=""32"" color=""#FFFF00"">Congratulations!</font><br/>
+You have completed the first episode in the Deadly Rooms of Death, King Dugan's Dungeon Lite hold. I sincerely hope you have found this experience enjoyable.
+Now that you have descended the final flight of stairs available in this set, you may want to try to Master, and then Post-Master, this game!  To do this, go hunt for secret rooms. The number of secret rooms left on each level is now displayed on the Restore Screen.
+Once you manage to conquer them all, a special Mastery Area will be opened. Can you find out how to access it?
+You may also wish to play the next episode in the DROD:KDDL series.
+
+Before I leave you to bask in your feeling of utter glory, I'd like to thank a couple of people, who made it possible for you to play this game:
+	
+	<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - The creator, father and inventor of DROD. Without him, this unique game idea would have never seen the light of day.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - He coded most of DROD: JtRH and DROD: TCB singlehandedly. Thanks to the splendid codebase, making Flash DROD was pure pleasure.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Overlord of the Caravel Forum and lead coder of CaravelNet. Thanks to him, you can battle for high scores, and so much more!
+
+
+<font size=""23"" color=""#FFFF00"">Programming, Development</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Art & Music</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Server-side development</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Hold architects</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Primary Testers</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testers</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Translations</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Voice Talents</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Original Coding, Idea & Levels</font> - %%
+
+
+See you next time!
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+en.kdd1.txt,complNextGame,"Play the next levelset, KDD Lite 2. This will open in a new window, and you can safely close this window now. Your progress has been saved."
+en.kdd1.txt,scNew1,Observe carefully what happens on the spawn turn.
+en.kdd1.txt,scNew2,"Eggs will never appear on trapdoors, arrows, or opened yellow gates."
+en.kdd1.txt,scNew3,"Also, if a queen is moving on the spawn turn, no egg will appear on the tile she has just moved from."
+en.kdd1.txt,sc1_New1N1W,"If you don't know it yet, Queens move away from you and don't lay eggs on open yellow gates."
+en.kdd1.txt,sc1_New3N1,Roach queens spawn roach eggs every 30 turns (the turn after the spawn counter becomes red).
+en.kdd1.txt,sc1_New3N2,Eggs will hatch into fully grown-up roaches 5 turns after being spawned.
+en.kdd1.txt,sc1_New3E,Roach queens always run away from Beethro; this behavior can be used to manipulate them.
+en.kdd1.txt,sc1_new6n2w1,Broken and secret walls can be damaged by your sword.
+en.kdd1.txt,sc1_new6n2w2,Secret walls blend with the regular ones much better though.
+en.kdd1.txt,sc1_new6n2w3,"So don't miss the ones in the corner when you come back."
+en.kdd1.txt,sc1_5n1w3,This game is completely deterministic - there is no random or unpredictable behavior.
+en.kdd1.txt,sc1_new6N,"The secrets don't have to be conquered in one playthrough for the hold to be Mastered."
+en.kdd1.txt,sc_evileyes,"On this level you'll encounter evil eyes. Once you step in their line of sight they'll wake up and chase you like roaches do."
+en.kdd1.txt,defCont,Default controls:
+en.kdd1.txt,sc_diago,You can move diagonally even through very narrow corridors.
+en.kdd1.txt,sc_broken,Break these broken and secret walls with your sword.
+en.kdd1.txt,sc_queens1,Roach queens spawn roach eggs every 30 turns (the turn after the spawn counter becomes red).
+en.kdd1.txt,sc_queens2,Eggs will hatch into fully grown-up roaches 5 turns after being spawned.
+en.kdd1.txt,sc_queens3,"Eggs won't appear on arrows, trapdoors, or yellow gates. Use key ""I"" or Numpad 5 to wait a turn."
+en.kdd1.txt,sc_mimics,"After stepping on a mimic potion, use your mouse or wait key to choose the tile where you want to place the mimic."
+en.kdd1.txt,sc_shiftwait,You might find it useful that Shift+Wait waits until the next spawn.
+en.kdd1.txt,sp_mother1,Every thirty turns tar mothers will make the tar grow by one tile in each direction.
+en.kdd1.txt,sp_mother2,"It is relatively safe to be surrounded by growing tar, but you have to watch out for tar babies which might spawn during the growth."
+en.kdd1.txt,sc_backswipe,"Follow the sandy path to learn the backswipe technique! Remember about diagonal movement and don't turn your sword."
+en.kdd1.txt,sc_trapdoors,These pink-purple tiles are trapdoors and they fall if you or a mimic step off them.
+en.kdd2.txt,Fifth Level,Fifth Level
+en.kdd2.txt,Sixth Level,Sixth Level
+en.kdd2.txt,Seventh Level,Seventh Level
+en.kdd2.txt,Eighth Level,Eighth Level
+en.kdd2.txt,Mastery Level,Mastery Level
+en.kdd2.txt,Tutorial,Tutorial Level
+en.kdd2.txt,entr5,"Beethro Budkin, fifth-generation professional dungeon exterminator, was hired by King Dugan to clear the king's multi-level dungeon of a large monster infestation.
+Beethro charges by the room, and as a professional, he is contract-bound to clear all the monsters from each and every room in the dungeon to get paid.
+The only weapon Beethro needs to do his job is a Really Big Sword, which will defeat almost any monster in a single hit.
+
+-----
+
+The last level left Beethro sweating. ""I guess this is going to be hard work after all."" Fortunately, there was a cool breeze coming from the next level."
+en.kdd2.txt,entr6,"Perhaps the level architect was trying too hard to make his point, whatever that point was. In any case, you can be thankful that there are no other levels in Dugan's Dungeon like this one."
+en.kdd2.txt,entr6Back,Beethro came back to finish the proper smiting business he was hired to do.
+en.kdd2.txt,entr7,"As Beethro climbed down the stairs he heard a loud hissing. As a seasoned professional, he knew instantly what it was, but was still startled by the sheer volume.  ""Jeebus!  How many of those nasty things are down there?"""
+en.kdd2.txt,entr8,"Some monsters are cunning and lethal, and others are just a horrible pain to clean up after."
+en.kdd2.txt,entrMaster,"Beethro descended the stairs only to find himself in an uncharted corridor...
+
+He won't get paid for clean-up here, but his professional honor urges him onward."
+en.kdd2.txt,entrTut,Tutorial
+en.kdd2.txt,entrTutLeave,Beethro left the tutorial floor rich with new knowledge.
+en.kdd2.txt,entrPremaster,"Beethro stumbled up and down a series of poorly-lit staircases. ""This is a safety hazard and there aren't even any roaches in here! Someone oughta at least put a handrail or s-"" thought Beethro right before he fell twelve flights and knocked himself out for a solid hour. After dreaming horrible, horrible dreams about eyeball pudding, Beethro groggily awakened in a room. ""Gob! Would it be so hard to have these places be on the map for once?"""
+en.kdd2.txt,sc51n2w,I hope you left yourself a path back.
+en.kdd2.txt,sc63e,Secret Passageway
+en.kdd2.txt,sc61s1w,"This is a Master Door.
+It will open when you have finished the last level and also conquered all secret rooms."
+en.kdd2.txt,sc72n1w,"To the feeble-minded, turn back!  This room can only be completed by a master intellect.
+(This room is not required.)"
+en.kdd2.txt,sc71n1,"I didn't think you'd figure that last one out."
+en.kdd2.txt,sc71n2,"Okay, I admit it's not EXACTLY the same thing as light cycles.
+
+-Erik"
+en.kdd2.txt,sc71n3,"My tribute to Tron.
+
+-Erik"
+en.kdd2.txt,sc81s1,The living tar can only be damaged on flat edges.
+en.kdd2.txt,sc81s2,Any blob that is not at least 2 tiles wide and high is unstable and will break apart into tar babies.
+en.kdd2.txt,sc81s3,Feel free to play with it a bit.
+en.kdd2.txt,sc81s1e,A wise man will clear the northern room before following this corridor.
+en.kdd2.txt,sc83s,Clear south and west passages before continuing this way to avoid redundant backtracking.
+en.kdd2.txt,scMe1,Harder versions of old puzzles.
+en.kdd2.txt,scMe2,Final words
+en.kdd2.txt,scMe3,New puzzles.
+en.kdd2.txt,scM1s1,"Well now! Besides perhaps a couple of achievements, you should be finished with everything in the game."
+en.kdd2.txt,scM1s2,"Please accept my most sincere congratulations, you have achieved quite a feat!"
+en.kdd2.txt,scM1s3,"You can find the next episodes of KDDL and download any of the full DROD games for Windows, MacOS, or Linux on caravelgames.com"
+en.kdd2.txt,scM1s4,Keep going!
+en.kdd2.txt,scM1s5,Here is a small reward! Kill all the eyes without stepping on the brown grass.
+en.kdd2.txt,scM1s6,The two bottom Roach Queens will be killed automatically once you step on the checkpoint in the far-right corner.
+en.kdd2.txt,scM1s7,Sincere congratulations!
+en.kdd2.txt,scT1,Move to the far right and observe how the roach behaves when walking onto a corner diagonally.
+en.kdd2.txt,scT2,"Snakes move by their own, much more complex, movement rules. Their current preference is shown beneath the spawn cycle timer."
+en.kdd2.txt,scT3,"If a DROD monster moves diagonally into a corner obstacle, it prefers to slide vertically, if possible."
+en.kdd2.txt,scT4,"`Escape` opens up the pause menu, where you can view `General Help` to refer to the controls any time you wish."
+en.kdd2.txt,scT5,To prevent yourself from accidentally leaving a room hit X to lock and unlock it. A small lock on the minimap indicates that a room is locked.
+en.kdd2.txt,scT6,"Shift+Key performs the key's action followed by its inverse.
+Shift+Wait waits until the next spawn.
+Numpad '+' or '=' performs the opposite of your previous move."
+en.kdd2.txt,scT7,F3 displays a move counter to help you optimize for better scores.
+en.kdd2.txt,scT8,All keys can be remapped from within game options.
+en.kdd2.txt,scT9,"Those without CaravelNet subscriptions won't have their scores stored in the leaderboard but will know what place they would have attained."
+en.kdd2.txt,scT10,Click around to see what orbs do and what the evil eyes see.
+en.kdd2.txt,scT11,The spacebar will clear all speech and achievements from the screen.
+en.kdd2.txt,scT13,"Wraithwings, unlike roaches, run away from Beethro and try to keep themselves at a distance of five tiles."
+en.kdd2.txt,scT14,"They are not as shy in bigger numbers, and won't hesitate to attack if they surround their prey."
+en.kdd2.txt,sc1_6n3w1,Use the backswipe technique to get rid of the roach.
+en.kdd2.txt,sc1_6n3w2,Place yourself on the green floor and make sure the roach stands on the sand tile directly north of you...
+en.kdd2.txt,sc1_6n3w3,Place yourself on the green floor and make sure the roach stands on the sand tile directly south of you...
+en.kdd2.txt,sc1_6n3w4,...then move northeast to kill it.
+en.kdd2.txt,sc1_6n3w5,...then move southeast to kill it.
+en.kdd2.txt,sc1_6n3w6,"Repeat to analyze the backswipe. Master this technique, for it will prove crucial in your further endeavors."
+en.kdd2.txt,sp5e1,This is a tutorial area.
+en.kdd2.txt,sp5e2,"Visit it if you haven't played this game before."
+en.kdd2.txt,sp5e3,"Move around using the numpad or 789, UIO, JKL"
+en.kdd2.txt,sp52n1,Clearing this place without any of those doors opening would be something to brag about.
+en.kdd2.txt,sp52n2,"Ha! Sloppy dungeon design, putting in unnecessary orbs like that!"
+en.kdd2.txt,sp51n2w1,"Ay, look at all those evil eyes!"
+en.kdd2.txt,sp51n2w2,Ah!  It still creeps me out when one of those things wakes up!
+en.kdd2.txt,sp63e,Starting to see a pattern here...
+en.kdd2.txt,sp63n,Now this looks familiar...
+en.kdd2.txt,sp63w,Dugan had better pay me for each of these rooms.
+en.kdd2.txt,sp72n1w1,"Jeebus!  The serpent must be about one thousand, four hundred and forty-five feet long!"
+en.kdd2.txt,sp72n1w2,"But my contract says I'm not obliged to deal with any monster longer than one thousand, four hundred and forty-four."
+en.kdd2.txt,sp72n1w3,Could just let this room be.
+en.kdd2.txt,sp71n1e1,"My blade won't scrape one scratch off that squirmy fellow."
+en.kdd2.txt,sp71n1e2,"But just lead him to a dead end, and I'll be rid of him."
+en.kdd2.txt,sp84s1,"Tar mothers, too?  Why, why, why...?"
+en.kdd2.txt,sp83s1e,I hate tar mothers.
+en.kdd2.txt,sp82s2e,"Better be careful here... I can't get through if the tar clogs up that passage!"
+en.kdd2.txt,sp84s3e1,"Never mind. Let's go!"
+en.kdd2.txt,sp84s3e2,And a wall here...
+en.kdd2.txt,sp84s3e3,"Good. At this rate, we'll be done mapping the level in a few minutes."
+en.kdd2.txt,sp84s3e4,"Do you hear that? It's the tar authority! We must hide!"
+en.kdd2.txt,sp84s3e5,Aaargh! I almost dropped the map!
+en.kdd2.txt,sp84s3e6,Wait! Is the map facing the right way up?
+en.kdd2.txt,sp85s2e1,This room... it looks... familiar... somehow...
+en.kdd2.txt,sp85s2e2,It makes me feel... angry... and frustrated!
+en.kdd2.txt,sp86s3e,"Rats... I hope there aren't any sneaky tricks, like rooms hidden behind a secret wall somewhere!"
+en.kdd2.txt,sp88s3e1,Oh gob... this room is gonna give me nightmares...
+en.kdd2.txt,sp88s3e2,Never again... never again...
+en.kdd2.txt,spM1s,You have failed...
+en.kdd2.txt,spT2,Turn your sword with `Q` and `W`.
+en.kdd2.txt,spT3,Now go hit the orb with your sword.
+en.kdd2.txt,spT4,"Orbs interact with doors in three ways - they can open, close, or toggle their state."
+en.kdd2.txt,spT5,"Click on the orb with the mouse to see which doors it affects, and in what way."
+en.kdd2.txt,spT6,Your objective in DROD is to clear each level of all monsters.
+en.kdd2.txt,spT7,Hit the roach with your sword to kill it.
+en.kdd2.txt,spT8,Force arrows block your movement in a direction opposite to theirs.
+en.kdd2.txt,spT9,Step on the checkpoint. You will go back to the exact moment you stepped on it should you die or restart using `R`.
+en.kdd2.txt,spT10,"If you die or are in a situation where each move results with death, you can undo with `Backspace`."
+en.kdd2.txt,spT11,"This potion will allow you to place a mimic. Mimics copy every move you make and they move immediately after you, but before monsters."
+en.kdd2.txt,spT12,Place the mimic at the tile marked with a checkpoint below. Use it to drop all trapdoors and the red gate will open.
+en.kdd2.txt,spT13,"Congratulations, you have completed this room!"
+en.kdd2.txt,spT14,"After you leave the room your success will be permanent. You will always be able to see your best score for the room, and you will be able to see how you've placed in comparison to the scores on the leaderboard."
+en.kdd2.txt,spT15,"If you have connected the game using valid Caravel forum account credentials, your best score will be submitted to the leaderboard."
+en.kdd2.txt,spT16,"Your score will remain on the leaderboard for two weeks unless you are a paid subscriber to CaravelNet, in which case your score will remain on the leaderboard forever."
+en.kdd2.txt,spT17,You can now leave the tutorial room.
+en.kdd2.txt,achName0,Where is Master?
+en.kdd2.txt,achName1,Easterville
+en.kdd2.txt,achName2,Cleanliness
+en.kdd2.txt,achName3,Orb Avoider
+en.kdd2.txt,achName4,Static Hands
+en.kdd2.txt,achName5,Perfect Vision
+en.kdd2.txt,achName6,Wraithwing Whisperer
+en.kdd2.txt,achName7,Controlled Mimicry
+en.kdd2.txt,achName8,"Can't Stand Yellow"
+en.kdd2.txt,achName9,No-diagonal
+en.kdd2.txt,achName10,Motionless Hands
+en.kdd2.txt,achName11,Ssssslither
+en.kdd2.txt,achName12,Hands Set in Stone
+en.kdd2.txt,achName13,Master Intellect
+en.kdd2.txt,achName14,Backstabber
+en.kdd2.txt,achName15,Tar Technician
+en.kdd2.txt,achName16,Eye Stabber
+en.kdd2.txt,achName17,The Ninja
+en.kdd2.txt,achName18,Amateur Delver
+en.kdd2.txt,achName19,Fledgling Smiter
+en.kdd2.txt,achName20,Contract Exterminator
+en.kdd2.txt,achName21,"I'm a Professional!"
+en.kdd2.txt,achName22,Mastery
+en.kdd2.txt,achName23,Post-mastery
+en.kdd2.txt,achName24,Fried Queens
+en.kdd2.txt,achName25,Al Dente Eggs
+en.kdd2.txt,achName26,Evil Eye Jelly
+en.kdd2.txt,achName27,Roasted Wraithwings
+en.kdd2.txt,achName28,Serpent Sushi
+en.kdd2.txt,achName29,Tuning Fork
+en.kdd2.txt,achName30,Green to the Ground
+en.kdd2.txt,achName31,Crowd Crusher
+en.kdd2.txt,achName32,Immortal
+en.kdd2.txt,achName33,Rip in Spacetime Continuum
+en.kdd2.txt,achName34,Cleaning Floor
+en.kdd2.txt,achName35,Marathon Master
+en.kdd2.txt,achDesc0,Find the master wall
+en.kdd2.txt,achDesc1,Clear Fifth Level 1W while facing east the entire time
+en.kdd2.txt,achDesc2,Drop all trapdoors and clear Fifth Level 1N 2W in the same visit
+en.kdd2.txt,achDesc3,Clear Fifth Level 2N without hitting any orb
+en.kdd2.txt,achDesc4,Clear Fifth Level 1S without turning
+en.kdd2.txt,achDesc5,Clear Fifth Level 2S without drinking the invisibility potion
+en.kdd2.txt,achDesc6,"Don't hit the orb while clearing Fifth Level 3E"
+en.kdd2.txt,achDesc7,Clear Fifth Level 1S 1W without leaving the marked area
+en.kdd2.txt,achDesc8,Clear Fifth Level 2S 2E without stepping on open yellow doors
+en.kdd2.txt,achDesc9,Do not move diagonally in Seventh Level 1S
+en.kdd2.txt,achDesc10,Clear Seventh Level 1E without turning
+en.kdd2.txt,achDesc11,Kill the snake before killing any roach in Seventh Level 1N 2E
+en.kdd2.txt,achDesc12,Clear Seventh Level 3N 1E without turning
+en.kdd2.txt,achDesc13,Clear Master Intellect room (Seventh Level 2N 1W)
+en.kdd2.txt,achDesc14,Clear Eighth Floor 4S 3E without drinking the mimic potion
+en.kdd2.txt,achDesc15,Clear all tar in any Eighth Level room
+en.kdd2.txt,achDesc16,Kill a Tar Mother before she has a chance to grow
+en.kdd2.txt,achDesc17,Clear a room with Evil Eyes without waking any of them
+en.kdd2.txt,achDesc18,Clear Fifth Level
+en.kdd2.txt,achDesc19,Clear Sixth Level
+en.kdd2.txt,achDesc20,Clear Seventh Level
+en.kdd2.txt,achDesc21,Clear Eighth Level
+en.kdd2.txt,achDesc22,Master the hold
+en.kdd2.txt,achDesc23,Post-master the hold
+en.kdd2.txt,achDesc24,Kill 20 roach queens
+en.kdd2.txt,achDesc25,Kill 15 roach eggs
+en.kdd2.txt,achDesc26,Kill 15 evil eyes
+en.kdd2.txt,achDesc27,Kill 5 wraithwings
+en.kdd2.txt,achDesc28,Kill 10 serpents
+en.kdd2.txt,achDesc29,Strike an orb for three consecutive turns
+en.kdd2.txt,achDesc30,Lower a green gate 5 times
+en.kdd2.txt,achDesc31,Kill a total of 2501 monsters
+en.kdd2.txt,achDesc32,Die a total of 73 times
+en.kdd2.txt,achDesc33,Undo a total of 349 moves
+en.kdd2.txt,achDesc34,Drop a total of 191 trapdoors
+en.kdd2.txt,achDesc35,Take a total of 7007 steps
+en.kdd2.txt,outro,"Tar was not something Beethro expected. Or wanted to encounter. But walking down the stairs to the ninth floor he knows one thing - he can't smell this slimy substance there. But what if there is something much worse waiting instead?
+
+
+<font size=""32"" color=""#FFFF00"">Congratulations!</font>
+
+You have completed the second episode in the Deadly Rooms of Death, King Dugan's Dungeon Lite hold. I sincerely hope you have found this experience enjoyable.
+Now that you have descended the final flight of stairs available in this set, you may want to try to Master, and then Post-Master, this game!  To do this, go hunt for secret rooms. The number of secret rooms left on each level is now displayed on the Restore Screen.
+Once you manage to conquer them all, a special Mastery Area will be opened. Can you find out how to access it?
+You may also wish to play the next episode in the DROD:KDDL series.
+
+Before I leave you to bask in your feeling of utter glory, I'd like to thank a couple of people, who made it possible for you to play this game:
+
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - The creator, father and inventor of DROD. Without him, this unique game idea would have never seen the light of day.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - He coded most of DROD: JtRH and DROD: TCB singlehandedly. Thanks to the splendid codebase, making Flash DROD was pure pleasure.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Overlord of the Caravel Forum and lead coder of CaravelNet. Thanks to him, you can battle for high scores, and so much more!
+
+
+<font size=""23"" color=""#FFFF00"">Programming, Development</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Art & Music</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Server-side development</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Hold architects</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Primary Testers</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testers</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Translations</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Voice Talents</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Original Coding, Idea & Levels</font> - %%
+
+
+See you next time!
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+en.kdd2.txt,complNextGame,"Play the next levelset, KDD Lite 3. This will open in a new window, and you can safely close this window now. Your progress has been saved."
+en.kdd2.txt,sp_new71e1,Those eyes coulda been smote proper without any turns.  Believe it!
+en.kdd2.txt,sp_new71e2,"Ha!  Now that's efficiency!  Wait 'til I tell the Smitemaster's Guild about that feat!"
+en.kdd2.txt,defCont,Default controls:
+en.kdd2.txt,sc_diago,You can move diagonally even through very narrow corridors.
+en.kdd2.txt,sc_broken,Break these broken and secret walls with your sword.
+en.kdd2.txt,sc_queens1,Roach queens spawn roach eggs every 30 turns (the turn after the spawn counter becomes red).
+en.kdd2.txt,sc_queens2,Eggs will hatch into fully grown-up roaches 5 turns after being spawned.
+en.kdd2.txt,sc_queens3,"Eggs won't appear on arrows, trapdoors, or yellow gates. Use key ""I"" or Numpad 5 to wait a turn."
+en.kdd2.txt,sc_mimics,"After stepping on a mimic potion, use your mouse or wait key to choose the tile where you want to place the mimic."
+en.kdd2.txt,sc_shiftwait,You might find it useful that Shift+Wait waits until the next spawn.
+en.kdd2.txt,sp_mother1,Every thirty turns tar mothers will make the tar grow by one tile in each direction.
+en.kdd2.txt,sp_mother2,"It is relatively safe to be surrounded by growing tar, but you have to watch out for tar babies which might spawn during the growth."
+en.kdd2.txt,sc_backswipe,"Follow the sandy path to learn the backswipe technique! Remember about diagonal movement and don't turn your sword."
+en.kdd2.txt,sc_trapdoors,These pink-purple tiles are trapdoors and they fall if you or a mimic step off them.
+en.kdd3.txt,Ninth Level,Ninth Level
+en.kdd3.txt,Tenth Level,Tenth Level
+en.kdd3.txt,Eleventh Level,Eleventh Level
+en.kdd3.txt,Twelfth Level,Twelfth Level
+en.kdd3.txt,Mastery Level,Mastery Level
+en.kdd3.txt,Tutorial,Tutorial
+en.kdd3.txt,entr9,"Beethro Budkin, fifth-generation professional dungeon exterminator, was hired by King Dugan to clear the king's multi-level dungeon of a large monster infestation.
+Beethro charges by the room, and as a professional, he is contract-bound to clear all the monsters from each and every room in the dungeon to get paid.
+The only weapon Beethro needs to do his job is a Really Big Sword, which will defeat almost any monster in a single hit.
+
+-----
+
+Beethro sat down on the steps for a break. He pulled three bottles out of his pack. The ten-cup bottle was filled with refreshing leaf juice, and the other two bottles, which were in two-cup and five-cup sizes, were empty. Beethro wanted to drink exactly four cups of leaf juice in one uninterrupted gulp. He started messing around with the cups, pouring juice from one to another and back, but after a while gave up.  ""This is too much work!  Forget it!"""
+en.kdd3.txt,entr10,"As many experienced dungeon exterminators know, beneath dwell some beasties that are able to blend into their surroundings."
+en.kdd3.txt,entr11,"Catching a glimpse of the room ahead, Beethro grunted in disapproval.  ""I don't know how, but the tar always ends up that way, and I hate it."""
+en.kdd3.txt,entr12,"Again, Beethro heard loud hissing below, and knew to expect serpents. But this time the sound was slightly different, and he stopped a moment to listen and judge what lay ahead. ""Good Gob!  Those slitherbags must've been down there a gawdawful long time, with some big meals along the way."""
+en.kdd3.txt,entr12Back,Beethro came back to finish the proper smiting business he was hired to do.
+en.kdd3.txt,entrMaster,"Beethro descended the stairs only to find himself in an uncharted corridor...
+
+He won't get paid for clean-up here, but his professional honor urges him onward."
+en.kdd3.txt,entrTutorial,Tutorial
+en.kdd3.txt,entrTutorialLeft,Beethro left the tutorial floor rich with new knowledge.
+en.kdd3.txt,sc93n3e,Are you sure you are doing them in the correct order?
+en.kdd3.txt,sc94n3e,The order is the key.
+en.kdd3.txt,sc10e,"Invisibly evil spiders lurk on this level. Beware, for they are hard to see."
+en.kdd3.txt,sc111s2e,Psst... This passage takes you to the stairs. You might want to clear all other rooms before going there!
+en.kdd3.txt,sc121n1e1,"If a serpent moves west and it prefers horizontal movement, step to the east of its head to force it to move north."
+en.kdd3.txt,sc121n1e2,"It works the same vertically, but then the snake prefers eastward movement."
+en.kdd3.txt,sc12e,Your clock tells you which direction snakes currently prefer. This will help you to control these erratic creatures.
+en.kdd3.txt,scMe1,Other puzzles
+en.kdd3.txt,scMe2,Final words
+en.kdd3.txt,scM1s1,Getting here is a fabulous feat!
+en.kdd3.txt,scM1s2,So how did you like it? Did you manage to get all of the achievements?
+en.kdd3.txt,scM1s3,"Feel free to visit CaravelGames.com to play more episodes of KDDL, or to download any of the full DROD games for Windows, MacOS, or Linux."
+en.kdd3.txt,scM1s4,Game on!
+en.kdd3.txt,scM1s5,Here is a small reward! Kill all the eyes without stepping on the grass.
+en.kdd3.txt,scM1s6,Roach queens will be killed once you step on the checkpoint in the far-right corner.
+en.kdd3.txt,scM1s7,"Really nice, congrats!"
+en.kdd3.txt,scT1,"Did you know that serpents can't move over scrolls?"
+en.kdd3.txt,scT2,Move to the far right and observe how the roach behaves when walking onto a corner diagonally.
+en.kdd3.txt,scT3,"Snakes move by their own, much more complex, movement rules. Their current preference is shown beneath the spawn cycle timer."
+en.kdd3.txt,scT4,"If a monster moves diagonally into a corner obstacle, it prefers to slide vertically, if possible."
+en.kdd3.txt,scT5,"`Escape` opens up the pause menu, where you can view `General Help` to refer to the controls anytime you wish."
+en.kdd3.txt,scT6,To prevent yourself from accidentally leaving a room hit X to lock and unlock it. A small lock icon on the minimap indicates that a room is locked.
+en.kdd3.txt,scT7,"Shift+Key performs the key's action followed by its inverse.
+Shift+Wait waits until the next spawn.
+Numpad '+' or '=' performs the opposite of your previous move."
+en.kdd3.txt,scT8,F3 displays a move counter to help you optimize for better scores.
+en.kdd3.txt,scT9,All keys can be remapped from within game options.
+en.kdd3.txt,scT10,"Those without CaravelNet subscriptions won't have their scores stored on the leaderboard but will know what place they would have attained."
+en.kdd3.txt,scT11,Click on elements to see what orbs do and what the evil eyes see.
+en.kdd3.txt,scT12,The spacebar will clear all speech and achievements from the screen.
+en.kdd3.txt,scT13,"Wraithwings, unlike roaches, run away from Beethro and try to keep themselves at a distance of five tiles."
+en.kdd3.txt,scT14,"They are not as shy in bigger numbers, and won't hesitate to attack if they surround their prey."
+en.kdd3.txt,sc1_6n3w1,Use the backswipe technique to get rid of the roach.
+en.kdd3.txt,sc1_6n3w2,Place yourself on the green floor and make sure the roach stands on the sand tile directly north of you...
+en.kdd3.txt,sc1_6n3w3,Place yourself on the green floor and make sure the roach stands on the sand tile directly south of you...
+en.kdd3.txt,sc1_6n3w4,...then move northeast to kill it.
+en.kdd3.txt,sc1_6n3w5,...then move southeast to kill it.
+en.kdd3.txt,sc1_6n3w6,"Repeat to analyze the backswipe. Master this technique, for it will prove crucial in your further endeavors."
+en.kdd3.txt,sp9e1,This is a tutorial area.
+en.kdd3.txt,sp9e2,"Visit it if you haven't played this game before."
+en.kdd3.txt,sp9e3,"Move around using the numpad or 789, UIO, JKL"
+en.kdd3.txt,sp9e4,Hot griddled roaches!  No more tar!
+en.kdd3.txt,sp91n1e,"That was just nasty. Maybe tar isn't so bad after all..."
+en.kdd3.txt,sp94n4e1,Ah-ha!  Gotta get up early in the morning to pull one over on Beethro!
+en.kdd3.txt,sp94n4e2,I am not amused.
+en.kdd3.txt,sp93n,"Hrm. This is a very strange door. I can't get through."
+en.kdd3.txt,sp92n2e,"A door I can't get through. I wonder what's on the other side."
+en.kdd3.txt,sp11e1,And I really hate it when the tar grows so high above me... gives me the creeps.
+en.kdd3.txt,sp11e2,"Gah!  The tar's grown all the way over the walls!"
+en.kdd3.txt,sp11n1w,Hmm...it could be worse...could be a tar mother in here...
+en.kdd3.txt,sp11n2w1,Guess I spoke too soon.
+en.kdd3.txt,sp11n2w2,"Looks like there's something else different about this room..."
+en.kdd3.txt,sp12e1,"Careful, Beethro, careful..."
+en.kdd3.txt,sp12e2,Whew!
+en.kdd3.txt,sp12e3,These will make some great steaks.
+en.kdd3.txt,sp121s2e1,Great galloping goblins!
+en.kdd3.txt,sp121s2e2,Look at the size of that serpent!
+en.kdd3.txt,spM1s,You have failed...
+en.kdd3.txt,spT2,Turn your sword with `Q` and `W`.
+en.kdd3.txt,spT3,Now go hit the orb with your sword.
+en.kdd3.txt,spT4,"Orbs interact with doors in three ways - they can open, close, or toggle their state."
+en.kdd3.txt,spT5,Click on the orb with the mouse to see which doors it affects and in what way.
+en.kdd3.txt,spT6,Your objective in DROD is to clear each level of all monsters.
+en.kdd3.txt,spT7,Hit the roach with your sword to kill it.
+en.kdd3.txt,spT8,Force arrows block your movement in a direction opposite to theirs.
+en.kdd3.txt,spT9,Step on the checkpoint. You will go back to the exact moment you stepped on it should you die or restart using `R`.
+en.kdd3.txt,spT10,"If you die or are in a situation where each move results with death, you can undo with `Backspace`."
+en.kdd3.txt,spT11,"This potion will allow you to place a mimic. Mimics copy every move you make and move immediately after you, but before monsters."
+en.kdd3.txt,spT12,Place the mimic at the tile marked with a checkpoint below. Use it to drop all trapdoors and the red gate will open.
+en.kdd3.txt,spT13,"Serpents can't be damaged by your sword but they will shrink to death if stuck at a dead end."
+en.kdd3.txt,spT14,Remove all of the blue living tar to reach the evil eye at the top.
+en.kdd3.txt,spT15,Try to keep in mind that the tarstuff can only be damaged on flat edges and any tile which is not stable will turn into tar babies.
+en.kdd3.txt,spT16,Tar is stable when it can form a square blob of at least four tiles with its neighbours.
+en.kdd3.txt,spT17,"Congratulations, you have completed this room!"
+en.kdd3.txt,spT18,"After you leave the room your success will be permanent. You will always be able to see your best score for the room, and you will be able to see how you've placed in comparison to the scores on the leaderboard."
+en.kdd3.txt,spT19,"If you have connected the game using valid Caravel forum account credentials, your best score will be submitted to the leaderboard."
+en.kdd3.txt,spT20,"Your score will remain on the leaderboard for two weeks unless you are a paid subscriber of CaravelNet, in which case your score will remain on the leaderboard forever."
+en.kdd3.txt,spT21,You can now leave the tutorial room.
+en.kdd3.txt,achName0,Working Like a Clock
+en.kdd3.txt,achName1,Clocking Like a Work
+en.kdd3.txt,achName2,Entangled Hands
+en.kdd3.txt,achName3,Locked Arms
+en.kdd3.txt,achName4,Glued Sword
+en.kdd3.txt,achName5,Forever Alone
+en.kdd3.txt,achName6,Sneaky
+en.kdd3.txt,achName7,Tar Technician
+en.kdd3.txt,achName8,Lord of the Snakes
+en.kdd3.txt,achName9,Alone in the Hiss
+en.kdd3.txt,achName10,Silent Hunter
+en.kdd3.txt,achName11,The Ninja
+en.kdd3.txt,achName12,Matricide
+en.kdd3.txt,achName13,Amateur Delver
+en.kdd3.txt,achName14,Fledgling Smiter
+en.kdd3.txt,achName15,Contract Exterminator
+en.kdd3.txt,achName16,"I'm a Professional!"
+en.kdd3.txt,achName17,Mastery
+en.kdd3.txt,achName18,Post-mastery
+en.kdd3.txt,achName19,Roasted Roaches
+en.kdd3.txt,achName20,Queens a la King
+en.kdd3.txt,achName21,Eggs on Fire
+en.kdd3.txt,achName22,Evil Eye Mustard
+en.kdd3.txt,achName23,Wraithwing Fillets
+en.kdd3.txt,achName24,Serpent Rolls
+en.kdd3.txt,achName25,Tuning Fork
+en.kdd3.txt,achName26,Descending Green
+en.kdd3.txt,achName27,Mob Controller
+en.kdd3.txt,achName28,Reanimator
+en.kdd3.txt,achName29,Time Lord
+en.kdd3.txt,achName30,Space Keeper
+en.kdd3.txt,achName31,Endless Walker
+en.kdd3.txt,achDesc0,Clear Ninth Level 4N 3E while stepping on each of the marked areas no more than once
+en.kdd3.txt,achDesc1,Clear Ninth Level 3N 3E while stepping on each of the marked areas no more than once
+en.kdd3.txt,achDesc2,Clear Tenth Level 1N 1E without turning
+en.kdd3.txt,achDesc3,"Don't turn your sword in Tenth Level 1E"
+en.kdd3.txt,achDesc4,"Don't turn your sword while clearing Tenth Level 1S 1W"
+en.kdd3.txt,achDesc5,Clear Tenth Level 1S without drinking the mimic potion
+en.kdd3.txt,achDesc6,Clear Eleventh Level 1S 2E in less than 150 moves
+en.kdd3.txt,achDesc7,Clear all tar in any Eleventh Level room
+en.kdd3.txt,achDesc8,Clear Twelfth Level 1S 2E without moving diagonally
+en.kdd3.txt,achDesc9,Clear Twelfth Level 2S 1E without drinking the mimic potion
+en.kdd3.txt,achDesc10,Wake exactly one eye while clearing Twelfth Level 1S
+en.kdd3.txt,achDesc11,Clear a room with evil eyes without waking any of them
+en.kdd3.txt,achDesc12,Kill a roach queen while her eggs are growing
+en.kdd3.txt,achDesc13,Clear Ninth Level
+en.kdd3.txt,achDesc14,Clear Tenth Level
+en.kdd3.txt,achDesc15,Clear Eleventh Level
+en.kdd3.txt,achDesc16,Clear Twelfth Level
+en.kdd3.txt,achDesc17,Master the hold
+en.kdd3.txt,achDesc18,Post-master the hold
+en.kdd3.txt,achDesc19,Kill 35 roaches
+en.kdd3.txt,achDesc20,Kill 20 roach queens
+en.kdd3.txt,achDesc21,Kill 15 roach eggs
+en.kdd3.txt,achDesc22,Kill 15 evil eyes
+en.kdd3.txt,achDesc23,Kill 5 wraithwings
+en.kdd3.txt,achDesc24,Kill 10 serpents
+en.kdd3.txt,achDesc25,Strike an orb for three consecutive turns
+en.kdd3.txt,achDesc26,Lower a green gate 9 times
+en.kdd3.txt,achDesc27,Kill a total of 2501 monsters
+en.kdd3.txt,achDesc28,Die a total of 101 times
+en.kdd3.txt,achDesc29,Undo a total of 444 moves
+en.kdd3.txt,achDesc30,Drop a total of 197 trapdoors
+en.kdd3.txt,achDesc31,Take a total of 8421 steps
+en.kdd3.txt,outro,"If only he had a map of Dugan's Dungeon, Beethro would have known that what lies on the thirteenth floor is something which might defeat even the strongest warriors. But at least there won't be any Tar or Serpents there...
+
+
+<font size=""32"" color=""#FFFF00"">Congratulations!</font>
+
+You have completed the third episode in the Deadly Rooms of Death, King Dugan's Dungeon Lite hold. I sincerely hope you have found this experience enjoyable.
+Now that you have descended the final flight of stairs available in this set, you may want to try to Master, and then Post-Master, this game!  To do this, go hunt for secret rooms. The number of secret rooms left on each level is now displayed on the Restore Screen.
+Once you manage to conquer them all, a special Mastery Area will be opened. Can you find out how to access it?
+You may also wish to play the next episode in the DROD:KDDL series.
+
+Before I leave you to bask in your feeling of utter glory, I'd like to thank a couple of people, who made it possible for you to play this game:
+
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - The creator, father and inventor of DROD. Without him, this unique game idea would have never seen the light of day.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - He coded most of DROD: JtRH and DROD: TCB singlehandedly. Thanks to the splendid codebase, making Flash DROD was pure pleasure.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Overlord of the Caravel Forum and lead coder of CaravelNet. Thanks to him, you can battle for high scores, and so much more!
+
+
+<font size=""23"" color=""#FFFF00"">Programming, Development</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Art & Music</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Server-side development</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Hold architects</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Primary Testers</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testers</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Translations</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Voice Talents</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Original Coding, Idea & Levels</font> - %%
+
+
+See you next time!
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+en.kdd3.txt,complNextGame,"Play the next levelset, KDD Lite 4. This will open in a new window, and you can safely close this window now. Your progress has been saved."
+en.kdd3.txt,defCont,Default controls:
+en.kdd3.txt,sc_diago,You can move diagonally even through very narrow corridors.
+en.kdd3.txt,sc_broken,Break these broken and secret walls with your sword.
+en.kdd3.txt,sc_queens1,Roach queens spawn roach eggs every 30 turns (the turn after the spawn counter becomes red).
+en.kdd3.txt,sc_queens2,Eggs will hatch into fully grown-up roaches 5 turns after being spawned.
+en.kdd3.txt,sc_queens3,"Eggs won't appear on arrows, trapdoors, or yellow gates. Use key ""I"" or Numpad 5 to wait a turn."
+en.kdd3.txt,sc_mimics,"After stepping on a mimic potion, use your mouse or wait key to choose the tile where you want to place the mimic."
+en.kdd3.txt,sc_shiftwait,You might find it useful that Shift+Wait waits until the next spawn.
+en.kdd3.txt,sp_mother1,Every thirty turns tar mothers will make the tar grow by one tile in each direction.
+en.kdd3.txt,sp_mother2,"It is relatively safe to be surrounded by growing tar, but you have to watch out for tar babies which might spawn during the growth."
+en.kdd3.txt,sc_backswipe,"Follow the sandy path to learn the backswipe technique! Remember about diagonal movement and don't turn your sword."
+en.kdd3.txt,sc_trapdoors,These pink-purple tiles are trapdoors and they fall if you or a mimic step off them.
+en.kdd4.txt,Thirteenth Level,Thirteenth Level
+en.kdd4.txt,Fourteenth Level,Fourteenth Level
+en.kdd4.txt,Fifteenth Level,Fifteenth Level
+en.kdd4.txt,Sixteenth Level,Sixteenth Level
+en.kdd4.txt,Mastery Level,Mastery Level
+en.kdd4.txt,Original 13th Level,Original 13th Level
+en.kdd4.txt,Tutorial Level,Tutorial Level
+en.kdd4.txt,entrTut,"Beethro Budkin, fifth-generation professional dungeon exterminator, was hired by King Dugan to clear the king's multi-level dungeon of a large monster infestation.
+Beethro charges by the room, and as a professional, he is contract-bound to clear all the monsters from each and every room in the dungeon to get paid.
+The only weapon Beethro needs to do his job is a Really Big Sword, which will defeat almost any monster in a single hit."
+en.kdd4.txt,entr13,"""I probably ought to have skipped past this level, but a contract is a contract.  Where'd I put those bread crumbs?"" -Beethro"
+en.kdd4.txt,entr14,"On this level, you'll finally meet some folks with a healthy respect for your blade."
+en.kdd4.txt,entr15,"This level is like the time you mowed the lawn and had exactly the amount of gas needed to finish, but then you screwed up, and had to go buy some more gas.  And there was a big serpent at the gas station, and you wanted to go in to pay the attendant, but the front door was locked, so you drank a mimic potion to get in, and then the roaches...
+
+Well, I guess the metaphor breaks down."
+en.kdd4.txt,entr16,These roaches need an authority figure to guide them.  Someone with charisma and character.  Someone like you!
+en.kdd4.txt,entrMaster,"Beethro descended the stairs only to find himself in an uncharted corridor...
+
+He won't get paid for clean-up here, but his professional honor urges him onward."
+en.kdd4.txt,entrMasterBack,Beethro came back to finish the proper smiting business he was hired to do.
+en.kdd4.txt,entrOriginal13Enter,"Beethro descended into the mystical set of deadly, pointless corridors."
+en.kdd4.txt,entrOriginal13Success,"Proud of his achievement, but a whole lot less sane, Beethro emerged from the infamous 13th level of King Dugan's Dungeon."
+en.kdd4.txt,entrOriginal13Escape,"Beethro ran away from the challenge like a little, scrawny kitten."
+en.kdd4.txt,achName0,One-directional Forest
+en.kdd4.txt,achName1,Stoic Snakes
+en.kdd4.txt,achName2,Tar Stayer
+en.kdd4.txt,achName36,Eyedoors
+en.kdd4.txt,achName3,Goblin Beater
+en.kdd4.txt,achName4,Goblin Crusher
+en.kdd4.txt,achName5,Goblin Destroyer
+en.kdd4.txt,achName6,Step Aside!
+en.kdd4.txt,achName7,Green Mommy
+en.kdd4.txt,achName8,Goblin Killer
+en.kdd4.txt,achName35,Strict Policies
+en.kdd4.txt,achName34,Extreme Sacrifice
+en.kdd4.txt,achName32,Calm Assassin
+en.kdd4.txt,achName33,Step Ahead
+en.kdd4.txt,achName39,Crossing Spiders
+en.kdd4.txt,achName9,Growing!
+en.kdd4.txt,achName37,Master of Eyeion
+en.kdd4.txt,achName38,Hunter Games
+en.kdd4.txt,achName10,The Explorer
+en.kdd4.txt,achName12,Matricide
+en.kdd4.txt,achName13,Amateur Delver
+en.kdd4.txt,achName14,Fledgling Smiter
+en.kdd4.txt,achName15,Contract Exterminator
+en.kdd4.txt,achName16,"I'm a Professional!"
+en.kdd4.txt,achName17,Mastery
+en.kdd4.txt,achName18,Post-mastery
+en.kdd4.txt,achName19,Flamed Roaches
+en.kdd4.txt,achName20,Baked Queens
+en.kdd4.txt,achName21,Raw Eggs
+en.kdd4.txt,achName11,Goblin Fricassee
+en.kdd4.txt,achName22,Evil Eye a la Mode
+en.kdd4.txt,achName23,Wraithwing Kebabs
+en.kdd4.txt,achName24,Serpent Sushi
+en.kdd4.txt,achName25,Tuning Fork
+en.kdd4.txt,achName26,Lowering Green
+en.kdd4.txt,achName27,Peace Maker
+en.kdd4.txt,achName28,Phoenix
+en.kdd4.txt,achName29,Master of Time
+en.kdd4.txt,achName30,Floor Cleaner
+en.kdd4.txt,achName31,To Infinity and Beyond
+en.kdd4.txt,achDesc0,13th Level 2S1W: Clear the room without turning your sword
+en.kdd4.txt,achDesc1,13th Level 1S: Clear the room without turning your sword
+en.kdd4.txt,achDesc2,13th Level 1S1E: Clear the room without turning your sword
+en.kdd4.txt,achDesc36,13th Level 1S2W: Clear the room without turning your sword
+en.kdd4.txt,achDesc3,14th Level 1S: Clear the room constantly facing NW
+en.kdd4.txt,achDesc4,14th Level 2S: Clear the room constantly facing E
+en.kdd4.txt,achDesc5,14th Level 1N: Clear the room constantly facing S
+en.kdd4.txt,achDesc6,14th Level 2E: Clear the room without stepping on the trapdoor
+en.kdd4.txt,achDesc7,14th Level 2N: Clear the room without letting the tar mother spawn
+en.kdd4.txt,achDesc8,14th Level 1N3E: Clear the room without turning your sword
+en.kdd4.txt,achDesc35,14th Level 2N2E: Clear the room without letting the goblin stand on gray road
+en.kdd4.txt,achDesc34,14th Level 1N1E: Kill goblin as the last monster
+en.kdd4.txt,achDesc32,15th Level Entrance: Clear the room without turning your sword
+en.kdd4.txt,achDesc33,15th Level Entrance: Drop all trapdoors before clearing the room
+en.kdd4.txt,achDesc39,"15th Level 1N: After hitting the orb, kill all spiders while moving only diagonally"
+en.kdd4.txt,achDesc9,16th Level 1S1E: Clear the room without letting the tar mother spawn
+en.kdd4.txt,achDesc37,Mastery Level 2N: Clear the room without eyes waking or eggs being laid
+en.kdd4.txt,achDesc38,Mastery Level 1N1E: Kill the wraithwing without dropping all trapdoors
+en.kdd4.txt,achDesc10,Visit each room in the original 13th level (%% / 56)
+en.kdd4.txt,achDesc12,Kill a roach queen while her eggs are growing
+en.kdd4.txt,achDesc13,Clear Thirteenth Level
+en.kdd4.txt,achDesc14,Clear Fourteenth Level
+en.kdd4.txt,achDesc15,Clear Fifteenth Level
+en.kdd4.txt,achDesc16,Clear Sixteenth Level
+en.kdd4.txt,achDesc17,Master the hold
+en.kdd4.txt,achDesc18,Post-master the hold
+en.kdd4.txt,achDesc19,Kill 100 roaches
+en.kdd4.txt,achDesc20,Kill 25 roach queens
+en.kdd4.txt,achDesc21,Kill 10 roach eggs
+en.kdd4.txt,achDesc11,Kill 40 goblins
+en.kdd4.txt,achDesc22,Kill 80 evil eyes
+en.kdd4.txt,achDesc23,Kill 40 wraithwings
+en.kdd4.txt,achDesc24,Kill 25 serpents
+en.kdd4.txt,achDesc25,Strike an orb for three consecutive turns
+en.kdd4.txt,achDesc26,Lower a green gate 20 times
+en.kdd4.txt,achDesc27,Kill a total of 3001 monsters
+en.kdd4.txt,achDesc28,Die a total of 81 times
+en.kdd4.txt,achDesc29,Undo a total of 503 moves
+en.kdd4.txt,achDesc30,Drop a total of 499 trapdoors
+en.kdd4.txt,achDesc31,Take a total of 10001 steps
+en.kdd4.txt,sc_13_entr_1,Shortcut to the exit
+en.kdd4.txt,sc_13_entr_2,A true Smitemaster will not read the scroll above without conquering the level first.
+en.kdd4.txt,sc_13_entr_3,"Stones lay before sand, before them lay slabs which are preceded by grass which grows on tile, on dirt built.
+-Unknown Poet"
+en.kdd4.txt,sc_13_2S2W_3,Shortcut to the entrance
+en.kdd4.txt,sc_14_1N3E,This fellow in the other room is not so clever.  He always falls for the same old trick.
+en.kdd4.txt,sc_mast_entr_1,The Original 13th Level
+en.kdd4.txt,sc_mast_entr_2,Some new puzzles.
+en.kdd4.txt,sc_mast_entr_3,Harder versions of existing rooms.
+en.kdd4.txt,sc_mast_1W,There is but naught here.
+en.kdd4.txt,sc_o13_orb,This orb served a purpose in the original level.
+en.kdd4.txt,sc_o13_orbs,These orbs served a purpose in the original level.
+en.kdd4.txt,sc_o13_orb2,"This orb was not here originally, and the whole yellow gate was in one room."
+en.kdd4.txt,sc_o13_orbs_gates,There was an orb in the original room and the gates served a purpose.
+en.kdd4.txt,sc_o13_broken_wall,There was a regular wall in the original level making the following area impossible to reach.
+en.kdd4.txt,sc_o13_edge,There was no room edge here originally.
+en.kdd4.txt,sc_o13_roach,"In the original 13th level, the roach above was in the same room and this corridor was a little bit different."
+en.kdd4.txt,scM1s1,"Now that's some achievement!"
+en.kdd4.txt,scM1s2,How was the game? Did you manage to get all of the achievements?
+en.kdd4.txt,scM1s3,"Feel free to visit CaravelGames.com to play more episodes of KDDL, or to download any of the full DROD games for Windows, MacOS, or Linux."
+en.kdd4.txt,scM1s4,Rock on!
+en.kdd4.txt,scM1s5,Here is a small reward! Kill all the eyes and goblins without stepping on the grass.
+en.kdd4.txt,scM1s6,Roach queens will be killed once you step on the checkpoint in the far-right corner.
+en.kdd4.txt,scM1s7,Fabulous!
+en.kdd4.txt,sp_14_1E,Ahh...nothing satisfies like the sweet sight of no tar at all!
+en.kdd4.txt,sp_14_2N2E_1,Bah...looks like I need to keep this goblin alive long enough to remove that serpent up there for me.
+en.kdd4.txt,sp_14_2N2E_2,"No helpings from me!  You cuts me up, I know it--don't matter now or later."
+en.kdd4.txt,sp_14_2N2E_3,"Don't act all brave.  Because I know goblins aren't brave."
+en.kdd4.txt,sp_14_2N2E_4,"No, No, No!  Keeps pointy thing away!"
+en.kdd4.txt,sp_14_2N2E_5,"You're thinking you'll sneak behind when I'm not looking.  Yeah."
+en.kdd4.txt,sp_14_2N2E_6,Mercy!
+en.kdd4.txt,sp_14_2N2E_7,"Look, you'd do the same in my place!"
+en.kdd4.txt,sp_14_2N2E_8,"That's nasty business. Hope I don't have to do that again!"
+en.kdd4.txt,sp_14_2N2E_9,"Rest there a bit while I open the passage, goblin."
+en.kdd4.txt,sp_14_2N2E_10,"(I probably didn't need to lock him up there...but better safe than sorry!)"
+en.kdd4.txt,sp_14_1N1E,Look at that...not a single wall destroyed!
+en.kdd4.txt,sp_15_1S2W,"Hoo boy, no simple plow here.  Let's plan the footwork ahead before I get moving."
+en.kdd4.txt,sp_16_2S1E_1,Brilliant!  Sometimes I even impress myself.
+en.kdd4.txt,sp_16_2S1E_2,Ha!  All clear!
+en.kdd4.txt,sp_16_2S1E_3,Now to get out of here...
+en.kdd4.txt,sp_16_2S1E_4,Hmm...which way did I come in again?
+en.kdd4.txt,sp_16_2S1E_5,"Ah, it doesn't matter."
+en.kdd4.txt,spM1s,You have failed...
+en.kdd4.txt,sp_o13_1,"Here, roachie, roachie..."
+en.kdd4.txt,sp_o13_2,"Greb! One measly little roachie I've gotta squish."
+en.kdd4.txt,sp_tut_entr_1,Welcome to DROD.
+en.kdd4.txt,sp_tut_entr_2,"If this is your first time playing a game in the series, please continue east."
+en.kdd4.txt,sp_tut_entr_3,"There you'll find a couple of easier puzzles to get yourself introduced to the concept."
+en.kdd4.txt,sp_tut_entr_4,"Take the stairs if you're familiar with the game."
+en.kdd4.txt,sp_tut_entr_5,Use numerical keyboard or keys 789 uio jkl to move around.
+en.kdd4.txt,sp_tut_entr_6,Keys can be changed from the options menu which you can access by hitting `escape`.
+en.kdd4.txt,sp_tut_1E_1,Orbs affect yellow doors. Hit it with your sword to activate it.
+en.kdd4.txt,sp_tut_1E_2,Click an orb with your mouse to see which doors it affects.
+en.kdd4.txt,sp_tut_1E_3,Rotate your sword using keys `Q` and `W`.
+en.kdd4.txt,sp_tut_1E_4,Hit the roach with your sword to kill it.
+en.kdd4.txt,sp_tut_1E_5,Hit the orb and wait for a couple of turns to see how monsters behave when diagonally approaching a corner.
+en.kdd4.txt,sp_tut_1E_6,Wait for it...
+en.kdd4.txt,sp_tut_1E_7,"As you can see, when approaching a corner diagonally, monsters prefer vertical movement."
+en.kdd4.txt,sp_tut_1E_8,Kill the roaches to drop the green door and follow East.
+en.kdd4.txt,sp_tut_2E_1,"You'll learn the backswipe here. After hitting the orb, there is only one way to kill the roaches - move directly North West or South West."
+en.kdd4.txt,sp_tut_2E_2,"You might want to repeat it a couple of times to help you remember it, as it is a very important technique."
+en.kdd4.txt,sp_tut_2E_3,You can move diagonally even through very narrow passages.
+en.kdd4.txt,sp_tut_2E_4,Broken and secret walls can be destroyed with your sword.
+en.kdd4.txt,sp_tut_2E_5,Arrows block movement of all entities against the direction they face
+en.kdd4.txt,sp_tut_2E_6,Step on the checkpoint to restore here if you die.
+en.kdd4.txt,sp_tut_2E_7,Roach queens lay eggs every 30 turns. Use the spawn timer on the left side of the game screen to know when the next spawn will happen.
+en.kdd4.txt,sp_tut_3E_1,"Evil Eyes remain dormant unless you stop in their line of sight - once awakened, they'll attack you like roaches."
+en.kdd4.txt,sp_tut_3E_2,Serpents cannot be damaged by your sword. The only way to kill them is to place them in a dead end.
+en.kdd4.txt,sp_tut_3E_3,Use the broken walls to forge a dead end for the serpents.
+en.kdd4.txt,sp_tut_3E_4,You can use backspace to undo a move.
+en.kdd4.txt,sp_tut_3E_5,"Serpents, unlike other monsters, cannot move diagonally."
+en.kdd4.txt,sp_tut_3E_6,At any given moment they have a movement preference which changes every five turns.
+en.kdd4.txt,sp_tut_3E_7,You can see their current movement preference under the spawn timer.
+en.kdd4.txt,sp_tut_4E_1,"When you step off a trapdoor, it will fall down, leaving a pit behind."
+en.kdd4.txt,sp_tut_4E_2,"To open the red gate, you will need to drop all the trapdoors."
+en.kdd4.txt,sp_tut_4E_3,Remember that you can use the pits left behind by dropped trapdoors to shield yourself against roaches.
+en.kdd4.txt,sp_tut_5E_1,Tar is a very peculiar substance. It can only be damaged on flat edges.
+en.kdd4.txt,sp_tut_5E_2,You do not need to clear all of it to conquer a room.
+en.kdd4.txt,sp_tut_6E_1,"Tar mothers are fearsome enemies. Despite staying in one place, hidden in tar, they make tar grow every 30 turns."
+en.kdd4.txt,sp_tut_6E_2,"The black door won't open until you clear all the tar from a room."
+en.kdd4.txt,sp_tut_7E_1,Drinking this potion will allow you to place a mimic.
+en.kdd4.txt,sp_tut_7E_2,Mimics will repeat all your moves and can drop trapdoors just like Beethro.
+en.kdd4.txt,sp_tut_8E_1,"When you drink the invisibility potion, monsters won't move unless they are in the smell range."
+en.kdd4.txt,sp_tut_8E_2,"Don't let the roach queen escape onto the arrows or you won't be able to kill her."
+en.kdd4.txt,sp_tut_8E_3,"You did well, congratulations!"
+en.kdd4.txt,sp_tut_8E_4,It seems you have failed.
+en.kdd4.txt,sp_tut_8E_5,"You can use ""R"" to restart the room or wait to hear some hints."
+en.kdd4.txt,sp_tut_8E_6,...
+en.kdd4.txt,sp_tut_8E_7,There are three different ways to solve this room.
+en.kdd4.txt,sp_tut_8E_8,"The fastest one requires you trap the queen on arrows near the green door in such a way, that you can kill it by stepping on or next to the diagonal arrow."
+en.kdd4.txt,sp_tut_8E_9,"The other one, nearly as quick the previous can be achieved by walking horizontally towards the queen so that the green door blocks it."
+en.kdd4.txt,sp_tut_8E_10,The last one requires full circle around the room and trapping the queen in the room entrance corridor.
+en.kdd4.txt,sp_tut_8E_11,"If you still can't do this, wait a couple of turns for the emergency mimic potion to open."
+en.kdd4.txt,sp_tut_9E,Good luck!
+en.kdd4.txt,sc_tut_emergency_potion,"Emergency mimic potion, use if room is too difficult."
+en.kdd4.txt,sc_tut_tricky,This tricky room is not required
+en.kdd4.txt,outro,"The last four floors were a real pain for Beethro with the tar, the doors, the roaches... As he descended the stairs he smelled more of the blue goo which made him cringe but in the very far back of his head something told him that there is even worse danger ahead of him...
+
+
+<font size=""32"" color=""#FFFF00"">Congratulations!</font>
+
+You have completed the fourth episode in the Deadly Rooms of Death, King Dugan's Dungeon Lite series. We sincerely hope you have found this experience enjoyable.
+Now that you have descended the final flight of stairs available in this set, you may want to try to Master, and then Post-Master, this game!  To do this, go hunt for secret rooms. The number of secret rooms left on each level is now displayed on the Restore Screen.
+Once you manage to conquer them all, a special Mastery Area will be opened. Can you find out how to access it?
+You may also wish to play the next episode in the DROD:KDDL series.
+
+Before we leave you to bask in your feeling of utter glory, we'd like to thank a couple of people, who made it possible for you to play this game:
+
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - The creator, father and inventor of DROD. Without him, this unique game idea would have never seen the light of day.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - He coded most of DROD: JtRH and DROD: TCB singlehandedly. Thanks to the splendid codebase, making Flash DROD was pure pleasure.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Overlord of the Caravel Forum and lead coder of CaravelNet. Thanks to him, you can battle for high scores, and so much more!
+
+
+<font size=""23"" color=""#FFFF00"">Programming, Development</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Art & Music</font> - %% (minor)
+
+<font size=""23"" color=""#FFFF00"">Server-side development</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Hold architects</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Primary Testers</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testers</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Translations</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Voice Talents</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Original Coding, Idea & Levels</font> - %%
+
+
+See you next time!
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+en.kdd4.txt,complNextGame,"Play the next level set, KDD Lite 5. This will open in a new window, and you can safely close this window now. Your progress has been saved."
+en.kdd5.txt,entr17,"Beethro pulled out the three bottles again (10-cups full, 2-cups empty, 5-cups empty).  ""How am I going to get my four-cup swig?"" He poured from the first into the second.  He poured from the second into the third. He poured from the first into the second.  He poured from the second into the third, but accidentally spilled a cup.  With a sigh, he poured the remaining leaf juice back into the first bottle.
+
+
+Beethro was going to start again, but then he noticed he was surrounded on all  sides by living tar!  It had grown around him during the drink preparation.  ""By Munbo!  Can't a fellow settle down for just a moment?"""
+en.kdd5.txt,entr18,"In Beethro's world, the number ""18"" is considered unlucky.  Most dungeons are built without an eighteenth level.  Of course, all levels of a dungeon are fairly unlucky to begin with, so maybe it doesn't matter that much."
+en.kdd5.txt,entr19,"""I've got that toasty 72-percent-done feeling.  What's next?""
+-Beethro"
+en.kdd5.txt,entr20,"You know, if these monsters were just a little more organized, you'd have no chance against them.  Frightening, if you think about it."
+en.kdd5.txt,entrMaster,"Beethro descended the stairs only to find himself in an uncharted corridor...
+
+He won't get paid for clean-up here, but his professional honor urges him onward."
+en.kdd5.txt,entrMasterBack,Beethro came back to finish the proper smiting business he was hired to do.
+en.kdd5.txt,achName0a,Janitorial Speed
+en.kdd5.txt,achName0,Obsessive Compulsive
+en.kdd5.txt,achName1,To the Heart of the Matter
+en.kdd5.txt,achName2,Spare the Innocents
+en.kdd5.txt,achName3,Sterilization
+en.kdd5.txt,achName4b,Aim North!
+en.kdd5.txt,achName4,Straight Ways
+en.kdd5.txt,achName5,Eastern Solutions
+en.kdd5.txt,achName9,South is Scary
+en.kdd5.txt,achName6,I Can Do It Myself Mommy!
+en.kdd5.txt,achName7,Traps First
+en.kdd5.txt,achName8,Not Thirsty
+en.kdd5.txt,achName10,Straight For The Top
+en.kdd5.txt,achName11,Swine before Pearls
+en.kdd5.txt,achName12,Pearls before Swine
+en.kdd5.txt,achName13,Raw Stupidity
+en.kdd5.txt,achName14,Patient Execution
+en.kdd5.txt,achName15,Slithering Eliminatation
+en.kdd5.txt,achName16,"Run Beethro, Run!"
+en.kdd5.txt,achName16b,Aim for the Eyes
+en.kdd5.txt,achName17,Amateur Delver
+en.kdd5.txt,achName18,Fledgling Smiter
+en.kdd5.txt,achName19,Contract Exterminator
+en.kdd5.txt,achName20,"I'm a Professional!"
+en.kdd5.txt,achName21,Mastery
+en.kdd5.txt,achName22,Post-mastery
+en.kdd5.txt,achName23,Roach Cake
+en.kdd5.txt,achName24,Queen Dish
+en.kdd5.txt,achName25,Eggs without Bacon
+en.kdd5.txt,achName26,Eyes with Evil Sauce
+en.kdd5.txt,achName27,Goblin Cheeks
+en.kdd5.txt,achName28,Tar Paste
+en.kdd5.txt,achName29,Snake Rations
+en.kdd5.txt,achName30,Dried Brains
+en.kdd5.txt,achName31,Tuning Fork
+en.kdd5.txt,achName32,Lowering Green
+en.kdd5.txt,achName33,Peace Maker
+en.kdd5.txt,achName34,Again and Again and Again and...
+en.kdd5.txt,achName35,Chronomancer
+en.kdd5.txt,achName36,Stairway to Hell
+en.kdd5.txt,achName37,Marathon
+en.kdd5.txt,achDesc0a,17th Level 1W: Clear the room before 4th tar growth
+en.kdd5.txt,achDesc0,"17th Level 1N1W: Clear all tar, drop all trapdoors, conquer the room and leave north"
+en.kdd5.txt,achDesc1,17th Level 1N1W: Conquer the room allowing at most one tar growth to occur
+en.kdd5.txt,achDesc2,17th Level 2S1E: Kill the tar mother before killing any tar baby
+en.kdd5.txt,achDesc3,17th Level 1S2E: Kill the serpent before any tar baby appears in the room
+en.kdd5.txt,achDesc4b,18th Level 1N: Conquer the room without turning your sword
+en.kdd5.txt,achDesc4,18th Level 2N1E: Conquer the room without moving diagonally
+en.kdd5.txt,achDesc5,18th Level 1N2E: Conquer the room when entering from the east entrance and without turning your sword
+en.kdd5.txt,achDesc6,18th Level 1E: Use the goblin in only one of the serpent chambers and conquer the room
+en.kdd5.txt,achDesc7,18th Level 1E: Drop all trapdoors before any serpent dies and conquer the room
+en.kdd5.txt,achDesc8,18th Level 1N1E: Conquer the room without drinking the mimic potion
+en.kdd5.txt,achDesc9,19th Level 2S: Never leave the top two rows of the room
+en.kdd5.txt,achDesc14,"20th Level Entrance: Don't turn your sword after you kill first monster and conquer the room"
+en.kdd5.txt,achDesc10,20th Level 1N: Kill the brain before killing any roach queen
+en.kdd5.txt,achDesc11,20th Level 3N1W: Kill all brains before killing any goblin
+en.kdd5.txt,achDesc13,20th Level 3N: Kill all brains before killing any roach queen
+en.kdd5.txt,achDesc15,20th Level 2N2W: Kill all serpents before killing any roach queen
+en.kdd5.txt,achDesc16,20th Level 1N2W: Kill the serpent last
+en.kdd5.txt,achDesc16b,20th Level 2N1W: Kill all evil eyes before killing any roach queen
+en.kdd5.txt,achDesc17,Clear Seventeenth Level
+en.kdd5.txt,achDesc18,Clear Eighteenth Level
+en.kdd5.txt,achDesc19,Clear Nineteenth Level
+en.kdd5.txt,achDesc20,Clear Twentieth Level
+en.kdd5.txt,achDesc21,Master the hold
+en.kdd5.txt,achDesc22,Post-master the hold
+en.kdd5.txt,achDesc23,Kill 200 roaches
+en.kdd5.txt,achDesc24,Kill 20 roach queens
+en.kdd5.txt,achDesc25,Kill 15 roach eggs
+en.kdd5.txt,achDesc26,Kill 45 evil eyes
+en.kdd5.txt,achDesc27,Kill 20 goblins
+en.kdd5.txt,achDesc28,Kill 201 tar babies
+en.kdd5.txt,achDesc29,Kill 20 serpents
+en.kdd5.txt,achDesc30,Kill 10 brains
+en.kdd5.txt,achDesc31,Strike an orb for three consecutive turns
+en.kdd5.txt,achDesc32,Lower a green gate 15 times
+en.kdd5.txt,achDesc33,Kill a total of 5000 monsters
+en.kdd5.txt,achDesc34,Die a total of 103 times
+en.kdd5.txt,achDesc35,Undo a total of 550 moves
+en.kdd5.txt,achDesc36,Drop a total of 121 trapdoors
+en.kdd5.txt,achDesc37,Take a total of 5000 steps
+en.kdd5.txt,sc_17_entr,This level requires a great deal of efficiency.
+en.kdd5.txt,sc_17_1s1e,A lot of good it does you here!
+en.kdd5.txt,sc_18_2e,"Five serpents,
+four mimics.
+
+How hard can this be?"
+en.kdd5.txt,sc_19_1n1e,"Historical note: This is the last room that was created in the original version of King Dugan's Dungeon.
+
+-Erik"
+en.kdd5.txt,sc_20_2n2w,A watched blue door never opens.
+en.kdd5.txt,sc_20_1n2w,"Do you know what you're doing?  The orb below will close the north door and open the south door."
+en.kdd5.txt,sc_20_1n1w,The queen is a stronger piece than a rook.
+en.kdd5.txt,sc_mast_ent_1,Original Puzzles
+en.kdd5.txt,sc_mast_ent_2,Harder versions of existing puzzles
+en.kdd5.txt,sc_mast_ent_3,Chamber of Pain
+en.kdd5.txt,scM1s1,You have achieved quite a feat!
+en.kdd5.txt,scM1s2,Did you enjoy the game? Have you gotten all of the achievements?
+en.kdd5.txt,scM1s3,"Feel free to visit CaravelGames.com to play more episodes of KDDL, or to download any of the full DROD games for Windows, MacOS, or Linux."
+en.kdd5.txt,scM1s4,You rule!
+en.kdd5.txt,scM1s5,Here is a small reward! Kill all the enemies without stepping on the brown grass
+en.kdd5.txt,scM1s6,The two corner roach queens will be killed once you step on the checkpoint in the far-right corner.
+en.kdd5.txt,scM1s7,Awesome!
+en.kdd5.txt,sc_tut_emergency_potion,"Emergency mimic potion, use if room is too difficult."
+en.kdd5.txt,sc_tut_tricky,This tricky room is not required
+en.kdd5.txt,sp_17_entr_1,"Well, forewarned is forearmed..."
+en.kdd5.txt,sp_17_entr_2,Why do I get the feeling that someone is laughing at me?
+en.kdd5.txt,sp_17_1s1e_1,"Oh, a wise-guy scroll, eh?"
+en.kdd5.txt,sp_18_1n1e_1,"Didn't really need that mimic potion... but I deserve a break.  This is hard work!"
+en.kdd5.txt,sp_18_3e_1,"Yum... fresh meats to eats, and new bones for our collection!"
+en.kdd5.txt,sp_18_3e_2,"Too much lipping from you, greenie. There's one reliable way to shut you up."
+en.kdd5.txt,sp_19_1e,"And everybody's always saying to me, ""No secret rooms on Level 19.""  Oh, ho!"
+en.kdd5.txt,sp_20_3n1w,"Ah!  As if goblins weren't sneaky enough!"
+en.kdd5.txt,sp_20_entr_1,Wha...?
+en.kdd5.txt,sp_20_entr_2,"The roaches...they're heading right for me!"
+en.kdd5.txt,sp_20_entr_3,"Like something's guiding them..."
+en.kdd5.txt,sp_20_entr_4,They still splat the same!
+en.kdd5.txt,sp_20_entr_5,So this must be the thing controlling those roaches...
+en.kdd5.txt,sp_20_entr_6,"A giant brain you may be, but in the end you're just another pest to mop up."
+en.kdd5.txt,sp_20_3n1e,"Ha!  These brains aren't so smart."
+en.kdd5.txt,spM1s,You have failed...
+en.kdd5.txt,outro,"Those brains were a real pain but Beethro, being a professional smitemaster, can handle anything without breaking a sweat. But what about this strange feeling that something much scarier lurks ahead of him?
+
+
+<font size=""32"" color=""#FFFF00"">Congratulations!</font>
+
+You have completed the fifth episode in the Deadly Rooms of Death, King Dugan's Dungeon Lite series. We sincerely hope you have found this experience enjoyable.
+Now that you have descended the final flight of stairs available in this set, you may want to try to Master, and then Post-Master, this game!  To do this, go hunt for secret rooms. The number of secret rooms left on each level is now displayed on the Restore Screen.
+Once you manage to conquer them all, a special Mastery Area will be opened. Can you find out how to access it?
+You may also wish to play the next episode in the DROD:KDDL series.
+
+Before we leave you to bask in your feeling of utter glory, we'd like to thank a couple of people, who made it possible for you to play this game:
+
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - The creator, father and inventor of DROD. Without him, this unique game idea would have never seen the light of day.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - He coded most of DROD: JtRH and DROD: TCB singlehandedly. Thanks to the splendid codebase, making Flash DROD was pure pleasure.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Overlord of the Caravel Forum and lead coder of CaravelNet. Thanks to him, you can battle for high scores, and so much more!
+
+
+<font size=""23"" color=""#FFFF00"">Programming, Development</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Art & Music</font> - %% (minor)
+
+<font size=""23"" color=""#FFFF00"">Server-side development</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Hold architects</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Primary Testers</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testers</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Translations</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Voice Talents</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Original Coding, Idea & Levels</font> - %%
+
+
+See you next time!
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+en.kdd6.txt,entr_21,"""I hope this next one doesn't have many critters.  The hands are starting to blister from all this hacking."" -Beethro"
+en.kdd6.txt,entr_22,"Question: You are starving to death, with no hope to find food in time.  But you do have a mimic potion.  Would you make a mimic, kill the mimic, and eat an exact copy of yourself to survive?
+
+These are the kinds of questions a dungeon exterminator must answer every working day of his life."
+en.kdd6.txt,entr_23,"You're probably the sort that uses people when it's convenient, and gets rid of them afterward.
+
+I bet you are.
+
+We'll see!"
+en.kdd6.txt,entr_24,"""Wow, I didn't expect to find a whole city down here.  Good deal!  Maybe they've got a restroom somewhere."" -Beethro"
+en.kdd6.txt,entr_25,"""There better not be more than 25 levels to this place. That's plenty big enough, and all I'm down for in the contract,"" said Beethro as he arrived on the final level of Dugan's Dungeon.  Just a short distance in front of him was a small man holding a mallet.
+
+Beethro called out, ""Hey there, little buddy! How'd you end up so deep below?""
+The man shook his mallet angrily and raced off.
+
+""Hold up! I want to talk to you!"" But he didn't stop."
+en.kdd6.txt,entr_master,"Beethro descended the stairs only to find himself in an uncharted corridor...
+
+He won't get paid for clean-up here, but his professional honor urges him onward."
+en.kdd6.txt,entr_master_back,Beethro came back to finish the proper smiting business he was hired to do.
+en.kdd6.txt,achName0,Obsessive Compulsive
+en.kdd6.txt,achName1,To the Heart of the Matter
+en.kdd6.txt,achName2,Spare the Innocents
+en.kdd6.txt,achName3,Sterilization
+en.kdd6.txt,achName4b,Aim North!
+en.kdd6.txt,achName4,Straight Ways
+en.kdd6.txt,achName5,Eastern Solutions
+en.kdd6.txt,achName9,Straight Man
+en.kdd6.txt,achName6,I Can Do It Myself Mommy!
+en.kdd6.txt,achName7,Traps first
+en.kdd6.txt,achName8,Not Thirsty
+en.kdd6.txt,achName10,Straight For The Top
+en.kdd6.txt,achName11,Swine before Pearls
+en.kdd6.txt,achName12,Pearls before Swine
+en.kdd6.txt,achName13,Raw Stupidity
+en.kdd6.txt,achName14,Patient Execution
+en.kdd6.txt,achName15,Slithering Eliminatation
+en.kdd6.txt,achName16,"Run Beethro, Run!"
+en.kdd6.txt,achName16b,Aim for the Eyes
+en.kdd6.txt,achName17,Amateur Delver
+en.kdd6.txt,achName18,Fledgling Smiter
+en.kdd6.txt,achName19,Contract Exterminator
+en.kdd6.txt,achName20,"I'm a Professional!"
+en.kdd6.txt,achName21,Mastery
+en.kdd6.txt,achName22,Post-mastery
+en.kdd6.txt,achName23,Roach Cake
+en.kdd6.txt,achName24,Queen Dish
+en.kdd6.txt,achName25,Eggs without Bacon
+en.kdd6.txt,achName26,Eyes with Evil Sauce
+en.kdd6.txt,achName27,Goblin Cheeks
+en.kdd6.txt,achName28,Tar Paste
+en.kdd6.txt,achName29,Snake Rations
+en.kdd6.txt,achName30,Dried Brains
+en.kdd6.txt,achName31,Tuning Fork
+en.kdd6.txt,achName32,Lowering Green
+en.kdd6.txt,achName33,Peace Maker
+en.kdd6.txt,achName34,Again and Again and Again and...
+en.kdd6.txt,achName35,Chronomancer
+en.kdd6.txt,achName36,Stairway to Hell
+en.kdd6.txt,achName37,Marathon
+en.kdd6.txt,achDesc0,"17th Level 1N1W: Clear all tar, drop all trapdoors, conquer the room and leave north"
+en.kdd6.txt,achDesc1,17th Level 1N1W: Conquer the room allowing at most one tar growth to occur
+en.kdd6.txt,achDesc2,17th Level 2S1E: Kill the tar mother before killing any tar baby
+en.kdd6.txt,achDesc3,17th Level 1S2E: Kill the serpent before any tar baby appears in the room
+en.kdd6.txt,achDesc4b,18th Level 1N: Conquer the room without turning your sword
+en.kdd6.txt,achDesc4,18th Level 2N1E: Conquer the room without moving diagonally
+en.kdd6.txt,achDesc5,18th Level 1N2E: Conquer the room when entering from the east entrance and without turning your sword
+en.kdd6.txt,achDesc6,18th Level 1E: Use the goblin in only one of the serpent chambers and conquer the room
+en.kdd6.txt,achDesc7,18th Level 1E: Drop all trapdoors before any serpent dies and conquer the room
+en.kdd6.txt,achDesc8,18th Level 1N1E: Conquer the room without drinking the mimic potion
+en.kdd6.txt,achDesc14,"20th Level Entrance: Don't turn your sword after you kill first monster and conquer the room"
+en.kdd6.txt,achDesc10,20th Level 1N: Kill the brain before killing any roach queen
+en.kdd6.txt,achDesc11,20th Level 3N1W: Kill all brains before killing any goblin
+en.kdd6.txt,achDesc13,20th Level 3N: Kill all brains before killing any roach queen
+en.kdd6.txt,achDesc15,20th Level 2N2W: Kill all serpents before killing any roach queen
+en.kdd6.txt,achDesc16,20th Level 1N2W: Kill the serpent last
+en.kdd6.txt,achDesc16b,20th Level 2N1W: Kill all evil eyes before killing any roach queen
+en.kdd6.txt,achDesc17,Clear Seventeenth Level
+en.kdd6.txt,achDesc18,Clear Eighteenth Level
+en.kdd6.txt,achDesc19,Clear Nineteenth Level
+en.kdd6.txt,achDesc20,Clear Twentieth Level
+en.kdd6.txt,achDesc21,Master the hold
+en.kdd6.txt,achDesc22,Post-master the hold
+en.kdd6.txt,achDesc23,Kill 200 roaches
+en.kdd6.txt,achDesc24,Kill 20 roach queens
+en.kdd6.txt,achDesc25,Kill 15 roach eggs
+en.kdd6.txt,achDesc26,Kill 45 evil eyes
+en.kdd6.txt,achDesc27,Kill 20 goblins
+en.kdd6.txt,achDesc28,Kill 201 tar babies
+en.kdd6.txt,achDesc29,Kill 20 serpents
+en.kdd6.txt,achDesc30,Kill 10 brains
+en.kdd6.txt,achDesc31,Strike an orb for three consecutive turns
+en.kdd6.txt,achDesc32,Lower a green gate 15 times
+en.kdd6.txt,achDesc33,Kill a total of 5000 monsters
+en.kdd6.txt,achDesc34,Die a total of 103 times
+en.kdd6.txt,achDesc35,Undo a total of 550 moves
+en.kdd6.txt,achDesc36,Drop a total of 121 trapdoors
+en.kdd6.txt,achDesc37,Take a total of 5000 steps
+en.kdd6.txt,sc_24_entr_1,"Welcome to the subterranean town of Neatherville. The locals are always glad to have visitors.
+
+-Neatherville Board of Tourism"
+en.kdd6.txt,sc_25_2s2w_1,"Are you still alive?
+
+I must be talking to much.
+
+I'm not going to let any more secrets slip!"
+en.kdd6.txt,sc_mast_ent_1,Original Puzzles
+en.kdd6.txt,sc_mast_ent_2,Harder versions of existing puzzles
+en.kdd6.txt,scM1s1,You have achieved quite a feat!
+en.kdd6.txt,scM1s2,Did you enjoy the game? Have you acquired all of the achievements?
+en.kdd6.txt,scM1s3,"Feel free to visit CaravelGames.com to play more episodes of KDDL, or to download any of the full DROD games for Windows, MacOS, or Linux."
+en.kdd6.txt,scM1s4,Rock on!
+en.kdd6.txt,scM1s5,Here is a small reward! Kill all the enemies without stepping on the brown grass
+en.kdd6.txt,scM1s6,The two corner roach queens will be killed once you step on the checkpoint in the far-right corner.
+en.kdd6.txt,scM1s7,Awesome!
+en.kdd6.txt,sc_21_1n1w_1,"Let's get this party started!"
+en.kdd6.txt,sc_21_1n1w_2,"Brains, you're gonna wish you could run!"
+en.kdd6.txt,sc_21_2s_1,"Now... Should I take out the brain first, or watch my back?"
+en.kdd6.txt,sp_22_2n_1,"Well, it's settled... I gotta be more careful what I hope for."
+en.kdd6.txt,sp_22_entr_1,"I hope there aren't any brains on this level!"
+en.kdd6.txt,sp_23_entr_1,"Twenty-three levels... I gotta be near the end, I just gotta!"
+en.kdd6.txt,sp_24_entr_1,"So there's an entire monster city down here!"
+en.kdd6.txt,sp_24_3n_1,This tiled floor gives me a case of the scarbs.
+en.kdd6.txt,sp_24_3n_2,"If I never see this room again for as long as I live, it'll be too soon!"
+en.kdd6.txt,sp_25_entr_1,"You'll never catch me, exterminator!"
+en.kdd6.txt,sp_25_1n_1,"Ha! You'll have to get by my roaches first!"
+en.kdd6.txt,sp_25_1n_2,"Get him, boys!"
+en.kdd6.txt,sp_25_1n_3,"I guess I'll have to come up with something more difficult."
+en.kdd6.txt,sp_25_1n1w_1,"Flaming fegundo! Brain, go get him!!!"
+en.kdd6.txt,sp_25_1n1w_2,???
+en.kdd6.txt,sp_25_1n1w_3,Stupid brain.
+en.kdd6.txt,sp_25_1n1w_4,CHARGE!
+en.kdd6.txt,sp_25_1n1w_5,"Finish him, my drones!"
+en.kdd6.txt,sp_25_1n2w_1,"I don't want you to go that way."
+en.kdd6.txt,sp_25_1n2w_2,Surround him!
+en.kdd6.txt,sp_25_1n2w_3,"Pssst! Come here! I've got something to show you."
+en.kdd6.txt,sp_25_1n2w_4,"Ah, the ever-gullible delver walks right into my trap... as expected"
+en.kdd6.txt,sp_25_1n2w_5,"I'll just sneak through the other side."
+en.kdd6.txt,sp_25_1n2w_6,"I'll lock the door behind me so he can't follow."
+en.kdd6.txt,sp_25_2w_1,"My roach queens may have failed, but my goblins will make sure you don't leave this room alive."
+en.kdd6.txt,sp_25_2w_2,Stay out of here!
+en.kdd6.txt,sp_25_2w_3,"Ha! You can't get me in here. I can wait until you go away."
+en.kdd6.txt,sp_25_1s2w_1,"Tar Mother, EXPAND!"
+en.kdd6.txt,sp_25_1s2w_2,You killed a poor defenseless mother??!!?
+en.kdd6.txt,sp_25_1s1w_1,"You'll never catch me!"
+en.kdd6.txt,outro,"Those brains were a real pain but Beethro, being a professional smitemaster, can handle anything without breaking a sweat. But what about this strange feeling that something much scarier lurks ahead of him?
+
+
+<font size=""32"" color=""#FFFF00"">Congratulations!</font>
+
+You have completed the fifth episode in the Deadly Rooms of Death, King Dugan's Dungeon Lite series. We sincerely hope you have found this experience enjoyable.
+Now that you have descended the final flight of stairs available in this set, you may want to try to Master, and then Post-Master, this game!  To do this, go hunt for secret rooms. The number of secret rooms left on each level is now displayed on the Restore Screen.
+Once you manage to conquer them all, a special Mastery Area will be opened. Can you find out how to access it?
+You may also wish to play the next episode in the DROD:KDDL series.
+
+Before we leave you to bask in your feeling of utter glory, we'd like to thank a couple of people, who made it possible for you to play this game:
+
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - The creator, father and inventor of DROD. Without him, this unique game idea would have never seen the light of day.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - He coded most of DROD: JtRH and DROD: TCB singlehandedly. Thanks to the splendid codebase, making Flash DROD was pure pleasure.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Overlord of the Caravel Forum and lead coder of CaravelNet. Thanks to him, you can battle for high scores, and so much more!
+
+
+<font size=""23"" color=""#FFFF00"">Programming, Development</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Art & Music</font> - %% (minor)
+
+<font size=""23"" color=""#FFFF00"">Server-side development</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Hold architects</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Primary Testers</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testers</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Translations</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Voice Talents</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Original Coding, Idea & Levels</font> - %%
+
+
+See you next time!
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+en.kdd6.txt,complNextGame,"Play the final level set, KDD Lite 6. This will open in a new window, and you can safely close this window now. Your progress has been saved."
+en.txt,key8,Backspace
+en.txt,key9,Tab
+en.txt,key13,Enter
+en.txt,key16,Shift
+en.txt,key17,Control
+en.txt,key18,Alt
+en.txt,key19,Pause/Brk
+en.txt,key20,Caps Lock
+en.txt,key27,Escape
+en.txt,key32,Space
+en.txt,key33,Page Up
+en.txt,key34,Page Down
+en.txt,key35,End
+en.txt,key36,Home
+en.txt,key37,Left
+en.txt,key38,Up
+en.txt,key39,Right
+en.txt,key40,Down
+en.txt,key45,Insert
+en.txt,key46,Delete
+en.txt,key48,0
+en.txt,key49,1
+en.txt,key50,2
+en.txt,key51,3
+en.txt,key52,4
+en.txt,key53,5
+en.txt,key54,6
+en.txt,key55,7
+en.txt,key56,8
+en.txt,key57,9
+en.txt,key65,A
+en.txt,key66,B
+en.txt,key67,C
+en.txt,key68,D
+en.txt,key69,E
+en.txt,key70,F
+en.txt,key71,G
+en.txt,key72,H
+en.txt,key73,I
+en.txt,key74,J
+en.txt,key75,K
+en.txt,key76,L
+en.txt,key77,M
+en.txt,key78,N
+en.txt,key79,O
+en.txt,key80,P
+en.txt,key81,Q
+en.txt,key82,R
+en.txt,key83,S
+en.txt,key84,T
+en.txt,key85,U
+en.txt,key86,V
+en.txt,key87,W
+en.txt,key88,X
+en.txt,key89,Y
+en.txt,key90,Z
+en.txt,key91,L.Win/Cmd
+en.txt,key92,R.Win
+en.txt,key93,Menu
+en.txt,key96,Numpad 0
+en.txt,key97,Numpad 1
+en.txt,key98,Numpad 2
+en.txt,key99,Numpad 3
+en.txt,key100,Numpad 4
+en.txt,key101,Numpad 5
+en.txt,key102,Numpad 6
+en.txt,key103,Numpad 7
+en.txt,key104,Numpad 8
+en.txt,key105,Numpad 9
+en.txt,key106,Numpad *
+en.txt,key107,Numpad +
+en.txt,key109,Numpad -
+en.txt,key110,Numpad .
+en.txt,key111,Numpad /
+en.txt,key112,F1
+en.txt,key113,F2
+en.txt,key114,F3
+en.txt,key115,F4
+en.txt,key116,F5
+en.txt,key117,F6
+en.txt,key118,F7
+en.txt,key119,F8
+en.txt,key120,F9
+en.txt,key121,F10
+en.txt,key122,F11
+en.txt,key123,F12
+en.txt,key124,F13
+en.txt,key125,F14
+en.txt,key126,F15
+en.txt,key144,Numlock
+en.txt,key145,Scroll Lock
+en.txt,key186,;
+en.txt,key187,=
+en.txt,key188,","
+en.txt,key189,-
+en.txt,key190,.
+en.txt,key191,/
+en.txt,key192,~
+en.txt,key219,[
+en.txt,key220,\
+en.txt,key221,]
+en.txt,key222,"'"
+en.txt,keyUp,Move North
+en.txt,keyUpLeft,Move Northwest
+en.txt,keyUpRight,Move Northeast
+en.txt,keyLeft,Move West
+en.txt,keyRight,Move East
+en.txt,keyDown,Move South
+en.txt,keyDownLeft,Move Southwest
+en.txt,keyDownRight,Move Southeast
+en.txt,keyWait,Wait for One Turn
+en.txt,keyCW,Turn Clockwise
+en.txt,keyCCW,Turn Counter-clockwise
+en.txt,keyUndo,Undo Last Move
+en.txt,keyRestart,Restart Room
+en.txt,keyBattle,Battle Key
+en.txt,keyLock,Lock/Unlock Room
+en.txt,close,Close
+en.txt,cnetError,"Connection failed.
+This might be caused by invalid credentials, a faulty internet connection or temporary server problems. CaravelNet functions have been disabled. To restore them, go to the options screen, update your credentials if necessary, and hit ""Connect!"""
+en.txt,prlStartGame,Start Game
+en.txt,prlLanguage,Change Language
+en.txt,prlLoading,Loading: %% %
+en.txt,prlWaitApi,Waiting for an API to connect...
+en.txt,initAssets,Initializing assets %% / %%
+en.txt,tsStartNew,Start New Game
+en.txt,tsStartNewKey,S
+en.txt,tsStartNewKeyCode,83
+en.txt,tsContinue,Continue Playing
+en.txt,tsContinueKey,P
+en.txt,tsContinueKeyCode,80
+en.txt,tsRestore,Restore To a Different Room
+en.txt,tsRestoreKey,R
+en.txt,tsRestoreKeyCode,82
+en.txt,tsAchievements,View Achievements
+en.txt,tsAchievementsKey,A
+en.txt,tsAchievementsKeyCode,65
+en.txt,tsOptions,Options
+en.txt,tsOptionsKey,O
+en.txt,tsOptionsKeyCode,79
+en.txt,tsHelp,Help and Backstory
+en.txt,tsHelpKey,H
+en.txt,tsHelpKeyCode,72
+en.txt,tsBrowse,Browse Holds
+en.txt,tsBrowseKey,B
+en.txt,tsBrowseKeyCode,66
+en.txt,optHeader,Options:
+en.txt,optUploadAll,Upload All Scores
+en.txt,optConnect,Connect!
+en.txt,optRedefine,Redefine Keys
+en.txt,optCnetHeader,CaravelNet Credentials
+en.txt,optCnetUser,CaravelNet Name
+en.txt,optCnetKey,CaravelNet Key
+en.txt,optCnetVolume,Volume
+en.txt,optCnetMusic,Music
+en.txt,optCnetSound,Effects
+en.txt,optCnetVoices,Voices
+en.txt,optMoveAnim,Movement animation
+en.txt,optMoveSmooth,Smooth
+en.txt,opyMoveFast,Fast
+en.txt,uploadAll,Uploading all scores
+en.txt,uploadDone,Done!
+en.txt,uploadError,Error! Please connect and try again!
+en.txt,uploadAlreadyHas,Already uploaded
+en.txt,uploadRoomEntrance,Entrance
+en.txt,cnetHeader,"Get more information about 	or purchase a CaravelNet subscription.
+	Opens in a new window."
+en.txt,cnetDescription,Users who subscribe to CaravelNet can fill in their information here to participate in online leaderboards. Each room is scored for least number of moves used to complete it. If you do not fill in these details you will only be notified what place your score would have attained. You can later submit all your scores via the Upload All Scores button.
+en.txt,redefineScreen,"You are changing mapping for ""%%""
+Press desired key (now: %%)
+Hit Escape to cancel"
+en.txt,redefineInvalidKey,"%% is reserved for other functions
+Press desired key
+Hit escape to cancel"
+en.txt,redefineReservedKey,"%% is reserved for an alternate movement set
+Press a different key
+Hit escape to cancel"
+en.txt,abButCnet,About CaravelNet
+en.txt,abButHowto,How to Play
+en.txt,abButHistory,DROD History
+en.txt,abButBackstory,Backstory
+en.txt,abButCredits,Credits
+en.txt,h&bTextWidth,450
+en.txt,h&bText,"  DROD was conceived by Erik Hermansen back in the '90s. It is largely known as a puzzle game in which you run around rooms in a dungeon, slaying monsters with a Really Big Sword. How does this work?  You will see for yourself as soon as you get around to playing the game.
+
+  Flash DROD is a port of the original DROD game. It uses the media found in the newer DROD game engines that you can download to play on your computer from CaravelGames.com.
+
+  Thanks to integrated CaravelNet capabilities, besides just completing the puzzles, players can compete with each other for high scores by completing each room in the fewest moves possible."
+en.txt,creditsWidth,620
+en.txt,credits,"<font size=""20"">Programming, Development: </font><font color=""#444444"">Maurycy Zarzycki</font>
+<font size=""20"">Art & Music: </font><font color=""#444444"">Erik Hermansen, Maurycy Zarzycki</font>
+<font size=""20"">Server-side development: </font><font color=""#444444"">Matt Schikore</font>
+<font size=""20"">Level Development: </font><font color=""#444444"">Jacob Grinfeld, Larrymurk, Tom Brouws</font>
+<font size=""20"">Primary Testers: </font><font color=""#444444"">Adrienne E. Siskind, Jason Mayeaux</font>
+<font size=""20"">Testers: </font><font color=""#444444"">Sam Benner, Tom Brouws, Jacob Grinfeld, Logan West, George Wanfried (Chaco), 12th Archivist, DiMono, Dischorran, Jatopian, Neather2, Panther, Pearls, Snacko, N. K. Tiitto, Tim</font>
+<font size=""20"">Translations: </font><font color=""#444444"">Bombadil (es), Damien Poussier (fr), DyRsOfDh14 (es), Martin Coors (de), Guilherme Töws (pt), Jutt (nl), Pekka (fi), Robin Knabe (nl), The Architest (fi), Xander Deubelbeiss (de)</font>
+<font size=""20"">Voice Talents: </font><font color=""#444444"">Sten Ryanson, Johannah West, Logan West</font>
+<font size=""20"">Original Coding, Idea & Levels: </font><font color=""#444444"">Mike Rimer, Erik Hermansen, Lucas Swineford</font>"
+en.txt,controlsWindowWidth,650
+en.txt,controlsWindow,"<font size=""18"">`Numpad` and `789 UIO JKL`</font><font color=""#444444""> - Move around</font>
+<font size=""18"">`Q` and `W` </font><font color=""#444444""> - Rotate your sword</font>
+<font size=""18"">`Backspace` </font><font color=""#444444"">- Undo last move</font>
+<font size=""18"">`R' </font><font color=""#444444"">- Go back to last checkpoint or restart</font>
+<font size=""18"">`Shift+R` </font><font color=""#444444"">- Restart the room</font>
+<font size=""18"">`Escape` </font><font color=""#444444"">- Pause menu</font>
+<font size=""18"">`Enter` </font><font color=""#444444"">- Level and room score</font>
+<font size=""18"">`X` </font><font color=""#444444"">- Toggle room lock</font>
+<font size=""18"">`Space` </font><font color=""#444444"">- Clear speech and achievements from the screen</font>
+<font size=""18"">`F3` </font><font color=""#444444"">- Display move count</font>
+<font size=""18"">`Shift+Key` </font><font color=""#444444"">- Do the action and its opposite</font>
+<font size=""18"">`Shift+Wait` </font><font color=""#444444"">- Wait until next spawn turn</font>
+<font size=""18"">`Mouse click` </font><font color=""#444444"">- Show info about clicked tile</font>
+
+  Your objective is to clear each level of King Dugan's Dungeon of monsters. This feat can be accomplished using only your Really Big Sword™ and your wits. Each room is a separate area that has to be cleared in a single session. Should you leave a room without completely clearing it, it will be restored to its initial state when you return."
+en.txt,cnetInfoWidth,500
+en.txt,cnetInfo,"  CaravelNet allows users from all over the world to compete for the best scores.
+
+  Everyone can submit their scores anonymously to see how they compare to other players. However, anonymous scores are not stored on the Caravel server and are only for informational purposes. Every registered Caravel forum user's scores are stored for two weeks after submission without any fee. Those with a CaravelNet subscription will never have their scores removed.
+
+  Please note that, as long as your progress is not deleted from your disk, you can choose to submit all of your scores to the server after you have registered a Caravel account.
+
+  To register with Caravel, please visit CaravelGames.com and create a forum user account!"
+en.txt,backstory1,"  Beethro Budkin strolled into the Grand Dining Chamber where King Dugan was finishing his massive morning meal.
+
+  ""Away, foul commoner! You disrupt my digestion with your poor hygiene!"" bellowed the King, with bits of pork and potatoes erupting from his mouth.
+
+  ""But sir,"" protested Beethro, ""you sent for me.""
+
+  The expression on the King's large face changed from anger to confusion to recognition to geniality in the space of two seconds.
+
+  ""I really should have had you come in sooner,"" said King Dugan. ""It's unbelievable! You let your guards eat their meals down in the dungeon, they spread crumbs all over the place, and all of a sudden the place is just swarming with giant cockroaches, not to mention goblins, serpents, evil eyes, and other nasty things. It's really gotten out of hand.""
+
+  Beethro straightened with pride. ""Not to fear. I am a trained professional from a long line of dungeon exterminators. I combine five generations of passed-down knowledge with the most state-of-the-art equipment to offer efficient extermination service at an affordable price.""
+
+  ""What kind of equipment do you use?""
+
+  ""I've got a really big sword."""
+en.txt,backstory2,"  ""Good! When can you start?""
+
+  ""As soon as we handle the details of payment. Here are my standard extermination fees. Just sign at the bottom."" Beethro handed a contract to the King.
+
+  ""These prices are outrageous! Is the privilege of honorable service to the Crown worth nothing these days?""
+
+  ""I can leave.""
+
+  ""No, no, no. We need that dungeon cleared so that the prisoners can receive their torture in a clean and safe environment.""
+
+  ""Well, I'll give you a discount if you'll throw in a princess.""
+
+  ""You're ugly and you smell bad. None of my daughters will have you!""
+
+  Beethro shrugged. ""Fair enough.""
+
+  The King signed at the bottom of the contract. ""Right then. Let me show you to the entrance."""
+en.txt,backstory3,"  As he descended, Beethro reflected on the job he had taken. Dugan's Dungeon was exceptionally large and, going by the reports of past exterminators, ridiculously well suited to infestation. It had also been secretly expanded several times, to the dismay of the first person to clear it out, whose contract hadn't covered the possibility. (He'd only gotten paid for the parts he'd known about.)
+
+  Some said sinister forces were behind the expansion. The legend went that a king of past grew tired of his annoying young son and jokingly suggested that the lad go play in the castle dungeons. Taking his father seriously, the boy wandered deep into the dungeon chambers and was never found again. It was said that he did not perish, but lived the rest of his life in the dungeons by preference; that becoming a master of his new habitat, he learned all of the secrets of the underground world and formed alliances with the monsters that dwelt there, setting them to work creating new passageways and breeding better specimens of monster. He named himself the 'Neather, and schemed to rise from the dungeons to claim the throne when his powers were able."
+en.txt,backstory4,"  Beethro wasn't sure about all that. For starters, the royal throne wasn't what it had been, now that its power was mostly transferred to a parliament. Never mind the question of who would want to live underground, or how they'd befriend the creatures there, who weren't great conversationalists. But it was true that dungeons tended to be unnecessarily complicated and easily infested, and even sometimes grow without warning - no Dungeon Architect would say why, as a matter of honor - and this more than anything was what kept men like Beethro in work.
+
+  Anyway, an exterminator had plenty of more practical concerns, like the prolific and man-sized dungeon roach. The important thing in Beethro's mind was that he ought to make enough money and dead monsters on this job to finally retire from this thankless trade and open a restaurant.
+
+  ""I'll call it 'Beethro's Roasted Roach Grill'!"""
+en.txt,backstory1width,550
+en.txt,backstory2width,550
+en.txt,backstory3width,550
+en.txt,backstory4width,550
+en.txt,backstoryNext,Next
+en.txt,backstoryPrev,Prev
+en.txt,drodHistoryWidth,650
+en.txt,drodHistory,"  ""Deadly Rooms of Death"" (DROD) was first created by Erik Hermansen in the '90s. The game was released by Webfoot and is known as `Webfoot DROD`, though this game is no longer on sale and can't be legally distributed or obtained. Luckily, Erik was allowed to redevelop the game on his own and so `Caravel DROD` was born in 2002.
+
+  Then, in 2003, ""DROD: Architect's Edition"" was released, featuring a level editor that allowed everyone to create their own `holds` (level sets) and share them publicly on the CaravelGames forum. The game garnered a large fanbase and a plan to create another game was conceived.
+
+  On April 1, 2005, ""DROD: Journey to Rooted Hold"" was released! The list of new features added was amazing. It featured new graphics, in-game scripting, over a dozen new game elements, a captivating story and an antagonist whose voice sent chills down everyone's spine.
+
+  Exactly two years later ""DROD: The City Beneath"" saw the light of the day. That day set a record for the most active users on the Caravel Forum at one time. TCB featured even more new elements and improvements over JtRH, and an increased difficulty level.
+
+  In 2008, ""DROD RPG"" came out. Though not as popular as the mainstream titles, it was still a shining gem. The big difference was that the game was a resource-managing multi-room strategic challenge. Each monster had stats and you had to calculate what monsters could be defeated at a given moment, plan where to go next, which resources to collect, and when and how to get them.
+
+  ""DROD 4: Gunthro and the Epic Blunder"" is the latest installment, released on the 1st of April 2012. This game is aimed at new players, and is much more beginner-friendly because of easier puzzles, more intuitive tutorials and more obvious hub levels."
+en.txt,rstHeader,Restore Game
+en.txt,rstToRoom,Restore to this room
+en.txt,rstReturn,Return to title screen
+en.txt,rstSecrets,Secrets done: %% / %%
+en.txt,roomLocked,You have locked room exiting. Press %% again to unlock.
+en.txt,ingLevelCompleted,Level Completed
+en.txt,ingSecretFound,Secret Found
+en.txt,ingHoldMastered,Hold Mastered
+en.txt,achievementHeader,Achievement!
+en.txt,achievementDismiss,Click or Space to dismiss
+en.txt,achlistHeader,Achievements:
+en.txt,browseHeader,Browse released Flash DROD Holds
+en.txt,browseOpen,Open in a new window
+en.txt,scrStats,Player stats
+en.txt,scrYourBest,Your best score:
+en.txt,scrTop,Top scores for room:
+en.txt,scrNoScore,None!
+en.txt,scrFetching,Fetching...
+en.txt,scrOnlyForCnet,"Room scores are only available for CaravelNet subscribers and Caravelgames forumites.
+
+It seems you haven't filled your CaravelNet account details yet. Creating a caravelgames account will allow you to compete against other players from around the world and track the scores for each room."
+en.txt,scrMovesRoom,Moves in room: %%
+en.txt,scrMovesLevel,Level moves: %%
+en.txt,scrDeaths,Level deaths: %%
+en.txt,scrKills,Level kills: %%
+en.txt,scrTime,Level time: %%
+en.txt,scrNoScores,No scores for this room yet.
+en.txt,scrCnetProblems,"CaravelNet functions are disabled due to problems with your connection.
+
+First make sure that your internet connection is working and that you have entered valid CaravelNet credentials. Afterwards go to the options screen and hit ""Connect!"""
+en.txt,loginConnected,"  You are now connected to CaravelNet as a registered user!
+
+  If you have only created a forum account but not subscribed to CaravelNet, your scores will be deleted after two weeks from the day they are uploaded.
+
+  Scores uploaded by CaravelNet subscribers are permanent."
+en.txt,loginConnectedAnonymous,"  You are now connected to CaravelNet as anonymous user. You can submit your scores to know what place in the leaderboard you'd have gotten but the score is not stored on the server. To make your submissions persistent you have to create a Caravelgames account (accessible from the options screen).
+  If you later decide to create an account, use the ""Upload your Scores"" button to upload all your progress to our servers."
+en.txt,loginFailed,"  Failed to connect!.
+
+1. Check if you are connected to the internet.
+2. Make sure your firewall is not blocking this game.
+3. Visit http://forum.caravelgames.com to see if the server even loads. If not wait a couple of minutes and try again.
+"
+en.txt,loginFailedBadCredentials,4. Check to see if the credentials you have entered are correct.
+en.txt,loginFailedMissingCrentials,4. Make sure you have entered a valid username and CarevelNet key.
+en.txt,pauseHeader,DROD is now paused
+en.txt,pauseContinue,Continue playing
+en.txt,pauseContinueTip,"Continue playing.
+(Escape, Enter)"
+en.txt,pauseRestart,Restart room
+en.txt,pauseRestartTip,"Restart current room.
+(In-game: F5)."
+en.txt,pauseRoomHelp,Get help for current room
+en.txt,pauseRoomHelpTip,"Get online help for currently played room.
+(In-game: F2)"
+en.txt,pauseHelp,Get general help
+en.txt,pauseHelpTip,"Open up general help window.
+(In-game: F1)"
+en.txt,pauseAchievements,View achievements
+en.txt,pauseAchievementsTip,"Show a list of all achievements.
+(Ingame: Tab)"
+en.txt,pauseOptions,Options
+en.txt,pauseOptionsTip,Allows you to change some settings.
+en.txt,pauseReturn,Return to title screen
+en.txt,pauseReturnTip,"Game progress is saved,
+but the current room's progress will
+be lost if you quit the game."
+en.txt,achHidden,???
+en.txt,levelCreatedDate,Created %%.%%.%%
+en.txt,score1NoTie,First Place!!
+en.txt,score1,1st place
+en.txt,score2,2nd place
+en.txt,score3,3rd place
+en.txt,score4,4th place
+en.txt,score5,5th place
+en.txt,score6,6th place
+en.txt,score7,7th place
+en.txt,score8,8th place
+en.txt,score9,9th place
+en.txt,score10,10th place
+en.txt,score11,11th place
+en.txt,score12,12th place
+en.txt,score13,13th place
+en.txt,score14,14th place
+en.txt,score15,15th place
+en.txt,score16,16th place
+en.txt,score17,17th place
+en.txt,score18,18th place
+en.txt,score19,19th place
+en.txt,score20,20th place
+en.txt,score21,21st place
+en.txt,score22,22nd place
+en.txt,score23,23rd place
+en.txt,score24,24th place
+en.txt,score25,25th place
+en.txt,scoreTie,%% tie!
+en.txt,scoreNoCnet,(anonymous)
+en.txt,resultHoldTotals,"Hold Totals:
+"
+en.txt,resultLevelTotals,"Level Totals:
+"
+en.txt,resultMoves,"Moves: %%
+"
+en.txt,resultKills,"Kills: %%
+"
+en.txt,resultDeaths,"Deaths: %%
+"
+en.txt,resultTime,"Time: %%
+"
+en.txt,resultSecrets,"Secrets found: %%
+"
+en.txt,resultSecretsBetter,"Secrets found: %% / %%
+"
+en.txt,spawnCycle,Spawn cycle:
+en.txt,snakesPrefer,Snakes prefer:
+en.txt,clcHo,HO
+en.txt,clcRiz,RIZ
+en.txt,clcOn,ON
+en.txt,clcTal,TAL
+en.txt,clcVe,VE
+en.txt,clcRt,RT
+en.txt,clcIc,IC
+en.txt,clcAl,AL
+en.txt,tile1,Floor
+en.txt,tile2,Pit
+en.txt,tile3,Stairs Down
+en.txt,tile4,Wall
+en.txt,tile5,Broken Wall
+en.txt,tile6,Level Clear Gate
+en.txt,tile7,Room Clear Gate
+en.txt,tile8,Trapdoor Gate
+en.txt,tile9,Yellow Door
+en.txt,tile10,Yellow Door (Open)
+en.txt,tile11,Trapdoor
+en.txt,tile12,Obstacle
+en.txt,tile13,Force Arrow (North)
+en.txt,tile14,Force Arrow (Northeast)
+en.txt,tile15,Force Arrow (East)
+en.txt,tile16,Force Arrow (Southeast)
+en.txt,tile17,Force Arrow (South)
+en.txt,tile18,Force Arrow (Southwest)
+en.txt,tile19,Force Arrow (West)
+en.txt,tile20,Force Arrow (Northwest)
+en.txt,tile21,Invisibility Potion
+en.txt,tile22,Mimic Potion
+en.txt,tile23,Scroll
+en.txt,tile24,Orb
+en.txt,tile35,Tar
+en.txt,tile37,Tarstuff Gate
+en.txt,tile54,Mosaic
+en.txt,tile55,Road
+en.txt,tile56,Grass
+en.txt,tile57,Dirt
+en.txt,tile58,Alternate Floor
+en.txt,tile59,Master Wall
+en.txt,tile61,Stairs Up
+en.txt,tile62,Secret Wall
+en.txt,tile66,Wall
+en.txt,tile68,Room Clear Gate (Open)
+en.txt,tile69,Level Clear Gate (Open)
+en.txt,tile70,Trapdoor Gate (Open)
+en.txt,tile71,Tarstuff Gate (Open)
+en.txt,tileCheckpoint,Checkpoint
+en.txt,monsterPlayer,Player
+en.txt,monster0,Roach
+en.txt,monster1,Roach Queen
+en.txt,monster2,Roach Egg
+en.txt,monster3,Goblin
+en.txt,monster5,Wraithwing
+en.txt,monster6,Evil Eye
+en.txt,monster7,Serpent
+en.txt,monster8,Tar Mother
+en.txt,monster9,Tar Baby
+en.txt,monster10,Brain
+en.txt,monster11,Mimic
+en.txt,monster12,Spider
+en.txt,monster29,Character
+en.txt,sword,Sword
+en.txt,swords,Swords (%%)
+en.txt,roomS,S
+en.txt,roomSouth,South
+en.txt,roomN,N
+en.txt,roomNorth,North
+en.txt,roomE,E
+en.txt,roomEast,East
+en.txt,roomW,W
+en.txt,roomWest,West
+en.txt,roomEntrance,The Entrance
+en.txt,room1,Once
+en.txt,room2,Twice
+en.txt,room3,Thrice
+en.txt,room4,Quarce
+en.txt,room5,Quince
+en.txt,room6,Sence
+en.txt,room7,Septence
+en.txt,room8,Octence
+en.txt,room9,Novence
+en.txt,room10,Tonce
+en.txt,room11,Elevonce
+en.txt,room12,Twolce
+en.txt,room13,Thorce
+en.txt,room14,Quartonce
+en.txt,room15,Quintonce
+en.txt,room16,Sextonce
+en.txt,room17,Septonce
+en.txt,room18,Octonce
+en.txt,room19,Noventonce
+en.txt,roomMore,%% Times
+en.txt,complButtNextGame,Play next set
+en.txt,complButtLearnMore,Learn more
+en.txt,complButtContinue,Continue playing
+en.txt,complHeader,What next?
+en.txt,complLearnMore,"Learn more about the DROD franchise - the world, and the primary games: Journey to Rooted Hold, The City Beneath, Gunthro and the Epic Blunder, and the latest installments in the DROD franchise!"
+en.txt,complContinue,"Continue mastering this hold - find secrets, and gain access to the mastery area. You can find links to the two above options on the Title Screen."

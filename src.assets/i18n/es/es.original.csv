@@ -1,0 +1,1516 @@
+File Name,Old Key,Translation
+es.kdd1.txt,First Level,Primer Nivel
+es.kdd1.txt,Second Level,Segundo Nivel
+es.kdd1.txt,Third Level,Tercer Nivel
+es.kdd1.txt,Fourth Level,Cuarto Nivel
+es.kdd1.txt,Mastery Level,Nivel Maestro
+es.kdd1.txt,entr1,"Beethro Budkin, exterminador de mazmorras profesional de quinta generación, ha sido contratado por el Rey Dugan para limpiar su mazmorra de una gran infestación de monstruos.
+Beethro cobra por cuarto y, como profesional, está obligado por contrato a acabar con todos los monstruos de todos y cada uno de los cuartos en la mazmorra, para poder ser pagado.
+La única arma que Beethro necesita para realizar su trabajo es una Espada Realmente Grande, la cual derrotará casi cualquier monstruo de un solo ataque.
+
+-----
+
+""Espero que no me cobres por el nivel más alto. Eso ya lo he limpiado. Bueno, la mayoría."" -Rey Dugan"
+es.kdd1.txt,entr2,"Beethro está un poco gastado, pero el siguiente nivel deberá dejarlo en buena forma."
+es.kdd1.txt,entr3,"""Hmm..."" pensó Beethro. ""Hasta ahora, solo he visto mayormente cucarachas aquí abajo. Esto será pan comido."""
+es.kdd1.txt,entr4,"""¡Ojalá tuviera más de esas mímicas aquí abajo conmigo!"" dijo Beethro. ""Iría mucho más rápido."""
+es.kdd1.txt,entr4Back,Beethro volvió para terminar el negocio de exterminación apropiado para el que fue contratado.
+es.kdd1.txt,entrMaster,"Beethro descendió por las escaleras, solo para encontrarse en un camino desconocido...
+
+No le pagarán por limpiar aquí, pero su honor de profesional lo impulsa hacia adelante."
+es.kdd1.txt,sc1e0,Usa el teclado numérico o 789uiojkl para moverte. Las teclas pueden ser cambiadas desde el menú de pausa (escape).
+es.kdd1.txt,sc1e1,"Para ver los controles cuando quieras, presiona 'Escape', ve a 'Ver Ayuda General' y luego a 'Cómo Jugar'."
+es.kdd1.txt,sc1_1n,"Esta puerta amarilla servirá más tarde.
+
+ Por ahora solo continúa hacia el oeste."
+es.kdd1.txt,sc1_1n1w1,"Gira tu espada usando 'Q' y 'W'."
+es.kdd1.txt,sc1_1n1w2,Golpea el orbe con tu espada para abrir las puertas del cuarto.
+es.kdd1.txt,sc1_1n1w3,Algunos orbes pueden variar su función entre abrir y cerrar puertas amarillas.
+es.kdd1.txt,sc1_2n1w1,Puedes averiguar qué hace un orbe haciéndole click con el mouse. El orbe se iluminará de un color distinto dependiendo del efecto.
+es.kdd1.txt,sc1_2n1w2,"En lugar de variar las funciones de una puerta amarilla, un orbe puede también solo cerrarla o abrirla."
+es.kdd1.txt,sc1_3n1w1,Las puertas azules se abren una vez que has conquistado todos los cuartos requeridos de un nivel (piso) determinado.
+es.kdd1.txt,sc1_3n1w2,Los cuartos requeridos están marcados con un fondo rojo en el mini-mapa.
+es.kdd1.txt,sc1_3n2w1,Los diálogos y textos pueden ser salteados usando la barra espaciadora.
+es.kdd1.txt,sc1_3n2w2,"Una vez que abandones un cuarto limpio de monstruos, se marcará como conquistado."
+es.kdd1.txt,sc1_3n2w3,"En el mini-mapa, los cuartos conquistados son marcados en blanco a diferencia de los no conquistados, los cuales están en rojo."
+es.kdd1.txt,sc1_3n2w4,Conquista todos los cuartos requeridos para adentrarte al siguiente nivel.
+es.kdd1.txt,sc1_4n3w,Las flechas de fuerza bloquean el movimiento de Beethro y los monstruos hacia su determinado sentido contrario.
+es.kdd1.txt,sc1_4n1w,Las puertas verdes se abren una vez que el cuarto esté libre de monstruos.
+es.kdd1.txt,sc1_5n1w1,"Observa cómo se comporta la cucaracha de al sur cuando intenta moverse hacia una esquina diagonalmente. Para esperar un turno usa ""I"" o Numpad 5."
+es.kdd1.txt,sc1_5n1w2,"La mayoría de los monstruos, cuando intentan moverse hacia una esquina de forma diagonal, se moverán verticalmente cuando les sea posible."
+es.kdd1.txt,sc1_5n2w1,Recuerda que puedes hacerle click a un orbe con el mouse para saber qué puertas afecta.
+es.kdd1.txt,sc1_5n2w2,"¡Cuidado!  Este lugar es peligroso.
+
+Si cometes un error, usa 'Backspace' para deshacer hasta tus 3 últimos movimientos."
+es.kdd1.txt,sc1_5n2w3,¡También puedes deshacer un movimiento (y volver a empezar) cuando estás muriendo!
+es.kdd1.txt,sc1_5n2w4,"Tocando un punto de control 'X' puedes retroceder hasta la última vez que te paraste sobre él.
+Usa 'R' para reiniciar el cuarto o volver al último punto de control que tocaste."
+es.kdd1.txt,sc1_6n2w,¡Un buen espadachín puede derrotar a todas las cucarachas sin usar el rincón del sur para protegerse!
+es.kdd1.txt,sc1_6n3w1,Usa la técnica del ataque lateral para deshacerte de la cucaracha.
+es.kdd1.txt,sc1_6n3w2,Posiciónate sobre el suelo verde y asegúrate de que la cucaracha esté en el suelo de arena directamente al norte de ti...
+es.kdd1.txt,sc1_6n3w3,Posiciónate sobre el suelo verde y asegúrate de que la cucaracha esté en el suelo de arena directamente al sur de ti...
+es.kdd1.txt,sc1_6n3w4,...luego muévete al noreste para matarla.
+es.kdd1.txt,sc1_6n3w5,...luego muévete al sureste para matarla.
+es.kdd1.txt,sc1_6n3w6,"Repite para analizar el ataque lateral. Domina esta técnica, ya que te será crucial en futuros enredos."
+es.kdd1.txt,sc1_5n1,La salida de emergencia está fuera de servicio.
+es.kdd1.txt,sc1_5n2,Lo siento ¡No vamos a terminar la construcción con tantas cucarachas gigantes por ahí!
+es.kdd1.txt,sc1_4n,"Por favor, mantenga cerradas las puertas del invernadero."
+es.kdd1.txt,sc1_1n1e,Estas escaleras llevan al siguiente nivel. Ten cuidado con lo que te encuentres allí...
+es.kdd1.txt,sc2_2n1,¿Sabías que puedes mantener pulsado Shift mientras realizas una acción para también realizar su inversión automáticamente?
+es.kdd1.txt,sc2_2n2,"Shift+Esperar hace que esperes hasta el turno 30 ¡Y con '+' o '=' podrás realizar la inversión de la última acción!"
+es.kdd1.txt,sc2_1n1e,No deberías ser tan destructivo.
+es.kdd1.txt,sc2e,Comienza por los cuartos del norte para evitar regresos redundantes.
+es.kdd1.txt,sc2_1s3e1,"Puedes prevenirte de abandonar un cuarto accidentalmente usando la tecla 'X'."
+es.kdd1.txt,sc2_1s3e2,Un pequeño candado en el mini-mapa indica que un cuarto ha sido bloqueado.
+es.kdd1.txt,sc2_1s,¡No lo hagas! ¡Es obvio lo que pasará!
+es.kdd1.txt,sc2_2s3e,Una buena sincronización hace las cosas mucho más fáciles.
+es.kdd1.txt,sc3_3n,Debo advertirte algo sobre las mímicas. No son tus amigos ni tus enemigos--simplemente les gusta moverse exactamente igual que tú. Nunca les des la espalda.
+es.kdd1.txt,sc3_3n1e,"Todos los prisioneros han sido devorados por cucarachas de mazmorra ¡Y soy el siguiente! No pueden pagarme lo suficiente para realizar este trabajo. ¡Me largo!
+
+-Guardia de la Prisión"
+es.kdd1.txt,sc3_2n,Es posible llegar a este pasillo sin volver a este cuarto luego de ya haberlo conquistado.
+es.kdd1.txt,sc3_1n1w,"Con la poción invisible no pueden verte, pero aún pueden olfatearte si te les acercas demasiado."
+es.kdd1.txt,sc3_1e,Una caminata tan larga. Parece casi innecesaria.
+es.kdd1.txt,sc3_1s,"Las Ocho Puertas de Bill--un acertijo formidable. Solía ser mucho más difícil, pero ahora puedo saber qué hace cada orbe."
+es.kdd1.txt,sc3_2s1w,"Déjame decirte algo--cuando veas largos y laboriosos caminos, intenta buscar atajos."
+es.kdd1.txt,sc3_2s1,"¡Vuelve! ¿Sabías que solamente el año pasado, muertes relacionadas con mazmorras subieron un 32 por ciento?"
+es.kdd1.txt,sc3_2s2,"Enfrenta los hechos--explorar mazmorras NO es seguro, especialmente si es combinado con intoxicantes.
+-PCMM (Padres en Contra de Muertes de Mazmorras)"
+es.kdd1.txt,sc4_2n1e1,Esta es una pared maestra. No se abrirá hasta conquistar el dominio y todos sus secretos.
+es.kdd1.txt,sc4_2n1e2,"En el juego ""King Dugan's Dungeon"" original, esta era un cuarto de atajos que te permitía saltearte un nivel o dos."
+es.kdd1.txt,sc4_1n1,"Ayuda:
+
+No necesitas la ayuda de la mímica para acabar con las cucarachas en la entrada."
+es.kdd1.txt,sc4_1n2,"Ayuda:
+
+Piensa bien para desarrollar la muy útil técnica del ATAQUE LATERAL ¡Buena para cuando hayan dos monstruos a tus costados!"
+es.kdd1.txt,sc4_2e,"Si tienes buen estilo, las 9 mímicas estarán perfectamente alineadas a tu derecha."
+es.kdd1.txt,scMe1,Versiones más difíciles de cuartos ya existentes.
+es.kdd1.txt,scMe2,¡Últimas palabras!
+es.kdd1.txt,scMe3,Difíciles cuartos originales.
+es.kdd1.txt,scM_1s1,Eso es todo. Por ahora has completado todo lo que hay en este juego. Tal vez aún te queden un par de logros por terminar.
+es.kdd1.txt,scM_1s2,Sinceramente te felicito y te invito a que continúes con tu viaje.
+es.kdd1.txt,scM_1s3,"En la página de CaravelGames.com, puedes encontrar el resto de los episodios de KDDL, o descargar cualquiera de los juegos completos de DROD para Windows, MacOS o Linux."
+es.kdd1.txt,scM_1s4,¡No pares de jugar!
+es.kdd1.txt,scM_1s5,¡Aquí tienes una pequeña recompensa! Mata a todos los ojos sin tocar el pasto marrón.
+es.kdd1.txt,scM_1s6,Las Reinas Cucarachas morirán cuando toques el punto de control en la esquina superior derecha.
+es.kdd1.txt,scM_1s7,"¡Muy bien, así se hace!"
+es.kdd1.txt,sp1e0,Usa el teclado numérico para moverte.
+es.kdd1.txt,sp1e1,"Si estás jugando desde una notebook, puedes moverte usando 789, UIO, JKL."
+es.kdd1.txt,sp1e2,Ve al norte para continuar.
+es.kdd1.txt,sp1_3n2w1,Ah ¡La primera cucaracha de la mazmorra!
+es.kdd1.txt,sp1_3n2w2,Ven a Beethro ¡Futura hamburguesa!
+es.kdd1.txt,sp1_3n2w3,¡Una exterminación limpia! Este trabajo será genial ¡Lo sé!
+es.kdd1.txt,sp1_6n2w,"Podría haber acabado con esas cucarachas sin esconderme en ese rincón, pero me siento perezoso hoy."
+es.kdd1.txt,sp1_6n3w1,¡Has encontrado un cuarto secreto!
+es.kdd1.txt,sp1_6n3w2,Encuentra y conquista todas para ganar acceso a una desafiante área maestra especial.
+es.kdd1.txt,sp2_2e,¡Esa reina hará montones de cucarachas para cuando haya ido hasta el orbe y de vuelta!
+es.kdd1.txt,sp2_1s1e1,Hey ¡Un espectro!
+es.kdd1.txt,sp2_1s1e2,Y completamente solo...eso significa que podría estar persiguiéndolo por todo el cuarto.
+es.kdd1.txt,sp2_1s1e3,"Los espectros alados, a diferencia de las cucarachas, huyen de Beethro e intentan mantenerse 5 espacios lejos de él."
+es.kdd1.txt,sp2_1s1e4,"No son tan tímidas en grupos más grandes, y no dudarán en atacar si rodean a su presa."
+es.kdd1.txt,sp2_2s2e1,Hmmm...¿Podré matar a todas esas reinas antes de que pongan huevos?
+es.kdd1.txt,sp2_2s2e2,Argh...¡Muy lento!
+es.kdd1.txt,sp2_2s2e3,¡Ha!  Fácil.
+es.kdd1.txt,sp2_2s3e1,Estoy seguro de que había una manera más limpia de acabar con esas reinas cucarachas.
+es.kdd1.txt,sp2_2s3e2,"Ahora, eso SÍ que fue una fina pieza de exterminación."
+es.kdd1.txt,sp3_3n1e,¿No quedan prisioneros? Esto será un trabajo solitario sin nadie a quien hablarle...
+es.kdd1.txt,sp3_2n,No es broma.
+es.kdd1.txt,sp3_1n2w0,¡Rayos! ¡Creo que necesitaré la poción esta vez!
+es.kdd1.txt,sp3_1n2w1,¡Uf! ¡Ahora esas reinas no pondrán huevos a menos que esté cerca de ellas!
+es.kdd1.txt,sp3_1n2w2,Eso fue un poco duro ¡Pero nada que un buen explorador como yo no pueda manejar!
+es.kdd1.txt,sp3_1n2w3,¡Ha! ¡Nada es lo suficientemente duro para este explorador!
+es.kdd1.txt,sp3_1n1w1,Hey ¡Esto es genial!
+es.kdd1.txt,sp3_1n1w2,"Sé que podría haber limpiado este cuarto sin hacerme invisible, pero igual fue divertido."
+es.kdd1.txt,sp3_1n1w3,No fue tan difícil...¿Me pregunto que hace esa poción ahí?
+es.kdd1.txt,sp3_1s,Podría haber abierto todas las puertas más rápido.
+es.kdd1.txt,sp3_3s1w1,Esto se ve peligroso...algo así como una trampa...
+es.kdd1.txt,sp3_3s1w2,"Luego de golpear el orbe, podría limpiar este cuarto sin girar mi espada ¡Solo hay que ser hábil!"
+es.kdd1.txt,sp3_3s1w3,"Bueno, pude haber girado mi espada ¡Pero al menos sigo vivo!"
+es.kdd1.txt,sp3_3s1w4,¡Wow! Debería haber estado alguien aquí para verme.
+es.kdd1.txt,sp4_2n1e,Otra sala secreta donde todos menos yo menos se lo esperan.
+es.kdd1.txt,sp4_1n1,Pude haber limpiado este cuarto sin haber vuelto al pasillo de la entrada.
+es.kdd1.txt,sp4_1n2,¡Beethro Budkin supera cualquier reto!
+es.kdd1.txt,sp4_2e1,¡Santos Búfalos! ¡Tal vez sí exista algo así como demasiadas mímicas!
+es.kdd1.txt,sp4_1s2e,¿Por qué es que echar todas las trampillas hace que un cuarto se vea mejor?
+es.kdd1.txt,spM_1s,Has fallado...
+es.kdd1.txt,achName0,Te Tengo en la Mira
+es.kdd1.txt,achName1,Matricida
+es.kdd1.txt,achName2,Desperté y Simplemente Odiaba Todo
+es.kdd1.txt,achName3,Verdadero Exterminador
+es.kdd1.txt,achName4,Mano Firme
+es.kdd1.txt,achName5,Reinamburguesa
+es.kdd1.txt,achName6,Boleto Unidireccional
+es.kdd1.txt,achName7,¡Sé veloz!
+es.kdd1.txt,achName8,¡Sé rápido!
+es.kdd1.txt,achName9,Brazo Calmado
+es.kdd1.txt,achName10,Obtén la Nota
+es.kdd1.txt,achName11,Visibilidad
+es.kdd1.txt,achName12,Ininvisible
+es.kdd1.txt,achName13,Velocidad
+es.kdd1.txt,achName14,Las Ocho Puertas de Bill
+es.kdd1.txt,achName15,Buen Control de las Cucarachas
+es.kdd1.txt,achName16,El Misterio
+es.kdd1.txt,achName17,No Mires Atrás
+es.kdd1.txt,achName18,Solo con las Cucarachas
+es.kdd1.txt,achName19,Los Hoyos son Hermosos
+es.kdd1.txt,achName20,Vacío de Nada
+es.kdd1.txt,achName21,Buen Estilo
+es.kdd1.txt,achName22,Explorador Principiante
+es.kdd1.txt,achName23,Matador Incipiente
+es.kdd1.txt,achName24,Exterminador por Contrato
+es.kdd1.txt,achName25,¡Soy un Profesional!
+es.kdd1.txt,achName26,Maestría
+es.kdd1.txt,achName27,Pos-maestría
+es.kdd1.txt,achName28,Cucarachas a la Parrilla
+es.kdd1.txt,achName29,Reinas Rebanadas
+es.kdd1.txt,achName30,Fondue de Huevo
+es.kdd1.txt,achName31,Budín de Ojos
+es.kdd1.txt,achName32,Licuado de Espectro
+es.kdd1.txt,achName33,Ajustando el Tenedor
+es.kdd1.txt,achName34,Abajo el Verde
+es.kdd1.txt,achName35,Manejo de Multitud
+es.kdd1.txt,achName36,Mortífero
+es.kdd1.txt,achName37,¡El Tiempo es Oro!
+es.kdd1.txt,achName38,Haciendo Espacio
+es.kdd1.txt,achName39,Caminando a la Luna
+es.kdd1.txt,achDesc0,Despierta 3 ojos en un mismo turno
+es.kdd1.txt,achDesc1,Mata a una reina cucaracha cuando esté poniendo huevos
+es.kdd1.txt,achDesc2,"Sí, deberías ser tan destructivo"
+es.kdd1.txt,achDesc3,No te escondas en el rincón en el cuarto de 6N 2O en el Primer Nivel
+es.kdd1.txt,achDesc4,"Limpia todos menos 1 cuarto infestado no secreto del Primer Nivel sin girar tu espada.
+Tienes %% de 6"
+es.kdd1.txt,achDesc5,Mata a la reina cucaracha en el cuarto de 2E en el Segundo Nivel antes de que llegue a la esquina
+es.kdd1.txt,achDesc6,No gires tu espada en el cuarto de 1S en el Segundo Nivel luego de golpear el orbe
+es.kdd1.txt,achDesc7,Mata a todas las reinas cucarachas antes de que pongan huevos en el cuarto de 2S 2E en el segundo nivel
+es.kdd1.txt,achDesc8,Limpia el cuarto de 2S 3E en el Segundo Nivel antes de que crezcan huevos
+es.kdd1.txt,achDesc9,Limpia el cuarto de 3N en el Segundo Nivel sin girar tu espada
+es.kdd1.txt,achDesc10,Llega a la nota del cuarto de 2N en el Tercer Nivel sin reentrar en él
+es.kdd1.txt,achDesc11,Mata a todas las cucarachas sin beber la poción en el cuarto de 1N 1O en el Tercer Nivel
+es.kdd1.txt,achDesc12,Termina el cuarto de 1N 2O en el Tercer Nivel sin beber la poción
+es.kdd1.txt,achDesc13,Termina el cuarto de 1N 1E en el Tercer Nivel sin dejar que las reinas pongan huevos
+es.kdd1.txt,achDesc14,Resuelve el acertijo de Las Ocho Puertas de Bill golpeando 5 orbes o menos (Tercer Nivel 1S)
+es.kdd1.txt,achDesc15,Saca a las 3 cucarachas juntas antes de matarlas en el cuarto de 2N 1E en el Tercer Nivel
+es.kdd1.txt,achDesc16,Termina el cuarto de 3N en el Tercer Nivel sin beber la poción
+es.kdd1.txt,achDesc17,Termina el cuarto de 1N en el Cuarto Nivel sin volver al pasillo de la entrada
+es.kdd1.txt,achDesc18,Termina el cuarto de 1S 1E en el Cuarto Nivel sin usar la poción de mímica
+es.kdd1.txt,achDesc19,Echa todas las trampillas en el cuarto de 1S 1E en el Cuarto Nivel y termínalo en la misma visita
+es.kdd1.txt,achDesc20,Termina el cuarto de 2S1E en el Cuarto Nivel y echa todas las trampillas en la misma visita
+es.kdd1.txt,achDesc21,Ten buen estilo en el cuarto de 2E en el Cuarto Nivel
+es.kdd1.txt,achDesc22,Completa el Primer Nivel
+es.kdd1.txt,achDesc23,Completa el Segundo Nivel
+es.kdd1.txt,achDesc24,Completa el Tercer Nivel
+es.kdd1.txt,achDesc25,Completa el Cuarto Nivel
+es.kdd1.txt,achDesc26,Masteriza el dominio
+es.kdd1.txt,achDesc27,Pos-masteriza el dominio
+es.kdd1.txt,achDesc28,Mata 35 cucarachas
+es.kdd1.txt,achDesc29,Mata 20 reinas cucarachas
+es.kdd1.txt,achDesc30,Mata 15 huevos de cucaracha
+es.kdd1.txt,achDesc31,Mata 15 ojos
+es.kdd1.txt,achDesc32,Mata 5 espectros
+es.kdd1.txt,achDesc33,Golpea un orbe por tres turnos consecutivos
+es.kdd1.txt,achDesc34,Baja una puerta verde 5 veces
+es.kdd1.txt,achDesc35,Mata un total de 2.500 monstruos
+es.kdd1.txt,achDesc36,Muere un total de 50 veces
+es.kdd1.txt,achDesc37,Rehaz un total de 250 movimientos
+es.kdd1.txt,achDesc38,Echa un total de 100 trampillas
+es.kdd1.txt,achDesc39,Haz un total de 5.000 pasos
+es.kdd1.txt,outro,"¿Que enfrentará Beethro ahora? ¿Los peligros se volverán más arriesgados? ¿Logrará limpiar toda la Mazmorra del Rey Dugan y finalmente obtener su pago?
+
+
+<font size=""32"" color=""#FFFF00"">¡Felicitaciones!</font>
+
+Has completado el primer episodio de Deadly Rooms of Death: King Dugan's Dungeon Lite. Sinceramente espero que hayas disfrutado de esta experiencia.
+Ahora que has descendido a las escaleras finales de este conjunto, ¡Tal vez quieras intentar masterizar, y luego pos-masterizar, este juego! Para hacerlo, encuentra los cuartos secretos. La cantidad de cuartos secretos que te quedan en cada nivel ahora se podrán ver en la Pantalla de Restaurar Cuarto.
+Una vez que logres conquistarlos todos, un Área Maestra especial se abrirá. ¿Puedes encontrar como acceder a ella?
+Tal vez también quieras jugar el siguiente episodio de la serie de DROD:KDDL.
+
+Antes de dejarte disfrutar de tu sentimiento de absoluta gloria, me gustaría agradecer a un par de personas, ya que sin ellos este juego nunca hubiera visto la luz del día:
+
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - El creador, padre e inventor de DROD. Sin él, esta única idea de juego nunca hubiera visto la luz del día.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - Él codificó la mayor parte de DROD: JtRH y DROD: TCB él solo. Gracias al espléndido código base, hacer Flash DROD fue puro placer.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Señor del Foro de Caravel y codificador principal de CaravelNet. Gracias a él, puedes batallar por puntajes altos ¡Y mucho más!
+
+
+<font size=""23"" color=""#FFFF00"">Programación, Desarrollo</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Arte y Música</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Desarrollo del Servidor</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Desarrollo de Niveles</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testers Primarios</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testers</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Traducciones</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Actores de Voz</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Codificación, Idea y Niveles</font> - %%
+
+
+¡Nos vemos la próxima!
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+es.kdd1.txt,complNextGame,"Jugar al siguiente conjunto de niveles - KDD Lite 2. Este se abrirá en una nueva ventana, y ahora puedes cerrar esta ventana sin peligro. Tu progreso se ha guardado."
+es.kdd1.txt,scNew1,Observa con cuidado lo qué pasa en el turno de la freza.
+es.kdd1.txt,scNew2,"Los huevos no aparecerán jamás sobre trampillas, flechas o puertas amarillas abiertas."
+es.kdd1.txt,scNew3,"También, si una reina se mueve durante el turno de la freza, ningún huevo aparecerá en el cuadrado del que ella se ha movido."
+es.kdd1.txt,sc1_New1N1W,"Si no lo sabías todavía, las Reinas se alejan de ti y no ponen huevos sobre puertas amarillas abiertas."
+es.kdd1.txt,sc1_New3N1,Las reinas cucarachas ponen huevos de cucarachas cada 30 turnos (el turno luego del contador de freza se vuelve rojo).
+es.kdd1.txt,sc1_New3N2,Los huevos se convertirán en cucarachas 5 turnos luego de la freza.
+es.kdd1.txt,sc1_New3E,Las reinas cucarachas siempre huyen de Beethro; este comportamiento se puede usar para manipularlas.
+es.kdd1.txt,sc1_new6n2w1,Las paredes destruidas y secretas pueden ser dañadas por tu espada.
+es.kdd1.txt,sc1_new6n2w2,Las paredes secretas se camuflan entre las regulares mucho mejor.
+es.kdd1.txt,sc1_new6n2w3,Así que no te pierdas las que están en la esquina cuando vuelvas.
+es.kdd1.txt,sc1_5n1w3,Este juego es completamente determinista - no hay comportamiento aleatorio o impredecible.
+es.kdd1.txt,sc1_new6N,Los secretos no deben ser conquistados en una sola jugada para Masterizar el dominio.
+es.kdd1.txt,sc_evileyes,En este nivel encontrarás ojos del mal. Una vez que te paras en su línea de visión despertarán y te perseguirán al igual que las cucarachas.
+es.kdd1.txt,defCont,Controles predeterminados:
+es.kdd1.txt,sc_diago,Puedes moverte diagonalmente incluso en corredores muy angostos.
+es.kdd1.txt,sc_broken,Acaba con estas paredes destruidas y secretas con tu espada.
+es.kdd1.txt,sc_queens1,Las reinas cucarachas ponen huevos de cucarachas cada 30 turnos (el turno luego del contador de freza se vuelve rojo).
+es.kdd1.txt,sc_queens2,Los huevos se convertirán en cucarachas 5 turnos luego de la freza.
+es.kdd1.txt,sc_queens3,"Los huevos no aparecerán sobre flechas, trampillas, o puertas amarillas. Usa la tecla ""I"" o 5 en el Numpad para esperar un turno."
+es.kdd1.txt,sc_mimics,"Luego de pararte sobre una poción de mímica, usa tu mouse o la tecla de espera para elegir dónde quieres posicionar a la mímica."
+es.kdd1.txt,sc_shiftwait,You might find it useful that Shift+Wait waits until the next spawn.
+es.kdd1.txt,sp_mother1,Cada 30 turnos las madres brea harán que la brea crezca un cuadrado en cada dirección.
+es.kdd1.txt,sp_mother2,"Es relativamente seguro ser rodeado de brea creciente, pero debes tener cuidado de los bebés brea que pueden aparecer durante el crecimiento."
+es.kdd1.txt,sc_backswipe,¡Sigue el camino de arena para aprender la técnica del ataque lateral! Recuerda los movimientos diagonales y no gires tu espada.
+es.kdd1.txt,sc_trapdoors,Estos cuadrados rosa-púrpuras son trampillas que caen si tú o una mímica se baja de ellas.
+es.kdd2.txt,Fifth Level,Quinto Nivel
+es.kdd2.txt,Sixth Level,Sexto Nivel
+es.kdd2.txt,Seventh Level,Séptimo Nivel
+es.kdd2.txt,Eighth Level,Octavo Nivel
+es.kdd2.txt,Mastery Level,Nivel Maestro
+es.kdd2.txt,Tutorial,Nivel Tutorial
+es.kdd2.txt,entr5,"Beethro Budkin, exterminador de mazmorras profesional de quinta generación, ha sido contratado por el Rey Dugan para limpiar su mazmorra de una gran infestación de monstruos.
+Beethro cobra por cuarto y, como profesional, está obligado por contrato a acabar con todos los monstruos de todos y cada uno de los cuartos en la mazmorra, para poder ser pagado.
+La única arma que Beethro necesita para realizar su trabajo es una Espada Realmente Grande, la cual derrotará casi cualquier monstruo de un solo ataque.
+
+-----
+
+El último nivel dejó a Beethro sudando. ""Supongo que esto será un trabajo duro después de todo."" Afortunadamente, había una fresca brisa viniendo del siguiente nivel."
+es.kdd2.txt,entr6,"Tal vez el arquitecto del nivel estaba intentando lo mejor para explicar su punto, cualquiera que sea. De cualquier manera, puedes estar agradecido de que no hay otros niveles como este en la Mazmorra del Rey Dugan."
+es.kdd2.txt,entr6Back,Beethro volvió para terminar el negocio de exterminación apropiado para el que fue contratado.
+es.kdd2.txt,entr7,"Mientras Beethro bajaba por las escaleras, oyó un fuerte siseo. Como profesional y experto, supo instantáneamente qué era, pero aún así se sobresaltó por el fino volumen. ""¡Jebús! ¿Cuántas de esas asquerosidades hay ahí abajo?"""
+es.kdd2.txt,entr8,"Algunos monstruos son astutos y letales, y otros son solamente un horrible dolor de limpiar luego."
+es.kdd2.txt,entrMaster,"Beethro descendió por las escaleras, solo para encontrarse en un camino desconocido...
+
+No le pagarán por limpiar aquí, pero su honor de profesional lo impulsa hacia adelante."
+es.kdd2.txt,entrTut,Tutorial
+es.kdd2.txt,entrTutLeave,Beethro abandonó el piso del tutorial rico en nuevo conocimiento.
+es.kdd2.txt,entrPremaster,"Beethro tropezó varias veces por unos cuantos escalones mal iluminados. ""¡Este es un obstáculo seguro y ni siquiera hay cucarachas aquí!
+Alguien debería al menos colocar una baranda o al-"" pensó Beethro justo antes de caer de doce escalones y desmayarse por una larga hora. Luego de un sueño
+terrible, terribles sueños sobre budines de ojos, Beethro despertó atontado en un cuarto. ""¡Rayos! ¿Sería tan difícil colocar estos lugares en el mapa por
+una vez?"""
+es.kdd2.txt,sc51n2w,Espero que te hayas dejado un camino de regreso.
+es.kdd2.txt,sc63e,Pasaje Secreto
+es.kdd2.txt,sc61s1w,"Esta es una Puerta Maestra.
+Se abrirá cuando hayas terminado el último nivel y también hayas conquistado todos los cuartos secretos."
+es.kdd2.txt,sc72n1w,"Para los de mente débil ¡Regresen! Este cuarto solo puede ser completado por un intelecto maestro.
+(Este cuarto no es requerido.)"
+es.kdd2.txt,sc71n1,No creí que lograrías averiguar ese último.
+es.kdd2.txt,sc71n2,"Está bien, admito que no es EXACTAMENTE lo mismo que las motos de luz.
+
+-Erik"
+es.kdd2.txt,sc71n3,"Mi tributo a Tron.
+
+-Erik"
+es.kdd2.txt,sc81s1,La brea viviente solo puede ser dañada en bordes llanos.
+es.kdd2.txt,sc81s2,"Cualquier pedazo de brea que no sea al menos 2 cuadrados de ancho y alto es inestable, y por lo tanto se destruirá formando bebés brea."
+es.kdd2.txt,sc81s3,Juega un poco con ella si quieres.
+es.kdd2.txt,sc81s1e,Un hombre sabio limpiará el cuarto de al norte antes de seguir por este pasillo.
+es.kdd2.txt,sc83s,Limpia los pasillos del sur y el oeste antes de continuar por aquí para evitar regresos redundantes.
+es.kdd2.txt,scMe1,Versiones más difíciles de cuartos ya existentes.
+es.kdd2.txt,scMe2,Últimas palabras.
+es.kdd2.txt,scMe3,Nuevos acertijos.
+es.kdd2.txt,scM1s1,"¡Muy bien! Además de tal vez un par de logros, ya debiste haber terminado con todo en este juego."
+es.kdd2.txt,scM1s2,Por favor acepta mi más sinceras felicitaciones ¡Has logrado una gran hazaña!
+es.kdd2.txt,scM1s3,"Puedes encontrar los siguientes episodios de KDDL y descargar cualquiera de los juegos completes de DROD para Windows, MacOS o Linux en caravelgames.com"
+es.kdd2.txt,scM1s4,¡Sigue así!
+es.kdd2.txt,scM1s5,¡Aquí tienes una pequeña recompensa! Mata a todos los ojos sin tocar el pasto marrón.
+es.kdd2.txt,scM1s6,Las dos Reinas Cucarachas del fondo morirán automáticamente cuando toques el punto de control en la esquina derecha.
+es.kdd2.txt,scM1s7,¡Sinceras felicitaciones!
+es.kdd2.txt,scT1,Muévete hacia el lado derecho y observa cómo se comporta la cucaracha al caminar hacia una esquina diagonalmente.
+es.kdd2.txt,scT2,"Las serpientes se mueven por sus propias, y mucho más complicadas, reglas. Su actual preferencia se muestra debajo del ciclo de freza."
+es.kdd2.txt,scT3,"Si un monstruo se mueve diagonalmente hacia un obstáculo, prefiere deslizarse verticalmente si es posible."
+es.kdd2.txt,scT4,"’Escape’ abre el menú de pausa, donde puedes ver ‘Ayuda General’ para revisar los controles cuando lo desees."
+es.kdd2.txt,scT5,Para prevenirte de abandonar un cuarto accidentalmente usa ‘X’ para bloquearlo o desbloquearlo. Un pequeño candado en el mini-mapa indica si un cuarto fue bloqueado.
+es.kdd2.txt,scT6,"Shift+Tecla realiza la acción de dicha tecla y su inversión.
+Shift+Esperar espera hasta el movimiento 30. 
+La tecla ‘+’ en el teclado numérico o '=' realiza el opuesto a tu último movimiento."
+es.kdd2.txt,scT7,F3 muestra un contador de movimientos para ayudarte a conseguir mejores puntajes.
+es.kdd2.txt,scT8,Todas las teclas pueden ser modificadas desde las opciones del juego.
+es.kdd2.txt,scT9,A aquellos sin una suscripción a CaravelNet no se les almacenarán los puntajes en la clasificación pero sabrán qué lugar pudieron haber obtenido.
+es.kdd2.txt,scT10,Hazle click a un elemento para ver qué hacen los orbes y hacia dónde observan los ojos.
+es.kdd2.txt,scT11,La barra espaciadora salteará todos los diálogos y los logros de la pantalla.
+es.kdd2.txt,scT13,"Los espectros alados, a diferencia de las cucarachas, huyen de Beethro e intentan mantenerse 5 espacios lejos de él."
+es.kdd2.txt,scT14,"No son tan tímidas en grupos más grandes, y no dudarán en atacar si rodean a su presa."
+es.kdd2.txt,sc1_6n3w1,Usa la técnica del ataque lateral para deshacerte de la cucaracha.
+es.kdd2.txt,sc1_6n3w2,Posiciónate sobre el suelo verde y asegúrate de que la cucaracha esté en el suelo de arena directamente al norte de ti...
+es.kdd2.txt,sc1_6n3w3,Posiciónate sobre el suelo verde y asegúrate de que la cucaracha esté en el suelo de arena directamente al sur de ti...
+es.kdd2.txt,sc1_6n3w4,...luego muévete al noreste para matarla.
+es.kdd2.txt,sc1_6n3w5,...luego muévete al sureste para matarla.
+es.kdd2.txt,sc1_6n3w6,"Repite para analizar el ataque lateral. Domina esta técnica, ya que te será crucial en futuros enredos."
+es.kdd2.txt,sp5e1,Esta es un área de tutorial.
+es.kdd2.txt,sp5e2,Visítala si no has jugado este juego antes.
+es.kdd2.txt,sp5e3,"Muévete usando el teclado numérico o 789, UIO, JKL."
+es.kdd2.txt,sp52n1,Limpiar este lugar sin abrir ninguna de esas puertas sería algo de que alardear.
+es.kdd2.txt,sp52n2,¡Ha! Diseño descuidado para una mazmorra ¡Colocando orbes innecesarios de esa manera!
+es.kdd2.txt,sp51n2w1,Ay ¡Mira todos esos ojos!
+es.kdd2.txt,sp51n2w2,¡Ah!  ¡Todavía me asusta cuando una de esas cosas despierta!
+es.kdd2.txt,sp63e,Empiezo a ver un patrón aquí...
+es.kdd2.txt,sp63n,Esto se ve familiar...
+es.kdd2.txt,sp63w,Más vale que Dugan me pague por cada uno de estos cuartos.
+es.kdd2.txt,sp72n1w1,¡Jebús! ¡Esa serpiente debe ser mil cuatrocientos cuarenta y cinco pies de largo!
+es.kdd2.txt,sp72n1w2,Pero mi contrato dice que no estoy obligado a lidiar con monstruos más largos que mil cuatrocientos cuarenta y cuatro pies.
+es.kdd2.txt,sp72n1w3,Puedo dejar este cuarto como está.
+es.kdd2.txt,sp71n1e1,Mi espada no le hará un rasguño a esa escurridiza criatura.
+es.kdd2.txt,sp71n1e2,"Pero si la llevo hacia un callejón sin salida, me desharé de ella."
+es.kdd2.txt,sp84s1,"¿Madres Brea, también? ¿Por qué, por qué, por qué...?"
+es.kdd2.txt,sp83s1e,Odio las madres brea.
+es.kdd2.txt,sp82s2e,Debo tener cuidado aquí... ¡No podré avanzar si la brea alcanza ese pasillo!
+es.kdd2.txt,sp84s3e1,No importa ¡Sigamos!
+es.kdd2.txt,sp84s3e2,Y una pared aquí...
+es.kdd2.txt,sp84s3e3,"Bien. A este paso, terminaremos de hacer el mapa del nivel en unos minutos."
+es.kdd2.txt,sp84s3e4,¿Escuchas eso? ¡Es la autoridad de la brea! ¡Debemos escondernos!
+es.kdd2.txt,sp84s3e5,¡Aaargh! ¡Casi echo el mapa!
+es.kdd2.txt,sp84s3e6,¡Espera¡ ¿El mapa está apuntando al lado correcto?
+es.kdd2.txt,sp85s2e1,Este cuarto...se ve...familiar...de alguna manera...
+es.kdd2.txt,sp85s2e2,Me hace sentir...enojado...y frustrado!
+es.kdd2.txt,sp86s3e,"Ratas...espero que no hayan trucos sigilosos, como cuartos escondidos detrás de una pared secreta en algún lado!"
+es.kdd2.txt,sp88s3e1,Oh dios...este cuarto me dará pesadillas...
+es.kdd2.txt,sp88s3e2,Nunca jamás...nunca jamás...
+es.kdd2.txt,spM1s,Has fallado...
+es.kdd2.txt,spT2,"Gira tu espada con 'Q' y 'W'."
+es.kdd2.txt,spT3,Ahora ve y golpea el orbe con tu espada.
+es.kdd2.txt,spT4,"Los orbes interactúan con puertas de tres maneras - pueden abrirlas, cerrarlas, o cambiarlas ambos estados."
+es.kdd2.txt,spT5,Haz click en un orbe con el mouse para ver qué puertas afecta y de qué manera.
+es.kdd2.txt,spT6,Tu objetivo en DROD es deshacerte de todos los monstruos de cada nivel.
+es.kdd2.txt,spT7,Golpea a la cucaracha con tu espada para matarla.
+es.kdd2.txt,spT8,Las flechas de fuerza bloquean tu movimiento hacia la dirección opuesta a la que apuntan.
+es.kdd2.txt,spT9,"Párate sobre el punto de control. Volverás al momento exacto cuando lo pisaste si mueres o reinicias usando 'R'."
+es.kdd2.txt,spT10,"Si mueres o estás en una situación donde cualquier movimiento resulta en la muerte, puedes retroceder hasta tres movimientos usando 'Backspace'."
+es.kdd2.txt,spT11,"Esta poción te permitirá colocar una mímica. Las mímicas copian cada movimiento que haces y lo hacen inmediatamente después de ti, pero antes que los monstruos."
+es.kdd2.txt,spT12,Coloca la mímica donde está el punto de control abajo. Úsalo para echar todas las trampillas y así abrir la puerta roja.
+es.kdd2.txt,spT13,"¡Felicitaciones, has completado este cuarto!"
+es.kdd2.txt,spT14,"Luego de que abandones el cuarto, tu triunfo será permanente. Siempre podrás ver tu mejor puntaje del cuarto, y podrás ver el lugar que conseguiste en comparación a los puntajes en la clasificación."
+es.kdd2.txt,spT15,"Si te has conectado al juego usando credenciales válidas de una cuenta del foro de Caravel, tu mejor puntaje será publicado en la clasificación."
+es.kdd2.txt,spT16,"Tu puntaje permanecerá en la clasificación por dos semanas a menos que hayas pagado tu suscripción de CaravelNet, por lo que tus puntajes se mantendrán en la clasificación para siempre."
+es.kdd2.txt,spT17,Ahora puedes abandonar el cuarto de tutorial.
+es.kdd2.txt,achName0,¿Dónde está el Maestro?
+es.kdd2.txt,achName1,Villa del Este
+es.kdd2.txt,achName2,Limpieza
+es.kdd2.txt,achName3,Evitando el Orbe
+es.kdd2.txt,achName4,Manos Estáticas
+es.kdd2.txt,achName5,Visión Perfecta
+es.kdd2.txt,achName6,Susurrador de Espectros
+es.kdd2.txt,achName7,Control Sobre las Mímicas
+es.kdd2.txt,achName8,No Soporto el Amarillo
+es.kdd2.txt,achName9,Sin Diagonales
+es.kdd2.txt,achName10,Manos Inmóviles
+es.kdd2.txt,achName11,Desssssslizado
+es.kdd2.txt,achName12,Manos en la Piedra
+es.kdd2.txt,achName13,Intelecto Maestro
+es.kdd2.txt,achName14,Puñalada por la Espalda
+es.kdd2.txt,achName15,Técnico de Brea
+es.kdd2.txt,achName16,Apuñalador de Ojos
+es.kdd2.txt,achName17,El Ninja
+es.kdd2.txt,achName18,Explorador Principiante
+es.kdd2.txt,achName19,Matador Incipiente
+es.kdd2.txt,achName20,Exterminador por Contrato
+es.kdd2.txt,achName21,¡Soy un Profesional!
+es.kdd2.txt,achName22,Maestría
+es.kdd2.txt,achName23,Pos-Maestría
+es.kdd2.txt,achName24,Reinas Fritas
+es.kdd2.txt,achName25,Huevos al Dente
+es.kdd2.txt,achName26,Jalea de Ojo
+es.kdd2.txt,achName27,Espectros Asados
+es.kdd2.txt,achName28,Sushi de Serpiente
+es.kdd2.txt,achName29,Ajustando el Tenedor
+es.kdd2.txt,achName30,Verde al Suelo
+es.kdd2.txt,achName31,Aplastador de Multitudes
+es.kdd2.txt,achName32,Inmortal
+es.kdd2.txt,achName33,Agujero en el Tiempo-Espacio
+es.kdd2.txt,achName34,Limpiando el Piso
+es.kdd2.txt,achName35,Maestro de Maratones
+es.kdd2.txt,achDesc0,Encuentra la Pared Maestra
+es.kdd2.txt,achDesc1,Termina el cuarto de 1O en el Quinto Nivel apuntando al Este todo el tiempo
+es.kdd2.txt,achDesc2,Haz caer todas las trampillas y termina el cuarto de 1N 2O en el Quinto Nivel en la misma visita.
+es.kdd2.txt,achDesc3,Termina el cuarto de 2N en el Quinto Nivel sin tocar ningún orbe
+es.kdd2.txt,achDesc4,Termina el cuarto de 1S en el Quinto Nivel sin girar tu espada
+es.kdd2.txt,achDesc5,Conquista el cuarto de 2S en el Quinto Nivel sin beber la poción de invisibilidad
+es.kdd2.txt,achDesc6,No uses el orbe en el cuarto de 3E en el Quinto Nivel
+es.kdd2.txt,achDesc7,Termina el cuarto de 1S 1O en el Quinto Nivel sin salirte del área marcada
+es.kdd2.txt,achDesc8,Termina el cuarto de 2S 2E en el Quinto Nivel sin pararte sobre una puerta amarilla abierta
+es.kdd2.txt,achDesc9,No te muevas diagonalmente en el cuarto de 1S en el Séptimo Nivel
+es.kdd2.txt,achDesc10,No gires la espada mientras limpias el cuarto de 1E en el Séptimo Nivel
+es.kdd2.txt,achDesc11,Mata a la serpiente antes que a las cucarachas en el cuarto de 1N 2E en el Séptimo Nivel
+es.kdd2.txt,achDesc12,No rotes la espada en el cuarto de 3N 1E en el Séptimo Nivel
+es.kdd2.txt,achDesc13,Completa el cuarto del Intelecto Maestro (2N 1W en el Séptimo Nivel)
+es.kdd2.txt,achDesc14,Termina el cuarto de 4S 3E en el Octavo Nivel sin beber la poción de mímica
+es.kdd2.txt,achDesc15,Limpia toda la brea en cualquier cuarto del Octavo Nivel
+es.kdd2.txt,achDesc16,Mata a una Madre Brea antes de que crezca
+es.kdd2.txt,achDesc17,Completa un cuarto con Ojos del Mal sin despertar a ninguno
+es.kdd2.txt,achDesc18,Completa el Quinto Nivel
+es.kdd2.txt,achDesc19,Completa el Sexto Nivel
+es.kdd2.txt,achDesc20,Completa el Séptimo Nivel
+es.kdd2.txt,achDesc21,Completa el Octavo Nivel
+es.kdd2.txt,achDesc22,Masteriza el dominio
+es.kdd2.txt,achDesc23,Pos-masteriza el dominio
+es.kdd2.txt,achDesc24,Mata 20 reinas cucarachas
+es.kdd2.txt,achDesc25,Mata 15 huevos de cucaracha
+es.kdd2.txt,achDesc26,Mata 15 ojos del mal
+es.kdd2.txt,achDesc27,Mata 5 espectros
+es.kdd2.txt,achDesc28,Mata 10 serpientes
+es.kdd2.txt,achDesc29,Golpea un orbe por tres turnos consecutivos
+es.kdd2.txt,achDesc30,Baja una puerta verde 5 veces
+es.kdd2.txt,achDesc31,Mata un total de 2.500 monstruos
+es.kdd2.txt,achDesc32,Muere un total de 70 veces
+es.kdd2.txt,achDesc33,Rehaz un total de 350 movimientos
+es.kdd2.txt,achDesc34,Echa un total de 200 trampillas
+es.kdd2.txt,achDesc35,Haz un total de 7.000 pasos
+es.kdd2.txt,outro,"La brea no fue algo que Beethro esperase. O que haya querido encontrarse. Pero mientras bajaba las escaleras hacia el noveno piso supo una cosa – no podía oler esta gelatinosa sustancia allí ¿Pero qué tal si hay algo mucho peor esperando?
+
+
+<font size=""32"" color=""#FFFF00"">¡Felicitaciones!</font>
+
+Has completado el primer episodio de Deadly Rooms of Death: King Dugan's Dungeon Lite. Sinceramente espero que hayas disfrutado de esta experiencia.
+Ahora que has descendido a las escaleras finales de este conjunto, ¡Tal vez quieras intentar masterizar, y luego pos-masterizar, este juego! Para hacerlo, encuentra los cuartos secretos. La cantidad de cuartos secretos que te quedan en cada nivel ahora se podrán ver en la Pantalla de Restaurar Cuarto.
+Una vez que logres conquistarlos todos, un Área Maestra especial se abrirá. ¿Puedes encontrar como acceder a ella?
+Tal vez también quieras jugar el siguiente episodio de la serie de DROD:KDDL.
+
+Antes de dejarte disfrutar de tu sentimiento de absoluta gloria, me gustaría agradecer a un par de personas, ya que sin ellos este juego nunca hubiera visto la luz del día:
+
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - El creador, padre e inventor de DROD. Sin él, esta única idea de juego nunca hubiera visto la luz del día.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - Él codificó la mayor parte de DROD: JtRH y DROD: TCB él solo. Gracias al espléndido código base, hacer Flash DROD fue puro placer.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Señor del Foro de Caravel y codificador principal de CaravelNet. Gracias a él, puedes batallar por puntajes altos ¡Y mucho más!
+
+
+<font size=""23"" color=""#FFFF00"">Programación, Desarrollo</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Arte y Música</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Desarrollo del Servidor</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Desarrollo de Niveles</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testers Primarios</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testers</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Traducciones</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Actores de Voz</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Codificación, Idea y Niveles</font> - %%
+
+
+¡Nos vemos la próxima!
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+es.kdd2.txt,complNextGame,"Jugar al siguiente conjunto de niveles - KDD Lite 2. Este se abrirá en una nueva ventana, y ahora puedes cerrar esta ventana sin peligro. Tu progreso se ha guardado."
+es.kdd2.txt,sp_new71e1,Esos ojos podrían haber sido acabados sin girar mi espada. ¡En serio!
+es.kdd2.txt,sp_new71e2,¡Ha! ¡Eso es eficiencia! !Espera a que les diga a los del Gremio de Exterminadores sobre esa hazaña!
+es.kdd2.txt,defCont,Controles predeterminados:
+es.kdd2.txt,sc_diago,Puedes moverte diagonalmente incluso en corredores muy angostos.
+es.kdd2.txt,sc_broken,Acaba con estas paredes destruidas y secretas con tu espada.
+es.kdd2.txt,sc_queens1,Las reinas cucarachas ponen huevos de cucarachas cada 30 turnos (el turno luego del contador de freza se vuelve rojo).
+es.kdd2.txt,sc_queens2,Los huevos se convertirán en cucarachas 5 turnos luego de la freza.
+es.kdd2.txt,sc_queens3,"Los huevos no aparecerán sobre flechas, trampillas, o puertas amarillas. Usa la tecla ""I"" o 5 en el Numpad para esperar un turno."
+es.kdd2.txt,sc_mimics,"Luego de pararte sobre una poción de mímica, usa tu mouse o la tecla de espera para elegir dónde quieres posicionar a la mímica."
+es.kdd2.txt,sc_shiftwait,You might find it useful that Shift+Wait waits until the next spawn.
+es.kdd2.txt,sp_mother1,Cada 30 turnos las madres brea harán que la brea crezca un cuadrado en cada dirección.
+es.kdd2.txt,sp_mother2,"Es relativamente seguro ser rodeado de brea creciente, pero debes tener cuidado de los bebés brea que pueden aparecer durante el crecimiento."
+es.kdd2.txt,sc_backswipe,¡Sigue el camino de arena para aprender la técnica del ataque lateral! Recuerda los movimientos diagonales y no gires tu espada.
+es.kdd2.txt,sc_trapdoors,Estos cuadrados rosa-púrpuras son trampillas que caen si tú o una mímica se baja de ellas.
+es.kdd3.txt,Ninth Level,Noveno Nivel
+es.kdd3.txt,Tenth Level,Décimo Nivel
+es.kdd3.txt,Eleventh Level,Decimoprimer Nivel
+es.kdd3.txt,Twelfth Level,Decimosegundo Nivel
+es.kdd3.txt,Mastery Level,Nivel Maestro
+es.kdd3.txt,Tutorial,Tutorial
+es.kdd3.txt,entr9,"Beethro Budkin, exterminador de mazmorras profesional de quinta generación, ha sido contratado por el Rey Dugan para limpiar su mazmorra de una gran infestación de monstruos.
+Beethro cobra por cuarto y, como profesional, está obligado por contrato a acabar con todos los monstruos de todos y cada uno de los cuartos en la mazmorra, para poder ser pagado.
+La única arma que Beethro necesita para realizar su trabajo es una Espada Realmente Grande, la cual derrotará casi cualquier monstruo de un solo ataque.
+
+-----
+
+Beethro se sentó en un escalón para descansar. Sacó tres botellas de su mochila. La botella de diez vasos estaba llena de refrescante jugo de hoja, y las otras dos botellas, las cuales eran de tamaños de dos y cinco vasos, estaban vacías. Beethro quería beber exactamente cuatro vasos de jugo de hoja en un interrumpido trago. Comenzó a mover los vasos, sirviendo jugo del uno al otro y de vuelta, pero se rindió luego de un rato. ""¡Esto es mucho trabajo! ¡Olvídalo!"""
+es.kdd3.txt,entr10,"Como muchos exterminadores de mazmorras experimentados saben, debajo yacen algunas bestias que son capaces de mezclarse con sus alrededores."
+es.kdd3.txt,entr11,"Echando un vistazo del cuarto al que se acercaba, Beethro dio un rechazador gruñido.""No sé cómo, pero la brea siempre termina así, y lo odio."""
+es.kdd3.txt,entr12,"De nuevo, Beethro oyó un fuerte siseo de abajo, y sabía que habrían serpientes. Pero esta vez, el sonido era un poco distinto, y se detuvo un momento para escuchar y averiguar que yacía allí. ""¡Dios santo! Esas criaturas debieron haber estado allí abajo un increíble y largo tiempo, con grandes alimentos en el camino."""
+es.kdd3.txt,entr12Back,Beethro volvió para terminar el negocio de exterminación apropiado para el que fue contratado.
+es.kdd3.txt,entrMaster,"Beethro descendió por las escaleras, solo para encontrarse en un camino desconocido...
+
+No le pagarán por limpiar aquí, pero su honor de profesional lo impulsa hacia adelante."
+es.kdd3.txt,entrTutorial,Tutorial
+es.kdd3.txt,entrTutorialLeft,Beethro abandonó el piso del tutorial rico en nuevo conocimiento.
+es.kdd3.txt,sc93n3e,¿Estás seguro que lo estás haciendo en el orden correcto?
+es.kdd3.txt,sc94n3e,El orden es la clave.
+es.kdd3.txt,sc10e,"Malvadas arañas invisibles acechan en este nivel. Ten cuidado, ya que son difíciles de ver."
+es.kdd3.txt,sc111s2e,Psst... Este pasillo te lleva a las escaleras. ¡Tal vez quieras limpiar el resto de los cuartos antes de ir ahí!
+es.kdd3.txt,sc121n1e1,"Si una serpiente se mueve al oeste y prefiere un movimiento horizontal, párate al este de su cabeza para forzarla a moverse al norte."
+es.kdd3.txt,sc121n1e2,"Funciona igual verticalmente, pero así la serpiente preferirá movimiento hacia el este."
+es.kdd3.txt,sc12e,Tu reloj te dice qué dirección prefieren las serpientes. Esto te ayudará a controlar estas erráticas criaturas.
+es.kdd3.txt,scMe1,Otros acertijos
+es.kdd3.txt,scMe2,Palabras finales
+es.kdd3.txt,scM1s1,¡Llegar hasta aquí es una hazaña fabulosa!
+es.kdd3.txt,scM1s2,¿Entonces te ha gustado? ¿Has logrado conseguir todos los logros?
+es.kdd3.txt,scM1s3,"Visita CaravelGames.com para jugar más episodios de KDDL, o descargar cualquiera de los juegos completos de DROD para Windows, MacOS, o Linux."
+es.kdd3.txt,scM1s4,¡No pares de jugar!
+es.kdd3.txt,scM1s5,¡Aquí tienes una pequeña recompensa! Mata a todos los ojos sin pararte sobre el pasto.
+es.kdd3.txt,scM1s6,Las reinas cucarachas morirán cuando toques el punto de control en la esquina derecha.
+es.kdd3.txt,scM1s7,"¡Muy bien, felicitaciones!"
+es.kdd3.txt,scT1,¿Sabías que las serpientes no pueden moverse sobre notas?
+es.kdd3.txt,scT2,Muévete hacia la derecha y observa cómo se comporta la cucaracha al intentar moverse hacia una esquina diagonalmente.
+es.kdd3.txt,scT3,"Las serpientes se mueven por sus propias, y mucho más complicadas, reglas. Su actual preferencia se muestra debajo del ciclo de freza."
+es.kdd3.txt,scT4,"Si un monstruo se mueve diagonalmente hacia un obstáculo, prefiere deslizarse verticalmente si es posible."
+es.kdd3.txt,scT5,"’Escape’ abre el menú de pausa, donde puedes ver ‘Ayuda General’ para revisar los controles cuando lo desees."
+es.kdd3.txt,scT6,Para prevenirte de abandonar un cuarto accidentalmente usa ‘X’ para bloquearlo o desbloquearlo. Un pequeño candado en el mini-mapa indica si un cuarto fue bloqueado.
+es.kdd3.txt,scT7,"Shift+Tecla realiza la acción de dicha tecla y su inversión.
+Shift+Esperar espera hasta el movimiento 30. 
+La tecla ‘+’ en el teclado numérico o '=' realiza el opuesto a tu último movimiento."
+es.kdd3.txt,scT8,F3 muestra un contador de movimientos para ayudarte a conseguir mejores puntajes.
+es.kdd3.txt,scT9,Todas las teclas pueden ser modificadas desde las opciones del juego.
+es.kdd3.txt,scT10,A aquellos sin una suscripción a CaravelNet no se les almacenarán los puntajes en la clasificación pero sabrán qué lugar pudieron haber obtenido.
+es.kdd3.txt,scT11,Hazle click a un elemento para ver qué hacen los orbes y hacia dónde observan los ojos.
+es.kdd3.txt,scT12,La barra espaciadora salteará todos los diálogos y los logros de la pantalla.
+es.kdd3.txt,scT13,"Los espectros alados, a diferencia de las cucarachas, huyen de Beethro e intentan mantenerse 5 espacios lejos de él."
+es.kdd3.txt,scT14,"No son tan tímidas en grupos más grandes, y no dudarán en atacar si rodean a su presa."
+es.kdd3.txt,sc1_6n3w1,Usa la técnica del ataque lateral para deshacerte de la cucaracha.
+es.kdd3.txt,sc1_6n3w2,Posiciónate sobre el suelo verde y asegúrate de que la cucaracha esté en el suelo de arena directamente al norte de ti...
+es.kdd3.txt,sc1_6n3w3,Posiciónate sobre el suelo verde y asegúrate de que la cucaracha esté en el suelo de arena directamente al sur de ti...
+es.kdd3.txt,sc1_6n3w4,...luego muévete al noreste para matarla.
+es.kdd3.txt,sc1_6n3w5,...luego muévete al sureste para matarla.
+es.kdd3.txt,sc1_6n3w6,"Repite para analizar el ataque lateral. Domina esta técnica, ya que te será crucial en futuros enredos."
+es.kdd3.txt,sp9e1,Esta es un área de tutorial.
+es.kdd3.txt,sp9e2,Visítala si no has jugado este juego antes.
+es.kdd3.txt,sp9e3,"Muévete usando el teclado numérico o 789, UIO, JKL"
+es.kdd3.txt,sp9e4,¡Calientes cucarachas a la plancha!  ¡No más brea!
+es.kdd3.txt,sp91n1e,Eso fue horrible. Tal vez la brea no es tan mala después de todo...
+es.kdd3.txt,sp94n4e1,¡Ah-ha! ¡Mejor despertarse temprano en la mañana para superar a Beethro!
+es.kdd3.txt,sp94n4e2,No me estoy divirtiendo.
+es.kdd3.txt,sp93n,Hrm. Esta es una puerta muy extraña. No puedo pasar.
+es.kdd3.txt,sp92n2e,Una puerta por la que no puedo pasar. Me pregunto qué hay del otro lado.
+es.kdd3.txt,sp11e1,Y odio cuando la brea crece tan alto sobre mí...me impresiona.
+es.kdd3.txt,sp11e2,¡Gah!  ¡La brea ha crecido sobre las paredes!
+es.kdd3.txt,sp11n1w,Hmm...podría ser peor...podría haber una madre brea aquí adentro...
+es.kdd3.txt,sp11n2w1,Supongo que hablé demasiado pronto.
+es.kdd3.txt,sp11n2w2,Parece haber algo más diferente en este cuarto...
+es.kdd3.txt,sp12e1,"Cuidado, Beethro, cuidado..."
+es.kdd3.txt,sp12e2,¡Uf!
+es.kdd3.txt,sp12e3,Estos harán unos grandiosos filetes.
+es.kdd3.txt,sp121s2e1,¡Grandes duendes galopantes!
+es.kdd3.txt,sp121s2e2,¡Mira el tamaño de esa serpiente!
+es.kdd3.txt,spM1s,Has fallado...
+es.kdd3.txt,spT2,Gira tu espada con ‘Q’ y ‘W’.
+es.kdd3.txt,spT3,Ahora ve y golpea el orbe con tu espada.
+es.kdd3.txt,spT4,"Los orbes interactúan con puertas de tres maneras - pueden abrirlas, cerrarlas, o cambiarlas ambos estados."
+es.kdd3.txt,spT5,Haz click en un orbe con el mouse para ver qué puertas afecta y de qué manera.
+es.kdd3.txt,spT6,Tu objetivo en DROD es deshacerte de todos los monstruos de cada nivel.
+es.kdd3.txt,spT7,Golpea a la cucaracha con tu espada para matarla.
+es.kdd3.txt,spT8,Las flechas de fuerza bloquean tu movimiento hacia la dirección opuesta a la que apuntan.
+es.kdd3.txt,spT9,"Párate sobre el punto de control. Volverás al momento exacto cuando lo pisaste si mueres o reinicias usando 'R'."
+es.kdd3.txt,spT10,"Si mueres o estás en una situación donde cualquier movimiento resulta en la muerte, puedes retroceder hasta tres movimientos usando 'Backspace'."
+es.kdd3.txt,spT11,"Esta poción te permitirá colocar una mímica. Las mímicas copian cada movimiento que haces y lo hacen inmediatamente después de ti, pero antes que los monstruos."
+es.kdd3.txt,spT12,Coloca la mímica donde está el punto de control abajo. Úsalo para echar todas las trampillas y así abrir la puerta roja.
+es.kdd3.txt,spT13,Las serpientes no pueden ser dañadas por tu espada pero se encogerán hasta morir si se atoran en un callejón sin salida.
+es.kdd3.txt,spT14,Remueve toda la brea viviente azul para alcanzar al ojo del mal de arriba.
+es.kdd3.txt,spT15,Intenta recordar que la brea solo puede ser dañada en bordes llanos y cualquier cuadrado donde no sea estable se transformará en bebés brea.
+es.kdd3.txt,spT16,La brea es estable cuando puede formar un área cuadrada de por lo menos cuatro cuadrados.
+es.kdd3.txt,spT17,"¡Felicitaciones, has completado este cuarto!"
+es.kdd3.txt,spT18,"Luego de que abandones el cuarto, tu triunfo será permanente. Siempre podrás ver tu mejor puntaje del cuarto, y podrás ver el lugar que conseguiste en comparación a los puntajes en la clasificación."
+es.kdd3.txt,spT19,"Si te has conectado al juego usando credenciales válidas de una cuenta del foro de Caravel, tu mejor puntaje será publicado en la clasificación."
+es.kdd3.txt,spT20,"Tu puntaje permanecerá en la clasificación por dos semanas a menos que hayas pagado tu suscripción de CaravelNet, por lo que tus puntajes se mantendrán en la clasificación para siempre."
+es.kdd3.txt,spT21,Ahora puedes abandonar el cuarto de tutorial.
+es.kdd3.txt,achName0,Trabajando como un Reloj
+es.kdd3.txt,achName1,Relojeando como un Trabajo
+es.kdd3.txt,achName2,Manos Enredadas
+es.kdd3.txt,achName3,Manos Encerradas
+es.kdd3.txt,achName4,Espada Pegada
+es.kdd3.txt,achName5,Forever Alone
+es.kdd3.txt,achName6,Sigiloso
+es.kdd3.txt,achName7,Técnico de Brea
+es.kdd3.txt,achName8,Señor de las Serpientes
+es.kdd3.txt,achName9,Solo en el Siseo
+es.kdd3.txt,achName10,Cazador Silencioso
+es.kdd3.txt,achName11,El Ninja
+es.kdd3.txt,achName12,Matricida
+es.kdd3.txt,achName13,Explorador Principiante
+es.kdd3.txt,achName14,Matador Incipiente
+es.kdd3.txt,achName15,Exterminador por Contrato
+es.kdd3.txt,achName16,¡Soy un Profesional!
+es.kdd3.txt,achName17,Maestría
+es.kdd3.txt,achName18,Post-Maestría
+es.kdd3.txt,achName19,Cucarachas Asadas
+es.kdd3.txt,achName20,Reinas a la King
+es.kdd3.txt,achName21,Huevos sobre Fuego
+es.kdd3.txt,achName22,Mostaza de Ojo
+es.kdd3.txt,achName23,Filetes de Espectro
+es.kdd3.txt,achName24,Rollos de Serpiente
+es.kdd3.txt,achName25,Ajustando el Tenedor
+es.kdd3.txt,achName26,Verde Descendiente
+es.kdd3.txt,achName27,Controlador de Alborotos
+es.kdd3.txt,achName28,Reanimador
+es.kdd3.txt,achName29,Señor del Tiempo
+es.kdd3.txt,achName30,Guardián del Espacio
+es.kdd3.txt,achName31,Andador sin Fin
+es.kdd3.txt,achDesc0,Termina el cuarto de 4N 3E en el Noveno Nivel parándote sobre las áreas marcadas no más de una vez
+es.kdd3.txt,achDesc1,Termina el cuarto de 3N 3E en el Noveno Nivel parándote sobre las áreas marcadas no más de una vez
+es.kdd3.txt,achDesc2,Termina el cuarto de 1N 1E en el Décimo Nivel sin girar la espada
+es.kdd3.txt,achDesc3,No gires tu espada en el cuarto de 1E en el Décimo Nivel
+es.kdd3.txt,achDesc4,No gires tu espada mientras limpias el cuarto de 1S 1O en el Décimo Nivel
+es.kdd3.txt,achDesc5,Conquista el cuarto de 1S en el Décimo Nivel sin beber la poción de mímica
+es.kdd3.txt,achDesc6,Termina el cuarto de 1S 2E en el Decimoprimer Nivel en menos de 150 movimientos.
+es.kdd3.txt,achDesc7,Limpia toda la brea en cualquier cuarto del Decimoprimer Nivel
+es.kdd3.txt,achDesc8,Conquista el cuarto de 1S 1E en el Decimosegundo Nivel sin moverte diagonalmente
+es.kdd3.txt,achDesc9,Conquista el cuarto de 2S 1E en el Decimosegundo Nivel sin beber la poción de mímica
+es.kdd3.txt,achDesc10,Despierta exactamente un ojo mientras limpias el cuarto de 1S en el Decimosegundo Nivel
+es.kdd3.txt,achDesc11,Limpia un cuarto con ojos del mal sin despertar ninguno
+es.kdd3.txt,achDesc12,Mata una reina cucaracha mientras está poniendo huevos
+es.kdd3.txt,achDesc13,Completa el Noveno Nivel
+es.kdd3.txt,achDesc14,Completa el Décimo Nivel
+es.kdd3.txt,achDesc15,Completa el Decimoprimer Nivel
+es.kdd3.txt,achDesc16,Completa el Decimosegundo Nivel
+es.kdd3.txt,achDesc17,Masteriza el dominio
+es.kdd3.txt,achDesc18,Pos-Masteriza el dominio
+es.kdd3.txt,achDesc19,Mata 35 cucarachas
+es.kdd3.txt,achDesc20,Mata 20 cucarachas reinas
+es.kdd3.txt,achDesc21,Mata 15 huevos de cucaracha
+es.kdd3.txt,achDesc22,Mata 15 ojos del mal
+es.kdd3.txt,achDesc23,Mata 5 espectros
+es.kdd3.txt,achDesc24,Mata 10 serpientes
+es.kdd3.txt,achDesc25,Golpea un orbe por tres turnos consecutivos
+es.kdd3.txt,achDesc26,Baja una puerta verde 10 veces
+es.kdd3.txt,achDesc27,Mata un total de 2.500 monstruos
+es.kdd3.txt,achDesc28,Muere un total de 100 veces
+es.kdd3.txt,achDesc29,Rehaz un total de 450 movimientos
+es.kdd3.txt,achDesc30,Echa un total de 200 trampillas
+es.kdd3.txt,achDesc31,Haz un total de 8.000 pasos
+es.kdd3.txt,outro,"Si solo tuviera un mapa de la Mazmorra de Dugan, Beethro hubiera sabido que lo que yace en el decimotercer piso es algo que podría derrotar incluso a los más fuertes guerreros. Pero al menos no habrá nada de brea ni serpientes allí...
+
+
+<font size=""32"" color=""#FFFF00"">¡Felicitaciones!</font>
+
+Has completado el primer episodio de Deadly Rooms of Death: King Dugan's Dungeon Lite. Sinceramente espero que hayas disfrutado de esta experiencia.
+Ahora que has descendido a las escaleras finales de este conjunto, ¡Tal vez quieras intentar masterizar, y luego pos-masterizar, este juego! Para hacerlo, encuentra los cuartos secretos. La cantidad de cuartos secretos que te quedan en cada nivel ahora se podrán ver en la Pantalla de Restaurar Cuarto.
+Una vez que logres conquistarlos todos, un Área Maestra especial se abrirá. ¿Puedes encontrar como acceder a ella?
+Tal vez también quieras jugar el siguiente episodio de la serie de DROD:KDDL.
+
+Antes de dejarte disfrutar de tu sentimiento de absoluta gloria, me gustaría agradecer a un par de personas, ya que sin ellos este juego nunca hubiera visto la luz del día:
+
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - El creador, padre e inventor de DROD. Sin él, esta única idea de juego nunca hubiera visto la luz del día.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - Él codificó la mayor parte de DROD: JtRH y DROD: TCB él solo. Gracias al espléndido código base, hacer Flash DROD fue puro placer.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Señor del Foro de Caravel y codificador principal de CaravelNet. Gracias a él, puedes batallar por puntajes altos ¡Y mucho más!
+
+
+<font size=""23"" color=""#FFFF00"">Programación, Desarrollo</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Arte y Música</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Desarrollo del Servidor</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Desarrollo de Niveles</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testers Primarios</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testers</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Traducciones</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Actores de Voz</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Codificación, Idea y Niveles</font> - %%
+
+
+¡Nos vemos la próxima!
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+es.kdd3.txt,complNextGame,"Jugar al siguiente conjunto de niveles - KDD Lite 4. Este se abrirá en una nueva ventana, y ahora puedes cerrar esta ventana sin peligro. Tu progreso se ha guardado."
+es.kdd3.txt,defCont,Controles predeterminados:
+es.kdd3.txt,sc_diago,Puedes moverte diagonalmente incluso en corredores muy angostos.
+es.kdd3.txt,sc_broken,Acaba con estas paredes destruidas y secretas con tu espada.
+es.kdd3.txt,sc_queens1,Las reinas cucarachas ponen huevos de cucarachas cada 30 turnos (el turno luego del contador de freza se vuelve rojo).
+es.kdd3.txt,sc_queens2,Los huevos se convertirán en cucarachas 5 turnos luego de la freza.
+es.kdd3.txt,sc_queens3,"Los huevos no aparecerán sobre flechas, trampillas, o puertas amarillas. Usa la tecla ""I"" o 5 en el Numpad para esperar un turno."
+es.kdd3.txt,sc_mimics,"Luego de pararte sobre una poción de mímica, usa tu mouse o la tecla de espera para elegir dónde quieres posicionar a la mímica."
+es.kdd3.txt,sc_shiftwait,You might find it useful that Shift+Wait waits until the next spawn.
+es.kdd3.txt,sp_mother1,Cada 30 turnos las madres brea harán que la brea crezca un cuadrado en cada dirección.
+es.kdd3.txt,sp_mother2,"Es relativamente seguro ser rodeado de brea creciente, pero debes tener cuidado de los bebés brea que pueden aparecer durante el crecimiento."
+es.kdd3.txt,sc_backswipe,¡Sigue el camino de arena para aprender la técnica del ataque lateral! Recuerda los movimientos diagonales y no gires tu espada.
+es.kdd3.txt,sc_trapdoors,Estos cuadrados rosa-púrpuras son trampillas que caen si tú o una mímica se baja de ellas.
+es.kdd4.txt,Thirteenth Level,Decimotercer Nivel
+es.kdd4.txt,Fourteenth Level,Decimocuarto Nivel
+es.kdd4.txt,Fifteenth Level,Decimoquinto Nivel
+es.kdd4.txt,Sixteenth Level,Decimosexto Nivel
+es.kdd4.txt,Mastery Level,Nivel Maestro
+es.kdd4.txt,Original 13th Level,Nivel 13 Original
+es.kdd4.txt,Tutorial Level,Nivel de Tutorial
+es.kdd4.txt,entrTut,"Beethro Budkin, exterminador de mazmorras profesional de quinta generación, ha sido contratado por el Rey Dugan para limpiar su mazmorra de una gran infestación de monstruos.
+Beethro cobra por cuarto y, como profesional, está obligado por contrato a acabar con todos los monstruos de todos y cada uno de los cuartos en la mazmorra, para poder ser pagado.
+La única arma que Beethro necesita para realizar su trabajo es una Espada Realmente Grande, la cual derrotará casi cualquier monstruo de un solo ataque."
+es.kdd4.txt,entr13,"""Probablemente debí haberme saltado este nivel, pero un contrato es un contrato. ¿Dónde dejé esas migajas de pan?” -Beethro"
+es.kdd4.txt,entr14,"En este nivel, finalmente encontrarás a alguien con un sano respeto por tu espada."
+es.kdd4.txt,entr15,"Este nivel es como la vez que estabas cortando el pasto y tenías exactamente la cantidad de gasolina necesaria para terminar, pero luego algo salió mal, y tuviste que ir a comprar más gasolina. Y había una gran serpiente en la estación de gasolina, y querías entrar para pagar al encargado, pero la puerta de adelante estaba cerrada, entonces bebiste una poción de mímica para entrar, y luego las cucarachas...
+\Bueno, supongo que aquí la metáfora se estropea."
+es.kdd4.txt,entr16,Estas cucarachas necesitan a una figura de autoridad quien las guíe. Alguien con carisma y carácter. ¡Alguien como tú!
+es.kdd4.txt,entrMaster,"Beethro descendió por las escaleras, solo para encontrarse en un camino desconocido...
+
+No le pagarán por limpiar aquí, pero su honor de profesional lo impulsa hacia adelante."
+es.kdd4.txt,entrMasterBack,Beethro volvió para terminar el negocio de exterminación apropiado para el que fue contratado.
+es.kdd4.txt,entrOriginal13Enter,Beethro descendió al místico set de mortales e inútiles pasillos.
+es.kdd4.txt,entrOriginal13Success,"Orgulloso de su logro, pero ahora mucho menos cuerdo, Beethro emergió del infame nivel 13 de la Mazmorra del Rey Dugan."
+es.kdd4.txt,entrOriginal13Escape,Beethro huyó del reto como un pequeño y escuálido gatito.
+es.kdd4.txt,achName0,Bosque Unidireccional
+es.kdd4.txt,achName1,Serpientes Estoicas
+es.kdd4.txt,achName2,Sedentario de Brea
+es.kdd4.txt,achName36,Puertas Ojos
+es.kdd4.txt,achName3,Golpeador de Duendes
+es.kdd4.txt,achName4,Aplastador de Duendes
+es.kdd4.txt,achName5,Destructor de Duendes
+es.kdd4.txt,achName6,¡A un Lado!
+es.kdd4.txt,achName7,Mamá Verde
+es.kdd4.txt,achName8,Asesino de Duendes
+es.kdd4.txt,achName34,Sacrificio Extremo
+es.kdd4.txt,achName35,Políticas Estrictas
+es.kdd4.txt,achName32,Asesino Tranquilo
+es.kdd4.txt,achName33,Paso Adelante
+es.kdd4.txt,achName39,Arañas Cruzando
+es.kdd4.txt,achName9,¡Creciendo!
+es.kdd4.txt,achName37,Maestro de Eyeion
+es.kdd4.txt,achName38,Juegos del Cazador
+es.kdd4.txt,achName10,El Explorador
+es.kdd4.txt,achName11,Fricasé de Duendes
+es.kdd4.txt,achName12,Matricida
+es.kdd4.txt,achName13,Explorador Principiante
+es.kdd4.txt,achName14,Matador Incipiente
+es.kdd4.txt,achName15,Exterminador por Contrato
+es.kdd4.txt,achName16,¡Soy un Profesional!
+es.kdd4.txt,achName17,Maestría
+es.kdd4.txt,achName18,Post-Maestría
+es.kdd4.txt,achName19,Cucarachas a la Llama
+es.kdd4.txt,achName20,Reinas Horneadas
+es.kdd4.txt,achName21,Huevos Crudos
+es.kdd4.txt,achName22,Ojo Malvado a la Moda
+es.kdd4.txt,achName23,Kebabs de Espectros
+es.kdd4.txt,achName24,Sushi de Serpiente
+es.kdd4.txt,achName25,Ajustando el Tenedor
+es.kdd4.txt,achName26,Bajando el Verde
+es.kdd4.txt,achName27,Pacificador
+es.kdd4.txt,achName28,Fénix
+es.kdd4.txt,achName29,Maestro del Tiempo
+es.kdd4.txt,achName30,Limpiador de Pisos
+es.kdd4.txt,achName31,Al Infinito y Más Allá
+es.kdd4.txt,achDesc0,Nivel 13 2S1O: Limpia el cuarto sin girar tu espada
+es.kdd4.txt,achDesc1,Nivel 13 1S: Limpia el cuarto sin girar tu espada
+es.kdd4.txt,achDesc2,Nivel 13 1S1E: Limpia el cuarto sin girar tu espada
+es.kdd4.txt,achDesc36,Nivel 13 1S2O: Limpia el cuarto sin girar tu espada
+es.kdd4.txt,achDesc3,Nivel 14 1S: Limpia el cuarto mirando constantemente hacia el Noroeste
+es.kdd4.txt,achDesc4,Nivel 14 2S: Limpia el cuarto mirando constantemente hacia el Este
+es.kdd4.txt,achDesc5,Nivel 14 1N: Limpia el cuarto mirando constantemente hacia el Sur
+es.kdd4.txt,achDesc6,Nivel 14 2E: Limpia el cuarto sin parate sobre una trampilla
+es.kdd4.txt,achDesc7,Nivel 14 2N: Limpia el cuarto sin dejar que la madre brea crezca
+es.kdd4.txt,achDesc8,Nivel 14 1N3E: Limpia el cuarto sin girar tu espada
+es.kdd4.txt,achDesc34,Nivel 14 1N1E: Mata a un duende por último
+es.kdd4.txt,achDesc35,Nivel 14 2N2E: Limpia el cuarto sin dejar que el duende se pare sobre la calle gris
+es.kdd4.txt,achDesc32,Nivel 15 Entrada: Limpia el cuarto sin girar tu espada
+es.kdd4.txt,achDesc33,Nivel 15 Entrada: Deja caer todas las trampillas antes de limpiar el cuarto por completo
+es.kdd4.txt,achDesc39,"Nivel 15 1N: Luego de golpear el orbe, mata a todas las arañas moviéndote solamente en diagonal"
+es.kdd4.txt,achDesc9,Nivel 16 1S1E: Limpia el cuarto sin dejar que la madre brea crezca
+es.kdd4.txt,achDesc37,Nivel Maestro 2N: Limpia el cuarto sin dejar que los ojos se despierten o que las reinas pongan huevos
+es.kdd4.txt,achDesc38,Nivel Maestro 1N1E: Mata al espectro sin dejar caer todas las trampillas
+es.kdd4.txt,achDesc10,Visita todos los cuartos en el nivel 13 original (%% / 56)
+es.kdd4.txt,achDesc11,Mata 40 duendes
+es.kdd4.txt,achDesc12,Mata una reina cucaracha mientras está poniendo huevos
+es.kdd4.txt,achDesc13,Limpia el Decimotercer Nivel
+es.kdd4.txt,achDesc14,Limpia el Decimocuarto Nivel
+es.kdd4.txt,achDesc15,Limpia el Decimoquinto Nivel
+es.kdd4.txt,achDesc16,Limpia el Decimosexto Nivel
+es.kdd4.txt,achDesc17,Masteriza el dominio
+es.kdd4.txt,achDesc18,Pos-Masteriza el dominio
+es.kdd4.txt,achDesc19,Mata 100 cucarachas
+es.kdd4.txt,achDesc20,Mata 25 cucarachas reinas
+es.kdd4.txt,achDesc21,Mata 10 huevos de cucaracha
+es.kdd4.txt,achDesc22,Mata 80 ojos del mal
+es.kdd4.txt,achDesc23,Mata 40 espectros
+es.kdd4.txt,achDesc24,Mata 25 serpientes
+es.kdd4.txt,achDesc25,Golpea un orbe por tres turnos consecutivos
+es.kdd4.txt,achDesc26,Baja una puerta verde 20 veces
+es.kdd4.txt,achDesc27,Mata un total de 3.500 monstruos
+es.kdd4.txt,achDesc28,Muere un total de 80 veces
+es.kdd4.txt,achDesc29,Rehaz un total de 500 movimientos
+es.kdd4.txt,achDesc30,Echa un total de 500 trampillas
+es.kdd4.txt,achDesc31,Haz un total de 10.000 pasos
+es.kdd4.txt,sc_13_entr_1,Atajo a la salida
+es.kdd4.txt,sc_13_entr_2,Un verdadero exterminador no leerá la nota de arriba sin conquistar el nivel primero.
+es.kdd4.txt,sc_13_entr_3,"Las piedras yacen antes que la arena, antes de ellas yacen las losas las cuales están precedidas por césped el cual crece sobre una baldosa, con suciedad acumulada. 
+-Poeta Desconocido"
+es.kdd4.txt,sc_13_2S2W_3,Atajo a la entrada
+es.kdd4.txt,sc_14_1N3E,Este tipo en el otro cuarto no es tan inteligente. Siempre cae por el mismo viejo truco.
+es.kdd4.txt,sc_mast_entr_1,El Nivel 13 Original
+es.kdd4.txt,sc_mast_entr_2,Algunos acertijos nuevos.
+es.kdd4.txt,sc_mast_entr_3,Versiones más difíciles de cuartos existentes.
+es.kdd4.txt,sc_mast_1W,No hay nada de nada aquí.
+es.kdd4.txt,sc_o13_orb,Este orbe tenía un propósito en el nivel original.
+es.kdd4.txt,sc_o13_orbs,Estos orbes tenían un propósito en el nivel original.
+es.kdd4.txt,sc_o13_orb2,"Este orbe no estaba aquí originalmente, y la puerta amarilla entera estaba en un cuarto."
+es.kdd4.txt,sc_o13_orbs_gates,Había un orbe en el cuarto original y las puertas tenían un propósito.
+es.kdd4.txt,sc_o13_broken_wall,"Había una pared común y corriente en el nivel original, haciendo que el área siguiente sea imposible de llegar."
+es.kdd4.txt,sc_o13_edge,Aquí no había conexión entre estos cuartos originalmente.
+es.kdd4.txt,sc_o13_roach,"En el nivel 13 original, la cucaracha de arriba estaba en el mismo cuarto y este pasillo era un poquito diferente."
+es.kdd4.txt,scM1s1,¡Eso sí que es un logro!
+es.kdd4.txt,scM1s2,¿Cómo estuvo el juego? ¿Lograste conseguir todos los logros?
+es.kdd4.txt,scM1s3,"No dudes en visitar CaravelGames.com para jugar a más episodios de KDDL, o para descargar cualquiera de los otros juegos de DROD para Windows, MacOS o Linux."
+es.kdd4.txt,scM1s4,¡Sigue adelante!
+es.kdd4.txt,scM1s5,¡Aquí hay una pequeña recompensa! Mata a todos los ojos y duendes sin pararte sobre el césped.
+es.kdd4.txt,scM1s6,Las cucarachas reina serán matadas una vez que te pares sobre el punto de control en la esquina superior derecha.
+es.kdd4.txt,scM1s7,¡Fabuloso!
+es.kdd4.txt,sp_14_1E,Ahh...¡Nada satisface más que una dulce vista sin nada de brea!
+es.kdd4.txt,sp_14_2N2E_1,Bah...parece que necesito dejar a este duende vivo lo suficiente para acabar con esa serpiente por mi.
+es.kdd4.txt,sp_14_2N2E_2,"¡Nada de ayudas de mí! Tu me cortas, lo sé--no importa si ahora o después."
+es.kdd4.txt,sp_14_2N2E_3,No actúes valiente. Sé que los duendes no son valientes.
+es.kdd4.txt,sp_14_2N2E_4,"¡No, No, No! ¡Mantener esa cosa puntiaguda lejos!"
+es.kdd4.txt,sp_14_2N2E_5,Piensas en escabullirte por detrás cuando me distraiga. Sí.
+es.kdd4.txt,sp_14_2N2E_6,¡Piedad!
+es.kdd4.txt,sp_14_2N2E_7,Mira ¡Harías lo mismo en mi lugar!
+es.kdd4.txt,sp_14_2N2E_8,Eso fue horrible ¡Espero no tener que repetirlo!
+es.kdd4.txt,sp_14_2N2E_9,"Descansa allí un poco mientras abro el camino, duende."
+es.kdd4.txt,sp_14_2N2E_10,(Probablemente no haya tenido que encerrarlo ahí...¡Pero mejor prevenir que lamentarse!)
+es.kdd4.txt,sp_14_1N1E,Mira eso...¡Ni un solo muro destruido!
+es.kdd4.txt,sp_15_1S2W,"Hoo cielos, esto no será un trabajo simple. Mejor planear bien esto antes de seguir adelante."
+es.kdd4.txt,sp_16_2S1E_1,¡Brillante!  A veces me sorprendo a mi mismo.
+es.kdd4.txt,sp_16_2S1E_2,¡Ha!  ¡Todo limpio!
+es.kdd4.txt,sp_16_2S1E_3,Ahora a salir de aquí...
+es.kdd4.txt,sp_16_2S1E_4,Hmm...¿Por dónde había entrado?
+es.kdd4.txt,sp_16_2S1E_5,"Ah, no importa."
+es.kdd4.txt,spM1s,Has fallado...
+es.kdd4.txt,sp_o13_1,"Por aquí, cucarachita, cucarachita..."
+es.kdd4.txt,sp_o13_2,¡Cielos! Una miserable cucaracha para aplastar
+es.kdd4.txt,sp_tut_entr_1,Bienvenido a DROD.
+es.kdd4.txt,sp_tut_entr_2,"Si esta es tu primera vez jugando a esta serie, por favor continúa por el este."
+es.kdd4.txt,sp_tut_entr_3,Allí encontrarás un par de acertijos más fáciles para introducirte a este concepto.
+es.kdd4.txt,sp_tut_entr_4,Toma las escaleras si ya estás familiarizado con el juego.
+es.kdd4.txt,sp_tut_entr_5,Usa el teclado numérico o las teclas 789 uio jkl para moverte.
+es.kdd4.txt,sp_tut_entr_6,"Las teclas se pueden cambiar desde el menú de opciones, al cual puedes acceder usando ‘Esc’."
+es.kdd4.txt,sp_tut_1E_1,Los orbes afectan puertas amarillas. Golpéalas con tu espada para activarlo.
+es.kdd4.txt,sp_tut_1E_2,Haz click sobre un orbe con el mouse para ver que puertas afecta.
+es.kdd4.txt,sp_tut_1E_3,Rota tu espada usando las teclas ‘Q’ y ‘W’.
+es.kdd4.txt,sp_tut_1E_4,Golpea a la cucaracha con tu espada para matarla.
+es.kdd4.txt,sp_tut_1E_5,Golpea el orbe y espera un par de turnos para ver como se comportan los monstruos cuando se acercan a una esquina diagonalmente.
+es.kdd4.txt,sp_tut_1E_6,Espera...
+es.kdd4.txt,sp_tut_1E_7,"Como puedes ver, cuando se acercan a una esquina diagonalmente, los monstruos prefieren moverse verticalmente."
+es.kdd4.txt,sp_tut_1E_8,Mata las cucarachas para abrir la puerta verde y avanzar al Este.
+es.kdd4.txt,sp_tut_2E_1,"Aquí aprenderás el ataque lateral. Luego de golpear el orbe, solo hay una manera de matar a las cucarachas - moviéndote directamente al Noroeste o al Suroeste."
+es.kdd4.txt,sp_tut_2E_2,"Tal vez quieras repetirlo un par de veces para recordarlo, ya que es una técnica muy importante."
+es.kdd4.txt,sp_tut_2E_3,Puedes moverte diagonalmente incluso a través de caminos muy estrechos.
+es.kdd4.txt,sp_tut_2E_4,Los muros rotos y secretos pueden ser destruidos con tu espada.
+es.kdd4.txt,sp_tut_2E_5,Las flechas bloquean el movimiento de toda entidad en contra de la dirección que apuntan.
+es.kdd4.txt,sp_tut_2E_6,Párate sobre un punto de control para reaparecer aquí si mueres.
+es.kdd4.txt,sp_tut_2E_7,Las cucarachas reina ponen huevos cada 30 turnos. Usa el reloj de la izquierda de la pantalla para saber cuánto falta para la próxima freza.
+es.kdd4.txt,sp_tut_3E_1,"Los Ojos Malvados se mantienen dormidos a menos que te pares sobre su línea de visión - una vez despiertos, atacarán como cucarachas."
+es.kdd4.txt,sp_tut_3E_2,Las serpientes no pueden ser dañadas por tu espada. La única manera de matarlas es llevarlas a un callejón sin salida.
+es.kdd4.txt,sp_tut_3E_3,Usa las los muros rotos para formar un callejón sin salida para las serpientes.
+es.kdd4.txt,sp_tut_3E_4,Puedes usar backspace para deshacer de uno a tres movimientos.
+es.kdd4.txt,sp_tut_3E_5,"Las serpientes, a diferencia de otros monstruos, no pueden moverse diagonalmente."
+es.kdd4.txt,sp_tut_3E_6,"En cualquier momento dado tienen una preferencia para moverse, la cual cambia cada 5 turnos."
+es.kdd4.txt,sp_tut_3E_7,Puedes ver su preferencia actual debajo del reloj de freza.
+es.kdd4.txt,sp_tut_4E_1,"Luego de pararte sobre una trampilla, esta caerá, dejando un abismo detrás."
+es.kdd4.txt,sp_tut_4E_2,"Para abrir la puerta roja, debes dejar caer todas las trampillas."
+es.kdd4.txt,sp_tut_4E_3,Recuerda que puedes usar los abismos que quedan atrás por las trampillas para protegerte de las cucarachas.
+es.kdd4.txt,sp_tut_5E_1,La brea es una sustancia muy peculiar. Solo puede ser dañada en los bordes planos.
+es.kdd4.txt,sp_tut_5E_2,No necesitas limpiarla toda para conquistar un cuarto.
+es.kdd4.txt,sp_tut_6E_1,"Las madres brea son enemigos temerarios. A pesar de estar en un lugar, escondidas en la brea, hacen que ésta crezca cada 30 turnos."
+es.kdd4.txt,sp_tut_6E_2,La puerta negra no se abrirá hasta limpiar toda la brea de un cuarto.
+es.kdd4.txt,sp_tut_7E_1,Beber esta poción te permitirá colocar una mímica.
+es.kdd4.txt,sp_tut_7E_2,Las mímicas repetirán todos tus movimientos y pueden dejar caer trampillas al igual Beethro.
+es.kdd4.txt,sp_tut_8E_1,"Cuando bebes una poción de invisibilidad, los monstruos no se moverán a menos que estés en su línea de olfato."
+es.kdd4.txt,sp_tut_8E_2,No dejes que la cucaracha reina escape hacia las flechas o no podrás matarla.
+es.kdd4.txt,sp_tut_8E_3,"¡Lo hiciste bien, felicitaciones!"
+es.kdd4.txt,sp_tut_8E_4,Parece que has fallado.
+es.kdd4.txt,sp_tut_8E_5,Puede usar la “R” para empezar de nuevo un cuarto o espera para escuchar unos consejos.
+es.kdd4.txt,sp_tut_8E_6,...
+es.kdd4.txt,sp_tut_8E_7,Hay tres maneras diferentes de resolver este cuarto.
+es.kdd4.txt,sp_tut_8E_8,La más rápida requiere que atrapes a la reina en flechas cerca de la puerta verde de manera que puedas matarla parándote sobre o a un lado de la flecha diagonal.
+es.kdd4.txt,sp_tut_8E_9,"La otra, casi tan rápida como la anterior, se puede lograr caminando horizontalmente hacia la reina para que la puerta verde la bloquee."
+es.kdd4.txt,sp_tut_8E_10,La última requiere de un círculo completo alrededor del cuarto y atrapar a la reina en el pasillo de la entrada.
+es.kdd4.txt,sp_tut_8E_11,"Si aún no puedes hacer esto, espera un par de turnos para que se abra la poción de mímica de emergencia."
+es.kdd4.txt,sp_tut_9E,¡Buena suerte!
+es.kdd4.txt,sc_tut_emergency_potion,"Poción de mímica de emergencia, usar solo si el cuarto es muy difícil."
+es.kdd4.txt,sc_tut_tricky,Este difícil cuarto no es requerido.
+es.kdd4.txt,outro,"Los últimos cuatro pisos fueron un verdadero dolor para Beethro con la brea, las puertas, las cucarachas... Mientras descendía por las escaleras logró oler más de esa sustancia azul, lo cual lo hizo temblar, pero al fondo de su cabeza algo le decía que había un peligro aún mayor más adelante...
+
+
+<font size=""32"" color=""#FFFF00"">¡Felicitaciones!</font>
+
+Has completado el primer episodio de Deadly Rooms of Death: King Dugan's Dungeon Lite. Sinceramente espero que hayas disfrutado de esta experiencia.
+Ahora que has descendido a las escaleras finales de este conjunto, ¡Tal vez quieras intentar masterizar, y luego pos-masterizar, este juego! Para hacerlo, encuentra los cuartos secretos. La cantidad de cuartos secretos que te quedan en cada nivel ahora se podrán ver en la Pantalla de Restaurar Cuarto.
+Una vez que logres conquistarlos todos, un Área Maestra especial se abrirá. ¿Puedes encontrar como acceder a ella?
+Tal vez también quieras jugar el siguiente episodio de la serie de DROD:KDDL
+
+Antes de dejarte disfrutar de tu sentimiento de absoluta gloria, nos gustaría agradecer a un par de personas, quienes hicieron posible que puedas jugar este juego:
+
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - El creador, padre e inventor de DROD. Sin él, esta única idea de juego nunca hubiera visto la luz del día.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - Él codificó la mayor parte de DROD: JtRH y DROD: TCB él solo. Gracias al espléndido código base, hacer Flash DROD fue puro placer.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Señor del Foro de Caravel y codificador principal de CaravelNet. Gracias a él, puedes batallar por puntajes altos ¡Y mucho más!
+
+
+<font size=""23"" color=""#FFFF00"">Programación, Desarrollo</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Arte y Música</font> - %% (minor)
+
+<font size=""23"" color=""#FFFF00"">Desarrollo del Servidor</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Desarrollo de Niveles</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testers Primarios</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testers</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Traducciones</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Actores de Voz</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Codificación, Idea y Niveles</font> - %%
+
+
+¡Nos vemos la próxima!
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+es.kdd4.txt,complNextGame,"Jugar al siguiente conjunto de niveles - KDD Lite 5. Este se abrirá en una nueva ventana, y ahora puedes cerrar esta ventana sin peligro. Tu progreso se ha guardado."
+es.txt,keyBackspace,Backspace
+es.txt,keyTab,Tab
+es.txt,keyEnter,Enter
+es.txt,keyShift,Shift
+es.txt,keyControl,Control
+es.txt,keyAlt,Alt
+es.txt,keyPause,Pause/Brk
+es.txt,keyCapsLock,Caps Lock
+es.txt,keyEscape,Escape
+es.txt,key ,Espacio
+es.txt,keyPageUp,Page Up
+es.txt,keyPageDown,Page Down
+es.txt,keyEnd,Fin
+es.txt,keyHome,Inicio
+es.txt,keyArrowLeft,Left
+es.txt,keyArrowUp,Up
+es.txt,keyArrowRight,Right
+es.txt,keyArrowDown,Down
+es.txt,keyInsert,Insert
+es.txt,keyDelete,Supr
+es.txt,key0,0
+es.txt,key1,1
+es.txt,key2,2
+es.txt,key3,3
+es.txt,key4,4
+es.txt,key5,5
+es.txt,key6,6
+es.txt,key7,7
+es.txt,key8,8
+es.txt,key9,9
+es.txt,keya,A
+es.txt,keyb,B
+es.txt,keyc,C
+es.txt,keyd,D
+es.txt,keye,E
+es.txt,keyf,F
+es.txt,keyg,G
+es.txt,keyh,H
+es.txt,keyi,I
+es.txt,keyj,J
+es.txt,keyk,K
+es.txt,keyl,L
+es.txt,keym,M
+es.txt,keyn,N
+es.txt,keyo,O
+es.txt,keyp,P
+es.txt,keyq,Q
+es.txt,keyr,R
+es.txt,keys,S
+es.txt,keyt,T
+es.txt,keyu,U
+es.txt,keyv,V
+es.txt,keyw,W
+es.txt,keyx,X
+es.txt,keyy,Y
+es.txt,keyz,Z
+es.txt,key91,L.Win/Cmd
+es.txt,key92,R.Win
+es.txt,key93,Menu
+es.txt,keyNumpad0,Numpad 0
+es.txt,keyNumpad1,Numpad 1
+es.txt,keyNumpad2,Numpad 2
+es.txt,keyNumpad3,Numpad 3
+es.txt,keyNumpad4,Numpad 4
+es.txt,keyNumpad5,Numpad 5
+es.txt,keyNumpad6,Numpad 6
+es.txt,keyNumpad7,Numpad 7
+es.txt,keyNumpad8,Numpad 8
+es.txt,keyNumpad9,Numpad 9
+es.txt,keyNumpadMul,Numpad *
+es.txt,keyNumpadAdd,Numpad +
+es.txt,keyNumpadSub,Numpad -
+es.txt,keyNumpadDot,Numpad .
+es.txt,keyNumpadDiv,Numpad /
+es.txt,keyF1,F1
+es.txt,keyF2,F2
+es.txt,keyF3,F3
+es.txt,keyF4,F4
+es.txt,keyF5,F5
+es.txt,keyF6,F6
+es.txt,keyF7,F7
+es.txt,keyF8,F8
+es.txt,keyF9,F9
+es.txt,keyF10,F10
+es.txt,keyF11,F11
+es.txt,keyF12,F12
+es.txt,keyF13,F13
+es.txt,keyF14,F14
+es.txt,keyF15,F15
+es.txt,key144,Numlock
+es.txt,key145,Scroll Lock
+es.txt,key;,;
+es.txt,key=,=
+es.txt,"key,",","
+es.txt,key-,-
+es.txt,key.,.
+es.txt,key/,/
+es.txt,key~,~
+es.txt,key[,[
+es.txt,key\,\
+es.txt,key],]
+es.txt,"key'","'"
+es.txt,numpad,Numpad
+es.txt,notebook,Notebook
+es.txt,keyUp,Moverse hacia el Norte
+es.txt,keyUpLeft,Moverse hacia el Noroeste
+es.txt,keyUpRight,Moverse hacia el Noreste
+es.txt,keyLeft,Moverse hacia el Oeste
+es.txt,keyRight,Moverse hacia el Este
+es.txt,keyDown,Moverse hacia el Sur
+es.txt,keyDownLeft,Moverse hacia el Suroeste
+es.txt,keyDownRight,Moverse hacia el Sureste
+es.txt,keyWait,Esperar un turno
+es.txt,keyCW,Girar hacia la derecha
+es.txt,keyCCW,Girar hacia la izquierda
+es.txt,keyUndo,Retroceder un turno
+es.txt,keyRestart,Reiniciar Cuarto
+es.txt,keyBattle,Tecla de Batalla
+es.txt,keyLock,Bloquear/Desbloquear Cuarto
+es.txt,close,Cerrar
+es.txt,cnetError,"La conexión ha fallado.
+Esto puede deberse a credenciales inválidas, conexión defectuosa o problemas con el servidor. Las funciones de CaravelNet han sido desactivadas. Para reanudar, ve a ""Opciones"", actualiza tus credenciales si es necesario, y pulsa ""¡Conectar!"""
+es.txt,prlStartGame,Comenzar Juego
+es.txt,prlLoading,Cargando: %% / %%
+es.txt,prlWaitApi,Conectando API
+es.txt,prlLanguage,Cambiar Idioma
+es.txt,initAssets,Inicializando %% / %%
+es.txt,tsStartNew,Juego Nuevo
+es.txt,tsStartNewKey,J
+es.txt,tsStartNewKeyCode,74
+es.txt,tsContinue,Continuar
+es.txt,tsContinueKey,C
+es.txt,tsContinueKeyCode,67
+es.txt,tsRestore,Restaurar a un Cuarto Distinto
+es.txt,tsRestoreKey,R
+es.txt,tsRestoreKeyCode,82
+es.txt,tsAchievements,Ver Logros
+es.txt,tsAchievementsKey,V
+es.txt,tsAchievementsKeyCode,86
+es.txt,tsOptions,Opciones
+es.txt,tsOptionsKey,O
+es.txt,tsOptionsKeyCode,79
+es.txt,tsHelp,Ayuda e Historia
+es.txt,tsHelpKey,A
+es.txt,tsHelpKeyCode,65
+es.txt,tsBrowse,Ver Dominios
+es.txt,tsBrowseKey,D
+es.txt,tsBrowseKeyCode,68
+es.txt,optHeader,Opciones:
+es.txt,optUploadAll,Subir Todos los Puntajes
+es.txt,optConnect,¡Conectar!
+es.txt,optRedefine,Redefinir Teclas
+es.txt,optCnetHeader,Credenciales de CaravelNet
+es.txt,optCnetUser,Nombre de CNet
+es.txt,optCnetKey,Contraseña CNet
+es.txt,optCnetVolume,Volúmen
+es.txt,optCnetMusic,Música
+es.txt,optCnetSound,Efectos
+es.txt,optCnetVoices,Voces
+es.txt,optMoveAnim,Animación de Movimiento
+es.txt,optMoveSmooth,Suave
+es.txt,opyMoveFast,Rápido
+es.txt,uploadAll,Subiendo puntajes
+es.txt,uploadDone,¡Listo!
+es.txt,uploadError,¡Error! ¡Por favor conéctate e intenta otra vez!
+es.txt,uploadAlreadyHas,Ya ha sido subido
+es.txt,uploadRoomEntrance,Entrada
+es.txt,cnetDescription,"Usuarios suscritos a CaravelNet pueden llenar su información aquí para participar en clasificaciones en línea. Cada cuarto posee un puntaje por la menor cantidad de movimientos usados en completarlo. Si no completas estos detalles, solo serás notificado de qué lugar pudo haber obtenido tu puntaje. Puedes publicar todos tus puntajes más tarde a través del botón ""Subir Todos los Puntajes""."
+es.txt,cnetHeader,"Conseguir más información o comprar una suscripción a CaravelNet.
+Se abre en otra ventana."
+es.txt,redefineScreen,"Estás cambiando la tecla para ""%%""
+Presiona la tecla que quieras usar (actualmente: %%)
+Presiona ""Escape"" para cancelar"
+es.txt,redefineInvalidKey,"%% ya está en uso para otra función
+Presiona la tecla que quieras usar
+Presiona ""Escape"" para cancelar"
+es.txt,redefineReservedKey,"%% ya está en uso para un movimiento
+Presiona una tecla distinta
+Presiona ""Escape"" para cancelar"
+es.txt,abButCnet,Sobre CaravelNet
+es.txt,abButHowto,Cómo Jugar
+es.txt,abButHistory,Cronología de DROD
+es.txt,abButBackstory,Historia de DROD
+es.txt,abButCredits,Créditos
+es.txt,h&bTextWidth,450
+es.txt,h&bText,"  DROD fue concebido por Erik Hermansen en los 90. Es mayormente conocido como un juego de acertijos donde exploras cuartos en una mazmorra, asesinando monstruos con una Espada Realmente Grande. ¿Cómo funciona esto?  Lo verás por ti mismo cuando empieces a jugar.
+
+  Flash DROD es un puerto del DROD original. Usa los medios de motores de los DROD más nuevos, los cuales puedes descargar para jugarlos en tu computadora a través de CaravelGames.com.
+
+  Gracias a las integradas capacidades de CaravelNet, además de completar los acertijos, los jugadores pueden competir entre sí por la puntuación más alta completando cada cuarto en la menor cantidad de movimientos posible."
+es.txt,creditsWidth,620
+es.txt,credits,"<font size=""20"">Programación, Desarrollo: </font><font color=""#444444"">%%</font>
+<font size=""20"">Arte y Música: </font><font color=""#444444"">%%</font>
+<font size=""20"">Desarrollo del Servidor: </font><font color=""#444444"">%%</font>
+<font size=""20"">Desarrollo de Niveles: </font><font color=""#444444"">%%</font>
+<font size=""20"">Testers Primarios: </font><font color=""#444444"">%%</font>
+<font size=""20"">Testers: </font><font color=""#444444"">%%</font>
+<font size=""20"">Traducciones: </font><font color=""#444444"">%%</font>
+<font size=""20"">Actores de Voz: </font><font color=""#444444"">%%</font>
+<font size=""20"">Codificación, Idea y Niveles: </font><font color=""#444444"">%%</font>"
+es.txt,controlsWindowWidth,650
+es.txt,controlsWindow,"<font size=""18"">`Teclado Numérico` y `789 UIO JKL`</font><font color=""#444444""> - Movimiento</font>
+<font size=""18"">`Q` y `W`</font><font color=""#444444""> - Rotar espada</font>
+<font size=""18"">`Backspace`</font><font color=""#444444""> - Deshacer el último movimiento</font>
+<font size=""18"">`R'</font><font color=""#444444""> - Regresar al último punto de control o reiniciar</font>
+<font size=""18"">`Shift+R`</font><font color=""#444444""> - Reiniciar cuarto</font>
+<font size=""18"">`Escape`</font><font color=""#444444""> - Menú de pausa</font>
+<font size=""18"">`Enter`</font><font color=""#444444""> - Puntajes del cuarto y nivel</font>
+<font size=""18"">`X`</font><font color=""#444444""> - Bloquear/Desbloquear Cuarto</font>
+<font size=""18"">`Barra espaciadora`</font><font color=""#444444""> - Saltear diálogos y logros en pantalla</font>
+<font size=""18"">`F3`</font><font color=""#444444""> - Mostrar conteo de movimientos</font>
+<font size=""18"">`Shift+Tecla`</font><font color=""#444444""> - Realizar acción y su opuesto</font>
+<font size=""18"">`Shift+Esperar`</font><font color=""#444444""> - Esperar hasta el movimiento 30</font>
+<font size=""18"">`Click`</font><font color=""#444444""> - Mostrar información sobre el cuadro clickeado</font>
+
+  Tu objetivo es deshacerte de los monstruos de cada nivel de la Mazmorra del Rey Dugan. Esto puede realizarse usando solamente tu Espada Realmente Grande™ y tu ingenio. Cada cuarto es un área separada que debe ser completada en una sola sesión. Si abandonas un cuarto sin limpiarla por completo, volverá a su estado inicial cuando regreses."
+es.txt,cnetInfoWidth,500
+es.txt,cnetInfo,"  CaravelNet permite a usuarios de todo el mundo competir por los mejores puntajes.
+
+  Todos pueden publicar sus puntajes de manera anónima para compararlos con otros jugadores. Sin embargo, los puntajes anónimos no son almacenados en el servidor de CaravelNet y son solo para propósitos informativos. Cada puntaje de usuarios registrados de Caravel son almacenados por dos semanas luego de su publicación sin ningún precio. A aquellos con una suscripción a CaravelNet nunca se les borrarán sus puntajes.
+
+  Por favor nota que, siempre y cuando tu puntaje no sea borrado del disco, puedes elegir publicar todos tus puntajes al servidor luego de haber registrado una cuenta en Caravel.
+
+  Para registrarte en Caravel, por favor visita CaravelGames.com y créate una cuenta en el foro!"
+es.txt,backstory1,"  Beethro Budkin caminó hacia la Gran Sala de Comida donde el Rey Dugan terminaba de comer su masivo desayuno.
+
+  ""¡Largo, sucio plebeyo! ¡Interrumpes mi digestión con tu mala higiene!"" exclamó el Rey, con pedazos de cerdo y patatas estallando desde su boca.
+
+  ""Pero señor,"" protestó Beethro, ""usted me envió.""
+
+  La expresión en la larga cara del Rey cambió de furia a confusión a reconocimiento a simpatía al cabo de dos segundos.
+
+  ""Realmente deberías haber llegado más temprano,"" dijo el Rey Dugan. ""¡Es increíble! Dejas a tus guardias merendar en las mazmorras, dejan caer migajas por todo el lugar, y de repente el lugar está enjambrado de cucarachas gigantes, sin mencionar duendes, serpientes, ojos y otras asquerosidades. Realmente se nos ha ido de las manos.""
+
+  Beethro se enderezó con orgullo. ""No hay nada que temer. Soy un profesional entrenado de una larga línea de exterminadores de mazmorras. Combino cinco generaciones distintas de conocimiento con el más ingenioso equipo para ofrecer un servicio de exterminación eficiente y al mejor precio.""
+
+  ""¿Qué clase de equipo usas?""
+
+  ""Tengo una espada realmente grande."""
+es.txt,backstory2,"  ""¡Bien! ¿Cuándo podrás empezar?""
+
+  ""Tan pronto como arreglemos los detalles del pago. Aquí están mis cargos comunes de exterminación. Solo firme abajo."" Beethro le entregó un contrato al Rey.
+
+  ""¡Estos precios son indignantes! ¿Acaso el privilegio de un servicio honorable a la Corona no vale nada hoy en día?
+
+  ""Puedo marcharme.""
+
+  ""No, no, no. Necesitamos esa mazmorra limpia para que los prisioneros puedan recibir su tortura en un ambiente limpio y seguro.""
+
+  ""Bueno, le daré un descuento si añade a una princesa""
+
+  ""Eres feo y hueles mal. ¡Ninguna de mis hijas te querría!""
+
+  Beethro se encogió de hombros. ""Es bastante justo.""
+
+  El Rey firmó el contrato. ""Muy bien. Déjame mostrarte la entrada."""
+es.txt,backstory3,"  Mientras descendía, Beethro reflexionó sobre el trabajo que acababa de tomar. La Mazmorra de Dugan era excepcionalmente grande y, guiándose por los relatos de exterminadores pasados, ridículamente adaptado a infestaciones. También había sido expandida en secreto múltiples veces, para la desgracia de la primera persona que la limpió, cuyo contrato no cubría esa posibilidad. (Solo fue pagado por las partes de la mazmorra que sí conocía.)
+
+  Algunos han dicho que fuerzas siniestras estaban detrás de la expansión. La leyenda decía que un rey pasado se había cansado de su molesto y joven hijo, así que sugirió que el niño juegue en las mazmorras de los castillos, en tono de broma. Tomando a su padre en serio, el niño se aventuró al fondo de la mazmorra y nunca fue vuelto a ver. Se decía que no pereció, sino que vivó el resto de su vida en la mazmorra por preferencia. Convertido en maestro de su nuevo hábitat, aprendió todos los secretos del mundo subterráneo y formó alianzas con los monstruos que allí vivían, poniéndolos a trabajar creando nuevos pasadizos y criando mejores especímenes de monstruos. Se llamó a sí mismo El de Abajo, y planeó alzarse de las mazmorras para reclamar el trono cuando tenga el poder necesario."
+es.txt,backstory4,"  Beethro no estaba seguro de todo eso. Para los principiantes, el trono real no era lo que era antes, ahora que su poder era mayormente transferido a un parlamento. Sin importarles quién querría vivir bajo tierra, o cómo podrían aliarse con las criaturas de allí, quienes no eran grandes conversadores. Pero era verdad que las mazmorras tendían a ser innecesariamente complicadas y fácilmente infestadas, y a veces crecía sin aviso - ningún Arquitecto de Mazmorras diría ""por qué"", como materia de honor - y esto, más que nada, mantenía a hombres como Beethro trabajando.
+
+  De cualquier manera, un exterminador tendría muchas más preocupaciones prácticas, como la prolífica y gigantesca cucaracha de mazmorra. Lo importante en la mente de Beethro era hacer suficiente dinero y monstruos muertos en este trabajo para finalmente retirarse de este ingrato negocio y abrir un restaurante.
+
+  ""¡Lo llamaré 'La Parrilla de Cucarachas Asadas de Beethro'!"""
+es.txt,backstory1width,550
+es.txt,backstory2width,550
+es.txt,backstory3width,550
+es.txt,backstory4width,550
+es.txt,backstoryNext,Siguiente
+es.txt,backstoryPrev,Anterior
+es.txt,drodHistoryWidth,650
+es.txt,drodHistory,"  ""Deadly Rooms of Death"" (DROD) fue creado por Erik Hermansen en los años 90. El juego fue lanzado por Webfoot y fue conocido como ""Webfoot DROD"", sin embargo este juego ya no está en venta actualmente y no puede ser legalmente obtenido. Por suerte, a Erik se le dio el permiso de reconstruir el juego por su cuenta, y así nació ""Caravel DROD"" en el 2002.
+
+  Luego, en el 2003, ""DROD: Architect's Edition"" fue, lanzado, incluyendo un editor de niveles que permitía a cualquier jugador crear sus propios 'dominios' (sets de niveles) y compartirlos públicamente en el foro de CaravelGames. El juego tuvo una gran cantidad de fans y un plan de crear un nuevo juego fue concebido.
+
+  El 1 de Abril de 2005 ¡""DROD: Journey to Rooted Hold"" fue lanzado! La lista de nuevas inclusiones fue increíble. Incluyó nuevas gráficas, secuencias de comandos y diálogos, alrededor de una docena de nuevos elementos, una cautivadora historia y un antagonista cuya voz produce escalofríos.
+
+  Exactamente dos años más tarde, ""DROD: The City Beneath"" vio la luz del día. Ese día se produjo el récord de la mayor cantidad de usuarios activos en el foro de Caravel al mismo tiempo. TCB incluyó aún más elementos nuevos y mejoras que JtRH, y un mayor nivel de dificultad.
+
+  En el 2008, ""DROD RPG"" fue lanzado. A pesar de no ser tan popular como los títulos anteriores, aún así fue una brillante gema. La gran diferencia estaba en que el juego era un estratégico reto de varios cuartos donde había que tener un buen manejo de recursos. Cada monstruo tenía estadísticas y debías calcular qué monstruos podían ser derrotados en un momento dado, planear dónde ir luego, qué recursos tomar, cómo y cuándo.
+
+  ""DROD 4: Gunthro and the Epic Blunder"" es la más reciente entrega de la saga, lanzado el 1 de Abril de 2012. Este juego está dirigido a nuevos jugadores, y es mejor para principiantes debido a sus acertijos más fáciles, tutoriales más intuitivos y más niveles de base."
+es.txt,rstHeader,Restaurar Juego
+es.txt,rstToRoom,Restaurar a este cuarto
+es.txt,rstReturn,Restaurar a pantalla de inicio
+es.txt,rstSecrets,Secretos completados: %% / %%
+es.txt,roomLocked,Has bloqueado la salida del cuarto. Presiona %% de nuevo para desbloquear.
+es.txt,ingLevelCompleted,Nivel Completado
+es.txt,ingSecretFound,Secreto Encontrado
+es.txt,ingHoldMastered,Dominio Masterizado
+es.txt,achievementHeader,¡Logro!
+es.txt,achievementDismiss,Click o Barra Espaciadora para ignorar
+es.txt,achlistHeader,Logros:
+es.txt,browseHeader,Ver dominios lanzados de Flash DROD
+es.txt,browseOpen,Abrir en una nueva ventana
+es.txt,scrStats,Estadísticas del jugador
+es.txt,scrYourBest,Tu mejor puntaje:
+es.txt,scrTop,Mejores puntajes del cuarto:
+es.txt,scrNoScore,¡Ninguno!
+es.txt,scrFetching,Buscando...
+es.txt,scrOnlyForCnet,"Los puntajes de los cuartos solo están disponibles para suscriptores de CaravelNet y registrados en el foro de Caravel.
+
+Parece que no has completado tus datos de la cuenta de CaravelNet aún. Crear una cuenta de Caravel te permitirá competir contra otros jugadores alrededor del mundo y seguir el rastro de los puntajes de cada cuarto.
+
+Para registrarte a Caravel usa el botón ubicado en la pantalla de opciones."
+es.txt,scrMovesRoom,Movimientos del cuarto: %%
+es.txt,scrMovesLevel,Movimientos del nivel: %%
+es.txt,scrDeaths,Muertes del nivel: %%
+es.txt,scrKills,Matanzas del nivel: %%
+es.txt,scrTime,Tiempo del nivel: %%
+es.txt,scrNoScores,No hay puntajes para este cuarto aún.
+es.txt,scrCnetProblems,"Las funciones de CaravelNet se han desactivado debido a problemas con tu conexión.
+
+Primero asegúrate de que tu conexión a internet esté funcionando y que hayas ingresado credenciales de CaravelNet válidas. Luego ve a ""Opciones"" y pulsa ""¡Conectar!"""
+es.txt,loginConnected,"  ¡Ahora estás conectado a CaravelNet como un usuario registrado!
+
+  Si solo te has registrado al foro pero no a CaravelNet, tus puntajes serán borrados luego de dos semanas del día que fueron subidos.
+
+  Los puntajes subidos por suscriptores de CaravelNet son permanentes."
+es.txt,loginConnectedAnonymous,"  Ahora estás conectado a CaravelNet como un usuario anónimo. Puedes publicar tus puntajes para saber qué lugar conseguiste en la clasificación, pero el puntaje no es almacenado en el servidor. Para hacer tus publicaciones persistentes, tienes que crear una cuenta en Caravelgames (accesible desde la pantalla de opciones).
+  Si luego decides crearte una cuenta, usa el botón de ""Subir tus Puntajes"" para subir todo tu progreso a nuestro servidor."
+es.txt,loginFailed,"  ¡Conexión fallida!.
+
+1. Revisa si estás conectado a internet.
+2. Asegúrate de que tu firewall no esté bloqueando el juego.
+3. Visita http://forum.caravelgames.com para ver si el servidor carga. Si no, espera un par de minutos e intenta de nuevo.
+"
+es.txt,loginFailedBadCredentials,4. Revisa si las credenciales que has introducido son correctas.
+es.txt,loginFailedMissingCrentials,4. Asegúrate de haber introducido un nombre de usuario y contraseña de CaravelNet válidos.
+es.txt,pauseHeader,DROD ha sido pausado
+es.txt,pauseContinue,Continuar jugando
+es.txt,pauseContinueTip,"Continúa jugando.
+(Escape, Enter)"
+es.txt,pauseRestart,Reiniciar cuarto
+es.txt,pauseRestartTip,"Reinicia el cuarto actual.
+(Atajo: F5)."
+es.txt,pauseRoomHelp,Conseguir ayuda para el cuarto actual
+es.txt,pauseRoomHelpTip,"Consigue ayuda en línea para este cuarto.
+(Atajo: F2)"
+es.txt,pauseHelp,Ver ayuda general
+es.txt,pauseHelpTip,"Abre una ventana de ayuda general.
+(Atajo: F1)"
+es.txt,pauseAchievements,Ver logros
+es.txt,pauseAchievementsTip,"Muestra una lista de todos los logros.
+(Atajo: Tab)"
+es.txt,pauseOptions,Opciones
+es.txt,pauseOptionsTip,Te permite cambiar algunos ajustes.
+es.txt,pauseReturn,Regresar a la pantalla de inicio
+es.txt,pauseReturnTip,"El progreso del juego queda guardado,
+pero el progreso de este cuarto
+se perderá si sales del juego."
+es.txt,achHidden,???
+es.txt,levelCreatedDate,Creado %%.%%.%%
+es.txt,score1NoTie,¡¡Primer lugar!!
+es.txt,score1,1er lugar
+es.txt,score2,2do lugar
+es.txt,score3,3er lugar
+es.txt,score4,4to lugar
+es.txt,score5,5to lugar
+es.txt,score6,6to lugar
+es.txt,score7,7mo lugar
+es.txt,score8,8vo lugar
+es.txt,score9,9no lugar
+es.txt,score10,10mo lugar
+es.txt,score11,11er lugar
+es.txt,score12,12do lugar
+es.txt,score13,13er lugar
+es.txt,score14,14to lugar
+es.txt,score15,15to lugar
+es.txt,score16,16to lugar
+es.txt,score17,17mo lugar
+es.txt,score18,18vo lugar
+es.txt,score19,19no lugar
+es.txt,score20,20mo lugar
+es.txt,score21,21er lugar
+es.txt,score22,22do lugar
+es.txt,score23,23er lugar
+es.txt,score24,24to lugar
+es.txt,score25,25to lugar
+es.txt,scoreTie,%% ¡Empate!
+es.txt,scoreNoCnet,(anónimo)
+es.txt,resultHoldTotals,"Totales del Dominio:
+"
+es.txt,resultLevelTotals,"Totales del Nivel:
+"
+es.txt,resultMoves,"Movimientos: %%
+"
+es.txt,resultKills,"Matanzas: %%
+"
+es.txt,resultDeaths,"Muertes: %%
+"
+es.txt,resultTime,"Tiempo: %%
+"
+es.txt,resultSecrets,"Secretos encontrados: %%
+"
+es.txt,resultSecretsBetter,"Secretos encontrados: %% / %%
+"
+es.txt,spawnCycle,Ciclo de freza:
+es.txt,snakesPrefer,Las serpientes prefieren:
+es.txt,clcHo,HO
+es.txt,clcRiz,RIZ
+es.txt,clcOn,ON
+es.txt,clcTal,TAL
+es.txt,clcVe,VE
+es.txt,clcRt,RT
+es.txt,clcIc,IC
+es.txt,clcAl,AL
+es.txt,tile1,Suelo
+es.txt,tile2,Hoyo
+es.txt,tile3,Escaleras hacia Abajo
+es.txt,tile4,Pared
+es.txt,tile5,Pared Destruida
+es.txt,tile6,Puerta de Nivel
+es.txt,tile7,Puerta de Cuarto
+es.txt,tile8,Puerta de Trampilla
+es.txt,tile9,Puerta Amarilla
+es.txt,tile10,Puerta Amarilla (Abierta)
+es.txt,tile11,Trampilla
+es.txt,tile12,Obstáculo
+es.txt,tile13,Flecha de Fuerza (Norte)
+es.txt,tile14,Flecha de Fuerza (Noreste)
+es.txt,tile15,Flecha de Fuerza (Este)
+es.txt,tile16,Flecha de Fuerza (Sureste)
+es.txt,tile17,Flecha de Fuerza (Sur)
+es.txt,tile18,Flecha de Fuerza (Suroeste)
+es.txt,tile19,Flecha de Fuerza (Oeste)
+es.txt,tile20,Flecha de Fuerza (Noroeste)
+es.txt,tile21,Poción de Invisibilidad
+es.txt,tile22,Poción de Mímica
+es.txt,tile23,Nota
+es.txt,tile24,Orbe
+es.txt,tile35,Brea
+es.txt,tile37,Puerta de Brea
+es.txt,tile54,Mosaico
+es.txt,tile55,Calle
+es.txt,tile56,Pasto
+es.txt,tile57,Baldío
+es.txt,tile58,Suelo Alterno
+es.txt,tile59,Pared Maestra
+es.txt,tile61,Escaleras hacia Arriba
+es.txt,tile62,Pared Secreta
+es.txt,tile66,Pared
+es.txt,tile68,Puerta de Cuarto (Abierta)
+es.txt,tile69,Puerta de Nivel (Abierta)
+es.txt,tile70,Puerta de Trampilla (Abierta)
+es.txt,tile71,Puerta de Brea (Abierta)
+es.txt,tileCheckpoint,Punto de Control
+es.txt,monsterPlayer,Jugador
+es.txt,monster0,Cucaracha
+es.txt,monster1,Reina Cucaracha
+es.txt,monster2,Huevo de Cucaracha
+es.txt,monster3,Duende
+es.txt,monster5,Espectro Alado
+es.txt,monster6,Ojo del Mal
+es.txt,monster7,Serpiente
+es.txt,monster8,Madre Brea
+es.txt,monster9,Bebé Brea
+es.txt,monster10,Cerebro
+es.txt,monster11,Mímica
+es.txt,monster12,Araña
+es.txt,monster29,Personaje
+es.txt,sword,Espada
+es.txt,swords,Espadas (%%)
+es.txt,roomS,S
+es.txt,roomSouth,Sur
+es.txt,roomN,N
+es.txt,roomNorth,Norte
+es.txt,roomE,E
+es.txt,roomEast,Este
+es.txt,roomW,O
+es.txt,roomWest,Oeste
+es.txt,roomEntrance,Entrada
+es.txt,room1,Una vez al
+es.txt,room2,Dos veces
+es.txt,room3,Tres veces
+es.txt,room4,Cuatro veces
+es.txt,room5,Cinco veces
+es.txt,room6,Seis veces
+es.txt,room7,Siete veces
+es.txt,room8,Ocho veces
+es.txt,room9,Nueve veces
+es.txt,room10,Diez veces
+es.txt,room11,Once veces
+es.txt,room12,Doce veces
+es.txt,room13,Trece veces
+es.txt,room14,Catorce veces
+es.txt,room15,Quince veces
+es.txt,room16,Dieciséis veces
+es.txt,room17,Diecisiete veces
+es.txt,room18,Dieciocho veces
+es.txt,room19,Diecinueve veces
+es.txt,roomMore,%% veces
+es.txt,complButtNextGame,Jugar siguiente set
+es.txt,complButtLearnMore,Aprender más
+es.txt,complButtContinue,Continuar jugando
+es.txt,complHeader,¿Qué sigue?
+es.txt,complLearnMore,"Aprende más sobre la franquicia de DROD - su mundo, y sus juegos principales: Journey to Rooted Hold, The City Beneath, Gunthro and the Epic Blunder ¡Y los más recientes títulos de la franquicia!"
+es.txt,complContinue,"Continuar masterizando este dominio - encuentra secretos, y gana el acceso al Área Maestra. Puedes encontrar enlaces a ambas opciones en la Pantalla de Inicio."
+es.txt,rstFarthest,Seleccionar el último guardado
+es.txt,rstHelpTooltip,Haz click para una rápida introducción a cómo funciona la restauración.
+es.txt,rstHelp,"Restaurar funciona casi como guardar partidas en tus videojuegos favoritos. La diferencia es que aunque no puedas guardar cuando tú quieras, el juego lo hace automáticamente cuando accedes a un cuarto sin conquistar.
+
+Para restaurar a un estado previo, primero selleciona un nivel de la lista a la izquierda, luego elige un cuarto en el mini-mapa debajo. El mini-mapa mostrará en gris los cuartos que no visitaste   cuando se guardó. Aquellos con un fondo blanco están conquistados y aquellos con uno rojo no lo están.
+
+Luego siempre puedes cargar tu mejor estado haciendo click en el botón de ""Seleccionar el último guardado"".
+
+Restaurar es mayoritariamente útil si quieres mejorar tus puntajes para un cuarto, buscar secretos, o simplemente volver a jugar un cuarto favorito."
+es.txt,rstWarning,"Has escogido volver a un estado previo - algunos cuartos se restaurarán a su estado sin conquistar.
+
+Siempre puedes restaurar a tu mejor/más reciente estado haciendo click ""Seleccionar el último guardado""."
+es.txt,optDelayText,Retraso de repetición:
+es.txt,optDelayShort,Corto
+es.txt,optDelayLong,Largo
+es.txt,optGetPass,Obtener clave CNet
+es.txt,optGetPassTooltip,"Las personas con una cuenta en el foro de Caravel Games pueden pedir una clave de CaravelNet la cual les permite
+publicar puntajes en la clasificación en línea. Dichos puntajes son eliminados luego de dos semanas.
+
+Los puntajes de suscriptores que han pagado se retendrán siempre, incluso si su suscripción se acaba."
+es.txt,optDelayTooltip,"El retraso entre mantener presionada la
+tecla y la acción que se repite."
+es.txt,optRateTooltip,La fluidez del movimiento y la velocidad de repetición al mantener presionada una tecla. 
+es.txt,achAddInfo,"Logros en gris que no están semi-transparentes están ""activos"". Esto significa que en el cuarto actual es posible que consigas dicho logro (pero no siempre, por lo tanto lee bien las descripciones de los logros). Nota que algunos logros pueden estar activos en todos o la mayoría del os cuartos del juego."
+es.txt,pauseRestore,Restaurar a un cuarto distinto
+es.txt,cnetDescriptionKong,"Desafortunadamente debido a las políticas de Kongregate, la interfaz de login está desactivada - no puedes publicar tus puntajes en las clasificaciones en línea. Si lo deseas ¡Puedes jugar Flash DROD en caravelgames.com!"
+es.txt,defCont,Controles predeterminados:

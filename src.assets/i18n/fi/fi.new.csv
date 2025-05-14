@@ -1,0 +1,1778 @@
+File Name,Old Key,Translation
+common_achievements.yml,achievement.description.hidden,???
+common_achievements.yml,achievement.description.hidden_with_percent,??? (%%%)
+common_achievements.yml,achievement.name.tuning_fork_in_sequence,The Tuning Fork
+common_achievements.yml,achievement.description.tuning_fork_in_sequence,"Hit different orbs (%orbs%) in sequence, one per turn
+You can hit the same orb multiple times but it counts only once
+Multiple orb hits in the same turn count as one hit
+Current streak: %count%"
+common_achievements.yml,achievement.description.monster_kills_0,Kill a number of roaches (%total_count%)
+common_achievements.yml,achievement.description.monster_kills_1,Kill a number of roach queens (%total_count%)
+common_achievements.yml,achievement.description.monster_kills_2,Kill a number of roach eggs (%total_count%)
+common_achievements.yml,achievement.description.monster_kills_3,Kill a number of goblins (%total_count%)
+common_achievements.yml,achievement.description.monster_kills_5,Kill a number of wraithwings (%total_count%)
+common_achievements.yml,achievement.description.monster_kills_6,Kill a number of evil eyes (%total_count%)
+common_achievements.yml,achievement.description.monster_kills_7,Kill a number of serpents (%total_count%)
+common_achievements.yml,achievement.description.monster_kills_8,Kill a number of tar mothers (%total_count%)
+common_achievements.yml,achievement.description.monster_kills_9,Kill a number of tar babies (%total_count%)
+common_achievements.yml,achievement.description.monster_kills_10,Kill a number of brains (%total_count%)
+common_achievements.yml,achievement.description.monster_kills_11,Kill a number of mimics (%total_count%)
+common_achievements.yml,achievement.description.monster_kills_12,Kill a number of spiders (%total_count%)
+common_achievements.yml,achievement.description.rooms,Clear a number of rooms (%total_count%)
+common_achievements.yml,achievement.description.total_kills,Kill a number of monsters (%total_count%)
+common_achievements.yml,achievement.description.trapdoors,Drop a number of trapdoors (%total_count%)
+common_achievements.yml,achievement.description.cut_tar,Cut tar a number of times (%total_count%)
+common_achievements.yml,achievement.description.steps,Take a number of steps (%total_count%)
+common_achievements.yml,achievement.description.deaths,Die a number of times (%total_count%)
+common_achievements.yml,achievement.description.undo,Undo a number of times (%total_count%)
+common_achievements.yml,achievement.name.mastery,Mastery
+common_achievements.yml,achievement.description.mastery,"Master the hold
+Find the end hold stairs and clear all the secret rooms
+Secret rooms don't need to be cleared in one go, you can use restore"
+common_achievements.yml,achievement.name.post_mastery,Post-Mastery
+common_achievements.yml,achievement.description.post_mastery,Clear all challenges in the post mastery level
+controls.yml,controls_move_n,Move North
+controls.yml,controls_move_nw,Move Northwest
+controls.yml,controls_move_ne,Move Northeast
+controls.yml,controls_move_w,Move West
+controls.yml,controls_move_e,Move East
+controls.yml,controls_move_s,Move South
+controls.yml,controls_move_sw,Move Southwest
+controls.yml,controls_move_se,Move Southeast
+controls.yml,controls_wait,Wait for One Turn
+controls.yml,controls_turn_cw,Turn Clockwise
+controls.yml,controls_turn_ccw,Turn Counter-clockwise
+controls.yml,controls_undo,Undo Last Move
+controls.yml,controls_restart,Restart Room
+controls.yml,controls_battle,Battle Key
+controls.yml,controls_lock,Lock/Unlock Room
+hold.kdd1.yml,hold_name,"King Dugan's Dungeon Lite 1"
+hold.kdd1.yml,level_name_1,First Level
+hold.kdd1.yml,level_name_2,Second Level
+hold.kdd1.yml,level_name_3,Third Level
+hold.kdd1.yml,level_name_4,Fourth Level
+hold.kdd1.yml,level_name_5,Mastery Level
+hold.kdd1.yml,achievement.name.wake_up_eyes,"I've Got an Eye on You"
+hold.kdd1.yml,achievement.description.wake_up_eyes,Wake up three evil eyes in the same turn
+hold.kdd1.yml,achievement.name.kill_queen_mother,Matricide
+hold.kdd1.yml,achievement.description.kill_queen_mother,Kill a roach queen while her eggs are growing
+hold.kdd1.yml,achievement.name.l2.1n1e,I Woke Up and Just Hated Everything
+hold.kdd1.yml,achievement.description.l2.1n1e,"Yes, you should be so destructive"
+hold.kdd1.yml,achievement.name.l1.6n2w,True Smitemaster
+hold.kdd1.yml,achievement.description.l1.6n2w,"First Level: 6N2W
+Don't hide in the alcove"
+hold.kdd1.yml,achievement.name.l1.steady_hand,Steady Hand
+hold.kdd1.yml,achievement.descriptions.l1.steady_hand,"First Level:
+Clear 7 infested, non-secret rooms without turning your sword.
+Got %rooms%"
+hold.kdd1.yml,achievement.name.l2.2e,Queenburger
+hold.kdd1.yml,achievement.description.l2.2e,"Second Level: 2E
+Kill the roach queen before she reaches the northeast corner and clear the room"
+hold.kdd1.yml,achievement.name.l2.1s,One-way Ticket
+hold.kdd1.yml,achievement.description.l2.1s,"Second Level: 1S
+After hitting the orb do not rotate your sword and clear the room"
+hold.kdd1.yml,achievement.name.l2.2s2e,Be Quick!
+hold.kdd1.yml,achievement.description.l2.2s2e,"Second Level: 2S2E
+Clear the room before queens lay any eggs"
+hold.kdd1.yml,achievement.name.l2.2s3e,Be Fast!
+hold.kdd1.yml,achievement.description.l2.2s3e,"Second Level: 2S3E
+Clear the room before queens lay any eggs"
+hold.kdd1.yml,achievement.name.l2.3n,Calm Arm
+hold.kdd1.yml,achievement.description.l2.3n,"Second Level: 3N
+Clear the room without turning your sword"
+hold.kdd1.yml,achievement.name.l3.2n,Get the Scroll
+hold.kdd1.yml,achievement.description.l3.2n,"Third Level: 2N
+Reach the scroll without reentering the room"
+hold.kdd1.yml,achievement.name.l3.1n1w,Visibility
+hold.kdd1.yml,achievement.description.l3.1n1w,"Third Level: 1N1W
+Clear the room without drinking the potion"
+hold.kdd1.yml,achievement.name.l3.1n2w,Invisibless
+hold.kdd1.yml,achievement.description.l3.1n2w,"Third Level: 1N2W
+Clear the room without drinking the potion"
+hold.kdd1.yml,achievement.name.l3.1n1e,Speeding
+hold.kdd1.yml,achievement.description.l3.1n1e,"Third Level: 1N1E
+Clear the room without queens laying any eggs"
+hold.kdd1.yml,achievement.name.l3.1s,The Eight Gates of Bill
+hold.kdd1.yml,achievement.description.l3.1s,"Third Level: 1S
+Solve The Eight Gates of Bill in 5 orb hits"
+hold.kdd1.yml,achievement.name.l3.2n1e,Fine Roach Control
+hold.kdd1.yml,achievement.description.l3.2n1e,"Third Level: 2N1E
+Release all three roaches before killing any of them"
+hold.kdd1.yml,achievement.name.l3.3n,The Mystery
+hold.kdd1.yml,achievement.description.l3.3n,"Third Level: 3N
+Clear the room without drinking the potion or turning your sword"
+hold.kdd1.yml,achievement.name.l4.1n,"Don't Look Back"
+hold.kdd1.yml,achievement.description.l4.1n,"Fourth Level: 1N
+Clear the room without returning to the entrance corridor"
+hold.kdd1.yml,achievement.name.l4.1s1e,Alone with the Roaches
+hold.kdd1.yml,achievement.description.l4.1s1e,"Fourth Level: 1S1E
+Clear without drinking the mimic potion"
+hold.kdd1.yml,achievement.name.l4.1s2e,Pits are Pretty
+hold.kdd1.yml,achievement.description.l4.1s2e,"Fourth Level: 1S2E
+Drop all trapdoors and clear the room on the same visit"
+hold.kdd1.yml,achievement.name.l4.2s1e,Emptiness of Nothingness
+hold.kdd1.yml,achievement.description.l4.2s1e,"Fourth Level: 2S1E
+Drop all trapdoors and clear the room on the same visit"
+hold.kdd1.yml,achievement.name.l4.2e,Good Style
+hold.kdd1.yml,achievement.description.l4.2e,"Fourth Level: 2E
+Have good style"
+hold.kdd1.yml,achievement.name.level_1,Amateur Delver
+hold.kdd1.yml,achievement.description.level_1,Clear First Level
+hold.kdd1.yml,achievement.name.level_2,Fledgling Smiter
+hold.kdd1.yml,achievement.description.level_2,Clear Second Level
+hold.kdd1.yml,achievement.name.level_3,Contract Exterminator
+hold.kdd1.yml,achievement.description.level_3,Clear Third Level
+hold.kdd1.yml,achievement.name.level_4,"I'm a Professional!"
+hold.kdd1.yml,achievement.description.level_4,Clear Fourth Level
+hold.kdd1.yml,achievement.name.monster_kills_0,Grilled Roaches
+hold.kdd1.yml,achievement.name.monster_kills_1,Sliced Queens
+hold.kdd1.yml,achievement.name.monster_kills_2,Scrambled Eggs
+hold.kdd1.yml,achievement.name.monster_kills_5,Wraithwing Wings
+hold.kdd1.yml,achievement.name.monster_kills_6,Evil Eye Pudding
+hold.kdd1.yml,achievement.name.monster_kills_7,Serpent Maki
+hold.kdd1.yml,achievement.name.monster_kills_8,Tar Passata
+hold.kdd1.yml,achievement.name.monster_kills_9,Baby Pierogi
+hold.kdd1.yml,achievement.name.monster_kills_10,Dried Brains
+hold.kdd1.yml,achievement.name.tuning_fork_in_sequence,Tuning Fork
+hold.kdd1.yml,achievement.name.rooms,Down with the Green
+hold.kdd1.yml,achievement.name.total_kills,Horde Management
+hold.kdd1.yml,achievement.name.trapdoors,Making Room
+hold.kdd1.yml,achievement.name.steps,"Walkin' to the Moon"
+hold.kdd1.yml,achievement.name.deaths,Respawner
+hold.kdd1.yml,achievement.name.undo,Time is Null!
+hold.kdd1.yml,entrance.lvl_1.entrance.13x13,"Beethro Budkin, fifth-generation professional dungeon exterminator, was hired by King Dugan to clear the king's multi-level dungeon of a large monster infestation.
+Beethro charges by the room, and as a professional, he is contract-bound to clear all the monsters from each and every room in the dungeon to get paid.
+The only weapon Beethro needs to do his job is a Really Big Sword, which will defeat almost any monster in a single hit.
+
+-----
+
+""I hope you're not going to charge me for the top level. I already have that cleaned up. Well, mostly."" -King Dugan"
+hold.kdd1.yml,entrance.lvl_2.entrance.13x12,"Beethro's a bit rusty, but the next level should get him in good chopping form."
+hold.kdd1.yml,entrance.lvl_3.entrance.13x12,"""Hmm..."" pondered Beethro. ""So far, I see mostly roaches down here. This looks like a cake job."""
+hold.kdd1.yml,entrance.lvl_4.entrance.13x12,"""I wish I had some more of those mimics down here with me!"" said Beethro. ""It would go a lot quicker."""
+hold.kdd1.yml,entrance.lvl_4.2n1e.17x18,Beethro came back to finish the proper smiting business he was hired to do.
+hold.kdd1.yml,entrance.lvl_5.entrance.13x12,"Beethro descended the stairs, only to find himself in an uncharted corridor...
+
+He won't get paid for clean-up here, but his professional honor urges him onward."
+hold.kdd1.yml,entrance.lvl_5.entrance.7x11,"Beethro descended the stairs, only to find himself in an uncharted corridor...
+
+He won't get paid for clean-up here, but his professional honor urges him onward."
+hold.kdd1.yml,entrance.lvl_5.entrance.18x11,"Beethro descended the stairs, only to find himself in an uncharted corridor...
+
+He won't get paid for clean-up here, but his professional honor urges him onward."
+hold.kdd1.yml,scroll.lvl_1.entrance.13x13,Use numerical keyboard or %keymap.all_moves% to move around. Keys can be remapped from within the pause menu (escape).
+hold.kdd1.yml,scroll.lvl_1.entrance.14x8,"To reference the controls anytime you wish, hit `Escape`, click `Get General Help` and go to `How to Play`."
+hold.kdd1.yml,scroll.lvl_1.1n.15x13,"This yellow door will serve its purpose later.
+
+For now just continue west."
+hold.kdd1.yml,scroll.lvl_1.1n.12x19,You can move diagonally even through very narrow corridors.
+hold.kdd1.yml,scroll.lvl_1.1n1w.4x13,Strike the orb with your sword to open doors in the room.
+hold.kdd1.yml,scroll.lvl_1.1n1w.21x21,Some orbs toggle the yellow doors between their open and closed states.
+hold.kdd1.yml,scroll.lvl_1.1n1w.18x14,Rotate your sword using `%keymap.turn_ccw%` and `%keymap.turn_cw%`.
+hold.kdd1.yml,scroll.lvl_1.2n1w.14x14,"Instead of toggling a yellow door, an orb might always open or close it."
+hold.kdd1.yml,scroll.lvl_1.2n1w.19x15,You can find out what an orb does by clicking it with your mouse. Differently colored highlighted doors indicate the different effects.
+hold.kdd1.yml,scroll.lvl_1.3n1w.9x13,Blue gates open once you conquer all the required rooms on a given level (floor).
+hold.kdd1.yml,scroll.lvl_1.3n1w.11x12,Required rooms are marked with a red background on the minimap.
+hold.kdd1.yml,scroll.lvl_1.3n2w.12x12,Current speech and hovering text can be skipped with the space bar.
+hold.kdd1.yml,scroll.lvl_1.3n2w.9x6,"Once you leave a room cleared of all monsters, it will be marked as conquered."
+hold.kdd1.yml,scroll.lvl_1.3n2w.10x5,"On the minimap, conquered rooms are marked with white as opposed to the unconquered ones which are red."
+hold.kdd1.yml,scroll.lvl_1.3n2w.9x4,Conquer all the required rooms to open your way to the next level.
+hold.kdd1.yml,scroll.lvl_1.4n3w.21x7,"Force arrows block both Beethro's and monsters' movement in the opposite direction."
+hold.kdd1.yml,scroll.lvl_1.4n1w.5x10,Green gates open once you clear a room of all monsters.
+hold.kdd1.yml,scroll.lvl_1.5n1w.6x17,Most monsters when moving onto a corner diagonally will slide vertically if possible.
+hold.kdd1.yml,scroll.lvl_1.5n1w.6x22,Observe how the southern roach behaves when it tries to move onto a corner diagonally.
+hold.kdd1.yml,scroll.lvl_1.5n1w.9x3,This game is completely deterministic - there is no random or unpredictable behavior.
+hold.kdd1.yml,scroll.lvl_1.5n2w.4x9,"Touching a checkpoint 'X' allows you to rewind to when you last stepped on it.
+Hit `%keymap.restart%` to restart the room or go back to the last checkpoint you have touched."
+hold.kdd1.yml,scroll.lvl_1.5n2w.6x11,"Look out!  It's dangerous here.
+
+If you make a mistake, hit `%keymap.undo%` to undo a move."
+hold.kdd1.yml,scroll.lvl_1.5n2w.18x12,Remember that you can click an orb with the mouse to see what doors it affects.
+hold.kdd1.yml,scroll.lvl_1.5n2w.4x11,You can also undo (and restart) when the death animation is playing!
+hold.kdd1.yml,scroll.lvl_1.6n2w.9x12,Secret walls blend with the regular ones much better though.
+hold.kdd1.yml,scroll.lvl_1.6n2w.12x12,Broken and secret walls can be damaged by your sword.
+hold.kdd1.yml,scroll.lvl_1.6n2w.7x1,A fine swordsman can defeat all the roaches without using the southern nook for cover!
+hold.kdd1.yml,scroll.lvl_1.6n2w.1x12,"So don't miss the ones in the corner when you come back."
+hold.kdd1.yml,scroll.lvl_1.1n1e.18x7,These stairs lead to the next level. Beware of what you will meet there...
+hold.kdd1.yml,scroll.lvl_1.6n.1x22,"The secrets don't have to be conquered in one playthrough for the hold to be Mastered."
+hold.kdd1.yml,scroll.lvl_1.6n3w.9x8,Place yourself on the green floor and make sure the roach stands on the sand tile directly north of you...
+hold.kdd1.yml,scroll.lvl_1.6n3w.20x12,"Follow the sandy path to learn the backswipe technique! Remember about diagonal movement and don't turn your sword."
+hold.kdd1.yml,scroll.lvl_1.6n3w.8x9,...then move northeast to kill it.
+hold.kdd1.yml,scroll.lvl_1.6n3w.5x12,"Repeat to analyze the backswipe. Master this technique, for it will prove crucial in your further endeavors."
+hold.kdd1.yml,scroll.lvl_1.6n3w.8x15,...then move southeast to kill it.
+hold.kdd1.yml,scroll.lvl_1.6n3w.9x16,Place yourself on the green floor and make sure the roach stands on the sand tile directly south of you...
+hold.kdd1.yml,scroll.lvl_1.5n.10x12,"Sorry'ir, we'r nyet goin' to fin'sh ze buildn' wiz ze grand' roche'z runin' wild!"
+hold.kdd1.yml,scroll.lvl_1.5n.16x5,Emergency exit is out of commission.
+hold.kdd1.yml,scroll.lvl_1.4n.14x3,Please keep the greenhouse doors closed.
+hold.kdd1.yml,scroll.lvl_1.4n.13x17,Please keep the greenhouse doors closed.
+hold.kdd1.yml,scroll.lvl_2.entrance.25x12,You may wish to clear the rooms to the north first.
+hold.kdd1.yml,scroll.lvl_2.1n1e.13x11,"You shouldn't be so destructive."
+hold.kdd1.yml,scroll.lvl_2.1s.22x13,"Don't do it! It's obvious what will happen!"
+hold.kdd1.yml,scroll.lvl_2.2s3e.6x14,Good timing makes things a lot easier.
+hold.kdd1.yml,scroll.lvl_2.1s3e.24x1,"You can prevent yourself from accidentally leaving a room by hitting the '%keymap.lock%' key on your keyboard."
+hold.kdd1.yml,scroll.lvl_2.1s3e.24x2,A small lock on the minimap indicates that a room is locked.
+hold.kdd1.yml,scroll.lvl_2.2e.1x22,Roach queens always run away from Beethro; this behavior can be used to manipulate them.
+hold.kdd1.yml,scroll.lvl_2.2n.3x3,Did you know that you can hold Shift while performing any action to automatically follow it with its inverse?
+hold.kdd1.yml,scroll.lvl_2.2n.1x1,`%keymap.battle%` will perform the inverse of the last action! Good for quickly cleaning up a horde of monsters.
+hold.kdd1.yml,scroll.lvl_2.3n.24x22,Roach queens spawn roach eggs every 30 turns (the turn after the spawn counter becomes red).
+hold.kdd1.yml,scroll.lvl_2.3n.24x21,Eggs will hatch into fully grown-up roaches 5 turns after being spawned.
+hold.kdd1.yml,scroll.lvl_2.2s3e.20x5,You can use Shift+Wait to skip until the next spawn.
+hold.kdd1.yml,scroll.lvl_2.1n1w.25x1,"If you don't know it yet, Queens move away from you and don't lay eggs on open yellow gates."
+hold.kdd1.yml,scroll.lvl_2.3s3e.25x18,"Also, if a queen is moving on the spawn turn, no egg will appear on the tile she has just moved from."
+hold.kdd1.yml,scroll.lvl_2.3s3e.24x21,"Eggs will never appear on trapdoors, arrows, or opened yellow gates."
+hold.kdd1.yml,scroll.lvl_2.3s3e.6x2,Observe carefully what happens on the spawn turn.
+hold.kdd1.yml,scroll.lvl_4.1s.18x1,These pink-purple tiles are trapdoors and they fall if you or a mimic step off them.
+hold.kdd1.yml,scroll.lvl_4.1n.2x2,"Hint:
+
+Think hard to develop the very useful BACKSWIPING technique -- good for when there's a monster on each side of you!"
+hold.kdd1.yml,scroll.lvl_4.1n.8x2,"Hint:
+
+You don't need the mimic's help to fight the roaches at the entrance."
+hold.kdd1.yml,scroll.lvl_4.2e.5x12,"If you have good style, all 9 mimics will be lined up to the right of you."
+hold.kdd1.yml,scroll.lvl_4.2n1e.4x20,"This is a master wall. It won't open until you conquer the hold and also all of its secrets."
+hold.kdd1.yml,scroll.lvl_4.2n1e.25x6,"In the original ""King Dugan's Dungeon"", this was a warp room which allowed you to skip a level or two."
+hold.kdd1.yml,scroll.lvl_4.2n.14x23,You might find it useful that Shift+Wait waits until the next spawn.
+hold.kdd1.yml,scroll.lvl_3.entrance.12x13,"On this level you'll encounter evil eyes. Once you step in their line of sight they'll wake up and chase you like roaches do."
+hold.kdd1.yml,scroll.lvl_3.1n1w.23x4,"With the invisible potion they can't see you, but they can still smell you if you get close."
+hold.kdd1.yml,scroll.lvl_3.2s1w.13x13,"Here is something that I will tell you--whenever you see long and laborious paths, you should look for shortcuts."
+hold.kdd1.yml,scroll.lvl_3.2s.22x18,"Turn back! Did you know that in just the last year, dungeon-related deaths were up by 32 percent?"
+hold.kdd1.yml,scroll.lvl_3.2s.23x18,"Face the facts--dungeon exploration is NOT safe, especially when combined with intoxicants.
+-PADD (Parents Against Dungeon Deaths)"
+hold.kdd1.yml,scroll.lvl_3.2n.5x23,"It is possible to get to this passage without reentering the room after you've conquered it."
+hold.kdd1.yml,scroll.lvl_3.1s.16x1,"The Eight Gates of Bill--a formidable puzzle indeed. It used to be a lot harder, but I can now inspect the orbs to see what they do."
+hold.kdd1.yml,scroll.lvl_3.1e.22x23,Such a long walk. It almost seems unnecessary.
+hold.kdd1.yml,scroll.lvl_3.1n1e.17x13,"After stepping on a mimic potion, use your mouse or wait key to choose the tile where you want to place the mimic."
+hold.kdd1.yml,scroll.lvl_3.3n1e.11x11,"All of the prisoners have been eaten by dungeon roaches, and I'm next! You can't pay me enough to work this job. I'm outta here!
+
+-Prison Warden"
+hold.kdd1.yml,scroll.lvl_3.3n.6x16,"I must warn you about mimics. They are neither your friends nor your enemies--they simply like to move exactly as you do. Don't turn your back on them."
+hold.kdd1.yml,scroll.lvl_3.3n.6x14,"After stepping on a mimic potion, use your mouse or wait key to choose the tile where you want to place the mimic."
+hold.kdd1.yml,scroll.lvl_5.entrance.12x13,Last words!
+hold.kdd1.yml,scroll.lvl_5.entrance.24x11,"Difficult, original rooms."
+hold.kdd1.yml,scroll.lvl_5.entrance.2x11,Harder versions of existing puzzles.
+hold.kdd1.yml,scroll.lvl_5.1s.18x8,"Very nice, way to go!"
+hold.kdd1.yml,scroll.lvl_5.1s.6x8,Roach Queens will be killed once you step on the checkpoint in the right-top corner.
+hold.kdd1.yml,scroll.lvl_5.1s.7x8,Here is a small reward! Kill all the eyes without stepping on the brown grass.
+hold.kdd1.yml,scroll.lvl_5.1s.14x9,Game on!
+hold.kdd1.yml,scroll.lvl_5.1s.13x8,This scroll used to urge you to play more episodes on CaravelGames.com but with this release they all are bundled into one game so you can just Change Episode from the title screen.
+hold.kdd1.yml,scroll.lvl_5.1s.12x7,I sincerely congratulate you and invite you to continue your journey.
+hold.kdd1.yml,scroll.lvl_5.1s.11x6,"That's it. By now you have completed everything there is in this game. There may only be a couple of achievements left."
+hold.kdd1.yml,speech.10025098,"Ah, the first roach of the dungeon!"
+hold.kdd1.yml,speech.10025099,"Come to Beethro, roachburger-to-be!"
+hold.kdd1.yml,speech.10025100,"A clean kill!  This job's gonna turn out great, I just know it!"
+hold.kdd1.yml,speech.10025102,You have found a secret room!
+hold.kdd1.yml,speech.10025103,Find and conquer them all to gain access to a special master challenge area.
+hold.kdd1.yml,speech.10025101,"I coulda cleared those roaches without hiding in the alcove, but I feel lazy today."
+hold.kdd1.yml,speech.10025110,"Hey, a wraithwing!"
+hold.kdd1.yml,speech.10025111,All by himself too... that means I could be chasing him all over the room.
+hold.kdd1.yml,speech.10025112,"Wraithwings, unlike roaches, run away from Beethro and try to keep themselves at a distance of five tiles."
+hold.kdd1.yml,speech.10025113,"They are not as shy in bigger numbers, and won't hesitate to attack if they surround their prey."
+hold.kdd1.yml,speech.10025109,"That queen'll make tons of new roaches by the time I get to the orb and back!"
+hold.kdd1.yml,speech.10025105,Argh... too slow!
+hold.kdd1.yml,speech.10025106,Ha!  Easily.
+hold.kdd1.yml,speech.10025104,Hmmm... can I kill off those queens before they dump eggs?
+hold.kdd1.yml,speech.10025107,"I'm sure there was a cleaner way to take out these roach queens."
+hold.kdd1.yml,speech.10025108,Now THAT was a fine piece of smitemitery.
+hold.kdd1.yml,speech.10025119,"Hey, this is pretty neat!"
+hold.kdd1.yml,speech.10025120,"I know I coulda cleared this room without being invisible, but it was still fun."
+hold.kdd1.yml,speech.10025121,"That wasn't so hard... I wonder why that potion is there?"
+hold.kdd1.yml,speech.10025123,"Whew!  Now those queens won't lay their eggs unless I'm close to them!"
+hold.kdd1.yml,speech.10025124,"That was a bit rough, but nothing a good delver like me can't handle!"
+hold.kdd1.yml,speech.10025125,"Ha!  Nothing's too tough for this delver!"
+hold.kdd1.yml,speech.10025122,Yikes!  I think I need the potion this time!
+hold.kdd1.yml,speech.10025129,I coulda opened all the doors sooner than this.
+hold.kdd1.yml,speech.10025126,No kidding.
+hold.kdd1.yml,speech.10025130,No prisoners left? This is gonna be a lonely job with no one to talk to...
+hold.kdd1.yml,speech.10025383,This looks dangerous... some kind of trap...
+hold.kdd1.yml,speech.10025384,Wow!  Somebody shoulda been here to see me.
+hold.kdd1.yml,speech.10025114,I coulda cleared this room without going back to the entrance hallway.
+hold.kdd1.yml,speech.10025115,Beethro Budkin surmounts any challenge!
+hold.kdd1.yml,speech.10025116,Why is it that dropping every trapdoor makes a room look better?
+hold.kdd1.yml,speech.10025117,Holy Hoobuffins! Maybe there is such a thing as too many mimics!
+hold.kdd1.yml,speech.10025118,Another secret chamber where everyone but me least expects it.
+hold.kdd1.yml,speech.10025131,You have failed...
+hold.kdd1.yml,outro,"What will Beethro face next? Will the dangers become more hazardous? Will he manage to clean up the whole of King Dugan's Dungeon and finally get paid? <p> </p><p> </p> <p> </p><p> </p> <p> </p><p> </p>
+<font size=""32"" color=""#FFFF00"">Congratulations!</font> <p> </p><p> </p> <p> </p><p> </p> <p> </p><p> </p>
+
+You have completed the first episode King Dugan's Dungeon Lite. Did you enjoy the experience?"
+hold.kdd2.yml,hold_name,"King Dugan's Dungeon Lite 2"
+hold.kdd2.yml,level_name_1,Fifth Level
+hold.kdd2.yml,level_name_2,Sixth Level
+hold.kdd2.yml,level_name_3,Seventh Level
+hold.kdd2.yml,level_name_4,Eighth Level
+hold.kdd2.yml,level_name_5,Mastery Level
+hold.kdd2.yml,level_name_6,Tutorial
+hold.kdd2.yml,achievement.name.find_master_wall,Where is Master?
+hold.kdd2.yml,achievement.description.find_master_wall,Find the master wall
+hold.kdd2.yml,achievement.name.l1.1w,Easterville
+hold.kdd2.yml,achievement.description.l1.1w,"Fifth Level: 1W
+Clear the room facing east the entire time"
+hold.kdd2.yml,achievement.name.l1.1n2w,Cleanliness
+hold.kdd2.yml,achievement.description.l1.1n2w,"Fifth Level: 1N2W
+Drop all trapdoors and clear the room on the same visit"
+hold.kdd2.yml,achievement.name.l1.2n,Orb Avoider
+hold.kdd2.yml,achievement.description.l1.2n,"Fifth Level: 2N
+Clear the room without hitting any orb"
+hold.kdd2.yml,achievement.name.l1.1s,Static Hands
+hold.kdd2.yml,achievement.description.l1.1s,"Fifth Level: 1S
+Clear the room without turning"
+hold.kdd2.yml,achievement.name.l1.2s,Perfect Vision
+hold.kdd2.yml,achievement.description.l1.2s,"Fifth Level: 2S
+Clear the room without drinking the potion"
+hold.kdd2.yml,achievement.name.l1.3e,Wraithwing Whisperer
+hold.kdd2.yml,achievement.description.l1.3e,"Fifth Level: 3E
+Clear the room without hitting the orb"
+hold.kdd2.yml,achievement.name.l1.1s1w,Controlled Mimicry
+hold.kdd2.yml,achievement.description.l1.1s1w,"Fifth Level: 1S1W
+Clear the room without leaving the marked area"
+hold.kdd2.yml,achievement.name.l1.2s2e,"Can't Stand Yellow"
+hold.kdd2.yml,achievement.description.l1.2s2e,"Fifth Level: 2S2E
+Clear the room without stepping on open yellow doors"
+hold.kdd2.yml,achievement.name.l3.1s,No-Diagonal
+hold.kdd2.yml,achievement.description.l3.1s,"Seventh Level: 1S
+Clear the room without moving diagonally"
+hold.kdd2.yml,achievement.name.l3.1e,Motionless Hands
+hold.kdd2.yml,achievement.description.l3.1e,"Seventh Level: 1E
+Clear the room without turning"
+hold.kdd2.yml,achievement.name.l3.1n2e,Ssssslither
+hold.kdd2.yml,achievement.description.l3.1n2e,"Seventh Level: 1N2E
+Kill the snake before any roach and clear the room"
+hold.kdd2.yml,achievement.name.l3.3n1e,Hands Set in Stone
+hold.kdd2.yml,achievement.description.l3.3n1e,"Seventh Level: 3N1E
+Clear the room without turning"
+hold.kdd2.yml,achievement.name.l3.2n1w,Master Intellect
+hold.kdd2.yml,achievement.description.l3.2n1w,"Seventh Level: 2N1W
+Clear this optional room"
+hold.kdd2.yml,achievement.name.l4.4s3e,Backstabber
+hold.kdd2.yml,achievement.description.l4.4s3e,"Eighth Level: 4S3E
+Clear the room without drinking the potion"
+hold.kdd2.yml,achievement.name.l4.clear_tar,Tar Technician
+hold.kdd2.yml,achievement.description.l4.clear_tar,"Eighth Level
+Clear all tar in any room"
+hold.kdd2.yml,achievement.name.l4.quick_tar_mother_kill,Eye Stabber
+hold.kdd2.yml,achievement.description.l4.quick_tar_mother_kill,"Eighth Level
+Kill a tar mother before she has chance to grow tar"
+hold.kdd2.yml,achievement.name.do_not_wake_eyes,Ninja
+hold.kdd2.yml,achievement.description.do_not_wake_eyes,"Any Level
+Clear a room with evil eyes without waking any"
+hold.kdd2.yml,achievement.name.level_1,Amateur Delver
+hold.kdd2.yml,achievement.description.level_1,Clear Fifth Level
+hold.kdd2.yml,achievement.name.level_2,Fledgling Smiter
+hold.kdd2.yml,achievement.description.level_2,Clear Sixth Level
+hold.kdd2.yml,achievement.name.level_3,Contract Exterminator
+hold.kdd2.yml,achievement.description.level_3,Clear Seventh Level
+hold.kdd2.yml,achievement.name.level_4,"I'm a Professional!"
+hold.kdd2.yml,achievement.description.level_4,Clear Eighth Level
+hold.kdd2.yml,achievement.name.level_6,I Can Read
+hold.kdd2.yml,achievement.description.level_6,Clear Tutorial
+hold.kdd2.yml,achievement.name.tuning_fork_in_sequence,Tuning Spork
+hold.kdd2.yml,achievement.name.monster_kills_0,Baked Roaches
+hold.kdd2.yml,achievement.name.monster_kills_1,Queen Julienne
+hold.kdd2.yml,achievement.name.monster_kills_2,Sunny Side Up
+hold.kdd2.yml,achievement.name.monster_kills_3,Goblin Foie Gras
+hold.kdd2.yml,achievement.name.monster_kills_5,Wraithwing Drumsticks
+hold.kdd2.yml,achievement.name.monster_kills_6,Evil Eye Jelly
+hold.kdd2.yml,achievement.name.monster_kills_7,Serpent Nigiri
+hold.kdd2.yml,achievement.name.monster_kills_8,Tar Arrabbiata
+hold.kdd2.yml,achievement.name.monster_kills_9,Baby Gyoza
+hold.kdd2.yml,achievement.name.monster_kills_10,Dried Brains
+hold.kdd2.yml,achievement.name.rooms,Green to the Ground
+hold.kdd2.yml,achievement.name.total_kills,Crowd Crusher
+hold.kdd2.yml,achievement.name.trapdoors,Cleaning Floor
+hold.kdd2.yml,achievement.name.steps,Marathon Master
+hold.kdd2.yml,achievement.name.deaths,Immortal
+hold.kdd2.yml,achievement.name.undo,Spacetime Continuum Rip
+hold.kdd2.yml,achievement.name.cut_tar,Chiseler
+hold.kdd2.yml,entrance.lvl_1.entrance.13x12,"The last level left Beethro sweating. ""I guess this is going to be hard work after all."" Fortunately, there was a cool breeze coming from the next level."
+hold.kdd2.yml,entrance.lvl_1.entrance.17x13,Beethro left the tutorial floor rich with new knowledge.
+hold.kdd2.yml,entrance.lvl_2.1s1w.21x8,Beethro came back to finish the proper smiting business he was hired to do.
+hold.kdd2.yml,entrance.lvl_2.1s1w.4x18,"Beethro stumbled up and down a series of poorly-lit staircases. ""This is a safety hazard and there aren't even any roaches in here! Someone oughta at least put a handrail or s-"" thought Beethro right before he fell twelve flights and knocked himself out for a solid hour. After dreaming horrible, horrible dreams about eyeball pudding, Beethro groggily awakened in a room. ""Gob! Would it be so hard to have these places be on the map for once?"""
+hold.kdd2.yml,entrance.lvl_2.entrance.11x15,"Perhaps the level architect was trying too hard to make his point, whatever that point was. In any case, you can be thankful that there are no other levels in Dugan's Dungeon like this one."
+hold.kdd2.yml,entrance.lvl_3.entrance.14x13,"As Beethro climbed down the stairs he heard a loud hissing. As a seasoned professional, he knew instantly what it was, but was still startled by the sheer volume. ""Jeebus! How many of those nasty things are down there?"""
+hold.kdd2.yml,entrance.lvl_4.entrance.9x9,"Some monsters are cunning and lethal, and others are just a horrible pain to clean up after."
+hold.kdd2.yml,entrance.lvl_5.entrance.10x18,"Beethro descended the stairs only to find himself in an uncharted corridor...
+
+He won't get paid for clean-up here, but his professional honor urges him onward."
+hold.kdd2.yml,entrance.lvl_6.entrance.8x12,Tutorial
+hold.kdd2.yml,scroll.lvl_1.1n2w.6x7,I hope you left yourself a path back.
+hold.kdd2.yml,scroll.lvl_2.1s1w.10x12,"This is a Master Door.
+It will open when you have finished the last level and also conquered all secret rooms."
+hold.kdd2.yml,scroll.lvl_2.3e.3x11,Secret Passageway
+hold.kdd2.yml,scroll.lvl_3.1n.14x2,"My tribute to Tron.
+
+-Erik"
+hold.kdd2.yml,scroll.lvl_3.1n.3x2,"I didn't think you'd figure that last one out."
+hold.kdd2.yml,scroll.lvl_3.1n.5x23,"Okay, I admit it's not EXACTLY the same thing as light cycles.
+
+-Erik"
+hold.kdd2.yml,scroll.lvl_3.2n.13x10,You might find it useful that Shift+Wait waits until the next spawn.
+hold.kdd2.yml,scroll.lvl_3.2n1w.25x15,"To the feeble-minded, turn back!  This room can only be completed by a master intellect.
+(This room is not required.)"
+hold.kdd2.yml,scroll.lvl_4.1s.18x7,Feel free to play with it a bit.
+hold.kdd2.yml,scroll.lvl_4.1s.20x7,Any blob that is not at least 2 tiles wide and high is unstable and will break apart into tar babies.
+hold.kdd2.yml,scroll.lvl_4.1s.21x7,The living tar can only be damaged on flat edges.
+hold.kdd2.yml,scroll.lvl_4.1s1e.8x16,A wise man will clear the northern room before following this corridor.
+hold.kdd2.yml,scroll.lvl_4.3s.25x10,Clear south and west passages before continuing this way to avoid redundant backtracking.
+hold.kdd2.yml,scroll.lvl_5.1s.11x6,"Well now! Besides perhaps a couple of achievements, you should be finished with everything in the game."
+hold.kdd2.yml,scroll.lvl_5.1s.12x7,"Please accept my most sincere congratulations, you have achieved quite a feat!"
+hold.kdd2.yml,scroll.lvl_5.1s.13x8,This scroll used to urge you to play more episodes on CaravelGames.com but with this release they all are bundled into one game so you can just Change Episode from the title screen.
+hold.kdd2.yml,scroll.lvl_5.1s.14x9,Keep going!
+hold.kdd2.yml,scroll.lvl_5.1s.18x8,Sincere congratulations!
+hold.kdd2.yml,scroll.lvl_5.1s.6x8,The two bottom Roach Queens will be killed automatically once you step on the checkpoint in the far-right corner.
+hold.kdd2.yml,scroll.lvl_5.1s.7x8,Here is a small reward! Kill all the eyes without stepping on the brown grass.
+hold.kdd2.yml,scroll.lvl_5.entrance.12x23,Final words
+hold.kdd2.yml,scroll.lvl_5.entrance.15x21,New puzzles.
+hold.kdd2.yml,scroll.lvl_5.entrance.8x21,Harder versions of old puzzles.
+hold.kdd2.yml,scroll.lvl_6.1e.13x16,Move to the far right and observe how the roach behaves when walking onto a corner diagonally.
+hold.kdd2.yml,scroll.lvl_6.1e.1x12,Break these broken and secret walls with your sword.
+hold.kdd2.yml,scroll.lvl_6.1e.21x17,"If a DROD monster moves diagonally into a corner obstacle, it prefers to slide vertically, if possible."
+hold.kdd2.yml,scroll.lvl_6.1e.6x10,Roach queens spawn roach eggs every 30 turns (the turn after the spawn counter becomes red).
+hold.kdd2.yml,scroll.lvl_6.1e.6x6,"Eggs won't appear on arrows, trapdoors, or yellow gates. Press `%keymap.wait%` or `Numpad 5` to wait a turn."
+hold.kdd2.yml,scroll.lvl_6.1e.6x8,Eggs will hatch into fully grown-up roaches 5 turns after being spawned.
+hold.kdd2.yml,scroll.lvl_6.1s3e.10x16,Place yourself on the green floor and make sure the roach stands on the sand tile directly south of you...
+hold.kdd2.yml,scroll.lvl_6.1s3e.10x8,Place yourself on the green floor and make sure the roach stands on the sand tile directly north of you...
+hold.kdd2.yml,scroll.lvl_6.1s3e.20x12,"Follow the sandy path to learn the backswipe technique! Remember about diagonal movement and don't turn your sword."
+hold.kdd2.yml,scroll.lvl_6.1s3e.7x12,"Repeat to analyze the backswipe. Master this technique, for it will prove crucial in your further endeavors."
+hold.kdd2.yml,scroll.lvl_6.1s3e.9x15,...then move southeast to kill it.
+hold.kdd2.yml,scroll.lvl_6.1s3e.9x9,...then move northeast to kill it.
+hold.kdd2.yml,scroll.lvl_6.2e.1x12,"Wraithwings, unlike roaches, run away from Beethro and try to keep themselves at a distance of five tiles."
+hold.kdd2.yml,scroll.lvl_6.2e.5x12,"They are not as shy in bigger numbers, and won't hesitate to attack if they surround their prey."
+hold.kdd2.yml,scroll.lvl_6.3e.10x12,These pink-purple tiles are trapdoors and they fall if you or a mimic step off them.
+hold.kdd2.yml,scroll.lvl_6.3e.10x6,All keys can be remapped from within game options.
+hold.kdd2.yml,scroll.lvl_6.3e.4x12,"After stepping on a mimic potion, use your mouse or wait key to choose the tile where you want to place the mimic."
+hold.kdd2.yml,scroll.lvl_6.3e.4x6,Click around to see what orbs do and what the evil eyes see.
+hold.kdd2.yml,scroll.lvl_6.3e.5x4,To prevent yourself from accidentally leaving a room hit %keymap.lock% to lock and unlock it. A small lock on the minimap indicates that a room is locked.
+hold.kdd2.yml,scroll.lvl_6.3e.5x8,The spacebar will clear all speech and achievements from the screen.
+hold.kdd2.yml,scroll.lvl_6.3e.7x3,"Shift+Key performs the key's action followed by its inverse.
+Shift+Wait waits until the next spawn.
+%keymap.battle% performs the opposite of your previous move."
+hold.kdd2.yml,scroll.lvl_6.3e.7x9,"`Escape` opens up the pause menu, where you can view `General Help` to refer to the controls any time you wish."
+hold.kdd2.yml,scroll.lvl_6.3e.9x4,F3 displays a move counter to help you optimize for better scores.
+hold.kdd2.yml,scroll.lvl_6.3e.9x8,(this scroll contained information about CaravelNet functions that are not available in this version anymore)
+hold.kdd2.yml,scroll.lvl_6.entrance.11x15,"Historical Note:
+The original Flash version of the game had each episode released as a separate game - the tutorial was aimed at people starting their adventure with later episodes."
+hold.kdd2.yml,scroll.lvl_6.entrance.5x9,You can move diagonally even through very narrow corridors.
+hold.kdd2.yml,speech.10025135,"Ay, look at all those evil eyes!"
+hold.kdd2.yml,speech.10025136,Ah!  It still creeps me out when one of those things wakes up!
+hold.kdd2.yml,speech.10025137,Clearing this place without any of those doors opening would be something to brag about.
+hold.kdd2.yml,speech.10025138,"Ha! Sloppy dungeon design, putting in unnecessary orbs like that!"
+hold.kdd2.yml,speech.10025132,This is a tutorial area.
+hold.kdd2.yml,speech.10025133,"Visit it if you haven't played this game before."
+hold.kdd2.yml,speech.10025140,Now this looks familiar...
+hold.kdd2.yml,speech.10025139,Dugan had better pay me for each of these rooms.
+hold.kdd2.yml,speech.10025141,Those eyes coulda been smote proper without any turns.  Believe it!
+hold.kdd2.yml,speech.10025142,"Ha! Now that's efficiency! Wait 'til I tell the Smitemaster's Guild about that feat!"
+hold.kdd2.yml,speech.10025146,"My blade won't scrape one scratch off that squirmy fellow."
+hold.kdd2.yml,speech.10025147,"But just lead him to a dead end, and I'll be rid of him."
+hold.kdd2.yml,speech.10025143,"Jeebus!  The serpent must be about one thousand, four hundred and forty-five feet long!"
+hold.kdd2.yml,speech.10025144,"But my contract says I'm not obliged to deal with any monster longer than one thousand, four hundred and forty-four."
+hold.kdd2.yml,speech.10025145,Could just let this room be.
+hold.kdd2.yml,speech.10025152,"Better be careful here... I can't get through if the tar clogs up that passage!"
+hold.kdd2.yml,speech.10025151,I hate tar mothers.
+hold.kdd2.yml,speech.10025148,"Tar mothers, too?  Why, why, why...?"
+hold.kdd2.yml,speech.10025149,Every thirty turns tar mothers will make the tar grow by one tile in each direction.
+hold.kdd2.yml,speech.10025150,"It is relatively safe to be surrounded by growing tar, but you have to watch out for tar babies which might spawn during the growth."
+hold.kdd2.yml,speech.10025158,"Never mind. Let's go!"
+hold.kdd2.yml,speech.10025153,And a wall here...
+hold.kdd2.yml,speech.10025154,"Good. At this rate, we'll be done mapping the level in a few minutes."
+hold.kdd2.yml,speech.10025155,"Do you hear that? It's the tar authority! We must hide!"
+hold.kdd2.yml,speech.10025156,Aaargh! I almost dropped the map!
+hold.kdd2.yml,speech.10025157,Wait! Is the map facing the right way up?
+hold.kdd2.yml,speech.10025162,This room... it looks... familiar... somehow...
+hold.kdd2.yml,speech.10025163,It makes me feel... angry... and frustrated!
+hold.kdd2.yml,speech.10025159,"Rats... I hope there aren't any sneaky tricks, like rooms hidden behind a secret wall somewhere!"
+hold.kdd2.yml,speech.10025160,Oh gob... this room is gonna give me nightmares...
+hold.kdd2.yml,speech.10025161,Never again... never again...
+hold.kdd2.yml,speech.10025164,You have failed...
+hold.kdd2.yml,speech.10025165,Your objective in DROD is to clear each level of all monsters.
+hold.kdd2.yml,speech.10025166,Hit the roach with your sword to kill it.
+hold.kdd2.yml,speech.10025177,All keys can be remapped from within game options.
+hold.kdd2.yml,speech.10025178,"Those without CaravelNet subscriptions won't have their scores stored in the leaderboard but will know what place they would have attained."
+hold.kdd2.yml,speech.10025179,Click around to see what orbs do and what the evil eyes see.
+hold.kdd2.yml,speech.10025167,"This potion will allow you to place a mimic. Mimics copy every move you make and they move immediately after you, but before monsters."
+hold.kdd2.yml,speech.10025168,Place the mimic at the tile marked with a checkpoint below. Use it to drop all trapdoors and the red gate will open.
+hold.kdd2.yml,speech.10025169,"Congratulations, you have completed this room!"
+hold.kdd2.yml,speech.10025173,Turn your sword with `%keymap.turn_ccw%` and `%keymap.turn_cw%`.
+hold.kdd2.yml,speech.10025174,Now go hit the orb with your sword.
+hold.kdd2.yml,speech.10025175,"Orbs interact with doors in three ways - they can open, close, or toggle their state."
+hold.kdd2.yml,speech.10025176,"Click on the orb with the mouse to see which doors it affects, and in what way."
+hold.kdd2.yml,outro,"Tar was not something Beethro expected. Or wanted to encounter. But walking down the stairs to the ninth floor he knows one thing - he can't smell this slimy substance there. But what if there is something much worse waiting instead? <p> </p><p> </p> <p> </p><p> </p> <p> </p><p> </p>
+<font size=""32"" color=""#FFFF00"">Congratulations!</font> <p> </p><p> </p> <p> </p><p> </p> <p> </p><p> </p>
+
+You have completed the second episode King Dugan's Dungeon Lite. Did you have fun?"
+hold.kdd3.yml,hold_name,"King Dugan's Dungeon Lite 3"
+hold.kdd3.yml,level_name_1,Ninth Level
+hold.kdd3.yml,level_name_2,Tenth Level
+hold.kdd3.yml,level_name_3,Eleventh Level
+hold.kdd3.yml,level_name_4,Twelfth Level
+hold.kdd3.yml,level_name_5,Mastery Level
+hold.kdd3.yml,level_name_6,Tutorial
+hold.kdd3.yml,achievement.name.l1.4n3e,Working Like a Clock
+hold.kdd3.yml,achievement.description.l1.4n3e,"Ninth Level: 4N3E
+Clear the room without stepping on any of the marked areas more than once"
+hold.kdd3.yml,achievement.name.l1.3n3e,Clocking Like a Work
+hold.kdd3.yml,achievement.description.l1.3n3e,"Ninth Level: 3N3E
+Clear the room without stepping on any of the marked areas more than once"
+hold.kdd3.yml,achievement.name.l2.1n1e,Entangled Hands
+hold.kdd3.yml,achievement.description.l2.1n1e,"Tenth Level: 1N1E
+Clear the room without turning"
+hold.kdd3.yml,achievement.name.l2.1e,Locked Arms
+hold.kdd3.yml,achievement.description.l2.1e,"Tenth Level: 1E
+Clear the room without turning"
+hold.kdd3.yml,achievement.name.l2.1s1w,Glued Sword
+hold.kdd3.yml,achievement.description.l2.1s1w,"Tenth Level: 1S1W
+Clear the room without turning"
+hold.kdd3.yml,achievement.name.l2.1s,Forever Alone
+hold.kdd3.yml,achievement.description.l2.1s,"Tenth Level: 1S
+Clear the room without drinking the potion"
+hold.kdd3.yml,achievement.name.l3.1s2e,Sneaky
+hold.kdd3.yml,achievement.description.l3.1s2e,"Eleventh Level: 1S2E
+Clear the room in less than 150 moves"
+hold.kdd3.yml,achievement.name.l3.clear_tar,Tar Engineer
+hold.kdd3.yml,achievement.description.l3.clear_tar,"Eleventh Level
+Clear all tar in any room"
+hold.kdd3.yml,achievement.name.l4.1s2e,Lord of the Snakes
+hold.kdd3.yml,achievement.description.l4.1s2e,"Twelfth Level: 1S2E
+Clear the room without moving diagonally"
+hold.kdd3.yml,achievement.name.l4.2s1e,Alone in the Hiss
+hold.kdd3.yml,achievement.description.l4.2s1e,"Twelfth Level: 2S1E
+Clear the room without drinking a potion"
+hold.kdd3.yml,achievement.name.l4.1s,Silent Hunter
+hold.kdd3.yml,achievement.description.l4.1s,"Twelfth Level: 1S
+Wake exactly one eye and clear the room"
+hold.kdd3.yml,achievement.name.do_not_wake_eyes,Shinobi
+hold.kdd3.yml,achievement.description.do_not_wake_eyes,"Any Level
+Clear a room with evil eyes without waking any"
+hold.kdd3.yml,achievement.name.level_1,Amateur Delver
+hold.kdd3.yml,achievement.description.level_1,Clear Ninth Level
+hold.kdd3.yml,achievement.name.level_2,Fledgling Smiter
+hold.kdd3.yml,achievement.description.level_2,Clear Tenth Level
+hold.kdd3.yml,achievement.name.level_3,Contract Exterminator
+hold.kdd3.yml,achievement.description.level_3,Clear Eleventh Level
+hold.kdd3.yml,achievement.name.level_4,"I'm a Professional!"
+hold.kdd3.yml,achievement.description.level_4,Clear Twelfth Level
+hold.kdd3.yml,achievement.name.level_6,Can I Read?
+hold.kdd3.yml,achievement.description.level_6,Clear Tutorial
+hold.kdd3.yml,achievement.name.tuning_fork_in_sequence,Tuning Stork
+hold.kdd3.yml,achievement.name.monster_kills_0,Roasted Roaches
+hold.kdd3.yml,achievement.name.monster_kills_1,Queens Carpaccio
+hold.kdd3.yml,achievement.name.monster_kills_2,Omelette
+hold.kdd3.yml,achievement.name.monster_kills_5,Wraithwing Tenders
+hold.kdd3.yml,achievement.name.monster_kills_6,Evil Eye Mustard
+hold.kdd3.yml,achievement.name.monster_kills_7,Serpent Futomaki
+hold.kdd3.yml,achievement.name.monster_kills_8,Tar Coulis
+hold.kdd3.yml,achievement.name.monster_kills_9,Baby Knodel
+hold.kdd3.yml,achievement.name.monster_kills_12,Spider Thighs
+hold.kdd3.yml,achievement.name.rooms,Descending Green
+hold.kdd3.yml,achievement.name.total_kills,Mob Controller
+hold.kdd3.yml,achievement.name.trapdoors,Space Keeper
+hold.kdd3.yml,achievement.name.steps,Endless Walker
+hold.kdd3.yml,achievement.name.deaths,Reanimator
+hold.kdd3.yml,achievement.name.undo,Time Lord
+hold.kdd3.yml,achievement.name.cut_tar,Sculptor
+hold.kdd3.yml,entrance.lvl_1.entrance.15x5,"Beethro sat down on the steps for a break. He pulled three bottles out of his pack. The ten-cup bottle was filled with refreshing leaf juice, and the other two bottles, which were in two-cup and five-cup sizes, were empty. Beethro wanted to drink exactly four cups of leaf juice in one uninterrupted gulp. He started messing around with the cups, pouring juice from one to another and back, but after a while gave up. ""This is too much work!  Forget it!"""
+hold.kdd3.yml,entrance.lvl_1.entrance.7x17,Beethro left the tutorial floor rich with new knowledge.
+hold.kdd3.yml,entrance.lvl_2.entrance.11x12,"As many experienced dungeon exterminators know, beneath dwell some beasties that are able to blend into their surroundings."
+hold.kdd3.yml,entrance.lvl_3.entrance.11x11,"Catching a glimpse of the room ahead, Beethro grunted in disapproval. ""I don't know how, but the tar always ends up that way, and I hate it."""
+hold.kdd3.yml,entrance.lvl_4.2n2e.13x13,Beethro came back to finish the proper smiting business he was hired to do.
+hold.kdd3.yml,entrance.lvl_4.entrance.13x12,"Again, Beethro heard loud hissing below, and knew to expect serpents. But this time the sound was slightly different, and he stopped a moment to listen and judge what lay ahead. ""Good Gob! Those slitherbags must've been down there a gawdawful long time, with some big meals along the way."""
+hold.kdd3.yml,entrance.lvl_5.entrance.13x11,"Beethro descended the stairs only to find himself in an uncharted corridor...
+
+He won't get paid for clean-up here, but his professional honor urges him onward."
+hold.kdd3.yml,entrance.lvl_6.entrance.8x12,Tutorial
+hold.kdd3.yml,scroll.lvl_1.3n3e.24x12,Are you sure you are doing them in the correct order?
+hold.kdd3.yml,scroll.lvl_1.4n3e.5x13,The order is the key.
+hold.kdd3.yml,scroll.lvl_2.entrance.14x9,"Invisibly evil spiders lurk on this level. Beware, for they are hard to see."
+hold.kdd3.yml,scroll.lvl_3.1s2e.18x7,Psst... This passage takes you to the stairs. You might want to clear all other rooms before going there!
+hold.kdd3.yml,scroll.lvl_4.1n1e.12x23,"If a serpent moves west and it prefers horizontal movement, step to the east of its head to force it to move north."
+hold.kdd3.yml,scroll.lvl_4.1n1e.14x23,"It works the same vertically, but then the snake prefers eastward movement."
+hold.kdd3.yml,scroll.lvl_4.entrance.24x12,Your clock tells you which direction snakes currently prefer. This will help you to control these erratic creatures.
+hold.kdd3.yml,scroll.lvl_5.1s.11x6,Getting here is a fabulous feat!
+hold.kdd3.yml,scroll.lvl_5.1s.12x7,So how did you like it? Did you manage to get all of the achievements?
+hold.kdd3.yml,scroll.lvl_5.1s.13x8,This scroll used to urge you to play more episodes on CaravelGames.com but with this release they all are bundled into one game so you can just Change Episode from the title screen.
+hold.kdd3.yml,scroll.lvl_5.1s.14x9,Game on!
+hold.kdd3.yml,scroll.lvl_5.1s.18x8,"Really nice, congrats!"
+hold.kdd3.yml,scroll.lvl_5.1s.6x8,Roach queens will be killed once you step on the checkpoint in the far-right corner.
+hold.kdd3.yml,scroll.lvl_5.1s.7x8,Here is a small reward! Kill all the eyes without stepping on the grass.
+hold.kdd3.yml,scroll.lvl_5.entrance.12x15,Final words
+hold.kdd3.yml,scroll.lvl_5.entrance.18x11,Other puzzles
+hold.kdd3.yml,scroll.lvl_6.1e.13x16,Move to the far right and observe how the roach behaves when walking onto a corner diagonally.
+hold.kdd3.yml,scroll.lvl_6.1e.1x12,Break these broken and secret walls with your sword.
+hold.kdd3.yml,scroll.lvl_6.1e.21x17,"If a monster moves diagonally into a corner obstacle, it prefers to slide vertically, if possible."
+hold.kdd3.yml,scroll.lvl_6.1e.6x10,Roach queens spawn roach eggs every 30 turns (the turn after the spawn counter becomes red).
+hold.kdd3.yml,scroll.lvl_6.1e.6x6,"Eggs won't appear on arrows, trapdoors, or yellow gates. Press `%keymap.wait%` or `Numpad 5` to wait a turn."
+hold.kdd3.yml,scroll.lvl_6.1e.6x8,Eggs will hatch into fully grown-up roaches 5 turns after being spawned.
+hold.kdd3.yml,scroll.lvl_6.1s3e.10x16,Place yourself on the green floor and make sure the roach stands on the sand tile directly south of you...
+hold.kdd3.yml,scroll.lvl_6.1s3e.10x8,Place yourself on the green floor and make sure the roach stands on the sand tile directly north of you...
+hold.kdd3.yml,scroll.lvl_6.1s3e.20x12,"Follow the sandy path to learn the backswipe technique! Remember about diagonal movement and don't turn your sword."
+hold.kdd3.yml,scroll.lvl_6.1s3e.7x12,"Repeat to analyze the backswipe. Master this technique, for it will prove crucial in your further endeavors."
+hold.kdd3.yml,scroll.lvl_6.1s3e.9x15,...then move southeast to kill it.
+hold.kdd3.yml,scroll.lvl_6.1s3e.9x9,...then move northeast to kill it.
+hold.kdd3.yml,scroll.lvl_6.2e.1x12,"Wraithwings, unlike roaches, run away from Beethro and try to keep themselves at a distance of five tiles."
+hold.kdd3.yml,scroll.lvl_6.2e.5x12,"They are not as shy in bigger numbers, and won't hesitate to attack if they surround their prey."
+hold.kdd3.yml,scroll.lvl_6.3e.10x12,These pink-purple tiles are trapdoors and they fall if you or a mimic step off them.
+hold.kdd3.yml,scroll.lvl_6.3e.4x12,"After stepping on a mimic potion, use your mouse or wait key to choose the tile where you want to place the mimic."
+hold.kdd3.yml,scroll.lvl_6.4e.11x12,"Snakes move by their own, much more complex, movement rules. Their current preference is shown beneath the spawn cycle timer."
+hold.kdd3.yml,scroll.lvl_6.4e.1x6,(this scroll contained information about CaravelNet functions that are not available in this version anymore)
+hold.kdd3.yml,scroll.lvl_6.4e.2x4,"`Escape` opens up the pause menu, where you can view `General Help` to refer to the controls anytime you wish."
+hold.kdd3.yml,scroll.lvl_6.4e.2x8,Click on elements to see what orbs do and what the evil eyes see.
+hold.kdd3.yml,scroll.lvl_6.4e.4x3,To prevent yourself from accidentally leaving a room hit %keymap.lock% to lock and unlock it. A small lock icon on the minimap indicates that a room is locked.
+hold.kdd3.yml,scroll.lvl_6.4e.4x9,"If a monster moves diagonally into a corner obstacle, it prefers to slide vertically, if possible."
+hold.kdd3.yml,scroll.lvl_6.4e.6x4,"Shift+Key performs the key's action followed by its inverse.
+Shift+Wait waits until the next spawn.
+%keymap.battle% performs the opposite of your previous move."
+hold.kdd3.yml,scroll.lvl_6.4e.6x8,All keys can be remapped from within game options.
+hold.kdd3.yml,scroll.lvl_6.4e.7x12,"Did you know that serpents can't move over scrolls?"
+hold.kdd3.yml,scroll.lvl_6.4e.7x6,F3 displays a move counter to help you optimize for better scores.
+hold.kdd3.yml,scroll.lvl_6.entrance.11x15,"Historical Note:
+The original Flash version of the game had each episode released as a separate game - the tutorial was aimed at people starting their adventure with later episodes."
+hold.kdd3.yml,scroll.lvl_6.entrance.5x9,You can move diagonally even through very narrow corridors.
+hold.kdd3.yml,speech.10025195,Hmm...it could be worse...could be a tar mother in here...
+hold.kdd3.yml,speech.10025191,Guess I spoke too soon.
+hold.kdd3.yml,speech.10025192,"Looks like there's something else different about this room..."
+hold.kdd3.yml,speech.10025193,Every thirty turns tar mothers will make the tar grow by one tile in each direction.
+hold.kdd3.yml,speech.10025194,"It is relatively safe to be surrounded by growing tar, but you have to watch out for tar babies which might spawn during the growth."
+hold.kdd3.yml,speech.10025196,Every thirty turns tar mothers will make the tar grow by one tile in each direction.
+hold.kdd3.yml,speech.10025197,"It is relatively safe to be surrounded by growing tar, but you have to watch out for tar babies which might spawn during the growth."
+hold.kdd3.yml,speech.10025189,And I really hate it when the tar grows so high above me... gives me the creeps.
+hold.kdd3.yml,speech.10025190,"Gah! The tar's grown all the way over the walls!"
+hold.kdd3.yml,speech.10025222,You have failed...
+hold.kdd3.yml,speech.10025180,"That was just nasty. Maybe tar isn't so bad after all..."
+hold.kdd3.yml,speech.10025181,Ah-ha!  Gotta get up early in the morning to pull one over on Beethro!
+hold.kdd3.yml,speech.10025182,I am not amused.
+hold.kdd3.yml,speech.10025184,This is a tutorial area.
+hold.kdd3.yml,speech.10025185,"Visit it if you haven't played this game before."
+hold.kdd3.yml,speech.10025183,Hot griddled roaches!  No more tar!
+hold.kdd3.yml,speech.10025188,"A door I can't get through. I wonder what's on the other side."
+hold.kdd3.yml,speech.10025187,"Hrm. This is a very strange door. I can't get through."
+hold.kdd3.yml,speech.10025207,Your objective in DROD is to clear each level of all monsters.
+hold.kdd3.yml,speech.10025208,Hit the roach with your sword to kill it.
+hold.kdd3.yml,speech.10025209,Force arrows block your movement in a direction opposite to theirs.
+hold.kdd3.yml,speech.10025210,Step on the checkpoint. You will go back to the exact moment you stepped on it should you die or restart using `%keymap.restart%`.
+hold.kdd3.yml,speech.10025211,"If you die or are in a situation where each move results with death, you can undo with `%keymap.undo%`."
+hold.kdd3.yml,speech.10025212,"This potion will allow you to place a mimic. Mimics copy every move you make and move immediately after you, but before monsters."
+hold.kdd3.yml,speech.10025213,Place the mimic at the tile marked with a checkpoint below. Use it to drop all trapdoors and the red gate will open.
+hold.kdd3.yml,speech.10025214,"Serpents can't be damaged by your sword but they will shrink to death if stuck at a dead end."
+hold.kdd3.yml,speech.10025215,Remove all of the blue living tar to reach the evil eye at the top.
+hold.kdd3.yml,speech.10025216,Try to keep in mind that the tarstuff can only be damaged on flat edges and any tile which is not stable will turn into tar babies.
+hold.kdd3.yml,speech.10025217,Tar is stable when it can form a square blob of at least four tiles with its neighbours.
+hold.kdd3.yml,speech.10025218,"Congratulations, you have completed this room!"
+hold.kdd3.yml,speech.10025203,Turn your sword with `%keymap.turn_ccw%` and `%keymap.turn_cw%`.
+hold.kdd3.yml,speech.10025204,Now go hit the orb with your sword.
+hold.kdd3.yml,speech.10025205,"Orbs interact with doors in three ways - they can open, close, or toggle their state."
+hold.kdd3.yml,speech.10025206,Click on the orb with the mouse to see which doors it affects and in what way.
+hold.kdd3.yml,speech.10025201,Great galloping goblins!
+hold.kdd3.yml,speech.10025202,Look at the size of that serpent!
+hold.kdd3.yml,speech.10025198,"Careful, Beethro, careful..."
+hold.kdd3.yml,speech.10025199,Whew!
+hold.kdd3.yml,speech.10025200,These will make some great steaks.
+hold.kdd3.yml,outro,"If only he had a map of Dugan's Dungeon, Beethro would have known that what lies on the thirteenth floor is something which might defeat even the strongest warriors. But at least there won't be any Tar or Serpents there... <p> </p><p> </p> <p> </p><p> </p> <p> </p><p> </p>
+<font size=""32"" color=""#FFFF00"">Congratulations!</font> <p> </p><p> </p> <p> </p><p> </p> <p> </p><p> </p>
+
+You have completed the third episode King Dugan's Dungeon Lite. Did you like this one?"
+hold.kdd4.yml,hold_name,"King Dugan's Dungeon Lite 4"
+hold.kdd4.yml,level_name_1,Thirteenth Level
+hold.kdd4.yml,level_name_2,Fourteenth Level
+hold.kdd4.yml,level_name_3,Fifteenth Level
+hold.kdd4.yml,level_name_4,Sixteenth Level
+hold.kdd4.yml,level_name_5,Mastery Level
+hold.kdd4.yml,level_name_6,Original 13th Level
+hold.kdd4.yml,achievement.name.l1.2s1w,One-Directional Forest
+hold.kdd4.yml,achievement.description.l1.2s1w,"13th Level: 2S1W
+Clear the room without turning"
+hold.kdd4.yml,achievement.name.l1.1s,Stoic Snakes
+hold.kdd4.yml,achievement.description.l1.1s,"13th Level: 1S
+Clear the room without turning"
+hold.kdd4.yml,achievement.name.l1.1s1e,Tar Stayer
+hold.kdd4.yml,achievement.description.l1.1s1e,"13th Level: 1S1E
+Clear the room without turning"
+hold.kdd4.yml,achievement.name.l1.1s2w,Eyedoors
+hold.kdd4.yml,achievement.description.l1.1s2w,"13th Level: 1S2W
+Clear the room without turning"
+hold.kdd4.yml,achievement.name.l2.1s,Goblin Beater
+hold.kdd4.yml,achievement.description.l2.1s,"14th Level: 1S
+Clear the room facing North-West the entire time"
+hold.kdd4.yml,achievement.name.l2.2s,Goblin Crusher
+hold.kdd4.yml,achievement.description.l2.2s,"14th Level: 2S
+Clear the room facing East the entire time"
+hold.kdd4.yml,achievement.name.l2.1n,Goblin Destroyer
+hold.kdd4.yml,achievement.description.l2.1n,"14th Level: 1N
+Clear the room facing South the entire time"
+hold.kdd4.yml,achievement.name.l2.2e,Step Aside!
+hold.kdd4.yml,achievement.description.l2.2e,"14th Level: 2E
+Clear the room without stepping on the trapdoor"
+hold.kdd4.yml,achievement.name.l2.2n,Green Mommy
+hold.kdd4.yml,achievement.description.l2.2n,"14th Level: 2N
+Clear the room without letting the tar mother grow"
+hold.kdd4.yml,achievement.name.l2.1n3e,Goblin Killer
+hold.kdd4.yml,achievement.description.l2.1n3e,"14th Level: 1N3E
+Clear the room without turning"
+hold.kdd4.yml,achievement.name.l2.2n2e,Strict Policies
+hold.kdd4.yml,achievement.description.l2.2n2e,"14th Level: 2N2E
+Clear the room without letting the goblin stand on the gray road tiles"
+hold.kdd4.yml,achievement.name.l2.1n1e,Extreme Sacrifice
+hold.kdd4.yml,achievement.description.l2.1n1e,"14th Level: 1N1E
+Clear the room by killing a goblin last"
+hold.kdd4.yml,achievement.name.l3.entrance,Calm Assassin
+hold.kdd4.yml,achievement.description.l3.entrance,"15th Level: Entrance
+Clear the room without turning"
+hold.kdd4.yml,achievement.name.l3.entrance_2,Step Ahead
+hold.kdd4.yml,achievement.description.l3.entrance_2,"15th Level: Entrance
+Drop all trapdoors before clearing the room"
+hold.kdd4.yml,achievement.name.l3.1n,Crossing Spiders
+hold.kdd4.yml,achievement.description.l3.1n,"15th Level: 1N
+After hitting the orb clear the room without orthogonal moves - you can turn, wait and move diagonally
+You can move orthogonally again once monsters are dead to clean up the trapdoors"
+hold.kdd4.yml,achievement.name.l4.1s1e,Growing!
+hold.kdd4.yml,achievement.description.l4.1s1e,"16th Level: 1S1E
+Clear the room without letting tar mother grow"
+hold.kdd4.yml,achievement.name.l4.2s,Economic
+hold.kdd4.yml,achievement.description.l4.2s,"16th Level: 2S
+Clear the room with only 5 orb hits"
+hold.kdd4.yml,achievement.name.l5.2n,Master of Eyeion!
+hold.kdd4.yml,achievement.description.l5.2n,"Mastery Level: 2N
+Clear the room without eyes waking or roach eggs spawning"
+hold.kdd4.yml,achievement.name.l5.1n1e,Hunter Games
+hold.kdd4.yml,achievement.description.l5.1n1e,"Mastery Level: 1N1E
+Kill the wraithwing without dropping all trapdoors"
+hold.kdd4.yml,achievement.name.l6.explore,The Explorer
+hold.kdd4.yml,achievement.description.l6.explore,"Original 13th Level
+Visit each room at least once (%count% / 56)"
+hold.kdd4.yml,achievement.name.level_1,Amateur Delver
+hold.kdd4.yml,achievement.description.level_1,Clear 13th Level
+hold.kdd4.yml,achievement.name.level_2,Fledgling Smiter
+hold.kdd4.yml,achievement.description.level_2,Clear 14th Level
+hold.kdd4.yml,achievement.name.level_3,Contract Exterminator
+hold.kdd4.yml,achievement.description.level_3,Clear 15th Level
+hold.kdd4.yml,achievement.name.level_4,"I'm a Professional!"
+hold.kdd4.yml,achievement.description.level_4,Clear 16th Level
+hold.kdd4.yml,achievement.name.level_6,It Was a Mistake
+hold.kdd4.yml,achievement.description.level_6,Clear Original 13th Level
+hold.kdd4.yml,achievement.name.tuning_fork_in_sequence,Tuning Cork
+hold.kdd4.yml,achievement.name.monster_kills_0,Broiled Roaches
+hold.kdd4.yml,achievement.name.monster_kills_1,Queens Sashimi
+hold.kdd4.yml,achievement.name.monster_kills_2,Over Easy Eggs
+hold.kdd4.yml,achievement.name.monster_kills_3,Goblin Tenderloin
+hold.kdd4.yml,achievement.name.monster_kills_5,Wraithwing Bucket
+hold.kdd4.yml,achievement.name.monster_kills_6,Evil Eye Stew
+hold.kdd4.yml,achievement.name.monster_kills_7,Serpent Temaki
+hold.kdd4.yml,achievement.name.monster_kills_8,Tar Ajvar
+hold.kdd4.yml,achievement.name.monster_kills_9,Baby Ravioli
+hold.kdd4.yml,achievement.name.monster_kills_12,Spider Legs
+hold.kdd4.yml,achievement.name.rooms,Abolish Green
+hold.kdd4.yml,achievement.name.total_kills,Wielder of Justice
+hold.kdd4.yml,achievement.name.trapdoors,Voidist
+hold.kdd4.yml,achievement.name.steps,Stroller
+hold.kdd4.yml,achievement.name.deaths,Nommed
+hold.kdd4.yml,achievement.name.undo,Rewind Ritual
+hold.kdd4.yml,achievement.name.cut_tar,Bladeshaper
+hold.kdd4.yml,entrance.lvl_1.entrance.12x12,"""I probably ought to have skipped past this level, but a contract is a contract. Where'd I put those bread crumbs?"" -Beethro"
+hold.kdd4.yml,entrance.lvl_2.2n1e.22x11,Beethro came back to finish the proper smiting business he was hired to do.
+hold.kdd4.yml,entrance.lvl_2.entrance.14x11,"On this level, you'll finally meet some folks with a healthy respect for your blade."
+hold.kdd4.yml,entrance.lvl_3.entrance.10x11,"This level is like the time you mowed the lawn and had exactly the amount of gas needed to finish, but then you screwed up, and had to go buy some more gas. And there was a big serpent at the gas station, and you wanted to go in to pay the attendant, but the front door was locked, so you drank a mimic potion to get in, and then the roaches...
+
+Well, I guess the metaphor breaks down."
+hold.kdd4.yml,entrance.lvl_4.entrance.15x15,These roaches need an authority figure to guide them. Someone with charisma and character. Someone like you!
+hold.kdd4.yml,entrance.lvl_5.entrance.13x12,Beethro descended the stairs only to find himself in an uncharted corridor...
+hold.kdd4.yml,entrance.lvl_5.entrance.24x16,"Beethro ran away from the challenge like a little, scrawny kitten."
+hold.kdd4.yml,entrance.lvl_5.entrance.24x8,"Proud of his achievement, but a whole lot less sane, Beethro emerged from the infamous 13th level of King Dugan's Dungeon."
+hold.kdd4.yml,entrance.lvl_6.entrance.14x9,"Beethro descended into the mystical set of deadly, pointless corridors."
+hold.kdd4.yml,scroll.lvl_1.2s2w.4x21,Shortcut to the entrance
+hold.kdd4.yml,scroll.lvl_1.entrance.12x3,Shortcut to the exit
+hold.kdd4.yml,scroll.lvl_1.entrance.1x13,"Stones lay before sand, before them lay slabs which are preceded by grass which grows on tile, on dirt built.
+-Unknown Poet"
+hold.kdd4.yml,scroll.lvl_1.entrance.1x14,A true Smitemaster will not read the scroll above without conquering the level first.
+hold.kdd4.yml,scroll.lvl_2.1n3e.4x19,This fellow in the other room is not so clever. He always falls for the same old trick.
+hold.kdd4.yml,scroll.lvl_5.1s.11x6,"Now that's a job well done!"
+hold.kdd4.yml,scroll.lvl_5.1s.12x7,How was the game? Did you manage to get all of the achievements?
+hold.kdd4.yml,scroll.lvl_5.1s.13x8,This scroll used to urge you to play more episodes on CaravelGames.com but with this release they all are bundled into one game so you can just Change Episode from the title screen.
+hold.kdd4.yml,scroll.lvl_5.1s.14x9,Rock on!
+hold.kdd4.yml,scroll.lvl_5.1s.18x8,Fabulous!
+hold.kdd4.yml,scroll.lvl_5.1s.6x8,Roach queens will be killed once you step on the checkpoint in the far-right corner.
+hold.kdd4.yml,scroll.lvl_5.1s.7x8,Here is a small reward! Kill all the eyes and goblins without stepping on the grass.
+hold.kdd4.yml,scroll.lvl_5.1w.13x15,There is but naught here.
+hold.kdd4.yml,scroll.lvl_5.1w.19x12,There is but naught here.
+hold.kdd4.yml,scroll.lvl_5.entrance.12x12,Harder versions of existing rooms.
+hold.kdd4.yml,scroll.lvl_5.entrance.13x11,New puzzles.
+hold.kdd4.yml,scroll.lvl_5.entrance.14x12,The Original 13th Level
+hold.kdd4.yml,scroll.lvl_6.entrance.11x12,Due to the difference in room size between the original DROD and this version some small adjustments were made to make things work.
+hold.kdd4.yml,scroll.lvl_6.entrance.12x12,"Specifically some orb connections were changed, broken walls were added, closed gates were opened and the room with the stairs was slightly modified."
+hold.kdd4.yml,speech.10025235,"Hoo boy, no simple plow here. Let's plan the footwork ahead before I get moving."
+hold.kdd4.yml,speech.10025223,Ahh...nothing satisfies like the sweet sight of no tar at all!
+hold.kdd4.yml,speech.10025224,Look at that...not a single wall destroyed!
+hold.kdd4.yml,speech.10025225,Bah...looks like I need to keep this goblin alive long enough to remove that serpent up there for me.
+hold.kdd4.yml,speech.10025226,"No helpings from me! You cuts me up, I know it--don't matter now or later."
+hold.kdd4.yml,speech.10025227,"Don't act all brave. Because I know goblins aren't brave."
+hold.kdd4.yml,speech.10025228,"No, No, No! Keeps pointy thing away!"
+hold.kdd4.yml,speech.10025229,"You're thinking you'll sneak behind when I'm not looking. Yeah."
+hold.kdd4.yml,speech.10025230,Mercy!
+hold.kdd4.yml,speech.10025231,"Look, you'd do the same in my place!"
+hold.kdd4.yml,speech.10025232,"That's nasty business. Hope I don't have to do that again!"
+hold.kdd4.yml,speech.10025233,"Rest there a bit while I open the passage, goblin."
+hold.kdd4.yml,speech.10025234,"(I probably didn't need to lock him up there...but better safe than sorry!)"
+hold.kdd4.yml,speech.10025241,You have failed...
+hold.kdd4.yml,speech.10025243,"Here, roachie, roachie..."
+hold.kdd4.yml,speech.10025242,"Greb! One measly little roachie I've gotta squish."
+hold.kdd4.yml,speech.10025236,Brilliant! Sometimes I even impress myself.
+hold.kdd4.yml,speech.10025237,Ha! All clear!
+hold.kdd4.yml,speech.10025238,Now to get out of here...
+hold.kdd4.yml,speech.10025239,Hmm...which way did I come in again?
+hold.kdd4.yml,speech.10025240,"Ah, it doesn't matter."
+hold.kdd4.yml,outro,"The last four floors were a real pain for Beethro with the tar, the doors, the roaches... As he descended the stairs he smelled more of the blue goo which made him cringe but in the very far back of his head something told him that there is even worse danger ahead of him... <p> </p><p> </p> <p> </p><p> </p> <p> </p><p> </p>
+<font size=""32"" color=""#FFFF00"">Congratulations!</font> <p> </p><p> </p> <p> </p><p> </p> <p> </p><p> </p>
+
+You have completed the fourth episode King Dugan's Dungeon Lite. Did you enjoy the experience?"
+hold.kdd5.yml,hold_name,"King Dugan's Dungeon Lite 5"
+hold.kdd5.yml,level_name_1,Seventeenth Level
+hold.kdd5.yml,level_name_2,Eighteenth Level
+hold.kdd5.yml,level_name_3,Nineteenth Level
+hold.kdd5.yml,level_name_4,Twentieth Level
+hold.kdd5.yml,level_name_5,Mastery Level
+hold.kdd5.yml,achievement.name.l1.1w,Janitorial Speed
+hold.kdd5.yml,achievement.description.l1.1w,"17th Level: 1W
+Clear the room before 4th tar growth"
+hold.kdd5.yml,achievement.name.l1.1n1w,Obsessive Compulsive
+hold.kdd5.yml,achievement.description.l1.1n1w,"17th Level: 1N1W
+Clear all tar, drop all trapdoors, clear the room and leave north in one go"
+hold.kdd5.yml,achievement.name.l1.1n1w_2,To The Heart of the Matter
+hold.kdd5.yml,achievement.description.l1.1n1w_2,"17th Level: 1N1W
+Clear the room before 2nd tar growth"
+hold.kdd5.yml,achievement.name.l1.2s1e,Spare the Innocents
+hold.kdd5.yml,achievement.description.l1.2s1e,"17th Level: 2S1E
+Kill the tar mother before killing any tar baby"
+hold.kdd5.yml,achievement.name.l1.1s2e,Sterilization
+hold.kdd5.yml,achievement.description.l1.1s2e,"17th Level: 1S2E
+Kill the serpent before any tar baby appears"
+hold.kdd5.yml,achievement.name.l2.1n,Aim North!
+hold.kdd5.yml,achievement.description.l2.1n,"18th Level: 1N
+Clear the room without turning"
+hold.kdd5.yml,achievement.name.l2.2n1e,Straight Ways
+hold.kdd5.yml,achievement.description.l2.2n1e,"18th Level: 2N1E
+Clear the room without moving diagonally"
+hold.kdd5.yml,achievement.name.l2.1n2e,Eastern Solutions
+hold.kdd5.yml,achievement.description.l2.1n2e,"18th Level: 1N2E
+Clear the room by entering from the east and without turning"
+hold.kdd5.yml,achievement.name.l2.1e,I Can Do It Myself Mom!
+hold.kdd5.yml,achievement.description.l2.1e,"18th Level: 1E
+Use a goblin for only one of the corner serpents and clear the room"
+hold.kdd5.yml,achievement.name.l2.1e_2,Traps First
+hold.kdd5.yml,achievement.description.l2.1e_2,"18th Level: 1E
+Drop all trapdoors before any serpent dies and clear the room"
+hold.kdd5.yml,achievement.name.l2.1n1e,Quenched
+hold.kdd5.yml,achievement.description.l2.1n1e,"18th Level: 1N1E
+Clear the room without drinking the potion"
+hold.kdd5.yml,achievement.name.l3.2s,South is Scary
+hold.kdd5.yml,achievement.description.l3.2s,"19th Level: 2S
+Clear the room without going past the second row of tiles"
+hold.kdd5.yml,achievement.name.l4.entrance,Frozen
+hold.kdd5.yml,achievement.description.l4.entrance,"20th Level: Entrance
+Don't turn your sword after killing the first monster then clear the room"
+hold.kdd5.yml,achievement.name.l4.1n,Swine Before Pearls
+hold.kdd5.yml,achievement.description.l4.1n,"20th Level: 1N
+Kill the brain before killing any roach queen then clear the room"
+hold.kdd5.yml,achievement.name.l4.3n1w,Pearls Before Swine
+hold.kdd5.yml,achievement.description.l4.3n1w,"20th Level: 3N1W
+Kill all brains before killing any goblin then clear the room"
+hold.kdd5.yml,achievement.name.l4.3n,Raw Stupidity
+hold.kdd5.yml,achievement.description.l4.3n,"20th Level: 3N
+Kill all brains before killing any roach queen then clear the room"
+hold.kdd5.yml,achievement.name.l4.2n2w,Patient Execution
+hold.kdd5.yml,achievement.description.l4.2n2w,"20th Level: 2N2W
+Kill all serpents before killing any roach queen then clear the room"
+hold.kdd5.yml,achievement.name.l4.1n2w,Slithering Elimination
+hold.kdd5.yml,achievement.description.l4.1n2w,"20th Level: 1N2W
+Kill all other monsters before killing the serpent"
+hold.kdd5.yml,achievement.name.l4.2n1w,Aim for the Eyes
+hold.kdd5.yml,achievement.description.l4.2n1w,"20th Level: 2N1W
+Kill all evil eyes before killing any roach queen then clear the room"
+hold.kdd5.yml,achievement.name.level_1,Amateur Delver
+hold.kdd5.yml,achievement.description.level_1,Clear 17th Level
+hold.kdd5.yml,achievement.name.level_2,Fledgling Smiter
+hold.kdd5.yml,achievement.description.level_2,Clear 18th Level
+hold.kdd5.yml,achievement.name.level_3,Contract Exterminator
+hold.kdd5.yml,achievement.description.level_3,Clear 19th Level
+hold.kdd5.yml,achievement.name.level_4,"I'm a Professional!"
+hold.kdd5.yml,achievement.description.level_4,Clear 20th Level
+hold.kdd5.yml,achievement.name.tuning_fork_in_sequence,Tuning Pork
+hold.kdd5.yml,achievement.name.tuning_fork_in_sequence-2,Tuning Dork
+hold.kdd5.yml,achievement.description.tuning_fork_in_sequence-2,"18th Level: 2N
+Perform a combo of 6 unique orb hits in sequence in this room
+The same rules as in ""Tuning Pork"" achievement"
+hold.kdd5.yml,achievement.name.monster_kills_0,Charred Roaches
+hold.kdd5.yml,achievement.name.monster_kills_1,Queen Ribbons
+hold.kdd5.yml,achievement.name.monster_kills_2,Deviled Eggs
+hold.kdd5.yml,achievement.name.monster_kills_3,Goblin Liver
+hold.kdd5.yml,achievement.name.monster_kills_5,Wraithwing Combo
+hold.kdd5.yml,achievement.name.monster_kills_6,Evil Eye Sauce
+hold.kdd5.yml,achievement.name.monster_kills_7,Serpent Chirashi
+hold.kdd5.yml,achievement.name.monster_kills_8,Tar Harissa
+hold.kdd5.yml,achievement.name.monster_kills_9,Baby Samosa
+hold.kdd5.yml,achievement.name.monster_kills_10,Brain Yoghurt
+hold.kdd5.yml,achievement.name.rooms,Green is the New Pink
+hold.kdd5.yml,achievement.name.total_kills,One-Man Army
+hold.kdd5.yml,achievement.name.trapdoors,Dropper
+hold.kdd5.yml,achievement.name.steps,Patter
+hold.kdd5.yml,achievement.name.deaths,I Refuse
+hold.kdd5.yml,achievement.name.undo,Like a Groundhog
+hold.kdd5.yml,achievement.name.cut_tar,Engraver
+hold.kdd5.yml,entrance.lvl_1.entrance.13x12,"Beethro pulled out the three bottles again (10-cups full, 2-cups empty, 5-cups empty). ""How am I going to get my four-cup swig?"" He poured from the first into the second. He poured from the second into the third. He poured from the first into the second. He poured from the second into the third, but accidentally spilled a cup. With a sigh, he poured the remaining leaf juice back into the first bottle.
+
+Beethro was going to start again, but then he noticed he was surrounded on all sides by living tar! It had grown around him during the drink preparation. ""By Munbo! Can't a fellow settle down for just a moment?"""
+hold.kdd5.yml,entrance.lvl_2.entrance.13x11,"In Beethro's world, the number ""18"" is considered unlucky. Most dungeons are built without an eighteenth level. Of course, all levels of a dungeon are fairly unlucky to begin with, so maybe it doesn't matter that much."
+hold.kdd5.yml,entrance.lvl_3.entrance.13x12,"""I've got that toasty 72-percent-done feeling. What's next?""
+-Beethro"
+hold.kdd5.yml,entrance.lvl_4.1w.20x10,Beethro came back to finish the proper smiting business he was hired to do.
+hold.kdd5.yml,entrance.lvl_4.entrance.10x12,"You know, if these monsters were just a little more organized, you'd have no chance against them. Frightening, if you think about it."
+hold.kdd5.yml,entrance.lvl_5.entrance.12x19,Beethro descended the stairs only to find himself in an uncharted corridor...
+hold.kdd5.yml,scroll.lvl_1.1s1e.3x3,A lot of good it does you here!
+hold.kdd5.yml,scroll.lvl_1.entrance.6x5,This level requires a great deal of efficiency.
+hold.kdd5.yml,scroll.lvl_2.2e.0x12,"Five serpents,
+four mimics.
+
+How hard can this be?"
+hold.kdd5.yml,scroll.lvl_3.1n1e.1x1,"Historical note: This is the last room that was created in the original version of King Dugan's Dungeon.
+
+-Erik"
+hold.kdd5.yml,scroll.lvl_4.1n1w.22x4,The queen is a stronger piece than a rook.
+hold.kdd5.yml,scroll.lvl_4.1n2w.2x14,"Do you know what you're doing? The orb below will close the north door and open the south door."
+hold.kdd5.yml,scroll.lvl_4.2n.5x9,"Hint:  If there are any roaches alive right now, you've screwed up."
+hold.kdd5.yml,scroll.lvl_4.2n2w.24x20,A watched blue door never opens.
+hold.kdd5.yml,scroll.lvl_5.1s.11x6,You have achieved quite a feat!
+hold.kdd5.yml,scroll.lvl_5.1s.12x7,Did you enjoy the game? Have you gotten all of the achievements?
+hold.kdd5.yml,scroll.lvl_5.1s.13x8,This scroll used to urge you to play more episodes on CaravelGames.com but with this release they all are bundled into one game so you can just Change Episode from the title screen.
+hold.kdd5.yml,scroll.lvl_5.1s.14x9,You rule!
+hold.kdd5.yml,scroll.lvl_5.1s.18x8,Awesome!
+hold.kdd5.yml,scroll.lvl_5.1s.6x8,The two corner roach queens will be killed once you step on the checkpoint in the far-right corner.
+hold.kdd5.yml,scroll.lvl_5.1s.7x8,Here is a small reward! Kill all the enemies without stepping on the brown grass
+hold.kdd5.yml,scroll.lvl_5.entrance.12x13,Harder versions of existing puzzles
+hold.kdd5.yml,scroll.lvl_5.entrance.16x16,Chamber of Pain
+hold.kdd5.yml,scroll.lvl_5.entrance.9x16,Original Puzzles
+hold.kdd5.yml,speech.10025247,"Didn't really need that mimic potion... but I deserve a break. This is hard work!"
+hold.kdd5.yml,speech.10025248,"Yum... fresh meats to eats, and new bones for our collection!"
+hold.kdd5.yml,speech.10025249,"Too much lipping from you, greenie. There's one reliable way to shut you up."
+hold.kdd5.yml,speech.10025262,You have failed...
+hold.kdd5.yml,speech.10025253,"And everybody's always saying to me, ""No secret rooms on Level 19."" Oh, ho!"
+hold.kdd5.yml,speech.10025250,Gotcha!
+hold.kdd5.yml,speech.10025251,"Okay, roachy, time to come out and be smited!"
+hold.kdd5.yml,speech.10025252,"Whoops. Didn't plan that out so well."
+hold.kdd5.yml,speech.10025246,"Oh, a wise-guy scroll, eh?"
+hold.kdd5.yml,speech.10025244,"Well, forewarned is forearmed..."
+hold.kdd5.yml,speech.10025245,Why do I get the feeling that someone is laughing at me?
+hold.kdd5.yml,speech.10025260,"Ha! These brains aren't so smart."
+hold.kdd5.yml,speech.10025261,"Ah! As if goblins weren't sneaky enough!"
+hold.kdd5.yml,speech.10025254,Wha...?
+hold.kdd5.yml,speech.10025255,"The roaches...they're heading right for me!"
+hold.kdd5.yml,speech.10025256,"Like something's guiding them..."
+hold.kdd5.yml,speech.10025257,They still splat the same!
+hold.kdd5.yml,speech.10025258,So this must be the thing controlling those roaches...
+hold.kdd5.yml,speech.10025259,"A giant brain you may be, but in the end you're just another pest to mop up."
+hold.kdd5.yml,outro,"Those brains were a real pain but Beethro, being a professional smitemaster, can handle anything without breaking a sweat. But what about this strange feeling that something much scarier lurks ahead of him? <p> </p><p> </p> <p> </p><p> </p> <p> </p><p> </p>
+<font size=""32"" color=""#FFFF00"">Congratulations!</font> <p> </p><p> </p> <p> </p><p> </p> <p> </p><p> </p>
+
+You have completed the fifth episode King Dugan's Dungeon Lite. Did you have fun?"
+hold.kdd6.yml,hold_name,"King Dugan's Dungeon Lite 6"
+hold.kdd6.yml,level_name_1,Twenty-First Level
+hold.kdd6.yml,level_name_2,Twenty-Second Level
+hold.kdd6.yml,level_name_3,Twenty-Third Level
+hold.kdd6.yml,level_name_4,Twenty-Fourth Level
+hold.kdd6.yml,level_name_5,Twenty-Fifth Level
+hold.kdd6.yml,level_name_6,Mastery Level
+hold.kdd6.yml,achievement.name.l1.1n,The Race
+hold.kdd6.yml,achievement.description.l1.1n,"Twenty-First Level: 1N
+Drink the potion before killing any monster then clear the room"
+hold.kdd6.yml,achievement.name.l1.1s,Last Goblin Standing
+hold.kdd6.yml,achievement.description.l1.1s,"Twenty-First Level: 1S
+Kill the goblin last without trapping it on an arrow"
+hold.kdd6.yml,achievement.name.l1.1n1w,Uber Party
+hold.kdd6.yml,achievement.description.l1.1n1w,"Twenty-First Level: 1N1W
+Kill all brains before killing any roach queen, don't drop
+any trapdoor and clear the room"
+hold.kdd6.yml,achievement.name.l1.1n1e,Who Let The Goblins Out
+hold.kdd6.yml,achievement.description.l1.1n1e,"Twenty-First Level: 1N1E
+Release the goblins before killing any monster then clear the room"
+hold.kdd6.yml,achievement.name.l1.1s1e,Go East
+hold.kdd6.yml,achievement.description.l1.1s1e,"Twenty-First Level: 1S1E
+Kill the easternmost roach queen before killing any other monster
+then clear the room"
+hold.kdd6.yml,achievement.name.l2.1e,Not Two Be
+hold.kdd6.yml,achievement.description.l2.1e,"Twenty-Second Level: 1E
+Clear the room without hitting any of the two northernmost orbs"
+hold.kdd6.yml,achievement.name.l3.1n1w,Goblin Feet
+hold.kdd6.yml,achievement.description.l3.1n1w,"Twenty-Third Level: 1N1W
+Kill a serpent in the goblin's starting alcove then clear the room"
+hold.kdd6.yml,achievement.name.l3.1w,Single Purpose
+hold.kdd6.yml,achievement.description.l3.1w,"Twenty-Third Level: 1W
+Clear the room without turning"
+hold.kdd6.yml,achievement.name.l3.2s,Slowpoke
+hold.kdd6.yml,achievement.description.l3.2s,"Twenty-Third Level: 2S
+Do not drop any trapdoors until the serpent dies then clear the room"
+hold.kdd6.yml,achievement.name.l3.1n,Two is Better than One...
+hold.kdd6.yml,achievement.description.l3.1n,"Twenty-Third Level: 1N
+Go past red gates with both goblins alive then clear the room"
+hold.kdd6.yml,achievement.name.l3.1n_2,...But One will Suffice
+hold.kdd6.yml,achievement.description.l3.1n_2,"Twenty-Third Level: 1N
+Go past red gates with only one goblin alive then clear the room"
+hold.kdd6.yml,achievement.name.l3.1s1w,iSolution
+hold.kdd6.yml,achievement.description.l3.1s1w,"Twenty-Third Level: 1S1W
+Kill all goblins before waking up any evil eye then clear the room"
+hold.kdd6.yml,achievement.name.l3.1s2w,Keeping It Clean
+hold.kdd6.yml,achievement.description.l3.1s2w,"Twenty-Third Level: 1S2W
+Drop all trapdoors before killing any monster then clear the room"
+hold.kdd6.yml,achievement.name.l3.1s3w,Goblins Are Passe
+hold.kdd6.yml,achievement.description.l3.1s3w,"Twenty-Third Level: 1S3W
+Clear the room without letting the goblin step on a trapdoor"
+hold.kdd6.yml,achievement.name.l4.1w,Small Brain Time
+hold.kdd6.yml,achievement.description.l4.1w,"Twenty-Fourth Level: 1W
+Kill all brains before killing all serpents then clear the room"
+hold.kdd6.yml,achievement.name.l4.2w,Mimic-Free Zone
+hold.kdd6.yml,achievement.description.l4.2w,"Twenty-Fourth Level: 2W
+Clear the room without hitting any orb with a mimic"
+hold.kdd6.yml,achievement.name.l4.1n,Ladies Last
+hold.kdd6.yml,achievement.description.l4.1n,"Twenty-Fourth Level: 1N
+Kill the tar mother last"
+hold.kdd6.yml,achievement.name.l5.2w,Impossibly Careful
+hold.kdd6.yml,achievement.description.l5.2w,"Twenty-Fifth Level: 2W
+Go past the trapdoors without killing any goblin"
+hold.kdd6.yml,achievement.name.l5.stuck_neather,Softlocked
+hold.kdd6.yml,achievement.description.l5.stuck_neather,"Twenty-Fifth Level
+Get 'Neather stuck and unable to move because of a monster"
+hold.kdd6.yml,achievement.name.l5.stab_neather,Impossibly Careful
+hold.kdd6.yml,achievement.description.l5.stab_neather,"Twenty-Fifth Level
+Stab Neather in a room in a place where it should be impossible"
+hold.kdd6.yml,achievement.name.level_1,Amateur Delver
+hold.kdd6.yml,achievement.description.level_1,Clear Twenty-First Level
+hold.kdd6.yml,achievement.name.level_2,Fledgling Smiter
+hold.kdd6.yml,achievement.description.level_2,Clear Twenty-Second Level
+hold.kdd6.yml,achievement.name.level_3,Contract Exterminator
+hold.kdd6.yml,achievement.description.level_3,Clear Twenty-Third Level
+hold.kdd6.yml,achievement.name.level_4,"I'm a Professional!"
+hold.kdd6.yml,achievement.description.level_4,Clear Twenty-Fourth Level
+hold.kdd6.yml,achievement.name.level_5,Beethro Budkin
+hold.kdd6.yml,achievement.description.level_5,Clear Twenty-Fifth Level
+hold.kdd6.yml,achievement.name.tuning_fork_in_sequence,Tuning Bork
+hold.kdd6.yml,achievement.name.l2.tuning_fork,Tuning Torque
+hold.kdd6.yml,achievement.description.l2.tuning_fork,"Twenty-Second Level: 1N1W
+Perform a combo of 4 unique orb hits in sequence in this room
+The same rules as in ""Tuning Bork"" achievement"
+hold.kdd6.yml,achievement.name.monster_kills_0,Fried Roaches
+hold.kdd6.yml,achievement.name.monster_kills_1,Queen Cutlets
+hold.kdd6.yml,achievement.name.monster_kills_2,Kogel Mogel
+hold.kdd6.yml,achievement.name.monster_kills_3,Goblin Ragout
+hold.kdd6.yml,achievement.name.monster_kills_5,Wraithwing Nuggets
+hold.kdd6.yml,achievement.name.monster_kills_6,Evil Eye Cream
+hold.kdd6.yml,achievement.name.monster_kills_7,Serpent Uramaki
+hold.kdd6.yml,achievement.name.monster_kills_8,Tar Sofrito
+hold.kdd6.yml,achievement.name.monster_kills_9,Baby Momo
+hold.kdd6.yml,achievement.name.monster_kills_10,Brain Parfait
+hold.kdd6.yml,achievement.name.monster_kills_11,Mimic Mignon
+hold.kdd6.yml,achievement.name.monster_kills_12,Spider Mandibles
+hold.kdd6.yml,achievement.name.rooms,True Delver
+hold.kdd6.yml,achievement.name.total_kills,Smitemaster
+hold.kdd6.yml,achievement.name.trapdoors,Gone Beneath
+hold.kdd6.yml,achievement.name.steps,Rooted Path
+hold.kdd6.yml,achievement.name.deaths,Deathsperience
+hold.kdd6.yml,achievement.name.undo,Backstep
+hold.kdd6.yml,achievement.name.cut_tar,Tarminator
+hold.kdd6.yml,entrance.lvl_1.entrance.13x12,"""I hope this next one doesn't have many critters. The hands are starting to blister from all this hacking."" -Beethro"
+hold.kdd6.yml,entrance.lvl_2.entrance.10x11,"Question: You are starving to death, with no hope to find food in time. But you do have a mimic potion. Would you make a mimic, kill the mimic, and eat an exact copy of yourself to survive?
+
+These are the kinds of questions a dungeon exterminator must answer every working day of his life."
+hold.kdd6.yml,entrance.lvl_3.entrance.14x22,"You're probably the sort that uses people when it's convenient, and gets rid of them afterward.
+
+I bet you are.
+
+We'll see!"
+hold.kdd6.yml,entrance.lvl_4.entrance.11x9,"""Wow, I didn't expect to find a whole city down here. Good deal! Maybe they've got a restroom somewhere."" -Beethro"
+hold.kdd6.yml,entrance.lvl_5.2n1w.13x13,Beethro came back to finish the proper smiting business he was hired to do.
+hold.kdd6.yml,entrance.lvl_5.entrance.16x22,"""There better not be more than 25 levels to this place. That's plenty big enough, and all I'm down for in the contract,"" said Beethro as he arrived on the final level of Dugan's Dungeon. Just a short distance in front of him was a small man holding a mallet.
+
+Beethro called out, ""Hey there, little buddy! How'd you end up so deep below?""
+The man shook his mallet angrily and raced off.
+
+""Hold up! I want to talk to you!"" But he didn't stop."
+hold.kdd6.yml,entrance.lvl_6.entrance.18x12,Beethro descended the stairs only to find himself in an uncharted corridor...
+hold.kdd6.yml,scroll.lvl_4.entrance.12x9,"Welcome to the subterranean town of Neatherville. The locals are always glad to have visitors.
+
+-Neatherville Board of Tourism"
+hold.kdd6.yml,scroll.lvl_5.1n2w.24x18,Caution can be deadly.
+hold.kdd6.yml,scroll.lvl_5.2s2w.15x17,"Are you still alive?
+
+I must be talking too much.
+
+I'm not going to let any more secrets slip!"
+hold.kdd6.yml,scroll.lvl_5.2w.25x22,Stalemate.
+hold.kdd6.yml,scroll.lvl_6.1s.11x6,Well well well. By now you have undoubtedly completed almost everything there is to do - maybe some straggling achievements are left in this or earlier episodes?
+hold.kdd6.yml,scroll.lvl_6.1s.12x7,"My most sincere congratulations and I hope you won't stop there."
+hold.kdd6.yml,scroll.lvl_6.1s.13x8,"If you haven't yet played other holds bundled in this game I highly recommend them. That or maybe grab a copy of DROD: The Second Sky and play the big, main game?"
+hold.kdd6.yml,scroll.lvl_6.1s.14x9,Good Luck!
+hold.kdd6.yml,scroll.lvl_6.1s.18x8,Woo-hoo!
+hold.kdd6.yml,scroll.lvl_6.1s.6x8,Clear the room without stepping on the grass tiles.
+hold.kdd6.yml,scroll.lvl_6.1s.7x8,As a final token of gratitude here is a tiny bonus room in the same theme as the other rooms in the previous episodes.
+hold.kdd6.yml,scroll.lvl_6.entrance.10x12,Original puzzles
+hold.kdd6.yml,scroll.lvl_6.entrance.15x9,Harder versions of existing puzzles
+hold.kdd6.yml,speech.10025263,"Let's get this party started!"
+hold.kdd6.yml,speech.10025264,"Brains, you're gonna wish you could run!"
+hold.kdd6.yml,speech.10025265,"Now... should I take out that brain first, or watch my back?"
+hold.kdd6.yml,speech.10025266,This looks bad.
+hold.kdd6.yml,speech.10025267,Oh no... back again...
+hold.kdd6.yml,speech.10025268,"This brings new meaning to the term 'running the gauntlet'."
+hold.kdd6.yml,speech.10025270,"Well, it's settled... I gotta be more careful what I hope for."
+hold.kdd6.yml,speech.10025269,"I hope there aren't any brains on this level!"
+hold.kdd6.yml,speech.10025272,"These goblins just get a smiting, quick and simple. No fiddling around."
+hold.kdd6.yml,speech.10025273,Hoodey! This sounds not so good.
+hold.kdd6.yml,speech.10025271,"Twenty-three levels... I gotta be near the end, I just gotta!"
+hold.kdd6.yml,speech.10025379,"Ohhhh, this kind of thing really tires me out."
+hold.kdd6.yml,speech.10025380,Now... how do I get out of here?
+hold.kdd6.yml,speech.10025275,This tiled floor gives me a case of the scarbs.
+hold.kdd6.yml,speech.10025276,"If I never see this room again for as long as I live, it'll be too soon!"
+hold.kdd6.yml,speech.10025274,"So there's an entire monster city down here!"
+hold.kdd6.yml,speech.10025278,"Ha! You'll have to get by my roaches first!"
+hold.kdd6.yml,speech.10025279,"Get him, boys!"
+hold.kdd6.yml,speech.10025280,"I guess I'll have to come up with something more difficult."
+hold.kdd6.yml,speech.10025381,"Impressive. I thought you'd be stuck there all day."
+hold.kdd6.yml,speech.10025382,You stay there while I go release some roaches.
+hold.kdd6.yml,speech.10025287,"Flaming fegundo! Brain, go get him!!!"
+hold.kdd6.yml,speech.10025288,????
+hold.kdd6.yml,speech.10025289,Stupid brain.
+hold.kdd6.yml,speech.10025290,CHARGE!
+hold.kdd6.yml,speech.10025291,"Finish him, my drones."
+hold.kdd6.yml,speech.10025304,"I don't want you to go that way."
+hold.kdd6.yml,speech.10025305,Surround him!
+hold.kdd6.yml,speech.10025306,"Pssst! Come here! I've got something to show you."
+hold.kdd6.yml,speech.10025307,"Ah, the ever-gullible delver walks right into my trap... as expected."
+hold.kdd6.yml,speech.10025308,"I'll just sneak through the other side."
+hold.kdd6.yml,speech.10025309,"I'll lock the door behind me so he can't follow."
+hold.kdd6.yml,speech.10025340,"You'll never catch me!"
+hold.kdd6.yml,speech.10025341,"You'll never catch me!"
+hold.kdd6.yml,speech.10025333,"Tar Mother, EXPAND!"
+hold.kdd6.yml,speech.10025332,You killed a poor defenseless mother??!!?
+hold.kdd6.yml,speech.10025316,"My roach queens may have failed, but my goblins will make sure you don't leave this room alive."
+hold.kdd6.yml,speech.10025317,Stay out of here!
+hold.kdd6.yml,speech.10025318,Stay out of here!
+hold.kdd6.yml,speech.10025319,"Ha! You can't get me in here. I can wait until you go away."
+hold.kdd6.yml,speech.10025277,"You'll never catch me, exterminator!"
+hold.kdd6.yml,speech.10025372,You have failed...
+hold.kdd6.yml,outro,"The legend goes that a king of past grew tired of his annoying young son and jokingly suggested that the lad go play in the castle dungeons. Taking his father seriously, the boy wandered deep into the dungeon chambers and was never found again. <p> </p><p> </p> <p> </p><p> </p>
+Was 'Neather that long-lost prince? Is there a way he could have avoided killing the curious fellow? <p> </p><p> </p> <p> </p><p> </p> <p> </p><p> </p>
+All Beethro knows is that there was no Twenty-Sixth floor - the final stairs ended with a wall. With no convenient elevator in sight he was forced to once again traverse the dungeon. <p> </p><p> </p> <p> </p><p> </p> <p> </p><p> </p>
+<font size=""32"" color=""#FFFF00"">Congratulations!</font> <p> </p><p> </p> <p> </p><p> </p> <p> </p><p> </p>
+
+That's the final episode of King Dugan's Dungeon Lite! Beethro did manage to retire as a delver and open his Roaster Roach Grill. Not for long though, as a number of years later he acquired a portable orb that could open the mysterious door on Tenth Level. You can explore that story in DROD: Journey to Rooted Hold!"
+hold.tap.yml,hold_name,The Ancient Palace
+hold.tap.yml,level_name_1,The Outer Walls
+hold.tap.yml,level_name_2,Inside The Palace
+hold.tap.yml,level_name_3,Underground Lake
+hold.tap.yml,level_name_4,The Sewer System
+hold.tap.yml,level_name_5,The Forgotten Catacombs
+hold.tap.yml,level_name_6,Treasure Chambers
+hold.tap.yml,level_name_7,Tutorial Level
+hold.tap.yml,achievement.name.l2.entrance,Extra Effort
+hold.tap.yml,achievement.description.l2.entrance,"Inside The Palace: Entrance
+Drop all but one Trapdoor then leave the room"
+hold.tap.yml,achievement.name.l2.1s1w,Ladies Last
+hold.tap.yml,achievement.description.l2.1s1w,"Inside The Palace: 1S1W
+Clear the central chamber before killing any Roach Queen"
+hold.tap.yml,achievement.name.l2.2s1w,Focused on Brains
+hold.tap.yml,achievement.description.l2.2s1w,"Inside The Palace: 2S1W
+Do not rotate your sword until Brains are dead, then clear the room"
+hold.tap.yml,achievement.name.l2.2s1e,Doors are Optional
+hold.tap.yml,achievement.description.l2.2s1e,"Inside The Palace: 2S1E
+Close the door after killing the serpent, then clear the room"
+hold.tap.yml,achievement.name.l5.1n,No Longer Forgotten
+hold.tap.yml,achievement.description.l5.1n,Clear 1N in the secret level
+hold.tap.yml,achievement.name.l6.1n1e,Take Your Time
+hold.tap.yml,achievement.description.l6.1n1e,"Treasure Chambers: 1N1E
+Kill all serpents before killing any other monster"
+hold.tap.yml,achievement.name.level_1,Wall Climber
+hold.tap.yml,achievement.description.level_1,"Complete level ""The Outer Walls"""
+hold.tap.yml,achievement.name.level_2,Palace Inspector
+hold.tap.yml,achievement.description.level_2,"Complete level ""Inside The Palace"""
+hold.tap.yml,achievement.name.level_3,Lake Diver
+hold.tap.yml,achievement.description.level_3,"Complete level ""Underground Lake"""
+hold.tap.yml,achievement.name.level_4,Sewer Worker
+hold.tap.yml,achievement.description.level_4,"Complete level ""The Sewer System"""
+hold.tap.yml,achievement.name.level_5,Memorial Delver
+hold.tap.yml,achievement.description.level_5,Find and complete the secret level
+hold.tap.yml,achievement.name.level_6,Gold Digger
+hold.tap.yml,achievement.description.level_6,"Complete level ""Treasure Chambers"""
+hold.tap.yml,achievement.name.level_7,Master of Tutorial
+hold.tap.yml,achievement.description.level_7,Complete the tutorial level
+hold.tap.yml,achievement.name.monster_kills_0,Purging Roaches
+hold.tap.yml,achievement.name.monster_kills_1,Eradicating Queens
+hold.tap.yml,achievement.name.monster_kills_3,Repelling Goblins
+hold.tap.yml,achievement.name.monster_kills_5,Abolishing Wraithwings
+hold.tap.yml,achievement.name.monster_kills_6,Fumigating Eyes
+hold.tap.yml,achievement.name.monster_kills_7,Serpent Eviction
+hold.tap.yml,achievement.name.monster_kills_8,Ousting Tar Mothers
+hold.tap.yml,achievement.name.monster_kills_9,Dismissing Tar Babies
+hold.tap.yml,achievement.name.monster_kills_10,Phasing Out Brains
+hold.tap.yml,achievement.name.rooms,Dominion over Stone
+hold.tap.yml,achievement.name.total_kills,Wisdom of the Crowd
+hold.tap.yml,achievement.name.trapdoors,Building Nothing
+hold.tap.yml,achievement.name.steps,Explorer
+hold.tap.yml,achievement.name.deaths,Retirement
+hold.tap.yml,achievement.name.undo,Last Man Standing
+hold.tap.yml,achievement.name.cut_tar,Michelangelo
+hold.tap.yml,entrance.lvl_1.entrance.13x10,"Beethro had heard that a vault containing valuable treasures lay within the underground chambers of a long deserted palace.
+
+Mostly the palace was over-run with roaches and contaminated with tarstuff, but there were rumours that some of the original defences still remained.
+
+Maybe Beethro could find a secret way in...
+
+[Author's note: 1N1W inspired by a similar room in Nightmare Dungeon by Doom]"
+hold.tap.yml,entrance.lvl_1.entrance.13x7,Beethro returned from the Tutorial Level
+hold.tap.yml,entrance.lvl_2.entrance.13x8,"Beethro could not believe his eyes.
+
+Clearly the palace had resisted any invasion by the vermin that littered the upper floors.
+
+Vast marble hallways stretched out in all directions, lined by bizarre statues.
+
+However, a contingent of evil eyes remained on watch for intruders."
+hold.tap.yml,entrance.lvl_3.entrance.7x7,"As Beethro descended the air became colder and colder.
+
+Perhaps the previous owners kept a wine cellar down here?
+
+When Beethro reached the bottom of the stairs he was met with an even more astonishing sight."
+hold.tap.yml,entrance.lvl_4.entrance.13x17,"Beethro continued to descend.
+
+He entered a complex of twisting tunnels and lost his way.
+After descending another set of stairs he came out well beneath the palace in the sewer system. Clearly he'd gone too far down and would have to retrace his steps.
+
+Unfortunately, the door to the stairwell slammed shut behind him."
+hold.tap.yml,entrance.lvl_5.entrance.13x17,"Beethro stumbled upon a long-buried crypt, since forgotten about.
+
+What secrets would he find within?"
+hold.tap.yml,entrance.lvl_6.entrance.13x12,"Beethro finally reached the underground vaults.
+
+A team of goblins and swarm of serpents still remained, guarding the treasure...
+
+[Author's Note: 1N1E and 1S1E are inspired by similar rooms by Tim from the hold Advanced Concepts]"
+hold.tap.yml,entrance.lvl_7.entrance.2x12,"Here is a quick tutorial demonstrating most of the elements you will see in this, and other, holds and how they work."
+hold.tap.yml,scroll.lvl_1.entrance.13x6,Head up these stairs to go to a tutorial section.
+hold.tap.yml,scroll.lvl_4.1n2w.23x17,Orbs in the bottom section each toggle the corresponding door in the top section.
+hold.tap.yml,scroll.lvl_4.1n2w.23x18,This room is not required in order to exit this level but is required to drop the blue door.
+hold.tap.yml,scroll.lvl_5.1s.13x2,The diagonal line of crumbly walls continues through the tar.
+hold.tap.yml,scroll.lvl_7.entrance.18x14,"Snakes can't be killed with your sword, but only by being trapped in a dead end.
+
+They cannot move diagonally or over force arrows or scrolls."
+hold.tap.yml,scroll.lvl_7.entrance.1x12,Exit
+hold.tap.yml,scroll.lvl_7.entrance.4x12,"These are force arrows.
+
+You cannot move across them counter to the direction they are pointing."
+hold.tap.yml,scroll.lvl_7.entrance.7x12,"Click on each orb to see what it does.
+
+Red: Closes yellow door
+
+Green: Opens yellow door
+
+Amber: Toggles yellow door between open and closed"
+hold.tap.yml,scroll.lvl_7.entrance.14x12,Crumbly walls can be destroyed with your sword
+hold.tap.yml,scroll.lvl_7.entrance.12x5,"Tar can be cut at its edges, but not at its corners.
+
+If the width of a block of tar is reduced to 1 tile, tar babies are produced.
+
+They move like roaches"
+hold.tap.yml,scroll.lvl_7.entrance.18x6,Goblins are smarter than roaches - they can dodge around obstacles to get to you and run away from your sword.
+hold.tap.yml,scroll.lvl_7.entrance.16x12,"The objective of each room is to clear all the monsters and exit.
+
+When you clear all monsters, the green door will open."
+hold.tap.yml,scroll.lvl_7.entrance.4x19,Roach queens always run away from you
+hold.tap.yml,scroll.lvl_7.entrance.8x8,Roaches move directly towards you but can be blocked vertically or horizontally by walls or obstacles.
+hold.tap.yml,scroll.lvl_7.entrance.10x16,"If you walk over a trapdoor, it will drop, revealing pit beneath which you cannot walk over.
+
+If you drop all the trapdoors in a room, the red doors will drop."
+hold.tap.yml,scroll.lvl_7.entrance.14x16,"Wraithwings can fly over pits.
+
+Lone wraithwings always try  to stay 5 tiles away from you.
+
+Multiple wraithwings can be more brave and can move towards you and attack."
+hold.tap.yml,scroll.lvl_7.entrance.16x17,"Eyes do not move until you walk into their line of sight.
+
+Then they wake up and move towards you as a roach does."
+hold.tap.yml,scroll.lvl_7.entrance.19x19,"Stepping on a mimic potion allows you to place a mimic anywhere in the room (move with your mouse or direction keys, click or press ""wait"" to place).
+
+Mimics will copy your every move.
+
+Hint: Place in the chamber to the right."
+hold.tap.yml,scroll.lvl_7.entrance.19x8,Invisibility potions make you invisible to all monsters outside of a 5x5 square around you.
+hold.tap.yml,scroll.lvl_7.entrance.19x12,Stepping on a second invisibility potion reverses the effect of the first.
+hold.tap.yml,scroll.lvl_7.1e.4x12,"If there is no way of getting to you that the brain can see, the monsters will move normally."
+hold.tap.yml,scroll.lvl_7.1e.16x20,"Note that mimics cannot be placed on arrows, trapdoors, scrolls or yellow doors."
+hold.tap.yml,scroll.lvl_7.1e.7x17,"Roach queens lay roach eggs every 30 turns.
+They cannot lay eggs over trapdoors, scrolls, arrows or yellow doors (open or closed)
+
+Roach eggs hatch into roaches."
+hold.tap.yml,scroll.lvl_7.1e.7x7,"Roach queens lay roach eggs every 30 turns.
+They cannot lay eggs over trapdoors, scrolls, arrows or yellow doors (open or closed)
+
+Roach eggs hatch into roaches after 5 turns."
+hold.tap.yml,scroll.lvl_7.1e.6x12,"The eyes in the tar are tar mothers.
+
+A tar mother in the room causes the tar to expand every 30 turns. Tar does not expand over arrows or scrolls.
+
+If tar expands into a one tile wide gap, a tar baby is formed.."
+hold.tap.yml,scroll.lvl_7.1e.2x12,"The red monster in the centre of the room is a brain.
+
+They don't move and can't kill you, but if there's one in the room, all the other monsters can form a path to you and move around obstacles to get to you."
+hold.tap.yml,scroll.lvl_7.1e.14x17,"Brains don't direct monsters over arrows or scrolls"
+hold.tap.yml,scroll.lvl_7.1e.14x7,"Brains don't direct monsters over arrows or scrolls"
+hold.tap.yml,scroll.lvl_7.1e.20x19,SCROLL
+hold.tap.yml,scroll.lvl_7.1e.19x20,SCROLL
+hold.tap.yml,scroll.lvl_7.1e.16x4,"Note that mimics cannot be placed on arrows, trapdoors, scrolls or yellow doors."
+hold.tap.yml,speech.10024932,"Hmm, not sure I wanted to do that."
+hold.tap.yml,outro,"<font size=""32"" color=""#FFFF00"">Congratulations!</font> <p> </p><p> </p> <p> </p><p> </p> <p> </p><p> </p>
+
+You have completed the The Ancient Palace! A hold designed by Jacob, a port of his 2011 hold ""Aurora's Palace"". Thank you Jacob for your work!"
+ingame.yml,ingame.tile.1,Floor
+ingame.yml,ingame.tile.2,Pit
+ingame.yml,ingame.tile.3,Stairs Down
+ingame.yml,ingame.tile.4,Wall
+ingame.yml,ingame.tile.5,Broken Wall
+ingame.yml,ingame.tile.6,Level Clear Gate
+ingame.yml,ingame.tile.7,Room Clear Gate
+ingame.yml,ingame.tile.8,Trapdoor Gate
+ingame.yml,ingame.tile.9,Yellow Door
+ingame.yml,ingame.tile.10,Yellow Door (Open)
+ingame.yml,ingame.tile.11,Trapdoor
+ingame.yml,ingame.tile.12,Obstacle
+ingame.yml,ingame.tile.13,Force Arrow (North)
+ingame.yml,ingame.tile.14,Force Arrow (Northeast)
+ingame.yml,ingame.tile.15,Force Arrow (East)
+ingame.yml,ingame.tile.16,Force Arrow (Southeast)
+ingame.yml,ingame.tile.17,Force Arrow (South)
+ingame.yml,ingame.tile.18,Force Arrow (Southwest)
+ingame.yml,ingame.tile.19,Force Arrow (West)
+ingame.yml,ingame.tile.20,Force Arrow (Northwest)
+ingame.yml,ingame.tile.21,Invisibility Potion
+ingame.yml,ingame.tile.22,Mimic Potion
+ingame.yml,ingame.tile.23,Scroll
+ingame.yml,ingame.tile.24,Orb
+ingame.yml,ingame.tile.35,Tar
+ingame.yml,ingame.tile.37,Tarstuff Gate
+ingame.yml,ingame.tile.54,Mosaic
+ingame.yml,ingame.tile.55,Road
+ingame.yml,ingame.tile.56,Grass
+ingame.yml,ingame.tile.57,Dirt
+ingame.yml,ingame.tile.58,Alternate Floor
+ingame.yml,ingame.tile.59,Master Wall
+ingame.yml,ingame.tile.61,Stairs Up
+ingame.yml,ingame.tile.62,Secret Wall
+ingame.yml,ingame.tile.66,Wall
+ingame.yml,ingame.tile.68,Room Clear Gate (Open)
+ingame.yml,ingame.tile.69,Level Clear Gate (Open)
+ingame.yml,ingame.tile.70,Trapdoor Gate (Open)
+ingame.yml,ingame.tile.71,Tarstuff Gate (Open)
+ingame.yml,ingame.tile.checkpoint,Checkpoint
+ingame.yml,ingame.tile.sword,Sword
+ingame.yml,ingame.tile.swords,%% Swords
+ingame.yml,ingame.monster.player,Player
+ingame.yml,ingame.monster.0,Roach
+ingame.yml,ingame.monster.1,Roach Queen
+ingame.yml,ingame.monster.2,Roach Egg
+ingame.yml,ingame.monster.3,Goblin
+ingame.yml,ingame.monster.5,Wraithwing
+ingame.yml,ingame.monster.6,Evil Eye
+ingame.yml,ingame.monster.7,Serpent
+ingame.yml,ingame.monster.8,Tar Mother
+ingame.yml,ingame.monster.9,Tar Baby
+ingame.yml,ingame.monster.10,Brain
+ingame.yml,ingame.monster.11,Mimic
+ingame.yml,ingame.monster.12,Spider
+ingame.yml,ingame.monster.29,Character
+ingame.yml,ingame.monster.neather,"'Neather"
+ingame.yml,ingame.level_start.creation_date,Created %day%.%month%.%year%
+ingame.yml,ingame.message.room_locked,"You have locked room exiting.
+Press %lock_key% to unlock."
+ingame.yml,ingame.flash_message.level_completed,Level Completed
+ingame.yml,ingame.flash_message.secret_found,Secret Found
+ingame.yml,ingame.flash_message.hold_mastered,Hold Mastered
+ingame.yml,ingame.result_stats.hold_totals,Hold Totals:
+ingame.yml,ingame.result_stats.level_totals,Level Totals:
+ingame.yml,ingame.result_stats.moves,Moves: %%
+ingame.yml,ingame.result_stats.kills,Kills: %%
+ingame.yml,ingame.result_stats.deaths,Deaths: %%
+ingame.yml,ingame.result_stats.time,Time: %%
+ingame.yml,ingame.result_stats.secrets,Secrets found: %%
+ingame.yml,ingame.result_stats.secrets_with_total,Secrets found: %% / %%
+ingame.yml,ingame.room_position.s,S
+ingame.yml,ingame.room_position.south,South
+ingame.yml,ingame.room_position.n,N
+ingame.yml,ingame.room_position.north,North
+ingame.yml,ingame.room_position.e,E
+ingame.yml,ingame.room_position.east,East
+ingame.yml,ingame.room_position.w,W
+ingame.yml,ingame.room_position.west,West
+ingame.yml,ingame.room_position.entrance,The Entrance
+ingame.yml,ingame.room_position.1,Once
+ingame.yml,ingame.room_position.2,Twice
+ingame.yml,ingame.room_position.3,Thrice
+ingame.yml,ingame.room_position.4,Quarce
+ingame.yml,ingame.room_position.5,Quince
+ingame.yml,ingame.room_position.6,Sence
+ingame.yml,ingame.room_position.7,Septence
+ingame.yml,ingame.room_position.8,Octence
+ingame.yml,ingame.room_position.9,Novence
+ingame.yml,ingame.room_position.10,Tonce
+ingame.yml,ingame.room_position.11,Elevonce
+ingame.yml,ingame.room_position.12,Twolce
+ingame.yml,ingame.room_position.13,Thorce
+ingame.yml,ingame.room_position.14,Quartonce
+ingame.yml,ingame.room_position.15,Quintonce
+ingame.yml,ingame.room_position.16,Sextonce
+ingame.yml,ingame.room_position.17,Septonce
+ingame.yml,ingame.room_position.18,Octonce
+ingame.yml,ingame.room_position.19,Noventonce
+ingame.yml,ingame.room_position.more,%% Times
+ingame.yml,ingame.clock.spawn_cycle,Spawn cycle
+ingame.yml,ingame.clock.snakes_prefer,Snakes prefer
+ingame.yml,ingame.clock.h1,HO
+ingame.yml,ingame.clock.h2,RIZ
+ingame.yml,ingame.clock.h3,ON
+ingame.yml,ingame.clock.h4,TAL
+ingame.yml,ingame.clock.v1,VE
+ingame.yml,ingame.clock.v2,RT
+ingame.yml,ingame.clock.v3,IC
+ingame.yml,ingame.clock.v4,AL
+key_names.yml,key_name.pageup,Page Up
+key_names.yml,key_name.pagedown,Page Down
+key_names.yml,key_name.end,End
+key_names.yml,key_name.home,Home
+key_names.yml,key_name.insert,Insert
+key_names.yml,key_name.delete,Delete
+key_names.yml,key_name.backspace,Backspace
+key_names.yml,key_name.tab,Tab
+key_names.yml,key_name.enter,Enter
+key_names.yml,key_name.shift,Shift
+key_names.yml,key_name.control,Control
+key_names.yml,key_name.alt,Alt
+key_names.yml,key_name.altgraph,Alt
+key_names.yml,key_name.pause,Pause/Brk
+key_names.yml,key_name.capslock,Caps Lock
+key_names.yml,key_name.numlock,Num Lock
+key_names.yml,key_name.escape,Escape
+key_names.yml,key_name.arrowleft,Arrow Left
+key_names.yml,key_name.arrowup,Arrow Up
+key_names.yml,key_name.arrowright,Arrow Right
+key_names.yml,key_name.arrowdown,Arrow Down
+key_names.yml,key_name.0,0
+key_names.yml,key_name.1,1
+key_names.yml,key_name.2,2
+key_names.yml,key_name.3,3
+key_names.yml,key_name.4,4
+key_names.yml,key_name.5,5
+key_names.yml,key_name.6,6
+key_names.yml,key_name.7,7
+key_names.yml,key_name.8,8
+key_names.yml,key_name.9,9
+key_names.yml,key_name.a,A
+key_names.yml,key_name.b,B
+key_names.yml,key_name.c,C
+key_names.yml,key_name.d,D
+key_names.yml,key_name.e,E
+key_names.yml,key_name.f,F
+key_names.yml,key_name.g,G
+key_names.yml,key_name.h,H
+key_names.yml,key_name.i,I
+key_names.yml,key_name.j,J
+key_names.yml,key_name.k,K
+key_names.yml,key_name.l,L
+key_names.yml,key_name.m,M
+key_names.yml,key_name.n,N
+key_names.yml,key_name.o,O
+key_names.yml,key_name.p,P
+key_names.yml,key_name.q,Q
+key_names.yml,key_name.r,R
+key_names.yml,key_name.s,S
+key_names.yml,key_name.t,T
+key_names.yml,key_name.u,U
+key_names.yml,key_name.v,V
+key_names.yml,key_name.w,W
+key_names.yml,key_name.x,X
+key_names.yml,key_name.y,Y
+key_names.yml,key_name.z,Z
+key_names.yml,key_name.numpad_0,Numpad 0
+key_names.yml,key_name.numpad_1,Numpad 1
+key_names.yml,key_name.numpad_2,Numpad 2
+key_names.yml,key_name.numpad_3,Numpad 3
+key_names.yml,key_name.numpad_4,Numpad 4
+key_names.yml,key_name.numpad_5,Numpad 5
+key_names.yml,key_name.numpad_6,Numpad 6
+key_names.yml,key_name.numpad_7,Numpad 7
+key_names.yml,key_name.numpad_8,Numpad 8
+key_names.yml,key_name.numpad_9,Numpad 9
+key_names.yml,key_name.numpad_mul,Numpad *
+key_names.yml,key_name.numpad_add,Numpad +
+key_names.yml,key_name.numpad_sub,Numpad -
+key_names.yml,key_name.numpad_dot,Numpad .
+key_names.yml,key_name.numpad_div,Numpad /
+key_names.yml,key_name.f1,F1
+key_names.yml,key_name.f2,F2
+key_names.yml,key_name.f3,F3
+key_names.yml,key_name.f4,F4
+key_names.yml,key_name.f5,F5
+key_names.yml,key_name.f6,F6
+key_names.yml,key_name.f7,F7
+key_names.yml,key_name.f8,F8
+key_names.yml,key_name.f9,F9
+key_names.yml,key_name.f10,F10
+key_names.yml,key_name.f11,F11
+key_names.yml,key_name.f12,F12
+key_names.yml,key_name.f13,F13
+key_names.yml,key_name.f14,F14
+key_names.yml,key_name.f15,F15
+key_names.yml,key_name.space,Space
+key_names.yml,key_name.period,.
+key_names.yml,key_name.comma,","
+key_names.yml,key_name.colon,:
+key_names.yml,key_name.semicolon,;
+key_names.yml,key_name.exclamation,!
+key_names.yml,key_name.at,@
+key_names.yml,key_name.hash,#
+key_names.yml,key_name.dollar,$
+key_names.yml,key_name.percent,%
+key_names.yml,key_name.caret,^
+key_names.yml,key_name.and,&
+key_names.yml,key_name.asterisk,*
+key_names.yml,key_name.dash,-
+key_names.yml,key_name.underscore,_
+key_names.yml,key_name.plus,+
+key_names.yml,key_name.equal,=
+key_names.yml,key_name.double_quote,""""
+key_names.yml,key_name.single_quote,""""
+key_names.yml,key_name.tilde,~
+key_names.yml,key_name.backtick,`
+key_names.yml,key_name.pipe,|
+key_names.yml,key_name.slash,/
+key_names.yml,key_name.backslash,\
+key_names.yml,key_name.left_chevron,<
+key_names.yml,key_name.right_chevron,>
+key_names.yml,key_name.left_round_bracket,(
+key_names.yml,key_name.right_round_bracket,)
+key_names.yml,key_name.left_square_bracket,[
+key_names.yml,key_name.right_square_bracket,]
+key_names.yml,key_name.left_curly_bracket,{
+key_names.yml,key_name.right_curly_bracket,}
+outro_common.yml,ui.outro_common,"<p> </p> <p> </p> <p> </p>
+---- <p> </p> <p> </p> <p> </p>
+
+Now that you have descended the final flight of stairs from this episode you have a few options ahead of you. You can strive to Master or even Post-Master this hold! To do that you will need to clear all the secret rooms and find the master wall. You will now be able to see the number of secrets in each level on Restore screen to aid you in your hunt. Remember that you only ever need to clear each secret room once ever - there is no need to do it all in one save. Clear them all and the master wall will drop. <p> </p>
+Or you can go back to the title screen, chose ""Change Episode"" and play a different hold. Or go to Caravel Games website and buy any of the commercial releases, download a demo to play other people's holds... So many options! <p> </p> <p> </p>
+Before I leave you to bask in glory I'd like to send a shout out to some people who made this game possible: <p> </p> <p> </p> <p> </p> <p> </p>
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> who made the original DROD and many of its sequels <p> </p>
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> who was the lead developer on DROD: Journey to Rooted Hold and future games in the series <p> </p>
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> who manages the website and all things related to CaravelNet <p> </p> <p> </p> <p> </p> <p> </p>
+<font size=""23"" color=""#FFFF00"">Programming, Development</font> - %% <p> </p>
+<font size=""23"" color=""#FFFF00"">Art & Music</font> - %% <p> </p>
+<font size=""23"" color=""#FFFF00"">Server-side development</font> - %% <p> </p>
+<font size=""23"" color=""#FFFF00"">Hold architects</font> - %% <p> </p>
+<font size=""23"" color=""#FFFF00"">Primary Testers</font> - %% <p> </p>
+<font size=""23"" color=""#FFFF00"">Testers</font> - %% <p> </p>
+<font size=""23"" color=""#FFFF00"">Translations</font> - %% <p> </p>
+<font size=""23"" color=""#FFFF00"">Voice Talents</font> - %% <p> </p>
+<font size=""23"" color=""#FFFF00"">Original Coding, Idea & Levels</font> - %% <p> </p> <p> </p> <p> </p> <p> </p>
+The precursor of this game, Flash DROD, was an effort of many people in the DROD community. While I am the guy who coded it all it wouldn't have been possible without everyone working hard on a thing they love. <p> </p> <p> </p> <p> </p> <p> </p>
+Thank you for playing. <p> </p> <p> </p>
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+ui.yml,ui.common.close,Close
+ui.yml,ui.common.yes,Yes
+ui.yml,ui.common.no,No
+ui.yml,ui.hold_initialize.initializing_assets,Initializing assets: %% / %%
+ui.yml,ui.default_controls.header,Default controls:
+ui.yml,ui.default_controls.numpad.header,Numpad:
+ui.yml,ui.default_controls.notebook.header,Notebook:
+ui.yml,ui.title_screen.start_new_game,Start New Game
+ui.yml,ui.title_screen.start_new_game.shortcut_highlight_index,0
+ui.yml,ui.title_screen.start_new_game.shortcut_key_name,s
+ui.yml,ui.title_screen.continue,Continue Playing
+ui.yml,ui.title_screen.continue.shortcut_highlight_index,0
+ui.yml,ui.title_screen.continue.shortcut_key_name,c
+ui.yml,ui.title_screen.restore,Restore To a Different Room
+ui.yml,ui.title_screen.restore.shortcut_highlight_index,0
+ui.yml,ui.title_screen.restore.shortcut_key_name,r
+ui.yml,ui.title_screen.achievements,View Achievements
+ui.yml,ui.title_screen.achievements.shortcut_highlight_index,5
+ui.yml,ui.title_screen.achievements.shortcut_key_name,a
+ui.yml,ui.title_screen.options,Options
+ui.yml,ui.title_screen.options.shortcut_highlight_index,0
+ui.yml,ui.title_screen.options.shortcut_key_name,o
+ui.yml,ui.title_screen.help,Help and Backstory
+ui.yml,ui.title_screen.help.shortcut_highlight_index,0
+ui.yml,ui.title_screen.help.shortcut_key_name,h
+ui.yml,ui.title_screen.change_hold,Change Episode
+ui.yml,ui.title_screen.change_hold.shortcut_highlight_index,7
+ui.yml,ui.title_screen.change_hold.shortcut_key_name,e
+ui.yml,ui.options.header,Options:
+ui.yml,ui.options.volume.header,Volume
+ui.yml,ui.options.volume.music.button,Music
+ui.yml,ui.options.volume.sfx.button,Effects
+ui.yml,ui.options.volume.voices.button,Voices
+ui.yml,ui.options.key_repeat_rate.header,Key repeat rate:
+ui.yml,ui.options.key_repeat_rate.tooltip,The smoothness of movement and repeat rate when holding a key.
+ui.yml,ui.options.key_repeat_rate.smooth.label,Smooth
+ui.yml,ui.options.key_repeat_rate.fast.label,Fast
+ui.yml,ui.options.key_repeat_delay.header,Key repeat delay:
+ui.yml,ui.options.key_repeat_delay.tooltip,"The delay between holding the key
+down and the action being repeated."
+ui.yml,ui.options.key_repeat_delay.short.label,Short
+ui.yml,ui.options.key_repeat_delay.long.label,Long
+ui.yml,ui.options.redefine.button,Redefine Keys
+ui.yml,ui.redefine.changing_prompt,"You are changing mapping for ""%control_name%""
+Press desired key (now: %current_key%)
+Hit Escape to cancel"
+ui.yml,ui.redefine.invalid_key,"%pressed_key% is reserved for other functions
+
+You are changing mapping for ""%control_name%""
+Press desired key (now: %current_key%)
+Hit escape to cancel"
+ui.yml,ui.redefine.reserved_key,"%pressed_key% is reserved for an alternate movement set
+
+You are changing mapping for ""%control_name%""
+Press desired key (now: %current_key%)
+Hit escape to cancel"
+ui.yml,ui.help.description.width,450
+ui.yml,ui.help.description,"DROD was conceived by Erik Hermansen back in the '90s. It is largely known as a puzzle game in which you run around rooms in a dungeon, slaying monsters with a Really Big Sword. How does this work?  You will see for yourself as soon as you get around to playing the game.
+
+  Flash DROD is a port of the original DROD game. It uses the media found in the newer DROD game engines that you can download to play on your computer from CaravelGames.com.
+
+Thanks to integrated CaravelNet capabilities, besides just completing the puzzles, players can compete with each other for high scores by completing each room in the fewest moves possible."
+ui.yml,ui.help.buttons.caravelnet,About CaravelNet
+ui.yml,ui.help.buttons.how_to_play,How to Play
+ui.yml,ui.help.buttons.history,DROD History
+ui.yml,ui.help.buttons.backstory,Backstory
+ui.yml,ui.help.buttons.credits,Credits
+ui.yml,ui.help.credits.body.width,620
+ui.yml,ui.help.credits.body,"[h]Programming, Development: [/h][g]%%[/g]
+[h]Art & Music: [/h][g]%%[/g]
+[h]Server-side development: [/h][g]%%[/g]
+[h]Level Development: [/h][g]%%[/g]
+[h]Primary Testers: [/h][g]%%[/g]
+[h]Testers: [/h][g]%%[/g]
+[h]Translations: [/h][g]%%[/g]
+[h]Voice Talents: [/h][g]%%[/g]
+[h]Original Coding, Idea & Levels: [/h][g]%%[/g]"
+ui.yml,ui.help.controls.body.width,650
+ui.yml,ui.help.controls.body,"[b]Numpad[/b][g] and [/g][b]%keymap.all_moves%[/b][g] - Move around[/g]
+[b]%keymap.turn_ccw%[/b][g] and [/g][b]%keymap.turn_cw%[/b][g] - Rotate your sword[/g]
+[b]%keymap.undo%[/b][g] - Undo last move[/g]
+[b]%keymap.restart%[/b][g] - Go back to last checkpoint or restart[/g]
+[b]Shift + %keymap.restart%[/b][g] - Restart the room[/g]
+[b]Escape[/b][g] - Pause menu[/g]
+[b]Enter[/b][g] - Level and room score[/g]
+[b]%keymap.lock%[/b][g] - Toggle room lock[/g]
+[b]Space[/b][g] - Clear speech and achievements from the screen[/g]
+[b]F3[/b][g] - Display move count[/g]
+[b]Shift + Action[/b] [g] - Do the action and its opposite[/g]
+[b]Shift + %keymap.wait%[/b][g] - Wait until next spawn turn[/g]
+[b]Left mouse click[/b][g] - Highlight connections[/g]
+[b]Right mouse click[/b][g] - Show tile contents[/g]
+
+  Your objective is to clear each level of King Dugan's Dungeon of monsters. This feat can be accomplished using only your Really Big Sword™ and your wits. Each room is a separate area that has to be cleared in a single session. Should you leave a room without completely clearing it, it will be restored to its initial state when you return."
+ui.yml,ui.help.backstory.page_1.width,550
+ui.yml,ui.help.backstory.page_1.body,"Beethro Budkin strolled into the Grand Dining Chamber where King Dugan was finishing his massive morning meal.
+
+  ""Away, foul commoner! You disrupt my digestion with your poor hygiene!"" bellowed the King, with bits of pork and potatoes erupting from his mouth.
+
+  ""But sir,"" protested Beethro, ""you sent for me.""
+
+  The expression on the King's large face changed from anger to confusion to recognition to geniality in the space of two seconds.
+
+  ""I really should have had you come in sooner,"" said King Dugan. ""It's unbelievable! You let your guards eat their meals down in the dungeon, they spread crumbs all over the place, and all of a sudden the place is just swarming with giant cockroaches, not to mention goblins, serpents, evil eyes, and other nasty things. It's really gotten out of hand.""
+
+  Beethro straightened with pride. ""Not to fear. I am a trained professional from a long line of dungeon exterminators. I combine five generations of passed-down knowledge with the most state-of-the-art equipment to offer efficient extermination service at an affordable price.""
+
+  ""What kind of equipment do you use?""
+
+  ""I've got a really big sword."""
+ui.yml,ui.help.backstory.page_2.width,550
+ui.yml,ui.help.backstory.page_2.body,"""Good! When can you start?""
+
+  ""As soon as we handle the details of payment. Here are my standard extermination fees. Just sign at the bottom."" Beethro handed a contract to the King.
+
+  ""These prices are outrageous! Is the privilege of honorable service to the Crown worth nothing these days?""
+
+  ""I can leave.""
+
+  ""No, no, no. We need that dungeon cleared so that the prisoners can receive their torture in a clean and safe environment.""
+
+  ""Well, I'll give you a discount if you'll throw in a princess.""
+
+  ""You're ugly and you smell bad. None of my daughters will have you!""
+
+  Beethro shrugged. ""Fair enough.""
+
+  The King signed at the bottom of the contract. ""Right then. Let me show you to the entrance."""
+ui.yml,ui.help.backstory.page_3.width,550
+ui.yml,ui.help.backstory.page_3.body,"As he descended, Beethro reflected on the job he had taken. Dugan's Dungeon was exceptionally large and, going by the reports of past exterminators, ridiculously well suited to infestation. It had also been secretly expanded several times, to the dismay of the first person to clear it out, whose contract hadn't covered the possibility. (He'd only gotten paid for the parts he'd known about.)
+
+  Some said sinister forces were behind the expansion. The legend went that a king of past grew tired of his annoying young son and jokingly suggested that the lad go play in the castle dungeons. Taking his father seriously, the boy wandered deep into the dungeon chambers and was never found again. It was said that he did not perish, but lived the rest of his life in the dungeons by preference; that becoming a master of his new habitat, he learned all of the secrets of the underground world and formed alliances with the monsters that dwelt there, setting them to work creating new passageways and breeding better specimens of monster. He named himself the 'Neather, and schemed to rise from the dungeons to claim the throne when his powers were able."
+ui.yml,ui.help.backstory.page_4.width,550
+ui.yml,ui.help.backstory.page_4.body,"Beethro wasn't sure about all that. For starters, the royal throne wasn't what it had been, now that its power was mostly transferred to a parliament. Never mind the question of who would want to live underground, or how they'd befriend the creatures there, who weren't great conversationalists. But it was true that dungeons tended to be unnecessarily complicated and easily infested, and even sometimes grow without warning - no Dungeon Architect would say why, as a matter of honor - and this more than anything was what kept men like Beethro in work.
+
+  Anyway, an exterminator had plenty of more practical concerns, like the prolific and man-sized dungeon roach. The important thing in Beethro's mind was that he ought to make enough money and dead monsters on this job to finally retire from this thankless trade and open a restaurant.
+
+  ""I'll call it 'Beethro's Roasted Roach Grill'!"""
+ui.yml,ui.help.backstory.buttons.next,Next
+ui.yml,ui.help.backstory.buttons.prev,Prev
+ui.yml,ui.help.history.width,650
+ui.yml,ui.help.history.body,"""Deadly Rooms of Death"", now almost exclusively called DROD, was created by Erik Hermansen in the 90s. Initially released as a shareware title by Webfoot, later Erik got permission to release it on his own which ultimately led to release DROD: Architect's Edition which featured a level editor.
+
+  The game had multiple sequels which expanded the number of elements in the game as well as lore: Journey to Rooted Hold (2005), The City Beneath (2007), Gunthro and the Epic Blunder (2012) and The Second Sky (2014). Tendry's Tale (2008) is a spinoff that features an RPG-like experience, usually called ""Tower of the Sorcerer""-like. Beyond that multiple Smitemaster's Selections were released - official, canon holds that expand the lore.
+
+  The history of this release starts in late 2011 when Maurycy Zarzycki first mailed Mike Rimer (current owner of the DROD IP) with a proof of concept showing that Flash is capable of supporting what he considered to be the most computationally-intensive part of DROD - pathfinding. At some point a decision was made to release the game in 6 episodes. Ultimately only 4 of those were released - first in 2012, last in 2014.
+
+  The idea to port this project to JavaScript started in mid 2021, continued a little in early 2022 and then, finally, it was finished and open sourced in mid 2025."
+ui.yml,ui.restore.header,Restore Game
+ui.yml,ui.restore.buttons.restore,Restore to this room
+ui.yml,ui.restore.buttons.return,Return to title screen
+ui.yml,ui.restore.info.secrets,Secrets done: %% / %%
+ui.yml,ui.restore.buttons.farthest,Select the farthest save
+ui.yml,ui.restore.buttons.help.tooltip,Click for quick introduction to how restore works.
+ui.yml,ui.restore.help.body,"Restoring works almost like saves in your favorite video games. The difference is that though you cannot save whenever you wish as the game autosaves when entering any unconquered room.
+
+To restore to a previous state, first select a level from the list on the left, then choose a room on the minimap below. The minimap will grey out rooms which were not yet visited in the save. Those with a white background are conquered, those with a red one are not.
+
+Later you can always load up your best state by clicking the ""Select the farthest save"" button.
+
+Restore is the most useful if you want to improve your score for a room, search for secrets, or simply replay a favorite room."
+ui.yml,ui.restore.warning,"You have chosen to go back to a previous state - some rooms will be restored to their unconquered state.
+
+You can always restore to your most recent/best state by clicking ""Select the farthest save""."
+ui.yml,ui.game_completed.header,What next?
+ui.yml,ui.game_completed.description,Continue mastering this hold - use restore to find and clear all the secrets.
+ui.yml,ui.game_completed.button.continue,Continue playing
+ui.yml,ui.achievement_list.header,Achievements:
+ui.yml,ui.achievement_list.info,"Lighted up achievements are acquired.
+Greyed-out achievements which are not semi-transparent are ""active"". This means that in the current room you might be able to get or work toward this achievement (but not always, so read the achievement descriptions carefully). Do note that some achievements may be active in all or most rooms in the game."
+ui.yml,ui.achievement_growl.header,Achievement!
+ui.yml,ui.achievement_growl.dismiss,Click or Space to dismiss
+ui.yml,ui.pause.header,DROD is now paused
+ui.yml,ui.pause.continue.button,Continue playing
+ui.yml,ui.pause.continue.tooltip,"Continue playing.
+(Escape, Enter)"
+ui.yml,ui.pause.restart.button,Restart room
+ui.yml,ui.pause.restart.tooltip,"Restart current room.
+(In-game: F5)."
+ui.yml,ui.pause.room_help.button,Get help for current room
+ui.yml,ui.pause.room_help.tooltip,"Get online help for currently played room.
+(In-game: F2)"
+ui.yml,ui.pause.help.button,Get general help
+ui.yml,ui.pause.help.tooltip,"Open up general help window.
+(In-game: F1)"
+ui.yml,ui.pause.achievements.button,View achievements
+ui.yml,ui.pause.achievements.tooltip,"Show a list of all achievements.
+(Ingame: Tab)"
+ui.yml,ui.pause.options.button,Options
+ui.yml,ui.pause.return_to_title.button,Return to title screen
+ui.yml,ui.pause.return_to_title.tooltip,"Game progress is saved,
+but the current room's progress will
+be lost if you quit the game."
+ui.yml,ui.pause.restore.button,Restore to a different room
+ui.yml,ui.score_window.header,Your Stats
+ui.yml,ui.score_window.best_score,Best room score:
+ui.yml,ui.score_window.best_score.none,None yet!
+ui.yml,ui.score_window.best_score.unrequired,Unrequired room
+ui.yml,ui.score_window.stats.moves_room,Moves in room:
+ui.yml,ui.score_window.stats.moves_level,Level moves:
+ui.yml,ui.score_window.stats.deaths,Level deaths:
+ui.yml,ui.score_window.stats.kills,Level kills:
+ui.yml,ui.score_window.stats.time,Level time:

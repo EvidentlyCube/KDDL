@@ -1,0 +1,1510 @@
+File Name,Old Key,Translation
+de.kdd1.txt,First Level,Erster Level
+de.kdd1.txt,Second Level,Zweiter Level
+de.kdd1.txt,Third Level,Dritter Level
+de.kdd1.txt,Fourth Level,Vierter Level
+de.kdd1.txt,Mastery Level,Meisterlevel
+de.kdd1.txt,entr1,"Beethro Budkin, professioneller Kerkerjäger der fünften Generation, wurde von König Dugan angestellt um den weitläufigen königlichen Kerker von einem erheblichen Monsterbefall zu befreien.
+Beethro veranschlagt einen Festbetrag pro Raum, und als Profi ist er per Vertrag daran gebunden, die Monster aus ausnahmslos jedem Raum des Kerkers zu beseitigen, bevor er ausbezahlt wird.
+Die einzige Waffe, die Beethro benötigt um seine Aufgabe zu erfüllen, ist ein echt großes Schwert, welches jedes Monster mit einem einzigen Schlag vernichtet.
+
+-----
+
+„Ich hoffe Du berechnest mir nicht das oberste Stockwerk. Ich habe dieses bereits saubergemacht. Na gut, größtenteils.“ -König Dugan"
+de.kdd1.txt,entr2,"Beethro ist ein wenig eingerostet, aber die nächste Etage sollte ihn gut in Hackform bringen."
+de.kdd1.txt,entr3,"„Hmm...“, grübelte Beethro. „Bis jetzt sehe ich fast nur Schaben hier unten. Das sieht nach einem kinderleichten Auftrag aus.“"
+de.kdd1.txt,entr4,"„Ich wünschte, ich hätte einige von diesen Imitaten hier unten bei mir!“, sagte Beethro. „Es würde um einiges schneller gehen.“"
+de.kdd1.txt,entr4Back,"Beethro kam zurück, um jene einwandfreie Totschlag-Arbeit abzuliefern, für die er engagiert wurde."
+de.kdd1.txt,entrMaster,"Beethro stieg die Stufen hinab, einzig dafür um einen nicht verzeichneten Verbindungsgang vorzufinden...
+
+Er würde nicht für die Säuberung hier bezahlt werden, aber seine Berufsehre drängte ihn vorwärts."
+de.kdd1.txt,sc1e0,"Benutzen Sie den Ziffernblock oder 789uiojkl, um sich zu bewegen. Die Tastenbelegung kann über das Pausenmenü verändert werden (Escape)."
+de.kdd1.txt,sc1e1,"Um die Steuerung zu einem späteren Zeitpunkt nachzuschlagen, drücken Sie `Escape`, wählen `Allgemeine Hilfe` und den Unterpunkt `Spielanleitung`."
+de.kdd1.txt,sc1_1n,"Diese gelbe Tür wird später noch ihrem Zweck dienen. 
+
+ Gehen Sie fürs Erste weiter nach Westen."
+de.kdd1.txt,sc1_1n1w1,Rotieren Sie Ihr Schwert mittels `Q` und `W`.
+de.kdd1.txt,sc1_1n1w2,Streifen Sie die Schaltkugel mit Ihrem Schwert um Türen in diesem Raum zu öffnen.
+de.kdd1.txt,sc1_1n1w3,Einige Schaltkugeln schalten zwischen dem geöffneten und geschlossenen Zustand der Türen hin- und her.
+de.kdd1.txt,sc1_2n1w1,"Sie können feststellen was eine Schaltkugel tut, indem Sie sie mit der Maus anklicken. Die unterschiedlichen Farben der markierten Türen kennzeichnen unterschiedliche Effekte."
+de.kdd1.txt,sc1_2n1w2,"Anstatt eine gelbe Tür abwechselnd zu öffnen und zu schließen, kann eine Schaltkugel sie auch jedes Mal öffnen oder jedes Mal schließen."
+de.kdd1.txt,sc1_3n1w1,"Blaue Tore öffnen sich, sobald Sie alle geforderten Räume einer gegebenen Ebene (Etage) erobert haben."
+de.kdd1.txt,sc1_3n1w2,Geforderte Räume sind durch einen roten Hintergrund auf der Übersichtskarte markiert.
+de.kdd1.txt,sc1_3n2w1,Das gerade Gesprochene und eingeblendete Texte können mit der Leertaste übersprungen werden.
+de.kdd1.txt,sc1_3n2w2,"Sobald Sie einen von allen Monstern befreiten Raum verlassen, wird er als erobert markiert."
+de.kdd1.txt,sc1_3n2w3,"Auf der Übersichtskarte sind eroberte Räume weiß dargestellt - im Gegensatz zu den nicht eroberten, welche rot sind."
+de.kdd1.txt,sc1_3n2w4,"Erobern Sie alle geforderten Räume, um Ihren Weg zur nächsten Ebene freizumachen."
+de.kdd1.txt,sc1_4n3w,Richtungspfeile blockieren sowohl Beethros als auch die Monster-bewegungen in die entgegengesetzte Richtung.
+de.kdd1.txt,sc1_4n1w,Grüne Tore öffnen sich sobald Sie einen Raum von allen Monstern befreit haben.
+de.kdd1.txt,sc1_5n1w1,"Beobachten Sie, wie sich die südliche Schabe verhält, wenn sie auf eine Ecke aufläuft. Mit ""I"" oder der 5 im Ziffernblock können Sie einen Zug warten."
+de.kdd1.txt,sc1_5n1w2,"Die meisten Monster werden, wenn sie sich auf eine Ecke bewegen wollen, vertikal entlanggleiten, wenn dies möglich ist."
+de.kdd1.txt,sc1_5n2w1,"Denken Sie daran, dass Sie mit der Maus auf eine Schaltkugel klicken können um zu erfahren, welche Türen sie beeinflusst."
+de.kdd1.txt,sc1_5n2w2,"Vorsicht! Hier ist es gefährlich.
+
+Wenn Sie einen Fehler machen, drücken Sie die `Rücktaste`, um bis zu drei ihrer letzten Aktionen rückgängig zu machen."
+de.kdd1.txt,sc1_5n2w3,Sie können ihre Aktion auch dann zurücknehmen (und neu beginnen) wenn die Todesanimation abgespielt wird!
+de.kdd1.txt,sc1_5n2w4,"Mit Berühren eines Rücksetz-punkts 'X' können Sie den Raumzustand speichern.
+Drücken Sie `R`, um zum letzten Rücksetzpunkt zurückzukehren oder den Raum neu zu beginnen."
+de.kdd1.txt,sc1_6n2w,"Ein guter Schwertkämpfer kann all diese Schaben besiegen, ohne den südlichen Alkoven zur Deckung zu nutzen!"
+de.kdd1.txt,sc1_6n3w1,"Verwenden Sie den Durchgangshieb, um diese Schabe zu besiegen."
+de.kdd1.txt,sc1_6n3w2,"Stellen Sie sich auf den grünen Boden und stellen Sie sicher, dass sich die Schabe auf dem Sandfeld direkt nördlich von Ihnen befindet..."
+de.kdd1.txt,sc1_6n3w3,"Stellen Sie sich auf den grünen Boden und stellen Sie sicher, dass sich die Schabe auf dem Sandfeld direkt südlich von Ihnen befindet..."
+de.kdd1.txt,sc1_6n3w4,...dann bewegen Sie sich nach Nordosten um sie zu töten.
+de.kdd1.txt,sc1_6n3w5,...dann bewegen Sie sich nach Südosten um sie zu töten.
+de.kdd1.txt,sc1_6n3w6,"Wiederholen Sie die Prozedur, um den Durchgangshieb zu analysieren. Meistern Sie diese Technik, denn sie wird sich bei Ihrem weiteren Unterfangen als unverzichtbar herausstellen."
+de.kdd1.txt,sc1_5n1,Der Notausgang ist außer Betrieb.
+de.kdd1.txt,sc1_5n2,"Tschuldige'err wir werden's Bau'n net fertigkrie'n wenn de große' Schabens hier frei rumlofen!"
+de.kdd1.txt,sc1_4n,Bitte halten Sie die Gewächshaustüren geschlossen.
+de.kdd1.txt,sc1_1n1e,"Diese Stufen führen zur nächsten Ebene. Nehmen Sie sich vor dem in Acht, was Sie dort erwartet..."
+de.kdd1.txt,sc2_2n1,"Wussten Sie, dass Sie die Umschalttaste während der Ausführung einer Aktion gedrückt halten können, um automatisch auch dessen Umkehrung auszuführen?"
+de.kdd1.txt,sc2_2n2,"Umschalt+Warten lässt sie bis zur nächsten Eiablage warten, und `Ziffernblock +` oder `=` führt die Umkehrung Ihrer letzten Aktion aus!"
+de.kdd1.txt,sc2_1n1e,Sie sollten nicht so zerstörerisch sein.
+de.kdd1.txt,sc2e,"Erledigen Sie zuerst die Räume nach Norden hin, sonst müssen Sie dazu nochmal hierher zurück."
+de.kdd1.txt,sc2_1s3e1,"Sie können verhindern, dass Sie unbeabsichtigt einen Raum verlassen, indem Sie auf Ihrer Tastatur 'X' drücken."
+de.kdd1.txt,sc2_1s3e2,"Ein kleines Schloss auf der Übersichtskarte zeigt an, dass ein Raum verriegelt wurde."
+de.kdd1.txt,sc2_1s,"Tut es nicht! Es ist offensichtlich, was passieren wird!"
+de.kdd1.txt,sc2_2s3e,Gutes Timing macht die Dinge wesentlich einfacher.
+de.kdd1.txt,sc3_3n,Ich muss Euch vor Imitaten warnen. Sie sind weder Eure Freunde noch Eure Feinde--sie bewegen sich ganz einfach exakt so wie Ihr. Dreht ihnen nicht den Rücken zu.
+de.kdd1.txt,sc3_3n1e,"Alle Gefangenen wurden von Kerkerschaben verspeist, und ich bin der nächste! Ihr könnt mir gar nicht genug zahlen um diesen Job zu machen. Ich bin raus hier!
+
+-Der Aufseher"
+de.kdd1.txt,sc3_2n,"Es ist möglich in diesen Durchgang zu gelangen, ohne den Raum nach der Eroberung erneut zu betreten."
+de.kdd1.txt,sc3_1n1w,"Nach Verwendung des Unsichtbarkeits- tranks können sie Euch nicht sehen, aber sie können Euch noch immer riechen wenn Ihr ihnen zu nahe kommt."
+de.kdd1.txt,sc3_1e,So ein langer Weg. Er erscheint beinahe unnötig.
+de.kdd1.txt,sc3_1s,"Die Acht Tore des Toren--in der Tat ein eindrucksvolles Rätsel. Es war einst wesentlich schwieriger, aber ich kann nun die Schaltkugeln überprüfen um zu sehen was sie bewirken."
+de.kdd1.txt,sc3_2s1w,"Hier ist etwas das ich Euch erzählen werde--wann immer Ihr lange und mühselige Pfade seht, solltet Ihr nach Abkürzungen Ausschau halten."
+de.kdd1.txt,sc3_2s1,"Kehrt um! Wusstet Ihr, dass allein im letzten Jahr kerkerbezogene Tode um 32 Prozent gestiegen sind?"
+de.kdd1.txt,sc3_2s2,"Seht den Tatsachen ins Auge--Kerkererkundung ist NICHT sicher, besonders in Verbindung mit Rauschgiften.
+-EGTIK (Eltern Gegen Tode Im Kerker)"
+de.kdd1.txt,sc4_2n1e1,Dies ist eine Meistermauer. Sie wird sich erst öffnen wenn Sie die Feste bezwungen und alle Geheimnisse erobert haben.
+de.kdd1.txt,sc4_2n1e2,"Im ursprünglichen ""King Dugan's Dungeon"" war dies ein Warp-Raum, mit dessen Hilfe Sie ein oder zwei Level überspringen konnten."
+de.kdd1.txt,sc4_1n1,"Hinweis:
+
+Sie benötigen nicht die Hilfe der Imitate um die Schaben am Eingang zu bekämpfen."
+de.kdd1.txt,sc4_1n2,"Hinweis:
+
+Denken Sie scharf nach, Sie können den sehr hilf-reichen DURCH-GANGSHIEB einsetzen -- gut, wenn sich zu beiden Seiten neben Ihnen ein Monster befindet!"
+de.kdd1.txt,sc4_2e,"Wenn Sie Stil bewiesen haben, sollten sich alle 9 Imitate in einer Linie rechts von Ihnen befinden."
+de.kdd1.txt,scMe1,Schwierigere Versionen von vorherigen Rätseln.
+de.kdd1.txt,scMe2,Letzte Worte!
+de.kdd1.txt,scMe3,"Schwierige, neue Räume."
+de.kdd1.txt,scM_1s1,"Das war's. Sie haben nun alles vollendet, was es in diesem Spiel zu sehen gab. Es sind höchstens noch ein paar Errungenschaften übrig."
+de.kdd1.txt,scM_1s2,"Ich gratuliere Ihnen aufrichtig und lade Sie dazu ein, die Reise fortzusetzen."
+de.kdd1.txt,scM_1s3,"Auf der CaravelGames.com-Website finden Sie die nächsten Episoden von KDDL oder Sie können dort eines der vollwertigen DROD-Spiele für Windows, MacOS oder Linux herunterladen."
+de.kdd1.txt,scM_1s4,Bleiben Sie verspielt!
+de.kdd1.txt,scM_1s5,Hier ist eine kleine Belohnung! Töten Sie alle Augen ohne auf das braune Gras zu treten.
+de.kdd1.txt,scM_1s6,"Die Schabenköniginnen werden sterben, wenn Sie auf den Rücksetzpunkt in der oberen rechten Ecke treten."
+de.kdd1.txt,scM_1s7,"Sehr hübsch, weiter so!"
+de.kdd1.txt,sp1e0,Bewegen Sie sich mit dem Ziffernblock.
+de.kdd1.txt,sp1e1,"Wenn Sie auf einem Notebook spielen, können Sie folgende Bewegungstasten verwenden: 789, UIO, JKL"
+de.kdd1.txt,sp1e2,Gehen Sie zum Fortsetzen nach Norden.
+de.kdd1.txt,sp1_3n2w1,"Aha, die erste Schabe dieses Kerkers!"
+de.kdd1.txt,sp1_3n2w2,"Komm zu Beethro, kleiner Schabenburger in spe!"
+de.kdd1.txt,sp1_3n2w3,"Glatt entzwei! Dieser Auftrag wird gut ablaufen, ich spür's!"
+de.kdd1.txt,sp1_6n2w,"Ich hätte diese Schaben auch erledigen können, ohne mich in der Nische zu verstecken, aber heute bin ich etwas faul drauf."
+de.kdd1.txt,sp1_6n3w1,Sie haben einen Geheimraum entdeckt!
+de.kdd1.txt,sp1_6n3w2,"Finden und lösen Sie alle Geheimräume, um eine besondere Meisterzone mit weiteren Aufgaben zu eröffnen."
+de.kdd1.txt,sp2_2e,"Die Königin da wird massenweise Schaben produzieren, bis ich zur Schaltkugel und zurück bin!"
+de.kdd1.txt,sp2_1s1e1,"Heda, ein Fledergeist!"
+de.kdd1.txt,sp2_1s1e2,Und dann auch noch nur ein einziger ... den muss ich wohl durch den ganzen Raum jagen.
+de.kdd1.txt,sp2_1s1e3,"Anders als eine Schabe hält ein Fledergeist Abstand von Beethro und versucht, fünf Schritte von ihm entfernt zu bleiben."
+de.kdd1.txt,sp2_1s1e4,"Zu mehreren sind sie allerdings nicht so scheu, und sie greifen sofort an, wenn sie ihr Opfer umzingelt haben."
+de.kdd1.txt,sp2_2s2e1,"Hmmm ... kann ich diese Königinnen plätten, ehe sie Eier legen?"
+de.kdd1.txt,sp2_2s2e2,Hach ... zu langsam!
+de.kdd1.txt,sp2_2s2e3,Ha! Kein Thema.
+de.kdd1.txt,sp2_2s3e1,"Es muss eine bessere Methode geben, diese Schabenköniginnen zu erledigen."
+de.kdd1.txt,sp2_2s3e2,Das war ja mal ein Paradestück.
+de.kdd1.txt,sp3_3n1e,"Keine Gefangenen mehr da? Das wird ein einsamer Auftrag, wenn man mit keinem schwatzen kann."
+de.kdd1.txt,sp3_2n,Aber ernsthaft.
+de.kdd1.txt,sp3_1n2w0,"Großgütiger! Ich denke, dieses Mal brauche ich den Trank!"
+de.kdd1.txt,sp3_1n2w1,"Pfuh! Jetzt werden diese Königinnen keine Eier legen, bis ich nahe an sie rankomme."
+de.kdd1.txt,sp3_1n2w2,"Das war jetzt nicht ganz einfach, aber ein kompetenter Absteiger wie ich schafft auch das!"
+de.kdd1.txt,sp3_1n2w3,Ha! Dem Absteigör ist nichts zu schwör!
+de.kdd1.txt,sp3_1n1w1,"He, das ist ja klasse!"
+de.kdd1.txt,sp3_1n1w2,"Ich hätte diesen Raum natürlich auch sichtbar lösen können, aber es macht auch so Spaß."
+de.kdd1.txt,sp3_1n1w3,Gar nicht so schwer ... was wohl der Trank da soll?
+de.kdd1.txt,sp3_1s,Ich hätte die Türen auch schneller öffnen können.
+de.kdd1.txt,sp3_3s1w1,Sieht gefährlich aus ... vermutlich eine Falle ...
+de.kdd1.txt,sp3_3s1w2,"Ich könnte diesen Raum lösen, ohne mein Schwert zu schwingen, nachdem ich die Schaltkugel haue. Nur so zur Übung!"
+de.kdd1.txt,sp3_3s1w3,"Na, vielleicht habe ich mein Schwert geschwungen, aber immerhin lebe ich noch."
+de.kdd1.txt,sp3_3s1w4,Wow! Das hätte jetzt jemand sehen müssen.
+de.kdd1.txt,sp4_2n1e,Noch ein geheimer Raum wo ihn niemand erwartet hätte ... außer mir natürlich.
+de.kdd1.txt,sp4_1n1,"Diesen Raum hätte ich auch lösen können, ohne mich in den Eingangskorridor zurückzuziehen."
+de.kdd1.txt,sp4_1n2,Beethro Budkin bewältigt jede Herausforderung!
+de.kdd1.txt,sp4_2e1,Heilige Habuffsen! Vielleicht kann man doch zu viele Imitate haben!
+de.kdd1.txt,sp4_1s2e,"Woran liegt es, dass ein Raum besser aussieht, wenn erst alle Falltüren ausgelöst sind?"
+de.kdd1.txt,spM_1s,Ihr habt versagt ...
+de.kdd1.txt,achName0,Unter Beobachtung
+de.kdd1.txt,achName1,Muttermord
+de.kdd1.txt,achName2,Nieder mit allem!
+de.kdd1.txt,achName3,Wahrer Hackmeister
+de.kdd1.txt,achName4,Ruhiges Händchen
+de.kdd1.txt,achName5,Königinnen-Burger
+de.kdd1.txt,achName6,Einbahn
+de.kdd1.txt,achName7,Aber flott!
+de.kdd1.txt,achName8,Aber schnell!
+de.kdd1.txt,achName9,Ruhiges Ärmchen
+de.kdd1.txt,achName10,Schnapp die Rolle
+de.kdd1.txt,achName11,Sichtbar
+de.kdd1.txt,achName12,Ununsichtbar
+de.kdd1.txt,achName13,Überhöhte Ge-schwindigkeit
+de.kdd1.txt,achName14,Die Acht Tore des Toren
+de.kdd1.txt,achName15,Der Schaben-Flüsterer
+de.kdd1.txt,achName16,O magnum mysterium
+de.kdd1.txt,achName17,Dreh dich nicht um
+de.kdd1.txt,achName18,Alleine unter Schaben
+de.kdd1.txt,achName19,Ich mag Gruben
+de.kdd1.txt,achName20,Die unerträgliche Leere des Nichts
+de.kdd1.txt,achName21,Hat Stil
+de.kdd1.txt,achName22,Amateur-Absteiger
+de.kdd1.txt,achName23,Totschläger-Geselle
+de.kdd1.txt,achName24,Kammerjäger auf Abruf
+de.kdd1.txt,achName25,Ich bin vom Fach!
+de.kdd1.txt,achName26,Meisterschaft
+de.kdd1.txt,achName27,Über-Meisterschaft
+de.kdd1.txt,achName28,Gegrillte Schaben
+de.kdd1.txt,achName29,Gehobelte Königinnen
+de.kdd1.txt,achName30,Rührei
+de.kdd1.txt,achName31,Augenpudding
+de.kdd1.txt,achName32,Fledergeister-Dip
+de.kdd1.txt,achName33,Stimmgabel
+de.kdd1.txt,achName34,Nieder mit den Grünen!
+de.kdd1.txt,achName35,Horde unter Kontrolle
+de.kdd1.txt,achName36,Stehauf-Männchen
+de.kdd1.txt,achName37,Die Zeit läuft rückwärts
+de.kdd1.txt,achName38,Grubengräber
+de.kdd1.txt,achName39,Zu Fuß zum Mond
+de.kdd1.txt,achDesc0,Drei Stieraugen in einem Zug geweckt
+de.kdd1.txt,achDesc1,"Eine Schabenkönigin getötet, während ihre Eier heranwachsen"
+de.kdd1.txt,achDesc2,"Doch, Sie sollten so zerstörerisch sein."
+de.kdd1.txt,achDesc3,In 6N 2W im ersten Level nicht in der Nische versteckt
+de.kdd1.txt,achDesc4,"Bis auf einen alle monsterbefallenen, nicht-geheimen Räume auf dem ersten Level gelöst, ohne das Schwert zu schwingen
+Bisher %% von 6."
+de.kdd1.txt,achDesc5,"In 2O im zweiten Level die Königin getötet, bevor sie die Ecke erreicht"
+de.kdd1.txt,achDesc6,In 1S im zweiten Level das Schwert nach dem Schaltkugel-Hauen nicht mehr geschwungen
+de.kdd1.txt,achDesc7,"In 2S 2O im zweiten Level alle Königinnen erschlagen, bevor sie Eier legen konnten"
+de.kdd1.txt,achDesc8,"2S 3O im zweiten Level gelöst, bevor Eier gelegt werden"
+de.kdd1.txt,achDesc9,"3N im zweiten Level gelöst, ohne das Schwert zu schwingen"
+de.kdd1.txt,achDesc10,"Die Schriftrolle in 2N im dritten Level erreicht, ohne zurück in den Raum zu kommen"
+de.kdd1.txt,achDesc11,"In 1N 1W im dritten Level alle Schaben getötet, ohne den Trank zu benutzen"
+de.kdd1.txt,achDesc12,"1N 2W im dritten Level gelöst, ohne den Trank zu benutzen"
+de.kdd1.txt,achDesc13,"1N 1O im dritten Level gelöst, ohne dass Königinnen Eier legen"
+de.kdd1.txt,achDesc14,Die Acht Tore des Toren mit fünf Mal Schaltkugeln hauen gelöst (1S im dritten Level)
+de.kdd1.txt,achDesc15,In 2N 1O im dritten Level alle drei Schaben gleichzeitig aus dem Irrgarten befreit
+de.kdd1.txt,achDesc16,"3N im dritten Level gelöst, ohne den Trank zu benutzen"
+de.kdd1.txt,achDesc17,"1N im vierten Level gelöst, ohne zurück in den Eingangskorridor zu treten"
+de.kdd1.txt,achDesc18,"1S 1O im vierten Level gelöst, ohne den Imitattrank zu benutzen"
+de.kdd1.txt,achDesc19,In 1S 2O im vierten Level im selben Durchgang alle Falltüren ausgelöst und den Raum gelöst
+de.kdd1.txt,achDesc20,2S 1O im vierten Level gelöst und im selben Durchgang alle Falltüren ausgelöst
+de.kdd1.txt,achDesc21,In 2O im vierten Level Stil bewiesen
+de.kdd1.txt,achDesc22,Den ersten Level gelöst
+de.kdd1.txt,achDesc23,Den zweiten Level gelöst
+de.kdd1.txt,achDesc24,Den dritten Level gelöst
+de.kdd1.txt,achDesc25,Den vierten Level gelöst
+de.kdd1.txt,achDesc26,Die Feste gemeistert
+de.kdd1.txt,achDesc27,Die Feste übermeistert
+de.kdd1.txt,achDesc28,35 Schaben erschlagen
+de.kdd1.txt,achDesc29,20 Schabenköniginnen erlegt
+de.kdd1.txt,achDesc30,15 Schabeneier erledigt
+de.kdd1.txt,achDesc31,15 Stieraugen zerhackt
+de.kdd1.txt,achDesc32,5 Fledergeister bezwungen
+de.kdd1.txt,achDesc33,Eine Schaltkugel drei aufeinanderfolgende Züge lang gehauen
+de.kdd1.txt,achDesc34,5 grüne Tore geöffnet
+de.kdd1.txt,achDesc35,Insgesamt 2500 Monster getötet
+de.kdd1.txt,achDesc36,Insgesamt 50 Mal gestorben
+de.kdd1.txt,achDesc37,Insgesamt 250 Züge zurückgenommen
+de.kdd1.txt,achDesc38,Insgesamt 100 Falltüren ausgelöst
+de.kdd1.txt,achDesc39,Insgesamt 5000 Schritte gegangen
+de.kdd1.txt,outro,"Was steht Beethro als nächstes bevor? Werden die Gefahren noch gefährlicher werden? Wird er König Dugans Kerker komplett entmonstern und endlich seine Bezahlung einfordern können?
+
+<font size=""32"" color=""#FFFF00"">Gut gemacht!!</font>
+
+Sie haben die erste Episode der Feste Deadly Rooms of Death, King Dugan's Dungeon Lite abgeschlossen. Ich hoffe sehr, dass Sie dabei Ihren Spaß hatten.
+Jetzt, da Sie die letzte Treppe in dieser Levelsammlung hinabgestiegen sind, wollen Sie vielleicht versuchen, dieses Spiel zu meistern oder gar zu übermeistern. Wenn Sie das möchten, dann suchen Sie nach geheimen Räumen! Ab jetzt können Sie im ""Anderen Raum laden""-Menü für jeden Level nachsehen, wie viele Geheimräume noch zu finden bleiben.
+Wenn Sie auch diese Räume alle gelöst haben, erhalten Sie Zugang zu einem speziellen Bereich nur für Meister-Kammerjäger. Finden Sie den Eingang?
+Vielleicht wollen Sie aber auch mit dem nächsten Abschnitt von König Dugans Kerker fortfahren.
+
+Bevor ich Sie nun der wohligen Wärme des Erfolgs überlasse, möchte ich einigen Leuten danken, ohne die dieses Spiel niemals fertig geworden wäre:
+
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - Der Erschaffer, geistige Vater und Erfinder von DROD. Ohne ihn wäre dieses einzigartige Spielprinzip wohl nie erfunden worden.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - Er hat die Spiele DROD: JtRH und DROD: TCB beinahe im Alleingang programmiert. Dank seiner soliden Arbeit war die Umsetzung von DROD in Flash für mich ein reines Vergnügen.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Der Große Anführer des Caravel-Forums und Hauptentwickler von CaravelNet. Dank ihm können Sie Ihre Ergebnisse online mit anderen vergleichen, und vieles mehr!
+
+
+<font size=""23"" color=""#FFFF00"">Programmierung und Entwicklung</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Grafik und Musik</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Serverprogrammierung</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Leveldesign</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Haupttester</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Tester</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Übersetzungen</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Stimmen</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Konzept, Original-Programm und -Levels</font> - %%
+
+
+Bis zum nächsten Mal!
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+de.kdd1.txt,complNextGame,"Spielen Sie die nächste Levelsammlung: KDD Lite 2. Ein neues Fenster wird sich dafür öffnen. Dieses Fenster hier können Sie unbesorgt schließen, Ihr Fortschritt wurde gespeichert."
+de.kdd1.txt,scNew1,"Beobachten Sie genau, was während des Eiablage-Zugs geschieht."
+de.kdd1.txt,scNew2,"Eier erscheinen nie auf Falltüren, Pfeilen und offenen gelben Türen."
+de.kdd1.txt,scNew3,"Und wenn eine Königin sich im Eiablage-Zug bewegt, erscheint kein Ei auf dem Feld, von dem Sie sich gerade wegbewegt hat."
+de.kdd1.txt,sc1_New1N1W,"Ich weiss nicht, ob Sie's wussten: Königinnen fliehen vor Ihnen und legen keine Eier auf offene gelbe Türen."
+de.kdd1.txt,sc1_New3N1,"Schabenköniginnen legen alle 30 Züge Eier (im Zug, nachdem der Zugzähler rot wird)."
+de.kdd1.txt,sc1_New3N2,Eier reifen über fünf Züge zu ausgewachsenen Schaben heran.
+de.kdd1.txt,sc1_New3E,Schabenköniginnen rennen immer vor Beethro weg. Dieses Verhalten kann man für sich nutzen.
+de.kdd1.txt,sc1_new6n2w1,Gerissene Mauern und Geheimwände lassen sich genau gleich mit dem Schwert durchbrechen.
+de.kdd1.txt,sc1_new6n2w2,Geheimwände sind aber schwerer zu entdecken.
+de.kdd1.txt,sc1_new6n2w3,"Übersehen Sie also nicht die hier in der Ecke, wenn Sie noch mal zurückkommen."
+de.kdd1.txt,sc1_5n1w3,"Dieses Spiel ist völlig zufallsunabhängig. Nichts geschieht mal so, mal so."
+de.kdd1.txt,sc1_new6N,"Um die Feste zu meistern, müssen Sie alle Geheimnisse erobern - aber nicht unbedingt in einem einzigen Durchgang."
+de.kdd1.txt,sc_evileyes,"Auf diesem Level werden Sie den Stieraugen begegnen. Wenn Sie in ihr Gesichtsfeld treten, erwachen sie und jagen Sie, gleich wie die Schaben."
+de.kdd1.txt,defCont,Standard-Tastenbelegung:
+de.kdd1.txt,sc_diago,"Sie können sich diagonal bewegen, auch durch sehr enge Gänge."
+de.kdd1.txt,sc_broken,Zerschlagen Sie diese gerissenen und geheimen Mauern mit Ihrem Schwert.
+de.kdd1.txt,sc_queens1,"Schabenköniginnen legen alle 30 Züge Eier (im Zug, nachdem der Zugzähler rot wird)."
+de.kdd1.txt,sc_queens2,Eier reifen über fünf Züge zu ausgewachsenen Schaben heran.
+de.kdd1.txt,sc_queens3,"Auf Pfeilen, Falltüren und gelben Toren erscheinen keine Eier. Mit der Taste ""I"" oder der 5 im Ziffernblock warten Sie einen Zug."
+de.kdd1.txt,sc_mimics,"Wenn Sie auf einen Imitat-Trank treten, wählen Sie mit der Maus oder der Warten-Taste den Ort, wo das Imitat erscheinen soll."
+de.kdd1.txt,sc_shiftwait,Mit Umschalt-Warten können Sie automatisch bis zur nächsten Eiablage warten.
+de.kdd1.txt,sp_mother1,Alle dreissig Züge lassen Teermütter ihren Teerfleck um ein Feld in jeder Richtung wachsen.
+de.kdd1.txt,sp_mother2,"Es ist eigentlich ungefährlich, vom wachsenden Teer eingeschlossen zu werden, aber Vorsicht vor beim Wachsen entstehenden Teerbabies."
+de.kdd1.txt,sc_backswipe,"Folgen Sie dem Sandpfad, um die Durchgangshieb-Technik zu lernen! Nutzen Sie diagonale Bewegungen, und schwingen Sie Ihr Schwert nicht."
+de.kdd1.txt,sc_trapdoors,"Diese rosa-violetten Felder sind Falltüren. Sie fallen in die Tiefe, sobald Sie oder ein Imitat davon hinabtreten."
+de.kdd2.txt,Fifth Level,Fünfter Level
+de.kdd2.txt,Sixth Level,Sechster Level
+de.kdd2.txt,Seventh Level,Siebenter Level
+de.kdd2.txt,Eighth Level,Achter Level
+de.kdd2.txt,Mastery Level,Meister-Level
+de.kdd2.txt,Tutorial,Übungsbereich
+de.kdd2.txt,entr5,"Beethro Budkin, professioneller Kerkerjäger der fünften Generation, wurde von König Dugan angestellt um den weitläufigen königlichen Kerker von einem erheblichen Monsterbefall zu befreien.
+Beethro veranschlagt einen Festbetrag pro Raum, und als Profi ist er per Vertrag daran gebunden, die Monster aus ausnahmslos jedem Raum des Kerkers zu beseitigen, bevor er ausbezahlt wird.
+Die einzige Waffe, die Beethro benötigt um seine Aufgabe zu erfüllen, ist ein echt großes Schwert, welches jedes Monster mit einem einzigen Schlag vernichtet.
+
+-----
+
+Die letzte Ebene brachte Beethro ins Schwitzen. „Ich schätze, das wird letztendlich doch noch harte Arbeit.“ Glücklicherweise wehte eine kalte Brise von der nächsten Ebene hoch."
+de.kdd2.txt,entr6,"Vielleicht hatte sich der Architekt des Stockwerks zu große Mühe gegeben, um seine Idee rüberzubringen, was auch immer seine Idee war. In jedem Fall kann man dankbar dafür sein, dass es in Dugans Kerker keine anderen Etagen wie diese gibt."
+de.kdd2.txt,entr6Back,"Beethro kam zurück, um jene einwandfreie Totschlag-Arbeit abzuliefern, für die er engagiert wurde."
+de.kdd2.txt,entr7,"Während Beethro die Treppe hinabstieg, hörte er ein lautes Zischen. Als erfahrener Fachmann wusste er auf Anhieb worum es sich handelte, war jedoch trotzdem erschrocken von der schieren Größe. „Jesses! Wie viele von diesen ekligen Dingern gibt es dort unten?“"
+de.kdd2.txt,entr8,"Einige Monster sind gerissen und tödlich, und bei anderen ist es einfach nur eine fürchterliche Qual sie zu beseitigen."
+de.kdd2.txt,entrMaster,"Beethro stieg die Stufen hinab, einzig dafür um einen nicht verzeichneten Verbindungsgang vorzufinden...
+
+Er würde nicht für die Säuberung hier bezahlt werden, aber seine Berufsehre drängte ihn vorwärts."
+de.kdd2.txt,entrTut,Übungsbereich
+de.kdd2.txt,entrTutLeave,"Beethro verließ den Übungsbereich, reich an neuem Wissen."
+de.kdd2.txt,entrPremaster,"Beethro stolperte über eine Reihe von schwach beleuchteten Treppenabschnitten und stolperte selbige auch just hinauf und hinunter. „Das ist ein Sicherheitsrisiko, und dabei gibt es hier noch nicht einmal Schaben! Jemand sollte zumindest einen Handlauf befestigen oder s-“, dachte Beethro bevor er zwölf Treppenfluchten hinunterfiel und sich selbst für eine geschlagene Stunde außer Gefecht setzte. Nachdem er fürchterlich schaurige Träume über Augapfelmus hatte, erwachte Beethro noch immer benommen in einem Raum. „Schande! Ist es zu viel verlangt, diese Orte auch nur ein einziges Mal auf der Karte verzeichnet zu haben?“"
+de.kdd2.txt,sc51n2w,Ich hoffe Ihr habt Euch einen Weg zurück gelassen.
+de.kdd2.txt,sc63e,Geheimer Durchgang
+de.kdd2.txt,sc61s1w,"Dies ist eine Meistertür.
+Sie wird sich öffnen wenn Sie die letzte Ebene beendet und außerdem alle geheimen Räume erobert haben."
+de.kdd2.txt,sc72n1w,"Jene mit schwachem Verstand, kehrt um! Dieser Raum kann nur mit meisterhaften Intellekt gelöst werden.
+(Dieser Raum wird nicht gefordert.)"
+de.kdd2.txt,sc71n1,"Ich hätte nicht gedacht, dass Ihr bei dem letzten dahinterkommen würdet."
+de.kdd2.txt,sc71n2,"Okay, ich gebe zu es ist nicht EXAKT dasselbe wie Lichtrenner.
+
+-Erik"
+de.kdd2.txt,sc71n3,"Meine Ehrung an Tron.
+
+-Erik"
+de.kdd2.txt,sc81s1,Dem lebenden Teer kann nur an flachen Kanten Schaden zugefügt werden.
+de.kdd2.txt,sc81s2,"Jeder Blob, der nicht zumindest 2 Felder breit und hoch ist, ist höchst instabil und wird in Teerbabys auseinanderbrechen."
+de.kdd2.txt,sc81s3,Spielen Sie ruhig ein bisschen mit ihm herum.
+de.kdd2.txt,sc81s1e,"Ein weiser Mann wird zuerst den nördlichen Raum säubern, bevor er diesem Korridor folgt."
+de.kdd2.txt,sc83s,"Säubern Sie zunächst die südliche und westliche Passage bevor Sie diesen Weg verfolgen, um unnötige Wiederholungen zu vermeiden."
+de.kdd2.txt,scMe1,Schwierigere Versionen von vorherigen Rätseln.
+de.kdd2.txt,scMe2,Letzte Worte
+de.kdd2.txt,scMe3,Neue Rätsel.
+de.kdd2.txt,scM1s1,Sehr gut! Außer vielleicht einigen Errungenschaften sollten Sie alles in diesem Spiel vollendet haben.
+de.kdd2.txt,scM1s2,"Bitte akzeptieren Sie meine aufrichtigsten Glückwünsche, Sie haben eine ganz schöne Leistung vollbracht!"
+de.kdd2.txt,scM1s3,"Sie können die nächsten Episoden von KDDL und Downloads zu den vollwertigen DROD-Spielen für Windows, MacOS oder Linux auf caravelgames.com finden."
+de.kdd2.txt,scM1s4,Bleiben Sie in Form!
+de.kdd2.txt,scM1s5,Hier ist eine kleine Belohnung! Töten Sie alle Augen ohne auf das braune Gras zu treten.
+de.kdd2.txt,scM1s6,"Die zwei unteren Schabenköniginnen werden automatisch getötet, sobald Sie sich auf den Rücksetzpunkt in der ganz rechten Ecke bewegen."
+de.kdd2.txt,scM1s7,Herzlichen Glückwunsch!
+de.kdd2.txt,scT1,"Bewegen Sie sich ganz nach rechts und beachten Sie, wie sich die Schabe verhält, wenn sie diagonal auf eine Ecke läuft."
+de.kdd2.txt,scT2,"Schlangen bewegen sich nach ihren eigenen, komplexeren Regeln. Ihre gegenwärtige Präferenzrichtung ist unterhalb des Eiablage-Zählers angegeben."
+de.kdd2.txt,scT3,"Wenn sich ein DROD-Monster diagonal in ein Eckhindernis bewegt, gleitet es mit Vorliebe vertikal am Hindernis vorbei, wenn dies möglich ist."
+de.kdd2.txt,scT4,"`Escape` öffnet ein Pausenmenü, in dem Sie unter dem Punkt `Allgemeine Hilfe` jederzeit die Steuerung nachschlagen können."
+de.kdd2.txt,scT5,"Um zu verhindern, dass Sie versehentlich den Raum verlassen, drücken Sie X um ihn zu ver- und entriegeln. Ein kleines Schloss auf der Übersichtskarte zeigt an, ob ein Raum verriegelt ist."
+de.kdd2.txt,scT6,"Umschalt+Tasten-druck führt die Aktion der Taste und dessen Umkehraktion aus.
+Umschalt+Warten wartet bis zur nächsten Eiablage.
+ZB '+' oder '=' führt die Umkeh-rung Ihres vor-herigen Zugs aus."
+de.kdd2.txt,scT7,"F3 zeigt einen Bewegungszähler an, der Ihnen dabei hilft, die Spielzüge für bessere Ergebnisse zu optimieren."
+de.kdd2.txt,scT8,Alle Tastenbelegungen können in den Spieloptionen geändert werden.
+de.kdd2.txt,scT9,"Wenn Sie kein CaravelNet-Abo besitzen, werden Ihre Ergebnisse nicht in der Rangliste veröffentlicht, aber Sie erfahren, welchen Platz Sie erlangt hätten."
+de.kdd2.txt,scT10,"Klicken Sie auf Elemente um zu erfahren, was Schaltkugeln verändern und was Stieraugen sehen."
+de.kdd2.txt,scT11,Die Leertaste entfernt alle Sprachabschnitte und eingeblendeten Errungenschaften vom Bildschirm.
+de.kdd2.txt,scT13,"Anders als eine Schabe hält ein Fledergeist Abstand von Beethro und versucht, fünf Schritte von ihm entfernt zu bleiben."
+de.kdd2.txt,scT14,"Zu mehreren sind sie allerdings nicht so scheu, und sie greifen sofort an, wenn sie ihr Opfer umzingelt haben."
+de.kdd2.txt,sc1_6n3w1,"Verwenden Sie den Durchgangshieb, um diese Schabe zu besiegen."
+de.kdd2.txt,sc1_6n3w2,"Stellen Sie sich auf den grünen Boden und stellen Sie sicher, dass sich die Schabe auf dem Sandfeld direkt nördlich von Ihnen befindet..."
+de.kdd2.txt,sc1_6n3w3,"Stellen Sie sich auf den grünen Boden und stellen Sie sicher, dass sich die Schabe auf dem Sandfeld direkt südlich von Ihnen befindet..."
+de.kdd2.txt,sc1_6n3w4,...dann bewegen Sie sich nach Nordosten um sie zu töten.
+de.kdd2.txt,sc1_6n3w5,...dann bewegen Sie sich nach Südosten um sie zu töten.
+de.kdd2.txt,sc1_6n3w6,"Wiederholen Sie die Prozedur, um den Durchgangshieb zu analysieren. Meistern Sie diese Technik, denn sie wird sich bei Ihrem weiteren Unterfangen als unverzichtbar herausstellen."
+de.kdd2.txt,sp5e1,"Hier lang geht's zum Übungsbereich."
+de.kdd2.txt,sp5e2,"Besuchen Sie ihn, wenn Sie dieses Spiel noch nicht kennen."
+de.kdd2.txt,sp5e3,"Bewegen Sie sich mit dem Ziffernblock oder 789, UIO, JKL"
+de.kdd2.txt,sp52n1,"Hier aufzuräumen, ohne dass sich eine der Türen öffnet, damit könnte man schon angeben."
+de.kdd2.txt,sp52n2,"Ha! Unsorgfältige Kerkerplanung ist das, mit diesen unnötigen Schaltkugeln."
+de.kdd2.txt,sp51n2w1,"Ay, da seh' sich einer all die Stieraugen an!"
+de.kdd2.txt,sp51n2w2,"Ah! Mich schauert's immer noch, wenn eines davon erwacht."
+de.kdd2.txt,sp63e,Das hat hier wohl Methode ...
+de.kdd2.txt,sp63n,"Das kenn' ich doch von irgendwo ..."
+de.kdd2.txt,sp63w,"Dugan täte gut daran, mich für jeden dieser Räume einzeln zu bezahlen."
+de.kdd2.txt,sp72n1w1,Herr Zebus! Die Panzerschlange da muss so um die tausendvierhundertfünfundvierzig Fuß lang sein.
+de.kdd2.txt,sp72n1w2,"Aber laut Vertrag bin ich nicht verpflichtet, mich um Monster über tausendvierhundertvierundvierzig Fuß Körperlänge zu kümmern."
+de.kdd2.txt,sp72n1w3,Ich könnte jetzt diesen Raum auch einfach sein lassen.
+de.kdd2.txt,sp71n1e1,Mein Schwert hobelt dem Schleichkerl da nicht einmal eine Schuppe ab.
+de.kdd2.txt,sp71n1e2,"Aber wenn ich ihn in eine Sackgasse führen kann, bin ich ihn los."
+de.kdd2.txt,sp84s1,Jetzt auch noch Teermütter? Warum immer ich?
+de.kdd2.txt,sp83s1e,Ich kann Teermütter nicht ausstehen.
+de.kdd2.txt,sp82s2e,"Vorsichtig jetzt ... wenn der Teer den Durchgang dort füllt, komme ich nicht mehr durch!"
+de.kdd2.txt,sp84s3e1,"Na, egal. Los jetzt!"
+de.kdd2.txt,sp84s3e2,Und hier noch eine Wand ...
+de.kdd2.txt,sp84s3e3,"Gut, gut. Wenn's weiter so läuft, dann haben wir den Plan dieser Ebene in ein Paar Minuten aufgenommen."
+de.kdd2.txt,sp84s3e4,"Hörst du das? Die Teerbehörde! Schnell, verstecken!"
+de.kdd2.txt,sp84s3e5,Aaah! Beinahe hätte ich die Karte verloren!
+de.kdd2.txt,sp84s3e6,Warte mal! Ist die Karte jetzt richtig rum?
+de.kdd2.txt,sp85s2e1,Dieser Raum ... kommt mir ... irgendwie ... bekannt vor.
+de.kdd2.txt,sp85s2e2,Das macht mich ... wütend ... und frustriert!
+de.kdd2.txt,sp86s3e,"Mist ... ich hoffe, hier gibt's keine billigen Tricks wie zum Beispiel Räume, die irgendwo hinter Geheimmauern versteckt sind!"
+de.kdd2.txt,sp88s3e1,"Potz Klotz ... von diesem Raum bekomm' ich noch Alpträume!"
+de.kdd2.txt,sp88s3e2,Nie wieder ... nie wieder ...
+de.kdd2.txt,spM1s,Ihr habt versagt ...
+de.kdd2.txt,spT2,Schwingen Sie Ihr Schwert mit `Q` und `W`.
+de.kdd2.txt,spT3,Gehen Sie jetzt und hauen Sie die Schaltkugel mit dem Schwert.
+de.kdd2.txt,spT4,"Schaltkugeln können die verbundenen Türen auf drei Arten beeinflussen: sie immer öffnen, sie immer schließen, oder hin- und her schalten."
+de.kdd2.txt,spT5,"Klicken Sie mit der Maus auf eine Schaltkugel, um zu sehen, welche Türen sie beeinflusst, und wie."
+de.kdd2.txt,spT6,"Ihr Ziel in DROD ist es, jeden Level von allen Monstern zu befreien."
+de.kdd2.txt,spT7,"Hauen Sie die Schabe mit dem Schwert, um sie zu töten."
+de.kdd2.txt,spT8,Richtungspfeile versperren den Weg in die entgegengesetzte Richtung.
+de.kdd2.txt,spT9,"Treten Sie auf den Rücksetzpunkt. Wenn Sie sterben oder mit der Taste `R` neu starten, kehren Sie zu dem Spielzug zurück, als Sie darauftraten."
+de.kdd2.txt,spT10,"Wenn Sie sterben oder in der Klemme sitzen, können sie mit der Rücktaste bis zu drei Züge zurücknehmen."
+de.kdd2.txt,spT11,"Mit diesem Trank können Sie ein Imitat einsetzen. Imitate ahmen jeden Ihrer Züge nach. Sie bewegen sich sofort nach Ihnen, vor allen Monstern."
+de.kdd2.txt,spT12,"Setzen Sie das Imitat auf die Stelle, die mit dem Rücksetzpunkt markiert ist. Lösen Sie mit dem Imitat alle Falltüren aus, und das rote Tor wird sich öffnen."
+de.kdd2.txt,spT13,"Gratuliere, Sie haben den Raum gelöst!"
+de.kdd2.txt,spT14,"Wenn Sie den Raum verlassen, wird Ihr Erfolg gespeichert. Sie werden Ihr bestes Resultat für diesen Raum sehen, und auch wie es im Vergleich mit anderen Spielern auf der Rangliste dasteht."
+de.kdd2.txt,spT15,"Wenn Sie gültige Benutzerangaben für ein Caravel-Forenkonto angegeben haben, fliesst auch Ihre Bestleistung in die Rangliste ein."
+de.kdd2.txt,spT16,"Ihr Ergebnis bleibt zwei Wochen auf der Rangliste, außer, wenn Sie ein zahlender CaravelNet-Abonnent sind. In jenem Fall bleiben Ihre Ergebnisse permanent gespeichert."
+de.kdd2.txt,spT17,Sie können den Einführungsraum jetzt verlassen.
+de.kdd2.txt,achName0,Zeig mir den Meister
+de.kdd2.txt,achName1,Ostpol
+de.kdd2.txt,achName2,Ordnung
+de.kdd2.txt,achName3,Unkugelig
+de.kdd2.txt,achName4,Ruhende Hände
+de.kdd2.txt,achName5,Völlig offensichtlich
+de.kdd2.txt,achName6,Fledergeist-Flüsterer
+de.kdd2.txt,achName7,Kontrolliertes Imitieren
+de.kdd2.txt,achName8,Kann Gelb nicht ausstehen
+de.kdd2.txt,achName9,Un-diagonal
+de.kdd2.txt,achName10,Bewegungslose Hände
+de.kdd2.txt,achName11,Krrrrriecher
+de.kdd2.txt,achName12,Hände in Stein gemeißelt
+de.kdd2.txt,achName13,Meisterhafter Intellekt
+de.kdd2.txt,achName14,Hinterrücks
+de.kdd2.txt,achName15,Teer-Techniker
+de.kdd2.txt,achName16,Schwert aufs Auge
+de.kdd2.txt,achName17,Der Ninja
+de.kdd2.txt,achName18,Amateur-Absteiger
+de.kdd2.txt,achName19,Totschläger-Geselle
+de.kdd2.txt,achName20,Kammerjäger auf Abruf
+de.kdd2.txt,achName21,Ich bin vom Fach!
+de.kdd2.txt,achName22,Meisterschaft
+de.kdd2.txt,achName23,Über-Meisterschaft
+de.kdd2.txt,achName24,Frittierte Königinnen
+de.kdd2.txt,achName25,Eier al dente
+de.kdd2.txt,achName26,Augengelee
+de.kdd2.txt,achName27,Geröstete Fledergeister
+de.kdd2.txt,achName28,Panzer-schlangen-Sushi
+de.kdd2.txt,achName29,Stimmgabel
+de.kdd2.txt,achName30,Nieder mit den Grünen!
+de.kdd2.txt,achName31,Schwarm-Brecher
+de.kdd2.txt,achName32,Unsterblich
+de.kdd2.txt,achName33,Riss im Raum-Zeit-Kontinuum
+de.kdd2.txt,achName34,Fliesenlöser
+de.kdd2.txt,achName35,Marathon-Meister
+de.kdd2.txt,achDesc0,Die Meister-Mauer gefunden
+de.kdd2.txt,achDesc1,1W im fünften Level gelöst und dabei die ganze Zeit nach Osten geschaut
+de.kdd2.txt,achDesc2,Beim selben Besuch 1N 2W im fünften Level gelöst und alle Falltüren ausgelöst
+de.kdd2.txt,achDesc3,"2N im fünften Level gelöst, ohne eine Schaltkugel zu schlagen"
+de.kdd2.txt,achDesc4,"1S im fünften Level gelöst, ohne das Schwert zu schwingen"
+de.kdd2.txt,achDesc5,"2S im fünften Level gelöst, ohne den Unsichtbarkeitstrank zu trinken"
+de.kdd2.txt,achDesc6,Die Schaltkugel zum Lösen von 3O im fünften Level nicht verwendet
+de.kdd2.txt,achDesc7,"1S 1W im fünften Level gelöst, ohne den markierten Bereich zu verlassen"
+de.kdd2.txt,achDesc8,"2S 2O im fünften Level gelöst, ohne auf offene gelbe Türen zu treten"
+de.kdd2.txt,achDesc9,In 1S des siebten Levels nicht diagonal bewegen
+de.kdd2.txt,achDesc10,Sich beim Lösen von 1O im siebten Level nicht drehen
+de.kdd2.txt,achDesc11,Die Schlange vor dem Ableben irgendeiner Schabe in 1N 2O des siebten Levels töten
+de.kdd2.txt,achDesc12,Rotieren Sie in 3N 1O des siebten Levels ihr Schwert nicht
+de.kdd2.txt,achDesc13,Den Raum für meisterhaften Intellekt lösen (2N 1W im siebten Level)
+de.kdd2.txt,achDesc14,"4S 3O gelöst, ohne den Imitattrank zu trinken"
+de.kdd2.txt,achDesc15,Einen beliebigen Raum im achten Level völlig von Teer befreit
+de.kdd2.txt,achDesc16,"Eine Teermutter getötet, bevor sie zum Wachsen kommt"
+de.kdd2.txt,achDesc17,"Einen Raum mit Stieraugen gelöst, ohne ein einziges von ihnen aufzuwecken"
+de.kdd2.txt,achDesc18,Den fünften Level gelöst
+de.kdd2.txt,achDesc19,Den sechsten Level gelöst
+de.kdd2.txt,achDesc20,Den siebsten Level gelöst
+de.kdd2.txt,achDesc21,Den achten Level gelöst
+de.kdd2.txt,achDesc22,Die Feste gemeistert
+de.kdd2.txt,achDesc23,Die Feste übermeistert
+de.kdd2.txt,achDesc24,20 Schabenköniginnen erlegt
+de.kdd2.txt,achDesc25,15 Schabeneier erledigt
+de.kdd2.txt,achDesc26,15 Stieraugen zerhackt
+de.kdd2.txt,achDesc27,5 Fledergeister bezwungen
+de.kdd2.txt,achDesc28,10 Panzerschlangen totgetrieben
+de.kdd2.txt,achDesc29,Eine Schaltkugel drei aufeinanderfolgende Züge lang gehauen
+de.kdd2.txt,achDesc30,5 grüne Tore geöffnet
+de.kdd2.txt,achDesc31,Insgesamt 2500 Monster getötet
+de.kdd2.txt,achDesc32,Insgesamt 70 Mal gestorben
+de.kdd2.txt,achDesc33,Insgesamt 350 Züge zurückgenommen
+de.kdd2.txt,achDesc34,Insgesamt 200 Falltüren ausgelöst
+de.kdd2.txt,achDesc35,Insgesamt 7000 Schritte gegangen
+de.kdd2.txt,outro,"Teer war keines der Dinge, die Beethro erwartet hatte. Oder antreffen wollte. Doch während er die Treppen in das neunte Stockwerk hinabsteigt, ist er sich einer Sache sicher - er kann diese schleimige Substanz dort nicht riechen. Aber was wenn dort an Stelle dessen etwas viel Schlimmeres wartet?
+
+
+<font size=""32"" color=""#FFFF00"">Glückwünsche!</font>
+
+Sie haben die zweite Episode der Feste Deadly Rooms of Death, King Dugan's Dungeon Lite abgeschlossen. Ich hoffe aufrichtig, dass Sie die Erfahrung unterhaltsam fanden.
+Jetzt, da Sie die letzte Treppe in dieser Levelsammlung hinabgestiegen sind, wollen Sie vielleicht versuchen, dieses Spiel zu meistern oder gar zu übermeistern. Wenn Sie das möchten, dann suchen Sie nach geheimen Räumen! Ab jetzt können Sie im ""Anderen Raum laden""-Menü für jeden Level nachsehen, wie viele Geheimräume noch zu finden bleiben.
+Wenn Sie auch diese Räume alle gelöst haben, erhalten Sie Zugang zu einem speziellen Bereich nur für Meister-Kammerjäger. Finden Sie den Eingang?
+Vielleicht wollen Sie aber auch mit dem nächsten Abschnitt von König Dugans Kerker fortfahren.
+
+Bevor ich Sie nun der wohligen Wärme des Erfolgs überlasse, möchte ich einigen Leuten danken, ohne die dieses Spiel niemals fertig geworden wäre:
+
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - Der Erschaffer, geistige Vater und Erfinder von DROD. Ohne ihn wäre dieses einzigartige Spielprinzip wohl nie erfunden worden.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - Er hat die Spiele DROD: JtRH und DROD: TCB beinahe im Alleingang programmiert. Dank seiner soliden Arbeit war die Umsetzung von DROD in Flash für mich ein reines Vergnügen.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Der Große Anführer des Caravel-Forums und Hauptentwickler von CaravelNet. Dank ihm können Sie Ihre Ergebnisse online mit anderen vergleichen, und vieles mehr!
+
+
+<font size=""23"" color=""#FFFF00"">Programmierung und Entwicklung</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Grafik und Musik</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Serverprogrammierung</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Leveldesign</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Haupttester</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Tester</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Übersetzungen</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Stimmen</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Konzept, Original-Programm und -Levels</font> - %%
+
+
+Bis zum nächsten Mal!
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+de.kdd2.txt,complNextGame,"Spielen Sie die nächste Levelsammlung: KDD Lite 3. Ein neues Fenster wird sich dafür öffnen. Dieses Fenster hier können Sie unbesorgt schließen, Ihr Fortschritt wurde gespeichert."
+de.kdd2.txt,sp_new71e1,Diese Augen hätte man völlig ohne Drehung sauber zerteilen können. Echt jetzt!
+de.kdd2.txt,sp_new71e2,"Ha! Das war nun aber effizient! Ich kann's kaum erwarten, der Hackmeistergilde von dieser Leistung zu erzählen!"
+de.kdd2.txt,defCont,Standard-Tastenbelegung:
+de.kdd2.txt,sc_diago,"Sie können sich diagonal bewegen, auch durch sehr enge Gänge."
+de.kdd2.txt,sc_broken,Zerschlagen Sie diese gerissenen und geheimen Mauern mit Ihrem Schwert.
+de.kdd2.txt,sc_queens1,"Schabenköniginnen legen alle 30 Züge Eier (im Zug, nachdem der Zugzähler rot wird)."
+de.kdd2.txt,sc_queens2,Eier reifen über fünf Züge zu ausgewachsenen Schaben heran.
+de.kdd2.txt,sc_queens3,"Auf Pfeilen, Falltüren und gelben Toren erscheinen keine Eier. Mit der Taste ""I"" oder der 5 im Ziffernblock warten Sie einen Zug."
+de.kdd2.txt,sc_mimics,"Wenn Sie auf einen Imitat-Trank treten, wählen Sie mit der Maus oder der Warten-Taste den Ort, wo das Imitat erscheinen soll."
+de.kdd2.txt,sc_shiftwait,Mit Umschalt-Warten können Sie automatisch bis zur nächsten Eiablage warten.
+de.kdd2.txt,sp_mother1,Alle dreissig Züge lassen Teermütter ihren Teerfleck um ein Feld in jeder Richtung wachsen.
+de.kdd2.txt,sp_mother2,"Es ist eigentlich ungefährlich, vom wachsenden Teer eingeschlossen zu werden, aber Vorsicht vor beim Wachsen entstehenden Teerbabies."
+de.kdd2.txt,sc_backswipe,"Folgen Sie dem Sandpfad, um die Durchgangshieb-Technik zu lernen! Nutzen Sie diagonale Bewegungen, und schwingen Sie Ihr Schwert nicht."
+de.kdd2.txt,sc_trapdoors,"Diese rosa-violetten Felder sind Falltüren. Sie fallen in die Tiefe, sobald Sie oder ein Imitat davon hinabtreten."
+de.kdd3.txt,Ninth Level,Neunter Level
+de.kdd3.txt,Tenth Level,Zehnter Level
+de.kdd3.txt,Eleventh Level,Elfter Level
+de.kdd3.txt,Twelfth Level,Zwölfter Level
+de.kdd3.txt,Mastery Level,Meister-Level
+de.kdd3.txt,Tutorial,Übungsbereich
+de.kdd3.txt,entr9,"Beethro Budkin, professioneller Kerkerjäger der fünften Generation, wurde von König Dugan angestellt um den königlichen weitläufigen Kerker von einem erheblichen Monsterbefall zu befreien.
+Beethro veranschlagt einen Festbetrag pro Raum, und als Profi ist er per Vertrag daran gebunden, die Monster aus ausnahmslos jedem Raum des Kerkers zu beseitigen, bevor er ausbezahlt wird.
+Die einzige Waffe, die Beethro benötigt um seine Aufgabe zu erfüllen, ist ein echt großes Schwert, welches jedes Monster mit einem einzigen Schlag vernichtet.
+
+-----
+
+Beethro setzte sich unten auf die Stufen, um zu verschnaufen. Er zog drei Flaschen aus seinem Rucksack. Die Zehn-Tassen-Flasche war randvoll mit erfrischendem Blattsaft gefüllt, und die anderen zwei Flaschen, welche Zwei-Tassen- und Fünf-Tassen-Maße hatten, waren leer. Beethro wollte exakt vier Tassen Blattsaft in einem ununterbrochenen Schluck trinken. Er fing an, mit den Flaschen herumzuhantieren, goss Saft von einer in die andere und wieder zurück, doch nach einer Weile gab er auf.  „Das ist zu viel Arbeit! Ich lass' es sein!“"
+de.kdd3.txt,entr10,"Wie viele erfahrene Kerkerjäger wissen, verweilen hier unten einige Tierchen die in der Lage sind, sich der Umgebung optisch anzugleichen."
+de.kdd3.txt,entr11,"Beim Erhaschen eines flüchtigen Blicks in den vor ihm liegenden Raum grunzte Beethro vor Missbilligung. „Ich weiß nicht wie, aber der Teer bleibt immer auf diese Weise übrig, und ich hasse es.“"
+de.kdd3.txt,entr12,"Beethro hörte erneut lautes Zischen von unten und wusste, dass er Panzerschlangen zu erwarten hatte. Aber dieses Mal war der Ton leicht anders, und er hielt für einen Moment inne um zu horchen und zu beurteilen, was vor ihm lag. „Du meine Güte! Diese Schuppenwürste müssen sich hier unten eine elendig schrecklich lange Zeit aufgehalten haben, mit einigen fetten Speisen zwischendurch.“"
+de.kdd3.txt,entr12Back,"Beethro kam zurück, um jene einwandfreie Totschlag-Arbeit abzuliefern, für die er engagiert wurde."
+de.kdd3.txt,entrMaster,"Beethro stieg die Stufen hinab, einzig dafür um einen nicht verzeichneten Verbindungsgang vorzufinden...
+
+Er würde nicht für die Säuberung hier bezahlt werden, aber seine Berufsehre drängte ihn vorwärts."
+de.kdd3.txt,entrTutorial,Übungsbereich
+de.kdd3.txt,entrTutorialLeft,"Beethro verließ den Übungsbereich, reich an neuem Wissen."
+de.kdd3.txt,sc93n3e,"Seid Ihr Euch sicher, dass Ihr sie Euch in der richtigen Reihenfolge vornehmt?"
+de.kdd3.txt,sc94n3e,Die Reihenfolge ist der Schlüssel.
+de.kdd3.txt,sc10e,"Unsichtbar üble Spinnen lauern auf dieser Ebene. Nehmt Euch in Acht, denn sie sind kaum zu sehen."
+de.kdd3.txt,sc111s2e,Psst... Dieser Durchgang bringt Euch zur Treppe. Ihr solltet alle anderen Räume säubern bevor Ihr dort hingeht!
+de.kdd3.txt,sc121n1e1,"Wenn sich eine Schlange nach Westen bewegt und sie lieber horizontal geht, betreten Sie das Feld östlich ihres Kopfes um sie dazu zu zwingen, sich nach Norden zu bewegen."
+de.kdd3.txt,sc121n1e2,"Das klappt auch vertikal, aber die Schlange bevorzugt dann Ostwärts- bewegungen."
+de.kdd3.txt,sc12e,"Ihr Zähler gibt an, welche Richtung Schlangen bevorzugen. Dies hilft Ihnen, diese launischen Kreaturen zu kontrollieren."
+de.kdd3.txt,scMe1,Andere Rätsel
+de.kdd3.txt,scMe2,Letzte Worte
+de.kdd3.txt,scM1s1,Hierher zu gelangen ist eine sagenhafte Leistung!
+de.kdd3.txt,scM1s2,Na wie hat es Ihnen gefallen? Konnten Sie alle Errungenschaften einsacken?
+de.kdd3.txt,scM1s3,"Besuchen Sie auch gerne CaravelGames.com um weitere Episoden von KDDL spielen zu können oder die vollwertigen DROD-Spiele für Windows, MacOS oder Linux herunterzuladen."
+de.kdd3.txt,scM1s4,Bleiben Sie spielfreudig!
+de.kdd3.txt,scM1s5,Hier ist eine kleine Belohnung! Töten Sie alle Augen ohne auf das Gras zu treten.
+de.kdd3.txt,scM1s6,"Die Schabenköniginnen werden getötet, sobald Sie auf den Rücksetzpunkt in der ganz rechten Ecke treten."
+de.kdd3.txt,scM1s7,"Wirklich gut, gratuliere!"
+de.kdd3.txt,scT1,"Wussten Sie, dass sich Panzerschlangen nicht über Schriftrollen bewegen können?"
+de.kdd3.txt,scT2,"Bewegen Sie sich ganz nach rechts und beachten Sie, wie sich die Schabe verhält, wenn sie diagonal auf eine Ecke läuft."
+de.kdd3.txt,scT3,"Schlangen bewegen sich nach ihren eigenen, komplexeren Regeln. Ihre gegenwärtige Präferenzrichtung ist unterhalb des Eiablage-Zählers angegeben."
+de.kdd3.txt,scT4,"Wenn sich ein Monster diagonal in ein Eckhindernis bewegt, gleitet es mit Vorliebe vertikal am Hindernis vorbei, wenn dies möglich ist."
+de.kdd3.txt,scT5,"`Escape` öffnet ein Pausenmenü, in dem Sie unter dem Punkt `Allgemeine Hilfe` jederzeit die Steuerung nachschlagen können."
+de.kdd3.txt,scT6,"Um zu verhindern, dass Sie versehentlich den Raum verlassen, drücken Sie X um ihn zu ver- und entriegeln. Ein kleines Schloss auf der Übersichtskarte zeigt an, ob ein Raum verriegelt ist."
+de.kdd3.txt,scT7,"Umschalt+Tasten-druck führt die Aktion der Taste und dessen Umkehraktion aus.
+Umschalt+Warten wartet bis zur nächsten Eiablage.
+ZB '+' oder '=' führt die Umkeh-rung Ihres vor-herigen Zugs aus."
+de.kdd3.txt,scT8,"F3 zeigt einen Bewegungszähler an, der Ihnen dabei hilft, die Spielzüge für bessere Ergebnisse zu optimieren."
+de.kdd3.txt,scT9,Alle Tastenbelegungen können in den Spieloptionen geändert werden.
+de.kdd3.txt,scT10,"Wenn Sie kein CaravelNet-Abo besitzen, werden Ihre Ergebnisse nicht in der Rangliste veröffentlicht, aber Sie erfahren, welchen Platz Sie erlangt hätten."
+de.kdd3.txt,scT11,"Klicken Sie auf Elemente um zu erfahren, was Schaltkugeln verändern und was Stieraugen sehen."
+de.kdd3.txt,scT12,Die Leertaste entfernt alle Sprachabschnitte und eingeblendeten Errungenschaften vom Bildschirm.
+de.kdd3.txt,scT13,"Anders als eine Schabe hält ein Fledergeist Abstand von Beethro und versucht, fünf Schritte von ihm entfernt zu bleiben."
+de.kdd3.txt,scT14,"Zu mehreren sind sie allerdings nicht so scheu, und sie greifen sofort an, wenn sie ihr Opfer umzingelt haben."
+de.kdd3.txt,sc1_6n3w1,"Verwenden Sie den Durchgangshieb, um diese Schabe zu besiegen."
+de.kdd3.txt,sc1_6n3w2,"Stellen Sie sich auf den grünen Boden und stellen Sie sicher, dass sich die Schabe auf dem Sandfeld direkt nördlich von Ihnen befindet..."
+de.kdd3.txt,sc1_6n3w3,"Stellen Sie sich auf den grünen Boden und stellen Sie sicher, dass sich die Schabe auf dem Sandfeld direkt südlich von Ihnen befindet..."
+de.kdd3.txt,sc1_6n3w4,...dann bewegen Sie sich nach Nordosten um sie zu töten.
+de.kdd3.txt,sc1_6n3w5,...dann bewegen Sie sich nach Südosten um sie zu töten.
+de.kdd3.txt,sc1_6n3w6,"Wiederholen Sie die Prozedur, um den Durchgangshieb zu analysieren. Meistern Sie diese Technik, denn sie wird sich bei Ihrem weiteren Unterfangen als unverzichtbar herausstellen."
+de.kdd3.txt,sp9e1,Dies ist ein Übungsbereich.
+de.kdd3.txt,sp9e2,"Besuchen Sie ihn, wenn Sie dieses Spiel noch nicht kennen."
+de.kdd3.txt,sp9e3,"Bewegen Sie sich mit dem Ziffernblock oder 789, UIO, JKL"
+de.kdd3.txt,sp9e4,Du heiße Grillschabe! Endlich kein Teer mehr!
+de.kdd3.txt,sp91n1e,Das war einfach nur scheußlich. Vielleicht ist Teer gar nicht so übel ...
+de.kdd3.txt,sp94n4e1,"Ah-ha! Um Beethro reinzulegen, müsst ihr schon früher aufstehen!"
+de.kdd3.txt,sp94n4e2,Das finde ich jetzt nicht lustig.
+de.kdd3.txt,sp93n,"Hrm. Seltsame Tür, das. Da kann ich gar nicht durch."
+de.kdd3.txt,sp92n2e,Eine unpassierbare Tür. Was da wohl auf der anderen Seite liegt?
+de.kdd3.txt,sp11e1,"Und ich hasse es wirklich, wenn mir der Teer über den Kopf wächst ... da kann einem ja angst und bange werden."
+de.kdd3.txt,sp11e2,Gah! Der Teer hat die Wände überwachsen!
+de.kdd3.txt,sp11n1w,Hmm...es könnte schlechter laufen...wäre etwa eine Teermutter hier drin...
+de.kdd3.txt,sp11n2w1,Da habe ich mich wohl zu früh gefreut.
+de.kdd3.txt,sp11n2w2,"Sieht aus, als sei hier noch etwas anders in diesem Raum..."
+de.kdd3.txt,sp12e1,"Sachte, Beethro, sachte ..."
+de.kdd3.txt,sp12e2,Pfuh!
+de.kdd3.txt,sp12e3,Das gibt ein Paar tolle Steaks.
+de.kdd3.txt,sp121s2e1,Galoppierende Großgoblins!
+de.kdd3.txt,sp121s2e2,Seh sich einer die lange Schlange an!
+de.kdd3.txt,spM1s,Ihr habt Versagt ...
+de.kdd3.txt,spT2,Schwingen Sie Ihr Schwert mit `Q` und `W`.
+de.kdd3.txt,spT3,Gehen Sie jetzt und hauen Sie die Schaltkugel mit dem Schwert.
+de.kdd3.txt,spT4,"Schaltkugeln können die verbundenen Türen auf drei Arten beeinflussen: sie immer öffnen, sie immer schließen, oder hin- und her schalten."
+de.kdd3.txt,spT5,"Klicken Sie mit der Maus auf eine Schaltkugel, um zu sehen, welche Türen sie beeinflusst, und wie."
+de.kdd3.txt,spT6,"Ihr Ziel in DROD ist es, jede Ebene von allen Monstern zu befreien."
+de.kdd3.txt,spT7,"Hauen Sie die Schabe mit dem Schwert, um sie zu töten."
+de.kdd3.txt,spT8,Richtungspfeile versperren den Weg in die entgegengesetzte Richtung.
+de.kdd3.txt,spT9,"Treten Sie auf den Rücksetzpunkt. Wenn Sie sterben oder mit der Taste `R` neu starten, kehren Sie zu dem Spielzug zurück, als Sie darauftraten."
+de.kdd3.txt,spT10,"Wenn Sie sterben oder in der Klemme sitzen, können sie mit der Rücktaste bis zu drei Züge zurücknehmen."
+de.kdd3.txt,spT11,"Mit diesem Trank können Sie ein Imitat einsetzen. Imitate ahmen jeden Ihrer Züge nach. Sie bewegen sich sofort nach Ihnen, vor allen Monstern."
+de.kdd3.txt,spT12,"Setzen Sie das Imitat auf die Stelle, die mit dem Rücksetzpunkt markiert ist. Lösen Sie mit dem Imitat alle Falltüren aus, und das rote Tor wird sich öffnen."
+de.kdd3.txt,spT13,"Panzerschlangen können Sie mit Ihrem Schwert nicht verletzen. Sie schrumpfen sich aber zu Tode, wenn sie in einer Sackgasse feststecken."
+de.kdd3.txt,spT14,"Entfernen Sie den ganzen blauen Teer, um das Stierauge zuoberst zu erreichen."
+de.kdd3.txt,spT15,"Beachten Sie, dass Sie den Teer nur an den flachen Seiten einschneiden können. Jedes Feld Teer, welches nicht mehr stabil ist, verwandelt sich in ein Teerbaby."
+de.kdd3.txt,spT16,"Ein Feld mit Teer ist dann stabil, wenn es zu einem Quadrat von vier benachbarten Teer-Feldern gehört."
+de.kdd3.txt,spT17,"Gratuliere, Sie haben den Raum gelöst!"
+de.kdd3.txt,spT18,"Wenn Sie den Raum verlassen, wird Ihr Erfolg gespeichert. Sie werden Ihr bestes Resultat für diesen Raum sehen, und auch wie es im Vergleich mit anderen Spielern auf der Rangliste dasteht."
+de.kdd3.txt,spT19,"Wenn Sie gültige Benutzerangaben für ein Caravel-Forenkonto angegeben haben, fliesst auch Ihre Bestleistung in die Rangliste ein."
+de.kdd3.txt,spT20,"Ihr Ergebnis bleibt zwei Wochen auf der Rangliste, außer, wenn Sie ein zahlender CaravelNet-Abonnent sind. In jenem Fall bleiben Ihre Ergebnisse permanent gespeichert."
+de.kdd3.txt,spT21,Sie können den Einführungsraum jetzt verlassen.
+de.kdd3.txt,achName0,"Läuft wie'n Uhrwerk"
+de.kdd3.txt,achName1,"Uhrt wie'n Laufwerk"
+de.kdd3.txt,achName2,Verhedderte Hände
+de.kdd3.txt,achName3,Verschränkte Arme
+de.kdd3.txt,achName4,Verklebtes Schwert
+de.kdd3.txt,achName5,Einsamer Streiter
+de.kdd3.txt,achName6,Raffiniert
+de.kdd3.txt,achName7,Teer-Techniker
+de.kdd3.txt,achName8,Herr der Schlangen
+de.kdd3.txt,achName9,Solo für Schlangen-Beschwörer
+de.kdd3.txt,achName10,Geräuschloser Jäger
+de.kdd3.txt,achName11,Der Ninja
+de.kdd3.txt,achName12,Muttermord
+de.kdd3.txt,achName13,Amateur-Absteiger
+de.kdd3.txt,achName14,Totschläger-Geselle
+de.kdd3.txt,achName15,Kammerjäger auf Abruf
+de.kdd3.txt,achName16,Ich bin vom Fach!
+de.kdd3.txt,achName17,Meisterschaft
+de.kdd3.txt,achName18,Über-Meisterschaft
+de.kdd3.txt,achName19,Geröstete Schaben
+de.kdd3.txt,achName20,Königinpasteten
+de.kdd3.txt,achName21,Flambierte Eier
+de.kdd3.txt,achName22,Augensenf
+de.kdd3.txt,achName23,Fledergeist-Filet
+de.kdd3.txt,achName24,Panzer-schlangen-Rollen
+de.kdd3.txt,achName25,Stimmgabel
+de.kdd3.txt,achName26,Absteigendes Grün
+de.kdd3.txt,achName27,Kontrollierte Meute
+de.kdd3.txt,achName28,Wieder-belebungs-Künstler
+de.kdd3.txt,achName29,Herr der Zeit
+de.kdd3.txt,achName30,Bewahrer des Raums
+de.kdd3.txt,achName31,Endloser Läufer
+de.kdd3.txt,achDesc0,"4N 3O im neunten Level gelöst, ohne einen der markierten Bereiche mehr als einmal zu betreten"
+de.kdd3.txt,achDesc1,"3N 3O im neunten Level gelöst, ohne einen der markierten Bereiche mehr als einmal zu betreten"
+de.kdd3.txt,achDesc2,"1N 1O im zehnten Level gelöst, ohne das Schwert zu schwingen"
+de.kdd3.txt,achDesc3,Das Schwert in 1O im zehnten Level nicht geschwungen
+de.kdd3.txt,achDesc4,Beim Lösen von 1S 1W im zehnten Level das Schwert nicht geschwungen
+de.kdd3.txt,achDesc5,"1S im zehnten Level gelöst, ohne den Imitattrank zu trinken"
+de.kdd3.txt,achDesc6,1S 2O im elften Level in weniger als 150 Zügen gelöst
+de.kdd3.txt,achDesc7,Einen beliebigen Raum im elften Level völlig von Teer befreit
+de.kdd3.txt,achDesc8,"1S 2O im zwölften Level gelöst, ohne sich diagonal zu bewegen"
+de.kdd3.txt,achDesc9,"2S 1O im zwölften Level gelöst, ohne den Imitattrank zu trinken"
+de.kdd3.txt,achDesc10,Exakt ein Auge beim Lösen vom zwölften Level 1S aufgeweckt
+de.kdd3.txt,achDesc11,"Einen Raum mit Stieraugen gelöst, ohne ein einziges von ihnen aufzuwecken"
+de.kdd3.txt,achDesc12,"Eine Schabenkönigin getötet, während ihre Eier heranwachsen"
+de.kdd3.txt,achDesc13,Den neunten Level gelöst
+de.kdd3.txt,achDesc14,Den zehnten Level gelöst
+de.kdd3.txt,achDesc15,Den elften Level gelöst
+de.kdd3.txt,achDesc16,Den zwölften Level gelöst
+de.kdd3.txt,achDesc17,Die Feste gemeistert
+de.kdd3.txt,achDesc18,Die Feste übermeistert
+de.kdd3.txt,achDesc19,35 Schaben erschlagen
+de.kdd3.txt,achDesc20,20 Schabenköniginnen erlegt
+de.kdd3.txt,achDesc21,15 Schabeneier erledigt
+de.kdd3.txt,achDesc22,15 Stieraugen zerhackt
+de.kdd3.txt,achDesc23,5 Fledergeister bezwungen
+de.kdd3.txt,achDesc24,10 Panzerschlangen totgetrieben
+de.kdd3.txt,achDesc25,Eine Schaltkugel drei aufeinanderfolgende Züge lang gehauen
+de.kdd3.txt,achDesc26,10 grüne Tore geöffnet
+de.kdd3.txt,achDesc27,Insgesamt 2500 Monster getötet
+de.kdd3.txt,achDesc28,Insgesamt 100 Mal gestorben
+de.kdd3.txt,achDesc29,Insgesamt 450 Züge zurückgenommen
+de.kdd3.txt,achDesc30,Insgesamt 200 Falltüren ausgelöst
+de.kdd3.txt,achDesc31,Insgesamt 8000 Schritte gegangen
+de.kdd3.txt,outro,"Wenn er nur eine Karte von Dugans Kerker hätte, wüsste Beethro, dass was sich im dreizehnten Stockwerk befindet selbst die stärksten Krieger besiegen kann. Aber zumindest wird es dort keinen Teer oder Panzerschlangen geben...
+
+
+<font size=""32"" color=""#FFFF00"">Glückwünsche!</font>
+
+Sie haben die dritte Episode der Feste Deadly Rooms of Death, King Dugan's Dungeon Lite abgeschlossen. Ich hoffe aufrichtig, dass Sie die Erfahrung unterhaltsam fanden.
+Jetzt, da Sie die letzte Treppe in dieser Levelsammlung hinabgestiegen sind, wollen Sie vielleicht versuchen, dieses Spiel zu meistern oder gar zu übermeistern. Wenn Sie das möchten, dann suchen Sie nach geheimen Räumen! Ab jetzt können Sie im ""Anderen Raum laden""-Menü für jeden Level nachsehen, wie viele Geheimräume noch zu finden bleiben.
+Wenn Sie auch diese Räume alle gelöst haben, erhalten Sie Zugang zu einem speziellen Bereich nur für Meister-Kammerjäger. Finden Sie den Eingang?
+Vielleicht wollen Sie aber auch mit dem nächsten Abschnitt von König Dugans Kerker fortfahren.
+
+Bevor ich Sie nun der wohligen Wärme des Erfolgs überlasse, möchte ich einigen Leuten danken, ohne die dieses Spiel niemals fertig geworden wäre:
+
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - Der Erschaffer, geistige Vater und Erfinder von DROD. Ohne ihn wäre dieses einzigartige Spielprinzip wohl nie erfunden worden.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - Er hat die Spiele DROD: JtRH und DROD: TCB beinahe im Alleingang programmiert. Dank seiner soliden Arbeit war die Umsetzung von DROD in Flash für mich ein reines Vergnügen.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Der Große Anführer des Caravel-Forums und Hauptentwickler von CaravelNet. Dank ihm können Sie Ihre Ergebnisse online mit anderen vergleichen, und vieles mehr!
+
+
+<font size=""23"" color=""#FFFF00"">Programmierung und Entwicklung</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Grafik und Musik</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Serverprogrammierung</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Leveldesign</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Haupttester</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Tester</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Übersetzungen</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Stimmen</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Konzept, Original-Programm und -Levels</font> - %%
+
+
+Bis zum nächsten Mal!
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+de.kdd3.txt,complNextGame,"Spielen Sie die nächste Levelsammlung: KDD Lite 4. Ein neues Fenster wird sich dafür öffnen. Dieses Fenster hier können Sie unbesorgt schließen, Ihr Fortschritt wurde gespeichert."
+de.kdd3.txt,defCont,Standard-Tastenbelegung:
+de.kdd3.txt,sc_diago,"Sie können sich diagonal bewegen, auch durch sehr enge Gänge."
+de.kdd3.txt,sc_broken,Zerschlagen Sie diese gerissenen und geheimen Mauern mit Ihrem Schwert.
+de.kdd3.txt,sc_queens1,"Schabenköniginnen legen alle 30 Züge Eier (im Zug, nachdem der Zugzähler rot wird)."
+de.kdd3.txt,sc_queens2,Eier reifen über fünf Züge zu ausgewachsenen Schaben heran.
+de.kdd3.txt,sc_queens3,"Auf Pfeilen, Falltüren und gelben Toren erscheinen keine Eier. Mit der Taste ""I"" oder der 5 im Ziffernblock warten Sie einen Zug."
+de.kdd3.txt,sc_mimics,"Wenn Sie auf einen Imitat-Trank treten, wählen Sie mit der Maus oder der Warten-Taste den Ort, wo das Imitat erscheinen soll."
+de.kdd3.txt,sc_shiftwait,Mit Umschalt-Warten können Sie automatisch bis zur nächsten Eiablage warten.
+de.kdd3.txt,sp_mother1,Alle dreissig Züge lassen Teermütter ihren Teerfleck um ein Feld in jeder Richtung wachsen.
+de.kdd3.txt,sp_mother2,"Es ist eigentlich ungefährlich, vom wachsenden Teer eingeschlossen zu werden, aber Vorsicht vor beim Wachsen entstehenden Teerbabies."
+de.kdd3.txt,sc_backswipe,"Folgen Sie dem Sandpfad, um die Durchgangshieb-Technik zu lernen! Nutzen Sie diagonale Bewegungen, und schwingen Sie Ihr Schwert nicht."
+de.kdd3.txt,sc_trapdoors,"Diese rosa-violetten Felder sind Falltüren. Sie fallen in die Tiefe, sobald Sie oder ein Imitat davon hinabtreten."
+de.kdd4.txt,Thirteenth Level,Dreizehnter Level
+de.kdd4.txt,Fourteenth Level,Vierzehnter Level
+de.kdd4.txt,Fifteenth Level,Fünfzehnter Level
+de.kdd4.txt,Sixteenth Level,Sechzehnter Level
+de.kdd4.txt,Mastery Level,Meisterlevel
+de.kdd4.txt,Original 13th Level,Originaler 13. Level
+de.kdd4.txt,Tutorial Level,Übungslevel
+de.kdd4.txt,entrTut,"Beethro Budkin, professioneller Kerkerjäger der fünften Generation, wurde von König Dugan angestellt um den königlichen weitläufigen Kerker von einem erheblichen Monsterbefall zu befreien.
+Beethro veranschlagt einen Festbetrag pro Raum, und als Profi ist er per Vertrag daran gebunden, die Monster aus ausnahmslos jedem Raum des Kerkers zu beseitigen, bevor er ausbezahlt wird.
+Die einzige Waffe, die Beethro benötigt um seine Aufgabe zu erfüllen, ist ein echt großes Schwert, welches jedes Monster mit einem einzigen Schlag vernichtet."
+de.kdd4.txt,entr13,"„Ich hätte dieses Stockwerk vielleicht auslassen sollen, aber ein Vertrag ist ein Vertrag. Wo habe ich noch gleich die Brotkrumen gelassen?“ -Beethro"
+de.kdd4.txt,entr14,"Auf diesem Stockwerk triffst du endlich auf jemanden, der deinem Schwert den gebührenden Respekt entgegenbringt."
+de.kdd4.txt,entr15,"Dieses Stockwerk ist so wie damals, als du den Rasen mähen musstest und nur gerade knapp genug Benzin im Mäher hattest, und dann machtest du einen Fehler und musstest den Kanister nachfüllen gehen. Und da lag eine Riesenschlange vor der Tankstelle, und du wolltest zum Zahlen reingehen, aber die Tür war verschlossen und du musstest einen Imitattrank nehmen um reinzukommen, und die Schaben... 
+
+Na ja, die Metapher hat ihre Schwächen."
+de.kdd4.txt,entr16,Diese Schaben brauchen einen Anführer mit natürlicher Autorität. Jemanden mit Charisma und Charakterstärke. Jemanden wie dich!
+de.kdd4.txt,entrMaster,"Beethro stieg die Stufen hinab, einzig dafür um einen nicht verzeichneten Verbindungsgang vorzufinden...
+
+Er würde nicht für die Säuberung hier bezahlt werden, aber seine Berufsehre drängte ihn vorwärts."
+de.kdd4.txt,entrMasterBack,"Beethro kam zurück, um sich wieder der vertraglich festgelegten und budgetierten Kammerjägerei zu widmen."
+de.kdd4.txt,entrOriginal13Enter,"Beethro stieg hinab in die mystischen, todbringenden, zweckfreien Gänge."
+de.kdd4.txt,entrOriginal13Success,"Voller Stolz auf seine Leistung, wenn auch geistig deutlich weniger stabil, trat Beethro aus dem gefürchteten 13. Stockwerk von König Dugans Kerker heraus."
+de.kdd4.txt,entrOriginal13Escape,"Beethro floh vor der Herausforderung, als wäre er ein dürres kleines Kätzchen."
+de.kdd4.txt,achName0,Einweg-Wald
+de.kdd4.txt,achName1,Stoische Schlangen
+de.kdd4.txt,achName2,Die Teerwehr
+de.kdd4.txt,achName36,Stiertür
+de.kdd4.txt,achName3,Goblin-Verhauer
+de.kdd4.txt,achName4,Goblin-Quetscher
+de.kdd4.txt,achName5,Goblin-Zerstörer
+de.kdd4.txt,achName6,Aus dem Weg!
+de.kdd4.txt,achName7,Grüne Mama
+de.kdd4.txt,achName8,Goblin-Mörder
+de.kdd4.txt,achName34,Opferbereitschaft
+de.kdd4.txt,achName35,Klare Vorschriften
+de.kdd4.txt,achName32,Gelassener Meuchler
+de.kdd4.txt,achName33,Einen Schritt voraus
+de.kdd4.txt,achName39,Schiefe Spinne
+de.kdd4.txt,achName9,Wachstum!
+de.kdd4.txt,achName37,Schleichjagd
+de.kdd4.txt,achName38,Jagdmethoden
+de.kdd4.txt,achName10,Forschergeist
+de.kdd4.txt,achName11,Goblin-Ragout
+de.kdd4.txt,achName12,Muttermord
+de.kdd4.txt,achName13,Amateur-Absteiger
+de.kdd4.txt,achName14,Totschläger-Geselle
+de.kdd4.txt,achName15,Kammerjäger auf Abruf
+de.kdd4.txt,achName16,Ich bin vom Fach!
+de.kdd4.txt,achName17,Meisterschaft
+de.kdd4.txt,achName18,Über-Meisterschaft
+de.kdd4.txt,achName19,Gebackene Schaben
+de.kdd4.txt,achName20,Flambierte Krone
+de.kdd4.txt,achName21,Eier im Glas
+de.kdd4.txt,achName22,Linsensalat
+de.kdd4.txt,achName23,Flederkebab
+de.kdd4.txt,achName24,Schlangensushi
+de.kdd4.txt,achName25,Stimmgabel
+de.kdd4.txt,achName26,Nieder mit den Grünen
+de.kdd4.txt,achName27,Befriedungsexperte
+de.kdd4.txt,achName28,Phoenix
+de.kdd4.txt,achName29,Herr der Zeit
+de.kdd4.txt,achName30,Parkettballett
+de.kdd4.txt,achName31,Langstreckenläufer
+de.kdd4.txt,achDesc0,"2S 1W im 13. Level gelöst, ohne das Schwert zu schwingen"
+de.kdd4.txt,achDesc1,"1S im 13. Level gelöst, ohne das Schwert zu schwingen"
+de.kdd4.txt,achDesc2,"1S 1O im 13. Level gelöst, ohne das Schwert zu schwingen"
+de.kdd4.txt,achDesc36,"1S 2W im 13. Level gelöst, ohne das Schwert zu schwingen"
+de.kdd4.txt,achDesc3,1S im 14. Level gelöst mit dem Schwert immer nach NW
+de.kdd4.txt,achDesc4,2S im 14. Level gelöst mit dem Schwert immer nach O
+de.kdd4.txt,achDesc5,1N im 14. Level gelöst mit dem Schwert immer nach S
+de.kdd4.txt,achDesc6,"2O im 14. Level gelöst, ohne auf die Falltür zu treten"
+de.kdd4.txt,achDesc7,"2N im 14. Level gelöst, ohne die Teermutter wachsen zu lassen"
+de.kdd4.txt,achDesc8,"1N 3O im 14. Level gelöst, ohne das Schwert zu schwingen"
+de.kdd4.txt,achDesc34,In 1N 1O im 14. Level den Goblin als letztes Monster getötet
+de.kdd4.txt,achDesc35,"2N 2O im 14. Level gelöst, ohne dass der Goblin auf die graue Strasse tritt"
+de.kdd4.txt,achDesc32,"Eingang im 15. Level gelöst, ohne das Schwert zu schwingen"
+de.kdd4.txt,achDesc33,"Eingang im 15. Level: alle Falltüren ausgelöst, bevor das letzte Monster tot ist"
+de.kdd4.txt,achDesc39,1N im 15. Level: Nach gehauener Schaltkugel nur noch diagonal bewegt und alle Spinnen getötet
+de.kdd4.txt,achDesc9,"1S 1O im 16. Level gelöst, ohne die Teermutter wachsen zu lassen"
+de.kdd4.txt,achDesc37,"2N im Meister-Level gelöst, ohne dass ein Stierauge erwacht oder eine Königin Eier legt"
+de.kdd4.txt,achDesc38,"1N 1O im Meister-Level: den Fledergeist getötet, ohne alle Falltüren auszulösen"
+de.kdd4.txt,achDesc10,Jeden Raum im Original-13. Level besucht (%% / 56)
+de.kdd4.txt,achDesc11,40 Goblins getötet
+de.kdd4.txt,achDesc12,"Eine Schabenkönigin getötet, während ihre Eier heranwachsen"
+de.kdd4.txt,achDesc13,Den 13. Level geräumt
+de.kdd4.txt,achDesc14,Den 14. Level geräumt
+de.kdd4.txt,achDesc15,Den 15. Level geräumt
+de.kdd4.txt,achDesc16,Den 16. Level geräumt
+de.kdd4.txt,achDesc17,Die Feste gemeistert
+de.kdd4.txt,achDesc18,Die Feste übermeistert
+de.kdd4.txt,achDesc19,100 Schaben erschlagen
+de.kdd4.txt,achDesc20,25 Schabenköniginnen erlegt
+de.kdd4.txt,achDesc21,10 Schabeneier erledigt
+de.kdd4.txt,achDesc22,80 Stieraugen zerhackt
+de.kdd4.txt,achDesc23,40 Fledergeister bezwungen
+de.kdd4.txt,achDesc24,25 Panzerschlangen totgetrieben
+de.kdd4.txt,achDesc25,Eine Schaltkugel drei aufeinanderfolgende Züge lang gehauen
+de.kdd4.txt,achDesc26,20 grüne Tore geöffnet
+de.kdd4.txt,achDesc27,Insgesamt 3000 Monster getötet
+de.kdd4.txt,achDesc28,Insgesamt 80 Mal gestorben
+de.kdd4.txt,achDesc29,Insgesamt 500 Züge zurückgenommen
+de.kdd4.txt,achDesc30,Insgesamt 500 Falltüren ausgelöst
+de.kdd4.txt,achDesc31,Insgesamt 10000 Schritte gegangen
+de.kdd4.txt,sc_13_entr_1,Abkürzung zum Ausgang
+de.kdd4.txt,sc_13_entr_2,Ein wahrer Hackmeister wird die Schriftrolle dort oben erst nach dem Meistern des Stockwerks lesen.
+de.kdd4.txt,sc_13_entr_3,"Steine liegen vor Sand, vor ihnen liegen Steinplatten, weiter vorne Gras welches auf Kacheln wächst, auf Lehm gebaut.
+-Unbekannter Poet"
+de.kdd4.txt,sc_13_2S2W_3,Abkürzung zum Eingang
+de.kdd4.txt,sc_14_1N3E,Dieser Bursche in dem anderen Raum ist nicht sehr clever. Er fällt immer auf den selben alten Trick hinein.
+de.kdd4.txt,sc_mast_entr_1,Das unveränderte 13. Stockwerk
+de.kdd4.txt,sc_mast_entr_2,Einige neue Rätsel.
+de.kdd4.txt,sc_mast_entr_3,Schwierigere Versionen von bekannten Räumen.
+de.kdd4.txt,sc_mast_1W,Es gibt nur Nichts hier.
+de.kdd4.txt,sc_o13_orb,Diese Schaltkugel diente im unveränderten Stockwerk einem Zweck.
+de.kdd4.txt,sc_o13_orbs,Diese Schaltkugeln dienten im unveränderten Stockwerk einem Zweck.
+de.kdd4.txt,sc_o13_orb2,"Diese Schaltkugel war ursprünglich nicht hier, und das gesamte gelbe Tor war in einem Raum."
+de.kdd4.txt,sc_o13_orbs_gates,In diesem Raum befand sich ursprünglich eine Schaltkugel und die Tore hatten einen Nutzen.
+de.kdd4.txt,sc_o13_broken_wall,Im unveränderten Stockwerk war hier eine feste Wand welche das Betreten des folgenden Bereichs unmöglich machte.
+de.kdd4.txt,sc_o13_edge,Hier gab es ursprünglich keine Trennkante.
+de.kdd4.txt,sc_o13_roach,Im unveränderten 13. Stockwerk war die Schabe oben im selben Raum und der Korridor war ein bisschen anders.
+de.kdd4.txt,scM1s1,Das war nun aber eine Errungenschaft!
+de.kdd4.txt,scM1s2,Wie war das Spiel? Konnten Sie alle Errungenschaften bekommen?
+de.kdd4.txt,scM1s3,"Besuchen Sie ruhig CaravelGames.com um mehr Episoden von KDDL zu spielen, oder um eines der vollwertigen DROD-Spiele für Windows, MacOS oder Linux herunterzuladen."
+de.kdd4.txt,scM1s4,Rocken Sie weiter!
+de.kdd4.txt,scM1s5,Hier ist eine kleine Belohnung! Töten sie alle Augen und Goblins ohne auf das Gras zu treten.
+de.kdd4.txt,scM1s6,"Die Schabenköniginnen werden sterben, wenn Sie auf den Rücksetzpunkt in der oberen rechten Ecke treten."
+de.kdd4.txt,scM1s7,Fabelhaft!
+de.kdd4.txt,sp_14_1E,"Ahh… es gibt nichts besseres als Teer, der nicht da ist!"
+de.kdd4.txt,sp_14_2N2E_1,"Bah… sieht so aus, als müsste ich diesen Goblin lange genug am Leben halten, dass er mir die Schlange da oben abräumen kann."
+de.kdd4.txt,sp_14_2N2E_2,"Ich helfse nichts! Du schnittsts michs, ich weiss - ganz gleichs ob jetzt oder späters!"
+de.kdd4.txt,sp_14_2N2E_3,Tu nicht so mutig. Goblins sind nie mutig.
+de.kdd4.txt,sp_14_2N2E_4,"Nein, nein nein! Nimms das Spitzdings weg!"
+de.kdd4.txt,sp_14_2N2E_5,"Du denkst wohl, du könntest dich hinter mich schleichen, wenn ich nicht hinsehe. Ha!"
+de.kdd4.txt,sp_14_2N2E_6,Gnade!
+de.kdd4.txt,sp_14_2N2E_7,"Schau, Du würdest an meiner Stelle dasselbe tun!"
+de.kdd4.txt,sp_14_2N2E_8,"Das ist der unangenehme Teil des Geschäfts. Ich hoffe, ich muss das nicht nochmal tun!"
+de.kdd4.txt,sp_14_2N2E_9,"Ruhe dich dort ein bisschen aus, während ich die Passage öffne, Goblin."
+de.kdd4.txt,sp_14_2N2E_10,(Ich hätte ihn dort vermutlich nicht einsperren müssen...aber Vorsicht ist besser als Nachsicht!)
+de.kdd4.txt,sp_14_1N1E,Schau sich das einer an...nicht eine einzige Wand zerstört!
+de.kdd4.txt,sp_15_1S2W,"Oh Junge, hier kann ich mich nicht einfach durchpflügen.  Lass mich meine Schritte vorausplanen bevor ich mich bewege."
+de.kdd4.txt,sp_16_2S1E_1,Brillant!  Manchmal beeindrucke ich sogar mich selbst.
+de.kdd4.txt,sp_16_2S1E_2,Ha!  Alles sauber!
+de.kdd4.txt,sp_16_2S1E_3,Jetzt muss ich hier noch rauskommen...
+de.kdd4.txt,sp_16_2S1E_4,Hmm...über welchen Weg bin ich nochmal reingekommen?
+de.kdd4.txt,sp_16_2S1E_5,"Ah, ist doch egal."
+de.kdd4.txt,spM1s,Sie sind gescheitert...
+de.kdd4.txt,sp_o13_1,"Kommmmm, Schabi Schabi…"
+de.kdd4.txt,sp_o13_2,Pöh! Eine popelige kleine Schabe die ich zerquetschen muss.
+de.kdd4.txt,sp_tut_entr_1,Willkommen bei DROD.
+de.kdd4.txt,sp_tut_entr_2,"Wenn dieses das erste Mal ist, dass Sie ein Spiel der Serie spielen, begeben Sie sich bitte nach Osten."
+de.kdd4.txt,sp_tut_entr_3,Dort finden Sie eine Reihe einfacherer Rätsel um Ihnen das Konzept nahezubringen.
+de.kdd4.txt,sp_tut_entr_4,Benutzen Sie die Stufen wenn Ihnen das Spiel vertraut ist.
+de.kdd4.txt,sp_tut_entr_5,Benutzen Sie den Ziffernblock oder die Tasten 789 uio jkl um sich zu bewegen.
+de.kdd4.txt,sp_tut_entr_6,Die Tastenbelegung kann über das Optionenmenü geändert werden welches Sie durch Drücken von `Escape` erreichen.
+de.kdd4.txt,sp_tut_1E_1,Schaltkugeln beeinflussen gelbe Türen. Streifen Sie sie mit Ihrem Schwert um sie zu aktivieren.
+de.kdd4.txt,sp_tut_1E_2,Klicken Sie eine Schaltkugel mit der Maus an um zu sehen welche Türen sie beeinflusst.
+de.kdd4.txt,sp_tut_1E_3,Rotieren Sie Ihr Schwert mittels `Q` und `W`.
+de.kdd4.txt,sp_tut_1E_4,Treffen Sie die Schabe mit Ihrem Schwert um sie zu töten.
+de.kdd4.txt,sp_tut_1E_5,"Streifen Sie die Schaltkugel und warten ein paar Züge um zu sehen wie Monster sich verhalten, wenn sie sich diagonal auf eine Ecke zubewegen."
+de.kdd4.txt,sp_tut_1E_6,Warten Sie...
+de.kdd4.txt,sp_tut_1E_7,"Wie Sie sehen, bevorzugen Monster die Fortbewegegung in vertikaler Richtung wenn sie auf eine Ecke treffen."
+de.kdd4.txt,sp_tut_1E_8,Töten Sie die Schaben um das grüne Tor zu öffnen und folgen Sie dem Weg nach Osten.
+de.kdd4.txt,sp_tut_2E_1,"Sie lernen hier den Durchgangshieb. Nach dem Streifen der Schaltkugel gibt es nur einen Weg, die Schaben zu töten - bewegen Sie sich direkt nach Nordwesten oder Südwesten."
+de.kdd4.txt,sp_tut_2E_2,"Sie sollten dies ein paar Male wiederholen um sich daran zu erinnern, denn es ist eine sehr wichtige Technik."
+de.kdd4.txt,sp_tut_2E_3,Sie können sich sogar durch sehr enge Passagen diagonal hindurchbewegen.
+de.kdd4.txt,sp_tut_2E_4,Rissige und Geheimgang-Wände können mit Ihrem Schwert zerstört werden.
+de.kdd4.txt,sp_tut_2E_5,Richtungspfeile verhindern die Bewegung aller Dinge gegen die Richtung in welche sie zeigen.
+de.kdd4.txt,sp_tut_2E_6,Treten Sie auf den Rücksetzpunkt um hier neuzustarten falls Sie sterben.
+de.kdd4.txt,sp_tut_2E_7,Schabenköniginnen legen alle 30 Züge Eier. Benutzen Sie den Eiablage-Zähler auf der linken Seite des Spielbildschirms um zu wissen wann die nächste Eiablage stattfinden wird.
+de.kdd4.txt,sp_tut_3E_1,Stieraugen bleiben ruhend bis Sie in ihrer Sehlinie stehenbleiben - einmal erwacht greifen sie wie Schaben an.
+de.kdd4.txt,sp_tut_3E_2,Panzerschlangen können nicht mit Ihrem Schwert verletzt werden. Der einzige Weg sie zu töten ist sie in eine Sackgasse zu bekommen.
+de.kdd4.txt,sp_tut_3E_3,Benutzen Sie rissige Wände um eine Sackgasse für Panzerschlangen zu formen.
+de.kdd4.txt,sp_tut_3E_4,Sie können die Rücktaste benutzen um bis zu drei drei Züge rückgängig zu machen.
+de.kdd4.txt,sp_tut_3E_5,"Panzerschlangen können sich, anders als andere Monster, nicht diagonal bewegen."
+de.kdd4.txt,sp_tut_3E_6,Sie haben immer eine bestimmte Präferenzrichtung die alle fünf Züge wechselt.
+de.kdd4.txt,sp_tut_3E_7,Sie können die Präferenzrichtung unterhalb des Eiablage-Zählers ablesen.
+de.kdd4.txt,sp_tut_4E_1,"Wenn Sie auf eine Falltür treten, wird sie herunterfallen und einen Abgrund zurücklassen."
+de.kdd4.txt,sp_tut_4E_2,Um das rote Tor zu öffnen müssen Sie alle Falltüren auslösen.
+de.kdd4.txt,sp_tut_4E_3,"Denken Sie daran, dass Sie Abgründe die durch ausgelöste Falltüren entstehen nutzen können um sich gegen Schaben abzuschirmen."
+de.kdd4.txt,sp_tut_5E_1,Teer ist eine sehr eigentümliche Substanz. Er kann nur an flachen Kanten zerstört werden.
+de.kdd4.txt,sp_tut_5E_2,Sie müssen nicht alles davon säubern um einen Raum zu erobern.
+de.kdd4.txt,sp_tut_6E_1,"Teermütter sind furchterregende Gegner. Obwohl sie an einem Ort bleiben, versteckt im Teer, lassen sie den Teer alle 30 Züge wachsen."
+de.kdd4.txt,sp_tut_6E_2,Das schwarze Tor wird sich erst öffnen wenn Sie den gesamten Teer in einem Raum entfernt haben.
+de.kdd4.txt,sp_tut_7E_1,"Das Trinken dieses Tranks erlaubt es Ihnen, ein Imitat zu platzieren."
+de.kdd4.txt,sp_tut_7E_2,Imitate ahmen alle Ihre Bewegungen nach und lösen genauso wie Beethro Falltüren aus.
+de.kdd4.txt,sp_tut_8E_1,"Wenn Sie den Unsichtbarkeitstrank trinken, werden sich Monster nicht mehr bewegen so lange sie außerhalb der Riechreichweite sind."
+de.kdd4.txt,sp_tut_8E_2,Lassen Sie die Schabenkönigin nicht auf die Pfeile entkommen oder Sie können sie nicht mehr töten.
+de.kdd4.txt,sp_tut_8E_3,"Das haben Sie gut gemacht, Gratulation!"
+de.kdd4.txt,sp_tut_8E_4,Es scheint als haben Sie versagt.
+de.kdd4.txt,sp_tut_8E_5,"Sie können ""R"" benutzen um den Raum neuzustarten oder warten um einige Hinweise zu hören."
+de.kdd4.txt,sp_tut_8E_6,...
+de.kdd4.txt,sp_tut_8E_7,Es gibt drei verschiedene Wege den Raum zu lösen.
+de.kdd4.txt,sp_tut_8E_8,"Der schnellste erfordert, dass Sie die Königin auf den Pfeilen nahe der grünen Tür in der Art festsetzen, dass Sie sie durch Treten auf oder neben den diagonalen Pfeil töten können."
+de.kdd4.txt,sp_tut_8E_9,"Der andere, fast so schnell wie der vorherige, kann erreicht werden indem Sie horizontal in Richtung Königin gehen sodass das grüne Tor sie blockiert."
+de.kdd4.txt,sp_tut_8E_10,"Der letzte erfordert, dass sie komplett im Kreis durch den Raum laufen und die Königin im Eingangskorridor festsetzen."
+de.kdd4.txt,sp_tut_8E_11,"Wenn Sie es noch immer nicht tun können, warten Sie ein paar Züge bis der Notfall-Imitattrank da ist."
+de.kdd4.txt,sp_tut_9E,Viel Glück!
+de.kdd4.txt,sc_tut_emergency_potion,"Notfall-Imitattrank, zur Verwendung falls der Raum zu schwierig ist."
+de.kdd4.txt,sc_tut_tricky,Dieser knifflige Raum ist nicht gefordert
+de.kdd4.txt,outro,"Die letzten vier Stockwerke waren eine echte Plage für Beethro: mit all dem Teer, den Türen, Toren und den Tieren...  Während er die Stufen hinabstieg, roch er mehr von diesem blauen Glibber. Es ließ ihn erschaudern aber etwas ganz tief hinten in seinem Kopf sagte ihm, dass noch viel schlimmere Gefahren vor ihm liegen...
+
+
+<font size=""32"" color=""#FFFF00"">Gratulation!</font>
+
+Sie haben die vierte Episode von Deadly Rooms of Death, King Dugan's Dungeon Lite Serie, abgeschlossen. Wir hoffen aufrichtig, dass Sie diese Erfahrung genossen haben.
+Jetzt, da Sie die letzten Stufen dieser Sammlung hinabgestiegen sind, möchten Sie vielleicht versuchen, das Spiel zu meistern und dann zu übermeistern!  Halten Sie dafür Ausschau nach Gemeinräumen. Die Anzahl der noch unentdeckten Geheimräume je Stockwerk wird jetzt im Wiederherstellungs-Bildschirm angezeigt.
+Sobald Sie alle davon erobert haben, wird eine spezielle Meisterzone geöffnet. Finden Sie heraus wie man ihn betritt?
+Sie möchten vielleicht auch die nächste Episode in der DROD:KDDL Serie spielen.
+
+Bevor wir Sie in einem Gefühl des vollkommenden Ruhms schwelgen lassen, möchten wir ein paar Leuten danken, die das Spielen des Spiels für Sie möglich gemacht haben:
+
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - Der Schöpfer, Vater und Erfinder von DROD. Ohne ihn hätte diese einzigartige Spielidee nie das Licht des Tages gesehen.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - Er programmierte fast alles von DROD: JtRH und DROD: TCB im Alleingang. Dank seiner vorzüglichen Codebasis war das Bauen von Flash DROD ein reines Vergnügen.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Oberhaupt des Caravel-Forums und Chef-Programmierer von CaravelNet. Dank ihm können Sie um Highscores kämpfen und vieles mehr!
+
+
+<font size=""23"" color=""#FFFF00"">Programmierung, Entwicklung</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Design & Musik</font> - %% (geringfügig)
+
+<font size=""23"" color=""#FFFF00"">Serverseitige Entwicklung</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Festen-Architekten</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Primäre Tester</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Tester</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Übersetzungen</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Sprecher</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Ursprüngliche Programierung, Idee & Levels</font> - %%
+
+
+Bis zum nächsten Mal!
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+de.kdd4.txt,complNextGame,"Spielen Sie die nächste Levelsammlung: KDD Lite 5. Ein neues Fenster wird sich dafür öffnen. Dieses Fenster hier können Sie unbesorgt schließen, Ihr Fortschritt wurde gespeichert."
+de.txt,keyBackspace,Rücktaste
+de.txt,keyTab,Tabulator
+de.txt,keyEnter,Enter
+de.txt,keyShift,Umschalt
+de.txt,keyControl,Steuerung
+de.txt,keyAlt,Alt
+de.txt,keyPause,Pause/Untbr
+de.txt,keyCapsLock,Umschalt-Feststell
+de.txt,keyEscape,Escape
+de.txt,key ,Leertaste
+de.txt,keyPageUp,Bild-Nach-Oben
+de.txt,keyPageDown,Bild-Nach-Unten
+de.txt,keyEnd,Ende
+de.txt,keyHome,Pos 1
+de.txt,keyArrowLeft,Links
+de.txt,keyArrowUp,Oben
+de.txt,keyArrowRight,Rechts
+de.txt,keyArrowDown,Unten
+de.txt,keyInsert,Einfügen
+de.txt,keyDelete,Entfernen
+de.txt,key0,0
+de.txt,key1,1
+de.txt,key2,2
+de.txt,key3,3
+de.txt,key4,4
+de.txt,key5,5
+de.txt,key6,6
+de.txt,key7,7
+de.txt,key8,8
+de.txt,key9,9
+de.txt,keya,A
+de.txt,keyb,B
+de.txt,keyc,C
+de.txt,keyd,D
+de.txt,keye,E
+de.txt,keyf,F
+de.txt,keyg,G
+de.txt,keyh,H
+de.txt,keyi,I
+de.txt,keyj,J
+de.txt,keyk,K
+de.txt,keyl,L
+de.txt,keym,M
+de.txt,keyn,N
+de.txt,keyo,O
+de.txt,keyp,P
+de.txt,keyq,Q
+de.txt,keyr,R
+de.txt,keys,S
+de.txt,keyt,T
+de.txt,keyu,U
+de.txt,keyv,V
+de.txt,keyw,W
+de.txt,keyx,X
+de.txt,keyy,Y
+de.txt,keyz,Z
+de.txt,key91,L.Win/Cmd
+de.txt,key92,R.Win
+de.txt,key93,Menü
+de.txt,keyNumpad0,Ziffernblock 0
+de.txt,keyNumpad1,Ziffernblock 1
+de.txt,keyNumpad2,Ziffernblock 2
+de.txt,keyNumpad3,Ziffernblock 3
+de.txt,keyNumpad4,Ziffernblock 4
+de.txt,keyNumpad5,Ziffernblock 5
+de.txt,keyNumpad6,Ziffernblock 6
+de.txt,keyNumpad7,Ziffernblock 7
+de.txt,keyNumpad8,Ziffernblock 8
+de.txt,keyNumpad9,Ziffernblock 9
+de.txt,keyNumpadMul,Ziffernblock *
+de.txt,keyNumpadAdd,Ziffernblock +
+de.txt,keyNumpadSub,Ziffernblock -
+de.txt,keyNumpadDot,"Ziffernblock ,"
+de.txt,keyNumpadDiv,Ziffernblock /
+de.txt,keyF1,F1
+de.txt,keyF2,F2
+de.txt,keyF3,F3
+de.txt,keyF4,F4
+de.txt,keyF5,F5
+de.txt,keyF6,F6
+de.txt,keyF7,F7
+de.txt,keyF8,F8
+de.txt,keyF9,F9
+de.txt,keyF10,F10
+de.txt,keyF11,F11
+de.txt,keyF12,F12
+de.txt,keyF13,F13
+de.txt,keyF14,F14
+de.txt,keyF15,F15
+de.txt,key144,Num-Feststell
+de.txt,key145,Rollen-Feststell
+de.txt,key;,Ü
+de.txt,key=,+
+de.txt,"key,",","
+de.txt,key-,-
+de.txt,key.,.
+de.txt,key/,#
+de.txt,key~,Ö
+de.txt,key[,ß
+de.txt,key\,^
+de.txt,key],´
+de.txt,"key'",Ä
+de.txt,numpad,Ziffernblock
+de.txt,notebook,Notebook
+de.txt,keyUp,nach Norden
+de.txt,keyUpLeft,nach Nordwesten
+de.txt,keyUpRight,nach Nordosten
+de.txt,keyLeft,nach Westen
+de.txt,keyRight,nach Osten
+de.txt,keyDown,nach Süden
+de.txt,keyDownLeft,nach Südwesten
+de.txt,keyDownRight,nach Südosten
+de.txt,keyWait,einen Zug abwarten
+de.txt,keyCW,im Uhrzeigersinn drehen
+de.txt,keyCCW,im Gegenuhrzeigersinn drehen
+de.txt,keyUndo,einen Zug zurücknehmen
+de.txt,keyRestart,Raum neu beginnen
+de.txt,keyBattle,Schlachttaste
+de.txt,keyLock,Ausgänge verschließen/öffnen
+de.txt,close,Schließen
+de.txt,cnetError,"Verbindungsversuch fehlgeschlagen.
+Dies könnte an ungültigen Benutzerangaben liegen, an Fehlern in der  Internetverbindung, oder an einem vorübergehenden Serverproblem. Die  CaravelNet-Funktionen sind deaktiviert. Um sie wiederherzustellen öffnen  Sie den Optionen-Bildschirm, aktualisieren Sie falls nötig Ihre  Benutzerangaben, und klicken Sie ""Verbinden!"""
+de.txt,cnetHeader,"Erhalten Sie mehr Informationen
+über oder kaufen Sie ein CaravelNet-Abo.
+Öffnet sich in einem neuen Fenster."
+de.txt,prlStartGame,Spiel beginnen
+de.txt,prlLoading,Laden: %% / %%
+de.txt,prlWaitApi,Warte auf API für die Verbindung ...
+de.txt,prlLanguage,Sprache ändern
+de.txt,initAssets,Medien vorbereiten %% / %%
+de.txt,tsStartNew,Neues Spiel beginnen
+de.txt,tsStartNewKey,N
+de.txt,tsStartNewKeyCode,78
+de.txt,tsContinue,Weiterspielen
+de.txt,tsContinueKey,W
+de.txt,tsContinueKeyCode,87
+de.txt,tsRestore,Anderen Raum laden
+de.txt,tsRestoreKey,R
+de.txt,tsRestoreKeyCode,82
+de.txt,tsAchievements,Errungenschaften ansehen
+de.txt,tsAchievementsKey,E
+de.txt,tsAchievementsKeyCode,69
+de.txt,tsOptions,Optionen
+de.txt,tsOptionsKey,O
+de.txt,tsOptionsKeyCode,79
+de.txt,tsHelp,Hilfe und Hintergrundgeschichte
+de.txt,tsHelpKey,H
+de.txt,tsHelpKeyCode,72
+de.txt,tsBrowse,Festen ansehen
+de.txt,tsBrowseKey,F
+de.txt,tsBrowseKeyCode,70
+de.txt,optHeader,Optionen:
+de.txt,optUploadAll,Alle Ergebnisse hochladen
+de.txt,optConnect,Verbinden!
+de.txt,optRedefine,Tastenbelegung ändern
+de.txt,optCnetHeader,CaravelNet-Benutzerangaben
+de.txt,optCnetUser,CaravelNet-Name
+de.txt,optCnetKey,CNet-Schlüssel
+de.txt,optCnetVolume,Lautstärke
+de.txt,optCnetMusic,Musik
+de.txt,optCnetSound,Geräusche
+de.txt,optCnetVoices,Stimmen
+de.txt,optMoveAnim,Bewegungsanimation
+de.txt,optMoveSmooth,Glatt
+de.txt,opyMoveFast,Schnell
+de.txt,uploadAll,Lädt Ergebnisse hoch ...
+de.txt,uploadDone,Erledigt!
+de.txt,uploadError,Fehler! Bitte Verbindung herstellen und noch einmal versuchen.
+de.txt,uploadAlreadyHas,Sind schon hochgeladen
+de.txt,uploadRoomEntrance,Eingang
+de.txt,cnetDescription,"Benutzer mit CaravelNet können hier ihre Angaben eintragen, um an den Online-Ranglisten teilzunehmen. Die Punkte pro Raum sind die minimale Anzahl der benötigten Züge. Ohne Angaben erfahren Sie nur, welchen Rang Sie als Abonnent erreicht hätten. Sie können die erreichten Ergebnisse mit dem Schalter ""Alle Ergebnisse hochladen"" auch nachträglich übertragen."
+de.txt,redefineScreen,"Sie ändern die Belegung für ""%%""
+Gewünschte Taste (aktuell: %%)
+Abbrechen mit Escape"
+de.txt,redefineInvalidKey,"%% ist für andere Funktionen reserviert
+Gewünschte Taste:
+Abbrechen mit Escape"
+de.txt,redefineReservedKey,"%% wird in einem alternativen Satz Bewegungstasten verwendet
+Gewünschte Taste:
+Abbrechen mit Escape"
+de.txt,abButCnet,Über CaravelNet
+de.txt,abButHowto,Spielanleitung
+de.txt,abButHistory,Zur Geschichte von DROD
+de.txt,abButBackstory,Hintergrundgeschichte
+de.txt,abButCredits,Mitwirkende
+de.txt,h&bTextWidth,450
+de.txt,h&bText,"  DROD  wurde in den Neunzigern von Erik Hermansen erfunden. Es ist im  Wesentlichen ein Denkspiel, in dem man durch einen Kerker rennt und mit  einem echt großen Schwert Monster tothaut. Wie das geht? Das sehen Sie  gleich, wenn Sie selbst losspielen.
+
+  Flash DROD ist eine Umsetzung des ersten DROD-Spiels. Es verwendet  dabei Grafiken und Musik aus den neueren DROD-Teilen, welche Sie bei  CaravelGames.com herunterladen und auf Ihrem eigenen Computer spielen  können.
+
+  Dank der  integrierten CaravelNet-Funktionen können Spieler nicht nur die Rätsel  lösen, sondern auch miteinander wetteifern, wer jeden Raum in den  wenigsten Spielzügen schafft."
+de.txt,creditsWidth,620
+de.txt,credits,"<font  size=""20"">Programmierung und Entwicklung: </font><font  color=""#444444"">%%</font>
+<font size=""20"">Grafik und Musik: </font><font  color=""#444444"">%%</font>
+<font size=""20"">Serverprogrammierung: </font><font color=""#444444"">%%</font>
+<font size=""20"">Leveldesign: </font><font  color=""#444444"">%%</font>
+<font size=""20"">Haupttester: </font><font  color=""#444444"">%%</font>
+<font size=""20"">Tester: </font><font  color=""#444444"">%%</font>
+<font size=""20"">Übersetzungen: </font><font  color=""#444444"">%%</font>
+<font size=""20"">Stimmen: </font><font  color=""#444444"">%%</font>
+<font size=""20"">Konzept, Original-Programm und -Levels:  </font><font color=""#444444"">%%</font>"
+de.txt,controlsWindowWidth,650
+de.txt,controlsWindow,"<font  size=""18"">`Ziffernblock` und `789 UIO JKL`</font><font  color=""#444444""> - Bewegen</font>
+<font size=""18"">`Q` und `W`</font><font color=""#444444""> - Schwert schwingen</font>
+<font size=""18"">`Rücktaste`</font><font color=""#444444""> - Letzten Zug zurücknehmen</font>
+<font size=""18"">`R'</font><font color=""#444444""> -  Zurück zum letzten Rücksetzpunkt oder zum Raumeingang</font>
+<font size=""18"">`Shift+R`</font><font color=""#444444""> - Raum von vorne beginnen</font>
+<font size=""18"">`Escape`</font><font color=""#444444""> - Pausenmenü</font>
+<font size=""18"">`Eingabe`</font><font  color=""#444444""> - Ergebnisse für aktuellen Raum und  Level</font>
+<font size=""18"">`X`</font><font color=""#444444""> - Ausgänge verschliessen</font>
+<font size=""18"">`Leertaste`</font><font  color=""#444444""> - Texte und Errungenschaften vom Bildschirm  löschen</font>
+<font size=""18"">`F3`</font><font color=""#444444""> - Anzahl Züge anzeigen</font>
+<font size=""18"">`Shift+Taste`</font><font  color=""#444444""> - Aktion und ihr Gegenteil ausführen</font>
+<font size=""18"">`Shift+Warten`</font><font  color=""#444444""> - Warten bis zur nächsten Eiablage</font>
+<font size=""18"">`Mausklick`</font><font  color=""#444444""> - Information über die angeklickte Stelle  anzeigen</font>
+
+  Ihre Aufgabe ist es, jede Ebene von König Dugans Kerker von Monstern  zu befreien. Sie benötigen dafür Ihr echt großes Schwert™ und etwas  Köpfchen. Jeder Raum ist ein separater Bereich, der auf einen Rutsch  entmonstert werden muss. Wenn Sie einen Raum verlassen, bevor Sie alle  Monster darin besiegt haben, wird bei Ihrem nächsten Besuch wieder alles  auf Anfang stehen."
+de.txt,cnetInfoWidth,500
+de.txt,cnetInfo,"  Mit CaravelNet können Spieler aus aller Welt um Bestleistungen wetteifern.
+
+  Alle können ihre Ergebnisse anonym abgeben und sehen, wo sie im Vergleich mit anderen Spielern stehen. Allerdings werden anonyme Ergebnisse nicht auf dem Caravel-Server  gespeichert, und sie fliessen nicht in die Bestenliste ein. Die  Ergebnisse von registrierten Benutzern des Caravel-Forums werden  kostenlos zwei Wochen ab dem Hochladen gespeichert. Und die Ergebnisse  von Benutzern mit einem CaravelNet-Abo werden gar nie entfernt.
+
+  Solange Ihr Spielstand nicht von Ihrem Computer gelöscht wird, können  Sie auch nachträglich alle Ihre Ergebnisse zum Server hochladen, sobald  Sie ein Caravel-Konto angelegt haben. 
+
+  Um sich bei Caravel zu registrieren, besuchen Sie CaravelGames.com und erstellen Sie im Forum ein Benutzerkonto."
+de.txt,backstory1,"  Beethro Budkin schlenderte in den Großen Speisesaal, wo König Dugan sein wuchtiges Morgenmahl beendete.
+
+  „Hinfort, schmutziger Untertan! Du störst meine Verdauung mit deiner  armseligen Hygiene!“, brüllte der König, Schweinefleischbröckchen und  Kartoffelflocken von sich gebend.
+
+  „Aber Herr“, protestierte Beethro, „Ihr hattet nach mir verlangt.“
+
+  Der Ausdruck im beträchtlichen Gesicht des Königs wechselte innerhalb  von nur zwei Sekunden von Wut über Verwirrung und Wiedererkennung nach  Freundlichkeit.
+
+  „Ich hätte Dich wirklich früher kommen lassen sollen“, sagte König  Dugan. „Es ist unglaublich! Da erlaubt man seinen Wachen, ihre  Mahlzeiten unten im Kerker zu sich zu nehmen, sie verteilen überall  Krumen, und wie aus dem Nichts wimmelt es in der gesamten Örtlichkeit  von riesigen Schaben, nicht zu vergessen Goblins, Panzerschlangen,  Stieraugen und anderen garstigen Sachen. Es ist völlig außer Kontrolle geraten.“
+
+  Beethro streckte sich stolz. „Fürchtet Euch nicht. Ich bin ein  ausgebildeter Profi aus einer langen Linie von Kerkerjägern. Ich vereine  fünf Generationen überlieferten Wissens mit hochmoderner Ausrüstung um  eine effiziente Säuberung zu einem erschwinglichen Preis zu bieten.“
+
+  „Welche Art von Ausrüstung nutzt Du?“
+
+  „Ich besitze ein echt großes Schwert.“"
+de.txt,backstory2,"  „Gut! Wann kannst Du loslegen?“
+
+  „Sobald wir die Einzelheiten zur Bezahlung geklärt haben. Hier sind  meine Standardgebühren für eine Kerkersäuberung. Ihr müsst nur unten  drunter unterschreiben.“ Beethro überreichte dem König einen  Vertrag.
+
+  „Diese Preise sind ungeheuerlich! Ist das Privilegium, im ehrenwerten  Dienste der Krone zu stehen, heutzutage gar nichts mehr wert?“
+
+  „Ich kann auch gehen.“
+
+  „Nein, nein, nein. Der Kerker muss gesäubert werden, damit die  Gefangenen ihre Folter in einer sauberen und sicheren Umgebung erhalten  können.“
+
+  „Nun, ich würde einen Rabatt gewähren, wenn Ihr eine Prinzessin dazugebt.“
+
+  „Du bist hässlich und riechst schlecht. Keine meiner Töchter würde dich wollen!“
+
+  Beethro zuckte mit den Schultern. „Wie Ihr meint.“
+
+  Der König unterzeichnete am Ende des Vertrags. „Recht so. Lass mich Dich zum Eingang weisen.“"
+de.txt,backstory3,"  Während  er hinabstieg, dachte Beethro über den Auftrag nach, den er angenommen  hatte. Dugans Kerker war außerordentlich groß und, den Berichten  vorheriger Kerkerjäger nach zu urteilen, irrwitzig gut für einen  Schädlingsbefall geeignet. Er wurde auch mehrere Male im Geheimen  ausgebaut - zum Entsetzen der ersten Person, die den Kerker säubern  sollte, denn dessen Vertrag hatte diese Möglichkeit nicht abgedeckt. (Er  war nur für die Bereiche bezahlt worden, von denen er wusste.)
+
+  Manche sagten, böse Mächte steckten hinter den Kerkererweiterungen.  Der Legende nach hatte ein vergangener König genug von seinem nervigen  jungen Sohn und schlug scherzhaft vor, dass der Bursche in den  Burgverliesen spielen gehen solle. Da er seinen Vater beim Wort nahm,  wanderte der Junge tief in die Kerkerkammern und wurde nie wieder  gesehen. Es wird gesagt, dass er nicht ums Leben kam, sondern aus  eigenen Stücken den Rest seines Lebens in den Kerkern verbrachte; dass  er durch seine Anpassung an den neuen Lebensraum all die Geheimnisse der  unterirdischen Welt erlernte und Bündnisse mit den Monstern einging,  die dort hausten. Er entsandte sie zum Arbeiten, um neue Gänge anzulegen und neue, bessere Monster zu züchten.  Er nannte sich selbst den Unterfahren und schmiedete den Plan, aus den  Kerkern hinaufzusteigen und den Thron für sich zu beanspruchen sobald  seine Kräfte dies zuließen."
+de.txt,backstory4,"  Beethro  war sich bei all dem nicht sicher. Zunächst einmal war der königliche  Thron nicht mehr das was er einst gewesen war,  seitdem dessen Befugnisse größtenteils dem Parlament zugewiesen wurden.  Abgesehen davon blieb die Frage, wer freiwillig im Untergrund leben  wolle oder wie man sich mit den Kreaturen dort anfreunden kann, die  zweifelsohne nicht sehr gesprächig sind. Aber es war wahr, dass Kerker  oftmals unnötig kompliziert gebaut waren, leicht von Ungeziefern befallen wurden und manchmal sogar ohne jegliche Vorwarnung wuchsen -  kein Kerkerarchitekt würde den Grund nennen, um seine Ehre zu wahren -  und dies war, mehr als alles Andere, was Männern wie Beethro fortwährend  Arbeit verschaffte.
+
+  Wie auch immer, ein Kerkerjäger hatte eine Fülle von konkreteren  Bedenken, wie etwa die schnell vermehrende und mannsgroße Kerkerschabe.  Das Wichtigste für Beethro war es, genug Geld und genügend tote Monster  mit dieser Tätigkeit zu machen, um sich endlich aus diesem undankbaren  Geschäft zurück zu ziehen und ein Restaurant zu eröffnen.
+
+  „Ich werde es ‚Beethros Rostbratschaben-Grill‘ nennen!“"
+de.txt,backstoryNext,Nächste
+de.txt,backstoryPrev,Vorherige
+de.txt,backstory1width,550
+de.txt,backstory2width,550
+de.txt,backstory3width,550
+de.txt,backstory4width,550
+de.txt,drodHistoryWidth,650
+de.txt,drodHistory,"  ""Deadly  Rooms of Death"" (DROD) wurde in den Neunzigern von Erik Hermansen  entwickelt. Das Spiel erschien beim Verlag Webfoot und wird oft als  `Webfoot DROD` bezeichnet. Diese Version ist vergriffen und nicht mehr  auf legalen Wegen erhältlich. Glücklicherweise hatte Erik aber die  Erlaubnis, eine neue Version des Spiels nachzuprogrammieren, und so kam  es im Jahr 2002 zu `Caravel DROD`.
+
+  2003 erschien dann die ""DROD: Architect's Edition"", welche einen  Leveleditor enthielt. Die Spieler konnten damit ihre eigenen `Festen` (Level-Sammlungen) erstellen und diese im CaravelGames-Forum  untereinander austauschen. Die Fangemeinde wuchs an, und es entstand der  Plan, ein weiteres Spiel zu entwickeln. 
+
+  Am ersten April 2005 erschien denn auch ""DROD: Journey to Rooted  Hold""! Die Liste der Neuerungen war beachtlich. Es gab neue Grafik,  Script-Programmierungs-Möglichkeiten, über ein Dutzend neue  Spielelemente, eine packende Handlung und einen Gegenspieler, dessen  Stimme einen erschauern liess. 
+
+  Genau zwei Jahre später erblickte ""DROD: The City Beneath"" das Licht der Welt. Jener  Tag brach den Rekord für gleichzeitig aktive Benutzer im Caravel-Forum.  In TCB gab es noch mehr neue Spielelemente und weitere Verbesserungen  gegenüber JtRH, und auch schwierigere Rätsel.
+
+  2008 kam ""DROD RPG"" mit einem anderen Spielprinzip heraus. Es fand  nicht so viele Anhänger wie die Spiele aus der Hauptreihe, ist aber  durchaus ein Schmuckstück in seiner Art. Bei diesem Spiel handelt es  sich um ein raumübergreifendes strategisches  Ressourcenverwaltungs-Rätsel. Jedes Monster hat seine eigenen  Stärkewerte. Der Spieler muss abschätzen, mit welchen Monstern er es  gerade aufnehmen kann, das weitere Vorgehen planen, zusätzliche  Ressourcen finden und sie für sich zugänglich machen.
+
+  ""DROD 4: Gunthro and the Epic Blunder"" ist die neueste Ausgabe,  erschienen am ersten April 2012. Dieses Spiel richtet sich vor allem  an neue Spieler und ist mit seinen einfacheren Rätseln, intuitiven  Tutorials und übersichtlicheren Verbindungslevels um einiges  anfängerfreundlicher als die früheren Teile."
+de.txt,rstHeader,Spielstand laden
+de.txt,rstToRoom,Diesen Raum laden
+de.txt,rstReturn,Zurück zum Titelmenü
+de.txt,rstSecrets,Geheimräume: %% von %%
+de.txt,roomLocked,"Sie haben die Raumausgänge verschlossen. Drücken Sie noch einmal %%, um die Ausgänge zu öffnen."
+de.txt,ingLevelCompleted,Level abgeschlossen
+de.txt,ingSecretFound,Geheimraum gefunden
+de.txt,ingHoldMastered,Feste gemeistert
+de.txt,achievementHeader,Errungenschaft!
+de.txt,achievementDismiss,Weg mit Klick oder Leertaste
+de.txt,achlistHeader,Errungenschaften:
+de.txt,browseHeader,Verfügbare Festen durchsehen
+de.txt,browseOpen,In neuem Fenster öffnen
+de.txt,scrStats,Spielstatistik
+de.txt,scrYourBest,Bester Rang:
+de.txt,scrTop,Beste Ergebnisse (dieser Raum):
+de.txt,scrNoScore,Keiner!
+de.txt,scrFetching,Lade vom Server...
+de.txt,scrOnlyForCnet,"Raumergebnisse stehen nur CaravelNet-Abonnenten und registrierten CaravelGames-Forumnutzern zur Verfügung.
+Anscheinend haben Sie Ihre CaravelNet-Benutzerangaben noch nicht  eingegeben. Mit einem CaravelGames-Konto können Sie Ihre Ergebnisse für  jeden Raum nachverfolgen und mit anderen Spielern aus aller Welt  vergleichen.
+Um sich bei CaravelGames zu registrieren, verwenden Sie den Schalter im Optionen-Bildschirm."
+de.txt,scrMovesRoom,Züge (dieser Raum): %%
+de.txt,scrMovesLevel,Züge (ganzer Level): %%
+de.txt,scrDeaths,Tode (Level): %%
+de.txt,scrKills,Erlegte Monster (Level): %%
+de.txt,scrTime,Zeit (Level): %%
+de.txt,scrNoScores,Noch keine Ergebnisse für diesen Raum.
+de.txt,scrCnetProblems,"Die  CaravelNet-Funktionen sind wegen Verbindungsproblemen  deaktiviert.////Stellen Sie sicher, dass Ihre Internetverbindung  funktioniert und dass Sie gültige CaravelNet-Benutzerangaben eingetragen  haben. Öffnen Sie danach den Optionen-Bildschirm und klicken Sie  ""Verbinden!"""
+de.txt,loginConnected,"  Sie sind jetzt als registrierter Benutzer mit CaravelNet verbunden!
+
+  Wenn Sie ein Forenkonto erstellt, aber kein CaravelNet-Abo gekauft  haben, werden Ihre Ergebnisse zwei Wochen nach dem Hochladen wieder vom  Server gelöscht.
+
+  Die Ergebnisse von CaravelNet-Abonnenten bleiben permanent gespeichert."
+de.txt,loginConnectedAnonymous,"  Sie  sind jetzt als anonymer Benutzer mit CaravelNet verbunden. So können  Sie Ihre Ergebnisse mit der aktuellen Rangliste vergleichen und sehen,  wo Sie stehen würden. Ihr Ergebnis wird aber nicht auf dem Server  gespeichert. Damit Ihre Ergebnisse gespeichert werden, brauchen Sie ein  CaravelGames-Konto (zugänglich über den Optionen-Bildschirm).
+  Wenn Sie später ein Konto erstellen, können Sie mit dem ""Alle  Ergebnisse hochladen""-Schalter Ihren bisherigen Fortschritt an unsere  Server übertragen."
+de.txt,loginFailed,"  Verbindungsfehler!
+
+1. Überprüfen Sie, ob Ihre Internetverbindung funktioniert.
+2. Stellen Sie sicher, dass Ihre Firewall die Verbindung für dieses Spiel nicht blockiert.
+3. Laden Sie http://forum.caravelgames.com um zu sehen, ob unser Server überhaupt antwortet. Wenn nicht, warten Sie einige Minuten und versuchen Sie's noch einmal.
+"
+de.txt,loginFailedBadCredentials,"4. Überprüfen Sie, ob Ihre Benutzerangaben richtig eingegeben sind."
+de.txt,loginFailedMissingCrentials,"4.  Vergewissern Sie sich, dass Sie einen gültigen Benutzernamen und  CaravelNet-Schlüssel eingegeben haben."
+de.txt,pauseHeader,DROD macht Pause.
+de.txt,pauseContinue,Weiterspielen
+de.txt,pauseContinueTip,"Weiterspielen.
+(Escape, Eingabe)"
+de.txt,pauseRestart,Raum von vorne beginnen
+de.txt,pauseRestartTip,"Startet den aktuellen Raum neu.
+(Im Spiel: F5)."
+de.txt,pauseRoomHelp,Nach Hilfe für diesen Raum suchen
+de.txt,pauseRoomHelpTip,"Holen Sie sich Online-Hilfe für den Raum, den Sie gerade spielen.
+(Im Spiel: F2)"
+de.txt,pauseHelp,Allgemeine Hilfe
+de.txt,pauseHelpTip,"Öffnet das Fenster zur Allgemeinen Hilfe.
+(Im Spiel: F1)"
+de.txt,pauseAchievements,Errungenschaften ansehen
+de.txt,pauseAchievementsTip,"Zeigt eine Liste aller Errungenschaften an.
+(Im Spiel: Tab)"
+de.txt,pauseOptions,Optionen
+de.txt,pauseOptionsTip,"Einstellungen ändern
+(Im Spiel: ??????)"
+de.txt,pauseReturn,Zurück zum Titelmenü
+de.txt,pauseReturnTip,"Der Spielfortschritt wird gespeichert,
+aber der Stand im aktuellen Raum geht
+verloren, wenn Sie das Spiel verlassen."
+de.txt,achHidden,???
+de.txt,levelCreatedDate,Fertiggestellt am %%.%%.%%
+de.txt,score1NoTie,Erster Rang!!
+de.txt,score1,Rang 1
+de.txt,score2,Rang 2
+de.txt,score3,Rang 3
+de.txt,score4,Rang 4
+de.txt,score5,Rang 5
+de.txt,score6,Rang 6
+de.txt,score7,Rang 7
+de.txt,score8,Rang 8
+de.txt,score9,Rang 9
+de.txt,score10,Rang 10
+de.txt,score11,Rang 11
+de.txt,score12,Rang 12
+de.txt,score13,Rang 13
+de.txt,score14,Rang 14
+de.txt,score15,Rang 15
+de.txt,score16,Rang 16
+de.txt,score17,Rang 17
+de.txt,score18,Rang 18
+de.txt,score19,Rang 19
+de.txt,score20,Rang 20
+de.txt,score21,Rang 21
+de.txt,score22,Rang 22
+de.txt,score23,Rang 23
+de.txt,score24,Rang 24
+de.txt,score25,Rang 25
+de.txt,scoreTie,%% Gleichstand!
+de.txt,scoreNoCnet,(anonym)
+de.txt,resultHoldTotals,"Gesamtergebnis Feste:
+"
+de.txt,resultLevelTotals,"Gesamtergebnis Level:
+"
+de.txt,resultMoves,"Züge: %%
+"
+de.txt,resultKills,"Erlegte Monster: %%
+"
+de.txt,resultDeaths,"Tode: %%
+"
+de.txt,resultTime,"Zeit: %%
+"
+de.txt,resultSecrets,"Gefundene Geheimräume: %%
+"
+de.txt,resultSecretsBetter,"Gefundene Geheimräume: %% von %%
+"
+de.txt,spawnCycle,Eiablage-Zyklus:
+de.txt,snakesPrefer,Schlangen-Streben:
+de.txt,clcHo,HO
+de.txt,clcRiz,RIZ
+de.txt,clcOn,ON
+de.txt,clcTal,TAL
+de.txt,clcVe,VE
+de.txt,clcRt,RT
+de.txt,clcIc,IK
+de.txt,clcAl,AL
+de.txt,tile1,Boden
+de.txt,tile2,Grube
+de.txt,tile3,Treppe abwärts
+de.txt,tile4,Wand
+de.txt,tile5,Rissige Wand
+de.txt,tile6,Level-gelöst-Tor
+de.txt,tile7,Raum-gelöst-Tor
+de.txt,tile8,Falltüren-Tor
+de.txt,tile9,Gelbe Tür
+de.txt,tile10,Gelbe Tür (geöffnet)
+de.txt,tile11,Falltür
+de.txt,tile12,Hindernis
+de.txt,tile13,Richtungspfeil (Nord)
+de.txt,tile14,Richtungspfeil (Nordost)
+de.txt,tile15,Richtungspfeil (Ost)
+de.txt,tile16,Richtungspfeil (Südost)
+de.txt,tile17,Richtungspfeil (Süd)
+de.txt,tile18,Richtungspfeil (Südwest)
+de.txt,tile19,Richtungspfeil (West)
+de.txt,tile20,Richtungspfeil (Nordwest)
+de.txt,tile21,Unsichtbarkeitstrank
+de.txt,tile22,Imitattrank
+de.txt,tile23,Schriftrolle
+de.txt,tile24,Schaltkugel
+de.txt,tile35,Teer
+de.txt,tile37,Zähstoff-Tor
+de.txt,tile54,Mosaik
+de.txt,tile55,Strasse
+de.txt,tile56,Gras
+de.txt,tile57,Erde
+de.txt,tile58,Fussboden
+de.txt,tile59,Meistermauer
+de.txt,tile61,Treppe aufwärts
+de.txt,tile62,Geheimgang-Wand
+de.txt,tile66,Wand
+de.txt,tile68,Raum-gelöst-Tor (geöffnet)
+de.txt,tile69,Level-gelöst-Tor (geöffnet)
+de.txt,tile70,Falltüren-Tor (geöffnet)
+de.txt,tile71,Zähstoff-Tor (geöffnet)
+de.txt,tileCheckpoint,Rücksetzpunkt
+de.txt,monsterPlayer,Spieler
+de.txt,monster0,Schabe
+de.txt,monster1,Schabenkönigin
+de.txt,monster2,Schabenei
+de.txt,monster3,Goblin
+de.txt,monster5,Fledergeist
+de.txt,monster6,Stierauge
+de.txt,monster7,Panzerschlange
+de.txt,monster8,Teermutter
+de.txt,monster9,Teerbaby
+de.txt,monster10,Hirn
+de.txt,monster11,Imitat
+de.txt,monster12,Spinne
+de.txt,monster29,Figur
+de.txt,sword,Schwert
+de.txt,swords,Schwerter (%%)
+de.txt,roomS,S
+de.txt,roomSouth,Süd
+de.txt,roomN,N
+de.txt,roomNorth,Nord
+de.txt,roomE,O
+de.txt,roomEast,Ost
+de.txt,roomW,W
+de.txt,roomWest,West
+de.txt,roomEntrance,Der Eingang
+de.txt,room1,Einmal
+de.txt,room2,Zweimal
+de.txt,room3,Dreimal
+de.txt,room4,Viermal
+de.txt,room5,Fünfmal
+de.txt,room6,Sechsmal
+de.txt,room7,Siebenmal
+de.txt,room8,Achtmal
+de.txt,room9,Neunmal
+de.txt,room10,Zehnmal
+de.txt,room11,Elfmal
+de.txt,room12,Zwölfmal
+de.txt,room13,Dreizehnmal
+de.txt,room14,Vierzehnmal
+de.txt,room15,Fünfzehnmal
+de.txt,room16,Sechszehnmal
+de.txt,room17,Siebzehnmal
+de.txt,room18,Achtzehnmal
+de.txt,room19,Neunzehnmal
+de.txt,roomMore,%%-mal
+de.txt,complButtNextGame,Nächste Level-Sammlung
+de.txt,complButtLearnMore,Weitere Informationen
+de.txt,complButtContinue,Weiterspielen
+de.txt,complHeader,Was nun?
+de.txt,complLearnMore,"Erfahren Sie mehr über die DROD-Reihe - die Welt und die Spiele: Journey to Rooted Hold, The City Beneath, Gunthro and the Epic Blunder, und die neuesten Teile der Reihe!"
+de.txt,complContinue,"Spielen  Sie weiter, um diese Feste zu meistern - finden Sie die Geheimräume,  und verschaffen Sie sich Zugang zu der Meisterzone. Sie finden Links zu  diesen zwei Möglichkeiten auch im Titelmenü."
+de.txt,rstFarthest,Fortgeschrittensten Speicherstand wählen
+de.txt,rstHelpTooltip,Klicken Sie für eine Kurzeinführung zum Laden von Spielständen
+de.txt,rstHelp,"Spielstände laden geht wie in Ihrem Lieblings-Videospiel. In DROD können Sie allerdings nicht  an beliebigen Stellen speichern, aber das Spiel speichert automatisch, wenn Sie einen uneroberten Raum betreten.
+
+Um einen früheren Spielstand wiederherzustellen, wählen Sie erst einen Level aus der Liste links, dann wählen Sie den gewünschten Raum in der Karte unten. Auf der Karte werden jene Räume grau dargestellt, welche Sie in dem Speicherstand noch nicht besucht hatten. Jene mit weissem Hintergrund sind erobert,  jene mit rotem Hintergrund noch nicht.
+
+Sie können später Ihren Spielstand mit den meisten eroberten Räumen laden, indem Sie ""Fortgeschrittensten Spielstand laden"" wählen.
+
+Diese Laden-Funktion ist vor Allem dazu da, zu einem bestimmten Raum zurückzuspringen um Ihr Spielresultat zu verbessern, den Raum nach Geheimnissen abzusuchen, oder um ihn einfach aus Freude noch einmal durchzuspielen."
+de.txt,rstWarning,"Sie haben einen älteren Spielstand geladen - manche Räume wurden dadurch auf ""nicht erobert"" zurückgesetzt.
+
+Sie können immer zu Ihrem Speicherstand mit den meisten eroberten Räumen zurückkehren, indem Sie ""Fortgeschrittensten Spielstand laden"" klicken."
+de.txt,optDelayText,Verzögerung für Tastenwiederholung:
+de.txt,optDelayShort,kurz
+de.txt,optDelayLong,lang
+de.txt,optGetPass,CNet-Schlüssel anfordern
+de.txt,optGetPassTooltip,"Spieler mit einem Benutzerkonto im Caravel Games-Forum können einen CaravelNet-Schlüssel anfordern und damit
+ihre Resultate zu einer Online-Bestenliste schicken. Solche Resultate werden nach zwei Wochen gelöscht.
+
+Die Resultate von Spielern mit bezahltem Abo bleiben ewig gespeichert, auch wenn das Abo ausläuft."
+de.txt,optDelayTooltip,"Verzögerung beim Tasten-Gedrückthalten, bis die  Aktion wiederholt wird"
+de.txt,optRateTooltip,"Glättung für Bewegungen und Wiederholungsrate, wenn eine Taste gedrückt bleibt"
+de.txt,achAddInfo,"Grau aber nicht halbtransparent dargestellte Errungenschaften sind ""aktiv"". Das bedeutet, dass Sie sie im gegenwärtigen Raum erreichen oder darauf hinarbeiten können (das gilt allerdings nicht immer: lesen Sie die Errungenschafts-Beschreibungen genau). Beachten Sie, dass gewisse Errungenschaften in allen oder fast allen Räumen aktiv sind."
+de.txt,pauseRestore,Spielstand eines anderen Raumes laden
+de.txt,cnetDescriptionKong,"Wegen der Regeln bei Kongregate ist diese Funktion leider deaktiviert - Sie können Ihre Resultate nicht  an die Online-Bestenliste senden. Wenn Sie das möchten, spielen Sie doch Flash DROD einfach auf caravelgames.com!"
+de.txt,defCont,Standard-Tastenbelegung:

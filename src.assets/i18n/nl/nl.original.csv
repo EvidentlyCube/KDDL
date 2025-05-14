@@ -1,0 +1,1512 @@
+File Name,Old Key,Translation
+nl.kdd1.txt,First Level,Eerste Level
+nl.kdd1.txt,Second Level,Tweede Level
+nl.kdd1.txt,Third Level,Derde Level
+nl.kdd1.txt,Fourth Level,Vierde Level
+nl.kdd1.txt,Mastery Level,Meesterlevel
+nl.kdd1.txt,entr1,"Beethro Budkin, vijfde generatie professionele kerkerverdelger, was door Koning Dugan ingehuurd om zijn meerdere niveaus diepe kerker te ontdoen van een grote kolonie monsters.
+Beethro rekent zijn kosten per kamer en als professional is hij per contract gebonden om alle monsters uit elke kamer in de kerker te verwijderen om betaald te worden.
+Het enige wapen dat Beethro nodig heeft om zijn werk te doen is een Heel Groot Zwaard, dat bijna ieder monster verslaat in één enkele slag.
+
+-----
+
+""Ik hoop dat je niets rekent voor de bovenste verdieping. Die heb ik al laten opruimen. Nou ja, grotendeels."""
+nl.kdd1.txt,entr2,"Beethro is een beetje uit vorm, maar het volgende level moet hem in goede conditie brengen."
+nl.kdd1.txt,entr3,"""Hmm..."" dacht Beethro. ""Tot nu toe zie ik hier vooral kakkerlakken"". Dit ziet er uit als een makkelijk klusje."""
+nl.kdd1.txt,entr4,"""Ik wou dat ik wat meer van deze mimici hier bij me had!"" zei Beethro. ""Het zou er een stuk sneller mee gaan."""
+nl.kdd1.txt,entr4Back,Beethro kwam terug om netjes het opruimwerk af te maken waar hij voor ingehuurd was.
+nl.kdd1.txt,entrMaster,"Beethro daalde de trap af, maar kwam terecht in een onbekende gang...
+
+Hij wordt niet betaald om het hier op te ruimen, maar zijn professionele eer drijft hem voort."
+nl.kdd1.txt,sc1e0,Gebruik de cijfertoetsen of 789uiojkl om te lopen. Toetsen kunnen worden gewijzigd vanuit het pauzemenu (escape).
+nl.kdd1.txt,sc1e1,"Wanneer je de besturing wilt nalezen, Toets 'Escape', klik 'Zoek algemene hulp' en ga naar 'Speluitleg'."
+nl.kdd1.txt,sc1_1n,"Deze gele deur zal later een doel hebben.
+
+Ga nu gewoon verder naar het westen."
+nl.kdd1.txt,sc1_1n1w1,"Draai je zwaard met 'Q' en 'W'."
+nl.kdd1.txt,sc1_1n1w2,Sla de sfeer aan met je zwaard om deuren in de kamer te openen.
+nl.kdd1.txt,sc1_1n1w3,Sommige sferen wisselen de positie van deuren tussen open en gesloten.
+nl.kdd1.txt,sc1_2n1w1,Je kunt zien wat een sfeer doet door er met je muis op te klikken. Met verschillende kleuren gemarkeerde deuren tonen de verschillende effecten.
+nl.kdd1.txt,sc1_2n1w2,"In plaats van te wisselen, kan een sfeer een gele deur altijd openen of sluiten."
+nl.kdd1.txt,sc1_3n1w1,Blauwe poorten gaan open zodra je alle verplichte kamers overwint in een level (verdieping).
+nl.kdd1.txt,sc1_3n1w2,Verplichte kamers zijn gemarkeerd met een rode achtergrond op de mini-kaart.
+nl.kdd1.txt,sc1_3n2w1,De huidige dialogen en zwevende tekst kun je overslaan met de spatiebalk.
+nl.kdd1.txt,sc1_3n2w2,"Zodra je een kamer verlaat met alle monsters verwijderd, wordt deze gemarkeerd als overwonnen."
+nl.kdd1.txt,sc1_3n2w3,"Op de mini-kaart zijn overwonnen kamers gemarkeerd met wit, tegenover de onoverwonnen rode kamers."
+nl.kdd1.txt,sc1_3n2w4,Overwin alle verplichte kamers om de weg vrij te maken naar het volgende level.
+nl.kdd1.txt,sc1_4n3w,Pijlen blokkeren de bewegingen van zowel Beethro als monsters in tegengestelde richting.
+nl.kdd1.txt,sc1_4n1w,Groene poorten openen zodra je alle monsters in een kamer opruimt.
+nl.kdd1.txt,sc1_5n1w1,"Bekijk hoe de zuidelijke kakkerlak zich gedraagt als hij probeert om diagonaal tegen een hoek op te lopen. Druk ""I"" of Cijferblok 5 om een zet te wachten."
+nl.kdd1.txt,sc1_5n1w2,"Als ze diagonaal tegen een hoek oplopen, bewegen de meeste monster verticaal indien mogelijk."
+nl.kdd1.txt,sc1_5n2w1,Onthoud dat je op een sfeer kunt klikken met de muis om te zien welke deuren hij beïnvloedt.
+nl.kdd1.txt,sc1_5n2w2,"Pas op! Het is hier gevaarlijk.
+
+Als je een fout maakt, kun je 'Backspace' toetsen om maximaal drie zetten ongedaan te maken."
+nl.kdd1.txt,sc1_5n2w3,Je kunt ook ongedaan maken (en herstarten) tijdens de animatie als je dood gaat!
+nl.kdd1.txt,sc1_5n2w4,"Een checkpoint 'X' laat je terugspoelen naar wanneer je er het laatst op bent gestapt. Druk 'R' om de kamer te herstarten of om terug te gaan naar het laatst aangeraakte checkpoint."
+nl.kdd1.txt,sc1_6n2w,Een goede zwaardvechter kan kan alle kakkerlakken verslaan zonder in de zuidelijke inham te schuilen.
+nl.kdd1.txt,sc1_6n3w1,gebruik de achterwaartse zwaai techniek om de kakkerlak te doden.
+nl.kdd1.txt,sc1_6n3w2,Ga op de groene vloer staan en zorg dat de kakkerlak op de zandtegel staat direct ten noorden van je...
+nl.kdd1.txt,sc1_6n3w3,Ga op de groene vloer staan en zorg dat de kakkerlak op de zandtegel staat direct ten zuiden van je...
+nl.kdd1.txt,sc1_6n3w4,...en stap dan noordoost om hem te doden.
+nl.kdd1.txt,sc1_6n3w5,...en stap dan zuidoost om hem te doden.
+nl.kdd1.txt,sc1_6n3w6,"Herhaal om de achterwaartse zwaai te begrijpen. Leer deze techniek goed, want hij zal cruciaal zijn bij je komende inspanningen."
+nl.kdd1.txt,sc1_5n1,Nooduitgang is buiten gebruik.
+nl.kdd1.txt,sc1_5n2,"Sorry m'neer, w'mak'n 't gebouw njet af meddie grote kakk'rlakk'n overal!"
+nl.kdd1.txt,sc1_4n,Houd de kasdeuren gesloten a.u.b..
+nl.kdd1.txt,sc1_1n1e,Deze trap leidt naar het volgende level. Hoed je voor wat je daar zult vinden...
+nl.kdd1.txt,sc2_2n1,Wist je dat je Shift kunt indrukken terwijl je een actie uitvoert om automatisch daarna de omgekeerde actie te doen?
+nl.kdd1.txt,sc2_2n2,"Met Shift+Wachten wacht je tot de volgende broedcyclus, en 'Cijferblok +' of '=' doet het omgekeerde van de vorige actie!"
+nl.kdd1.txt,sc2_1n1e,Je moet niet zo vernielzuchtig zijn.
+nl.kdd1.txt,sc2e,Begin met de noordelijke kamers zodat je hiet later niet helemaal hoeft terug te komen.
+nl.kdd1.txt,sc2_1s3e1,"Je kunt voorkomen dat je perongeluk de kamer verlaat door op ""X"" te drukken."
+nl.kdd1.txt,sc2_1s3e2,Een klein slot op de mini-kaart geeft aan dat een kamer vergrendeld is.
+nl.kdd1.txt,sc2_1s,Doe het niet! Het is duidelijk wat er gebeurt!
+nl.kdd1.txt,sc2_2s3e,Goede timing maakt het een stuk simpeler.
+nl.kdd1.txt,sc3_3n,Ik moet je waarschuwen voor mimici. Ze zijn je vriend noch je vijand -- ze houden er gewoon van om precies te bewegen zoals jij. Keer ze niet de rug toe.
+nl.kdd1.txt,sc3_3n1e,"Alle gevangenen zijn opgegeten door kerkerkakkerlakken en ik ben de volgende. Je kunt me niet genoeg betalen voor deze baan. Ik ben hier weg!
+
+-Gevangenbewaarder"
+nl.kdd1.txt,sc3_2n,Het is mogelijk om in deze gang te komen zonder in de kamer terug te komen nadat je hem overwonnen hebt.
+nl.kdd1.txt,sc3_1n1w,"Met de onzichtbaarheidsdrank kunnen ze je niet zien, maar nog steeds ruiken als je dichtbij komt."
+nl.kdd1.txt,sc3_1e,"Zo'n eind lopen. Het lijkt haast overbodig."
+nl.kdd1.txt,sc3_1s,"De Acht Poorten van Bill -- een werkelijk formidabele puzzel. Hij was een stuk lastiger, maar nu kan ik nakijken wat de sferen doen."
+nl.kdd1.txt,sc3_2s1w,"Ik zal je hier iets vertellen -- wanneer je lange en moeilijke paden ziet, moet je altijd naar een kortere weg zoeken."
+nl.kdd1.txt,sc3_2s1,Ga terug! Wist je dat er alleen het afgelopen jaar al 32 procent meer kerkergerelateerde sterfgevallen waren?
+nl.kdd1.txt,sc3_2s2,"Wees eerlijk -- verkennen van kerkers is NIET veilig, zeker niet in combinatie met verdovende middelen.
+-OTSK (Ouders Tegen Sterfgevallen in Kerkers)"
+nl.kdd1.txt,sc4_2n1e1,Dit is een meestermuur. Hij gaat niet open totdat je de hold overwint en ook al zijn geheimen.
+nl.kdd1.txt,sc4_2n1e2,"In de originele ""King Dugan's Dungeon"" was deze kamer een doorsteek waarmee je een level of twee kon overslaan."
+nl.kdd1.txt,sc4_1n1,"Hint:
+
+Je hoeft niet de hulp van de mimicus te gebruiken om de kakkerlakken bij de entree te verslaan."
+nl.kdd1.txt,sc4_1n2,"hint:
+
+Denk goed na hoe je de heel nuttige ACHTERWAART- SE ZWAAI techniek kunt gebruiken -- handig wanneer er een moster aan beide kanten van je staat."
+nl.kdd1.txt,sc4_2e,"Als je stijlvol te werk gaat, staan alle 9 mimici op één lijn rechts van je."
+nl.kdd1.txt,scMe1,Moeilijkere versies van bestaande puzzels.
+nl.kdd1.txt,scMe2,Laatste woorden!
+nl.kdd1.txt,scMe3,Moeilijke originele kamers.
+nl.kdd1.txt,scM_1s1,Dat is het. Je hebt nu alles wat er in dit spel te vinden is opgelost. Er zijn misschien alleen nog een paar prestaties over.
+nl.kdd1.txt,scM_1s2,Ik feliciteer je hartelijk en nodig je uit om verder te gaan op deze reis.
+nl.kdd1.txt,scM_1s3,"Op de CaravelGames.com website kun je de volgende afleveringen van KDDL vinden, of elk van de volledige DROD spellen downloaden voor Windows, MacOS of Linux."
+nl.kdd1.txt,scM_1s4,Blijf spelen!
+nl.kdd1.txt,scM_1s5,Hier is een kleine beloning! Dood alle ogen zonder op het bruine gras te stappen.
+nl.kdd1.txt,scM_1s6,Kakkerlakkoninginnen worden gedood zodra je op het checkpoint stapt in de hoek rechtsboven.
+nl.kdd1.txt,scM_1s7,"Heel mooi, goed gedaan!"
+nl.kdd1.txt,sp1e0,Gebruikt de cijfertoetsen om rond te lopen.
+nl.kdd1.txt,sp1e1,"Als je op een notebook speelt, kun je bewegen met het cijferblok van de laptop: 789, UIO, JKL"
+nl.kdd1.txt,sp1e2,Ga verder naar het noorden.
+nl.kdd1.txt,sp1_3n2w1,"Ah, de eerste kakkerlak van de kerker!"
+nl.kdd1.txt,sp1_3n2w2,"Kom maar bij Beethro, aanstaande kakkerlakburger!"
+nl.kdd1.txt,sp1_3n2w3,"Netjes gedood! Deze klus wordt een succes, dat weet ik zeker!"
+nl.kdd1.txt,sp1_6n2w,"I had de kakkerlakken kunnen opruimen zonder de schuilen in de inham, maar ik ben lui vandaag."
+nl.kdd1.txt,sp1_6n3w1,Je hebt een geheime kamer gevonden!
+nl.kdd1.txt,sp1_6n3w2,Vind en overwin ze allemaal om toegang te krijgen tot een speciale uitdagende meesterlocatie.
+nl.kdd1.txt,sp2_2e,Die koningin maakt stapels nieuwe kakkerlakken tegen de tijd ik naar die sfeer en terug ben gelopen!
+nl.kdd1.txt,sp2_1s1e1,"Hee, een schaduwvlerk!"
+nl.kdd1.txt,sp2_1s1e2,Helemaal alleen ook... dat betekent dat ik hem misschien door de hele kamer moet najagen.
+nl.kdd1.txt,sp2_1s1e3,"In tegenstelling tot kakkerlakken, vluchten schaduwvlerken voor Beethro en proberen op een afstand van vijf tegels te blijven."
+nl.kdd1.txt,sp2_1s1e4,"Ze zijn niet zo bang in grotere aantallen, en zullen niet aarzelen om aan te vallen als ze hun prooi omsingelen."
+nl.kdd1.txt,sp2_2s2e1,Hmmm... kan ik deze koninginnen doden voordat ze eieren leggen?
+nl.kdd1.txt,sp2_2s2e2,Aaah... te langzaam!
+nl.kdd1.txt,sp2_2s2e3,Ha! Makkelijk.
+nl.kdd1.txt,sp2_2s3e1,Ik weet zeker dat er een nettere manier was om deze koninginnen uit te schakelen.
+nl.kdd1.txt,sp2_2s3e2,DAT was nu een mooi staaltje zwaardmeesterschap.
+nl.kdd1.txt,sp3_3n1e,Geen gevangenen meer? Dit word een eenzame klus met niemand om mee te praten.
+nl.kdd1.txt,sp3_2n,Werkelijk.
+nl.kdd1.txt,sp3_1n2w0,Oei! Ik denk dat ik deze keer de drank nodig heb!
+nl.kdd1.txt,sp3_1n2w1,Poeh! Die koninginnen zullen nu geen eieren leggen tenzij ik dicht bij ze ben.
+nl.kdd1.txt,sp3_1n2w2,"Dat was een beetje ruig, maar geen probleem voor een goede delver zoals ik."
+nl.kdd1.txt,sp3_1n2w3,Ha! Niets is deze delver te moeilijk!
+nl.kdd1.txt,sp3_1n1w1,"Hee, dit is best handig!"
+nl.kdd1.txt,sp3_1n1w2,"Ik weet dat ik deze kamer had kunnen opruimen zonder onzichtbaar te zijn, maar het was toch leuk."
+nl.kdd1.txt,sp3_1n1w3,Dat was niet zo moeilijk... Ik vraag me af waarom die drank daar staat.
+nl.kdd1.txt,sp3_1s,Ik had alle deuren sneller open kunnen krijgen.
+nl.kdd1.txt,sp3_3s1w1,Dit ziet er gevaarlijk uit... het lijkt me een val...
+nl.kdd1.txt,sp3_3s1w2,"Nadat ik de sfeer aansla, zou ik de kamer kunnen opruimen zonder mijn zwaard te draaien. Gewoon behendig zijn!"
+nl.kdd1.txt,sp3_3s1w3,"Nou ja, Ik heb misschien mijn zwaard gedraaid, maar ik leef tenminste nog."
+nl.kdd1.txt,sp3_3s1w4,Wauw! Iemand had me hier moeten zien!
+nl.kdd1.txt,sp4_2n1e,Nog een geheime kamer waar iedereen behalve ik hem het minst verwacht.
+nl.kdd1.txt,sp4_1n1,Ik had deze kamer kunnen opruimen zonder terug te gaan naar de entreehal.
+nl.kdd1.txt,sp4_1n2,Beethro Budkin overwint elke uitdaging!
+nl.kdd1.txt,sp4_2e1,Goede Genade! Misschien bestaat er zoiets als te veel mimici!
+nl.kdd1.txt,sp4_1s2e,Waarom ziet een kamer er beter uit als je alle valluiken laat vallen?
+nl.kdd1.txt,spM_1s,Je hebt gefaald...
+nl.kdd1.txt,achName0,Ik Heb Je In het Oog
+nl.kdd1.txt,achName1,Moedermoord
+nl.kdd1.txt,achName2,Ik Werd Wakker en Had Overal een Hekel Aan
+nl.kdd1.txt,achName3,Echte Zwaardmeester
+nl.kdd1.txt,achName4,Vaste Hand
+nl.kdd1.txt,achName5,Koninginnenburger
+nl.kdd1.txt,achName6,Enkele Reis
+nl.kdd1.txt,achName7,Wees Vlug!
+nl.kdd1.txt,achName8,Wees Snel!
+nl.kdd1.txt,achName9,Armen Stil
+nl.kdd1.txt,achName10,Pak het Perkament
+nl.kdd1.txt,achName11,Zichtbaarheid
+nl.kdd1.txt,achName12,Onzichtbaarloos
+nl.kdd1.txt,achName13,Maak Haast
+nl.kdd1.txt,achName14,De Acht Poorten van Bill
+nl.kdd1.txt,achName15,Prima Kakkerlakbeheersing
+nl.kdd1.txt,achName16,Het Mysterie
+nl.kdd1.txt,achName17,Niet Achterom Kijken
+nl.kdd1.txt,achName18,Alleen met de Kakkerlakken
+nl.kdd1.txt,achName19,Afgronden zijn Prachtig
+nl.kdd1.txt,achName20,Ongevulde Leegte
+nl.kdd1.txt,achName21,Met Stijl
+nl.kdd1.txt,achName22,Amateurdelver
+nl.kdd1.txt,achName23,Onervaren Opruimer
+nl.kdd1.txt,achName24,Verdelger op Contractbasis
+nl.kdd1.txt,achName25,Ik Ben een Professional!
+nl.kdd1.txt,achName26,Overmeestering
+nl.kdd1.txt,achName27,Post-overmeestering
+nl.kdd1.txt,achName28,Gegrilde Kakkerlakken
+nl.kdd1.txt,achName29,Gesneden Koninginnen
+nl.kdd1.txt,achName30,Eierfondue
+nl.kdd1.txt,achName31,Boze Ogenpudding
+nl.kdd1.txt,achName32,Schaduwvlerk Dip
+nl.kdd1.txt,achName33,Stemvork
+nl.kdd1.txt,achName34,Omlaag met het Groen
+nl.kdd1.txt,achName35,Horde Management
+nl.kdd1.txt,achName36,Herlever
+nl.kdd1.txt,achName37,Tijd is Niets!
+nl.kdd1.txt,achName38,Maak Ruimte
+nl.kdd1.txt,achName39,Loop naar de Maan
+nl.kdd1.txt,achDesc0,Maak drie boze ogen wakker in één zet
+nl.kdd1.txt,achDesc1,Dood een kakkerlakkoningin terwijl haar eieren groeien
+nl.kdd1.txt,achDesc2,"Ja, Je moet wel vernielzuchtig zijn"
+nl.kdd1.txt,achDesc3,Verschuil je niet in de inham in 6N 2W in het Eerste Level
+nl.kdd1.txt,achDesc4,"Ontruim op één na alle niet geheime kamers met monsters in het Eerste Level, zonder dat je je zwaard draait. %% van de 6 gedaan"
+nl.kdd1.txt,achDesc5,Dood de kakkerlakkoningin in Tweede Level 2O voordat ze de hoek bereikt
+nl.kdd1.txt,achDesc6,Draai je zwaard niet in Tweede Level 1Z nadat je de sfeer aanslaat
+nl.kdd1.txt,achDesc7,Dood alle kakkerlakkoninginen voordat ze eieren leggen in Tweede Level 2Z 2O
+nl.kdd1.txt,achDesc8,Ontruim Tweede Level 2Z 3E voordat er eieren worden gelegd
+nl.kdd1.txt,achDesc9,Ontruim Tweede Level 3N zonder je zwaard te draaien
+nl.kdd1.txt,achDesc10,Bereik het perkament in Derde Level 2N zonder de kamer opnieuw binnen te komen
+nl.kdd1.txt,achDesc11,Dood alle kakkerlakken zonder de drank te drinken in Derde Level 1N 1W
+nl.kdd1.txt,achDesc12,Ontruim Derde Level 1N 2W zonder de drank te drinken
+nl.kdd1.txt,achDesc13,Ontruim Derde Level 1N 1O zonder dat de koninginnen eieren leggen
+nl.kdd1.txt,achDesc14,Los De Acht Poorten van Bill op door 5 sferen aan te slaan (Derde Level 1Z)
+nl.kdd1.txt,achDesc15,Leid alle drie de kakkerlakken naar buiten voordat je er één doodt in Derde Level 2N 1E
+nl.kdd1.txt,achDesc16,Ontruim Derde Level 3N zonder de drank te drinken
+nl.kdd1.txt,achDesc17,Ontruim Vierde Level 1N zonder terug te keren naar de entreehal
+nl.kdd1.txt,achDesc18,Ontruim Vierde Level 1Z 1O zonder de mimicusdrank te drinken
+nl.kdd1.txt,achDesc19,Laat alle valluiken vallen in Vierde Level 1Z 1O en ontruim de kamer tijdens hetzelfde bezoek
+nl.kdd1.txt,achDesc20,Ontruim Vierde Level 2Z 1O en laat alle valluiken vallen tijdens hetzelfde bezoek
+nl.kdd1.txt,achDesc21,Wees stijlvol in Vierde Level 2O
+nl.kdd1.txt,achDesc22,Eerste level ontruimd
+nl.kdd1.txt,achDesc23,Tweede level ontruimd
+nl.kdd1.txt,achDesc24,Derde level ontruimd
+nl.kdd1.txt,achDesc25,Vierde level ontruimd
+nl.kdd1.txt,achDesc26,Overmeester de hold
+nl.kdd1.txt,achDesc27,Post-overmeester de hold
+nl.kdd1.txt,achDesc28,Dood 35 kakkerlakken
+nl.kdd1.txt,achDesc29,Dood 20 kakkerlakkoninginnen
+nl.kdd1.txt,achDesc30,Dood 15 kakkerlak-eieren
+nl.kdd1.txt,achDesc31,Dood 15 boze ogen
+nl.kdd1.txt,achDesc32,Dood 5 schaduwvlerken
+nl.kdd1.txt,achDesc33,Sla een sfeer drie zetten achter elkaar aan
+nl.kdd1.txt,achDesc34,Open 5 keer een groene poort
+nl.kdd1.txt,achDesc35,Dood 2500 monsters
+nl.kdd1.txt,achDesc36,Ga 50 keer dood
+nl.kdd1.txt,achDesc37,Maak 250 zetten ongedaan
+nl.kdd1.txt,achDesc38,Laat 100 valluiken vallen
+nl.kdd1.txt,achDesc39,Zet 5000 stappen
+nl.kdd1.txt,outro,"Wat staat Beethro te wachten? Zullen de gevaren nog hachelijker worden? Krijgt hij het voor elkaar om Koning Dugan's Kerker helemaal op te ruimen zodat hij eindelijk betaald wordt?
+
+
+<font size=""32"" color=""#FFFF00"">Gefeliciteeerd!</font>
+
+Je hebt de eerste aflevering uitgespeeld van de Deadly Rooms of Death, King Dugan's Dungeon Lite hold. Ik hoop oprecht dat je van deze ervaring genoten hebt.
+Nu je de laatste trappen in deze set bent afgedaald, wil je misschien proberen om dit spel te Overmeesteren en dan te Post-overmeesteren! Om dit te doen moet je op zoek naar de geheime kamers. Het aantal geheime kamers in elk level wordt nu weergegeven op het Herstelscherm.
+Wanneer je ze allemaal weet te overwinnen, wordt er een speciale Meesterlocatie geopend. Kun je uitvinden hoe je er komt?
+Je wilt misschien ook de volgende aflevering in de DROD:KDDL serie spelen.
+
+Voordat ik je laat genieten van je gevoel van uitzinnige vreugde, wil ik graag een aantal mensen bedanken, zonder wie dit spel nooit het daglicht had gezien.
+
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - De maker, vader en uitvinder van DROD. Zonder hem zou dit unieke spelidee nooit het daglicht hebben gezien.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - Hij heeft DROD: JtRH en DROD: TCB grotendeels in zijn eentje geprogrammeerd. Bedankt voor de fantastische basis voor de code, het maken van Flash DROD was een genoegen.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Heer en meester van het Caravel Forum en de hoofdprogrammeur van CaravelNet. Dankzij hem kun je om scores strijden en nog veel meer!
+
+
+<font size=""23"" color=""#FFFF00"">Programmeren, Ontwikkeling</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Grafische onderdelen & Muziek</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Server-side ontwikkeling</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Level ontwikkeling</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Primaire Testers</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testers</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Vertalingen</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Acteurs</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Originele Programmatuur, Idee & Levels</font> - %%
+
+
+Tot volgende keer!
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+nl.kdd1.txt,complNextGame,Speel de volgende levelset - KDD Lite 2. Dit opent in een nieuw venster en je kunt dit venster veilig sluiten. Je voortgang is opgeslagen.
+nl.kdd1.txt,scNew1,Let goed op wat er gebeurt tijdens []
+nl.kdd1.txt,scNew2,"Eieren worden nooit op pijlen, valluiken of gele deuren gelegd."
+nl.kdd1.txt,scNew3,"bovendien, als een koningin beweegt op de zet dat ze broed, verschijnt er geen ei op de tegel waar ze vandaan komt."
+nl.kdd1.txt,sc1_New1N1W,Als je het nog niet wist: Koninginnen lopen weg van je en leggen geen eieren op open gele deuren.
+nl.kdd1.txt,sc1_New3N1,Kakkerlakkoninginnen leggen elke 30 zetten eieren (de zet nadat de broedklok rood wordt)
+nl.kdd1.txt,sc1_New3N2,"5 zetten nadat ze gelegd zijn, kruipen de volgroeide kakkerlakken uit de eieren."
+nl.kdd1.txt,sc1_New3E,Kakkerlakkoninginnen rennen altijd weg van Beethro; dit gedrag kan gebruikt worden om ze te manipuleren.
+nl.kdd1.txt,sc1_new6n2w1,Gebroken en geheime muren kunnen worden gebroken met je zwaard.
+nl.kdd1.txt,sc1_new6n2w2,Geheime muren lijken echter veel meer op gewone muren.
+nl.kdd1.txt,sc1_new6n2w3,Dus mis niet de geheime muren in de hoek wanneer je terugkomt.
+nl.kdd1.txt,sc1_5n1w3,Dit spel is helemaal deterministisch - er is geen willekeurig of onvoorspelbaar gedrag.
+nl.kdd1.txt,sc1_new6N,De geheimen hoeven niet overwonnen te worden in één spel om de hold te Overmeesteren.
+nl.kdd1.txt,sc_evileyes,"Op dit level zul je boze ogen tegenkomen. Zodra je in hun gezichtslijn stapt, worden ze wakker en achtervolgen ze je als roaches."
+nl.kdd1.txt,defCont,Standaard besturing:
+nl.kdd1.txt,sc_diago,"Je kunt diagonaal bewegen, zelfs door heel smalle gangen."
+nl.kdd1.txt,sc_broken,Breek deze gebriken en geheime muren met je zwaard.
+nl.kdd1.txt,sc_queens1,Kakkerlakkoninginnen werpen elke 30 zetten kakkerlak-eieren (de zet nadat de broedklok rood wordt).
+nl.kdd1.txt,sc_queens2,"5 zetten nadat ze gelegd zijn, kruipen de volgroeide kakkerlakken uit de eieren."
+nl.kdd1.txt,sc_queens3,"Eieren worden niet op pijlen, valluiken of gele deuren gelegd. Gebruik de ""I"" toets of Cijferblok 5 om een zet te wachten."
+nl.kdd1.txt,sc_mimics,"Als je op een mimicusdrank stapt, gebruik je de muis of de wacht toets om de tegel te selecteren waar je de mimicus neer wilt zetten."
+nl.kdd1.txt,sc_shiftwait,Het kan handig zijn om met Shift+Wachten te wachten tot de volgende broedcyclus.
+nl.kdd1.txt,sp_mother1,Elke dertig zetten laten de teermoeders de teer één tegel in alle richtingen groeien.
+nl.kdd1.txt,sp_mother2,"Het is relatief veilig om omringd te worden door groeiende teer, maar je moet oppassen voor teerbaby's die kunnen ontstaan bij de groei."
+nl.kdd1.txt,sc_backswipe,Volg het zandpad om de achterwaartse zwaai te leren! Onthoud dat je diagonaal kunt bewegen en draai je zwaard niet.
+nl.kdd1.txt,sc_trapdoors,Deze roze-paarze tegels zijn valluiken en ze vallen als jij of een mimicus ervanaf stapt.
+nl.kdd2.txt,Fifth Level,Vijfde Level
+nl.kdd2.txt,Sixth Level,Zesde Level
+nl.kdd2.txt,Seventh Level,Zevende Level
+nl.kdd2.txt,Eighth Level,Achtste Level
+nl.kdd2.txt,Mastery Level,Meesterlevel
+nl.kdd2.txt,Tutorial,Oefenlevel
+nl.kdd2.txt,entr5,"Beethro Budkin, vijfde generatie professionele kerkerverdelger, was door Koning Dugan ingehuurd om zijn meerdere niveaus diepe kerker te ontdoen van een grote kolonie monsters.
+Beethro rekent zijn kosten per kamer en als professional is hij per contract gebonden om alle monsters uit elke kamer in de kerker te verwijderen om betaald te worden.
+Het enige wapen dat Beethro nodig heeft om zijn werk te doen is een Heel Groot Zwaard, dat bijna ieder monster verslaat in één enkele slag.
+
+-----
+
+Het vorige level had Beethro zich in het zweet gewerkt. ""Ik geloof dat dit toch hard werken wordt"" Gelukkig kwam hem een koele bries uit het volgende level tegemoet."
+nl.kdd2.txt,entr6,"Misschien wilde de architect van dit level iets te fanatiek zijn punt maken, wat dat punt dan ook was. In ieder geval mag je blij zijn dat er geen andere levels als deze in Dugan's Kerker zijn."
+nl.kdd2.txt,entr6Back,Beethro kwam terug om netjes het opruimwerk af te maken waar hij voor ingehuurd was.
+nl.kdd2.txt,entr7,"Terwijl Beethro de trap afdaalde, hoorde hij een luid gesis. Als geharde professional wist hij direct wat het was, maar was desondanks ontsteld door de immense hoeveelheid. ""Jemig! Hoeveel van die akelige gevallen zitten daar beneden wel niet?"""
+nl.kdd2.txt,entr8,"Sommige monsters zijn geslepen en dodelijk, en andere laten alleen maar een hoop rotzooi achter."
+nl.kdd2.txt,entrMaster,"Beethro daalde de trap af, maar kwam terecht in een onbekende gang...
+
+Hij wordt niet betaald om het hier op te ruimen, maar zijn professionele eer drijft hem voort."
+nl.kdd2.txt,entrTut,Oefeningen
+nl.kdd2.txt,entrTutLeave,Beethro verliet het oefenlevel met veel nieuwe inzichten.
+nl.kdd2.txt,entrPremaster,"Beethro strompelde een aantal slecht verlichte trappen op en af. ""Het is hier levensgevaarlijk en er lopen hier niet eens kakkerlakken rond! Iemand zou hier op zijn minst een leuning moeten maken ofz-"" dacht Beethro vlak voordat hij twaalf treden omlaag viel en ruim een uur buiten westen raakte. Na werkelijk afschuwelijke dromen over oogbalpudding werd Beethro versuft wakker in een kamer. ""Gob! Is het te veel gevraagd om deze plekken voor één keer op de kaart te zetten?"""
+nl.kdd2.txt,sc51n2w,Ik hoop dat je een weg terug hebt vrijgehouden.
+nl.kdd2.txt,sc63e,Geheime Doorgang
+nl.kdd2.txt,sc61s1w,"Dit is een Meesterdeur.
+Hij gaat open als je het laatste level hebt opgelost en ook alle geheime kamers hebt overwonnen."
+nl.kdd2.txt,sc72n1w,"Voor de zwakkeren van geest, ga terug! Deze kamer kan alleen worden opgelost met een meesterlijk intellect.
+(Deze kamer is niet verplicht.)"
+nl.kdd2.txt,sc71n1,Ik had niet gedacht dat je die laatste zou uitdokteren.
+nl.kdd2.txt,sc71n2,"Okee, ik geef toe dat het niet PRECIES hetzelfde is als light cycles.
+
+-Erik"
+nl.kdd2.txt,sc71n3,"Mijn eerbetoon aan Tron.
+
+-Erik"
+nl.kdd2.txt,sc81s1,De levende teer kan alleen beschadigd worden op platte zijden.
+nl.kdd2.txt,sc81s2,"Elke blob die niet ten minste 2 tegels breed en lang is, is instabiel en zal uiteenvallen in teerbaby's"
+nl.kdd2.txt,sc81s3,Probeer het maar eens uit.
+nl.kdd2.txt,sc81s1e,Een verstandig man ruimt de noordelijke kamer op voordat hij deze gang volgt.
+nl.kdd2.txt,sc83s,"Ruim de doorgangen naar het zuiden en westen op voordat je verder gaat, zodat je hier niet hoeft terug te komen."
+nl.kdd2.txt,scMe1,Moeilijkere versies van oude puzzels.
+nl.kdd2.txt,scMe2,Laatste woorden.
+nl.kdd2.txt,scMe3,Nieuwe puzzels
+nl.kdd2.txt,scM1s1,"Kijk aan! Op misschien nog een paar prestaties na, heb je alles in het spel gedaan."
+nl.kdd2.txt,scM1s2,"Ik bied je mijn hartelijke felicitaties aan, je hebt een behoorlijke prestatie geleverd!"
+nl.kdd2.txt,scM1s3,"Op caravelgames.com kun je de volgende afleveringen van KDDL vinden en elk van de volledige DROD games downloaden voor Windows, MacOS en Linux."
+nl.kdd2.txt,scM1s4,Ga zo door!
+nl.kdd2.txt,scM1s5,Hier is een kleine beloning! Dood alle ogen zonder op het bruine gras te stappen.
+nl.kdd2.txt,scM1s6,De onderste twee kakkerlakkoninginnen worden automatisch gedood zodra je op het checkpoint stapt in de hoek rechtsboven.
+nl.kdd2.txt,scM1s7,Hartelijke felicitaties!
+nl.kdd2.txt,scT1,Loop helemaal naar rechts en let op hoe de kakkerlak zich gedraagt als hij diagonaal tegen een hoek oploopt.
+nl.kdd2.txt,scT2,"Slangen bewegen volgens hun eigen, veel complexere regels. Hun huidige voorkeur wordt weergegeven onder de broedcyclus klok."
+nl.kdd2.txt,scT3,"Als een DROD monster diagonaal tegen de hoek van een obstakel oploopt, glijdt hij er liever verticaal langs indien mogelijk."
+nl.kdd2.txt,scT4,"'Escape' opent het pauzemenu, waar je 'Algemene Hulp' kunt vinden om de besturing na te kijken wanneer je wilt."
+nl.kdd2.txt,scT5,"Om te voorkomen dat je per ongeluk een kamer verlaat toets je 'X' om hem te vergrendelen en ontgrendelen. Een klein slot op de mini-kaart geeft aan dat een kamer vergrendeld is."
+nl.kdd2.txt,scT6,"Shift+Toets voert een actie en zijn omgekeerde uit.
+Shift+Wachten wacht tot de volgende broedcyclus.
+Cijferblok '+' of '=' voert het omgekeerde van de vorige zet uit."
+nl.kdd2.txt,scT7,F3 toont een zetteller om je te helpen met optimaliseren voor betere scores.
+nl.kdd2.txt,scT8,Alle toetsen kunnen veranderd worden vanuit de spelopties.
+nl.kdd2.txt,scT9,"Als je geen CaravelNet lidmaatschap hebt, worden je scores niet opgeslagen in de ranglijsten, maar krijg je alleen te zien welke plaats je gekregen zou hebben."
+nl.kdd2.txt,scT10,Klik op elementen om te zien wat sferen doen en wat boze ogen zien.
+nl.kdd2.txt,scT11,Spatiebalk verwijdert alle dialogen en prestaties van het scherm.
+nl.kdd2.txt,scT13,"In tegenstelling tot kakkerlakken, vluchten schaduwvlerken voor Beethro en proberen op een afstand van vijf tegels te blijven."
+nl.kdd2.txt,scT14,"Ze zijn niet zo bang in grotere aantallen, en zullen niet aarzelen om aan te vallen als ze hun prooi omsingelen."
+nl.kdd2.txt,sc1_6n3w1,gebruik de achterwaartse zwaai techniek om de kakkerlak te doden.
+nl.kdd2.txt,sc1_6n3w2,Ga op de groene vloer staan en zorg dat de kakkerlak op de zandtegel staat direct ten noorden van je...
+nl.kdd2.txt,sc1_6n3w3,Ga op de groene vloer staan en zorg dat de kakkerlak op de zandtegel staat direct ten zuiden van je...
+nl.kdd2.txt,sc1_6n3w4,...en stap dan noordoost om hem te doden.
+nl.kdd2.txt,sc1_6n3w5,...en stap dan zuidoost om hem te doden.
+nl.kdd2.txt,sc1_6n3w6,"Herhaal om de achterwaartse zwaai te begrijpen. Leer deze techniek goed, want hij zal cruciaal zijn bij je komende inspanningen."
+nl.kdd2.txt,sp5e1,Dit is een oefenruimte.
+nl.kdd2.txt,sp5e2,Ga hierheen als je het spel niet eerder hebt gespeeld.
+nl.kdd2.txt,sp5e3,"Loop rond met het cijferblok of 789, UIO, JKL"
+nl.kdd2.txt,sp52n1,Het oplossen van deze kamer zonder een van die deuren te openen is iets om trots op te zijn.
+nl.kdd2.txt,sp52n2,Ha! Slordig kerkerontwerp met al die onnodige sferen!
+nl.kdd2.txt,sp51n2w1,"Ai, moet je al die boze ogen zien!"
+nl.kdd2.txt,sp51n2w2,Ah! Ik voel me nog steeds ongemakkelijk als een van die gevallen wakker wordt!
+nl.kdd2.txt,sp63e,Begin hier een patroon te zien...
+nl.kdd2.txt,sp63n,Maar dit ziet er bekend uit...
+nl.kdd2.txt,sp63w,Dugan kan me maar beter betalen voor al deze kamers.
+nl.kdd2.txt,sp72n1w1,"Jemig! Dat serpent moet zo'n duizend vierhonderd en vijfenveertig voet lang zijn!"
+nl.kdd2.txt,sp72n1w2,Maar mijn contract zegt dat ik niet verplicht ben om monsters aan te pakken langer dan duizend vierhonderd en vierenveertig
+nl.kdd2.txt,sp72n1w3,Ik kan deze kamer laten zitten.
+nl.kdd2.txt,sp71n1e1,Mijn zwaard kan dat kronkelende geval geen schrammetje toebrengen.
+nl.kdd2.txt,sp71n1e2,Maar lok hem gewoon in een doodlopend eind en ik ben van hem af.
+nl.kdd2.txt,sp84s1,"Teermoeders ook nog? Waarom, waarom, waarom...?"
+nl.kdd2.txt,sp83s1e,Ik haat teermoeders.
+nl.kdd2.txt,sp82s2e,Ik moet oppassen hier... Ik kom er niet door als de teer die doorgang blokkeert!
+nl.kdd2.txt,sp84s3e1,Laat maar. Daar gaan we!
+nl.kdd2.txt,sp84s3e2,En hier een muur...
+nl.kdd2.txt,sp84s3e3,Mooi. In dit tempo hebben we dit level in een paar minuten in kaart gebracht.
+nl.kdd2.txt,sp84s3e4,Hoor je dat? Het is de teerautoriteit! We moeten ons verstoppen!
+nl.kdd2.txt,sp84s3e5,Aaaah! I liet bijna de kaart vallen!
+nl.kdd2.txt,sp84s3e6,Wacht! Heb ik de kaart met de goede kant omhoog?
+nl.kdd2.txt,sp85s2e1,Deze kamer... hij ziet er... op een of andere manier... bekend uit...
+nl.kdd2.txt,sp85s2e2,Ik word er... boos van... en gefrustreerd!
+nl.kdd2.txt,sp86s3e,"Verdraaid... Ik hoop dat er geen slinkse trucs zijn, zoals kamers ergens verborgen achter een geheime muur!"
+nl.kdd2.txt,sp88s3e1,Oh gob... van deze kamer ga ik nachtmerries krijgen...
+nl.kdd2.txt,sp88s3e2,Nooit meer... nooit meer...
+nl.kdd2.txt,spM1s,Je hebt gefaald...
+nl.kdd2.txt,spT2,"Draai je zwaard met 'Q' en 'W'."
+nl.kdd2.txt,spT3,Sla nu de sfeer aan met je zwaard.
+nl.kdd2.txt,spT4,"Sferen beïnvloeden deuren op drie manieren - ze kunnen ze openen, sluiten, of hun positie verwisselen."
+nl.kdd2.txt,spT5,Klik op de sfeer met de muis om te zien welke deuren hij beïnvloedt
+nl.kdd2.txt,spT6,Je doel in DROD is om elk level van monsters te ontdoen.
+nl.kdd2.txt,spT7,Steek de kakkerlak neer met je zwaard om het te doden.
+nl.kdd2.txt,spT8,Pijlen blokkeren je bewegingen in een tegengestelde richting.
+nl.kdd2.txt,spT9,"Stap op het checkpoint. Je gaat terug naar het exacte moment dat je erop gestapt bent als je dood gaat of herstart met 'R'."
+nl.kdd2.txt,spT10,"Als je dood gaat of in een situatie bent waar elke zet tot je dood leidt, kun je tot drie zetten ongedaan maken met 'Backspace'."
+nl.kdd2.txt,spT11,"Deze drank laat je een mimicus plaatsen. Mimici kopiëren elke beweging die je maakt en ze bewegen direct na jou, maar vóór de monsters."
+nl.kdd2.txt,spT12,Plaats een mimicus op de tegel beneden gemarkeerd met een checkpoint. Gebruik hem om alle valluiken te laten vallen en de rode poort gaat open.
+nl.kdd2.txt,spT13,"Gefeliciteerd, je hebt deze kamer opgelost!"
+nl.kdd2.txt,spT14,"Nadat je de kamer verlaat is je overwinning permanent. Je kunt altijd je beste score voor de kamer zien, en je kunt zien hoe je je geplaatst hebt vergeleken met de scores op de ranglijst."
+nl.kdd2.txt,spT15,"Als je het spel verbonden hebt met geldige Caravel forum gebruikersinformatie, wordt je score toegevoegd aan de ranglijst."
+nl.kdd2.txt,spT16,"Je score blijft op de ranglijst gedurende twee weken, tenzij je betaalt voor een Caravel lidmaatschap. In dat geval blijft je score voor altijd op de ranglijst staan."
+nl.kdd2.txt,spT17,Je kunt nu de oefenkamer verlaten.
+nl.kdd2.txt,achName0,Waar is Meester?
+nl.kdd2.txt,achName1,Oosterwijk
+nl.kdd2.txt,achName2,Opgeruimdheid
+nl.kdd2.txt,achName3,Sfeerontwijker
+nl.kdd2.txt,achName4,Statische Handen
+nl.kdd2.txt,achName5,Perfect Zicht
+nl.kdd2.txt,achName6,Schaduwvlerk Fluisteraar
+nl.kdd2.txt,achName7,Gecontroleerde Nabootsing
+nl.kdd2.txt,achName8,Hekel aan Geel
+nl.kdd2.txt,achName9,Niet Diagonaal
+nl.kdd2.txt,achName10,Bewegingloze Handen
+nl.kdd2.txt,achName11,Glibbersssss
+nl.kdd2.txt,achName12,Handen van Steen
+nl.kdd2.txt,achName13,Meesterlijk Intellect
+nl.kdd2.txt,achName14,Onderkruiper
+nl.kdd2.txt,achName15,Teertechnicus
+nl.kdd2.txt,achName16,Oogsteker
+nl.kdd2.txt,achName17,De Ninja
+nl.kdd2.txt,achName18,Amateurdelver
+nl.kdd2.txt,achName19,Onervaren Opruimer
+nl.kdd2.txt,achName20,Verdelger op Contractbasis
+nl.kdd2.txt,achName21,Ik Ben een Professional!
+nl.kdd2.txt,achName22,Overmeestering
+nl.kdd2.txt,achName23,Post-overmeestering
+nl.kdd2.txt,achName24,Gebakken Koninginnen
+nl.kdd2.txt,achName25,Eieren Al Dente
+nl.kdd2.txt,achName26,Boze Ogenjam
+nl.kdd2.txt,achName27,Geroosterde Schaduwvlerken
+nl.kdd2.txt,achName28,Serpent Sushi
+nl.kdd2.txt,achName29,Stemvork
+nl.kdd2.txt,achName30,Groen naar de Grond
+nl.kdd2.txt,achName31,Meute Vermorzelaar
+nl.kdd2.txt,achName32,Onsterfelijk
+nl.kdd2.txt,achName33,Scheur in de Ruimtetijd
+nl.kdd2.txt,achName34,Vloer Schoonmaken
+nl.kdd2.txt,achName35,Marathonmeester
+nl.kdd2.txt,achDesc0,Vind de meestermuur
+nl.kdd2.txt,achDesc1,Ontruim Vijfde Level 1W terwijl altijd naar het Oosten gedraaid.
+nl.kdd2.txt,achDesc2,Laat alle valluiken vallen en ontruim Vijfde Level 1N 2W zonder tussendoor de kamer te verlaten
+nl.kdd2.txt,achDesc3,Ontruim Vijfde Level 2N zonder een sfeer aan te slaan
+nl.kdd2.txt,achDesc4,Ontruim Vijfde Level 1Z zonder draaien
+nl.kdd2.txt,achDesc5,Overwin Vijfde Level 2Z zonder de onzichtbaarheidsdrank te drinken
+nl.kdd2.txt,achDesc6,Sla de sfeer niet aan bij het ontruimen van Vijfde Level 3O
+nl.kdd2.txt,achDesc7,Ontruim Vijfde Level 1Z 1W zonder het gemarkeerde gebied te verlaten.
+nl.kdd2.txt,achDesc8,Ontruim Vijfde Level 2Z 2O zonder op open gele deuren te stappen
+nl.kdd2.txt,achDesc9,Maak geen diagonale bewegingen in Zevende Level 1Z
+nl.kdd2.txt,achDesc10,Draai niet tijdens het ontruimen van Zevende Level 1O
+nl.kdd2.txt,achDesc11,Dood de slang voordat je een kakkerlak doodt in Zevende Level 1N 1O
+nl.kdd2.txt,achDesc12,Draai je zwaard niet in Zevende Level 3N 1O
+nl.kdd2.txt,achDesc13,Ontruim de Meesterintellect kamer (Zevende Level 2N 1W)
+nl.kdd2.txt,achDesc14,Ontruim Achtste Level 4Z 3O zonder de mimicusdrank te drinken
+nl.kdd2.txt,achDesc15,Verwijder alle teer in één van de kamers in Achtste Level
+nl.kdd2.txt,achDesc16,Dood een teermoeder voordat ze de kans heeft om te groeien
+nl.kdd2.txt,achDesc17,Ontruim een kamer met boze ogen zonder er één waker te maken
+nl.kdd2.txt,achDesc18,Ontruim Vijfde Level
+nl.kdd2.txt,achDesc19,Ontruim Zesde Level
+nl.kdd2.txt,achDesc20,Ontruim Zevende Level
+nl.kdd2.txt,achDesc21,Ontruim Achtste Level
+nl.kdd2.txt,achDesc22,Overmeester de hold
+nl.kdd2.txt,achDesc23,Post-overmeester de hold
+nl.kdd2.txt,achDesc24,Dood 20 kakkerlakkoninginnen
+nl.kdd2.txt,achDesc25,Dood 15 Kakkerlak-eieren
+nl.kdd2.txt,achDesc26,Dood 15 boze ogen
+nl.kdd2.txt,achDesc27,Dood 5 schaduwvlerken
+nl.kdd2.txt,achDesc28,Dood 10 serpenten
+nl.kdd2.txt,achDesc29,Sla een sfeer drie zetten achter elkaar aan
+nl.kdd2.txt,achDesc30,Open 5 keer een groene poort
+nl.kdd2.txt,achDesc31,Dood 2500 monsters
+nl.kdd2.txt,achDesc32,Ga 70 keer dood
+nl.kdd2.txt,achDesc33,Maak 350 zetten ongedaan
+nl.kdd2.txt,achDesc34,Laat 200 valluiken vallen
+nl.kdd2.txt,achDesc35,Zet 7000 stappen
+nl.kdd2.txt,outro,"Teer was niet iets wat Beethro had verwacht. Of tegen had willen komen. Maar terwijl hij de trap afloopt naar de negende verdieping weet hij één ding zeker - hij ruikt de slijmerige substantie hier niet. Maar wat als hem er iets veel ergers te wachten staat?
+
+
+<font size=""32"" color=""#FFFF00"">Gefeliciteeerd!</font>
+
+Je hebt de tweede aflevering uitgespeeld van de Deadly Rooms of Death, King Dugan's Dungeon Lite hold. Ik hoop oprecht dat je van deze ervaring genoten hebt.
+Nu je de laatste trappen in deze set bent afgedaald, wil je misschien proberen om dit spel te Overmeesteren en dan te Post-overmeesteren! Om dit te doen moet je op zoek naar de geheime kamers. Het aantal geheime kamers in elk level wordt nu weergegeven op het Herstelscherm.
+Wanneer je ze allemaal weet te overwinnen, wordt er een speciale Meesterlocatie geopend. Kun je uitvinden hoe je er komt?
+
+Je wilt misschien ook de volgende aflevering in de DROD:KDDL serie spelen.
+
+Voordat ik je laat genieten van je gevoel van uitzinnige vreugde, wil ik graag een aantal mensen bedanken, zonder wie dit spel nooit het daglicht had gezien.
+
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - De maker, vader en uitvinder van DROD. Zonder hem zou dit unieke spelidee nooit het daglicht hebben gezien.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - Hij heeft DROD: JtRH en DROD: TCB grotendeels in zijn eentje geprogrammeerd. Bedankt voor de fantastische basis voor de code, het maken van Flash DROD was een genoegen.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Heer en meester van het Caravel Forum en de hoofdprogrammeur van CaravelNet. Dankzij hem kun je om scores strijden en nog veel meer!
+
+
+<font size=""23"" color=""#FFFF00"">Programmeren, Ontwikkeling</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Grafische onderdelen & Muziek</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Server-side ontwikkeling</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Level ontwikkeling</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Primaire Testers</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testers</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Vertalingen</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Acteurs</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Originele Programmatuur, Idee & Levels</font> - %%
+
+
+Tot volgende keer!
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+nl.kdd2.txt,complNextGame,Speel de volgende levelset - KDD Lite 3. Dit opent in een nieuw venster en je kunt dit venster veilig sluiten. Je voortgang is opgeslagen.
+nl.kdd2.txt,sp_new71e1,Die ogen hadden netter opgeruimd kunnen worden zonder te draaien. Zeker weten!
+nl.kdd2.txt,sp_new71e2,Ha! Dat is nou efficientie! Wacht maar tot ik dat staaltje aan het Zwaardmeestersgilde vertel!
+nl.kdd2.txt,defCont,Standaard besturing:
+nl.kdd2.txt,sc_diago,"Je kunt diagonaal bewegen, zelfs door heel smalle gangen."
+nl.kdd2.txt,sc_broken,Breek deze gebriken en geheime muren met je zwaard.
+nl.kdd2.txt,sc_queens1,Kakkerlakkoninginnen werpen elke 30 zetten kakkerlak-eieren (de zet nadat de broedklok rood wordt).
+nl.kdd2.txt,sc_queens2,"5 zetten nadat ze gelegd zijn, kruipen de volgroeide kakkerlakken uit de eieren."
+nl.kdd2.txt,sc_queens3,"Eieren worden niet op pijlen, valluiken of gele deuren gelegd. Gebruik de ""I"" toets of Cijferblok 5 om een zet te wachten."
+nl.kdd2.txt,sc_mimics,"Als je op een mimicusdrank stapt, gebruik je de muis of de wacht toets om de tegel te selecteren waar je de mimicus neer wilt zetten."
+nl.kdd2.txt,sc_shiftwait,Het kan handig zijn om met Shift+Wachten te wachten tot de volgende broedcyclus.
+nl.kdd2.txt,sp_mother1,Elke dertig zetten laten de teermoeders de teer één tegel in alle richtingen groeien.
+nl.kdd2.txt,sp_mother2,"Het is relatief veilig om omringd te worden door groeiende teer, maar je moet oppassen voor teerbaby's die kunnen ontstaan bij de groei."
+nl.kdd2.txt,sc_backswipe,Volg het zandpad om de achterwaartse zwaai te leren! Onthoud dat je diagonaal kunt bewegen en draai je zwaard niet.
+nl.kdd2.txt,sc_trapdoors,Deze roze-paarze tegels zijn valluiken en ze vallen als jij of een mimicus ervanaf stapt.
+nl.kdd3.txt,Ninth Level,Negende Level
+nl.kdd3.txt,Tenth Level,Tiende Level
+nl.kdd3.txt,Eleventh Level,Elfde Level
+nl.kdd3.txt,Twelfth Level,Twaalfde Level
+nl.kdd3.txt,Mastery Level,Meesterlevel
+nl.kdd3.txt,Tutorial,Oefenlevel
+nl.kdd3.txt,entr9,"Beethro Budkin, vijfde generatie professionele kerkerverdelger, was door Koning Dugan ingehuurd om zijn meerdere niveaus diepe kerker te ontdoen van een grote kolonie monsters.
+Beethro rekent zijn kosten per kamer en als professional is hij per contract gebonden om alle monsters uit elke kamer in de kerker te verwijderen om betaald te worden.
+Het enige wapen dat Beethro nodig heeft om zijn werk te doen is een Heel Groot Zwaard, dat bijna ieder monster verslaat in één enkele slag.
+
+-----
+
+Beethro pauzeerde en ging op de trap zitten. Hij pakte drie flessen uit zijn ransel. De tien koppen grote fles was gevuld met verfrissend bladersap, en de andere twee flessen waar precies twee en vijf koppen in gingen, waren leeg. Beethro wilde precies vier koppen bladersap drinken in één ononderbroken teug. Hij begon met de koppen te rommelen door sap heen en weer over te schenken, maar gaf na een tijdje op. ""Dit is te veel werk! Vergeet het maar!"""
+nl.kdd3.txt,entr10,"Zoals veel ervaren kerkerverdelgers weten, leven er beesten ondergronds die in staat zijn om in hun omgeving op te gaan."
+nl.kdd3.txt,entr11,"Toen hij een glimp opving van de volgende kamer, gromde Beethro ontstemd. ""Ik weet niet waarom, maar teer komt er altijd zo bij te liggen, en daar heb ik een hekel aan."""
+nl.kdd3.txt,entr12,"Opnieuw hoorde Beethro een luid gesis en wist dat hij serpenten kon verwachten. Maar deze keer klonk het geluid iets anders, en hij stopte even om te luisteren en te beoordelen wat hem te wachten stond. ""Goeie Gob! Die kronkelaars moeten daar belachelijk lang gezeten hebben en een paar grote maaltijden hebben gehad."""
+nl.kdd3.txt,entr12Back,Beethro kwam terug om netjes het opruimwerk af te maken waar hij voor ingehuurd was.
+nl.kdd3.txt,entrMaster,"Beethro daalde de trap af, maar kwam terecht in een onbekende gang...
+
+Hij wordt niet betaald om het hier op te ruimen, maar zijn professionele eer drijft hem voort."
+nl.kdd3.txt,entrTutorial,Oefeningen
+nl.kdd3.txt,entrTutorialLeft,Beethro verliet het oefenlevel met veel nieuwe inzichten.
+nl.kdd3.txt,sc93n3e,Weet je zeker dat je ze in de correcte volgorde doet?
+nl.kdd3.txt,sc94n3e,De volgorde is cruciaal.
+nl.kdd3.txt,sc10e,"Gemene onzichtbare spinnen verschuilen zich in dit level. Pas op, want ze zijn moeilijk te zien."
+nl.kdd3.txt,sc111s2e,Psst... Deze gang leidt naar de trap. Misschien kun je beter eerst alle andere kamers ontruimen voordat je daarheen gaat.
+nl.kdd3.txt,sc121n1e1,"Als een serpent west beweegt en hij prefereert horizontale bewegingen, ga je ten oosten van zijn hoofd staan om hem noord te sturen."
+nl.kdd3.txt,sc121n1e2,"Het werkt hetzelfde verticaal, maar dan prefereert de slang naar het oosten te gaan."
+nl.kdd3.txt,sc12e,Je klok vertelt je welke richting slangen op het moment prefereren. Dit helpt je om deze grillige beesten te controleren.
+nl.kdd3.txt,scMe1,Andere puzzels
+nl.kdd3.txt,scMe2,Laatste Woorden
+nl.kdd3.txt,scM1s1,Hier komen is een fantastische prestatie!
+nl.kdd3.txt,scM1s2,"En, hoe vond je het? Heb je alle prestaties kunnen halen?"
+nl.kdd3.txt,scM1s3,"Je kunt CaravelGames.com bezoeken om meer afleveringen van KDDL te spelen, of om elk van de volledige DROD games te downloaden voor Windows, MacOS en Linux."
+nl.kdd3.txt,scM1s4,Blijf spelen!
+nl.kdd3.txt,scM1s5,Hier is een kleine beloning! Dood alle ogen zonder op het gras te stappen.
+nl.kdd3.txt,scM1s6,Kakkerlakkoninginnen worden gedood zodra je op het checkpoint stapt in de hoek rechtsboven.
+nl.kdd3.txt,scM1s7,"Heel mooi, gefeliciteerd!"
+nl.kdd3.txt,scT1,Wist je dat serpenten niet over perkamenten heen gaan?
+nl.kdd3.txt,scT2,Loop helemaal naar rechts en let op hoe de kakkerlak zich gedraagt als hij diagonaal tegen een hoek oploopt.
+nl.kdd3.txt,scT3,"Slangen bewegen volgens hun eigen, veel complexere regels. Hun huidige voorkeur wordt weergegeven onder de broedcyclus klok."
+nl.kdd3.txt,scT4,"Als een monster diagonaal tegen de hoek van een obstakel oploopt, glijdt hij er liever verticaal langs indien mogelijk."
+nl.kdd3.txt,scT5,"'Escape' opent het pauzemenu, waar je 'Algemene Hulp' kunt vinden om de besturing na te kijken wanneer je wilt."
+nl.kdd3.txt,scT6,"Om te voorkomen dat je per ongeluk een kamer verlaat toets je 'X' om hem te vergrendelen en ontgrendelen. Een klein slot op de mini-kaart geeft aan dat een kamer vergrendeld is."
+nl.kdd3.txt,scT7,"Shift+Toets voert een actie en zijn omgekeerde uit.
+Shift+Wachten wacht tot de volgende broedcyclus.
+Cijferblok '+' of '=' voert het omgekeerde van de vorige zet uit."
+nl.kdd3.txt,scT8,F3 toont een zetteller om je te helpen met optimaliseren voor betere scores.
+nl.kdd3.txt,scT9,Alle toetsen kunnen veranderd worden vanuit de spelopties.
+nl.kdd3.txt,scT10,"Als je geen CaravelNet lidmaatschap hebt, worden je scores niet opgeslagen in de ranglijsten, maar krijg je alleen te zien welke plaats je gekregen zou hebben."
+nl.kdd3.txt,scT11,Klik op elementen om te zien wat sferen doen en wat boze ogen zien.
+nl.kdd3.txt,scT12,De Spatiebalk verwijdert alle dialogen en prestaties van het scherm.
+nl.kdd3.txt,scT13,"In tegenstelling tot kakkerlakken, vluchten schaduwvlerken voor Beethro en proberen op een afstand van vijf tegels te blijven."
+nl.kdd3.txt,scT14,"Ze zijn niet zo bang in grotere aantallen, en zullen niet aarzelen om aan te vallen als ze hun prooi omsingelen."
+nl.kdd3.txt,sc1_6n3w1,gebruik de achterwaartse zwaai techniek om de kakkerlak te doden.
+nl.kdd3.txt,sc1_6n3w2,Ga op de groene vloer staan en zorg dat de kakkerlak op de zandtegel staat direct ten noorden van je...
+nl.kdd3.txt,sc1_6n3w3,Ga op de groene vloer staan en zorg dat de kakkerlak op de zandtegel staat direct ten zuiden van je...
+nl.kdd3.txt,sc1_6n3w4,...en stap dan noordoost om hem te doden.
+nl.kdd3.txt,sc1_6n3w5,...en stap dan zuidoost om hem te doden.
+nl.kdd3.txt,sc1_6n3w6,"Herhaal om de achterwaartse zwaai te begrijpen. Leer deze techniek goed, want hij zal cruciaal zijn bij je komende inspanningen."
+nl.kdd3.txt,sp9e1,Dit is een oefenruimte.
+nl.kdd3.txt,sp9e2,Ga hierheen als je het spel niet eerder hebt gespeeld.
+nl.kdd3.txt,sp9e3,"Loop rond met het cijferblok of 789, UIO, JKL"
+nl.kdd3.txt,sp9e4,Geroosterde kakkerlakken! Niet nog meer teer!
+nl.kdd3.txt,sp91n1e,Dat was gewoon lelijk. Misschien is teer zo erg nog niet...
+nl.kdd3.txt,sp94n4e1,Ah-ha! Je moet vroeg opstaan om Beethro voor de gek te kunnen houden!
+nl.kdd3.txt,sp94n4e2,Dit is niet grappig.
+nl.kdd3.txt,sp93n,Hmm. Dit is een heel vreemde deur. Ik kan er niet door.
+nl.kdd3.txt,sp92n2e,"Een deur waar ik niet door kan, ik vraag me af wat er achter ligt."
+nl.kdd3.txt,sp11e1,En ik heb er een hekel aan wanneer teer zo hoog om me heen groeit...Ik krijg er de kriebels van.
+nl.kdd3.txt,sp11e2,Gah! De teer is helemaal over de muren gegroeid!
+nl.kdd3.txt,sp11n1w,Hmm... het had erger kunnen zijn... er had hier en teer moeder kunnen zijn...
+nl.kdd3.txt,sp11n2w1,Ik had daarnet beter kunnen zwijgen.
+nl.kdd3.txt,sp11n2w2,Zo te zien is er nog iets anders veranderd aan deze kamer...
+nl.kdd3.txt,sp12e1,"Voorzichtig, Beethro, voorzichtig..."
+nl.kdd3.txt,sp12e2,Poeh!
+nl.kdd3.txt,sp12e3,Dit worden wat mooie stukjes vlees.
+nl.kdd3.txt,sp121s2e1,Grote galopperende golems!
+nl.kdd3.txt,sp121s2e2,Moet je zien hoe groot dat serpent is!
+nl.kdd3.txt,spM1s,Je hebt gefaald...
+nl.kdd3.txt,spT2,"Draai je zwaard met 'Q' en 'W'."
+nl.kdd3.txt,spT3,Sla nu de sfeer aan met je zwaard.
+nl.kdd3.txt,spT4,"Sferen beïnvloeden deuren op drie manieren - ze kunnen ze openen, sluiten, of hun positie verwisselen."
+nl.kdd3.txt,spT5,Klik op de sfeer met de muis om te zien welke deuren hij beïnvloedt
+nl.kdd3.txt,spT6,Je doel in DROD is om elk levels van monsters te ontdoen.
+nl.kdd3.txt,spT7,Steek de kakkerlak neer met je zwaard om het te doden.
+nl.kdd3.txt,spT8,Pijlen blokkeren je bewegingen in een tegengestelde richting.
+nl.kdd3.txt,spT9,"Stap op het checkpoint. Je gaat terug naar het exacte moment dat je erop gestapt bent als je dood gaat of herstart met 'R'."
+nl.kdd3.txt,spT10,"Als je dood gaat of in een situatie bent waar elke zet tot je dood leidt, kun je tot drie zetten ongedaan maken met 'Backspace'."
+nl.kdd3.txt,spT11,"Deze drank laat je een mimicus plaatsen. Mimici kopiëren elke beweging die je maakt en ze bewegen direct na jou, maar vóór de monsters."
+nl.kdd3.txt,spT12,Plaats een mimicus op de tegel beneden gemarkeerd met een checkpoint. Gebruik hem om alle valluiken te laten vallen en de rode poort gaat open.
+nl.kdd3.txt,spT13,Serpenten kunnen niet gekwetst worden door je zwaard maar ze krimpen tot ze dood zijn als ze vast zitten in een doodlopend eind.
+nl.kdd3.txt,spT14,Verwijder al de blauwe levende teer om het boze oog bovenaan te bereiken.
+nl.kdd3.txt,spT15,Probeer te onthouden dat de teer alleen beschadigd kan worden aan platte zijden en dat elke tegel die niet stabiel is in een teerbaby verandert.
+nl.kdd3.txt,spT16,Teer is stabiel als het ten miste een vierkante blob van vier tegels kan vormen met zijn buren.
+nl.kdd3.txt,spT17,"Gefeliciteerd, je hebt deze kamer opgelost!"
+nl.kdd3.txt,spT18,"Nadat je de kamer verlaat is je overwinning permanent. Je kunt altijd je beste score voor de kamer zien, en je kunt zien hoe je je geplaatst hebt vergeleken met de scores op de ranglijst."
+nl.kdd3.txt,spT19,"Als je het spel verbonden hebt met geldige Caravel forum gebruikersinformatie, wordt je score toegevoegd aan de ranglijst."
+nl.kdd3.txt,spT20,"Je score blijft op de ranglijst gedurende twee weken, tenzij je betaalt voor een Caravel lidmaatschap. In dat geval blijft je score voor altijd op de ranglijst staan."
+nl.kdd3.txt,spT21,Je kunt nu de oefenkamer verlaten.
+nl.kdd3.txt,achName0,Werkt als een Klok
+nl.kdd3.txt,achName1,Klokt als een Werk
+nl.kdd3.txt,achName2,Verstrengelde Handen
+nl.kdd3.txt,achName3,Armen op Slot
+nl.kdd3.txt,achName4,Geplakt Zwaard
+nl.kdd3.txt,achName5,Voor Altijd Alleen
+nl.kdd3.txt,achName6,Stiekem
+nl.kdd3.txt,achName7,Teertechnicus
+nl.kdd3.txt,achName8,Heer van de Slangen
+nl.kdd3.txt,achName9,Alleen in het Gesis
+nl.kdd3.txt,achName10,Stille Jager
+nl.kdd3.txt,achName11,De Ninja
+nl.kdd3.txt,achName12,Moedermoord
+nl.kdd3.txt,achName13,Amateur Delver
+nl.kdd3.txt,achName14,Onervaren Opruimer
+nl.kdd3.txt,achName15,Verdelger op Contractbasis
+nl.kdd3.txt,achName16,Ik Ben een Professional
+nl.kdd3.txt,achName17,Overmeestering
+nl.kdd3.txt,achName18,Post-overmeestering
+nl.kdd3.txt,achName19,Geroosterde Kakkerlakken
+nl.kdd3.txt,achName20,Koninginnensoep
+nl.kdd3.txt,achName21,Duivelse Eieren
+nl.kdd3.txt,achName22,Boze Ogen Mosterd
+nl.kdd3.txt,achName23,Schaduwvlerkfillets
+nl.kdd3.txt,achName24,Broodjes Serpent
+nl.kdd3.txt,achName25,Stemvork
+nl.kdd3.txt,achName26,Dalend Groen
+nl.kdd3.txt,achName27,Meutebeheerser
+nl.kdd3.txt,achName28,Reanimator
+nl.kdd3.txt,achName29,Tijdreiziger
+nl.kdd3.txt,achName30,Ruimtebewaarder
+nl.kdd3.txt,achName31,Eindeloze Wandelaar
+nl.kdd3.txt,achDesc0,Ontruim Negende Level 4N 3O waarbij je niet meer dan één keer op elk gemarkeerd gebied stapt
+nl.kdd3.txt,achDesc1,Ontruim Negende Level 3N 3O waarbij je niet meer dan één keer op elk gemarkeerd gebied stapt
+nl.kdd3.txt,achDesc2,Ontruim Tiende Level 1N 1O zonder te draaien
+nl.kdd3.txt,achDesc3,Draai je zwaard niet in Tiende Level 1O
+nl.kdd3.txt,achDesc4,Draai je zwaard niet bij het ontruimen van Tiende Level 1Z 1W
+nl.kdd3.txt,achDesc5,Overwin Tiende Level 1Z zonder de mimicusdrank te drinken
+nl.kdd3.txt,achDesc6,Ontruim Elfde Level 1Z 2O in minder dan 150 zetten
+nl.kdd3.txt,achDesc7,Verwijder alle teer in één van de kamers in Elfde Level
+nl.kdd3.txt,achDesc8,Overwin Twaalfde Level 1Z 2O zonder diagonaal te bewegen
+nl.kdd3.txt,achDesc9,Overwin Twaalfde Level 2Z 1O zonder de mimicusdrank te drinken
+nl.kdd3.txt,achDesc10,Maak precies één oog wakker bij het opruimen van Twaalfde Level 1Z
+nl.kdd3.txt,achDesc11,Ontruim een kamer met boze ogen zonder er één wakker te maken
+nl.kdd3.txt,achDesc12,Dood een kakkerlakkoningin terwijl haar eieren groeien
+nl.kdd3.txt,achDesc13,Ontruim het Negende Level
+nl.kdd3.txt,achDesc14,Ontruim het Tiende Level
+nl.kdd3.txt,achDesc15,Ontruim het Elfde Level
+nl.kdd3.txt,achDesc16,Ontruim het Twaalfde Level
+nl.kdd3.txt,achDesc17,Overmeester de hold
+nl.kdd3.txt,achDesc18,Post-overmeester de hold
+nl.kdd3.txt,achDesc19,Dood 35 kakkerlakken
+nl.kdd3.txt,achDesc20,Dood 20 kakkerlakkoninginnen
+nl.kdd3.txt,achDesc21,Dood 15 kakkerlak-eieren
+nl.kdd3.txt,achDesc22,Dood 15 boze ogen
+nl.kdd3.txt,achDesc23,Dood 5 schaduwvlerken
+nl.kdd3.txt,achDesc24,dood 10 serpenten
+nl.kdd3.txt,achDesc25,Sla een sfeer drie zetten achter elkaar aan
+nl.kdd3.txt,achDesc26,Open 10 keer een groene poort
+nl.kdd3.txt,achDesc27,Dood 2500 monsters
+nl.kdd3.txt,achDesc28,Ga 100 keer dood
+nl.kdd3.txt,achDesc29,Maak 450 zetten ongedaan
+nl.kdd3.txt,achDesc30,Laat 200 valluiken vallen
+nl.kdd3.txt,achDesc31,Zet 8000 stappen
+nl.kdd3.txt,outro,"Als hij een plattegrond van Dugan's Kerker had, zou Beetrho weten dat wat er op de dertiende verdieping lag, misschien zelfs de sterkste krijgers kon verslaan. Maar in ieder geval zullen het geen Teer en Serpenten zijn...
+
+
+<font size=""32"" color=""#FFFF00"">Gefeliciteeerd!</font>
+
+Je hebt de derde aflevering uitgespeeld van de Deadly Rooms of Death, King Dugan's Dungeon Lite hold. Ik hoop oprecht dat je van deze ervaring genoten hebt.
+Nu je de laatste trappen in deze set bent afgedaald, wil je misschien proberen om dit spel te Overmeesteren en dan te Post-overmeesteren! Om dit te doen moet je op zoek naar de geheime kamers. Het aantal geheime kamers in elk level wordt nu weergegeven op het Herstelscherm.
+Wanneer je ze allemaal weet te overwinnen, wordt er een speciale Meesterlocatie geopend. Kun je uitvinden hoe je er komt?
+Je wilt misschien ook de volgende aflevering in de DROD:KDDL serie spelen.
+
+Voordat ik je laat genieten van je gevoel van uitzinnige vreugde, wil ik graag een aantal mensen bedanken, zonder wie dit spel nooit het daglicht had gezien.
+
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - De maker, vader en uitvinder van DROD. Zonder hem zou dit unieke spelidee nooit het daglicht hebben gezien.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - Hij heeft DROD: JtRH en DROD: TCB grotendeels in zijn eentje geprogrammeerd. Bedankt voor de fantastische basis voor de code, het maken van Flash DROD was een genoegen.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Heer en meester van het Caravel Forum en de hoofdprogrammeur van CaravelNet. Dankzij hem kun je om scores strijden en nog veel meer!
+
+
+<font size=""23"" color=""#FFFF00"">Programmeren, Ontwikkeling</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Grafische onderdelen & Muziek</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Server-side ontwikkeling</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Level ontwikkeling</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Primaire Testers</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testers</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Vertalingen</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Acteurs</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Originele Programmatuur, Idee & Levels</font> - %%
+
+
+Tot volgende keer!
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+nl.kdd3.txt,complNextGame,Speel de volgende levelset - KDD Lite 4. Dit opent in een nieuw venster en je kunt dit venster veilig sluiten. Je voortgang is opgeslagen.
+nl.kdd3.txt,defCont,Standaard besturing:
+nl.kdd3.txt,sc_diago,"Je kunt diagonaal bewegen, zelfs door heel smalle gangen."
+nl.kdd3.txt,sc_broken,Breek deze gebriken en geheime muren met je zwaard.
+nl.kdd3.txt,sc_queens1,Kakkerlakkoninginnen werpen elke 30 zetten kakkerlak-eieren (de zet nadat de broedklok rood wordt).
+nl.kdd3.txt,sc_queens2,"5 zetten nadat ze gelegd zijn, kruipen de volgroeide kakkerlakken uit de eieren."
+nl.kdd3.txt,sc_queens3,"Eieren worden niet op pijlen, valluiken of gele deuren gelegd. Gebruik de ""I"" toets of Cijferblok 5 om een zet te wachten."
+nl.kdd3.txt,sc_mimics,"Als je op een mimicusdrank stapt, gebruik je de muis of de wacht toets om de tegel te selecteren waar je de mimicus neer wilt zetten."
+nl.kdd3.txt,sc_shiftwait,Het kan handig zijn om met Shift+Wachten te wachten tot de volgende broedcyclus.
+nl.kdd3.txt,sp_mother1,Elke dertig zetten laten de teermoeders de teer één tegel in alle richtingen groeien.
+nl.kdd3.txt,sp_mother2,"Het is relatief veilig om omringd te worden door groeiende teer, maar je moet oppassen voor teerbaby's die kunnen ontstaan bij de groei."
+nl.kdd3.txt,sc_backswipe,Volg het zandpad om de achterwaartse zwaai te leren! Onthoud dat je diagonaal kunt bewegen en draai je zwaard niet.
+nl.kdd3.txt,sc_trapdoors,Deze roze-paarze tegels zijn valluiken en ze vallen als jij of een mimicus ervanaf stapt.
+nl.kdd4.txt,Thirteenth Level,Dertiende Level
+nl.kdd4.txt,Fourteenth Level,Veertiende Level
+nl.kdd4.txt,Fifteenth Level,Vijftiende Level
+nl.kdd4.txt,Sixteenth Level,Zestiende Level
+nl.kdd4.txt,Mastery Level,Meesterlevel
+nl.kdd4.txt,Original 13th Level,Origineel 13de Level
+nl.kdd4.txt,Tutorial Level,Oefenlevel
+nl.kdd4.txt,entrTut,"Beethro Budkin, vijfde generatie professionele kerkerverdelger, was door Koning Dugan ingehuurd om zijn meerdere niveaus diepe kerker te ontdoen van een grote kolonie monsters.
+Beethro rekent zijn kosten per kamer en als professional is hij per contract gebonden om alle monsters uit elke kamer in de kerker te verwijderen om betaald te worden.
+Het enige wapen dat Beethro nodig heeft om zijn werk te doen is een Heel Groot Zwaard, dat bijna ieder monster verslaat in één enkele slag."
+nl.kdd4.txt,entr13,"”Ik had misschien beter dit level overgeslagen, maar een contract is een contract. Waar zou ik die broodkruimels strooien?” -Beethro"
+nl.kdd4.txt,entr14,In deze level zal je eindelijk wat volk tegenkomen met het nodige respect voor je zwaard.
+nl.kdd4.txt,entr15,"Dit level is zoals het gras afrijden, met maar net genoeg benzine om gedaan te geraken, maar je faalde en je bent meer benzine moeten gaan kopen. Maar er was een grote serpent bij het benzine station, en je wou binnen gaan betalen, maar de voordeur was op slot, dus je dronk een mimicusdrank om binnen te geraken, en toen waren er kakkerlakken…
+
+Ik denk dat de metafoor mislukt is."
+nl.kdd4.txt,entr16,Deze kakkerlakken hebben een autoritaire figuur nodig om hen te begeleiden. Iemand met charisma en een sterk karakter. Iemand zoals jij!
+nl.kdd4.txt,entrMaster,"Beethro daalde de trap af, maar kwam terecht in een onbekende gang...
+
+Hij wordt niet betaald om het hier op te ruimen, maar zijn professionele eer drijft hem voort."
+nl.kdd4.txt,entrMasterBack,Beethro kwam terug om alles aftewerken waar hij voor betaald werd.
+nl.kdd4.txt,entrOriginal13Enter,"Beethro daalde af in misterieuze, dodelijke en nutteloze gangen."
+nl.kdd4.txt,entrOriginal13Success,"Zeer trots van zijn behaalde prestatie, maar redelijk gek gedraaid, kwam Beethro uit het beruchte originele 13de level van King Dugan’s Dungeon"
+nl.kdd4.txt,entrOriginal13Escape,Beethro ging lopen van de uitdaging als een laffe rat.
+nl.kdd4.txt,achName0,Eénrichtings Bos
+nl.kdd4.txt,achName1,Stoïcijne Slangen
+nl.kdd4.txt,achName2,Teer Blijver
+nl.kdd4.txt,achName36,Oogdeuren
+nl.kdd4.txt,achName3,Goblin Verslager
+nl.kdd4.txt,achName4,Goblin Pletter
+nl.kdd4.txt,achName5,Goblin Vernietiger
+nl.kdd4.txt,achName6,Stap Opzij!
+nl.kdd4.txt,achName7,Groentje
+nl.kdd4.txt,achName8,Goblin Doder
+nl.kdd4.txt,achName34,Extreme Voldoening
+nl.kdd4.txt,achName35,Strict Beleid
+nl.kdd4.txt,achName32,Koelbloedige Moordenaar
+nl.kdd4.txt,achName33,Denk Vooruit
+nl.kdd4.txt,achName39,Kruisende Spinnen
+nl.kdd4.txt,achName9,Groeiend!
+nl.kdd4.txt,achName37,Heerser van de Ogen Planeet
+nl.kdd4.txt,achName38,Jager Spellen
+nl.kdd4.txt,achName10,De Ontdekker
+nl.kdd4.txt,achName11,Goblin Fricassee
+nl.kdd4.txt,achName12,Moedermoord
+nl.kdd4.txt,achName13,Amateur Delver
+nl.kdd4.txt,achName14,Onervaren Opruimer
+nl.kdd4.txt,achName15,Verdelger op Contractbasis
+nl.kdd4.txt,achName16,Ik Ben een Professional
+nl.kdd4.txt,achName17,Overmeestering
+nl.kdd4.txt,achName18,Post-overmeestering
+nl.kdd4.txt,achName19,Geflambeerde Kakkerlakken
+nl.kdd4.txt,achName20,Gebakken Koningingen
+nl.kdd4.txt,achName21,Rauwe Eieren
+nl.kdd4.txt,achName22,Boos Oog a la Mode
+nl.kdd4.txt,achName23,Schaduwvlerk Kebabs
+nl.kdd4.txt,achName24,Serpent Sushi
+nl.kdd4.txt,achName25,Stemvork
+nl.kdd4.txt,achName26,Groen naar de Grond
+nl.kdd4.txt,achName27,Vrede Maker
+nl.kdd4.txt,achName28,Phoenix
+nl.kdd4.txt,achName29,Tijds Meester
+nl.kdd4.txt,achName30,Vloer Reiniger
+nl.kdd4.txt,achName31,Voor Eeuwig en Oneindig
+nl.kdd4.txt,achDesc0,13de Level 2Z1W: Ontruim de kamer zonder je zwaard te draaien
+nl.kdd4.txt,achDesc1,13de Level 1Z: Ontruim de kamer zonder je zwaard te draaien
+nl.kdd4.txt,achDesc2,13de Level 1Z1O: Ontruim de kamer zonder je zwaard te draaien
+nl.kdd4.txt,achDesc36,13de Level 1Z2W: Ontruim de kamer zonder je zwaard te draaien
+nl.kdd4.txt,achDesc3,14de Level 1Z: Ontruim de kamer met je zwaard altijd Noord-Westelijk gericht
+nl.kdd4.txt,achDesc4,14de Level 2Z: Ontruim de kamer met je zwaard altijd Oostelijk gericht
+nl.kdd4.txt,achDesc5,14de Level 1N: Ontruim de kamer met je zwaard altijd Zuidelijk gericht
+nl.kdd4.txt,achDesc6,14de Level 2O: Ontruim de kamer zonder op de valluiken te stappen
+nl.kdd4.txt,achDesc7,14de Level 2N: Ontruim de kamer zonder dat de Teer-Moeder groeit
+nl.kdd4.txt,achDesc8,14de Level 1N3O: Ontruim de kamer zonder je zwaard te draaien
+nl.kdd4.txt,achDesc34,14de Level 1N1O: Dood de Goblin als allerlaatste monster
+nl.kdd4.txt,achDesc35,14de Level 2N2O: Ontruim de kamer zodat de Goblin niet op de grijze weg stapt
+nl.kdd4.txt,achDesc32,15de Level De Entree: Ontruim de kamer zonder je zwaard te draaien
+nl.kdd4.txt,achDesc33,15de Level De Entree: Stap op alle valluiken voor dat je het laatste monster dood
+nl.kdd4.txt,achDesc39,"15de Level 1N: Nadat je de sfeer hebt geraakt, moet je alle spinnen doden door enkel nog diagonaal te stappen"
+nl.kdd4.txt,achDesc9,16de Level 1S1O: Ontruim de kamer zonder dat de Teer-Moeder groeit
+nl.kdd4.txt,achDesc37,Meesterlevel 2N: Ontruim de kamer zonder dat er ogen wakker worden EN zonder dat er eieren worden gelegd
+nl.kdd4.txt,achDesc38,Meersterlevel 1N1O: Dood de schaduwvlerk zonder dat je op alle valluiken bent gestapt
+nl.kdd4.txt,achDesc10,Bezoek elke kamer in het Originele 13de Level (%% / 56)
+nl.kdd4.txt,achDesc11,Dood 40 goblins
+nl.kdd4.txt,achDesc13,Ontruim Dertiende Level
+nl.kdd4.txt,achDesc14,Ontruim Veertiende Level
+nl.kdd4.txt,achDesc15,Ontruim Vijftiende Level
+nl.kdd4.txt,achDesc16,Ontruim Zestiende Level
+nl.kdd4.txt,achDesc12,Dood een kakkerlakkoningin terwijl haar eieren groeien
+nl.kdd4.txt,achDesc17,Overmeester de hold
+nl.kdd4.txt,achDesc18,Post-overmeester de hold
+nl.kdd4.txt,achDesc19,Dood 100 kakkerlakken
+nl.kdd4.txt,achDesc20,Dood 25 kakkerlakkoninginnen
+nl.kdd4.txt,achDesc21,Dood 10 kakkerlak-eieren
+nl.kdd4.txt,achDesc22,Dood 80 boze ogen
+nl.kdd4.txt,achDesc23,Dood 40 schaduwvlerken
+nl.kdd4.txt,achDesc24,dood 25 serpenten
+nl.kdd4.txt,achDesc25,Sla een sfeer drie zetten achter elkaar aan
+nl.kdd4.txt,achDesc26,Open 20 keer een groene poort
+nl.kdd4.txt,achDesc27,Dood 3000 monsters
+nl.kdd4.txt,achDesc28,Ga 80 keer dood
+nl.kdd4.txt,achDesc29,Maak 500 zetten ongedaan
+nl.kdd4.txt,achDesc30,Laat 500 valluiken vallen
+nl.kdd4.txt,achDesc31,Zet 10000 stappen
+nl.kdd4.txt,sc_13_entr_1,Kortere weg naar de uitgang.
+nl.kdd4.txt,sc_13_entr_2,"Een echte Zwaardmeester zal het perkament hierboven pas lezen, na ontruiming van het level."
+nl.kdd4.txt,sc_13_entr_3,"Steen ligt op zand, daaronder liggen platen die voorafgegaan worden door gras dat groeit op tegels, op losse grond.
+-Onbekende Dichter"
+nl.kdd4.txt,sc_13_2S2W_3,Kortere weg naar de Entree
+nl.kdd4.txt,sc_14_1N3E,"De kerel in de andere kamer is niet zo slim, hij loopt altijd in dezelfde val."
+nl.kdd4.txt,sc_mast_entr_1,Het Originele 13de Level.
+nl.kdd4.txt,sc_mast_entr_2,Een paar nieuwe puzzels.
+nl.kdd4.txt,sc_mast_entr_3,Moeilijkere versies van bestaande puzzels.
+nl.kdd4.txt,sc_mast_1W,Hier valt niets te beleven.
+nl.kdd4.txt,sc_o13_orb,Deze sfeer had een doel in het originele level.
+nl.kdd4.txt,sc_o13_orbs,Deze sferen hadden een doel in het originele level.
+nl.kdd4.txt,sc_o13_orb2,"Deze sfeer was er niet in het originele level, en de gele deur was in één kamer."
+nl.kdd4.txt,sc_o13_orbs_gates,Er was een sfeer in de originele kamer en de deuren hadden een doel.
+nl.kdd4.txt,sc_o13_broken_wall,"Er was een normale muur in het originele level, waardoor het volgende gebied onbereikbaar was."
+nl.kdd4.txt,sc_o13_edge,Er was geen kamerrand hier normaal gezien.
+nl.kdd4.txt,sc_o13_roach,"In het originele 13de level, was de kakkerlak hierboven in dezelfde kamer en deze gang was iets anders."
+nl.kdd4.txt,scM1s1,Dat noem ik nu eens een prestatie!
+nl.kdd4.txt,scM1s2,Wat vond u van het spel? Heb je alle prestaties behaald?
+nl.kdd4.txt,scM1s3,"Bezoek ook CaravelGames.com om meer episodes van KDDL te spelen, of download de volledige versies van DROD voor Windows, MacOS of Linux."
+nl.kdd4.txt,scM1s4,Tsjakkaa!
+nl.kdd4.txt,scM1s5,Hier is een kleine beloning! Dood alle ogen en goblins zonder op het gras te stappen..
+nl.kdd4.txt,scM1s6,De kakkerlakken-koningingen worden automatisch gedood als je op het rechtse checkpoint in de hoek stapt.
+nl.kdd4.txt,scM1s7,Fantastisch!
+nl.kdd4.txt,sp_14_1E,Aah... niets is leuker dan het mooie uitzicht van helemaal geen teer!
+nl.kdd4.txt,sp_14_2N2E_1,Pff...het ziet er naar uit dat ik deze goblin lang genoeg moet laten leven voor die serpent daar.
+nl.kdd4.txt,sp_14_2N2E_2,"Verwacht geen help van mij! Jij snijdt me toch in stukken, nu of straks."
+nl.kdd4.txt,sp_14_2N2E_3,Je moet niet dapper doen. Want goblins zijn niet dapper.
+nl.kdd4.txt,sp_14_2N2E_4,"Nee, nee, nee! Doe dat puntige ding weg!"
+nl.kdd4.txt,sp_14_2N2E_5,Jij besluipt me langs achter wanneer ik niet oplet. Correct?
+nl.kdd4.txt,sp_14_2N2E_6,Genade!
+nl.kdd4.txt,sp_14_2N2E_7,"Kijk, je zou hetzelfde doen in mijn plaats!"
+nl.kdd4.txt,sp_14_2N2E_8,Dat was een vuil klusje. Hopelijk moet ik dat niet meer doen!
+nl.kdd4.txt,sp_14_2N2E_9,"Rust daar maar even terwijl ik de doorgang vrijmaak, goblin."
+nl.kdd4.txt,sp_14_2N2E_10,(Ik had hem daar waarschijnlijk niet in moeten opsluiten...maar beter voorkomen dan genezen!)
+nl.kdd4.txt,sp_14_1N1E,Bekijk dit nu...geen enkele muur gesneuveld!
+nl.kdd4.txt,sp_15_1S2W,"Hola, geen simpele klus hier. Ik plan het voetwerk beter op voorhand."
+nl.kdd4.txt,sp_16_2S1E_1,Briljant!  Soms verbaas ik zelfs mezelf.
+nl.kdd4.txt,sp_16_2S1E_2,Ha!  Alles ontruimd!
+nl.kdd4.txt,sp_16_2S1E_3,En nu hier nog weggeraken...
+nl.kdd4.txt,sp_16_2S1E_4,Hmm...van waar kwam ik nu weer?
+nl.kdd4.txt,sp_16_2S1E_5,"Ah, het speelde geen rol."
+nl.kdd4.txt,spM1s,U hebt gefaald...
+nl.kdd4.txt,sp_o13_1,"Hier, kakkerlakje..."
+nl.kdd4.txt,sp_o13_2,Drommels! Maar één kleine domme kakkerlak te doden.
+nl.kdd4.txt,sp_tut_entr_1,Welkom bij DROD.
+nl.kdd4.txt,sp_tut_entr_2,"Als dit je eerste keer is dat je het spel speelt, neem dan de oostelijke uitgang."
+nl.kdd4.txt,sp_tut_entr_3,Daar vind je gemakkelijke puzzels om gewend te raken aan het concept.
+nl.kdd4.txt,sp_tut_entr_4,Neem de trap als je het spel al gespeeld hebt.
+nl.kdd4.txt,sp_tut_entr_5,Gebruik het numerieke toetsenbord of toetsen 789 uio jkl om te bewegen.
+nl.kdd4.txt,sp_tut_entr_6,"Toetsen kunnen gewijzigd worden in het optie menu, bereikbaar via de ‘escape’-toets."
+nl.kdd4.txt,sp_tut_1E_1,Sferen bedienen gele deuren. Sla met je zwaard naar de sfeer om hem te activeren.
+nl.kdd4.txt,sp_tut_1E_2,Klik met je muis op een sfeer om te kijken welke deuren bediend worden.
+nl.kdd4.txt,sp_tut_1E_3,Draai je zwaard met de toetsen ‘Q’ en ‘W’.
+nl.kdd4.txt,sp_tut_1E_4,Raak de kakkerlak aan met je zwaard om hem te doden.
+nl.kdd4.txt,sp_tut_1E_5,Bedien de sfeer en wacht een paar stappen om te kijken hoe monsters bewegen als ze diagonaal een hoek benaderen.
+nl.kdd4.txt,sp_tut_1E_6,Wacht nog heel even...
+nl.kdd4.txt,sp_tut_1E_7,"Zoals je kan zien, als monsters diagonaal een hoek naderen, verkiezen ze verticale beweging."
+nl.kdd4.txt,sp_tut_1E_8,Doodt de kakkerlakken om de groene deur te openen en vervolg je weg oostwaarts.
+nl.kdd4.txt,sp_tut_2E_1,"Hier leer de ‘achterwaartse zwaai’. Na de sfeer te hebben geactiveerd, is er maar één manier om de kakkerlakken te doden - stap Noord-West of Zuid-West."
+nl.kdd4.txt,sp_tut_2E_2,"Je kan dit best een paar keer herhalen zodat je de techniek onthoudt, want deze is zeer belangrijk."
+nl.kdd4.txt,sp_tut_2E_3,"Je kan diagonaal stappen, zelfs door zeer smalle passages."
+nl.kdd4.txt,sp_tut_2E_4,Gebroken en Geheime muren kunnen verwijderd worden met je zwaard.
+nl.kdd4.txt,sp_tut_2E_5,Pijlen blokkeren de bewegings richting van alles in tegengestelde richting van de pijl.
+nl.kdd4.txt,sp_tut_2E_6,"Stap op een checkpoint, en herbegin daar als je sterft."
+nl.kdd4.txt,sp_tut_2E_7,Kakkerlakkoningingen leggen elke 30 stappen eieren. Gebruik de stappenteller aan de linkerzijde van het speelschermom te weten wanneer de volgende eieren gelegd worden.
+nl.kdd4.txt,sp_tut_3E_1,"Boze Ogen blijven slapen todat je in hun gezichtsveld stapt - eens gewekt, vallen ze aan zoals kakkerlakken."
+nl.kdd4.txt,sp_tut_3E_2,Serpenten kunnen niet gedood worden met je zwaard. De enige mannier om ze te doden is ze in een doodlopende gang to lokken.
+nl.kdd4.txt,sp_tut_3E_3,Gebruik gebroken muren om een doodlopend stuk te creëren voor de serpenten.
+nl.kdd4.txt,sp_tut_3E_4,Je kan backspace gebruiken om to 3 stappen ongedaan te maken.
+nl.kdd4.txt,sp_tut_3E_5,Serpenten kunnen niet diagonaal bewegen.
+nl.kdd4.txt,sp_tut_3E_6,Ze hebben een voorkeurs richting die om de 5 stappen veranderd.
+nl.kdd4.txt,sp_tut_3E_7,Je kan de huidige voorkeurs richting zien op de stappenteller.
+nl.kdd4.txt,sp_tut_4E_1,"Als je van een valluik stapt, stort deze te pletter met een diepe put als gevolg."
+nl.kdd4.txt,sp_tut_4E_2,"Om een rode deur te openen, moet je al de valluiken laten ‘vallen’."
+nl.kdd4.txt,sp_tut_4E_3,Vergeet niet dat je de gecreëerde put kan gebruiken om kakkerlakken tegen te houden.
+nl.kdd4.txt,sp_tut_5E_1,Teer is een zeer vreemde substantie. Je kan het alleen beschadigen aan de platte zijden.
+nl.kdd4.txt,sp_tut_5E_2,Je hoeft niet al de Teer te verwijderen om een kamer te ontruimen.
+nl.kdd4.txt,sp_tut_6E_1,"Teer Moeders zijn vreselijke monsters. Ondanks ze niet kunnen bewegen, laten ze de Teer wel groeien elke 30 stappen."
+nl.kdd4.txt,sp_tut_6E_2,"De zwarte deur opent, als alle Teer verwijderd is uit een kamer."
+nl.kdd4.txt,sp_tut_7E_1,"Als je dit drankje drinkt, kan je een mimicus plaatsen."
+nl.kdd4.txt,sp_tut_7E_2,Een mimicus kopiëerd al je bewegingen en kan ook valluiken laten vallen.
+nl.kdd4.txt,sp_tut_8E_1,"Als je dit onzichtbaarheids drankje drinkt, zien de monsters je niet tenzij je in ‘ruik-afstand’ bent."
+nl.kdd4.txt,sp_tut_8E_2,Laat de kakkerlakkoninging niet op de pijlen stappen of je zal haar niet meer kunnen doden.
+nl.kdd4.txt,sp_tut_8E_3,"Dat heb je goed gedaan, proficiat!"
+nl.kdd4.txt,sp_tut_8E_4,Het ziet er naar uit dat je gefaald hebt.
+nl.kdd4.txt,sp_tut_8E_5,Je kan toets “R” gebruiken om de kamer te herstarten of wachten op hints.
+nl.kdd4.txt,sp_tut_8E_6,...
+nl.kdd4.txt,sp_tut_8E_7,Er zijn 3 manieren om deze kamer te ontruimen.
+nl.kdd4.txt,sp_tut_8E_8,"De snelste manier is om de koninging te vangen op de pijlen nabij de groene deur, op zo’n manier dat je ze kan doden door op of naast de diagonale pijl te stappen."
+nl.kdd4.txt,sp_tut_8E_9,"De tweede manier is bijna even snel als de eerste, en kan voltooid worden door horizontaal naar de koninging te stappen zodat de groene deur ze afblokt."
+nl.kdd4.txt,sp_tut_8E_10,De laatste manier vereist een volledige cirkel rond de kamer en vang de koninging in de ingang van deze kamer.
+nl.kdd4.txt,sp_tut_8E_11,"Als het dan nog steeds niet lukt, wacht dan nog een paar stappen en de nood-mimicus deur zal open gaan."
+nl.kdd4.txt,sp_tut_9E,Veel Succes!
+nl.kdd4.txt,sc_tut_emergency_potion,"Nood-mimicus drankje, enkel gebruiken als de kamer te moeilijk is."
+nl.kdd4.txt,sc_tut_tricky,Deze moeilijke kamer hoeft niet ontruimt te worden om verder te kunnen gaan.
+nl.kdd4.txt,outro,"De laatse vier levels waren echt lastig voor Beethro, teer, de deuren, de kakkerlakken...Als hij de trap naar beneden neemt, ruikt hij meer van dat blauwe spul maar iets in hem zegt dat er nog gevaarlijkere dingen te wachten staan...
+
+
+<font size=""32"" color=""#FFFF00"">Proficiat!</font>
+
+Je hebt de vierde episode van de Deadly Rooms of Death, King Dugan’s Dugeon Lite series ontruimd. We hopen oprecht dat je het een leuke ervaring vond.
+Nu dat je de laatste trappen van deze episode hebt genomen, kan je proberen de episode te overmeesteren, en daarna te post-overmeesteren. Om dit te doen, moet je alle geheime kamers vinden en ontruimen. Het aantal geheime kamers per level staat nu te lezen in het herstel-scherm.
+Op het moment dat je alle geheime kamers ontruimt hebt, zal er een special Overmeester gebied openen. Kan je de ingang vinden?
+Je zal waarschijnlijk ook de volgende episode van DROD:KDDL series willen spelen.
+
+Voor we je je overwinning laten koesteren en vieren, zouden we graag nog enkele mensen willen bedanken, die het mogelijk hebben gemaakt voor jouw om dit spel te kunnen spelen:
+
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - De creator, vader en uitvinder van DROD. Zonder hem, was dit uniek spel er nooit geweest.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - Hij programmeerde de meeste code van JtRH en TCB met één hand. Bedankt voor de schitterende basis code, zodat FlashDROD maken puur plezier was.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Overlord van de Caravel forum en hoofdprogrammeur van caravelnet. Dankzij hem kan je strijden voor highscores en nog zoveel meer!
+
+
+<font size=""23"" color=""#FFFF00"">Programming, Development</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Art & Music</font> - %% (minor)
+
+<font size=""23"" color=""#FFFF00"">Server-side development</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Hold architects</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Primary Testers</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testers</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Translations</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Voice Talents</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Original Coding, Idea & Levels</font> - %%
+
+
+Tot de volgende keer!
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+nl.kdd4.txt,complNextGame,Speel de volgende levelset - KDD Lite 5. Dit opent in een nieuw venster en je kunt dit venster veilig sluiten. Je voortgang is opgeslagen.
+nl.txt,keyBackspace,Backspace
+nl.txt,keyTab,Tab
+nl.txt,keyEnter,Enter
+nl.txt,keyShift,Shift
+nl.txt,keyControl,Control
+nl.txt,keyAlt,Alt
+nl.txt,keyPause,Pause/Brk
+nl.txt,keyCapsLock,Caps Lock
+nl.txt,keyEscape,Escape
+nl.txt,key ,Space
+nl.txt,keyPageUp,Page Up
+nl.txt,keyPageDown,Page Down
+nl.txt,keyEnd,End
+nl.txt,keyHome,Home
+nl.txt,keyArrowLeft,Left
+nl.txt,keyArrowUp,Up
+nl.txt,keyArrowRight,Right
+nl.txt,keyArrowDown,Down
+nl.txt,keyInsert,Insert
+nl.txt,keyDelete,Delete
+nl.txt,key0,0
+nl.txt,key1,1
+nl.txt,key2,2
+nl.txt,key3,3
+nl.txt,key4,4
+nl.txt,key5,5
+nl.txt,key6,6
+nl.txt,key7,7
+nl.txt,key8,8
+nl.txt,key9,9
+nl.txt,keya,A
+nl.txt,keyb,B
+nl.txt,keyc,C
+nl.txt,keyd,D
+nl.txt,keye,E
+nl.txt,keyf,F
+nl.txt,keyg,G
+nl.txt,keyh,H
+nl.txt,keyi,I
+nl.txt,keyj,J
+nl.txt,keyk,K
+nl.txt,keyl,L
+nl.txt,keym,M
+nl.txt,keyn,N
+nl.txt,keyo,O
+nl.txt,keyp,P
+nl.txt,keyq,Q
+nl.txt,keyr,R
+nl.txt,keys,S
+nl.txt,keyt,T
+nl.txt,keyu,U
+nl.txt,keyv,V
+nl.txt,keyw,W
+nl.txt,keyx,X
+nl.txt,keyy,Y
+nl.txt,keyz,Z
+nl.txt,key91,L.Win/Cmd
+nl.txt,key92,R.Win
+nl.txt,key93,Menu
+nl.txt,keyNumpad0,Cijferblok 0
+nl.txt,keyNumpad1,Cijferblok 1
+nl.txt,keyNumpad2,Cijferblok 2
+nl.txt,keyNumpad3,Cijferblok 3
+nl.txt,keyNumpad4,Cijferblok 4
+nl.txt,keyNumpad5,Cijferblok 5
+nl.txt,keyNumpad6,Cijferblok 6
+nl.txt,keyNumpad7,Cijferblok 7
+nl.txt,keyNumpad8,Cijferblok 8
+nl.txt,keyNumpad9,Cijferblok 9
+nl.txt,keyNumpadMul,Cijferblok *
+nl.txt,keyNumpadAdd,Cijferblok +
+nl.txt,keyNumpadSub,Cijferblok -
+nl.txt,keyNumpadDot,Cijferblok .
+nl.txt,keyNumpadDiv,Cijferblok /
+nl.txt,keyF1,F1
+nl.txt,keyF2,F2
+nl.txt,keyF3,F3
+nl.txt,keyF4,F4
+nl.txt,keyF5,F5
+nl.txt,keyF6,F6
+nl.txt,keyF7,F7
+nl.txt,keyF8,F8
+nl.txt,keyF9,F9
+nl.txt,keyF10,F10
+nl.txt,keyF11,F11
+nl.txt,keyF12,F12
+nl.txt,keyF13,F13
+nl.txt,keyF14,F14
+nl.txt,keyF15,F15
+nl.txt,key144,Numlock
+nl.txt,key145,Scroll Lock
+nl.txt,key;,;
+nl.txt,key=,=
+nl.txt,"key,",","
+nl.txt,key-,-
+nl.txt,key.,.
+nl.txt,key/,/
+nl.txt,key~,~
+nl.txt,key[,[
+nl.txt,key\,\
+nl.txt,key],]
+nl.txt,"key'","'"
+nl.txt,numpad,Cijferblok
+nl.txt,notebook,Notebook
+nl.txt,keyUp,Stap Noord
+nl.txt,keyUpLeft,Stap Noordwest
+nl.txt,keyUpRight,Stap Noordoost
+nl.txt,keyLeft,Stap West
+nl.txt,keyRight,Stap Oost
+nl.txt,keyDown,Stap Zuid
+nl.txt,keyDownLeft,Stap Zuidwest
+nl.txt,keyDownRight,Stap Zuidoost
+nl.txt,keyWait,Wacht Één Zet
+nl.txt,keyCW,Draai Met de Klok Mee
+nl.txt,keyCCW,Draai Tegen de Klok In
+nl.txt,keyUndo,Laatste Zet Ongedaan Maken
+nl.txt,keyRestart,Kamer Herstarten
+nl.txt,keyBattle,Gevechtstoets
+nl.txt,keyLock,Kamer Vergrendelen/Ontgrendelen
+nl.txt,close,Sluiten
+nl.txt,cnetError,"Verbinding Mislukt.
+Dit kan veroorzaakt zijn door ongeldige gebruikersinformatie, een defecte internetverbinding of tijdelijke serverproblemen. CaravelNet functies zijn uitgeschakeld. Ga om ze te herstellen naar het opties scherm, update je gebruikersinformatie indien nodig, en klik ""Verbinden!"""
+nl.txt,prlStartGame,Start Spel
+nl.txt,prlLoading,Laden: %% / %%
+nl.txt,prlWaitApi,Wachten op verbinding door API...
+nl.txt,prlLanguage,Verander Taal 
+nl.txt,initAssets,Hulpbronnen initialiseren %% / %%
+nl.txt,tsStartNew,Start Nieuw Spel
+nl.txt,tsStartNewKey,S
+nl.txt,tsStartNewKeyCode,83
+nl.txt,tsContinue,Spel Hervatten
+nl.txt,tsContinueKey,e
+nl.txt,tsContinueKeyCode,69
+nl.txt,tsRestore,Herstellen Naar een Andere Kamer
+nl.txt,tsRestoreKey,N
+nl.txt,tsRestoreKeyCode,78
+nl.txt,tsAchievements,Prestaties Bekijken
+nl.txt,tsAchievementsKey,P
+nl.txt,tsAchievementsKeyCode,80
+nl.txt,tsOptions,Opties
+nl.txt,tsOptionsKey,O
+nl.txt,tsOptionsKeyCode,79
+nl.txt,tsHelp,Hulp en Achtergrondinformatie
+nl.txt,tsHelpKey,H
+nl.txt,tsHelpKeyCode,72
+nl.txt,tsBrowse,Door Holds Bladeren
+nl.txt,tsBrowseKey,D
+nl.txt,tsBrowseKeyCode,68
+nl.txt,optHeader,Opties:
+nl.txt,optUploadAll,Upload Alle Scores
+nl.txt,optConnect,Verbinden!
+nl.txt,optRedefine,Toetsen Wijzigen
+nl.txt,optCnetHeader,Caravelnet Gebruikersinformatie
+nl.txt,optCnetUser,CNet Naam
+nl.txt,optCnetKey,CNet Sleutel
+nl.txt,optCnetVolume,Volume
+nl.txt,optCnetMusic,Muziek
+nl.txt,optCnetSound,Effecten
+nl.txt,optCnetVoices,Stemmen
+nl.txt,optMoveAnim,Bewegingsanimatie
+nl.txt,optMoveSmooth,Vloeiend
+nl.txt,opyMoveFast,Snel
+nl.txt,uploadAll,Alle scores uploaden
+nl.txt,uploadDone,Klaar!
+nl.txt,uploadError,Er is een fout opgetreden. Maak verbinding en probeer opnieuw!
+nl.txt,uploadAlreadyHas,Reeds Geüpload
+nl.txt,uploadRoomEntrance,Entree
+nl.txt,cnetDescription,"Gebruikers die voor CaravelNet zijn ingeschreven, kunnen hun informatie hier invullen om deel te nemen aan online ranglijsten. De score voor elke kamer is gebaseerd op het kleinste aantal gebruikte zetten om de kamer op te lossen. Als je deze details niet invult, krijg je alleen te zien welke plaats je score had gehaald. Je kunt later al je scores inzenden met de Upload Alle Scores knop."
+nl.txt,cnetHeader,"Bekijk meer informatie over,
+of koop een CaravelNet lidmaatschap.
+Opent in een nieuw venster."
+nl.txt,redefineScreen,"Je verandert de toets voor ""%%""
+Druk gewenste toets in (nu: %%)
+Toets Escape om te annuleren"
+nl.txt,redefineInvalidKey,"%% is gereserveerd voor andere functies
+Druk gewenste toets in
+Toets Escape om te annuleren"
+nl.txt,redefineReservedKey,"%% is gereserveerd voor alternatieve bewegingstoetsen
+Druk een andere toets in
+Toets Escape om te annuleren"
+nl.txt,abButCnet,Over CaravelNet
+nl.txt,abButHowto,Speluitleg
+nl.txt,abButHistory,Drod Geschiedenis
+nl.txt,abButBackstory,Verhaal
+nl.txt,abButCredits,Credits
+nl.txt,h&bTextWidth,450
+nl.txt,h&bText,"  DROD werd gecreëerd door Erik Hermansen in de jaren '90. Het is algemeen bekend als een puzzelspel waarin je rondloopt door kamers in een kerker en monsters verslaat met een Heel Groot Zwaard. Hoe dit werkt? Dat zul je zelf zien zodra je het spel gaat spelen.
+
+  Flash DROD is een port van het originele DROD spel. Het gebruikt media uit de nieuwere DROD spellen, die je kunt downloaden van CaravelGames.com om op je computer te spelen.
+
+  Dankzij geïntegreerde CaravelNet functionaliteit kunnen spelers, naast het oplossen van puzzels, ook met elkaar strijden om de high-scores door elke kamer in zo min mogelijk zetten op te lossen."
+nl.txt,creditsWidth,620
+nl.txt,credits,"<font size=""20"">Programmeren, Ontwikkeling: </font><font color=""#444444"">%%</font>
+<font size=""20"">Grafische onderdelen & Muziek: </font><font color=""#444444"">%%</font>
+<font size=""20"">Server-side ontwikkeling: </font><font color=""#444444"">%%</font>
+<font size=""20"">Level ontwikkeling: </font><font color=""#444444"">%%</font>
+<font size=""20"">Primaire Testers: </font><font color=""#444444"">%%</font>
+<font size=""20"">Testers: </font><font color=""#444444"">%%</font>
+<font size=""20"">Vertalingen: </font><font color=""#444444"">%%</font>
+<font size=""20"">Acteurs: </font><font color=""#444444"">%%</font>
+<font size=""20"">Originele Programmatuur, Idee & Levels: </font><font color=""#444444"">%%</font>"
+nl.txt,controlsWindowWidth,650
+nl.txt,controlsWindow,"<font size=""18"">'Cijferblok' en '789 UIO JKL'</font><font color=""#444444""> - Rondlopen</font>
+<font size=""18"">'Q' en 'W'</font><font color=""#444444""> - Zwaard Draaien</font>
+<font size=""18"">'Backspace'</font><font color=""#444444""> - Laatste zet ongedaan maken</font>
+<font size=""18"">'R'</font><font color=""#444444""> - Teruggaan naar laatste checkpoint of herstarten</font>
+<font size=""18"">'Shift+R'</font><font color=""#444444""> - Kamer herstarten</font>
+<font size=""18"">'Escape'</font><font color=""#444444""> - Pauze menu</font>
+<font size=""18"">'Enter'</font><font color=""#444444""> - Level en kamer score</font>
+<font size=""18"">'X'</font><font color=""#444444""> - Kamervergrendeling aan/uit</font>
+<font size=""18"">'Spatie'</font><font color=""#444444""> - verwijder dialogen en prestaties van het scherm</font>
+<font size=""18"">'F3'</font><font color=""#444444""> - Zetteller weergeven</font>
+<font size=""18"">'Shift+Toets'</font><font color=""#444444""> - Doe een actie en het omgekeerde</font>
+<font size=""18"">'Shift+Wachten'</font><font color=""#444444""> - Wacht tot begin volgende broedcyclus</font>
+<font size=""18"">'Muisklik'</font><font color=""#444444""> - Informatie tonen over het aangeklikte veld</font>
+
+  Je doel is om elk level van Koning Dugans Kerker vrij van monsters te maken. Deze taak kan worden volbracht met enkel je Heel Grote Zwaard™ en je eigen inzicht. Elke kamer is een afzonderlijke ruimte die in één enkele sessie opgeruimd moet worden. Verlaat je een kamer zonder die helemaal te ontruimen, dan wordt deze in zijn originele staat hersteld wanneer je terugkomt."
+nl.txt,cnetInfoWidth,500
+nl.txt,cnetInfo,"  CaravelNet laat gebruikers over de hele wereld met elkaar strijden om de beste scores.
+
+  Iedreen kan zijn eigen scores anoniem toevoegen om te zien hoe ze zich verhouden tot andere spelers. Echter, anonieme scores worden niet opgeslagen on de Caravel server en zijn er alleen voor informatieve doeleinden. De scores van elke geregistreerde gebruiker op het Caravel forum worden na inzending twee weken bewaard zonder toeslag. Wie een CaravelNet lidmaatschap heeft zal zijn scores nooit kwijtraken.
+
+\Merk op dat zolang je voortgang niet wordt verwijderd van je computer, je ervoor kunt kiezen al je scores naar de server te sturen nadat je een Caravel account hebt geregistreerd.
+
+  Om je bij Caravel te registreren bezoek je CaravelGames.com en maak je een account aan op het forum."
+nl.txt,backstoryNext,Volgende
+nl.txt,backstoryPrev,Vorige
+nl.txt,backstory1,"  Beethro Budkin slenterde de Grote Eetzaal binnen, waar Koning Dugan zijn immense ochtendmaal zat te eten.
+
+  ""Ga weg, verachtelijke burger! Je verstoort mijn spijsvertering met je slechte hygiëne!"" bulderde de Koning, terwijl stukken varkensvlees en aardappels uit zijn mond vlogen.
+
+  ""Maar Sire"", protesteerde Beethro, ""u had mij laten komen.""
+
+  De uitdrukking op het grote gezicht van de Koning veranderde binnen twee seconden van boosheid naar verwarring naar herkenning naar opgewektheid.
+
+  ""Ik had je eigenlijk eerder moeten laten komen"", zei Koning Dugan. ""Het is niet te geloven! Je laat de wacht hun maaltijden beneden in de kerker eten, ze laten overal kruimels achter, en opeens is het er vergeven van de reusachtige kakkerlakken, om maar te zwijgen van de kobolden, serpenten, boze ogen en andere akelige dingen. Het is helemaal uit de hand gelopen.""
+
+  Beethro rechtte trots zijn rug. ""Geen zorgen. Ik ben een getrainde professional uit een lange traditie van kerkerverdelgers. Ik combineer de kennis die door vijf generaties is doorgegeven met de meest hoogwaardige uitrusting om een efficiënte verdelgingsdienst aan te bieden voor een betaalbare prijs""
+
+  ""Wat voor uitrusting gebruik je?""
+
+  ""Ik heb een heel groot zwaard."""
+nl.txt,backstory2,"  ""Goed! Wanneer kun je beginnen?""
+
+  ""Wanneer we de details voor de betaling hebben afgehandeld. Hier zijn mijn standaard verdelgingskosten. U kunt onderaan tekenen"" Beethro overhandigde een contract aan de Koning.
+
+  ""Deze prijzen zijn schandalig! Is het privilege van eervolle dienst aan de Kroon niets meer waard tegenwoordig?""
+
+  ""Ik kan zo vertrekken.""
+
+  ""Nee, nee, nee. We moeten die kerker opgeruimd hebben zodat de gevangenen hun marteling kunnen ondergaan in een schone en veilige omgeving.""
+
+  ""Goed, ik geef u korting als u er een prinses bij doet.""
+
+  ""Je bent lelijk en je stinkt. Geen van mijn dochters zal je willen!""
+
+  Beethro haalde zijn schouders op. ""Zo u wilt.""
+
+  De Koning tekende onderaan het contract. ""Goed dan. Ik zal je de entree laten zien."""
+nl.txt,backstory3,"  Tijdens de afdaling overdacht Beethro de opdracht die hij had aangenomen. Dugan's Kerker was bijzonder groot en, afgaand op de verhalen van eerdere verdelgers, belachelijk vatbaar voor ongedierte. Hij was ook verscheidene malen in het geheim uitgebreid, tot spijt van de eerstvolgende persoon die het had opgeruimd, wiens contract niet rekening had gehouden met deze mogelijkheid. (Hij werd enkel betaald voor de gedeeltes waar hij het bestaan van kende.)
+
+  Sommigen zeiden dat er duistere krachten zaten achter de expansie. De legende ging dat in het verleden een koning zo moe werd van zijn vervelende jonge zoon, dat hij voor de grap voorstelde dat de jongen in de kasteelkerkers kon gaan spelen. Omdat hij zijn vader serieus nam, dwaalde de jongen diep de kerkers in en werd nooit teruggevonden. Er werd gezegd dat hij niet om was gekomen, maar voor de rest van zijn leven uit vrije wil in de kerkers bleef wonen; dat hij zijn nieuwe leefomgeving meester werd, alle geheimen van de ondergrondse wereld leerde en bondgenootschappen vormde met de monsters die er leefden, om ze aan het werk te zetten voor het maken van nieuwe doorgangen en om betere soorten monsters te fokken. Hij noemde zichzelf de Nederling en maakte plannen om uit de kerkers op te rukken om de troon op te eisen wanneer zijn krachten voldoende waren."
+nl.txt,backstory4,"  Beethro was niet zo zeker van dat alles. Om te beginnen was de koninklijke troon niet wat het geweest was, nu de macht grotendeels aan een parlement was overgedragen. Om maar te zwijgen over de vraag wie er onder de grond zou willen leven, of hoe hij bevriend kon raken met de wezens die er leefden, die toch geen bijzondere gesprekspartners waren. Maar het was waar dat kerkers vaak onnodig gecompliceerd waren en snel geteisterd werden door monsters, en soms zelfs zonder waarschuwing groeiden - geen Kerker Architect vertelde ooit waarom, wat een kwestie van eer was - en dit bovenal zorgde ervoor dat mannen als Beethro hun werk behielden.
+
+  Maar goed, een verdelger had genoeg zorgen van praktischere aard, zoals de overvloedige en mansgrote kerkerkakkerlak. Wat vooral door Beethro's gedachten ging was dat hij met deze opdracht genoeg geld en dode monsters moest kunnen verzamelen om eindelijk uit dit ondankbare vak te stappen en een restaurant te openen.
+
+  ""Ik noem het 'Beethro's Kakkerlakkengrill'!"""
+nl.txt,backstory1width,550
+nl.txt,backstory2width,550
+nl.txt,backstory3width,550
+nl.txt,backstory4width,550
+nl.txt,drodHistoryWidth,650
+nl.txt,drodHistory,"  De eerste ""Deadly Rooms of Death"" werd in de jaren '90 gemaakt door Erik Hermansen. Het spel werd uitgegeven door Webfoot en werd bekend als 'Webfoot Drod', maar dit spel is niet langer te koop en kan niet legaal worden verspreid of verkregen. Gelukkig mocht Erik het spel zelf herontwikkelen en zo ontstond 'Caravel DROD' in 2002.
+
+  Vervolgens werd in 2003 ""DROD: Architect's Edition"" uitgebracht, die een level editor bevatte waarmee iedereen zijn eigen 'holds' (level sets) kon maken en openlijk kon delen op het CaravelGames forum. Het spel trok een grote groep fans aan en het plan om een nog een spel te maken werd gevormd.
+
+  Op 1 april 2005 kwam ""DROD: Journey to Rooted Hold"" uit! De lijst nieuwe functies was fantastisch. Het bevatte nieuwe grafische elementen, scripting in het spel, een flink aantal nieuwe spelelementen, een boeiende verhaallijn en een tegenstander wiens stem iedereen de koude rillingen gaf.
+
+  Precies twee jaar later zag ""DROD: The City Beneath"" het daglicht. Die dag werd het record gezet voor het grootste aantal aanwezige gebruikers tegelijk op het Caravel Forum. TCB had nog meer nieuwe elementen en verbeteringen ten opzichte van JtRH, alsook een verhoogde moeilijkheidsgraad.
+
+  In 2008 kwam ""DROD RPG"" uit. Hoewel niet zo populair als de titels uit de hoofdserie, was het nog steeds een juweel. Het grote verschil was dat het spel een strategische uitdaging was in het managen van hulpmiddelen over meerdere locaties. Elk monster had statistieken en je moest berekenen welken monsters wanneer verslagen konden worden, plannen waar je heen ging, welke hulpmiddelen te verzamelen, en hoe en wanneer ze te verkrijgen.
+
+  ""DROD 4: Gunthro and the Epic Blunder"" is de laatste aflevering, uitgebracht op 1 April 2012. Dit spel is gericht op nieuwe spelers en is veel toegankelijker voor beginners vanwege de makkelijkere puzzels, intuïtievere oefeningen en duidelijke centrale verbindingslevels."
+nl.txt,rstHeader,Spel Herstellen
+nl.txt,rstToRoom,Herstellen naar deze kamer
+nl.txt,rstReturn,Terug naar beginscherm
+nl.txt,rstSecrets,Geheime kamers opgelost: %% / %%
+nl.txt,roomLocked,Je hebt het verlaten van de kamer vergrendeld. Toets %% opnieuw om te ontgrendelen.
+nl.txt,ingLevelCompleted,Level Klaar
+nl.txt,ingSecretFound,Geheim Gevonden
+nl.txt,ingHoldMastered,Hold Overmeesterd
+nl.txt,achievementHeader,Prestatie!
+nl.txt,achievementDismiss,Klik of Spatie om te verbergen
+nl.txt,achlistHeader,Prestaties:
+nl.txt,browseHeader,Blader door Flash DROD Holds
+nl.txt,browseOpen,Open in een nieuw venster
+nl.txt,scrStats,Speler statistieken
+nl.txt,scrYourBest,Je beste score:
+nl.txt,scrTop,Topscores voor kamer:
+nl.txt,scrNoScore,Geen!
+nl.txt,scrFetching,Ophalen...
+nl.txt,scrOnlyForCnet,"Scores voor kamers zijn alleen beschikbaar voor CaravelNet leden en Caravel forum leden.
+
+Het lijkt dat je nog niet je CaravelNet Accountinformatie hebt ingevuld. Door een caravelgames account aan te maken kun je strijden tegen spelers over de hele wereld en de scores voor elke kamer bijhouden.
+
+Om te registreren bij Caravelgames, gebruik je de knop in het opties scherm."
+nl.txt,scrMovesRoom,Zetten in kamer: %%
+nl.txt,scrMovesLevel,Zetten in level: %%
+nl.txt,scrDeaths,Dood gegaan in Level: %%
+nl.txt,scrKills,Monsters gedood in level: %%
+nl.txt,scrTime,Tijd in level: %%
+nl.txt,scrNoScores,Nog geen scores voor deze kamer.
+nl.txt,scrCnetProblems,"CaravelNet functies zijn uitgeschakeld wegens problemen met je verbinding.
+
+Zorg eerst dat je internetverbinding werkt en dat je geldige CaravelNet gebruikersinformatie hebt ingevuld. Ga vervolgens naar het opties scherm en klik ""Verbinden!""."
+nl.txt,loginConnected,"  Je bent nu verbonden met CaravelNet als geregistreerde gebruiker!
+
+  Als je alleen een forumaccount hebt gemaakt maar niet ingeschreven bent voor CaravelNet, worden je scores twee weken nadat je ze hebt ingezonden verwijderd.
+
+  Scores geüpload door CaravelNet leden zijn permanent."
+nl.txt,loginConnectedAnonymous,"  Je bent nu verbonden met CaravelNet als anonieme gebruiker. Je kunt je scores inzenden om te weten welke plaats je op de ranglijst had gekregen, maar de score wordt niet opgeslagen. Om je bijdrages permanent te maken, moet je een Caravelgames account aanmaken (toegankelijk via het opties scherm).
+  Als je later besluit om een account te maken, gebruik je de ""Upload je Scores"" knop om al je voortgang naar onze servers te sturen."
+nl.txt,loginFailed,"  Verbinden mislukt!
+
+1. Controleer of je verbonden bent met het internet.
+2. Zorg dat je firewall dit spel niet blokkeert.
+3. Ga naar http://forum.caravelgames.com om te zien of de server laadt. Wacht anders een paar minuten en probeer het opnieuw."
+nl.txt,loginFailedBadCredentials,4. Controleer of de gebruikersinformatie die je hebt ingevoerd correct is.
+nl.txt,loginFailedMissingCrentials,4. Zorg dat je een geldige gebruikersnaam en CaravelNet sleutel hebt ingevoerd.
+nl.txt,pauseHeader,DROD is nu gepauzeerd
+nl.txt,pauseContinue,Spel hervatten
+nl.txt,pauseContinueTip,"Spel hervatten.
+(Escape, Enter)"
+nl.txt,pauseRestart,Kamer herstarten
+nl.txt,pauseRestartTip,Herstart huidige kamer.
+nl.txt,pauseRoomHelp,Hulp zoeken voor deze kamer
+nl.txt,pauseRoomHelpTip,Online hulp zoeken voor deze kamer. (In het spel: F2)
+nl.txt,pauseHelp,Zoek algemene hulp
+nl.txt,pauseHelpTip,"Open het venster voor algemene hulp.
+(In het spel: F1)"
+nl.txt,pauseAchievements,Bekijk prestaties
+nl.txt,pauseAchievementsTip,"Toon een lijst met alle prestaties.
+(In het spel: Tab)"
+nl.txt,pauseOptions,Opties
+nl.txt,pauseOptionsTip,Hier kun je enkele instellingen veranderen.
+nl.txt,pauseReturn,Terug naar beginscherm
+nl.txt,pauseReturnTip,"Voortgang in het spel word opgeslagen,
+maar de voortgang in de huidige kamer gaat verloren als je het spel stopt."
+nl.txt,achHidden,???
+nl.txt,levelCreatedDate,Aangemaakt %%-%%-%%
+nl.txt,score1NoTie,Eerste Plaats!!
+nl.txt,score1,1e plaats
+nl.txt,score2,2e plaats
+nl.txt,score3,3e plaats
+nl.txt,score4,4e plaats
+nl.txt,score5,5e plaats
+nl.txt,score6,6e plaats
+nl.txt,score7,7e plaats
+nl.txt,score8,8e plaats
+nl.txt,score9,9e plaats
+nl.txt,score10,10e plaats
+nl.txt,score11,11e plaats
+nl.txt,score12,12e plaats
+nl.txt,score13,13e plaats
+nl.txt,score14,14e plaats
+nl.txt,score15,15e plaats
+nl.txt,score16,16e plaats
+nl.txt,score17,17e plaats
+nl.txt,score18,18e plaats
+nl.txt,score19,19e plaats
+nl.txt,score20,20e plaats
+nl.txt,score21,21e plaats
+nl.txt,score22,22e plaats
+nl.txt,score23,23e plaats
+nl.txt,score24,24e plaats
+nl.txt,score25,25e plaats
+nl.txt,scoreTie,gedeelde %%!
+nl.txt,scoreNoCnet,(anoniem)
+nl.txt,resultHoldTotals,"Hold Totaal:
+"
+nl.txt,resultLevelTotals,"Level Totaal:
+"
+nl.txt,resultMoves,"Zetten: %%
+"
+nl.txt,resultKills,"Monsters gedood: %%
+"
+nl.txt,resultDeaths,"Dood gegaan: %%
+"
+nl.txt,resultTime,"Tijd: %%
+"
+nl.txt,resultSecrets,"Geheimen gevonden: %%
+"
+nl.txt,resultSecretsBetter,"Geheimen gevonden: %% / %%
+"
+nl.txt,spawnCycle,Broedcyclus:
+nl.txt,snakesPrefer,Slangen prefereren:
+nl.txt,clcHo,HO
+nl.txt,clcRiz,RIZ
+nl.txt,clcOn,ONT
+nl.txt,clcTal,AAL
+nl.txt,clcVe,VE
+nl.txt,clcRt,RT
+nl.txt,clcIc,IC
+nl.txt,clcAl,AAL
+nl.txt,tile1,Vloer
+nl.txt,tile2,Afgrond
+nl.txt,tile3,Trap Omlaag
+nl.txt,tile4,Muur
+nl.txt,tile5,Gebroken Muur
+nl.txt,tile6,Level Klaar Poort
+nl.txt,tile7,Kamer Klaar Poort
+nl.txt,tile8,Valluik Poort
+nl.txt,tile9,Gele Deur
+nl.txt,tile10,Gele Deur (Open)
+nl.txt,tile11,Valluik
+nl.txt,tile12,Obstakel
+nl.txt,tile13,Pijl (Noord)
+nl.txt,tile14,Pijl (Noordoost)
+nl.txt,tile15,Pijl (Oost)
+nl.txt,tile16,Pijl (Zuidoost)
+nl.txt,tile17,Pijl (Zuid)
+nl.txt,tile18,Pijl (Zuidwest)
+nl.txt,tile19,Pijl (West)
+nl.txt,tile20,Pijl (Noordwest)
+nl.txt,tile21,Onzichtbaarheidsdrank
+nl.txt,tile22,Mimicusdrank
+nl.txt,tile23,Perkament
+nl.txt,tile24,Sfeer
+nl.txt,tile35,Teer
+nl.txt,tile37,Teer Poort
+nl.txt,tile54,Mozaïek
+nl.txt,tile55,Weg
+nl.txt,tile56,Gras
+nl.txt,tile57,Aarde
+nl.txt,tile58,Alternatieve Vloer
+nl.txt,tile59,Meestermuur
+nl.txt,tile61,Trap Omhoog
+nl.txt,tile62,Geheime Muur
+nl.txt,tile66,Muur
+nl.txt,tile68,Kamer Klaar Poort (Open)
+nl.txt,tile69,Level Klaar Poort (Open)
+nl.txt,tile70,Valluikpoort (Open)
+nl.txt,tile71,Teerpoort (Open)
+nl.txt,tileCheckpoint,Checkpoint
+nl.txt,monsterPlayer,Speler
+nl.txt,monster0,Kakkerlak
+nl.txt,monster1,Kakkerlakkoningin
+nl.txt,monster2,Kakkerlak-ei
+nl.txt,monster3,Kobold
+nl.txt,monster5,Schaduwvlerk
+nl.txt,monster6,Boos Oog
+nl.txt,monster7,Serpent
+nl.txt,monster8,Teermoeder
+nl.txt,monster9,Teerbaby
+nl.txt,monster10,Brein
+nl.txt,monster11,Mimicus
+nl.txt,monster12,Spin
+nl.txt,monster29,Karakter
+nl.txt,sword,Zwaard
+nl.txt,swords,Zwaarden (%%)
+nl.txt,roomS,Z
+nl.txt,roomSouth,Zuid
+nl.txt,roomN,N
+nl.txt,roomNorth,Noord
+nl.txt,roomE,O
+nl.txt,roomEast,Oost
+nl.txt,roomW,W
+nl.txt,roomWest,West
+nl.txt,roomEntrance,De Entree
+nl.txt,room1,Eenmaal
+nl.txt,room2,Tweemaal
+nl.txt,room3,Driemaal
+nl.txt,room4,Viermaal
+nl.txt,room5,Vijfmaal
+nl.txt,room6,Zesmaal
+nl.txt,room7,Zevenmaal
+nl.txt,room8,Achtmaal
+nl.txt,room9,Negenmaal
+nl.txt,room10,Tienmaal
+nl.txt,room11,Elfmaal
+nl.txt,room12,Twaalfmaal
+nl.txt,room13,Dertienmaal
+nl.txt,room14,Veertienmaal
+nl.txt,room15,Vijftienmaal
+nl.txt,room16,Zestienmaal
+nl.txt,room17,Zeventienmaal
+nl.txt,room18,Achttienmaal
+nl.txt,room19,Negentienmaal
+nl.txt,roomMore,%% Maal
+nl.txt,complButtNextGame,Speel volgende set
+nl.txt,complButtLearnMore,Meer informatie
+nl.txt,complButtContinue,Spel Hervatten
+nl.txt,complHeader,Wat nu?
+nl.txt,complLearnMore,"Meer informatie over de DROD serie - de wereld en de belangrijkste spellen: Journey to Rooted Hold, The City Beneath, Gunthro and the Epic Blunder, en de nieuwste afleveringen in de DROD serie!"
+nl.txt,complContinue,Ga verder met het overmeesteren van deze hold - zoek geheime kamers om toegang te krijgen tot de meesterlocatie. Je kunt de links naar de bovenstaande opties in het beginscherm vinden.
+nl.txt,rstFarthest,Selecteer de verste []
+nl.txt,rstHelpTooltip,Klik voor korte introductie over hoe herstellen werkt.
+nl.txt,rstHelp,"Herstellen werkt bijna hetzelfde als in je favoriete computerspellen. Het verschil is dat, hoewel je niet kunt opslaan wanneer je wilt, het spel automatisch opslaat wanneer je een onoverwonnen kamer binnenkomt.
+
+Om naar een eerdere staat te herstellen, selecteer je eerst een level uit de lijst links en dan kies je een kamer op de mini-kaart eronder. De minikaart maakt de kamers waar je in die opgeslagen staat nog niet bent geweest grijs. Kamers met een witte achtergrond zijn overwonnen en met een rode achtergrond niet.
+
+later kun je altijd je beste staat openen door op de [""Select the farthest save""] knop te klikken.
+
+Herstellen is vooral nuttig als je je scores voor een kamer wilt verbeteren, geheimen wilt zoeken, of gewoon je favoriete kamers nog eens wilt spelen."
+nl.txt,rstWarning,"Je hebt gekozen om naar een eerdere staat te herstellen - sommige kamers worden hersteld naar hun onoverwonnen staat.
+
+Je kunt altijf herstellen naar je meest recente/beste staat door op [""Select the farthest save""] te klikken.
+
+"
+nl.txt,optDelayText,Herhaalvertraging toetsen:
+nl.txt,optDelayShort,Kort
+nl.txt,optDelayLong,Lang
+nl.txt,optGetPass,Cnet Sleutel Verkrijgen
+nl.txt,optGetPassTooltip,"Mensen met een Caravel Games forumaccount kunnen een CaravelNet sleutel aanvragen waarmee
+ze hun scores kunnen toevoegen aan de online ranglijst. Deze scores worden twee weken nadat ze zijn toegevoegd verwijderd.
+
+De scores van betalende leden worden voor altijd bewaard, zelfs als hun lidmaatschap verloopt."
+nl.txt,optDelayTooltip,"De vertraging tussen het ingedrukt houden van een toets
+en het herhalen van de actie."
+nl.txt,optRateTooltip,De vloeiendheid van de bewegingen en herhaalsnelheid bij het ingedrukt houden van toetsen.
+nl.txt,achAddInfo,"Grijs weergegeven pestaties die niet half transparant zijn, zijn ""actief"". Dit betekent dat je in de huidige kamer misschien deze prestatie kunt behalen of ernaartoe kun werken (maar niet altijf, dus lees de omschrijving van de prestatie goed). Merk op dat sommige prestaties misschien actief zijn in alle of de meeste kamers van het spel."
+nl.txt,pauseRestore,Herstel naar een andere kamer
+nl.txt,cnetDescriptionKong,"Helaas is de login interface vanwege het beleid van Kongregate uitgeschakeld - je kunt je scores niet toevoegen aan de online ranglijsten. Als je dit wel wilt, kun je Flash DROD op caravelgames.com spelen!"
+nl.txt,defCont,Standaard besturing:

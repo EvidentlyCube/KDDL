@@ -1,0 +1,1494 @@
+File Name,Old Key,Translation
+fr.kdd1.txt,First Level,Premier niveau
+fr.kdd1.txt,Second Level,Second Niveau
+fr.kdd1.txt,Third Level,Troisième Niveau
+fr.kdd1.txt,Fourth Level,Quatrième Niveau
+fr.kdd1.txt,Mastery Level,Niveau Maître
+fr.kdd1.txt,entr1,"Beethro Budkin, maître exterminateur de cinquième génération, a été embauché par le Roi Dugan pour qu'il nettoie ses vastes oubliettes infestées de monstres.
+Beethro est payé à la pièce et, en tant que professionnel, son contrat l'oblige à éliminer tous les monstres de chacune des pièces des oubliettes pour être payé.
+La seule arme dont Beethro a besoin pour son travail est une Très Grosse Épée, laquelle tuera presque n'importe quel monstre en un seul coup.
+
+-----
+
+« J'espère que vous n'allez pas me faire payer pour le premier niveau. Je l'ai déjà fait nettoyer. Enfin, plus ou moins. » – le Roi Dugan"
+fr.kdd1.txt,entr2,"Beethro est un peu rouillé, mais le prochain niveau devrait le remettre en forme."
+fr.kdd1.txt,entr3,"« Hmm, se dit Beethro, jusqu'ici j'ai surtout vu des cafards. Ce travail va être un jeu d'enfant. »"
+fr.kdd1.txt,entr4,"« J'aimerais avoir quelques doubles de plus ici avec moi, dit Beethro, ça irait bien plus vite. »"
+fr.kdd1.txt,entr4Back,Beethro revint sur ses pas pour terminer la tâche pour laquelle il avait été embauché.
+fr.kdd1.txt,entrMaster,"Beethro descendit les escaliers et se retrouva dans un couloir ne figurant pas sur la carte…
+
+Il ne serait pas payé pour le nettoyage de ces pièces, mais son honneur professionnel le poussait à continuer."
+fr.kdd1.txt,sc1e0,Utilisez le pavé numérique ou les touches 789 uio jkl pour vous déplacer. Les touches peuvent être changées depuis le menu pause (échap).
+fr.kdd1.txt,sc1e1,"Pour revoir les touches, appuyez sur 'échap', cliquez sur 'Aide générale' puis 'Comment Jouer'."
+fr.kdd1.txt,sc1_1n,"Cette porte jaune vous sera utile plus tard.
+
+ Pour le moment, continuez vers l'ouest."
+fr.kdd1.txt,sc1_1n1w1,"Appuyez sur 'Q' ou 'W' pour tourner votre épée."
+fr.kdd1.txt,sc1_1n1w2,"Frappez l'orbe pour ouvrir certaines portes de cette pièce."
+fr.kdd1.txt,sc1_1n1w3,Certains orbes basculent les portes jaunes entre leur état ouvert et fermé.
+fr.kdd1.txt,sc1_2n1w1,"Vous pouvez voir quel effet a un orbe en cliquant dessus. Les portes seront surlignées de différentes couleurs en fonction de l'effet."
+fr.kdd1.txt,sc1_2n1w2,"Au lieu de basculer une porte, un orbe peut aussi exclusivement l'ouvrir ou la fermer."
+fr.kdd1.txt,sc1_3n1w1,"Les portes bleues s'ouvrent une fois que toutes les pièces requises d'un niveau ont été conquises."
+fr.kdd1.txt,sc1_3n1w2,Les pièces requises sont affichées avec un fond rouge sur la carte en bas à gauche.
+fr.kdd1.txt,sc1_3n2w1,"Les dialogues en cours et les textes en surimpression peuvent être passés avec la barre d'espace."
+fr.kdd1.txt,sc1_3n2w2,"Une fois que vous quittez une pièce dont vous avez tué tous les monstres, elle sera conquise."
+fr.kdd1.txt,sc1_3n2w3,"Les pièces conquises sont affichées avec un fond blanc sur la carte, par opposition à celles non conquises en rouge."
+fr.kdd1.txt,sc1_3n2w4,Vous devez conquérir toutes les pièces requises pour ouvrir le chemin vers le niveau suivant.
+fr.kdd1.txt,sc1_4n3w,Les flèches au sol empêchent les déplacements de Beethro et des monstres dans la direction opposée.
+fr.kdd1.txt,sc1_4n1w,"Les portes vertes s'ouvrent dès que vous avez éliminé tous les monstres de la pièce."
+fr.kdd1.txt,sc1_5n1w1,"Observez comment le cafard se comporte lorsqu'il tente de se déplacer en diagonale vers un coin. Appuyez sur « i » ou « 5 » du pavé numérique pour attendre un tour."
+fr.kdd1.txt,sc1_5n1w2,"La plupart des monstres essaient de se déplacer à la verticale lorsqu'ils rencontrent un obstacle en diagonale."
+fr.kdd1.txt,sc1_5n2w1,Souvenez-vous que vous pouvez voir quelle porte est activée par un orbe en cliquant dessus.
+fr.kdd1.txt,sc1_5n2w2,"Faites attention ! C'est dangereux par ici.
+
+Si vous faites une erreur, appuyez sur 'Retour Arrière' pour annuler les derniers mouvements."
+fr.kdd1.txt,sc1_5n2w3,"Vous pouvez aussi annuler et recommencer pendant l'animation de mort."
+fr.kdd1.txt,sc1_5n2w4,"Toucher un point de sauvegarde (X) vous permettra de revenir jusqu'au dernier moment où vous l'avez touché.
+Appuyez sur 'R' pour recommencer la pièce ou revenir au dernier point de sauvegarde que vous avez activé."
+fr.kdd1.txt,sc1_6n2w,Un bon épéiste peut tuer tous les cafards sans utiliser le recoin en bas comme couverture !
+fr.kdd1.txt,sc1_6n3w1,Utilisez la technique du coup arrière pour vous débarrasser de ce cafard.
+fr.kdd1.txt,sc1_6n3w2,Placez-vous sur le sol vert et assurez-vous que le cafard soit sur le sol sablonneux juste au nord de vous…
+fr.kdd1.txt,sc1_6n3w3,Placez-vous sur le sol vert et assurez-vous que le cafard soit sur le sol sablonneux juste au sud de vous…
+fr.kdd1.txt,sc1_6n3w4,… puis allez vers le nord-est pour le tuer.
+fr.kdd1.txt,sc1_6n3w5,… puis allez vers le sud-est pour le tuer.
+fr.kdd1.txt,sc1_6n3w6,"Refaites-le pour analyser le coup arrière. La maîtrise de cette technique est cruciale pour l'avenir."
+fr.kdd1.txt,sc1_5n1,"La sortie de secours est hors d'usage."
+fr.kdd1.txt,sc1_5n2,"Dézolé, on va pa finr l'batimant avek lé groz cayous partou !"
+fr.kdd1.txt,sc1_4n,Veuillez garder les portes de la serre fermées.
+fr.kdd1.txt,sc1_1n1e,Ces escaliers conduisent au prochain niveau. Attention à ce que vous allez y trouver.
+fr.kdd1.txt,sc2_2n1,"Saviez-vous que vous pouvez garder 'Maj' appuyée en faisant une action pour automatiquement faire son contraire ?"
+fr.kdd1.txt,sc2_2n2,"'Maj' + 'Attendre un tour' vous fera attendre jusqu'à la prochaine éclosion et '+ (Pavé numérique)' ou '=' fera l'inverse de la dernière action."
+fr.kdd1.txt,sc2_1n1e,Vous ne devriez pas être si violent.
+fr.kdd1.txt,sc2e,"Commencez par les pičces au nord afin d'éviter d'avoir ŕ revenir sur vos pas."
+fr.kdd1.txt,sc2_1s3e1,Vous pouvez verrouiller une pičce afin de ne pas la quitter par erreur en appuyant sur « x ».
+fr.kdd1.txt,sc2_1s3e2,"Un petit cadenas apparaîtra sur la carte pour indiquer que la pièce est verrouillée. Appuyez à nouveau sur 'X' pour la déverrouiller."
+fr.kdd1.txt,sc2_1s,Ne faites pas ça ! Vous voyez bien ce qui va arriver !
+fr.kdd1.txt,sc2_2s3e,Un bon timing rend les choses bien plus faciles.
+fr.kdd1.txt,sc3_3n,Attention aux doubles. Ils ne sont ni vos amis ni vos ennemis – ils ne font que bouger comme vous. Ne leur tournez pas le dos.
+fr.kdd1.txt,sc3_3n1e,"Tous les prisonniers ont été dévorés par les cafards, et je suis le prochain ! Je ne suis pas assez payé pour ça, je me tire !
+
+– Le directeur de la prison"
+fr.kdd1.txt,sc3_2n,"Il est possible d'emprunter ce passage sans avoir besoin de revenir dans la pièce après l'avoir conquise."
+fr.kdd1.txt,sc3_1n1w,"Avec la potion d'invisibilité, ils ne peuvent plus vous voir, mais ils peuvent toujours vous sentir si vous êtes assez près."
+fr.kdd1.txt,sc3_1e,Quel long chemin. Ça paraît presque inutile.
+fr.kdd1.txt,sc3_1s,"Les Portes aux Huit Clefs – Un magnifique puzzle. Il était plus ardu auparavant, mais maintenant je peux inspecter les orbes pour voir ce qu'ils font."
+fr.kdd1.txt,sc3_2s1w,"Voilà un petit conseil pour vous : lorsque vous voyez de longs et laborieux chemins, vous devriez chercher des raccourcis."
+fr.kdd1.txt,sc3_2s1,"Faites demi-tour ! Saviez-vous que rien que l'année passée, les morts en oubliettes ont augmenté de 32 pour cent ?"
+fr.kdd1.txt,sc3_2s2,"Regardez la réalité en face – l'exploration d'oubliettes est DANGEREUSE, surtout combinée avec des stupéfiants.
+– PUCMO (Parents Unis contre la Mort en Oubliettes)"
+fr.kdd1.txt,sc4_2n1e1,"Ceci est un mur maître. Il ne s'ouvrira qu'une fois que vous aurez conquis l'antre et tous ses secrets."
+fr.kdd1.txt,sc4_2n1e2,"Dans la version originelle de « King Dugan's Dungeon », cette pièce permettait de sauter un niveau ou deux."
+fr.kdd1.txt,sc4_1n1,"Astuce :
+
+Vous n'avez pas besoin de l'aide du double pour éliminer les cafards à l'entrée."
+fr.kdd1.txt,sc4_1n2,"Astuce :
+
+Essayez de maîtriser la technique du coup arrière – très utile lorsque l'on se retrouve avec un monstre de chaque côté !"
+fr.kdd1.txt,sc4_2e,"Si votre style est bon, les 9 doubles doivent être alignés à votre droite."
+fr.kdd1.txt,scMe1,Versions plus difficiles de puzzles existants.
+fr.kdd1.txt,scMe2,Derniers mots.
+fr.kdd1.txt,scMe3,Pièces originales et difficiles.
+fr.kdd1.txt,scM_1s1,"Et voilà. Vous avez maintenant terminé tout ce qu'il y avait à terminer dans le jeu. Il ne reste peut-être que quelques exploits."
+fr.kdd1.txt,scM_1s2,Je vous félicite sincèrement et vous invite à continuer votre voyage.
+fr.kdd1.txt,scM_1s3,"Sur le site CaravelGames.com, vous pourrez trouver les prochains épisodes de KDDL ou télécharger l'un des jeux DROD complets pour Windows, Mac OS ou Linux."
+fr.kdd1.txt,scM_1s4,"N'arrêtez pas de jouer !"
+fr.kdd1.txt,scM_1s5,Voilà une petite récompense ! Tuez tous les yeux sans marcher sur le sol marron.
+fr.kdd1.txt,scM_1s6,Les reines seront tuées lorsque vous marcherez sur le point de sauvegarde en haut à droite.
+fr.kdd1.txt,scM_1s7,"Très joli, c'était bien joué."
+fr.kdd1.txt,sp1e0,Utilisez le pavé numérique pour vous déplacer.
+fr.kdd1.txt,sp1e1,"Si vous jouez sur un portable, vous pouvez utiliser les touches 789, UIO, JKL"
+fr.kdd1.txt,sp1e2,Allez au nord pour continuer.
+fr.kdd1.txt,sp1_3n2w1,"Ha, le premier cafard de l'antre !"
+fr.kdd1.txt,sp1_3n2w2,"Viens voir Beethro, cafard-burger en devenir !"
+fr.kdd1.txt,sp1_3n2w3,"Et d'un ! Ce job va être parfait, je le sens !"
+fr.kdd1.txt,sp1_6n2w,"J'aurais pu tuer ces cafards sans me cacher dans le recoin, mais j'ai la flemme aujourd'hui."
+fr.kdd1.txt,sp1_6n3w1,Vous avez trouvé une pièce secrète !
+fr.kdd1.txt,sp1_6n3w2,Trouvez-les toutes et conquérez-les pour avoir accès à une zone de défis spéciale.
+fr.kdd1.txt,sp2_2e,"Cette reine va faire des tonnes de petits le temps que j'aille jusqu'à l'orbe et que je revienne !"
+fr.kdd1.txt,sp2_1s1e1,"Hé, un spectre ailé !"
+fr.kdd1.txt,sp2_1s1e2,Et il est tout seul... ce qui veut dire que je vais peut-être devoir le chasser à travers toute la pièce.
+fr.kdd1.txt,sp2_1s1e3,"Contrairement aux cafards, les spectres ailés fuient Beethro et essaient de rester à cinq cases de distance."
+fr.kdd1.txt,sp2_1s1e4,"Ils ne sont pas aussi timides en plus grand nombre, et n'hésiteront pas à attaquer s’ils peuvent encercler leur proie."
+fr.kdd1.txt,sp2_2s2e1,"Hmm… est-ce que je peux tuer ces reines avant qu'elles pondent ?"
+fr.kdd1.txt,sp2_2s2e2,"Ha, j'ai été trop lent !"
+fr.kdd1.txt,sp2_2s2e3,Ha ! Facile
+fr.kdd1.txt,sp2_2s3e1,"Je suis sûr qu'il y avait un moyen plus propre pour éliminer ces reines."
+fr.kdd1.txt,sp2_2s3e2,"Ça c'est ce que j'appelle de l'épéisme !"
+fr.kdd1.txt,sp3_3n1e,"Plus aucun prisonnier ? Ce boulot va être du genre solitaire, avec personne à qui parler…"
+fr.kdd1.txt,sp3_2n,Sans blague.
+fr.kdd1.txt,sp3_1n2w1,"Ouf ! Maintenant les reines ne pondront pas d'œufs tant que je ne m'approche pas d'elles !"
+fr.kdd1.txt,sp3_1n2w2,"Ça a été rude, mais rien d'insurmontable pour un bon exterminateur comme moi !"
+fr.kdd1.txt,sp3_1n2w3,"Ha! Rien n'est trop ardu pour moi !"
+fr.kdd1.txt,sp3_1n1w1,"Hé, c'est pas mal, ça !"
+fr.kdd1.txt,sp3_1n1w2,"Je sais que j'aurais pu nettoyer cette pièce sans l'invisibilité, mais c'était quand même marrant."
+fr.kdd1.txt,sp3_1n1w3,"C'était pas si dur… je me demande pourquoi cette potion est là."
+fr.kdd1.txt,sp3_1n2w0,"Mince ! Je crois que j'ai besoin de la potion cette fois !"
+fr.kdd1.txt,sp3_1s,"J'aurais pu ouvrir toutes les portes plus rapidement."
+fr.kdd1.txt,sp3_3s1w1,"Ça a l'air dangereux, ici… comme une sorte de piège…"
+fr.kdd1.txt,sp3_3s1w2,"Après avoir frappé l'orbe, je pourrais nettoyer la pièce sans tourner mon épée. Pour montrer ce que je sais faire !"
+fr.kdd1.txt,sp3_3s1w3,"Bon, j'ai peut-être tourné mon épée, mais au moins je suis toujours en vie !"
+fr.kdd1.txt,sp3_3s1w4,"Ouah ! Il aurait fallu que quelqu'un soit là pour voir ça."
+fr.kdd1.txt,sp4_2n1e,"Encore une chambre secrète là où personne ne l'attend, sauf moi."
+fr.kdd1.txt,sp4_1n1,"J'aurais pu nettoyer cette pièce sans revenir dans le couloir d'entrée."
+fr.kdd1.txt,sp4_1n2,"Beethro Budkin peut relever n'importe quel défi !"
+fr.kdd1.txt,sp4_2e1,"Nom d'une pipe en pierre! Vous croyez qu'il y a assez de doubles, là ?"
+fr.kdd1.txt,sp4_1s2e,"Comment se fait-il qu'une pièce soit plus jolie une fois que toutes les trappes sont tombées ?"
+fr.kdd1.txt,spM_1s,Vous avez échoué…
+fr.kdd1.txt,achName0,"Je t'ai à l'œil"
+fr.kdd1.txt,achName1,Matricide
+fr.kdd1.txt,achName2,La Haine me fit voir Rouge
+fr.kdd1.txt,achName3,Maître Épéiste
+fr.kdd1.txt,achName4,Main assurée
+fr.kdd1.txt,achName5,Reineburger
+fr.kdd1.txt,achName6,Aller Simple
+fr.kdd1.txt,achName7,Vite !
+fr.kdd1.txt,achName8,Soyez Rapide !
+fr.kdd1.txt,achName9,Bras Inflexible
+fr.kdd1.txt,achName10,Atteignez le Parchemin
+fr.kdd1.txt,achName11,Visibilité
+fr.kdd1.txt,achName12,Invisibilité
+fr.kdd1.txt,achName13,En Vitesse
+fr.kdd1.txt,achName14,Les Portes aux Huit Clefs
+fr.kdd1.txt,achName15,Cafards sous Contrôle
+fr.kdd1.txt,achName16,Le Mystère
+fr.kdd1.txt,achName17,Ne Regardez pas en Arrière
+fr.kdd1.txt,achName18,Seul avec les Cafards
+fr.kdd1.txt,achName19,"L'attraction du Vide"
+fr.kdd1.txt,achName20,Le Vide du Rien
+fr.kdd1.txt,achName21,Bon Style
+fr.kdd1.txt,achName22,Apprenti Exterminateur
+fr.kdd1.txt,achName23,Pourfendeur Débutant
+fr.kdd1.txt,achName24,Exterminateur de Métier
+fr.kdd1.txt,achName25,Je suis un Professionnel !
+fr.kdd1.txt,achName26,Maîtrise
+fr.kdd1.txt,achName27,Post-maîtrise
+fr.kdd1.txt,achName28,Cafards Grillés
+fr.kdd1.txt,achName29,Émincé de Reines
+fr.kdd1.txt,achName30,"Fondue d'œufs"
+fr.kdd1.txt,achName31,Pudding de Mauvais Œil
+fr.kdd1.txt,achName32,Sauté de Spectre Ailé
+fr.kdd1.txt,achName33,Diapason
+fr.kdd1.txt,achName34,Allez les Verts
+fr.kdd1.txt,achName35,Gestion de la Horde
+fr.kdd1.txt,achName36,Renaissance
+fr.kdd1.txt,achName37,Retour vers le Passé !
+fr.kdd1.txt,achName38,Faire de la Place
+fr.kdd1.txt,achName39,Terre-Lune à Pied
+fr.kdd1.txt,achDesc0,Réveillez trois mauvais yeux lors du même tour
+fr.kdd1.txt,achDesc1,Tuez une reine cafard pendant que ses œufs éclosent
+fr.kdd1.txt,achDesc2,Vous devriez être si violent
+fr.kdd1.txt,achDesc3,"Ne vous cachez pas dans l'alcôve du niveau un, 6N 2O"
+fr.kdd1.txt,achDesc4,"Dans le niveau un, nettoyez toutes les pièces non secrètes, sauf une, sans tourner votre épée.
+ %% sur 6."
+fr.kdd1.txt,achDesc5,"Tuez la reine du second niveau, 2E, avant qu'elle atteigne le coin"
+fr.kdd1.txt,achDesc6,"Dans le niveau deux, 1S, ne tournez pas votre épée après avoir frappé l'orbe"
+fr.kdd1.txt,achDesc7,"Tuez toutes les reines du niveau deux, 2S 2E, avant qu'elles pondent"
+fr.kdd1.txt,achDesc8,"Nettoyez le second niveau, 2S 3E, avant que les reines pondent"
+fr.kdd1.txt,achDesc9,"Nettoyez le second niveau, 3N, sans tourner votre épée"
+fr.kdd1.txt,achDesc10,"Atteignez le parchemin du troisième niveau, 2N, sans revenir dans la pièce"
+fr.kdd1.txt,achDesc11,"Tuez tous les cafards du troisième niveau, 1N 1O, sans boire la potion"
+fr.kdd1.txt,achDesc12,"Nettoyez le troisième niveau, 1N 2O, sans boire la potion"
+fr.kdd1.txt,achDesc13,"Nettoyez le troisième niveau, 1N 1E, avant que les reines pondent"
+fr.kdd1.txt,achDesc14,"Ouvrez les Portes aux Huit Clefs en frappant cinq orbes dans le troisième niveau, 1S"
+fr.kdd1.txt,achDesc15,"Faites sortir les trois cafards avant de les tuer dans le troisième niveau, 2N 1E"
+fr.kdd1.txt,achDesc16,"Nettoyez le troisième niveau, 3N, sans boire la potion"
+fr.kdd1.txt,achDesc17,"Nettoyez le quatrième niveau, 1N, sans revenir au couloir d'entrée"
+fr.kdd1.txt,achDesc18,"Nettoyez le quatrième niveau, 1S 1E, sans boire la potion de dédoublement"
+fr.kdd1.txt,achDesc19,"Faites tomber toutes les trappes du quatrième niveau, 1S 2E, et nettoyez la pièce lors du même passage"
+fr.kdd1.txt,achDesc20,"Nettoyez le quatrième niveau, 2S 1E, et faites tomber toutes les trappes lors du même passage"
+fr.kdd1.txt,achDesc21,"Soignez votre style au quatrième niveau, 2E"
+fr.kdd1.txt,achDesc22,Nettoyez le premier niveau
+fr.kdd1.txt,achDesc23,Nettoyez le second niveau
+fr.kdd1.txt,achDesc24,Nettoyez le troisième niveau
+fr.kdd1.txt,achDesc25,Nettoyez le quatrième niveau
+fr.kdd1.txt,achDesc26,Maîtrisez cet antre
+fr.kdd1.txt,achDesc27,Post-maîtrisez cet antre
+fr.kdd1.txt,achDesc28,Tuez 35 cafards
+fr.kdd1.txt,achDesc29,Tuez 20 reines cafards
+fr.kdd1.txt,achDesc30,Tuez15 œufs de cafards
+fr.kdd1.txt,achDesc31,Tuez 15 mauvais yeux
+fr.kdd1.txt,achDesc32,Tuez 5 spectres ailés
+fr.kdd1.txt,achDesc33,Frappez un orbe pendant trois tours consécutifs
+fr.kdd1.txt,achDesc34,Abaissez cinq portes vertes
+fr.kdd1.txt,achDesc35,Tuez un total de 2 500 monstres
+fr.kdd1.txt,achDesc36,Mourez 50 fois en tout
+fr.kdd1.txt,achDesc37,Annulez un total de 250 mouvements
+fr.kdd1.txt,achDesc38,Faites tomber un total de 100 trappes
+fr.kdd1.txt,achDesc39,Faites 5 000 pas en tout
+fr.kdd1.txt,outro,"Qu'est-ce que le futur réserve à Beethro ? Va-t-il au-devant de nouveaux dangers encore plus grands ? Arrivera-t-il à nettoyer les oubliettes du Roi Dugan et à se faire payer ?
+
+
+<font size=""32"" color=""#FFFF00"">Félicitations !</font>
+
+Vous venez de terminer le premier épisode de l'antre « King Dugan's Dungeon Lite ». J'espère sincèrement que cela vous a plu. Maintenant que vous avez descendu les derniers escaliers de ce set, vous pouvez essayer de maîtriser, puis post-maîtriser le jeu ! Pour ce faire, trouvez les pièces secrètes. Le nombre de pièces secrètes restant à trouver est maintenant affiché dans l'écran de chargement. Une fois que vous les aurez toutes conquises, une zone de maîtrise spéciale sera ouverte. À vous de trouver comment y accéder !
+
+Avant de vous laisser à votre gloire et votre joie d'avoir fini ce jeu, j'aimerais remercier un certain nombre de personnes sans qui ce jeu n'aurait jamais existé :
+
+	
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - Le créateur, père et inventeur de DROD. Sans lui, l'idée de ce jeu n'aurait jamais vu le jour.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - Il a codé la plupart de DROD : JtRH et DROD : TCB à lui tout seul. Grâce à cette superbe base de code, la création de Flash DROD a été un vrai plaisir.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Maître suprême du forum Caravel et codeur en chef de CaravelNet. Grâce à lui vous pouvez entrer en compétition pour les meilleurs scores, et bien plus encore !
+
+
+<font size=""23"" color=""#FFFF00"">Programmation, Développement</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Graphismes et musique</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Développement du serveur</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Développement des niveaux</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testeurs Principaux</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testeurs</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Traductions</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Doublage</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Code originel, concept et niveaux</font> - %%
+
+
+À bientôt !
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+fr.kdd1.txt,complNextGame,"Jouer au set de niveaux suivant – « KDD Lite 2 ». Ce lien s'ouvrira dans une nouvelle fenêtre, et vous pourrez alors fermer la fenêtre : votre progression a été sauvegardée."
+fr.kdd1.txt,scNew1,Observez attentivement ce qui se passe lors du tour de ponte.
+fr.kdd1.txt,scNew2,"Aucun śuf n'apparaîtra sur les trappes, les flčches ou les portes jaunes ouvertes."
+fr.kdd1.txt,scNew3,"Et si une reine se déplace lors du tour de ponte, aucun śuf n'apparaîtra sur la case qu'elle vient de quitter."
+fr.kdd1.txt,sc1_New1N1W,"Si vous n'aviez pas encore remarqué, les reines cherchent toujours ŕ s'éloigner de vous et ne pondent jamais sur les portes jaunes ouvertes."
+fr.kdd1.txt,sc1_New3N1,Les reines des cafards pondent des śufs tous les 30 tours (le tour aprčs que le compteur vire au rouge).
+fr.kdd1.txt,sc1_New3N2,Les śufs deviennent des cafards adultes 5 tours aprčs avoir été pondus.
+fr.kdd1.txt,sc1_New3E,Les reines des cafards fuient toujours Beethro. Ce comportement peut ętre utilisé pour les manipuler.
+fr.kdd1.txt,sc1_new6n2w1,Les murs secrets et fęlés peuvent ętre détruits par votre épée.
+fr.kdd1.txt,sc1_new6n2w2,Les murs secrets sont cependant plus difficiles ŕ discerner.
+fr.kdd1.txt,sc1_new6n2w3,Alors ne ratez pas ceux dans le coin quand vous reviendrez.
+fr.kdd1.txt,sc1_5n1w3,"Ce jeu est entičrement déterministe ; aucun comportement n'est imprévisible ou laissé au hasard."
+fr.kdd1.txt,sc1_new6N,"Il n'est pas nécessaire de conquérir les pičces secrčtes dans l'ordre pour que l'antre soit maîtrisé."
+fr.kdd1.txt,sc_evileyes,Dans ce niveau vous allez croiser des mauvais yeux. Dčs que vous ętes dans leur ligne de mire ils se réveilleront et vous pourchasseront comme le font les cafards.
+fr.kdd1.txt,defCont,Contrôles par défaut :
+fr.kdd1.txt,sc_diago,"Vous pouvez vous déplacer en diagonale, męme ŕ travers des couloirs trčs étroits."
+fr.kdd1.txt,sc_broken,Fracassez ces murs secrets fęlés avec votre épée.
+fr.kdd1.txt,sc_queens1,Les reines des cafards pondent des śufs tous les 30 tours (le tour aprčs que le compteur vire au rouge).
+fr.kdd1.txt,sc_queens2,Les śufs deviennent des cafards adultes 5 tours aprčs avoir été pondus.
+fr.kdd1.txt,sc_queens3,"Les śufs n'apparaissent pas sur les flčches, les trappes et les portes jaunes. Appuyez sur « i » ou « 5 » du pavé numérique pour attendre un tour."
+fr.kdd1.txt,sc_mimics,"Aprčs avoir pris une potion dédoublement, utilisez la souris ou la touche « attendre » pour choisi la case oů vous voulez placer le double."
+fr.kdd1.txt,sc_shiftwait,"Vous pouvez appuyer sur « Maj + attendre » pour attendre automatiquement jusqu'ŕ la prochaine ponte."
+fr.kdd1.txt,sp_mother1,"Les mčres goudrons feront s'étendre le goudron d'une case dans toutes les directions tous les trente tours."
+fr.kdd1.txt,sp_mother2,"Il est relativement sans danger de se faire entourer par du goudron, mais faites attention aux bébés qui peuvent apparaître lors de l'extension."
+fr.kdd1.txt,sc_backswipe,Suivez le chemin sablonneux pour apprendre la technique du coup arričre !Déplacez-vous en diagonale et ne tournez pas votre épée.
+fr.kdd1.txt,sc_trapdoors,Ces cases rose-violette sont des trappes et elles tombent si vous ou un double passez dessus.
+fr.kdd2.txt,Fifth Level,Cinquième Niveau
+fr.kdd2.txt,Sixth Level,Sixième Niveau
+fr.kdd2.txt,Seventh Level,Septième Niveau
+fr.kdd2.txt,Eighth Level,Huitième Niveau
+fr.kdd2.txt,Mastery Level,Niveau Maître
+fr.kdd2.txt,Tutorial,Tutoriel
+fr.kdd2.txt,entr5,"Beethro Budkin, maître exterminateur de cinquième génération, a été embauché par le Roi Dugan pour qu'il nettoie ses vastes oubliettes infestées de monstres.
+Beethro est payé à la pièce et, en tant que professionnel, son contrat l'oblige à éliminer tous les monstres de chacune des pièces des oubliettes pour être payé.
+La seule arme dont Beethro a besoin pour son travail est une Très Grosse Épée, laquelle tuera presque n'importe quel monstre en un seul coup.
+
+-----
+
+Le niveau précédent avait mis Beethro en nage : « j'ai l'impression que ce boulot va être plus difficile que ce que je croyais ». Heureusement, une brise fraiche provenait du niveau inférieur."
+fr.kdd2.txt,entr6,"Peut-être que l'architecte de ce niveau était un peu trop fier de son idée, quelle qu'elle fût. En tout cas, estimez-vous heureux qu'il n'y ait pas d'autre niveau comme celui-ci dans les oubliettes du Roi Dugan."
+fr.kdd2.txt,entr6Back,Beethro revint sur ses pas pour terminer la tâche pour laquelle il avait été embauché.
+fr.kdd2.txt,entr7,"Alors que Beethro descendait l'escalier, il entendit un sifflement bruyant. En tant que professionnel aguerri, il reconnut instantanément ce que c'était, mais il fut quand même effrayé par le volume sonore. « Mazette ! Combien y a-t-il de ces sales bestioles là-dessous ? »"
+fr.kdd2.txt,entr8,"Certains monstres sont vicieux et sanguinaires, d'autres sont surtout salissants."
+fr.kdd2.txt,entrMaster,"Beethro descendit les escaliers et se retrouva dans un couloir ne figurant pas sur la carte…
+
+Il ne serait pas payé pour le nettoyage de ces pièces, mais son honneur professionnel le poussait à continuer."
+fr.kdd2.txt,entrTut,Tutoriel
+fr.kdd2.txt,entrTutLeave,Beethro quitta la zone de tutoriel fort de nouvelles connaissances.
+fr.kdd2.txt,entrPremaster,"Beethro s'engagea en trébuchant dans une succession d'escaliers mal éclairés : « Ce truc est dangereux et il n'y a même pas de cafards ! Quelqu'un devrait au moins installer une rampe ou qu... ». À ce moment précis, Beethro perdit l'équilibre et alla s'assommer plusieurs étages plus bas, restant dans les vapes pendant une heure. Après d'horribles rêves de pudding aux yeux, Beethro se réveilla douloureusement dans une nouvelle pièce. « Bon sang ! est-ce que ce serait si difficile que ça de marquer ces endroits sur la carte, pour une fois ? »"
+fr.kdd2.txt,sc51n2w,"J'espère que vous vous êtes laissé un chemin de retour."
+fr.kdd2.txt,sc63e,Passage Secret.
+fr.kdd2.txt,sc61s1w,"Ceci est un mur maître.
+Il s'ouvrira lorsque vous aurez fini le dernier niveau et conquis toutes les pièces secrètes."
+fr.kdd2.txt,sc72n1w,"Aux faibles d'esprit – revenez sur vos pas ! Cette pièce ne peut être conquise que par un intellect supérieur.
+(Cette pièce n'est pas requise)"
+fr.kdd2.txt,sc71n1,Je pensais que vous ne réussiriez jamais le puzzle précédent.
+fr.kdd2.txt,sc71n2,"D'accord, j'avoue que ce n'est pas EXACTEMENT la même chose que les light cycles.
+
+– Erik"
+fr.kdd2.txt,sc71n3,"Mon hommage à Tron.
+
+– Erik"
+fr.kdd2.txt,sc81s1,Le goudron vivant ne peut être attaqué que sur les côtés plats
+fr.kdd2.txt,sc81s2,Tout morceau qui ne fait pas au moins 2 cases de haut et de large est instable et formera des petits en se brisant.
+fr.kdd2.txt,sc81s3,Amusez-vous à tester comment ça marche.
+fr.kdd2.txt,sc81s1e,Il serait sage de nettoyer la pièce au nord avant de suivre ce couloir.
+fr.kdd2.txt,sc83s,"Nettoyez les passages au sud et au nord avant de continuer vers là pour éviter d'avoir à revenir sur vos pas."
+fr.kdd2.txt,scMe1,"Versions plus difficiles d'anciens puzzles."
+fr.kdd2.txt,scMe2,Derniers mots.
+fr.kdd2.txt,scMe3,Nouveaux puzzles.
+fr.kdd2.txt,scM1s1,"Bien ! À part peut-être quelques exploits, vous devriez avoir terminé le jeu."
+fr.kdd2.txt,scM1s2,"Toutes mes sincères félicitations, ce n'est pas rien !"
+fr.kdd2.txt,scM1s3,"Sur le site CaravelGames.com, vous pourrez trouver les prochains épisodes de KDDL ou télécharger l'un des jeux DROD complets pour Windows, Mac OS ou Linux."
+fr.kdd2.txt,scM1s4,Continuez à jouer !
+fr.kdd2.txt,scM1s5,Voilà une petite récompense ! Tuez tous les yeux sans marcher sur le sol marron.
+fr.kdd2.txt,scM1s6,Les deux reines du bas seront tuées lorsque vous marcherez sur le point de sauvegarde en haut à droite.
+fr.kdd2.txt,scM1s7,Toutes mes félicitations !
+fr.kdd2.txt,scT1,"Allez vers la droite et regardez comment le cafard se comporte lorsqu'il se déplace en diagonale vers un coin."
+fr.kdd2.txt,scT2,"Les serpents ont leurs propres règles de mouvements, plus complexes. Leur préférence actuelle est affichée sous le compteur du cycle d'éclosion."
+fr.kdd2.txt,scT3,"Si une créature se déplace en diagonale vers un coin, elle préfèrera se déplacer verticalement si possible."
+fr.kdd2.txt,scT4,"'Échap' ouvre le menu pause, depuis lequel vous pouvez cliquer sur 'Aide Générale' pour revoir les touches quand vous le souhaitez."
+fr.kdd2.txt,scT5,"Vous pouvez verrouiller/déverrouiller une pièce en appuyant sur 'X'. Un petit cadenas apparaîtra sur la carte pour indiquer que la pièce est verrouillée."
+fr.kdd2.txt,scT6,"'Maj' + une touche fera l'action de la touche et son opposé
+'Maj' + 'Attendre un tour' vous fera attendre jusqu'à la prochaine éclosion.
+'+ (Pavé numérique)' ou '=' fera l'inverse de la dernière action."
+fr.kdd2.txt,scT7,"'F3' affiche un compteur de mouvements pour vous aider à optimiser vos scores."
+fr.kdd2.txt,scT8,Toutes les touches peuvent être réattribuées depuis le menu options.
+fr.kdd2.txt,scT9,"Les scores des utilisateurs sans compte CaravelNet ne seront pas stockés dans le classement, mais ils sauront quelle place ils auraient pu atteindre."
+fr.kdd2.txt,scT10,Cliquez sur les orbes pour savoir quelles portes elles affectent et sur les mauvais yeux pour voir leur ligne de mire.
+fr.kdd2.txt,scT11,"La barre d'espace fait disparaître les dialogues et exploits de l'écran."
+fr.kdd2.txt,scT13,"Contrairement aux cafards, les spectres ailés fuient Beethro et essaient de rester à cinq cases de distance."
+fr.kdd2.txt,scT14,"Ils ne sont pas aussi timides en plus grand nombre, et n'hésiteront pas à attaquer s’ils peuvent encercler leur proie."
+fr.kdd2.txt,sc1_6n3w1,Utilisez la technique du coup arrière pour vous débarrasser de ce cafard.
+fr.kdd2.txt,sc1_6n3w2,Placez-vous sur le sol vert et assurez-vous que le cafard soit sur le sol sablonneux juste au nord de vous…
+fr.kdd2.txt,sc1_6n3w3,Placez-vous sur le sol vert et assurez-vous que le cafard soit sur le sol sablonneux juste au sud de vous…
+fr.kdd2.txt,sc1_6n3w4,… puis allez vers le nord-est pour le tuer.
+fr.kdd2.txt,sc1_6n3w5,… puis allez vers le sud-est pour le tuer.
+fr.kdd2.txt,sc1_6n3w6,"Refaites-le pour analyser le coup arrière. La maîtrise de cette technique est cruciale pour l'avenir."
+fr.kdd2.txt,sp5e1,Cette zone conduit à un tutoriel.
+fr.kdd2.txt,sp5e2,"Allez-y si vous n'avez jamais joué à ce jeu auparavant."
+fr.kdd2.txt,sp5e3,"Déplacez-vous en utilisant le pavé numérique ou les touches 789, UIO, JKL."
+fr.kdd2.txt,sp52n1,"Si j'arrivais à nettoyer cette pièce sans ouvrir une seule porte, là je pourrais me vanter."
+fr.kdd2.txt,sp52n2,"Ha ! Installer des orbes inutiles comme ça, c'est ce que j'appelle du mauvais design d'oubliette !"
+fr.kdd2.txt,sp51n2w1,"Crénom, regardez-moi tous ces mauvais yeux !"
+fr.kdd2.txt,sp51n2w2,Ha ! Ça me file toujours la chair de poule quand un de ces trucs se réveille !
+fr.kdd2.txt,sp63e,Je commence à saisir le modèle…
+fr.kdd2.txt,sp63n,Ça me rappelle quelque chose…
+fr.kdd2.txt,sp63w,Dugan a intérêt à me payer pour chacune de ces pièces !
+fr.kdd2.txt,sp72n1w1,Nom de Zeus ! Ce serpent doit faire au moins mille quatre cent cinquante-cinq pieds de long !
+fr.kdd2.txt,sp72n1w2,"Mais mon contrat stipule que je ne suis pas obligé de m'occuper des monstres qui font plus de mille quatre cent cinquante-quatre pieds."
+fr.kdd2.txt,sp72n1w3,Je pourrais laisser cette pièce comme elle est.
+fr.kdd2.txt,sp71n1e1,Ma lame ne fera pas une égratignure à cette bestiole.
+fr.kdd2.txt,sp71n1e2,"Mais si je la conduis dans un cul-de-sac, elle est morte."
+fr.kdd2.txt,sp84s1,"Des mères goudron, en plus ? Pourquoi, pourquoi, pourquoi… ?"
+fr.kdd2.txt,sp83s1e,Je déteste les mères goudrons.
+fr.kdd2.txt,sp82s2e,Il faut que je fasse attention… Je ne pourrais pas passer si le goudron bloque le passage.
+fr.kdd2.txt,sp84s3e1,"Laisse tomber… On s'en va !"
+fr.kdd2.txt,sp84s3e2,Et un mur ici…
+fr.kdd2.txt,sp84s3e3,"Bien. À ce rythme, on aura fini de cartographier le niveau dans quelques minutes."
+fr.kdd2.txt,sp84s3e4,"Tu as entendu ça ? C'est la police du goudron ! Il faut se cacher !"
+fr.kdd2.txt,sp84s3e5,"Mince ! J'ai failli faire tomber la carte !"
+fr.kdd2.txt,sp84s3e6,Attends ! Est-ce que la carte est bien orientée ?
+fr.kdd2.txt,sp85s2e1,Cette pièce… elle me paraît… familière…
+fr.kdd2.txt,sp85s2e2,Elle me rend… furieux… et frustré !
+fr.kdd2.txt,sp86s3e,"Mince… J'espère qu'il n'y pas pas de trucs cachés, comme une pièce secrète derrière un mur !"
+fr.kdd2.txt,sp88s3e1,Oh bon sang… cette pièce va me donner des cauchemars…
+fr.kdd2.txt,sp88s3e2,Plus jamais… plus jamais…
+fr.kdd2.txt,spM1s,Vous avez échoué…
+fr.kdd2.txt,spT2,"Tournez votre épée avec 'Q' et 'W'."
+fr.kdd2.txt,spT3,"Maintenant, frappez l'orbe avec votre épée."
+fr.kdd2.txt,spT4,"Les orbes peuvent interagir de trois façons avec les portes : elles peuvent les ouvrir, les fermer, ou les basculer entre les deux."
+fr.kdd2.txt,spT5,"Faites un clic gauche sur l'orbe pour voir quelle porte elle affecte, et de quelle façon."
+fr.kdd2.txt,spT6,Le but du jeu de DROD est de débarrasser chaque niveau de tous ses monstres.
+fr.kdd2.txt,spT7,Touchez le cafard avec votre épée pour le tuer.
+fr.kdd2.txt,spT8,Les flèches au sol vous empêchent de bouger dans la direction opposée.
+fr.kdd2.txt,spT9,"Marchez sur le point de sauvegarde. Si vous mourez ou appuyez sur 'R', vous reviendrez au moment où vous avez marché dessus."
+fr.kdd2.txt,spT10,"Si vous mourez ou que vous êtes dans une situation sans issues, vous pouvez annuler jusqu'à trois mouvements en appuyant sur 'Retour Arrière'."
+fr.kdd2.txt,spT11,"Cette potion vous permettra de placer un double. Les doubles singent tout ce que vous faites et ils bougent juste après vous, mais avant les monstres."
+fr.kdd2.txt,spT12,"Placez le double sur la case avec un point de sauvegarde. Servez-vous-en pour faire tomber toutes les trappes et la porte rouge s'ouvrira."
+fr.kdd2.txt,spT13,"Félicitations, vous avez conquis cette pièce !"
+fr.kdd2.txt,spT14,Votre progression est sauvegardée dès que vous quittez la pièce. Vous pouvez afficher votre meilleur score pour la pièce et vous pouvez voir quelle place vous avez atteinte au classement général.
+fr.kdd2.txt,spT15,"Si vous vous êtes connecté avec un compte du forum Caravel, votre meilleur score sera envoyé au classement."
+fr.kdd2.txt,spT16,"Il restera au classement pendant deux semaines, sauf si vous avez un compte CaravelNet, auquel cas votre score restera indéfiniment."
+fr.kdd2.txt,spT17,Vous pouvez maintenant quitter la pièce du tutoriel.
+fr.kdd2.txt,achName0,Où est le Maître ?
+fr.kdd2.txt,achName1,"Cap à l'est"
+fr.kdd2.txt,achName2,Netteté
+fr.kdd2.txt,achName3,"Esquive d'orbe"
+fr.kdd2.txt,achName4,Mains Statiques
+fr.kdd2.txt,achName5,Acuité Visuelle Parfaite
+fr.kdd2.txt,achName6,"Murmurer à l'oreille des Spectres"
+fr.kdd2.txt,achName7,Dédoublement Contrôlé
+fr.kdd2.txt,achName8,Je Déteste le Jaune
+fr.kdd2.txt,achName9,Non diagonal
+fr.kdd2.txt,achName10,Mains Immobiles
+fr.kdd2.txt,achName11,Ssssserpent
+fr.kdd2.txt,achName12,Mains Figées
+fr.kdd2.txt,achName13,Intellect Supérieur
+fr.kdd2.txt,achName14,Tu Quoque Fili
+fr.kdd2.txt,achName15,Spécialiste du Goudron
+fr.kdd2.txt,achName16,Vise les Yeux !
+fr.kdd2.txt,achName17,Le Ninja
+fr.kdd2.txt,achName18,Apprenti Exterminateur
+fr.kdd2.txt,achName19,Pourfendeur Débutant
+fr.kdd2.txt,achName20,Exterminateur de Métier
+fr.kdd2.txt,achName21,Je suis un Professionnel !
+fr.kdd2.txt,achName22,Maîtrise
+fr.kdd2.txt,achName23,Post-maîtrise
+fr.kdd2.txt,achName24,Reines Frites
+fr.kdd2.txt,achName25,Œufs à la Coque
+fr.kdd2.txt,achName26,"Gelée d'yeux"
+fr.kdd2.txt,achName27,Spectres Ailés Grillés
+fr.kdd2.txt,achName28,Sushi de Serpent
+fr.kdd2.txt,achName29,Diapason
+fr.kdd2.txt,achName30,À Bas le Vert
+fr.kdd2.txt,achName31,Tueur en Série
+fr.kdd2.txt,achName32,Immortel
+fr.kdd2.txt,achName33,Faille Spatio-temporelle
+fr.kdd2.txt,achName34,Nettoyage du Sol
+fr.kdd2.txt,achName35,Marathonien
+fr.kdd2.txt,achDesc0,Trouvez le mur maître
+fr.kdd2.txt,achDesc1,"Nettoyez le niveau cinq, 1O, en faisant face à l'est"
+fr.kdd2.txt,achDesc2,"Faites tomber toutes les trappes et nettoyez le niveau cinq, 1N 2O lors de la męme visite"
+fr.kdd2.txt,achDesc3,"Nettoyez le niveau cinq, 2N, sans activer d'orbes"
+fr.kdd2.txt,achDesc4,"Nettoyez le niveau cinq, 1S, sans tourner"
+fr.kdd2.txt,achDesc5,"Conquérez le niveau cinq, 2S, sans boire la potion d'invisibilité"
+fr.kdd2.txt,achDesc6,"Ne frappez pas l'orbe en nettoyant le niveau cinq, 3E"
+fr.kdd2.txt,achDesc7,"Nettoyez le niveau cinq, 1S 1O, sans quitter la zone délimitée"
+fr.kdd2.txt,achDesc8,"Nettoyez le niveau cinq, 2S 2E, sans marcher sur une porte jaune ouverte"
+fr.kdd2.txt,achDesc9,"Conquérez le niveau sept, 1S, sans déplacement en diagonale"
+fr.kdd2.txt,achDesc10,"Nettoyez le niveau sept, 1E, sans tourner"
+fr.kdd2.txt,achDesc11,"Dans le niveau sept, 1N 2E, tuez le serpent avant de tuer le moindre cafard"
+fr.kdd2.txt,achDesc12,"Ne tournez pas votre épée dans le niveau sept, 3N 1E"
+fr.kdd2.txt,achDesc13,"Nettoyez la pièce « Intellect Supérieur » niveau sept, 2N 1O"
+fr.kdd2.txt,achDesc14,"Nettoyez le niveau huit, 4S 3E, sans boire la potion de dédoublement"
+fr.kdd2.txt,achDesc15,"Éliminez complètement le goudron de n'importe quelle pièce du niveau huit"
+fr.kdd2.txt,achDesc16,"Tuez une mère goudron avant qu'elle ait grandi"
+fr.kdd2.txt,achDesc17,Nettoyez une pièce contenant des mauvais yeux sans en réveiller un seul
+fr.kdd2.txt,achDesc18,Nettoyez le cinquième niveau
+fr.kdd2.txt,achDesc19,Nettoyez le sixième niveau
+fr.kdd2.txt,achDesc20,Nettoyez le septième niveau
+fr.kdd2.txt,achDesc21,Nettoyez le huitième niveau
+fr.kdd2.txt,achDesc22,"Maîtrisez l'antre"
+fr.kdd2.txt,achDesc23,"Post-maîtrisez l'antre"
+fr.kdd2.txt,achDesc24,Tuez 20 reines cafards
+fr.kdd2.txt,achDesc25,Tuez 15 œufs de cafards
+fr.kdd2.txt,achDesc26,Tuez 15 mauvais yeux
+fr.kdd2.txt,achDesc27,Tuez 5 spectres ailés
+fr.kdd2.txt,achDesc28,Tuez 10 serpents
+fr.kdd2.txt,achDesc29,Frappez un orbe trois fois de suite
+fr.kdd2.txt,achDesc30,Abaissez cinq portes vertes
+fr.kdd2.txt,achDesc31,Tuez un total de 2 500 monstres
+fr.kdd2.txt,achDesc32,Mourez 70 fois en tout
+fr.kdd2.txt,achDesc33,Annulez un total de 350 mouvements
+fr.kdd2.txt,achDesc34,Faites tomber un total de 200 trappes
+fr.kdd2.txt,achDesc35,Faites 7 000 pas en tout
+fr.kdd2.txt,outro,"Le goudron n'était pas quelque chose que Beethro s'attendait à rencontrer, ni quelque chose qu'il voulait rencontrer. Mais alors qu'il descendait l'escalier vers le neuvième niveau, il était sûr d'une chose : l'odeur de cette substance gluante avait disparu. Mais peut-être que quelque chose de pire l'attendait…
+
+
+<font size=""32"" color=""#FFFF00"">Félicitations !</font>
+
+Vous venez de terminer le deuxième épisode de l'antre « King Dugan's Dungeon Lite ». J'espère sincèrement que cela vous a plu. Maintenant que vous avez descendu les derniers escaliers de ce set, vous pouvez essayer de maîtriser, puis post-maîtriser le jeu ! Pour ce faire, trouvez les pièces secrètes. Le nombre de pièces secrètes restant à trouver est maintenant affiché dans l'écran de chargement. Une fois que vous les aurez toutes conquises, une zone de maîtrise spéciale sera ouverte. À vous de trouver comment y accéder ! Vous pouvez aussi choisir de jouer à l'épisode suivant de KDDL.
+
+Avant de vous laisser à votre gloire et votre joie d'avoir fini ce jeu, j'aimerais remercier un certain nombre de personnes sans qui ce jeu n'aurait jamais existé :
+
+	
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - Le créateur, père et inventeur de DROD. Sans lui, l'idée de ce jeu n'aurait jamais vu le jour.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - Il a codé la plupart de DROD : JtRH et DROD : TCB à lui tout seul. Grâce à cette superbe base de code, la création de Flash DROD a été un vrai plaisir.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Maître suprême du forum Caravel et codeur en chef de CaravelNet. Grâce à lui vous pouvez entrer en compétition pour les meilleurs scores, et bien plus encore !
+
+
+<font size=""23"" color=""#FFFF00"">Programmation, Développement</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Graphismes et musique</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Développement du serveur</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Développement des niveaux</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testeurs Principaux</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testeurs</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Traductions</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Doublage</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Code originel, concept et niveaux</font> - %%
+
+
+À bientôt !
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+fr.kdd2.txt,complNextGame,"Jouer au set de niveaux suivant – « KDD Lite 3 ». Ce lien s'ouvrira dans une nouvelle fenêtre, et vous pourrez alors fermer la fenêtre : votre progression a été sauvegardée."
+fr.kdd2.txt,sp_new71e2,"Ah, ça c'est de l'efficacité ! J'ai hâte de raconter ça à la guilde des exterminateurs !"
+fr.kdd2.txt,sp_new71e1,"Ces yeux auraient pu être exterminés sans tourner l'épée. Eh oui !"
+fr.kdd2.txt,defCont,Contrôles par défaut :
+fr.kdd2.txt,sc_diago,"Vous pouvez vous déplacer en diagonale, męme ŕ travers des couloirs trčs étroits."
+fr.kdd2.txt,sc_broken,Fracassez ces murs secrets fęlés avec votre épée.
+fr.kdd2.txt,sc_queens1,Les reines des cafards pondent des śufs tous les 30 tours (le tour aprčs que le compteur vire au rouge).
+fr.kdd2.txt,sc_queens2,Les śufs deviennent des cafards adultes 5 tours aprčs avoir été pondus.
+fr.kdd2.txt,sc_queens3,"Les śufs n'apparaissent pas sur les flčches, les trappes et les portes jaunes. Appuyez sur « i » ou « 5 » du pavé numérique pour attendre un tour."
+fr.kdd2.txt,sc_mimics,"Aprčs avoir pris une potion dédoublement, utilisez la souris ou la touche « attendre » pour choisi la case oů vous voulez placer le double."
+fr.kdd2.txt,sc_shiftwait,"Vous pouvez appuyer sur « Maj + attendre » pour attendre automatiquement jusqu'ŕ la prochaine ponte."
+fr.kdd2.txt,sp_mother1,"Les mčres goudrons feront s'étendre le goudron d'une case dans toutes les directions tous les trente tours."
+fr.kdd2.txt,sp_mother2,"Il est relativement sans danger de se faire entourer par du goudron, mais faites attention aux bébés qui peuvent apparaître lors de l'extension."
+fr.kdd2.txt,sc_backswipe,Suivez le chemin sablonneux pour apprendre la technique du coup arričre !Déplacez-vous en diagonale et ne tournez pas votre épée.
+fr.kdd2.txt,sc_trapdoors,Ces cases rose-violette sont des trappes et elles tombent si vous ou un double passez dessus.
+fr.kdd3.txt,Ninth Level,Neuvième Niveau
+fr.kdd3.txt,Tenth Level,Dixième Niveau
+fr.kdd3.txt,Eleventh Level,Onzième Niveau
+fr.kdd3.txt,Twelfth Level,Douzième Niveau
+fr.kdd3.txt,Mastery Level,Niveau Maître
+fr.kdd3.txt,Tutorial,Tutoriel
+fr.kdd3.txt,entr9,"Beethro Budkin, maître exterminateur de cinquième génération, a été embauché par le Roi Dugan pour qu'il nettoie ses vastes oubliettes infestées de monstres.
+Beethro est payé à la pièce et, en tant que professionnel, son contrat l'oblige à éliminer tous les monstres de chacune des pièces des oubliettes pour être payé.
+La seule arme dont Beethro a besoin pour son travail est une Très Grosse Épée, laquelle tuera presque n'importe quel monstre en un seul coup.
+
+-----
+
+Beethro s'assit sur les marches pour faire une pause. Il sortit trois bouteilles de son sac. La bouteille de dix verres était remplie de délicieux jus de feuille et les deux autres, d'une contenance de deux et cinq verres respectivement, étaient vides. Beethro voulait boire précisément quatre verres de jus en une seule gorgée. Il commença à expérimenter avec les verres, versant du jus de l'un dans l'autre, mais abandonna au bout d'un moment. « C'est trop de boulot, je laisse tomber ! »"
+fr.kdd3.txt,entr10,"Comme le savent bien les exterminateurs, sous la surface existent certaines bestioles qui peuvent se fondre dans leur environnement."
+fr.kdd3.txt,entr11,"En apercevant la pièce suivante, Beethro eut un grognement désapprobateur : « Je ne sais pas comment, mais le goudron finit toujours par se retrouver comme ça. Et je déteste ça. »"
+fr.kdd3.txt,entr12,"À nouveau, Beethro entendit un fort sifflement venant d'en bas, et il sut qu'il y aurait des serpents. Mais cette fois-ci le son était un peu différent et Beethro s'arrêta une minute pour écouter et estimer ce qui l'attendait. « Ventre-saint-gris ! Ces saletés rampantes doivent être là-dessous depuis un énorme bout de temps, et ont eu de quoi se nourrir ! »"
+fr.kdd3.txt,entr12Back,Beethro revint sur ses pas pour terminer la tâche pour laquelle il avait été embauché.
+fr.kdd3.txt,entrMaster,"Beethro descendit les escaliers et se retrouva dans un couloir ne figurant pas sur la carte…
+
+Il ne serait pas payé pour le nettoyage de ces pièces, mais son honneur professionnel le poussait à continuer."
+fr.kdd3.txt,entrTutorial,Tutorial
+fr.kdd3.txt,entrTutorialLeft,Beethro quitta la zone de tutoriel fort de nouvelles connaissances.
+fr.kdd3.txt,sc93n3e,Êtes-vous sûr de faire ça dans le bon ordre ?
+fr.kdd3.txt,sc94n3e,Le bon ordre est la clef du puzzle.
+fr.kdd3.txt,sc10e,"Des araignées maléfiques rôdent dans ce niveau. Méfiez-vous-en, elles sont difficiles à voir."
+fr.kdd3.txt,sc111s2e,"Psst… Ce passage vous conduira aux escaliers. Il serait préférable de nettoyer toutes les pièces avant d'y aller."
+fr.kdd3.txt,sc121n1e1,"Si un serpent se déplace vers l'ouest et préfère le mouvement horizontal, allez à l'est de sa tête pour le forcer à aller vers le nord."
+fr.kdd3.txt,sc121n1e2,"La même technique fonctionne verticalement, mais alors le serpent préfèrera aller vers l'est."
+fr.kdd3.txt,sc12e,Le compteur vous indique quelle direction les serpents préfèrent en ce moment. Cela vous aidera à contrôler ces créatures imprévisibles.
+fr.kdd3.txt,scMe1,Autres puzzles.
+fr.kdd3.txt,scMe2,Derniers mots.
+fr.kdd3.txt,scM1s1,"Arriver jusqu'ici est une véritable prouesse !"
+fr.kdd3.txt,scM1s2,"Alors, est-ce que ça vous a plu ? Avez-vous obtenu tous les exploits ?"
+fr.kdd3.txt,scM1s3,"Sur le site CaravelGames.com, vous pourrez trouver les prochains épisodes de KDDL ou télécharger l'un des jeux DROD complets pour Windows, Mac OS ou Linux."
+fr.kdd3.txt,scM1s4,Continuez à jouer !
+fr.kdd3.txt,scM1s5,"Voici une petite récompense ! Tuez tous les yeux sans marcher sur l'herbe."
+fr.kdd3.txt,scM1s6,Les reines seront tuées lorsque vous marcherez sur le point de sauvegarde en haut à droite.
+fr.kdd3.txt,scM1s7,"Très bien joué, félicitations !"
+fr.kdd3.txt,scT1,Saviez-vous que les serpents ne peuvent pas traverser les parchemins ?
+fr.kdd3.txt,scT2,"Allez vers la droite et regardez comment le cafard se comporte lorsqu'il se déplace en diagonale vers un coin."
+fr.kdd3.txt,scT3,"Les serpents ont leurs propres règles de mouvements, plus complexes. Leur préférence actuelle est affichée sous le compteur du cycle d'éclosion."
+fr.kdd3.txt,scT4,"Si une créature se déplace en diagonale vers un coin, elle préfèrera se déplacer verticalement si possible."
+fr.kdd3.txt,scT5,"'Échap' ouvre le menu pause, depuis lequel vous pouvez cliquer sur 'Aide Générale' pour revoir les touches quand vous le souhaitez."
+fr.kdd3.txt,scT6,"Vous pouvez verrouiller/déverrouiller une pièce en appuyant sur 'X'. Un petit cadenas apparaîtra sur la carte pour indiquer que la pièce est verrouillée."
+fr.kdd3.txt,scT7,"Maj' + une touche fera l'action de la touche et son opposé
+'Maj' + 'Attendre un tour' vous fera attendre jusqu'à la prochaine éclosion.
+'+ (Pavé numérique)' ou '=' fera l'inverse de la dernière action."
+fr.kdd3.txt,scT8,"'F3' affiche un compteur de mouvements pour vous aider à optimiser vos scores."
+fr.kdd3.txt,scT9,Toutes les touches peuvent être réattribuées depuis le menu options.
+fr.kdd3.txt,scT10,"Les scores des utilisateurs sans compte CaravelNet ne seront pas stockés dans le classement, mais ils sauront quelle place ils auraient pu atteindre."
+fr.kdd3.txt,scT11,Cliquez sur les orbes pour savoir quelles portes elles affectent et sur les yeux pour voir leur ligne de mire.
+fr.kdd3.txt,scT12,"La barre d'espace fait disparaître les dialogues et exploits de l'écran."
+fr.kdd3.txt,scT13,"Contrairement aux cafards, les spectres ailés fuient Beethro et essaient de rester à cinq cases de distance."
+fr.kdd3.txt,scT14,"Ils ne sont pas aussi timides en plus grand nombre, et n'hésiteront pas à attaquer s’ils peuvent encercler leur proie."
+fr.kdd3.txt,sc1_6n3w1,Utilisez la technique du coup arrière pour vous débarrasser de ce cafard.
+fr.kdd3.txt,sc1_6n3w2,Placez-vous sur le sol vert et assurez-vous que le cafard soit sur le sol sablonneux juste au nord de vous…
+fr.kdd3.txt,sc1_6n3w3,Placez-vous sur le sol vert et assurez-vous que le cafard soit sur le sol sablonneux juste au sud de vous…
+fr.kdd3.txt,sc1_6n3w4,… puis allez vers le nord-est pour le tuer.
+fr.kdd3.txt,sc1_6n3w5,… puis allez vers le sud-est pour le tuer.
+fr.kdd3.txt,sc1_6n3w6,"Refaites-le pour analyser le coup arrière. La maîtrise de cette technique est cruciale pour l'avenir."
+fr.kdd3.txt,sp9e1,Cette zone conduit à un tutoriel.
+fr.kdd3.txt,sp9e2,"Allez-y si vous n'avez jamais joué à ce jeu auparavant."
+fr.kdd3.txt,sp9e3,"Déplacez-vous en utilisant le pavé numérique ou les touches 789, UIO, JKL."
+fr.kdd3.txt,sp9e4,Mille cafards frits ! Plus de goudron !
+fr.kdd3.txt,sp91n1e,"Pas mécontent que ce soit fini. Le goudron n'était peut-être pas si mal, finalement…"
+fr.kdd3.txt,sp94n4e1,Haha ! Il faut se lever tôt pour espérer tromper Beethro !
+fr.kdd3.txt,sp94n4e2,Je ne trouve pas ça drôle.
+fr.kdd3.txt,sp93n,"Hm, cette porte est très étrange ; je ne peux pas passer."
+fr.kdd3.txt,sp92n2e,"Une porte infranchissable. Je me demande ce qu'il y a de l'autre côté…"
+fr.kdd3.txt,sp11e1,Et je déteste ça quand le goudron est plus grand que moi… Ça me donne la chair de poule.
+fr.kdd3.txt,sp11e2,Bah ! Le goudron a grandi jusque par-dessus les murs !
+fr.kdd3.txt,sp11n1w,Hmm… Ça pourrait être pire… il pourrait y avoir une mère goudron dans cette pièce…
+fr.kdd3.txt,sp11n2w1,"J'ai l'impression que j'ai parlé trop vite…"
+fr.kdd3.txt,sp11n2w2,"On dirait qu'il y a quelque chose d'autre de différent dans cette pièce…"
+fr.kdd3.txt,sp12e1,"Attention, Beethro, attention…"
+fr.kdd3.txt,sp12e2,Pfiou !
+fr.kdd3.txt,sp12e3,"Ces deux feraient d'excellents steaks."
+fr.kdd3.txt,sp121s2e1,Mille gobelins galopants !
+fr.kdd3.txt,sp121s2e2,Regardez-moi la longueur de ce serpent !
+fr.kdd3.txt,spM1s,Vous avez échoué…
+fr.kdd3.txt,spT2,"Tournez votre épée avec 'Q' et 'W'."
+fr.kdd3.txt,spT3,"Maintenant, frappez l'orbe avec votre épée."
+fr.kdd3.txt,spT4,"Les orbes peuvent interagir de trois façons avec les portes : elles peuvent les ouvrir, les fermer, ou les basculer entre les deux."
+fr.kdd3.txt,spT5,"Faites un clic gauche sur l'orbe pour voir quelle porte elle affecte, et de quelle façon."
+fr.kdd3.txt,spT6,Le but du jeu de DROD est de débarrasser chaque niveau de tous ses monstres.
+fr.kdd3.txt,spT7,Touchez le cafard avec votre épée pour le tuer.
+fr.kdd3.txt,spT8,Les flèches au sol vous empêchent de bouger dans la direction opposée.
+fr.kdd3.txt,spT9,"Marchez sur le point de sauvegarde. Si vous mourez ou appuyez sur 'R', vous reviendrez au moment où vous avez marché dessus."
+fr.kdd3.txt,spT10,"Si vous mourez ou que vous êtes dans une situation sans issues, vous pouvez annuler jusqu'à trois mouvements en appuyant sur 'Retour Arrière'."
+fr.kdd3.txt,spT11,"Cette potion vous permettra de placer un double. Les doubles singent tout ce que vous faites et ils bougent juste après vous, mais avant les monstres."
+fr.kdd3.txt,spT12,"Placez le double sur la case avec un point de sauvegarde. Servez-vous-en pour faire tomber toutes les trappes et la porte rouge s'ouvrira."
+fr.kdd3.txt,spT13,"Les serpents sont insensibles à votre épée mais ils rétréciront jusqu'à mourir s'ils sont dans un cul-de-sac."
+fr.kdd3.txt,spT14,Éliminez tout le goudron bleu pour atteindre le mauvais œil tout en haut.
+fr.kdd3.txt,spT15,"Gardez à l'esprit que le goudron ne peut être endommagé que sur les côtés plats et que toute case non stable se transformera en rejeton."
+fr.kdd3.txt,spT16,"Le goudron est stable lorsqu'il peut occuper au moins quatre cases avec ses voisins."
+fr.kdd3.txt,spT17,"Félicitations, vous avez conquis cette pièce !"
+fr.kdd3.txt,spT18,Votre progression est sauvegardée dès que vous quittez la pièce. Vous pouvez afficher votre meilleur score pour la pièce et vous pouvez voir quelle place vous avez atteinte au classement général.
+fr.kdd3.txt,spT19,"Si vous vous êtes connecté avec un compte du forum Caravel, votre meilleur score sera envoyé au classement."
+fr.kdd3.txt,spT20,"Votre meilleur score restera au classement pendant deux semaines, sauf si vous avez un compte CaravelNet, auquel cas votre score restera indéfiniment."
+fr.kdd3.txt,spT21,Vous pouvez maintenant quitter la pièce du tutoriel.
+fr.kdd3.txt,achName0,Around the World
+fr.kdd3.txt,achName1,The World Around
+fr.kdd3.txt,achName2,Mains Jointes
+fr.kdd3.txt,achName3,Bras Verrouillés
+fr.kdd3.txt,achName4,Épée Collée
+fr.kdd3.txt,achName5,À Jamais Seul
+fr.kdd3.txt,achName6,Furtif
+fr.kdd3.txt,achName7,Spécialiste du Goudron
+fr.kdd3.txt,achName8,Sa Majesté des Serpents
+fr.kdd3.txt,achName9,Seul avec les Serpents
+fr.kdd3.txt,achName10,Chasseur Silencieux
+fr.kdd3.txt,achName11,Le Ninja
+fr.kdd3.txt,achName12,Matricide
+fr.kdd3.txt,achName13,Apprenti Exterminateur
+fr.kdd3.txt,achName14,Pourfendeur Débutant
+fr.kdd3.txt,achName15,Exterminateur de Métier
+fr.kdd3.txt,achName16,Je suis un Professionnel !
+fr.kdd3.txt,achName17,Maîtrise
+fr.kdd3.txt,achName18,Post-maîtrise
+fr.kdd3.txt,achName19,Cafards Rôtis
+fr.kdd3.txt,achName20,Bouchées à la Reine
+fr.kdd3.txt,achName21,Œufs Brouillés
+fr.kdd3.txt,achName22,Moutarde aux Yeux
+fr.kdd3.txt,achName23,Filets de Spectres
+fr.kdd3.txt,achName24,Rouleaux de Serpents
+fr.kdd3.txt,achName25,Diapason
+fr.kdd3.txt,achName26,Vert Descendant
+fr.kdd3.txt,achName27,Contrôle des Foules
+fr.kdd3.txt,achName28,Réanimateur
+fr.kdd3.txt,achName29,Maître du Temps
+fr.kdd3.txt,achName30,Garde-Espace
+fr.kdd3.txt,achName31,Lève-toi et Marche
+fr.kdd3.txt,achDesc0,"Nettoyez le niveau neuf, 4N 3E, sans marcher plus d'une fois sur chaque zone délimitée"
+fr.kdd3.txt,achDesc1,"Nettoyez le niveau neuf, 3N 3E, sans marcher plus d'une fois sur chaque zone délimitée"
+fr.kdd3.txt,achDesc2,"Nettoyez le dixième niveau, 1N 1E, sans tourner"
+fr.kdd3.txt,achDesc3,"Ne tournez pas votre épée dans le niveau dix, 1E"
+fr.kdd3.txt,achDesc4,"Ne tournez pas votre épée dans le niveau dix, 1S 1O"
+fr.kdd3.txt,achDesc5,"Conquérez le niveau dix, 1S, sans boire la potion de dédoublement"
+fr.kdd3.txt,achDesc6,"Nettoyez le niveau onze, 1S 2E, en moins de 150 mouvements"
+fr.kdd3.txt,achDesc7,"Éliminez complètement le goudron de n'importe quelle pièce du niveau onze"
+fr.kdd3.txt,achDesc8,"Conquérez le niveau douze, 1S 2E, sans vous déplacer en diagonale"
+fr.kdd3.txt,achDesc9,"Conquérez le niveau douze, 2S 1E, sans boire la potion de dédoublement"
+fr.kdd3.txt,achDesc10,"Réveillez précisément un œil en nettoyant le niveau douze, 1S"
+fr.kdd3.txt,achDesc11,Nettoyez une pièce contenant des mauvais yeux sans en réveiller un seul
+fr.kdd3.txt,achDesc12,Tuez une reine cafard pendant que ses œufs éclosent
+fr.kdd3.txt,achDesc13,Nettoyez le neuvième niveau
+fr.kdd3.txt,achDesc14,Nettoyez le dixième niveau
+fr.kdd3.txt,achDesc15,Nettoyez le onzième niveau
+fr.kdd3.txt,achDesc16,Nettoyez le douzième niveau
+fr.kdd3.txt,achDesc17,Maîtrisez cet antre
+fr.kdd3.txt,achDesc18,Post-maîtrisez cet antre
+fr.kdd3.txt,achDesc19,Tuez 35 cafards
+fr.kdd3.txt,achDesc20,Tuez 20 reines cafards
+fr.kdd3.txt,achDesc21,Tuez15 œufs de cafards
+fr.kdd3.txt,achDesc22,Tuez 15 mauvais yeux
+fr.kdd3.txt,achDesc23,Tuez 5 spectres ailés
+fr.kdd3.txt,achDesc24,Tuez 10 serpents
+fr.kdd3.txt,achDesc25,Frappez un orbe pendant trois tours consécutifs
+fr.kdd3.txt,achDesc26,Abaissez dix portes vertes
+fr.kdd3.txt,achDesc27,Tuez un total de 2 500 monstres
+fr.kdd3.txt,achDesc28,Mourez 100 fois en tout
+fr.kdd3.txt,achDesc29,Annulez un total de 450 mouvements
+fr.kdd3.txt,achDesc30,Faites tomber un total de 200 trappes
+fr.kdd3.txt,achDesc31,Faites 8 000 pas en tout
+fr.kdd3.txt,outro,"Si seulement Beethro avait une carte des oubliettes de Dugan, il aurait su que ce qui se trouve au niveau treize est à même de venir à bout du plus puissant des guerriers. Mais au moins il n'y aura là ni goudron ni serpents…
+
+
+<font size=""32"" color=""#FFFF00"">Félicitations !</font>
+
+Vous venez de terminer le troisième épisode de l'antre « King Dugan's Dungeon Lite ». J'espère sincèrement que cela vous a plu. Maintenant que vous avez descendu les derniers escaliers de ce set, vous pouvez essayer de maîtriser, puis post-maîtriser le jeu ! Pour ce faire, trouvez les pièces secrètes. Le nombre de pièces secrètes restant à trouver est maintenant affiché dans l'écran de chargement. Une fois que vous les aurez toutes conquises, une zone de maîtrise spéciale sera ouverte. À vous de trouver comment y accéder ! Vous pouvez aussi choisir de jouer à l'épisode suivant de KDDL.
+
+Avant de vous laisser à votre gloire et votre joie d'avoir fini ce jeu, j'aimerais remercier un certain nombre de personnes sans qui ce jeu n'aurait jamais existé :
+
+	
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - Le créateur, père et inventeur de DROD. Sans lui, l'idée de ce jeu n'aurait jamais vu le jour.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - Il a codé la plupart de DROD : JtRH et DROD : TCB à lui tout seul. Grâce à cette superbe base de code, la création de Flash DROD a été un vrai plaisir.
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Maître suprême du forum Caravel et codeur en chef de CaravelNet. Grâce à lui vous pouvez entrer en compétition pour les meilleurs scores, et bien plus encore !
+
+
+<font size=""23"" color=""#FFFF00"">Programmation, Développement</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Graphismes et musique</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Développement du serveur</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Développement des niveaux</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testeurs Principaux</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testeurs</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Traductions</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Doublage</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Code originel, concept et niveaux</font> - %%
+
+
+À bientôt !
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+fr.kdd3.txt,complNextGame,"Jouer au set de niveaux suivant – « KDD Lite 4 ». Ce lien s'ouvrira dans une nouvelle fenêtre, et vous pourrez alors fermer la fenêtre : votre progression a été sauvegardée."
+fr.kdd3.txt,defCont,Contrôles par défaut :
+fr.kdd3.txt,sc_diago,"Vous pouvez vous déplacer en diagonale, męme ŕ travers des couloirs trčs étroits."
+fr.kdd3.txt,sc_broken,Fracassez ces murs secrets fęlés avec votre épée.
+fr.kdd3.txt,sc_queens1,Les reines des cafards pondent des śufs tous les 30 tours (le tour aprčs que le compteur vire au rouge).
+fr.kdd3.txt,sc_queens2,Les śufs deviennent des cafards adultes 5 tours aprčs avoir été pondus.
+fr.kdd3.txt,sc_queens3,"Les śufs n'apparaissent pas sur les flčches, les trappes et les portes jaunes. Appuyez sur « i » ou « 5 » du pavé numérique pour attendre un tour."
+fr.kdd3.txt,sc_mimics,"Aprčs avoir pris une potion dédoublement, utilisez la souris ou la touche « attendre » pour choisi la case oů vous voulez placer le double."
+fr.kdd3.txt,sc_shiftwait,"Vous pouvez appuyer sur « Maj + attendre » pour attendre automatiquement jusqu'ŕ la prochaine ponte."
+fr.kdd3.txt,sp_mother1,"Les mčres goudrons feront s'étendre le goudron d'une case dans toutes les directions tous les trente tours."
+fr.kdd3.txt,sp_mother2,"Il est relativement sans danger de se faire entourer par du goudron, mais faites attention aux bébés qui peuvent apparaître lors de l'extension."
+fr.kdd3.txt,sc_backswipe,Suivez le chemin sablonneux pour apprendre la technique du coup arričre !Déplacez-vous en diagonale et ne tournez pas votre épée.
+fr.kdd3.txt,sc_trapdoors,Ces cases rose-violette sont des trappes et elles tombent si vous ou un double passez dessus.
+fr.kdd4.txt,Thirteenth Level,Niveau treize
+fr.kdd4.txt,Fourteenth Level,Niveau quatorze
+fr.kdd4.txt,Fifteenth Level,Niveau quinze
+fr.kdd4.txt,Sixteenth Level,Niveau seize
+fr.kdd4.txt,Mastery Level,Niveau Maître
+fr.kdd4.txt,Original 13th Level,Niveau treize d’origine
+fr.kdd4.txt,Tutorial Level,Niveau tutoriel
+fr.kdd4.txt,entrTut,"Beethro Budkin, maître exterminateur de cinquième génération, a été embauché par le Roi Dugan pour qu'il nettoie ses vastes oubliettes infestées de monstres.
+Beethro est payé à la pièce et, en tant que professionnel, son contrat l'oblige à éliminer tous les monstres de chacune des pièces des oubliettes pour être payé.
+La seule arme dont Beethro a besoin pour son travail est une Très Grosse Épée, laquelle tuera presque n'importe quel monstre en un seul coup."
+fr.kdd4.txt,entr13,"« J’aurais probablement mieux fait de sauter ce niveau, mais un contrat est un contrat. Bon, qu’est-ce que j’ai fait de mes morceaux de pain ? » -Beethro"
+fr.kdd4.txt,entr14,"Dans ce niveau, vous allez enfin rencontrer des créatures qui respectent votre lame."
+fr.kdd4.txt,entr15,"Ce niveau vous rappelle la fois où vous aviez tondu votre pelouse avec la quantité exacte d’essence nécessaire pour terminer, mais après vous aviez raté et aviez été forcé d’aller en racheter. Il y avait un énorme serpent à la station essence et vous vouliez entrer pour payer le pompiste, mais la porte d’entrée était verrouillée alors il vous a fallu boire une potion de dédoublement pour pouvoir entrer, puis les cafards…
+
+Bon, je crois que la métaphore ne marche plus."
+fr.kdd4.txt,entr16,Ces cafards ont besoin d’une figure d’autorité pour les guider. Quelqu’un de charismatique et plein de caractère. Quelqu’un comme vous !
+fr.kdd4.txt,entrMaster,"Beethro descendit les escaliers et se retrouva dans un couloir ne figurant pas sur la carte…
+
+Il ne serait pas payé pour le nettoyage de ces pièces, mais son honneur professionnel le poussait à continuer."
+fr.kdd4.txt,entrMasterBack,Beethro revint sur ses pas pour terminer la tâche d’extermination pour laquelle il avait été engagé.
+fr.kdd4.txt,entrOriginal13Enter,"Beethro s’engagea dans les méandres des couloirs surnaturels, dangereux et absurdes."
+fr.kdd4.txt,entrOriginal13Success,"Fier de son succès, mais ayant perdu quelques cases, Beethro émergea du tristement célèbre niveau treize des oubliettes du roi Dugan."
+fr.kdd4.txt,entrOriginal13Escape,"Face à ce défi, Beethro s’enfuit comme un petit chaton effrayé."
+fr.kdd4.txt,achName0,Forêt à sens unique
+fr.kdd4.txt,achName1,Serpents stoïques
+fr.kdd4.txt,achName2,Goudron immobile
+fr.kdd4.txt,achName36,Les portes ont des yeux
+fr.kdd4.txt,achName3,Ennemi des gobelins
+fr.kdd4.txt,achName4,Opprimeur des gobelins
+fr.kdd4.txt,achName5,Destructeur de gobelins
+fr.kdd4.txt,achName6,Place !
+fr.kdd4.txt,achName7,Maman verte
+fr.kdd4.txt,achName8,Tueur de gobelins
+fr.kdd4.txt,achName34,Sacrifice ultime
+fr.kdd4.txt,achName35,Règles strictes
+fr.kdd4.txt,achName32,Assassin calme
+fr.kdd4.txt,achName33,Coup d’avance
+fr.kdd4.txt,achName39,Traversée d’araignées
+fr.kdd4.txt,achName9,Grandir !
+fr.kdd4.txt,achName37,Maître des yeux
+fr.kdd4.txt,achName38,Hunter Games
+fr.kdd4.txt,achName10,L’explorateur
+fr.kdd4.txt,achName11,Fricassée de gobelins
+fr.kdd4.txt,achName12,Matricide
+fr.kdd4.txt,achName13,Apprenti Exterminateur
+fr.kdd4.txt,achName14,Pourfendeur Débutant
+fr.kdd4.txt,achName15,Exterminateur de Métier
+fr.kdd4.txt,achName16,Je suis un Professionnel !
+fr.kdd4.txt,achName17,Maîtrise
+fr.kdd4.txt,achName18,Post-maîtrise
+fr.kdd4.txt,achName19,Cafards flambés
+fr.kdd4.txt,achName20,Reines cuisinées
+fr.kdd4.txt,achName21,Œufs crus
+fr.kdd4.txt,achName22,Mauvais œil maison
+fr.kdd4.txt,achName23,Kebabs de spectres ailés
+fr.kdd4.txt,achName24,Sushi de serpent
+fr.kdd4.txt,achName25,Diapason
+fr.kdd4.txt,achName26,Verdure
+fr.kdd4.txt,achName27,Maintien de la paix
+fr.kdd4.txt,achName28,Phoenix
+fr.kdd4.txt,achName29,Maître du temps
+fr.kdd4.txt,achName30,Technicien de surface
+fr.kdd4.txt,achName31,Vers l’infini et au-delà
+fr.kdd4.txt,achDesc0,"Niveau 13, 2S 1O : nettoyez la pièce sans faire tourner votre épée"
+fr.kdd4.txt,achDesc1,"Niveau 13, 1S : nettoyez la pièce sans faire tourner votre épée"
+fr.kdd4.txt,achDesc2,"Niveau 13, 1S 1E : nettoyez la pièce sans faire tourner votre épée"
+fr.kdd4.txt,achDesc36,"Niveau 13, 1S 2O : nettoyez la pièce sans faire tourner votre épée"
+fr.kdd4.txt,achDesc3,"Niveau 14, 1S : nettoyez la pièce en faisant toujours face au nord-ouest"
+fr.kdd4.txt,achDesc4,"Niveau 14, 2S : nettoyez la pièce en faisant toujours face à l’est"
+fr.kdd4.txt,achDesc5,"Niveau 14, 1N : nettoyez la pièce en faisant toujours face au sud"
+fr.kdd4.txt,achDesc6,"Niveau 14, 2E : nettoyez la pièce sans marcher sur la trappe"
+fr.kdd4.txt,achDesc7,"Niveau 14, 2N : nettoyez la pièce sans laisser la mère goudron créer des bébés"
+fr.kdd4.txt,achDesc8,"Niveau 14, 1N 3E : nettoyez la pièce sans faire tourner votre épée"
+fr.kdd4.txt,achDesc34,"Niveau 14, 1N 1E : tuez un gobelin en dernier"
+fr.kdd4.txt,achDesc35,"Niveau 14, 2N 2E : nettoyez la pièce sans laisser le gobelin aller sur la route grise"
+fr.kdd4.txt,achDesc32,Entrée du niveau 15 : nettoyez la pièce sans faire tourner votre épée
+fr.kdd4.txt,achDesc33,Entrée du niveau 15 : faites tomber toutes les trappes avant de terminer la pièce
+fr.kdd4.txt,achDesc39,"Niveau 15,, 1N : après avoir frappé l’orbe, tuez toutes les araignées en ne vous déplaçant qu’en diagonale"
+fr.kdd4.txt,achDesc9,"Niveau seize, 1S 1E : nettoyez la pièce sans laisser la mère goudron créer des bébés"
+fr.kdd4.txt,achDesc37,"Niveau maître, 2N : nettoyez la pièce sans réveiller les yeux et sans que des œufs soient pondus"
+fr.kdd4.txt,achDesc38,"Niveau maître, 1N 1E : tuez le spectre ailé sans faire tomber toutes les trappes"
+fr.kdd4.txt,achDesc10,Visitez chaque pièce du niveau 13 d’origine (%% / 56)
+fr.kdd4.txt,achDesc11,Tuez 40 gobelins
+fr.kdd4.txt,achDesc26,Ouvrez 20 portes vertes
+fr.kdd4.txt,achDesc27,Tuez un total de 3 000 monstres
+fr.kdd4.txt,achDesc28,Mourez 80 fois en tout
+fr.kdd4.txt,achDesc29,Annulez un total de 500 mouvements
+fr.kdd4.txt,achDesc30,Faites tomber un total de 500 trappes
+fr.kdd4.txt,achDesc31,Faites 10 000 pas en tout
+fr.kdd4.txt,achDesc12,Tuez une reine cafard pendant que ses œufs éclosent
+fr.kdd4.txt,achDesc17,Maîtrisez cet antre
+fr.kdd4.txt,achDesc18,Post-maîtrisez cet antre
+fr.kdd4.txt,achDesc19,Tuez 100 cafards
+fr.kdd4.txt,achDesc20,Tuez 25 reines cafards
+fr.kdd4.txt,achDesc21,Tuez 10 œufs de cafards
+fr.kdd4.txt,achDesc22,Tuez 80 mauvais yeux
+fr.kdd4.txt,achDesc23,Tuez 40 spectres ailés
+fr.kdd4.txt,achDesc24,Tuez 25 serpents
+fr.kdd4.txt,achDesc25,Frappez un orbe pendant trois tours consécutifs
+fr.kdd4.txt,sc_13_entr_1,Raccourci vers la sortie
+fr.kdd4.txt,sc_13_entr_2,Un véritable Maître épéiste ne lira pas le parchemin ci-dessus avant d’avoir conquis le niveau.
+fr.kdd4.txt,sc_13_entr_3,"Les pierres existent avant le sable, avant elles existaient des dalles précédées par l’herbe qui pousse sur les carreaux, eux-mêmes posés sur la terre.
+-Poète anonyme"
+fr.kdd4.txt,sc_13_2S2W_3,Raccourci vers l’entrée
+fr.kdd4.txt,sc_14_1N3E,Le gars dans la pièce d’à côté n’est pas très malin. Il se laisse toujours avoir par le même truc.
+fr.kdd4.txt,sc_mast_entr_1,Le niveau 13 d’origine
+fr.kdd4.txt,sc_mast_entr_2,Quelques nouveaux puzzles.
+fr.kdd4.txt,sc_mast_entr_3,Versions plus difficiles de pièces existantes.
+fr.kdd4.txt,sc_mast_1W,Il n’y a ici rien.
+fr.kdd4.txt,sc_o13_orb,Cet orbe servait à quelque chose dans le niveau d’origine.
+fr.kdd4.txt,sc_o13_orbs,Ces orbes servaient à quelque chose dans le niveau d’origine.
+fr.kdd4.txt,sc_o13_orb2,"Cet orbe n’était pas ici à l’origine, et toute la porte jaune était dans une pièce."
+fr.kdd4.txt,sc_o13_orbs_gates,Il y avait un orbe dans la pièce d’origine et les portes servaient à quelque chose.
+fr.kdd4.txt,sc_o13_broken_wall,"Dans le niveau d’origine, un mur empêchait d’accéder à la zone suivante."
+fr.kdd4.txt,sc_o13_edge,Il n’y avait initialement pas de bordure de pièce ici.
+fr.kdd4.txt,sc_o13_roach,"Dans le niveau 13 d’origine, le cafard ci-dessus était dans la même pièce et ce couloir était un peu différent."
+fr.kdd4.txt,scM1s1,Alors ça c’est un exploit !
+fr.kdd4.txt,scM1s2,Comment avez-vous trouvé le jeu ? Avez-vous réussi à obtenir tous les exploits ?
+fr.kdd4.txt,scM1s3,"Allez sur CaravelGames.com pour jouer à d’autres épisodes de KDDL, ou pour télécharger l’un des jeux DROD complets pour Windows, Mac OS ou Linux."
+fr.kdd4.txt,scM1s4,Continuez à jouer !
+fr.kdd4.txt,scM1s5,Voilà une petite récompense ! Tuez tous les yeux et les gobelins sans marcher sur l’herbe.
+fr.kdd4.txt,scM1s6,Les reines cafards seront tuées dès que vous marcherez sur le point de sauvegarde tout à droite.
+fr.kdd4.txt,scM1s7,Fantastique !
+fr.kdd4.txt,sp_14_1E,Ahh… rien de tel que le spectacle d’une pièce vide de tout goudron !
+fr.kdd4.txt,sp_14_2N2E_1,"Bon, je vais devoir garder ce gobelin en vie assez longtemps pour m’en servir pour supprimer ce serpent tout là-bas."
+fr.kdd4.txt,sp_14_2N2E_2,"Pas d’aide de moi ! Toi me trancher, je le sais – que c’est maintenant ou plus tard."
+fr.kdd4.txt,sp_14_2N2E_3,Ne fais pas le héros. Parce que je sais que les gobelins ne sont pas héroïques.
+fr.kdd4.txt,sp_14_2N2E_4,"Non, non, non ! Garder le pointu loin de moi !"
+fr.kdd4.txt,sp_14_2N2E_5,Tu te dis que tu pourras te faufiler derrière moi quand je ne regarderai pas. Ouais.
+fr.kdd4.txt,sp_14_2N2E_6,Pitié !
+fr.kdd4.txt,sp_14_2N2E_7,"Écoute, tu ferais la même chose à ma place !"
+fr.kdd4.txt,sp_14_2N2E_8,Une sale affaire. J’espère que je n’aurais pas à le refaire !
+fr.kdd4.txt,sp_14_2N2E_9,"Repose-toi ici pendant que j’ouvre le passage, gobelin."
+fr.kdd4.txt,sp_14_2N2E_10,(Je n’avais probablement pas besoin de l’enfermer là… mais mieux vaut être prudent !)
+fr.kdd4.txt,sp_14_1N1E,Regardez-moi ça… pas un seul mur de détruit !
+fr.kdd4.txt,sp_15_1S2W,"Houla, ça ne va pas être facile, ici. Je ferais mieux de planifier mes mouvements avant de commencer."
+fr.kdd4.txt,sp_16_2S1E_1,Superbe ! Parfois je m’impressionne moi-même.
+fr.kdd4.txt,sp_16_2S1E_2,Ha ! Terminé !
+fr.kdd4.txt,sp_16_2S1E_3,"Maintenant, je dois repartir…"
+fr.kdd4.txt,sp_16_2S1E_4,"Euh… par où je suis entré, déjà ?"
+fr.kdd4.txt,sp_16_2S1E_5,"Bah, peu importe."
+fr.kdd4.txt,spM1s,Vous avez échoué…
+fr.kdd4.txt,sp_o13_1,"Viens ici, petit cafard…"
+fr.kdd4.txt,sp_o13_2,Bah ! Un misérable cafard que je vais devoir écraser.
+fr.kdd4.txt,sp_tut_entr_1,Bienvenue dans DROD.
+fr.kdd4.txt,sp_tut_entr_2,"Si c’est la première fois que vous jouez à un jeu DROD, veuillez continuer vers l’est."
+fr.kdd4.txt,sp_tut_entr_3,Vous trouverez là-bas quelques puzzles simples qui vous présenteront le concept.
+fr.kdd4.txt,sp_tut_entr_4,Prenez les escaliers si vous connaissez le jeu.
+fr.kdd4.txt,sp_tut_entr_5,Utilisez le pavé numérique ou les touches 789 uio jkl pour vous déplacer.
+fr.kdd4.txt,sp_tut_entr_6,Les touches peuvent être réassignées dans les options accessibles en appuyant sur « Ech ».
+fr.kdd4.txt,sp_tut_1E_1,Les orbes ont un effet sur les portes jaunes. Frappez-les avec votre épée pour les activer.
+fr.kdd4.txt,sp_tut_1E_2,Cliquez sur un orbe pour voir sur quelles portes il agit.
+fr.kdd4.txt,sp_tut_1E_3,Faites tourner votre épée avec les touches « Q » « W ».
+fr.kdd4.txt,sp_tut_1E_4,Frappez le cafard avec votre épée pour le tuer.
+fr.kdd4.txt,sp_tut_1E_5,Frappez l’orbe et attendez quelques tours pour voir comment les monstres réagissent lorsqu’ils approchent un coin en arrivant en diagonale.
+fr.kdd4.txt,sp_tut_1E_6,Attendez…
+fr.kdd4.txt,sp_tut_1E_7,"Comme vous le voyez, lorsqu’un monstre arrive sur un coin en se déplaçant en diagonale, il préfère se déplacer verticalement."
+fr.kdd4.txt,sp_tut_1E_8,Tuez les cafards pour abaisser la porte verte et allez vers l’est.
+fr.kdd4.txt,sp_tut_2E_1,"Vous allez apprendre la technique du coup arrière. Après avoir frappé l’orbe, il n’existe qu’un moyen de tuer les cafards – déplacez-vous vers le nord-ouest ou le sud-ouest."
+fr.kdd4.txt,sp_tut_2E_2,"Vous pouvez répéter le mouvement plusieurs fois pour vous aider à vous en souvenir, car cette technique est très importante."
+fr.kdd4.txt,sp_tut_2E_3,"Vous pouvez vous déplacer en diagonale, même à travers des passages très étroits."
+fr.kdd4.txt,sp_tut_2E_4,Les murs fissurés et secrets peuvent être détruits avec votre épée.
+fr.kdd4.txt,sp_tut_2E_5,Les flèches au sol empêchent les déplacements de toute créature dans la direction opposée.
+fr.kdd4.txt,sp_tut_2E_6,Marchez sur le point de sauvegarde pour revenir ici si vous mourez.
+fr.kdd4.txt,sp_tut_2E_7,Les reines des cafards pondent des œufs tous les 30 tours. Regardez le compteur à gauche de l’écran de jeu pour savoir quand les prochains œufs seront pondus.
+fr.kdd4.txt,sp_tut_3E_1,"Les mauvais yeux dorment jusqu’à ce que vous traversiez leur ligne de vision – une fois réveillés, ils vous attaqueront comme le font les cafards."
+fr.kdd4.txt,sp_tut_3E_2,Les serpents ne peuvent pas être blessés par votre épée. La seule façon de les tuer est de les faire s’engager dans une impasse.
+fr.kdd4.txt,sp_tut_3E_3,Utilisez les murs fissurés pour créer un cul-de-sac pour les serpents.
+fr.kdd4.txt,sp_tut_3E_4,Vous pouvez appuyer sur « Retour Arrière » pour annuler jusqu’à trois coups.
+fr.kdd4.txt,sp_tut_3E_5,"Les serpents, contrairement aux autres monstres, ne peuvent pas se déplacer en diagonale."
+fr.kdd4.txt,sp_tut_3E_6,Les serpents ont une préférence de mouvement qui change tous les cinq tours.
+fr.kdd4.txt,sp_tut_3E_7,"Leur préférence actuelle est affichée sous le compteur du cycle d'éclosion."
+fr.kdd4.txt,sp_tut_4E_1,"Lorsque vous quittez une case occupée par une trappe, elle tombe, laissant un vide derrière elle."
+fr.kdd4.txt,sp_tut_4E_2,"Pour ouvrir la porte rouge, vous devez faire tomber toutes les trappes."
+fr.kdd4.txt,sp_tut_4E_3,Vous pouvez vous servir des vides laissés par les trappes tombées pour vous protéger des cafards.
+fr.kdd4.txt,sp_tut_5E_1,Le goudron est une substance très étrange qui ne peut être endommagée que sur ses bords plats.
+fr.kdd4.txt,sp_tut_5E_2,Vous n’avez pas besoin de supprimer tout le goudron pour nettoyer une pièce.
+fr.kdd4.txt,sp_tut_6E_1,"Les mères goudrons sont de redoutables adversaires. Elles restent sur place, cachées dans le goudron, et créent du goudron tous les 30 tours."
+fr.kdd4.txt,sp_tut_6E_2,La porte noire ne s’ouvrira qu’une fois que tout le goudron de la pièce sera éliminé.
+fr.kdd4.txt,sp_tut_7E_1,Boire cette potion vous permettra de placer un double.
+fr.kdd4.txt,sp_tut_7E_2,Les doubles copieront tous vos mouvements et peuvent faire tomber les trappes comme Beethro.
+fr.kdd4.txt,sp_tut_8E_1,"Lorsque vous buvez la potion d’invisibilité, les monstres ne bougeront pas sauf si vous êtes à portée d’odorat."
+fr.kdd4.txt,sp_tut_8E_2,Ne laissez pas les reines s’enfuir sur les flèches ou vous ne pourrez pas les tuer.
+fr.kdd4.txt,sp_tut_8E_3,"Vous avez bien joué, félicitations !"
+fr.kdd4.txt,sp_tut_8E_4,Vous semblez avoir échoué.
+fr.kdd4.txt,sp_tut_8E_5,Vous pouvez appuyer sur « R » pour recommencer une pièce ou attendre pour écouter quelques conseils.
+fr.kdd4.txt,sp_tut_8E_6,...
+fr.kdd4.txt,sp_tut_8E_7,Il existe trois façons différentes de terminer cette pièce.
+fr.kdd4.txt,sp_tut_8E_8,La plus rapide consiste à piéger la reine sur les flèches près de la porte verte de sorte que vous puissiez la tuer en allant sur ou à côté de la flèche diagonale.
+fr.kdd4.txt,sp_tut_8E_9,"La deuxième méthode, presque aussi rapide, consiste à marcher horizontalement vers la reine pour que la porte verte la bloque."
+fr.kdd4.txt,sp_tut_8E_10,"Enfin, la dernière nécessite que vous fassiez tout le tour de la pièce pour emprisonner la reine dans le couloir d’entrée."
+fr.kdd4.txt,sp_tut_8E_11,"Si vous n’y arrivez toujours pas, attendez quelques tours pour que la potion de dédoublement d’urgence soit disponible."
+fr.kdd4.txt,sp_tut_9E,Bonne chance !
+fr.kdd4.txt,sc_tut_emergency_potion,Potion de dédoublement d’urgence ; utilisez si la pièce est trop difficile.
+fr.kdd4.txt,sc_tut_tricky,Cette pièce difficile n’est pas obligatoire.
+fr.kdd4.txt,outro,"Les quatre dernières étages ont été l’enfer pour Beethro, avec du goudron, des portes, des cafards… Alors qu’il descendait les escaliers, il sentit encore plus de cette gelée bleue. Il fit la grimace, mais dans son esprit une voix lui disait qu’un danger encore plus grand l’attendait…
+
+
+<font size=""32"" color=""#FFFF00"">Félicitations !</font>
+
+Vous avez terminé le quatrième épisode de Deadly Rooms of Death : King Dugan's Dungeon Lite. Nous espérons sincèrement que cela vous a plu.
+Maintenant que vous avez descendu les derniers marches de ce set, vous pouvez essayer de maîtriser, puis post-maîtriser le jeu ! Pour ce faire, trouvez les pièces secrètes. Le nombre de pièces secrètes restant à trouver est maintenant affiché dans l'écran de chargement.
+Une fois que vous les aurez toutes conquises, une zone de maîtrise spéciale sera ouverte. À vous de trouver comment y accéder !
+Vous pouvez aussi jouer au prochain épisode de la série DROD:KDDL.
+
+Avant de vous laisser à votre gloire et votre joie d'avoir fini ce jeu, j'aimerais remercier un certain nombre de personnes sans qui ce jeu n'aurait jamais existé :
+
+<font size=""26"" color=""#FFFF00"">Erik Hermansen</font> - Le créateur, père et inventeur de DROD. Sans lui, l'idée de ce jeu n'aurait jamais vu le jour.
+
+<font size=""26"" color=""#FFFF00"">Mike Rimer</font> - Il a codé la plupart de DROD : JtRH et DROD : TCB à lui tout seul. Grâce à cette superbe base de code, la création de Flash DROD a été un vrai plaisir
+
+<font size=""26"" color=""#FFFF00"">Matt Schikore</font> - Maître suprême du forum Caravel et codeur en chef de CaravelNet. Grâce à lui vous pouvez entrer en compétition pour les meilleurs scores, et bien plus encore !
+
+
+<font size=""23"" color=""#FFFF00"">Programmation, Développement</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Graphismes et musique</font> - %% (contribution mineure)
+
+<font size=""23"" color=""#FFFF00"">Développement du serveur</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Architectes des antres</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testeurs Principaux</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Testeurs</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Traductions</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Doublages</font> - %%
+
+<font size=""23"" color=""#FFFF00"">Code d’origine, concept et niveaux</font> - %%
+
+
+À bientôt !
+
+<font size=""18"" color=""#AAAAAA"">-Maurycy</font>"
+fr.kdd4.txt,complNextGame,"Jouer au set de niveaux suivant – « KDD Lite 5 ». Ce lien s'ouvrira dans une nouvelle fenêtre, et vous pourrez alors fermer la fenêtre : votre progression a été sauvegardée."
+fr.txt,keyBackspace,Retour Arrière
+fr.txt,keyTab,Tab
+fr.txt,keyEnter,Entrée
+fr.txt,keyShift,Maj
+fr.txt,keyControl,Ctrl
+fr.txt,keyAlt,Alt
+fr.txt,keyPause,Pause
+fr.txt,keyCapsLock,Verr. Maj
+fr.txt,keyEscape,Échap
+fr.txt,key ,Espace
+fr.txt,keyPageUp,Page Préc.
+fr.txt,keyPageDown,Page Suiv.
+fr.txt,keyEnd,Fin
+fr.txt,keyHome,Origine
+fr.txt,keyArrowLeft,Gauche
+fr.txt,keyArrowUp,Haut
+fr.txt,keyArrowRight,Droit
+fr.txt,keyArrowDown,Bas
+fr.txt,keyInsert,Inser.
+fr.txt,keyDelete,Suppr.
+fr.txt,key0,0
+fr.txt,key1,1
+fr.txt,key2,2
+fr.txt,key3,3
+fr.txt,key4,4
+fr.txt,key5,5
+fr.txt,key6,6
+fr.txt,key7,7
+fr.txt,key8,8
+fr.txt,key9,9
+fr.txt,keya,A
+fr.txt,keyb,B
+fr.txt,keyc,C
+fr.txt,keyd,D
+fr.txt,keye,E
+fr.txt,keyf,F
+fr.txt,keyg,G
+fr.txt,keyh,H
+fr.txt,keyi,I
+fr.txt,keyj,J
+fr.txt,keyk,K
+fr.txt,keyl,L
+fr.txt,keym,M
+fr.txt,keyn,N
+fr.txt,keyo,O
+fr.txt,keyp,P
+fr.txt,keyq,Q
+fr.txt,keyr,R
+fr.txt,keys,S
+fr.txt,keyt,T
+fr.txt,keyu,U
+fr.txt,keyv,V
+fr.txt,keyw,W
+fr.txt,keyx,X
+fr.txt,keyy,Y
+fr.txt,keyz,Z
+fr.txt,key91,Windows Gauche
+fr.txt,key92,Windows Droite
+fr.txt,key93,Menu
+fr.txt,keyNumpad0,0 (Pavé numérique)
+fr.txt,keyNumpad1,1 (Pavé numérique)
+fr.txt,keyNumpad2,2 (Pavé numérique)
+fr.txt,keyNumpad3,3 (Pavé numérique)
+fr.txt,keyNumpad4,4 (Pavé numérique)
+fr.txt,keyNumpad5,5 (Pavé numérique)
+fr.txt,keyNumpad6,6 (Pavé numérique)
+fr.txt,keyNumpad7,7 (Pavé numérique)
+fr.txt,keyNumpad8,8 (Pavé numérique)
+fr.txt,keyNumpad9,9 (Pavé numérique)
+fr.txt,keyNumpadMul,* (Pavé numérique)
+fr.txt,keyNumpadAdd,+ (Pavé numérique)
+fr.txt,keyNumpadSub,- (Pavé numérique)
+fr.txt,keyNumpadDot,. (Pavé numérique)
+fr.txt,keyNumpadDiv,/ (Pavé numérique)
+fr.txt,keyF1,F1
+fr.txt,keyF2,F2
+fr.txt,keyF3,F3
+fr.txt,keyF4,F4
+fr.txt,keyF5,F5
+fr.txt,keyF6,F6
+fr.txt,keyF7,F7
+fr.txt,keyF8,F8
+fr.txt,keyF9,F9
+fr.txt,keyF10,F10
+fr.txt,keyF11,F11
+fr.txt,keyF12,F12
+fr.txt,keyF13,F13
+fr.txt,keyF14,F14
+fr.txt,keyF15,F15
+fr.txt,key144,Verr. Num.
+fr.txt,key145,Arrêt Défil.
+fr.txt,key;,;
+fr.txt,key=,=
+fr.txt,"key,",","
+fr.txt,key-,-
+fr.txt,key.,.
+fr.txt,key/,/
+fr.txt,key~,~
+fr.txt,key[,[
+fr.txt,key\,\
+fr.txt,key],]
+fr.txt,"key'","'"
+fr.txt,numpad,Pavé numérique
+fr.txt,notebook,Portable
+fr.txt,keyUp,Déplacement nord
+fr.txt,keyUpLeft,Déplacement nord-ouest
+fr.txt,keyUpRight,Déplacement nord-est
+fr.txt,keyLeft,Déplacement ouest
+fr.txt,keyRight,Déplacement est
+fr.txt,keyDown,Déplacement sud
+fr.txt,keyDownLeft,Déplacement sud-ouest
+fr.txt,keyDownRight,Déplacement sud-est
+fr.txt,keyWait,Attendre un Tour
+fr.txt,keyCW,Rotation Sens Horaire
+fr.txt,keyCCW,Rotation Sens Anti-horaire
+fr.txt,keyUndo,Annuler Dernier Mouvement
+fr.txt,keyRestart,Recommencer la Pièce
+fr.txt,keyBattle,Combat
+fr.txt,keyLock,Verrouiller/Déverrouiller Pièce
+fr.txt,close,Fermer
+fr.txt,cnetError,"Échec de la connexion.
+Cela peut être du a des identifiants de connexion non valides, une connexion internet défaillante ou des problèmes de serveur temporaires. Les fonctions CaravelNet ont été désactivées. Pour les réactiver, allez à l'écran des options, mettez vos identifiants de connexion à jour si nécessaire et cliquez sur ""Connexion !""."
+fr.txt,prlLanguage,Changer la langue
+fr.txt,prlStartGame,Jouer
+fr.txt,prlLoading,Chargement : %% / %%
+fr.txt,prlWaitApi,"Attente de la connexion de l'API…"
+fr.txt,initAssets,Initialisation des composants %% / %%
+fr.txt,tsStartNew,Commencer une Nouvelle Partie
+fr.txt,tsStartNewKey,C
+fr.txt,tsStartNewKeyCode,67
+fr.txt,tsContinue,Continuer la Partie
+fr.txt,tsContinueKey,P
+fr.txt,tsContinueKeyCode,80
+fr.txt,tsRestore,Charger une Pièce Différente
+fr.txt,tsRestoreKey,D
+fr.txt,tsRestoreKeyCode,68
+fr.txt,tsAchievements,Voir les Exploits
+fr.txt,tsAchievementsKey,X
+fr.txt,tsAchievementsKeyCode,88
+fr.txt,tsOptions,Options
+fr.txt,tsOptionsKey,O
+fr.txt,tsOptionsKeyCode,79
+fr.txt,tsHelp,Aide et Scénario
+fr.txt,tsHelpKey,A
+fr.txt,tsHelpKeyCode,65
+fr.txt,tsBrowse,Choisir Antre
+fr.txt,tsBrowseKey,h
+fr.txt,tsBrowseKeyCode,72
+fr.txt,optHeader,Options:
+fr.txt,optUploadAll,Envoyer les Scores
+fr.txt,optConnect,Connexion !
+fr.txt,optRedefine,Redéfinir les Touches
+fr.txt,optCnetHeader,Connexion à CaravelNet
+fr.txt,optCnetUser,Nom CaravelNet
+fr.txt,optCnetKey,Clef CaravelNet
+fr.txt,optCnetVolume,Volume
+fr.txt,optCnetMusic,Musique
+fr.txt,optCnetSound,Effets
+fr.txt,optCnetVoices,Voix
+fr.txt,optMoveAnim,Animation de Mouvement
+fr.txt,optMoveSmooth,Fluide
+fr.txt,opyMoveFast,Rapide
+fr.txt,uploadAll,Envoi des Scores
+fr.txt,uploadDone,OK !
+fr.txt,uploadError,Erreur ! Veuillez vous connecter et réessayer !
+fr.txt,uploadAlreadyHas,Déjà envoyé
+fr.txt,uploadRoomEntrance,Entrée
+fr.txt,cnetDescription,"Les utilisateurs ayant souscrit à CaravelNet peuvent se connecter ici pour participer aux meilleurs scores en ligne. Un minimum de mouvements donne plus de points. Si vous ne vous connectez pas vous ne connaitrez que la place que votre score vous aurait permis d'atteindre. Vous pouvez transmettre vos scores plus tard via le bouton « Envoyer les Scores »."
+fr.txt,redefineScreen,Vous allez changer la touche pour « %% » Appuyez sur la touche voulue (actuellement : %%) Appuyez sur Échap pour annuler
+fr.txt,redefineInvalidKey,"La touche %% est réservée pour d'autres fonctions Appuyez sur la touche voulue Appuyez sur Échap pour annuler"
+fr.txt,redefineReservedKey,La touche %% est réservée pour la configuration de mouvement alternative Appuyez sur une autre touche Appuyez sur Échap pour annuler
+fr.txt,cnetHeader,"En savoir plus sur CaravelNet ou acheter un abonnement.
+S'ouvre dans une nouvelle fenêtre."
+fr.txt,backstoryNext,Suiv.
+fr.txt,backstoryPrev,Préc.
+fr.txt,abButCnet,À propos de CaravelNet
+fr.txt,abButHowto,Comment Jouer
+fr.txt,abButHistory,Chronologie de DROD
+fr.txt,abButBackstory,Scénario
+fr.txt,abButCredits,Générique
+fr.txt,h&bTextWidth,450
+fr.txt,h&bText,"  DROD fut initialement conçu dans les années 1990 par Erik Hermansen. C'est un puzzle-game dans lequel le joueur visite les pièces d'une oubliette en combattant les monstres avec une Très Grosse Épée. Comment cela marche ? Vous verrez ça par vous-même en jouant au jeu.
+
+  Flash DROD est un port du premier jeu DROD. Il utilise les graphismes et les sons du tout dernier moteur de jeu DROD que vous pouvez télécharger pour y jouer sur votre ordinateur à l'adresse CaravelGames.com.
+
+  Grâce aux possibilités intégrées de CaravelNet, en plus de résoudre les puzzles, les joueurs peuvent entrer en compétition pour les meilleurs scores en finissant chaque pièce avec le minimum de mouvements possible."
+fr.txt,creditsWidth,400
+fr.txt,credits,"<font size=""20"">Programmation, Développement : </font><font color=""#444444"">%%</font>
+<font size=""20"">Graphismes et musique : </font><font color=""#444444"">%%</font>
+<font size=""20"">Développement du serveur : </font><font color=""#444444"">%%</font>
+<font size=""20"">Développement des niveaux : </font><font color=""#444444"">%%</font>
+<font size=""20"">Testeurs Principaux : </font><font color=""#444444"">%%</font>
+<font size=""20"">Testeurs : </font><font color=""#444444"">%%</font>
+<font size=""20"">Traductions : </font><font color=""#444444"">%%</font>
+<font size=""20"">Doublage : </font><font color=""#444444"">%%</font>
+<font size=""20"">Code originel, concept et niveaux : </font><font color=""#444444"">%%</font>"
+fr.txt,controlsWindowWidth,650
+fr.txt,controlsWindow,"<font size=""18"">'Pavé numérique' et '789 UIO JKL'</font><font color=""#444444""> – Déplacement</font>
+<font size=""18"">'Q' et 'W'</font><font color=""#444444""> – Tourner votre épée</font>
+<font size=""18"">'Retour Arrière'</font><font color=""#444444""> – Annuler le dernier mouvement</font>
+<font size=""18"">'R'</font><font color=""#444444""> – Revenir au point de sauvegarde précédent ou recommencer</font>
+<font size=""18"">'Maj' + 'R'</font><font color=""#444444""> – Recommencer la pièce</font>
+<font size=""18"">'Échap'</font><font color=""#444444""> – Menu</font>
+<font size=""18"">'Entrée'</font><font color=""#444444""> – Scores du niveau et de la pièce</font>
+<font size=""18"">'X'</font><font color=""#444444""> – Verrouiller/déverrouiller la pièce</font>
+<font size=""18"">'Échap'</font><font color=""#444444""> – Faire disparaître dialogues et exploits de l'écran</font>
+<font size=""18"">'F3'</font><font color=""#444444""> – Afficher le compteur de mouvements</font>
+<font size=""18"">'Maj' + 'une touche'</font><font color=""#444444""> – Effectuer une action et son contraire</font>
+<font size=""18"">'Maj + 'Attendre'</font><font color=""#444444""> – Attendre jusqu'à la prochaine éclosion</font>
+<font size=""18"">'Clic gauche'</font><font color=""#444444""> - Afficher info sur la case cliquée</font>
+
+  Votre objectif est de débarrasser chaque niveau des oubliettes du roi Dugan de ses monstres. Cet exploit peut être accompli en utilisant uniquement votre Très Grosse Épée™ et votre matière grise. Chaque pièce est une zone à part entière devant être nettoyée en une fois. Si vous quittez une pièce sans l'avoir complètement nettoyée, elle retournera à son stade initial quand vous y reviendrez."
+fr.txt,cnetInfoWidth,500
+fr.txt,cnetInfo,"  CaravelNet permet aux utilisateurs du monde entier de concourir pour les meilleurs scores.
+
+  Chacun peut envoyer son score de façon anonyme pour savoir quelle place il occupe. Cependant, les scores anonymes ne sont pas stockés sur le serveur de Caravel et ne servent qu'à titre d'information. Les scores de chaque utilisateur de forum de Caravel sont stockés gratuitement pendant deux semaines après l'envoi. Les scores de ceux ayant souscrit à CaravelNet ne seront jamais supprimés.
+
+  Veuillez noter que tant que votre progression n'est pas effacée de votre disque, vous pouvez choisir d'envoyer vos scores au serveur après que vous ayez souscrit à un compte Caravel.
+
+  Pour vous enregistrer auprès de Caravel, rendez-vous sur CaravelGames.com et créez un compte sur le forum !"
+fr.txt,backstory1,"  Beethro Budkin arriva dans la Grande Salle à Manger où le Roi Dugan terminait son copieux petit déjeuner.
+
+  « Arrière, vil roturier ! Vous importunez ma digestion par votre hygiène douteuse ! », rugit le Roi, des morceaux de porc et de pommes de terre jaillissant de sa bouche.
+
+  « Mais Monsieur, protesta Beethro, vous m'avez convoqué ».
+  L'expression du visage charnu du Roi passa de la colère à la confusion, puis de l'identification à la bonhomie en l'espace de deux secondes.
+  « J'aurais dû vous faire venir plus tôt , dit le Roi Dugan. C'est incroyable ! Vous laissez vos gardes prendre leurs repas dans les souterrains, ils sèment des miettes de pain partout, et tout à coup l'endroit grouille de cafards géants, sans parler des gobelins, serpents, mauvais yeux et autres vilaines choses. Tout cela devient incontrôlable ».
+  Beethro se redressa fièrement. « N'ayez crainte. Je suis un professionnel entraîné issu d'une longue lignée d'exterminateurs. J'associe les connaissances accumulées de cinq générations avec un équipement dernier cri pour offrir un service d'extermination efficace à un prix abordable. »
+  « Quel genre d'équipement utilisez-vous ? »
+  « J'ai une très grosse épée »"
+fr.txt,backstory2,"  « Parfait ! Quand pouvez-vous commencer ? »
+
+  « Dès que nous nous serons mis d'accord sur le paiement. Voilà mes honoraires de base pour l'extermination. Signez en bas. » Beethro remit un contrat au Roi.
+
+  « Ce prix est scandaleux ! Le privilège d'un service honorable à la couronne ne vaut-il donc plus rien de nos jours ? »
+
+  « Je peux toujours m'en aller… »
+
+  « Non, non, non. Nous avons besoin que ce souterrain soit nettoyé pour que nos prisonniers soient torturés dans un environnement propre et sans danger. »
+
+  « Je peux vous faire un rabais si vous rajoutez une princesse. »
+
+  « Vous êtes laid et sentez mauvais. Aucune de mes filles ne voudra de vous. »
+
+  Beethro haussa les épaules : « C'est pas faux. »
+
+  Le Roi signa le contrat. « Bien. Je vais vous conduire à l'entrée. »"
+fr.txt,backstory3,"  En descendant, Beethro considéra la tâche qu'il entreprenait. Le souterrain de Dugan était très vaste, et d'après les récits des exterminateurs précédents, il était particulièrement bien adapté pour une infestation. Il avait aussi été agrandi plusieurs fois, au grand dam de la première personne à l'avoir nettoyé, son contrat ne couvrant pas cette éventualité (elle n'avait été payée que pour les parties dont elle connaissait l'existence).
+
+  Certains disaient que des forces maléfiques étaient derrière cette expansion. La légende veut qu'un ancien roi, exaspéré par son fils, suggéra pour plaisanter qu'il aille jouer dans les souterrains du château. Prenant son père au sérieux, le garçon s'enfonça dans les chambres souterraines et personne ne le retrouva. On dit qu'il survécut et qu'il choisit volontairement de passer le reste de ses jours dans les souterrains ; que, devenu maître de son nouvel environnement, il apprit tous les secrets du monde souterrain et forgea des alliances avec les monstres y vivant, leur faisant construire de nouveaux passages et les croisant pour concevoir de nouvelles espèces. Il prit le nom d'En-Dessous et fomenta des plans pour remonter à la surface et s'emparer du trône lorsque ses pouvoirs le lui permettraient."
+fr.txt,backstory4,"  Beethro ne savait quoi en penser. Déjà, le trône royal n'était plus ce qu'il avait été, maintenant que son pouvoir était principalement passé au parlement. Et puis qui voudrait vivre sous terre, et comment ferait-il pour se lier aux créatures ? Elles n'étaient pas connues pour leur conversation. Mais il était vrai que les souterrains étaient souvent inutilement compliqués et facilement infestés, et qu'ils grandissaient parfois sans prévenir – nul architecte ne voudrait dire pourquoi (une question d'honneur) – et c'était surtout cela qui garantissait leur travail à des gens comme Beethro.
+
+  Quoi qu'il en soit, un exterminateur avait bien d'autres soucis pratiques, comme les nombreux cafards aussi gros qu'un homme. La pensée qui occupait l'esprit de Beethro était de réussir à tuer assez de monstres et gagner assez d'argent sur ce travail pour enfin quitter cette profession ingrate et ouvrir un restaurant.
+
+  « Je l'appellerai ""Aux Cafards Grillés de Beethro"" ! »"
+fr.txt,backstory1width,550
+fr.txt,backstory2width,550
+fr.txt,backstory3width,560
+fr.txt,backstory4width,560
+fr.txt,drodHistoryWidth,650
+fr.txt,drodHistory,"  « Deadly Rooms of Death » (DROD) fut initialement créé par Erik Hermansen dans les années 1990. Le jeu fut publié par Webfoot et est connu sous le nom de « Webfoot DROD », mais cette version n'est plus en vente et n'est plus disponible légalement. Heureusement, Erik obtint le droit de redévelopper le jeu de son côté, et c'est ainsi que naquit « Caravel DROD » en 2002.
+
+  Puis, en 2003, « DROD: Architect's Edition » fut publié, comprenant un éditeur de niveaux qui permettait à quiconque de créer ses propres « antres » (ensemble de niveaux) et de les partager sur le forum de CaravelGames. Le jeu attira de nombreux fans et un nouveau projet de jeu vit le jour.
+
+  Le 1er avril 2005, « DROD: Journey to Rooted Hold » fut publié ! La liste des nouveautés était incroyable. De nouveaux graphismes, des capacités de scripting, plus d'une douzaine de nouveaux éléments de jeu, une histoire captivante et un antagoniste dont la voix donnait des frissons à tout le monde.
+
+  Exactement deux ans plus tard « DROD: The City Beneath » vit le jour. Cette journée fut un record d'affluence sur le forum de Caravel. TCB comportait encore plus de nouveaux éléments et d'améliorations que JtRH, et une difficulté encore accrue.
+
+  « DROD RPG » sortit en 2008. Bien qu'il ne fut pas aussi populaire que les autres titres, c'était néanmoins une réussite. Cette fois le jeu était stratégique et s'articulait autour de la gestion de ressources sur plusieurs pièces. Chaque monstre possédait des statistiques et il fallait calculer quels monstres pouvaient être vaincus, prévoir où aller ensuite, quelles ressources collecter et quand et où les récolter.
+
+  « DROD 4: Gunthro and the Epic Blunder » est le dernier volet de la série, sorti le 1er avril 2012. Ce jeu est destiné aux nouveaux joueurs, grâce à une difficulté revue à la baisse, des tutoriels plus intuitifs et une navigation plus aisée dans les niveaux."
+fr.txt,rstHeader,Charger Partie
+fr.txt,rstToRoom,Charger cette pièce
+fr.txt,rstReturn,Revenir au menu principal
+fr.txt,rstSecrets,Secrets trouvés : %% / %%
+fr.txt,roomLocked,Vous avez verrouillé la pièce. Appuyez sur %% pour la déverrouiller.
+fr.txt,ingLevelCompleted,Niveau Terminé
+fr.txt,ingSecretFound,Secret Trouvé
+fr.txt,ingHoldMastered,Antre Conquis
+fr.txt,achievementHeader,Exploit !
+fr.txt,achievementDismiss,Clic ou espace pour effacer
+fr.txt,achlistHeader,Exploits :
+fr.txt,browseHeader,Choisir un antre de Flash DROD
+fr.txt,browseOpen,Ouvrir dans une nouvelle fenêtre
+fr.txt,scrStats,Statistiques
+fr.txt,scrYourBest,Votre meilleur score :
+fr.txt,scrTop,Meilleurs scores pour la pièce :
+fr.txt,scrNoScore,Aucun !
+fr.txt,scrFetching,Téléchargement…
+fr.txt,scrOnlyForCnet,"Les scores ne sont disponibles que pour les utilisateurs de CaravelNet et du forum Caravelgames.
+
+Vous n'avez pas encore renseigné vos détails CaravelNet. Créer un compte Caravelgames vous permettra de concourir contre des joueurs du monde entier et de consulter les scores de chaque pièce.
+
+Pour créer un compte, utilisez le bouton dans le menu des options."
+fr.txt,scrMovesRoom,Mouvements dans la pièce : %%
+fr.txt,scrMovesLevel,Mouvements dans le niveau : %%
+fr.txt,scrDeaths,Morts dans le niveau : %%
+fr.txt,scrKills,Monstres tués : %%
+fr.txt,scrTime,Temps du niveau : %%
+fr.txt,scrNoScores,"Pas de scores pour cette pièce pour l'instant."
+fr.txt,scrCnetProblems,"Les fonctionnalités de CaravelNet sont désactivées à cause de problèmes avec votre connexion.
+
+Assurez-vous que votre connexion internet fonctionne et que les identifiants de connexion que vous avez entrés sont valides. Allez ensuite dans le menu options et cliquez sur « Connexion ! »"
+fr.txt,loginConnected,"  Vous êtes maintenant connectés à CaravelNet !
+
+  Si vous avez créé un compte sur le forum mais n'avez pas souscrit à CaravelNet, vos scores seront effacés deux semaines après leur envoi.
+
+  Les scores envoyés par les utilisateurs de CaravelNet sont permanents."
+fr.txt,loginConnectedAnonymous,"  Vous êtes connecté à CaravelNet en tant qu'utilisateur anonyme. Vous pouvez envoyer vos scores pour savoir quelle place vous auriez pu obtenir mais vos scores ne sont pas stockés sur le serveur. Pour rendre vos envois permanents vous devez créer un compte Caravelgames (accessible depuis le menu options).
+  Si vous décidez de créer un compte plus tard, cliquez sur le bouton « Envoyer les Scores ! » pour transmettre toute votre progression à nos serveurs."
+fr.txt,loginFailed,"  Échec de la connexion !
+
+1. Vérifiez que vous êtes connecté à internet.
+2. Assurez-vous que votre pare-feu ne bloque pas le jeu.
+3. Allez sur http://forum.caravelgames.com pour voir si le serveur charge. Sinon, attendez quelques minutes puis réessayez.
+"
+fr.txt,loginFailedBadCredentials,4. Vérifiez que vos identifiants de connexion sont corrects.
+fr.txt,loginFailedMissingCrentials,"4. Assurez-vous d'avoir entré un nom d'utilisateur et une clef CaravelNet valides."
+fr.txt,pauseHeader,DROD est en pause
+fr.txt,pauseContinue,Continuer à jouer
+fr.txt,pauseContinueTip,"Continuer à jouer.
+(Échap, Entrée)"
+fr.txt,pauseRestart,Recommencer la pièce
+fr.txt,pauseRestartTip,"Recommencer cette pièce.
+(Raccourci : F5)."
+fr.txt,pauseRoomHelp,"Obtenir de l'aide pour cette pièce"
+fr.txt,pauseRoomHelpTip,"Accéder à l'aide en ligne pour la pièce en cours.
+(Raccourci : F2)"
+fr.txt,pauseHelp,Aide générale
+fr.txt,pauseHelpTip,"Ouvrir la fenêtre d'aide globale.
+(Raccourci : F1)"
+fr.txt,pauseAchievements,Voir les exploits
+fr.txt,pauseAchievementsTip,"Voir la liste de tous les exploits.
+(Raccourci : Tab)"
+fr.txt,pauseOptions,Options
+fr.txt,pauseOptionsTip,"Vous permet de changer certains réglages.
+(Raccourci: ??????)"
+fr.txt,pauseReturn,Retour au menu principal
+fr.txt,pauseReturnTip,"Votre progression sera sauvegardée,
+mais celle de la pièce en cours sera
+perdue si vous quittez le jeu."
+fr.txt,achHidden,???
+fr.txt,levelCreatedDate,Créé le %%.%%.%%
+fr.txt,score1NoTie,Première Place !!
+fr.txt,score1,1ère place
+fr.txt,score2,2ème place
+fr.txt,score3,3ème place
+fr.txt,score4,4ème place
+fr.txt,score5,5ème place
+fr.txt,score6,6ème place
+fr.txt,score7,7ème place
+fr.txt,score8,8ème place
+fr.txt,score9,9ème place
+fr.txt,score10,10ème place
+fr.txt,score11,11ème place
+fr.txt,score12,12ème place
+fr.txt,score13,13ème place
+fr.txt,score14,14ème place
+fr.txt,score15,15ème place
+fr.txt,score16,16ème place
+fr.txt,score17,17ème place
+fr.txt,score18,18ème place
+fr.txt,score19,19ème place
+fr.txt,score20,20ème place
+fr.txt,score21,21ème place
+fr.txt,score22,22ème place
+fr.txt,score23,23ème place
+fr.txt,score24,24ème place
+fr.txt,score25,25ème place
+fr.txt,scoreTie,Égalité %% !
+fr.txt,scoreNoCnet,(anonyme)
+fr.txt,resultHoldTotals,"Totaux de l'antre :
+"
+fr.txt,resultLevelTotals,"Totaux du niveau :
+"
+fr.txt,resultMoves,"Mouvements : %%
+"
+fr.txt,resultKills,"Tués : %%
+"
+fr.txt,resultDeaths,"Morts : %%
+"
+fr.txt,resultTime,"Temps : %%
+"
+fr.txt,resultSecrets,"Secrets trouvés : %%
+"
+fr.txt,resultSecretsBetter,"Secrets trouvés : %% / %%
+"
+fr.txt,spawnCycle,"Cycle d'éclosion"
+fr.txt,snakesPrefer,Préf. serpents :
+fr.txt,clcHo,HO
+fr.txt,clcRiz,RIZ
+fr.txt,clcOn,ON
+fr.txt,clcTal,TAL
+fr.txt,clcVe,VE
+fr.txt,clcRt,RT
+fr.txt,clcIc,IC
+fr.txt,clcAl,AL
+fr.txt,tile1,Sol
+fr.txt,tile2,Vide
+fr.txt,tile3,Escaliers descendants
+fr.txt,tile4,Mur
+fr.txt,tile5,Mur fissuré
+fr.txt,tile6,Porte (niveau)
+fr.txt,tile7,Porte (pièce)
+fr.txt,tile8,Porte (trappe)
+fr.txt,tile9,Porte jaune
+fr.txt,tile10,Porte jaune (ouverte)
+fr.txt,tile11,Trappe
+fr.txt,tile12,Obstacle
+fr.txt,tile13,Flèche (nord)
+fr.txt,tile14,Flèche (nord-est)
+fr.txt,tile15,Flèche (est)
+fr.txt,tile16,Flèche (sud-est)
+fr.txt,tile17,Flèche (sud)
+fr.txt,tile18,Flèche (sud-ouest)
+fr.txt,tile19,Flèche (ouest)
+fr.txt,tile20,Flèche (nord-ouest)
+fr.txt,tile21,"Potion d'invisibilité"
+fr.txt,tile22,Potion de dédoublement
+fr.txt,tile23,Parchemin
+fr.txt,tile24,Orbe
+fr.txt,tile35,Goudron
+fr.txt,tile37,Porte (goudron)
+fr.txt,tile54,Mosaïque
+fr.txt,tile55,Route
+fr.txt,tile56,Herbe
+fr.txt,tile57,Sol nu
+fr.txt,tile58,Sol différent
+fr.txt,tile59,Mur maître
+fr.txt,tile61,Escaliers montants
+fr.txt,tile62,Mur secret
+fr.txt,tile66,Mur
+fr.txt,tile68,Porte (pièce) ouverte
+fr.txt,tile69,Porte (niveau) ouverte
+fr.txt,tile70,Porte (trappe) ouverte
+fr.txt,tile71,Porte (goudron) ouverte
+fr.txt,tileCheckpoint,Point de sauvegarde
+fr.txt,monsterPlayer,Joueur
+fr.txt,monster0,Cafard
+fr.txt,monster1,Cafard (reine)
+fr.txt,monster2,Œuf de cafard
+fr.txt,monster3,Gobelin
+fr.txt,monster5,Spectre ailé
+fr.txt,monster6,Mauvais œil
+fr.txt,monster7,Serpent
+fr.txt,monster8,Mère (goudron)
+fr.txt,monster9,Bébé (goudron)
+fr.txt,monster10,Cerveau
+fr.txt,monster11,Double
+fr.txt,monster12,Araignée
+fr.txt,monster29,Personnage
+fr.txt,sword,Épée
+fr.txt,swords,Épées (%%)
+fr.txt,roomS,S
+fr.txt,roomSouth,sud
+fr.txt,roomN,N
+fr.txt,roomNorth,nord
+fr.txt,roomE,E
+fr.txt,roomEast,est
+fr.txt,roomW,O
+fr.txt,roomWest,ouest
+fr.txt,roomEntrance,"L'entrée"
+fr.txt,room1,Une fois
+fr.txt,room2,Deux fois
+fr.txt,room3,Trois fois
+fr.txt,room4,Quatrain
+fr.txt,room5,Cinquime
+fr.txt,room6,Sixte
+fr.txt,room7,Septime
+fr.txt,room8,Octime
+fr.txt,room9,Neuvime
+fr.txt,room10,Dixime
+fr.txt,room11,Onzence
+fr.txt,room12,Douzence
+fr.txt,room13,Treizence
+fr.txt,room14,Quartorzence
+fr.txt,room15,Quinzence
+fr.txt,room16,Seizence
+fr.txt,room17,Dixseptence
+fr.txt,room18,Dixhuitence
+fr.txt,room19,Dixneufence
+fr.txt,roomMore,%% Fois
+fr.txt,complButtNextGame,Jouer au set suivant
+fr.txt,complButtLearnMore,En savoir plus
+fr.txt,complButtContinue,Continuer à jouer
+fr.txt,complHeader,Et maintenant ?
+fr.txt,complLearnMore,"Découvrez le reste de la série DROD – l'univers et les jeux de base : Journey to Rooted Hold, The City Beneath, Gunthro and the Epic Blunder et les derniers épisodes de la série !"
+fr.txt,complContinue,"Poursuivre la maîtrise de cet antre – trouvez les secrets et gagnez l'accès au niveau de maître. Vous pouvez trouver des liens vers les deux options ci-dessus sur le menu principal."
+fr.txt,rstFarthest,Sélectionner la sauvegarde la plus éloignée
+fr.txt,rstHelpTooltip,Cliquez pour en savoir plus sur les sauvegardes.
+fr.txt,rstHelp,"Le chargement fonctionne ŕ peu prčs comme dans d'autres jeux vidéo. La seule différence est que vous ne pouvez pas sauvegarder n'importe oů, le jeu crée une sauvegarde automatiquement dčs que vous entrez dans une pičce non conquise.
+
+Pour revenir en arričre, sélectionnez un niveau dans la liste de gauche puis choisissez une pičce sur la carte en bas. Les pičces qui n'avaient pas encore été visitées au moment de la sauvegarde seront grisées sur la carte. Celles ayant un fond blanc ont été conquises et celles en rouge non.
+
+Vous pourrez toujours charger plus tard votre plus récente progression en cliquant sur le bouton « Sélectionner la sauvegarde la plus éloignée ».
+
+Le chargement est surtout utile si vous souhaitez améliorer votre score dans une pičce, chercher des secrets ou juste refaire une pičce que vous aimez."
+fr.txt,rstWarning,"Vous avez choisi de revenir en arričre – certaines pičces retourneront ŕ leur état non conquis.
+
+Vous pourrez toujours retourner ŕ l'état le plus récent en cliquant sur « Sélectionner la sauvegarde la plus éloignée »."
+fr.txt,optDelayText,Délai de répétition de touche :
+fr.txt,optDelayShort,Court
+fr.txt,optDelayLong,Long
+fr.txt,optGetPass,Obtenir une clef CNet
+fr.txt,optGetPassTooltip,"Si vous avez un compte sur le forum de Caravel Games, vous pouvez obtenir une clef CaravelNet qui vous permettra
+d'envoyer vos scores au classement en ligne. Ces scores sont effacés deux semaines aprčs leur envoi.
+
+Les scores des utilisateurs payants sont conservés indéfiniment, męme si leur abonnement expire."
+fr.txt,optDelayTooltip,"Le délai entre le fait d'appuyer sur une touche
+et la répétition de l'action."
+fr.txt,optRateTooltip,"La fluidité des mouvements et du taux de répétition lors de la pression d'une touche."
+fr.txt,achAddInfo,"Les exploits grisés qui ne sont pas semi-translucides sont « actifs ». Cela signifie que vous pouvez tenter de l'obtenir dans la pičce actuelle (mais ce n'est pas toujours le cas, alors lisez les descriptions des exploits attentivement). Veuillez noter que certains exploits peuvent ętre actifs dans toutes ou presque toutes les pičces du jeu."
+fr.txt,pauseRestore,Retourner dans une autre pičce
+fr.txt,cnetDescriptionKong,"En raison de la politique de Kongregate, l'interface de connexion est désactivée. Vous ne pourrez pas envoyer vos scores au classement en ligne. Si c'est ce que vous souhaitez faire, jouez ŕ Flash DROD sur caravelgames.com !"
+fr.txt,defCont,Contrôles par défaut :
