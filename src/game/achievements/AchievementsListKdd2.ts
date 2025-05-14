@@ -159,24 +159,6 @@ export function AchievementsListKdd2(to: Achievement[]) {
 		failOn: () => playerTileO() === C.T_DOOR_YO
 	});
 
-	// Fifth Level: 2S2E -- Clear the room without stepping on open yellow doors
-	addAchievement(to, {
-		id: '45a986f3e9e39251976bb8c0c91edc5d',
-		name: 'achievement.name.l1.2s2e',
-		description: 'achievement.description.l1.2s2e',
-
-		icon: ['default', [
-			[T.TI_DOOR_YO, 0.5, 0.5],
-			[T.TI_BEETHRO_SE, -0.5, -0.5],
-			[T.TI_BEETHRO_SWORD_SE, 0.5, 0.5],
-			[T.TI_WWING_ASE, 1.5, 1.5],
-		]],
-
-		in: [1, "2S2E"],
-
-		failOn: () => playerTileO() === C.T_DOOR_YO
-	});
-
 	// Seventh Level: 1S -- Clear the room without moving diagonally
 	addAchievement(to, {
 		id: 'fa7423560480f03dfba4d7a6d84d5915',
