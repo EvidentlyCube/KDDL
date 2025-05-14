@@ -1,0 +1,234 @@
+
+# Tile names
+
+ingame.tile.1: |
+    Floor
+ingame.tile.2: |
+    Pit
+ingame.tile.3: |
+    Stairs Down
+ingame.tile.4: |
+    Wall
+ingame.tile.5: |
+    Broken Wall
+ingame.tile.6: |
+    Level Clear Gate
+ingame.tile.7: |
+    Room Clear Gate
+ingame.tile.8: |
+    Trapdoor Gate
+ingame.tile.9: |
+    Yellow Door
+ingame.tile.10: |
+    Yellow Door (Open)
+ingame.tile.11: |
+    Trapdoor
+ingame.tile.12: |
+    Obstacle
+ingame.tile.13: |
+    Force Arrow (North)
+ingame.tile.14: |
+    Force Arrow (Northeast)
+ingame.tile.15: |
+    Force Arrow (East)
+ingame.tile.16: |
+    Force Arrow (Southeast)
+ingame.tile.17: |
+    Force Arrow (South)
+ingame.tile.18: |
+    Force Arrow (Southwest)
+ingame.tile.19: |
+    Force Arrow (West)
+ingame.tile.20: |
+    Force Arrow (Northwest)
+ingame.tile.21: |
+    Invisibility Potion
+ingame.tile.22: |
+    Mimic Potion
+ingame.tile.23: |
+    Scroll
+ingame.tile.24: |
+    Orb
+ingame.tile.35: |
+    Tar
+ingame.tile.37: |
+    Tarstuff Gate
+ingame.tile.54: |
+    Mosaic
+ingame.tile.55: |
+    Road
+ingame.tile.56: |
+    Grass
+ingame.tile.57: |
+    Dirt
+ingame.tile.58: |
+    Alternate Floor
+ingame.tile.59: |
+    Master Wall
+ingame.tile.61: |
+    Stairs Up
+ingame.tile.62: |
+    Secret Wall
+ingame.tile.66: |
+    Wall
+ingame.tile.68: |
+    Room Clear Gate (Open)
+ingame.tile.69: |
+    Level Clear Gate (Open)
+ingame.tile.70: |
+    Trapdoor Gate (Open)
+ingame.tile.71: |
+    Tarstuff Gate (Open)
+ingame.tile.checkpoint: |
+    Checkpoint
+ingame.tile.sword: |
+    Sword
+ingame.tile.swords: |
+    %% Swords
+# Monster names
+
+ingame.monster.player: |
+    Player
+ingame.monster.0: |
+    Roach
+ingame.monster.1: |
+    Roach Queen
+ingame.monster.2: |
+    Roach Egg
+ingame.monster.3: |
+    Goblin
+ingame.monster.5: |
+    Wraithwing
+ingame.monster.6: |
+    Evil Eye
+ingame.monster.7: |
+    Serpent
+ingame.monster.8: |
+    Tar Mother
+ingame.monster.9: |
+    Tar Baby
+ingame.monster.10: |
+    Brain
+ingame.monster.11: |
+    Mimic
+ingame.monster.12: |
+    Spider
+ingame.monster.29: |
+    Character
+ingame.monster.neather: |
+    'Neather
+# Messages
+
+ingame.level_start.creation_date: |
+    Created %day%.%month%.%year%
+ingame.message.room_locked: |
+    You have locked room exiting.
+    Press %lock_key% to unlock.
+    You have locked room exiting.
+    Press %lock_key% to unlock.
+ingame.flash_message.level_completed: |
+    Level Completed
+ingame.flash_message.secret_found: |
+    Secret Found
+ingame.flash_message.hold_mastered: |
+    Hold Mastered
+# Level/hold completed stats
+
+ingame.result_stats.hold_totals: |
+    Hold Totals:
+ingame.result_stats.level_totals: |
+    Level Totals:
+ingame.result_stats.moves: |
+    Moves: %%
+ingame.result_stats.kills: |
+    Kills: %%
+ingame.result_stats.deaths: |
+    Deaths: %%
+ingame.result_stats.time: |
+    Time: %%
+ingame.result_stats.secrets: |
+    Secrets found: %%
+ingame.result_stats.secrets_with_total: |
+    Secrets found: %% / %%
+# Room position
+
+ingame.room_position.s: |
+    S
+ingame.room_position.south: |
+    South
+ingame.room_position.n: |
+    N
+ingame.room_position.north: |
+    North
+ingame.room_position.e: |
+    E
+ingame.room_position.east: |
+    East
+ingame.room_position.w: |
+    W
+ingame.room_position.west: |
+    West
+ingame.room_position.entrance: |
+    The Entrance
+ingame.room_position.1: |
+    Once
+ingame.room_position.2: |
+    Twice
+ingame.room_position.3: |
+    Thrice
+ingame.room_position.4: |
+    Quarce
+ingame.room_position.5: |
+    Quince
+ingame.room_position.6: |
+    Sence
+ingame.room_position.7: |
+    Septence
+ingame.room_position.8: |
+    Octence
+ingame.room_position.9: |
+    Novence
+ingame.room_position.10: |
+    Tonce
+ingame.room_position.11: |
+    Elevonce
+ingame.room_position.12: |
+    Twolce
+ingame.room_position.13: |
+    Thorce
+ingame.room_position.14: |
+    Quartonce
+ingame.room_position.15: |
+    Quintonce
+ingame.room_position.16: |
+    Sextonce
+ingame.room_position.17: |
+    Septonce
+ingame.room_position.18: |
+    Octonce
+ingame.room_position.19: |
+    Noventonce
+ingame.room_position.more: |
+    %% Times
+# Clock widget
+
+ingame.clock.spawn_cycle: |
+    Spawn cycle
+ingame.clock.snakes_prefer: |
+    Snakes prefer
+ingame.clock.h1: |
+    HO
+ingame.clock.h2: |
+    RIZ
+ingame.clock.h3: |
+    ON
+ingame.clock.h4: |
+    TAL
+ingame.clock.v1: |
+    VE
+ingame.clock.v2: |
+    RT
+ingame.clock.v3: |
+    IC
+ingame.clock.v4: |
+    AL

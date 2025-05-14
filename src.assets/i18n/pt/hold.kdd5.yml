@@ -1,0 +1,402 @@
+# Common
+
+hold_name: |
+    King Dugan's Dungeon Lite 5
+# Level Names
+
+level_name_1: |
+    Seventeenth Level
+level_name_2: |
+    Eighteenth Level
+level_name_3: |
+    Nineteenth Level
+level_name_4: |
+    Twentieth Level
+level_name_5: |
+    Mastery Level
+# Achievements
+
+achievement.name.l1.1w: |
+    Janitorial Speed
+achievement.description.l1.1w: |
+    17th Level: 1W
+    Clear the room before 4th tar growth
+    17th Level: 1W
+    Clear the room before 4th tar growth
+
+achievement.name.l1.1n1w: |
+    Obsessive Compulsive
+achievement.description.l1.1n1w: |
+    17th Level: 1N1W
+    Clear all tar, drop all trapdoors, clear the room and leave north in one go
+    17th Level: 1N1W
+    Clear all tar, drop all trapdoors, clear the room and leave north in one go
+
+achievement.name.l1.1n1w_2: |
+    To The Heart of the Matter
+achievement.description.l1.1n1w_2: |
+    17th Level: 1N1W
+    Clear the room before 2nd tar growth
+    17th Level: 1N1W
+    Clear the room before 2nd tar growth
+
+achievement.name.l1.2s1e: |
+    Spare the Innocents
+achievement.description.l1.2s1e: |
+    17th Level: 2S1E
+    Kill the tar mother before killing any tar baby
+    17th Level: 2S1E
+    Kill the tar mother before killing any tar baby
+
+achievement.name.l1.1s2e: |
+    Sterilization
+achievement.description.l1.1s2e: |
+    17th Level: 1S2E
+    Kill the serpent before any tar baby appears
+    17th Level: 1S2E
+    Kill the serpent before any tar baby appears
+
+achievement.name.l2.1n: |
+    Aim North!
+achievement.description.l2.1n: |
+    18th Level: 1N
+    Clear the room without turning
+    18th Level: 1N
+    Clear the room without turning
+
+achievement.name.l2.2n1e: |
+    Straight Ways
+achievement.description.l2.2n1e: |
+    18th Level: 2N1E
+    Clear the room without moving diagonally
+    18th Level: 2N1E
+    Clear the room without moving diagonally
+
+achievement.name.l2.1n2e: |
+    Eastern Solutions
+achievement.description.l2.1n2e: |
+    18th Level: 1N2E
+    Clear the room by entering from the east and without turning
+    18th Level: 1N2E
+    Clear the room by entering from the east and without turning
+
+achievement.name.l2.1e: |
+    I Can Do It Myself Mom!
+achievement.description.l2.1e: |
+    18th Level: 1E
+    Use a goblin for only one of the corner serpents and clear the room
+    18th Level: 1E
+    Use a goblin for only one of the corner serpents and clear the room
+
+achievement.name.l2.1e_2: |
+    Traps First
+achievement.description.l2.1e_2: |
+    18th Level: 1E
+    Drop all trapdoors before any serpent dies and clear the room
+    18th Level: 1E
+    Drop all trapdoors before any serpent dies and clear the room
+
+achievement.name.l2.1n1e: |
+    Quenched
+achievement.description.l2.1n1e: |
+    18th Level: 1N1E
+    Clear the room without drinking the potion
+    18th Level: 1N1E
+    Clear the room without drinking the potion
+
+achievement.name.l3.2s: |
+    South is Scary
+achievement.description.l3.2s: |
+    19th Level: 2S
+    Clear the room without going past the second row of tiles
+    19th Level: 2S
+    Clear the room without going past the second row of tiles
+
+achievement.name.l4.entrance: |
+    Frozen
+achievement.description.l4.entrance: |
+    20th Level: Entrance
+    Don't turn your sword after killing the first monster then clear the room
+    20th Level: Entrance
+    Don't turn your sword after killing the first monster then clear the room
+
+achievement.name.l4.1n: |
+    Swine Before Pearls
+achievement.description.l4.1n: |
+    20th Level: 1N
+    Kill the brain before killing any roach queen then clear the room
+    20th Level: 1N
+    Kill the brain before killing any roach queen then clear the room
+
+achievement.name.l4.3n1w: |
+    Pearls Before Swine
+achievement.description.l4.3n1w: |
+    20th Level: 3N1W
+    Kill all brains before killing any goblin then clear the room
+    20th Level: 3N1W
+    Kill all brains before killing any goblin then clear the room
+
+achievement.name.l4.3n: |
+    Raw Stupidity
+achievement.description.l4.3n: |
+    20th Level: 3N
+    Kill all brains before killing any roach queen then clear the room
+    20th Level: 3N
+    Kill all brains before killing any roach queen then clear the room
+
+achievement.name.l4.2n2w: |
+    Patient Execution
+achievement.description.l4.2n2w: |
+    20th Level: 2N2W
+    Kill all serpents before killing any roach queen then clear the room
+    20th Level: 2N2W
+    Kill all serpents before killing any roach queen then clear the room
+
+achievement.name.l4.1n2w: |
+    Slithering Elimination
+achievement.description.l4.1n2w: |
+    20th Level: 1N2W
+    Kill all other monsters before killing the serpent
+    20th Level: 1N2W
+    Kill all other monsters before killing the serpent
+
+achievement.name.l4.2n1w: |
+    Aim for the Eyes
+achievement.description.l4.2n1w: |
+    20th Level: 2N1W
+    Kill all evil eyes before killing any roach queen then clear the room
+    20th Level: 2N1W
+    Kill all evil eyes before killing any roach queen then clear the room
+
+
+
+# Custom names for common achievements
+
+achievement.name.level_1: |
+    Amateur Delver
+achievement.description.level_1: |
+    Clear 17th Level
+achievement.name.level_2: |
+    Fledgling Smiter
+achievement.description.level_2: |
+    Clear 18th Level
+achievement.name.level_3: |
+    Contract Exterminator
+achievement.description.level_3: |
+    Clear 19th Level
+achievement.name.level_4: |
+    I'm a Professional!
+achievement.description.level_4: |
+    Clear 20th Level
+achievement.name.tuning_fork_in_sequence: |
+    Tuning Pork
+achievement.name.tuning_fork_in_sequence-2: |
+    Tuning Dork
+achievement.description.tuning_fork_in_sequence-2: |
+    18th Level: 2N
+    Perform a combo of 6 unique orb hits in sequence in this room
+    The same rules as in "Tuning Pork" achievement
+    18th Level: 2N
+    Perform a combo of 6 unique orb hits in sequence in this room
+    The same rules as in "Tuning Pork" achievement
+
+achievement.name.monster_kills_0: |
+    Charred Roaches
+achievement.name.monster_kills_1: |
+    Queen Ribbons
+achievement.name.monster_kills_2: |
+    Deviled Eggs
+achievement.name.monster_kills_3: |
+    Goblin Liver
+achievement.name.monster_kills_5: |
+    Wraithwing Combo
+achievement.name.monster_kills_6: |
+    Evil Eye Sauce
+achievement.name.monster_kills_7: |
+    Serpent Chirashi
+achievement.name.monster_kills_8: |
+    Tar Harissa
+achievement.name.monster_kills_9: |
+    Baby Samosa
+achievement.name.monster_kills_10: |
+    Brain Yoghurt
+achievement.name.rooms: |
+    Green is the New Pink
+achievement.name.total_kills: |
+    One-Man Army
+achievement.name.trapdoors: |
+    Dropper
+achievement.name.steps: |
+    Patter
+achievement.name.deaths: |
+    I Refuse
+achievement.name.undo: |
+    Like a Groundhog
+achievement.name.cut_tar: |
+    Engraver
+# Entrances
+
+entrance.lvl_1.entrance.13x12: |
+    Beethro pulled out the three bottles again (10-cups full, 2-cups empty, 5-cups empty). "How am I going to get my four-cup swig?" He poured from the first into the second. He poured from the second into the third. He poured from the first into the second. He poured from the second into the third, but accidentally spilled a cup. With a sigh, he poured the remaining leaf juice back into the first bottle.
+    
+    Beethro was going to start again, but then he noticed he was surrounded on all sides by living tar! It had grown around him during the drink preparation. "By Munbo! Can't a fellow settle down for just a moment?"
+    Beethro pulled out the three bottles again (10-cups full, 2-cups empty,
+    5-cups empty). "How am I going to get my four-cup swig?" He poured from the
+    first into the second. He poured from the second into the third. He poured
+    from the first into the second. He poured from the second into the third,
+    but accidentally spilled a cup. With a sigh, he poured the remaining leaf
+    juice back into the first bottle.
+
+
+    Beethro was going to start again, but then he noticed he was surrounded on
+    all sides by living tar! It had grown around him during the drink
+    preparation. "By Munbo! Can't a fellow settle down for just a moment?"
+entrance.lvl_2.entrance.13x11: |
+    In Beethro's world, the number "18" is considered unlucky. Most dungeons are built without an eighteenth level. Of course, all levels of a dungeon are fairly unlucky to begin with, so maybe it doesn't matter that much.
+    In Beethro's world, the number "18" is considered unlucky. Most dungeons
+    are built without an eighteenth level. Of course, all levels of a dungeon
+    are fairly unlucky to begin with, so maybe it doesn't matter that much.
+entrance.lvl_3.entrance.13x12: |
+    "I've got that toasty 72-percent-done feeling. What's next?"
+    -Beethro
+    "I've got that toasty 72-percent-done feeling. What's next?"
+    -Beethro
+entrance.lvl_4.1w.20x10: |
+    Beethro came back to finish the proper smiting business he was hired to do.
+    Beethro came back to finish the proper smiting business he was hired to do.
+entrance.lvl_4.entrance.10x12: |
+    You know, if these monsters were just a little more organized, you'd have no chance against them. Frightening, if you think about it.
+    You know, if these monsters were just a little more organized, you'd have
+    no chance against them. Frightening, if you think about it.
+entrance.lvl_5.entrance.12x19: |
+    Beethro descended the stairs only to find himself in an uncharted corridor...
+    Beethro descended the stairs only to find himself in an uncharted corridor...
+
+
+# Scrolls
+
+scroll.lvl_1.1s1e.3x3: |
+    A lot of good it does you here!
+scroll.lvl_1.entrance.6x5: |
+    This level requires a great deal of efficiency.
+scroll.lvl_2.2e.0x12: |
+    Five serpents,
+    four mimics.
+    
+    How hard can this be?
+    Five serpents,
+    four mimics.
+
+    How hard can this be?
+scroll.lvl_3.1n1e.1x1: |
+    Historical note: This is the last room that was created in the original version of King Dugan's Dungeon.
+    
+    -Erik
+    Historical note: This is the last room that was created in the original version of King Dugan's Dungeon.
+
+    -Erik
+scroll.lvl_4.1n1w.22x4: |
+    The queen is a stronger piece than a rook.
+scroll.lvl_4.1n2w.2x14: |
+    Do you know what you're doing? The orb below will close the north door and open the south door.
+    Do you know what you're doing? The orb below will close the north door
+    and open the south door.
+scroll.lvl_4.2n.5x9: |
+    Hint:  If there are any roaches alive right now, you've screwed up.
+scroll.lvl_4.2n2w.24x20: |
+    A watched blue door never opens.
+scroll.lvl_5.1s.11x6: |
+    You have achieved quite a feat!
+scroll.lvl_5.1s.12x7: |
+    Did you enjoy the game? Have you gotten all of the achievements?
+scroll.lvl_5.1s.13x8: |
+    This scroll used to urge you to play more episodes on CaravelGames.com but with this release they all are bundled into one game so you can just Change Episode from the title screen.
+    This scroll used to urge you to play more episodes on CaravelGames.com but
+    with this release they all are bundled into one game so you can just Change
+    Episode from the title screen.
+scroll.lvl_5.1s.14x9: |
+    You rule!
+scroll.lvl_5.1s.18x8: |
+    Awesome!
+scroll.lvl_5.1s.6x8: |
+    The two corner roach queens will be killed once you step on the checkpoint in the far-right corner.
+scroll.lvl_5.1s.7x8: |
+    Here is a small reward! Kill all the enemies without stepping on the brown grass
+scroll.lvl_5.entrance.12x13: |
+    Harder versions of existing puzzles
+scroll.lvl_5.entrance.16x16: |
+    Chamber of Pain
+scroll.lvl_5.entrance.9x16: |
+    Original Puzzles
+# Speeches
+
+# Eighteenth Level: 1N1E -- (23, 14)
+speech.10025247: |
+    Didn't really need that mimic potion... but I deserve a break. This is hard work!
+# Eighteenth Level: 3E -- (15, 11)
+speech.10025248: |
+    Yum... fresh meats to eats, and new bones for our collection!
+speech.10025249: |
+    Too much lipping from you, greenie. There's one reliable way to shut you up.
+# Mastery Level: 1S -- (5, 11)
+speech.10025262: |
+    You have failed...
+# Nineteenth Level: 1E -- (19, 1)
+speech.10025253: |
+    And everybody's always saying to me, "No secret rooms on Level 19." Oh, ho!
+# Nineteenth Level: 1S1W -- (5, 16)
+speech.10025250: |
+    Gotcha!
+speech.10025251: |
+    Okay, roachy, time to come out and be smited!
+speech.10025252: |
+    Whoops. Didn't plan that out so well.
+# Seventeenth Level: 1S1E -- (2, 2)
+speech.10025246: |
+    Oh, a wise-guy scroll, eh?
+# Seventeenth Level: Entrance -- (7, 6)
+speech.10025244: |
+    Well, forewarned is forearmed...
+speech.10025245: |
+    Why do I get the feeling that someone is laughing at me?
+# Twentieth Level: 3N1E -- (25, 23)
+speech.10025260: |
+    Ha! These brains aren't so smart.
+# Twentieth Level: 3N1W -- (24, 23)
+speech.10025261: |
+    Ah! As if goblins weren't sneaky enough!
+# Twentieth Level: Entrance -- (5, 1)
+speech.10025254: |
+    Wha...?
+speech.10025255: |
+    The roaches...they're heading right for me!
+speech.10025256: |
+    Like something's guiding them...
+speech.10025257: |
+    They still splat the same!
+speech.10025258: |
+    So this must be the thing controlling those roaches...
+speech.10025259: |
+    A giant brain you may be, but in the end you're just another pest to mop up.
+# Outro
+
+outro: |
+    Those brains were a real pain but Beethro, being a professional smitemaster, can handle anything without breaking a sweat. But what about this strange feeling that something much scarier lurks ahead of him? <p> </p><p> </p> <p> </p><p> </p> <p> </p><p> </p>
+    <font size="32" color="#FFFF00">Congratulations!</font> <p> </p><p> </p> <p> </p><p> </p> <p> </p><p> </p>
+    
+    You have completed the fifth episode King Dugan's Dungeon Lite. Did you have fun?
+    Those brains were a real pain but Beethro, being a professional smitemaster,
+    can handle anything without breaking a sweat. But what about this strange
+    feeling that something much scarier lurks ahead of him?
+    <p> </p><p> </p>
+    <p> </p><p> </p>
+    <p> </p><p> </p>
+
+    <font size="32" color="#FFFF00">Congratulations!</font>
+    <p> </p><p> </p>
+    <p> </p><p> </p>
+    <p> </p><p> </p>
+
+
+    You have completed the fifth episode King Dugan's Dungeon Lite. Did you
+    have fun?

@@ -1,0 +1,608 @@
+# Common
+
+hold_name: |
+    King Dugan's Dungeon Lite 1
+# Level Names
+
+level_name_1: |
+    First Level
+level_name_2: |
+    Second Level
+level_name_3: |
+    Third Level
+level_name_4: |
+    Fourth Level
+level_name_5: |
+    Mastery Level
+# Achievements
+
+achievement.name.wake_up_eyes: |
+    I've Got an Eye on You
+achievement.description.wake_up_eyes: |
+    Wake up three evil eyes in the same turn
+achievement.name.kill_queen_mother: |
+    Matricide
+achievement.description.kill_queen_mother: |
+    Kill a roach queen while her eggs are growing
+achievement.name.l2.1n1e: |
+    I Woke Up and Just Hated Everything
+achievement.description.l2.1n1e: |
+    Yes, you should be so destructive
+achievement.name.l1.6n2w: |
+    True Smitemaster
+achievement.description.l1.6n2w: |
+    First Level: 6N2W
+    Don't hide in the alcove
+    First Level: 6N2W
+    Don't hide in the alcove
+
+achievement.name.l1.steady_hand: |
+    Steady Hand
+achievement.descriptions.l1.steady_hand: |
+    First Level:
+    Clear 7 infested, non-secret rooms without turning your sword.
+    Got %rooms%
+    First Level:
+    Clear 7 infested, non-secret rooms without turning your sword.
+    Got %rooms%
+
+achievement.name.l2.2e: |
+    Queenburger
+achievement.description.l2.2e: |
+    Second Level: 2E
+    Kill the roach queen before she reaches the northeast corner and clear the room
+    Kill the roach queen before she reaches the northeast corner and clear the room
+
+achievement.name.l2.1s: |
+    One-way Ticket
+achievement.description.l2.1s: |
+    Second Level: 1S
+    After hitting the orb do not rotate your sword and clear the room
+    After hitting the orb do not rotate your sword and clear the room
+
+achievement.name.l2.2s2e: |
+    Be Quick!
+achievement.description.l2.2s2e: |
+    Second Level: 2S2E
+    Clear the room before queens lay any eggs
+    Clear the room before queens lay any eggs
+
+achievement.name.l2.2s3e: |
+    Be Fast!
+achievement.description.l2.2s3e: |
+    Second Level: 2S3E
+    Clear the room before queens lay any eggs
+    Clear the room before queens lay any eggs
+
+achievement.name.l2.3n: |
+    Calm Arm
+achievement.description.l2.3n: |
+    Second Level: 3N
+    Clear the room without turning your sword
+    Clear the room without turning your sword
+
+achievement.name.l3.2n: |
+    Get the Scroll
+achievement.description.l3.2n: |
+    Third Level: 2N
+    Reach the scroll without reentering the room
+    Third Level: 2N
+    Reach the scroll without reentering the room
+
+achievement.name.l3.1n1w: |
+    Visibility
+achievement.description.l3.1n1w: |
+    Third Level: 1N1W
+    Clear the room without drinking the potion
+    Third Level: 1N1W
+    Clear the room without drinking the potion
+
+achievement.name.l3.1n2w: |
+    Invisibless
+achievement.description.l3.1n2w: |
+    Third Level: 1N2W
+    Clear the room without drinking the potion
+    Third Level: 1N2W
+    Clear the room without drinking the potion
+
+achievement.name.l3.1n1e: |
+    Speeding
+achievement.description.l3.1n1e: |
+    Third Level: 1N1E
+    Clear the room without queens laying any eggs
+    Third Level: 1N1E
+    Clear the room without queens laying any eggs
+
+achievement.name.l3.1s: |
+    The Eight Gates of Bill
+achievement.description.l3.1s: |
+    Third Level: 1S
+    Solve The Eight Gates of Bill in 5 orb hits
+    Third Level: 1S
+    Solve The Eight Gates of Bill in 5 orb hits
+
+achievement.name.l3.2n1e: |
+    Fine Roach Control
+achievement.description.l3.2n1e: |
+    Third Level: 2N1E
+    Release all three roaches before killing any of them
+    Third Level: 2N1E
+    Release all three roaches before killing any of them
+
+achievement.name.l3.3n: |
+    The Mystery
+achievement.description.l3.3n: |
+    Third Level: 3N
+    Clear the room without drinking the potion or turning your sword
+    Third Level: 3N
+    Clear the room without drinking the potion or turning your sword
+
+achievement.name.l4.1n: |
+    Don't Look Back
+achievement.description.l4.1n: |
+    Fourth Level: 1N
+    Clear the room without returning to the entrance corridor
+    Fourth Level: 1N
+    Clear the room without returning to the entrance corridor
+
+achievement.name.l4.1s1e: |
+    Alone with the Roaches
+achievement.description.l4.1s1e: |
+    Fourth Level: 1S1E
+    Clear without drinking the mimic potion
+    Fourth Level: 1S1E
+    Clear without drinking the mimic potion
+
+achievement.name.l4.1s2e: |
+    Pits are Pretty
+achievement.description.l4.1s2e: |
+    Fourth Level: 1S2E
+    Drop all trapdoors and clear the room on the same visit
+    Fourth Level: 1S2E
+    Drop all trapdoors and clear the room on the same visit
+
+achievement.name.l4.2s1e: |
+    Emptiness of Nothingness
+achievement.description.l4.2s1e: |
+    Fourth Level: 2S1E
+    Drop all trapdoors and clear the room on the same visit
+    Fourth Level: 2S1E
+    Drop all trapdoors and clear the room on the same visit
+
+achievement.name.l4.2e: |
+    Good Style
+achievement.description.l4.2e: |
+    Fourth Level: 2E
+    Have good style
+    Fourth Level: 2E
+    Have good style
+
+achievement.name.level_1: |
+    Amateur Delver
+achievement.description.level_1: |
+    Clear First Level
+achievement.name.level_2: |
+    Fledgling Smiter
+achievement.description.level_2: |
+    Clear Second Level
+achievement.name.level_3: |
+    Contract Exterminator
+achievement.description.level_3: |
+    Clear Third Level
+achievement.name.level_4: |
+    I'm a Professional!
+achievement.description.level_4: |
+    Clear Fourth Level
+# Custom names for common achievements
+
+achievement.name.monster_kills_0: |
+    Grilled Roaches
+achievement.name.monster_kills_1: |
+    Sliced Queens
+achievement.name.monster_kills_2: |
+    Scrambled Eggs
+achievement.name.monster_kills_5: |
+    Wraithwing Wings
+achievement.name.monster_kills_6: |
+    Evil Eye Pudding
+achievement.name.monster_kills_7: |
+    Serpent Maki
+achievement.name.monster_kills_8: |
+    Tar Passata
+achievement.name.monster_kills_9: |
+    Baby Pierogi
+achievement.name.monster_kills_10: |
+    Dried Brains
+achievement.name.tuning_fork_in_sequence: |
+    Tuning Fork
+achievement.name.rooms: |
+    Down with the Green
+achievement.name.total_kills: |
+    Horde Management
+achievement.name.trapdoors: |
+    Making Room
+achievement.name.steps: |
+    Walkin' to the Moon
+achievement.name.deaths: |
+    Respawner
+achievement.name.undo: |
+    Time is Null!
+# Entrances
+
+entrance.lvl_1.entrance.13x13: |
+    Beethro Budkin, fifth-generation professional dungeon exterminator, was hired by King Dugan to clear the king's multi-level dungeon of a large monster infestation.
+    Beethro charges by the room, and as a professional, he is contract-bound to clear all the monsters from each and every room in the dungeon to get paid.
+    The only weapon Beethro needs to do his job is a Really Big Sword, which will defeat almost any monster in a single hit.
+    
+    -----
+    
+    "I hope you're not going to charge me for the top level. I already have that cleaned up. Well, mostly." -King Dugan
+    Beethro Budkin, fifth-generation professional dungeon exterminator, was
+    hired by King Dugan to clear the king's multi-level dungeon of a large
+    monster infestation.
+
+    Beethro charges by the room, and as a professional, he is contract-bound to
+    clear all the monsters from each and every room in the dungeon to get paid.
+
+    The only weapon Beethro needs to do his job is a Really Big Sword, which
+    will defeat almost any monster in a single hit.
+
+
+    -----
+
+
+    "I hope you're not going to charge me for the top level. I already have that cleaned up. Well, mostly." -King Dugan
+entrance.lvl_2.entrance.13x12: |
+    Beethro's a bit rusty, but the next level should get him in good chopping form.
+    Beethro's a bit rusty, but the next level should get him in
+    good chopping form.
+entrance.lvl_3.entrance.13x12: |
+    "Hmm..." pondered Beethro. "So far, I see mostly roaches down here. This looks like a cake job."
+    "Hmm..." pondered Beethro. "So far, I see mostly roaches down here.
+    This looks like a cake job."
+entrance.lvl_4.entrance.13x12: |
+    "I wish I had some more of those mimics down here with me!" said Beethro. "It would go a lot quicker."
+    "I wish I had some more of those mimics down here with me!" said
+    Beethro. "It would go a lot quicker."
+entrance.lvl_4.2n1e.17x18: |
+    Beethro came back to finish the proper smiting business he was hired to do.
+    Beethro came back to finish the proper smiting business he was hired to do.
+entrance.lvl_5.entrance.13x12: |
+    Beethro descended the stairs, only to find himself in an uncharted corridor...
+    
+    He won't get paid for clean-up here, but his professional honor urges him onward.
+    Beethro descended the stairs, only to find himself in an uncharted corridor...
+
+    He won't get paid for clean-up here, but his professional honor urges him onward.
+entrance.lvl_5.entrance.7x11: |
+    Beethro descended the stairs, only to find himself in an uncharted corridor...
+    
+    He won't get paid for clean-up here, but his professional honor urges him onward.
+    Beethro descended the stairs, only to find himself in an uncharted corridor...
+
+    He won't get paid for clean-up here, but his professional honor urges him onward.
+entrance.lvl_5.entrance.18x11: |
+    Beethro descended the stairs, only to find himself in an uncharted corridor...
+    
+    He won't get paid for clean-up here, but his professional honor urges him onward.
+    Beethro descended the stairs, only to find himself in an uncharted corridor...
+
+    He won't get paid for clean-up here, but his professional honor urges him onward.
+
+
+# Scrolls
+
+scroll.lvl_1.entrance.13x13: |
+    Use numerical keyboard or %keymap.all_moves% to move around. Keys can be remapped from within the pause menu (escape).
+scroll.lvl_1.entrance.14x8: |
+    To reference the controls anytime you wish, hit `Escape`, click `Get General Help` and go to `How to Play`.
+scroll.lvl_1.1n.15x13: |
+    This yellow door will serve its purpose later.
+    
+    For now just continue west.
+    This yellow door will serve its purpose later.
+
+    For now just continue west.
+scroll.lvl_1.1n.12x19: |
+    You can move diagonally even through very narrow corridors.
+scroll.lvl_1.1n1w.4x13: |
+    Strike the orb with your sword to open doors in the room.
+scroll.lvl_1.1n1w.21x21: |
+    Some orbs toggle the yellow doors between their open and closed states.
+scroll.lvl_1.1n1w.18x14: |
+    Rotate your sword using `%keymap.turn_ccw%` and `%keymap.turn_cw%`.
+scroll.lvl_1.2n1w.14x14: |
+    Instead of toggling a yellow door, an orb might always open or close it.
+scroll.lvl_1.2n1w.19x15: |
+    You can find out what an orb does by clicking it with your mouse. Differently colored highlighted doors indicate the different effects.
+scroll.lvl_1.3n1w.9x13: |
+    Blue gates open once you conquer all the required rooms on a given level (floor).
+scroll.lvl_1.3n1w.11x12: |
+    Required rooms are marked with a red background on the minimap.
+scroll.lvl_1.3n2w.12x12: |
+    Current speech and hovering text can be skipped with the space bar.
+scroll.lvl_1.3n2w.9x6: |
+    Once you leave a room cleared of all monsters, it will be marked as conquered.
+scroll.lvl_1.3n2w.10x5: |
+    On the minimap, conquered rooms are marked with white as opposed to the unconquered ones which are red.
+scroll.lvl_1.3n2w.9x4: |
+    Conquer all the required rooms to open your way to the next level.
+scroll.lvl_1.4n3w.21x7: |
+    Force arrows block both Beethro's and monsters' movement in the opposite direction.
+scroll.lvl_1.4n1w.5x10: |
+    Green gates open once you clear a room of all monsters.
+scroll.lvl_1.5n1w.6x17: |
+    Most monsters when moving onto a corner diagonally will slide vertically if possible.
+scroll.lvl_1.5n1w.6x22: |
+    Observe how the southern roach behaves when it tries to move onto a corner diagonally.
+scroll.lvl_1.5n1w.9x3: |
+    This game is completely deterministic - there is no random or unpredictable behavior.
+scroll.lvl_1.5n2w.4x9: |
+    Touching a checkpoint 'X' allows you to rewind to when you last stepped on it.
+    Hit `%keymap.restart%` to restart the room or go back to the last checkpoint you have touched.
+    Touching a checkpoint 'X' allows you to rewind to when you last stepped on it.
+    Hit `%keymap.restart%` to restart the room or go back to the last checkpoint you have touched.
+scroll.lvl_1.5n2w.6x11: |
+    Look out!  It's dangerous here.
+    
+    If you make a mistake, hit `%keymap.undo%` to undo a move.
+    Look out!  It's dangerous here.
+
+    If you make a mistake, hit `%keymap.undo%` to undo a move.
+scroll.lvl_1.5n2w.18x12: |
+    Remember that you can click an orb with the mouse to see what doors it affects.
+scroll.lvl_1.5n2w.4x11: |
+    You can also undo (and restart) when the death animation is playing!
+scroll.lvl_1.6n2w.9x12: |
+    Secret walls blend with the regular ones much better though.
+scroll.lvl_1.6n2w.12x12: |
+    Broken and secret walls can be damaged by your sword.
+scroll.lvl_1.6n2w.7x1: |
+    A fine swordsman can defeat all the roaches without using the southern nook for cover!
+scroll.lvl_1.6n2w.1x12: |
+    So don't miss the ones in the corner when you come back.
+scroll.lvl_1.1n1e.18x7: |
+    These stairs lead to the next level. Beware of what you will meet there...
+scroll.lvl_1.6n.1x22: |
+    The secrets don't have to be conquered in one playthrough for the hold to be Mastered.
+scroll.lvl_1.6n3w.9x8: |
+    Place yourself on the green floor and make sure the roach stands on the sand tile directly north of you...
+scroll.lvl_1.6n3w.20x12: |
+    Follow the sandy path to learn the backswipe technique! Remember about diagonal movement and don't turn your sword.
+scroll.lvl_1.6n3w.8x9: |
+    ...then move northeast to kill it.
+scroll.lvl_1.6n3w.5x12: |
+    Repeat to analyze the backswipe. Master this technique, for it will prove crucial in your further endeavors.
+scroll.lvl_1.6n3w.8x15: |
+    ...then move southeast to kill it.
+scroll.lvl_1.6n3w.9x16: |
+    Place yourself on the green floor and make sure the roach stands on the sand tile directly south of you...
+scroll.lvl_1.5n.10x12: |
+    Sorry'ir, we'r nyet goin' to fin'sh ze buildn' wiz ze grand' roche'z runin' wild!
+scroll.lvl_1.5n.16x5: |
+    Emergency exit is out of commission.
+scroll.lvl_1.4n.14x3: |
+    Please keep the greenhouse doors closed.
+scroll.lvl_1.4n.13x17: |
+    Please keep the greenhouse doors closed.
+scroll.lvl_2.entrance.25x12: |
+    You may wish to clear the rooms to the north first.
+scroll.lvl_2.1n1e.13x11: |
+    You shouldn't be so destructive.
+scroll.lvl_2.1s.22x13: |
+    Don't do it! It's obvious what will happen!
+scroll.lvl_2.2s3e.6x14: |
+    Good timing makes things a lot easier.
+scroll.lvl_2.1s3e.24x1: |
+    You can prevent yourself from accidentally leaving a room by hitting the '%keymap.lock%' key on your keyboard.
+scroll.lvl_2.1s3e.24x2: |
+    A small lock on the minimap indicates that a room is locked.
+scroll.lvl_2.2e.1x22: |
+    Roach queens always run away from Beethro; this behavior can be used to manipulate them.
+scroll.lvl_2.2n.3x3: |
+    Did you know that you can hold Shift while performing any action to automatically follow it with its inverse?
+scroll.lvl_2.2n.1x1: |
+    `%keymap.battle%` will perform the inverse of the last action! Good for quickly cleaning up a horde of monsters.
+    `%keymap.battle%` will perform the inverse of the last action!
+    Good for quickly cleaning up a horde of monsters.
+scroll.lvl_2.3n.24x22: |
+    Roach queens spawn roach eggs every 30 turns (the turn after the spawn counter becomes red).
+scroll.lvl_2.3n.24x21: |
+    Eggs will hatch into fully grown-up roaches 5 turns after being spawned.
+scroll.lvl_2.2s3e.20x5: |
+    You can use Shift+Wait to skip until the next spawn.
+scroll.lvl_2.1n1w.25x1: |
+    If you don't know it yet, Queens move away from you and don't lay eggs on open yellow gates.
+scroll.lvl_2.3s3e.25x18: |
+    Also, if a queen is moving on the spawn turn, no egg will appear on the tile she has just moved from.
+scroll.lvl_2.3s3e.24x21: |
+    Eggs will never appear on trapdoors, arrows, or opened yellow gates.
+scroll.lvl_2.3s3e.6x2: |
+    Observe carefully what happens on the spawn turn.
+scroll.lvl_4.1s.18x1: |
+    These pink-purple tiles are trapdoors and they fall if you or a mimic step off them.
+scroll.lvl_4.1n.2x2: |
+    Hint:
+    
+    Think hard to develop the very useful BACKSWIPING technique -- good for when there's a monster on each side of you!
+    Hint:
+
+    Think hard to develop the very useful BACKSWIPING technique -- \
+    good for when there's a monster on each side of you!
+scroll.lvl_4.1n.8x2: |
+    Hint:
+    
+    You don't need the mimic's help to fight the roaches at the entrance.
+    Hint:
+
+    You don't need the mimic's help to fight the roaches at the entrance.
+scroll.lvl_4.2e.5x12: |
+    If you have good style, all 9 mimics will be lined up to the right of you.
+scroll.lvl_4.2n1e.4x20: |
+    This is a master wall. It won't open until you conquer the hold and also all of its secrets.
+scroll.lvl_4.2n1e.25x6: |
+    In the original "King Dugan's Dungeon", this was a warp room which allowed you to skip a level or two.
+scroll.lvl_4.2n.14x23: |
+    You might find it useful that Shift+Wait waits until the next spawn.
+scroll.lvl_3.entrance.12x13: |
+    On this level you'll encounter evil eyes. Once you step in their line of sight they'll wake up and chase you like roaches do.
+scroll.lvl_3.1n1w.23x4: |
+    With the invisible potion they can't see you, but they can still smell you if you get close.
+scroll.lvl_3.2s1w.13x13: |
+    Here is something that I will tell you--whenever you see long and laborious paths, you should look for shortcuts.
+scroll.lvl_3.2s.22x18: |
+    Turn back! Did you know that in just the last year, dungeon-related deaths were up by 32 percent?
+scroll.lvl_3.2s.23x18: |
+    Face the facts--dungeon exploration is NOT safe, especially when combined with intoxicants.
+    -PADD (Parents Against Dungeon Deaths)
+    Face the facts--dungeon exploration is NOT safe, especially when combined with intoxicants.
+    -PADD (Parents Against Dungeon Deaths)
+scroll.lvl_3.2n.5x23: |
+    It is possible to get to this passage without reentering the room after you've conquered it.
+scroll.lvl_3.1s.16x1: |
+    The Eight Gates of Bill--a formidable puzzle indeed. It used to be a lot harder, but I can now inspect the orbs to see what they do.
+scroll.lvl_3.1e.22x23: |
+    Such a long walk. It almost seems unnecessary.
+scroll.lvl_3.1n1e.17x13: |
+    After stepping on a mimic potion, use your mouse or wait key to choose the tile where you want to place the mimic.
+scroll.lvl_3.3n1e.11x11: |
+    All of the prisoners have been eaten by dungeon roaches, and I'm next! You can't pay me enough to work this job. I'm outta here!
+    
+    -Prison Warden
+    All of the prisoners have been eaten by dungeon roaches, and I'm next! \
+    You can't pay me enough to work this job. I'm outta here!
+
+    -Prison Warden
+scroll.lvl_3.3n.6x16: |
+    I must warn you about mimics. They are neither your friends nor your enemies--they simply like to move exactly as you do. Don't turn your back on them.
+scroll.lvl_3.3n.6x14: |
+    After stepping on a mimic potion, use your mouse or wait key to choose the tile where you want to place the mimic.
+scroll.lvl_5.entrance.12x13: |
+    Last words!
+scroll.lvl_5.entrance.24x11: |
+    Difficult, original rooms.
+scroll.lvl_5.entrance.2x11: |
+    Harder versions of existing puzzles.
+scroll.lvl_5.1s.18x8: |
+    Very nice, way to go!
+scroll.lvl_5.1s.6x8: |
+    Roach Queens will be killed once you step on the checkpoint in the right-top corner.
+scroll.lvl_5.1s.7x8: |
+    Here is a small reward! Kill all the eyes without stepping on the brown grass.
+scroll.lvl_5.1s.14x9: |
+    Game on!
+scroll.lvl_5.1s.13x8: |
+    This scroll used to urge you to play more episodes on CaravelGames.com but with this release they all are bundled into one game so you can just Change Episode from the title screen.
+scroll.lvl_5.1s.12x7: |
+    I sincerely congratulate you and invite you to continue your journey.
+scroll.lvl_5.1s.11x6: |
+    That's it. By now you have completed everything there is in this game. There may only be a couple of achievements left.
+# Speeches
+
+# Level 1: 3N2W (26x10)
+speech.10025098: |
+    Ah, the first roach of the dungeon!
+speech.10025099: |
+    Come to Beethro, roachburger-to-be!
+speech.10025100: |
+    A clean kill!  This job's gonna turn out great, I just know it!
+# Level 1: 6n (0x0)
+speech.10025102: |
+    You have found a secret room!
+speech.10025103: |
+    Find and conquer them all to gain access to a special master challenge area.
+# Level 1: 6n2w (3x4)
+speech.10025101: |
+    I coulda cleared those roaches without hiding in the alcove, but I feel lazy today.
+# Level 2: 1s1e (1x23)
+speech.10025110: |
+    Hey, a wraithwing!
+speech.10025111: |
+    All by himself too... that means I could be chasing him all over the room.
+speech.10025112: |
+    Wraithwings, unlike roaches, run away from Beethro and try to keep themselves at a distance of five tiles.
+speech.10025113: |
+    They are not as shy in bigger numbers, and won't hesitate to attack if they surround their prey.
+# Level 2: 2e (10x23)
+speech.10025109: |
+    That queen'll make tons of new roaches by the time I get to the orb and back!
+# Level 2: 2s2e (24x8)
+speech.10025105: |
+    Argh... too slow!
+speech.10025106: |
+    Ha!  Easily.
+speech.10025104: |
+    Hmmm... can I kill off those queens before they dump eggs?
+# Level 2: 2s3e (20x5)
+speech.10025107: |
+    I'm sure there was a cleaner way to take out these roach queens.
+speech.10025108: |
+    Now THAT was a fine piece of smitemitery.
+# Level 3: 1n1w (25x1)
+speech.10025119: |
+    Hey, this is pretty neat!
+speech.10025120: |
+    I know I coulda cleared this room without being invisible, but it was still fun.
+speech.10025121: |
+    That wasn't so hard... I wonder why that potion is there?
+# Level 3: 1n2w (25x1)
+speech.10025123: |
+    Whew!  Now those queens won't lay their eggs unless I'm close to them!
+speech.10025124: |
+    That was a bit rough, but nothing a good delver like me can't handle!
+speech.10025125: |
+    Ha!  Nothing's too tough for this delver!
+speech.10025122: |
+    Yikes!  I think I need the potion this time!
+# Level 3: 1s (24x20)
+speech.10025129: |
+    I coulda opened all the doors sooner than this.
+# Level 3: 2n (4x22)
+speech.10025126: |
+    No kidding.
+# Level 3: 3n1e (11x13)
+speech.10025130: |
+    No prisoners left? This is gonna be a lonely job with no one to talk to...
+# Level 3: 3s1w (14x14)
+speech.10025383: |
+    This looks dangerous... some kind of trap...
+speech.10025384: |
+    Wow!  Somebody shoulda been here to see me.
+# Level 4: 1n (8x17)
+speech.10025114: |
+    I coulda cleared this room without going back to the entrance hallway.
+speech.10025115: |
+    Beethro Budkin surmounts any challenge!
+# Level 4: 1s2e (8x8)
+speech.10025116: |
+    Why is it that dropping every trapdoor makes a room look better?
+# Level 4: 2e (24x10)
+speech.10025117: |
+    Holy Hoobuffins! Maybe there is such a thing as too many mimics!
+# Level 4: 2n1e (5x22)
+speech.10025118: |
+    Another secret chamber where everyone but me least expects it.
+# Level 5: 1s (5x11)
+speech.10025131: |
+    You have failed...
+# Outro
+
+outro: |
+    What will Beethro face next? Will the dangers become more hazardous? Will he manage to clean up the whole of King Dugan's Dungeon and finally get paid? <p> </p><p> </p> <p> </p><p> </p> <p> </p><p> </p>
+    <font size="32" color="#FFFF00">Congratulations!</font> <p> </p><p> </p> <p> </p><p> </p> <p> </p><p> </p>
+    
+    You have completed the first episode King Dugan's Dungeon Lite. Did you enjoy the experience?
+    What will Beethro face next? Will the dangers become more hazardous? Will
+    he manage to clean up the whole of King Dugan's Dungeon and finally get paid?
+    <p> </p><p> </p>
+    <p> </p><p> </p>
+    <p> </p><p> </p>
+
+    <font size="32" color="#FFFF00">Congratulations!</font>
+    <p> </p><p> </p>
+    <p> </p><p> </p>
+    <p> </p><p> </p>
+
+
+    You have completed the first episode King Dugan's Dungeon Lite. Did you
+    enjoy the experience?

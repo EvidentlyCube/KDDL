@@ -1,0 +1,69 @@
+
+achievement.description.hidden: |
+    ???
+achievement.description.hidden_with_percent: |
+    ??? (%%%)
+achievement.name.tuning_fork_in_sequence: |
+    The Tuning Fork
+achievement.description.tuning_fork_in_sequence: |
+    Hit different orbs (%orbs%) in sequence, one per turn
+    You can hit the same orb multiple times but it counts only once
+    Multiple orb hits in the same turn count as one hit
+    Current streak: %count%
+    Hit different orbs (%orbs%) in sequence, one per turn
+    You can hit the same orb multiple times but it counts only once
+    Multiple orb hits in the same turn count as one hit
+    Current streak: %count%
+
+achievement.description.monster_kills_0: |
+    Kill a number of roaches (%total_count%)
+achievement.description.monster_kills_1: |
+    Kill a number of roach queens (%total_count%)
+achievement.description.monster_kills_2: |
+    Kill a number of roach eggs (%total_count%)
+achievement.description.monster_kills_3: |
+    Kill a number of goblins (%total_count%)
+achievement.description.monster_kills_5: |
+    Kill a number of wraithwings (%total_count%)
+achievement.description.monster_kills_6: |
+    Kill a number of evil eyes (%total_count%)
+achievement.description.monster_kills_7: |
+    Kill a number of serpents (%total_count%)
+achievement.description.monster_kills_8: |
+    Kill a number of tar mothers (%total_count%)
+achievement.description.monster_kills_9: |
+    Kill a number of tar babies (%total_count%)
+achievement.description.monster_kills_10: |
+    Kill a number of brains (%total_count%)
+achievement.description.monster_kills_11: |
+    Kill a number of mimics (%total_count%)
+achievement.description.monster_kills_12: |
+    Kill a number of spiders (%total_count%)
+achievement.description.rooms: |
+    Clear a number of rooms (%total_count%)
+achievement.description.total_kills: |
+    Kill a number of monsters (%total_count%)
+achievement.description.trapdoors: |
+    Drop a number of trapdoors (%total_count%)
+achievement.description.cut_tar: |
+    Cut tar a number of times (%total_count%)
+achievement.description.steps: |
+    Take a number of steps (%total_count%)
+achievement.description.deaths: |
+    Die a number of times (%total_count%)
+achievement.description.undo: |
+    Undo a number of times (%total_count%)
+achievement.name.mastery: |
+    Mastery
+achievement.description.mastery: |
+    Master the hold
+    Find the end hold stairs and clear all the secret rooms
+    Secret rooms don't need to be cleared in one go, you can use restore
+    Master the hold
+    Find the end hold stairs and clear all the secret rooms
+    Secret rooms don't need to be cleared in one go, you can use restore
+
+achievement.name.post_mastery: |
+    Post-Mastery
+achievement.description.post_mastery: |
+    Clear all challenges in the post mastery level

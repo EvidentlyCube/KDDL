@@ -4,6 +4,13 @@ import {C, HoldId} from "../C";
 import * as HoldPath from "../../src.assets/level/TheAncientPalace.tss.hold";
 import * as SubtitlePath from "../../src.assets/gfx/by_maurycy/ui/logo_tap.png";
 import * as LocalEnPath from "../../src.assets/i18n/en/hold.tap.yml";
+import * as LocalNlPath from "../../src.assets/i18n/nl/hold.tap.yml";
+import * as LocalDePath from "../../src.assets/i18n/de/hold.tap.yml";
+import * as LocalFiPath from "../../src.assets/i18n/fi/hold.tap.yml";
+import * as LocalEsPath from "../../src.assets/i18n/es/hold.tap.yml";
+import * as LocalPtPath from "../../src.assets/i18n/pt/hold.tap.yml";
+import * as LocalFrPath from "../../src.assets/i18n/fr/hold.tap.yml";
+import * as LocalPlPath from "../../src.assets/i18n/pl/hold.tap.yml";
 import {HoldOptions} from "./PlatformSpecific";
 import { AchievementsListTAP } from "src/game/achievements/AchievementsListTAP";
 
@@ -38,6 +45,13 @@ export const TAPHoldOptions: HoldOptions = {
 	resources: {
 		lang: {
 			'en': LocalEnPath.default,
+			'nl': LocalNlPath.default,
+			'de': LocalDePath.default,
+			'fi': LocalFiPath.default,
+			'es': LocalEsPath.default,
+			'pt': LocalPtPath.default,
+			'fr': LocalFrPath.default,
+			'pl': LocalPlPath.default,
 		},
 		subtitle: SubtitlePath.default,
 		hold: HoldPath.default,

@@ -1,0 +1,244 @@
+# Control keys
+key_name.pageup: |
+    Page Up
+key_name.pagedown: |
+    Page Down
+key_name.end: |
+    End
+key_name.home: |
+    Home
+key_name.insert: |
+    Insert
+key_name.delete: |
+    Delete
+key_name.backspace: |
+    Backspace
+key_name.tab: |
+    Tab
+key_name.enter: |
+    Enter
+key_name.shift: |
+    Shift
+key_name.control: |
+    Control
+key_name.alt: |
+    Alt
+key_name.altgraph: |
+    Alt
+key_name.pause: |
+    Pause/Brk
+key_name.capslock: |
+    Caps Lock
+key_name.numlock: |
+    Num Lock
+key_name.escape: |
+    Escape
+# Arrows
+key_name.arrowleft: |
+    Arrow Left
+key_name.arrowup: |
+    Arrow Up
+key_name.arrowright: |
+    Arrow Right
+key_name.arrowdown: |
+    Arrow Down
+# Alphanumeric
+key_name.0: |
+    0
+key_name.1: |
+    1
+key_name.2: |
+    2
+key_name.3: |
+    3
+key_name.4: |
+    4
+key_name.5: |
+    5
+key_name.6: |
+    6
+key_name.7: |
+    7
+key_name.8: |
+    8
+key_name.9: |
+    9
+key_name.a: |
+    A
+key_name.b: |
+    B
+key_name.c: |
+    C
+key_name.d: |
+    D
+key_name.e: |
+    E
+key_name.f: |
+    F
+key_name.g: |
+    G
+key_name.h: |
+    H
+key_name.i: |
+    I
+key_name.j: |
+    J
+key_name.k: |
+    K
+key_name.l: |
+    L
+key_name.m: |
+    M
+key_name.n: |
+    N
+key_name.o: |
+    O
+key_name.p: |
+    P
+key_name.q: |
+    Q
+key_name.r: |
+    R
+key_name.s: |
+    S
+key_name.t: |
+    T
+key_name.u: |
+    U
+key_name.v: |
+    V
+key_name.w: |
+    W
+key_name.x: |
+    X
+key_name.y: |
+    Y
+key_name.z: |
+    Z
+# Numeric
+key_name.numpad_0: |
+    Numpad 0
+key_name.numpad_1: |
+    Numpad 1
+key_name.numpad_2: |
+    Numpad 2
+key_name.numpad_3: |
+    Numpad 3
+key_name.numpad_4: |
+    Numpad 4
+key_name.numpad_5: |
+    Numpad 5
+key_name.numpad_6: |
+    Numpad 6
+key_name.numpad_7: |
+    Numpad 7
+key_name.numpad_8: |
+    Numpad 8
+key_name.numpad_9: |
+    Numpad 9
+key_name.numpad_mul: |
+    Numpad *
+key_name.numpad_add: |
+    Numpad +
+key_name.numpad_sub: |
+    Numpad -
+key_name.numpad_dot: |
+    Numpad .
+key_name.numpad_div: |
+    Numpad /
+# Function keys
+key_name.f1: |
+    F1
+key_name.f2: |
+    F2
+key_name.f3: |
+    F3
+key_name.f4: |
+    F4
+key_name.f5: |
+    F5
+key_name.f6: |
+    F6
+key_name.f7: |
+    F7
+key_name.f8: |
+    F8
+key_name.f9: |
+    F9
+key_name.f10: |
+    F10
+key_name.f11: |
+    F11
+key_name.f12: |
+    F12
+key_name.f13: |
+    F13
+key_name.f14: |
+    F14
+key_name.f15: |
+    F15
+# Symbols
+key_name.space: |
+    Space
+key_name.period: |
+    .
+key_name.comma: |
+    ,
+key_name.colon: |
+    :
+key_name.semicolon: |
+    ;
+key_name.exclamation: |
+    !
+key_name.at: |
+    @
+key_name.hash: |
+    #
+key_name.dollar: |
+    $
+key_name.percent: |
+    %
+key_name.caret: |
+    ^
+key_name.and: |
+    &
+key_name.asterisk: |
+    *
+key_name.dash: |
+    -
+key_name.underscore: |
+    _
+key_name.plus: |
+    +
+key_name.equal: |
+    =
+key_name.double_quote: |
+    "
+key_name.single_quote: |
+    "
+key_name.tilde: |
+    ~
+key_name.backtick: |
+    `
+key_name.pipe: |
+    |
+key_name.slash: |
+    /
+key_name.backslash: |
+    \
+key_name.left_chevron: |
+    <
+key_name.right_chevron: |
+    >
+key_name.left_round_bracket: |
+    (
+key_name.right_round_bracket: |
+    )
+key_name.left_square_bracket: |
+    [
+key_name.right_square_bracket: |
+    ]
+key_name.left_curly_bracket: |
+    {
+key_name.right_curly_bracket: |
+    }

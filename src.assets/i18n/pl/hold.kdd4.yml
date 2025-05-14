@@ -1,0 +1,395 @@
+# Common
+
+hold_name: |
+    King Dugan's Dungeon Lite 4
+# Level Names
+
+level_name_1: |
+    Thirteenth Level
+level_name_2: |
+    Fourteenth Level
+level_name_3: |
+    Fifteenth Level
+level_name_4: |
+    Sixteenth Level
+level_name_5: |
+    Mastery Level
+level_name_6: |
+    Original 13th Level
+# Achievements
+
+achievement.name.l1.2s1w: |
+    One-Directional Forest
+achievement.description.l1.2s1w: |
+    13th Level: 2S1W
+    Clear the room without turning
+    13th Level: 2S1W
+    Clear the room without turning
+
+achievement.name.l1.1s: |
+    Stoic Snakes
+achievement.description.l1.1s: |
+    13th Level: 1S
+    Clear the room without turning
+    13th Level: 1S
+    Clear the room without turning
+
+achievement.name.l1.1s1e: |
+    Tar Stayer
+achievement.description.l1.1s1e: |
+    13th Level: 1S1E
+    Clear the room without turning
+    13th Level: 1S1E
+    Clear the room without turning
+
+achievement.name.l1.1s2w: |
+    Eyedoors
+achievement.description.l1.1s2w: |
+    13th Level: 1S2W
+    Clear the room without turning
+    13th Level: 1S2W
+    Clear the room without turning
+
+achievement.name.l2.1s: |
+    Goblin Beater
+achievement.description.l2.1s: |
+    14th Level: 1S
+    Clear the room facing North-West the entire time
+    14th Level: 1S
+    Clear the room facing North-West the entire time
+
+achievement.name.l2.2s: |
+    Goblin Crusher
+achievement.description.l2.2s: |
+    14th Level: 2S
+    Clear the room facing East the entire time
+    14th Level: 2S
+    Clear the room facing East the entire time
+
+achievement.name.l2.1n: |
+    Goblin Destroyer
+achievement.description.l2.1n: |
+    14th Level: 1N
+    Clear the room facing South the entire time
+    14th Level: 1N
+    Clear the room facing South the entire time
+
+achievement.name.l2.2e: |
+    Step Aside!
+achievement.description.l2.2e: |
+    14th Level: 2E
+    Clear the room without stepping on the trapdoor
+    14th Level: 2E
+    Clear the room without stepping on the trapdoor
+
+achievement.name.l2.2n: |
+    Green Mommy
+achievement.description.l2.2n: |
+    14th Level: 2N
+    Clear the room without letting the tar mother grow
+    14th Level: 2N
+    Clear the room without letting the tar mother grow
+
+achievement.name.l2.1n3e: |
+    Goblin Killer
+achievement.description.l2.1n3e: |
+    14th Level: 1N3E
+    Clear the room without turning
+    14th Level: 1N3E
+    Clear the room without turning
+
+achievement.name.l2.2n2e: |
+    Strict Policies
+achievement.description.l2.2n2e: |
+    14th Level: 2N2E
+    Clear the room without letting the goblin stand on the gray road tiles
+    14th Level: 2N2E
+    Clear the room without letting the goblin stand on the gray road tiles
+
+achievement.name.l2.1n1e: |
+    Extreme Sacrifice
+achievement.description.l2.1n1e: |
+    14th Level: 1N1E
+    Clear the room by killing a goblin last
+    14th Level: 1N1E
+    Clear the room by killing a goblin last
+
+achievement.name.l3.entrance: |
+    Calm Assassin
+achievement.description.l3.entrance: |
+    15th Level: Entrance
+    Clear the room without turning
+    15th Level: Entrance
+    Clear the room without turning
+
+achievement.name.l3.entrance_2: |
+    Step Ahead
+achievement.description.l3.entrance_2: |
+    15th Level: Entrance
+    Drop all trapdoors before clearing the room
+    15th Level: Entrance
+    Drop all trapdoors before clearing the room
+
+achievement.name.l3.1n: |
+    Crossing Spiders
+achievement.description.l3.1n: |
+    15th Level: 1N
+    After hitting the orb clear the room without orthogonal moves - you can turn, wait and move diagonally
+    You can move orthogonally again once monsters are dead to clean up the trapdoors
+    15th Level: 1N
+    After hitting the orb clear the room without orthogonal moves - \
+    you can turn, wait and move diagonally
+    You can move orthogonally again once monsters are dead to clean up \
+    the trapdoors
+
+achievement.name.l4.1s1e: |
+    Growing!
+achievement.description.l4.1s1e: |
+    16th Level: 1S1E
+    Clear the room without letting tar mother grow
+    16th Level: 1S1E
+    Clear the room without letting tar mother grow
+
+achievement.name.l4.2s: |
+    Economic
+achievement.description.l4.2s: |
+    16th Level: 2S
+    Clear the room with only 5 orb hits
+    16th Level: 2S
+    Clear the room with only 5 orb hits
+
+achievement.name.l5.2n: |
+    Master of Eyeion!
+achievement.description.l5.2n: |
+    Mastery Level: 2N
+    Clear the room without eyes waking or roach eggs spawning
+    Mastery Level: 2N
+    Clear the room without eyes waking or roach eggs spawning
+
+achievement.name.l5.1n1e: |
+    Hunter Games
+achievement.description.l5.1n1e: |
+    Mastery Level: 1N1E
+    Kill the wraithwing without dropping all trapdoors
+    Mastery Level: 1N1E
+    Kill the wraithwing without dropping all trapdoors
+
+achievement.name.l6.explore: |
+    The Explorer
+achievement.description.l6.explore: |
+    Original 13th Level
+    Visit each room at least once (%count% / 56)
+    Original 13th Level
+    Visit each room at least once (%count% / 56)
+
+
+# Custom names for common achievements
+
+achievement.name.level_1: |
+    Amateur Delver
+achievement.description.level_1: |
+    Clear 13th Level
+achievement.name.level_2: |
+    Fledgling Smiter
+achievement.description.level_2: |
+    Clear 14th Level
+achievement.name.level_3: |
+    Contract Exterminator
+achievement.description.level_3: |
+    Clear 15th Level
+achievement.name.level_4: |
+    I'm a Professional!
+achievement.description.level_4: |
+    Clear 16th Level
+achievement.name.level_6: |
+    It Was a Mistake
+achievement.description.level_6: |
+    Clear Original 13th Level
+achievement.name.tuning_fork_in_sequence: |
+    Tuning Cork
+achievement.name.monster_kills_0: |
+    Broiled Roaches
+achievement.name.monster_kills_1: |
+    Queens Sashimi
+achievement.name.monster_kills_2: |
+    Over Easy Eggs
+achievement.name.monster_kills_3: |
+    Goblin Tenderloin
+achievement.name.monster_kills_5: |
+    Wraithwing Bucket
+achievement.name.monster_kills_6: |
+    Evil Eye Stew
+achievement.name.monster_kills_7: |
+    Serpent Temaki
+achievement.name.monster_kills_8: |
+    Tar Ajvar
+achievement.name.monster_kills_9: |
+    Baby Ravioli
+achievement.name.monster_kills_12: |
+    Spider Legs
+achievement.name.rooms: |
+    Abolish Green
+achievement.name.total_kills: |
+    Wielder of Justice
+achievement.name.trapdoors: |
+    Voidist
+achievement.name.steps: |
+    Stroller
+achievement.name.deaths: |
+    Nommed
+achievement.name.undo: |
+    Rewind Ritual
+achievement.name.cut_tar: |
+    Bladeshaper
+# Entrances
+
+entrance.lvl_1.entrance.12x12: |
+    "I probably ought to have skipped past this level, but a contract is a contract. Where'd I put those bread crumbs?" -Beethro
+    "I probably ought to have skipped past this level, but a contract is a contract. Where'd I put those bread crumbs?" -Beethro
+entrance.lvl_2.2n1e.22x11: |
+    Beethro came back to finish the proper smiting business he was hired to do.
+entrance.lvl_2.entrance.14x11: |
+    On this level, you'll finally meet some folks with a healthy respect for your blade.
+entrance.lvl_3.entrance.10x11: |
+    This level is like the time you mowed the lawn and had exactly the amount of gas needed to finish, but then you screwed up, and had to go buy some more gas. And there was a big serpent at the gas station, and you wanted to go in to pay the attendant, but the front door was locked, so you drank a mimic potion to get in, and then the roaches...
+    
+    Well, I guess the metaphor breaks down.
+    This level is like the time you mowed the lawn and had exactly the amount
+    of gas needed to finish, but then you screwed up, and had to go buy some
+    more gas. And there was a big serpent at the gas station, and you wanted
+    to go in to pay the attendant, but the front door was locked, so you drank
+    a mimic potion to get in, and then the roaches...
+
+
+    Well, I guess the metaphor breaks down.
+entrance.lvl_4.entrance.15x15: |
+    These roaches need an authority figure to guide them. Someone with charisma and character. Someone like you!
+entrance.lvl_5.entrance.13x12: |
+    Beethro descended the stairs only to find himself in an uncharted corridor...
+entrance.lvl_5.entrance.24x16: |
+    Beethro ran away from the challenge like a little, scrawny kitten.
+entrance.lvl_5.entrance.24x8: |
+    Proud of his achievement, but a whole lot less sane, Beethro emerged from the infamous 13th level of King Dugan's Dungeon.
+entrance.lvl_6.entrance.14x9: |
+    Beethro descended into the mystical set of deadly, pointless corridors.
+# Scrolls
+
+scroll.lvl_1.2s2w.4x21: |
+    Shortcut to the entrance
+scroll.lvl_1.entrance.12x3: |
+    Shortcut to the exit
+scroll.lvl_1.entrance.1x13: |
+    Stones lay before sand, before them lay slabs which are preceded by grass which grows on tile, on dirt built.
+    -Unknown Poet
+    -Unknown Poet
+scroll.lvl_1.entrance.1x14: |
+    A true Smitemaster will not read the scroll above without conquering the level first.
+scroll.lvl_2.1n3e.4x19: |
+    This fellow in the other room is not so clever. He always falls for the same old trick.
+scroll.lvl_5.1s.11x6: |
+    Now that's a job well done!
+scroll.lvl_5.1s.12x7: |
+    How was the game? Did you manage to get all of the achievements?
+scroll.lvl_5.1s.13x8: |
+    This scroll used to urge you to play more episodes on CaravelGames.com but with this release they all are bundled into one game so you can just Change Episode from the title screen.
+    This scroll used to urge you to play more episodes on CaravelGames.com but
+    with this release they all are bundled into one game so you can just Change
+    Episode from the title screen.
+scroll.lvl_5.1s.14x9: |
+    Rock on!
+scroll.lvl_5.1s.18x8: |
+    Fabulous!
+scroll.lvl_5.1s.6x8: |
+    Roach queens will be killed once you step on the checkpoint in the far-right corner.
+scroll.lvl_5.1s.7x8: |
+    Here is a small reward! Kill all the eyes and goblins without stepping on the grass.
+scroll.lvl_5.1w.13x15: |
+    There is but naught here.
+scroll.lvl_5.1w.19x12: |
+    There is but naught here.
+scroll.lvl_5.entrance.12x12: |
+    Harder versions of existing rooms.
+scroll.lvl_5.entrance.13x11: |
+    New puzzles.
+scroll.lvl_5.entrance.14x12: |
+    The Original 13th Level
+scroll.lvl_6.entrance.11x12: |
+    Due to the difference in room size between the original DROD and this version some small adjustments were made to make things work.
+scroll.lvl_6.entrance.12x12: |
+    Specifically some orb connections were changed, broken walls were added, closed gates were opened and the room with the stairs was slightly modified.
+# Speeches
+
+# Fifteenth Level: 1S2W -- (16, 13)
+speech.10025235: |
+    Hoo boy, no simple plow here. Let's plan the footwork ahead before I get moving.
+# Fourteenth Level: 1E -- (14, 3)
+speech.10025223: |
+    Ahh...nothing satisfies like the sweet sight of no tar at all!
+# Fourteenth Level: 1N1E -- (13, 2)
+speech.10025224: |
+    Look at that...not a single wall destroyed!
+# Fourteenth Level: 2N2E -- (13, 24)
+speech.10025225: |
+    Bah...looks like I need to keep this goblin alive long enough to remove that serpent up there for me.
+speech.10025226: |
+    No helpings from me! You cuts me up, I know it--don't matter now or later.
+speech.10025227: |
+    Don't act all brave. Because I know goblins aren't brave.
+speech.10025228: |
+    No, No, No! Keeps pointy thing away!
+speech.10025229: |
+    You're thinking you'll sneak behind when I'm not looking. Yeah.
+speech.10025230: |
+    Mercy!
+speech.10025231: |
+    Look, you'd do the same in my place!
+speech.10025232: |
+    That's nasty business. Hope I don't have to do that again!
+# Fourteenth Level: 2N2E -- (20, 19)
+speech.10025233: |
+    Rest there a bit while I open the passage, goblin.
+speech.10025234: |
+    (I probably didn't need to lock him up there...but better safe than sorry!)
+# Mastery Level: 1S -- (5, 11)
+speech.10025241: |
+    You have failed...
+# Original 13th Level: 2S3W -- (5, 16)
+speech.10025243: |
+    Here, roachie, roachie...
+# Original 13th Level: 3S3W -- (8, 6)
+speech.10025242: |
+    Greb! One measly little roachie I've gotta squish.
+# Sixteenth Level: 2S1E -- (10, 10)
+speech.10025236: |
+    Brilliant! Sometimes I even impress myself.
+speech.10025237: |
+    Ha! All clear!
+speech.10025238: |
+    Now to get out of here...
+speech.10025239: |
+    Hmm...which way did I come in again?
+speech.10025240: |
+    Ah, it doesn't matter.
+# Outro
+
+outro: |
+    The last four floors were a real pain for Beethro with the tar, the doors, the roaches... As he descended the stairs he smelled more of the blue goo which made him cringe but in the very far back of his head something told him that there is even worse danger ahead of him... <p> </p><p> </p> <p> </p><p> </p> <p> </p><p> </p>
+    <font size="32" color="#FFFF00">Congratulations!</font> <p> </p><p> </p> <p> </p><p> </p> <p> </p><p> </p>
+    
+    You have completed the fourth episode King Dugan's Dungeon Lite. Did you enjoy the experience?
+    The last four floors were a real pain for Beethro with the tar, the doors,
+    the roaches... As he descended the stairs he smelled more of the blue goo
+    which made him cringe but in the very far back of his head something told
+    him that there is even worse danger ahead of him...
+    <p> </p><p> </p>
+    <p> </p><p> </p>
+    <p> </p><p> </p>
+
+    <font size="32" color="#FFFF00">Congratulations!</font>
+    <p> </p><p> </p>
+    <p> </p><p> </p>
+    <p> </p><p> </p>
+
+
+    You have completed the fourth episode King Dugan's Dungeon Lite. Did you
+    enjoy the experience?

@@ -1,0 +1,406 @@
+# Hold Name
+
+hold_name: |
+    The Ancient Palace
+# Level Names
+
+level_name_1: |
+    The Outer Walls
+level_name_2: |
+    Inside The Palace
+level_name_3: |
+    Underground Lake
+level_name_4: |
+    The Sewer System
+level_name_5: |
+    The Forgotten Catacombs
+level_name_6: |
+    Treasure Chambers
+level_name_7: |
+    Tutorial Level
+# Achievements
+
+achievement.name.l2.entrance: |
+    Extra Effort
+achievement.description.l2.entrance: |
+    Inside The Palace: Entrance
+    Drop all but one Trapdoor then leave the room
+    Inside The Palace: Entrance
+    Drop all but one Trapdoor then leave the room
+
+achievement.name.l2.1s1w: |
+    Ladies Last
+achievement.description.l2.1s1w: |
+    Inside The Palace: 1S1W
+    Clear the central chamber before killing any Roach Queen
+    Inside The Palace: 1S1W
+    Clear the central chamber before killing any Roach Queen
+
+achievement.name.l2.2s1w: |
+    Focused on Brains
+achievement.description.l2.2s1w: |
+    Inside The Palace: 2S1W
+    Do not rotate your sword until Brains are dead, then clear the room
+    Inside The Palace: 2S1W
+    Do not rotate your sword until Brains are dead, then clear the room
+
+achievement.name.l2.2s1e: |
+    Doors are Optional
+achievement.description.l2.2s1e: |
+    Inside The Palace: 2S1E
+    Close the door after killing the serpent, then clear the room
+    Inside The Palace: 2S1E
+    Close the door after killing the serpent, then clear the room
+
+achievement.name.l5.1n: |
+    No Longer Forgotten
+achievement.description.l5.1n: |
+    Clear 1N in the secret level
+achievement.name.l6.1n1e: |
+    Take Your Time
+achievement.description.l6.1n1e: |
+    Treasure Chambers: 1N1E
+    Kill all serpents before killing any other monster
+    Treasure Chambers: 1N1E
+    Kill all serpents before killing any other monster
+
+achievement.name.level_1: |
+    Wall Climber
+achievement.description.level_1: |
+    Complete level "The Outer Walls"
+achievement.name.level_2: |
+    Palace Inspector
+achievement.description.level_2: |
+    Complete level "Inside The Palace"
+achievement.name.level_3: |
+    Lake Diver
+achievement.description.level_3: |
+    Complete level "Underground Lake"
+achievement.name.level_4: |
+    Sewer Worker
+achievement.description.level_4: |
+    Complete level "The Sewer System"
+achievement.name.level_5: |
+    Memorial Delver
+achievement.description.level_5: |
+    Find and complete the secret level
+achievement.name.level_6: |
+    Gold Digger
+achievement.description.level_6: |
+    Complete level "Treasure Chambers"
+achievement.name.level_7: |
+    Master of Tutorial
+achievement.description.level_7: |
+    Complete the tutorial level
+achievement.name.monster_kills_0: |
+    Purging Roaches
+achievement.name.monster_kills_1: |
+    Eradicating Queens
+achievement.name.monster_kills_3: |
+    Repelling Goblins
+achievement.name.monster_kills_5: |
+    Abolishing Wraithwings
+achievement.name.monster_kills_6: |
+    Fumigating Eyes
+achievement.name.monster_kills_7: |
+    Serpent Eviction
+achievement.name.monster_kills_8: |
+    Ousting Tar Mothers
+achievement.name.monster_kills_9: |
+    Dismissing Tar Babies
+achievement.name.monster_kills_10: |
+    Phasing Out Brains
+achievement.name.rooms: |
+    Dominion over Stone
+achievement.name.total_kills: |
+    Wisdom of the Crowd
+achievement.name.trapdoors: |
+    Building Nothing
+achievement.name.steps: |
+    Explorer
+achievement.name.deaths: |
+    Retirement
+achievement.name.undo: |
+    Last Man Standing
+achievement.name.cut_tar: |
+    Michelangelo
+# Entrances
+
+entrance.lvl_1.entrance.13x10: |
+    Beethro had heard that a vault containing valuable treasures lay within the underground chambers of a long deserted palace.
+    
+    Mostly the palace was over-run with roaches and contaminated with tarstuff, but there were rumours that some of the original defences still remained.
+    
+    Maybe Beethro could find a secret way in...
+    
+    [Author's note: 1N1W inspired by a similar room in Nightmare Dungeon by Doom]
+    Beethro had heard that a vault containing valuable treasures lay within the
+    underground chambers of a long deserted palace.
+
+
+    Mostly the palace was over-run with roaches and contaminated with tarstuff,
+    but there were rumours that some of the original defences still remained.
+
+
+    Maybe Beethro could find a secret way in...
+
+
+    [Author's note: 1N1W inspired by a similar room in Nightmare Dungeon by Doom]
+entrance.lvl_1.entrance.13x7: |
+    Beethro returned from the Tutorial Level
+entrance.lvl_2.entrance.13x8: |
+    Beethro could not believe his eyes.
+    
+    Clearly the palace had resisted any invasion by the vermin that littered the upper floors.
+    
+    Vast marble hallways stretched out in all directions, lined by bizarre statues.
+    
+    However, a contingent of evil eyes remained on watch for intruders.
+    Beethro could not believe his eyes.
+
+
+    Clearly the palace had resisted any invasion by the vermin that littered
+    the upper floors.
+
+
+    Vast marble hallways stretched out in all directions, lined by bizarre statues.
+
+
+    However, a contingent of evil eyes remained on watch for intruders.
+entrance.lvl_3.entrance.7x7: |
+    As Beethro descended the air became colder and colder.
+    
+    Perhaps the previous owners kept a wine cellar down here?
+    
+    When Beethro reached the bottom of the stairs he was met with an even more astonishing sight.
+    As Beethro descended the air became colder and colder.
+
+
+    Perhaps the previous owners kept a wine cellar down here?
+
+
+    When Beethro reached the bottom of the stairs he was met with an even more astonishing sight.
+entrance.lvl_4.entrance.13x17: |
+    Beethro continued to descend.
+    
+    He entered a complex of twisting tunnels and lost his way.
+    After descending another set of stairs he came out well beneath the palace in the sewer system. Clearly he'd gone too far down and would have to retrace his steps.
+    
+    Unfortunately, the door to the stairwell slammed shut behind him.
+    Beethro continued to descend.
+
+
+    He entered a complex of twisting tunnels and lost his way.
+
+    After descending another set of stairs he came out well beneath the palace
+    in the sewer system. Clearly he'd gone too far down and would have to
+    retrace his steps.
+
+
+    Unfortunately, the door to the stairwell slammed shut behind him.
+entrance.lvl_5.entrance.13x17: |
+    Beethro stumbled upon a long-buried crypt, since forgotten about.
+    
+    What secrets would he find within?
+    Beethro stumbled upon a long-buried crypt, since forgotten about.
+
+    What secrets would he find within?
+entrance.lvl_6.entrance.13x12: |
+    Beethro finally reached the underground vaults.
+    
+    A team of goblins and swarm of serpents still remained, guarding the treasure...
+    
+    [Author's Note: 1N1E and 1S1E are inspired by similar rooms by Tim from the hold Advanced Concepts]
+    Beethro finally reached the underground vaults.
+
+    A team of goblins and swarm of serpents still remained, guarding the treasure...
+
+    [Author's Note: 1N1E and 1S1E are inspired by similar rooms by Tim from the hold Advanced Concepts]
+entrance.lvl_7.entrance.2x12: |
+    Here is a quick tutorial demonstrating most of the elements you will see in this, and other, holds and how they work.
+    Here is a quick tutorial demonstrating most of the elements you will see in
+    this, and other, holds and how they work.
+
+
+# Scrolls
+
+scroll.lvl_1.entrance.13x6: |
+    Head up these stairs to go to a tutorial section.
+scroll.lvl_4.1n2w.23x17: |
+    Orbs in the bottom section each toggle the corresponding door in the top section.
+scroll.lvl_4.1n2w.23x18: |
+    This room is not required in order to exit this level but is required to drop the blue door.
+scroll.lvl_5.1s.13x2: |
+    The diagonal line of crumbly walls continues through the tar.
+scroll.lvl_7.entrance.18x14: |
+    Snakes can't be killed with your sword, but only by being trapped in a dead end.
+    
+    They cannot move diagonally or over force arrows or scrolls.
+    They cannot move diagonally or over force arrows or scrolls.
+scroll.lvl_7.entrance.1x12: |
+    Exit
+scroll.lvl_7.entrance.4x12: |
+    These are force arrows.
+    
+    You cannot move across them counter to the direction they are pointing.
+    These are force arrows.
+
+    You cannot move across them counter to the direction they are pointing.
+scroll.lvl_7.entrance.7x12: |
+    Click on each orb to see what it does.
+    
+    Red: Closes yellow door
+    
+    Green: Opens yellow door
+    
+    Amber: Toggles yellow door between open and closed
+    Click on each orb to see what it does.
+
+    Red: Closes yellow door
+
+    Green: Opens yellow door
+
+    Amber: Toggles yellow door between open and closed
+scroll.lvl_7.entrance.14x12: |
+    Crumbly walls can be destroyed with your sword
+scroll.lvl_7.entrance.12x5: |
+    Tar can be cut at its edges, but not at its corners.
+    
+    If the width of a block of tar is reduced to 1 tile, tar babies are produced.
+    
+    They move like roaches
+    Tar can be cut at its edges, but not at its corners.
+
+    If the width of a block of tar is reduced to 1 tile, tar babies are produced.
+
+    They move like roaches
+scroll.lvl_7.entrance.18x6: |
+    Goblins are smarter than roaches - they can dodge around obstacles to get to you and run away from your sword.
+    Goblins are smarter than roaches - they can dodge around obstacles to get
+    to you and run away from your sword.
+scroll.lvl_7.entrance.16x12: |
+    The objective of each room is to clear all the monsters and exit.
+    
+    When you clear all monsters, the green door will open.
+    The objective of each room is to clear all the monsters and exit.
+
+    When you clear all monsters, the green door will open.
+scroll.lvl_7.entrance.4x19: |
+    Roach queens always run away from you
+scroll.lvl_7.entrance.8x8: |
+    Roaches move directly towards you but can be blocked vertically or horizontally by walls or obstacles.
+    Roaches move directly towards you but can be blocked vertically or
+    horizontally by walls or obstacles.
+scroll.lvl_7.entrance.10x16: |
+    If you walk over a trapdoor, it will drop, revealing pit beneath which you cannot walk over.
+    
+    If you drop all the trapdoors in a room, the red doors will drop.
+    If you walk over a trapdoor, it will drop, revealing pit beneath which you cannot walk over.
+
+    If you drop all the trapdoors in a room, the red doors will drop.
+scroll.lvl_7.entrance.14x16: |
+    Wraithwings can fly over pits.
+    
+    Lone wraithwings always try  to stay 5 tiles away from you.
+    
+    Multiple wraithwings can be more brave and can move towards you and attack.
+    Wraithwings can fly over pits.
+
+    Lone wraithwings always try  to stay 5 tiles away from you.
+
+    Multiple wraithwings can be more brave and can move towards you and attack.
+scroll.lvl_7.entrance.16x17: |
+    Eyes do not move until you walk into their line of sight.
+    
+    Then they wake up and move towards you as a roach does.
+    Eyes do not move until you walk into their line of sight.
+
+    Then they wake up and move towards you as a roach does.
+scroll.lvl_7.entrance.19x19: |
+    Stepping on a mimic potion allows you to place a mimic anywhere in the room (move with your mouse or direction keys, click or press "wait" to place).
+    
+    Mimics will copy your every move.
+    
+    Hint: Place in the chamber to the right.
+    (move with your mouse or direction keys, click or press "wait" to place).
+
+
+    Mimics will copy your every move.
+
+
+    Hint: Place in the chamber to the right.
+scroll.lvl_7.entrance.19x8: |
+    Invisibility potions make you invisible to all monsters outside of a 5x5 square around you.
+scroll.lvl_7.entrance.19x12: |
+    Stepping on a second invisibility potion reverses the effect of the first.
+scroll.lvl_7.1e.4x12: |
+    If there is no way of getting to you that the brain can see, the monsters will move normally.
+scroll.lvl_7.1e.16x20: |
+    Note that mimics cannot be placed on arrows, trapdoors, scrolls or yellow doors.
+scroll.lvl_7.1e.7x17: |
+    Roach queens lay roach eggs every 30 turns.
+    They cannot lay eggs over trapdoors, scrolls, arrows or yellow doors (open or closed)
+    
+    Roach eggs hatch into roaches.
+    Roach queens lay roach eggs every 30 turns.
+    They cannot lay eggs over trapdoors, scrolls, arrows or yellow doors (open or closed)
+
+    Roach eggs hatch into roaches.
+scroll.lvl_7.1e.7x7: |
+    Roach queens lay roach eggs every 30 turns.
+    They cannot lay eggs over trapdoors, scrolls, arrows or yellow doors (open or closed)
+    
+    Roach eggs hatch into roaches after 5 turns.
+    Roach queens lay roach eggs every 30 turns.
+    They cannot lay eggs over trapdoors, scrolls, arrows or yellow doors (open or closed)
+
+    Roach eggs hatch into roaches after 5 turns.
+scroll.lvl_7.1e.6x12: |
+    The eyes in the tar are tar mothers.
+    
+    A tar mother in the room causes the tar to expand every 30 turns. Tar does not expand over arrows or scrolls.
+    
+    If tar expands into a one tile wide gap, a tar baby is formed..
+    The eyes in the tar are tar mothers.
+
+    A tar mother in the room causes the tar to expand every 30 turns. Tar does not expand over arrows or scrolls.
+
+    If tar expands into a one tile wide gap, a tar baby is formed..
+scroll.lvl_7.1e.2x12: |
+    The red monster in the centre of the room is a brain.
+    
+    They don't move and can't kill you, but if there's one in the room, all the other monsters can form a path to you and move around obstacles to get to you.
+    The red monster in the centre of the room is a brain.
+
+
+    They don't move and can't kill you, but if there's one in the room, all the
+    other monsters can form a path to you and move around obstacles to get to you.
+scroll.lvl_7.1e.14x17: |
+    Brains don't direct monsters over arrows or scrolls
+scroll.lvl_7.1e.14x7: |
+    Brains don't direct monsters over arrows or scrolls
+scroll.lvl_7.1e.20x19: |
+    SCROLL
+scroll.lvl_7.1e.19x20: |
+    SCROLL
+scroll.lvl_7.1e.16x4: |
+    Note that mimics cannot be placed on arrows, trapdoors, scrolls or yellow doors.
+# Speeches
+
+# The Outer Walls: 1W -- (11, 2)
+speech.10024932: |
+    Hmm, not sure I wanted to do that.
+# Outro
+
+outro: |
+    <font size="32" color="#FFFF00">Congratulations!</font> <p> </p><p> </p> <p> </p><p> </p> <p> </p><p> </p>
+    
+    You have completed the The Ancient Palace! A hold designed by Jacob, a port of his 2011 hold "Aurora's Palace". Thank you Jacob for your work!
+    <font size="32" color="#FFFF00">Congratulations!</font>
+    <p> </p><p> </p>
+    <p> </p><p> </p>
+    <p> </p><p> </p>
+
+
+    You have completed the The Ancient Palace! A hold designed by Jacob,
+    a port of his 2011 hold "Aurora's Palace". Thank you Jacob for your work!

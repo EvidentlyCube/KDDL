@@ -1,0 +1,435 @@
+# Common
+
+hold_name: |
+    King Dugan's Dungeon Lite 3
+# Level Names
+
+level_name_1: |
+    Ninth Level
+level_name_2: |
+    Tenth Level
+level_name_3: |
+    Eleventh Level
+level_name_4: |
+    Twelfth Level
+level_name_5: |
+    Mastery Level
+level_name_6: |
+    Tutorial
+# Achievements
+
+achievement.name.l1.4n3e: |
+    Working Like a Clock
+achievement.description.l1.4n3e: |
+    Ninth Level: 4N3E
+    Clear the room without stepping on any of the marked areas more than once
+    Ninth Level: 4N3E
+    Clear the room without stepping on any of the marked areas more than once
+
+achievement.name.l1.3n3e: |
+    Clocking Like a Work
+achievement.description.l1.3n3e: |
+    Ninth Level: 3N3E
+    Clear the room without stepping on any of the marked areas more than once
+    Ninth Level: 3N3E
+    Clear the room without stepping on any of the marked areas more than once
+
+achievement.name.l2.1n1e: |
+    Entangled Hands
+achievement.description.l2.1n1e: |
+    Tenth Level: 1N1E
+    Clear the room without turning
+    Tenth Level: 1N1E
+    Clear the room without turning
+
+achievement.name.l2.1e: |
+    Locked Arms
+achievement.description.l2.1e: |
+    Tenth Level: 1E
+    Clear the room without turning
+    Tenth Level: 1E
+    Clear the room without turning
+
+achievement.name.l2.1s1w: |
+    Glued Sword
+achievement.description.l2.1s1w: |
+    Tenth Level: 1S1W
+    Clear the room without turning
+    Tenth Level: 1S1W
+    Clear the room without turning
+
+achievement.name.l2.1s: |
+    Forever Alone
+achievement.description.l2.1s: |
+    Tenth Level: 1S
+    Clear the room without drinking the potion
+    Tenth Level: 1S
+    Clear the room without drinking the potion
+
+achievement.name.l3.1s2e: |
+    Sneaky
+achievement.description.l3.1s2e: |
+    Eleventh Level: 1S2E
+    Clear the room in less than 150 moves
+    Eleventh Level: 1S2E
+    Clear the room in less than 150 moves
+
+achievement.name.l3.clear_tar: |
+    Tar Engineer
+achievement.description.l3.clear_tar: |
+    Eleventh Level
+    Clear all tar in any room
+    Eleventh Level
+    Clear all tar in any room
+
+achievement.name.l4.1s2e: |
+    Lord of the Snakes
+achievement.description.l4.1s2e: |
+    Twelfth Level: 1S2E
+    Clear the room without moving diagonally
+    Twelfth Level: 1S2E
+    Clear the room without moving diagonally
+
+achievement.name.l4.2s1e: |
+    Alone in the Hiss
+achievement.description.l4.2s1e: |
+    Twelfth Level: 2S1E
+    Clear the room without drinking a potion
+    Twelfth Level: 2S1E
+    Clear the room without drinking a potion
+
+achievement.name.l4.1s: |
+    Silent Hunter
+achievement.description.l4.1s: |
+    Twelfth Level: 1S
+    Wake exactly one eye and clear the room
+    Twelfth Level: 1S
+    Wake exactly one eye and clear the room
+
+achievement.name.do_not_wake_eyes: |
+    Shinobi
+achievement.description.do_not_wake_eyes: |
+    Any Level
+    Clear a room with evil eyes without waking any
+    Any Level
+    Clear a room with evil eyes without waking any
+
+
+# Custom names for common achievements
+
+achievement.name.level_1: |
+    Amateur Delver
+achievement.description.level_1: |
+    Clear Ninth Level
+achievement.name.level_2: |
+    Fledgling Smiter
+achievement.description.level_2: |
+    Clear Tenth Level
+achievement.name.level_3: |
+    Contract Exterminator
+achievement.description.level_3: |
+    Clear Eleventh Level
+achievement.name.level_4: |
+    I'm a Professional!
+achievement.description.level_4: |
+    Clear Twelfth Level
+achievement.name.level_6: |
+    Can I Read?
+achievement.description.level_6: |
+    Clear Tutorial
+achievement.name.tuning_fork_in_sequence: |
+    Tuning Stork
+achievement.name.monster_kills_0: |
+    Roasted Roaches
+achievement.name.monster_kills_1: |
+    Queens Carpaccio
+achievement.name.monster_kills_2: |
+    Omelette
+achievement.name.monster_kills_5: |
+    Wraithwing Tenders
+achievement.name.monster_kills_6: |
+    Evil Eye Mustard
+achievement.name.monster_kills_7: |
+    Serpent Futomaki
+achievement.name.monster_kills_8: |
+    Tar Coulis
+achievement.name.monster_kills_9: |
+    Baby Knodel
+achievement.name.monster_kills_12: |
+    Spider Thighs
+achievement.name.rooms: |
+    Descending Green
+achievement.name.total_kills: |
+    Mob Controller
+achievement.name.trapdoors: |
+    Space Keeper
+achievement.name.steps: |
+    Endless Walker
+achievement.name.deaths: |
+    Reanimator
+achievement.name.undo: |
+    Time Lord
+achievement.name.cut_tar: |
+    Sculptor
+# Entrances
+
+entrance.lvl_1.entrance.15x5: |
+    Beethro sat down on the steps for a break. He pulled three bottles out of his pack. The ten-cup bottle was filled with refreshing leaf juice, and the other two bottles, which were in two-cup and five-cup sizes, were empty. Beethro wanted to drink exactly four cups of leaf juice in one uninterrupted gulp. He started messing around with the cups, pouring juice from one to another and back, but after a while gave up. "This is too much work!  Forget it!"
+    Beethro sat down on the steps for a break. He pulled three bottles out of
+    his pack. The ten-cup bottle was filled with refreshing leaf juice, and the
+    other two bottles, which were in two-cup and five-cup sizes, were empty.
+    Beethro wanted to drink exactly four cups of leaf juice in one uninterrupted
+    gulp. He started messing around with the cups, pouring juice from one to
+    another and back, but after a while gave up. "This is too much work!  Forget it!"
+entrance.lvl_1.entrance.7x17: |
+    Beethro left the tutorial floor rich with new knowledge.
+entrance.lvl_2.entrance.11x12: |
+    As many experienced dungeon exterminators know, beneath dwell some beasties that are able to blend into their surroundings.
+    As many experienced dungeon exterminators know, beneath dwell some beasties
+    that are able to blend into their surroundings.
+entrance.lvl_3.entrance.11x11: |
+    Catching a glimpse of the room ahead, Beethro grunted in disapproval. "I don't know how, but the tar always ends up that way, and I hate it."
+    Catching a glimpse of the room ahead, Beethro grunted in disapproval.
+    "I don't know how, but the tar always ends up that way, and I hate it."
+entrance.lvl_4.2n2e.13x13: |
+    Beethro came back to finish the proper smiting business he was hired to do.
+entrance.lvl_4.entrance.13x12: |
+    Again, Beethro heard loud hissing below, and knew to expect serpents. But this time the sound was slightly different, and he stopped a moment to listen and judge what lay ahead. "Good Gob! Those slitherbags must've been down there a gawdawful long time, with some big meals along the way."
+    Again, Beethro heard loud hissing below, and knew to expect serpents. But
+    this time the sound was slightly different, and he stopped a moment to
+    listen and judge what lay ahead. "Good Gob! Those slitherbags must've been
+    down there a gawdawful long time, with some big meals along the way."
+entrance.lvl_5.entrance.13x11: |
+    Beethro descended the stairs only to find himself in an uncharted corridor...
+    
+    He won't get paid for clean-up here, but his professional honor urges him onward.
+    Beethro descended the stairs only to find himself in an uncharted corridor...
+
+    He won't get paid for clean-up here, but his professional honor urges him onward.
+entrance.lvl_6.entrance.8x12: |
+    Tutorial
+# Scrolls
+
+scroll.lvl_1.3n3e.24x12: |
+    Are you sure you are doing them in the correct order?
+scroll.lvl_1.4n3e.5x13: |
+    The order is the key.
+scroll.lvl_2.entrance.14x9: |
+    Invisibly evil spiders lurk on this level. Beware, for they are hard to see.
+scroll.lvl_3.1s2e.18x7: |
+    Psst... This passage takes you to the stairs. You might want to clear all other rooms before going there!
+scroll.lvl_4.1n1e.12x23: |
+    If a serpent moves west and it prefers horizontal movement, step to the east of its head to force it to move north.
+scroll.lvl_4.1n1e.14x23: |
+    It works the same vertically, but then the snake prefers eastward movement.
+scroll.lvl_4.entrance.24x12: |
+    Your clock tells you which direction snakes currently prefer. This will help you to control these erratic creatures.
+scroll.lvl_5.1s.11x6: |
+    Getting here is a fabulous feat!
+scroll.lvl_5.1s.12x7: |
+    So how did you like it? Did you manage to get all of the achievements?
+scroll.lvl_5.1s.13x8: |
+    This scroll used to urge you to play more episodes on CaravelGames.com but with this release they all are bundled into one game so you can just Change Episode from the title screen.
+scroll.lvl_5.1s.14x9: |
+    Game on!
+scroll.lvl_5.1s.18x8: |
+    Really nice, congrats!
+scroll.lvl_5.1s.6x8: |
+    Roach queens will be killed once you step on the checkpoint in the far-right corner.
+scroll.lvl_5.1s.7x8: |
+    Here is a small reward! Kill all the eyes without stepping on the grass.
+scroll.lvl_5.entrance.12x15: |
+    Final words
+scroll.lvl_5.entrance.18x11: |
+    Other puzzles
+scroll.lvl_6.1e.13x16: |
+    Move to the far right and observe how the roach behaves when walking onto a corner diagonally.
+scroll.lvl_6.1e.1x12: |
+    Break these broken and secret walls with your sword.
+scroll.lvl_6.1e.21x17: |
+    If a monster moves diagonally into a corner obstacle, it prefers to slide vertically, if possible.
+scroll.lvl_6.1e.6x10: |
+    Roach queens spawn roach eggs every 30 turns (the turn after the spawn counter becomes red).
+scroll.lvl_6.1e.6x6: |
+    Eggs won't appear on arrows, trapdoors, or yellow gates. Press `%keymap.wait%` or `Numpad 5` to wait a turn.
+scroll.lvl_6.1e.6x8: |
+    Eggs will hatch into fully grown-up roaches 5 turns after being spawned.
+scroll.lvl_6.1s3e.10x16: |
+    Place yourself on the green floor and make sure the roach stands on the sand tile directly south of you...
+scroll.lvl_6.1s3e.10x8: |
+    Place yourself on the green floor and make sure the roach stands on the sand tile directly north of you...
+scroll.lvl_6.1s3e.20x12: |
+    Follow the sandy path to learn the backswipe technique! Remember about diagonal movement and don't turn your sword.
+scroll.lvl_6.1s3e.7x12: |
+    Repeat to analyze the backswipe. Master this technique, for it will prove crucial in your further endeavors.
+scroll.lvl_6.1s3e.9x15: |
+    ...then move southeast to kill it.
+scroll.lvl_6.1s3e.9x9: |
+    ...then move northeast to kill it.
+scroll.lvl_6.2e.1x12: |
+    Wraithwings, unlike roaches, run away from Beethro and try to keep themselves at a distance of five tiles.
+scroll.lvl_6.2e.5x12: |
+    They are not as shy in bigger numbers, and won't hesitate to attack if they surround their prey.
+scroll.lvl_6.3e.10x12: |
+    These pink-purple tiles are trapdoors and they fall if you or a mimic step off them.
+scroll.lvl_6.3e.4x12: |
+    After stepping on a mimic potion, use your mouse or wait key to choose the tile where you want to place the mimic.
+scroll.lvl_6.4e.11x12: |
+    Snakes move by their own, much more complex, movement rules. Their current preference is shown beneath the spawn cycle timer.
+scroll.lvl_6.4e.1x6: |
+    (this scroll contained information about CaravelNet functions that are not available in this version anymore)
+scroll.lvl_6.4e.2x4: |
+    `Escape` opens up the pause menu, where you can view `General Help` to refer to the controls anytime you wish.
+    `Escape` opens up the pause menu, where you can view `General Help` to
+    refer to the controls anytime you wish.
+scroll.lvl_6.4e.2x8: |
+    Click on elements to see what orbs do and what the evil eyes see.
+scroll.lvl_6.4e.4x3: |
+    To prevent yourself from accidentally leaving a room hit %keymap.lock% to lock and unlock it. A small lock icon on the minimap indicates that a room is locked.
+scroll.lvl_6.4e.4x9: |
+    If a monster moves diagonally into a corner obstacle, it prefers to slide vertically, if possible.
+scroll.lvl_6.4e.6x4: |
+    Shift+Key performs the key's action followed by its inverse.
+    Shift+Wait waits until the next spawn.
+    %keymap.battle% performs the opposite of your previous move.
+    %keymap.battle% performs the opposite of your previous move.
+scroll.lvl_6.4e.6x8: |
+    All keys can be remapped from within game options.
+scroll.lvl_6.4e.7x12: |
+    Did you know that serpents can't move over scrolls?
+scroll.lvl_6.4e.7x6: |
+    F3 displays a move counter to help you optimize for better scores.
+scroll.lvl_6.entrance.11x15: |
+    Historical Note:
+    The original Flash version of the game had each episode released as a separate game - the tutorial was aimed at people starting their adventure with later episodes.
+    Historical Note:
+
+    The original Flash version of the game had each episode released as a
+    separate game - the tutorial was aimed at people starting their
+    adventure with later episodes.
+scroll.lvl_6.entrance.5x9: |
+    You can move diagonally even through very narrow corridors.
+# Speeches
+
+# Eleventh Level: 1N1W -- (25, 1)
+speech.10025195: |
+    Hmm...it could be worse...could be a tar mother in here...
+# Eleventh Level: 1N2W -- (2, 23)
+speech.10025191: |
+    Guess I spoke too soon.
+speech.10025192: |
+    Looks like there's something else different about this room...
+speech.10025193: |
+    Every thirty turns tar mothers will make the tar grow by one tile in each direction.
+speech.10025194: |
+    It is relatively safe to be surrounded by growing tar, but you have to watch out for tar babies which might spawn during the growth.
+# Eleventh Level: 2N1E -- (0, 0)
+speech.10025196: |
+    Every thirty turns tar mothers will make the tar grow by one tile in each direction.
+speech.10025197: |
+    It is relatively safe to be surrounded by growing tar, but you have to watch out for tar babies which might spawn during the growth.
+# Eleventh Level: Entrance -- (1, 23)
+speech.10025189: |
+    And I really hate it when the tar grows so high above me... gives me the creeps.
+speech.10025190: |
+    Gah! The tar's grown all the way over the walls!
+# Mastery Level: 1S -- (5, 11)
+speech.10025222: |
+    You have failed...
+# Ninth Level: 1N1E -- (1, 3)
+speech.10025180: |
+    That was just nasty. Maybe tar isn't so bad after all...
+# Ninth Level: 4N4E -- (17, 10)
+speech.10025181: |
+    Ah-ha!  Gotta get up early in the morning to pull one over on Beethro!
+speech.10025182: |
+    I am not amused.
+# Ninth Level: Entrance -- (5, 19)
+speech.10025184: |
+    This is a tutorial area.
+speech.10025185: |
+    Visit it if you haven't played this game before.
+# Ninth Level: Entrance -- (8, 3)
+speech.10025183: |
+    Hot griddled roaches!  No more tar!
+# Tenth Level: 2N2E -- (10, 18)
+speech.10025188: |
+    A door I can't get through. I wonder what's on the other side.
+# Tenth Level: 3N -- (17, 1)
+speech.10025187: |
+    Hrm. This is a very strange door. I can't get through.
+# Tutorial: 1E -- (1, 24)
+speech.10025207: |
+    Your objective in DROD is to clear each level of all monsters.
+speech.10025208: |
+    Hit the roach with your sword to kill it.
+# Tutorial: 2E -- (1, 0)
+speech.10025209: |
+    Force arrows block your movement in a direction opposite to theirs.
+speech.10025210: |
+    Step on the checkpoint. You will go back to the exact moment you stepped on it should you die or restart using `%keymap.restart%`.
+    it should you die or restart using `%keymap.restart%`.
+speech.10025211: |
+    If you die or are in a situation where each move results with death, you can undo with `%keymap.undo%`.
+    If you die or are in a situation where each move results with death, you can
+    undo with `%keymap.undo%`.
+
+# Tutorial: 3E -- (2, 24)
+speech.10025212: |
+    This potion will allow you to place a mimic. Mimics copy every move you make and move immediately after you, but before monsters.
+speech.10025213: |
+    Place the mimic at the tile marked with a checkpoint below. Use it to drop all trapdoors and the red gate will open.
+# Tutorial: 4E -- (1, 24)
+speech.10025214: |
+    Serpents can't be damaged by your sword but they will shrink to death if stuck at a dead end.
+speech.10025215: |
+    Remove all of the blue living tar to reach the evil eye at the top.
+speech.10025216: |
+    Try to keep in mind that the tarstuff can only be damaged on flat edges and any tile which is not stable will turn into tar babies.
+speech.10025217: |
+    Tar is stable when it can form a square blob of at least four tiles with its neighbours.
+speech.10025218: |
+    Congratulations, you have completed this room!
+# Tutorial: Entrance -- (0, 24)
+speech.10025203: |
+    Turn your sword with `%keymap.turn_ccw%` and `%keymap.turn_cw%`.
+speech.10025204: |
+    Now go hit the orb with your sword.
+speech.10025205: |
+    Orbs interact with doors in three ways - they can open, close, or toggle their state.
+speech.10025206: |
+    Click on the orb with the mouse to see which doors it affects and in what way.
+# Twelfth Level: 1S2E -- (1, 1)
+speech.10025201: |
+    Great galloping goblins!
+speech.10025202: |
+    Look at the size of that serpent!
+# Twelfth Level: Entrance -- (8, 9)
+speech.10025198: |
+    Careful, Beethro, careful...
+speech.10025199: |
+    Whew!
+speech.10025200: |
+    These will make some great steaks.
+# Outro
+
+outro: |
+    If only he had a map of Dugan's Dungeon, Beethro would have known that what lies on the thirteenth floor is something which might defeat even the strongest warriors. But at least there won't be any Tar or Serpents there... <p> </p><p> </p> <p> </p><p> </p> <p> </p><p> </p>
+    <font size="32" color="#FFFF00">Congratulations!</font> <p> </p><p> </p> <p> </p><p> </p> <p> </p><p> </p>
+    
+    You have completed the third episode King Dugan's Dungeon Lite. Did you like this one?
+    If only he had a map of Dugan's Dungeon, Beethro would have known that what
+    lies on the thirteenth floor is something which might defeat even the
+    strongest warriors. But at least there won't be any Tar or Serpents there...
+    <p> </p><p> </p>
+    <p> </p><p> </p>
+    <p> </p><p> </p>
+
+    <font size="32" color="#FFFF00">Congratulations!</font>
+    <p> </p><p> </p>
+    <p> </p><p> </p>
+    <p> </p><p> </p>
+
+
+    You have completed the third episode King Dugan's Dungeon Lite. Did you
+    like this one?
