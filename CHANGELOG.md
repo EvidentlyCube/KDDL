@@ -4,6 +4,8 @@
  - [BUGFIX] KDDL Episode 5 ⟶ Twentieth Level: 3N1W, fixed missing translation for speech
  - [FEATURE] Added debug console that can be opened with backtick
  - [FEATURE] Debug Console: added `copy-i18n`, command to copy data used in localization
+ - [BUGFIX] System's keyboard repeat rate no longer overrides "Key repeat rate" setting if it's faster
+ - [BUGFIX] Also game's repeat rate was adjusted to be in sync with the animation speed of the movement
 
 ## 1.6.4 — 2025-05-13
  - [OTHER] KDDL Episode 1 ⟶ Adjusted thresholds for the counting achievements

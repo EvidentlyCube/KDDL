@@ -35,7 +35,7 @@ export class DrodInput {
 		if (e.key == 'Shift') {
 			DrodInput._isShiftDown = true;
 			DrodInput._lastKey = '';
-		} else {
+		} else if (RawInput.mapKey(e.key, e.location, e.code, e.which) !== DrodInput._lastKey) {
 			DrodInput._lastKey = RawInput.mapKey(e.key, e.location, e.code, e.which);
 			DrodInput._lastKeyRepeat = -1;
 		}
@@ -102,7 +102,7 @@ export class DrodInput {
 			return true;
 
 		} else if (DrodInput._currentTime >= DrodInput._lastKeyRepeat) {
-			DrodInput._lastKeyRepeat += 26 + Core.repeatRate * 40;
+			DrodInput._lastKeyRepeat += Core.repeatRate * 12 * 1000/60;
 			return true;
 		}
 
