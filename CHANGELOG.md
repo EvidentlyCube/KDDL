@@ -1,4 +1,5 @@
 ## 1.6.5 — ????-??-??
+ - [BUGFIX] KDDL Episode 1 ⟶ Third Level: 3S1W, fixed incorrectly assigned translation keys which would have caused strings in this room to not be translatable
  - [OTHER] KDDL Episode 2 ⟶ Tutorial Level: 2E, removed redundant scroll from (17,14) since it duplicates information that's in the next room and isn't useful in this room either way
  - [FEATURE] Added debug console that can be opened with backtick
  - [FEATURE] Debug Console: added `copy-i18n`, command to copy data used in localization
