@@ -1,5 +1,6 @@
 ## 1.6.5 — ????-??-??
  - [FEATURE] Added debug console that can be opened with backtick
+ - [FEATURE] Debug Console: added `copy-i18n`, command to copy data used in localization
 
 ## 1.6.4 — 2025-05-13
  - [OTHER] KDDL Episode 1 ⟶ Adjusted thresholds for the counting achievements

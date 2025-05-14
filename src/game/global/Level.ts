@@ -602,21 +602,6 @@ export class Level {
 		}
 	}
 
-	public static debugHoldInfo() {
-		const info: Record<string, unknown> = {
-			'Level Count': Level.getAllLevels().length,
-			'Level Names': Level.getAllLevels().map(xml => `${textAttr(xml, 'NameMessage')} (Order=${attr(xml, 'OrderIndex')})`),
-			'Room Count': Level.getAllRooms().length,
-			'Required Room Count': Level.getAllRooms().filter(xml => xml.getAttribute('IsRequired') === '1').length,
-			'Secret Room Count': Level.getAllRooms().filter(xml => xml.getAttribute('IsRequired') === '1').length,
-			'Monster Counts': Level.getMonsterCounts(Level.hold),
-			'Trapdoors Count': Level.getTrapdoorCount(UtilsXPath.getAllElements('//Rooms', Level.hold)),
-			'i18n': Level.getAllTranslatableStrings(),
-		};
-
-		console.debug(info);
-	}
-
 	public static getMonsterCounts(context: Element | Document): Record<string, number> {
 		const monsterCounts: Record<string, number> = {};
 		for (const monsterXml of UtilsXPath.getAllElements('.//Monsters', Level.hold, context)) {
@@ -667,7 +652,18 @@ export class Level {
 	}
 }
 
+DebugConsole.registerAction('copy-i18n', "Copies to clipboard i18n details about the current hold", () => {
+	const { appendLine } = DebugConsole;
 
+	if (!Level.getHold()) {
+		throw new Error("No hold is currently loaded");
+	} else if (!navigator || !navigator.clipboard || !navigator.clipboard.writeText) {
+		throw new Error("Clipboard modification is not available in this browser");
+	}
+
+	navigator.clipboard.writeText(JSON.stringify(Level.getAllTranslatableStrings(), null, 4));
+	appendLine('JSON copied to clipboard')
+});
 
 DebugConsole.registerAction('log-hold-stats', "Print information about the current hold", () => {
 	const { appendLine } = DebugConsole;

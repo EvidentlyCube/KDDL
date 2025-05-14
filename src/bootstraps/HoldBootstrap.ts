@@ -67,13 +67,8 @@ export class HoldBootstrap {
 		await HoldBootstrap.loadLocale(holdOptions);
 		Achievements.init(holdOptions);
 
-		if (PlatformOptions.isDebug) {
-			await Level.debugHoldInfo();
-		}
-
 		// 6. Show title screen
 		await this.showTitle();
-
 	}
 
 	private static async showTitle() {
