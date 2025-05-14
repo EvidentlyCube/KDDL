@@ -3,7 +3,7 @@ import {HoldOptions} from "./platform/PlatformSpecific";
 
 export const S = {
 	DEBUG: false,
-	EngineVersion: 'V1.6.5-JS',
+	EngineVersion: 'V1.6.6-JS',
 	currentHoldOptions: undefined as (HoldOptions | undefined),
 
 	pagedHoldOptions: [] as HoldOptions[][],
