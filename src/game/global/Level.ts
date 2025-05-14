@@ -14,6 +14,7 @@ import { PackedVars } from './PackedVars';
 import { VOCharacterCommand } from '../managers/VOCharacterCommand';
 import { assertDefined } from 'src/ASSERT';
 import { DebugConsole } from '../DebugConsole';
+import { RecamelLang } from 'src.framework/net/retrocade/camel/RecamelLang';
 
 
 const nothingElement = document.createElement('nothingfound');
@@ -324,7 +325,7 @@ export class Level {
 				return;
 			}
 
-			const translation = _(translationId).trim().replace(/\r\n|\r/g, "\n")
+			const translation = RecamelLang.get('en', translationId).trim().replace(/\r\n|\r/g, "\n")
 			if (translation !== holdText) {
 				differentTranslations.push({
 					translationId,
