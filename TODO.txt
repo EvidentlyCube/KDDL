@@ -1,6 +1,4 @@
 BUGS:
- - Check if operating system's repeat rate for keyboard is not overriding repeate rate in game's settings
 
 FUTURE IMPROVEMENTS:
  - The firefox flicker bug
- - Add console tool for better debugging
