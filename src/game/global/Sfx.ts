@@ -3,13 +3,12 @@ import {NutkaPlayback} from "../../../src.evidently_audio/NutkaPlayback";
 import {NutkaDefinition} from "../../../src.evidently_audio/NutkaDefinition";
 import {UtilsRandom} from "../../../src.framework/net/retrocade/utils/UtilsRandom";
 import {C} from "../../C";
-import {TEffMusicCrossFade} from "../interfaces/TEffMusicCrossFade";
 import {NutkaMusic} from "../../../src.evidently_audio/NutkaMusic";
-import {Core} from "./Core";
 import {RecamelEffect} from "../../../src.framework/net/retrocade/camel/effects/RecamelEffect";
 import {DROD} from "./DROD";
 import {ASSERT} from "../../ASSERT";
 import {HoldOptions} from "../../platform/PlatformSpecific";
+import { TEffMusicFade } from "../interfaces/TEffMusicFade";
 
 const soundsMap = new Map<string, NutkaDefinition>();
 
@@ -174,13 +173,13 @@ export class Sfx {
 		Sfx._musicLibrary.set(
 			C.MUSIC_TITLE,
 			[
-				new NutkaMusic(ResourcesQueue.getSound(C.RES_MUSIC_TITLE)),
+				new NutkaMusic(ResourcesQueue.getSound(C.RES_MUSIC_TITLE), "Title"),
 			],
 		);
 		Sfx._musicLibrary.set(
 			C.MUSIC_OUTRO,
 			[
-				new NutkaMusic(ResourcesQueue.getSound(C.RES_MUSIC_CREDITS)),
+				new NutkaMusic(ResourcesQueue.getSound(C.RES_MUSIC_CREDITS), "Outro"),
 			],
 		);
 	}
@@ -189,27 +188,27 @@ export class Sfx {
 		Sfx._musicLibrary.set(
 			C.MUSIC_PUZZLE,
 			[
-				new NutkaMusic(ResourcesQueue.getSound(hold.music.puzzle1)),
-				new NutkaMusic(ResourcesQueue.getSound(hold.music.puzzle2)),
+				new NutkaMusic(ResourcesQueue.getSound(hold.music.puzzle1), "Puzzle 1"),
+				new NutkaMusic(ResourcesQueue.getSound(hold.music.puzzle2), "Puzzle 2"),
 			],
 		);
 		Sfx._musicLibrary.set(
 			C.MUSIC_ACTION,
 			[
-				new NutkaMusic(ResourcesQueue.getSound(hold.music.attack1)),
-				new NutkaMusic(ResourcesQueue.getSound(hold.music.attack2)),
+				new NutkaMusic(ResourcesQueue.getSound(hold.music.attack1), "Attack 1"),
+				new NutkaMusic(ResourcesQueue.getSound(hold.music.attack2), "Attack 2"),
 			],
 		);
 		Sfx._musicLibrary.set(
 			C.MUSIC_AMBIENT,
 			[
-				new NutkaMusic(ResourcesQueue.getSound(hold.music.ambient)),
+				new NutkaMusic(ResourcesQueue.getSound(hold.music.ambient), "Ambient"),
 			],
 		);
 		Sfx._musicLibrary.set(
 			C.MUSIC_LEVEL_EXIT,
 			[
-				new NutkaMusic(ResourcesQueue.getSound(hold.music.winLevel)),
+				new NutkaMusic(ResourcesQueue.getSound(hold.music.winLevel), "Level Exit"),
 			],
 		);
 	}
@@ -218,7 +217,7 @@ export class Sfx {
 	private static _currentMusic: string;
 	private static _currentChannel: NutkaMusic|null;
 
-	private static _crossFades: TEffMusicCrossFade[] = [];
+	private static _musicFades = new Map<NutkaMusic, TEffMusicFade>();
 	private static _musicLibrary = new Map<string, NutkaMusic[]>();
 
 	public static getMusicInstance(musicName: string): NutkaMusic {
@@ -236,14 +235,12 @@ export class Sfx {
 			return;
 		}
 
-		while (Sfx._crossFades.length) {
-			Sfx._crossFades.shift()!.stop();
-		}
-
 		if (Sfx._currentChannel) {
-			Sfx._crossFades.push(
-				new TEffMusicCrossFade(Sfx._currentChannel, false, 1, 250, Sfx.soundFinishedCallback),
+			const fade = Sfx._musicFades.get(Sfx._currentChannel) ?? new TEffMusicFade(
+				Sfx._currentChannel, 0, 250, Sfx.fadeFinishedCallback
 			);
+
+			Sfx._musicFades.set(Sfx._currentChannel, fade.toFadeIn(250))
 		}
 
 		ASSERT(Sfx.getMusicInstance(music));
@@ -253,9 +250,11 @@ export class Sfx {
 		Sfx._currentChannel.isLooping = true;
 		Sfx._currentChannel.play();
 
-		Sfx._crossFades.push(
-			new TEffMusicCrossFade(Sfx._currentChannel, true, 1, 250, Sfx.soundFinishedCallback),
+		const fade = Sfx._musicFades.get(Sfx._currentChannel) ?? new TEffMusicFade(
+			Sfx._currentChannel, 1, 250, Sfx.fadeFinishedCallback
 		);
+
+		Sfx._musicFades.set(Sfx._currentChannel, fade.toFadeIn(250))
 	}
 
 	public static update() {
@@ -267,20 +266,16 @@ export class Sfx {
 			return;
 		}
 
-		const adds = [];
-		for (let i: number = Sfx._crossFades.length - 1; i >= Sfx._crossFades.length; i--) {
-			const effect = Sfx._crossFades[i].invert();
-
-			if (effect) {
-				adds.push(effect);
-			}
+		for (const fade of Array.from(Sfx._musicFades.values())) {
+			Sfx._musicFades.set(fade.channel, fade.toFadeOut(2500));
 		}
-		Sfx._crossFades = Sfx._crossFades.concat(adds);
 
 		if (Sfx._currentChannel) {
-			Sfx._crossFades.push(
-				new TEffMusicCrossFade(Sfx._currentChannel, false, Core.volumeMusic, 2500),
+			const fade = Sfx._musicFades.get(Sfx._currentChannel) ?? new TEffMusicFade(
+				Sfx._currentChannel, 0, 2500, Sfx.fadeFinishedCallback
 			);
+
+			Sfx._musicFades.set(Sfx._currentChannel, fade.toFadeOut(2500))
 		}
 
 		if (!music) {
@@ -296,16 +291,16 @@ export class Sfx {
 		Sfx._currentChannel.isLooping = true;
 		Sfx._currentChannel.play();
 
-		Sfx._crossFades.push(
-			new TEffMusicCrossFade(Sfx._currentChannel, true, Core.volumeMusic, 2500, Sfx.soundFinishedCallback),
+		const fade = Sfx._musicFades.get(Sfx._currentChannel) ?? new TEffMusicFade(
+			Sfx._currentChannel, 1, 2500, Sfx.fadeFinishedCallback
 		);
+
+		Sfx._musicFades.set(Sfx._currentChannel, fade.toFadeIn(2500))
 	}
 
-	private static soundFinishedCallback(effect: RecamelEffect | undefined) {
-		const index: number = Sfx._crossFades.indexOf(effect as TEffMusicCrossFade);
-
-		if (index !== -1) {
-			Sfx._crossFades.splice(index, 1);
+	private static fadeFinishedCallback(effect: RecamelEffect | undefined) {
+		if (effect) {
+			Sfx._musicFades.delete((effect as TEffMusicFade).channel);
 		}
 	}
 

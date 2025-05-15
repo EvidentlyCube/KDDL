@@ -13,6 +13,8 @@ export class NutkaMusic  implements NutkaManagedSound {
 	private _playback?: NutkaPlayback;
 	private _resumePosition: number;
 
+	public name = "";
+
 	public get isPlaying() {
 		return !!this._playback;
 	}
@@ -58,12 +60,13 @@ export class NutkaMusic  implements NutkaManagedSound {
 		}
 	}
 
-	constructor(definition: NutkaDefinition) {
+	constructor(definition: NutkaDefinition, name = "") {
 		this._defaultLayer = definition.defaultLayer;
 		this._definition = definition;
 		this._resumePosition = 0;
 		this._isLooping = false;
-		this._volume = 1;
+		this._volume = 0;
+		this.name = name;
 	}
 
 	public play() {

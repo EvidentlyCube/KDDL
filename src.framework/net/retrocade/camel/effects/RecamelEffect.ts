@@ -150,7 +150,7 @@ export class RecamelEffect extends RecamelObject {
 			this._isBlocked = false;
 		}
 
-		if (S.DEBUG) {
+		if (this.duration === 0) {
 			return 1;
 		}
 
