@@ -237,14 +237,6 @@ export class TWindowPause extends RecamelWindow {
 		this.close();
 	}
 
-
-	private onFadeReturnToTitle() {
-		RecamelTooltip.hide();
-		this.close();
-
-		TStateTitle.show();
-	}
-
 	private clickRestore() {
 		RecamelTooltip.hide();
 		new RecamelEffectFade(this, 1, 0, EFFECT_DURATION);

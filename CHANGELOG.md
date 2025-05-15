@@ -1,5 +1,6 @@
 ## 1.6.8 - ????-??-??
  - [BUGFIX] It should no longer be possible to make music stop playing by triggering a fading out track to play (eg by quickly walking between empty room and a room with a monster)
+ - [OTHER] Improved tooltip in game's pause menu for "Return to title screen" — it no longer incorrectly mentions progress in the current room is lost
 
 ## 1.6.7 — 2025-05-15
  - [BUGFIX] Fixed incorrect line heights that one player had.

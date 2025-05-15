@@ -460,9 +460,9 @@ ui.pause.achievements.tooltip: |
 ui.pause.options.button: Options
 ui.pause.return_to_title.button: Return to title screen
 ui.pause.return_to_title.tooltip: |
-    Game progress is saved,
-    but the current room's progress will
-    be lost if you quit the game.
+    Progress is saved.
+    You will also retain your
+    progress in the current room.
 ui.pause.restore.button: Restore to a different room
 
 
