@@ -136,6 +136,8 @@ export class TStatePreloader extends RecamelState {
 			this._holdScreens.forEach(screen => screen.visible = false);
 			this._prevScreenButton.visible = false;
 			this._nextScreenButton.visible = false;
+			this._exportButton.visible = false;
+			this._importButton.visible = false;
 
 			this._loadingText.alignCenter();
 			this._loadingText.alignMiddle();
@@ -146,6 +148,8 @@ export class TStatePreloader extends RecamelState {
 			this._holdScreens[0].visible = true;
 
 			this._loadingText.visible = false;
+			this._exportButton.visible = true;
+			this._importButton.visible = true;
 
 			const lastHoldOptions = this._lastHoldOptions;
 			this.changePage(

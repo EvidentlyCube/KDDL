@@ -1,6 +1,7 @@
 ## 1.6.7 — ????-??-??
  - [BUGFIX] Fixed incorrect line heights that one player had.
  - [BUGFIX] Fixed another incorrect hold score case. Because achievements were loaded AFTER hold score was loaded it was possible for the score to incorrectly change when going between episodes
+ - [BUGFIX] Export/Import buttons are no longer visible while the game is still loading
  - [OTHER] Adjusted the weights for hold completion and mastery when calculating hold score
  - [OTHER] Removed debug console command `debug-text-dimensions` as it's no longer needed
 
