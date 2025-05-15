@@ -10,12 +10,9 @@ Licensed under the MIT License
 
 
 src.assets/
------------
-Check LICENSE.txt in subdirectories for license information
-
-
+src.pixi/
 types/
-------
+-----------
 Check LICENSE.txt in subdirectories for license information
 
 

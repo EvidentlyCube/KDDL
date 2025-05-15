@@ -21,11 +21,15 @@ import {PlatformOptions} from "../platform/PlatformOptions";
 import { Kddl6HoldOptions } from "src/platform/InitKDDL6";
 import { PermanentStoreSlot } from "src/game/global/store/PermanentStoreSlot";
 import { DebugConsole } from "src/game/DebugConsole";
+import { TextMetrics } from "pixi.js";
+import { registerTextMetricsMonkeyPatch } from "src.pixi/TextMetricsMonkeyPatch";
 
 require('../../src.assets/font/toms-new-roman.css');
 
 export class Bootstrap {
 	public static async bootstrap() {
+		Bootstrap.registerMonkeyPatches();
+
 		S.allHoldOptions = [
 			Kddl1HoldOptions,
 			Kddl2HoldOptions,
@@ -160,5 +164,11 @@ export class Bootstrap {
 	private static async initCore() {
 		Gfx.initialize();
 		Core.init();
+	}
+
+	private static registerMonkeyPatches() {
+		registerTextMetricsMonkeyPatch();
+
+		TextMetrics.clearMetrics();
 	}
 }
