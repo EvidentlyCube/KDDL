@@ -9,6 +9,7 @@ import { PermanentStore } from "./store/PermanentStore";
 import { VODemoRecord } from "../managers/VODemoRecord";
 import { Commands } from "./Commands";
 import { Game } from "./Game";
+import { intAttr } from "src/XML";
 
 export class Progress {
 	/**
@@ -205,8 +206,6 @@ export class Progress {
 				Progress._roomIdToDemo.set(demo.roomId, demo);
 			}
 
-			GlobalHoldScore.updateHoldScore();
-
 		} catch (e) {
 			PermanentStore.holds[HoldInfo().id].isCompleted.value = false;
 			PermanentStore.holds[HoldInfo().id].isMastered.value = false;
@@ -333,8 +332,9 @@ export class Progress {
 			return false;
 		}
 
-		for (const room of Level.getAllSecretRooms()) {
-			if (!Progress.wasRoomEverConquered(parseInt(room.getAttribute('RoomID') || '0'))) {
+		for (const roomXml of Level.getAllSecretRooms()) {
+			const roomId = intAttr(roomXml, 'RoomID');
+			if (!Progress.wasRoomEverConquered(roomId)) {
 				return false;
 			}
 		}

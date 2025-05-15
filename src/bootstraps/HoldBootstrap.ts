@@ -32,9 +32,7 @@ import {TStateTitle} from "../game/states/TStateTitle";
 import {RecamelEffectScreenshot} from "../../src.framework/net/retrocade/camel/effects/RecamelEffectScreenshot";
 import {RecamelEffectFade} from "../../src.framework/net/retrocade/camel/effects/RecamelEffectFade";
 import {Achievements} from "../game/achievements/Achievements";
-import { PlatformOptions } from "src/platform/PlatformOptions";
-import { Level } from "src/game/global/Level";
-import { parseMinimalYaml } from "src/utils/MicroYaml";
+import { GlobalHoldScore } from "src/game/global/GlobalHoldScore";
 
 require('../../src.assets/font/toms-new-roman.css');
 
@@ -66,6 +64,7 @@ export class HoldBootstrap {
 		await once(HoldBootstrap.initializeGameClasses);
 		await HoldBootstrap.loadLocale(holdOptions);
 		Achievements.init(holdOptions);
+		GlobalHoldScore.updateHoldScore();
 
 		// 6. Show title screen
 		await this.showTitle();
