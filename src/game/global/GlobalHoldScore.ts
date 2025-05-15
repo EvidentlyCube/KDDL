@@ -11,8 +11,8 @@ import { UtilsString } from "src.framework/net/retrocade/utils/UtilsString"
 const VISIT_ROOM_VALUE = 1;
 const CONQUER_ROOM_VALUE = 5;
 const ACHIEVEMENT_VALUE = 10;
-const MASTERED_VALUE = 5;
-const COMPLETED_VALUE = 10;
+const MASTERED_VALUE = 3;
+const COMPLETED_VALUE = 7;
 
 export type HoldScores = Record<HoldId, number>;
 
