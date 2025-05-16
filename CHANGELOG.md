@@ -3,6 +3,7 @@
  - [I18N] KDDL Episode 5 ⟶ Level 17: 1N1W, fixed the second achievement in this room having the same description and name as the first one
  - [I18N] KDDL Episode 5 ⟶ Level 24: 1N, changed achievement name from "Ladies Last" to "Mothers Last" because it was already used in another achievement
  - [I18N] Updated a lot of texts to: always refer to level names by long hand; fixed 'Neather missing the quotation at the start in one place; standardized achievement description for ones where you have to win without turning; added "Combo" counter to the additional Tuning Fork achievements for specific rooms; updated mastery level entrance description to be the same in EP 5 & 6 as in other episodes;
+ - [I18N] Updated help description to no longer refer to CaravelNet functionalities which are not available in this release
  - [OTHER] Improved tooltip in game's pause menu for "Return to title screen" — it no longer incorrectly mentions progress in the current room is lost
 
 ## 1.6.7 — 2025-05-15
