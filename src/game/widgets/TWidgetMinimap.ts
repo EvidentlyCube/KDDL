@@ -10,6 +10,7 @@ import {ASSERT} from "../../ASSERT";
 import {Gfx} from "../global/Gfx";
 import {UtilsBase64} from "../../../src.framework/net/retrocade/utils/UtilsBase64";
 import {BinaryReader} from "csharp-binary-stream";
+import { F } from "src/F";
 
 const x = [14, 0];
 const y = [448, 0];
@@ -337,5 +338,49 @@ export class TWidgetMinimap {
 
 
 		return Level.getRoomByPosition(TWidgetMinimap.lastX + mouseX, TWidgetMinimap.lastY + mouseY);
+	}
+
+	public static API_drawLevel(levelId: number) {
+		const roomIds = Level.getRoomIdsByLevel(levelId);
+
+		let minX = 0;
+		let maxX = 0;
+		let minY = 0;
+		let maxY = 0;
+
+		for (const roomId of roomIds) {
+			const pos =  Level.getRoomOffsetInLevel(roomId);
+
+			minX = Math.min(minX, pos.x);
+			maxX = Math.max(maxX, pos.x + 1);
+			minY = Math.min(minY, pos.y);
+			maxY = Math.max(maxY, pos.y + 1);
+		}
+
+		const bd = F.newCanvasContext(S.RoomWidth * (maxX - minX), S.RoomHeight * (maxY - minY));
+
+		for (const roomId of roomIds) {
+			const pos = Level.getRoomOffsetInLevel(roomId);
+			const room = new VOMinimapRoom(Level.getRoom(roomId));
+
+			room.completed  = true;
+			room.wasVisited = true;
+
+			const roomX = (pos.x - minX) * S.RoomWidth;
+			const roomY = (pos.y - minY) * S.RoomHeight;
+
+			TWidgetMinimap.API_drawRoomForLevel(room, bd, roomX, roomY);
+		}
+
+		return bd;
+	}
+
+	private static API_drawRoomForLevel(room:VOMinimapRoom, bitmapData:CanvasRenderingContext2D, x:number, y:number):void {
+		TWidgetMinimap.drawRoom(room, false);
+
+		UtilsBitmapData.blit(room.bitmapData.canvas, bitmapData, x, y);
+
+		room.bitmapData.canvas.width = 0;
+		room.bitmapData.canvas.height = 0;
 	}
 }
