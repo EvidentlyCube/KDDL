@@ -1,5 +1,6 @@
 ## 1.6.8 - ????-??-??
  - [BUGFIX] It should no longer be possible to make music stop playing by triggering a fading out track to play (eg by quickly walking between empty room and a room with a monster)
+ - [BUGFIX] KDDL Episode 5, the room with entrance to Mastery Level is no longer a required room
  - [I18N] KDDL Episode 1 ⟶ Level 1: 2N1W, updated the "click orb" scroll to also include info about clicking doors
  - [I18N] KDDL Episode 1 ⟶ Level 1: 6N2W, updated the name of the achievement to match the scroll
  - [I18N] KDDL Episode 2, fixed the master wall scroll incorrectly calling it master door
