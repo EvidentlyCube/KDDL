@@ -266,6 +266,12 @@ export class Progress {
 		return demo;
 	}
 
+	public static getRoomIdsWithDemo(): number[] {
+		return Array.from(Progress._roomIdToDemo.values())
+			.filter(demo => demo.hasScore)
+			.map(demo => demo.roomId);
+	}
+
 	public static clearProgress() {
 		Progress._roomEntranceStates.length = 0;
 		Progress._allEverConqueredRoomIDs.clear();

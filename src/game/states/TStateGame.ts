@@ -63,7 +63,6 @@ import { TWindowMessage } from "../windows/TWindowMessage";
 import { MonsterMessageType } from "../managers/VOMonsterMessage";
 import { TWindowYesNoMessage } from "../windows/TWindowYesNoMessage";
 import { TCharacter } from "../objects/actives/TCharacter";
-import { PermanentStore } from "../global/store/PermanentStore";
 import { TWindowLevelScore } from "../windows/TWindowLevelScore";
 
 export class TStateGame extends RecamelState {
