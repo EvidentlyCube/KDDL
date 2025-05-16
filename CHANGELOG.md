@@ -2,6 +2,7 @@
  - [BUGFIX] It should no longer be possible to make music stop playing by triggering a fading out track to play (eg by quickly walking between empty room and a room with a monster)
  - [I18N] KDDL Episode 1 ⟶ Level 1: 2N1W, updated the "click orb" scroll to also include info about clicking doors
  - [I18N] KDDL Episode 1 ⟶ Level 1: 6N2W, updated the name of the achievement to match the scroll
+ - [I18N] KDDL Episode 2, fixed the master wall scroll incorrectly calling it master door
  - [I18N] KDDL Episode 5 ⟶ Level 17: 1N1W, fixed the second achievement in this room having the same description and name as the first one
  - [I18N] KDDL Episode 5 ⟶ Level 24: 1N, changed achievement name from "Ladies Last" to "Mothers Last" because it was already used in another achievement
  - [I18N] Updated a lot of texts to: always refer to level names by long hand; fixed 'Neather missing the quotation at the start in one place; standardized achievement description for ones where you have to win without turning; added "Combo" counter to the additional Tuning Fork achievements for specific rooms; updated mastery level entrance description to be the same in EP 5 & 6 as in other episodes;

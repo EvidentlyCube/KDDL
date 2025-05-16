@@ -175,9 +175,9 @@ entrance.lvl_5.entrance.10x18: |
 entrance.lvl_6.entrance.8x12: |
     Tutorial
 scroll.lvl_1.1n2w.6x7: I hope you left yourself a path back.
-scroll.lvl_2.1s1w.10x12: |
-    This is a Master Door.
-    It will open when you have finished the last level and also conquered all secret rooms.
+scroll.lvl_2.1s1w.10x12: >
+    This is a master wall. It won't open until you conquer
+    the hold and also all of its secrets.
 scroll.lvl_2.3e.3x11: Secret Passageway
 scroll.lvl_3.1n.14x2: |
     My tribute to Tron.
