@@ -1,6 +1,7 @@
 ## 1.6.8 - ????-??-??
  - [BUGFIX] It should no longer be possible to make music stop playing by triggering a fading out track to play (eg by quickly walking between empty room and a room with a monster)
- - [BUGFIX] KDDL Episode 5 ⟶ Level 17: 1N1W, fixed the second achievement in this room having the same description and name as the first one
+ - [I18N] KDDL Episode 5 ⟶ Level 17: 1N1W, fixed the second achievement in this room having the same description and name as the first one
+ - [I18N] KDDL Episode 5 ⟶ Level 24: 1N, changed achievement name from "Ladies Last" to "Mothers Last" because it was already used in another achievement
  - [OTHER] Improved tooltip in game's pause menu for "Return to title screen" — it no longer incorrectly mentions progress in the current room is lost
 
 ## 1.6.7 — 2025-05-15
