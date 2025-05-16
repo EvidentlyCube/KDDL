@@ -171,14 +171,25 @@ export const Gfx = {
 			]));
 		}
 
+		Gfx.ButtonSystemTexture?.destroy(true);
+		Gfx.ButtonDownSystemTexture?.destroy(true);
+		Gfx.WindowSystemTexture?.destroy(true);
+		Gfx.TooltipSystemTexture?.destroy(true);
+		Gfx.InputSystemTexture?.destroy(true);
+		Gfx.TutorialKeysTexture?.destroy(true);
+		Gfx.LevelStartBgTexture?.destroy(true);
+		Gfx.TitleScreenBgTexture?.destroy(true);
+		Gfx.MenuBgTexture?.destroy(true);
+		Gfx.GameLogoTexture?.destroy(true);
+		Gfx.CaravelLogoTexture?.destroy(true);
+		Gfx.RetrocadeLogoTexture?.destroy(true);
+
 		Gfx.ButtonSystemTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.BUTTON_SYSTEM));
 		Gfx.ButtonDownSystemTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.BUTTON_DOWN_SYSTEM));
 		Gfx.WindowSystemTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.WINDOW_BG_SYSTEM));
 		Gfx.TooltipSystemTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.TOOLTIP_BG_SYSTEM));
 		Gfx.InputSystemTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.INPUT_BG_SYSTEM));
-
 		Gfx.TutorialKeysTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.TUTORIAL_KEYS));
-
 		Gfx.LevelStartBgTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.LEVEL_START_BACKGROUND));
 		Gfx.TitleScreenBgTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.TITLE_SCREEN_BACKGROUND));
 		Gfx.MenuBgTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.MENU_BACKGROUND));

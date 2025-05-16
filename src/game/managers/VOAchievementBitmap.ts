@@ -37,6 +37,12 @@ export class VOAchievementBitmap extends RecamelSprite {
 		}
 	}
 
+	public destroy(options: PIXI.IDestroyOptions) {
+		super.destroy(options);
+
+		F.destroyCanvas(this._bitmapData);
+	}
+
 	private onClick() {
 		if (RawInput.isCtrlDown) {
 			Achievements.markAchievementCompleted(this.achievement);

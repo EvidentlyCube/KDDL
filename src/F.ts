@@ -23,6 +23,15 @@ const FLOORS = new Set([
 
 const _calculatedDistances = new Map<number, number>();
 export const F = {
+	destroyCanvas(source: HTMLCanvasElement | CanvasRenderingContext2D) {
+		if (source instanceof HTMLCanvasElement) {
+			source.width = 0;
+			source.height = 0;
+		} else if (source instanceof CanvasRenderingContext2D) {
+			source.canvas.width = 0;
+			source.canvas.height = 0;
+		}
+	},
 	newFragment(source: CanvasImageSource, x: number, y: number, width: number, height: number): CanvasImageSourceFragment {
 		if (!source) {
 			throw new Error("No source given");

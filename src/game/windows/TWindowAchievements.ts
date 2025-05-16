@@ -138,7 +138,7 @@ export class TWindowAchievements extends RecamelWindow {
 	}
 
 	public removeData() {
-		this._achievements.forEach(x => x.texture.baseTexture.destroy());
+		this._achievements.forEach(x => x.destroy({ baseTexture: true, children: true, texture: true}));
 	}
 
 	private shown = () => {
