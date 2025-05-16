@@ -1,0 +1,75 @@
+# Glosariusz z nazwami używanymi w tłumaczeniu wraz z komentarzami dlaczego.
+#  - W oryginale DROD często operuje nazwami albo bardzo prostymi albo dziwnie poetyckimi,
+#    często neologizmami i moim celem było utrzymanie tej konwencji. Ponadto na całość
+#    patrzyłem z punktu widzenia jak ludzie nazywaliby rzeczy gdyby naprawdę istniały
+#    w naszym świecie. Np. O ile w oryginale "Tar Baby" ma sens ponieważ jest krótkie
+#    i zwięzłe "Smolne Dziecko" nie brzmi jak coś co ktokolwiek w polsce by powiedział.
+Potwory:
+    # Karaczan brzmi bardziej obraźliwie co dobrze obrazuje stosunek mieszkańców świata
+    # do tych istot
+    Roach: Karaczan
+    # Oryginalna nazwa ma 2 sylaby. "Królowa Karaczanów" ma 7. Ponieważ w grze nie ma
+    # innych królowych można to łatwo skrócić.
+    Roach Queen: Królowa
+    # Przerobiłem naprawdę wiele wariantów nazw, kombinacji, prefiksów, sufiksów, portmanteau
+    # - gała, kwas, oko, ślepie. Dosłowne tłumaczenie "Złe Oko" miało fajne nawiązanie do
+    # folkloru ale jednocześnie nie wyobrażam sobie "native speakera" mówiącego w ten sposób.
+    Evil Eye: Gała
+    # Rozważałem też Smolątko, ale Smołek brzmi przyjemnie przaśnie i ludzko
+    Tar Baby: Smołek
+    # Dosłowne tłumaczenie "Smolna Matka" brzmi źle.
+    Tar Mother: Smołczyca
+    # Pozostałe dwa węże w drodzie to Żmija (Adder) i Grzechotnik (Rattlesnake). Zamiast ogólnego
+    # "węża", który mógłby być mylący z całą kategorią potworów, zdecydowałem się na Pytona
+    # ze względy na to że dobrze się to wymawia a Pytony mają tendencję do bycia dużymi.
+    Serpent: Pyton
+    # Podobna walka jak przy Evil Eye; dawniej był to "Zjawoskrzydlak" ale tak jak w przypadku
+    # Smolne Matki czy Złego Oka nie brzmi to jak nazwa, której używaliby normalni ludzie - a tym
+    # bardziej prości czyściciele lochów.
+    Wraithwing: Widmopierz
+
+Kafelki:
+    Pit: Przepaść
+    Clear: Czyste
+    # Nigdy "wyczyszczone"
+    Cleared: Oczyszczone
+    Trapdoor: Zapadnia
+    Door: Wrota
+    Force Arrow: Blokowskaz
+
+Koncepty:
+    Mastery: Mistrzostwo
+    Post-mastery: Pomistrzostwo
+    # Nie "opuść" ani "zniszcz". Zapadnie "zrzucamy"
+    Drop Trapdoor: Zrzuć Zapadnie
+    Spawn: Rozrost
+    # Nie udało mi się wymyślić nic bardziej kreatywnego
+    Tarstuff: Masa
+    Living Tarstuff: Żywa Masa
+    # Oryginalne określenie oznacza atak po skosie do tyłu, pozwalający zabić przeciwnika
+    # nadchodzącego z boku Beethro. Ponieważ końcowo Beethro staje z boku przeciwnika
+    # gdy go zabija, flankowanie ma sens.
+    Backswipe: Flanka/Flankowanie
+
+Główne elementy gry:
+    # "Pokój" jest zbyt przyziemny i ogólny, "sala" zbyt oficjalna. Komnaty z definicji
+    # jest raczej duża, podobnie jak "room".
+    Room: Komnata
+    # Piętro brzmi zbyt "budynkowo"; poziom słuszniej sugeruje coś pod ziemią
+    Level: Poziom
+    Hold: Loch
+    # Jako jedno słowo, bez myślnika
+    Minimap: Minimapa
+    # "Smite" nie ma zbyt dobrego tłumaczenia, szczególnie w kontekście że coś jest zabite lub zniszczone
+    # do końca; a zbliżone zwroty jak cios, uderzenie, pogrom, zniszczenie rzadko brzmią dobrze w kontekście.
+    # Ostatecznie zostało "eksterminować" jako to czym zajmują się Smitemasterzy - ekterminowaniem wszelkich
+    # potworów w lochach
+    Smite: Eksterminować
+    # Brzmi fajnie, czego chcieć więcej?
+    Smitemaster: Ekstermistrz
+    Really Big Sword: Naprawdę Wielki Miecz
+
+Powiedzenia:
+    Holy Hobuffin: Jasne Hobuffiny
+    Gob: Dóg/Doże
+    Jeebus: Jeenus

@@ -203,14 +203,9 @@ ui.help.description: |
     you get around to playing the game.
 
 
-    \tFlash DROD is a port of the original DROD game. It uses the media found in the
-    newer DROD game engines that you can download to play on your computer from
-    CaravelGames.com.
-
-
-    Thanks to integrated CaravelNet capabilities, besides just completing the
-    puzzles, players can compete with each other for high scores by completing each
-    room in the fewest moves possible.
+    \tKing Dugan's Dungeon lite is a web port of the original DROD - originally
+    it used the now forgotten Flash technology. It uses the media found in the
+    newer DROD game engines that you can find on CaravelGames.com
 
 ui.help.buttons.caravelnet: |
     About CaravelNet
