@@ -115,7 +115,7 @@ achievement.description.l5.stuck_neather: |
 achievement.name.l5.stab_neather: Impossibly Careful
 achievement.description.l5.stab_neather: |
     Twenty-Fifth Level
-    Stab Neather in a room in a place where it should be impossible
+    Stab 'Neather in a room in a place where it should be impossible
 
 # Custom names for common achievements
 
@@ -136,6 +136,7 @@ achievement.description.l2.tuning_fork: |
     Twenty-Second Level: 1N1W
     Perform a combo of 4 unique orb hits in sequence in this room
     The same rules as in "Tuning Bork" achievement
+    Current combo: %count%
 
 achievement.name.monster_kills_0: Fried Roaches
 achievement.name.monster_kills_1: Queen Cutlets
@@ -198,6 +199,8 @@ entrance.lvl_5.entrance.16x22: >
     "Hold up! I want to talk to you!" But he didn't stop.
 entrance.lvl_6.entrance.18x12: >
     Beethro descended the stairs only to find himself in an uncharted corridor...
+
+    He won't get paid for clean-up here, but his professional honor urges him onward.
 
 
 # Scrolls

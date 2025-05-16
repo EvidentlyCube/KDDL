@@ -16,97 +16,97 @@ level_name_5: Mastery Level
 
 achievement.name.l1.1w: Janitorial Speed
 achievement.description.l1.1w: |
-    17th Level: 1W
+    Seventeenth Level: 1W
     Clear the room before 4th tar growth
 
 achievement.name.l1.1n1w: Obsessive Compulsive
 achievement.description.l1.1n1w: |
-    17th Level: 1N1W
+    Seventeenth Level: 1N1W
     Clear all tar, drop all trapdoors, clear the room and leave north in one go
 
 achievement.name.l1.1n1w_2: To The Heart of the Matter
 achievement.description.l1.1n1w_2: |
-    17th Level: 1N1W
+    Seventeenth Level: 1N1W
     Clear the room before 2nd tar growth
 
 achievement.name.l1.2s1e: Spare the Innocents
 achievement.description.l1.2s1e: |
-    17th Level: 2S1E
+    Seventeenth Level: 2S1E
     Kill the tar mother before killing any tar baby
 
 achievement.name.l1.1s2e: Sterilization
 achievement.description.l1.1s2e: |
-    17th Level: 1S2E
+    Seventeenth Level: 1S2E
     Kill the serpent before any tar baby appears
 
 achievement.name.l2.1n: Aim North!
 achievement.description.l2.1n: |
-    18th Level: 1N
+    Eighteenth Level: 1N
     Clear the room without turning
 
 achievement.name.l2.2n1e: Straight Ways
 achievement.description.l2.2n1e: |
-    18th Level: 2N1E
+    Eighteenth Level: 2N1E
     Clear the room without moving diagonally
 
 achievement.name.l2.1n2e: Eastern Solutions
 achievement.description.l2.1n2e: |
-    18th Level: 1N2E
+    Eighteenth Level: 1N2E
     Clear the room by entering from the east and without turning
 
 achievement.name.l2.1e: I Can Do It Myself Mom!
 achievement.description.l2.1e: |
-    18th Level: 1E
+    Eighteenth Level: 1E
     Use a goblin for only one of the corner serpents and clear the room
 
 achievement.name.l2.1e_2: Traps First
 achievement.description.l2.1e_2: |
-    18th Level: 1E
+    Eighteenth Level: 1E
     Drop all trapdoors before any serpent dies and clear the room
 
 achievement.name.l2.1n1e: Quenched
 achievement.description.l2.1n1e: |
-    18th Level: 1N1E
+    Eighteenth Level: 1N1E
     Clear the room without drinking the potion
 
 achievement.name.l3.2s: South is Scary
 achievement.description.l3.2s: |
-    19th Level: 2S
+    Nineteenth Level: 2S
     Clear the room without going past the second row of tiles
 
 achievement.name.l4.entrance: Frozen
 achievement.description.l4.entrance: |
-    20th Level: Entrance
+    Twentieth Level: Entrance
     Don't turn your sword after killing the first monster then clear the room
 
 achievement.name.l4.1n: Swine Before Pearls
 achievement.description.l4.1n: |
-    20th Level: 1N
+    Twentieth Level: 1N
     Kill the brain before killing any roach queen then clear the room
 
 achievement.name.l4.3n1w: Pearls Before Swine
 achievement.description.l4.3n1w: |
-    20th Level: 3N1W
+    Twentieth Level: 3N1W
     Kill all brains before killing any goblin then clear the room
 
 achievement.name.l4.3n: Raw Stupidity
 achievement.description.l4.3n: |
-    20th Level: 3N
+    Twentieth Level: 3N
     Kill all brains before killing any roach queen then clear the room
 
 achievement.name.l4.2n2w: Patient Execution
 achievement.description.l4.2n2w: |
-    20th Level: 2N2W
+    Twentieth Level: 2N2W
     Kill all serpents before killing any roach queen then clear the room
 
 achievement.name.l4.1n2w: Slithering Elimination
 achievement.description.l4.1n2w: |
-    20th Level: 1N2W
+    Twentieth Level: 1N2W
     Kill all other monsters before killing the serpent
 
 achievement.name.l4.2n1w: Aim for the Eyes
 achievement.description.l4.2n1w: |
-    20th Level: 2N1W
+    Twentieth Level: 2N1W
     Kill all evil eyes before killing any roach queen then clear the room
 
 
@@ -114,20 +114,21 @@ achievement.description.l4.2n1w: |
 # Custom names for common achievements
 
 achievement.name.level_1: Amateur Delver
-achievement.description.level_1: Clear 17th Level
+achievement.description.level_1: Clear Seventeenth Level
 achievement.name.level_2: Fledgling Smiter
-achievement.description.level_2: Clear 18th Level
+achievement.description.level_2: Clear Eighteenth Level
 achievement.name.level_3: Contract Exterminator
-achievement.description.level_3: Clear 19th Level
+achievement.description.level_3: Clear Nineteenth Level
 achievement.name.level_4: I'm a Professional!
-achievement.description.level_4: Clear 20th Level
+achievement.description.level_4: Clear Twentieth Level
 
 achievement.name.tuning_fork_in_sequence: Tuning Pork
 achievement.name.tuning_fork_in_sequence-2: Tuning Dork
 achievement.description.tuning_fork_in_sequence-2: |
-    18th Level: 2N
+    Eighteenth Level: 2N
     Perform a combo of 6 unique orb hits in sequence in this room
     The same rules as in "Tuning Pork" achievement
+    Current combo: %count%
 
 achievement.name.monster_kills_0: Charred Roaches
 achievement.name.monster_kills_1: Queen Ribbons
@@ -177,6 +178,8 @@ entrance.lvl_4.entrance.10x12: >
     no chance against them. Frightening, if you think about it.
 entrance.lvl_5.entrance.12x19: >
     Beethro descended the stairs only to find himself in an uncharted corridor...
+
+    He won't get paid for clean-up here, but his professional honor urges him onward.
 
 
 # Scrolls

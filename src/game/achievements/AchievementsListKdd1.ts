@@ -121,7 +121,7 @@ export function AchievementsListKdd1(to: Achievement[]) {
 		winOn: () => !anyMonsterIn(0, 0, 19, 11),
 	});
 
-	// First Level -- Clear 7 infested, non-secret rooms without turning your sword
+	// First Level -- Clear 7 infested, non-secret rooms without turning
 	addAchievement(to, {
 		id: '2bb1b556bcc2b05566aa98d6d9e8211a',
 		name: 'achievement.name.l1.steady_hand',
@@ -231,7 +231,7 @@ export function AchievementsListKdd1(to: Achievement[]) {
 		failOn: () => hasMonster(C.M_ROACH_EGG)
 	})
 
-	// Second Level 3N -- Clear the room without turning your sword
+	// Second Level 3N -- Clear the room without turning
 	addAchievement(to, {
 		id: '5ff967a6354cd8fc86f5573b6f15baa8',
 		name: 'achievement.name.l2.3n',
@@ -357,7 +357,7 @@ export function AchievementsListKdd1(to: Achievement[]) {
 		failOn: () => ev(C.CID_MONSTER_DIED_FROM_STAB) && room().isMonsterInRect(3, 3, 23, 22, true),
 	})
 
-	// Third Level 3N -- Clear the room without drinking the potion or turning your sword
+	// Third Level 3N -- Clear the room without drinking the potion or turning
 	addAchievement(to, {
 		id: '985d28893157787e110f8583693e2187',
 		name: 'achievement.name.l3.3n',

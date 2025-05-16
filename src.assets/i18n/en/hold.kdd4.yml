@@ -10,84 +10,84 @@ level_name_2: Fourteenth Level
 level_name_3: Fifteenth Level
 level_name_4: Sixteenth Level
 level_name_5: Mastery Level
-level_name_6: Original 13th Level
+level_name_6: Original Thirteenth Level
 
 
 # Achievements
 
 achievement.name.l1.2s1w: One-Directional Forest
 achievement.description.l1.2s1w: |
-    13th Level: 2S1W
+    Thirteenth Level: 2S1W
     Clear the room without turning
 
 achievement.name.l1.1s: Stoic Snakes
 achievement.description.l1.1s: |
-    13th Level: 1S
+    Thirteenth Level: 1S
     Clear the room without turning
 
 achievement.name.l1.1s1e: Tar Stayer
 achievement.description.l1.1s1e: |
-    13th Level: 1S1E
+    Thirteenth Level: 1S1E
     Clear the room without turning
 
 achievement.name.l1.1s2w: Eyedoors
 achievement.description.l1.1s2w: |
-    13th Level: 1S2W
+    Thirteenth Level: 1S2W
     Clear the room without turning
 
 achievement.name.l2.1s: Goblin Beater
 achievement.description.l2.1s: |
-    14th Level: 1S
-    Clear the room facing North-West the entire time
+    Fourteenth Level: 1S
+    Clear the room facing north-west the entire time
 
 achievement.name.l2.2s: Goblin Crusher
 achievement.description.l2.2s: |
-    14th Level: 2S
-    Clear the room facing East the entire time
+    Fourteenth Level: 2S
+    Clear the room facing east the entire time
 
 achievement.name.l2.1n: Goblin Destroyer
 achievement.description.l2.1n: |
-    14th Level: 1N
-    Clear the room facing South the entire time
+    Fourteenth Level: 1N
+    Clear the room facing south the entire time
 
 achievement.name.l2.2e: Step Aside!
 achievement.description.l2.2e: |
-    14th Level: 2E
+    Fourteenth Level: 2E
     Clear the room without stepping on the trapdoor
 
 achievement.name.l2.2n: Green Mommy
 achievement.description.l2.2n: |
-    14th Level: 2N
+    Fourteenth Level: 2N
     Clear the room without letting the tar mother grow
 
 achievement.name.l2.1n3e: Goblin Killer
 achievement.description.l2.1n3e: |
-    14th Level: 1N3E
+    Fourteenth Level: 1N3E
     Clear the room without turning
 
 achievement.name.l2.2n2e: Strict Policies
 achievement.description.l2.2n2e: |
-    14th Level: 2N2E
+    Fourteenth Level: 2N2E
     Clear the room without letting the goblin stand on the gray road tiles
 
 achievement.name.l2.1n1e: Extreme Sacrifice
 achievement.description.l2.1n1e: |
-    14th Level: 1N1E
+    Fourteenth Level: 1N1E
     Clear the room by killing a goblin last
 
 achievement.name.l3.entrance: Calm Assassin
 achievement.description.l3.entrance: |
-    15th Level: Entrance
+    Fifteenth Level: Entrance
     Clear the room without turning
 
 achievement.name.l3.entrance_2: Step Ahead
 achievement.description.l3.entrance_2: |
-    15th Level: Entrance
+    Fifteenth Level: Entrance
     Drop all trapdoors before clearing the room
 
 achievement.name.l3.1n: Crossing Spiders
 achievement.description.l3.1n: |
-    15th Level: 1N
+    Fifteenth Level: 1N
     After hitting the orb clear the room without orthogonal moves - \
     you can turn, wait and move diagonally
     You can move orthogonally again once monsters are dead to clean up \
@@ -95,12 +95,12 @@ achievement.description.l3.1n: |
 
 achievement.name.l4.1s1e: Growing!
 achievement.description.l4.1s1e: |
-    16th Level: 1S1E
+    Sixteenth Level: 1S1E
     Clear the room without letting tar mother grow
 
 achievement.name.l4.2s: Economic
 achievement.description.l4.2s: |
-    16th Level: 2S
+    Sixteenth Level: 2S
     Clear the room with only 5 orb hits
 
 achievement.name.l5.2n: Master of Eyeion!
@@ -115,22 +115,22 @@ achievement.description.l5.1n1e: |
 
 achievement.name.l6.explore: The Explorer
 achievement.description.l6.explore: |
-    Original 13th Level
+    Original Thirteenth Level
     Visit each room at least once (%count% / 56)
 
 
 # Custom names for common achievements
 
 achievement.name.level_1: Amateur Delver
-achievement.description.level_1: Clear 13th Level
+achievement.description.level_1: Clear Thirteenth Level
 achievement.name.level_2: Fledgling Smiter
-achievement.description.level_2: Clear 14th Level
+achievement.description.level_2: Clear Fourteenth Level
 achievement.name.level_3: Contract Exterminator
-achievement.description.level_3: Clear 15th Level
+achievement.description.level_3: Clear Fifteenth Level
 achievement.name.level_4: I'm a Professional!
-achievement.description.level_4: Clear 16th Level
+achievement.description.level_4: Clear Sixteenth Level
 achievement.name.level_6: It Was a Mistake
-achievement.description.level_6: Clear Original 13th Level
+achievement.description.level_6: Clear Original Thirteenth Level
 
 achievement.name.tuning_fork_in_sequence: Tuning Cork
 
@@ -170,7 +170,10 @@ entrance.lvl_3.entrance.10x11: >
 
     Well, I guess the metaphor breaks down.
 entrance.lvl_4.entrance.15x15: These roaches need an authority figure to guide them. Someone with charisma and character. Someone like you!
-entrance.lvl_5.entrance.13x12: Beethro descended the stairs only to find himself in an uncharted corridor...
+entrance.lvl_5.entrance.13x12: |
+    Beethro descended the stairs only to find himself in an uncharted corridor...
+
+    He won't get paid for clean-up here, but his professional honor urges him onward.
 entrance.lvl_5.entrance.24x16: Beethro ran away from the challenge like a little, scrawny kitten.
 entrance.lvl_5.entrance.24x8: Proud of his achievement, but a whole lot less sane, Beethro emerged from the infamous 13th level of King Dugan's Dungeon.
 entrance.lvl_6.entrance.14x9: Beethro descended into the mystical set of deadly, pointless corridors.
@@ -199,7 +202,7 @@ scroll.lvl_5.1w.13x15: There is but naught here.
 scroll.lvl_5.1w.19x12: There is but naught here.
 scroll.lvl_5.entrance.12x12: Harder versions of existing rooms.
 scroll.lvl_5.entrance.13x11: New puzzles.
-scroll.lvl_5.entrance.14x12: The Original 13th Level
+scroll.lvl_5.entrance.14x12: The Original Thirteenth Level
 scroll.lvl_6.entrance.11x12: Due to the difference in room size between the original DROD and this version some small adjustments were made to make things work.
 scroll.lvl_6.entrance.12x12: Specifically some orb connections were changed, broken walls were added, closed gates were opened and the room with the stairs was slightly modified.
 
@@ -232,10 +235,10 @@ speech.10025234: (I probably didn't need to lock him up there...but better safe 
 # Mastery Level: 1S -- (5, 11)
 speech.10025241: You have failed...
 
-# Original 13th Level: 2S3W -- (5, 16)
+# Original Thirteenth Level: 2S3W -- (5, 16)
 speech.10025243: Here, roachie, roachie...
 
-# Original 13th Level: 3S3W -- (8, 6)
+# Original Thirteenth Level: 3S3W -- (8, 6)
 speech.10025242: Greb! One measly little roachie I've gotta squish.
 
 # Sixteenth Level: 2S1E -- (10, 10)

@@ -31,7 +31,7 @@ achievement.description.l1.6n2w: |
 achievement.name.l1.steady_hand: Steady Hand
 achievement.descriptions.l1.steady_hand: |
     First Level:
-    Clear 7 infested, non-secret rooms without turning your sword.
+    Clear 7 infested, non-secret rooms without turning
     Got %rooms%
 
 achievement.name.l2.2e: Queenburger
@@ -57,7 +57,7 @@ achievement.description.l2.2s3e: |
 achievement.name.l2.3n: Calm Arm
 achievement.description.l2.3n: |
     Second Level: 3N
-    Clear the room without turning your sword
+    Clear the room without turning
 
 achievement.name.l3.2n: Get the Scroll
 achievement.description.l3.2n: |
@@ -92,7 +92,7 @@ achievement.description.l3.2n1e: |
 achievement.name.l3.3n: The Mystery
 achievement.description.l3.3n: |
     Third Level: 3N
-    Clear the room without drinking the potion or turning your sword
+    Clear the room without drinking the potion or turning
 
 achievement.name.l4.1n: Don't Look Back
 achievement.description.l4.1n: |

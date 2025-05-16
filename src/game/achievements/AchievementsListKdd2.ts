@@ -23,7 +23,7 @@ export function AchievementsListKdd2(to: Achievement[]) {
 	// :: Room Specific
 	// ::::::::::::::::::::::::::::::::::::::::::::::
 
-	// Fifth Level: 1W -- Clear the room facing east the entire time
+	// Fifth Level: 1W -- Clear the room facing East the entire time
 	addAchievement(to, {
 		id: '73b00573aa2e093cb0e28771e91b7366',
 		name: 'achievement.name.l1.1w',
