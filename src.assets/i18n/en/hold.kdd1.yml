@@ -206,7 +206,7 @@ scroll.lvl_1.1n1w.4x13: Strike the orb with your sword to open doors in the room
 scroll.lvl_1.1n1w.21x21: Some orbs toggle the yellow doors between their open and closed states.
 scroll.lvl_1.1n1w.18x14: Rotate your sword using `%keymap.turn_ccw%` and `%keymap.turn_cw%`.
 scroll.lvl_1.2n1w.14x14: Instead of toggling a yellow door, an orb might always open or close it.
-scroll.lvl_1.2n1w.19x15: You can find out what an orb does by clicking it with your mouse. Differently colored highlighted doors indicate the different effects.
+scroll.lvl_1.2n1w.19x15: You can find out what an orb does or what affects a door by clicking either with your mouse. Differently colored highlighted doors indicate the different effects.
 scroll.lvl_1.3n1w.9x13: Blue gates open once you conquer all the required rooms on a given level (floor).
 scroll.lvl_1.3n1w.11x12: Required rooms are marked with a red background on the minimap.
 scroll.lvl_1.3n2w.12x12: Current speech and hovering text can be skipped with the space bar.
