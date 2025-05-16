@@ -1,46 +1,20 @@
-import {Achievements} from "./Achievements";
-import {Progress} from "../global/Progress";
-import {CueEvents} from "../global/CueEvents";
-import {BitmapDataWritable, C} from "../../C";
-import {TMonster} from "../objects/actives/TMonster";
-import {TStateGame} from "../states/TStateGame";
-import {ASSERT} from "../../ASSERT";
-import {Achievement} from "./Achievement";
-import {_} from "../../../src.framework/_";
-import {Gfx} from "../global/Gfx";
-import {T} from "../../T";
-import {UtilsBitmapData} from "../../../src.framework/net/retrocade/utils/UtilsBitmapData";
-import {PlatformOptions} from "../../platform/PlatformOptions";
+import { ASSERT } from "../../ASSERT";
+import { C } from "../../C";
+import { T } from "../../T";
+import { Achievement } from "./Achievement";
 
-import {AchievementFactory, AchievementHelpers, addAchievement} from './AchievementHelpers';
 import { S } from "src/S";
+import { AchievementFactory, AchievementHelpers, addAchievement } from './AchievementHelpers';
 
 const {
-	levPos,
-	roomPos,
-	roomO,
-	playerTileO,
-	roomConquered,
 	ev,
 	evConquered,
 	player,
 	playerAt,
-	playerIn,
-	room,
 	evKilled,
-	levelID,
-	getLevID,
-	isLevelCompleted,
 	getMonster,
-	isUndo,
-	hasTile,
-	roomID,
-	percDesc,
-	monsterIn,
 	anyMonsterIn,
-	hasMonsterAt,
 	evTarGrowth,
-	countMonsters,
 	countTar,
 	countTrapdoors,
 } = AchievementHelpers;
@@ -94,8 +68,8 @@ export function AchievementsListKdd5(to: Achievement[]) {
 	// 17th Level: 1N1W -- Clear the room before 2nd tar growth
 	addAchievement(to, {
 		id: '68bf8a9f0a27cc99732c6c117980b05a',
-		name: 'achievement.name.l1.1n1w',
-		description: 'achievement.description.l1.1n1w',
+		name: 'achievement.name.l1.1n1w_2',
+		description: 'achievement.description.l1.1n1w_2',
 
 		icon: ['Fortress', T.TI_TAR_SW, T.TI_BEETHRO_SWORD_N, T.TI_TAR_NW, T.TI_BEETHRO_N],
 
