@@ -367,4 +367,8 @@ export class TStateTitle extends RecamelState {
 
 		window.open(target, '_blank')!.focus();
 	};
+
+	public API_changeHold() {
+		this.onClickedChangeHold();
+	}
 }

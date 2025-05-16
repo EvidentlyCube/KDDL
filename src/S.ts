@@ -6,6 +6,8 @@ export const S = {
 	EngineVersion: 'V1.6.8-JS',
 	currentHoldOptions: undefined as (HoldOptions | undefined),
 
+	isSpiderMode: false,
+
 	pagedHoldOptions: [] as HoldOptions[][],
 	allHoldOptions: [] as HoldOptions[],
 

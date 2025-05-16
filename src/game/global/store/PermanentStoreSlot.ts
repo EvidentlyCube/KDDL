@@ -1,4 +1,5 @@
 import dbStorage from "local-db-storage";
+import { S } from "src/S";
 
 export class PermanentStoreSlot<T> {
     private static _slots: PermanentStoreSlot<unknown>[] = [];
@@ -103,11 +104,17 @@ export class PermanentStoreSlot<T> {
     }
 
     private async load() {
-        this._value = await load(this._key, this._value);
+        if (!S.isSpiderMode) {
+            this._value = await load(this._key, this._value);
+        }
         this._isLoaded = true;
     }
 
     private async flush() {
+        if (S.isSpiderMode) {
+            return;
+        }
+
         if (this._isSyncing) {
             this._isSyncQueued = true;
             return;

@@ -84,7 +84,7 @@ export class TStatePreloader extends RecamelState {
 		new RecamelEffectFadeScreen(0, 1, 0, 800);
 
 		for (const holdsPage of S.pagedHoldOptions) {
-			const page = new HoldsScreen(holdsPage, hold => this.onGameStart(hold));
+			const page = new HoldsScreen(holdsPage, hold => this.handleGameStart(hold));
 			page.y = LOGO_HEIGHT + (S.SIZE_GAME_HEIGHT - LOGO_HEIGHT - page.height) / 2 | 0;
 			page.visible = false;
 
@@ -160,7 +160,7 @@ export class TStatePreloader extends RecamelState {
 		}
 	}
 
-	private onGameStart = (hold: HoldOptions) => {
+	public handleGameStart = (hold: HoldOptions) => {
 		this._layer.displayObject.interactiveChildren = this._layer.displayObject.interactive = false;
 
 		new RecamelEffectFadeScreen(1, 0, 0, 600, () => {
@@ -198,7 +198,7 @@ export class TStatePreloader extends RecamelState {
 
 				if (PermanentStoreSlot.importAll(text)) {
 					const currentPage = this._holdScreens.findIndex(screen => screen.visible);
-					RecamelCore.setState(new TStatePreloader(S.pagedHoldOptions[currentPage][0], this.onGameStart));
+					RecamelCore.setState(new TStatePreloader(S.pagedHoldOptions[currentPage][0], this.handleGameStart));
 				}
 			}
 		});

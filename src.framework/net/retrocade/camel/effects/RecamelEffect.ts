@@ -98,7 +98,7 @@ export class RecamelEffect extends RecamelObject {
 		super();
 
 		this.active = true;
-		this._duration = duration;
+		this._duration = S.isSpiderMode ? 1 : duration;
 		this._callback = callback;
 
 		this._startTime = Date.now();

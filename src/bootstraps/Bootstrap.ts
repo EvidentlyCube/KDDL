@@ -23,12 +23,15 @@ import { PermanentStoreSlot } from "src/game/global/store/PermanentStoreSlot";
 import { DebugConsole } from "src/game/DebugConsole";
 import { TextMetrics } from "pixi.js";
 import { registerTextMetricsMonkeyPatch } from "src.pixi/TextMetricsMonkeyPatch";
+import { KddlApi } from "./KddlApi";
 
 require('../../src.assets/font/toms-new-roman.css');
 
 export class Bootstrap {
 	public static async bootstrap() {
 		Bootstrap.registerMonkeyPatches();
+
+		(window as any).kddlApi = KddlApi;
 
 		S.allHoldOptions = [
 			Kddl1HoldOptions,
@@ -59,7 +62,6 @@ export class Bootstrap {
 
 		await Promise.all([
 			Bootstrap.loadPreloaderResources(),
-			Bootstrap.loadLocale(),
 			Bootstrap.waitForFontsToLoad(),
 			PermanentStoreSlot.waitForAllSlotsInit(),
 		]);
@@ -82,47 +84,6 @@ export class Bootstrap {
 	private static async loadPreloaderResources() {
 		await ResourcesQueue.loadResource(C.RES_PRELOADER_BG);
 		await ResourcesQueue.loadResource(C.RES_LOGO_GAME);
-	}
-
-	private static async loadLocale() {
-		// @FIXME Happens automatically during resource loading
-		return;
-		/*
-		const languageMap = new Map<ValidLanguage, string>([
-			['en', C.RES_LANG_COMMON_EN],
-			['nl', C.RES_LANG_COMMON_NL],
-			['de', C.RES_LANG_COMMON_DE],
-			['fi', C.RES_LANG_COMMON_FI],
-			['es', C.RES_LANG_COMMON_ES],
-			['pt', C.RES_LANG_COMMON_PT],
-			['fr', C.RES_LANG_COMMON_FR],
-			['ru', C.RES_LANG_COMMON_RU],
-			['pl', C.RES_LANG_COMMON_PL],
-		]);
-
-		const loadResources = () => {
-			const promises = [];
-
-			for (const languageCode of S.BASE_LANGUAGES) {
-				const res = languageMap.get(languageCode)!;
-				promises.push(ResourcesQueue.loadResource(res));
-			}
-
-			return promises;
-		};
-
-		await Promise.all([
-			ResourcesQueue.loadResource(C.RES_LANG_CREDITS),
-			...loadResources(),
-		]);
-
-		const credits = ResourcesQueue.getText(C.RES_LANG_CREDITS);
-		for (const languageCode of S.BASE_LANGUAGES) {
-			const res = languageMap.get(languageCode)!;
-			RecamelLang.loadLanguageFile(credits, languageCode);
-			RecamelLang.loadLanguageFile(ResourcesQueue.getText(res), languageCode);
-		}
-		*/
 	}
 
 	private static async waitForFontsToLoad() {
