@@ -305,7 +305,7 @@ export function AchievementsListKdd5(to: Achievement[]) {
 
 		in: [4, "1N2W"],
 
-		failOn: () => evKilled(C.M_SERPENT) && anyMonsterIn(0, 0, S.RoomWidth, S.RoomHeight)
+		failOn: () => ev(C.CID_SNAKE_DIED_FROM_TRUNCATION) && anyMonsterIn(0, 0, S.RoomRight, S.RoomBottom)
 	});
 
 	// 20th Level: 2N1W -- Kill all evil eyes before killing any roach queen then clear the room

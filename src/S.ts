@@ -53,8 +53,10 @@ export const S = {
 	LEVEL_OFFSET_Y: 43,
 
 	RoomWidth: 27,
+	RoomRight: 26,
 	RoomWidthOriginal: 38,
 	RoomHeight: 25,
+	RoomBottom: 24,
 	RoomHeightOriginal: 32,
 	RoomTileWidth: 22,
 	RoomTileHeight: 22,
