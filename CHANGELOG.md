@@ -1,4 +1,4 @@
-## 1.6.8 - ????-??-??
+## 1.6.8 - 2025-05-16
  - [BUGFIX] It should no longer be possible to make music stop playing by triggering a fading out track to play (eg by quickly walking between empty room and a room with a monster)
  - [BUGFIX] KDDL Episode 5, the room with entrance to Mastery Level is no longer a required room
  - [BUGFIX] KDDL Episode 5 ⟶ Level 20: 1N1W, fixed the achievement "Slithering Elimination" not failing the achievement when the serpent dies before all other monsters are dead
