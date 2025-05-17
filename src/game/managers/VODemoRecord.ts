@@ -122,7 +122,6 @@ export class VODemoRecord {
         this._exploredRoomIds = JSON.parse(reader.readString(Encoding.Utf8)) as number[];
         this._gameVars = new PackedVars(UtilsBase64.decodeByteArray(reader.readString(Encoding.Utf8)));
 
-        const demoLength = reader.readUnsignedInt();
         this._demo = reader.readString(Encoding.Utf8);
     }
 

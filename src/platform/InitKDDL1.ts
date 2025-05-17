@@ -1,19 +1,19 @@
-import {PlatformOptions} from "./PlatformOptions";
-import {C, HoldId} from "../C";
+import { HoldId } from "../C";
+import { PlatformOptions } from "./PlatformOptions";
 
-import * as HoldPath from "../../src.assets/level/kdd1.tss.hold";
 import * as SubtitlePath from "../../src.assets/gfx/by_maurycy/ui/logo_kdd1.png";
-import * as LocalEnPath from "../../src.assets/i18n/en/hold.kdd1.yml";
-import * as LocalNlPath from "../../src.assets/i18n/nl/hold.kdd1.yml";
 import * as LocalDePath from "../../src.assets/i18n/de/hold.kdd1.yml";
-import * as LocalFiPath from "../../src.assets/i18n/fi/hold.kdd1.yml";
+import * as LocalEnPath from "../../src.assets/i18n/en/hold.kdd1.yml";
 import * as LocalEsPath from "../../src.assets/i18n/es/hold.kdd1.yml";
-import * as LocalPtPath from "../../src.assets/i18n/pt/hold.kdd1.yml";
+import * as LocalFiPath from "../../src.assets/i18n/fi/hold.kdd1.yml";
 import * as LocalFrPath from "../../src.assets/i18n/fr/hold.kdd1.yml";
-import * as LocalRuPath from "../../src.assets/i18n/ru/hold.kdd1.yml";
+import * as LocalNlPath from "../../src.assets/i18n/nl/hold.kdd1.yml";
 import * as LocalPlPath from "../../src.assets/i18n/pl/hold.kdd1.yml";
-import {AchievementsListKdd1} from "../game/achievements/AchievementsListKdd1";
-import {HoldOptions} from "./PlatformSpecific";
+import * as LocalPtPath from "../../src.assets/i18n/pt/hold.kdd1.yml";
+import * as LocalRuPath from "../../src.assets/i18n/ru/hold.kdd1.yml";
+import * as HoldPath from "../../src.assets/level/kdd1.tss.hold";
+import { AchievementsListKdd1 } from "../game/achievements/AchievementsListKdd1";
+import { HoldOptions } from "./PlatformSpecific";
 
 export const Kddl1HoldOptions: HoldOptions = {
 	id: HoldId.KDDL1,

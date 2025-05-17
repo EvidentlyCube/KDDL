@@ -1,13 +1,9 @@
-import {Achievements} from "./Achievements";
-import {BitmapDataWritable} from "../../C";
-import {UtilsBitmapData} from "../../../src.framework/net/retrocade/utils/UtilsBitmapData";
-import {F} from "../../F";
-import {BinaryReader, BinaryWriter, Encoding} from "csharp-binary-stream";
-import {UtilsBase64} from "../../../src.framework/net/retrocade/utils/UtilsBase64";
-import {TStateGame} from "../states/TStateGame";
+import { UtilsBitmapData } from "../../../src.framework/net/retrocade/utils/UtilsBitmapData";
+import { BitmapDataWritable } from "../../C";
+import { F } from "../../F";
 import { Game } from "../global/Game";
-
-let idCounter = 0;
+import { TStateGame } from "../states/TStateGame";
+import { Achievements } from "./Achievements";
 
 export type AchievementDescription = string | ((achievement: Achievement) => string);
 type AchievementDrawFunction = (bd: BitmapDataWritable) => void;

@@ -2,7 +2,6 @@ import * as PIXI from 'pixi.js';
 import {RecamelEffectScreen} from "./RecamelEffectScreen";
 import {RecamelEffect, RecamelEffectEndCallback} from "./RecamelEffect";
 import {S} from "../../../../../src/S";
-import {PlatformOptions} from "../../../../../src/platform/PlatformOptions";
 
 export class RecamelEffectFadeScreen extends RecamelEffectScreen {
 	private readonly _alphaFrom: number;

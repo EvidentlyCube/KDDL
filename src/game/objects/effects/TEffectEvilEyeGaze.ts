@@ -74,8 +74,6 @@ export class TEffectEvilEyeGaze extends TEffect {
 		let tx: number = origin.x;
 		let ty: number = origin.y;
 
-		let index: number;
-
 		let reflected: boolean = false;
 
 		// @todo Extract to not be function created on each run
@@ -151,8 +149,6 @@ export class TEffectEvilEyeGaze extends TEffect {
 		};
 
 		while (getNextGaze()) {
-			index = tx + ty * S.RoomWidth;
-
 			this.gazes.push(tx + ty * S.RoomWidth);
 		}
 	}

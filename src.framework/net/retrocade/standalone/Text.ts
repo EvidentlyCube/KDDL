@@ -400,7 +400,6 @@ export class Text extends RecamelSprite {
 	}
 
 	private checkDelete() {
-		let addToStage: boolean = false;
 		let p: PIXI.DisplayObject = this; // 'this' is an extension of a PIXI.Container
 		while (p) {
 			if (p.parent === DROD.app.stage) {

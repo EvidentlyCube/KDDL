@@ -4,11 +4,6 @@ import { PermanentStoreSlot } from "./PermanentStoreSlot";
 import type { HoldScores } from "../GlobalHoldScore";
 import { ValidLanguage } from "src.framework/net/retrocade/camel/RecamelLang";
 
-interface PerHoldStore {
-    achievements: PermanentStoreSlot<EncodedAchievement[]>;
-    globalStats: PermanentStoreSlot<string>;
-}
-
 export const PermanentStore = {
     shared: {
         holdScore: new PermanentStoreSlot<HoldScores>('shared/hold-scores', getEmptyHoldScores()),

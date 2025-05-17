@@ -4,7 +4,6 @@ import {Button} from "../../../src.framework/net/retrocade/standalone/Button";
 import {Text} from "../../../src.framework/net/retrocade/standalone/Text";
 import {Make} from "../global/Make";
 import {_} from "../../../src.framework/_";
-import {PlatformOptions} from "../../platform/PlatformOptions";
 import {Achievements} from "../achievements/Achievements";
 import {VOAchievementBitmap} from "../managers/VOAchievementBitmap";
 import {S} from "../../S";

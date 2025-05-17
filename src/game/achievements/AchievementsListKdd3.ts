@@ -1,43 +1,20 @@
-import {Achievements} from "./Achievements";
-import {Progress} from "../global/Progress";
-import {CueEvents} from "../global/CueEvents";
-import {BitmapDataWritable, C} from "../../C";
-import {Game} from "../global/Game";
-import {TMonster} from "../objects/actives/TMonster";
-import {TStateGame} from "../states/TStateGame";
-import {ASSERT} from "../../ASSERT";
-import {Achievement} from "./Achievement";
-import {_} from "../../../src.framework/_";
-import {Gfx} from "../global/Gfx";
-import {T} from "../../T";
-import {UtilsBitmapData} from "../../../src.framework/net/retrocade/utils/UtilsBitmapData";
-import {TRoachQueen} from "../objects/actives/TRoachQueen";
-import {S} from "../../S";
+import { ASSERT } from "../../ASSERT";
+import { C } from "../../C";
+import { T } from "../../T";
+import { CueEvents } from "../global/CueEvents";
+import { Game } from "../global/Game";
+import { Achievement } from "./Achievement";
 
-import {AchievementFactory, AchievementHelpers, addAchievement} from './AchievementHelpers';
+import { AchievementFactory, AchievementHelpers, addAchievement } from './AchievementHelpers';
 
 const {
-	levPos,
-	roomPos,
 	roomO,
-	playerTileO,
-	roomConquered,
 	ev,
-	evConquered,
-	player,
 	playerAt,
 	playerIn,
 	room,
-	evKilled,
-	levelID,
-	getLevID,
-	isLevelCompleted,
 	getMonster,
-	isUndo,
 	hasTile,
-	roomID,
-	percDesc,
-	anyMonsterIn,
 	hasMonsterAt,
 } = AchievementHelpers;
 

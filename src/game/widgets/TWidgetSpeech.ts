@@ -48,7 +48,6 @@ export class TWidgetSpeech {
 			}
 
 			const speech: VOSpeech = command.command.speech;
-			const playingSound: boolean = false;
 			let delay: number = speech.delay;
 
 			if (command.playSound) {

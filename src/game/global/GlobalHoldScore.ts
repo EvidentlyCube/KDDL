@@ -18,8 +18,6 @@ export type HoldScores = Record<HoldId, number>;
 
 let holdScores: HoldScores = getEmptyHoldScores();
 
-const SAVE_NAME = 'global-score';
-
 export const GlobalHoldScore = {
 	calculateCurrentHoldScore() {
 		const scores = GlobalHoldScore.calculateCurrentHoldScoreParts();
@@ -46,17 +44,6 @@ export const GlobalHoldScore = {
 		const doneAchievements = Achievements.getAll().reduce((total, achievement) => {
 			return achievement.acquired ? total + 1 : total;
 		}, 0);
-
-		const maxScore = totalRooms * VISIT_ROOM_VALUE
-			+ totalRequiredRooms * CONQUER_ROOM_VALUE
-			+ totalAchievements * ACHIEVEMENT_VALUE
-			+ COMPLETED_VALUE
-			+ MASTERED_VALUE;
-		const score = visitedRooms * VISIT_ROOM_VALUE
-			+ conqueredRooms * CONQUER_ROOM_VALUE
-			+ doneAchievements * ACHIEVEMENT_VALUE
-			+ (Progress.isGameCompleted ? COMPLETED_VALUE : 0)
-			+ (Progress.isGameMastered ? MASTERED_VALUE : 0);
 
 		return {
 			visitRooms: { value: VISIT_ROOM_VALUE, has: visitedRooms, total: totalRooms },

@@ -1,39 +1,17 @@
-import {Achievements} from "./Achievements";
-import {BitmapDataWritable, C, StyleName} from "../../C";
-import {ASSERT} from "../../ASSERT";
-import {Achievement, AchievementData} from "./Achievement";
-import {UtilsBitmapData} from "../../../src.framework/net/retrocade/utils/UtilsBitmapData";
-import {Gfx} from "../global/Gfx";
-import {T} from 'src/T';
-import { AchievementFactory, AchievementHelpers, addAchievement, RoomCoord } from "./AchievementHelpers";
-import { _ } from "src.framework/_";
+import { T } from 'src/T';
+import { ASSERT } from "../../ASSERT";
+import { C } from "../../C";
 import { Level } from "../global/Level";
 import { Progress } from "../global/Progress";
+import { Achievement } from "./Achievement";
+import { AchievementFactory, AchievementHelpers, addAchievement } from "./AchievementHelpers";
 
 const {
-	levPos,
-	roomPos,
-	roomPosName,
-	roomConquered,
-	countMonsters,
-	countTar,
 	countTrapdoors,
 	ev,
-	evConquered,
-	player,
-	evTarGrowth,
-	room,
 	roomO,
 	evKilled,
-	levelID,
-	isLevelCompleted,
-	percDesc,
-	getMonster,
 	hasMonster,
-	hasMonsterAt,
-	isUndo,
-	hasTile,
-	roomID
 } = AchievementHelpers;
 
 

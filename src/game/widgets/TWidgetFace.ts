@@ -1,4 +1,3 @@
-import * as PIXI from 'pixi.js';
 import {C} from "../../C";
 import {UtilsRandom} from "../../../src.framework/net/retrocade/utils/UtilsRandom";
 import {Game} from "../global/Game";

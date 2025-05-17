@@ -4,7 +4,6 @@ import {Text} from "../../../src.framework/net/retrocade/standalone/Text";
 import {C} from "../../C";
 import {Button, ButtonCallback} from "../../../src.framework/net/retrocade/standalone/Button";
 import {TDrodButton} from "../interfaces/TDrodButton";
-import { DebugConsole } from '../DebugConsole';
 
 export const Make = {
 	buttonGrid9() {

@@ -287,7 +287,6 @@ export class Level {
 		const roomOffset = Level.getRoomOffsetInLevel(roomId);
 		const levelId = intAttr(room, 'LevelID', 0);
 		const level = Level.getLevelByID(levelId);
-		const orderIndex = intAttr(level, 'OrderIndex', 0);
 		const monsterX = intAttr(monster, 'X', 0);
 		const monsterY = intAttr(monster, 'Y', 0);
 
@@ -413,7 +412,6 @@ export class Level {
 	public static canEnterRoom(roomId: number, playerX: number, playerY: number): boolean {
 		const room = Level.getRoom(roomId);
 
-		let positionOffset: number = playerX + playerY * S.RoomWidth;
 		let tile: number = 0;
 		let i: number = 0;
 		let count: number = 0;

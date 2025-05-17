@@ -13,7 +13,6 @@ import * as PitsideSmallPath from '../../../src.assets/gfx/by_caravelgames/tiles
 import * as TilesPath from '../../../src.assets/gfx/by_caravelgames/tiles/styleFortress/tiles.png';
 import {ResourcesQueue} from "./ResourcesQueue";
 import {C} from "../../C";
-import {PlatformOptions} from "../../platform/PlatformOptions";
 
 export function StyleResourceFortress() {
 	ResourcesQueue.queueImage(C.RES_FORTRESS_WALL, document.createElement('img'), WallPath.default);

@@ -5,7 +5,6 @@ import {S} from "../../../S";
 import {C} from "../../../C";
 import {F} from "../../../F";
 import {TWidgetFace} from "../../widgets/TWidgetFace";
-import RawInput from "src.tn/RawInput";
 
 export class TEffectWalkStairs extends TEffect {
 	private lastFrameMoved: number;

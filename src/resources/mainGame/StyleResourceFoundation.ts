@@ -1,6 +1,5 @@
 /// <reference path='../../index.d.ts'/>
 
-import * as WallPath from '../../../src.assets/gfx/by_caravelgames/tiles/styleFoundation/wall.png';
 import * as FloorPath from '../../../src.assets/gfx/by_caravelgames/tiles/styleFoundation/floor.png';
 import * as FloorAltPath from '../../../src.assets/gfx/by_caravelgames/tiles/styleFoundation/floorAlt.jpg';
 import * as FloorDirtPath from '../../../src.assets/gfx/by_caravelgames/tiles/styleFoundation/floorDirt.jpg';
@@ -11,9 +10,9 @@ import * as PitPath from '../../../src.assets/gfx/by_caravelgames/tiles/styleFou
 import * as PitsidePath from '../../../src.assets/gfx/by_caravelgames/tiles/styleFoundation/pitside.png';
 import * as PitsideSmallPath from '../../../src.assets/gfx/by_caravelgames/tiles/styleFoundation/pitsideSmall.png';
 import * as TilesPath from '../../../src.assets/gfx/by_caravelgames/tiles/styleFoundation/tiles.png';
-import {ResourcesQueue} from "./ResourcesQueue";
-import {C} from "../../C";
-import {PlatformOptions} from "../../platform/PlatformOptions";
+import * as WallPath from '../../../src.assets/gfx/by_caravelgames/tiles/styleFoundation/wall.png';
+import { C } from "../../C";
+import { ResourcesQueue } from "./ResourcesQueue";
 
 export function StyleResourceFoundation() {
 	ResourcesQueue.queueImage(C.RES_FOUNDATION_WALL, document.createElement('img'), WallPath.default);

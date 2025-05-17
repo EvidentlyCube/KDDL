@@ -49,12 +49,6 @@ export class RecamelGroup<T extends RecamelObject> extends RecamelObject {
 	public gcThreshold: number = 10;
 
 	/**
-	 * If true automatic GC will use advanced garbage collection
-	 */
-	public gcAdvanced: boolean = true;
-
-
-	/**
 	 * Constructor
 	 */
 	public constructor() {
@@ -110,31 +104,12 @@ export class RecamelGroup<T extends RecamelObject> extends RecamelObject {
 	// ::::::::::::::::::::::::::::::::::::::::::::::
 
 	/**
-	 * Removes all Nulled objects from group and fills gap with items from the end of the list.
-	 * Order is not retained
-	 */
-	public garbageCollect(): void {
-		let l: number = this._length;
-		let i: number = 0;
-
-		for (; i < l; ++i) {
-			while (this._items[i] == null && i < l) {
-				this._items[i] = this._items[--l];
-			}
-		}
-
-		this._items.length = l;
-		this._nulled = 0;
-		this._length = l;
-	}
-
-	/**
 	 * Splices all Nulled objects from group, Order is retained.
 	 */
 	public garbageCollectAdvanced(): void {
-		let l: number = this._length;
-		let i: number = 0;
-		let gap: number = 0;
+		let l = this._length;
+		let i = 0;
+		let gap = 0;
 
 		for (; i < l; i++) {
 			if (this._items[i] == null) {
@@ -297,11 +272,7 @@ export class RecamelGroup<T extends RecamelObject> extends RecamelObject {
 
 		// Garbage Collect
 		if (this._nulled > this.gcThreshold) {
-			if (this.gcAdvanced) {
-				this.garbageCollectAdvanced();
-			} else {
-				this.garbageCollect();
-			}
+			this.garbageCollectAdvanced();
 		}
 	}
 

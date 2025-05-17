@@ -9,38 +9,19 @@ import { MonsterMessageType, VOMonsterMessage } from "../managers/VOMonsterMessa
 import { AchievementFactory, AchievementHelpers, addAchievement } from './AchievementHelpers';
 
 const {
-	levPos,
-	roomPos,
 	roomO,
 	roomF,
 	roomT,
-	playerTileO,
-	roomConquered,
 	ev,
 	evConquered,
 	evOrbHit,
-	player,
 	playerAt,
-	playerIn,
-	room,
 	evKilled,
-	levelID,
-	getLevID,
-	isLevelCompleted,
 	getMonster,
 	getNeather,
 	hasMonster,
-	isUndo,
-	hasTile,
-	roomID,
-	percDesc,
-	monsterIn,
-	anyMonsterIn,
 	hasMonsterAt,
-	evTarGrowth,
 	countMonster,
-	countMonsters,
-	countTar,
 	countTrapdoors,
 } = AchievementHelpers;
 
@@ -419,11 +400,7 @@ export function AchievementsListKdd6(to: Achievement[]) {
 		fakeActiveIn: 5,
 
 		winNeedsConquer: false,
-		winOn: () => {
-			const neather = getNeather();
-
-			return getNeather()?.isFailingToMove === true;
-		}
+		winOn: () => getNeather()?.isFailingToMove === true
 	});
 
 	// Twenty-Fifth Level -- Stab Neather in a room in a place where it should be impossible

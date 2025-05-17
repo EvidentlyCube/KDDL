@@ -2,7 +2,6 @@ import * as PIXI from 'pixi.js';
 import { C, CanvasImageSource, StyleName, StyleTilesets } from "../../C";
 import { ResourcesQueue } from "../../resources/mainGame/ResourcesQueue";
 import { T } from "../../T";
-import { HoldOptions } from "../../platform/PlatformSpecific";
 
 export const Gfx = {
 	ButtonSystemTexture: null! as PIXI.Texture,

@@ -30,38 +30,6 @@ export class TWindowRedefineKeys extends RecamelWindow {
 	private _modal: PIXI.Graphics;
 	private _bg: PIXI.NineSlicePlane;
 
-	private _labelN: Text;
-	private _labelS: Text;
-	private _labelE: Text;
-	private _labelW: Text;
-	private _labelNW: Text;
-	private _labelNE: Text;
-	private _labelSW: Text;
-	private _labelSE: Text;
-	private _labelWait: Text;
-	private _labelC: Text;
-	private _labelCC: Text;
-	private _labelUndo: Text;
-	private _labelRestart: Text;
-	private _labelBattle: Text;
-	private _labelLock: Text;
-
-	private _buttonN: TDrodButton;
-	private _buttonS: TDrodButton;
-	private _buttonE: TDrodButton;
-	private _buttonW: TDrodButton;
-	private _buttonNW: TDrodButton;
-	private _buttonNE: TDrodButton;
-	private _buttonSW: TDrodButton;
-	private _buttonSE: TDrodButton;
-	private _buttonWait: TDrodButton;
-	private _buttonC: TDrodButton;
-	private _buttonCC: TDrodButton;
-	private _buttonUndo: TDrodButton;
-	private _buttonRestart: TDrodButton;
-	private _buttonBattle: TDrodButton;
-	private _buttonLock: TDrodButton;
-
 	private _buttons: TDrodButton[] = [];
 	private _close: TDrodButton;
 
@@ -74,37 +42,37 @@ export class TWindowRedefineKeys extends RecamelWindow {
 		this.addChild(this._modal);
 		this.addChild(this._bg);
 
-		this._labelNW = this.getLabel(_("controls_move_nw"), 0);
-		this._labelN = this.getLabel(_("controls_move_n"), 1);
-		this._labelNE = this.getLabel(_("controls_move_ne"), 2);
-		this._labelW = this.getLabel(_("controls_move_w"), 3);
-		this._labelE = this.getLabel(_("controls_move_e"), 4);
-		this._labelSW = this.getLabel(_("controls_move_sw"), 5);
-		this._labelS = this.getLabel(_("controls_move_s"), 6);
-		this._labelSE = this.getLabel(_("controls_move_se"), 7);
-		this._labelWait = this.getLabel(_("controls_wait"), 8);
-		this._labelCC = this.getLabel(_("controls_turn_ccw"), 10);
-		this._labelC = this.getLabel(_("controls_turn_cw"), 9);
-		this._labelUndo = this.getLabel(_("controls_undo"), 11);
-		this._labelRestart = this.getLabel(_("controls_restart"), 12);
-		this._labelBattle = this.getLabel(_("controls_battle"), 13);
-		this._labelLock = this.getLabel(_("controls_lock"), 14);
+		this.getLabel(_("controls_move_nw"), 0);
+		this.getLabel(_("controls_move_n"), 1);
+		this.getLabel(_("controls_move_ne"), 2);
+		this.getLabel(_("controls_move_w"), 3);
+		this.getLabel(_("controls_move_e"), 4);
+		this.getLabel(_("controls_move_sw"), 5);
+		this.getLabel(_("controls_move_s"), 6);
+		this.getLabel(_("controls_move_se"), 7);
+		this.getLabel(_("controls_wait"), 8);
+		this.getLabel(_("controls_turn_ccw"), 10);
+		this.getLabel(_("controls_turn_cw"), 9);
+		this.getLabel(_("controls_undo"), 11);
+		this.getLabel(_("controls_restart"), 12);
+		this.getLabel(_("controls_battle"), 13);
+		this.getLabel(_("controls_lock"), 14);
 
-		this._buttonNW = this.getButton("move_nw", 0);
-		this._buttonN = this.getButton("move_n", 1);
-		this._buttonNE = this.getButton("move_ne", 2);
-		this._buttonW = this.getButton("move_w", 3);
-		this._buttonE = this.getButton("move_e", 4);
-		this._buttonSW = this.getButton("move_sw", 5);
-		this._buttonS = this.getButton("move_s", 6);
-		this._buttonSE = this.getButton("move_se", 7);
-		this._buttonWait = this.getButton("wait", 8);
-		this._buttonCC = this.getButton("turn_ccw", 10);
-		this._buttonC = this.getButton("turn_cw", 9);
-		this._buttonUndo = this.getButton("undo", 11);
-		this._buttonRestart = this.getButton("restart", 12);
-		this._buttonBattle = this.getButton("battle", 13);
-		this._buttonLock = this.getButton("lock", 14);
+		this.getButton("move_nw", 0);
+		this.getButton("move_n", 1);
+		this.getButton("move_ne", 2);
+		this.getButton("move_w", 3);
+		this.getButton("move_e", 4);
+		this.getButton("move_sw", 5);
+		this.getButton("move_s", 6);
+		this.getButton("move_se", 7);
+		this.getButton("wait", 8);
+		this.getButton("turn_ccw", 10);
+		this.getButton("turn_cw", 9);
+		this.getButton("undo", 11);
+		this.getButton("restart", 12);
+		this.getButton("battle", 13);
+		this.getButton("lock", 14);
 
 
 		this._close = new TDrodButton(this.onClose, "Close");
@@ -113,7 +81,7 @@ export class TWindowRedefineKeys extends RecamelWindow {
 		this._bg.width = this.width + 10;
 		this._close.alignCenterParent();
 
-		this._close.y = this._buttonLock.bottom + 10;
+		this._close.y = this._buttons[this._buttons.length - 1].bottom + 10;
 		this._bg.height = this.height + 10;
 
 		this.center();

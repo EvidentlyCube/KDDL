@@ -1,4 +1,6 @@
 import * as PIXI from 'pixi.js';
+import { UtilsString } from 'src.framework/net/retrocade/utils/UtilsString';
+import { boolAttr } from 'src/XML';
 import { _ } from "../../../src.framework/_";
 import { RecamelTooltip } from "../../../src.framework/net/retrocade/camel/core/RecamelTooltip";
 import { RecamelWindow } from "../../../src.framework/net/retrocade/camel/core/RecamelWindow";
@@ -7,19 +9,10 @@ import { Button } from "../../../src.framework/net/retrocade/standalone/Button";
 import { Text } from "../../../src.framework/net/retrocade/standalone/Text";
 import RawInput from "../../../src.tn/RawInput";
 import { S } from "../../S";
-import { Core } from "../global/Core";
-import { DROD } from "../global/DROD";
-import { Make } from "../global/Make";
-import { Sfx } from "../global/Sfx";
-import { PermanentStore } from '../global/store/PermanentStore';
-import { TDragButton } from "../interfaces/TDragButton";
-import { TStateGame } from "../states/TStateGame";
-import { TWindowRedefineKeys } from "./TWindowRedefineKeys";
-import { Progress } from '../global/Progress';
 import { Game } from '../global/Game';
-import { UtilsString } from 'src.framework/net/retrocade/utils/UtilsString';
 import { Level } from '../global/Level';
-import { boolAttr } from 'src/XML';
+import { Make } from "../global/Make";
+import { Progress } from '../global/Progress';
 
 const EFFECT_DURATION = 400;
 

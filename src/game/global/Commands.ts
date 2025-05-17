@@ -1,5 +1,4 @@
-import {BinaryReader, BinaryWriter, Encoding} from "csharp-binary-stream";
-import {C} from "../../C";
+import { C } from "../../C";
 
 export interface Command {
 	command: number;

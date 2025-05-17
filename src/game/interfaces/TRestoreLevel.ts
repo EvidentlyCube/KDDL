@@ -1,11 +1,9 @@
 import * as PIXI from 'pixi.js';
-import {Make} from "../global/Make";
-import {Text} from "../../../src.framework/net/retrocade/standalone/Text";
-import {Button, ButtonCallback} from "../../../src.framework/net/retrocade/standalone/Button";
-import {_, _def} from "../../../src.framework/_";
-import {UtilsBase64} from "../../../src.framework/net/retrocade/utils/UtilsBase64";
-import {attr, intAttr, textAttr} from "../../XML";
+import { Button, ButtonCallback } from "../../../src.framework/net/retrocade/standalone/Button";
+import { Text } from "../../../src.framework/net/retrocade/standalone/Text";
+import { intAttr } from "../../XML";
 import { Level } from '../global/Level';
+import { Make } from "../global/Make";
 
 const WIDTH = 200;
 
@@ -35,26 +33,6 @@ export class TRestoreLevel extends Button {
 		this.text.alignMiddleParent(0, TRestoreLevel.HEIGHT);
 
 		this.data = level;
-	}
-
-	private adaptTextSize() {
-		let fontSize = 20;
-		let leading = 0;
-
-		while (true) {
-			if (this.text.getLocalBounds().width <= WIDTH) {
-				break;
-			}
-
-			leading--;
-			if (leading < -3) {
-				leading = 0;
-				fontSize--;
-			}
-
-			this.text.size = fontSize;
-			this.text.textFormat.leading = leading;
-		}
 	}
 
 	public unset() {

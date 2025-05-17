@@ -2,7 +2,6 @@ import * as PIXI from 'pixi.js';
 import {VOCheckpoints} from "../managers/VOCheckpoints";
 import {DrodLayer} from "./DrodLayer";
 import {C, CanvasImageSource, StyleName} from "../../C";
-import {PlatformOptions} from "../../platform/PlatformOptions";
 import {S} from "../../S";
 import {T} from "../../T";
 import {ASSERT} from "../../ASSERT";

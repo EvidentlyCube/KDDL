@@ -105,7 +105,6 @@ export class RecamelCore {
 	}
 
 	private static fpsCounter: number = 0;
-	private static fpsLagger: number = 0;
 
 	private static onEnterFrame() {
 		if (RecamelCore.errorCallback != null) {

@@ -1,48 +1,23 @@
-import {Achievements} from "./Achievements";
-import {Progress} from "../global/Progress";
-import {CueEvents} from "../global/CueEvents";
-import {BitmapDataWritable, C} from "../../C";
-import {TMonster} from "../objects/actives/TMonster";
-import {TStateGame} from "../states/TStateGame";
-import {ASSERT} from "../../ASSERT";
-import {Achievement} from "./Achievement";
-import {_, _r} from "../../../src.framework/_";
-import {Gfx} from "../global/Gfx";
-import {T} from "../../T";
-import {UtilsBitmapData} from "../../../src.framework/net/retrocade/utils/UtilsBitmapData";
-import {TRoachQueen} from "../objects/actives/TRoachQueen";
-import {S} from "../../S";
-import {PlatformOptions} from "../../platform/PlatformOptions";
+import { _r } from "../../../src.framework/_";
+import { ASSERT } from "../../ASSERT";
+import { C } from "../../C";
+import { T } from "../../T";
+import { Achievement } from "./Achievement";
 
-import {AchievementFactory, AchievementHelpers, addAchievement} from './AchievementHelpers';
-import { F } from "src/F";
 import { Level } from "../global/Level";
 import { TWidgetLevelName } from "../widgets/TWidgetLevelName";
+import { AchievementFactory, AchievementHelpers, addAchievement } from './AchievementHelpers';
 
 const {
-	levPos,
-	roomPos,
-	roomO,
-	playerTileO,
-	roomConquered,
 	ev,
 	evConquered,
 	player,
 	playerAt,
-	playerIn,
 	room,
 	evKilled,
-	levelID,
-	getLevID,
-	isLevelCompleted,
 	getMonster,
-	isUndo,
-	hasTile,
 	roomID,
-	percDesc,
-	monsterIn,
 	anyMonsterIn,
-	hasMonsterAt,
 } = AchievementHelpers;
 
 export function AchievementsListKdd4(to: Achievement[]) {

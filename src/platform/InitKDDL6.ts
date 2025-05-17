@@ -1,18 +1,18 @@
-import {PlatformOptions} from "./PlatformOptions";
-import {C, HoldId} from "../C";
+import { HoldId } from "../C";
+import { PlatformOptions } from "./PlatformOptions";
 
-import * as HoldPath from "../../src.assets/level/kdd6.tss.hold";
-import * as SubtitlePath from "../../src.assets/gfx/by_maurycy/ui/logo_kdd6.png";
-import * as LocalEnPath from "../../src.assets/i18n/en/hold.kdd6.yml";
-import * as LocalNlPath from "../../src.assets/i18n/nl/hold.kdd6.yml";
-import * as LocalDePath from "../../src.assets/i18n/de/hold.kdd6.yml";
-import * as LocalFiPath from "../../src.assets/i18n/fi/hold.kdd6.yml";
-import * as LocalEsPath from "../../src.assets/i18n/es/hold.kdd6.yml";
-import * as LocalPtPath from "../../src.assets/i18n/pt/hold.kdd6.yml";
-import * as LocalFrPath from "../../src.assets/i18n/fr/hold.kdd6.yml";
-import * as LocalPlPath from "../../src.assets/i18n/pl/hold.kdd6.yml";
-import {HoldOptions} from "./PlatformSpecific";
 import { AchievementsListKdd6 } from "src/game/achievements/AchievementsListKdd6";
+import * as SubtitlePath from "../../src.assets/gfx/by_maurycy/ui/logo_kdd6.png";
+import * as LocalDePath from "../../src.assets/i18n/de/hold.kdd6.yml";
+import * as LocalEnPath from "../../src.assets/i18n/en/hold.kdd6.yml";
+import * as LocalEsPath from "../../src.assets/i18n/es/hold.kdd6.yml";
+import * as LocalFiPath from "../../src.assets/i18n/fi/hold.kdd6.yml";
+import * as LocalFrPath from "../../src.assets/i18n/fr/hold.kdd6.yml";
+import * as LocalNlPath from "../../src.assets/i18n/nl/hold.kdd6.yml";
+import * as LocalPlPath from "../../src.assets/i18n/pl/hold.kdd6.yml";
+import * as LocalPtPath from "../../src.assets/i18n/pt/hold.kdd6.yml";
+import * as HoldPath from "../../src.assets/level/kdd6.tss.hold";
+import { HoldOptions } from "./PlatformSpecific";
 
 export const Kddl6HoldOptions: HoldOptions = {
 	id: HoldId.KDDL6,

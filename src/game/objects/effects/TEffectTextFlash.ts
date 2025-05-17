@@ -10,7 +10,6 @@ export class TEffectTextFlash extends TEffect {
 	private text: Text;
 	private yOffset: number;
 	private showUntil: number;
-	private timer: number;
 
 	public constructor(textToShow: string, yOffset: number = 0, duration: number = 5000, size: number = 64) {
 		super();
@@ -23,7 +22,6 @@ export class TEffectTextFlash extends TEffect {
 
 		this.yOffset = yOffset;
 		this.showUntil = Date.now() + duration;
-		this.timer = 0;
 
 		TStateGame.effectsAbove.add(this);
 		Game.room.layerUI.add(this.text);

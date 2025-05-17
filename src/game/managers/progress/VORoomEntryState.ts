@@ -3,7 +3,6 @@ import {PackedVars} from "../../global/PackedVars";
 import {UtilsBase64} from "../../../../src.framework/net/retrocade/utils/UtilsBase64";
 import {VODemoRecord} from "../VODemoRecord";
 import {Level} from "../../global/Level";
-import {intAttr} from "../../../XML";
 
 export class VORoomEntryState {
 	public x: number;

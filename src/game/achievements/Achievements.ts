@@ -2,7 +2,6 @@ import { Achievement, EncodedAchievement } from "./Achievement";
 import { TGrowlAchievement } from "../windows/TGrowlAchievement";
 import { HoldOptions } from "../../platform/PlatformSpecific";
 import { PermanentStore } from "../global/store/PermanentStore";
-import { PlatformOptions } from "src/platform/PlatformOptions";
 import { HoldInfo } from "src/S";
 
 const _allAchievements: Achievement[] = [];

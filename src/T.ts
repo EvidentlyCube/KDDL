@@ -1,5 +1,4 @@
 import * as PIXI from 'pixi.js';
-import {PlatformOptions} from "./platform/PlatformOptions";
 import {S} from "./S";
 import {BitmapDataWritable, CanvasImageSource, StyleName, StyleTilesets} from "./C";
 import {UtilsBitmapData} from "../src.framework/net/retrocade/utils/UtilsBitmapData";

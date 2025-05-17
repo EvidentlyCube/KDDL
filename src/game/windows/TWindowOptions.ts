@@ -62,12 +62,7 @@ export class TWindowOptions extends RecamelWindow {
 	private redefineButton: Button;
 	private closeButton: Button;
 
-	// Block all input
-	private _locked: boolean = false;
-
 	public set locked(to: boolean) {
-		this._locked = to;
-
 		this.interactiveChildren = this.interactive = !to;
 	}
 
