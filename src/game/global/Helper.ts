@@ -5,6 +5,7 @@ import {Level} from "./Level";
 import {RecamelObject} from "../../../src.framework/net/retrocade/camel/objects/RecamelObject";
 import {TWindowControls} from "../windows/TWindowControls";
 import {S} from "../../S";
+import { HoldId } from "src/C";
 
 export class Helper extends RecamelObject {
 	private static _instance: Helper;
@@ -23,7 +24,7 @@ export class Helper extends RecamelObject {
 			throw new Error("Hold options are not yet loaded");
 		}
 
-		if (holdOptions.isHoldKdd1) {
+		if (holdOptions.id === HoldId.KDDL1) {
 			if (levPos(1) && roomPos(0, -1)) {
 				if (!Helper._flagShown && player().x >= 8 && player().x <= 13 && player().y >= 15 && player().y <= 20) {
 					Helper._flagShown = true;
@@ -33,7 +34,7 @@ export class Helper extends RecamelObject {
 				Helper._flagShown = false;
 			}
 		}
-		if (holdOptions.isHoldKdd2) {
+		if (holdOptions.id === HoldId.KDDL2) {
 			if (levPos(6) && roomPos(0, 0)) {
 				if (!Helper._flagShown && player().x >= 5 && player().x <= 6 && player().y >= 9 && player().y <= 10) {
 					Helper._flagShown = true;
@@ -43,7 +44,7 @@ export class Helper extends RecamelObject {
 				Helper._flagShown = false;
 			}
 		}
-		if (holdOptions.isHoldKdd3) {
+		if (holdOptions.id === HoldId.KDDL3) {
 			if (levPos(6) && roomPos(0, 0)) {
 				if (!Helper._flagShown && player().x >= 5 && player().x <= 6 && player().y >= 9 && player().y <= 10) {
 					Helper._flagShown = true;

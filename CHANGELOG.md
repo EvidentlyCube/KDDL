@@ -1,3 +1,6 @@
+## 1.6.9 - ????-??-??
+ - [BUGFIX] KDDL Episode 6, fixed an exception thrown in two places caused by styles not being initialized
+
 ## 1.6.8 - 2025-05-16
  - [BUGFIX] It should no longer be possible to make music stop playing by triggering a fading out track to play (eg by quickly walking between empty room and a room with a monster)
  - [BUGFIX] KDDL Episode 5, the room with entrance to Mastery Level is no longer a required room

@@ -15,16 +15,6 @@ export const S = {
 		return `Beta.8\nEngine ${S.EngineVersion}`;
 	},
 
-	get saveStorageName(): string {
-		const holdOptions = S.currentHoldOptions;
-
-		if (!holdOptions) {
-			throw new Error("Hold options are not yet loaded");
-		}
-
-		return holdOptions.saveStorageName;
-	},
-
 	get BASE_LANGUAGES(): ValidLanguage[] {
 		return ["de", 'en', 'es', 'fi', 'fr', 'nl', 'pt', 'ru', 'pl'];
 	},

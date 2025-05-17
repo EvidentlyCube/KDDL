@@ -14,20 +14,6 @@ export interface HoldOptions {
 	holdDisplayName: string;
 	defaultStyle: StyleName;
 
-	styleAbo: boolean;
-	styleCit: boolean;
-	styleDee: boolean;
-	styleFor: boolean;
-	styleFou: boolean;
-	styleIce: boolean;
-	isHoldKdd1: boolean;
-	isHoldKdd2: boolean;
-	isHoldKdd3: boolean;
-	isHoldKdd4: boolean;
-	isHoldKdd5: boolean;
-	isHoldKdd6: boolean;
-
-	saveStorageName: string;
 	supportedLanguages: ValidLanguage[];
 
 	achievementsInRow: number;

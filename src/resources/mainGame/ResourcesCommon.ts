@@ -153,24 +153,12 @@ export const SharedResources = {
 	},
 
 	registerHoldStyles(holdOptions: HoldOptions) {
-		if (holdOptions.styleAbo) {
-			StyleResourceAboveground();
-		}
-		if (holdOptions.styleCit) {
-			StyleResourceCity();
-		}
-		if (holdOptions.styleDee) {
-			StyleResourceDeepSpaces();
-		}
-		if (holdOptions.styleFor) {
-			StyleResourceFortress();
-		}
-		if (holdOptions.styleFou) {
-			StyleResourceFoundation();
-		}
-		if (holdOptions.styleIce) {
-			StyleResourceIceworks();
-		}
+		StyleResourceAboveground();
+		StyleResourceCity();
+		StyleResourceDeepSpaces();
+		StyleResourceFortress();
+		StyleResourceFoundation();
+		StyleResourceIceworks();
 	}
 };
 

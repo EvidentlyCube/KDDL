@@ -1,8 +1,8 @@
 import * as PIXI from 'pixi.js';
-import {C, CanvasImageSource, StyleName, StyleTilesets} from "../../C";
-import {ResourcesQueue} from "../../resources/mainGame/ResourcesQueue";
-import {T} from "../../T";
-import {HoldOptions} from "../../platform/PlatformSpecific";
+import { C, CanvasImageSource, StyleName, StyleTilesets } from "../../C";
+import { ResourcesQueue } from "../../resources/mainGame/ResourcesQueue";
+import { T } from "../../T";
+import { HoldOptions } from "../../platform/PlatformSpecific";
 
 export const Gfx = {
 	ButtonSystemTexture: null! as PIXI.Texture,
@@ -74,102 +74,90 @@ export const Gfx = {
 
 	},
 
-	initializeHold(hold: HoldOptions) {
-		if (hold.styleAbo) {
-			Gfx.STYLES.set(T.STYLE_ABOVEGROUND, new Map([
-				[T.TILES_WALL, ResourcesQueue.getImg(C.RES_ABOVEGROUND_WALL)],
-				[T.TILES_FLOOR, ResourcesQueue.getImg(C.RES_ABOVEGROUND_FLOOR)],
-				[T.TILES_FLOOR_ALT, ResourcesQueue.getImg(C.RES_ABOVEGROUND_FLOORALT)],
-				[T.TILES_FLOOR_DIRT, ResourcesQueue.getImg(C.RES_ABOVEGROUND_FLOORDIRT)],
-				[T.TILES_FLOOR_GRASS, ResourcesQueue.getImg(C.RES_ABOVEGROUND_FLOORGRASS)],
-				[T.TILES_FLOOR_MOSAIC, ResourcesQueue.getImg(C.RES_ABOVEGROUND_FLOORMOSAIC)],
-				[T.TILES_FLOOR_ROAD, ResourcesQueue.getImg(C.RES_ABOVEGROUND_FLOORROAD)],
-				[T.TILES_PIT, ResourcesQueue.getImg(C.RES_ABOVEGROUND_PIT)],
-				[T.TILES_PITSIDE, ResourcesQueue.getImg(C.RES_ABOVEGROUND_PITSIDE)],
-				[T.TILES_PITSIDE_SMALL, ResourcesQueue.getImg(C.RES_ABOVEGROUND_PITSIDESMALL)],
-				[T.TILES_STYLE, ResourcesQueue.getImg(C.RES_ABOVEGROUND_TILES)],
-			]));
-		}
+	async initializeHoldResources() {
+		Gfx.STYLES.set(T.STYLE_ABOVEGROUND, new Map([
+			[T.TILES_WALL, ResourcesQueue.getImg(C.RES_ABOVEGROUND_WALL)],
+			[T.TILES_FLOOR, ResourcesQueue.getImg(C.RES_ABOVEGROUND_FLOOR)],
+			[T.TILES_FLOOR_ALT, ResourcesQueue.getImg(C.RES_ABOVEGROUND_FLOORALT)],
+			[T.TILES_FLOOR_DIRT, ResourcesQueue.getImg(C.RES_ABOVEGROUND_FLOORDIRT)],
+			[T.TILES_FLOOR_GRASS, ResourcesQueue.getImg(C.RES_ABOVEGROUND_FLOORGRASS)],
+			[T.TILES_FLOOR_MOSAIC, ResourcesQueue.getImg(C.RES_ABOVEGROUND_FLOORMOSAIC)],
+			[T.TILES_FLOOR_ROAD, ResourcesQueue.getImg(C.RES_ABOVEGROUND_FLOORROAD)],
+			[T.TILES_PIT, ResourcesQueue.getImg(C.RES_ABOVEGROUND_PIT)],
+			[T.TILES_PITSIDE, ResourcesQueue.getImg(C.RES_ABOVEGROUND_PITSIDE)],
+			[T.TILES_PITSIDE_SMALL, ResourcesQueue.getImg(C.RES_ABOVEGROUND_PITSIDESMALL)],
+			[T.TILES_STYLE, ResourcesQueue.getImg(C.RES_ABOVEGROUND_TILES)],
+		]));
 
-		if (hold.styleCit) {
-			Gfx.STYLES.set(T.STYLE_CITY, new Map([
-				[T.TILES_WALL, ResourcesQueue.getImg(C.RES_CITY_WALL)],
-				[T.TILES_FLOOR, ResourcesQueue.getImg(C.RES_CITY_FLOOR)],
-				[T.TILES_FLOOR_ALT, ResourcesQueue.getImg(C.RES_CITY_FLOORALT)],
-				[T.TILES_FLOOR_DIRT, ResourcesQueue.getImg(C.RES_CITY_FLOORDIRT)],
-				[T.TILES_FLOOR_GRASS, ResourcesQueue.getImg(C.RES_CITY_FLOORGRASS)],
-				[T.TILES_FLOOR_MOSAIC, ResourcesQueue.getImg(C.RES_CITY_FLOORMOSAIC)],
-				[T.TILES_FLOOR_ROAD, ResourcesQueue.getImg(C.RES_CITY_FLOORROAD)],
-				[T.TILES_PIT, ResourcesQueue.getImg(C.RES_CITY_PIT)],
-				[T.TILES_PITSIDE, ResourcesQueue.getImg(C.RES_CITY_PITSIDE)],
-				[T.TILES_PITSIDE_SMALL, ResourcesQueue.getImg(C.RES_CITY_PITSIDESMALL)],
-				[T.TILES_STYLE, ResourcesQueue.getImg(C.RES_CITY_TILES)],
-			]));
-		}
+		Gfx.STYLES.set(T.STYLE_CITY, new Map([
+			[T.TILES_WALL, ResourcesQueue.getImg(C.RES_CITY_WALL)],
+			[T.TILES_FLOOR, ResourcesQueue.getImg(C.RES_CITY_FLOOR)],
+			[T.TILES_FLOOR_ALT, ResourcesQueue.getImg(C.RES_CITY_FLOORALT)],
+			[T.TILES_FLOOR_DIRT, ResourcesQueue.getImg(C.RES_CITY_FLOORDIRT)],
+			[T.TILES_FLOOR_GRASS, ResourcesQueue.getImg(C.RES_CITY_FLOORGRASS)],
+			[T.TILES_FLOOR_MOSAIC, ResourcesQueue.getImg(C.RES_CITY_FLOORMOSAIC)],
+			[T.TILES_FLOOR_ROAD, ResourcesQueue.getImg(C.RES_CITY_FLOORROAD)],
+			[T.TILES_PIT, ResourcesQueue.getImg(C.RES_CITY_PIT)],
+			[T.TILES_PITSIDE, ResourcesQueue.getImg(C.RES_CITY_PITSIDE)],
+			[T.TILES_PITSIDE_SMALL, ResourcesQueue.getImg(C.RES_CITY_PITSIDESMALL)],
+			[T.TILES_STYLE, ResourcesQueue.getImg(C.RES_CITY_TILES)],
+		]));
 
-		if (hold.styleDee) {
-			Gfx.STYLES.set(T.STYLE_DEEP_SPACES, new Map([
-				[T.TILES_WALL, ResourcesQueue.getImg(C.RES_DEEP_SPACES_WALL)],
-				[T.TILES_FLOOR, ResourcesQueue.getImg(C.RES_DEEP_SPACES_FLOOR)],
-				[T.TILES_FLOOR_ALT, ResourcesQueue.getImg(C.RES_DEEP_SPACES_FLOORALT)],
-				[T.TILES_FLOOR_DIRT, ResourcesQueue.getImg(C.RES_DEEP_SPACES_FLOORDIRT)],
-				[T.TILES_FLOOR_GRASS, ResourcesQueue.getImg(C.RES_DEEP_SPACES_FLOORGRASS)],
-				[T.TILES_FLOOR_MOSAIC, ResourcesQueue.getImg(C.RES_DEEP_SPACES_FLOORMOSAIC)],
-				[T.TILES_FLOOR_ROAD, ResourcesQueue.getImg(C.RES_DEEP_SPACES_FLOORROAD)],
-				[T.TILES_PIT, ResourcesQueue.getImg(C.RES_DEEP_SPACES_PIT)],
-				[T.TILES_PITSIDE, ResourcesQueue.getImg(C.RES_DEEP_SPACES_PITSIDE)],
-				[T.TILES_PITSIDE_SMALL, ResourcesQueue.getImg(C.RES_DEEP_SPACES_PITSIDESMALL)],
-				[T.TILES_STYLE, ResourcesQueue.getImg(C.RES_DEEP_SPACES_TILES)],
-			]));
-		}
+		Gfx.STYLES.set(T.STYLE_DEEP_SPACES, new Map([
+			[T.TILES_WALL, ResourcesQueue.getImg(C.RES_DEEP_SPACES_WALL)],
+			[T.TILES_FLOOR, ResourcesQueue.getImg(C.RES_DEEP_SPACES_FLOOR)],
+			[T.TILES_FLOOR_ALT, ResourcesQueue.getImg(C.RES_DEEP_SPACES_FLOORALT)],
+			[T.TILES_FLOOR_DIRT, ResourcesQueue.getImg(C.RES_DEEP_SPACES_FLOORDIRT)],
+			[T.TILES_FLOOR_GRASS, ResourcesQueue.getImg(C.RES_DEEP_SPACES_FLOORGRASS)],
+			[T.TILES_FLOOR_MOSAIC, ResourcesQueue.getImg(C.RES_DEEP_SPACES_FLOORMOSAIC)],
+			[T.TILES_FLOOR_ROAD, ResourcesQueue.getImg(C.RES_DEEP_SPACES_FLOORROAD)],
+			[T.TILES_PIT, ResourcesQueue.getImg(C.RES_DEEP_SPACES_PIT)],
+			[T.TILES_PITSIDE, ResourcesQueue.getImg(C.RES_DEEP_SPACES_PITSIDE)],
+			[T.TILES_PITSIDE_SMALL, ResourcesQueue.getImg(C.RES_DEEP_SPACES_PITSIDESMALL)],
+			[T.TILES_STYLE, ResourcesQueue.getImg(C.RES_DEEP_SPACES_TILES)],
+		]));
 
-		if (hold.styleFor) {
-			Gfx.STYLES.set(T.STYLE_FORTRESS, new Map([
-				[T.TILES_WALL, ResourcesQueue.getImg(C.RES_FORTRESS_WALL)],
-				[T.TILES_FLOOR, ResourcesQueue.getImg(C.RES_FORTRESS_FLOOR)],
-				[T.TILES_FLOOR_ALT, ResourcesQueue.getImg(C.RES_FORTRESS_FLOORALT)],
-				[T.TILES_FLOOR_DIRT, ResourcesQueue.getImg(C.RES_FORTRESS_FLOORDIRT)],
-				[T.TILES_FLOOR_GRASS, ResourcesQueue.getImg(C.RES_FORTRESS_FLOORGRASS)],
-				[T.TILES_FLOOR_MOSAIC, ResourcesQueue.getImg(C.RES_FORTRESS_FLOORMOSAIC)],
-				[T.TILES_FLOOR_ROAD, ResourcesQueue.getImg(C.RES_FORTRESS_FLOORROAD)],
-				[T.TILES_PIT, ResourcesQueue.getImg(C.RES_FORTRESS_PIT)],
-				[T.TILES_PITSIDE, ResourcesQueue.getImg(C.RES_FORTRESS_PITSIDE)],
-				[T.TILES_PITSIDE_SMALL, ResourcesQueue.getImg(C.RES_FORTRESS_PITSIDESMALL)],
-				[T.TILES_STYLE, ResourcesQueue.getImg(C.RES_FORTRESS_TILES)],
-			]));
-		}
+		Gfx.STYLES.set(T.STYLE_FORTRESS, new Map([
+			[T.TILES_WALL, ResourcesQueue.getImg(C.RES_FORTRESS_WALL)],
+			[T.TILES_FLOOR, ResourcesQueue.getImg(C.RES_FORTRESS_FLOOR)],
+			[T.TILES_FLOOR_ALT, ResourcesQueue.getImg(C.RES_FORTRESS_FLOORALT)],
+			[T.TILES_FLOOR_DIRT, ResourcesQueue.getImg(C.RES_FORTRESS_FLOORDIRT)],
+			[T.TILES_FLOOR_GRASS, ResourcesQueue.getImg(C.RES_FORTRESS_FLOORGRASS)],
+			[T.TILES_FLOOR_MOSAIC, ResourcesQueue.getImg(C.RES_FORTRESS_FLOORMOSAIC)],
+			[T.TILES_FLOOR_ROAD, ResourcesQueue.getImg(C.RES_FORTRESS_FLOORROAD)],
+			[T.TILES_PIT, ResourcesQueue.getImg(C.RES_FORTRESS_PIT)],
+			[T.TILES_PITSIDE, ResourcesQueue.getImg(C.RES_FORTRESS_PITSIDE)],
+			[T.TILES_PITSIDE_SMALL, ResourcesQueue.getImg(C.RES_FORTRESS_PITSIDESMALL)],
+			[T.TILES_STYLE, ResourcesQueue.getImg(C.RES_FORTRESS_TILES)],
+		]));
 
-		if (hold.styleFou) {
-			Gfx.STYLES.set(T.STYLE_FOUNDATION, new Map([
-				[T.TILES_WALL, ResourcesQueue.getImg(C.RES_FOUNDATION_WALL)],
-				[T.TILES_FLOOR, ResourcesQueue.getImg(C.RES_FOUNDATION_FLOOR)],
-				[T.TILES_FLOOR_ALT, ResourcesQueue.getImg(C.RES_FOUNDATION_FLOORALT)],
-				[T.TILES_FLOOR_DIRT, ResourcesQueue.getImg(C.RES_FOUNDATION_FLOORDIRT)],
-				[T.TILES_FLOOR_GRASS, ResourcesQueue.getImg(C.RES_FOUNDATION_FLOORGRASS)],
-				[T.TILES_FLOOR_MOSAIC, ResourcesQueue.getImg(C.RES_FOUNDATION_FLOORMOSAIC)],
-				[T.TILES_FLOOR_ROAD, ResourcesQueue.getImg(C.RES_FOUNDATION_FLOORROAD)],
-				[T.TILES_PIT, ResourcesQueue.getImg(C.RES_FOUNDATION_PIT)],
-				[T.TILES_PITSIDE, ResourcesQueue.getImg(C.RES_FOUNDATION_PITSIDE)],
-				[T.TILES_PITSIDE_SMALL, ResourcesQueue.getImg(C.RES_FOUNDATION_PITSIDESMALL)],
-				[T.TILES_STYLE, ResourcesQueue.getImg(C.RES_FOUNDATION_TILES)],
-			]));
-		}
+		Gfx.STYLES.set(T.STYLE_FOUNDATION, new Map([
+			[T.TILES_WALL, ResourcesQueue.getImg(C.RES_FOUNDATION_WALL)],
+			[T.TILES_FLOOR, ResourcesQueue.getImg(C.RES_FOUNDATION_FLOOR)],
+			[T.TILES_FLOOR_ALT, ResourcesQueue.getImg(C.RES_FOUNDATION_FLOORALT)],
+			[T.TILES_FLOOR_DIRT, ResourcesQueue.getImg(C.RES_FOUNDATION_FLOORDIRT)],
+			[T.TILES_FLOOR_GRASS, ResourcesQueue.getImg(C.RES_FOUNDATION_FLOORGRASS)],
+			[T.TILES_FLOOR_MOSAIC, ResourcesQueue.getImg(C.RES_FOUNDATION_FLOORMOSAIC)],
+			[T.TILES_FLOOR_ROAD, ResourcesQueue.getImg(C.RES_FOUNDATION_FLOORROAD)],
+			[T.TILES_PIT, ResourcesQueue.getImg(C.RES_FOUNDATION_PIT)],
+			[T.TILES_PITSIDE, ResourcesQueue.getImg(C.RES_FOUNDATION_PITSIDE)],
+			[T.TILES_PITSIDE_SMALL, ResourcesQueue.getImg(C.RES_FOUNDATION_PITSIDESMALL)],
+			[T.TILES_STYLE, ResourcesQueue.getImg(C.RES_FOUNDATION_TILES)],
+		]));
 
-		if (hold.styleIce) {
-			Gfx.STYLES.set(T.STYLE_ICEWORKS, new Map([
-				[T.TILES_WALL, ResourcesQueue.getImg(C.RES_ICEWORKS_WALL)],
-				[T.TILES_FLOOR, ResourcesQueue.getImg(C.RES_ICEWORKS_FLOOR)],
-				[T.TILES_FLOOR_ALT, ResourcesQueue.getImg(C.RES_ICEWORKS_FLOORALT)],
-				[T.TILES_FLOOR_DIRT, ResourcesQueue.getImg(C.RES_ICEWORKS_FLOORDIRT)],
-				[T.TILES_FLOOR_GRASS, ResourcesQueue.getImg(C.RES_ICEWORKS_FLOORGRASS)],
-				[T.TILES_FLOOR_MOSAIC, ResourcesQueue.getImg(C.RES_ICEWORKS_FLOORMOSAIC)],
-				[T.TILES_FLOOR_ROAD, ResourcesQueue.getImg(C.RES_ICEWORKS_FLOORROAD)],
-				[T.TILES_PIT, ResourcesQueue.getImg(C.RES_ICEWORKS_PIT)],
-				[T.TILES_PITSIDE, ResourcesQueue.getImg(C.RES_ICEWORKS_PITSIDE)],
-				[T.TILES_PITSIDE_SMALL, ResourcesQueue.getImg(C.RES_ICEWORKS_PITSIDESMALL)],
-				[T.TILES_STYLE, ResourcesQueue.getImg(C.RES_ICEWORKS_TILES)],
-			]));
-		}
+		Gfx.STYLES.set(T.STYLE_ICEWORKS, new Map([
+			[T.TILES_WALL, ResourcesQueue.getImg(C.RES_ICEWORKS_WALL)],
+			[T.TILES_FLOOR, ResourcesQueue.getImg(C.RES_ICEWORKS_FLOOR)],
+			[T.TILES_FLOOR_ALT, ResourcesQueue.getImg(C.RES_ICEWORKS_FLOORALT)],
+			[T.TILES_FLOOR_DIRT, ResourcesQueue.getImg(C.RES_ICEWORKS_FLOORDIRT)],
+			[T.TILES_FLOOR_GRASS, ResourcesQueue.getImg(C.RES_ICEWORKS_FLOORGRASS)],
+			[T.TILES_FLOOR_MOSAIC, ResourcesQueue.getImg(C.RES_ICEWORKS_FLOORMOSAIC)],
+			[T.TILES_FLOOR_ROAD, ResourcesQueue.getImg(C.RES_ICEWORKS_FLOORROAD)],
+			[T.TILES_PIT, ResourcesQueue.getImg(C.RES_ICEWORKS_PIT)],
+			[T.TILES_PITSIDE, ResourcesQueue.getImg(C.RES_ICEWORKS_PITSIDE)],
+			[T.TILES_PITSIDE_SMALL, ResourcesQueue.getImg(C.RES_ICEWORKS_PITSIDESMALL)],
+			[T.TILES_STYLE, ResourcesQueue.getImg(C.RES_ICEWORKS_TILES)],
+		]));
 
 		Gfx.ButtonSystemTexture?.destroy(true);
 		Gfx.ButtonDownSystemTexture?.destroy(true);
