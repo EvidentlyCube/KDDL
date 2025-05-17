@@ -1146,6 +1146,7 @@ export class TStateGame extends RecamelState {
 		Game.room.layerEffects.visible = false;
 		Game.room.layerActive.visible = false;
 		Game.room.layerUnder.visible = false;
+		Game.room.layerUnderTextured.visible = false;
 		Game.room.layerDebug.visible = false;
 		Game.room.layerUI.visible = false;
 		Core.lMain.clear();
@@ -1164,6 +1165,7 @@ export class TStateGame extends RecamelState {
 		} else {
 			Game.room.layerActive.visible = true;
 			Game.room.layerUnder.visible = true;
+			Game.room.layerUnderTextured.visible = true;
 			Game.room.layerEffects.visible = true;
 			Game.room.layerDebug.visible = true;
 			Game.room.layerUI.visible = true;
@@ -1178,11 +1180,13 @@ export class TStateGame extends RecamelState {
 		const entrance: Element = Level.getFirstHoldEntrance();
 		Game.loadFromLevelEntrance(intAttr(entrance, 'EntranceID'));
 		Game.room.layerUnder.visible = false;
+		Game.room.layerUnderTextured.visible = false;
 		Game.room.layerActive.visible = false;
 		Game.room.layerEffects.visible = false;
 		Game.room.layerDebug.visible = false;
 		TWindowLevelStart.show(intAttr(entrance, 'EntranceID'), true);
 		Game.room.layerUnder.visible = true;
+		Game.room.layerUnderTextured.visible = true;
 		Game.room.layerActive.visible = true;
 		Game.room.layerEffects.visible = true;
 		Game.room.layerDebug.visible = true;

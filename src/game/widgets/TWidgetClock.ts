@@ -4,6 +4,7 @@ import {Gfx} from "../global/Gfx";
 import {C} from "../../C";
 import {Text} from "../../../src.framework/net/retrocade/standalone/Text";
 import {Make} from "../global/Make";
+import { Container, Rectangle, Sprite, Texture } from "pixi.js";
 
 let SNAKE_MOVE_NAME:string[][] = [];
 
@@ -13,10 +14,20 @@ const width = 132;
 const height = 162;
 
 let text: Text;
-let wasDrawn = true;
 
 export class TWidgetClock {
+	public static container = new Container();
+
+	private static _scrollSprite: Sprite;
+
 	public static init() {
+		TWidgetClock._scrollSprite = new Sprite(new Texture(
+			Gfx.ScrollsTexture.baseTexture,
+			new Rectangle(164, 7, width, height)
+		));
+		TWidgetClock._scrollSprite.x = x;
+		TWidgetClock._scrollSprite.y = y;
+
 		text = Make.text(14);
 
 		text.wordWrapWidth = width;
@@ -29,16 +40,23 @@ export class TWidgetClock {
 	}
 
 	public static update(doDraw: boolean, turnNo: number = 0) {
-		if (doDraw) {
-			TWidgetClock.setText(turnNo);
-			TWidgetClock.draw();
+		const isAdded = Game.room.layerUnderTextured.contains(this._scrollSprite);
 
-		} else if (wasDrawn) {
-			TWidgetClock.clearUnder();
+		if (doDraw) {
+			TWidgetClock.updateText(turnNo);
+
+			if (!isAdded) {
+				Game.room.layerUnderTextured.add(this._scrollSprite);
+				Game.room.layerUnderTextured.add(text);
+			}
+
+		} else if (isAdded) {
+			Game.room.layerUnderTextured.remove(this._scrollSprite);
+			Game.room.layerUnderTextured.remove(text);
 		}
 	}
 
-	private static setText(turnNo: number) {
+	private static updateText(turnNo: number) {
 		const snakeMoves: number = turnNo + 1;
 
 		turnNo %= 30;
@@ -48,7 +66,6 @@ export class TWidgetClock {
 		let newText: string;
 
 		const turn: string = (turnNo.toString());
-
 
 		const descStyle = `fontSize="15px"`;
 		const snakeStyle = `fontSize="16px"`;
@@ -78,34 +95,8 @@ export class TWidgetClock {
 		newText += '</p>';
 
 		text.htmlText = newText;
-		wasDrawn = false;
-	}
 
-	private static clearUnder() {
-		Game.room.layerUnder.drawComplexDirect(Gfx.IN_GAME_SCREEN,
-			x, y, 1, x, y, width, height);
-
-		wasDrawn = false;
-	}
-
-	private static draw() {
-		TWidgetClock.internalDraw();
-	}
-
-	private static internalDraw() {
-		if (wasDrawn) {
-			return;
-		}
-
-		Game.room.layerUnder.drawComplexDirect(Gfx.SCROLLS,
-			x, y, 1, 164, 7, width, height);
-
-		const textCanvas = text.textCanvas;
-		Game.room.layerUnder.drawDirect(
-			text.textCanvas,
-			Math.floor(x + (width - textCanvas.width) / 2 - 5.5),
-			y + (height - textCanvas.height) / 2 | 0
-		);
-		wasDrawn = true;
+		text.x = Math.floor(x + (width - text.textWidth) / 2 - 5.5);
+		text.y = y + (height - text.textHeight) / 2 | 0;
 	}
 }

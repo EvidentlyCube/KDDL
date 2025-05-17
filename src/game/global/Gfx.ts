@@ -11,6 +11,7 @@ export const Gfx = {
 	TooltipSystemTexture: null! as PIXI.Texture,
 	InputSystemTexture: null! as PIXI.Texture,
 	InGameScreenTexture: null! as PIXI.Texture,
+	ScrollsTexture: null! as PIXI.Texture,
 
 	LevelStartBgTexture: null! as PIXI.Texture,
 	TitleScreenBgTexture: null! as PIXI.Texture,
@@ -188,5 +189,6 @@ export const Gfx = {
 		Gfx.GameLogoTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.LOGO_GAME));
 		Gfx.CaravelLogoTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.LOGO_CARAVEL));
 		Gfx.RetrocadeLogoTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.LOGO_RETROCADE));
+		Gfx.ScrollsTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.SCROLLS));
 	},
 };
