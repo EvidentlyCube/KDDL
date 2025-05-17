@@ -1264,7 +1264,7 @@ export class TStateGame extends RecamelState {
 		// Opaque Layer, is always described
 		tile = Game.room.tilesOpaque[index];
 		if (tile != 0) {
-			if (tile == C.T_WALL && (Game.room.renderer.opaqueData[index] & T.WALL_SECRET_OFFSET)) {
+			if (tile == C.T_WALL && (Game.room.roomTileRenderer.opaqueData[index] & T.WALL_SECRET_OFFSET)) {
 				toTrace += _("ingame.tile.62");
 			} else {
 				toTrace += _(`ingame.tile.${tile}`);

@@ -654,7 +654,7 @@ export const C = {
 	REND_PIT_IS_SIDE_SMALL: 0x40000000,
 	REND_PIT_ADD_SHADOW: 0x20000000,
 	REND_PIT_COORDS_MASK: 0x1FFFFFFF, // Masked to remove the above two flags
-	REND_PIT_COORD_MULTIP: 0x00000020, // Multiplier for coordinates
+	REND_PIT_COORD_MULTIPLIER: 0x00000020, // Multiplier for coordinates
 
 	CC_APPEAR: 0,
 	CC_APPEAR_AT: 1,

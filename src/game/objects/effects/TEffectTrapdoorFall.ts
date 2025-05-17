@@ -51,11 +51,11 @@ export class TEffectTrapdoorFall extends TEffect {
 		if (cutAway) {
 			const height: number = (this.y / S.RoomTileHeight + 1 | 0) * S.RoomTileHeight - this.y;
 
-			this.room.layerActive.drawComplexDirect(this.room.renderer.bdTiles,
+			this.room.layerActive.drawComplexDirect(this.room.roomTileRenderer.tilesBitmapData,
 				this.x, this.y, (DURATION - this.fall) / DURATION, 176, 242, S.RoomTileWidth, height);
 
 		} else {
-			this.room.layerActive.drawComplexDirect(this.room.renderer.bdTiles,
+			this.room.layerActive.drawComplexDirect(this.room.roomTileRenderer.tilesBitmapData,
 				this.x, this.y, (DURATION - this.fall) / DURATION, 176, 242, S.RoomTileWidth, S.RoomTileHeight);
 		}
 	}

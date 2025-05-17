@@ -6,7 +6,7 @@ import {Pathmap} from "./Pathmap";
 import {VOOrb} from "../managers/VOOrb";
 import {VOScroll} from "../managers/VOScroll";
 import {VOCheckpoints} from "../managers/VOCheckpoints";
-import {Renderer} from "./Renderer";
+import {RoomTileRenderer} from "./RoomTileRenderer";
 import {PlatformOptions} from "../../platform/PlatformOptions";
 import {S} from "../../S";
 import {Gfx} from "./Gfx";
@@ -39,6 +39,7 @@ import {TBrain} from "../objects/actives/TBrain";
 import {PackedVars} from "./PackedVars";
 import {TPlayerDouble} from "../objects/actives/TPlayerDouble";
 import {RecamelLayerSprite} from "../../../src.framework/net/retrocade/camel/layers/RecamelLayerSprite";
+import { Sprite } from "pixi.js";
 
 const tarOrthoCheckX = [0, 1, 0, -1];
 const tarOrthoCheckY = [-1, 0, 1, 0];
@@ -78,6 +79,7 @@ export class Room {
 	public layerActive: DrodLayer;
 	public layerEffects: DrodLayer;
 	public layerDebug: DrodLayer;
+	public layerUnderTextured: RecamelLayerSprite;
 	public layerUI: RecamelLayerSprite;
 
 	public monsters = new RecamelGroup<TMonster>();
@@ -111,7 +113,7 @@ export class Room {
 	public scrolls = new Map<number, VOScroll>();
 	public checkpoints = new VOCheckpoints();
 
-	public renderer = new Renderer();
+	public roomTileRenderer = new RoomTileRenderer();
 
 
 	//{ Uncategorized
@@ -123,29 +125,32 @@ export class Room {
 
 	public constructor() {
 		this.layerUnder = DrodLayer.create(S.SIZE_GAME_WIDTH, S.SIZE_GAME_HEIGHT, 0, 0);
+		this.layerUnderTextured = RecamelLayerSprite.create();
 		this.layerActive = DrodLayer.create(S.RoomWidthPixels, S.RoomHeightPixels, S.LEVEL_OFFSET_X, S.LEVEL_OFFSET_Y);
 		this.layerEffects = DrodLayer.create(S.SIZE_GAME_WIDTH, S.SIZE_GAME_HEIGHT, 0, 0);
 		this.layerDebug = DrodLayer.create(S.RoomWidthPixels, S.RoomHeightPixels, S.LEVEL_OFFSET_X, S.LEVEL_OFFSET_Y);
 		this.layerUI = RecamelLayerSprite.create();
 
-		this.layerUnder.offsetX = S.LEVEL_OFFSET_X;
-		this.layerUnder.offsetY = S.LEVEL_OFFSET_Y;
+		this.layerUnderTextured.add(this.roomTileRenderer.spriteLayer.container);
+		this.roomTileRenderer.spriteLayer.container.x = S.LEVEL_OFFSET_X;
+		this.roomTileRenderer.spriteLayer.container.y = S.LEVEL_OFFSET_Y;
 
 		this.layerEffects.offsetX = S.LEVEL_OFFSET_X;
 		this.layerEffects.offsetY = S.LEVEL_OFFSET_Y;
 
 		if (PlatformOptions.isGame) {
-			this.layerUnder.blitDirectly(Gfx.IN_GAME_SCREEN, 0, 0);
+			this.layerUnderTextured.addAt(new Sprite(Gfx.InGameScreenTexture), 0);
 		}
 	}
 
 	public clear() {
 		this.checkpoints.clear();
-		this.renderer.clear();
+		this.roomTileRenderer.teardown();
 		this.monsters.clear();
 
 		if (PlatformOptions.isGame) {
 			this.layerUnder.removeLayer();
+			this.layerUnderTextured.removeLayer();
 			this.layerActive.removeLayer();
 			this.layerEffects.removeLayer();
 			this.layerDebug.removeLayer();
@@ -213,7 +218,14 @@ export class Room {
 			this.scrolls.set(scrollData.x + scrollData.y * S.RoomWidth, scrollData);
 		}
 
-		this.renderer.prepareRoom(styleName, this.tilesOpaque, this.tilesTransparent, this.tilesTransparentParam, this.tilesFloor, this.checkpoints, this.layerUnder);
+		this.roomTileRenderer.prepareRoom(
+			styleName,
+			this.tilesOpaque,
+			this.tilesTransparent,
+			this.tilesTransparentParam,
+			this.tilesFloor,
+			this.checkpoints
+		);
 		this.drawRoom();
 
 		this.initRoomStats();
@@ -381,7 +393,7 @@ export class Room {
 		this.monsterCount = 0;
 
 		if (PlatformOptions.isGame) {
-			this.layerUnder.clearTiles();
+			this.roomTileRenderer.clearTiles();
 			this.layerActive.clearTiles();
 			this.layerEffects.clearTiles();
 		}
@@ -939,9 +951,9 @@ export class Room {
 			F.isCrumblyWall(this.tilesOpaque[x + y * S.RoomWidth]) ||
 
 			// A workaround to detect Secret Walls hidden as standard wall
-			(this.renderer.opaqueData[x + y * S.RoomWidth] & C.REND_WALL_HIDDEN_SECRET),
+			(this.roomTileRenderer.opaqueData[x + y * S.RoomWidth] & C.REND_WALL_HIDDEN_SECRET),
 		);
-		this.plot(x, y, this.renderer.getNeighbourFloor(x, y));
+		this.plot(x, y, this.roomTileRenderer.getNeighbourFloor(x, y));
 		CueEvents.add(C.CID_CRUMBLY_WALL_DESTROYED, new VOCoord(x, y, o));
 	}
 
@@ -1489,18 +1501,19 @@ export class Room {
 
 	public setSaturation(saturation: number) {
 		this.layerActive.saturation = saturation;
-		this.layerUnder.saturation = saturation;
+		this.layerUnderTextured.saturation = saturation;
 	}
 
 	public drawRoom() {
-
-		this.layerUnder.clearTiles();
+		this.roomTileRenderer.clearTiles();
 
 		for (let j: number = 0; j < S.RoomHeight; j++) {
 			for (let i: number = 0; i < S.RoomWidth; i++) {
-				this.renderer.drawTile(i, j);
+				this.roomTileRenderer.drawTile(i, j);
 			}
 		}
+
+		this.roomTileRenderer.refreshCache();
 	}
 
 	public redrawTile(x: number, y: number) {
@@ -1508,7 +1521,7 @@ export class Room {
 			return;
 		}
 
-		this.renderer.redrawTile(x, y);
+		this.roomTileRenderer.redrawTile(x, y);
 	}
 
 	/** Plots a tile to the level and redraws all necessary tiles. **/
@@ -1525,7 +1538,7 @@ export class Room {
 
 		this.updatePathmapAt(x, y);
 
-		this.renderer.recheckAroundTile(x, y, this.plots);
+		this.roomTileRenderer.recheckAroundTile(x, y, this.plots);
 	}
 
 	public drawPlots() {
@@ -1534,6 +1547,7 @@ export class Room {
 		}
 
 		this.plots.clear();
+		this.roomTileRenderer.refreshCache();
 	}
 
 	private tileSanitizer(tileInput: number): number {

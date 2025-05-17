@@ -1,6 +1,7 @@
 import {RecamelLayer} from "./RecamelLayer";
 import {RecamelDisplay} from "../core/RecamelDisplay";
-import { DisplayObject, Sprite } from "pixi.js";
+import { DisplayObject, Filter, Sprite } from "pixi.js";
+import { AdjustmentFilter } from "@pixi/filter-adjustment";
 
 /**
  * A Layer which consists of Sprite object, classical display list
@@ -69,6 +70,25 @@ export class RecamelLayerSprite extends RecamelLayer {
 	 */
 	public get interactiveChildren(): boolean {
 		return this._layer.interactiveChildren ?? false;
+	}
+
+	private _saturationFilter = new AdjustmentFilter();
+
+	public set saturation(saturation: number) {
+		if (this._saturationFilter.saturation !== saturation) {
+			this._saturationFilter.saturation = saturation;
+			this.updateFilters();
+		}
+	}
+
+	public get saturation() {
+		return this._saturationFilter.saturation;
+	}
+
+	public updateFilters() {
+		this._layer.filters = [
+			this._saturationFilter.saturation < 1 ? this._saturationFilter : undefined
+		].filter(x => x) as Filter[];
 	}
 
 

@@ -28,7 +28,7 @@ export class TEffectLevelStats extends TEffect {
 		text.filters = [new OutlineFilter(2, 0, 0.5)];
 
 		this.renderTexture = PIXI.RenderTexture.create(text.textWidth + 8, text.textHeight + 8);
-		(RecamelCore.app.renderer as PIXI.Renderer).render(text, this.renderTexture, true);
+		RecamelCore.renderer.render(text, this.renderTexture, true);
 
 		this.textSprite = new PIXI.Sprite(this.renderTexture);
 		this.textSprite.x = (S.RoomWidthPixels - this.textSprite.width) / 2 + S.LEVEL_OFFSET_X;

@@ -1,13 +1,13 @@
 import * as PIXI from 'pixi.js';
-import {RecamelGroup} from "./RecamelGroup";
-import {RecamelObject} from "../objects/RecamelObject";
-import {RecamelState} from "./RecamelState";
-import {RecamelDisplay} from "./RecamelDisplay";
-import {RecamelTooltip} from "./RecamelTooltip";
-import {RecamelWindowManager} from "./RecamelWindowManager";
+import { RecamelGroup } from "./RecamelGroup";
+import { RecamelObject } from "../objects/RecamelObject";
+import { RecamelState } from "./RecamelState";
+import { RecamelDisplay } from "./RecamelDisplay";
+import { RecamelTooltip } from "./RecamelTooltip";
+import { RecamelWindowManager } from "./RecamelWindowManager";
 import RawInput from "../../../../../src.tn/RawInput";
-import {UtilsRandom} from "../../utils/UtilsRandom";
-import {Sfx} from "../../../../../src/game/global/Sfx";
+import { UtilsRandom } from "../../utils/UtilsRandom";
+import { Sfx } from "../../../../../src/game/global/Sfx";
 
 export class RecamelCore {
 	/**
@@ -73,6 +73,15 @@ export class RecamelCore {
 
 	public static app: PIXI.Application;
 
+	public static get renderer(): PIXI.Renderer {
+		const { renderer } = RecamelCore.app;
+
+		if (!(renderer instanceof PIXI.Renderer)) {
+			throw new Error("rendered has incorrect type");
+		}
+
+		return renderer;
+	}
 	/**
 	 * Initialzes the whole game
 	 */

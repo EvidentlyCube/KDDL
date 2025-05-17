@@ -1,4 +1,3 @@
-import * as PIXI from 'pixi.js';
 import {AdjustmentFilter} from '@pixi/filter-adjustment';
 import {RecamelLayer} from "../../../src.framework/net/retrocade/camel/layers/RecamelLayer";
 import {BitmapDataWritable, CanvasImageSource, CanvasImageSourceFragment} from "../../C";
@@ -7,6 +6,7 @@ import {S} from "../../S";
 import {T} from "../../T";
 import {UtilsNumber} from "../../../src.framework/net/retrocade/utils/UtilsNumber";
 import {RecamelDisplay} from "../../../src.framework/net/retrocade/camel/core/RecamelDisplay";
+import { BaseTexture, DisplayObject, Filter, Sprite, Texture } from 'pixi.js';
 
 export class DrodLayer extends RecamelLayer {
 	public static create(width: number, height: number, positionX: number, positionY: number) {
@@ -27,18 +27,18 @@ export class DrodLayer extends RecamelLayer {
 	 * BitmapData of the layer, the draw-on thing
 	 */
 	public bitmapData: BitmapDataWritable;
-	public texture: PIXI.Texture;
-	public baseTexture: PIXI.BaseTexture;
+	public texture: Texture;
+	public baseTexture: BaseTexture;
 
 	/**
 	 * Bitmap, the layer
 	 */
-	private _layer: PIXI.Sprite;
+	private _layer: Sprite;
 
 	/**
 	 * @inheritdoc
 	 */
-	public get displayObject(): PIXI.DisplayObject {
+	public get displayObject(): DisplayObject {
 		return this._layer;
 	}
 
@@ -47,7 +47,7 @@ export class DrodLayer extends RecamelLayer {
 
 	private _width: number;
 	private _height: number;
-	private _desaturateFilter?: AdjustmentFilter;
+	private _saturationFilter = new AdjustmentFilter();
 
 	/**
 	 * Constructor
@@ -59,9 +59,9 @@ export class DrodLayer extends RecamelLayer {
 		canvas.width = width;
 		canvas.height = height;
 		this.bitmapData = canvas.getContext('2d')!;
-		this.baseTexture = new PIXI.BaseTexture(this.bitmapData.canvas, {width, height});
-		this.texture = new PIXI.Texture(this.baseTexture);
-		this._layer = new PIXI.Sprite(this.texture);
+		this.baseTexture = new BaseTexture(this.bitmapData.canvas, {width, height});
+		this.texture = new Texture(this.baseTexture);
+		this._layer = new Sprite(this.texture);
 
 		this._width = width;
 		this._height = height;
@@ -71,22 +71,20 @@ export class DrodLayer extends RecamelLayer {
 	}
 
 	public set saturation(saturation: number) {
-
-		if (saturation >= 1) {
-			this._layer.filters = [];
-			return;
+		if (this._saturationFilter.saturation !== saturation) {
+			this._saturationFilter.saturation = saturation;
+			this.updateFilters();
 		}
+	}
 
-		if (!this._desaturateFilter) {
-			if (saturation === 1) {
-				return;
-			}
+	public get saturation() {
+		return this._saturationFilter.saturation;
+	}
 
-			this._desaturateFilter = new AdjustmentFilter();
-		}
-
-		this._desaturateFilter.saturation = saturation;
-		this._layer.filters = [this._desaturateFilter];
+	public updateFilters() {
+		this._layer.filters = [
+			this._saturationFilter.saturation < 1 ? this._saturationFilter : undefined
+		].filter(x => x) as Filter[];
 	}
 
 
@@ -194,7 +192,7 @@ export class DrodLayer extends RecamelLayer {
 		this.bitmapData.clearRect(this.offsetX, this.offsetY, S.RoomWidthPixels, S.RoomHeightPixels);
 	}
 
-	public clearBlock(x: number, y: number) {
+	public clearTile(x: number, y: number) {
 		this.bitmapData.clearRect(
 			x * S.RoomTileWidth + this.offsetX,
 			y * S.RoomTileHeight + this.offsetY,
@@ -286,8 +284,6 @@ export class DrodLayer extends RecamelLayer {
 	public drawComplexDirect(source: CanvasImageSource, x: number, y: number, alpha: number, sourceX: number,
 	                         sourceY: number, sourceWidth: number, sourceHeight: number,
 	) {
-
-
 		this.bitmapData.globalAlpha = alpha;
 		this.bitmapData.drawImage(
 			source,

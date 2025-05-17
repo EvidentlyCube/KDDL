@@ -1,7 +1,4 @@
-import {S} from "../../S";
-import {DrodLayer} from "../global/DrodLayer";
-import {Gfx} from "../global/Gfx";
-import {T} from "../../T";
+import { S } from "../../S";
 
 export class VOCheckpoints {
 	public checkpoints: number[] = [];
@@ -16,11 +13,5 @@ export class VOCheckpoints {
 
 	public clear() {
 		this.checkpoints.length = 0;
-	}
-
-	public drawIfHas(x: number, y: number, drawTo: DrodLayer) {
-		if (this.checkpoints.indexOf(x + y * S.RoomWidth) != -1) {
-			drawTo.blitTileRect(Gfx.GENERAL_TILES, T.TI_CHECKPOINT, x, y);
-		}
 	}
 }

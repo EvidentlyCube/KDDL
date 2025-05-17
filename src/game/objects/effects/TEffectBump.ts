@@ -1,12 +1,16 @@
-import * as PIXI from 'pixi.js';
 import {TEffect} from "./TEffect";
 import {TStateGame} from "../../states/TStateGame";
 import {VOCoord} from "../../managers/VOCoord";
 import {F} from "../../../F";
 import {UtilsBitmapData} from "../../../../src.framework/net/retrocade/utils/UtilsBitmapData";
 import {S} from "../../../S";
+import { BaseTexture, Matrix, RenderTexture, Sprite, Texture } from "pixi.js";
+import { RecamelCore } from "src.framework/net/retrocade/camel/core/RecamelCore";
+import { Game } from "src/game/global/Game";
 
 export class TEffectBump extends TEffect {
+	private static _bumpTexture?: RenderTexture;
+	private static _bumpSprite?: Sprite;
 	private static _currentBump: TEffectBump;
 
 	public static onCommandProcessed() {
@@ -16,34 +20,39 @@ export class TEffectBump extends TEffect {
 		}
 	}
 
-	private _x: number;
-	private _y: number;
 	private _hideOn: number;
 
-	private _canvas: HTMLCanvasElement;
-	private _texture: PIXI.Texture;
+	private _bumpTexture: RenderTexture;
+	private _bumpSprite: Sprite;
 
 	public constructor(coord: VOCoord) {
 		super();
 
-		this._canvas = F.newCanvas(S.RoomTileWidth, S.RoomTileHeight);
-		this._texture = new PIXI.Texture(new PIXI.BaseTexture(this._canvas));
+		this._bumpTexture = TEffectBump._bumpTexture ?? RenderTexture.create({
+			width: S.RoomTileWidth,
+			height: S.RoomTileHeight,
+		});
+		this._bumpSprite = TEffectBump._bumpSprite ?? new Sprite(this._bumpTexture);
 
-		const x: number = coord.x;
-		const y: number = coord.y;
-		const o: number = coord.o;
+		TEffectBump._bumpTexture = this._bumpTexture;
+		TEffectBump._bumpSprite = this._bumpSprite;
 
-		UtilsBitmapData.blitPart(this.room.layerUnder.bitmapData.canvas, this._canvas.getContext('2d')!,
-			0, 0,
-			S.LEVEL_OFFSET_X + x * S.RoomTileWidth, S.LEVEL_OFFSET_Y + y * S.RoomTileHeight,
-			S.RoomTileWidth, S.RoomTileHeight);
+		RecamelCore.renderer.render(this.room.layerUnderTextured.displayObject, {
+			clear: true,
+			renderTexture: this._bumpTexture,
+			transform: Matrix.IDENTITY.translate(
+				-(S.LEVEL_OFFSET_X + coord.x * S.RoomTileWidth),
+				-(S.LEVEL_OFFSET_Y + coord.y * S.RoomTileHeight),
+			)
+		})
 
-		this._x = x * S.RoomTileWidth + F.getOX(o);
-		this._y = y * S.RoomTileHeight + F.getOY(o);
+		this._bumpSprite.x = S.LEVEL_OFFSET_X + coord.x * S.RoomTileWidth + F.getOX(coord.o);
+		this._bumpSprite.y = S.LEVEL_OFFSET_Y + coord.y * S.RoomTileHeight + F.getOY(coord.o);
 
 		this._hideOn = Date.now() + 250;
 
 		TStateGame.effectsUnder.add(this);
+		this.room.layerUnderTextured.add(this._bumpSprite);
 
 		TEffectBump._currentBump = this;
 	}
@@ -52,13 +61,11 @@ export class TEffectBump extends TEffect {
 		if (Date.now() > this._hideOn) {
 			this.release();
 			TStateGame.effectsUnder.nullify(this);
-		} else {
-			this.room.layerActive.blitDirectly(this._canvas, this._x, this._y);
 		}
 	}
 
 	public release() {
-		this._texture.destroy(true);
+		this.room.layerUnderTextured.remove(this._bumpSprite);
 	}
 
 }

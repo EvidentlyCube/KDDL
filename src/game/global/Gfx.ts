@@ -4,11 +4,13 @@ import { ResourcesQueue } from "../../resources/mainGame/ResourcesQueue";
 import { T } from "../../T";
 
 export const Gfx = {
+	GeneralTilesTexture: null! as PIXI.Texture,
 	ButtonSystemTexture: null! as PIXI.Texture,
 	ButtonDownSystemTexture: null! as PIXI.Texture,
 	WindowSystemTexture: null! as PIXI.Texture,
 	TooltipSystemTexture: null! as PIXI.Texture,
 	InputSystemTexture: null! as PIXI.Texture,
+	InGameScreenTexture: null! as PIXI.Texture,
 
 	LevelStartBgTexture: null! as PIXI.Texture,
 	TitleScreenBgTexture: null! as PIXI.Texture,
@@ -43,6 +45,7 @@ export const Gfx = {
 	ACHIEVEMENT: null! as HTMLImageElement,
 	LOCK: null! as HTMLImageElement,
 
+	StyleTextures: new Map<StyleName, Map<StyleTilesets, PIXI.BaseTexture>>(),
 	STYLES: new Map<StyleName, Map<StyleTilesets, CanvasImageSource>>(),
 
 	initialize() {
@@ -158,19 +161,21 @@ export const Gfx = {
 			[T.TILES_STYLE, ResourcesQueue.getImg(C.RES_ICEWORKS_TILES)],
 		]));
 
-		Gfx.ButtonSystemTexture?.destroy(true);
-		Gfx.ButtonDownSystemTexture?.destroy(true);
-		Gfx.WindowSystemTexture?.destroy(true);
-		Gfx.TooltipSystemTexture?.destroy(true);
-		Gfx.InputSystemTexture?.destroy(true);
-		Gfx.TutorialKeysTexture?.destroy(true);
-		Gfx.LevelStartBgTexture?.destroy(true);
-		Gfx.TitleScreenBgTexture?.destroy(true);
-		Gfx.MenuBgTexture?.destroy(true);
-		Gfx.GameLogoTexture?.destroy(true);
-		Gfx.CaravelLogoTexture?.destroy(true);
-		Gfx.RetrocadeLogoTexture?.destroy(true);
+		for (const [style, bitmapDatas] of Gfx.STYLES.entries()) {
+			const textures = Gfx.StyleTextures.get(style) ?? new Map();
+			Gfx.StyleTextures.set(style, textures);
 
+			for (const [tileset, bitmapData] of bitmapDatas.entries()) {
+				if (textures.has(tileset)) {
+					continue;
+				}
+
+				textures.set(tileset, new PIXI.BaseTexture(bitmapData));
+			}
+		}
+
+		Gfx.GeneralTilesTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.GENERAL_TILES));
+		Gfx.InGameScreenTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.IN_GAME_SCREEN));
 		Gfx.ButtonSystemTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.BUTTON_SYSTEM));
 		Gfx.ButtonDownSystemTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.BUTTON_DOWN_SYSTEM));
 		Gfx.WindowSystemTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.WINDOW_BG_SYSTEM));

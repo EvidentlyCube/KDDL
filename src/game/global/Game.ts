@@ -685,7 +685,7 @@ export class Game {
 			// A workaround to detect Secret Walls hidden as standard wall
 
 			(F.isWall(Game.room.tilesOpaque[Game.player.x + Game.player.y * S.RoomWidth]) &&
-				(Game.room.renderer.opaqueData[Game.player.x + Game.player.y * S.RoomWidth] & C.REND_WALL_HIDDEN_SECRET))) {
+				(Game.room.roomTileRenderer.opaqueData[Game.player.x + Game.player.y * S.RoomWidth] & C.REND_WALL_HIDDEN_SECRET))) {
 			Game.room.destroyCrumblyWall(Game.player.x, Game.player.y);
 		}
 

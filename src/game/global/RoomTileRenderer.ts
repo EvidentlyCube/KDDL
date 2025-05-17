@@ -1,15 +1,16 @@
-import * as PIXI from 'pixi.js';
-import {VOCheckpoints} from "../managers/VOCheckpoints";
-import {DrodLayer} from "./DrodLayer";
-import {C, CanvasImageSource, StyleName} from "../../C";
-import {S} from "../../S";
-import {T} from "../../T";
-import {ASSERT} from "../../ASSERT";
-import {Gfx} from "./Gfx";
-import {Progress} from "./Progress";
-import {F} from "../../F";
+import { VOCheckpoints } from "../managers/VOCheckpoints";
+import { DrodLayer } from "./DrodLayer";
+import { C, CanvasImageSource, StyleName } from "../../C";
+import { PlatformOptions } from "../../platform/PlatformOptions";
+import { S } from "../../S";
+import { T } from "../../T";
+import { ASSERT } from "../../ASSERT";
+import { Gfx } from "./Gfx";
+import { Progress } from "./Progress";
+import { F } from "../../F";
+import { BaseTexture, Container, IPointData, Rectangle, Sprite, Texture } from "pixi.js";
 
-export class Renderer {
+export class RoomTileRenderer {
 	public tilesOpaque: number[] = null!;
 	public tilesTransparent: number[] = null!;
 	public tilesTransparentParam: number[] = null!;
@@ -20,52 +21,70 @@ export class Renderer {
 	public opaqueData: number[] = [];
 	public transparentData: number[] = [];
 
-	private drawTo: DrodLayer = null!;
+	public tilesBitmapData: CanvasImageSource = null!;
+	public floorBitmapData: CanvasImageSource = null!;
+	public floorAltBitmapData: CanvasImageSource = null!;
+	public floorDirtBitmapData: CanvasImageSource = null!;
+	public floorGrassBitmapData: CanvasImageSource = null!;
+	public floorMosaicBitmapData: CanvasImageSource = null!;
+	public floorRoadBitmapData: CanvasImageSource = null!;
+	public pitBitmapData: CanvasImageSource = null!;
+	public pitSideBitmapData: CanvasImageSource = null!;
+	public pitSideSmallBitmapData: CanvasImageSource = null!;
+	public wallBitmapData: CanvasImageSource = null!;
 
-	public bdTiles: CanvasImageSource = null!;
-	public bdFloor: CanvasImageSource = null!;
-	public bdFloorAlt: CanvasImageSource = null!;
-	public bdFloorDirt: CanvasImageSource = null!;
-	public bdFloorGrass: CanvasImageSource = null!;
-	public bdFloorMosaic: CanvasImageSource = null!;
-	public bdFloorRoad: CanvasImageSource = null!;
-	public bdPit: CanvasImageSource = null!;
-	public bdPitside: CanvasImageSource = null!;
-	public bdPitsideSmall: CanvasImageSource = null!;
-	public bdWall: CanvasImageSource = null!;
+	public tilesTexture: BaseTexture = null!;
+	public floorTexture: BaseTexture = null!;
+	public floorAltTexture: BaseTexture = null!;
+	public floorDirtTexture: BaseTexture = null!;
+	public floorGrassTexture: BaseTexture = null!;
+	public floorMosaicTexture: BaseTexture = null!;
+	public floorRoadTexture: BaseTexture = null!;
+	public pitTexture: BaseTexture = null!;
+	public pitSideTexture: BaseTexture = null!;
+	public pitSideSmallTexture: BaseTexture = null!;
+	public wallTexture: BaseTexture = null!;
+
+	public spriteLayer: RendererLayer = new RendererLayer();
 
 	public styleName: string = "";
 
-	public prepareRoom(styleName: StyleName, layO: number[], layT: number[], layTParams: number[], layF: number[],
-	                   layCheckpoints: VOCheckpoints, output: DrodLayer,
+	public prepareRoom(
+		styleName: StyleName,
+		layerO: number[],
+		layerT: number[],
+		layerTParams: number[],
+		layerF: number[],
+		checkpoints: VOCheckpoints
 	) {
 		this.styleName = styleName;
 
-		this.bdTiles = Gfx.STYLES.get(styleName)!.get(T.TILES_STYLE)!;
-		this.bdFloor = Gfx.STYLES.get(styleName)!.get(T.TILES_FLOOR)!;
-		this.bdFloorAlt = Gfx.STYLES.get(styleName)!.get(T.TILES_FLOOR_ALT)!;
-		this.bdFloorDirt = Gfx.STYLES.get(styleName)!.get(T.TILES_FLOOR_DIRT)!;
-		this.bdFloorGrass = Gfx.STYLES.get(styleName)!.get(T.TILES_FLOOR_GRASS)!;
-		this.bdFloorMosaic = Gfx.STYLES.get(styleName)!.get(T.TILES_FLOOR_MOSAIC)!;
-		this.bdFloorRoad = Gfx.STYLES.get(styleName)!.get(T.TILES_FLOOR_ROAD)!;
-		this.bdPit = Gfx.STYLES.get(styleName)!.get(T.TILES_PIT)!;
-		this.bdPitside = Gfx.STYLES.get(styleName)!.get(T.TILES_PIT_SIDE)!;
-		this.bdPitsideSmall = Gfx.STYLES.get(styleName)!.get(T.TILES_PIT_SIDE_SMALL)!;
-		this.bdWall = Gfx.STYLES.get(styleName)!.get(T.TILES_WALL)!;
+		this.tilesBitmapData = Gfx.STYLES.get(styleName)!.get(T.TILES_STYLE)!;
 
-		this.drawTo = output;
-		this.tilesOpaque = layO;
-		this.tilesTransparent = layT;
-		this.tilesTransparentParam = layTParams;
-		this.tilesFloor = layF;
-		this.checkpoints = layCheckpoints;
+		this.tilesTexture = Gfx.StyleTextures.get(styleName)!.get(T.TILES_STYLE)!;
+		this.floorTexture = Gfx.StyleTextures.get(styleName)!.get(T.TILES_FLOOR)!;
+		this.floorAltTexture = Gfx.StyleTextures.get(styleName)!.get(T.TILES_FLOOR_ALT)!;
+		this.floorDirtTexture = Gfx.StyleTextures.get(styleName)!.get(T.TILES_FLOOR_DIRT)!;
+		this.floorGrassTexture = Gfx.StyleTextures.get(styleName)!.get(T.TILES_FLOOR_GRASS)!;
+		this.floorMosaicTexture = Gfx.StyleTextures.get(styleName)!.get(T.TILES_FLOOR_MOSAIC)!;
+		this.floorRoadTexture = Gfx.StyleTextures.get(styleName)!.get(T.TILES_FLOOR_ROAD)!;
+		this.pitTexture = Gfx.StyleTextures.get(styleName)!.get(T.TILES_PIT)!;
+		this.pitSideTexture = Gfx.StyleTextures.get(styleName)!.get(T.TILES_PIT_SIDE)!;
+		this.pitSideSmallTexture = Gfx.StyleTextures.get(styleName)!.get(T.TILES_PIT_SIDE_SMALL)!;
+		this.wallTexture = Gfx.StyleTextures.get(styleName)!.get(T.TILES_WALL)!;
+
+		this.tilesOpaque = layerO;
+		this.tilesTransparent = layerT;
+		this.tilesTransparentParam = layerTParams;
+		this.tilesFloor = layerF;
+		this.checkpoints = checkpoints;
 
 		this.prepareAllRoomTiles();
 	}
 
 
-	public clear() {
-		this.checkpoints.clear();
+	public teardown() {
+		this.spriteLayer.teardown();
 	}
 
 
@@ -78,7 +97,7 @@ export class Renderer {
 		for (let y: number = 0; y < S.RoomHeight; y++) {
 			for (let x: number = 0; x < S.RoomWidth; x++) {
 				const arrayIndex: number = x + y * S.RoomWidth;
-				this.opaqueData     [arrayIndex] = 0;
+				this.opaqueData[arrayIndex] = 0;
 				this.transparentData[arrayIndex] = 0;
 
 				this.prepareOpaque(x, y);
@@ -90,24 +109,24 @@ export class Renderer {
 
 	private prepareOpaque(x: number, y: number) {
 		switch (this.tilesOpaque[x + y * S.RoomWidth]) {
-			case(C.T_WALL):
-			case(C.T_WALL2):
-			case(C.T_WALL_BROKEN):
-			case(C.T_WALL_HIDDEN):
+			case (C.T_WALL):
+			case (C.T_WALL2):
+			case (C.T_WALL_BROKEN):
+			case (C.T_WALL_HIDDEN):
 				this.opaqueData[x + y * S.RoomWidth] &= ~C.REND_WALL_TEXTURE;
 				this.setWallFillingData(x, y);
 				break;
 
-			case(C.T_TRAPDOOR):
-			case(C.T_PIT):
+			case (C.T_TRAPDOOR):
+			case (C.T_PIT):
 				this.setPitData(x, y);
 				break;
 
-			case(C.T_STAIRS):
+			case (C.T_STAIRS):
 				this.setStairsData(x, y);
 				break;
 
-			case(C.T_STAIRS_UP):
+			case (C.T_STAIRS_UP):
 				this.setStairsUpData(x, y);
 				break;
 
@@ -119,7 +138,7 @@ export class Renderer {
 
 	private prepareTransparent(x: number, y: number) {
 		switch (this.tilesTransparent[x + y * S.RoomWidth]) {
-			case(C.T_OBSTACLE):
+			case (C.T_OBSTACLE):
 				this.setObstacleData(x, y);
 				break;
 
@@ -129,62 +148,35 @@ export class Renderer {
 		}
 	}
 
-	/*private  prepareFloor(x:number, y:number){
-
-	}*/
-
-
 	/****************************************************************************************************************/
 	/**                                                                                             ACTUAL DRAWING  */
 
 	/****************************************************************************************************************/
 
-	public drawAll() {
-		for (let y: number = 0; y < S.RoomHeight; y++) {
-			for (let x: number = 0; x < S.RoomWidth; x++) {
-				const index: number = x + y * S.RoomWidth;
-
-				this._drawTile(this.tilesOpaque     [index], x, y);
-				this.checkpoints.drawIfHas(x, y, this.drawTo);
-				this._drawTile(this.tilesFloor      [index], x, y);
-				this._drawTile(this.tilesTransparent[index], x, y);
-				this.drawShadow(x, y);
-				if (this.tilesTransparent[x + y * S.RoomWidth] == C.T_TAR) {
-					this.drawTarstuff(x, y, C.T_TAR);
-				}
-			}
-		}
+	public refreshCache() {
+		this.spriteLayer.container.cacheAsBitmap = false;
+		this.spriteLayer.container.cacheAsBitmap = true;
 	}
 
 	public redrawTile(x: number, y: number) {
-		const index: number = x + y * S.RoomWidth;
-
-		this.drawTo.clearBlock(x, y);
-		this._drawTile(this.tilesOpaque     [index], x, y);
-		this.checkpoints.drawIfHas(x, y, this.drawTo);
-		this._drawTile(this.tilesFloor      [index], x, y);
-		this._drawTile(this.tilesTransparent[index], x, y);
-		this.drawShadow(x, y);
-		if (this.tilesTransparent[x + y * S.RoomWidth] == C.T_TAR) {
-			this.drawTarstuff(x, y, C.T_TAR);
-		}
-
+		this.spriteLayer.clearTile(x, y);
+		this.drawTile(x, y);
 	}
 
 	public drawTile(x: number, y: number) {
 		const index: number = x + y * S.RoomWidth;
 
-		this._drawTile(this.tilesOpaque     [index], x, y);
-		this.checkpoints.drawIfHas(x, y, this.drawTo);
-		this._drawTile(this.tilesFloor      [index], x, y);
+		this._drawTile(this.tilesOpaque[index], x, y);
+		this.spriteLayer.blitCheckpoint(x, y, this.checkpoints);
+		this._drawTile(this.tilesFloor[index], x, y);
 		this._drawTile(this.tilesTransparent[index], x, y);
 		this.drawShadow(x, y);
-		if (this.tilesTransparent[x + y * S.RoomWidth] == C.T_TAR) {
+		if (this.tilesTransparent[index] === C.T_TAR) {
 			this.drawTarstuff(x, y, C.T_TAR);
 		}
 	}
 
-	public recheckAroundTile(x: number, y: number, plots: Set<number> | null = null) {
+	public recheckAroundTile(x: number, y: number, plots?: Set<number>) {
 		for (let ix: number = x - 2; ix <= x + 2; ix++) {
 			for (let iy: number = y - 2; iy <= y + 2; iy++) {
 				if (ix >= S.RoomWidth || y >= S.RoomHeight || ix < 0 || iy < 0) {
@@ -210,174 +202,168 @@ export class Renderer {
 
 		let temp: number;
 		switch (tile) {
-			case(C.T_FLOOR):
-				this.drawFloor(x, y, tile, this.bdFloor);
+			case (C.T_FLOOR):
+				this.drawFloor(x, y, tile, this.floorTexture);
 				break;
 
-			case(C.T_FLOOR_ALT):
-				this.drawFloor(x, y, tile, this.bdFloorAlt);
+			case (C.T_FLOOR_ALT):
+				this.drawFloor(x, y, tile, this.floorAltTexture);
 				break;
 
-			case(C.T_FLOOR_DIRT):
-				this.drawFloor(x, y, tile, this.bdFloorDirt);
+			case (C.T_FLOOR_DIRT):
+				this.drawFloor(x, y, tile, this.floorDirtTexture);
 				break;
 
-			case(C.T_FLOOR_GRASS):
-				this.drawFloor(x, y, tile, this.bdFloorGrass);
+			case (C.T_FLOOR_GRASS):
+				this.drawFloor(x, y, tile, this.floorGrassTexture);
 				break;
 
-			case(C.T_FLOOR_MOSAIC):
-				this.drawFloor(x, y, tile, this.bdFloorMosaic);
+			case (C.T_FLOOR_MOSAIC):
+				this.drawFloor(x, y, tile, this.floorMosaicTexture);
 				break;
 
-			case(C.T_FLOOR_ROAD):
-				this.drawFloor(x, y, tile, this.bdFloorRoad);
+			case (C.T_FLOOR_ROAD):
+				this.drawFloor(x, y, tile, this.floorRoadTexture);
 				break;
 
 
-			case(C.T_WALL2):
+			case (C.T_WALL2):
 				this.drawWallGraphic(x, y, 0);
 				break;
 
-			case(C.T_WALL):
-				this.drawTo.blitComplex(this.bdWall,
-					x * S.RoomTileWidth + this.drawTo.offsetX,
-					y * S.RoomTileHeight + this.drawTo.offsetY,
-					x * S.RoomTileWidth % this.bdWall.width,
-					y * S.RoomTileHeight % this.bdWall.height,
-					S.RoomTileWidth,
-					S.RoomTileHeight);
+			case (C.T_WALL):
+				this.spriteLayer.blitWrappingTile(this.wallTexture, x, y);
 				break;
 
-			case(C.T_WALL_BROKEN):
+			case (C.T_WALL_BROKEN):
 				this.drawWallGraphic(x, y, 2);
 				break;
 
-			case(C.T_WALL_HIDDEN):
+			case (C.T_WALL_HIDDEN):
 				this.drawWallGraphic(x, y, 1);
 				break;
 
-			case(C.T_TRAPDOOR):
-				this.drawTo.blitTileRect(this.bdTiles, T.TI_TRAPDOOR, x, y);
+			case (C.T_TRAPDOOR):
+				this.spriteLayer.blitTile(this.tilesTexture, T.TI_TRAPDOOR, x, y);
 				break;
 
-			case(C.T_DOOR_Y):
+			case (C.T_DOOR_Y):
 				temp = T.DOOR_Y[this.getOrthogonalByte(x, y, C.T_DOOR_Y, this.tilesOpaque)];
-				this.drawTo.blitTileRect(Gfx.GENERAL_TILES, temp, x, y);
+				this.spriteLayer.blitTile(Gfx.GeneralTilesTexture.baseTexture, temp, x, y);
 				break;
 
-			case(C.T_DOOR_YO):
+			case (C.T_DOOR_YO):
 				temp = T.DOOR_YO[this.getOrthogonalByte(x, y, C.T_DOOR_YO, this.tilesOpaque)];
-				this.drawTo.blitTileRect(Gfx.GENERAL_TILES, temp, x, y);
+				this.spriteLayer.blitTile(Gfx.GeneralTilesTexture.baseTexture, temp, x, y);
 				break;
 
-			case(C.T_DOOR_R):
+			case (C.T_DOOR_R):
 				temp = T.DOOR_R[this.getOrthogonalByte(x, y, C.T_DOOR_R, this.tilesOpaque)];
-				this.drawTo.blitTileRect(Gfx.GENERAL_TILES, temp, x, y);
+				this.spriteLayer.blitTile(Gfx.GeneralTilesTexture.baseTexture, temp, x, y);
 				break;
 
-			case(C.T_DOOR_RO):
+			case (C.T_DOOR_RO):
 				temp = T.DOOR_RO[this.getOrthogonalByte(x, y, C.T_DOOR_RO, this.tilesOpaque)];
-				this.drawTo.blitTileRect(Gfx.GENERAL_TILES, temp, x, y);
+				this.spriteLayer.blitTile(Gfx.GeneralTilesTexture.baseTexture, temp, x, y);
 				break;
 
-			case(C.T_DOOR_G):
+			case (C.T_DOOR_G):
 				temp = T.DOOR_G[this.getOrthogonalByte(x, y, C.T_DOOR_G, this.tilesOpaque)];
-				this.drawTo.blitTileRect(Gfx.GENERAL_TILES, temp, x, y);
+				this.spriteLayer.blitTile(Gfx.GeneralTilesTexture.baseTexture, temp, x, y);
 				break;
 
-			case(C.T_DOOR_GO):
+			case (C.T_DOOR_GO):
 				temp = T.DOOR_GO[this.getOrthogonalByte(x, y, C.T_DOOR_GO, this.tilesOpaque)];
-				this.drawTo.blitTileRect(Gfx.GENERAL_TILES, temp, x, y);
+				this.spriteLayer.blitTile(Gfx.GeneralTilesTexture.baseTexture, temp, x, y);
 				break;
 
-			case(C.T_DOOR_C):
+			case (C.T_DOOR_C):
 				temp = T.DOOR_C[this.getOrthogonalByte(x, y, C.T_DOOR_C, this.tilesOpaque)];
-				this.drawTo.blitTileRect(Gfx.GENERAL_TILES, temp, x, y);
+				this.spriteLayer.blitTile(Gfx.GeneralTilesTexture.baseTexture, temp, x, y);
 				break;
 
-			case(C.T_DOOR_CO):
+			case (C.T_DOOR_CO):
 				temp = T.DOOR_CO[this.getOrthogonalByte(x, y, C.T_DOOR_CO, this.tilesOpaque)];
-				this.drawTo.blitTileRect(Gfx.GENERAL_TILES, temp, x, y);
+				this.spriteLayer.blitTile(Gfx.GeneralTilesTexture.baseTexture, temp, x, y);
 				break;
 
-			case(C.T_DOOR_B):
+			case (C.T_DOOR_B):
 				temp = T.DOOR_B[this.getOrthogonalByte(x, y, C.T_DOOR_B, this.tilesOpaque)];
-				this.drawTo.blitTileRect(Gfx.GENERAL_TILES, temp, x, y);
+				this.spriteLayer.blitTile(Gfx.GeneralTilesTexture.baseTexture, temp, x, y);
 				break;
 
-			case(C.T_DOOR_BO):
+			case (C.T_DOOR_BO):
 				temp = T.DOOR_BO[this.getOrthogonalByte(x, y, C.T_DOOR_BO, this.tilesOpaque)];
-				this.drawTo.blitTileRect(Gfx.GENERAL_TILES, temp, x, y);
+				this.spriteLayer.blitTile(Gfx.GeneralTilesTexture.baseTexture, temp, x, y);
 				break;
 
-			case(C.T_PIT):
+			case (C.T_PIT):
 				this.drawPit(x, y);
 				break;
 
-			case(C.T_ARROW_N):
-				this.drawTo.blitTileRect(this.bdTiles, T.TI_ARROW_N, x, y);
+			case (C.T_ARROW_N):
+				this.spriteLayer.blitTile(this.tilesTexture, T.TI_ARROW_N, x, y);
 				break;
 
-			case(C.T_ARROW_NE):
-				this.drawTo.blitTileRect(this.bdTiles, T.TI_ARROW_NE, x, y);
+			case (C.T_ARROW_NE):
+				this.spriteLayer.blitTile(this.tilesTexture, T.TI_ARROW_NE, x, y);
 				break;
 
-			case(C.T_ARROW_E):
-				this.drawTo.blitTileRect(this.bdTiles, T.TI_ARROW_E, x, y);
+			case (C.T_ARROW_E):
+				this.spriteLayer.blitTile(this.tilesTexture, T.TI_ARROW_E, x, y);
 				break;
 
-			case(C.T_ARROW_SE):
-				this.drawTo.blitTileRect(this.bdTiles, T.TI_ARROW_SE, x, y);
+			case (C.T_ARROW_SE):
+				this.spriteLayer.blitTile(this.tilesTexture, T.TI_ARROW_SE, x, y);
 				break;
 
-			case(C.T_ARROW_S):
-				this.drawTo.blitTileRect(this.bdTiles, T.TI_ARROW_S, x, y);
+			case (C.T_ARROW_S):
+				this.spriteLayer.blitTile(this.tilesTexture, T.TI_ARROW_S, x, y);
 				break;
 
-			case(C.T_ARROW_SW):
-				this.drawTo.blitTileRect(this.bdTiles, T.TI_ARROW_SW, x, y);
+			case (C.T_ARROW_SW):
+				this.spriteLayer.blitTile(this.tilesTexture, T.TI_ARROW_SW, x, y);
 				break;
 
-			case(C.T_ARROW_W):
-				this.drawTo.blitTileRect(this.bdTiles, T.TI_ARROW_W, x, y);
+			case (C.T_ARROW_W):
+				this.spriteLayer.blitTile(this.tilesTexture, T.TI_ARROW_W, x, y);
 				break;
 
-			case(C.T_ARROW_NW):
-				this.drawTo.blitTileRect(this.bdTiles, T.TI_ARROW_NW, x, y);
+			case (C.T_ARROW_NW):
+				this.spriteLayer.blitTile(this.tilesTexture, T.TI_ARROW_NW, x, y);
 				break;
 
-			case(C.T_ORB):
-				this.drawTo.blitTileRect(Gfx.GENERAL_TILES, T.TI_ORB, x, y);
+			case (C.T_ORB):
+				this.spriteLayer.blitTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_ORB, x, y);
 				break;
 
-			case(C.T_SCROLL):
-				this.drawTo.blitTileRect(Gfx.GENERAL_TILES, T.TI_SCROLL, x, y);
+			case (C.T_SCROLL):
+				this.spriteLayer.blitTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_SCROLL, x, y);
 				break;
 
-			case(C.T_POTION_M):
-				this.drawTo.blitTileRect(Gfx.GENERAL_TILES, T.TI_POTION_M, x, y);
+			case (C.T_POTION_M):
+				this.spriteLayer.blitTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_POTION_M, x, y);
 				break;
 
-			case(C.T_STAIRS):
-			case(C.T_STAIRS_UP):
-				this.drawTo.blitTileRect(this.bdTiles, this.opaqueData[x + y * S.RoomWidth], x, y);
+			case (C.T_STAIRS):
+			case (C.T_STAIRS_UP):
+				this.spriteLayer.blitTile(this.tilesTexture, this.opaqueData[x + y * S.RoomWidth], x, y);
 				break;
 
-			case(C.T_POTION_I):
-				this.drawTo.blitTileRect(Gfx.GENERAL_TILES, T.TI_POTION_I, x, y);
+			case (C.T_POTION_I):
+				this.spriteLayer.blitTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_POTION_I, x, y);
 				break;
 
-			case(C.T_OBSTACLE):
-				this.drawTo.blitTileRect(this.bdTiles, this.transparentData[x + y * S.RoomWidth], x, y);
+			case (C.T_OBSTACLE):
+				this.spriteLayer.blitTile(this.tilesTexture, this.transparentData[x + y * S.RoomWidth], x, y);
 				break;
 
-			case(C.T_WALL_MASTER):
+			case (C.T_WALL_MASTER):
 				if (Progress.isGameMastered) {
 					this._drawTile(this.getNeighbourFloor(x, y), x, y);
-					this.drawTo.drawTileRect(Gfx.GENERAL_TILES, T.TI_MASTER_WALL, x, y, 0.5);
+					this.spriteLayer.drawTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_MASTER_WALL, x, y, 0.5);
 				} else {
-					this.drawTo.drawTileRect(Gfx.GENERAL_TILES, T.TI_MASTER_WALL, x, y, 1);
+					this.spriteLayer.drawTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_MASTER_WALL, x, y, 1);
 				}
 				break;
 
@@ -391,35 +377,29 @@ export class Renderer {
 		}
 	}
 
-	private drawFloor(x: number, y: number, floorType: number, bitmap: CanvasImageSource) {
-		this.drawTo.blitComplex(bitmap,
-			x * S.RoomTileWidth + this.drawTo.offsetX,
-			y * S.RoomTileHeight + this.drawTo.offsetY,
-			x * S.RoomTileWidth % bitmap.width,
-			y * S.RoomTileHeight % bitmap.height,
-			S.RoomTileWidth,
-			S.RoomTileHeight);
+	private drawFloor(x: number, y: number, floorType: number, texture: BaseTexture) {
+		this.spriteLayer.blitWrappingTile(texture, x, y);
 
 		let tile: number;
 
 		if (x > 0) {
 			tile = this.tilesOpaque[x - 1 + y * S.RoomWidth];
 			if (F.isPlainFloor(tile) && tile != floorType) {
-				this.drawTo.blitRect(x * S.RoomTileWidth, y * S.RoomTileWidth, 1, S.RoomTileHeight, 0xFF606060);
+				this.spriteLayer.blitRect(x * S.RoomTileWidth, y * S.RoomTileWidth, 1, S.RoomTileHeight, 0x606060)
 			}
 		}
 
 		if (y > 0) {
 			tile = this.tilesOpaque[x + (y - 1) * S.RoomWidth];
 			if (F.isPlainFloor(tile) && tile != floorType) {
-				this.drawTo.blitRect(x * S.RoomTileWidth, y * S.RoomTileWidth, S.RoomTileWidth, 1, 0xFF606060);
+				this.spriteLayer.blitRect(x * S.RoomTileWidth, y * S.RoomTileWidth, S.RoomTileWidth, 1, 0x606060)
 			}
 		}
 
 		if (x > 0 && y > 0) {
 			tile = this.tilesOpaque[x - 1 + (y - 1) * S.RoomWidth];
 			if (F.isPlainFloor(tile) && tile != floorType) {
-				this.drawTo.blitRect(x * S.RoomTileWidth, y * S.RoomTileWidth, 1, 1, 0xFF606060);
+				this.spriteLayer.blitRect(x * S.RoomTileWidth, y * S.RoomTileWidth, 1, 1, 0x606060)
 			}
 		}
 
@@ -436,415 +416,403 @@ export class Renderer {
 
 		// Completely surrounded
 		if (bytes == 0xFF) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NSEW1234 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NSEW1234 + type, x, y);
 			return;
 		}
 
 		// Single block
 		if ((bytes & 0xAA) == 0x00) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL + type, x, y);
 			return;
 		}
 
 		// Single Dead ends
 		if ((bytes & 0xAA) == 0x20) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_S + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_S + type, x, y);
 			return;
 		}
 		if ((bytes & 0xAA) == 0x08) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_W + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_W + type, x, y);
 			if (this.opaqueData[x + y * S.RoomWidth] & C.REND_WALL_TEXTURE) {
-				this.drawWallTexture(x, y);
+				this.drawWallTextureTopOverlay(x, y);
 			}
 			return;
 		}
 		if ((bytes & 0xAA) == 0x02) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_N + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_N + type, x, y);
 			if (this.opaqueData[x + y * S.RoomWidth] & C.REND_WALL_TEXTURE) {
-				this.drawWallTexture(x, y);
+				this.drawWallTextureTopOverlay(x, y);
 			}
 			return;
 		}
 		if ((bytes & 0xAA) == 0x80) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_E + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_E + type, x, y);
 			if (this.opaqueData[x + y * S.RoomWidth] & C.REND_WALL_TEXTURE) {
-				this.drawWallTexture(x, y);
+				this.drawWallTextureTopOverlay(x, y);
 			}
 			return;
 		}
 
 		// Single turns
 		if ((bytes & 0xEA) == 0xA0) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_SE + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_SE + type, x, y);
 			if (F.isValidColRow(x + 1, y) && this.opaqueData[x + 1 + y * S.RoomWidth] & C.REND_WALL_TEXTURE) {
-				this.drawTo.blitRectDirect(
-					(x + 1) * S.RoomTileWidth + S.LEVEL_OFFSET_X - 1,
-					y * S.RoomTileHeight + S.LEVEL_OFFSET_Y + S.RoomTileHeightHalf,
+
+				this.spriteLayer.blitRect(
+					(x + 1) * S.RoomTileWidth - 1,
+					y * S.RoomTileHeight + S.RoomTileHeightHalf,
 					1,
 					S.RoomTileHeightHalf,
-					0xFF000000);
+					0x000000);
 			}
 			return;
 
 		}
 		if ((bytes & 0xBA) == 0x28) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_SW + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_SW + type, x, y);
 			if (F.isValidColRow(x - 1, y) && this.opaqueData[x - 1 + y * S.RoomWidth] & C.REND_WALL_TEXTURE) {
-				this.drawTo.blitRectDirect(
-					x * S.RoomTileWidth + S.LEVEL_OFFSET_X,
-					y * S.RoomTileHeight + S.LEVEL_OFFSET_Y + S.RoomTileHeightHalf,
+				this.spriteLayer.blitRect(
+					x * S.RoomTileWidth,
+					y * S.RoomTileHeight + S.RoomTileHeightHalf,
 					1,
 					S.RoomTileHeightHalf,
-					0xFF000000);
+					0x000000);
 			}
 			return;
 		}
 
 		if ((bytes & 0xAE) == 0x0A) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NW + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NW + type, x, y);
 			if (this.opaqueData[x + y * S.RoomWidth] & C.REND_WALL_TEXTURE) {
-				this.drawWallTexture(x, y);
+				this.drawWallTextureTopOverlay(x, y);
 			}
 			return;
 		}
 		if ((bytes & 0xAB) == 0x82) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NE + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NE + type, x, y);
 			if (this.opaqueData[x + y * S.RoomWidth] & C.REND_WALL_TEXTURE) {
-				this.drawWallTexture(x, y);
+				this.drawWallTextureTopOverlay(x, y);
 			}
 			return;
 		}
 
 		// Single corridors
 		if ((bytes & 0xAA) == 0x88) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_EW + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_EW + type, x, y);
 			if (this.opaqueData[x + y * S.RoomWidth] & C.REND_WALL_TEXTURE) {
-				this.drawWallTexture(x, y);
+				this.drawWallTextureTopOverlay(x, y);
 			}
 			return;
 		}
 		if ((bytes & 0xAA) == 0x22) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NS + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NS + type, x, y);
 			return;
 		}
 
 		// Single triple conjunction
 		if ((bytes & 0xEB) == 0xA2) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NSE + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NSE + type, x, y);
 			return;
 		}
 		if ((bytes & 0xFA) == 0xA8) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_SEW + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_SEW + type, x, y);
 			if (F.isValidColRow(x + 1, y) && this.opaqueData[x + 1 + y * S.RoomWidth] & C.REND_WALL_TEXTURE) {
-				this.drawTo.blitRectDirect(
-					(x + 1) * S.RoomTileWidth + S.LEVEL_OFFSET_X - 1,
-					y * S.RoomTileHeight + S.LEVEL_OFFSET_Y + S.RoomTileHeightHalf,
+				this.spriteLayer.blitRect(
+					(x + 1) * S.RoomTileWidth - 1,
+					y * S.RoomTileHeight + S.RoomTileHeightHalf,
 					1,
 					S.RoomTileHeightHalf,
-					0xFF000000);
+					0x000000);
 			}
 			if (F.isValidColRow(x - 1, y) && this.opaqueData[x - 1 + y * S.RoomWidth] & C.REND_WALL_TEXTURE) {
-				this.drawTo.blitRectDirect(
-					x * S.RoomTileWidth + S.LEVEL_OFFSET_X,
-					y * S.RoomTileHeight + S.LEVEL_OFFSET_Y + S.RoomTileHeightHalf,
+				this.spriteLayer.blitRect(
+					x * S.RoomTileWidth,
+					y * S.RoomTileHeight + S.RoomTileHeightHalf,
 					1,
 					S.RoomTileHeightHalf,
-					0xFF000000);
+					0x000000);
 			}
 			return;
 		}
 		if ((bytes & 0xBE) == 0x2A) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NSW + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NSW + type, x, y);
 			return;
 		}
 		if ((bytes & 0xAF) == 0x8A) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NEW + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NEW + type, x, y);
 			if (this.opaqueData[x + y * S.RoomWidth] & C.REND_WALL_TEXTURE) {
-				this.drawWallTexture(x, y);
+				this.drawWallTextureTopOverlay(x, y);
 			}
 			return;
 		}
 
 		// Four way crossroad
 		if (bytes == 0xAA) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NSEW + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NSEW + type, x, y);
 			if (F.isValidColRow(x + 1, y) && this.opaqueData[x + 1 + y * S.RoomWidth] & C.REND_WALL_TEXTURE) {
-				this.drawTo.blitRectDirect(
-					(x + 1) * S.RoomTileWidth + S.LEVEL_OFFSET_X - 1,
-					y * S.RoomTileHeight + S.LEVEL_OFFSET_Y + S.RoomTileHeightHalf,
+				this.spriteLayer.blitRect(
+					(x + 1) * S.RoomTileWidth - 1,
+					y * S.RoomTileHeight + S.RoomTileHeightHalf,
 					1,
 					S.RoomTileHeightHalf,
-					0xFF000000);
+					0x000000);
 			}
 			if (F.isValidColRow(x - 1, y) && this.opaqueData[x - 1 + y * S.RoomWidth] & C.REND_WALL_TEXTURE) {
-				this.drawTo.blitRectDirect(
-					x * S.RoomTileWidth + S.LEVEL_OFFSET_X,
-					y * S.RoomTileHeight + S.LEVEL_OFFSET_Y + S.RoomTileHeightHalf,
+				this.spriteLayer.blitRect(
+					x * S.RoomTileWidth,
+					y * S.RoomTileHeight + S.RoomTileHeightHalf,
 					1,
 					S.RoomTileHeightHalf,
-					0xFF000000);
+					0x000000);
 			}
 			return;
 		}
 
 		// Corners
 		if ((bytes & 0xEA) == 0xE0) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_SE4 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_SE4 + type, x, y);
 			return;
 		}
 		if ((bytes & 0xBA) == 0x38) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_SW3 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_SW3 + type, x, y);
 			return;
 		}
 		if ((bytes & 0xAE) == 0x0E) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NW1 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NW1 + type, x, y);
 			if (this.opaqueData[x + y * S.RoomWidth] & C.REND_WALL_TEXTURE) {
-				this.drawWallTexture(x, y);
+				this.drawWallTextureTopOverlay(x, y);
 			}
 			return;
 		}
 		if ((bytes & 0xAB) == 0x83) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NE2 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NE2 + type, x, y);
 			if (this.opaqueData[x + y * S.RoomWidth] & C.REND_WALL_TEXTURE) {
-				this.drawWallTexture(x, y);
+				this.drawWallTextureTopOverlay(x, y);
 			}
 			return;
 		}
 
 		// Sides
 		if ((bytes & 0xEB) == 0xE3) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NSE24 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NSE24 + type, x, y);
 			return;
 		}
 		if ((bytes & 0xFA) == 0xF8) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_SEW34 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_SEW34 + type, x, y);
 			return;
 		}
 		if ((bytes & 0xBE) == 0x3E) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NSW13 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NSW13 + type, x, y);
 			return;
 		}
 		if ((bytes & 0xAF) == 0x8F) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NEW12 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NEW12 + type, x, y);
 			if (this.opaqueData[x + y * S.RoomWidth] & C.REND_WALL_TEXTURE) {
-				this.drawWallTexture(x, y);
+				this.drawWallTextureTopOverlay(x, y);
 			}
 			return;
 		}
 
 		// (Lots of) Inner corners
 		if (bytes == 0xFB) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NSEW234 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NSEW234 + type, x, y);
 			return;
 		}
 		if (bytes == 0xFE) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NSEW134 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NSEW134 + type, x, y);
 			return;
 		}
 		if (bytes == 0xBF) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NSEW123 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NSEW123 + type, x, y);
 			return;
 		}
 		if (bytes == 0xEF) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NSEW124 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NSEW124 + type, x, y);
 			return;
 		}
 		if (bytes == 0xFA) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NSEW34 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NSEW34 + type, x, y);
 			return;
 		}
 		if (bytes == 0xBB) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NSEW23 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NSEW23 + type, x, y);
 			return;
 		}
 		if (bytes == 0xEB) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NSEW24 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NSEW24 + type, x, y);
 			return;
 		}
 		if (bytes == 0xBE) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NSEW13 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NSEW13 + type, x, y);
 			return;
 		}
 		if (bytes == 0xEE) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NSEW14 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NSEW14 + type, x, y);
 			return;
 		}
 		if (bytes == 0xAF) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NSEW12 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NSEW12 + type, x, y);
 			return;
 		}
 		if (bytes == 0xBA) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NSEW3 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NSEW3 + type, x, y);
 			return;
 		}
 		if (bytes == 0xEA) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NSEW4 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NSEW4 + type, x, y);
 			return;
 		}
 		if (bytes == 0xAB) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NSEW2 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NSEW2 + type, x, y);
 			return;
 		}
 		if (bytes == 0xAE) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NSEW1 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NSEW1 + type, x, y);
 			return;
 		}
 
 		// Sides
 		if ((bytes & 0xFA) == 0xE8) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_SEW4 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_SEW4 + type, x, y);
 			if (F.isValidColRow(x - 1, y) && this.opaqueData[x - 1 + y * S.RoomWidth] & C.REND_WALL_TEXTURE) {
-				this.drawTo.blitRectDirect(
-					x * S.RoomTileWidth + S.LEVEL_OFFSET_X,
-					y * S.RoomTileHeight + S.LEVEL_OFFSET_Y + S.RoomTileHeightHalf,
+				this.spriteLayer.blitRect(
+					x * S.RoomTileWidth,
+					y * S.RoomTileHeight + S.RoomTileHeightHalf,
 					1,
 					S.RoomTileHeightHalf,
-					0xFF000000);
+					0x000000);
 			}
 			return;
 		}
 		if ((bytes & 0xFA) == 0xB8) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_SEW3 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_SEW3 + type, x, y);
 			if (F.isValidColRow(x + 1, y) && this.opaqueData[x + 1 + y * S.RoomWidth] & C.REND_WALL_TEXTURE) {
-				this.drawTo.blitRectDirect(
-					(x + 1) * S.RoomTileWidth + S.LEVEL_OFFSET_X - 1,
-					y * S.RoomTileHeight + S.LEVEL_OFFSET_Y + S.RoomTileHeightHalf,
+				this.spriteLayer.blitRect(
+					(x + 1) * S.RoomTileWidth - 1,
+					y * S.RoomTileHeight + S.RoomTileHeightHalf,
 					1,
 					S.RoomTileHeightHalf,
-					0xFF000000);
+					0x000000);
 			}
 			return;
 		}
 		if ((bytes & 0xBE) == 0x3A) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NSW3 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NSW3 + type, x, y);
 			return;
 		}
 		if ((bytes & 0xBE) == 0x2E) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NSW1 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NSW1 + type, x, y);
 			if (F.isValidColRow(x - 1, y) && this.opaqueData[x - 1 + y * S.RoomWidth] & C.REND_WALL_TEXTURE) {
-				this.drawTo.blitRectDirect(
-					x * S.RoomTileWidth + S.LEVEL_OFFSET_X,
-					y * S.RoomTileHeight + S.LEVEL_OFFSET_Y + S.RoomTileHeightHalf,
+				this.spriteLayer.blitRect(
+					x * S.RoomTileWidth,
+					y * S.RoomTileHeight + S.RoomTileHeightHalf,
 					1,
 					S.RoomTileHeightHalf,
-					0xFF000000);
+					0x000000);
 			}
 			return;
 		}
 		if ((bytes & 0xAF) == 0x8B) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NEW2 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NEW2 + type, x, y);
 			if (this.opaqueData[x + y * S.RoomWidth] & C.REND_WALL_TEXTURE) {
-				this.drawWallTexture(x, y);
+				this.drawWallTextureTopOverlay(x, y);
 			}
 			return;
 		}
 
 		if ((bytes & 0xAF) == 0x8E) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NEW1 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NEW1 + type, x, y);
 			if (this.opaqueData[x + y * S.RoomWidth] & C.REND_WALL_TEXTURE) {
-				this.drawWallTexture(x, y);
+				this.drawWallTextureTopOverlay(x, y);
 			}
 			return;
 		}
 		if ((bytes & 0xEB) == 0xE2) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NSE4 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NSE4 + type, x, y);
 			return;
 		}
 		if ((bytes & 0xEB) == 0xA3) {
-			this.drawTo.blitTileRect(this.bdTiles, T.TI_WALL_NSE2 + type, x, y);
+			this.spriteLayer.blitTile(this.tilesTexture, T.TI_WALL_NSE2 + type, x, y);
 			if (F.isValidColRow(x + 1, y) && this.opaqueData[x + 1 + y * S.RoomWidth] & C.REND_WALL_TEXTURE) {
-				this.drawTo.blitRectDirect(
-					(x + 1) * S.RoomTileWidth + S.LEVEL_OFFSET_X - 1,
-					y * S.RoomTileHeight + S.LEVEL_OFFSET_Y + S.RoomTileHeightHalf,
+				this.spriteLayer.blitRect(
+					(x + 1) * S.RoomTileWidth - 1,
+					y * S.RoomTileHeight + S.RoomTileHeightHalf,
 					1,
 					S.RoomTileHeightHalf,
-					0xFF000000);
+					0x000000);
 			}
 			return;
 		}
 	}
 
-	private drawWallTexture(x: number, y: number) {
-		this.drawTo.drawComplexDirect(this.bdWall,
-			x * S.RoomTileWidth + S.LEVEL_OFFSET_X,
-			y * S.RoomTileHeight + S.LEVEL_OFFSET_Y + S.RoomTileHeightHalf,
-			1,
-			x * S.RoomTileWidth % this.bdWall.width,
-			(y * S.RoomTileHeight + S.RoomTileHeightHalf) % this.bdWall.height,
+	private drawWallTextureTopOverlay(x: number, y: number) {
+		this.spriteLayer.blitWrappingTile(
+			this.wallTexture,
+			x, y + 0.5,
 			S.RoomTileWidth,
-			S.RoomTileHeightHalf);
-		this.drawTo.blitRectDirect(
-			x * S.RoomTileWidth + S.LEVEL_OFFSET_X,
-			y * S.RoomTileHeight + S.LEVEL_OFFSET_Y + S.RoomTileHeightHalf,
+			S.RoomTileHeightHalf
+		);
+		this.spriteLayer.blitRect(
+			x * S.RoomTileWidth,
+			y * S.RoomTileHeight + S.RoomTileHeightHalf,
 			S.RoomTileWidth,
 			1,
-			0xFF000000);
+			0x000000);
 	}
 
 	private drawPit(x: number, y: number) {
 		const data: number = this.opaqueData[x + y * S.RoomWidth];
-		const dataX: number = (data & C.REND_PIT_COORDS_MASK) % C.REND_PIT_COORD_MULTIP;
-		const dataY: number = (data & C.REND_PIT_COORDS_MASK) / C.REND_PIT_COORD_MULTIP | 0;
+		const dataX: number = (data & C.REND_PIT_COORDS_MASK) % C.REND_PIT_COORD_MULTIPLIER;
+		const dataY: number = (data & C.REND_PIT_COORDS_MASK) / C.REND_PIT_COORD_MULTIPLIER | 0;
 
-		this.drawTo.drawComplexDirect(this.bdPit,
-			x * S.RoomTileWidth + S.LEVEL_OFFSET_X,
-			y * S.RoomTileHeight + S.LEVEL_OFFSET_Y,
-			1,
-			x * S.RoomTileWidth % this.bdPit.width,
-			y * S.RoomTileHeight % this.bdPit.height,
-			S.RoomTileWidth,
-			S.RoomTileHeight);
-
+		this.spriteLayer.blitWrappingTile(this.pitTexture, x, y)
 		if (data & C.REND_PIT_IS_SIDE_SMALL) {
-			this.drawTo.drawComplexDirect(this.bdPitsideSmall,
-				x * S.RoomTileWidth + S.LEVEL_OFFSET_X,
-				y * S.RoomTileHeight + S.LEVEL_OFFSET_Y,
-				1,
-				(dataX * S.RoomTileWidth) % this.bdPitsideSmall.width,
-				dataY * S.RoomTileHeight,
-				S.RoomTileWidth,
-				S.RoomTileHeight);
+			this.spriteLayer.blitWrappingTile(
+				this.pitSideSmallTexture,
+				x, y,
+				S.RoomTileWidth, S.RoomTileHeight,
+				dataX, dataY
+			);
+
 		} else if (data & C.REND_PIT_IS_SIDE) {
-			this.drawTo.drawComplexDirect(this.bdPitside,
-				x * S.RoomTileWidth + S.LEVEL_OFFSET_X,
-				y * S.RoomTileHeight + S.LEVEL_OFFSET_Y,
-				1,
-				(dataX * S.RoomTileWidth) % this.bdPitside.width,
-				dataY * S.RoomTileHeight,
-				S.RoomTileWidth,
-				S.RoomTileHeight);
+			this.spriteLayer.blitWrappingTile(
+				this.pitSideTexture,
+				x, y,
+				S.RoomTileWidth, S.RoomTileHeight,
+				dataX, dataY
+			);
 		}
 
 		if (x > 0 && F.isFloor(this.tilesOpaque[x - 1 + y * S.RoomWidth])) {
-			this.drawTo.blitRect(x * S.RoomTileWidth, y * S.RoomTileWidth, 1, S.RoomTileHeight, 0xFF000000);
+			this.spriteLayer.blitRect(x * S.RoomTileWidth, y * S.RoomTileWidth, 1, S.RoomTileHeight, 0x000000);
 		}
 
 		if (y > 0 && F.isFloor(this.tilesOpaque[x + (y - 1) * S.RoomWidth])) {
-			this.drawTo.blitRect(x * S.RoomTileWidth, y * S.RoomTileWidth, S.RoomTileWidth, 1, 0xFF000000);
+			this.spriteLayer.blitRect(x * S.RoomTileWidth, y * S.RoomTileWidth, S.RoomTileWidth, 1, 0x000000);
 		}
 
 		if (x < S.RoomWidth - 1 && F.isFloor(this.tilesOpaque[x + 1 + y * S.RoomWidth])) {
-			this.drawTo.blitRect((x + 1) * S.RoomTileWidth - 1, y * S.RoomTileWidth, 1, S.RoomTileHeight, 0xFF000000);
+			this.spriteLayer.blitRect((x + 1) * S.RoomTileWidth - 1, y * S.RoomTileWidth, 1, S.RoomTileHeight, 0x000000);
 		}
 
 		if (y < S.RoomHeight - 1 && F.isFloor(this.tilesOpaque[x + (y + 1) * S.RoomWidth])) {
-			this.drawTo.blitRect(x * S.RoomTileWidth, (y + 1) * S.RoomTileWidth - 1, S.RoomTileWidth, 1, 0xFF000000);
+			this.spriteLayer.blitRect(x * S.RoomTileWidth, (y + 1) * S.RoomTileWidth - 1, S.RoomTileWidth, 1, 0x000000);
 		}
 
 		if (x > 0 && y > 0 && F.isFloor(this.tilesOpaque[x - 1 + (y - 1) * S.RoomWidth])) {
-			this.drawTo.blitRect(x * S.RoomTileWidth, y * S.RoomTileWidth, 1, 1, 0xFF000000);
+			this.spriteLayer.blitRect(x * S.RoomTileWidth, y * S.RoomTileWidth, 1, 1, 0x000000);
 		}
 
 		if (x < S.RoomWidth - 1 && y > 0 && F.isFloor(this.tilesOpaque[x + 1 + (y - 1) * S.RoomWidth])) {
-			this.drawTo.blitRect((x + 1) * S.RoomTileWidth - 1, y * S.RoomTileWidth, 1, 1, 0xFF000000);
+			this.spriteLayer.blitRect((x + 1) * S.RoomTileWidth - 1, y * S.RoomTileWidth, 1, 1, 0x000000);
 		}
 
 		if (x > 0 && y < S.RoomHeight - 1 && F.isFloor(this.tilesOpaque[x - 1 + (y + 1) * S.RoomWidth])) {
-			this.drawTo.blitRect(x * S.RoomTileWidth, (y + 1) * S.RoomTileWidth - 1, 1, 1, 0xFF000000);
+			this.spriteLayer.blitRect(x * S.RoomTileWidth, (y + 1) * S.RoomTileWidth - 1, 1, 1, 0x000000);
 		}
 
 		if (x < S.RoomWidth - 1 && y < S.RoomHeight - 1 && F.isFloor(this.tilesOpaque[x + 1 + (y + 1) * S.RoomWidth])) {
-			this.drawTo.blitRect((x + 1) * S.RoomTileWidth - 1, (y + 1) * S.RoomTileWidth - 1, 1, 1, 0xFF000000);
+			this.spriteLayer.blitRect((x + 1) * S.RoomTileWidth - 1, (y + 1) * S.RoomTileWidth - 1, 1, 1, 0x000000);
 		}
 
 
@@ -855,75 +823,75 @@ export class Renderer {
 
 		// INNER CORNERS
 		if (bytes == 0xBF) {
-			this.drawTo.drawTileRect(Gfx.GENERAL_TILES, T.TI_TAR_ISE, x, y, 0.75);
+			this.spriteLayer.drawTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_ISE, x, y, 0.75);
 			return;
 		}
 		if (bytes == 0xEF) {
-			this.drawTo.drawTileRect(Gfx.GENERAL_TILES, T.TI_TAR_ISW, x, y, 0.75);
+			this.spriteLayer.drawTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_ISW, x, y, 0.75);
 			return;
 		}
 		if (bytes == 0xFB) {
-			this.drawTo.drawTileRect(Gfx.GENERAL_TILES, T.TI_TAR_INW, x, y, 0.75);
+			this.spriteLayer.drawTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_INW, x, y, 0.75);
 			return;
 		}
 		if (bytes == 0xFE) {
-			this.drawTo.drawTileRect(Gfx.GENERAL_TILES, T.TI_TAR_INE, x, y, 0.75);
+			this.spriteLayer.drawTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_INE, x, y, 0.75);
 			return;
 		}
 
 		// DOUBLE CORNERS
 		if (bytes == 0xBB) {
-			this.drawTo.drawTileRect(Gfx.GENERAL_TILES, T.TI_TAR_INWSE, x, y, 0.75);
+			this.spriteLayer.drawTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_INWSE, x, y, 0.75);
 			return;
 		}
 		if (bytes == 0xEE) {
-			this.drawTo.drawTileRect(Gfx.GENERAL_TILES, T.TI_TAR_INESW, x, y, 0.75);
+			this.spriteLayer.drawTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_INESW, x, y, 0.75);
 			return;
 		}
 
 		// INSIDE
 		if (bytes == 0xFF) {
-			this.drawTo.drawTileRect(Gfx.GENERAL_TILES, T.TI_TAR_NSEW, x, y, 0.75);
+			this.spriteLayer.drawTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_NSEW, x, y, 0.75);
 			return;
 		}
 
 		// FLAT SIDES
 		if ((bytes & 0x3E) == 0x3E) {
-			this.drawTo.drawTileRect(Gfx.GENERAL_TILES, T.TI_TAR_NSW, x, y, 0.75);
+			this.spriteLayer.drawTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_NSW, x, y, 0.75);
 			return;
 		}
 		if ((bytes & 0x8F) == 0x8F) {
-			this.drawTo.drawTileRect(Gfx.GENERAL_TILES, T.TI_TAR_NEW, x, y, 0.75);
+			this.spriteLayer.drawTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_NEW, x, y, 0.75);
 			return;
 		}
 		if ((bytes & 0xE3) == 0xE3) {
-			this.drawTo.drawTileRect(Gfx.GENERAL_TILES, T.TI_TAR_NSE, x, y, 0.75);
+			this.spriteLayer.drawTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_NSE, x, y, 0.75);
 			return;
 		}
 		if ((bytes & 0xF8) == 0xF8) {
-			this.drawTo.drawTileRect(Gfx.GENERAL_TILES, T.TI_TAR_SEW, x, y, 0.75);
+			this.spriteLayer.drawTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_SEW, x, y, 0.75);
 			return;
 		}
 
 		// CORNERS
 		if ((bytes & 0x0E) == 0x0E) {
-			this.drawTo.drawTileRect(Gfx.GENERAL_TILES, T.TI_TAR_NW, x, y, 0.75);
+			this.spriteLayer.drawTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_NW, x, y, 0.75);
 			return;
 		}
 		if ((bytes & 0x83) == 0x83) {
-			this.drawTo.drawTileRect(Gfx.GENERAL_TILES, T.TI_TAR_NE, x, y, 0.75);
+			this.spriteLayer.drawTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_NE, x, y, 0.75);
 			return;
 		}
 		if ((bytes & 0xE0) == 0xE0) {
-			this.drawTo.drawTileRect(Gfx.GENERAL_TILES, T.TI_TAR_SE, x, y, 0.75);
+			this.spriteLayer.drawTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_SE, x, y, 0.75);
 			return;
 		}
 		if ((bytes & 0x38) == 0x38) {
-			this.drawTo.drawTileRect(Gfx.GENERAL_TILES, T.TI_TAR_SW, x, y, 0.75);
+			this.spriteLayer.drawTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_SW, x, y, 0.75);
 			return;
 		}
 
-		this.drawTo.drawTileRect(Gfx.GENERAL_TILES, T.TI_TAR_NSEW, x, y, 0.75);
+		this.spriteLayer.drawTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_NSEW, x, y, 0.75);
 	}
 
 	private drawShadow(x: number, y: number) {
@@ -961,23 +929,23 @@ export class Renderer {
 		if (tileN) {
 			if (tileW) {
 				if (tile1) {
-					this.drawTo.drawTileRect(Gfx.GENERAL_TILES, T.TI_SHADOW_NW1, x, y, 0.25);
+					this.spriteLayer.drawTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_SHADOW_NW1, x, y, 0.25);
 				} else {
-					this.drawTo.drawTileRect(Gfx.GENERAL_TILES, T.TI_SHADOW_NW, x, y, 0.25);
+					this.spriteLayer.drawTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_SHADOW_NW, x, y, 0.25);
 				}
 			} else if (tile1) {
-				this.drawTo.drawTileRect(Gfx.GENERAL_TILES, T.TI_SHADOW_N1, x, y, 0.25);
+				this.spriteLayer.drawTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_SHADOW_N1, x, y, 0.25);
 			} else {
-				this.drawTo.drawTileRect(Gfx.GENERAL_TILES, T.TI_SHADOW_N, x, y, 0.25);
+				this.spriteLayer.drawTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_SHADOW_N, x, y, 0.25);
 			}
 		} else if (tileW) {
 			if (tile1) {
-				this.drawTo.drawTileRect(Gfx.GENERAL_TILES, T.TI_SHADOW_W1, x, y, 0.25);
+				this.spriteLayer.drawTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_SHADOW_W1, x, y, 0.25);
 			} else {
-				this.drawTo.drawTileRect(Gfx.GENERAL_TILES, T.TI_SHADOW_W, x, y, 0.25);
+				this.spriteLayer.drawTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_SHADOW_W, x, y, 0.25);
 			}
 		} else if (tile1) {
-			this.drawTo.drawTileRect(Gfx.GENERAL_TILES, T.TI_SHADOW_1, x, y, 0.25);
+			this.spriteLayer.drawTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_SHADOW_1, x, y, 0.25);
 		}
 	}
 
@@ -1024,7 +992,7 @@ export class Renderer {
 		return C.T_FLOOR;
 	}
 
-	/** Checks 4 surrounding neighbours, used for determining Door type **/
+	/** Checks 4 surrounding neighbors, used for determining Door type **/
 	private getOrthogonalByte(x: number, y: number, type: number, layer: number[]): number {
 		let data: number = 0;
 
@@ -1047,7 +1015,7 @@ export class Renderer {
 		return data;
 	}
 
-	/** Checks 8 surrounding neighbours, used for determining Tar graphic, the order is:
+	/** Checks 8 surrounding neighbors, used for determining Tar graphic, the order is:
 	 *   E, SE, S, SW, W, NW, N, NE **/
 	private getSurroundingByte(x: number, y: number, type: number, layer: number[], borderObstacle: boolean = false): number {
 		let data: number = 0;
@@ -1186,7 +1154,7 @@ export class Renderer {
 		// Retrieve Y position in relation to top-left corner
 		tileAboveEdge = this.tilesOpaque[x + y * S.RoomWidth];
 		while (y != Number.MAX_VALUE &&
-		(tileAboveEdge == C.T_PIT || tileAboveEdge == C.T_TRAPDOOR)) {
+			(tileAboveEdge == C.T_PIT || tileAboveEdge == C.T_TRAPDOOR)) {
 			y--;
 			tileAboveEdge = this.tilesOpaque[x + y * S.RoomWidth];
 		}
@@ -1197,8 +1165,8 @@ export class Renderer {
 		tileAboveEdge = this.tilesOpaque[x + y * S.RoomWidth];
 		tileUnderEdge = this.tilesOpaque[x + (y + 1) * S.RoomWidth];
 		while (x != Number.MAX_VALUE &&
-		(y == Number.MAX_VALUE || (tileAboveEdge != C.T_PIT && tileAboveEdge != C.T_TRAPDOOR)) &&
-		(tileUnderEdge == C.T_PIT || tileUnderEdge == C.T_TRAPDOOR)) {
+			(y == Number.MAX_VALUE || (tileAboveEdge != C.T_PIT && tileAboveEdge != C.T_TRAPDOOR)) &&
+			(tileUnderEdge == C.T_PIT || tileUnderEdge == C.T_TRAPDOOR)) {
 			x--;
 			tileAboveEdge = this.tilesOpaque[x + y * S.RoomWidth];
 			tileUnderEdge = this.tilesOpaque[x + (y + 1) * S.RoomWidth];
@@ -1214,8 +1182,8 @@ export class Renderer {
 		tileUnderEdge = this.tilesOpaque[x + (y + 1) * S.RoomWidth]; // Tile under edge
 
 		while (x < S.RoomWidth &&
-		(y == Number.MAX_VALUE || (tileAboveEdge != C.T_PIT && tileAboveEdge != C.T_TRAPDOOR)) &&
-		(tileUnderEdge == C.T_PIT || tileUnderEdge == C.T_TRAPDOOR)) {
+			(y == Number.MAX_VALUE || (tileAboveEdge != C.T_PIT && tileAboveEdge != C.T_TRAPDOOR)) &&
+			(tileUnderEdge == C.T_PIT || tileUnderEdge == C.T_TRAPDOOR)) {
 			x++;
 			tileAboveEdge = this.tilesOpaque[x + y * S.RoomWidth];
 			tileUnderEdge = this.tilesOpaque[x + (y + 1) * S.RoomWidth];
@@ -1228,18 +1196,22 @@ export class Renderer {
 		// Touches the top edge, assume it  is not displayed
 		if (posY == Number.MAX_VALUE) {
 			data = 0;
-		}// Not wide enough to display the wide pit
-		else if (width < this.bdPitside.width / S.RoomTileWidth &&
-			posY < this.bdPitsideSmall.height / S.RoomTileHeight) {
-			data = C.REND_PIT_IS_SIDE_SMALL | (posX + posY * C.REND_PIT_COORD_MULTIP);
-		}// Wide enough to display the wide pit
-		else if (posY < this.bdPitside.height / S.RoomTileHeight) {
+
+		// Not wide enough to display the wide pit
+		} else if (
+			width < this.pitSideTexture.width / S.RoomTileWidth
+			&& posY < this.pitSideSmallTexture.height / S.RoomTileHeight
+		) {
+			data = C.REND_PIT_IS_SIDE_SMALL | (posX + posY * C.REND_PIT_COORD_MULTIPLIER);
+
+		// Wide enough to display the wide pit
+		} else if (posY < this.pitSideTexture.height / S.RoomTileHeight) {
 			// Wide, but the remainder is not wide enough to fit the whole "wide" so use small-pit
-			if (width - posX <= width % (this.bdPitside.width / S.RoomTileWidth)) {
-				posX = (posX - width + (width % (this.bdPitside.width / S.RoomTileWidth)));
-				data = C.REND_PIT_IS_SIDE_SMALL | (posX + posY * C.REND_PIT_COORD_MULTIP);
+			if (width - posX <= width % (this.pitSideTexture.width / S.RoomTileWidth)) {
+				posX = (posX - width + (width % (this.pitSideTexture.width / S.RoomTileWidth)));
+				data = C.REND_PIT_IS_SIDE_SMALL | (posX + posY * C.REND_PIT_COORD_MULTIPLIER);
 			} else {
-				data = C.REND_PIT_IS_SIDE | (posX + posY * C.REND_PIT_COORD_MULTIP);
+				data = C.REND_PIT_IS_SIDE | (posX + posY * C.REND_PIT_COORD_MULTIPLIER);
 			}
 		}
 
@@ -1399,7 +1371,7 @@ export class Renderer {
 		this.opaqueData[x + y * S.RoomWidth] = data;
 	}
 
-	private calculateStairPosition(x: number, y: number): PIXI.Point {
+	private calculateStairPosition(x: number, y: number): IPointData {
 		const stairs: number = this.tilesOpaque[x + y * S.RoomWidth];
 
 		let tx: number = 0;
@@ -1427,10 +1399,10 @@ export class Renderer {
 			}
 		}
 
-		return new PIXI.Point(tx, ty);
+		return { x: tx, y: ty };
 	}
 
-	private calculateStairUpPosition(x: number, y: number): PIXI.Point {
+	private calculateStairUpPosition(x: number, y: number): IPointData {
 		const stairs: number = this.tilesOpaque[x + y * S.RoomWidth];
 
 		let tx: number = 0;
@@ -1458,6 +1430,118 @@ export class Renderer {
 			}
 		}
 
-		return new PIXI.Point(tx, ty);
+		return { x: tx, y: ty };
+	}
+
+	public clearTiles() {
+		this.spriteLayer.clearTiles();
+	}
+}
+
+
+class RendererLayer {
+	public readonly container: Container;
+	public readonly sprites: Sprite[][][];
+
+	public constructor() {
+		this.container = new Container();
+
+		this.sprites = [];
+		for (let x = 0; x < S.RoomWidth; x++) {
+			this.sprites[x] = [];
+			for (let y = 0; y < S.RoomHeight; y++) {
+				this.sprites[x][y] = [];
+			}
+		}
+	}
+
+	public clearTile(x: number, y: number) {
+		this.container.removeChild(...this.sprites[x][y]);
+		this.sprites[x][y].length = 0;
+	}
+
+	public drawTile(baseTexture: BaseTexture, tileId: number, x: number, y: number, alpha: number) {
+		this.blitTile(baseTexture, tileId, x, y).alpha = alpha;
+	}
+
+	public blitTile(baseTexture: BaseTexture, tileId: number, x: number, y: number) {
+		const tile = T.TILES[tileId];
+		const texture = new Texture(
+			baseTexture,
+			new Rectangle(
+				tile.x,
+				tile.y,
+				S.RoomTileWidth,
+				S.RoomTileHeight,
+			),
+		);
+		const sprite = new Sprite(texture);
+
+		sprite.x = x * S.RoomTileWidth;
+		sprite.y = y * S.RoomTileHeight;
+
+		this.addSprite(sprite);
+
+		return sprite;
+	}
+
+	public blitWrappingTile(
+		baseTexture: BaseTexture,
+		targetX: number,
+		targetY: number,
+		sourceWidth = S.RoomTileWidth,
+		sourceHeight = S.RoomTileHeight,
+		textureX?: number,
+		textureY?: number,
+	) {
+		textureX = (textureX ?? targetX) * S.RoomTileWidth;
+		textureY = (textureY ?? targetY) * S.RoomTileHeight;
+
+		const texture = new Texture(
+			baseTexture,
+			new Rectangle(
+				(textureX % baseTexture.width) | 0,
+				(textureY % baseTexture.height) | 0,
+				sourceWidth,
+				sourceHeight,
+			),
+		);
+		const sprite = new Sprite(texture);
+
+		sprite.x = targetX * S.RoomTileWidth;
+		sprite.y = targetY * S.RoomTileHeight;
+
+		this.addSprite(sprite);
+	}
+
+	public blitRect(x: number, y: number, width: number, height: number, color: number) {
+		const sprite = new Sprite(Texture.WHITE);
+		sprite.x = x;
+		sprite.y = y;
+		sprite.width = width;
+		sprite.height = height;
+		sprite.tint = color;
+
+		this.addSprite(sprite);
+	}
+
+	public blitCheckpoint(x: number, y: number, checkpoints: VOCheckpoints) {
+		if (checkpoints.contains(x, y)) {
+			this.blitTile(Gfx.GeneralTilesTexture.baseTexture, T.TI_CHECKPOINT, x, y)
+		}
+	}
+
+	private addSprite(sprite: Sprite) {
+		this.sprites[sprite.x / S.RoomTileWidth | 0][sprite.y / S.RoomTileHeight | 0].push(sprite);
+		this.container.addChild(sprite);
+	}
+
+	public clearTiles() {
+		this.container.removeChildren();
+	}
+
+	public teardown() {
+		this.container.cacheAsBitmap = false;
+		this.container.removeChildren();
 	}
 }
