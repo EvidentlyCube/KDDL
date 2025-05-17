@@ -18,13 +18,13 @@ import {PlatformOptions} from "../../platform/PlatformOptions";
 export function StyleResourceDeepSpaces() {
 	ResourcesQueue.queueImage(C.RES_DEEP_SPACES_WALL, document.createElement('img'), WallPath.default);
 	ResourcesQueue.queueImage(C.RES_DEEP_SPACES_FLOOR, document.createElement('img'), FloorPath.default);
-	ResourcesQueue.queueImage(C.RES_DEEP_SPACES_FLOORALT, document.createElement('img'), FloorAltPath.default);
-	ResourcesQueue.queueImage(C.RES_DEEP_SPACES_FLOORDIRT, document.createElement('img'), FloorDirtPath.default);
-	ResourcesQueue.queueImage(C.RES_DEEP_SPACES_FLOORGRASS, document.createElement('img'), FloorGrassPath.default);
-	ResourcesQueue.queueImage(C.RES_DEEP_SPACES_FLOORMOSAIC, document.createElement('img'), FloorMosaicPath.default);
-	ResourcesQueue.queueImage(C.RES_DEEP_SPACES_FLOORROAD, document.createElement('img'), FloorRoadPath.default);
+	ResourcesQueue.queueImage(C.RES_DEEP_SPACES_FLOOR_ALT, document.createElement('img'), FloorAltPath.default);
+	ResourcesQueue.queueImage(C.RES_DEEP_SPACES_FLOOR_DIRT, document.createElement('img'), FloorDirtPath.default);
+	ResourcesQueue.queueImage(C.RES_DEEP_SPACES_FLOOR_GRASS, document.createElement('img'), FloorGrassPath.default);
+	ResourcesQueue.queueImage(C.RES_DEEP_SPACES_FLOOR_MOSAIC, document.createElement('img'), FloorMosaicPath.default);
+	ResourcesQueue.queueImage(C.RES_DEEP_SPACES_FLOOR_ROAD, document.createElement('img'), FloorRoadPath.default);
 	ResourcesQueue.queueImage(C.RES_DEEP_SPACES_PIT, document.createElement('img'), PitPath.default);
-	ResourcesQueue.queueImage(C.RES_DEEP_SPACES_PITSIDE, document.createElement('img'), PitsidePath.default);
-	ResourcesQueue.queueImage(C.RES_DEEP_SPACES_PITSIDESMALL, document.createElement('img'), PitsideSmallPath.default);
+	ResourcesQueue.queueImage(C.RES_DEEP_SPACES_PIT_SIDE, document.createElement('img'), PitsidePath.default);
+	ResourcesQueue.queueImage(C.RES_DEEP_SPACES_PIT_SIDE_SMALL, document.createElement('img'), PitsideSmallPath.default);
 	ResourcesQueue.queueImage(C.RES_DEEP_SPACES_TILES, document.createElement('img'), TilesPath.default);
 }

@@ -350,7 +350,7 @@ export const F = {
 		return t == C.T_LIGHT;
 	},
 	isMother(t: number): boolean {
-		return t == C.M_TARMOTHER || t == C.M_MUDMOTHER || t == C.M_GELMOTHER;
+		return t == C.M_TAR_MOTHER || t == C.M_MUDMOTHER || t == C.M_GELMOTHER;
 	},
 	isOpenDoor(t: number): boolean {
 		return t == C.T_DOOR_YO || (t >= C.T_DOOR_GO && t <= C.T_DOOR_BO);
@@ -426,21 +426,21 @@ export const F = {
 			//Monster types.
 			case (C.M_ROACH):
 				return C.SPEAK_Roach;
-			case (C.M_QROACH):
+			case (C.M_ROACH_QUEEN):
 				return C.SPEAK_QRoach;
 			case (C.M_ROACH_EGG):
 				return C.SPEAK_RoachEgg;
 			case (C.M_GOBLIN):
 				return C.SPEAK_Goblin;
-			case (C.M_WWING):
+			case (C.M_WRAITHWING):
 				return C.SPEAK_WWing;
 			case (C.M_EYE):
 				return C.SPEAK_Eye;
-			case (C.M_SERPENT):
+			case (C.M_SERPENT_R):
 				return C.SPEAK_Serpent;
-			case (C.M_TARMOTHER):
+			case (C.M_TAR_MOTHER):
 				return C.SPEAK_TarMother;
-			case (C.M_TARBABY):
+			case (C.M_TAR_BABY):
 				return C.SPEAK_TarBaby;
 			case (C.M_BRAIN):
 				return C.SPEAK_Brain;

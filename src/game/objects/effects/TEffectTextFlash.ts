@@ -26,12 +26,12 @@ export class TEffectTextFlash extends TEffect {
 		this.timer = 0;
 
 		TStateGame.effectsAbove.add(this);
-		Game.room.layerUI.add2(this.text);
+		Game.room.layerUI.add(this.text);
 	}
 
 
 	public end() {
-		Game.room.layerUI.remove2(this.text);
+		Game.room.layerUI.remove(this.text);
 	}
 
 	public update() {

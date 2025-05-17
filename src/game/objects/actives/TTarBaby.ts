@@ -5,7 +5,7 @@ import {T} from "../../../T";
 
 export class TTarBaby extends TRoach {
 	public getType(): number {
-		return C.M_TARBABY;
+		return C.M_TAR_BABY;
 	}
 
 	public setGfx() {

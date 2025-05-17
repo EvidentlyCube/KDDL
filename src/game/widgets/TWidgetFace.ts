@@ -386,8 +386,6 @@ export class TWidgetFace {
 
 		switch (TWidgetFace.speaker) {
 			case(C.SPEAK_Beethro):
-			case(C.SPEAK_BeethroInDisguise):
-			case(C.SPEAK_Clone):
 				switch (TWidgetFace.currentMood) {
 					case(TWidgetFace.MOOD_NORMAL):
 						face = (TWidgetFace.isBlinking ? FACE_BEETHRO_NORMAL_BLINK : FACE_BEETHRO_NORMAL);

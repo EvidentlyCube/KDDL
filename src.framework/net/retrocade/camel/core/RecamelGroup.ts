@@ -208,7 +208,6 @@ export class RecamelGroup<T extends RecamelObject> extends RecamelObject {
 	 * @return First not null object, or null if there are none
 	 */
 	public getFirst(): T | null {
-		let i: number = 0;
 		for (const item of this._items) {
 			if (item) {
 				return item;

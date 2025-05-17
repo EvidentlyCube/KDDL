@@ -36,7 +36,7 @@ export class TWidgetMoveCounter {
 				text.parent.removeChild(text);
 			}
 			if (!text.parent) {
-				Game.room.layerUI.add2(text);
+				Game.room.layerUI.add(text);
 			}
 			text.text = Game.playerTurn.toString();
 

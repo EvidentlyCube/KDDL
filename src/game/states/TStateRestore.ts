@@ -137,20 +137,20 @@ export class TStateRestore extends RecamelState {
 	public create() {
 		Commands.freeze();
 
-		Core.lMain.add2(this.background);
-		Core.lMain.add2(this.header);
-		Core.lMain.add2(this.minimapBackground);
-		Core.lMain.add2(this.minimap);
-		Core.lMain.add2(this.levelsBackground);
-		Core.lMain.add2(this.levelPreview);
-		Core.lMain.add2(this.buttonRestore);
-		Core.lMain.add2(this.buttonCancel);
-		Core.lMain.add2(this.roomPosition);
-		Core.lMain.add2(this.restoreFarthest);
-		Core.lMain.add2(this.helpIcon);
+		Core.lMain.add(this.background);
+		Core.lMain.add(this.header);
+		Core.lMain.add(this.minimapBackground);
+		Core.lMain.add(this.minimap);
+		Core.lMain.add(this.levelsBackground);
+		Core.lMain.add(this.levelPreview);
+		Core.lMain.add(this.buttonRestore);
+		Core.lMain.add(this.buttonCancel);
+		Core.lMain.add(this.roomPosition);
+		Core.lMain.add(this.restoreFarthest);
+		Core.lMain.add(this.helpIcon);
 
 		if (Progress.isGameCompleted) {
-			Core.lMain.add2(this.secretsCount);
+			Core.lMain.add(this.secretsCount);
 		}
 
 		this.createLevels();
@@ -263,7 +263,7 @@ export class TStateRestore extends RecamelState {
 			level.x = this.levelsBackground.x + 2;
 			level.y = this.levelsBackground.y + 2 + index * TRestoreLevel.HEIGHT;
 
-			Core.lMain.add2(level);
+			Core.lMain.add(level);
 
 			this.levels.push(level);
 		}

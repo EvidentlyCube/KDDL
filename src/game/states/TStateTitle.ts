@@ -182,20 +182,20 @@ export class TStateTitle extends RecamelState {
 		this._buttonHelp.refreshTextField();
 		this._buttonChangeHold.refreshTextField();
 
-		Core.lMain.add2(this._background);
-		Core.lMain.add2(this._logo);
-		Core.lMain.add2(this._logoSub);
-		Core.lMain.add2(this._betaVersion);
-		Core.lMain.add2(this._buttonChangeHold);
-		Core.lMain.add2(this._buttonHelp);
-		Core.lMain.add2(this._buttonOptions);
-		Core.lMain.add2(this._buttonAchievements);
-		Core.lMain.add2(this._buttonRestore);
-		Core.lMain.add2(this._buttonContinue);
-		Core.lMain.add2(this._buttonNewGame);
-		Core.lMain.add2(this._logoCaravel);
-		Core.lMain.add2(this._logoRetrocade);
-		Core.lMain.add2(this._version);
+		Core.lMain.add(this._background);
+		Core.lMain.add(this._logo);
+		Core.lMain.add(this._logoSub);
+		Core.lMain.add(this._betaVersion);
+		Core.lMain.add(this._buttonChangeHold);
+		Core.lMain.add(this._buttonHelp);
+		Core.lMain.add(this._buttonOptions);
+		Core.lMain.add(this._buttonAchievements);
+		Core.lMain.add(this._buttonRestore);
+		Core.lMain.add(this._buttonContinue);
+		Core.lMain.add(this._buttonNewGame);
+		Core.lMain.add(this._logoCaravel);
+		Core.lMain.add(this._logoRetrocade);
+		Core.lMain.add(this._version);
 
 		this._buttonContinue.enabled = Progress.hasSaveGame();
 		this._buttonRestore.enabled = Progress.hasRestoreProgress();

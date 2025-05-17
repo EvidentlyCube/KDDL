@@ -63,7 +63,7 @@ export function AchievementsListTAP(to: Achievement[]) {
 
 		icon: ['Deep Spaces', T.TI_RQUEEN_NW, T.TI_BRAIN, T.TI_BRAIN_A, T.TI_RQUEEN_ASE],
 
-		failOn: () => evKilled(C.M_QROACH) && hasMonster(C.M_TARBABY, C.M_BRAIN, C.M_EYE, C.M_EYE_ACTIVE),
+		failOn: () => evKilled(C.M_ROACH_QUEEN) && hasMonster(C.M_TAR_BABY, C.M_BRAIN, C.M_EYE, C.M_EYE_ACTIVE),
 	})
 
 	// Inside The Palace: 2S1W -- Do not rotate your sword until the brains are dead, then clear the room
@@ -87,7 +87,7 @@ export function AchievementsListTAP(to: Achievement[]) {
 
 		icon: ['Deep Spaces', T.TI_EEYE_E, T.TI_SNKT_N, T.TI_EEYE_AE, T.TI_SNKH_S],
 
-		failOn: () => (hasMonster(C.M_SERPENT) || ev(C.CID_SNAKE_DIED_FROM_TRUNCATION))
+		failOn: () => (hasMonster(C.M_SERPENT_R) || ev(C.CID_SNAKE_DIED_FROM_TRUNCATION))
 			&& roomO(19, 12) === C.T_DOOR_Y,
 	});
 
@@ -100,7 +100,7 @@ export function AchievementsListTAP(to: Achievement[]) {
 
 		icon: ['Aboveground', T.TI_TARBABY_N, T.TI_ROACH_N, T.TI_WWING_N, T.TI_GOBLIN_N],
 
-		failOn: () => ev(C.CID_MONSTER_DIED_FROM_STAB) && hasMonster(C.M_SERPENT),
+		failOn: () => ev(C.CID_MONSTER_DIED_FROM_STAB) && hasMonster(C.M_SERPENT_R),
 	});
 
 	addAchievement(to, {
@@ -135,11 +135,11 @@ export function AchievementsListTAP(to: Achievement[]) {
 	AchievementFactory.monsterKills(to, C.M_BRAIN, T.TI_BRAIN, 21);
 	AchievementFactory.monsterKills(to, C.M_ROACH, T.TI_ROACH_N, 19);
 	AchievementFactory.monsterKills(to, C.M_EYE, T.TI_EEYE_NW, 103);
-	AchievementFactory.monsterKills(to, C.M_WWING, T.TI_WWING_ANW, 4);
-	AchievementFactory.monsterKills(to, C.M_TARMOTHER, 0, 15);
-	AchievementFactory.monsterKills(to, C.M_SERPENT, 0, 46);
-	AchievementFactory.monsterKills(to, C.M_QROACH, T.TI_RQUEEN_ANW, 23);
-	AchievementFactory.monsterKills(to, C.M_TARBABY, T.TI_TARBABY_NW, 100);
+	AchievementFactory.monsterKills(to, C.M_WRAITHWING, T.TI_WWING_ANW, 4);
+	AchievementFactory.monsterKills(to, C.M_TAR_MOTHER, 0, 15);
+	AchievementFactory.monsterKills(to, C.M_SERPENT_R, 0, 46);
+	AchievementFactory.monsterKills(to, C.M_ROACH_QUEEN, T.TI_RQUEEN_ANW, 23);
+	AchievementFactory.monsterKills(to, C.M_TAR_BABY, T.TI_TARBABY_NW, 100);
 	AchievementFactory.monsterKills(to, C.M_GOBLIN, T.TI_GOBLIN_NW, 17);
 
 

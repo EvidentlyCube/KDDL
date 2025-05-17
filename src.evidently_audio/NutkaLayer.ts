@@ -4,7 +4,6 @@ import {NutkaLoader} from "./NutkaLoader";
 export class NutkaLayer {
 	private readonly _name: string;
 	private readonly _gainNode: GainNode;
-	private readonly _nutka: Nutka;
 	private readonly _loader: NutkaLoader;
 
 	public get name() {
@@ -29,7 +28,6 @@ export class NutkaLayer {
 
 	constructor(name: string, parent: AudioNode, nutka: Nutka) {
 		this._name = name;
-		this._nutka = nutka;
 		this._loader = new NutkaLoader(this, nutka);
 
 		this._gainNode = parent.context.createGain();

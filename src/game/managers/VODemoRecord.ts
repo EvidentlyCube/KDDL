@@ -2,7 +2,6 @@ import { PackedVars } from "../global/PackedVars";
 import { Commands } from "../global/Commands";
 import { UtilsBase64 } from "../../../src.framework/net/retrocade/utils/UtilsBase64";
 import { BinaryReader, BinaryWriter, Encoding } from "csharp-binary-stream";
-import { UtilsSecure } from "../../../src.framework/net/retrocade/utils/UtilsSecure";
 import { VORoomEntryState } from "./progress/VORoomEntryState";
 
 const UINT_MAX = 4294967295;

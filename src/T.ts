@@ -766,8 +766,8 @@ export const T = {
         TILES_FLOOR_MOSAIC  : 5 as StyleTilesets,
         TILES_FLOOR_ROAD    : 6 as StyleTilesets,
         TILES_PIT           : 7 as StyleTilesets,
-        TILES_PITSIDE       : 8 as StyleTilesets,
-        TILES_PITSIDE_SMALL : 9 as StyleTilesets,
+        TILES_PIT_SIDE       : 8 as StyleTilesets,
+        TILES_PIT_SIDE_SMALL : 9 as StyleTilesets,
         TILES_STYLE         : 10 as StyleTilesets,
 
         plotPrecise(bitmapData:BitmapDataWritable, tile:number, x:number, y:number, source?:CanvasImageSource){

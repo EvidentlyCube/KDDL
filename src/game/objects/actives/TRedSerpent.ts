@@ -5,7 +5,7 @@ import {CueEvents} from "../../global/CueEvents";
 
 export class TRedSerpent extends TSerpent {
 	public getType(): number {
-		return C.M_SERPENT;
+		return C.M_SERPENT_R;
 	}
 
 	public process(lastCommand: number) {

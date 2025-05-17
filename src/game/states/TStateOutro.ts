@@ -52,8 +52,8 @@ export class TStateOutro extends RecamelState {
 
 		this.setState();
 
-		Core.lMain.add2(this._bg);
-		Core.lMain.add2(this._text);
+		Core.lMain.add(this._bg);
+		Core.lMain.add(this._text);
 
 		new RecamelEffectFade(this._screenshot.layer.displayObject, 1, 0, 1000, () => {
 			if (this._screenshot) {
@@ -65,8 +65,8 @@ export class TStateOutro extends RecamelState {
 	}
 
 	public destroy() {
-		Core.lMain.remove2(this._bg);
-		Core.lMain.remove2(this._text);
+		Core.lMain.remove(this._bg);
+		Core.lMain.remove(this._text);
 
 		super.destroy();
 	}

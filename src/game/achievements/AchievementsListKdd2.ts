@@ -182,7 +182,7 @@ export function AchievementsListKdd2(to: Achievement[]) {
 
 		in: [3, "1N2E"],
 
-		failOn: () => ev(C.CID_MONSTER_DIED_FROM_STAB) && !!getMonster(C.M_SERPENT)
+		failOn: () => ev(C.CID_MONSTER_DIED_FROM_STAB) && !!getMonster(C.M_SERPENT_R)
 	});
 
 	// Seventh Level: 3N1E -- Clear the room without turning
@@ -259,11 +259,11 @@ export function AchievementsListKdd2(to: Achievement[]) {
 		]],
 
 		in: 4,
-		init: () => !!getMonster(C.M_TARMOTHER),
+		init: () => !!getMonster(C.M_TAR_MOTHER),
 
 		winNeedsConquer: false,
 		failOn: () => ev(C.CID_TAR_GREW),
-		winOn: () => !getMonster(C.M_TARMOTHER)
+		winOn: () => !getMonster(C.M_TAR_MOTHER)
 	});
 
 	// Any Level -- Clear a room with evil eyes without waking any
@@ -321,13 +321,13 @@ export function AchievementsListKdd2(to: Achievement[]) {
 	AchievementFactory.tuningFork_inSequence(to, 4);
 
 	AchievementFactory.monsterKills(to, C.M_ROACH, T.TI_ROACH_NW, 631);
-	AchievementFactory.monsterKills(to, C.M_QROACH, T.TI_RQUEEN_ANW, 101);
+	AchievementFactory.monsterKills(to, C.M_ROACH_QUEEN, T.TI_RQUEEN_ANW, 101);
 	AchievementFactory.monsterKills(to, C.M_ROACH_EGG, T.TI_REGG_W, 3);
 	AchievementFactory.monsterKills(to, C.M_EYE, T.TI_EEYE_NW, 653);
-	AchievementFactory.monsterKills(to, C.M_SERPENT, 0, 37);
-	AchievementFactory.monsterKills(to, C.M_WWING, T.TI_WWING_ANW, 107);
-	AchievementFactory.monsterKills(to, C.M_TARBABY, T.TI_TARBABY_ANW, 1033);
-	AchievementFactory.monsterKills(to, C.M_TARMOTHER, 0, 43);
+	AchievementFactory.monsterKills(to, C.M_SERPENT_R, 0, 37);
+	AchievementFactory.monsterKills(to, C.M_WRAITHWING, T.TI_WWING_ANW, 107);
+	AchievementFactory.monsterKills(to, C.M_TAR_BABY, T.TI_TARBABY_ANW, 1033);
+	AchievementFactory.monsterKills(to, C.M_TAR_MOTHER, 0, 43);
 
 	AchievementFactory.rooms(to, 47);
 	AchievementFactory.allKills(to, 2593);

@@ -50,8 +50,8 @@ export class Renderer {
 		this.bdFloorMosaic = Gfx.STYLES.get(styleName)!.get(T.TILES_FLOOR_MOSAIC)!;
 		this.bdFloorRoad = Gfx.STYLES.get(styleName)!.get(T.TILES_FLOOR_ROAD)!;
 		this.bdPit = Gfx.STYLES.get(styleName)!.get(T.TILES_PIT)!;
-		this.bdPitside = Gfx.STYLES.get(styleName)!.get(T.TILES_PITSIDE)!;
-		this.bdPitsideSmall = Gfx.STYLES.get(styleName)!.get(T.TILES_PITSIDE_SMALL)!;
+		this.bdPitside = Gfx.STYLES.get(styleName)!.get(T.TILES_PIT_SIDE)!;
+		this.bdPitsideSmall = Gfx.STYLES.get(styleName)!.get(T.TILES_PIT_SIDE_SMALL)!;
 		this.bdWall = Gfx.STYLES.get(styleName)!.get(T.TILES_WALL)!;
 
 		this.drawTo = output;

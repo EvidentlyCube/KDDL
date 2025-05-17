@@ -7,7 +7,7 @@ import {T} from "../../../T";
 
 export class TTarMother extends TMonster {
 	public getType(): number {
-		return C.M_TARMOTHER;
+		return C.M_TAR_MOTHER;
 	}
 
 	public isAggressive(): boolean {

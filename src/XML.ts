@@ -1,3 +1,4 @@
+import { UtilsBase64 } from "src.framework/net/retrocade/utils/UtilsBase64";
 
 export function intAttr(xml: Element, attr: string, def: number = 0) {
 	const val = xml.getAttribute(attr);
@@ -28,5 +29,5 @@ export function textAttr(xml: Element, attr: string, def: string = '') {
 
 	return val === null
 		? def
-		: atob(val).replace(/\x00/g, '');
+		: UtilsBase64.decodeWChar(val);
 }

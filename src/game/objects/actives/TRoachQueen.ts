@@ -9,7 +9,7 @@ import {PathmapTile} from "../../global/PathmapTile";
 
 export class TRoachQueen extends TMonster {
 	public getType(): number {
-		return C.M_QROACH;
+		return C.M_ROACH_QUEEN;
 	}
 
 	public isAggressive(): boolean {

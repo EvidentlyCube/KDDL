@@ -22,14 +22,14 @@ export class TStateInitialize extends RecamelState {
 	}
 
 	create() {
-		Core.lMain.add2(this._bg);
-		Core.lMain.add2(this._text);
+		Core.lMain.add(this._bg);
+		Core.lMain.add(this._text);
 		new RecamelEffectFadeScreen(0, 1, 0, 250);
 	}
 
 	destroy() {
-		Core.lMain.remove2(this._bg);
-		Core.lMain.remove2(this._text);
+		Core.lMain.remove(this._bg);
+		Core.lMain.remove(this._text);
 
 		super.destroy();
 	}

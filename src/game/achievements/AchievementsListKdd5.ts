@@ -104,7 +104,7 @@ export function AchievementsListKdd5(to: Achievement[]) {
 
 		in: [1, "2S1E"],
 
-		failOn: () => evKilled(C.M_TARBABY) && !!getMonster(C.M_TARMOTHER),
+		failOn: () => evKilled(C.M_TAR_BABY) && !!getMonster(C.M_TAR_MOTHER),
 	});
 
 	// 18th Level: 1N -- Conquer the room without turning
@@ -192,7 +192,7 @@ export function AchievementsListKdd5(to: Achievement[]) {
 			[T.TI_SNK_NE, 0, 0],
 			[T.TI_SNKH_E, 1, 0],
 			[T.TI_BEETHRO_W, 0, 1],
-			[0, 1, 1, T.TILES_PITSIDE_SMALL],
+			[0, 1, 1, T.TILES_PIT_SIDE_SMALL],
 		]],
 
 		in: [2, "1E"],
@@ -253,7 +253,7 @@ export function AchievementsListKdd5(to: Achievement[]) {
 
 		in: [4, "1N"],
 
-		failOn: () => evKilled(C.M_QROACH) && !!getMonster(C.M_BRAIN)
+		failOn: () => evKilled(C.M_ROACH_QUEEN) && !!getMonster(C.M_BRAIN)
 	});
 
 	// 20th Level: 3N1W -- Kill all brains before killing any goblin
@@ -279,7 +279,7 @@ export function AchievementsListKdd5(to: Achievement[]) {
 
 		in: [4, "3N"],
 
-		failOn: () => evKilled(C.M_QROACH) && !!getMonster(C.M_BRAIN)
+		failOn: () => evKilled(C.M_ROACH_QUEEN) && !!getMonster(C.M_BRAIN)
 	});
 
 	// 20th Level: 2N2W -- Kill all serpents before killing any roach queen then clear the room
@@ -292,7 +292,7 @@ export function AchievementsListKdd5(to: Achievement[]) {
 
 		in: [4, "2N2W"],
 
-		failOn: () => evKilled(C.M_QROACH) && !!getMonster(C.M_SERPENT)
+		failOn: () => evKilled(C.M_ROACH_QUEEN) && !!getMonster(C.M_SERPENT_R)
 	});
 
 	// 20th Level: 1N2W -- Kill all other monsters before killing the serpent
@@ -347,13 +347,13 @@ export function AchievementsListKdd5(to: Achievement[]) {
 	addAchievement(to, tuningFork2);
 
 	AchievementFactory.monsterKills(to, C.M_ROACH, T.TI_ROACH_NW, 429);
-	AchievementFactory.monsterKills(to, C.M_QROACH, T.TI_RQUEEN_ANW, 91);
+	AchievementFactory.monsterKills(to, C.M_ROACH_QUEEN, T.TI_RQUEEN_ANW, 91);
 	AchievementFactory.monsterKills(to, C.M_ROACH_EGG, T.TI_REGG_W, 3);
 	AchievementFactory.monsterKills(to, C.M_EYE, T.TI_EEYE_NW, 83);
-	AchievementFactory.monsterKills(to, C.M_SERPENT, 0, 53);
-	AchievementFactory.monsterKills(to, C.M_WWING, T.TI_WWING_ANW, 14);
-	AchievementFactory.monsterKills(to, C.M_TARBABY, T.TI_TARBABY_ANW, 101);
-	AchievementFactory.monsterKills(to, C.M_TARMOTHER, 0, 47);
+	AchievementFactory.monsterKills(to, C.M_SERPENT_R, 0, 53);
+	AchievementFactory.monsterKills(to, C.M_WRAITHWING, T.TI_WWING_ANW, 14);
+	AchievementFactory.monsterKills(to, C.M_TAR_BABY, T.TI_TARBABY_ANW, 101);
+	AchievementFactory.monsterKills(to, C.M_TAR_MOTHER, 0, 47);
 	AchievementFactory.monsterKills(to, C.M_GOBLIN, T.TI_GOBLIN_NW, 57);
 	AchievementFactory.monsterKills(to, C.M_BRAIN, T.TI_BRAIN, 51);
 

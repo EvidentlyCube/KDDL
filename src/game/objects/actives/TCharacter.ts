@@ -1,25 +1,21 @@
-import {TPlayerDouble} from "./TPlayerDouble";
-import {VOCharacterCommand} from "../../managers/VOCharacterCommand";
-import {C} from "../../../C";
-import {F} from "../../../F";
-import {Game} from "../../global/Game";
-import {S} from "../../../S";
-import {TStateGame} from "../../states/TStateGame";
-import {ASSERT} from "../../../ASSERT";
-import {CueEvents} from "../../global/CueEvents";
-import {PackedVars} from "../../global/PackedVars";
-import {T} from "../../../T";
-import {TGameObject} from "../TGameObject";
-import {TPlayer} from "./TPlayer";
-import {VOSpeechCommand} from "../../managers/VOSpeechCommand";
-import {Level} from "../../global/Level";
-import {TEvilEye} from "./TEvilEye";
-import {DB} from "../../global/DB";
-import {PlatformOptions} from "../../../platform/PlatformOptions";
-import {UtilsByteArray} from "../../../../src.framework/net/retrocade/utils/UtilsByteArray";
-import {Uint8ArrayPositioned} from "../../../../src.framework/net/retrocade/camel/objects/Uint8ArrayPositioned";
 import { UtilsNumber } from "src.framework/net/retrocade/utils/UtilsNumber";
 import { MonsterMessageType, VOMonsterMessage } from "src/game/managers/VOMonsterMessage";
+import { ASSERT } from "../../../ASSERT";
+import { C } from "../../../C";
+import { F } from "../../../F";
+import { S } from "../../../S";
+import { T } from "../../../T";
+import { CueEvents } from "../../global/CueEvents";
+import { Game } from "../../global/Game";
+import { Level } from "../../global/Level";
+import { PackedVars } from "../../global/PackedVars";
+import { VOCharacterCommand } from "../../managers/VOCharacterCommand";
+import { VOSpeechCommand } from "../../managers/VOSpeechCommand";
+import { TStateGame } from "../../states/TStateGame";
+import { TGameObject } from "../TGameObject";
+import { TEvilEye } from "./TEvilEye";
+import { TPlayer } from "./TPlayer";
+import { TPlayerDouble } from "./TPlayerDouble";
 
 export class TCharacter extends TPlayerDouble {
 
@@ -123,7 +119,7 @@ export class TCharacter extends TPlayerDouble {
 			case(C.M_NEGOTIATOR):
 				this.gfx = T.NEGOTIATOR[this.o];
 				break;
-			case(C.M_QROACH):
+			case(C.M_ROACH_QUEEN):
 				this.gfx = T.RQUEEN[this.animationFrame][this.o];
 				break;
 			case(C.M_ROACH):
@@ -135,13 +131,13 @@ export class TCharacter extends TPlayerDouble {
 			case(C.M_SPIDER):
 				this.gfx = T.SPIDER[this.animationFrame][this.o];
 				break;
-			case(C.M_TARBABY):
+			case(C.M_TAR_BABY):
 				this.gfx = T.TARBABY[this.animationFrame][this.o];
 				break;
 			case(C.M_TARTECHNICIAN):
 				this.gfx = T.TARTECHNICIAN[this.o];
 				break;
-			case(C.M_WWING):
+			case(C.M_WRAITHWING):
 				this.gfx = T.WWING[this.animationFrame][this.o];
 				break;
 		}

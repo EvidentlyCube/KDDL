@@ -407,14 +407,14 @@ export function AchievementsListKdd4(to: Achievement[]) {
 	AchievementFactory.tuningFork_inSequence(to, 6);
 
 	AchievementFactory.monsterKills(to, C.M_ROACH, T.TI_ROACH_NW, 321);
-	AchievementFactory.monsterKills(to, C.M_QROACH, T.TI_RQUEEN_ANW, 53);
+	AchievementFactory.monsterKills(to, C.M_ROACH_QUEEN, T.TI_RQUEEN_ANW, 53);
 	AchievementFactory.monsterKills(to, C.M_ROACH_EGG, T.TI_REGG_W, 3);
 	AchievementFactory.monsterKills(to, C.M_EYE, T.TI_EEYE_NW, 256);
-	AchievementFactory.monsterKills(to, C.M_SERPENT, 0, 31);
+	AchievementFactory.monsterKills(to, C.M_SERPENT_R, 0, 31);
 	AchievementFactory.monsterKills(to, C.M_SPIDER, T.TI_SPIDER_NW, 29);
-	AchievementFactory.monsterKills(to, C.M_WWING, T.TI_WWING_ANW, 73);
-	AchievementFactory.monsterKills(to, C.M_TARBABY, T.TI_TARBABY_ANW, 321);
-	AchievementFactory.monsterKills(to, C.M_TARMOTHER, 0, 41);
+	AchievementFactory.monsterKills(to, C.M_WRAITHWING, T.TI_WWING_ANW, 73);
+	AchievementFactory.monsterKills(to, C.M_TAR_BABY, T.TI_TARBABY_ANW, 321);
+	AchievementFactory.monsterKills(to, C.M_TAR_MOTHER, 0, 41);
 	AchievementFactory.monsterKills(to, C.M_GOBLIN, T.TI_GOBLIN_NW, 93);
 
 	AchievementFactory.rooms(to, 31);

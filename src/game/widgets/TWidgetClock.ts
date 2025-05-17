@@ -64,7 +64,7 @@ export class TWidgetClock {
                 <p fontSize="15px">${_("ingame.clock.spawn_cycle")}</p>
                 <p ${timerStyle}>${turn}</p>`;
 
-		if (Game.room.getMonsterOfType(C.M_SERPENT)) {
+		if (Game.room.getMonsterOfType(C.M_SERPENT_R)) {
 			newText += `
                 <span ${descStyle}>${_("ingame.clock.snakes_prefer")}</span>
                 <div ${snakeStyle}>`

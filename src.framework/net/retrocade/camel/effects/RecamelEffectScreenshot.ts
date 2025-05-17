@@ -29,7 +29,7 @@ export class RecamelEffectScreenshot extends RecamelEffectScreen {
 
 		this._screenshot = new PIXI.Sprite(this._texture);
 
-		this.layer.add2(this._screenshot);
+		this.layer.add(this._screenshot);
 	}
 
 	public update() {

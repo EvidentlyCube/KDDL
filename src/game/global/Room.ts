@@ -13,7 +13,7 @@ import {Gfx} from "./Gfx";
 import {Level} from "./Level";
 import {UtilsBase64} from "../../../src.framework/net/retrocade/utils/UtilsBase64";
 import {UtilsXPath} from "../../../src.framework/net/retrocade/utils/UtilsXPath";
-import {attr, intAttr} from "../../XML";
+import {attr, intAttr, textAttr} from "../../XML";
 import {VOStairs} from "../managers/VOStairs";
 import {ASSERT} from "../../ASSERT";
 import {BinaryReader} from "csharp-binary-stream";
@@ -167,7 +167,7 @@ export class Room {
 		this.lastLevelID = this.levelId;
 		this.levelId = intAttr(room, 'LevelID');
 
-		const styleName = UtilsBase64.decodeWChar(room.getAttribute('StyleName') || UtilsBase64.encodeString(PlatformOptions.defaultStyle)) as StyleName;
+		const styleName = textAttr(room, 'StyleName', PlatformOptions.defaultStyle) as StyleName;
 
 		this.loadSquaresIntoArrays(roomID, this.tilesOpaque, this.tilesTransparent, this.tilesTransparentParam, this.tilesFloor);
 
@@ -581,7 +581,7 @@ export class Room {
 
 		this.createPathmap(Game.player.x, Game.player.y, C.MOVEMENT_GROUND);
 
-		if (this.getMonsterOfType(C.M_WWING)) {
+		if (this.getMonsterOfType(C.M_WRAITHWING)) {
 			this.createPathmap(Game.player.x, Game.player.y, C.MOVEMENT_AIR);
 		}
 	}
@@ -810,7 +810,7 @@ export class Room {
 				continue;
 			}
 
-			if (monster.getType() === C.M_QROACH || monster.getType() === C.M_TARMOTHER || monster.getType() === C.M_SERPENT) {
+			if (monster.getType() === C.M_ROACH_QUEEN || monster.getType() === C.M_TAR_MOTHER || monster.getType() === C.M_SERPENT_R) {
 				return true;
 			}
 		}
@@ -961,7 +961,7 @@ export class Room {
 		const playerX = Game.player.x;
 		const playerY = Game.player.y;
 
-		const motherType = C.M_TARMOTHER;
+		const motherType = C.M_TAR_MOTHER;
 		const cid = C.CID_TAR_GREW;
 
 		const roomHasTar = this.tarLeft > 0;
@@ -1056,7 +1056,7 @@ export class Room {
 					continue;
 				}
 
-				monster = this.addNewMonster(C.M_TARBABY, x, y, 0);
+				monster = this.addNewMonster(C.M_TAR_BABY, x, y, 0);
 				CueEvents.add(C.CID_TAR_BABY_FORMED, monster);
 			}
 
@@ -1125,7 +1125,7 @@ export class Room {
 							if (!(this.tilesSwords[index] || F.isStairs(tileO) || F.isPit(tileO))) {
 								switch (tarType) {
 									case(C.T_TAR):
-										monster = this.addNewMonster(C.M_TARBABY, i, j, 0);
+										monster = this.addNewMonster(C.M_TAR_BABY, i, j, 0);
 										CueEvents.add(C.CID_TAR_BABY_FORMED, monster);
 										break;
 								}
@@ -1156,7 +1156,7 @@ export class Room {
 			case(C.M_ROACH):
 				monster = new TRoach();
 				break;
-			case(C.M_QROACH):
+			case(C.M_ROACH_QUEEN):
 				monster = new TRoachQueen();
 				break;
 			case(C.M_ROACH_EGG):
@@ -1165,19 +1165,19 @@ export class Room {
 			case(C.M_GOBLIN):
 				monster = new TGoblin();
 				break;
-			case(C.M_WWING):
+			case(C.M_WRAITHWING):
 				monster = new TWraithwing();
 				break;
 			case(C.M_EYE):
 				monster = new TEvilEye();
 				break;
-			case(C.M_SERPENT):
+			case(C.M_SERPENT_R):
 				monster = new TRedSerpent();
 				break;
-			case(C.M_TARMOTHER):
+			case(C.M_TAR_MOTHER):
 				monster = new TTarMother();
 				break;
-			case(C.M_TARBABY):
+			case(C.M_TAR_BABY):
 				monster = new TTarBaby();
 				break;
 			case(C.M_BRAIN):
@@ -1277,7 +1277,7 @@ export class Room {
 					case(C.M_STALWART):
 						continue;
 
-					case(C.M_SERPENT):
+					case(C.M_SERPENT_R):
 						monster.killPieces();
 						break;
 				}
@@ -1338,7 +1338,7 @@ export class Room {
 
 				break;
 
-			case(C.M_SERPENT):
+			case(C.M_SERPENT_R):
 				monster.killPieces();
 				Game.tallyKill();
 				this.monsterCount--;

@@ -121,7 +121,7 @@ export const AchievementHelpers = {
 	},
 
 	evKilledCount(type: number): number {
-		if (type === C.M_SERPENT) {
+		if (type === C.M_SERPENT_R) {
 			return CueEvents.countOccurred(C.CID_SNAKE_DIED_FROM_TRUNCATION);
 
 		} else if (type === C.M_EYE || type === C.M_EYE_ACTIVE) {
@@ -722,7 +722,7 @@ export const AchievementFactory = {
 			]],
 
 			initOnConquered: true,
-			init: () => AchievementHelpers.hasTile(C.T_TAR) || !!AchievementHelpers.getMonster(C.M_TARMOTHER),
+			init: () => AchievementHelpers.hasTile(C.T_TAR) || !!AchievementHelpers.getMonster(C.M_TAR_MOTHER),
 			count: [count, () => AchievementHelpers.ev(C.CID_TARSTUFF_DESTROYED)],
 		});
 	},
@@ -761,13 +761,13 @@ export const AchievementFactory = {
 		}
 
 		if (typeof monsterTile === 'number') {
-			if (monsterType === C.M_TARMOTHER) {
+			if (monsterType === C.M_TAR_MOTHER) {
 				icon = ['default', [
 					[T.TI_TMOTHER_EO, 0, 0.5],
 					[T.TI_TMOTHER_WO, 1, 0.5]
 				]];
 
-			} else if (monsterType === C.M_SERPENT) {
+			} else if (monsterType === C.M_SERPENT_R) {
 				icon = ['default', [
 					[T.TI_SNKH_N, 0.5, 0],
 					[T.TI_SNKT_S, 0.5, 1],
@@ -795,10 +795,10 @@ export const AchievementFactory = {
 
 			initOnConquered: true,
 			init: () => AchievementHelpers.hasMonster(...initMonsterTypes)
-				|| (monsterType === C.M_TARBABY && AchievementHelpers.hasTile(C.T_TAR))
-				|| (monsterType === C.M_TARBABY && AchievementHelpers.hasMonster(C.M_TARMOTHER))
-				|| (monsterType === C.M_ROACH_EGG && AchievementHelpers.hasMonster(C.M_QROACH))
-				|| (monsterType === C.M_ROACH && AchievementHelpers.hasMonster(C.M_QROACH)),
+				|| (monsterType === C.M_TAR_BABY && AchievementHelpers.hasTile(C.T_TAR))
+				|| (monsterType === C.M_TAR_BABY && AchievementHelpers.hasMonster(C.M_TAR_MOTHER))
+				|| (monsterType === C.M_ROACH_EGG && AchievementHelpers.hasMonster(C.M_ROACH_QUEEN))
+				|| (monsterType === C.M_ROACH && AchievementHelpers.hasMonster(C.M_ROACH_QUEEN)),
 
 			count: [count, () => AchievementHelpers.evKilledCount(monsterType)],
 		});

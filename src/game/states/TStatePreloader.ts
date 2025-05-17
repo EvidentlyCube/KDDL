@@ -62,14 +62,14 @@ export class TStatePreloader extends RecamelState {
 		this._importButton = getShadowTextButton("Import Save", () => this.importSave(), 20);
 		this._languageButton = getShadowTextButton("English", () => this.changeLanguage(), 20);
 
-		this._layer.add2(this._bg);
-		this._layer.add2(this._logo);
-		this._layer.add2(this._loadingText);
-		this._layer.add2(this._versionText);
-		this._layer.add2(this._prevScreenButton);
-		this._layer.add2(this._nextScreenButton);
-		this._layer.add2(this._exportButton);
-		this._layer.add2(this._importButton);
+		this._layer.add(this._bg);
+		this._layer.add(this._logo);
+		this._layer.add(this._loadingText);
+		this._layer.add(this._versionText);
+		this._layer.add(this._prevScreenButton);
+		this._layer.add(this._nextScreenButton);
+		this._layer.add(this._exportButton);
+		this._layer.add(this._importButton);
 		// this._layer.add2(this._languageButton);
 		this._logoTexture.baseTexture.update();
 		this._logo.updateTransform();
@@ -88,7 +88,7 @@ export class TStatePreloader extends RecamelState {
 			page.y = LOGO_HEIGHT + (S.SIZE_GAME_HEIGHT - LOGO_HEIGHT - page.height) / 2 | 0;
 			page.visible = false;
 
-			this._layer.add2(page);
+			this._layer.add(page);
 			this._holdScreens.push(page);
 		}
 

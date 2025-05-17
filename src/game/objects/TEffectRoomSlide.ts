@@ -42,7 +42,7 @@ export class TEffectRoomSlide extends RecamelEffectScreen {
 		this._bitmap.x = S.LEVEL_OFFSET_X;
 		this._bitmap.y = S.LEVEL_OFFSET_Y;
 
-		this.layer.add2(this._bitmap);
+		this.layer.add(this._bitmap);
 	}
 
 	public update() {

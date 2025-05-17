@@ -64,7 +64,7 @@ export function AchievementsListKdd1(to: Achievement[]) {
 			[T.TI_REGG_ANW, 1.5, 1.5],
 		]],
 
-		init: () => !!room().getMonsterOfType(C.M_QROACH),
+		init: () => !!room().getMonsterOfType(C.M_ROACH_QUEEN),
 
 		winNeedsConquer: false,
 		winOn: () => CueEvents.anyData(C.CID_MONSTER_DIED_FROM_STAB, monster => (
@@ -165,7 +165,7 @@ export function AchievementsListKdd1(to: Achievement[]) {
 
 		in: [2, '2E'],
 
-		failOn: () => hasMonsterAt(25, 1, C.M_QROACH),
+		failOn: () => hasMonsterAt(25, 1, C.M_ROACH_QUEEN),
 	})
 
 	// Second Level 1S -- After hitting the orb do not rotate your sword and clear the room
@@ -488,10 +488,10 @@ export function AchievementsListKdd1(to: Achievement[]) {
 	AchievementFactory.tuningFork_inSequence(to, 3);
 
 	AchievementFactory.monsterKills(to, C.M_ROACH, T.TI_ROACH_N, 823);
-	AchievementFactory.monsterKills(to, C.M_QROACH, T.TI_RQUEEN_ANW, 131);
+	AchievementFactory.monsterKills(to, C.M_ROACH_QUEEN, T.TI_RQUEEN_ANW, 131);
 	AchievementFactory.monsterKills(to, C.M_ROACH_EGG, T.TI_REGG_W, 3);
 	AchievementFactory.monsterKills(to, C.M_EYE, T.TI_EEYE_NW, 53);
-	AchievementFactory.monsterKills(to, C.M_WWING, T.TI_WWING_ANW, 4);
+	AchievementFactory.monsterKills(to, C.M_WRAITHWING, T.TI_WWING_ANW, 4);
 
 	AchievementFactory.rooms(to, 47);
 	AchievementFactory.allKills(to, 1103);

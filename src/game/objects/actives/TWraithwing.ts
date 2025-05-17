@@ -6,7 +6,7 @@ import {T} from "../../../T";
 
 export class TWraithwing extends TMonster {
 	public getType(): number {
-		return C.M_WWING;
+		return C.M_WRAITHWING;
 	}
 
 	public isFlying(): boolean {
@@ -27,7 +27,7 @@ export class TWraithwing extends TMonster {
 
 		if (distance <= 5) {
 			for (const monster of this.room.monsters.getAllOriginal()) {
-				if (!monster || monster.getType() !== C.M_WWING || monster == this) {
+				if (!monster || monster.getType() !== C.M_WRAITHWING || monster == this) {
 					continue;
 				}
 

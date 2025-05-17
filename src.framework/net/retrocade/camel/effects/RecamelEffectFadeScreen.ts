@@ -24,7 +24,7 @@ export class RecamelEffectFadeScreen extends RecamelEffectScreen {
 		this._background.drawRect(0, 0, S.SIZE_GAME_WIDTH, S.SIZE_GAME_HEIGHT);
 		this._background.endFill();
 
-		this.layer.add2(this._background);
+		this.layer.add(this._background);
 
 		this._alphaFrom = alphaFrom;
 		this._alphaTo = alphaTo;

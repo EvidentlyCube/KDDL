@@ -1,10 +1,8 @@
 import {NutkaDefinition} from "./NutkaDefinition";
-import {NutkaLayer} from "./NutkaLayer";
 import {NutkaPlayback} from "./NutkaPlayback";
 import {NutkaManagedSound} from "./Interfaces";
 
 export class NutkaMusic  implements NutkaManagedSound {
-	private readonly _defaultLayer: NutkaLayer;
 	private readonly _definition: NutkaDefinition;
 
 	private _volume: number;
@@ -61,7 +59,6 @@ export class NutkaMusic  implements NutkaManagedSound {
 	}
 
 	constructor(definition: NutkaDefinition, name = "") {
-		this._defaultLayer = definition.defaultLayer;
 		this._definition = definition;
 		this._resumePosition = 0;
 		this._isLooping = false;

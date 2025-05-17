@@ -97,7 +97,7 @@ export function AchievementsListKdd6(to: Achievement[]) {
 
 		failOn: () => {
 			return ev(C.CID_TRAPDOOR_REMOVED)
-				|| (evKilled(C.M_QROACH) && hasMonster(C.M_BRAIN));
+				|| (evKilled(C.M_ROACH_QUEEN) && hasMonster(C.M_BRAIN));
 		}
 	});
 
@@ -177,7 +177,7 @@ export function AchievementsListKdd6(to: Achievement[]) {
 		in: [3, '1N1W'],
 
 		update: data => {
-			if (hasMonsterAt(11, 17, C.M_SERPENT)) {
+			if (hasMonsterAt(11, 17, C.M_SERPENT_R)) {
 				data.$markedForConquer = true;
 			}
 
@@ -210,7 +210,7 @@ export function AchievementsListKdd6(to: Achievement[]) {
 
 		in: [3, '2S'],
 
-		failOn: () => ev(C.CID_TRAPDOOR_REMOVED) && hasMonster(C.M_SERPENT)
+		failOn: () => ev(C.CID_TRAPDOOR_REMOVED) && hasMonster(C.M_SERPENT_R)
 	});
 
 	// Twenty-Third Level: 1N -- Go past red gates with both goblins alive then clear the room
@@ -339,7 +339,7 @@ export function AchievementsListKdd6(to: Achievement[]) {
 
 		failOn: () => ev(C.CID_SNAKE_DIED_FROM_TRUNCATION)
 			&& countMonster(C.M_BRAIN) > 0
-			&& countMonster(C.M_SERPENT) === 0
+			&& countMonster(C.M_SERPENT_R) === 0
 	});
 
 	// Twenty-Fourth Level: 2W -- Clear the room without hitting any orb with a mimic
@@ -373,7 +373,7 @@ export function AchievementsListKdd6(to: Achievement[]) {
 
 		in: [4, '1N'],
 
-		winOn: () => evKilled(C.M_TARMOTHER) && evConquered()
+		winOn: () => evKilled(C.M_TAR_MOTHER) && evConquered()
 	});
 
 	// Twenty-Fifth Level: 2W -- Go past the trapdoors without killing any goblin
@@ -476,13 +476,13 @@ export function AchievementsListKdd6(to: Achievement[]) {
 	});
 
 	AchievementFactory.monsterKills(to, C.M_ROACH, T.TI_ROACH_NW, 1997);
-	AchievementFactory.monsterKills(to, C.M_QROACH, T.TI_RQUEEN_ANW, 239);
+	AchievementFactory.monsterKills(to, C.M_ROACH_QUEEN, T.TI_RQUEEN_ANW, 239);
 	AchievementFactory.monsterKills(to, C.M_ROACH_EGG, T.TI_REGG_W, 3);
 	AchievementFactory.monsterKills(to, C.M_EYE, T.TI_EEYE_NW, 227);
-	AchievementFactory.monsterKills(to, C.M_SERPENT, 0, 37);
-	AchievementFactory.monsterKills(to, C.M_WWING, T.TI_WWING_ANW, 7);
-	AchievementFactory.monsterKills(to, C.M_TARBABY, T.TI_TARBABY_ANW, 101);
-	AchievementFactory.monsterKills(to, C.M_TARMOTHER, 0, 13);
+	AchievementFactory.monsterKills(to, C.M_SERPENT_R, 0, 37);
+	AchievementFactory.monsterKills(to, C.M_WRAITHWING, T.TI_WWING_ANW, 7);
+	AchievementFactory.monsterKills(to, C.M_TAR_BABY, T.TI_TARBABY_ANW, 101);
+	AchievementFactory.monsterKills(to, C.M_TAR_MOTHER, 0, 13);
 	AchievementFactory.monsterKills(to, C.M_SPIDER, T.TI_SPIDER_NW, 67);
 	AchievementFactory.monsterKills(to, C.M_GOBLIN, T.TI_GOBLIN_NW, 113);
 	AchievementFactory.monsterKills(to, C.M_BRAIN, T.TI_BRAIN, 149);

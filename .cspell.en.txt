@@ -1,8 +1,10 @@
 Argh
+AUMTLICH
 backswipe
 BACKSWIPING
 BEETHRO
 Budkin
+caravelgames
 caravelnet
 Chronomancer
 CIDA
@@ -14,7 +16,9 @@ Dugan's
 EEYE
 EEYEW
 Elevonce
+FEGUNDO
 Gunthro
+HALPH
 Hoobuffins
 Iceworks
 INESW
@@ -38,7 +42,7 @@ Octonce
 Pathmap
 Pathmaps
 perc
-PITSIDE
+PIT_SIDE
 playthrough
 QROACH
 Quarce
@@ -73,4 +77,5 @@ unserialize
 WALLB
 Wraithwing
 Wraithwings
+WUBBA
 WWING

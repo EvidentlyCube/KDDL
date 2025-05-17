@@ -1019,8 +1019,8 @@ export class TStateGame extends RecamelState {
 
 	private addDamageEffect(monsterType: number, coords: VOCoord) {
 		switch (monsterType) {
-			case(C.M_TARBABY):
-			case(C.M_TARMOTHER):
+			case(C.M_TAR_BABY):
+			case(C.M_TAR_MOTHER):
 				new TEffectTarSplatter(coords, 7, 3);
 				break;
 

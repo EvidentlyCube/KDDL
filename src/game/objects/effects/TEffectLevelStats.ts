@@ -39,7 +39,7 @@ export class TEffectLevelStats extends TEffect {
 		this.fadeInDuration = fadeTime;
 
 		TStateGame.effectsAbove.add(this);
-		Game.room.layerUI.add2(this.textSprite);
+		Game.room.layerUI.add(this.textSprite);
 
 		this._interval = setInterval(() => {
 			if (TStateGame.effectsAbove.contains(this)) {
