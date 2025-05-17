@@ -1,4 +1,4 @@
-## 1.6.9 - ????-??-??
+## 1.6.9 - 2025-05-17
  - [BUGFIX] KDDL Episode 6, fixed an exception thrown in two places caused by styles not being initialized
 
 ## 1.6.8 - 2025-05-16
