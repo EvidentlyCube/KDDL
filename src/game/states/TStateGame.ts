@@ -522,7 +522,7 @@ export class TStateGame extends RecamelState {
 
 		this.afterCommand();
 
-		if (!this.isStoppingEffectPlaying) {
+		if (!this.isStoppingEffectPlaying && !Game.isPlayerDying) {
 			Progress.saveProgress_commands();
 		}
 	}

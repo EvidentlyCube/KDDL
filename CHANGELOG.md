@@ -1,3 +1,6 @@
+## 1.6.10 - ????-??-??
+ - [BUGFIX] Dying then undoing then restarting the game will no longer restore you to the turn when you're dead (in a quasi-softlocked state).
+
 ## 1.6.9 - 2025-05-17
  - [BUGFIX] KDDL Episode 6, fixed an exception thrown in two places caused by styles not being initialized
 
