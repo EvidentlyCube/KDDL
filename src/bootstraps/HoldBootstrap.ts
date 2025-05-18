@@ -35,6 +35,7 @@ import {Achievements} from "../game/achievements/Achievements";
 import { GlobalHoldScore } from "src/game/global/GlobalHoldScore";
 import { TWidgetFace } from "src/game/widgets/TWidgetFace";
 import { TWidgetMinimap } from "src/game/widgets/TWidgetMinimap";
+import { TEffectRoomSlide } from "src/game/objects/TEffectRoomSlide";
 
 require('../../src.assets/font/toms-new-roman.css');
 
@@ -100,6 +101,7 @@ export class HoldBootstrap {
 		TEffectSwordSwing.initialize();
 		TEffectTarSplatter.initialize();
 		TEffectVermin.initialize();
+		TEffectRoomSlide.initialize();
 	}
 	private static async initializeGameClasses() {
 		// Achievements.init();

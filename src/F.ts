@@ -273,19 +273,6 @@ export const F = {
 		}
 	},
 
-	layerFromLayerID(layer: number, room: Room): DrodLayer {
-		switch (layer) {
-			case (0):
-			case (1):
-			case (3):
-				return room.layerUnder;
-			case (2):
-				return room.layerActive;
-			default:
-				throw new Error("Trying to access invalid layer ID (" + layer + ").");
-		}
-	},
-
 	tileToX(tile: number): number {
 		return (tile % 18) * S.RoomTileWidth;
 	},

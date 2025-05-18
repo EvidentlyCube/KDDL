@@ -1,9 +1,12 @@
+import { Matrix, RenderTexture } from "pixi.js";
 import { RecamelCore } from "src.framework/net/retrocade/camel/core/RecamelCore";
 import { UtilsBitmapData } from "src.framework/net/retrocade/utils/UtilsBitmapData";
 import { C, HoldId } from "src/C";
 import { F } from "src/F";
 import { Commands } from "src/game/global/Commands";
+import { Core } from "src/game/global/Core";
 import { CueEvents } from "src/game/global/CueEvents";
+import { DROD } from "src/game/global/DROD";
 import { Game } from "src/game/global/Game";
 import { Progress } from "src/game/global/Progress";
 import { Room } from "src/game/global/Room";
@@ -60,14 +63,18 @@ export const KddlApi = {
 
             room.monsters.update();
 
+            const texture = RenderTexture.create({
+                width: S.RoomWidthPixels,
+                height: S.RoomHeightPixels
+            });
+
+            RecamelCore.renderer.render(room.layerUnderTextured.displayObject, {
+                renderTexture: texture,
+                transform: Matrix.IDENTITY.translate(-S.LEVEL_OFFSET_X, -S.LEVEL_OFFSET_Y),
+                clear: true,
+            });
+
             const roomBitmapData = F.newCanvasContext(S.RoomWidthPixels, S.RoomHeightPixels);
-            UtilsBitmapData.blitPart(
-                room.layerUnder.bitmapData.canvas,
-                roomBitmapData,
-                0, 0,
-                S.LEVEL_OFFSET_X, S.LEVEL_OFFSET_Y,
-                S.RoomWidthPixels, S.RoomHeightPixels
-            );
             UtilsBitmapData.blitPart(
                 room.layerActive.bitmapData.canvas,
                 roomBitmapData,
