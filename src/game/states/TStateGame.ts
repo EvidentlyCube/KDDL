@@ -494,7 +494,6 @@ export class TStateGame extends RecamelState {
 	}
 
 	private updateTextures() {
-		Game.room.layerUnder.baseTexture.update();
 		Game.room.layerActive.baseTexture.update();
 		Game.room.layerEffects.baseTexture.update();
 		if (PlatformOptions.isDebug) {
@@ -1146,7 +1145,6 @@ export class TStateGame extends RecamelState {
 		// Mouse.show()
 		Game.room.layerEffects.visible = false;
 		Game.room.layerActive.visible = false;
-		Game.room.layerUnder.visible = false;
 		Game.room.layerUnderTextured.visible = false;
 		Game.room.layerDebug.visible = false;
 		Game.room.layerUI.visible = false;
@@ -1165,7 +1163,6 @@ export class TStateGame extends RecamelState {
 			}
 		} else {
 			Game.room.layerActive.visible = true;
-			Game.room.layerUnder.visible = true;
 			Game.room.layerUnderTextured.visible = true;
 			Game.room.layerEffects.visible = true;
 			Game.room.layerDebug.visible = true;
@@ -1180,13 +1177,11 @@ export class TStateGame extends RecamelState {
 
 		const entrance: Element = Level.getFirstHoldEntrance();
 		Game.loadFromLevelEntrance(intAttr(entrance, 'EntranceID'));
-		Game.room.layerUnder.visible = false;
 		Game.room.layerUnderTextured.visible = false;
 		Game.room.layerActive.visible = false;
 		Game.room.layerEffects.visible = false;
 		Game.room.layerDebug.visible = false;
 		TWindowLevelStart.show(intAttr(entrance, 'EntranceID'), true);
-		Game.room.layerUnder.visible = true;
 		Game.room.layerUnderTextured.visible = true;
 		Game.room.layerActive.visible = true;
 		Game.room.layerEffects.visible = true;

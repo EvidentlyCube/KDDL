@@ -80,7 +80,6 @@ export class Room {
 	 */
 	public tilesSwords: number[] = [];
 
-	public layerUnder: DrodLayer;
 	public layerActive: DrodLayer;
 	public layerEffects: DrodLayer;
 	public layerDebug: DrodLayer;
@@ -129,7 +128,6 @@ export class Room {
 	/******************************************************************************************************/
 
 	public constructor() {
-		this.layerUnder = DrodLayer.create(S.SIZE_GAME_WIDTH, S.SIZE_GAME_HEIGHT, 0, 0);
 		this.layerUnderTextured = RecamelLayerSprite.create();
 		this.layerActive = DrodLayer.create(S.RoomWidthPixels, S.RoomHeightPixels, S.LEVEL_OFFSET_X, S.LEVEL_OFFSET_Y);
 		this.layerEffects = DrodLayer.create(S.SIZE_GAME_WIDTH, S.SIZE_GAME_HEIGHT, 0, 0);
@@ -158,7 +156,6 @@ export class Room {
 		this.monsters.clear();
 
 		if (PlatformOptions.isGame) {
-			this.layerUnder.removeLayer();
 			this.layerUnderTextured.removeLayer();
 			this.layerActive.removeLayer();
 			this.layerEffects.removeLayer();
