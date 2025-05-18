@@ -34,6 +34,7 @@ import {RecamelEffectFade} from "../../src.framework/net/retrocade/camel/effects
 import {Achievements} from "../game/achievements/Achievements";
 import { GlobalHoldScore } from "src/game/global/GlobalHoldScore";
 import { TWidgetFace } from "src/game/widgets/TWidgetFace";
+import { TWidgetMinimap } from "src/game/widgets/TWidgetMinimap";
 
 require('../../src.assets/font/toms-new-roman.css');
 
@@ -111,6 +112,7 @@ export class HoldBootstrap {
 		TWidgetLevelName.init();
 		TWidgetClock.init();
 		TWidgetFace.init();
+		TWidgetMinimap.init();
 		TWidgetMoveCounter.init();
 		Helper.init();
 		Sfx.initialize();

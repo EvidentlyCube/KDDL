@@ -380,7 +380,7 @@ export class TStateRestore extends RecamelState {
 	private drawWidget(room: number) {
 		TWidgetMinimap.setRestoreScreenRoom(room);
 		this.minimapData.clearRect(0, 0, this.minimapData.canvas.width, this.minimapData.canvas.height);
-		TWidgetMinimap.plotWidget(room, TWidgetMinimap.MODE_RESTORE, this.minimapData);
+		TWidgetMinimap.plotWidget(room, TWidgetMinimap.MODE_RESTORE);
 		this.minimapDataTexture.baseTexture.update();
 	}
 
