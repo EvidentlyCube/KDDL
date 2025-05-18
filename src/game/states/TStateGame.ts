@@ -1072,7 +1072,6 @@ export class TStateGame extends RecamelState {
 
 		TWidgetSpeech.clear();
 		TWidgetFace  .setMood('player', TWidgetFace.MOOD_NORMAL);
-		TWidgetFace  .isMoodDrawn = false;
 		TWidgetScroll.update(false);
 
 		Achievements.initRoomStarted();

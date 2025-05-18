@@ -41,6 +41,7 @@ import {TPlayerDouble} from "../objects/actives/TPlayerDouble";
 import {RecamelLayerSprite} from "../../../src.framework/net/retrocade/camel/layers/RecamelLayerSprite";
 import { Sprite } from "pixi.js";
 import { TWidgetFace } from "../widgets/TWidgetFace";
+import { TWidgetLevelName } from "../widgets/TWidgetLevelName";
 
 const tarOrthoCheckX = [0, 1, 0, -1];
 const tarOrthoCheckY = [-1, 0, 1, 0];
@@ -142,6 +143,7 @@ export class Room {
 		if (PlatformOptions.isGame) {
 			this.layerUnderTextured.addAt(new Sprite(Gfx.InGameScreenTexture), 0);
 			this.layerUnderTextured.add(TWidgetFace.container);
+			this.layerUnderTextured.add(TWidgetLevelName.container);
 		}
 	}
 

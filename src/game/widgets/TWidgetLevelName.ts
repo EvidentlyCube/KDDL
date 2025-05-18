@@ -4,65 +4,79 @@ import {Level} from "../global/Level";
 import {Text} from "../../../src.framework/net/retrocade/standalone/Text";
 import {Game} from "../global/Game";
 import {Gfx} from "../global/Gfx";
+import { Container, Rectangle, Sprite, Texture } from "pixi.js";
 
 export class TWidgetLevelName {
-	private static x: number;
-	private static y: number;
-	private static width: number;
-	private static height: number;
+	public static container: Container;
 
-	private static text: Text;
+	private static _scrollStart: Sprite;
+	private static _scrollMiddles: Sprite[];
+	private static _scrollEnd: Sprite;
+
+	private static _textField: Text;
 
 	public static init() {
-		TWidgetLevelName.text = Make.text(26);
+		TWidgetLevelName.container = new Container();
+		TWidgetLevelName._textField = Make.text(26);
+		TWidgetLevelName._scrollStart = new Sprite(new Texture(
+			Gfx.ScrollsTexture.baseTexture,
+			new Rectangle(2, 385, 65, 36),
+		));
+		TWidgetLevelName._scrollMiddles = []
+		TWidgetLevelName._scrollEnd = new Sprite(new Texture(
+			Gfx.ScrollsTexture.baseTexture,
+			new Rectangle(115, 385, 67, 36),
+		));
+
+		this.container.y = 3;
+
+		this._textField.x = 50;
+		this._textField.y = 3;
+
+		this.container.addChild(this._scrollStart);
+		this.container.addChild(this._scrollEnd);
+		this.container.addChild(this._textField);
 	}
 
 	public static update(roomID: number, levelID: number) {
 		const name = Level.getLevelNameTranslated(levelID);
 		const offset = Level.getRoomOffsetInLevel(roomID);
 
-		TWidgetLevelName.text.text = name + ": " + TWidgetLevelName.nameFromPosition(offset.x, offset.y);
+		TWidgetLevelName._textField.text = name + ": " + TWidgetLevelName.nameFromPosition(offset.x, offset.y);
 
-		TWidgetLevelName.clearUnder();
-		TWidgetLevelName.calculate();
 		TWidgetLevelName.draw();
 	}
 
-	private static clearUnder() {
-		Game.room.layerUnder.drawComplexDirect(Gfx.IN_GAME_SCREEN,
-			TWidgetLevelName.x, TWidgetLevelName.y, 1, TWidgetLevelName.x, TWidgetLevelName.y, TWidgetLevelName.width, TWidgetLevelName.height);
-	}
-
-	private static calculate() {
-		TWidgetLevelName.width = TWidgetLevelName.text.textWidth + 100;
-		TWidgetLevelName.height = 38;
-
-		TWidgetLevelName.x = (596 - TWidgetLevelName.width) / 2 + 158 | 0;
-		TWidgetLevelName.y = 3;
-	}
-
 	private static draw() {
-		Game.room.layerUnder.drawComplexDirect(Gfx.SCROLLS,
-			TWidgetLevelName.x, TWidgetLevelName.y, 1, 2, 385, 65, 36);
+		if (TWidgetLevelName._scrollMiddles.length) {
+			TWidgetLevelName.container.removeChild(...TWidgetLevelName._scrollMiddles);
+		}
+
+		const scrollWidth = TWidgetLevelName._textField.textWidth + 100;
+
+		TWidgetLevelName.container.x = (596 - scrollWidth) / 2 + 158 | 0;
 
 		//65 + x + 67
-		let wid = TWidgetLevelName.width - 65 - 67;
-		let xNow = TWidgetLevelName.x + 65;
+		let wid = scrollWidth - 65 - 67;
+		let xNow = 65;
 		let toDraw = 0;
 
 		while (wid > 0) {
 			toDraw = Math.min(wid, 48);
 			wid -= toDraw;
 
-			Game.room.layerUnder.drawComplexDirect(Gfx.SCROLLS, xNow, TWidgetLevelName.y, 1, 69, 385, toDraw, 36);
+			const sprite = new Sprite(new Texture(
+				Gfx.ScrollsTexture.baseTexture,
+				new Rectangle(67, 385, toDraw, 36)
+			));
+			sprite.x = xNow;
+			TWidgetLevelName.container.addChildAt(sprite, 0);
+			TWidgetLevelName._scrollMiddles.push(sprite);
 
 			xNow += toDraw;
 		}
 
-		Game.room.layerUnder.drawComplexDirect(Gfx.SCROLLS,
-			xNow, TWidgetLevelName.y, 1, 118, 385, 67, 36);
-
-		Game.room.layerUnder.drawDirect(TWidgetLevelName.text.textCanvas, TWidgetLevelName.x + 50, TWidgetLevelName.y + 3, 1);
+		TWidgetLevelName._scrollEnd.x = xNow;
 	}
 
 	public static nameFromPosition(x: number, y: number): string {

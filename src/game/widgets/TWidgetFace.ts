@@ -100,13 +100,6 @@ export class TWidgetFace {
 	private static readonly face = new Sprite();
 	private static readonly faceEyes = new Sprite();
 
-	private static _pupilX = 0;
-	private static _pupilY = 0;
-
-	public static isMoodDrawn: boolean = false;
-
-	private static speaker: number = C.SPEAK_Beethro;
-
 	public static get activeFace() {
 		if (TWidgetFace._dyingFace.isActive) {
 			return TWidgetFace._dyingFace;
@@ -170,10 +163,6 @@ export class TWidgetFace {
 			this._speakerFace.speaker = speaker;
 			this._speakerFace.mood = mood;
 		}
-	}
-
-	public static getSpeaker(): number {
-		return TWidgetFace.speaker;
 	}
 
 	public static setDying(isDying: boolean) {
