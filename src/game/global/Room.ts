@@ -43,6 +43,7 @@ import { Sprite } from "pixi.js";
 import { TWidgetFace } from "../widgets/TWidgetFace";
 import { TWidgetLevelName } from "../widgets/TWidgetLevelName";
 import { TWidgetMinimap } from "../widgets/TWidgetMinimap";
+import { TWidgetScroll } from "../widgets/TWidgetScroll";
 
 const tarOrthoCheckX = [0, 1, 0, -1];
 const tarOrthoCheckY = [-1, 0, 1, 0];
@@ -146,6 +147,7 @@ export class Room {
 			this.layerUnderTextured.add(TWidgetFace.container);
 			this.layerUnderTextured.add(TWidgetLevelName.container);
 			this.layerUnderTextured.add(TWidgetMinimap.container);
+			this.layerUnderTextured.add(TWidgetScroll.container);
 		}
 	}
 

@@ -424,7 +424,11 @@ export class Text extends RecamelSprite {
 		this.texture = undefined!;
 	}
 
-	public autoAdjustSize(toWidth: number, toHeight?: number) {
+	public autoAdjustSize(toWidth: number, toHeight?: number, fromSize?: number, minLeading?: number) {
+		this.size = fromSize ?? this.size;
+		minLeading = minLeading ?? -3;
+		this.textFormat.leading = 0;
+
 		while (this.size > 8) {
 			const matchesWidth = this.getLocalBounds().width <= toWidth;
 			const matchesHeight = toHeight === undefined || this.getLocalBounds().height <= toHeight
@@ -433,7 +437,7 @@ export class Text extends RecamelSprite {
 			}
 
 			this.textFormat.leading--;
-			if (this.textFormat.leading < -3) {
+			if (this.textFormat.leading < minLeading) {
 				this.textFormat.leading = 0;
 				this.size--;
 			}
