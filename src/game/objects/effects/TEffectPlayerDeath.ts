@@ -14,7 +14,7 @@ export class TEffectPlayerDeath extends TEffect {
 	public constructor() {
 		super();
 
-		TWidgetFace.setMood(TWidgetFace.MOOD_DYING);
+		TWidgetFace.setDying(true);
 
 		TStateGame.effectsUnder.add(this);
 	}

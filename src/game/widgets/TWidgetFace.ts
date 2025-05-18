@@ -1,10 +1,11 @@
-import {C} from "../../C";
-import {UtilsRandom} from "../../../src.framework/net/retrocade/utils/UtilsRandom";
-import {Game} from "../global/Game";
-import {Gfx} from "../global/Gfx";
-import {ASSERT} from "../../ASSERT";
-import {F} from "../../F";
-import {UtilsBitmapData} from "../../../src.framework/net/retrocade/utils/UtilsBitmapData";
+import { Container, Rectangle, Sprite, Texture } from "pixi.js";
+import { UtilsNumber } from "src.framework/net/retrocade/utils/UtilsNumber";
+import { S } from "src/S";
+import { UtilsRandom } from "../../../src.framework/net/retrocade/utils/UtilsRandom";
+import { C } from "../../C";
+import { F } from "../../F";
+import { DROD } from "../global/DROD";
+import { Gfx } from "../global/Gfx";
 
 const FACE_BEETHRO_NORMAL: number = 0;
 const FACE_BEETHRO_NORMAL_BLINK: number = 1;
@@ -33,35 +34,8 @@ const FACE_CITIZEN4: number = 19;
 const FACE_BEETHRO_TALKING: number = 20;
 const FACE_BEETHRO_TALKING_BLINK: number = 21;
 
-const EYE_MASKS = [
-	[0, 6, 55, 19],  //Normal
-	[0, 24, 55, 19],  //Aggressive
-	[0, 43, 55, 19],  //Nervous
-	[0, 100, 55, 19],  //Strike
-	[0, 62, 55, 19],  //Happy
-	[0, 120, 55, 19],  //Dying
-	[0, 82, 55, 19],   //Talking
-];
-
-const EYE_MASK_OFFSET = [
-	[46, 35],           //Normal
-	[46, 35],           //Aggressive
-	[46, 35],           //Nervous
-	[46, 35],           //Strike
-	[46, 35],           //Happy
-	[46, 35],           //Dying
-	[46, 35],            //Talking
-];
-
-const LEFT_PUPIL_OFFSET = [
-	[9, 10], //Normal
-	[9, 10], //Aggressive
-	[9, 10], //Nervous
-	[9, 10], //Strike
-	[9, 10], //Happy
-	[9, 10], //Dying
-	[9, 10],  //Talking
-];
+const LEFT_PUPIL_OFFSET_X = 9 + 46;
+const LEFT_PUPIL_OFFSET_Y = 10 + 35;
 
 const FACE_POSITIONS = [
 	[1, 1],
@@ -99,16 +73,13 @@ const FACE_HEIGHT: number = 164;
 
 const X_BETWEEN_PUPILS: number = 36;
 
-const PUPIL_X: number = 0;
-const PUPIL_Y: number = 0;
-
 const PUPIL_WIDTH: number = 6;
 const PUPIL_HEIGHT: number = 6;
 
 const PUPIL_WIDTH_HALF: number = 3;
 const PUPIL_HEIGHT_HALF: number = 3;
 
-const Eyes = F.newCanvasContext(55,19);
+type FaceLayer = 'player' | 'speaker' | 'dying';
 
 export class TWidgetFace {
 	public static MOOD_NORMAL = 0;
@@ -119,305 +90,339 @@ export class TWidgetFace {
 	public static MOOD_DYING = 5;
 	public static MOOD_TALKING = 6;
 
-	private static currentMood: number = TWidgetFace.MOOD_NORMAL;
-	private static previousMood: number = TWidgetFace.MOOD_NORMAL;
+	private static _playerFace: Face;
+	private static _speakerFace: Face;
+	private static _dyingFace: Face;
 
-	private static isReading: boolean = false;
-	private static isBlinking: boolean = false;
-	private static isSleeping: boolean = false;
+	public static readonly container = new Container();
+	private static readonly leftPupil = new Sprite();
+	private static readonly rightPupil = new Sprite();
+	private static readonly face = new Sprite();
+	private static readonly faceEyes = new Sprite();
 
-	private static pupilX: number = 0;
-	private static pupilY: number = 0;
-
-	private static pupilTargetX: number = 0;
-	private static pupilTargetY: number = 0;
-
-	private static lastFramePaint: number = 0;
-	private static lastFramePupil: number = 0;
-
-	private static delayMood: number = 0;
-	private static startDelayMood: number = 0;
+	private static _pupilX = 0;
+	private static _pupilY = 0;
 
 	public static isMoodDrawn: boolean = false;
-	private static doBlinkNextTime: boolean = false;
-	private static isMoodLocked: boolean = false;
 
 	private static speaker: number = C.SPEAK_Beethro;
 
-	private static currentFaceX: number = 1;
-	private static currentFaceY: number = 1;
+	public static get activeFace() {
+		if (TWidgetFace._dyingFace.isActive) {
+			return TWidgetFace._dyingFace;
 
-	private static dyingFaceFrame: number = 0;
+		} else if (TWidgetFace._speakerFace.isActive) {
+			return TWidgetFace._speakerFace;
 
-	public static setMood(newMood: number, moodDelay: number = 0, overrideLock: boolean = false) {
-		if (TWidgetFace.isMoodLocked && !overrideLock) {
-			return;
+		} else {
+			return TWidgetFace._playerFace
 		}
-
-		if (TWidgetFace.previousMood != newMood && !moodDelay) {
-			TWidgetFace.previousMood = newMood;
-		}
-
-		if (TWidgetFace.currentMood != newMood) {
-			TWidgetFace.currentMood = newMood;
-			TWidgetFace.isMoodDrawn = false;
-		}
-
-		TWidgetFace.delayMood = moodDelay;
-		TWidgetFace.startDelayMood = Date.now();
-
-		TWidgetFace.isSleeping = false;
 	}
 
-	public static setSpeaker(newSpeaker: number, lockMood: boolean) {
-		TWidgetFace.speaker = newSpeaker;
-		TWidgetFace.isMoodLocked = lockMood;
-		TWidgetFace.isMoodDrawn = false;
+	public static init() {
+		TWidgetFace._playerFace = new Face(C.SPEAK_Beethro, TWidgetFace.MOOD_NORMAL, S.animations.face.faceUpdate);
+		TWidgetFace._speakerFace = new Face(C.SPEAK_Beethro, TWidgetFace.MOOD_NORMAL, S.animations.face.faceUpdate);
+		TWidgetFace._dyingFace = new Face(C.SPEAK_Beethro, TWidgetFace.MOOD_DYING, 1);
+
+		TWidgetFace.container.addChild(TWidgetFace.faceEyes);
+		TWidgetFace.container.addChild(TWidgetFace.leftPupil);
+		TWidgetFace.container.addChild(TWidgetFace.rightPupil);
+		TWidgetFace.container.addChild(TWidgetFace.face);
+
+		TWidgetFace.container.x = FACE_X;
+		TWidgetFace.container.y = FACE_Y;
+
+		TWidgetFace.leftPupil.texture = new Texture(Gfx.FacesTexture.baseTexture, new Rectangle(266, 662, 6, 6));
+		TWidgetFace.rightPupil.texture = TWidgetFace.leftPupil.texture;
+	}
+
+	private static getFace(layer: FaceLayer) {
+		switch (layer) {
+			case 'dying': return TWidgetFace._dyingFace;
+			case 'speaker': return TWidgetFace._speakerFace;
+			case 'player':
+			default:
+				return TWidgetFace._playerFace;
+		}
+	}
+
+	public static setMood(layer: FaceLayer, newMood: number, moodDuration = 0) {
+		const face = TWidgetFace.getFace(layer);
+
+		if (moodDuration) {
+			face.temporaryMood = newMood;
+			face.temporaryMoodUntil = Date.now() + moodDuration;
+		} else {
+			face.mood = newMood;
+		}
+	}
+
+	public static setCharacter(layer: FaceLayer, newSpeaker: number) {
+		const face = TWidgetFace.getFace(layer);
+
+		face.speaker = newSpeaker;
+	}
+
+	public static setSpeaker(isSpeaking: boolean, speaker: number, mood: number) {
+		this._speakerFace.isActive = isSpeaking;
+
+		if (isSpeaking) {
+			this._speakerFace.speaker = speaker;
+			this._speakerFace.mood = mood;
+		}
 	}
 
 	public static getSpeaker(): number {
 		return TWidgetFace.speaker;
 	}
 
-	public static isLocked(): boolean {
-		return TWidgetFace.isMoodLocked;
-	}
-
-	private static paint() {
-		const wasBlinking: boolean = TWidgetFace.isBlinking;
-
-		if (!TWidgetFace.isSleeping) {
-			if (TWidgetFace.isBlinking) {
-				TWidgetFace.isBlinking = false;
-			} else {
-				if (TWidgetFace.currentMood == TWidgetFace.MOOD_STRIKE || TWidgetFace.currentMood == TWidgetFace.MOOD_DYING) {
-					TWidgetFace.isBlinking = false;
-				} else {
-					TWidgetFace.isBlinking = TWidgetFace.doBlinkNextTime || ((UtilsRandom.fraction() * 20 | 0) == 0);
-				}
-			}
-		}
-
-		TWidgetFace.doBlinkNextTime = false;
-
-		TWidgetFace.setFace();
-
-		const doDrawPupils: boolean = (TWidgetFace.speaker == C.SPEAK_Beethro && !TWidgetFace.isBlinking);
-
-		if (!TWidgetFace.isMoodDrawn || TWidgetFace.isBlinking != wasBlinking || TWidgetFace.currentMood == TWidgetFace.MOOD_DYING) {
-			Game.room.layerUnder.blitRectDirect(FACE_X, FACE_Y, FACE_WIDTH, FACE_HEIGHT, 0xFFFF0000);
-			Game.room.layerUnder.drawComplexDirect(Gfx.FACES, FACE_X, FACE_Y, 1,
-				TWidgetFace.currentFaceX, TWidgetFace.currentFaceY, FACE_WIDTH, FACE_HEIGHT);
-
-			TWidgetFace.isMoodDrawn = true;
-
-		} else if (doDrawPupils) {
-			TWidgetFace.clearPupils();
-			ASSERT(!TWidgetFace.isBlinking);
-		}
-
-		if (doDrawPupils) {
-			if (Date.now() - TWidgetFace.lastFramePupil > 200) {
-				TWidgetFace.movePupils();
-				TWidgetFace.lastFramePupil = Date.now();
-			}
-
-			TWidgetFace.clearPupils();
-			TWidgetFace.drawPupils();
-
-			ASSERT(!TWidgetFace.isBlinking);
-		}
+	public static setDying(isDying: boolean) {
+		this._dyingFace.mood = TWidgetFace.MOOD_DYING;
+		this._dyingFace.speaker = this._playerFace.speaker;
+		this._dyingFace.isActive = isDying;
 	}
 
 	public static setReading(reading: boolean) {
-		TWidgetFace.isReading = reading;
+		TWidgetFace._playerFace.isReading = reading;
 	}
 
-	public static setSleeping() {
-		TWidgetFace.setMood(TWidgetFace.MOOD_TALKING);
-		TWidgetFace.isSleeping = true;
-		TWidgetFace.isBlinking = true;
-		TWidgetFace.isMoodDrawn = false;
+	public static setSleeping(value: boolean) {
+		TWidgetFace._playerFace.isSleeping = value;
 	}
 
-	private static drawPupils() {
-		ASSERT(!TWidgetFace.isSleeping);
-		ASSERT(!TWidgetFace.isBlinking);
-		ASSERT(TWidgetFace.isMoodDrawn);
 
-		Eyes.clearRect(0, 0, Eyes.canvas.width, Eyes.canvas.height);
+	public static update() {
+		const timeNow: number = Date.now();
 
-		const pupilLeftX: number = LEFT_PUPIL_OFFSET[TWidgetFace.currentMood][0] - PUPIL_WIDTH_HALF + TWidgetFace.pupilX;
-		const pupilY: number = LEFT_PUPIL_OFFSET[TWidgetFace.currentMood][1] - PUPIL_HEIGHT_HALF + TWidgetFace.pupilY;
+		this.activeFace.update(this.face, this.faceEyes, this.leftPupil, this.rightPupil);;
+	}
+}
 
-		TWidgetFace.drawPupils_drawOnePupil(
-			pupilLeftX,
-			pupilY);
 
-		const pupilRightX: number = pupilLeftX + X_BETWEEN_PUPILS;
+class Face {
+	private _speaker = 0;
+	private _mood = 0;
+	private _temporaryMood = -1;
+	private _temporaryMoodUntil = -1;
+	private _isDirty = false;
 
-		TWidgetFace.drawPupils_drawOnePupil(
-			pupilRightX,
-			pupilY);
+	private _pupilX = 0;
+	private _pupilY = 0;
+	private _pupilTargetX = 0;
+	private _pupilTargetY = 0;
 
-		Eyes.globalCompositeOperation = 'destination-in';
-		UtilsBitmapData.drawPart(
-			Gfx.EYES,
-			Eyes,
-			0, 0,
-			EYE_MASKS[TWidgetFace.currentMood][0],
-			EYE_MASKS[TWidgetFace.currentMood][1],
-			EYE_MASKS[TWidgetFace.currentMood][2],
-			EYE_MASKS[TWidgetFace.currentMood][3]
-		);
-		Eyes.globalCompositeOperation = 'source-over';
+	private _eyesTexture: Texture;
+	private _faceTexture: Texture;
+	private _currentFace = 0;
 
-		Game.room.layerUnder.bitmapData.drawImage(
-			Eyes.canvas,
-			FACE_X + EYE_MASK_OFFSET[TWidgetFace.currentMood][0],
-			FACE_Y + EYE_MASK_OFFSET[TWidgetFace.currentMood][1]
-		)
+	public get speaker() {
+		return this._speaker;
 	}
 
-	private static drawPupils_drawOnePupil(x: number, y: number) {
-		UtilsBitmapData.drawPart(
-			Gfx.EYES,
-			Eyes,
-		    x, y,
-			PUPIL_X, PUPIL_Y,
-			PUPIL_WIDTH, PUPIL_HEIGHT
-		);
+	public set speaker(value: number) {
+		if (this._speaker !== value) {
+			this._speaker = value;
+			this._isDirty = true;
+		}
 	}
 
-	private static clearPupils() {
-		Game.room.layerUnder.drawComplexDirect(Gfx.FACES,
-			FACE_X + EYE_MASK_OFFSET[TWidgetFace.currentMood][0],
-			FACE_Y + EYE_MASK_OFFSET[TWidgetFace.currentMood][1],
-			1,
-			TWidgetFace.currentFaceX + EYE_MASK_OFFSET[TWidgetFace.currentMood][0],
-			TWidgetFace.currentFaceY + EYE_MASK_OFFSET[TWidgetFace.currentMood][1],
-			EYE_MASKS[TWidgetFace.currentMood][2],
-			EYE_MASKS[TWidgetFace.currentMood][3]);
+	public get mood() {
+		return this._mood;
 	}
 
-	private static movePupils() {
+	public set mood(value: number) {
+		if (this._mood !== value) {
+			this._mood = value;
+			this._isDirty = true;
+		}
+	}
+
+	public get temporaryMood() {
+		return this._temporaryMood;
+	}
+
+	public set temporaryMood(value: number) {
+		if (this._temporaryMood !== value) {
+			this._temporaryMood = value;
+			this._isDirty = true;
+		}
+	}
+
+	public get temporaryMoodUntil() {
+		return this._temporaryMoodUntil;
+	}
+
+	public set temporaryMoodUntil(value: number) {
+		if (this._temporaryMoodUntil !== value) {
+			this._temporaryMoodUntil = value;
+			this._isDirty = true;
+		}
+	}
+
+	private get pupilsAtTarget() {
+		return this._pupilX === this._pupilTargetX && this._pupilY === this._pupilTargetY;
+	}
+
+	public isActive = false;
+	public isReading = false;
+	public isSleeping = false;
+	public isBlinking = false;
+	public _updateSpeed: number;
+
+	private _lastPupilMove = 0;
+	private _lastFaceUpdate = 0;
+
+	public get activeMood() {
+		if (this.temporaryMood !== -1) {
+			if (this.temporaryMoodUntil > Date.now()) {
+				return this.temporaryMood;
+			} else {
+				this.temporaryMood = -1;
+			}
+		}
+
+		return this.mood;
+	}
+
+	public constructor(speaker: number, mood: number, updateSpeed: number) {
+		this._speaker = speaker;
+		this._mood = mood;
+		this._temporaryMood = -1;
+		this._temporaryMoodUntil = -1;
+		this._updateSpeed = updateSpeed;
+
+		this._faceTexture = new Texture(Gfx.FacesTexture.baseTexture, new Rectangle(0, 0, FACE_WIDTH, FACE_HEIGHT));
+		this._eyesTexture = new Texture(Gfx.FaceEyesTexture.baseTexture, new Rectangle(0, 0, FACE_WIDTH, FACE_HEIGHT));
+	}
+
+	public update(face: Sprite, faceEyes: Sprite, leftPupil: Sprite, rightPupil: Sprite) {
+		if (!this.isSleeping) {
+			if (this.activeMood === TWidgetFace.MOOD_STRIKE || this.activeMood === TWidgetFace.MOOD_DYING) {
+				this.isBlinking = false;
+			} else {
+				this.isBlinking = UtilsRandom.uint(0, 20) === 0;
+			}
+		}
+
+		if (this._lastFaceUpdate + this._updateSpeed < DROD.app.ticker.lastTime) {
+			this.updateFace();
+			this._lastFaceUpdate = DROD.app.ticker.lastTime;
+		}
+
+		if (this._lastPupilMove + S.animations.face.pupilMovement < DROD.app.ticker.lastTime) {
+			this.movePupils();
+			this._lastPupilMove = DROD.app.ticker.lastTime;
+		}
+
+		face.texture = this._faceTexture;
+		faceEyes.texture = this._eyesTexture;
+
+		leftPupil.x = LEFT_PUPIL_OFFSET_X - PUPIL_WIDTH_HALF + this._pupilX;
+		rightPupil.x = leftPupil.x + X_BETWEEN_PUPILS;
+
+		leftPupil.y = LEFT_PUPIL_OFFSET_Y - PUPIL_HEIGHT_HALF + this._pupilY;
+		rightPupil.y = leftPupil.y;
+	}
+
+	public movePupils() {
 		const rightBound: number = PUPIL_WIDTH - 1;
 		const leftBound: number = -rightBound;
+		const bottomBound = (19 - 2 * PUPIL_HEIGHT) / 2;
+		let topBound = -bottomBound;
 
-		const bottomBound: number = (EYE_MASKS[TWidgetFace.currentMood][3] - PUPIL_HEIGHT - PUPIL_HEIGHT) / 2;
-		let topBound: number = -bottomBound;
-
-		if (TWidgetFace.currentMood == TWidgetFace.MOOD_NERVOUS) {
+		if (this.activeMood === TWidgetFace.MOOD_NERVOUS) {
 			topBound += 2;
-		} else if (TWidgetFace.currentMood == TWidgetFace.MOOD_HAPPY) {
+		} else if (this.activeMood === TWidgetFace.MOOD_HAPPY) {
 			topBound += 1;
 		}
 
-		if (TWidgetFace.isReading) {
-			if (--TWidgetFace.pupilX < leftBound) {
-				TWidgetFace.pupilX = rightBound;
-			}
-			TWidgetFace.pupilY = bottomBound;
+		if (this.isReading) {
+			this._pupilX = UtilsNumber.wrap(this._pupilX - 1, leftBound, rightBound)
+			this._pupilY = bottomBound;
 		} else {
-			switch (TWidgetFace.currentMood) {
-				case(TWidgetFace.MOOD_DYING):
-				case(TWidgetFace.MOOD_STRIKE):
-					TWidgetFace.pupilX = TWidgetFace.pupilY = 0;
+			switch (this.activeMood) {
+				case (TWidgetFace.MOOD_DYING):
+				case (TWidgetFace.MOOD_STRIKE):
+					this._pupilX = 0;
+					this._pupilY = 0;
 					break;
 
 				default:
 					let relaxationLevel: number = 4;
-					switch (TWidgetFace.currentMood) {
-						case(TWidgetFace.MOOD_HAPPY):
-						case(TWidgetFace.MOOD_TALKING):
+					switch (this.activeMood) {
+						case (TWidgetFace.MOOD_HAPPY):
+						case (TWidgetFace.MOOD_TALKING):
 							relaxationLevel = 6;
 							break;
-						case(TWidgetFace.MOOD_AGGRESSIVE):
-						case(TWidgetFace.MOOD_NERVOUS):
+						case (TWidgetFace.MOOD_AGGRESSIVE):
+						case (TWidgetFace.MOOD_NERVOUS):
 							relaxationLevel = 0;
 							break;
 					}
 
-					if (TWidgetFace.pupilTargetX < leftBound) {
-						TWidgetFace.pupilTargetX = leftBound;
-					} else if (TWidgetFace.pupilTargetX > rightBound) {
-						TWidgetFace.pupilTargetX = rightBound;
-					}
+					this._pupilTargetX = UtilsNumber.limit(this._pupilTargetX, leftBound, rightBound);
+					this._pupilTargetY = UtilsNumber.limit(this._pupilTargetY, topBound, bottomBound);
 
-					if (TWidgetFace.pupilTargetY < topBound) {
-						TWidgetFace.pupilTargetY = topBound;
-					} else if (TWidgetFace.pupilTargetY > bottomBound) {
-						TWidgetFace.pupilTargetY = bottomBound;
-					}
-
-					if (TWidgetFace.pupilX == TWidgetFace.pupilTargetX && TWidgetFace.pupilY == TWidgetFace.pupilTargetY) {
-						if (!relaxationLevel || UtilsRandom.uint(0, relaxationLevel) == 0) {
-							TWidgetFace.pupilTargetX = UtilsRandom.uint(0, rightBound - leftBound + 1) + leftBound;
-							TWidgetFace.pupilTargetY = UtilsRandom.uint(0, bottomBound - topBound + 1) + topBound;
+					if (this.pupilsAtTarget) {
+						if (!relaxationLevel || UtilsRandom.uint(0, relaxationLevel + 1) == 0) {
+							this._pupilTargetX = UtilsRandom.uint(leftBound, rightBound + 1);
+							this._pupilTargetY = UtilsRandom.uint(topBound, bottomBound + 1);
 						}
 					} else {
-						let xDist: number = TWidgetFace.pupilTargetX - TWidgetFace.pupilX;
-						const xSpeed: number = 1 + (Math.abs(xDist) > 2 ? 1 : 0) + (Math.abs(xDist) > 4 ? 1 : 0);
-						TWidgetFace.pupilX += (xDist > 0 ? xSpeed : xDist < 0 ? -xSpeed : 0);
+						const xDelta = this._pupilTargetX - this._pupilX;
+						const yDelta = this._pupilTargetY - this._pupilY;
 
-						xDist = TWidgetFace.pupilTargetY - TWidgetFace.pupilY;
-						TWidgetFace.pupilY += (xDist > 0 ? 1 : xDist < 0 ? -1 : 0);
+						const xSpeed = 1 + (Math.abs(xDelta) > 2 ? 1 : 0) + (Math.abs(xDelta) > 4 ? 1 : 0);
+						this._pupilX = Math.abs(xDelta) <= 1
+							? this._pupilTargetX
+							: this._pupilX + xSpeed * Math.sign(xDelta);
+						this._pupilY = Math.abs(yDelta) <= 1
+							? this._pupilTargetX
+							: this._pupilX + Math.sign(yDelta);
 					}
 					break;
-			} // End of Switch
-		} // End of elseif
-
-		if (TWidgetFace.pupilX < leftBound) {
-			TWidgetFace.pupilX = leftBound;
-		} else if (TWidgetFace.pupilX > rightBound) {
-			TWidgetFace.pupilX = rightBound;
+			}
 		}
 
-		if (TWidgetFace.pupilY < topBound) {
-			TWidgetFace.pupilY = topBound;
-		} else if (TWidgetFace.pupilY > bottomBound) {
-			TWidgetFace.pupilY = bottomBound;
-		}
+		this._pupilX = UtilsNumber.limit(this._pupilX, leftBound, rightBound);
+		this._pupilY = UtilsNumber.limit(this._pupilY, topBound, bottomBound);
 	}
 
-	public static setFace() {
-		let face: number = Number.MAX_VALUE;
+	private updateFace() {
+		let face = FACE_BEETHRO_NORMAL;
+		const hasClosedEyes = this.isBlinking || this.isSleeping;
 
-		switch (TWidgetFace.speaker) {
-			case(C.SPEAK_Beethro):
-				switch (TWidgetFace.currentMood) {
-					case(TWidgetFace.MOOD_NORMAL):
-						face = (TWidgetFace.isBlinking ? FACE_BEETHRO_NORMAL_BLINK : FACE_BEETHRO_NORMAL);
+		switch (this._speaker) {
+			case (C.SPEAK_Beethro):
+				switch (this.activeMood) {
+					case (TWidgetFace.MOOD_NORMAL):
+						face = (hasClosedEyes ? FACE_BEETHRO_NORMAL_BLINK : FACE_BEETHRO_NORMAL);
 						break;
-					case(TWidgetFace.MOOD_AGGRESSIVE):
-						face = (TWidgetFace.isBlinking ? FACE_BEETHRO_AGGRESSIVE_BLINK : FACE_BEETHRO_AGGRESSIVE);
+					case (TWidgetFace.MOOD_AGGRESSIVE):
+						face = (hasClosedEyes ? FACE_BEETHRO_AGGRESSIVE_BLINK : FACE_BEETHRO_AGGRESSIVE);
 						break;
-					case(TWidgetFace.MOOD_HAPPY):
-						face = (TWidgetFace.isBlinking ? FACE_BEETHRO_HAPPY_BLINK : FACE_BEETHRO_HAPPY);
+					case (TWidgetFace.MOOD_HAPPY):
+						face = (hasClosedEyes ? FACE_BEETHRO_HAPPY_BLINK : FACE_BEETHRO_HAPPY);
 						break;
-					case(TWidgetFace.MOOD_NERVOUS):
-						face = (TWidgetFace.isBlinking ? FACE_BEETHRO_NERVOUS_BLINK : FACE_BEETHRO_NERVOUS);
+					case (TWidgetFace.MOOD_NERVOUS):
+						face = (hasClosedEyes ? FACE_BEETHRO_NERVOUS_BLINK : FACE_BEETHRO_NERVOUS);
 						break;
-					case(TWidgetFace.MOOD_STRIKE):
+					case (TWidgetFace.MOOD_STRIKE):
 						face = FACE_BEETHRO_STRIKE;
 						break;
-					case(TWidgetFace.MOOD_TALKING):
-						face = (TWidgetFace.isBlinking ? FACE_BEETHRO_TALKING_BLINK : FACE_BEETHRO_TALKING);
+					case (TWidgetFace.MOOD_TALKING):
+						face = (hasClosedEyes ? FACE_BEETHRO_TALKING_BLINK : FACE_BEETHRO_TALKING);
 						break;
-					case(TWidgetFace.MOOD_DYING):
-						TWidgetFace.dyingFaceFrame++;
-
-						TWidgetFace.isMoodDrawn = false;
-
-						switch (TWidgetFace.dyingFaceFrame & 0x03) {
-							case(0):
+					case (TWidgetFace.MOOD_DYING):
+						switch ((DROD.app.ticker.lastTime / S.animations.face.deathSpeed | 0) % 4) {
+							case (0):
 								face = FACE_BEETHRO_DYING_1;
 								break;
-							case(1):
-							case(3):
+							case (1):
+							case (3):
 								face = FACE_BEETHRO_DYING_2;
 								break;
-							case(2):
+							case (2):
 								face = FACE_BEETHRO_DYING_3;
 								break;
 						}
@@ -425,66 +430,49 @@ export class TWidgetFace {
 				}
 				break;
 
-			case(C.SPEAK_Citizen1):
+			case (C.SPEAK_Citizen1):
 				face = FACE_CITIZEN1;
 				break;
-			case(C.SPEAK_Citizen2):
+			case (C.SPEAK_Citizen2):
 				face = FACE_CITIZEN2;
 				break;
-			case(C.SPEAK_Citizen3):
+			case (C.SPEAK_Citizen3):
 				face = FACE_CITIZEN3;
 				break;
-			case(C.SPEAK_Citizen4):
+			case (C.SPEAK_Citizen4):
 				face = FACE_CITIZEN4;
 				break;
 
-			case(C.SPEAK_Goblin):
+			case (C.SPEAK_Goblin):
 				face = FACE_GOBLIN;
 				break;
-			case(C.SPEAK_TarTechnician):
+			case (C.SPEAK_TarTechnician):
 				face = FACE_TAR_TECHNICIAN;
 				break;
-			case(C.SPEAK_MudCoordinator):
+			case (C.SPEAK_MudCoordinator):
 				face = FACE_MUD_COORDINATOR;
 				break;
-			case(C.SPEAK_Negotiator):
+			case (C.SPEAK_Negotiator):
 				face = FACE_NEGOTIATOR;
 				break;
 		}
 
-		if (face == Number.MAX_VALUE) {
+		if (this._currentFace === face) {
 			return;
 		}
 
+		this._currentFace = face;
 		const newCurrentFaceX: number = FACE_POSITIONS[face][0];
 		const newCurrentFaceY: number = FACE_POSITIONS[face][1];
 
-		if (newCurrentFaceX != TWidgetFace.currentFaceX || newCurrentFaceY != TWidgetFace.currentFaceY) {
-			TWidgetFace.isMoodDrawn = false;
-
-			TWidgetFace.currentFaceX = newCurrentFaceX;
-			TWidgetFace.currentFaceY = newCurrentFaceY;
-		}
-	}
-
-	public static animate() {
-		const timeNow: number = Date.now();
-
-		if (TWidgetFace.currentMood != TWidgetFace.previousMood && (TWidgetFace.delayMood > 0 && timeNow - TWidgetFace.startDelayMood > TWidgetFace.delayMood)) {
-			TWidgetFace.currentMood = TWidgetFace.previousMood;
-			TWidgetFace.isMoodDrawn = false;
-			TWidgetFace.delayMood = 0;
-		}
-
-		if (!TWidgetFace.isMoodDrawn
-			|| timeNow - TWidgetFace.lastFramePaint > 200
-			|| (
-				TWidgetFace.currentMood == TWidgetFace.MOOD_DYING
-				&& timeNow - TWidgetFace.lastFramePaint > 50
-			)
-		) {
-			TWidgetFace.paint();
-			TWidgetFace.lastFramePaint = timeNow;
-		}
+		// @FIXME - Use pool
+		this._faceTexture = new Texture(
+			Gfx.FacesTexture.baseTexture,
+			new Rectangle(newCurrentFaceX, newCurrentFaceY, FACE_WIDTH, FACE_HEIGHT)
+		);
+		this._eyesTexture = new Texture(
+			Gfx.FaceEyesTexture.baseTexture,
+			new Rectangle(newCurrentFaceX, newCurrentFaceY, FACE_WIDTH, FACE_HEIGHT)
+		);
 	}
 }

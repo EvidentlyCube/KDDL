@@ -30,7 +30,7 @@ export class TWidgetSpeech {
 		if (TWidgetSpeech.speeches.length == 0 && TWidgetSpeech.nextSpeechTime) {
 			TWidgetSpeech.nextSpeechTime = 0;
 
-			TWidgetSpeech.showPlayerFace(true);
+			TWidgetSpeech.showPlayerFace();
 			return;
 		}
 
@@ -118,17 +118,16 @@ export class TWidgetSpeech {
 		let speaker: number = speech.character;
 
 		if (speech.character == C.SPEAK_None) {
-			TWidgetSpeech.showPlayerFace(true);
+			TWidgetSpeech.showPlayerFace();
 
 		} else {
-			TWidgetFace.setMood(speech.mood, 0, true);
 			if (speech.character != C.SPEAK_Custom && speech.character != C.SPEAK_Self) {
-				TWidgetFace.setSpeaker(speaker, true);
+				TWidgetFace.setSpeaker(true, speaker, speech.mood);
 
 			} else {
 				speaker = F.getSpeakerType(command.speakingEntity.getIdentity());
 				if (speaker != C.SPEAK_None) {
-					TWidgetFace.setSpeaker(speaker, true);
+					TWidgetFace.setSpeaker(true, speaker, speech.mood);
 				}
 			}
 		}
@@ -136,12 +135,8 @@ export class TWidgetSpeech {
 		return true;
 	}
 
-	public static showPlayerFace(overrideLock: boolean = false) {
-		if (overrideLock || (TWidgetFace.getSpeaker() != C.SPEAK_Beethro &&
-			!TWidgetFace.isLocked())) {
-			TWidgetFace.setSpeaker(C.SPEAK_Beethro, false);
-			TWidgetFace.setMood(TWidgetFace.MOOD_NORMAL);
-		}
+	public static showPlayerFace() {
+		TWidgetFace.setSpeaker(false, 0, 0);
 	}
 
 	private static addSubtitle(command: VOSpeechCommand, duration: number) {
@@ -218,7 +213,7 @@ export class TWidgetSpeech {
 
 		TWidgetSpeech.nextSpeechTime = 0;
 
-		TWidgetSpeech.showPlayerFace(true);
+		TWidgetSpeech.showPlayerFace();
 	}
 
 	public static stopAllSpeech() {
@@ -236,6 +231,6 @@ export class TWidgetSpeech {
 
 		TWidgetSpeech.nextSpeechTime = 0;
 
-		TWidgetSpeech.showPlayerFace(true);
+		TWidgetSpeech.showPlayerFace();
 	}
 }

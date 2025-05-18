@@ -22,7 +22,7 @@ export class TEffectWalkStairs extends TEffect {
 
 		this.moveUp = (this.stairsType == C.T_STAIRS_UP);
 
-		TWidgetFace.setMood(TWidgetFace.MOOD_HAPPY);
+		TWidgetFace.setMood('player', TWidgetFace.MOOD_HAPPY);
 	}
 
 	public update() {

@@ -297,6 +297,8 @@ export class TStateGame extends RecamelState {
 			}
 
 			return;
+		} else {
+			TWidgetFace.setDying(false);
 		}
 
 		if (RawInput.isKeyPressed(' ')) {
@@ -590,7 +592,7 @@ export class TStateGame extends RecamelState {
 
 	private drawActiveAndEffects(force: boolean = false) {
 		Game.player.setGfx();
-		TWidgetFace.animate();
+		TWidgetFace.update();
 
 		TWidgetSpeech.update();
 
@@ -986,11 +988,11 @@ export class TStateGame extends RecamelState {
 		}
 
 		if (CueEvents.hasOccurred(C.CID_SWORDSMAN_AFRAID)) {
-			TWidgetFace.setMood(TWidgetFace.MOOD_NERVOUS);
+			TWidgetFace.setMood('player', TWidgetFace.MOOD_NERVOUS);
 		} else if (CueEvents.hasOccurred(C.CID_SWORDSMAN_AGGRESSIVE)) {
-			TWidgetFace.setMood(TWidgetFace.MOOD_AGGRESSIVE);
+			TWidgetFace.setMood('player', TWidgetFace.MOOD_AGGRESSIVE);
 		} else if (CueEvents.hasOccurred(C.CID_SWORDSMAN_NORMAL)) {
-			TWidgetFace.setMood(TWidgetFace.MOOD_NORMAL);
+			TWidgetFace.setMood('player', TWidgetFace.MOOD_NORMAL);
 		}
 
 		if (CueEvents.hasAnyOccurred(C.CIDA_PLAYER_DIED)) {
@@ -999,7 +1001,7 @@ export class TStateGame extends RecamelState {
 			new TEffectsPlayerDeathFade();
 
 		} else if (CueEvents.hasOccurred(C.CID_SWORDSMAN_STABBED_MONSTER)) {
-			TWidgetFace.setMood(TWidgetFace.MOOD_STRIKE, 200);
+			TWidgetFace.setMood('player', TWidgetFace.MOOD_STRIKE, 200);
 		}
 
 		if (CueEvents.hasOccurred(C.CID_HIT_OBSTACLE)) {
@@ -1012,7 +1014,7 @@ export class TStateGame extends RecamelState {
 
 		} else if (CueEvents.hasOccurred(C.CID_SCARED)) {
 			Sfx.beethroScared();
-			TWidgetFace.setMood(TWidgetFace.MOOD_NERVOUS, 200);
+			TWidgetFace.setMood('player', TWidgetFace.MOOD_NERVOUS, 200);
 		}
 	}
 
@@ -1069,7 +1071,7 @@ export class TStateGame extends RecamelState {
 		TStateGame.effectsUnder.clear();
 
 		TWidgetSpeech.clear();
-		TWidgetFace  .setMood(TWidgetFace.MOOD_NORMAL);
+		TWidgetFace  .setMood('player', TWidgetFace.MOOD_NORMAL);
 		TWidgetFace  .isMoodDrawn = false;
 		TWidgetScroll.update(false);
 
@@ -1129,7 +1131,7 @@ export class TStateGame extends RecamelState {
 
 		TWidgetSpeech.stopAllSpeech();
 
-		TWidgetFace.animate();
+		TWidgetFace.update();
 		TWidgetMinimap.changedLevel(Game.room.levelId);
 
 		TStateGame.updateMusicState();

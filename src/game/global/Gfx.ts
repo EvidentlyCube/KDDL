@@ -20,6 +20,9 @@ export const Gfx = {
 	CaravelLogoTexture: null! as PIXI.Texture,
 	RetrocadeLogoTexture: null! as PIXI.Texture,
 	TutorialKeysTexture: null! as PIXI.Texture,
+	FacesTexture: null! as PIXI.Texture,
+	FaceEyesTexture: null! as PIXI.Texture,
+	FacePupils: null! as PIXI.Texture,
 
 	TUTORIAL_KEYS: null! as HTMLImageElement,
 
@@ -41,8 +44,9 @@ export const Gfx = {
 	LOGO_CARAVEL: null! as HTMLImageElement,
 	LOGO_RETROCADE: null! as HTMLImageElement,
 	SCROLLS: null! as HTMLImageElement,
-	EYES: null! as HTMLImageElement,
+	PUPILS: null! as HTMLImageElement,
 	FACES: null! as HTMLImageElement,
+	FACE_EYES: null! as HTMLImageElement,
 	ACHIEVEMENT: null! as HTMLImageElement,
 	LOCK: null! as HTMLImageElement,
 
@@ -70,8 +74,9 @@ export const Gfx = {
 		Gfx.LOGO_CARAVEL = ResourcesQueue.getImg(C.RES_LOGO_CARAVEL);
 		Gfx.LOGO_RETROCADE = ResourcesQueue.getImg(C.RES_LOGO_RETROCADE);
 		Gfx.SCROLLS = ResourcesQueue.getImg(C.RES_SCROLLS);
-		Gfx.EYES = ResourcesQueue.getImg(C.RES_EYES);
+		Gfx.PUPILS = ResourcesQueue.getImg(C.RES_EYES);
 		Gfx.FACES = ResourcesQueue.getImg(C.RES_FACES);
+		Gfx.FACE_EYES = ResourcesQueue.getImg(C.RES_FACE_EYES);
 		Gfx.ACHIEVEMENT = ResourcesQueue.getImg(C.RES_ACHIEVEMENT);
 		Gfx.LOCK = ResourcesQueue.getImg(C.RES_LOCK);
 
@@ -190,5 +195,8 @@ export const Gfx = {
 		Gfx.CaravelLogoTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.LOGO_CARAVEL));
 		Gfx.RetrocadeLogoTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.LOGO_RETROCADE));
 		Gfx.ScrollsTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.SCROLLS));
+		Gfx.FacesTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.FACES));
+		Gfx.FaceEyesTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.FACE_EYES));
+		Gfx.FacePupils = new PIXI.Texture(new PIXI.BaseTexture(Gfx.PUPILS));
 	},
 };

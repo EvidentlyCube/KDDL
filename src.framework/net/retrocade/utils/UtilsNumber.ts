@@ -51,6 +51,12 @@ export const UtilsNumber = {
 			bottomLimit = -topLimit;
 		}
 
+		if (topLimit < bottomLimit) {
+			const temp = topLimit;
+			topLimit = bottomLimit;
+			bottomLimit = temp;
+		}
+
 		if (!isNaN(topLimit) && limited > topLimit) {
 			return topLimit;
 		}

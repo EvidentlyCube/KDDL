@@ -36,6 +36,14 @@ export const S = {
 	// :: Game Data
 	// ::::::::::::::::::::::::::::::::::::::::::::::
 
+	animations: {
+		face: {
+			deathSpeed: 50,
+			pupilMovement: 200,
+			faceUpdate: 200,
+		}
+	},
+
 	SIZE_GAME_WIDTH: 760,
 	SIZE_GAME_HEIGHT: 600,
 
