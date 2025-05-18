@@ -3,6 +3,7 @@ import { TGrowlAchievement } from "../windows/TGrowlAchievement";
 import { HoldOptions } from "../../platform/PlatformSpecific";
 import { PermanentStore } from "../global/store/PermanentStore";
 import { HoldInfo } from "src/S";
+import { GlobalHoldScore } from "../global/GlobalHoldScore";
 
 const _allAchievements: Achievement[] = [];
 const _activeAchievements: Achievement[] = [];
@@ -116,5 +117,6 @@ export class Achievements {
 		new TGrowlAchievement(achievement);
 
 		Achievements.saveAchievements();
+		GlobalHoldScore.updateHoldScore();
 	}
 }

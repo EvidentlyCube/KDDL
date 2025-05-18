@@ -126,6 +126,7 @@ export class Progress {
 	private static saveProgress_gameCompleted() {
 		PermanentStore.holds[HoldInfo().id].isMastered.value = Progress.isGameMastered;
 		PermanentStore.holds[HoldInfo().id].isCompleted.value = Progress.isGameCompleted;
+		GlobalHoldScore.updateHoldScore();
 	}
 
 	private static saveProgress_global() {
