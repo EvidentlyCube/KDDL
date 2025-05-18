@@ -1,6 +1,7 @@
-## 1.6.10 - ????-??-??
+## 1.6.10 - 2025-05-18
  - [BUGFIX] Dying then undoing then restarting the game will no longer restore you to the turn when you're dead (in a quasi-softlocked state).
  - [BUGFIX] Hold score (the one on the list of holds) now gets updated immediately after getting an achievement as opposed to when changing the room/loading a hold.
+ - [OTHER] Swapped a bunch of rendering to be fully GPU powered which should reduce flickering on Firefox = still a lot to go.
 
 ## 1.6.9 - 2025-05-17
  - [BUGFIX] KDDL Episode 6, fixed an exception thrown in two places caused by styles not being initialized
