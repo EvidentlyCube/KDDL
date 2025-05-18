@@ -1,32 +1,23 @@
 import { VOMinimapRoom } from "../managers/VOMinimapRoom";
 import { Progress } from "../global/Progress";
 import { Level } from "../global/Level";
-import { BitmapDataWritable, C } from "../../C";
-import { Game } from "../global/Game";
 import { UtilsBitmapData } from "../../../src.framework/net/retrocade/utils/UtilsBitmapData";
 import { S } from "../../S";
 import { ASSERT } from "../../ASSERT";
 import { F } from "src/F";
 import { Container, Graphics, Sprite, Texture } from "pixi.js";
+import { intAttr } from "src/XML";
 
-const x = [14, 0];
-const y = [448, 0];
-const width = [130, 200];
-const height = [138, 200];
-
-const centerX = [
-	x[0] + (width[0] - S.RoomWidth) / 2 | 0,
-	x[1] + (width[1] - S.RoomWidth) / 2 | 0,
-];
-const centerY = [
-	y[0] + (height[0] - S.RoomHeight) / 2 | 0,
-	y[1] + (height[1] - S.RoomHeight) / 2 | 0,
-];
+const x = [14, 12];
+const y = [448, S.SIZE_GAME_HEIGHT - 208];
+const width = [130, 196];
+const height = [138, 196];
 
 export class TWidgetMinimap {
 	public static container = new Container();
 	private static mask = new Sprite();
 	private static minimapRooms = new Container();
+	private static selectedRoom = new Graphics();
 
 	public static readonly MODE_IN_GAME: number = 0;
 	public static readonly MODE_RESTORE: number = 1;
@@ -39,9 +30,16 @@ export class TWidgetMinimap {
 	public static init() {
 		TWidgetMinimap.container.addChild(TWidgetMinimap.mask);
 		TWidgetMinimap.container.addChild(TWidgetMinimap.minimapRooms);
+		TWidgetMinimap.container.addChild(TWidgetMinimap.selectedRoom);
 
 		TWidgetMinimap.mask.texture = Texture.WHITE;
 		TWidgetMinimap.container.mask = TWidgetMinimap.mask;
+
+		TWidgetMinimap.selectedRoom.beginFill(0xFF8800, 1);
+		TWidgetMinimap.selectedRoom.drawRect(-2, -2, S.RoomWidth + 4, 2);
+		TWidgetMinimap.selectedRoom.drawRect(-2, -2, 2, S.RoomHeight + 4);
+		TWidgetMinimap.selectedRoom.drawRect(-2, S.RoomHeight, S.RoomWidth + 4, 2);
+		TWidgetMinimap.selectedRoom.drawRect(S.RoomWidth, -2, 2, S.RoomHeight + 4);
 	}
 
 	public static changedLevel(newLevelId: number) {
@@ -77,6 +75,10 @@ export class TWidgetMinimap {
 
 	public static plotWidget(roomId: number, mode: number) {
 		const offset = Level.getRoomOffsetInLevel(roomId);
+		const room = Level.getRoom(roomId);
+
+		TWidgetMinimap.lastX = intAttr(room, 'RoomX', 0);
+		TWidgetMinimap.lastY = intAttr(room, 'RoomY', 0);
 
 		TWidgetMinimap.container.x = x[mode]
 		TWidgetMinimap.container.y = y[mode]
@@ -84,6 +86,11 @@ export class TWidgetMinimap {
 		TWidgetMinimap.minimapRooms.y = height[mode] / 2 | 0;
 		TWidgetMinimap.minimapRooms.x -= offset.x * S.RoomWidth + S.RoomWidth / 2;
 		TWidgetMinimap.minimapRooms.y -= offset.y * S.RoomHeight + S.RoomHeight / 2;
+		TWidgetMinimap.mask.width = width[mode];
+		TWidgetMinimap.mask.height = height[mode];
+
+		TWidgetMinimap.selectedRoom.x = width[mode] / 2 - S.RoomWidth / 2 | 0;
+		TWidgetMinimap.selectedRoom.y = height[mode] / 2 - S.RoomHeight / 2 | 0;
 	}
 
 	public static updateRoomState(roomID: number, isConquerPending: boolean) {
@@ -121,34 +128,34 @@ export class TWidgetMinimap {
 
 		for (const roomId of Level.getRoomIdsByLevel(levelId)) {
 			if (Progress.wasRoomEverVisited(roomId)) {
-				const roomData = new VOMinimapRoom(Level.getRoom(roomId));
-				roomData.wasVisited = explored.indexOf(roomId) != -1 || roomState.roomId == roomId;
-				roomData.completed = (
+				const minimapRoom = new VOMinimapRoom(Level.getRoom(roomId));
+				minimapRoom.wasVisited = explored.indexOf(roomId) != -1 || roomState.roomId == roomId;
+				minimapRoom.completed = (
 					conquered.indexOf(roomId) != -1
-					|| !roomData.wasVisited
+					|| !minimapRoom.wasVisited
 					|| !Level.roomHasMonsters(roomId)
 				);
 
-				TWidgetMinimap.roomImages.set(roomId, roomData);
+				this.minimapRooms.addChild(minimapRoom);
+				TWidgetMinimap.roomImages.set(roomId, minimapRoom);
 
-				roomData.regenerateBitmapData(false);
+				minimapRoom.regenerateBitmapData(false);
 			}
 		}
 	}
 
 	public static getRoomOnClick(mouseX: number, mouseY: number, mode: number): Element | null {
-		// @FIXME - replace with
 		if (
-			mouseX < x[mode]
-			|| mouseY < y[mode]
-			|| mouseX >= x[mode] + width[mode]
-			|| mouseY >= y[mode] + height[mode]
+			mouseX < 0
+			|| mouseY < 0
+			|| mouseX >= width[mode]
+			|| mouseY >= height[mode]
 		) {
 			return null;
 		}
 
-		mouseX = Math.floor((mouseX - centerX[mode]) / S.RoomWidth);
-		mouseY = Math.floor((mouseY - centerY[mode]) / S.RoomHeight);
+		mouseX = Math.floor((mouseX + S.RoomWidth / 2 - width[mode] / 2) / S.RoomWidth);
+		mouseY = Math.floor((mouseY + S.RoomHeight / 2 - height[mode] / 2) / S.RoomHeight);
 
 		return Level.getRoomByPosition(TWidgetMinimap.lastX + mouseX, TWidgetMinimap.lastY + mouseY);
 	}

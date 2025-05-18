@@ -1,32 +1,29 @@
-import * as PIXI from 'pixi.js';
-import {RecamelState} from "../../../src.framework/net/retrocade/camel/core/RecamelState";
-import {Button} from "../../../src.framework/net/retrocade/standalone/Button";
-import {BitmapDataWritable} from "../../C";
-import {TRestoreLevel} from "../interfaces/TRestoreLevel";
-import {Commands} from "../global/Commands";
-import {Core} from "../global/Core";
-import {Gfx} from "../global/Gfx";
-import {Make} from "../global/Make";
-import {Text} from "../../../src.framework/net/retrocade/standalone/Text";
-import {F} from "../../F";
-import {_} from "../../../src.framework/_";
-import {S} from "../../S";
-import {RecamelTooltip} from "../../../src.framework/net/retrocade/camel/core/RecamelTooltip";
-import {Progress} from "../global/Progress";
+import { Graphics, NineSlicePlane, RenderTexture, Sprite } from "pixi.js";
+import { RecamelLayerSprite } from "src.framework/net/retrocade/camel/layers/RecamelLayerSprite";
+import { _ } from "../../../src.framework/_";
+import { RecamelState } from "../../../src.framework/net/retrocade/camel/core/RecamelState";
+import { RecamelTooltip } from "../../../src.framework/net/retrocade/camel/core/RecamelTooltip";
+import { RecamelEffectFade } from "../../../src.framework/net/retrocade/camel/effects/RecamelEffectFade";
+import { RecamelEffectScreenshot } from "../../../src.framework/net/retrocade/camel/effects/RecamelEffectScreenshot";
+import { Button } from "../../../src.framework/net/retrocade/standalone/Button";
+import { Text } from "../../../src.framework/net/retrocade/standalone/Text";
 import RawInput from "../../../src.tn/RawInput";
-import {TWidgetMinimap} from "../widgets/TWidgetMinimap";
-import {intAttr} from "../../XML";
-import {TStateTitle} from "./TStateTitle";
-import {TStateGame} from "./TStateGame";
-import {Level} from "../global/Level";
-import {Room} from "../global/Room";
-import {Game} from "../global/Game";
-import {UtilsBitmapData} from "../../../src.framework/net/retrocade/utils/UtilsBitmapData";
-import {TWidgetLevelName} from "../widgets/TWidgetLevelName";
-import {TWindowMessage} from "../windows/TWindowMessage";
-import {RecamelEffectScreenshot} from "../../../src.framework/net/retrocade/camel/effects/RecamelEffectScreenshot";
-import {Sfx} from "../global/Sfx";
-import {RecamelEffectFade} from "../../../src.framework/net/retrocade/camel/effects/RecamelEffectFade";
+import { S } from "../../S";
+import { intAttr } from "../../XML";
+import { Commands } from "../global/Commands";
+import { Game } from "../global/Game";
+import { Gfx } from "../global/Gfx";
+import { Level } from "../global/Level";
+import { Make } from "../global/Make";
+import { Progress } from "../global/Progress";
+import { Room } from "../global/Room";
+import { Sfx } from "../global/Sfx";
+import { TRestoreLevelButton } from "../interfaces/TRestoreLevelButton";
+import { TWidgetLevelName } from "../widgets/TWidgetLevelName";
+import { TWidgetMinimap } from "../widgets/TWidgetMinimap";
+import { TWindowMessage } from "../windows/TWindowMessage";
+import { TStateGame } from "./TStateGame";
+import { TStateTitle } from "./TStateTitle";
 
 export class TStateRestore extends RecamelState {
 	private static _instance: TStateRestore;
@@ -38,16 +35,14 @@ export class TStateRestore extends RecamelState {
 		TStateRestore._instance.setState();
 	}
 
+	private _layer: RecamelLayerSprite;
 
 	private header: Text;
-	private background: PIXI.Sprite;
-	private minimap: PIXI.Sprite;
-	private minimapData: BitmapDataWritable;
-	private minimapDataTexture: PIXI.Texture;
-	private minimapBackground: PIXI.Graphics;
-	private levelsBackground: PIXI.NineSlicePlane;
-	private levelPreview: PIXI.Sprite;
-	private levelPreviewTexture?: PIXI.Texture;
+	private background: Sprite;
+	private minimapBackground: Graphics;
+	private levelsBackground: NineSlicePlane;
+	private levelPreview: Sprite;
+	private _levelPreviewTexture: RenderTexture;
 	private buttonRestore: Button;
 	private buttonCancel: Button;
 
@@ -57,21 +52,25 @@ export class TStateRestore extends RecamelState {
 	private restoreFarthest: Button;
 	private helpIcon: Button;
 
-	private levels: TRestoreLevel[] = [];
+	private _levelButtons: TRestoreLevelButton[] = [];
 	private currentRoomId: number = 0;
 
 	public constructor() {
 		super();
 
-		this.background = new PIXI.Sprite(Gfx.MenuBgTexture);
+		this._layer = RecamelLayerSprite.create();
+		this._layer.visible = false;
+
+		this.background = new Sprite(Gfx.MenuBgTexture);
 
 		this.header = Make.text(36);
 
-		this.minimapBackground = new PIXI.Graphics();
-		this.minimapData = F.newCanvasContext(200, 200);
-		this.minimapDataTexture = new PIXI.Texture(new PIXI.BaseTexture(this.minimapData.canvas));
-		this.minimap = new PIXI.Sprite(this.minimapDataTexture);
-		this.levelPreview = new PIXI.Sprite();
+		this.minimapBackground = new Graphics();
+		this._levelPreviewTexture = RenderTexture.create({
+			width: S.RoomWidthPixels,
+			height: S.RoomHeightPixels,
+		});
+		this.levelPreview = new Sprite(this._levelPreviewTexture);
 		this.levelsBackground = Make.inputGrid9();
 		this.buttonRestore = Make.buttonColor(() => this.onClickRestore(), _("ui.restore.buttons.restore"));
 		this.buttonCancel = Make.buttonColor(() => this.onClickReturnToTitle(), _("ui.common.close"));
@@ -95,8 +94,8 @@ export class TStateRestore extends RecamelState {
 		this.minimapBackground.drawRect(200, 0, 2, 202);
 		this.minimapBackground.drawRect(0, 200, 200, 2);
 
-		this.minimapBackground.x = this.minimap.x = 10;
-		this.minimapBackground.y = this.minimap.y = S.SIZE_GAME_HEIGHT - 210;
+		this.minimapBackground.x = 10;
+		this.minimapBackground.y = S.SIZE_GAME_HEIGHT - 210;
 
 		this.levelsBackground.x = 8;
 		this.levelsBackground.y = 60;
@@ -126,6 +125,18 @@ export class TStateRestore extends RecamelState {
 		this.helpIcon.y = this.restoreFarthest.y;
 
 		RecamelTooltip.hook(this.helpIcon, _('ui.restore.buttons.help.tooltip'));
+
+		this._layer.add(this.background);
+		this._layer.add(this.header);
+		this._layer.add(this.minimapBackground);
+		this._layer.add(this.levelsBackground);
+		this._layer.add(this.levelPreview);
+		this._layer.add(this.buttonRestore);
+		this._layer.add(this.buttonCancel);
+		this._layer.add(this.roomPosition);
+		this._layer.add(this.restoreFarthest);
+		this._layer.add(this.helpIcon);
+
 	}
 
 
@@ -137,29 +148,21 @@ export class TStateRestore extends RecamelState {
 	public create() {
 		Commands.freeze();
 
-		Core.lMain.add(this.background);
-		Core.lMain.add(this.header);
-		Core.lMain.add(this.minimapBackground);
-		Core.lMain.add(this.minimap);
-		Core.lMain.add(this.levelsBackground);
-		Core.lMain.add(this.levelPreview);
-		Core.lMain.add(this.buttonRestore);
-		Core.lMain.add(this.buttonCancel);
-		Core.lMain.add(this.roomPosition);
-		Core.lMain.add(this.restoreFarthest);
-		Core.lMain.add(this.helpIcon);
-
 		if (Progress.isGameCompleted) {
-			Core.lMain.add(this.secretsCount);
+			this._layer.add(this.secretsCount);
 		}
 
 		this.createLevels();
 
 		this.selectRoom(Progress.playerRoomID);
+
+		this._layer.visible = true;
+		this._layer.moveToFront();
 	}
 
 	public destroy() {
-		Core.lMain.clear();
+		this._layer.remove(TWidgetMinimap.container);
+		this._layer.visible = false;
 
 		Commands.unfreeze();
 	}
@@ -173,8 +176,8 @@ export class TStateRestore extends RecamelState {
 
 		if (RawInput.isMousePressed(0)) {
 			const room = TWidgetMinimap.getRoomOnClick(
-				RawInput.localMouseX - this.minimap.x,
-				RawInput.localMouseY - this.minimap.y,
+				RawInput.localMouseX - this.minimapBackground.x,
+				RawInput.localMouseY - this.minimapBackground.y,
 				TWidgetMinimap.MODE_RESTORE);
 
 			if (room && Progress.wasRoomEverVisited(intAttr(room, 'RoomID'))) {
@@ -200,10 +203,10 @@ export class TStateRestore extends RecamelState {
 	}
 
 	private onClickRestore() {
-		const newConq = Progress.getRoomEntranceState(this.currentRoomId)!.conqueredRoomIds.length;
-		const nowConq = Progress.countRoomsConquered();
+		const newConquered = Progress.getRoomEntranceState(this.currentRoomId)!.conqueredRoomIds.length;
+		const nowConquered = Progress.countRoomsConquered();
 
-		if (newConq < nowConq) {
+		if (newConquered < nowConquered) {
 			TWindowMessage.show(_("ui.restore.warning"), 400, false, false, () => this.doRestore());
 		} else {
 			this.doRestore();
@@ -212,7 +215,7 @@ export class TStateRestore extends RecamelState {
 
 	private onClickRestoreFarthest() {
 		const room: number = Progress.getBestRoomEntranceState().roomId;
-		for (const level of this.levels) {
+		for (const level of this._levelButtons) {
 			level.unset();
 		}
 
@@ -245,10 +248,14 @@ export class TStateRestore extends RecamelState {
 	/****************************************************************************************************************/
 
 	private createLevels() {
-		this.levels = [];
+		for (const levelButton of this._levelButtons) {
+			this._layer.remove(levelButton);
+		}
+
+		this._levelButtons = [];
 
 		const allLevels = Level.getAllLevels();
-		let level: TRestoreLevel;
+		let level: TRestoreLevelButton;
 
 		let index: number;
 
@@ -259,24 +266,24 @@ export class TStateRestore extends RecamelState {
 
 			index = intAttr(levelXML, 'OrderIndex') - 1;
 
-			level = new TRestoreLevel(x => this.onLevelSelected(x), levelXML);
+			level = new TRestoreLevelButton(x => this.onLevelSelected(x), levelXML);
 			level.x = this.levelsBackground.x + 2;
-			level.y = this.levelsBackground.y + 2 + index * TRestoreLevel.HEIGHT;
+			level.y = this.levelsBackground.y + 2 + index * TRestoreLevelButton.HEIGHT;
 
-			Core.lMain.add(level);
+			this._layer.add(level);
 
-			this.levels.push(level);
+			this._levelButtons.push(level);
 		}
 
-		this.levels.sort((a, b) => {
+		this._levelButtons.sort((a, b) => {
 			return a.y - b.y;
 		});
 
 		index = 0;
-		for (let i: number = 0; i < this.levels.length; i++) {
-			level = this.levels[i];
+		for (let i: number = 0; i < this._levelButtons.length; i++) {
+			level = this._levelButtons[i];
 			if (level.visible) {
-				level.y = this.levelsBackground.y + 2 + index * TRestoreLevel.HEIGHT;
+				level.y = this.levelsBackground.y + 2 + index * TRestoreLevelButton.HEIGHT;
 				index++;
 			}
 		}
@@ -285,7 +292,7 @@ export class TStateRestore extends RecamelState {
 	private selectLevelByRoom(roomID: number) {
 		const levelID: number = Level.getLevelIdByRoomId(roomID);
 
-		for (let level of this.levels) {
+		for (let level of this._levelButtons) {
 			if (level.levelId == levelID) {
 				level.set();
 				return;
@@ -306,7 +313,7 @@ export class TStateRestore extends RecamelState {
 		}
 
 
-		this.drawWidget(roomID);
+		this.updateMinimap(roomID);
 		this.selectLevelByRoom(roomID);
 
 		const roomOffset = Level.getRoomOffsetInLevel(roomID);
@@ -319,28 +326,15 @@ export class TStateRestore extends RecamelState {
 		this.currentRoomId = roomID;
 
 		const room = new Room();
+		this._layer.add(TWidgetMinimap.container); // Hack becuase new room will retake ownership of this
 		room.loadRoom(roomID);
 		room.drawRoom();
 		Game.player.drawTo(roomStateData.x, roomStateData.y, roomStateData.o, room);
 		room.monsters.update();
 
-		const newBD = F.newCanvasContext(S.RoomWidthPixels, S.RoomHeightPixels);
-		UtilsBitmapData.blitPart(
-			room.layerUnder.bitmapData.canvas, newBD,
-			0, 0,
-			S.LEVEL_OFFSET_X, S.LEVEL_OFFSET_Y,
-			S.RoomWidthPixels, S.RoomHeightPixels,
-		);
-		UtilsBitmapData.blit(
-			room.layerActive.bitmapData.canvas, newBD,
-			0, 0,
-		);
+		room.renderInto(this._levelPreviewTexture);
+
 		room.clear();
-
-		this.levelPreviewTexture?.destroy(true);
-
-		this.levelPreviewTexture = new PIXI.Texture(new PIXI.BaseTexture(newBD.canvas));
-		this.levelPreview.texture = this.levelPreviewTexture;
 
 		// Update room position
 
@@ -365,7 +359,7 @@ export class TStateRestore extends RecamelState {
 	}
 
 	private onLevelSelected(data: Button) {
-		for (let level of this.levels) {
+		for (let level of this._levelButtons) {
 			level.unset();
 		}
 
@@ -377,11 +371,8 @@ export class TStateRestore extends RecamelState {
 		this.selectRoom(intAttr(room, 'RoomID'));
 	}
 
-	private drawWidget(room: number) {
+	private updateMinimap(room: number) {
 		TWidgetMinimap.setRestoreScreenRoom(room);
-		this.minimapData.clearRect(0, 0, this.minimapData.canvas.width, this.minimapData.canvas.height);
 		TWidgetMinimap.plotWidget(room, TWidgetMinimap.MODE_RESTORE);
-		this.minimapDataTexture.baseTexture.update();
 	}
-
 }

@@ -7,7 +7,7 @@ import { Make } from "../global/Make";
 
 const WIDTH = 200;
 
-export class TRestoreLevel extends Button {
+export class TRestoreLevelButton extends Button {
 	public static readonly HEIGHT = 30;
 
 	private text: Text;
@@ -30,7 +30,7 @@ export class TRestoreLevel extends Button {
 		this.addChild(this.text);
 
 		this.unset();
-		this.text.alignMiddleParent(0, TRestoreLevel.HEIGHT);
+		this.text.alignMiddleParent(0, TRestoreLevelButton.HEIGHT);
 
 		this.data = level;
 	}
@@ -39,7 +39,7 @@ export class TRestoreLevel extends Button {
 		this.isSet = false;
 		this.graphics.clear();
 		this.graphics.beginFill(0, 0.1);
-		this.graphics.drawRect(0, 0, WIDTH, TRestoreLevel.HEIGHT);
+		this.graphics.drawRect(0, 0, WIDTH, TRestoreLevelButton.HEIGHT);
 		this.graphics.alpha = 0;
 	}
 
@@ -52,7 +52,7 @@ export class TRestoreLevel extends Button {
 		this.graphics.alpha = 1;
 		this.graphics.clear();
 		this.graphics.beginFill(color, alpha);
-		this.graphics.drawRect(0, 0, WIDTH, TRestoreLevel.HEIGHT);
+		this.graphics.drawRect(0, 0, WIDTH, TRestoreLevelButton.HEIGHT);
 	}
 
 	protected onClick() {

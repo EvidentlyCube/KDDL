@@ -7,6 +7,7 @@ import { S } from "../../S";
 import { DrodInput } from "../global/DrodInput";
 import { Level } from "../global/Level";
 import { Room } from "../global/Room";
+import { F } from "src/F";
 
 export class TEffectRoomSlide extends RecamelEffectScreen {
 
@@ -98,29 +99,11 @@ export class TEffectRoomSlide extends RecamelEffectScreen {
 	}
 
 	public setOld(room: Room) {
-		RecamelCore.renderer.render(room.layerUnderTextured.displayObject, {
-			renderTexture: TEffectRoomSlide._oldRoomTexture,
-			transform: Matrix.IDENTITY.translate(-S.LEVEL_OFFSET_X, -S.LEVEL_OFFSET_Y),
-			clear: true,
-		});
-		RecamelCore.renderer.render(room.layerActive.displayObject, {
-			renderTexture: TEffectRoomSlide._oldRoomTexture,
-			transform: Matrix.IDENTITY.translate(-S.LEVEL_OFFSET_X, -S.LEVEL_OFFSET_Y),
-			clear: false,
-		});
+		room.renderInto(TEffectRoomSlide._oldRoomTexture);
 	}
 
 	public setNew(room: Room) {
-		RecamelCore.renderer.render(room.layerUnderTextured.displayObject, {
-			renderTexture: TEffectRoomSlide._newRoomTexture,
-			transform: Matrix.IDENTITY.translate(-S.LEVEL_OFFSET_X, -S.LEVEL_OFFSET_Y),
-			clear: true,
-		});
-		RecamelCore.renderer.render(room.layerActive.displayObject, {
-			renderTexture: TEffectRoomSlide._newRoomTexture,
-			transform: Matrix.IDENTITY.translate(-S.LEVEL_OFFSET_X, -S.LEVEL_OFFSET_Y),
-			clear: false,
-		});
+		room.renderInto(TEffectRoomSlide._newRoomTexture);
 	}
 
 	public start(prevRoom: number, newRoom: number) {

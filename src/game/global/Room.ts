@@ -39,11 +39,12 @@ import {TBrain} from "../objects/actives/TBrain";
 import {PackedVars} from "./PackedVars";
 import {TPlayerDouble} from "../objects/actives/TPlayerDouble";
 import {RecamelLayerSprite} from "../../../src.framework/net/retrocade/camel/layers/RecamelLayerSprite";
-import { Sprite } from "pixi.js";
+import { Matrix, RenderTexture, Sprite } from "pixi.js";
 import { TWidgetFace } from "../widgets/TWidgetFace";
 import { TWidgetLevelName } from "../widgets/TWidgetLevelName";
 import { TWidgetMinimap } from "../widgets/TWidgetMinimap";
 import { TWidgetScroll } from "../widgets/TWidgetScroll";
+import { RecamelCore } from "src.framework/net/retrocade/camel/core/RecamelCore";
 
 const tarOrthoCheckX = [0, 1, 0, -1];
 const tarOrthoCheckY = [-1, 0, 1, 0];
@@ -1599,6 +1600,19 @@ export class Room {
 		}
 
 		return tileInput;
+	}
+
+	public renderInto(texture: RenderTexture) {
+		RecamelCore.renderer.render(this.layerUnderTextured.displayObject, {
+			renderTexture: texture,
+			transform: Matrix.IDENTITY.translate(-S.LEVEL_OFFSET_X, -S.LEVEL_OFFSET_Y),
+			clear: true,
+		});
+		RecamelCore.renderer.render(this.layerActive.displayObject, {
+			renderTexture: texture,
+			transform: Matrix.IDENTITY.translate(-S.LEVEL_OFFSET_X, -S.LEVEL_OFFSET_Y),
+			clear: false,
+		});
 	}
 
 	//}

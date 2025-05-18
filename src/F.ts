@@ -2,6 +2,9 @@ import { BitmapData, C, CanvasImageSource, CanvasImageSourceFragment } from "./C
 import { S } from "./S";
 import { Room } from "./game/global/Room";
 import { DrodLayer } from "./game/global/DrodLayer";
+import { Matrix, RenderTexture } from "pixi.js";
+import { RecamelLayerSprite } from "src.framework/net/retrocade/camel/layers/RecamelLayerSprite";
+import { RecamelCore } from "src.framework/net/retrocade/camel/core/RecamelCore";
 
 const FLOORS = new Set([
 	C.T_FLOOR,
@@ -23,6 +26,10 @@ const FLOORS = new Set([
 
 const _calculatedDistances = new Map<number, number>();
 export const F = {
+	renderRoomInto(texture: RenderTexture, layerUnder: RecamelLayerSprite, layerActive: DrodLayer) {
+
+	},
+
 	destroyCanvas(source: HTMLCanvasElement | CanvasRenderingContext2D) {
 		if (source instanceof HTMLCanvasElement) {
 			source.width = 0;
