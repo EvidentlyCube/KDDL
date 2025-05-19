@@ -540,7 +540,7 @@ export class TStateGame extends RecamelState {
 		}
 
 		TWidgetMinimap.updateRoomState(Game.room.roomId, this.isRoomClearedOnce);
-		TWidgetMinimap.plotWidget(Game.room.roomId, TWidgetMinimap.MODE_IN_GAME);
+		TWidgetMinimap.update(Game.room.roomId, TWidgetMinimap.MODE_IN_GAME);
 
 		this.afterCommand();
 	}
@@ -706,7 +706,7 @@ export class TStateGame extends RecamelState {
 				TWidgetMinimap.updateRoomState(exitRoom, false);
 			}
 
-			TWidgetMinimap.plotWidget(Game.room.roomId, TWidgetMinimap.MODE_IN_GAME);
+			TWidgetMinimap.update(Game.room.roomId, TWidgetMinimap.MODE_IN_GAME);
 
 			TWidgetLevelName.update(Game.room.roomId, Game.room.levelId);
 
@@ -826,7 +826,7 @@ export class TStateGame extends RecamelState {
 
 			TWidgetMinimap.changedLevel(Game.room.levelId);
 			TWidgetMinimap.addRoom(Game.room.roomId);
-			TWidgetMinimap.plotWidget(Game.room.roomId, TWidgetMinimap.MODE_IN_GAME);
+			TWidgetMinimap.update(Game.room.roomId, TWidgetMinimap.MODE_IN_GAME);
 
 			TWidgetLevelName.update(Game.room.roomId, Game.room.levelId);
 			TWindowLevelStart.screenshot?.moveForward();
@@ -970,14 +970,14 @@ export class TStateGame extends RecamelState {
 				this.areMonstersInRoom = true;
 
 				TWidgetMinimap.updateRoomState(Game.room.roomId, false);
-				TWidgetMinimap.plotWidget(Game.room.roomId, TWidgetMinimap.MODE_IN_GAME);
+				TWidgetMinimap.update(Game.room.roomId, TWidgetMinimap.MODE_IN_GAME);
 			}
 		}
 
 		if (!this.isRoomClearedOnce) {
 			if (CueEvents.hasOccurred(C.CID_ROOM_CONQUER_PENDING)) {
 				TWidgetMinimap.updateRoomState(Game.room.roomId, true);
-				TWidgetMinimap.plotWidget(Game.room.roomId, TWidgetMinimap.MODE_IN_GAME);
+				TWidgetMinimap.update(Game.room.roomId, TWidgetMinimap.MODE_IN_GAME);
 				this.isRoomClearedOnce = true;
 				this.areMonstersInRoom = false;
 			}
@@ -985,7 +985,7 @@ export class TStateGame extends RecamelState {
 			if (this.areMonstersInRoom && Game.room.monsterCount == 0) {
 				this.areMonstersInRoom = false;
 				TWidgetMinimap.updateRoomState(Game.room.roomId, true);
-				TWidgetMinimap.plotWidget(Game.room.roomId, TWidgetMinimap.MODE_IN_GAME);
+				TWidgetMinimap.update(Game.room.roomId, TWidgetMinimap.MODE_IN_GAME);
 			}
 		}
 
@@ -1144,6 +1144,7 @@ export class TStateGame extends RecamelState {
 
 		TWidgetFace.update();
 		TWidgetMinimap.changedLevel(Game.room.levelId);
+		TWidgetMinimap.update(Game.room.roomId, TWidgetMinimap.MODE_IN_GAME);
 
 		TStateGame.updateMusicState();
 

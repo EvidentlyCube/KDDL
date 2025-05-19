@@ -73,7 +73,7 @@ export class TWidgetMinimap {
 		minimapRoom.regenerateBitmapData(false);
 	}
 
-	public static plotWidget(roomId: number, mode: number) {
+	public static update(roomId: number, mode: number) {
 		const offset = Level.getRoomOffsetInLevel(roomId);
 		const room = Level.getRoom(roomId);
 

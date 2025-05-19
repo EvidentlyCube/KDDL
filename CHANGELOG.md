@@ -7,6 +7,7 @@
  - [OTHER] Added new debug console command `clear-room`
  - {1.6.12.1} [BUGFIX] Roach eggs now properly disappear after hatching
  - {1.6.12.1} [BUGFIX] In certain circumstances opening restore screen would not display the minimap until room/level was changed
+ - {1.6.12.1} [BUGFIX] Opening Restore screen then going to main menu and starting/continuing game (or just starting a new game immediately) the minimap would be incorrectly position until next time redraw was triggered
 
 ## 1.6.11 - 2025-05-19
  - [BUGFIX] Fixed a bug where roach queens were using brained movement when standing on an arrow which is not how things work in regular DROD.
