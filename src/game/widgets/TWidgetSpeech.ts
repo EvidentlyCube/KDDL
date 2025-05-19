@@ -179,8 +179,15 @@ export class TWidgetSpeech {
 			}
 		}
 
-		TWidgetSpeech.subtitles.push(new TEffectSubtitle(coords, text, color, C.SPEAKER_COLOUR[C.SPEAK_None],
-			duration, displayLines, fadeDuration));
+		TWidgetSpeech.subtitles.push(new TEffectSubtitle(
+			coords,
+			text,
+			color,
+			C.SPEAKER_COLOUR[C.SPEAK_None],
+			duration,
+			displayLines,
+			fadeDuration
+		));
 	}
 
 	private static getSubtitle(forEntity: TGameObject): TEffectSubtitle | null {
@@ -221,8 +228,8 @@ export class TWidgetSpeech {
 			sc.stop();
 		}
 
-		for (const s of TWidgetSpeech.subtitles) {
-			s.stop();
+		for (const speech of TWidgetSpeech.subtitles) {
+			speech.end();
 		}
 
 		TWidgetSpeech.speechSoundChannels.length = 0;

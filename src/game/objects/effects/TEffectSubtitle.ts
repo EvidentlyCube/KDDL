@@ -1,30 +1,30 @@
-import * as PIXI from 'pixi.js';
-import {TGameObject} from "../TGameObject";
-import {TStateGame} from "../../states/TStateGame";
-import {TWidgetSpeech} from "../../widgets/TWidgetSpeech";
-import {TEffect} from "./TEffect";
-import {BitmapDataWritable} from "../../../C";
-import {S} from "../../../S";
-import {Make} from "../../global/Make";
-import {Text} from "../../../../src.framework/net/retrocade/standalone/Text";
-import {F} from "../../../F";
-import {UtilsBitmapData} from "../../../../src.framework/net/retrocade/utils/UtilsBitmapData";
-import {UtilsString} from "../../../../src.framework/net/retrocade/utils/UtilsString";
-import {UtilsNumber} from "../../../../src.framework/net/retrocade/utils/UtilsNumber";
+import { Container, IPointData, Point, Sprite, Texture } from "pixi.js";
+import { Game } from "src/game/global/Game";
+import { Text } from "../../../../src.framework/net/retrocade/standalone/Text";
+import { UtilsNumber } from "../../../../src.framework/net/retrocade/utils/UtilsNumber";
+import { UtilsString } from "../../../../src.framework/net/retrocade/utils/UtilsString";
+import { S } from "../../../S";
+import { Make } from "../../global/Make";
+import { TStateGame } from "../../states/TStateGame";
+import { TWidgetSpeech } from "../../widgets/TWidgetSpeech";
+import { TGameObject } from "../TGameObject";
+import { TEffect } from "./TEffect";
 
 const UPDATE_FACTOR = 10;
 const BORDER_THICKNESS = 2;
 
 export class TEffectSubtitle extends TEffect {
+	private _container: Container;
+	private _border: Sprite;
+	private _background: Sprite;
+
 	private xOffset: number = 0;
 	private yOffset: number = 0;
 
-	private x: number = 0;
-	private y: number = 0;
 	private w: number = 0;
 	private h: number = 0;
 
-	private text: Text;
+	private textField: Text;
 
 	private timeWhenEnabled: number = 0;
 
@@ -33,41 +33,56 @@ export class TEffectSubtitle extends TEffect {
 	private duration: number;
 
 	private fgColor: number;
-	private bgColor: number;
-	public alpha: number;
 	public coords: TGameObject;
 
-	private buffer: BitmapDataWritable;
+	private _wasPositionSetYet = false;
 
-	public constructor(coord: TGameObject, text: string, fgColor: number, bgColor: number,
-	                   duration: number = 2000, displayLines: number = 3, maxWidth: number = 0,
+	public constructor(
+		coord: TGameObject,
+		text: string,
+		fgColor: number,
+		bgColor: number,
+		duration: number = 2000,
+		displayLines: number = 3,
+		maxWidth: number = 0,
 	) {
 		super();
+
+		this._container = new Container();
+		this._container.addChild(
+			this._border = new Sprite(Texture.WHITE),
+			this._background = new Sprite(Texture.WHITE),
+			this.textField = Make.text(19),
+		);
+
+		this._border.tint = 0x000000;
+		this._background.tint = bgColor;
+		this._background.x = 1;
+		this._background.y = 1;
+		this._container.alpha = 0.88;
 
 		this.coords = coord;
 		this.xOffset = S.RoomTileWidth;
 		this.yOffset = S.RoomTileHeight;
-		this.buffer = F.newCanvasContext(1, 1);
 
 		this.displayLines = displayLines;
 		this.maxWidth = maxWidth;
-		this.bgColor = bgColor;
 		this.fgColor = fgColor;
 		this.duration = duration + 50;
 
-		this.alpha = 0.88;
+		this.textField.x = BORDER_THICKNESS + 4;
+		this.textField.y = BORDER_THICKNESS + 1;
+		this.textField.wordWrapWidth = S.RoomWidthPixels - BORDER_THICKNESS * 2;
+		this.textField.wordWrap = true;
 
-		this.text = Make.text(19);
-		this.text.wordWrapWidth = S.RoomWidthPixels - BORDER_THICKNESS * 2;
-		this.text.wordWrap = true;
+		this._container.addChild(this.textField);
 
 		text = text.trim();
 
 		if (text && text != "") {
-			this.text.text = text;
+			this.textField.text = text;
 		}
 
-		this.x = this.y = Number.MAX_VALUE;
 		this.w = this.h = 0;
 
 		this.setLocation();
@@ -75,26 +90,27 @@ export class TEffectSubtitle extends TEffect {
 		this.prepare();
 
 		TStateGame.effectsAbove.add(this);
+		Game.room.layerSprites.add(this._container);
 	}
 
 	public update() {
 		this.setLocation();
 
 		if (Date.now() > this.timeWhenEnabled + this.duration) {
-			this.alpha -= 0.0625;
+			this._container.alpha -= 0.0625;
 		}
 
-		if (this.alpha <= 0) {
-			TStateGame.effectsAbove.nullify(this);
-			TWidgetSpeech.removeSubtitle(this);
-		} else if (this.text.text) {
-			this.room.layerActive.drawDirect(this.buffer.canvas, this.x | 0, this.y | 0, this.alpha);
+		this._container.visible = !!this.textField.text;
+
+		if (this._container.alpha <= 0) {
+			this.end();
 		}
 	}
 
-	public stop() {
+	public end() {
 		TStateGame.effectsAbove.nullify(this);
 		TWidgetSpeech.removeSubtitle(this);
+		this._container.parent?.removeChild(this._container);
 	}
 
 	private prepare() {
@@ -105,67 +121,48 @@ export class TEffectSubtitle extends TEffect {
 
 		const size = this.getTextWidthHeight();
 
-		this.w = size.x + borderSize * 2;
-		this.h = size.y + borderSize;
+		this.w = Math.max(1, size.x + borderSize * 2);
+		this.h = Math.max(1, size.y + borderSize);
 
-		if (this.w == 0) {
-			this.w = 1;
+		if (this._container.x + this.w >= S.RoomWidthPixels + S.LEVEL_OFFSET_X) {
+			this._container.x = S.RoomWidthPixels + S.LEVEL_OFFSET_X - this.w;
 		}
 
-		if (this.h == 0) {
-			this.h = 1;
+		if (this._container.y + this.h >= S.RoomHeightPixels + S.LEVEL_OFFSET_Y) {
+			this._container.y = S.RoomHeightPixels + S.LEVEL_OFFSET_Y - this.h;
 		}
 
-		if (this.x + this.w >= S.RoomWidthPixels) {
-			this.x = S.RoomWidthPixels - this.w;
-		}
+		this.textField.color = this.fgColor;
 
-		if (this.y + this.h >= S.RoomHeightPixels) {
-			this.y = S.RoomHeightPixels - this.h;
-		}
-
-		this.buffer.canvas.width = this.w;
-		this.buffer.canvas.height = this.h;
-		this.buffer.clearRect(0, 0, this.w, this.h);
-
-		this.text.color = this.fgColor;
-
-		UtilsBitmapData.shapeRectangle(this.buffer, 0, 0, this.w, this.h, 0, 1);
-		UtilsBitmapData.shapeRectangle(this.buffer, 1, 1, this.w - 2, this.h - 2, this.bgColor, 1);
-		UtilsBitmapData.draw(this.text.textCanvas, this.buffer, BORDER_THICKNESS + 4, BORDER_THICKNESS + 1);
+		this._border.width = this.w;
+		this._border.height = this.h;
+		this._background.width = this.w - 2;
+		this._background.height = this.h - 2;
 
 		this.timeWhenEnabled = Date.now();
 	}
 
-	public setOffset(x: number, y: number) {
-		this.xOffset = x;
-		this.yOffset = y;
-
-		this.x = Number.MAX_VALUE;
-		this.y = Number.MAX_VALUE;
-	}
-
 	public addTextLine(line: string, duration: number) {
-		this.alpha = 0.88;
+		this._container.alpha = 0.88;
 
 		line = line.trim();
 
 		if (this.displayLines == 1) {
-			this.text.text = "";
+			this.textField.text = "";
 		}
 
-		if (this.text.text.length == 0) {
-			this.text.text = line;
+		if (this.textField.text.length == 0) {
+			this.textField.text = line;
 		} else {
-			if (this.text.text.indexOf("\n") >= 0 && this.text.text.indexOf("\r") === -1) {
-				this.text.text += "\n" + line;
-				while (UtilsString.count(this.text.text, "\n") >= this.displayLines) {
-					this.text.text = this.text.text.substr(this.text.text.indexOf("\n") + 1);
+			if (this.textField.text.indexOf("\n") >= 0 && this.textField.text.indexOf("\r") === -1) {
+				this.textField.text += "\n" + line;
+				while (UtilsString.count(this.textField.text, "\n") >= this.displayLines) {
+					this.textField.text = this.textField.text.substr(this.textField.text.indexOf("\n") + 1);
 				}
 			} else {
-				this.text.text += "\r" + line;
-				while (UtilsString.count(this.text.text, "\r") >= this.displayLines) {
-					this.text.text = this.text.text.substr(this.text.text.indexOf("\r") + 1);
+				this.textField.text += "\r" + line;
+				while (UtilsString.count(this.textField.text, "\r") >= this.displayLines) {
+					this.textField.text = this.textField.text.substr(this.textField.text.indexOf("\r") + 1);
 				}
 			}
 		}
@@ -177,34 +174,35 @@ export class TEffectSubtitle extends TEffect {
 	}
 
 	public setText(text: string, duration: number) {
-		this.text.text = text;
+		this.textField.text = text;
 
 		this.duration = duration;
 	}
 
-	private getTextWidthHeight(): PIXI.IPointData {
+	private getTextWidthHeight(): IPointData {
 		let w: number = 0;
 		let h: number = 0;
 
-		if (this.text.text.length) {
-			w = this.text.textWidth;
-			h = this.text.textHeight;
+		if (this.textField.text.length) {
+			w = this.textField.textWidth;
+			h = this.textField.textHeight;
 		}
 
-		return new PIXI.Point(w, h);
+		return new Point(w, h);
 	}
 
 	private setLocation() {
-		const newX: number = this.xOffset + (this.coords ? this.coords.x * S.RoomTileWidth : 0);
-		const newY: number = this.yOffset + (this.coords ? this.coords.y * S.RoomTileHeight : 0);
+		const newX: number = this.xOffset + this.coords.x * S.RoomTileWidth + S.LEVEL_OFFSET_X;
+		const newY: number = this.yOffset + this.coords.y * S.RoomTileHeight + S.LEVEL_OFFSET_Y;
 
-		if (this.x == Number.MAX_VALUE) {
-			this.x = newX;
-			this.y = newY;
+		if (!this._wasPositionSetYet) {
+			this._container.x = newX;
+			this._container.y = newY;
+			this._wasPositionSetYet = true;
 
 		} else {
 			if (newX < S.RoomWidthPixels + this.xOffset) {
-				let dx: number = newX - this.x;
+				let dx = newX - this._container.x;
 				if (Math.abs(dx) > 1) {
 					dx /= UPDATE_FACTOR;
 
@@ -213,11 +211,11 @@ export class TEffectSubtitle extends TEffect {
 					}
 				}
 
-				this.x += dx;
+				this._container.x += dx;
 			}
 
 			if (newY < S.RoomHeightPixels + this.yOffset) {
-				let dy: number = newY - this.y;
+				let dy: number = newY - this._container.y;
 				if (Math.abs(dy) > 1) {
 					dy /= UPDATE_FACTOR;
 
@@ -226,21 +224,22 @@ export class TEffectSubtitle extends TEffect {
 					}
 				}
 
-				this.y += dy;
+				this._container.y += dy;
 			}
 		}
 
-		if (this.x < 0) {
-			this.x = 0;
+
+		if (this._container.x < S.LEVEL_OFFSET_X) {
+			this._container.x = S.LEVEL_OFFSET_X;
 		}
-		if (this.y < 0) {
-			this.y = 0;
+		if (this._container.y < S.LEVEL_OFFSET_Y) {
+			this._container.y = S.LEVEL_OFFSET_Y;
 		}
-		if (this.x + this.w > S.RoomWidthPixels) {
-			this.x = S.RoomWidthPixels - this.w;
+		if (this._container.x + this.w > S.RoomWidthPixels + S.LEVEL_OFFSET_X) {
+			this._container.x = S.RoomWidthPixels + S.LEVEL_OFFSET_X - this.w ;
 		}
-		if (this.y + this.h > S.RoomHeightPixels) {
-			this.y = S.RoomHeightPixels - this.h;
+		if (this._container.y + this.h > S.RoomHeightPixels + S.LEVEL_OFFSET_Y) {
+			this._container.y = S.RoomHeightPixels + S.LEVEL_OFFSET_Y - this.h ;
 		}
 	}
 }
