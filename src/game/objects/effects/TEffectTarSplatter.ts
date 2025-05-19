@@ -1,10 +1,7 @@
-import { TEffectParticles } from "./TEffectParticles";
-import { Gfx } from "../../global/Gfx";
-import { F } from "../../../F";
-import { VOCoord } from "../../managers/VOCoord";
-import { TStateGame } from "../../states/TStateGame";
-import { CanvasImageSourceFragment } from "../../../C";
 import { Rectangle, Texture } from "pixi.js";
+import { Gfx } from "../../global/Gfx";
+import { VOCoord } from "../../managers/VOCoord";
+import { TEffectParticles } from "./TEffectParticles";
 
 
 

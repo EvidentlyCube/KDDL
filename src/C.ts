@@ -4,7 +4,6 @@ import {ValidLanguage} from "../src.framework/net/retrocade/camel/RecamelLang";
 export type BitmapData = HTMLOrSVGImageElement | HTMLVideoElement | HTMLCanvasElement | ImageBitmap | Texture | BaseTexture;
 export type CanvasImageSource = HTMLImageElement | HTMLVideoElement | HTMLCanvasElement | ImageBitmap;
 export type BitmapDataWritable = CanvasRenderingContext2D;
-export type CanvasImageSourceFragment = [CanvasImageSource, number, number, number, number];
 
 export type StyleName = "Aboveground" | "City" | "Deep Spaces" | "Fortress" | "Foundation" | "Iceworks";
 export type StyleTilesets = 0|1|2|3|4|5|6|7|8|9|10;
@@ -212,7 +211,6 @@ export const C = {
 	RES_BOLTS: 'RES_BOLTS',
 	RES_FACES: 'RES_FACES',
 	RES_FACE_EYES: 'RES_FACE_EYES',
-	RES_EYES: 'RES_EYES',
 	RES_SCROLLS: 'RES_SCROLLS',
 	RES_GAME_SCREEN: 'RES_GAME_SCREEN',
 	RES_MENU_BG: 'RES_MENU_BG',

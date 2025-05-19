@@ -1,14 +1,12 @@
-import { VOCheckpoints } from "../managers/VOCheckpoints";
-import { DrodLayer } from "./DrodLayer";
+import { BaseTexture, Container, IPointData, Rectangle, Sprite, Texture } from "pixi.js";
+import { ASSERT } from "../../ASSERT";
 import { C, CanvasImageSource, StyleName } from "../../C";
-import { PlatformOptions } from "../../platform/PlatformOptions";
+import { F } from "../../F";
 import { S } from "../../S";
 import { T } from "../../T";
-import { ASSERT } from "../../ASSERT";
+import { VOCheckpoints } from "../managers/VOCheckpoints";
 import { Gfx } from "./Gfx";
 import { Progress } from "./Progress";
-import { F } from "../../F";
-import { BaseTexture, Container, IPointData, Rectangle, Sprite, Texture } from "pixi.js";
 
 export class RoomTileRenderer extends Container {
 	public tilesOpaque: number[] = null!;

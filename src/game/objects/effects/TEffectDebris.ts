@@ -1,12 +1,7 @@
-import {F} from "../../../F";
-import {Gfx} from "../../global/Gfx";
-import {TEffectParticles} from "./TEffectParticles";
-import {VOCoord} from "../../managers/VOCoord";
-import {TStateGame} from "../../states/TStateGame";
-import {CanvasImageSourceFragment} from "../../../C";
 import { Rectangle, Texture } from "pixi.js";
-
-const Frames:CanvasImageSourceFragment[] = [];
+import { Gfx } from "../../global/Gfx";
+import { VOCoord } from "../../managers/VOCoord";
+import { TEffectParticles } from "./TEffectParticles";
 
 export class TEffectDebris extends TEffectParticles {
 	private static _textures: Texture[];

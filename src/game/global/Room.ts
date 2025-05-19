@@ -1,52 +1,46 @@
-import {TGameObject} from "../objects/TGameObject";
-import {DrodLayer} from "./DrodLayer";
-import {RecamelGroup} from "../../../src.framework/net/retrocade/camel/core/RecamelGroup";
-import {TCharacter} from "../objects/actives/TCharacter";
-import {Pathmap} from "./Pathmap";
-import {VOOrb} from "../managers/VOOrb";
-import {VOScroll} from "../managers/VOScroll";
-import {VOCheckpoints} from "../managers/VOCheckpoints";
-import {RoomTileRenderer} from "./RoomTileRenderer";
-import {PlatformOptions} from "../../platform/PlatformOptions";
-import {S} from "../../S";
-import {Gfx} from "./Gfx";
-import {Level} from "./Level";
-import {UtilsBase64} from "../../../src.framework/net/retrocade/utils/UtilsBase64";
-import {UtilsXPath} from "../../../src.framework/net/retrocade/utils/UtilsXPath";
-import {attr, intAttr, textAttr} from "../../XML";
-import {VOStairs} from "../managers/VOStairs";
-import {ASSERT} from "../../ASSERT";
-import {BinaryReader} from "csharp-binary-stream";
-import {C, StyleName} from "../../C";
-import {CueEvents} from "./CueEvents";
-import {VOCoord} from "../managers/VOCoord";
-import {F} from "../../F";
-import {TMonster} from "../objects/actives/TMonster";
-import {Game} from "./Game";
-import {Progress} from "./Progress";
-import {TRoach} from "../objects/actives/TRoach";
-import {TRoachQueen} from "../objects/actives/TRoachQueen";
-import {TRoachEgg} from "../objects/actives/TRoachEgg";
-import {TGoblin} from "../objects/actives/TGoblin";
-import {TWraithwing} from "../objects/actives/TWraithwing";
-import {TEvilEye} from "../objects/actives/TEvilEye";
-import {TRedSerpent} from "../objects/actives/TRedSerpent";
-import {TTarMother} from "../objects/actives/TTarMother";
-import {TTarBaby} from "../objects/actives/TTarBaby";
-import {TMimic} from "../objects/actives/TMimic";
-import {TSpider} from "../objects/actives/TSpider";
-import {TBrain} from "../objects/actives/TBrain";
-import {PackedVars} from "./PackedVars";
-import {TPlayerDouble} from "../objects/actives/TPlayerDouble";
-import {RecamelLayerSprite} from "../../../src.framework/net/retrocade/camel/layers/RecamelLayerSprite";
-import { Container, Matrix, RenderTexture, Sprite } from "pixi.js";
-import { TWidgetFace } from "../widgets/TWidgetFace";
-import { TWidgetLevelName } from "../widgets/TWidgetLevelName";
-import { TWidgetMinimap } from "../widgets/TWidgetMinimap";
-import { TWidgetScroll } from "../widgets/TWidgetScroll";
+import { BinaryReader } from "csharp-binary-stream";
+import { Matrix, RenderTexture } from "pixi.js";
 import { RecamelCore } from "src.framework/net/retrocade/camel/core/RecamelCore";
-import { RoomSpritesRenderer } from "./RoomSpritesRenderer";
+import { RecamelGroup } from "../../../src.framework/net/retrocade/camel/core/RecamelGroup";
+import { RecamelLayerSprite } from "../../../src.framework/net/retrocade/camel/layers/RecamelLayerSprite";
+import { UtilsBase64 } from "../../../src.framework/net/retrocade/utils/UtilsBase64";
+import { UtilsXPath } from "../../../src.framework/net/retrocade/utils/UtilsXPath";
+import { ASSERT } from "../../ASSERT";
+import { C, StyleName } from "../../C";
+import { F } from "../../F";
+import { PlatformOptions } from "../../platform/PlatformOptions";
+import { S } from "../../S";
+import { attr, intAttr, textAttr } from "../../XML";
+import { VOCheckpoints } from "../managers/VOCheckpoints";
+import { VOCoord } from "../managers/VOCoord";
+import { VOOrb } from "../managers/VOOrb";
+import { VOScroll } from "../managers/VOScroll";
+import { VOStairs } from "../managers/VOStairs";
+import { TBrain } from "../objects/actives/TBrain";
+import { TCharacter } from "../objects/actives/TCharacter";
+import { TEvilEye } from "../objects/actives/TEvilEye";
+import { TGoblin } from "../objects/actives/TGoblin";
+import { TMimic } from "../objects/actives/TMimic";
+import { TMonster } from "../objects/actives/TMonster";
+import { TPlayerDouble } from "../objects/actives/TPlayerDouble";
+import { TRedSerpent } from "../objects/actives/TRedSerpent";
+import { TRoach } from "../objects/actives/TRoach";
+import { TRoachEgg } from "../objects/actives/TRoachEgg";
+import { TRoachQueen } from "../objects/actives/TRoachQueen";
+import { TSpider } from "../objects/actives/TSpider";
+import { TTarBaby } from "../objects/actives/TTarBaby";
+import { TTarMother } from "../objects/actives/TTarMother";
+import { TWraithwing } from "../objects/actives/TWraithwing";
 import { MimicPlacement } from "../objects/effects/TMimicPlacement";
+import { TGameObject } from "../objects/TGameObject";
+import { CueEvents } from "./CueEvents";
+import { Game } from "./Game";
+import { Level } from "./Level";
+import { PackedVars } from "./PackedVars";
+import { Pathmap } from "./Pathmap";
+import { Progress } from "./Progress";
+import { RoomSpritesRenderer } from "./RoomSpritesRenderer";
+import { RoomTileRenderer } from "./RoomTileRenderer";
 
 const tarOrthoCheckX = [0, 1, 0, -1];
 const tarOrthoCheckY = [-1, 0, 1, 0];
@@ -82,7 +76,6 @@ export class Room {
 	 */
 	public tilesSwords: number[] = [];
 
-	public layerDebug: DrodLayer;
 	// @FIXME change uses of this layer which are UI related to go into TStateGame's layer
 	public layerUnder: RecamelLayerSprite;
 	public layerSprites: RecamelLayerSprite;
@@ -136,7 +129,6 @@ export class Room {
 		this.layerUnder = RecamelLayerSprite.create();
 		this.layerSprites = RecamelLayerSprite.create();
 		this.layerEffectsTextured = RecamelLayerSprite.create();
-		this.layerDebug = DrodLayer.create(S.RoomWidthPixels, S.RoomHeightPixels, S.LEVEL_OFFSET_X, S.LEVEL_OFFSET_Y);
 		this.layerUI = RecamelLayerSprite.create();
 
 		this.layerUnder.add(this.roomTileRenderer);
@@ -159,7 +151,6 @@ export class Room {
 			this.layerUnder.removeLayer();
 			this.layerSprites.removeLayer();
 			this.layerEffectsTextured.removeLayer();
-			this.layerDebug.removeLayer();
 			this.layerUI.removeLayer();
 		}
 

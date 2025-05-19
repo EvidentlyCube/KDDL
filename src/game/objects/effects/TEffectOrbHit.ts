@@ -1,18 +1,13 @@
-import {F} from "../../../F";
-import {Gfx} from "../../global/Gfx";
-import {TEffect} from "./TEffect";
-import {VOOrb} from "../../managers/VOOrb";
-import {TEffectOrbBolts} from "./TEffectOrbBolts";
-import {TStateGame} from "../../states/TStateGame";
-import {CanvasImageSourceFragment} from "../../../C";
 import { IPointData, Rectangle, Sprite, Texture } from "pixi.js";
 import { S } from "src/S";
 import { Game } from "src/game/global/Game";
-
-const Frames:CanvasImageSourceFragment[] = [];
+import { Gfx } from "../../global/Gfx";
+import { VOOrb } from "../../managers/VOOrb";
+import { TStateGame } from "../../states/TStateGame";
+import { TEffect } from "./TEffect";
+import { TEffectOrbBolts } from "./TEffectOrbBolts";
 
 const DURATION: number = 7;
-
 
 export class TEffectOrbHit extends TEffect {
 	private static _texture: Texture;

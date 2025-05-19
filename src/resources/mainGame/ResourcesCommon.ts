@@ -15,7 +15,6 @@ import * as EffectsPath from '../../../src.assets/gfx/by_caravelgames/sprites/ef
 import * as BoltsPath from '../../../src.assets/gfx/by_caravelgames/sprites/bolts.png';
 import * as FacesPath from '../../../src.assets/gfx/by_caravelgames/ui/faces.png';
 import * as FaceEyesPath from '../../../src.assets/gfx/by_caravelgames/ui/face_eyes.png';
-import * as EyesPath from '../../../src.assets/gfx/by_caravelgames/ui/eyes.png';
 import * as ScrollsPath from '../../../src.assets/gfx/by_caravelgames/ui/scrolls.png';
 import * as MenuBGPath from '../../../src.assets/gfx/by_caravelgames/ui/menuBG.jpg';
 import * as PreloaderPath from '../../../src.assets/gfx/by_mixed/bgs/preloader_2.jpg';
@@ -239,7 +238,6 @@ export function ResourcesCommon() {
 	ResourcesQueue.queueImage(C.RES_BOLTS, document.createElement('img'), BoltsPath.default);
 	ResourcesQueue.queueImage(C.RES_FACES, document.createElement('img'), FacesPath.default);
 	ResourcesQueue.queueImage(C.RES_FACE_EYES, document.createElement('img'), FaceEyesPath.default);
-	ResourcesQueue.queueImage(C.RES_EYES, document.createElement('img'), EyesPath.default);
 	ResourcesQueue.queueImage(C.RES_SCROLLS, document.createElement('img'), ScrollsPath.default);
 	ResourcesQueue.queueImage(C.RES_MENU_BG, document.createElement('img'), MenuBGPath.default);
 	ResourcesQueue.queueImage(C.RES_LEVEL_START_BG, document.createElement('img'), LevelStartBackgroundPath.default);

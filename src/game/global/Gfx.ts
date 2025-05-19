@@ -47,7 +47,6 @@ export const Gfx = {
 	LOGO_CARAVEL: null! as HTMLImageElement,
 	LOGO_RETROCADE: null! as HTMLImageElement,
 	SCROLLS: null! as HTMLImageElement,
-	PUPILS: null! as HTMLImageElement,
 	FACES: null! as HTMLImageElement,
 	FACE_EYES: null! as HTMLImageElement,
 	ACHIEVEMENT: null! as HTMLImageElement,
@@ -77,7 +76,6 @@ export const Gfx = {
 		Gfx.LOGO_CARAVEL = ResourcesQueue.getImg(C.RES_LOGO_CARAVEL);
 		Gfx.LOGO_RETROCADE = ResourcesQueue.getImg(C.RES_LOGO_RETROCADE);
 		Gfx.SCROLLS = ResourcesQueue.getImg(C.RES_SCROLLS);
-		Gfx.PUPILS = ResourcesQueue.getImg(C.RES_EYES);
 		Gfx.FACES = ResourcesQueue.getImg(C.RES_FACES);
 		Gfx.FACE_EYES = ResourcesQueue.getImg(C.RES_FACE_EYES);
 		Gfx.ACHIEVEMENT = ResourcesQueue.getImg(C.RES_ACHIEVEMENT);

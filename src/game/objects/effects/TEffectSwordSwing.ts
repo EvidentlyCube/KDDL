@@ -1,11 +1,10 @@
-import {F} from "../../../F";
-import {Gfx} from "../../global/Gfx";
-import {TEffect} from "./TEffect";
-import {S} from "../../../S";
-import {C, CanvasImageSourceFragment} from "../../../C";
-import {TStateGame} from "../../states/TStateGame";
 import { Rectangle, Sprite, Texture } from "pixi.js";
 import { Game } from "src/game/global/Game";
+import { C } from "../../../C";
+import { S } from "../../../S";
+import { Gfx } from "../../global/Gfx";
+import { TStateGame } from "../../states/TStateGame";
+import { TEffect } from "./TEffect";
 
 const EFFECT_DURATION = 20;
 

@@ -1,10 +1,6 @@
-import { BitmapData, C, CanvasImageSource, CanvasImageSourceFragment } from "./C";
+import { C } from "./C";
 import { S } from "./S";
 import { Room } from "./game/global/Room";
-import { DrodLayer } from "./game/global/DrodLayer";
-import { Matrix, RenderTexture } from "pixi.js";
-import { RecamelLayerSprite } from "src.framework/net/retrocade/camel/layers/RecamelLayerSprite";
-import { RecamelCore } from "src.framework/net/retrocade/camel/core/RecamelCore";
 
 const FLOORS = new Set([
 	C.T_FLOOR,
@@ -35,18 +31,6 @@ export const F = {
 			source.canvas.height = 0;
 		}
 	},
-	newFragment(source: CanvasImageSource, x: number, y: number, width: number, height: number): CanvasImageSourceFragment {
-		if (!source) {
-			throw new Error("No source given");
-		}
-		return [source, x, y, width, height];
-	},
-	newCanvas(width: number, height: number): HTMLCanvasElement {
-		const canvas = document.createElement('canvas');
-		canvas.width = width;
-		canvas.height = height;
-		return canvas;
-	},
 	newCanvasContext(width: number, height: number): CanvasRenderingContext2D {
 		const canvas = document.createElement('canvas');
 		canvas.width = width;
@@ -54,15 +38,6 @@ export const F = {
 		return canvas.getContext('2d')!;
 	},
 
-	toCanvasImageSource(source: BitmapData): CanvasImageSource {
-		if ((source as any).resource) {
-			return (source as any).resource.source;
-		} else if ((source as any).baseTexture) {
-			return (source as any).baseTexture.resource.source;
-		} else {
-			return source as CanvasImageSource;
-		}
-	},
 	/** Checks if given command is a movement command **/
 	isMovementCommand(command: number): boolean {
 		switch (command) {
