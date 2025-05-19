@@ -94,6 +94,7 @@ export class TStateGame extends RecamelState {
 	public static offset: number = 0;
 
 	public uiLayer: RecamelLayerSprite;
+	public overLayer: RecamelLayerSprite;
 
 	public isScrollDisplayed: boolean = false;
 	public isRoomClearedOnce: boolean = false;
@@ -128,13 +129,17 @@ export class TStateGame extends RecamelState {
 		super();
 
 		this.uiLayer = RecamelLayerSprite.create();
+		this.overLayer = RecamelLayerSprite.create();
 		this.uiLayer.visible = false;
+		this.overLayer.visible = false;
 
 		(window as any).debugState = this;
 		(window as any).Game = Game;
 	}
 
 	public update() {
+		this.overLayer.moveToFront();
+
 		let forceFullRedraw: boolean = false;
 
 		if (TEffectRoomSlide.instance) {
@@ -621,7 +626,6 @@ export class TStateGame extends RecamelState {
 			Game.room.monsters.update();
 			Game.room.roomSpritesRenderer.renderSwords();
 
-			TWidgetOrbHighlight.update();
 			TStateGame.effectsAbove.update();
 
 			TWidgetMoveCounter.draw();
@@ -1132,6 +1136,8 @@ export class TStateGame extends RecamelState {
 	public create() {
 		this.uiLayer.visible = true;
 		this.uiLayer.moveToBack();
+		this.overLayer.visible = true;
+		this.overLayer.moveToBack();
 
 		HelpRoomOpener.enabled = true;
 		Game.statStartTime = Date.now();
@@ -1155,12 +1161,15 @@ export class TStateGame extends RecamelState {
 			this.uiLayer.add(TWidgetLevelName.container);
 			this.uiLayer.add(TWidgetMinimap.container);
 			this.uiLayer.add(TWidgetScroll.container);
+			this.overLayer.add(TWidgetOrbHighlight.container);
 		}
 	}
 
 	public destroy() {
 		this.uiLayer.clear();
 		this.uiLayer.visible = false;
+		this.overLayer.clear();
+		this.overLayer.visible = false;
 
 		HelpRoomOpener.enabled = false;
 		document.removeEventListener('pointermove', this.onMouseMoved);

@@ -88,3 +88,12 @@ export function HoldInfo() {
 
 	return currentHoldOptions;
 }
+
+export function exposeValue(name: string, value: unknown) {
+	const anyWindow = window as any;
+	if (!anyWindow.$debug) {
+		anyWindow.$debug = {};
+	}
+
+	anyWindow.$debug[name] = value;
+}

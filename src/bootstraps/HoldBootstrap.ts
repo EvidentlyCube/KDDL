@@ -37,6 +37,7 @@ import { TWidgetFace } from "src/game/widgets/TWidgetFace";
 import { TWidgetMinimap } from "src/game/widgets/TWidgetMinimap";
 import { TEffectRoomSlide } from "src/game/objects/TEffectRoomSlide";
 import { BoltEffect } from "src/game/objects/effects/BoltEffect";
+import { TWidgetOrbHighlight } from "src/game/widgets/TWidgetOrbHighlight";
 
 require('../../src.assets/font/toms-new-roman.css');
 
@@ -118,6 +119,7 @@ export class HoldBootstrap {
 		TWidgetFace.init();
 		TWidgetMinimap.init();
 		TWidgetMoveCounter.init();
+		TWidgetOrbHighlight.init();
 		Helper.init();
 		Sfx.initialize();
 	}

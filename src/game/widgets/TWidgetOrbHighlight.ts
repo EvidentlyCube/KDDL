@@ -1,22 +1,32 @@
 import {Room} from "../global/Room";
 import {F} from "../../F";
 import {Game} from "../global/Game";
-import {S} from "src/S";
+import {exposeValue, S} from "src/S";
 import {UtilsBitmapData} from "../../../src.framework/net/retrocade/utils/UtilsBitmapData";
 import {C} from "../../C";
+import { Container, Sprite, Texture } from "pixi.js";
 
-const COLORS = [0, 0x88FF8800, 0x8800FFFF, 0x88FF0040];
-
-const bitmapData = F.newCanvasContext(S.RoomWidthPixels, S.RoomHeightPixels);
+const COLORS = [0, 0xFF8800, 0x00FFFF, 0xFF0040];
 
 export class TWidgetOrbHighlight {
+	public static container: Container;
+
+	public static init() {
+		TWidgetOrbHighlight.container = new Container();
+		TWidgetOrbHighlight.container.x = S.LEVEL_OFFSET_X;
+		TWidgetOrbHighlight.container.y = S.LEVEL_OFFSET_Y;
+		TWidgetOrbHighlight.container.alpha = 0.5;
+
+		exposeValue('TWidgetOrbHighlight', TWidgetOrbHighlight);
+	}
+
 	private static room: Room;
 	public static isActive: boolean = false;
 
 	public static drawOrbHighlights(orbX: number, orbY: number) {
 		TWidgetOrbHighlight.room = Game.room;
 		TWidgetOrbHighlight.isActive = true;
-		bitmapData.clearRect(0, 0, S.RoomWidthPixels, S.RoomHeightPixels);
+		TWidgetOrbHighlight.container.removeChildren();
 
 		const orb = TWidgetOrbHighlight.room.orbs.get(orbX + orbY * S.RoomWidth)!;
 
@@ -33,8 +43,7 @@ export class TWidgetOrbHighlight {
 	public static drawDoorHighlights(doorX: number, doorY: number) {
 		TWidgetOrbHighlight.room = Game.room;
 		TWidgetOrbHighlight.isActive = true;
-
-		bitmapData.clearRect(0, 0, S.RoomWidthPixels, S.RoomHeightPixels);
+		TWidgetOrbHighlight.container.removeChildren();
 
 		const doorTiles = new Set(TWidgetOrbHighlight.room.getConnectedTiles(doorX, doorY, [C.T_DOOR_Y, C.T_DOOR_YO]));
 
@@ -50,12 +59,6 @@ export class TWidgetOrbHighlight {
 		}
 	}
 
-	public static update() {
-		if (TWidgetOrbHighlight.isActive) {
-			TWidgetOrbHighlight.room.layerActive.draw(bitmapData.canvas, 0, 0, 1);
-		}
-	}
-
 	private static drawArray(array: number[], color: number) {
 		for (const pos of array) {
 			this.drawOne(pos, color);
@@ -66,12 +69,14 @@ export class TWidgetOrbHighlight {
 		const x = pos % S.RoomWidth;
 		const y = (pos / S.RoomWidth) | 0;
 
-		UtilsBitmapData.blitRectangle(bitmapData,
-			x * S.RoomTileWidth,
-			y * S.RoomTileHeight,
-			S.RoomTileWidth,
-			S.RoomTileHeight,
-			color);
+		const sprite = new Sprite(Texture.WHITE);
+		sprite.x = x * S.RoomTileWidth;
+		sprite.y = y * S.RoomTileHeight;
+		sprite.width = S.RoomTileWidth;
+		sprite.height = S.RoomTileHeight;
+		sprite.tint = color;
+
+		TWidgetOrbHighlight.container.addChild(sprite);
 	}
 }
 
