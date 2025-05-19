@@ -82,7 +82,6 @@ export class Room {
 	 */
 	public tilesSwords: number[] = [];
 
-	public layerActive: DrodLayer;
 	public layerDebug: DrodLayer;
 	// @FIXME change uses of this layer which are UI related to go into TStateGame's layer
 	public layerUnder: RecamelLayerSprite;
@@ -135,7 +134,6 @@ export class Room {
 
 	public constructor() {
 		this.layerUnder = RecamelLayerSprite.create();
-		this.layerActive = DrodLayer.create(S.RoomWidthPixels, S.RoomHeightPixels, S.LEVEL_OFFSET_X, S.LEVEL_OFFSET_Y);
 		this.layerSprites = RecamelLayerSprite.create();
 		this.layerEffectsTextured = RecamelLayerSprite.create();
 		this.layerDebug = DrodLayer.create(S.RoomWidthPixels, S.RoomHeightPixels, S.LEVEL_OFFSET_X, S.LEVEL_OFFSET_Y);
@@ -159,7 +157,6 @@ export class Room {
 
 		if (PlatformOptions.isGame) {
 			this.layerUnder.removeLayer();
-			this.layerActive.removeLayer();
 			this.layerSprites.removeLayer();
 			this.layerEffectsTextured.removeLayer();
 			this.layerDebug.removeLayer();
@@ -404,7 +401,6 @@ export class Room {
 		if (PlatformOptions.isGame) {
 			this.roomTileRenderer.clearTiles();
 			this.roomSpritesRenderer.clearSprites();
-			this.layerActive.clearTiles();
 			this.mimicPlacement.visible = false;
 		}
 
@@ -1511,7 +1507,6 @@ export class Room {
 	/******************************************************************************************************/
 
 	public setSaturation(saturation: number) {
-		this.layerActive.saturation = saturation;
 		this.layerUnder.saturation = saturation;
 		this.layerSprites.saturation = saturation;
 	}
@@ -1616,13 +1611,5 @@ export class Room {
 			transform: Matrix.IDENTITY.translate(-S.LEVEL_OFFSET_X, -S.LEVEL_OFFSET_Y),
 			clear: false,
 		});
-		// RecamelCore.renderer.render(this.layerActive.displayObject, {
-			// renderTexture: texture,
-			// transform: Matrix.IDENTITY.translate(-S.LEVEL_OFFSET_X, -S.LEVEL_OFFSET_Y),
-			// clear: false,
-		// });
 	}
-
-	//}
-
 }

@@ -502,7 +502,6 @@ export class TStateGame extends RecamelState {
 	}
 
 	private updateTextures() {
-		Game.room.layerActive.baseTexture.update();
 		if (PlatformOptions.isDebug) {
 			Game.room.layerDebug.baseTexture.update();
 		}
@@ -618,8 +617,6 @@ export class TStateGame extends RecamelState {
 			} else {
 				TStateGame.offset = TGameObject.offset = TStateGame.offsetNow = 0;
 			}
-
-			Game.room.layerActive.clear();
 
 			TStateGame.effectsUnder.update();
 			Game.player.update();
@@ -1176,7 +1173,6 @@ export class TStateGame extends RecamelState {
 		// @todo Mouse
 		// Mouse.show()
 		Game.room.layerEffectsTextured.visible = false;
-		Game.room.layerActive.visible = false;
 		Game.room.layerUnder.visible = false;
 		Game.room.layerSprites.visible = false;
 		Game.room.layerDebug.visible = false;
@@ -1195,7 +1191,6 @@ export class TStateGame extends RecamelState {
 				TStateGame.startHold();
 			}
 		} else {
-			Game.room.layerActive.visible = true;
 			Game.room.layerUnder.visible = true;
 			Game.room.layerSprites.visible = true;
 			Game.room.layerEffectsTextured.visible = true;
@@ -1213,13 +1208,11 @@ export class TStateGame extends RecamelState {
 		Game.loadFromLevelEntrance(intAttr(entrance, 'EntranceID'));
 		Game.room.layerUnder.visible = false;
 		Game.room.layerSprites.visible = false;
-		Game.room.layerActive.visible = false;
 		Game.room.layerEffectsTextured.visible = false;
 		Game.room.layerDebug.visible = false;
 		TWindowLevelStart.show(intAttr(entrance, 'EntranceID'), true);
 		Game.room.layerUnder.visible = true;
 		Game.room.layerSprites.visible = true;
-		Game.room.layerActive.visible = true;
 		Game.room.layerEffectsTextured.visible = true;
 		Game.room.layerDebug.visible = true;
 		TWidgetMinimap.changedLevel(Game.room.levelId);

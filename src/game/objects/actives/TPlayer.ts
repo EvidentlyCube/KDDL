@@ -51,15 +51,11 @@ export class TPlayer extends TGameObject {
 		}
 
 		super.update();
+		Game.room.roomSpritesRenderer.pullBackObject(this);
 
 		this.swordVO.x = this.swordX * S.RoomTileWidth + (this.prevX - this.x) * TStateGame.offset * S.RoomTileWidth;
 		this.swordVO.y = this.swordY * S.RoomTileHeight + (this.prevY - this.y) * TStateGame.offset * S.RoomTileHeight;
 		this.room.roomSpritesRenderer.registerSwordDraw(this.swordVO);
-	}
-
-	public drawTo(x: number, y: number, o: number, room: Room) {
-		room.layerActive.blitTileRect(Gfx.GENERAL_TILES, T.BEETHRO[o], x,              y);
-		room.layerActive.blitTileRect(Gfx.GENERAL_TILES, T.SWORD  [o], x + F.getOX(o), y + F.getOY(o));
 	}
 
 	public process(command: number) {

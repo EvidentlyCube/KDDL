@@ -77,6 +77,14 @@ export class RoomSpritesRenderer extends Container {
 		sprite.y = y * S.RoomTileHeight + (prevY - y) * TGameObject.offset * S.RoomTileHeight;
 	}
 
+	public pullBackObject(object: TGameObject) {
+		let sprite = this._objectToSprite.get(object);
+
+		if (sprite) {
+			this._spritesContainer.setChildIndex(sprite, 0);
+		}
+	}
+
 	public setObjectAlpha(object: TGameObject, alpha: number) {
 		const sprite = this._objectToSprite.get(object);
 
