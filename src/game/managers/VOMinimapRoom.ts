@@ -166,6 +166,8 @@ export class VOMinimapRoom extends Sprite {
 				}
 			}
 		}
+
+		this._texture.baseTexture.update();
 	}
 
 	private plot(index: number, color: number) {

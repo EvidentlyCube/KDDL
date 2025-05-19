@@ -1,5 +1,6 @@
 ## 1.6.11 - ????-??-??
  - [BUGFIX] Fixed a bug where roach queens were using brained movement when standing on an arrow which is not how things work in regular DROD.
+ - [BUGFIX] Fixed a bug where minimap would not update a room when it was conquer pending or left after conquering.
 
 ## 1.6.10 - 2025-05-18
  - [BUGFIX] Dying then undoing then restarting the game will no longer restore you to the turn when you're dead (in a quasi-softlocked state).
