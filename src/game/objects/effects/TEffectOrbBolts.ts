@@ -23,6 +23,8 @@ export class TEffectOrbBolts extends TEffect {
 		super();
 
 		this._container = new Container();
+		this._container.x = S.LEVEL_OFFSET_X;
+		this._container.y = S.LEVEL_OFFSET_Y;
 		this.orbCenterX = _orbData.x * S.RoomTileWidth + S.RoomTileWidthHalf;
 		this.orbCenterY = _orbData.y * S.RoomTileHeight + S.RoomTileHeightHalf;
 

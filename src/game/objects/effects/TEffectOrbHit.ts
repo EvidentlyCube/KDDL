@@ -5,6 +5,9 @@ import {VOOrb} from "../../managers/VOOrb";
 import {TEffectOrbBolts} from "./TEffectOrbBolts";
 import {TStateGame} from "../../states/TStateGame";
 import {CanvasImageSourceFragment} from "../../../C";
+import { IPointData, Rectangle, Sprite, Texture } from "pixi.js";
+import { S } from "src/S";
+import { Game } from "src/game/global/Game";
 
 const Frames:CanvasImageSourceFragment[] = [];
 
@@ -12,20 +15,21 @@ const DURATION: number = 7;
 
 
 export class TEffectOrbHit extends TEffect {
+	private static _texture: Texture;
 	public static initialize() {
-		Frames.push(F.newFragment(Gfx.EFFECTS, 22, 22, 22, 22));
+		TEffectOrbHit._texture = new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(22,22,22,22));
 	}
 
-	private x: number;
-	private y: number;
+	private _sprite: Sprite;
 
 	private duration: number = 0;
 
-	public constructor(_orbData: { x: number, y: number }, _drawOrb: boolean) {
+	public constructor(_orbData: IPointData, _drawOrb: boolean) {
 		super();
 
-		this.x = _orbData.x;
-		this.y = _orbData.y;
+		this._sprite = new Sprite(TEffectOrbHit._texture);
+		this._sprite.x = _orbData.x * S.RoomTileWidth + S.LEVEL_OFFSET_X;
+		this._sprite.y = _orbData.y * S.RoomTileHeight + S.LEVEL_OFFSET_Y;
 
 		if (_orbData instanceof VOOrb && _orbData.agents.length) {
 			new TEffectOrbBolts(_orbData);
@@ -33,15 +37,20 @@ export class TEffectOrbHit extends TEffect {
 
 		if (_drawOrb) {
 			TStateGame.effectsUnder.add(this);
+			Game.room.layerUnder.add(this._sprite);
 		}
 	}
 
 	public update() {
 		if (this.duration++ == DURATION) {
-			TStateGame.effectsUnder.nullify(this);
-			return;
+			this.end();
 		}
+	}
 
-		this.room.layerActive.blitFragment(Frames[0], this.x, this.y);
+	public end() {
+		super.end();
+
+		TStateGame.effectsUnder.nullify(this);
+		this._sprite.parent?.removeChild(this._sprite);
 	}
 }
