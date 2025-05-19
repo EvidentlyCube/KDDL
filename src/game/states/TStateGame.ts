@@ -1,3 +1,5 @@
+import { Sprite } from "pixi.js";
+import { RecamelCore } from "src.framework/net/retrocade/camel/core/RecamelCore";
 import { RecamelLayerSprite } from "src.framework/net/retrocade/camel/layers/RecamelLayerSprite";
 import { _, _r } from "../../../src.framework/_";
 import { RecamelGroup } from "../../../src.framework/net/retrocade/camel/core/RecamelGroup";
@@ -13,6 +15,7 @@ import { S } from "../../S";
 import { T } from "../../T";
 import { intAttr } from "../../XML";
 import { Achievements } from "../achievements/Achievements";
+import { DebugConsole } from "../DebugConsole";
 import { Commands } from "../global/Commands";
 import { Core } from "../global/Core";
 import { CueEvents } from "../global/CueEvents";
@@ -25,12 +28,10 @@ import { Progress } from "../global/Progress";
 import { Sfx } from "../global/Sfx";
 import { VOCoord } from "../managers/VOCoord";
 import { MonsterMessageType } from "../managers/VOMonsterMessage";
-import { VOSwordDraw } from "../managers/VOSwordDraw";
 import { TCharacter } from "../objects/actives/TCharacter";
 import { TEvilEye } from "../objects/actives/TEvilEye";
 import { TMonster } from "../objects/actives/TMonster";
 import { TMonsterPiece } from "../objects/actives/TMonsterPiece";
-import { BoltEffect } from "../objects/effects/BoltEffect";
 import { TEffect } from "../objects/effects/TEffect";
 import { TEffectBlood } from "../objects/effects/TEffectBlood";
 import { TEffectBump } from "../objects/effects/TEffectBump";
@@ -65,9 +66,6 @@ import { TWindowMessage } from "../windows/TWindowMessage";
 import { TWindowPause } from "../windows/TWindowPause";
 import { TWindowYesNoMessage } from "../windows/TWindowYesNoMessage";
 import { TStateOutro } from "./TStateOutro";
-import { Sprite } from "pixi.js";
-import { DebugConsole } from "../DebugConsole";
-import { RecamelCore } from "src.framework/net/retrocade/camel/core/RecamelCore";
 
 export class TStateGame extends RecamelState {
 	private static _instance: TStateGame;
@@ -95,6 +93,7 @@ export class TStateGame extends RecamelState {
 
 	public uiLayer: RecamelLayerSprite;
 	public overLayer: RecamelLayerSprite;
+	public lockIcon: Sprite;
 
 	public isScrollDisplayed: boolean = false;
 	public isRoomClearedOnce: boolean = false;
@@ -130,8 +129,12 @@ export class TStateGame extends RecamelState {
 
 		this.uiLayer = RecamelLayerSprite.create();
 		this.overLayer = RecamelLayerSprite.create();
+		this.lockIcon = new Sprite(Gfx.LockTexture);
 		this.uiLayer.visible = false;
 		this.overLayer.visible = false;
+
+		this.lockIcon.x = 84;
+		this.lockIcon.y = 522;
 
 		(window as any).debugState = this;
 		(window as any).Game = Game;
@@ -248,8 +251,6 @@ export class TStateGame extends RecamelState {
 					Game.undoCommand();
 					this.drawAll();
 					this.drawActiveAndEffects(true);
-					this.drawLock();
-					this.updateTextures();
 					return;
 				}
 			}
@@ -305,7 +306,6 @@ export class TStateGame extends RecamelState {
 
 		if (Game.isPlayerDying) {
 			this.drawActiveAndEffects();
-			this.updateTextures();
 
 			if (RawInput.isKeyPressed(Core.getKey('restart')) || RawInput.isKeyPressed('F5')) {
 				if (RawInput.isShiftDown) {
@@ -332,7 +332,6 @@ export class TStateGame extends RecamelState {
 			this.drawActiveAndEffects(false);
 
 			if (!this.isStopEffectKeyReleased && RawInput.keyDownCount === this.isStopEffectKeyCount) {
-				this.updateTextures();
 				return;
 			}
 
@@ -342,7 +341,6 @@ export class TStateGame extends RecamelState {
 				this.processStopEffectKeyPress();
 			}
 
-			this.updateTextures();
 			return;
 		}
 
@@ -376,7 +374,6 @@ export class TStateGame extends RecamelState {
 			this.processCommand(this.commandQueue.shift()!);
 			if (!Game.isGameActive || this.isStoppingEffectPlaying) {
 				this.commandQueue.length = 0;
-				this.updateTextures();
 				return;
 			}
 		}
@@ -481,9 +478,6 @@ export class TStateGame extends RecamelState {
 		} else {
 			this.drawActiveAndEffects(forceFullRedraw);
 		}
-
-		this.drawLock();
-		this.updateTextures();
 	}
 
 	private drawMimicPlacement() {
@@ -498,11 +492,6 @@ export class TStateGame extends RecamelState {
 				Game.player.o,
 				Game.room.doesSquareContainDoublePlacementObstacle(Game.player.doubleCursorX, Game.player.doubleCursorY)
 			);
-		}
-	}
-
-	private updateTextures() {
-		if (PlatformOptions.isDebug) {
 		}
 	}
 
@@ -584,14 +573,7 @@ export class TStateGame extends RecamelState {
 		}
 
 		this.drawMimicPlacement();
-		this.drawLock();
-	}
-
-	private drawLock() {
-		if (Game.isRoomLocked) {
-			// @FIXME - Add lock to UI layer
-			// Game.room.layerEffects.blitDirectly(Gfx.LOCK, 84, 522);
-		}
+		this.lockIcon.visible = Game.isRoomLocked;
 	}
 
 	private drawActiveAndEffects(force: boolean = false) {
@@ -640,6 +622,16 @@ export class TStateGame extends RecamelState {
 				monster = CueEvents.getNextPrivateData()
 			) {
 				Game.room.roomSpritesRenderer.destroyObject(monster);
+			}
+		}
+
+		if (CueEvents.hasOccurred(C.CID_SNAKE_DIED_FROM_TRUNCATION)) {
+			for (
+				let snake = CueEvents.getFirstPrivateData(C.CID_SNAKE_DIED_FROM_TRUNCATION);
+				snake != null;
+				snake = CueEvents.getNextPrivateData()
+			) {
+				Game.room.roomSpritesRenderer.destroyObject(snake);
 			}
 		}
 
@@ -1157,6 +1149,8 @@ export class TStateGame extends RecamelState {
 			this.uiLayer.add(TWidgetLevelName.container);
 			this.uiLayer.add(TWidgetMinimap.container);
 			this.uiLayer.add(TWidgetScroll.container);
+			this.uiLayer.add(TWidgetClock.container);
+			this.uiLayer.add(this.lockIcon);
 			this.overLayer.add(TWidgetOrbHighlight.container);
 		}
 	}
@@ -1412,8 +1406,9 @@ export class TStateGame extends RecamelState {
 
 DebugConsole.registerAction('clear-room', "Clears the current room. It's cheating and can work weird! Use only for debugging.", () => {
 	if (RecamelCore.currentState !== TStateGame.instance) {
-		throw new Error("Must be playing game to run this commnad");
+		throw new Error("Must be playing game to run this command");
 	}
+
 	for (const monster of Game.room.monsters.getAll()) {
 		if (!monster) {
 			continue;

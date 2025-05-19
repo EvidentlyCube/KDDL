@@ -35,6 +35,7 @@ export class TMonsterPiece extends TMonster {
 	public quickRemove() {
 		this.room.tilesActive[this.x + this.y * S.RoomWidth] = null;
 		this.room.pathmapTileModified(this.x, this.y);
+		this.room.roomSpritesRenderer.destroyObject(this);
 	}
 
 	public setGfx() {

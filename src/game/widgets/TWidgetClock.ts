@@ -1,58 +1,50 @@
-import {_} from "../../../src.framework/_";
-import {Game} from "../global/Game";
-import {Gfx} from "../global/Gfx";
-import {C} from "../../C";
-import {Text} from "../../../src.framework/net/retrocade/standalone/Text";
-import {Make} from "../global/Make";
+import { _ } from "../../../src.framework/_";
+import { Game } from "../global/Game";
+import { Gfx } from "../global/Gfx";
+import { C } from "../../C";
+import { Text } from "../../../src.framework/net/retrocade/standalone/Text";
+import { Make } from "../global/Make";
 import { Container, Rectangle, Sprite, Texture } from "pixi.js";
+import { TStateGame } from "../states/TStateGame";
 
-let SNAKE_MOVE_NAME:string[][] = [];
+let SNAKE_MOVE_NAME: string[][] = [];
 
-const x = 15;
-const y = 224;
 const width = 132;
 const height = 162;
-
-let text: Text;
 
 export class TWidgetClock {
 	public static container = new Container();
 
 	private static _scrollSprite: Sprite;
+	private static _textField: Text;
 
 	public static init() {
 		TWidgetClock._scrollSprite = new Sprite(new Texture(
 			Gfx.ScrollsTexture.baseTexture,
 			new Rectangle(164, 7, width, height)
 		));
-		TWidgetClock._scrollSprite.x = x;
-		TWidgetClock._scrollSprite.y = y;
 
-		text = Make.text(14);
+		TWidgetClock._textField = Make.text(14);
 
-		text.wordWrapWidth = width;
-		text.wordWrap = true;
+		this.container.addChild(TWidgetClock._scrollSprite);
+		this.container.addChild(TWidgetClock._textField);
+		this.container.x = 15;
+		this.container.y = 224;
+
+		TWidgetClock._textField.wordWrapWidth = width;
+		TWidgetClock._textField.wordWrap = true;
 
 		SNAKE_MOVE_NAME = [
-				[_("ingame.clock.h1"), _("ingame.clock.h2"), _("ingame.clock.h3"), _("ingame.clock.h4")],
-				[_("ingame.clock.v1"), _("ingame.clock.v2"), _("ingame.clock.v3"), _("ingame.clock.v4")],
+			["ingame.clock.h1", "ingame.clock.h2", "ingame.clock.h3", "ingame.clock.h4"],
+			["ingame.clock.v1", "ingame.clock.v2", "ingame.clock.v3", "ingame.clock.v4"],
 		];
 	}
 
 	public static update(doDraw: boolean, turnNo: number = 0) {
-		const isAdded = Game.room.layerUnder.contains(this._scrollSprite);
+		TWidgetClock.container.visible = doDraw;
 
 		if (doDraw) {
 			TWidgetClock.updateText(turnNo);
-
-			if (!isAdded) {
-				Game.room.layerUnder.add(this._scrollSprite);
-				Game.room.layerUnder.add(text);
-			}
-
-		} else if (isAdded) {
-			Game.room.layerUnder.remove(this._scrollSprite);
-			Game.room.layerUnder.remove(text);
 		}
 	}
 
@@ -85,18 +77,18 @@ export class TWidgetClock {
 			newText += `
                 <span ${descStyle}>${_("ingame.clock.snakes_prefer")}</span>
                 <div ${snakeStyle}>`
-                + `<span ${snakes1Style}>${SNAKE_MOVE_NAME[snakeMoves % 10 < 5 ? 0 : 1][0]}</span>`
-                + `<span ${snakes2Style}>${SNAKE_MOVE_NAME[snakeMoves % 10 < 5 ? 0 : 1][1]}</span>`
-                + `<span ${snakes3Style}>${SNAKE_MOVE_NAME[snakeMoves % 10 < 5 ? 0 : 1][2]}</span>`
-                + `<span ${snakes4Style}>${SNAKE_MOVE_NAME[snakeMoves % 10 < 5 ? 0 : 1][3]}</span><br/>`
-                + `<span ${snakesMini}>${((snakeMoves % 5) + 1).toString()}/5</span>
+				+ `<span ${snakes1Style}>${_(SNAKE_MOVE_NAME[snakeMoves % 10 < 5 ? 0 : 1][0])}</span>`
+				+ `<span ${snakes2Style}>${_(SNAKE_MOVE_NAME[snakeMoves % 10 < 5 ? 0 : 1][1])}</span>`
+				+ `<span ${snakes3Style}>${_(SNAKE_MOVE_NAME[snakeMoves % 10 < 5 ? 0 : 1][2])}</span>`
+				+ `<span ${snakes4Style}>${_(SNAKE_MOVE_NAME[snakeMoves % 10 < 5 ? 0 : 1][3])}</span><br/>`
+				+ `<span ${snakesMini}>${((snakeMoves % 5) + 1).toString()}/5</span>
                 </div>`;
 		}
 		newText += '</p>';
 
-		text.htmlText = newText;
+		TWidgetClock._textField.htmlText = newText;
 
-		text.x = Math.floor(x + (width - text.textWidth) / 2 - 5.5);
-		text.y = y + (height - text.textHeight) / 2 | 0;
+		TWidgetClock._textField.x = (width - TWidgetClock._textField.textWidth) / 2 - 5.5 | 0;
+		TWidgetClock._textField.y = (height - TWidgetClock._textField.textHeight) / 2 | 0;
 	}
 }

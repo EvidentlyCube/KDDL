@@ -76,7 +76,6 @@ export class Room {
 	 */
 	public tilesSwords: number[] = [];
 
-	// @FIXME change uses of this layer which are UI related to go into TStateGame's layer
 	public layerUnder: RecamelLayerSprite;
 	public layerSprites: RecamelLayerSprite;
 	public layerEffectsTextured: RecamelLayerSprite;

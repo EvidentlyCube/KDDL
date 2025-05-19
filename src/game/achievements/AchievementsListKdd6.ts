@@ -72,7 +72,7 @@ export function AchievementsListKdd6(to: Achievement[]) {
 		name: 'achievement.name.l1.1n1w',
 		description: 'achievement.description.l1.1n1w',
 
-		icon: ['default', T.TI_BRAIN, T.TI_BRAIN_A, T.TI_BRAIN, T.TI_BRAIN], // @FIXME Icon
+		icon: ['default', T.TI_BRAIN, T.TI_BRAIN_A, T.TI_BRAIN, T.TI_BRAIN],
 
 		in: [1, '1N1W'],
 

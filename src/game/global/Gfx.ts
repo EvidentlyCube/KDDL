@@ -26,7 +26,9 @@ export const Gfx = {
 	FaceEyesTexture: null! as Texture,
 	EffectsTexture: null! as Texture,
 	BoltsTexture: null! as Texture,
+	LockTexture: null! as Texture,
 
+	// @FIXME - Remove unused variables
 	TUTORIAL_KEYS: null! as HTMLImageElement,
 
 	BUTTON_SYSTEM: null! as HTMLImageElement,
@@ -200,6 +202,7 @@ export const Gfx = {
 		Gfx.FaceEyesTexture = new Texture(new BaseTexture(Gfx.FACE_EYES));
 		Gfx.EffectsTexture = new Texture(new BaseTexture(Gfx.EFFECTS));
 		Gfx.BoltsTexture = new Texture(new BaseTexture(Gfx.BOLTS));
+		Gfx.LockTexture = new Texture(new BaseTexture(Gfx.LOCK));
 	},
 
 	getGeneralTilesTexture(tileId: number): Texture {
