@@ -152,6 +152,7 @@ export class TStateRestore extends RecamelState {
 			this._layer.add(this.secretsCount);
 		}
 
+		this.currentRoomId = -1;
 		this.createLevels();
 
 		this.selectRoom(Progress.playerRoomID);
