@@ -8,6 +8,8 @@ import {TStateGame} from "../../states/TStateGame";
 import {C, CanvasImageSourceFragment} from "../../../C";
 import {ASSERT} from "../../../ASSERT";
 import {UtilsRandom} from "../../../../src.framework/net/retrocade/utils/UtilsRandom";
+import { Container, Rectangle, Texture } from "pixi.js";
+import { Game } from "src/game/global/Game";
 
 const MARKOV = [
 	[
@@ -25,71 +27,83 @@ const MARKOV = [
 		[10, 15, 5, 40, 30],
 	],
 ];
-const _frames:CanvasImageSourceFragment[] = [];
 
 export class TEffectVermin extends TEffect {
+	private static _textures: Texture[];
+
 	public static initialize() {
-		_frames.push(
-			F.newFragment(Gfx.EFFECTS, 88, 44, 3, 3),
-			F.newFragment(Gfx.EFFECTS, 110, 44, 2, 2),
-		);
+		TEffectVermin._textures = [
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(88, 44, 3, 3)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(110, 44, 2, 2)),
+		];
 	}
-	private isSlayer: boolean;
-	private vermins: VOVermin[];
+
+	private _container: Container;
+	private _isFromSlayer: boolean;
+	private _particles: VOVermin[];
 
 	public constructor(origin: VOCoord, particles: number = 5, isFromSlayer: boolean = false) {
 		super();
 
-		this.isSlayer = isFromSlayer;
+		this._container = new Container();
+		this._container.x = S.LEVEL_OFFSET_X;
+		this._container.y = S.LEVEL_OFFSET_Y;
 
-		this.vermins = [];
+		this._isFromSlayer = isFromSlayer;
+		this._particles = [];
 
-		const x: number = origin.x * S.RoomTileWidth + S.RoomTileWidthHalf;
-		const y: number = origin.y * S.RoomTileHeight + S.RoomTileHeightHalf;
+		const x = origin.x * S.RoomTileWidth + S.RoomTileWidthHalf;
+		const y = origin.y * S.RoomTileHeight + S.RoomTileHeightHalf;
 
 		while (particles--) {
 			const vermin = new VOVermin();
 
 			vermin.x = x;
 			vermin.y = y;
-			vermin.angle = UtilsRandom.fraction() * Math.PI * 2;
+			vermin.moveAngle = UtilsRandom.fraction() * Math.PI * 2;
 			vermin.acceleration = UtilsRandom.fraction() * VOVerminType.ACC_COUNT | 0;
-			vermin.type = UtilsRandom.fraction() * 2 | 0;
-			vermin.size = vermin.type == 0 ? 3 : 2;
+			vermin.texture = UtilsRandom.from(TEffectVermin._textures);
+			vermin.size = vermin.texture === TEffectVermin._textures[0] ? 3 : 2;
 			vermin.timeLeft = Date.now() + 2000 + UtilsRandom.uint(0, 3000);
 
-			this.vermins.push(vermin);
+			this._particles.push(vermin);
+			this._container.addChild(vermin);
 		}
 
 		TStateGame.effectsUnder.add(this);
+		Game.room.layerUnder.add(this._container);
 	}
 
 	public update() {
 		let anyAlive: boolean = false;
 
-		for (let v of this.vermins) {
+		for (let v of this._particles) {
 			if (!v.active) {
 				continue;
 			}
 
-			v.x += Math.cos(v.angle);
-			v.y += Math.sin(v.angle);
+			v.x += Math.cos(v.moveAngle);
+			v.y += Math.sin(v.moveAngle);
 
 			if (this.hitsObstacle(v) || v.timeLeft < Date.now()) {
 				v.active = false;
+				this._container.removeChild(v);
 				continue;
 			}
 
 			this.updateDirection(v);
 
-			this.room.layerActive.blitFragmentDirectly(_frames[v.type], v.x, v.y);
-
 			anyAlive = true;
 		}
 
 		if (!anyAlive) {
-			TStateGame.effectsUnder.nullify(this);
+			this.end();
 		}
+	}
+
+	public end() {
+		TStateGame.effectsUnder.nullify(this);
+		this._container.parent?.removeChild(this._container)
 	}
 
 	private hitsObstacle(v: VOVermin): boolean {
@@ -125,7 +139,7 @@ export class TEffectVermin extends TEffect {
 			case C.T_DOOR_C:
 			case C.T_DOOR_R:
 			case C.T_DOOR_B:
-				if (!this.isSlayer) {
+				if (!this._isFromSlayer) {
 					return true;
 				}
 				break;
@@ -148,16 +162,16 @@ export class TEffectVermin extends TEffect {
 	private updateDirection(v: VOVermin) {
 		switch (v.acceleration) {
 			case VOVerminType.ACC_HARD_LEFT:
-				v.angle -= 0.2;
+				v.moveAngle -= 0.2;
 				break;
 			case VOVerminType.ACC_LEFT:
-				v.angle -= 0.1;
+				v.moveAngle -= 0.1;
 				break;
 			case VOVerminType.ACC_RIGHT:
-				v.angle += 0.1;
+				v.moveAngle += 0.1;
 				break;
 			case VOVerminType.ACC_HARD_RIGHT:
-				v.angle += 0.2;
+				v.moveAngle += 0.2;
 				break;
 		}
 

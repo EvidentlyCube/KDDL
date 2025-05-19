@@ -4,82 +4,85 @@ import {TEffect} from "./TEffect";
 import {S} from "../../../S";
 import {C, CanvasImageSourceFragment} from "../../../C";
 import {TStateGame} from "../../states/TStateGame";
-
-const frames:(CanvasImageSourceFragment|null)[] = [];
+import { Rectangle, Sprite, Texture } from "pixi.js";
+import { Game } from "src/game/global/Game";
 
 const EFFECT_DURATION = 20;
 
 export class TEffectSwordSwing extends TEffect {
+	private static _textures: Texture[];
 	public static initialize() {
-		frames.push(
-			F.newFragment(Gfx.EFFECTS, 0, 0, 22, 22),
-			F.newFragment(Gfx.EFFECTS, 22, 0, 22, 22),
-			F.newFragment(Gfx.EFFECTS, 44, 0, 22, 22),
-			F.newFragment(Gfx.EFFECTS, 66, 0, 22, 22),
-			null,
-			F.newFragment(Gfx.EFFECTS, 88, 0, 22, 22),
-			F.newFragment(Gfx.EFFECTS, 110, 0, 22, 22),
-			F.newFragment(Gfx.EFFECTS, 132, 0, 22, 22),
-			F.newFragment(Gfx.EFFECTS, 154, 0, 22, 22),
-		);
+		TEffectSwordSwing._textures = [
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(0, 0, 22, 22)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(22, 0, 22, 22)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(44, 0, 22, 22)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(66, 0, 22, 22)),
+			Texture.EMPTY,
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(88, 0, 22, 22)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(110, 0, 22, 22)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(132, 0, 22, 22)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(154, 0, 22, 22)),
+		];
 	}
 
-	private x: number;
-	private y: number;
-	private o: number;
-	private alpha: number = EFFECT_DURATION;
+	private _sprite: Sprite;
 
 	public constructor(x: number, y: number, o: number) {
 		super();
 
-		this.x = x * S.RoomTileWidth;
-		this.y = y * S.RoomTileHeight;
-		this.o = o;
+		this._sprite = new Sprite(TEffectSwordSwing._textures[o])
+		this._sprite.x = x * S.RoomTileWidth + S.LEVEL_OFFSET_X;
+		this._sprite.y = y * S.RoomTileHeight + S.LEVEL_OFFSET_Y;
 
 		switch (o) {
 			case(C.NW):
-				this.x -= S.RoomTileWidth / 2;
-				this.y -= S.RoomTileHeight;
+				this._sprite.x -= S.RoomTileWidth / 2;
+				this._sprite.y -= S.RoomTileHeight;
 				break;
 			case(C.N):
-				this.x += S.RoomTileWidth / 2;
-				this.y -= S.RoomTileHeight;
+				this._sprite.x += S.RoomTileWidth / 2;
+				this._sprite.y -= S.RoomTileHeight;
 				break;
 			case(C.NE):
-				this.x += S.RoomTileWidth;
-				this.y -= S.RoomTileHeight / 2;
+				this._sprite.x += S.RoomTileWidth;
+				this._sprite.y -= S.RoomTileHeight / 2;
 				break;
 			case(C.E):
-				this.x += S.RoomTileWidth;
-				this.y += S.RoomTileHeight / 2;
+				this._sprite.x += S.RoomTileWidth;
+				this._sprite.y += S.RoomTileHeight / 2;
 				break;
 			case(C.SE):
-				this.x += S.RoomTileWidth / 2;
-				this.y += S.RoomTileHeight;
+				this._sprite.x += S.RoomTileWidth / 2;
+				this._sprite.y += S.RoomTileHeight;
 				break;
 			case(C.S):
-				this.x -= S.RoomTileWidth / 2;
-				this.y += S.RoomTileHeight;
+				this._sprite.x -= S.RoomTileWidth / 2;
+				this._sprite.y += S.RoomTileHeight;
 				break;
 			case(C.SW):
-				this.x -= S.RoomTileWidth;
-				this.y += S.RoomTileHeight / 2;
+				this._sprite.x -= S.RoomTileWidth;
+				this._sprite.y += S.RoomTileHeight / 2;
 				break;
 			case(C.W):
-				this.x -= S.RoomTileWidth;
-				this.y -= S.RoomTileHeight / 2;
+				this._sprite.x -= S.RoomTileWidth;
+				this._sprite.y -= S.RoomTileHeight / 2;
 				break;
 		}
 
 		TStateGame.effectsAbove.add(this);
+		Game.room.layerSprites.addAt(this._sprite, 0);
 	}
 
 	public update() {
-		if (--this.alpha == 0) {
-			TStateGame.effectsAbove.nullify(this);
-			return;
-		}
+		this._sprite.alpha -= 1 / EFFECT_DURATION;
 
-		this.room.layerActive.drawDirectFragment(frames[this.o]!, this.x, this.y, this.alpha / EFFECT_DURATION);
+		if (this._sprite.alpha <= 0) {
+			this.end();
+		}
+	}
+
+	public end() {
+		TStateGame.effectsAbove.nullify(this);
+		this._sprite.parent?.removeChild(this._sprite);
 	}
 }

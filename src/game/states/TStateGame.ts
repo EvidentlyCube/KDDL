@@ -66,6 +66,8 @@ import { TWindowPause } from "../windows/TWindowPause";
 import { TWindowYesNoMessage } from "../windows/TWindowYesNoMessage";
 import { TStateOutro } from "./TStateOutro";
 import { Sprite } from "pixi.js";
+import { DebugConsole } from "../DebugConsole";
+import { RecamelCore } from "src.framework/net/retrocade/camel/core/RecamelCore";
 
 export class TStateGame extends RecamelState {
 	private static _instance: TStateGame;
@@ -1423,3 +1425,26 @@ export class TStateGame extends RecamelState {
 		}
 	}
 }
+
+
+DebugConsole.registerAction('clear-room', "Clears the current room. It's cheating and can work weird! Use only for debugging.", () => {
+	if (RecamelCore.currentState !== TStateGame.instance) {
+		throw new Error("Must be playing game to run this commnad");
+	}
+	for (const monster of Game.room.monsters.getAll()) {
+		if (!monster) {
+			continue;
+		}
+		if (monster instanceof TMonsterPiece) {
+			const parent = monster.monster;
+			CueEvents.add(C.CID_SNAKE_DIED_FROM_TRUNCATION, parent);
+			Game.room.killMonster(parent);
+		} else {
+			CueEvents.add(C.CID_MONSTER_DIED_FROM_STAB, monster);
+			Game.room.killMonster(monster);
+		}
+	}
+
+	Game.toggleGreenDoors();
+	TStateGame.instance.drawAll();
+});
