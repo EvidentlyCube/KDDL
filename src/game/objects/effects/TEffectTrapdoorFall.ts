@@ -2,61 +2,69 @@ import {TEffect} from "./TEffect";
 import {S} from "../../../S";
 import {TStateGame} from "../../states/TStateGame";
 import {C} from "../../../C";
+import { Rectangle, Sprite, Texture } from "pixi.js";
+import { Game } from "src/game/global/Game";
+import { DROD } from "src/game/global/DROD";
 
 const DURATION = S.RoomTileHeight;
 
 export class TEffectTrapdoorFall extends TEffect {
-
-	private x: number;
-	private y: number;
-
 	private tileX: number;
 	private tileY: number;
 
 	private fall: number = 0;
+	private _sprite: Sprite;
 
 	public constructor(x: number, y: number) {
 		super();
 
+		this._sprite = new Sprite(new Texture(
+			this.room.roomTileRenderer.tilesTexture,
+			new Rectangle(176, 242, S.RoomTileWidth, S.RoomTileHeight)
+		));
 		this.tileX = x;
 		this.tileY = y;
 
-		this.x = x * S.RoomTileWidth;
-		this.y = y * S.RoomTileHeight;
+		this._sprite.x = x * S.RoomTileWidth + S.LEVEL_OFFSET_X;
+		this._sprite.y = y * S.RoomTileHeight + S.LEVEL_OFFSET_Y;
 
 		TStateGame.effectsUnder.add(this);
+		Game.room.layerSprites.addAt(this._sprite, 0);
 	}
 
 	public update() {
 		if (this.fall++ == DURATION) {
-			TStateGame.effectsUnder.nullify(this);
+			this.end();
 			return;
 		}
 
-		this.y += 1.5;
-		this.tileY = (this.y / S.RoomTileHeight | 0);
+		this._sprite.y += 1.5;
+		this._sprite.alpha = 1 - (this.fall / DURATION);
+		this.tileY = (this._sprite.y - S.LEVEL_OFFSET_Y) / S.RoomTileHeight | 0;
 
 		if (this.room.tilesOpaque[this.tileX + this.tileY * S.RoomWidth] != C.T_PIT) {
-			TStateGame.effectsUnder.nullify(this);
+			this.end();
 			return;
 		}
 
 		this.tileY++;
 
-		this.draw(this.room.tilesOpaque[this.tileX + this.tileY * S.RoomWidth] != C.T_PIT);
-
+		if (this.room.tilesOpaque[this.tileX + this.tileY * S.RoomWidth] !== C.T_PIT) {
+			this.updateCut();
+		}
 	}
 
-	private draw(cutAway: boolean = false) {
-		if (cutAway) {
-			const height: number = (this.y / S.RoomTileHeight + 1 | 0) * S.RoomTileHeight - this.y;
+	public end() {
+		TStateGame.effectsUnder.nullify(this);
+		this._sprite.parent?.removeChild(this._sprite);
+	}
 
-			this.room.layerActive.drawComplexDirect(this.room.roomTileRenderer.tilesBitmapData,
-				this.x, this.y, (DURATION - this.fall) / DURATION, 176, 242, S.RoomTileWidth, height);
+	private updateCut() {
+		const inTileY = (this._sprite.y - S.LEVEL_OFFSET_Y) % S.RoomTileHeight;
+		const height = S.RoomTileHeight - inTileY;
 
-		} else {
-			this.room.layerActive.drawComplexDirect(this.room.roomTileRenderer.tilesBitmapData,
-				this.x, this.y, (DURATION - this.fall) / DURATION, 176, 242, S.RoomTileWidth, S.RoomTileHeight);
-		}
+		this._sprite.texture.frame.height = S.RoomTileHeight - inTileY;
+		this._sprite.texture.updateUvs()
+
 	}
 }
