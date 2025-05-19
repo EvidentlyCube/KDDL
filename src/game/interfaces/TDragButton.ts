@@ -54,8 +54,7 @@ export class TDragButton extends RecamelSprite {
 		this._button.muteSounds = true;
 		this._button.releaseOnRollOut = false;
 
-		// @todo buttonmode
-		// buttonMode = true;
+		this.cursor = 'pointer';
 
 		this.on('pointerdown', this.onClicked.bind(this));
 		this._button.on('pointerdown', this.onButtonDown.bind(this));

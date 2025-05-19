@@ -143,19 +143,6 @@ export class Pathmap {
 
 	}
 
-	// @todo BITMAPS
-	// public  debug(layer:BitmapData){
-	// 	for(var i:number = 0; i < S.LEVEL_WIDTH; i++){
-	// 		for (var j:number = 0; j < S.LEVEL_HEIGHT; j++){
-	// 			var pos :number = i + j * S.LEVEL_WIDTH;
-	//
-	// 			@todo Somehow handle this
-	// font.drawSimpleLine(layer, (tiles[pos].targetDistance < 999 ? tiles[pos].targetDistance : ""),
-	// 	i * S.LEVEL_TILE_WIDTH, j * S.LEVEL_TILE_HEIGHT);
-	// }
-	// }
-	// }
-
 	public deepResetTile(x: number, y: number) {
 		this.setSquareObstacle(x, y);
 		this.setSquareNeighboursPaths(x, y);
