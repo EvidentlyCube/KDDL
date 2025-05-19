@@ -77,9 +77,7 @@ export const RecamelTooltip = {
 	get container() {
 		return tooltipContainer;
 	},
-	// @todo pixi does not support removed from stage event listeners, so
-	// that's why the argument is commented out
-	hook(object: PIXI.DisplayObject, text: string/*, permanent:boolean = false*/): void {
+	hook(object: PIXI.DisplayObject, text: string): void {
 		hooks.set(object, text);
 
 		object.interactive = true;

@@ -79,7 +79,6 @@ export class TEffectEvilEyeGaze extends TEffect {
 
 		let reflected: boolean = false;
 
-		// @todo Extract to not be function created on each run
 		const getNextGaze = (): boolean => {
 			tx += ox;
 			ty += oy;

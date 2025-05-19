@@ -11,7 +11,6 @@ export class TTitleButton extends Button {
 	private _textNormal: string;
 	private _textRollover: string;
 
-	// @todo shortcut character
 	public constructor(clickCallback: ButtonCallback, label: string, highlightIndex: number) {
 		super(clickCallback);
 

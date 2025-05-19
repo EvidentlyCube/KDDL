@@ -1,60 +1,42 @@
-import * as PIXI from 'pixi.js';
 import {TEffect} from "./TEffect";
 import {Make} from "../../global/Make";
 import {OutlineFilter} from "@pixi/filter-outline";
 import {S} from "../../../S";
 import {TStateGame} from "../../states/TStateGame";
 import {Game} from "../../global/Game";
-import {RecamelCore} from "../../../../src.framework/net/retrocade/camel/core/RecamelCore";
+import { Text } from "src.framework/net/retrocade/standalone/Text";
 
 // @todo do something about the outline so that it's rendered a bit better
 export class TEffectLevelStats extends TEffect {
 
-	private textSprite: PIXI.Sprite;
 	private fadeInStart: number;
 	private fadeInDuration: number;
-	private renderTexture: PIXI.RenderTexture;
-
-	private _interval: any;
+	private _textField: Text;
 
 	public constructor(textToShow: string, fadeTime: number) {
 		super();
 
-		const text = Make.text(38);
-		text.x = 4;
-		text.y = 4;
-		text.text = textToShow;
-		text.color = 0xFFFF00;
-		text.filters = [new OutlineFilter(2, 0, 0.5)];
+		this._textField = Make.text(38);
+		this._textField.x = 4;
+		this._textField.y = 4;
+		this._textField.text = textToShow;
+		this._textField.color = 0xFFFF00;
+		this._textField.filters = [new OutlineFilter(2, 0, 0.5)];
 
-		this.renderTexture = PIXI.RenderTexture.create(text.textWidth + 8, text.textHeight + 8);
-		RecamelCore.renderer.render(text, this.renderTexture, true);
-
-		this.textSprite = new PIXI.Sprite(this.renderTexture);
-		this.textSprite.x = (S.RoomWidthPixels - this.textSprite.width) / 2 + S.LEVEL_OFFSET_X;
-		this.textSprite.y = (S.RoomHeightPixels - this.textSprite.height) / 2 + S.LEVEL_OFFSET_Y;
-		this.textSprite.alpha = 0;
+		this._textField.x = (S.RoomWidthPixels - this._textField.textWidth) / 2 + S.LEVEL_OFFSET_X;
+		this._textField.y = (S.RoomHeightPixels - this._textField.textHeight) / 2 + S.LEVEL_OFFSET_Y;
+		this._textField.alpha = 0;
 
 		this.fadeInStart = Date.now();
 		this.fadeInDuration = fadeTime;
 
 		TStateGame.effectsAbove.add(this);
-		Game.room.layerUI.add(this.textSprite);
-
-		this._interval = setInterval(() => {
-			if (TStateGame.effectsAbove.contains(this)) {
-				return;
-			}
-
-			this.renderTexture.destroy(true);
-			clearInterval(this._interval);
-
-		}, 100);
+		Game.room.layerUI.add(this._textField);
 	}
 
 	public update() {
 		const alpha = (Date.now() - this.fadeInStart) / this.fadeInDuration;
-		this.textSprite.alpha = Math.min(1, alpha);
+		this._textField.alpha = Math.min(1, alpha);
 	}
 
 
