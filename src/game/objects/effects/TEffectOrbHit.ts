@@ -12,7 +12,7 @@ const DURATION: number = 7;
 export class TEffectOrbHit extends TEffect {
 	private static _texture: Texture;
 	public static initialize() {
-		TEffectOrbHit._texture = new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(22,22,22,22));
+		TEffectOrbHit._texture = new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(25,25,22,22));
 	}
 
 	private _sprite: Sprite;

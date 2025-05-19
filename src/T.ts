@@ -1151,8 +1151,9 @@ T.OBSTACLE_TILES = [
 
 for (let i = 0; i < 720; i++){
 	T.TILES[i] = new PIXI.Rectangle(
-		(i % 18) * S.RoomTileWidth,
-		(i / 18 | 0) * S.RoomTileHeight,
+		(i % 18) * (S.RoomTileWidth + 2) + 1,
+		(i / 18 | 0) * (S.RoomTileHeight + 2) + 1,
 		S.RoomTileWidth,
-		S.RoomTileHeight);
+		S.RoomTileHeight
+    );
 }

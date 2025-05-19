@@ -7,8 +7,8 @@ export class TEffectDebris extends TEffectParticles {
 	private static _textures: Texture[];
 	public static initialize() {
 		TEffectDebris._textures = [
-			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(44, 44, 4, 4)),
-			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(66, 44, 6, 6)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(49, 49, 4, 4)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(73, 49, 6, 6)),
 		]
 	}
 

@@ -10,7 +10,7 @@ import * as FloorRoadPath from '../../../src.assets/gfx/by_caravelgames/tiles/st
 import * as PitPath from '../../../src.assets/gfx/by_caravelgames/tiles/styleDeepSpaces/pit.jpg';
 import * as PitsidePath from '../../../src.assets/gfx/by_caravelgames/tiles/styleDeepSpaces/pitside.png';
 import * as PitsideSmallPath from '../../../src.assets/gfx/by_caravelgames/tiles/styleDeepSpaces/pitsideSmall.png';
-import * as TilesPath from '../../../src.assets/gfx/by_caravelgames/tiles/styleDeepSpaces/tiles.png';
+import * as TilesPath from '../../../src.assets/gfx/by_caravelgames/tiles/styleDeepSpaces/tiles.built.png';
 import {ResourcesQueue} from "./ResourcesQueue";
 import {C} from "../../C";
 

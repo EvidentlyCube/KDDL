@@ -249,52 +249,52 @@ export class RoomTileRenderer extends Container {
 
 			case (C.T_DOOR_Y):
 				temp = T.DOOR_Y[this.getOrthogonalByte(x, y, C.T_DOOR_Y, this.tilesOpaque)];
-				this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, temp, x, y);
+				this.blit.generalTile(temp, x, y);
 				break;
 
 			case (C.T_DOOR_YO):
 				temp = T.DOOR_YO[this.getOrthogonalByte(x, y, C.T_DOOR_YO, this.tilesOpaque)];
-				this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, temp, x, y);
+				this.blit.generalTile(temp, x, y);
 				break;
 
 			case (C.T_DOOR_R):
 				temp = T.DOOR_R[this.getOrthogonalByte(x, y, C.T_DOOR_R, this.tilesOpaque)];
-				this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, temp, x, y);
+				this.blit.generalTile(temp, x, y);
 				break;
 
 			case (C.T_DOOR_RO):
 				temp = T.DOOR_RO[this.getOrthogonalByte(x, y, C.T_DOOR_RO, this.tilesOpaque)];
-				this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, temp, x, y);
+				this.blit.generalTile(temp, x, y);
 				break;
 
 			case (C.T_DOOR_G):
 				temp = T.DOOR_G[this.getOrthogonalByte(x, y, C.T_DOOR_G, this.tilesOpaque)];
-				this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, temp, x, y);
+				this.blit.generalTile(temp, x, y);
 				break;
 
 			case (C.T_DOOR_GO):
 				temp = T.DOOR_GO[this.getOrthogonalByte(x, y, C.T_DOOR_GO, this.tilesOpaque)];
-				this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, temp, x, y);
+				this.blit.generalTile(temp, x, y);
 				break;
 
 			case (C.T_DOOR_C):
 				temp = T.DOOR_C[this.getOrthogonalByte(x, y, C.T_DOOR_C, this.tilesOpaque)];
-				this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, temp, x, y);
+				this.blit.generalTile(temp, x, y);
 				break;
 
 			case (C.T_DOOR_CO):
 				temp = T.DOOR_CO[this.getOrthogonalByte(x, y, C.T_DOOR_CO, this.tilesOpaque)];
-				this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, temp, x, y);
+				this.blit.generalTile(temp, x, y);
 				break;
 
 			case (C.T_DOOR_B):
 				temp = T.DOOR_B[this.getOrthogonalByte(x, y, C.T_DOOR_B, this.tilesOpaque)];
-				this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, temp, x, y);
+				this.blit.generalTile(temp, x, y);
 				break;
 
 			case (C.T_DOOR_BO):
 				temp = T.DOOR_BO[this.getOrthogonalByte(x, y, C.T_DOOR_BO, this.tilesOpaque)];
-				this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, temp, x, y);
+				this.blit.generalTile(temp, x, y);
 				break;
 
 			case (C.T_PIT):
@@ -334,15 +334,15 @@ export class RoomTileRenderer extends Container {
 				break;
 
 			case (C.T_ORB):
-				this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_ORB, x, y);
+				this.blit.generalTile(T.TI_ORB, x, y);
 				break;
 
 			case (C.T_SCROLL):
-				this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_SCROLL, x, y);
+				this.blit.generalTile(T.TI_SCROLL, x, y);
 				break;
 
 			case (C.T_POTION_M):
-				this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_POTION_M, x, y);
+				this.blit.generalTile(T.TI_POTION_M, x, y);
 				break;
 
 			case (C.T_STAIRS):
@@ -351,7 +351,7 @@ export class RoomTileRenderer extends Container {
 				break;
 
 			case (C.T_POTION_I):
-				this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_POTION_I, x, y);
+				this.blit.generalTile(T.TI_POTION_I, x, y);
 				break;
 
 			case (C.T_OBSTACLE):
@@ -361,9 +361,9 @@ export class RoomTileRenderer extends Container {
 			case (C.T_WALL_MASTER):
 				if (Progress.isGameMastered) {
 					this._drawTile(this.getNeighbourFloor(x, y), x, y);
-					this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_MASTER_WALL, x, y, 0.5);
+					this.blit.generalTile(T.TI_MASTER_WALL, x, y, 0.5);
 				} else {
-					this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_MASTER_WALL, x, y, 1);
+					this.blit.generalTile(T.TI_MASTER_WALL, x, y, 1);
 				}
 				break;
 
@@ -823,75 +823,75 @@ export class RoomTileRenderer extends Container {
 
 		// INNER CORNERS
 		if (bytes == 0xBF) {
-			this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_ISE, x, y, 0.75);
+			this.blit.generalTile(T.TI_TAR_ISE, x, y, 0.75);
 			return;
 		}
 		if (bytes == 0xEF) {
-			this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_ISW, x, y, 0.75);
+			this.blit.generalTile(T.TI_TAR_ISW, x, y, 0.75);
 			return;
 		}
 		if (bytes == 0xFB) {
-			this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_INW, x, y, 0.75);
+			this.blit.generalTile(T.TI_TAR_INW, x, y, 0.75);
 			return;
 		}
 		if (bytes == 0xFE) {
-			this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_INE, x, y, 0.75);
+			this.blit.generalTile(T.TI_TAR_INE, x, y, 0.75);
 			return;
 		}
 
 		// DOUBLE CORNERS
 		if (bytes == 0xBB) {
-			this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_INWSE, x, y, 0.75);
+			this.blit.generalTile(T.TI_TAR_INWSE, x, y, 0.75);
 			return;
 		}
 		if (bytes == 0xEE) {
-			this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_INESW, x, y, 0.75);
+			this.blit.generalTile(T.TI_TAR_INESW, x, y, 0.75);
 			return;
 		}
 
 		// INSIDE
 		if (bytes == 0xFF) {
-			this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_NSEW, x, y, 0.75);
+			this.blit.generalTile(T.TI_TAR_NSEW, x, y, 0.75);
 			return;
 		}
 
 		// FLAT SIDES
 		if ((bytes & 0x3E) == 0x3E) {
-			this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_NSW, x, y, 0.75);
+			this.blit.generalTile(T.TI_TAR_NSW, x, y, 0.75);
 			return;
 		}
 		if ((bytes & 0x8F) == 0x8F) {
-			this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_NEW, x, y, 0.75);
+			this.blit.generalTile(T.TI_TAR_NEW, x, y, 0.75);
 			return;
 		}
 		if ((bytes & 0xE3) == 0xE3) {
-			this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_NSE, x, y, 0.75);
+			this.blit.generalTile(T.TI_TAR_NSE, x, y, 0.75);
 			return;
 		}
 		if ((bytes & 0xF8) == 0xF8) {
-			this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_SEW, x, y, 0.75);
+			this.blit.generalTile(T.TI_TAR_SEW, x, y, 0.75);
 			return;
 		}
 
 		// CORNERS
 		if ((bytes & 0x0E) == 0x0E) {
-			this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_NW, x, y, 0.75);
+			this.blit.generalTile(T.TI_TAR_NW, x, y, 0.75);
 			return;
 		}
 		if ((bytes & 0x83) == 0x83) {
-			this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_NE, x, y, 0.75);
+			this.blit.generalTile(T.TI_TAR_NE, x, y, 0.75);
 			return;
 		}
 		if ((bytes & 0xE0) == 0xE0) {
-			this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_SE, x, y, 0.75);
+			this.blit.generalTile(T.TI_TAR_SE, x, y, 0.75);
 			return;
 		}
 		if ((bytes & 0x38) == 0x38) {
-			this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_SW, x, y, 0.75);
+			this.blit.generalTile(T.TI_TAR_SW, x, y, 0.75);
 			return;
 		}
 
-		this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_TAR_NSEW, x, y, 0.75);
+		this.blit.generalTile(T.TI_TAR_NSEW, x, y, 0.75);
 	}
 
 	private drawShadow(x: number, y: number) {
@@ -929,23 +929,23 @@ export class RoomTileRenderer extends Container {
 		if (tileN) {
 			if (tileW) {
 				if (tile1) {
-					this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_SHADOW_NW1, x, y, 0.25);
+					this.blit.generalTile(T.TI_SHADOW_NW1, x, y, 0.25);
 				} else {
-					this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_SHADOW_NW, x, y, 0.25);
+					this.blit.generalTile(T.TI_SHADOW_NW, x, y, 0.25);
 				}
 			} else if (tile1) {
-				this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_SHADOW_N1, x, y, 0.25);
+				this.blit.generalTile(T.TI_SHADOW_N1, x, y, 0.25);
 			} else {
-				this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_SHADOW_N, x, y, 0.25);
+				this.blit.generalTile(T.TI_SHADOW_N, x, y, 0.25);
 			}
 		} else if (tileW) {
 			if (tile1) {
-				this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_SHADOW_W1, x, y, 0.25);
+				this.blit.generalTile(T.TI_SHADOW_W1, x, y, 0.25);
 			} else {
-				this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_SHADOW_W, x, y, 0.25);
+				this.blit.generalTile(T.TI_SHADOW_W, x, y, 0.25);
 			}
 		} else if (tile1) {
-			this.blit.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_SHADOW_1, x, y, 0.25);
+			this.blit.generalTile(T.TI_SHADOW_1, x, y, 0.25);
 		}
 	}
 
@@ -1470,6 +1470,17 @@ class Blitter {
 		}
 	}
 
+	public generalTile(tileId: number, x: number, y: number, alpha = 1) {
+		const sprite = new Sprite(Gfx.getGeneralTilesTexture(tileId));
+
+		sprite.x = x * S.RoomTileWidth;
+		sprite.y = y * S.RoomTileHeight;
+
+		this.addSprite(sprite);
+		sprite.alpha = alpha;
+
+		return sprite;
+	}
 	public tile(baseTexture: BaseTexture, tileId: number, x: number, y: number, alpha = 1) {
 		const tile = T.TILES[tileId];
 		const texture = new Texture(
@@ -1534,7 +1545,7 @@ class Blitter {
 
 	public blitCheckpoint(x: number, y: number, checkpoints: VOCheckpoints) {
 		if (checkpoints.contains(x, y)) {
-			this.tile(Gfx.GeneralTilesTexture.baseTexture, T.TI_CHECKPOINT, x, y)
+			this.generalTile(T.TI_CHECKPOINT, x, y)
 		}
 	}
 

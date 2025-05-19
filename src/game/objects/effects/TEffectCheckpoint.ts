@@ -12,7 +12,7 @@ export class TEffectCheckpoint extends TEffect {
 	private static _texture: Texture;
 
 	public static initialize() {
-		TEffectCheckpoint._texture = new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(0, 22, 22, 22));
+		TEffectCheckpoint._texture = new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(1, 25, 22, 22));
 	}
 	private _sprite: Sprite;
 	private _duration: number = 0;

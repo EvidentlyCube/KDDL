@@ -14,10 +14,10 @@ export class TEffectEvilEyeGaze extends TEffect {
 	private static _textures: Texture[];
 	public static initialize() {
 		TEffectEvilEyeGaze._textures = [
-			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(44, 22, 22, 22)),
-			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(66, 22, 22, 22)),
-			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(88, 22, 22, 22)),
-			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(110, 22, 22, 22)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(49, 25, 22, 22)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(73, 25, 22, 22)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(97, 25, 22, 22)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(121, 25, 22, 22)),
 		];
 	}
 

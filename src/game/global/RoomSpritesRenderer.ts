@@ -117,9 +117,4 @@ export class RoomSpritesRenderer extends Container {
 			this._swordSprites.length = this._swordDraws.length;
 		}
 	}
-
-	private getTexture(tileId: number) {
-		return textures[tileId]
-			?? (textures[tileId] = new Texture(Gfx.GeneralTilesTexture.baseTexture, T.TILES[tileId]))
-	}
 }

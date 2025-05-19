@@ -10,8 +10,8 @@ import * as TextInputPath from '../../../src.assets/gfx/by_maurycy/ui/TextInput.
 import * as GameScreenPath from '../../../src.assets/gfx/by_caravelgames/bgs/GameScreen.jpg';
 import * as LogoPath from '../../../src.assets/gfx/by_maurycy/ui/logo_common.png';
 
-import * as GeneralPath from '../../../src.assets/gfx/by_caravelgames/tiles/general.png';
-import * as EffectsPath from '../../../src.assets/gfx/by_caravelgames/sprites/effects.png';
+import * as GeneralPath from '../../../src.assets/gfx/by_caravelgames/tiles/general.built.png';
+import * as EffectsPath from '../../../src.assets/gfx/by_caravelgames/sprites/effects.built.png';
 import * as BoltsPath from '../../../src.assets/gfx/by_caravelgames/sprites/bolts.png';
 import * as FacesPath from '../../../src.assets/gfx/by_caravelgames/ui/faces.png';
 import * as FaceEyesPath from '../../../src.assets/gfx/by_caravelgames/ui/face_eyes.png';

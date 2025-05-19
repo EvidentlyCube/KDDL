@@ -32,8 +32,8 @@ export class TEffectVermin extends TEffect {
 
 	public static initialize() {
 		TEffectVermin._textures = [
-			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(88, 44, 3, 3)),
-			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(110, 44, 2, 2)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(97, 49, 3, 3)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(123, 49, 2, 2)),
 		];
 	}
 

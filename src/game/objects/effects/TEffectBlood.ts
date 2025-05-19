@@ -7,8 +7,8 @@ export class TEffectBlood extends TEffectParticles {
 	private static _textures: Texture[];
 	public static initialize() {
 		TEffectBlood._textures = [
-			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(0, 44, 4, 4)),
-			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(22, 44, 6, 6)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(1, 49, 4, 4)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(25, 49, 6, 6)),
 		]
 	}
 

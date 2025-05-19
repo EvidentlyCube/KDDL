@@ -12,15 +12,15 @@ export class TEffectSwordSwing extends TEffect {
 	private static _textures: Texture[];
 	public static initialize() {
 		TEffectSwordSwing._textures = [
-			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(0, 0, 22, 22)),
-			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(22, 0, 22, 22)),
-			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(44, 0, 22, 22)),
-			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(66, 0, 22, 22)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(1, 1, 22, 22)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(25, 1, 22, 22)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(49, 1, 22, 22)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(73, 1, 22, 22)),
 			Texture.EMPTY,
-			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(88, 0, 22, 22)),
-			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(110, 0, 22, 22)),
-			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(132, 0, 22, 22)),
-			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(154, 0, 22, 22)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(97, 1, 22, 22)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(121, 1, 22, 22)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(145, 1, 22, 22)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(179, 1, 22, 22)),
 		];
 	}
 
