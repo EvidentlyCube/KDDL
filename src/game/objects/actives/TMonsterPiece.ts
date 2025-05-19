@@ -40,34 +40,34 @@ export class TMonsterPiece extends TMonster {
 	public setGfx() {
 		switch (this.tileNo) {
 			case(C.T_SNK_EW):
-				this.gfx = T.TI_SNK_EW;
+				this.tileId = T.TI_SNK_EW;
 				break;
 			case(C.T_SNK_NS):
-				this.gfx = T.TI_SNK_NS;
+				this.tileId = T.TI_SNK_NS;
 				break;
 			case(C.T_SNK_SW):
-				this.gfx = T.TI_SNK_NE;
+				this.tileId = T.TI_SNK_NE;
 				break;
 			case(C.T_SNK_SE):
-				this.gfx = T.TI_SNK_NW;
+				this.tileId = T.TI_SNK_NW;
 				break;
 			case(C.T_SNK_NW):
-				this.gfx = T.TI_SNK_SE;
+				this.tileId = T.TI_SNK_SE;
 				break;
 			case(C.T_SNK_NE):
-				this.gfx = T.TI_SNK_SW;
+				this.tileId = T.TI_SNK_SW;
 				break;
 			case(C.T_SNKT_W):
-				this.gfx = T.TI_SNKT_W;
+				this.tileId = T.TI_SNKT_W;
 				break;
 			case(C.T_SNKT_N):
-				this.gfx = T.TI_SNKT_N;
+				this.tileId = T.TI_SNKT_N;
 				break;
 			case(C.T_SNKT_E):
-				this.gfx = T.TI_SNKT_E;
+				this.tileId = T.TI_SNKT_E;
 				break;
 			case(C.T_SNKT_S):
-				this.gfx = T.TI_SNKT_S;
+				this.tileId = T.TI_SNKT_S;
 				break;
 		}
 	}

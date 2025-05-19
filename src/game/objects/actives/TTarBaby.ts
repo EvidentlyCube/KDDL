@@ -9,6 +9,6 @@ export class TTarBaby extends TRoach {
 	}
 
 	public setGfx() {
-		this.gfx = T.TARBABY[this.animationFrame][this.o];
+		this.tileId = T.TARBABY[this.animationFrame][this.o];
 	}
 }

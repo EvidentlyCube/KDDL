@@ -74,7 +74,7 @@ export class TCharacter extends TPlayerDouble {
 		if (!this.swordSheathed && this.isVisible()) {
 			this.swordVO.x = this.swordX * S.RoomTileWidth + (this.prevX - this.x) * TStateGame.offset * S.RoomTileWidth;
 			this.swordVO.y = this.swordY * S.RoomTileHeight + (this.prevY - this.y) * TStateGame.offset * S.RoomTileHeight;
-			TStateGame.addSwordDraw(this.swordVO);
+			this.room.roomSpritesRenderer.registerSwordDraw(this.swordVO);
 		}
 	}
 
@@ -91,59 +91,59 @@ export class TCharacter extends TPlayerDouble {
 		switch (this.identity) {
 			case(C.M_BRAIN):
 				this.prevO = this.o = C.NO_ORIENTATION;
-				this.gfx = T.BRAIN[this.animationFrame];
+				this.tileId = T.BRAIN[this.animationFrame];
 				break;
 			case(C.M_CITIZEN1):
 			case(C.M_CITIZEN2):
 			case(C.M_CITIZEN3):
 			case(C.M_CITIZEN4):
-				this.gfx = T.CITIZEN[this.o];
+				this.tileId = T.CITIZEN[this.o];
 				break;
 			case(C.M_EYE):
-				this.gfx = T.EEYE[this.animationFrame][this.o];
+				this.tileId = T.EEYE[this.animationFrame][this.o];
 				break;
 			case(C.M_EYE_ACTIVE):
-				this.gfx = T.EEYE[2][this.o];
+				this.tileId = T.EEYE[2][this.o];
 				break;
 			case(C.M_GOBLIN):
-				this.gfx = T.GOBLIN[this.animationFrame][this.o];
+				this.tileId = T.GOBLIN[this.animationFrame][this.o];
 				break;
 			case(C.M_MIMIC):
-				this.gfx = T.MIMIC[this.o];
+				this.tileId = T.MIMIC[this.o];
 				this.swordSheathed = false;
 				this.updateSwordChangedSheathing(false);
 				break;
 			case(C.M_MUDCOORDINATOR):
-				this.gfx = T.MUDCOORDINATOR[this.o];
+				this.tileId = T.MUDCOORDINATOR[this.o];
 				break;
 			case(C.M_NEGOTIATOR):
-				this.gfx = T.NEGOTIATOR[this.o];
+				this.tileId = T.NEGOTIATOR[this.o];
 				break;
 			case(C.M_ROACH_QUEEN):
-				this.gfx = T.RQUEEN[this.animationFrame][this.o];
+				this.tileId = T.RQUEEN[this.animationFrame][this.o];
 				break;
 			case(C.M_ROACH):
-				this.gfx = T.ROACH[this.animationFrame][this.o];
+				this.tileId = T.ROACH[this.animationFrame][this.o];
 				break;
 			case(C.M_ROACH_EGG):
-				this.gfx = T.REGG[this.animationFrame][this.o];
+				this.tileId = T.REGG[this.animationFrame][this.o];
 				break;
 			case(C.M_SPIDER):
-				this.gfx = T.SPIDER[this.animationFrame][this.o];
+				this.tileId = T.SPIDER[this.animationFrame][this.o];
 				break;
 			case(C.M_TAR_BABY):
-				this.gfx = T.TARBABY[this.animationFrame][this.o];
+				this.tileId = T.TARBABY[this.animationFrame][this.o];
 				break;
 			case(C.M_TARTECHNICIAN):
-				this.gfx = T.TARTECHNICIAN[this.o];
+				this.tileId = T.TARTECHNICIAN[this.o];
 				break;
 			case(C.M_WRAITHWING):
-				this.gfx = T.WWING[this.animationFrame][this.o];
+				this.tileId = T.WWING[this.animationFrame][this.o];
 				break;
 		}
 
 		if (!this.swordSheathed) {
-			this.swordVO.gfxTile = T.SWORD[this.o];
+			this.swordVO.tileId = T.SWORD[this.o];
 		}
 	}
 

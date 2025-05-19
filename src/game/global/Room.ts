@@ -45,6 +45,7 @@ import { TWidgetLevelName } from "../widgets/TWidgetLevelName";
 import { TWidgetMinimap } from "../widgets/TWidgetMinimap";
 import { TWidgetScroll } from "../widgets/TWidgetScroll";
 import { RecamelCore } from "src.framework/net/retrocade/camel/core/RecamelCore";
+import { RoomSpritesRenderer } from "./RoomSpritesRenderer";
 
 const tarOrthoCheckX = [0, 1, 0, -1];
 const tarOrthoCheckY = [-1, 0, 1, 0];
@@ -83,7 +84,9 @@ export class Room {
 	public layerActive: DrodLayer;
 	public layerEffects: DrodLayer;
 	public layerDebug: DrodLayer;
+	// @FIXME change uses of this layer which are UI related to go into TStateGame's layer
 	public layerUnder: RecamelLayerSprite;
+	public layerSprites: RecamelLayerSprite;
 	public layerUI: RecamelLayerSprite;
 
 	public monsters = new RecamelGroup<TMonster>();
@@ -118,6 +121,7 @@ export class Room {
 	public checkpoints = new VOCheckpoints();
 
 	public roomTileRenderer = new RoomTileRenderer();
+	public roomSpritesRenderer = new RoomSpritesRenderer();
 
 
 	//{ Uncategorized
@@ -130,14 +134,19 @@ export class Room {
 	public constructor() {
 		this.layerUnder = RecamelLayerSprite.create();
 		this.layerActive = DrodLayer.create(S.RoomWidthPixels, S.RoomHeightPixels, S.LEVEL_OFFSET_X, S.LEVEL_OFFSET_Y);
+		this.layerSprites = RecamelLayerSprite.create();
 		this.layerEffects = DrodLayer.create(S.SIZE_GAME_WIDTH, S.SIZE_GAME_HEIGHT, 0, 0);
 		this.layerDebug = DrodLayer.create(S.RoomWidthPixels, S.RoomHeightPixels, S.LEVEL_OFFSET_X, S.LEVEL_OFFSET_Y);
 		this.layerUI = RecamelLayerSprite.create();
 
 		this.layerUnder.add(this.roomTileRenderer);
+		this.layerSprites.add(this.roomSpritesRenderer);
 
 		this.roomTileRenderer.x = S.LEVEL_OFFSET_X;
 		this.roomTileRenderer.y = S.LEVEL_OFFSET_Y;
+
+		this.roomSpritesRenderer.x = S.LEVEL_OFFSET_X;
+		this.roomSpritesRenderer.y = S.LEVEL_OFFSET_Y;
 
 		this.layerEffects.offsetX = S.LEVEL_OFFSET_X;
 		this.layerEffects.offsetY = S.LEVEL_OFFSET_Y;
@@ -151,6 +160,7 @@ export class Room {
 		if (PlatformOptions.isGame) {
 			this.layerUnder.removeLayer();
 			this.layerActive.removeLayer();
+			this.layerSprites.removeLayer();
 			this.layerEffects.removeLayer();
 			this.layerDebug.removeLayer();
 			this.layerUI.removeLayer();
@@ -1501,6 +1511,7 @@ export class Room {
 	public setSaturation(saturation: number) {
 		this.layerActive.saturation = saturation;
 		this.layerUnder.saturation = saturation;
+		this.layerSprites.saturation = saturation;
 	}
 
 	public drawRoom() {
@@ -1598,11 +1609,16 @@ export class Room {
 			transform: Matrix.IDENTITY.translate(-S.LEVEL_OFFSET_X, -S.LEVEL_OFFSET_Y),
 			clear: true,
 		});
-		RecamelCore.renderer.render(this.layerActive.displayObject, {
+		RecamelCore.renderer.render(this.layerSprites.displayObject, {
 			renderTexture: texture,
 			transform: Matrix.IDENTITY.translate(-S.LEVEL_OFFSET_X, -S.LEVEL_OFFSET_Y),
 			clear: false,
 		});
+		// RecamelCore.renderer.render(this.layerActive.displayObject, {
+			// renderTexture: texture,
+			// transform: Matrix.IDENTITY.translate(-S.LEVEL_OFFSET_X, -S.LEVEL_OFFSET_Y),
+			// clear: false,
+		// });
 	}
 
 	//}

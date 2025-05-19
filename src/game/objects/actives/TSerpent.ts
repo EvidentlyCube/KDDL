@@ -432,7 +432,7 @@ export class TSerpent extends TMonster {
 	public setGfx() {
 		const openMouth: boolean = (Game.player.x == this.x + F.getOX(this.o) && Game.player.y == this.y + F.getOY(this.o));
 
-		this.gfx = T.SERPENT[openMouth ? 1 : 0][this.o];
+		this.tileId = T.SERPENT[openMouth ? 1 : 0][this.o];
 	}
 
 	public onStabbed(sX: number, sY: number): boolean {

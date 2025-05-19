@@ -9,7 +9,7 @@ export class TBrain extends TMonster {
         public isAggressive():boolean{ return false; }
 
         public setGfx(){
-            this.gfx = T.BRAIN[this.animationFrame];
+            this.tileId = T.BRAIN[this.animationFrame];
         }
 
         public canSensePlayer():boolean {

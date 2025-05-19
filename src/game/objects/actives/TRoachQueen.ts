@@ -68,7 +68,7 @@ export class TRoachQueen extends TMonster {
 	}
 
 	public setGfx() {
-		this.gfx = T.RQUEEN[this.animationFrame][this.o];
+		this.tileId = T.RQUEEN[this.animationFrame][this.o];
 	}
 
 	public getBrainMovement(pathmap: Pathmap): boolean {

@@ -13,7 +13,7 @@ export class TSpider extends TRoach {
 	}
 
 	public setGfx() {
-		this.gfx = T.SPIDER[this.animationFrame][this.o];
+		this.tileId = T.SPIDER[this.animationFrame][this.o];
 	}
 
 	private _isHidden: boolean = true;
@@ -39,12 +39,7 @@ export class TSpider extends TRoach {
 	}
 
 	public update() {
-		if (!this._isHidden) {
-
-			this.room.layerActive.drawTileRectPrecise(Gfx.GENERAL_TILES, this.gfx,
-				this.x * S.RoomTileWidth + (this.prevX - this.x) * TStateGame.offset * S.RoomTileWidth,
-				this.y * S.RoomTileHeight + (this.prevY - this.y) * TStateGame.offset * S.RoomTileHeight,
-				this._alpha);
-		}
+		super.update();
+		this.room.roomSpritesRenderer.setObjectAlpha(this, this._isHidden ? 0 : this._alpha);
 	}
 }

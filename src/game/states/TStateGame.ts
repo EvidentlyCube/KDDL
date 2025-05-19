@@ -68,13 +68,17 @@ import { TStateOutro } from "./TStateOutro";
 import { Sprite } from "pixi.js";
 
 export class TStateGame extends RecamelState {
-	private static _instance: TStateGame = new TStateGame();
+	private static _instance: TStateGame;
 
 	public static show() {
-		TStateGame._instance.setState();
+		TStateGame.instance.setState();
 	}
 
 	public static get instance(): TStateGame {
+		if (!TStateGame._instance) {
+			TStateGame._instance = new TStateGame();
+		}
+
 		return TStateGame._instance;
 	}
 
@@ -102,9 +106,6 @@ export class TStateGame extends RecamelState {
 
 	public isRoomSliderKeyReleased: boolean = true;
 
-	private static swordDraws: VOSwordDraw[] = [];
-	private static swordDrawsCount: number = 0;
-
 	/**
 	 * Helper variable used by debugTile();
 	 */
@@ -126,6 +127,9 @@ export class TStateGame extends RecamelState {
 
 		this.uiLayer = RecamelLayerSprite.create();
 		this.uiLayer.visible = false;
+
+		(window as any).debugState = this;
+		(window as any).Game = Game;
 	}
 
 	public update() {
@@ -628,22 +632,31 @@ export class TStateGame extends RecamelState {
 			TStateGame.effectsUnder.update();
 			Game.player.update();
 			Game.room.monsters.update();
-			for (const so of TStateGame.swordDraws) {
-				Game.room.layerActive.blitTileRectPrecise(Gfx.GENERAL_TILES, so.gfxTile, so.x, so.y);
-			}
+			Game.room.roomSpritesRenderer.renderSwords();
 
 			TWidgetOrbHighlight.update();
 			TStateGame.effectsAbove.update();
 
 			TWidgetMoveCounter.draw();
 
-			TStateGame.swordDraws.length = TStateGame.swordDrawsCount = 0;
+			Game.room.roomSpritesRenderer.resetSwordDraws();
 		} else {
 			TStateGame.offset = TGameObject.offset = TStateGame.offsetNow = 0;
 		}
 	}
 
 	public processEvents() {
+		if (CueEvents.hasOccurred(C.CID_MONSTER_DIED_FROM_STAB)) {
+			for (
+				let monster = CueEvents.getFirstPrivateData(C.CID_MONSTER_DIED_FROM_STAB);
+				monster != null;
+				monster = CueEvents.getNextPrivateData()
+			) {
+				Game.room.roomSpritesRenderer.destroyObject(monster);
+			}
+		}
+
+
 		if (CueEvents.hasOccurred(C.CID_EXIT_LEVEL_PENDING) || CueEvents.hasOccurred(C.CID_WIN_GAME)) {
 			if (F.isStairs(Game.room.tilesOpaque[Game.player.x + Game.player.y * S.RoomWidth])) {
 				new TEffectWalkStairs();
@@ -1063,9 +1076,6 @@ export class TStateGame extends RecamelState {
 	private resetState() {
 		this.commandQueue.length = 0;
 
-		TStateGame.swordDraws.length = 0;
-		TStateGame.swordDrawsCount = 0;
-
 		this.isStoppingEffectPlaying = false;
 		this.isRoomClearedOnce = false;
 		this.isScrollDisplayed = false;
@@ -1133,7 +1143,7 @@ export class TStateGame extends RecamelState {
 
 	public create() {
 		this.uiLayer.visible = true;
-		this.uiLayer.moveToFront
+		this.uiLayer.moveToBack();
 
 		HelpRoomOpener.enabled = true;
 		Game.statStartTime = Date.now();
@@ -1171,6 +1181,7 @@ export class TStateGame extends RecamelState {
 		Game.room.layerEffects.visible = false;
 		Game.room.layerActive.visible = false;
 		Game.room.layerUnder.visible = false;
+		Game.room.layerSprites.visible = false;
 		Game.room.layerDebug.visible = false;
 		Game.room.layerUI.visible = false;
 		Core.lMain.clear();
@@ -1189,6 +1200,7 @@ export class TStateGame extends RecamelState {
 		} else {
 			Game.room.layerActive.visible = true;
 			Game.room.layerUnder.visible = true;
+			Game.room.layerSprites.visible = true;
 			Game.room.layerEffects.visible = true;
 			Game.room.layerDebug.visible = true;
 			Game.room.layerUI.visible = true;
@@ -1203,11 +1215,13 @@ export class TStateGame extends RecamelState {
 		const entrance: Element = Level.getFirstHoldEntrance();
 		Game.loadFromLevelEntrance(intAttr(entrance, 'EntranceID'));
 		Game.room.layerUnder.visible = false;
+		Game.room.layerSprites.visible = false;
 		Game.room.layerActive.visible = false;
 		Game.room.layerEffects.visible = false;
 		Game.room.layerDebug.visible = false;
 		TWindowLevelStart.show(intAttr(entrance, 'EntranceID'), true);
 		Game.room.layerUnder.visible = true;
+		Game.room.layerSprites.visible = true;
 		Game.room.layerActive.visible = true;
 		Game.room.layerEffects.visible = true;
 		Game.room.layerDebug.visible = true;
@@ -1222,10 +1236,6 @@ export class TStateGame extends RecamelState {
 		TWidgetMinimap.changedLevel(Game.room.levelId);
 		TStateGame.show();
 		TStateGame.instance.processSpeech();
-	}
-
-	public static addSwordDraw(swordVO: VOSwordDraw) {
-		TStateGame.swordDraws[TStateGame.swordDrawsCount++] = swordVO;
 	}
 
 	private describeTile(x: number, y: number) {

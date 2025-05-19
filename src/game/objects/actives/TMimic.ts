@@ -29,8 +29,8 @@ export class TMimic extends TPlayerDouble {
 	}
 
 	public setGfx() {
-		this.gfx = T.MIMIC[this.o];
-		this.swordVO.gfxTile = T.MIMIC_SWORD[this.o];
+		this.tileId = T.MIMIC[this.o];
+		this.swordVO.tileId = T.MIMIC_SWORD[this.o];
 	}
 
 	public update() {
@@ -38,7 +38,7 @@ export class TMimic extends TPlayerDouble {
 
 		this.swordVO.x = this.swordX * S.RoomTileWidth + (this.prevX - this.x) * TStateGame.offset * S.RoomTileWidth;
 		this.swordVO.y = this.swordY * S.RoomTileHeight + (this.prevY - this.y) * TStateGame.offset * S.RoomTileHeight;
-		TStateGame.addSwordDraw(this.swordVO);
+		this.room.roomSpritesRenderer.registerSwordDraw(this.swordVO);
 	}
 
 	public doesSquareContainObstacle(x: number, y: number): boolean {

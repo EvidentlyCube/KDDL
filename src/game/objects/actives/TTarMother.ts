@@ -46,19 +46,19 @@ export class TTarMother extends TMonster {
 	public setGfx() {
 		switch (this.o) {
 			case(C.NO_ORIENTATION):
-				this.gfx = T.TI_TMOTHER_WO;
+				this.tileId = T.TI_TMOTHER_WO;
 				break;
 
 			case(C.S):
-				this.gfx = T.TI_TMOTHER_EO;
+				this.tileId = T.TI_TMOTHER_EO;
 				break;
 
 			case(C.W):
-				this.gfx = T.TI_TMOTHER_WC;
+				this.tileId = T.TI_TMOTHER_WC;
 				break;
 
 			case(C.SW):
-				this.gfx = T.TI_TMOTHER_EC;
+				this.tileId = T.TI_TMOTHER_EC;
 				break;
 		}
 

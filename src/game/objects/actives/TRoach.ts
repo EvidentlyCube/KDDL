@@ -23,6 +23,6 @@ export class TRoach extends TMonster {
 	}
 
 	public setGfx() {
-		this.gfx = T.ROACH[this.animationFrame][this.o];
+		this.tileId = T.ROACH[this.animationFrame][this.o];
 	}
 }

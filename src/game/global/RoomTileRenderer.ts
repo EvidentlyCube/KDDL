@@ -52,6 +52,7 @@ export class RoomTileRenderer extends Container {
 
 		this.blit = new Blitter(this);
 	}
+
 	public prepareRoom(
 		styleName: StyleName,
 		layerO: number[],
@@ -1465,7 +1466,6 @@ class Blitter {
 		this.container.removeChildren();
 
 		for (let x = 0; x < S.RoomWidth; x++) {
-			this.sprites[x] = [];
 			for (let y = 0; y < S.RoomHeight; y++) {
 				this.sprites[x][y].length = 0;
 			}

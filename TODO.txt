@@ -1,5 +1,6 @@
 BUGS:
  - Update translation files for other languages
+ - Music stacks sometimes somehow
 
 FUTURE IMPROVEMENTS:
  - The firefox flicker bug

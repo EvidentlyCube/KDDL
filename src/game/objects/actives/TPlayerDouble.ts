@@ -13,7 +13,7 @@ export class TPlayerDouble extends TMonster {
 
 	public swordSheathed: boolean = false;
 
-	public swordVO: VOSwordDraw = {x: 0, y: 0, gfxTile: 0};
+	public swordVO: VOSwordDraw = {x: 0, y: 0, tileId: 0};
 
 	public doesSquareContainObstacle(x: number, y: number): boolean {
 		if (super.doesSquareContainObstacle(x, y)) {

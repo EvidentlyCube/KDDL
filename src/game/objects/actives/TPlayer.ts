@@ -22,7 +22,7 @@ export class TPlayer extends TGameObject {
 	public doubleCursorX: number = 0;
 	public doubleCursorY: number = 0;
 
-	public swordVO: VOSwordDraw = {x: 0, y: 0, gfxTile: 0};
+	public swordVO: VOSwordDraw = {x: 0, y: 0, tileId: 0};
 
 	public hidePlayer: boolean = false;
 
@@ -37,11 +37,11 @@ export class TPlayer extends TGameObject {
 				false
 			)
 		) {
-			this.gfx = T.DECOY[this.o];
-			this.swordVO.gfxTile = T.DECOY_SWORD[this.o];
+			this.tileId = T.DECOY[this.o];
+			this.swordVO.tileId = T.DECOY_SWORD[this.o];
 		} else {
-			this.swordVO.gfxTile = T.SWORD[this.o];
-			this.gfx = T.BEETHRO[this.o];
+			this.swordVO.tileId = T.SWORD[this.o];
+			this.tileId = T.BEETHRO[this.o];
 		}
 	}
 
@@ -50,12 +50,11 @@ export class TPlayer extends TGameObject {
 			return;
 		}
 
-
 		super.update();
 
 		this.swordVO.x = this.swordX * S.RoomTileWidth + (this.prevX - this.x) * TStateGame.offset * S.RoomTileWidth;
 		this.swordVO.y = this.swordY * S.RoomTileHeight + (this.prevY - this.y) * TStateGame.offset * S.RoomTileHeight;
-		TStateGame.addSwordDraw(this.swordVO);
+		this.room.roomSpritesRenderer.registerSwordDraw(this.swordVO);
 	}
 
 	public drawTo(x: number, y: number, o: number, room: Room) {

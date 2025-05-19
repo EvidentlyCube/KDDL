@@ -1,3 +1,7 @@
+## 1.6.?? - ????-??-??
+ - [BUGFIX] Minimap will correctly render if you first restore to a room and then use restore function without leaving the room
+ - [OTHER] Monsters & player rendering is now GPU accelerated
+
 ## 1.6.11 - 2025-05-19
  - [BUGFIX] Fixed a bug where roach queens were using brained movement when standing on an arrow which is not how things work in regular DROD.
  - [BUGFIX] Fixed a bug where minimap would not update a room when it was conquer pending or left after conquering.

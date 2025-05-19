@@ -1,7 +1,5 @@
 import {RecamelObject} from "../../../src.framework/net/retrocade/camel/objects/RecamelObject";
 import {Room} from "../global/Room";
-import {Gfx} from "../global/Gfx";
-import {S} from "../../S";
 
 export class TGameObject extends RecamelObject {
 	static offset: number = 0;
@@ -14,7 +12,7 @@ export class TGameObject extends RecamelObject {
 	public prevY: number;
 	public prevO: number;
 
-	public gfx: number;
+	public tileId: number;
 
 	public room: Room;
 
@@ -27,16 +25,11 @@ export class TGameObject extends RecamelObject {
 		this.prevX = 0;
 		this.prevY = 0;
 		this.prevO = 0;
-		this.gfx = 0;
+		this.tileId = 0;
 		this.room = undefined!;
 	}
 
 	public update() {
-		this.room.layerActive.blitTileRectPrecise(
-			Gfx.GENERAL_TILES,
-			this.gfx,
-			this.x * S.RoomTileWidth + (this.prevX - this.x) * TGameObject.offset * S.RoomTileWidth,
-			this.y * S.RoomTileHeight + (this.prevY - this.y) * TGameObject.offset * S.RoomTileHeight,
-		);
+		this.room.roomSpritesRenderer.renderObject(this, this.tileId, this.prevX, this.prevY, this.x, this.y);
 	}
 }

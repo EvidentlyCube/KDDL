@@ -56,6 +56,6 @@ export class TWraithwing extends TMonster {
 	}
 
 	public setGfx() {
-		this.gfx = T.WWING[this.animationFrame][this.o];
+		this.tileId = T.WWING[this.animationFrame][this.o];
 	}
 }

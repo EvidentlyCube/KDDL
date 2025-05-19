@@ -19,7 +19,7 @@ export class TRoachEgg extends TMonster {
 
 	public setGfx() {
 		ASSERT(this.o == C.SW || this.o == C.W || this.o == C.NW || this.o == C.N);
-		this.gfx = T.REGG[this.animationFrame][this.o];
+		this.tileId = T.REGG[this.animationFrame][this.o];
 	}
 
 	public process(lastCommand: number) {

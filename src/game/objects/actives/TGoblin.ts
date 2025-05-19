@@ -21,6 +21,6 @@ export class TGoblin extends TMonster {
 	}
 
 	public setGfx() {
-		this.gfx = T.GOBLIN[this.animationFrame][this.o];
+		this.tileId = T.GOBLIN[this.animationFrame][this.o];
 	}
 }

@@ -11,7 +11,6 @@ import RawInput from "../../../src.tn/RawInput";
 import { S } from "../../S";
 import { intAttr } from "../../XML";
 import { Commands } from "../global/Commands";
-import { Game } from "../global/Game";
 import { Gfx } from "../global/Gfx";
 import { Level } from "../global/Level";
 import { Make } from "../global/Make";
@@ -24,6 +23,7 @@ import { TWidgetMinimap } from "../widgets/TWidgetMinimap";
 import { TWindowMessage } from "../windows/TWindowMessage";
 import { TStateGame } from "./TStateGame";
 import { TStateTitle } from "./TStateTitle";
+import { TPlayer } from "../objects/actives/TPlayer";
 
 export class TStateRestore extends RecamelState {
 	private static _instance: TStateRestore;
@@ -326,11 +326,18 @@ export class TStateRestore extends RecamelState {
 		this.currentRoomId = roomID;
 
 		const room = new Room();
+		const player = new TPlayer();
+
 		this._layer.add(TWidgetMinimap.container); // Hack becuase new room will retake ownership of this
 		room.loadRoom(roomID);
 		room.drawRoom();
-		Game.player.drawTo(roomStateData.x, roomStateData.y, roomStateData.o, room);
+		player.room = room;
+		player.prevO = player.o = roomStateData.o;
+		player.setPosition(roomStateData.x, roomStateData.y, true);
+		player.setGfx();
+		player.update();
 		room.monsters.update();
+		room.roomSpritesRenderer.renderSwords();
 
 		room.renderInto(this._levelPreviewTexture);
 

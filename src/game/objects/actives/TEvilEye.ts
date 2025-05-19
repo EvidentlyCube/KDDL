@@ -156,7 +156,7 @@ export class TEvilEye extends TMonster {
 	}
 
 	public setGfx() {
-		this.gfx = T.EEYE[this.isAwake ? 2 : this.animationFrame][this.o];
+		this.tileId = T.EEYE[this.isAwake ? 2 : this.animationFrame][this.o];
 	}
 }
 
