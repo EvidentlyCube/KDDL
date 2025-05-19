@@ -1,4 +1,4 @@
-import { Matrix, RenderTexture } from "pixi.js";
+import { Extract, Matrix, RenderTexture } from "pixi.js";
 import { RecamelCore } from "src.framework/net/retrocade/camel/core/RecamelCore";
 import { UtilsBitmapData } from "src.framework/net/retrocade/utils/UtilsBitmapData";
 import { C, HoldId } from "src/C";
@@ -62,30 +62,20 @@ export const KddlApi = {
             room.drawRoom();
 
             room.monsters.update();
+            room.roomSpritesRenderer.renderSwords();
 
             const texture = RenderTexture.create({
                 width: S.RoomWidthPixels,
                 height: S.RoomHeightPixels
             });
 
-            RecamelCore.renderer.render(room.layerUnder.displayObject, {
-                renderTexture: texture,
-                transform: Matrix.IDENTITY.translate(-S.LEVEL_OFFSET_X, -S.LEVEL_OFFSET_Y),
-                clear: true,
-            });
-
-            const roomBitmapData = F.newCanvasContext(S.RoomWidthPixels, S.RoomHeightPixels);
-            UtilsBitmapData.blitPart(
-                room.layerActive.bitmapData.canvas,
-                roomBitmapData,
-                0, 0,
-                0, 0,
-                S.RoomWidthPixels, S.RoomHeightPixels
-            );
+            room.renderInto(texture);
+            const extract = RecamelCore.renderer.plugins.extract as Extract;
+            const canvas = extract.canvas(texture);
 
             room.clear();
 
-            return canvasToPng(roomBitmapData.canvas);
+            return canvasToPng(canvas);
 
         } catch (e: unknown) {
             return -3;

@@ -22,7 +22,7 @@ export const Gfx = {
 	TutorialKeysTexture: null! as PIXI.Texture,
 	FacesTexture: null! as PIXI.Texture,
 	FaceEyesTexture: null! as PIXI.Texture,
-	FacePupils: null! as PIXI.Texture,
+	EffectsTexture: null! as PIXI.Texture,
 
 	TUTORIAL_KEYS: null! as HTMLImageElement,
 
@@ -197,6 +197,6 @@ export const Gfx = {
 		Gfx.ScrollsTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.SCROLLS));
 		Gfx.FacesTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.FACES));
 		Gfx.FaceEyesTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.FACE_EYES));
-		Gfx.FacePupils = new PIXI.Texture(new PIXI.BaseTexture(Gfx.PUPILS));
+		Gfx.EffectsTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.EFFECTS));
 	},
 };
