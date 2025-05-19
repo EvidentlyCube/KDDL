@@ -1,3 +1,6 @@
+## 1.6.11 - ????-??-??
+ - [BUGFIX] Fixed a bug where roach queens were using brained movement when standing on an arrow which is not how things work in regular DROD.
+
 ## 1.6.10 - 2025-05-18
  - [BUGFIX] Dying then undoing then restarting the game will no longer restore you to the turn when you're dead (in a quasi-softlocked state).
  - [BUGFIX] Hold score (the one on the list of holds) now gets updated immediately after getting an achievement as opposed to when changing the room/loading a hold.

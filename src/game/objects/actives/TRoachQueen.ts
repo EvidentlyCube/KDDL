@@ -77,17 +77,12 @@ export class TRoachQueen extends TMonster {
 			case(C.T_POTION_I):
 			case(C.T_POTION_M):
 			case(C.T_SCROLL):
-			case(C.T_ARROW_NW):
-			case(C.T_ARROW_N):
-			case(C.T_ARROW_NE):
-			case(C.T_ARROW_W):
-			case(C.T_ARROW_E):
-			case(C.T_ARROW_SW):
-			case(C.T_ARROW_S):
-			case(C.T_ARROW_SE):
 				break;
 
 			default:
+				if (F.isArrow(this.room.tilesFloor[this.x + this.y * S.RoomWidth])) {
+					break;
+				}
 				brained = this.setBrainTileFirst(pathmap);
 				break;
 		}

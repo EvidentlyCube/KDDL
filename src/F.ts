@@ -26,10 +26,6 @@ const FLOORS = new Set([
 
 const _calculatedDistances = new Map<number, number>();
 export const F = {
-	renderRoomInto(texture: RenderTexture, layerUnder: RecamelLayerSprite, layerActive: DrodLayer) {
-
-	},
-
 	destroyCanvas(source: HTMLCanvasElement | CanvasRenderingContext2D) {
 		if (source instanceof HTMLCanvasElement) {
 			source.width = 0;
