@@ -5,6 +5,7 @@
  - [OTHER] All visual effects are now GPU accelerated
  - [OTHER] Floating number rounding error artifacts should no longer be present
  - [OTHER] Added new debug console command `clear-room`
+ - {1.6.12.1} [BUGFIX] Roach eggs now properly disappear after hatching
 
 ## 1.6.11 - 2025-05-19
  - [BUGFIX] Fixed a bug where roach queens were using brained movement when standing on an arrow which is not how things work in regular DROD.

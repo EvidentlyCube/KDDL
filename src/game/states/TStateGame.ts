@@ -632,6 +632,16 @@ export class TStateGame extends RecamelState {
 			}
 		}
 
+		if (CueEvents.hasOccurred(C.CID_EGG_HATCHED)) {
+			for (
+				let egg = CueEvents.getFirstPrivateData(C.CID_EGG_HATCHED);
+				egg != null;
+				egg = CueEvents.getNextPrivateData()
+			) {
+				Game.room.roomSpritesRenderer.destroyObject(egg);
+			}
+		}
+
 
 		if (CueEvents.hasOccurred(C.CID_EXIT_LEVEL_PENDING) || CueEvents.hasOccurred(C.CID_WIN_GAME)) {
 			if (F.isStairs(Game.room.tilesOpaque[Game.player.x + Game.player.y * S.RoomWidth])) {
