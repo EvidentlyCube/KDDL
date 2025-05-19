@@ -1,11 +1,8 @@
-export class VOParticle {
-	public x: number = 0;
-	public y: number = 0;
+import { Sprite } from "pixi.js";
 
-	public mx: number = 0;
-	public my: number = 0;
-
-	public type: number = 0;
+export class VOParticle extends Sprite{
+	public deltaX: number = 0;
+	public deltaY: number = 0;
 
 	public timeLeft: number = 0;
 	public active: boolean = false;

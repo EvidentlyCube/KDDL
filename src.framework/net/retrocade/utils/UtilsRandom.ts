@@ -41,7 +41,11 @@ export const UtilsRandom = {
 	/**
 	 * Retrieves a random number of value (-a, a)
 	 */
-	fmid(a: number): number {
+	fMid(a: number): number {
 		return (((((seed = (seed * 16807) % 0x7FFFFFFF)) - 1) / 0x7FFFFFFF)) * a * 2 - a;
 	},
+
+	from<T>(array: T[]): T {
+		return array[UtilsRandom.uint(0, array.length)];
+	}
 }

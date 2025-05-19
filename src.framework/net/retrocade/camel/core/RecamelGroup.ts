@@ -107,6 +107,10 @@ export class RecamelGroup<T extends RecamelObject> extends RecamelObject {
 	 * Splices all Nulled objects from group, Order is retained.
 	 */
 	public garbageCollectAdvanced(): void {
+		if (this._nulled === 0) {
+			return;
+		}
+
 		let l = this._length;
 		let i = 0;
 		let gap = 0;

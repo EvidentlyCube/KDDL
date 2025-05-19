@@ -4,15 +4,19 @@ import {VOCoord} from "../../managers/VOCoord";
 import {S} from "../../../S";
 import {C} from "../../../C";
 import {UtilsRandom} from "../../../../src.framework/net/retrocade/utils/UtilsRandom";
+import { Container, Texture } from "pixi.js";
+import { TStateGame } from "src/game/states/TStateGame";
+import { Game } from "src/game/global/Game";
 
 export class TEffectParticles extends TEffect {
+	protected _container: Container;
 	protected particles: VOParticle[];
 
 	protected origin: VOCoord;
 	protected count: number;
 	protected minDuration: number;
 	protected speed: number;
-	protected types: number;
+	protected _textures: Texture[];
 
 	protected originX: number;
 	protected originY: number;
@@ -26,14 +30,24 @@ export class TEffectParticles extends TEffect {
 	protected spreadX: number;
 	protected spreadY: number;
 
-	protected continous: boolean;
+	protected continuous: boolean;
 
 	protected fromEdge: boolean;
 
-	public constructor(_origin: VOCoord, _maxWidth: number, _maxHeight: number, _types: number, _minParticles: number = 25,
-	                   _minDuration: number = 7, _speed: number = 4, _continous: boolean = false, _fromEdge: boolean = false,
+	public constructor(
+		_origin: VOCoord,
+		_maxWidth: number,
+		_maxHeight: number,
+		textures: Texture[],
+		_minParticles: number = 25,
+		_minDuration: number = 7,
+		_speed: number = 4,
+		_continuous: boolean = false,
+		_fromEdge: boolean = false,
 	) {
 		super();
+
+		this._container = new Container();
 
 		this.spreadX = 0;
 		this.spreadY = 0;
@@ -47,8 +61,11 @@ export class TEffectParticles extends TEffect {
 		this.fromEdge = _fromEdge;
 		this.maxWidth = _maxWidth;
 		this.maxHeight = _maxHeight;
-		this.continous = _continous;
-		this.types = _types;
+		this.continuous = _continuous;
+		this._textures = textures;
+
+		this._container.x = S.LEVEL_OFFSET_X;
+		this._container.y = S.LEVEL_OFFSET_Y;
 
 		this.originX = this.origin.x * S.RoomTileWidth;
 		this.originY = this.origin.y * S.RoomTileHeight;
@@ -145,22 +162,26 @@ export class TEffectParticles extends TEffect {
 		this.particles = [];
 
 		for (let i: number = 0; i < this.count; i++) {
-			this.resetParticle(i);
+			this.createParticle(i);
 		}
+
+		TStateGame.effectsAbove.add(this);
+		Game.room.layerUnder.add(this._container);
 	}
 
-	protected resetParticle(index: number) {
+	protected createParticle(index: number) {
 		const particle = new VOParticle();
 
 		particle.x = this.originX;
 		particle.y = this.originY;
-		particle.mx = this.offsetX + UtilsRandom.fmid(this.spreadX * 0.5);
-		particle.my = this.offsetY + UtilsRandom.fmid(this.spreadY * 0.5);
+		particle.deltaX = this.offsetX + UtilsRandom.fMid(this.spreadX * 0.5);
+		particle.deltaY = this.offsetY + UtilsRandom.fMid(this.spreadY * 0.5);
 		particle.timeLeft = this.minDuration;
-		particle.type = UtilsRandom.fraction() * this.types | 0;
+		particle.texture = UtilsRandom.from(this._textures);
 		particle.active = true;
 
 		this.particles[index] = particle;
+		this._container.addChild(particle);
 	}
 
 	/**
@@ -174,12 +195,13 @@ export class TEffectParticles extends TEffect {
 				continue;
 			}
 
-			p.x += p.mx;
-			p.y += p.my;
+			p.x += p.deltaX;
+			p.y += p.deltaY;
 
 			if (UtilsRandom.fraction() * 2 | 0) {
 				if (!--p.timeLeft) {
 					p.active = false;
+					p.visible = false;
 					continue;
 				}
 			}
@@ -197,8 +219,8 @@ export class TEffectParticles extends TEffect {
 	protected hitsObstacle(particle: VOParticle): boolean {
 		const index: number = (particle.x / S.RoomTileWidth | 0) +
 			(particle.y / S.RoomTileHeight | 0) * S.RoomWidth;
-		const oldIndex: number = ((particle.x - particle.mx) / S.RoomTileWidth | 0) +
-			((particle.y - particle.my) / S.RoomTileHeight | 0) * S.RoomWidth;
+		const oldIndex: number = ((particle.x - particle.deltaX) / S.RoomTileWidth | 0) +
+			((particle.y - particle.deltaY) / S.RoomTileHeight | 0) * S.RoomWidth;
 
 		if (index == oldIndex) {
 			return false;
@@ -239,15 +261,28 @@ export class TEffectParticles extends TEffect {
 	}
 
 	protected reflectParticle(particle: VOParticle) {
-		particle.x -= particle.mx;
-		particle.y -= particle.my;
+		particle.x -= particle.deltaX;
+		particle.y -= particle.deltaY;
 
 		if (UtilsRandom.fraction() * 2 | 0) {
-			particle.mx = -particle.mx;
-			particle.x += particle.mx;
+			particle.deltaX = -particle.deltaX;
+			particle.x += particle.deltaX;
 		} else {
-			particle.my = -particle.my;
-			particle.y += particle.my;
+			particle.deltaY = -particle.deltaY;
+			particle.y += particle.deltaY;
 		}
+	}
+
+	public update() {
+		if (!this.moveParticles()) {
+			this.end();
+		}
+	}
+
+	public end(): void {
+		super.end();
+
+		TStateGame.effectsAbove.nullify(this);
+		this._container.parent?.removeChild(this._container);
 	}
 }
