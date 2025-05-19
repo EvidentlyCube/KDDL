@@ -72,7 +72,7 @@ export class RoomSpritesRenderer extends Container {
 			this._spritesContainer.addChild(sprite);
 		}
 
-		sprite.texture = this.getTexture(tileId);
+		sprite.texture = Gfx.getGeneralTilesTexture(tileId);
 		sprite.x = x * S.RoomTileWidth + (prevX - x) * TGameObject.offset * S.RoomTileWidth;
 		sprite.y = y * S.RoomTileHeight + (prevY - y) * TGameObject.offset * S.RoomTileHeight;
 	}
@@ -97,7 +97,7 @@ export class RoomSpritesRenderer extends Container {
 				this._swordSprites[i] = sprite;
 			}
 
-			sprite.texture = this.getTexture(swordDraw.tileId);
+			sprite.texture = Gfx.getGeneralTilesTexture(swordDraw.tileId);
 			sprite.x = swordDraw.x;
 			sprite.y = swordDraw.y;
 		}

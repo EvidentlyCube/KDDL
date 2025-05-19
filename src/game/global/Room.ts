@@ -39,13 +39,14 @@ import {TBrain} from "../objects/actives/TBrain";
 import {PackedVars} from "./PackedVars";
 import {TPlayerDouble} from "../objects/actives/TPlayerDouble";
 import {RecamelLayerSprite} from "../../../src.framework/net/retrocade/camel/layers/RecamelLayerSprite";
-import { Matrix, RenderTexture, Sprite } from "pixi.js";
+import { Container, Matrix, RenderTexture, Sprite } from "pixi.js";
 import { TWidgetFace } from "../widgets/TWidgetFace";
 import { TWidgetLevelName } from "../widgets/TWidgetLevelName";
 import { TWidgetMinimap } from "../widgets/TWidgetMinimap";
 import { TWidgetScroll } from "../widgets/TWidgetScroll";
 import { RecamelCore } from "src.framework/net/retrocade/camel/core/RecamelCore";
 import { RoomSpritesRenderer } from "./RoomSpritesRenderer";
+import { MimicPlacement } from "../objects/effects/TMimicPlacement";
 
 const tarOrthoCheckX = [0, 1, 0, -1];
 const tarOrthoCheckY = [-1, 0, 1, 0];
@@ -82,11 +83,11 @@ export class Room {
 	public tilesSwords: number[] = [];
 
 	public layerActive: DrodLayer;
-	public layerEffects: DrodLayer;
 	public layerDebug: DrodLayer;
 	// @FIXME change uses of this layer which are UI related to go into TStateGame's layer
 	public layerUnder: RecamelLayerSprite;
 	public layerSprites: RecamelLayerSprite;
+	public layerEffectsTextured: RecamelLayerSprite;
 	public layerUI: RecamelLayerSprite;
 
 	public monsters = new RecamelGroup<TMonster>();
@@ -122,6 +123,7 @@ export class Room {
 
 	public roomTileRenderer = new RoomTileRenderer();
 	public roomSpritesRenderer = new RoomSpritesRenderer();
+	public mimicPlacement = new MimicPlacement();
 
 
 	//{ Uncategorized
@@ -135,21 +137,19 @@ export class Room {
 		this.layerUnder = RecamelLayerSprite.create();
 		this.layerActive = DrodLayer.create(S.RoomWidthPixels, S.RoomHeightPixels, S.LEVEL_OFFSET_X, S.LEVEL_OFFSET_Y);
 		this.layerSprites = RecamelLayerSprite.create();
-		this.layerEffects = DrodLayer.create(S.SIZE_GAME_WIDTH, S.SIZE_GAME_HEIGHT, 0, 0);
+		this.layerEffectsTextured = RecamelLayerSprite.create();
 		this.layerDebug = DrodLayer.create(S.RoomWidthPixels, S.RoomHeightPixels, S.LEVEL_OFFSET_X, S.LEVEL_OFFSET_Y);
 		this.layerUI = RecamelLayerSprite.create();
 
 		this.layerUnder.add(this.roomTileRenderer);
 		this.layerSprites.add(this.roomSpritesRenderer);
+		this.layerEffectsTextured.add(this.mimicPlacement);
 
 		this.roomTileRenderer.x = S.LEVEL_OFFSET_X;
 		this.roomTileRenderer.y = S.LEVEL_OFFSET_Y;
 
 		this.roomSpritesRenderer.x = S.LEVEL_OFFSET_X;
 		this.roomSpritesRenderer.y = S.LEVEL_OFFSET_Y;
-
-		this.layerEffects.offsetX = S.LEVEL_OFFSET_X;
-		this.layerEffects.offsetY = S.LEVEL_OFFSET_Y;
 	}
 
 	public clear() {
@@ -161,7 +161,7 @@ export class Room {
 			this.layerUnder.removeLayer();
 			this.layerActive.removeLayer();
 			this.layerSprites.removeLayer();
-			this.layerEffects.removeLayer();
+			this.layerEffectsTextured.removeLayer();
 			this.layerDebug.removeLayer();
 			this.layerUI.removeLayer();
 		}
@@ -405,7 +405,7 @@ export class Room {
 			this.roomTileRenderer.clearTiles();
 			this.roomSpritesRenderer.clearSprites();
 			this.layerActive.clearTiles();
-			this.layerEffects.clearTiles();
+			this.mimicPlacement.visible = false;
 		}
 
 

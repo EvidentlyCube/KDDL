@@ -4,11 +4,14 @@ import {S} from "../../../S";
 import {VOCoord} from "../../managers/VOCoord";
 import {TStateGame} from "../../states/TStateGame";
 import {BoltEffect} from "./BoltEffect";
+import { Container } from "pixi.js";
+import { Game } from "src/game/global/Game";
 
 const DURATION: number = 7;
 
 export class TEffectOrbBolts extends TEffect {
 
+	private _container: Container;
 	private endPositions: VOCoord[];
 
 	private orbCenterX: number;
@@ -19,6 +22,7 @@ export class TEffectOrbBolts extends TEffect {
 	public constructor(_orbData: VOOrb) {
 		super();
 
+		this._container = new Container();
 		this.orbCenterX = _orbData.x * S.RoomTileWidth + S.RoomTileWidthHalf;
 		this.orbCenterY = _orbData.y * S.RoomTileHeight + S.RoomTileHeightHalf;
 
@@ -31,16 +35,26 @@ export class TEffectOrbBolts extends TEffect {
 		}
 
 		TStateGame.effectsAbove.add(this);
+		Game.room.layerSprites.add(this._container);
 	}
 
 	public update() {
 		if (this.duration++ == DURATION) {
-			TStateGame.effectsAbove.nullify(this);
+			this.end();
 			return;
 		}
 
+		this._container.removeChildren();
 		for (const coord of this.endPositions) {
-			BoltEffect.drawBolt(this.orbCenterX, this.orbCenterY, coord.x, coord.y, this.room.layerActive.bitmapData);
+			BoltEffect.drawBolt(this.orbCenterX, this.orbCenterY, coord.x, coord.y, this._container);
 		}
+	}
+
+
+	public end(): void {
+		super.end();
+
+		TStateGame.effectsAbove.nullify(this);
+		this._container.parent?.removeChild(this._container);
 	}
 }

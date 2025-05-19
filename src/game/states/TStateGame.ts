@@ -482,37 +482,22 @@ export class TStateGame extends RecamelState {
 	}
 
 	private drawMimicPlacement() {
+		Game.room.mimicPlacement.visible = false;
 		if (Game.player.placingDoubleType) {
-			Game.room.layerEffects.clear();
-			BoltEffect.drawBolt(
-				Game.player.x * S.RoomTileWidth + S.RoomTileWidthHalf + S.LEVEL_OFFSET_X,
-				Game.player.y * S.RoomTileHeight + S.RoomTileHeightHalf + S.LEVEL_OFFSET_Y,
-				Game.player.doubleCursorX * S.RoomTileWidth + S.RoomTileWidthHalf + S.LEVEL_OFFSET_X,
-				Game.player.doubleCursorY * S.RoomTileHeight + S.RoomTileHeightHalf + S.LEVEL_OFFSET_Y,
-				Game.room.layerEffects.bitmapData,
-			);
-
-			if (Game.room.doesSquareContainDoublePlacementObstacle(
-				Game.player.doubleCursorX, Game.player.doubleCursorY)) {
-				Game.room.layerEffects.blitRect(Game.player.doubleCursorX * S.RoomTileWidth,
-					Game.player.doubleCursorY * S.RoomTileHeight,
-					S.RoomTileWidth,
-					S.RoomTileHeight, 0x88FF0000);
-			}
-
-			Game.room.layerEffects.blitTileRect(Gfx.GENERAL_TILES, T.MIMIC[Game.player.o],
+			Game.room.mimicPlacement.visible = true;
+			Game.room.mimicPlacement.update(
+				Game.player.x,
+				Game.player.y,
 				Game.player.doubleCursorX,
-				Game.player.doubleCursorY);
-
-			Game.room.layerEffects.blitTileRect(Gfx.GENERAL_TILES, T.MIMIC_SWORD[Game.player.o],
-				Game.player.doubleCursorX + F.getOX(Game.player.o),
-				Game.player.doubleCursorY + F.getOY(Game.player.o));
+				Game.player.doubleCursorY,
+				Game.player.o,
+				Game.room.doesSquareContainDoublePlacementObstacle(Game.player.doubleCursorX, Game.player.doubleCursorY)
+			);
 		}
 	}
 
 	private updateTextures() {
 		Game.room.layerActive.baseTexture.update();
-		Game.room.layerEffects.baseTexture.update();
 		if (PlatformOptions.isDebug) {
 			Game.room.layerDebug.baseTexture.update();
 		}
@@ -571,8 +556,6 @@ export class TStateGame extends RecamelState {
 	private drawAfterTurn() {
 		Game.room.drawPlots();
 
-		Game.room.layerEffects.clear();
-
 		TWidgetClock.update(!this.isScrollDisplayed && Game.room.isTimerNeeded(), Game.spawnCycleCount);
 
 		TWidgetOrbHighlight.isActive = false;
@@ -581,11 +564,12 @@ export class TStateGame extends RecamelState {
 
 		// Draw Invisibility rectangle
 		if (Game.isInvisible) {
-			Game.room.layerEffects.blitRectDirect(
-				Game.player.x * S.RoomTileWidth - C.DEFAULT_SMELL_RANGE * S.RoomTileWidth + S.LEVEL_OFFSET_X,
-				Game.player.y * S.RoomTileHeight - C.DEFAULT_SMELL_RANGE * S.RoomTileWidth + S.LEVEL_OFFSET_Y,
-				242, 242, 0x68000000,
-			);
+			// @FIXME Add invisibility layer
+			// Game.room.layerEffects.blitRectDirect(
+			// 	Game.player.x * S.RoomTileWidth - C.DEFAULT_SMELL_RANGE * S.RoomTileWidth + S.LEVEL_OFFSET_X,
+			// 	Game.player.y * S.RoomTileHeight - C.DEFAULT_SMELL_RANGE * S.RoomTileWidth + S.LEVEL_OFFSET_Y,
+			// 	242, 242, 0x68000000,
+			// );
 		}
 
 		// Draw Mimic
@@ -602,7 +586,8 @@ export class TStateGame extends RecamelState {
 
 	private drawLock() {
 		if (Game.isRoomLocked) {
-			Game.room.layerEffects.blitDirectly(Gfx.LOCK, 84, 522);
+			// @FIXME - Add lock to UI layer
+			// Game.room.layerEffects.blitDirectly(Gfx.LOCK, 84, 522);
 		}
 	}
 
@@ -715,7 +700,7 @@ export class TStateGame extends RecamelState {
 
 			this.resetState();
 
-			TWidgetMinimap.addRoom   (Game.room.roomId);
+			TWidgetMinimap.addRoom(Game.room.roomId);
 
 			// Update the state of the room we just left on the minimap
 			if (exitRoom) {
@@ -800,9 +785,9 @@ export class TStateGame extends RecamelState {
 
 		if (CueEvents.hasOccurred(C.CID_STEP_ON_SCROLL)) {
 			for (scrollTextId = CueEvents.getFirstPrivateData(C.CID_STEP_ON_SCROLL); scrollTextId != null;
-			     scrollTextId = CueEvents.getNextPrivateData()) {
+				scrollTextId = CueEvents.getNextPrivateData()) {
 				TWidgetFace.setReading(true);
-				TWidgetClock .update(false, 0);
+				TWidgetClock.update(false, 0);
 				TWidgetScroll.update(true, _(scrollTextId));
 
 				this.isScrollDisplayed = true;
@@ -816,7 +801,7 @@ export class TStateGame extends RecamelState {
 
 	private processSpeech() {
 		for (let speech = CueEvents.getFirstPrivateData(C.CID_SPEECH); speech != null;
-		     speech = CueEvents.getNextPrivateData()) {
+			speech = CueEvents.getNextPrivateData()) {
 			TWidgetSpeech.parseSpeechEvent(speech);
 		}
 	}
@@ -841,7 +826,7 @@ export class TStateGame extends RecamelState {
 			Achievements.initRoomStarted();
 
 			TWidgetMinimap.changedLevel(Game.room.levelId);
-			TWidgetMinimap.addRoom   (Game.room.roomId);
+			TWidgetMinimap.addRoom(Game.room.roomId);
 			TWidgetMinimap.plotWidget(Game.room.roomId, TWidgetMinimap.MODE_IN_GAME);
 
 			TWidgetLevelName.update(Game.room.roomId, Game.room.levelId);
@@ -864,12 +849,12 @@ export class TStateGame extends RecamelState {
 
 		if (CueEvents.hasOccurred(C.CID_ORB_ACTIVATED_BY_PLAYER) || CueEvents.hasOccurred(C.CID_ORB_ACTIVATED_BY_DOUBLE)) {
 			for (unknown = CueEvents.getFirstPrivateData(C.CID_ORB_ACTIVATED_BY_PLAYER); unknown != null;
-			     unknown = CueEvents.getNextPrivateData()) {
+				unknown = CueEvents.getNextPrivateData()) {
 				new TEffectOrbHit(unknown, true);
 			}
 
 			for (unknown = CueEvents.getFirstPrivateData(C.CID_ORB_ACTIVATED_BY_DOUBLE); unknown != null;
-			     unknown = CueEvents.getNextPrivateData()) {
+				unknown = CueEvents.getNextPrivateData()) {
 				new TEffectOrbHit(unknown, true);
 			}
 
@@ -878,7 +863,7 @@ export class TStateGame extends RecamelState {
 
 		if (CueEvents.hasOccurred(C.CID_SWING_SWORD)) {
 			for (coord = CueEvents.getFirstPrivateData(C.CID_SWING_SWORD); coord != null;
-			     coord = CueEvents.getNextPrivateData()) {
+				coord = CueEvents.getNextPrivateData()) {
 				new TEffectSwordSwing(coord.x, coord.y, coord.o);
 			}
 
@@ -887,7 +872,7 @@ export class TStateGame extends RecamelState {
 
 		if (CueEvents.hasOccurred(C.CID_MONSTER_DIED_FROM_STAB)) {
 			for (monster = CueEvents.getFirstPrivateData(C.CID_MONSTER_DIED_FROM_STAB); monster != null;
-			     monster = CueEvents.getNextPrivateData()) {
+				monster = CueEvents.getNextPrivateData()) {
 				this.addDamageEffect(monster.getType(), new VOCoord(monster.x, monster.y, monster.killDirection));
 			}
 
@@ -896,7 +881,7 @@ export class TStateGame extends RecamelState {
 
 		if (CueEvents.hasOccurred(C.CID_SNAKE_DIED_FROM_TRUNCATION)) {
 			for (monster = CueEvents.getFirstPrivateData(C.CID_SNAKE_DIED_FROM_TRUNCATION); monster != null;
-			     monster = CueEvents.getNextPrivateData()) {
+				monster = CueEvents.getNextPrivateData()) {
 				this.addDamageEffect(monster.getType(), new VOCoord(monster.x, monster.y, C.NO_ORIENTATION));
 			}
 
@@ -905,7 +890,7 @@ export class TStateGame extends RecamelState {
 
 		if (CueEvents.hasOccurred(C.CID_TRAPDOOR_REMOVED)) {
 			for (coord = CueEvents.getFirstPrivateData(C.CID_TRAPDOOR_REMOVED); coord != null;
-			     coord = CueEvents.getNextPrivateData()) {
+				coord = CueEvents.getNextPrivateData()) {
 				new TEffectTrapdoorFall(coord.x, coord.y);
 			}
 
@@ -914,7 +899,7 @@ export class TStateGame extends RecamelState {
 
 		if (CueEvents.hasOccurred(C.CID_CHECKPOINT_ACTIVATED)) {
 			for (coord = CueEvents.getFirstPrivateData(C.CID_CHECKPOINT_ACTIVATED); coord != null;
-			     coord = CueEvents.getNextPrivateData()) {
+				coord = CueEvents.getNextPrivateData()) {
 				new TEffectCheckpoint(coord);
 			}
 
@@ -923,7 +908,7 @@ export class TStateGame extends RecamelState {
 
 		if (CueEvents.hasOccurred(C.CID_CRUMBLY_WALL_DESTROYED)) {
 			for (coord = CueEvents.getFirstPrivateData(C.CID_CRUMBLY_WALL_DESTROYED); coord != null;
-			     coord = CueEvents.getNextPrivateData()) {
+				coord = CueEvents.getNextPrivateData()) {
 				new TEffectDebris(coord, 10, 5, 1.5);
 				new TEffectVermin(coord);
 			}
@@ -932,12 +917,12 @@ export class TStateGame extends RecamelState {
 		}
 
 		for (coord = CueEvents.getFirstPrivateData(C.CID_TARSTUFF_DESTROYED); coord != null;
-		     coord = CueEvents.getNextPrivateData()) {
+			coord = CueEvents.getNextPrivateData()) {
 			new TEffectTarSplatter(coord, 10, 3);
 		}
 
 		for (coord = CueEvents.getFirstPrivateData(C.CID_EVIL_EYE_WOKE); coord != null;
-		     coord = CueEvents.getNextPrivateData()) {
+			coord = CueEvents.getNextPrivateData()) {
 			new TEffectEvilEyeGaze(coord);
 		}
 
@@ -1045,8 +1030,8 @@ export class TStateGame extends RecamelState {
 
 	private addDamageEffect(monsterType: number, coords: VOCoord) {
 		switch (monsterType) {
-			case(C.M_TAR_BABY):
-			case(C.M_TAR_MOTHER):
+			case (C.M_TAR_BABY):
+			case (C.M_TAR_MOTHER):
 				new TEffectTarSplatter(coords, 7, 3);
 				break;
 
@@ -1093,7 +1078,7 @@ export class TStateGame extends RecamelState {
 		TStateGame.effectsUnder.clear();
 
 		TWidgetSpeech.clear();
-		TWidgetFace  .setMood('player', TWidgetFace.MOOD_NORMAL);
+		TWidgetFace.setMood('player', TWidgetFace.MOOD_NORMAL);
 		TWidgetScroll.update(false);
 
 		Achievements.initRoomStarted();
@@ -1113,6 +1098,7 @@ export class TStateGame extends RecamelState {
 		}
 
 		this.drawAll();
+		this.drawMimicPlacement();
 
 		Achievements.turnPassed();
 
@@ -1180,7 +1166,7 @@ export class TStateGame extends RecamelState {
 		document.removeEventListener('pointermove', this.onMouseMoved);
 		// @todo Mouse
 		// Mouse.show()
-		Game.room.layerEffects.visible = false;
+		Game.room.layerEffectsTextured.visible = false;
 		Game.room.layerActive.visible = false;
 		Game.room.layerUnder.visible = false;
 		Game.room.layerSprites.visible = false;
@@ -1203,7 +1189,7 @@ export class TStateGame extends RecamelState {
 			Game.room.layerActive.visible = true;
 			Game.room.layerUnder.visible = true;
 			Game.room.layerSprites.visible = true;
-			Game.room.layerEffects.visible = true;
+			Game.room.layerEffectsTextured.visible = true;
 			Game.room.layerDebug.visible = true;
 			Game.room.layerUI.visible = true;
 			TStateGame.show();
@@ -1219,13 +1205,13 @@ export class TStateGame extends RecamelState {
 		Game.room.layerUnder.visible = false;
 		Game.room.layerSprites.visible = false;
 		Game.room.layerActive.visible = false;
-		Game.room.layerEffects.visible = false;
+		Game.room.layerEffectsTextured.visible = false;
 		Game.room.layerDebug.visible = false;
 		TWindowLevelStart.show(intAttr(entrance, 'EntranceID'), true);
 		Game.room.layerUnder.visible = true;
 		Game.room.layerSprites.visible = true;
 		Game.room.layerActive.visible = true;
-		Game.room.layerEffects.visible = true;
+		Game.room.layerEffectsTextured.visible = true;
 		Game.room.layerDebug.visible = true;
 		TWidgetMinimap.changedLevel(Game.room.levelId);
 

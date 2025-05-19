@@ -1,28 +1,31 @@
-import * as PIXI from 'pixi.js';
+import { BaseTexture, Texture } from "pixi.js";
 import { C, CanvasImageSource, StyleName, StyleTilesets } from "../../C";
 import { ResourcesQueue } from "../../resources/mainGame/ResourcesQueue";
 import { T } from "../../T";
 
-export const Gfx = {
-	GeneralTilesTexture: null! as PIXI.Texture,
-	ButtonSystemTexture: null! as PIXI.Texture,
-	ButtonDownSystemTexture: null! as PIXI.Texture,
-	WindowSystemTexture: null! as PIXI.Texture,
-	TooltipSystemTexture: null! as PIXI.Texture,
-	InputSystemTexture: null! as PIXI.Texture,
-	InGameScreenTexture: null! as PIXI.Texture,
-	ScrollsTexture: null! as PIXI.Texture,
+const generalTilesCache: Texture[] = [];
 
-	LevelStartBgTexture: null! as PIXI.Texture,
-	TitleScreenBgTexture: null! as PIXI.Texture,
-	MenuBgTexture: null! as PIXI.Texture,
-	GameLogoTexture: null! as PIXI.Texture,
-	CaravelLogoTexture: null! as PIXI.Texture,
-	RetrocadeLogoTexture: null! as PIXI.Texture,
-	TutorialKeysTexture: null! as PIXI.Texture,
-	FacesTexture: null! as PIXI.Texture,
-	FaceEyesTexture: null! as PIXI.Texture,
-	EffectsTexture: null! as PIXI.Texture,
+export const Gfx = {
+	GeneralTilesTexture: null! as Texture,
+	ButtonSystemTexture: null! as Texture,
+	ButtonDownSystemTexture: null! as Texture,
+	WindowSystemTexture: null! as Texture,
+	TooltipSystemTexture: null! as Texture,
+	InputSystemTexture: null! as Texture,
+	InGameScreenTexture: null! as Texture,
+	ScrollsTexture: null! as Texture,
+
+	LevelStartBgTexture: null! as Texture,
+	TitleScreenBgTexture: null! as Texture,
+	MenuBgTexture: null! as Texture,
+	GameLogoTexture: null! as Texture,
+	CaravelLogoTexture: null! as Texture,
+	RetrocadeLogoTexture: null! as Texture,
+	TutorialKeysTexture: null! as Texture,
+	FacesTexture: null! as Texture,
+	FaceEyesTexture: null! as Texture,
+	EffectsTexture: null! as Texture,
+	BoltsTexture: null! as Texture,
 
 	TUTORIAL_KEYS: null! as HTMLImageElement,
 
@@ -50,7 +53,7 @@ export const Gfx = {
 	ACHIEVEMENT: null! as HTMLImageElement,
 	LOCK: null! as HTMLImageElement,
 
-	StyleTextures: new Map<StyleName, Map<StyleTilesets, PIXI.BaseTexture>>(),
+	StyleTextures: new Map<StyleName, Map<StyleTilesets, BaseTexture>>(),
 	STYLES: new Map<StyleName, Map<StyleTilesets, CanvasImageSource>>(),
 
 	initialize() {
@@ -176,27 +179,33 @@ export const Gfx = {
 					continue;
 				}
 
-				textures.set(tileset, new PIXI.BaseTexture(bitmapData));
+				textures.set(tileset, new BaseTexture(bitmapData));
 			}
 		}
 
-		Gfx.GeneralTilesTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.GENERAL_TILES));
-		Gfx.InGameScreenTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.IN_GAME_SCREEN));
-		Gfx.ButtonSystemTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.BUTTON_SYSTEM));
-		Gfx.ButtonDownSystemTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.BUTTON_DOWN_SYSTEM));
-		Gfx.WindowSystemTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.WINDOW_BG_SYSTEM));
-		Gfx.TooltipSystemTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.TOOLTIP_BG_SYSTEM));
-		Gfx.InputSystemTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.INPUT_BG_SYSTEM));
-		Gfx.TutorialKeysTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.TUTORIAL_KEYS));
-		Gfx.LevelStartBgTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.LEVEL_START_BACKGROUND));
-		Gfx.TitleScreenBgTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.TITLE_SCREEN_BACKGROUND));
-		Gfx.MenuBgTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.MENU_BACKGROUND));
-		Gfx.GameLogoTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.LOGO_GAME));
-		Gfx.CaravelLogoTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.LOGO_CARAVEL));
-		Gfx.RetrocadeLogoTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.LOGO_RETROCADE));
-		Gfx.ScrollsTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.SCROLLS));
-		Gfx.FacesTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.FACES));
-		Gfx.FaceEyesTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.FACE_EYES));
-		Gfx.EffectsTexture = new PIXI.Texture(new PIXI.BaseTexture(Gfx.EFFECTS));
+		Gfx.GeneralTilesTexture = new Texture(new BaseTexture(Gfx.GENERAL_TILES));
+		Gfx.InGameScreenTexture = new Texture(new BaseTexture(Gfx.IN_GAME_SCREEN));
+		Gfx.ButtonSystemTexture = new Texture(new BaseTexture(Gfx.BUTTON_SYSTEM));
+		Gfx.ButtonDownSystemTexture = new Texture(new BaseTexture(Gfx.BUTTON_DOWN_SYSTEM));
+		Gfx.WindowSystemTexture = new Texture(new BaseTexture(Gfx.WINDOW_BG_SYSTEM));
+		Gfx.TooltipSystemTexture = new Texture(new BaseTexture(Gfx.TOOLTIP_BG_SYSTEM));
+		Gfx.InputSystemTexture = new Texture(new BaseTexture(Gfx.INPUT_BG_SYSTEM));
+		Gfx.TutorialKeysTexture = new Texture(new BaseTexture(Gfx.TUTORIAL_KEYS));
+		Gfx.LevelStartBgTexture = new Texture(new BaseTexture(Gfx.LEVEL_START_BACKGROUND));
+		Gfx.TitleScreenBgTexture = new Texture(new BaseTexture(Gfx.TITLE_SCREEN_BACKGROUND));
+		Gfx.MenuBgTexture = new Texture(new BaseTexture(Gfx.MENU_BACKGROUND));
+		Gfx.GameLogoTexture = new Texture(new BaseTexture(Gfx.LOGO_GAME));
+		Gfx.CaravelLogoTexture = new Texture(new BaseTexture(Gfx.LOGO_CARAVEL));
+		Gfx.RetrocadeLogoTexture = new Texture(new BaseTexture(Gfx.LOGO_RETROCADE));
+		Gfx.ScrollsTexture = new Texture(new BaseTexture(Gfx.SCROLLS));
+		Gfx.FacesTexture = new Texture(new BaseTexture(Gfx.FACES));
+		Gfx.FaceEyesTexture = new Texture(new BaseTexture(Gfx.FACE_EYES));
+		Gfx.EffectsTexture = new Texture(new BaseTexture(Gfx.EFFECTS));
+		Gfx.BoltsTexture = new Texture(new BaseTexture(Gfx.BOLTS));
 	},
+
+	getGeneralTilesTexture(tileId: number): Texture {
+		return generalTilesCache[tileId]
+			?? (generalTilesCache[tileId] = new Texture(Gfx.GeneralTilesTexture.baseTexture, T.TILES[tileId]))
+	}
 };

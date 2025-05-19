@@ -1,11 +1,10 @@
-import {VOBitmapSegment} from "../../managers/effects/VOBitmapSegment";
-import {VOBoltSegment} from "../../managers/effects/VOBoltSegment";
-import {S} from "../../../S";
-import {BitmapDataWritable} from "../../../C";
-import {UtilsBitmapData} from "../../../../src.framework/net/retrocade/utils/UtilsBitmapData";
-import {Gfx} from "../../global/Gfx";
-import {ASSERT} from "../../../ASSERT";
-import {UtilsRandom} from "../../../../src.framework/net/retrocade/utils/UtilsRandom";
+import { VOBitmapSegment } from "../../managers/effects/VOBitmapSegment";
+import { VOBoltSegment } from "../../managers/effects/VOBoltSegment";
+import { S } from "../../../S";
+import { Gfx } from "../../global/Gfx";
+import { ASSERT } from "../../../ASSERT";
+import { UtilsRandom } from "../../../../src.framework/net/retrocade/utils/UtilsRandom";
+import { Container, Rectangle, Sprite, Texture } from "pixi.js";
 
 const PIECE_LONG_0_180 = new VOBitmapSegment(1, 55, 30, 4);
 const PIECE_LONG_22_202 = new VOBitmapSegment(40, 5, 28, 14);
@@ -96,22 +95,27 @@ const TILE_HEIGHT_HALF = S.RoomTileHeight / 2;
 const MAX_POSSIBLE_SIZE = S.RoomWidthPixels;
 
 export class BoltEffect {
-	public static drawBolt(startX: number, startY: number, endX: number, endY: number, targetLayer: BitmapDataWritable) {
+	private static _sparkleTextures: Texture[];
+	public static initialize() {
+		BoltEffect._sparkleTextures = [
+			new Texture(Gfx.BoltsTexture.baseTexture, new Rectangle(
+				PIECE_SPARKLE_BIG.x, PIECE_SPARKLE_BIG.y,
+				PIECE_SPARKLE_BIG.width, PIECE_SPARKLE_BIG.height
+			)),
+			new Texture(Gfx.BoltsTexture.baseTexture, new Rectangle(
+				PIECE_SPARKLE_SMALL.x, PIECE_SPARKLE_SMALL.y,
+				PIECE_SPARKLE_SMALL.width, PIECE_SPARKLE_SMALL.height
+			)),
+		];
+	}
+	public static drawBolt(startX: number, startY: number, endX: number, endY: number, target: Container) {
 		let x: number = startX;
 		let y: number = startY;
 
 		let sparkleX: number = x + UtilsRandom.fraction() * S.RoomTileWidth - TILE_WIDTH_HALF;
 		let sparkleY: number = y + UtilsRandom.fraction() * S.RoomTileHeight - TILE_HEIGHT_HALF;
 
-		if (UtilsRandom.fraction() < 0.5) {
-			UtilsBitmapData.blitPart(Gfx.BOLTS, targetLayer, sparkleX, sparkleY,
-				PIECE_SPARKLE_BIG.x, PIECE_SPARKLE_BIG.y, PIECE_SPARKLE_BIG.width, PIECE_SPARKLE_BIG.height);
-
-		} else {
-			UtilsBitmapData.blitPart(Gfx.BOLTS, targetLayer, sparkleX, sparkleY,
-				PIECE_SPARKLE_SMALL.x, PIECE_SPARKLE_SMALL.y, PIECE_SPARKLE_SMALL.width, PIECE_SPARKLE_SMALL.height);
-
-		}
+		BoltEffect.addSparkle(target, sparkleX, sparkleY);
 
 		let moveDir: number = 0;
 
@@ -220,28 +224,43 @@ export class BoltEffect {
 
 			boltSegment = useLongSegment ? LONG_SEGMENTS[moveDir] : SHORT_SEGMENTS[moveDir];
 
-			UtilsBitmapData.blitPart(Gfx.BOLTS, targetLayer,
-				x - boltSegment.xSource,
-				y - boltSegment.ySource,
-				boltSegment.bitmap.x,
-				boltSegment.bitmap.y,
-				boltSegment.bitmap.width,
-				boltSegment.bitmap.height);
+			BoltEffect.addBolt(target, boltSegment, x, y);
+
 			x += boltSegment.xPosition;
 			y += boltSegment.yPosition;
 
 			sparkleX = x + UtilsRandom.fraction() * S.RoomTileWidth - TILE_WIDTH_HALF;
 			sparkleY = y + UtilsRandom.fraction() * S.RoomTileHeight - TILE_HEIGHT_HALF;
 
-			if (UtilsRandom.fraction() < 0.5) {
-				UtilsBitmapData.blitPart(Gfx.BOLTS, targetLayer, sparkleX, sparkleY,
-					PIECE_SPARKLE_BIG.x, PIECE_SPARKLE_BIG.y, PIECE_SPARKLE_BIG.width, PIECE_SPARKLE_BIG.height);
-			} else {
-				UtilsBitmapData.blitPart(Gfx.BOLTS, targetLayer, sparkleX, sparkleY,
-					PIECE_SPARKLE_SMALL.x, PIECE_SPARKLE_SMALL.y, PIECE_SPARKLE_SMALL.width, PIECE_SPARKLE_SMALL.height);
-			}
+			BoltEffect.addSparkle(target, sparkleX, sparkleY);
 
 			distanceToEnd = Math.sqrt((x - endX) * (x - endX) + (y - endY) * (y - endY));
 		}
+	}
+
+	private static addSparkle(target: Container, x: number, y: number) {
+		const sprite = new Sprite();
+		sprite.x = x;
+		sprite.y = y;
+		sprite.texture = UtilsRandom.from(BoltEffect._sparkleTextures);
+
+		target.addChild(sprite);
+	}
+
+	private static addBolt(target: Container, bolt: VOBoltSegment, x: number, y: number) {
+		const sprite = new Sprite();
+		sprite.x = x - bolt.xSource;
+		sprite.y = y - bolt.ySource;
+		sprite.texture = new Texture(
+			Gfx.BoltsTexture.baseTexture,
+			new Rectangle(
+				bolt.bitmap.x,
+				bolt.bitmap.y,
+				bolt.bitmap.width,
+				bolt.bitmap.height,
+			)
+		);
+
+		target.addChild(sprite);
 	}
 }
