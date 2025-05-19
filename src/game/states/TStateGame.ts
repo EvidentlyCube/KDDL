@@ -555,13 +555,10 @@ export class TStateGame extends RecamelState {
 		this.drawActiveAndEffects(true);
 
 		// Draw Invisibility rectangle
+		Game.room.invisibilityRange.visible = Game.isInvisible;
 		if (Game.isInvisible) {
-			// @FIXME Add invisibility layer
-			// Game.room.layerEffects.blitRectDirect(
-			// 	Game.player.x * S.RoomTileWidth - C.DEFAULT_SMELL_RANGE * S.RoomTileWidth + S.LEVEL_OFFSET_X,
-			// 	Game.player.y * S.RoomTileHeight - C.DEFAULT_SMELL_RANGE * S.RoomTileWidth + S.LEVEL_OFFSET_Y,
-			// 	242, 242, 0x68000000,
-			// );
+			Game.room.invisibilityRange.x = Game.player.x * S.RoomTileWidth - C.DEFAULT_SMELL_RANGE * S.RoomTileWidth + S.LEVEL_OFFSET_X;
+			Game.room.invisibilityRange.y = Game.player.y * S.RoomTileHeight - C.DEFAULT_SMELL_RANGE * S.RoomTileWidth + S.LEVEL_OFFSET_Y;
 		}
 
 		// Draw Mimic
@@ -1165,7 +1162,7 @@ export class TStateGame extends RecamelState {
 		document.removeEventListener('pointermove', this.onMouseMoved);
 		// @todo Mouse
 		// Mouse.show()
-		Game.room.layerEffectsTextured.visible = false;
+		Game.room.layerEffects.visible = false;
 		Game.room.layerUnder.visible = false;
 		Game.room.layerSprites.visible = false;
 		Game.room.layerUI.visible = false;
@@ -1185,7 +1182,7 @@ export class TStateGame extends RecamelState {
 		} else {
 			Game.room.layerUnder.visible = true;
 			Game.room.layerSprites.visible = true;
-			Game.room.layerEffectsTextured.visible = true;
+			Game.room.layerEffects.visible = true;
 			Game.room.layerUI.visible = true;
 			TStateGame.show();
 		}
@@ -1199,11 +1196,11 @@ export class TStateGame extends RecamelState {
 		Game.loadFromLevelEntrance(intAttr(entrance, 'EntranceID'));
 		Game.room.layerUnder.visible = false;
 		Game.room.layerSprites.visible = false;
-		Game.room.layerEffectsTextured.visible = false;
+		Game.room.layerEffects.visible = false;
 		TWindowLevelStart.show(intAttr(entrance, 'EntranceID'), true);
 		Game.room.layerUnder.visible = true;
 		Game.room.layerSprites.visible = true;
-		Game.room.layerEffectsTextured.visible = true;
+		Game.room.layerEffects.visible = true;
 		TWidgetMinimap.changedLevel(Game.room.levelId);
 
 		TStateGame.show();

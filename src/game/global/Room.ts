@@ -1,5 +1,5 @@
 import { BinaryReader } from "csharp-binary-stream";
-import { Matrix, RenderTexture } from "pixi.js";
+import { Matrix, RenderTexture, Sprite, Texture } from "pixi.js";
 import { RecamelCore } from "src.framework/net/retrocade/camel/core/RecamelCore";
 import { RecamelGroup } from "../../../src.framework/net/retrocade/camel/core/RecamelGroup";
 import { RecamelLayerSprite } from "../../../src.framework/net/retrocade/camel/layers/RecamelLayerSprite";
@@ -78,7 +78,7 @@ export class Room {
 
 	public layerUnder: RecamelLayerSprite;
 	public layerSprites: RecamelLayerSprite;
-	public layerEffectsTextured: RecamelLayerSprite;
+	public layerEffects: RecamelLayerSprite;
 	public layerUI: RecamelLayerSprite;
 
 	public monsters = new RecamelGroup<TMonster>();
@@ -115,6 +115,7 @@ export class Room {
 	public roomTileRenderer = new RoomTileRenderer();
 	public roomSpritesRenderer = new RoomSpritesRenderer();
 	public mimicPlacement = new MimicPlacement();
+	public invisibilityRange = new Sprite();
 
 
 	//{ Uncategorized
@@ -127,18 +128,25 @@ export class Room {
 	public constructor() {
 		this.layerUnder = RecamelLayerSprite.create();
 		this.layerSprites = RecamelLayerSprite.create();
-		this.layerEffectsTextured = RecamelLayerSprite.create();
+		this.layerEffects = RecamelLayerSprite.create();
 		this.layerUI = RecamelLayerSprite.create();
 
 		this.layerUnder.add(this.roomTileRenderer);
 		this.layerSprites.add(this.roomSpritesRenderer);
-		this.layerEffectsTextured.add(this.mimicPlacement);
+		this.layerEffects.add(this.mimicPlacement);
+		this.layerEffects.add(this.invisibilityRange);
 
 		this.roomTileRenderer.x = S.LEVEL_OFFSET_X;
 		this.roomTileRenderer.y = S.LEVEL_OFFSET_Y;
 
 		this.roomSpritesRenderer.x = S.LEVEL_OFFSET_X;
 		this.roomSpritesRenderer.y = S.LEVEL_OFFSET_Y;
+
+		this.invisibilityRange.texture = Texture.WHITE;
+		this.invisibilityRange.width = (2 * C.DEFAULT_SMELL_RANGE + 1) * S.RoomTileWidth;
+		this.invisibilityRange.height = (2 * C.DEFAULT_SMELL_RANGE + 1) * S.RoomTileHeight;
+		this.invisibilityRange.tint = 0;
+		this.invisibilityRange.alpha = 0x68 / 256;
 	}
 
 	public clear() {
@@ -149,7 +157,7 @@ export class Room {
 		if (PlatformOptions.isGame) {
 			this.layerUnder.removeLayer();
 			this.layerSprites.removeLayer();
-			this.layerEffectsTextured.removeLayer();
+			this.layerEffects.removeLayer();
 			this.layerUI.removeLayer();
 		}
 
