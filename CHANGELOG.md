@@ -1,9 +1,10 @@
-## 1.6.?? - ????-??-??
+## 1.6.12 - 2025-05-19
  - [BUGFIX] Minimap will correctly render if you first restore to a room and then use restore function without leaving the room
  - [BUGFIX] Episode 6 ⟶ Level 22: 2N2W, fixed the room being unbeatable
  - [OTHER] Monsters & player rendering is now GPU accelerated
  - [OTHER] All visual effects are now GPU accelerated
  - [OTHER] Floating number rounding error artifacts should no longer be present
+ - [OTHER] Added new debug console command `clear-room`
 
 ## 1.6.11 - 2025-05-19
  - [BUGFIX] Fixed a bug where roach queens were using brained movement when standing on an arrow which is not how things work in regular DROD.
