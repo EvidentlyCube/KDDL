@@ -29,6 +29,11 @@ export class RecamelLayer {
 		RecamelDisplay.removeLayer(this);
 	}
 
+	public moveToBack(): void {
+		if (this.displayObject.parent) {
+			RecamelDisplay.moveLayerToBack(this);
+		}
+	}
 	public moveToFront(): void {
 		if (this.displayObject.parent) {
 			RecamelDisplay.moveLayerToFront(this);

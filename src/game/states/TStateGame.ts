@@ -1,3 +1,4 @@
+import { RecamelLayerSprite } from "src.framework/net/retrocade/camel/layers/RecamelLayerSprite";
 import { _, _r } from "../../../src.framework/_";
 import { RecamelGroup } from "../../../src.framework/net/retrocade/camel/core/RecamelGroup";
 import { RecamelState } from "../../../src.framework/net/retrocade/camel/core/RecamelState";
@@ -64,6 +65,7 @@ import { TWindowMessage } from "../windows/TWindowMessage";
 import { TWindowPause } from "../windows/TWindowPause";
 import { TWindowYesNoMessage } from "../windows/TWindowYesNoMessage";
 import { TStateOutro } from "./TStateOutro";
+import { Sprite } from "pixi.js";
 
 export class TStateGame extends RecamelState {
 	private static _instance: TStateGame = new TStateGame();
@@ -84,6 +86,8 @@ export class TStateGame extends RecamelState {
 	public static offsetSpeed: number = 4;
 	public static offsetNow: number = 0;
 	public static offset: number = 0;
+
+	public uiLayer: RecamelLayerSprite;
 
 	public isScrollDisplayed: boolean = false;
 	public isRoomClearedOnce: boolean = false;
@@ -116,6 +120,13 @@ export class TStateGame extends RecamelState {
 	 * A helper to circumvent the bug when changing smoothness while the slide was happening.
 	 */
 	private waitingForEscape: boolean = false;
+
+	public constructor() {
+		super();
+
+		this.uiLayer = RecamelLayerSprite.create();
+		this.uiLayer.visible = false;
+	}
 
 	public update() {
 		let forceFullRedraw: boolean = false;
@@ -1121,6 +1132,9 @@ export class TStateGame extends RecamelState {
 	}
 
 	public create() {
+		this.uiLayer.visible = true;
+		this.uiLayer.moveToFront
+
 		HelpRoomOpener.enabled = true;
 		Game.statStartTime = Date.now();
 		this.processEvents();
@@ -1136,16 +1150,27 @@ export class TStateGame extends RecamelState {
 
 		document.addEventListener('pointermove', this.onMouseMoved);
 		CueEvents.clear();
+
+		if (PlatformOptions.isGame) {
+			this.uiLayer.addAt(new Sprite(Gfx.InGameScreenTexture), 0);
+			this.uiLayer.add(TWidgetFace.container);
+			this.uiLayer.add(TWidgetLevelName.container);
+			this.uiLayer.add(TWidgetMinimap.container);
+			this.uiLayer.add(TWidgetScroll.container);
+		}
 	}
 
 	public destroy() {
+		this.uiLayer.clear();
+		this.uiLayer.visible = false;
+
 		HelpRoomOpener.enabled = false;
 		document.removeEventListener('pointermove', this.onMouseMoved);
 		// @todo Mouse
 		// Mouse.show()
 		Game.room.layerEffects.visible = false;
 		Game.room.layerActive.visible = false;
-		Game.room.layerUnderTextured.visible = false;
+		Game.room.layerUnder.visible = false;
 		Game.room.layerDebug.visible = false;
 		Game.room.layerUI.visible = false;
 		Core.lMain.clear();
@@ -1163,7 +1188,7 @@ export class TStateGame extends RecamelState {
 			}
 		} else {
 			Game.room.layerActive.visible = true;
-			Game.room.layerUnderTextured.visible = true;
+			Game.room.layerUnder.visible = true;
 			Game.room.layerEffects.visible = true;
 			Game.room.layerDebug.visible = true;
 			Game.room.layerUI.visible = true;
@@ -1177,12 +1202,12 @@ export class TStateGame extends RecamelState {
 
 		const entrance: Element = Level.getFirstHoldEntrance();
 		Game.loadFromLevelEntrance(intAttr(entrance, 'EntranceID'));
-		Game.room.layerUnderTextured.visible = false;
+		Game.room.layerUnder.visible = false;
 		Game.room.layerActive.visible = false;
 		Game.room.layerEffects.visible = false;
 		Game.room.layerDebug.visible = false;
 		TWindowLevelStart.show(intAttr(entrance, 'EntranceID'), true);
-		Game.room.layerUnderTextured.visible = true;
+		Game.room.layerUnder.visible = true;
 		Game.room.layerActive.visible = true;
 		Game.room.layerEffects.visible = true;
 		Game.room.layerDebug.visible = true;

@@ -40,19 +40,19 @@ export class TWidgetClock {
 	}
 
 	public static update(doDraw: boolean, turnNo: number = 0) {
-		const isAdded = Game.room.layerUnderTextured.contains(this._scrollSprite);
+		const isAdded = Game.room.layerUnder.contains(this._scrollSprite);
 
 		if (doDraw) {
 			TWidgetClock.updateText(turnNo);
 
 			if (!isAdded) {
-				Game.room.layerUnderTextured.add(this._scrollSprite);
-				Game.room.layerUnderTextured.add(text);
+				Game.room.layerUnder.add(this._scrollSprite);
+				Game.room.layerUnder.add(text);
 			}
 
 		} else if (isAdded) {
-			Game.room.layerUnderTextured.remove(this._scrollSprite);
-			Game.room.layerUnderTextured.remove(text);
+			Game.room.layerUnder.remove(this._scrollSprite);
+			Game.room.layerUnder.remove(text);
 		}
 	}
 

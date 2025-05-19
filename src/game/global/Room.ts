@@ -83,7 +83,7 @@ export class Room {
 	public layerActive: DrodLayer;
 	public layerEffects: DrodLayer;
 	public layerDebug: DrodLayer;
-	public layerUnderTextured: RecamelLayerSprite;
+	public layerUnder: RecamelLayerSprite;
 	public layerUI: RecamelLayerSprite;
 
 	public monsters = new RecamelGroup<TMonster>();
@@ -128,26 +128,19 @@ export class Room {
 	/******************************************************************************************************/
 
 	public constructor() {
-		this.layerUnderTextured = RecamelLayerSprite.create();
+		this.layerUnder = RecamelLayerSprite.create();
 		this.layerActive = DrodLayer.create(S.RoomWidthPixels, S.RoomHeightPixels, S.LEVEL_OFFSET_X, S.LEVEL_OFFSET_Y);
 		this.layerEffects = DrodLayer.create(S.SIZE_GAME_WIDTH, S.SIZE_GAME_HEIGHT, 0, 0);
 		this.layerDebug = DrodLayer.create(S.RoomWidthPixels, S.RoomHeightPixels, S.LEVEL_OFFSET_X, S.LEVEL_OFFSET_Y);
 		this.layerUI = RecamelLayerSprite.create();
 
-		this.layerUnderTextured.add(this.roomTileRenderer.spriteLayer.container);
-		this.roomTileRenderer.spriteLayer.container.x = S.LEVEL_OFFSET_X;
-		this.roomTileRenderer.spriteLayer.container.y = S.LEVEL_OFFSET_Y;
+		this.layerUnder.add(this.roomTileRenderer);
+
+		this.roomTileRenderer.x = S.LEVEL_OFFSET_X;
+		this.roomTileRenderer.y = S.LEVEL_OFFSET_Y;
 
 		this.layerEffects.offsetX = S.LEVEL_OFFSET_X;
 		this.layerEffects.offsetY = S.LEVEL_OFFSET_Y;
-
-		if (PlatformOptions.isGame) {
-			this.layerUnderTextured.addAt(new Sprite(Gfx.InGameScreenTexture), 0);
-			this.layerUnderTextured.add(TWidgetFace.container);
-			this.layerUnderTextured.add(TWidgetLevelName.container);
-			this.layerUnderTextured.add(TWidgetMinimap.container);
-			this.layerUnderTextured.add(TWidgetScroll.container);
-		}
 	}
 
 	public clear() {
@@ -156,7 +149,7 @@ export class Room {
 		this.monsters.clear();
 
 		if (PlatformOptions.isGame) {
-			this.layerUnderTextured.removeLayer();
+			this.layerUnder.removeLayer();
 			this.layerActive.removeLayer();
 			this.layerEffects.removeLayer();
 			this.layerDebug.removeLayer();
@@ -1507,7 +1500,7 @@ export class Room {
 
 	public setSaturation(saturation: number) {
 		this.layerActive.saturation = saturation;
-		this.layerUnderTextured.saturation = saturation;
+		this.layerUnder.saturation = saturation;
 	}
 
 	public drawRoom() {
@@ -1600,7 +1593,7 @@ export class Room {
 	}
 
 	public renderInto(texture: RenderTexture) {
-		RecamelCore.renderer.render(this.layerUnderTextured.displayObject, {
+		RecamelCore.renderer.render(this.layerUnder.displayObject, {
 			renderTexture: texture,
 			transform: Matrix.IDENTITY.translate(-S.LEVEL_OFFSET_X, -S.LEVEL_OFFSET_Y),
 			clear: true,

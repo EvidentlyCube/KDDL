@@ -58,6 +58,10 @@ export class RecamelDisplay {
 		RecamelDisplay._game.removeChild(layer.displayObject);
 	}
 
+	public static moveLayerToBack(layer: RecamelLayer) {
+		RecamelDisplay._game.setChildIndex(layer.displayObject, 0);
+	}
+
 	public static moveLayerToFront(layer: RecamelLayer) {
 		RecamelDisplay._game.setChildIndex(layer.displayObject, RecamelDisplay._game.children.length - 1);
 	}

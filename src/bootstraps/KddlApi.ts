@@ -68,7 +68,7 @@ export const KddlApi = {
                 height: S.RoomHeightPixels
             });
 
-            RecamelCore.renderer.render(room.layerUnderTextured.displayObject, {
+            RecamelCore.renderer.render(room.layerUnder.displayObject, {
                 renderTexture: texture,
                 transform: Matrix.IDENTITY.translate(-S.LEVEL_OFFSET_X, -S.LEVEL_OFFSET_Y),
                 clear: true,

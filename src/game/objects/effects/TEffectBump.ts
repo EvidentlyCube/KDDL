@@ -37,7 +37,7 @@ export class TEffectBump extends TEffect {
 		TEffectBump._bumpTexture = this._bumpTexture;
 		TEffectBump._bumpSprite = this._bumpSprite;
 
-		RecamelCore.renderer.render(this.room.layerUnderTextured.displayObject, {
+		RecamelCore.renderer.render(this.room.layerUnder.displayObject, {
 			clear: true,
 			renderTexture: this._bumpTexture,
 			transform: Matrix.IDENTITY.translate(
@@ -52,7 +52,7 @@ export class TEffectBump extends TEffect {
 		this._hideOn = Date.now() + 250;
 
 		TStateGame.effectsUnder.add(this);
-		this.room.layerUnderTextured.add(this._bumpSprite);
+		this.room.layerUnder.add(this._bumpSprite);
 
 		TEffectBump._currentBump = this;
 	}
@@ -65,7 +65,7 @@ export class TEffectBump extends TEffect {
 	}
 
 	public release() {
-		this.room.layerUnderTextured.remove(this._bumpSprite);
+		this.room.layerUnder.remove(this._bumpSprite);
 	}
 
 }
