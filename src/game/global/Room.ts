@@ -403,9 +403,11 @@ export class Room {
 
 		if (PlatformOptions.isGame) {
 			this.roomTileRenderer.clearTiles();
+			this.roomSpritesRenderer.clearSprites();
 			this.layerActive.clearTiles();
 			this.layerEffects.clearTiles();
 		}
+
 
 		this.orbs.clear();
 		this.stairs.length = 0;

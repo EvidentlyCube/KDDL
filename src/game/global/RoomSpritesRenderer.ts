@@ -31,6 +31,14 @@ export class RoomSpritesRenderer extends Container {
 		this.mask = mask;
 	}
 
+	public clearSprites() {
+		this._spritesContainer.removeChildren();
+		this._swordsContainer.removeChildren();
+		this._objectToSprite.clear();
+		this._swordDraws.length = 0;
+		this._swordSprites.length = 0;
+	}
+
 	public destroyObject(object: TGameObject) {
 		const sprite = this._objectToSprite.get(object);
 
