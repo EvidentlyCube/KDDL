@@ -69,6 +69,7 @@ Tarstuff
 Tendry's
 Thorce
 tileset
+Tilesets
 TMOTHER
 Tonce
 Twolce

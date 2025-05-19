@@ -19,18 +19,6 @@ export class RoomTileRenderer extends Container {
 	public opaqueData: number[] = [];
 	public transparentData: number[] = [];
 
-	public tilesBitmapData: CanvasImageSource = null!;
-	public floorBitmapData: CanvasImageSource = null!;
-	public floorAltBitmapData: CanvasImageSource = null!;
-	public floorDirtBitmapData: CanvasImageSource = null!;
-	public floorGrassBitmapData: CanvasImageSource = null!;
-	public floorMosaicBitmapData: CanvasImageSource = null!;
-	public floorRoadBitmapData: CanvasImageSource = null!;
-	public pitBitmapData: CanvasImageSource = null!;
-	public pitSideBitmapData: CanvasImageSource = null!;
-	public pitSideSmallBitmapData: CanvasImageSource = null!;
-	public wallBitmapData: CanvasImageSource = null!;
-
 	public tilesTexture: BaseTexture = null!;
 	public floorTexture: BaseTexture = null!;
 	public floorAltTexture: BaseTexture = null!;
@@ -59,8 +47,6 @@ export class RoomTileRenderer extends Container {
 		layerF: number[],
 		checkpoints: VOCheckpoints
 	) {
-		this.tilesBitmapData = Gfx.STYLES.get(styleName)!.get(T.TILES_STYLE)!;
-
 		this.tilesTexture = Gfx.StyleTextures.get(styleName)!.get(T.TILES_STYLE)!;
 		this.floorTexture = Gfx.StyleTextures.get(styleName)!.get(T.TILES_FLOOR)!;
 		this.floorAltTexture = Gfx.StyleTextures.get(styleName)!.get(T.TILES_FLOOR_ALT)!;

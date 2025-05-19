@@ -28,64 +28,26 @@ export const Gfx = {
 	BoltsTexture: null! as Texture,
 	LockTexture: null! as Texture,
 
-	// @FIXME - Remove unused variables
-	TUTORIAL_KEYS: null! as HTMLImageElement,
-
 	BUTTON_SYSTEM: null! as HTMLImageElement,
-	BUTTON_DOWN_SYSTEM: null! as HTMLImageElement,
-	WINDOW_BG_SYSTEM: null! as HTMLImageElement,
-	TOOLTIP_BG_SYSTEM: null! as HTMLImageElement,
-	INPUT_BG_SYSTEM: null! as HTMLImageElement,
 
-	IN_GAME_SCREEN: null! as HTMLImageElement,
 	GENERAL_TILES: null! as HTMLImageElement,
-	BOLTS: null! as HTMLImageElement,
-	EFFECTS: null! as HTMLImageElement,
 
-	MENU_BACKGROUND: null! as HTMLImageElement,
-	LEVEL_START_BACKGROUND: null! as HTMLImageElement,
-	TITLE_SCREEN_BACKGROUND: null! as HTMLImageElement,
-	LOGO_GAME: null! as HTMLImageElement,
-	LOGO_CARAVEL: null! as HTMLImageElement,
-	LOGO_RETROCADE: null! as HTMLImageElement,
-	SCROLLS: null! as HTMLImageElement,
-	FACES: null! as HTMLImageElement,
-	FACE_EYES: null! as HTMLImageElement,
 	ACHIEVEMENT: null! as HTMLImageElement,
-	LOCK: null! as HTMLImageElement,
 
 	StyleTextures: new Map<StyleName, Map<StyleTilesets, BaseTexture>>(),
 	STYLES: new Map<StyleName, Map<StyleTilesets, CanvasImageSource>>(),
 
 	initialize() {
-		Gfx.TUTORIAL_KEYS = ResourcesQueue.getImg(C.RES_TUTORIAL_KEYS);
-
 		Gfx.BUTTON_SYSTEM = ResourcesQueue.getImg(C.RES_BUTTON_SYSTEM);
-		Gfx.BUTTON_DOWN_SYSTEM = ResourcesQueue.getImg(C.RES_BUTTON_DOWN_SYSTEM);
-		Gfx.WINDOW_BG_SYSTEM = ResourcesQueue.getImg(C.RES_WINDOW_BG_SYSTEM);
-		Gfx.TOOLTIP_BG_SYSTEM = ResourcesQueue.getImg(C.RES_TOOLTIP_BG_SYSTEM);
-		Gfx.INPUT_BG_SYSTEM = ResourcesQueue.getImg(C.RES_INPUT_BG_SYSTEM);
 
-		Gfx.IN_GAME_SCREEN = ResourcesQueue.getImg(C.RES_GAME_SCREEN);
 		Gfx.GENERAL_TILES = ResourcesQueue.getImg(C.RES_GENERAL_TILES);
-		Gfx.BOLTS = ResourcesQueue.getImg(C.RES_BOLTS);
-		Gfx.EFFECTS = ResourcesQueue.getImg(C.RES_EFFECTS);
 
-		Gfx.MENU_BACKGROUND = ResourcesQueue.getImg(C.RES_MENU_BG);
-		Gfx.LEVEL_START_BACKGROUND = ResourcesQueue.getImg(C.RES_LEVEL_START_BG);
-		Gfx.TITLE_SCREEN_BACKGROUND = ResourcesQueue.getImg(C.RES_TITLE_BG);
-		Gfx.LOGO_GAME = ResourcesQueue.getImg(C.RES_LOGO_GAME);
-		Gfx.LOGO_CARAVEL = ResourcesQueue.getImg(C.RES_LOGO_CARAVEL);
-		Gfx.LOGO_RETROCADE = ResourcesQueue.getImg(C.RES_LOGO_RETROCADE);
-		Gfx.SCROLLS = ResourcesQueue.getImg(C.RES_SCROLLS);
-		Gfx.FACES = ResourcesQueue.getImg(C.RES_FACES);
-		Gfx.FACE_EYES = ResourcesQueue.getImg(C.RES_FACE_EYES);
 		Gfx.ACHIEVEMENT = ResourcesQueue.getImg(C.RES_ACHIEVEMENT);
-		Gfx.LOCK = ResourcesQueue.getImg(C.RES_LOCK);
 
 	},
 
 	async initializeHoldResources() {
+		// @FIXME - replace when no longer used by chievos
 		Gfx.STYLES.set(T.STYLE_ABOVEGROUND, new Map([
 			[T.TILES_WALL, ResourcesQueue.getImg(C.RES_ABOVEGROUND_WALL)],
 			[T.TILES_FLOOR, ResourcesQueue.getImg(C.RES_ABOVEGROUND_FLOOR)],
@@ -183,26 +145,26 @@ export const Gfx = {
 			}
 		}
 
-		Gfx.GeneralTilesTexture = new Texture(new BaseTexture(Gfx.GENERAL_TILES));
-		Gfx.InGameScreenTexture = new Texture(new BaseTexture(Gfx.IN_GAME_SCREEN));
-		Gfx.ButtonSystemTexture = new Texture(new BaseTexture(Gfx.BUTTON_SYSTEM));
-		Gfx.ButtonDownSystemTexture = new Texture(new BaseTexture(Gfx.BUTTON_DOWN_SYSTEM));
-		Gfx.WindowSystemTexture = new Texture(new BaseTexture(Gfx.WINDOW_BG_SYSTEM));
-		Gfx.TooltipSystemTexture = new Texture(new BaseTexture(Gfx.TOOLTIP_BG_SYSTEM));
-		Gfx.InputSystemTexture = new Texture(new BaseTexture(Gfx.INPUT_BG_SYSTEM));
-		Gfx.TutorialKeysTexture = new Texture(new BaseTexture(Gfx.TUTORIAL_KEYS));
-		Gfx.LevelStartBgTexture = new Texture(new BaseTexture(Gfx.LEVEL_START_BACKGROUND));
-		Gfx.TitleScreenBgTexture = new Texture(new BaseTexture(Gfx.TITLE_SCREEN_BACKGROUND));
-		Gfx.MenuBgTexture = new Texture(new BaseTexture(Gfx.MENU_BACKGROUND));
-		Gfx.GameLogoTexture = new Texture(new BaseTexture(Gfx.LOGO_GAME));
-		Gfx.CaravelLogoTexture = new Texture(new BaseTexture(Gfx.LOGO_CARAVEL));
-		Gfx.RetrocadeLogoTexture = new Texture(new BaseTexture(Gfx.LOGO_RETROCADE));
-		Gfx.ScrollsTexture = new Texture(new BaseTexture(Gfx.SCROLLS));
-		Gfx.FacesTexture = new Texture(new BaseTexture(Gfx.FACES));
-		Gfx.FaceEyesTexture = new Texture(new BaseTexture(Gfx.FACE_EYES));
-		Gfx.EffectsTexture = new Texture(new BaseTexture(Gfx.EFFECTS));
-		Gfx.BoltsTexture = new Texture(new BaseTexture(Gfx.BOLTS));
-		Gfx.LockTexture = new Texture(new BaseTexture(Gfx.LOCK));
+		Gfx.GeneralTilesTexture = Texture.from(Gfx.GENERAL_TILES);
+		Gfx.InGameScreenTexture = Texture.from(ResourcesQueue.getImg(C.RES_GAME_SCREEN));
+		Gfx.ButtonSystemTexture = Texture.from(ResourcesQueue.getImg(C.RES_BUTTON_SYSTEM));
+		Gfx.ButtonDownSystemTexture = Texture.from(ResourcesQueue.getImg(C.RES_BUTTON_DOWN_SYSTEM));
+		Gfx.WindowSystemTexture = Texture.from(ResourcesQueue.getImg(C.RES_WINDOW_BG_SYSTEM));
+		Gfx.TooltipSystemTexture = Texture.from(ResourcesQueue.getImg(C.RES_TOOLTIP_BG_SYSTEM));
+		Gfx.InputSystemTexture = Texture.from(ResourcesQueue.getImg(C.RES_INPUT_BG_SYSTEM));
+		Gfx.TutorialKeysTexture = Texture.from(ResourcesQueue.getImg(C.RES_TUTORIAL_KEYS));
+		Gfx.LevelStartBgTexture = Texture.from(ResourcesQueue.getImg(C.RES_LEVEL_START_BG));
+		Gfx.TitleScreenBgTexture = Texture.from(ResourcesQueue.getImg(C.RES_TITLE_BG));
+		Gfx.MenuBgTexture = Texture.from(ResourcesQueue.getImg(C.RES_MENU_BG));
+		Gfx.GameLogoTexture = Texture.from(ResourcesQueue.getImg(C.RES_LOGO_GAME));
+		Gfx.CaravelLogoTexture = Texture.from(ResourcesQueue.getImg(C.RES_LOGO_CARAVEL));
+		Gfx.RetrocadeLogoTexture = Texture.from(ResourcesQueue.getImg(C.RES_LOGO_RETROCADE));
+		Gfx.ScrollsTexture = Texture.from(ResourcesQueue.getImg(C.RES_SCROLLS));
+		Gfx.FacesTexture = Texture.from(ResourcesQueue.getImg(C.RES_FACES));
+		Gfx.FaceEyesTexture = Texture.from(ResourcesQueue.getImg(C.RES_FACE_EYES));
+		Gfx.EffectsTexture = Texture.from(ResourcesQueue.getImg(C.RES_EFFECTS));
+		Gfx.BoltsTexture = Texture.from(ResourcesQueue.getImg(C.RES_BOLTS));
+		Gfx.LockTexture = Texture.from(ResourcesQueue.getImg(C.RES_LOCK));
 	},
 
 	getGeneralTilesTexture(tileId: number): Texture {
