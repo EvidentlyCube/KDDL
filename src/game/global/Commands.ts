@@ -1,3 +1,4 @@
+import { exposeValue } from "src/S";
 import { C } from "../../C";
 
 export interface Command {
@@ -77,7 +78,7 @@ export class Commands {
 			return Number.MAX_VALUE;
 		}
 
-		return Commands._list[Commands._index].command;
+		return Commands._list[Commands._index]?.command ?? Number.MAX_VALUE;
 	}
 
 	public static getPrev(): number {
@@ -104,3 +105,5 @@ export class Commands {
 		}
 	}
 }
+
+exposeValue('Commands', Commands);

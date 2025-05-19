@@ -1,74 +1,77 @@
-import {F} from "../../../F";
-import {Gfx} from "../../global/Gfx";
-import {TEffect} from "./TEffect";
-import {VOCoord} from "../../managers/VOCoord";
-import {C, CanvasImageSourceFragment} from "../../../C";
-import {TStateGame} from "../../states/TStateGame";
-import {S} from "../../../S";
+import { Container, Rectangle, Sprite, Texture } from "pixi.js";
+import { Game } from "src/game/global/Game";
+import { C } from "../../../C";
+import { F } from "../../../F";
+import { S } from "../../../S";
+import { Gfx } from "../../global/Gfx";
+import { VOCoord } from "../../managers/VOCoord";
+import { TStateGame } from "../../states/TStateGame";
+import { TEffect } from "./TEffect";
 
-const _frames: CanvasImageSourceFragment[] = [];
 const DURATION = 30;
 
 export class TEffectEvilEyeGaze extends TEffect {
+	private static _textures: Texture[];
 	public static initialize() {
-		_frames.push(
-			F.newFragment(Gfx.EFFECTS, 44, 22, 22, 22),
-			F.newFragment(Gfx.EFFECTS, 66, 22, 22, 22),
-			F.newFragment(Gfx.EFFECTS, 88, 22, 22, 22),
-			F.newFragment(Gfx.EFFECTS, 110, 22, 22, 22),
-		);
+		TEffectEvilEyeGaze._textures = [
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(44, 22, 22, 22)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(66, 22, 22, 22)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(88, 22, 22, 22)),
+			new Texture(Gfx.EffectsTexture.baseTexture, new Rectangle(110, 22, 22, 22)),
+		];
 	}
 
-	private gazes: number[];
-	private type: number = 0;
+	private _container: Container;
 
 	private duration: number = 0;
 
 	public constructor(origin: VOCoord) {
 		super();
-		this.gazes = [];
+
+		this._container = new Container();
+		this._container.x = S.LEVEL_OFFSET_X;
+		this._container.y = S.LEVEL_OFFSET_Y;
 
 		switch (origin.o) {
-			case(C.E):
-			case(C.W):
-				this.type = 0;
+			case (C.E):
+			case (C.W):
+				this.populateGazes(origin, 0);
 				break;
-			case(C.NW):
-			case(C.SE):
-				this.type = 1;
+			case (C.NW):
+			case (C.SE):
+				this.populateGazes(origin, 1);
 				break;
-			case(C.N):
-			case(C.S):
-				this.type = 2;
+			case (C.N):
+			case (C.S):
+				this.populateGazes(origin, 2);
 				break;
-			case(C.NE):
-			case(C.SW):
-				this.type = 3;
+			case (C.NE):
+			case (C.SW):
+				this.populateGazes(origin, 3);
 				break;
 		}
 
-		this.populateGazes(origin);
 
 		TStateGame.effectsAbove.add(this);
+		Game.room.layerSprites.add(this._container);
 	}
 
 	public update() {
-		if (this.duration++ == DURATION) {
-			TStateGame.effectsAbove.nullify(this);
-			return;
-		}
+		this._container.alpha = (DURATION - this.duration) / DURATION;
 
-		for (const i of this.gazes) {
-			this.room.layerActive.drawFragment(
-				_frames[this.type],
-				i % S.RoomWidth,
-				i / S.RoomWidth | 0,
-				(DURATION - this.duration) / DURATION,
-			);
+		if (this.duration++ >= DURATION) {
+			this.end();
 		}
 	}
 
-	private populateGazes(origin: VOCoord) {
+	public end() {
+		super.end();
+
+		TStateGame.effectsAbove.remove(this);
+		this._container.parent?.removeChild(this._container);
+	}
+
+	private populateGazes(origin: VOCoord, type: number) {
 		let ox: number = F.getOX(origin.o);
 		let oy: number = F.getOY(origin.o);
 		let tx: number = origin.x;
@@ -149,7 +152,10 @@ export class TEffectEvilEyeGaze extends TEffect {
 		};
 
 		while (getNextGaze()) {
-			this.gazes.push(tx + ty * S.RoomWidth);
+			const sprite = new Sprite(TEffectEvilEyeGaze._textures[type]);
+			sprite.x = tx * S.RoomTileWidth;
+			sprite.y = ty * S.RoomTileHeight;
+			this._container.addChild(sprite);
 		}
 	}
 }
