@@ -8,6 +8,7 @@ import { RecamelWindowManager } from "./RecamelWindowManager";
 import RawInput from "../../../../../src.tn/RawInput";
 import { UtilsRandom } from "../../utils/UtilsRandom";
 import { Sfx } from "../../../../../src/game/global/Sfx";
+import { Core } from 'src/game/global/Core';
 
 export class RecamelCore {
 	/**
@@ -156,7 +157,6 @@ export class RecamelCore {
 	}
 
 	private static onMouseMove() {
-		// @todo Mouse
-		// Mouse.show();
+		Core.mouseVisibility(true);
 	}
 }

@@ -144,5 +144,13 @@ export class Core {
 		const holdDocument = domParser.parseFromString(UtilsByteArray.toString(inflated), 'text/xml');
 		Level.prepareHold(holdDocument.firstElementChild!, holdDocument);
 	}
+
+	public static mouseVisibility(visible: boolean) {
+		if (visible) {
+			document.body.style.removeProperty('cursor');
+		} else {
+			document.body.style.cursor = 'none';
+		}
+	}
 }
 

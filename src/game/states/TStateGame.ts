@@ -504,8 +504,7 @@ export class TStateGame extends RecamelState {
 
 		Game.processCommand(command, wx, wy);
 
-		// @todo Mouse
-		// Mouse.hide();
+		Core.mouseVisibility(false);
 
 		Game.updateTime();
 
@@ -1171,8 +1170,7 @@ export class TStateGame extends RecamelState {
 
 		HelpRoomOpener.enabled = false;
 		document.removeEventListener('pointermove', this.onMouseMoved);
-		// @todo Mouse
-		// Mouse.show()
+		Core.mouseVisibility(true);
 		Game.room.layerEffects.visible = false;
 		Game.room.layerUnder.visible = false;
 		Game.room.layerSprites.visible = false;
@@ -1366,8 +1364,7 @@ export class TStateGame extends RecamelState {
 	}
 
 	private onMouseMoved = () => {
-		// @todo Mouse
-		// Mouse.show();
+		Core.mouseVisibility(true);
 	}
 
 	private processQuestionPrompts(): void {
