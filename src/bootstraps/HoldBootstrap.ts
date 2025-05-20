@@ -3,7 +3,6 @@ import {DROD} from "../game/global/DROD";
 import {Sfx} from "../game/global/Sfx";
 import {HoldOptions} from "../platform/PlatformSpecific";
 import {SharedResources} from "../resources/mainGame/ResourcesCommon";
-import {Gfx} from "../game/global/Gfx";
 import {ResourcesQueue} from "../resources/mainGame/ResourcesQueue";
 import {C} from "../C";
 import {RecamelLang, ValidLanguage} from "../../src.framework/net/retrocade/camel/RecamelLang";
@@ -46,7 +45,6 @@ export class HoldBootstrap {
 		// 1. Queue resources
 		DB.resetQueue();
 		SharedResources.registerMusic(holdOptions, DROD.nutkaLayerMusic);
-		SharedResources.registerHoldStyles(holdOptions);
 		ResourcesQueue.queueBinary(C.holdResourceName(holdOptions), holdOptions.resources.hold);
 		ResourcesQueue.queueImage(C.subtitleResourceName(holdOptions), document.createElement('img'), holdOptions.resources.subtitle);
 		HoldBootstrap.queueLocale(holdOptions);

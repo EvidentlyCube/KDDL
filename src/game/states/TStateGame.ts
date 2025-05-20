@@ -550,7 +550,7 @@ export class TStateGame extends RecamelState {
 
 		TWidgetClock.update(!this.isScrollDisplayed && Game.room.isTimerNeeded(), Game.spawnCycleCount);
 
-		TWidgetOrbHighlight.isActive = false;
+		TWidgetOrbHighlight.clear();
 
 		this.drawActiveAndEffects(true);
 
@@ -1343,11 +1343,11 @@ export class TStateGame extends RecamelState {
 				drawEffects = true;
 
 			} else {
-				TWidgetOrbHighlight.isActive = false
+				TWidgetOrbHighlight.clear();
 				drawEffects = true;
 			}
 		} else {
-			TWidgetOrbHighlight.isActive = false
+			TWidgetOrbHighlight.clear();
 			drawEffects = true;
 		}
 

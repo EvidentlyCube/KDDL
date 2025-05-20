@@ -21,11 +21,13 @@ export class TWidgetOrbHighlight {
 	}
 
 	private static room: Room;
-	public static isActive: boolean = false;
+
+	public static clear() {
+		TWidgetOrbHighlight.container.removeChildren();
+	}
 
 	public static drawOrbHighlights(orbX: number, orbY: number) {
 		TWidgetOrbHighlight.room = Game.room;
-		TWidgetOrbHighlight.isActive = true;
 		TWidgetOrbHighlight.container.removeChildren();
 
 		const orb = TWidgetOrbHighlight.room.orbs.get(orbX + orbY * S.RoomWidth)!;
@@ -42,7 +44,6 @@ export class TWidgetOrbHighlight {
 
 	public static drawDoorHighlights(doorX: number, doorY: number) {
 		TWidgetOrbHighlight.room = Game.room;
-		TWidgetOrbHighlight.isActive = true;
 		TWidgetOrbHighlight.container.removeChildren();
 
 		const doorTiles = new Set(TWidgetOrbHighlight.room.getConnectedTiles(doorX, doorY, [C.T_DOOR_Y, C.T_DOOR_YO]));

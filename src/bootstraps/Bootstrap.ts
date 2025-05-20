@@ -19,7 +19,7 @@ import { Kddl5HoldOptions } from "../platform/InitKDDL5";
 import { TAPHoldOptions } from "../platform/InitTAP";
 import { PlatformOptions } from "../platform/PlatformOptions";
 import { HoldOptions } from "../platform/PlatformSpecific";
-import { ResourcesCommon } from "../resources/mainGame/ResourcesCommon";
+import { ResourcesCommon, SharedResources } from "../resources/mainGame/ResourcesCommon";
 import { ResourcesQueue } from "../resources/mainGame/ResourcesQueue";
 import { exposeValue, S } from "../S";
 import { HoldBootstrap } from "./HoldBootstrap";
@@ -61,6 +61,7 @@ export class Bootstrap {
 		DebugConsole.init();
 		RecamelLang.initialize();
 		ResourcesCommon();
+		SharedResources.registerHoldStyles();
 
 		await Promise.all([
 			Bootstrap.loadPreloaderResources(),

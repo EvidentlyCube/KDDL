@@ -152,7 +152,7 @@ export const SharedResources = {
 		});
 	},
 
-	registerHoldStyles(holdOptions: HoldOptions) {
+	registerHoldStyles() {
 		StyleResourceAboveground();
 		StyleResourceCity();
 		StyleResourceDeepSpaces();
