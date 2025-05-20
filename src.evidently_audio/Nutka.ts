@@ -23,12 +23,12 @@ export class Nutka {
 		this._layers.set(this._masterLayer.name, this._masterLayer);
 	}
 
-	public newLayer(name: string) {
+	public newLayer(name: string, parentLayer?: NutkaLayer) {
 		if (this._layers.has(name)) {
 			throw new Error(`Nutka layer with name '${name}' already exists.`);
 		}
 
-		const layer = new NutkaLayer(name, this._masterLayer.node, this);
+		const layer = new NutkaLayer(name, parentLayer?.node ?? this._masterLayer.node, this);
 		this._layers.set(name, layer);
 		return layer;
 	}

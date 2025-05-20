@@ -3,6 +3,7 @@
  - [BUGFIX] Fixed orb highlights not disappearing on click/move
  - [OTHER] Achievement description tooltip now also shows its state
  - [OTHER] Achievements window has updated description
+ - [FEATURE] Game now auto mutes sound when not visible
 
 ## 1.6.12 - 2025-05-19
  - [BUGFIX] Minimap will correctly render if you first restore to a room and then use restore function without leaving the room

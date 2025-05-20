@@ -24,6 +24,7 @@ import { ResourcesQueue } from "../resources/mainGame/ResourcesQueue";
 import { exposeValue, S } from "../S";
 import { HoldBootstrap } from "./HoldBootstrap";
 import { KddlApi } from "./KddlApi";
+import { TWidgetVolumeMuter } from "src/game/widgets/TWidgetVolumeMuter";
 
 require('../../src.assets/font/toms-new-roman.css');
 
@@ -61,6 +62,7 @@ export class Bootstrap {
 		DebugConsole.init();
 		RecamelLang.initialize();
 		ResourcesCommon();
+		TWidgetVolumeMuter.init();
 		SharedResources.registerHoldStyles();
 
 		await Promise.all([
@@ -93,7 +95,9 @@ export class Bootstrap {
 		if ((document as any).fonts) {
 			await (document as any).fonts.ready;
 		} else {
-			// @todo add some other detection in the future or hope for the best
+			// In the super unlikely case where `documents.fonts` is not available
+			// just wait a little and hope for the best
+			await new Promise(resolve => setTimeout(resolve, 2000));
 		}
 
 		document.getElementById('tomloader')!.remove();

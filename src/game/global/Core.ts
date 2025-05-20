@@ -30,7 +30,6 @@ export class Core {
 	public static repeatDelay = 300;
 
 	public static getKey(name: PlayerAction): string {
-		// @TODO - Add assert?
 		const key = Core.keyboardMappings.get(name);
 		if (key === undefined) {
 			throw new Error(`Attempted to get key mapping for invalid action "${name}"`);

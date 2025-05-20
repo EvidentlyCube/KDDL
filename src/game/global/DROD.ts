@@ -49,12 +49,13 @@ window.addEventListener('resize', resize);
 window.addEventListener('load', resize);
 
 const nutka = new Nutka();
-const nutkaLayerSfx = nutka.newLayer('sfx');
-const nutkaLayerMusic = nutka.newLayer('music');
-const nutkaLayerSpeech = nutka.newLayer('speech');
+const nutkaLayerAll = nutka.newLayer('all');
+const nutkaLayerSfx = nutka.newLayer('sfx', nutkaLayerAll);
+const nutkaLayerMusic = nutka.newLayer('music', nutkaLayerAll);
+const nutkaLayerSpeech = nutka.newLayer('speech', nutkaLayerAll);
 
 export const DROD = {
 	app,
 	resize,
-	nutka, nutkaLayerSfx, nutkaLayerMusic, nutkaLayerSpeech
+	nutka, nutkaLayerAll, nutkaLayerSfx, nutkaLayerMusic, nutkaLayerSpeech
 };
