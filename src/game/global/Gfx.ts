@@ -27,6 +27,7 @@ export const Gfx = {
 	EffectsTexture: null! as Texture,
 	BoltsTexture: null! as Texture,
 	LockTexture: null! as Texture,
+	AchievementTexture: null! as Texture,
 
 	BUTTON_SYSTEM: null! as HTMLImageElement,
 
@@ -165,6 +166,7 @@ export const Gfx = {
 		Gfx.EffectsTexture = Texture.from(ResourcesQueue.getImg(C.RES_EFFECTS));
 		Gfx.BoltsTexture = Texture.from(ResourcesQueue.getImg(C.RES_BOLTS));
 		Gfx.LockTexture = Texture.from(ResourcesQueue.getImg(C.RES_LOCK));
+		Gfx.AchievementTexture = Texture.from(ResourcesQueue.getImg(C.RES_ACHIEVEMENT));
 	},
 
 	getGeneralTilesTexture(tileId: number): Texture {

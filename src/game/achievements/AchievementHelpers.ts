@@ -21,6 +21,7 @@ import { TMonster } from "../objects/actives/TMonster";
 import { TPlayer } from "../objects/actives/TPlayer";
 import { TStateGame } from "../states/TStateGame";
 import { Achievement, AchievementData, AchievementDescription } from './Achievement';
+import { AchievementIconSource } from './AchievementRenderer';
 
 export type RoomCoord =
 	"6N2W" |
@@ -305,16 +306,12 @@ export const AchievementHelpers = {
 type DataCallback = (data: AchievementData) => boolean;
 type DataCounterCallback = (data: AchievementData) => boolean | number;
 
-type AchievementIconSimple = [StyleName | 'default', number, number, number, number];
-type AchievementIconBlit = [number, number, number] | [number, number, number, StyleTilesets];
 type AddAchievementInCondition = number | RoomCoord | [number, RoomCoord] | DataCallback;
 interface AddAchievementDetails {
 	id: string;
 	name: string;
 	description: AchievementDescription;
-	icon: AchievementIconSimple
-	| [StyleName | 'default', AchievementIconBlit[]]
-	| ((b: BitmapDataWritable) => void);
+	icon: AchievementIconSource;
 
 	in?: AddAchievementInCondition;
 	fakeActiveIn?: AddAchievementInCondition;
@@ -411,7 +408,7 @@ export function addAchievement(to: Achievement[], details: AddAchievementDetails
 			return false;
 		}
 
-		// SEcond check because update might have made it failable
+		// Second check because update might have failed it
 		if (details.failOn && details.failOn(data)) {
 			data.failed = true;
 			return false;
@@ -448,8 +445,6 @@ export function addAchievement(to: Achievement[], details: AddAchievementDetails
 		console.error(`Missing translation for achievement description "${details.description}"`);
 	}
 
-
-
 	to.push(Achievement.get(
 		_(details.name),
 		(ach: Achievement) => {
@@ -473,52 +468,7 @@ export function addAchievement(to: Achievement[], details: AddAchievementDetails
 			}
 		},
 		details.id,
-		function (bd: BitmapDataWritable) {
-			UtilsBitmapData.blit(Gfx.ACHIEVEMENT, bd, 0, 0);
-
-			const { icon } = details;
-			if (typeof icon === 'function') {
-				icon(bd);
-				return;
-			}
-
-			const style = icon[0] === 'default'
-				? PlatformOptions.defaultStyle
-				: icon[0];
-
-			const tiles = Gfx.STYLES.get(style)!.get(T.TILES_STYLE)!;
-
-			if (icon.length === 5 && typeof icon[1] === 'number') {
-				if (icon[1]) {
-					T.plotPrecise(bd, Math.abs(icon[1]), 0, 0, icon[1] < 0 ? tiles : Gfx.GENERAL_TILES);
-				}
-				if (icon[2]) {
-					T.plotPrecise(bd, Math.abs(icon[2]), 22, 0, icon[2] < 0 ? tiles : Gfx.GENERAL_TILES);
-				}
-				if (icon[3]) {
-					T.plotPrecise(bd, Math.abs(icon[3]), 0, 22, icon[3] < 0 ? tiles : Gfx.GENERAL_TILES);
-				}
-				if (icon[4]) {
-					T.plotPrecise(bd, Math.abs(icon[4]), 22, 22, icon[4] < 0 ? tiles : Gfx.GENERAL_TILES);
-				}
-			} else if (icon.length === 2 && Array.isArray(icon[1])) {
-				for (const [id, x, y, tilesetId] of icon[1]) {
-					const tileset = tilesetId !== undefined
-						? Gfx.STYLES.get(style)!.get(T.TILES_STYLE)!
-						: tiles;
-
-					T.plotPrecise(
-						bd,
-						Math.abs(id),
-						x * 22,
-						y * 22,
-						(id < 0 || tilesetId)
-							? tileset
-							: Gfx.GENERAL_TILES
-					);
-				}
-			}
-		},
+		details.icon,
 		a => init(a._data),
 		a => update(a._data)
 	));

@@ -1,29 +1,25 @@
-import * as PIXI from 'pixi.js';
-import {RecamelWindow} from "../../../src.framework/net/retrocade/camel/core/RecamelWindow";
-import {Achievement} from "../achievements/Achievement";
-import {S} from "../../S";
-import {Make} from "../global/Make";
-import {Text} from "../../../src.framework/net/retrocade/standalone/Text";
-import {BitmapDataWritable} from "../../C";
-import {F} from "../../F";
-import {_} from "../../../src.framework/_";
-import {DropShadowFilter} from '@pixi/filter-drop-shadow';
-import {Game} from "../global/Game";
+import { DropShadowFilter } from '@pixi/filter-drop-shadow';
+import { _ } from "../../../src.framework/_";
+import { RecamelWindow } from "../../../src.framework/net/retrocade/camel/core/RecamelWindow";
+import { RecamelEffectFade } from "../../../src.framework/net/retrocade/camel/effects/RecamelEffectFade";
+import { Text } from "../../../src.framework/net/retrocade/standalone/Text";
+import { UtilsNumber } from "../../../src.framework/net/retrocade/utils/UtilsNumber";
 import RawInput from "../../../src.tn/RawInput";
-import {RecamelEffectFade} from "../../../src.framework/net/retrocade/camel/effects/RecamelEffectFade";
-import {UtilsNumber} from "../../../src.framework/net/retrocade/utils/UtilsNumber";
+import { S } from "../../S";
+import { Achievement } from "../achievements/Achievement";
+import { Game } from "../global/Game";
+import { Make } from "../global/Make";
+import { Graphics, NineSlicePlane, Sprite } from 'pixi.js';
 
 export class TGrowlAchievement extends RecamelWindow {
 	private static _displayedGrowls: TGrowlAchievement[] = [];
 
-	private _bg: PIXI.NineSlicePlane;
+	private _bg: NineSlicePlane;
 
 	private _header: Text;
-	private _headerLine: PIXI.Graphics;
+	private _headerLine: Graphics;
 
-	private _icon: PIXI.Sprite;
-	private _iconContext: BitmapDataWritable;
-	private _iconTexture: PIXI.Texture;
+	private _icon: Sprite;
 
 	private _achievementName: Text;
 
@@ -42,15 +38,10 @@ export class TGrowlAchievement extends RecamelWindow {
 		this._bg = Make.windowGrid9();
 		this._achievement = achievement;
 		this._header = Make.text(22);
-		this._headerLine = new PIXI.Graphics();
+		this._headerLine = new Graphics();
 		this._achievementName = Make.text();
-		this._iconContext = F.newCanvasContext(44, 44);
-		this._iconTexture = new PIXI.Texture(new PIXI.BaseTexture(this._iconContext.canvas));
-		this._icon = new PIXI.Sprite(this._iconTexture);
+		this._icon = new Sprite(achievement.texture);
 		this._dismiss = Make.text(12);
-
-		this._achievement.drawTo(this._iconContext, 0, 0);
-		this._iconTexture.baseTexture.update();
 
 		this._header.text = _("ui.achievement_growl.header");
 

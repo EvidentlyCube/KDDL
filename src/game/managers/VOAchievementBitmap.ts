@@ -14,19 +14,13 @@ import { Achievements } from "../achievements/Achievements";
 export class VOAchievementBitmap extends RecamelSprite {
 	public achievement: Achievement;
 
-	private _bitmapData: BitmapDataWritable;
 	private _adjustFilter: AdjustmentFilter;
 
 	public constructor(achievement: Achievement) {
-		super();
+		super(achievement.texture);
 
 		this.achievement = achievement;
-		this._bitmapData = F.newCanvasContext(44, 44);
 		this._adjustFilter = new AdjustmentFilter();
-
-		achievement.drawTo(this._bitmapData, 0, 0);
-
-		this.texture = new PIXI.Texture(new PIXI.BaseTexture(this._bitmapData.canvas));
 
 		this.filters = [this._adjustFilter, new DropShadowFilter({distance: 2, rotation: 45, alpha: 0.5, blur: 0})];
 
@@ -35,12 +29,6 @@ export class VOAchievementBitmap extends RecamelSprite {
 		if (PlatformOptions.isDebug) {
 			this.on('click', this.onClick);
 		}
-	}
-
-	public destroy(options: PIXI.IDestroyOptions) {
-		super.destroy(options);
-
-		F.destroyCanvas(this._bitmapData);
 	}
 
 	private onClick() {

@@ -3,7 +3,7 @@ import {HoldOptions} from "./platform/PlatformSpecific";
 
 export const S = {
 	DEBUG: false,
-	EngineVersion: 'V1.6.12.1-JS',
+	EngineVersion: 'V1.6.13-JS',
 	currentHoldOptions: undefined as (HoldOptions | undefined),
 
 	isSpiderMode: false,
@@ -65,6 +65,17 @@ export const S = {
 
 	RoomWidthPixels: 594,
 	RoomHeightPixels: 550,
+
+	Achievements: {
+		width: 44,
+		height: 44,
+		allTexture: {
+			width: 1024,
+			height: 1024,
+			perRow: 1024 / (46) | 0,
+			max: Math.pow(1024 / (46) | 0, 2),
+		}
+	},
 
 	LANGUAGE_NAMES: {
 		de: "Deutsch",

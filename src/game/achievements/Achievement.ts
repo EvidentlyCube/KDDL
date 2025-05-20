@@ -1,8 +1,10 @@
+import { Texture } from "pixi.js";
 import { UtilsBitmapData } from "../../../src.framework/net/retrocade/utils/UtilsBitmapData";
 import { BitmapDataWritable } from "../../C";
 import { F } from "../../F";
 import { Game } from "../global/Game";
 import { TStateGame } from "../states/TStateGame";
+import { AchievementIconSource, AchievementRenderer } from "./AchievementRenderer";
 import { Achievements } from "./Achievements";
 
 export type AchievementDescription = string | ((achievement: Achievement) => string);
@@ -49,13 +51,13 @@ export class Achievement {
 
 	public id: string;
 
-	private renderedGraphic?: BitmapDataWritable;
+	private _texture?: Texture;
 
 	/**
 	 * Three param function (bitmapData, x:number, y:number) which draws
 	 * this achievement's graphic into a given bitmapData
 	 */
-	private _drawFunction: AchievementDrawFunction;
+	private _iconSource: AchievementIconSource;
 
 	/**
 	 * No-param function which returns true if this achievement should be activated
@@ -89,12 +91,16 @@ export class Achievement {
 		return Achievements.isActive(this) || this._data.fakeActive;
 	}
 
+	public get texture() {
+		return this._texture
+			?? (this._texture = AchievementRenderer.getAchievementTexture(this.id, this._iconSource));
+	}
+
 	public constructor() {
 		this.id = '';
 		this.desc = '';
 		this.name = '';
-		this._drawFunction = () => {
-		};
+		this._iconSource = ['default', 0, 0, 0, 0];
 		this._init = () => false;
 		this._update = () => false;
 	}
@@ -177,19 +183,6 @@ export class Achievement {
 		return result;
 	}
 
-	/**
-	 * Draws this achievement to specified bitmap data at given coordinates
-	 */
-	public drawTo(bitmapData: BitmapDataWritable, x: number, y: number) {
-		if (!this.renderedGraphic) {
-			this.renderedGraphic = F.newCanvasContext(44, 44);
-			this._drawFunction.call(this, this.renderedGraphic);
-		}
-
-		UtilsBitmapData.draw(this.renderedGraphic.canvas, bitmapData, x, y);
-	}
-
-
 	public encode(): EncodedAchievement {
 		return {
 			id: this.id,
@@ -217,7 +210,7 @@ export class Achievement {
 		name: string,
 		desc: AchievementDescription,
 		id: string,
-		draw: AchievementDrawFunction,
+		iconSource: AchievementIconSource,
 		init: (self: Achievement) => boolean,
 		update: (self: Achievement) => boolean,
 	): Achievement {
@@ -227,7 +220,7 @@ export class Achievement {
 		achievement.desc = desc;
 		achievement.id = id;
 
-		achievement._drawFunction = draw;
+		achievement._iconSource = iconSource;
 		achievement._init = init;
 		achievement._update = update;
 

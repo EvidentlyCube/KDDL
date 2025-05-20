@@ -252,11 +252,11 @@ export const F = {
 	},
 
 	tileToX(tile: number): number {
-		return (tile % 18) * S.RoomTileWidth;
+		return (Math.abs(tile) % 18) * (S.RoomTileWidth + 2) + 1;
 	},
 
 	tileToY(tile: number): number {
-		return (tile / 18 | 0) * S.RoomTileHeight;
+		return (Math.abs(tile) / 18 | 0) * (S.RoomTileHeight + 2) + 1;
 	},
 
 	isCommandRotate(t: number) {

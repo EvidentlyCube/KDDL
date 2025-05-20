@@ -21,7 +21,7 @@ import { PlatformOptions } from "../platform/PlatformOptions";
 import { HoldOptions } from "../platform/PlatformSpecific";
 import { ResourcesCommon } from "../resources/mainGame/ResourcesCommon";
 import { ResourcesQueue } from "../resources/mainGame/ResourcesQueue";
-import { S } from "../S";
+import { exposeValue, S } from "../S";
 import { HoldBootstrap } from "./HoldBootstrap";
 import { KddlApi } from "./KddlApi";
 
@@ -29,6 +29,8 @@ require('../../src.assets/font/toms-new-roman.css');
 
 export class Bootstrap {
 	public static async bootstrap() {
+		exposeValue('Bootstrap', Bootstrap);
+
 		Bootstrap.registerMonkeyPatches();
 
 		(window as any).kddlApi = KddlApi;
@@ -98,6 +100,7 @@ export class Bootstrap {
 
 	private static async initRecamel() {
 		RecamelCore.init(DROD.app, DROD.app.stage);
+		exposeValue('RecamelCore', RecamelCore);
 	}
 
 	private static async startLoadingAllResources() {
