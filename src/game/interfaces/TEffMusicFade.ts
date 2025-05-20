@@ -11,9 +11,12 @@ export class TEffMusicFade extends RecamelEffect {
 	) {
 		super(duration * Math.abs(to - channel.volume), callback);
 
+
 		this.channel = channel;
 		this._volumeFrom = channel.volume;
 		this._volumeTo = to;
+
+		console.log(`${this.channel.name} -> Start fade from ${this.channel.volume.toFixed(2)} to ${to.toFixed(2)}`);
 
 		this.updateVolume();
 	}
@@ -29,9 +32,11 @@ export class TEffMusicFade extends RecamelEffect {
 	}
 
 	public toFadeOut(duration: number) {
-		if (this._volumeTo === 0 && duration > this.duration) {
+		if (this._volumeTo === 0 && duration >= this.duration) {
 			return this;
 		}
+
+		console.log(`${this.channel.name} -> toFadeOut()`);
 
 		const fade = new TEffMusicFade(this.channel, 0, duration, this.callback);
 		this.stop();
@@ -39,9 +44,11 @@ export class TEffMusicFade extends RecamelEffect {
 	}
 
 	public toFadeIn(duration: number) {
-		if (this._volumeTo === 1 && duration > this.duration) {
+		if (this._volumeTo === 1 && duration >= this.duration) {
 			return this;
 		}
+
+		console.log(`${this.channel.name} -> toFadeIn()`);
 
 		const fade = new TEffMusicFade(this.channel, 1, duration, this.callback);
 		this.stop();

@@ -1,8 +1,6 @@
 BUGS:
  - Update translation files for other languages
- - Music stacks sometimes somehow
 
 FUTURE IMPROVEMENTS:
- - The firefox flicker bug
  - Clicking minimap maybe?
  - i18n tool - one command to update all translation files

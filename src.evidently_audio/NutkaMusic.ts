@@ -71,6 +71,8 @@ export class NutkaMusic  implements NutkaManagedSound {
 			return;
 		}
 
+		console.log(`${this.name} -> Play V=${this.volume.toFixed(2)}`);
+
 		this._playback = this._definition.play({
 			volume: this._volume,
 			startOffset: this._resumePosition,
@@ -82,6 +84,8 @@ export class NutkaMusic  implements NutkaManagedSound {
 		if (!this._playback) {
 			return;
 		}
+
+		console.log(`${this.name} -> Stop V=${this.volume.toFixed(2)}`);
 
 		this._resumePosition = this._playback.positionSeconds;
 		this._playback.stop();

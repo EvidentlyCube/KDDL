@@ -1,6 +1,7 @@
 ## 1.6.13 - ????-??-??
  - [BUGFIX] Fixed broken achievements + remade them to avoid the flicker-risking canvas texture upload
  - [BUGFIX] Fixed orb highlights not disappearing on click/move
+ - [BUGFIX] Music stacking and never stopping should no longer happen
  - [OTHER] Achievement description tooltip now also shows its state
  - [OTHER] Achievements window has updated description
  - [FEATURE] Game now auto mutes sound when not visible

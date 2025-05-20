@@ -1,13 +1,13 @@
-import {ResourcesQueue} from "../../resources/mainGame/ResourcesQueue";
-import {NutkaPlayback} from "../../../src.evidently_audio/NutkaPlayback";
-import {NutkaDefinition} from "../../../src.evidently_audio/NutkaDefinition";
-import {UtilsRandom} from "../../../src.framework/net/retrocade/utils/UtilsRandom";
-import {C} from "../../C";
-import {NutkaMusic} from "../../../src.evidently_audio/NutkaMusic";
-import {RecamelEffect} from "../../../src.framework/net/retrocade/camel/effects/RecamelEffect";
-import {DROD} from "./DROD";
-import {ASSERT} from "../../ASSERT";
-import {HoldOptions} from "../../platform/PlatformSpecific";
+import { ResourcesQueue } from "../../resources/mainGame/ResourcesQueue";
+import { NutkaPlayback } from "../../../src.evidently_audio/NutkaPlayback";
+import { NutkaDefinition } from "../../../src.evidently_audio/NutkaDefinition";
+import { UtilsRandom } from "../../../src.framework/net/retrocade/utils/UtilsRandom";
+import { C } from "../../C";
+import { NutkaMusic } from "../../../src.evidently_audio/NutkaMusic";
+import { RecamelEffect } from "../../../src.framework/net/retrocade/camel/effects/RecamelEffect";
+import { DROD } from "./DROD";
+import { ASSERT } from "../../ASSERT";
+import { HoldOptions } from "../../platform/PlatformSpecific";
 import { TEffMusicFade } from "../interfaces/TEffMusicFade";
 
 const soundsMap = new Map<string, NutkaDefinition>();
@@ -170,52 +170,37 @@ export class Sfx {
 		soundsMap.set('trapdoor_2', ResourcesQueue.getSound(C.RES_SFX_TRAPDOOR2)); //play("trapdoor",       3)
 		soundsMap.set('trapdoor_3', ResourcesQueue.getSound(C.RES_SFX_TRAPDOOR3)); //play("trapdoor",       3)
 
-		Sfx._musicLibrary.set(
-			C.MUSIC_TITLE,
-			[
-				new NutkaMusic(ResourcesQueue.getSound(C.RES_MUSIC_TITLE), "Title"),
-			],
-		);
-		Sfx._musicLibrary.set(
-			C.MUSIC_OUTRO,
-			[
-				new NutkaMusic(ResourcesQueue.getSound(C.RES_MUSIC_CREDITS), "Outro"),
-			],
-		);
+		Sfx._musicLibrary.set(C.MUSIC_TITLE, [
+			new NutkaMusic(ResourcesQueue.getSound(C.RES_MUSIC_TITLE), "Title"),
+		]);
+		Sfx._musicLibrary.set(C.MUSIC_OUTRO, [
+			new NutkaMusic(ResourcesQueue.getSound(C.RES_MUSIC_CREDITS), "Outro"),
+		]);
 	}
 
 	public static initializeHold(hold: HoldOptions) {
-		Sfx._musicLibrary.set(
-			C.MUSIC_PUZZLE,
-			[
-				new NutkaMusic(ResourcesQueue.getSound(hold.music.puzzle1), "Puzzle 1"),
-				new NutkaMusic(ResourcesQueue.getSound(hold.music.puzzle2), "Puzzle 2"),
-			],
-		);
-		Sfx._musicLibrary.set(
-			C.MUSIC_ACTION,
-			[
-				new NutkaMusic(ResourcesQueue.getSound(hold.music.attack1), "Attack 1"),
-				new NutkaMusic(ResourcesQueue.getSound(hold.music.attack2), "Attack 2"),
-			],
-		);
-		Sfx._musicLibrary.set(
-			C.MUSIC_AMBIENT,
-			[
-				new NutkaMusic(ResourcesQueue.getSound(hold.music.ambient), "Ambient"),
-			],
-		);
-		Sfx._musicLibrary.set(
-			C.MUSIC_LEVEL_EXIT,
-			[
-				new NutkaMusic(ResourcesQueue.getSound(hold.music.winLevel), "Level Exit"),
-			],
-		);
+		Sfx._musicLibrary.set(C.MUSIC_PUZZLE, [
+			new NutkaMusic(ResourcesQueue.getSound(hold.music.puzzle1), "Puzzle 1"),
+			new NutkaMusic(ResourcesQueue.getSound(hold.music.puzzle2), "Puzzle 2"),
+		]);
+		Sfx._musicLibrary.set(C.MUSIC_ACTION, [
+			new NutkaMusic(ResourcesQueue.getSound(hold.music.attack1), "Attack 1"),
+			new NutkaMusic(ResourcesQueue.getSound(hold.music.attack2), "Attack 2"),
+		]);
+		Sfx._musicLibrary.set(C.MUSIC_AMBIENT, [
+			new NutkaMusic(ResourcesQueue.getSound(hold.music.ambient), "Ambient"),
+		]);
+		Sfx._musicLibrary.set(C.MUSIC_LEVEL_EXIT, [
+			new NutkaMusic(ResourcesQueue.getSound(hold.music.winLevel), "Level Exit"),
+		]);
+
+		Sfx._musicFades.forEach(fade => fade.endMusic());
+		Sfx._musicFades.clear();
 	}
 
 
 	private static _currentMusic: string;
-	private static _currentChannel: NutkaMusic|null;
+	private static _currentChannel: NutkaMusic | null;
 
 	private static _musicFades = new Map<NutkaMusic, TEffMusicFade>();
 	private static _musicLibrary = new Map<string, NutkaMusic[]>();
@@ -227,55 +212,34 @@ export class Sfx {
 			throw new Error(`Filed to find music '${musicName}'`);
 		}
 
-		return music[UtilsRandom.uint(0, music.length)];
+		return UtilsRandom.from(music);
 	}
 
 	public static playMusic(music: string) {
-		if (music == Sfx._currentMusic) {
-			return;
-		}
-
-		if (Sfx._currentChannel) {
-			const fade = Sfx._musicFades.get(Sfx._currentChannel) ?? new TEffMusicFade(
-				Sfx._currentChannel, 0, 250, Sfx.fadeFinishedCallback
-			);
-
-			Sfx._musicFades.set(Sfx._currentChannel, fade.toFadeIn(250))
-		}
-
-		ASSERT(Sfx.getMusicInstance(music));
-
-		Sfx._currentMusic = music;
-		Sfx._currentChannel = Sfx.getMusicInstance(music);
-		Sfx._currentChannel.isLooping = true;
-		Sfx._currentChannel.play();
-
-		const fade = Sfx._musicFades.get(Sfx._currentChannel) ?? new TEffMusicFade(
-			Sfx._currentChannel, 1, 250, Sfx.fadeFinishedCallback
-		);
-
-		Sfx._musicFades.set(Sfx._currentChannel, fade.toFadeIn(250))
+		return this.crossFadeMusic(music, 250);
 	}
 
 	public static update() {
 		// Do nothing
 	}
 
-	public static crossFadeMusic(music: string) {
+	public static crossFadeMusic(music: string, fadeDuration = 2500) {
 		if (music == Sfx._currentMusic) {
 			return;
 		}
 
+		console.log(`CROSS FADE MUSIC ${music} DURATION=${fadeDuration}`);
+
 		for (const fade of Array.from(Sfx._musicFades.values())) {
-			Sfx._musicFades.set(fade.channel, fade.toFadeOut(2500));
+			Sfx._musicFades.set(fade.channel, fade.toFadeOut(fadeDuration));
 		}
 
 		if (Sfx._currentChannel) {
 			const fade = Sfx._musicFades.get(Sfx._currentChannel) ?? new TEffMusicFade(
-				Sfx._currentChannel, 0, 2500, Sfx.fadeFinishedCallback
+				Sfx._currentChannel, 0, fadeDuration, Sfx.fadeFinishedCallback
 			);
 
-			Sfx._musicFades.set(Sfx._currentChannel, fade.toFadeOut(2500))
+			Sfx._musicFades.set(Sfx._currentChannel, fade.toFadeOut(fadeDuration))
 		}
 
 		if (!music) {
@@ -284,22 +248,23 @@ export class Sfx {
 			return;
 		}
 
-		ASSERT(Sfx.getMusicInstance(music));
-
 		Sfx._currentMusic = music;
 		Sfx._currentChannel = Sfx.getMusicInstance(music);
+		ASSERT(Sfx._currentChannel);
 		Sfx._currentChannel.isLooping = true;
 		Sfx._currentChannel.play();
 
 		const fade = Sfx._musicFades.get(Sfx._currentChannel) ?? new TEffMusicFade(
-			Sfx._currentChannel, 1, 2500, Sfx.fadeFinishedCallback
+			Sfx._currentChannel, 1, fadeDuration, Sfx.fadeFinishedCallback
 		);
 
-		Sfx._musicFades.set(Sfx._currentChannel, fade.toFadeIn(2500))
+		Sfx._musicFades.set(Sfx._currentChannel, fade.toFadeIn(fadeDuration))
 	}
 
 	private static fadeFinishedCallback(effect: RecamelEffect | undefined) {
 		if (effect) {
+			const e = effect as TEffMusicFade;
+			console.log(`${e.channel.name} -> Fade Finish V=${e.channel.volume.toFixed(2)}`);
 			Sfx._musicFades.delete((effect as TEffMusicFade).channel);
 		}
 	}
