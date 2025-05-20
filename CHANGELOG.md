@@ -1,4 +1,4 @@
-## 1.6.13 - ????-??-??
+## 1.6.13 - 2025-05-20
  - [BUGFIX] Fixed broken achievements + remade them to avoid the flicker-risking canvas texture upload
  - [BUGFIX] Fixed orb highlights not disappearing on click/move
  - [BUGFIX] Music stacking and never stopping should no longer happen
