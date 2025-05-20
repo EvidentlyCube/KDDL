@@ -768,12 +768,6 @@ export const T = {
         TILES_PIT_SIDE       : 8 as StyleTilesets,
         TILES_PIT_SIDE_SMALL : 9 as StyleTilesets,
         TILES_STYLE         : 10 as StyleTilesets,
-
-        plotPrecise(bitmapData:BitmapDataWritable, tile:number, x:number, y:number, source?:CanvasImageSource){
-            UtilsBitmapData.blitPart(source || Gfx.GENERAL_TILES, bitmapData, x, y,
-                F.tileToX(tile), F.tileToY(tile),
-                S.RoomTileWidth, S.RoomTileHeight);
-        }
     }
 
 

@@ -63,7 +63,6 @@ export class HoldBootstrap {
 
 		// 5. Initialize classes
 		await Progress.loadFromDisk();
-		await once(Gfx.initializeHoldResources);
 		await once(HoldBootstrap.initializeGraphics);
 		Sfx.initializeHold(holdOptions);
 		await once(HoldBootstrap.initializeGameClasses);
