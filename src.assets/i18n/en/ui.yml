@@ -418,16 +418,24 @@ ui.game_completed.button.continue: Continue playing
 
 ui.achievement_list.header: "Achievements:"
 ui.achievement_list.info: >
-    Lighted up achievements are acquired.
+    - Lit Up - Acquired.
 
-    Greyed-out achievements which are not semi-transparent are "active". This
-    means that in the current room you might be able to get or work toward this
-    achievement (but not always, so read the achievement descriptions carefully).
-    Do note that some achievements may be active in all or most rooms in the game.
+    - Red - Failed one of the requirements; the room must be restarted
+    for another attempt.
+
+    - Grayed out - Active; you can get or work towards getting this achievement
+    in the current room. A select few achievements are always active.
+
+    - Translucent - Inactive; you can't get or work towards this achievement
+    in the current room.
 
 ui.achievement_growl.header: Achievement!
 ui.achievement_growl.dismiss: Click or Space to dismiss
 
+ui.achievement_state.acquired: Acquired
+ui.achievement_state.active: Active
+ui.achievement_state.failed: Failed
+ui.achievement_state.inactive: Inactive
 
 # Pause window
 

@@ -1,19 +1,21 @@
-import * as PIXI from 'pixi.js';
 import {DropShadowFilter} from "@pixi/filter-drop-shadow";
 import RawInput from "../../../../../src.tn/RawInput";
 import {S} from "../../../../../src/S";
+import { Container, DisplayObject, Graphics, InteractionEvent, NineSlicePlane, Text, TextStyle } from "pixi.js";
 
-const tooltipContainer = new PIXI.Container();
-const hooks = new Map<any, string>();
+type TextSource = string | (() => string);
+
+const tooltipContainer = new Container();
+const hooks = new Map<any, TextSource>();
 
 tooltipContainer.interactive = false;
 tooltipContainer.interactiveChildren = false;
 
-const tooltipStyle = new PIXI.TextStyle();
-const tooltipText = new PIXI.Text('', tooltipStyle);
+const tooltipStyle = new TextStyle();
+const tooltipText = new Text('', tooltipStyle);
 
-let bgGrid: PIXI.NineSlicePlane | undefined;
-let bgGraphics = new PIXI.Graphics();
+let bgGrid: NineSlicePlane | undefined;
+let bgGraphics = new Graphics();
 let bgColor = 0;
 let isHidden = true;
 
@@ -24,8 +26,9 @@ let paddingLeft = 0;
 
 tooltipContainer.addChild(tooltipText);
 
-function onHookOver(event: PIXI.InteractionEvent) {
-	setText(hooks.get(event.target) ?? '');
+function onHookOver(event: InteractionEvent) {
+	const textSource = hooks.get(event.target) ?? '';
+	setText(typeof textSource === 'function' ? textSource() : textSource);
 	isHidden = false;
 }
 
@@ -33,7 +36,7 @@ function onHookOut() {
 	isHidden = true;
 }
 
-function setGridBackground(bg: PIXI.NineSlicePlane | undefined) {
+function setGridBackground(bg: NineSlicePlane | undefined) {
 	if (bgGrid) {
 		tooltipContainer.removeChild(bgGrid);
 	}
@@ -77,7 +80,7 @@ export const RecamelTooltip = {
 	get container() {
 		return tooltipContainer;
 	},
-	hook(object: PIXI.DisplayObject, text: string): void {
+	hook(object: DisplayObject, text: TextSource): void {
 		hooks.set(object, text);
 
 		object.interactive = true;
@@ -87,7 +90,7 @@ export const RecamelTooltip = {
 		object.on('pointerout', onHookOut);
 	},
 
-	unhook(object: PIXI.DisplayObject): void {
+	unhook(object: DisplayObject): void {
 		hooks.delete(object);
 
 		object.off('pointerover', onHookOver);
@@ -118,8 +121,8 @@ export const RecamelTooltip = {
 		paddingLeft = left;
 	},
 
-	setBackground(bg: PIXI.NineSlicePlane | number): void {
-		if (bg instanceof PIXI.NineSlicePlane) {
+	setBackground(bg: NineSlicePlane | number): void {
+		if (bg instanceof NineSlicePlane) {
 			setGridBackground(bg);
 		} else {
 			setColorBackground(bg);

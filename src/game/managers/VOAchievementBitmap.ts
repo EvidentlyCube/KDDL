@@ -10,6 +10,7 @@ import {BitmapDataWritable} from "../../C";
 import {TGrowlAchievement} from "../windows/TGrowlAchievement";
 import RawInput from "src.tn/RawInput";
 import { Achievements } from "../achievements/Achievements";
+import { _ } from "src.framework/_";
 
 export class VOAchievementBitmap extends RecamelSprite {
 	public achievement: Achievement;
@@ -75,6 +76,24 @@ export class VOAchievementBitmap extends RecamelSprite {
 			: this.achievement.desc;
 
 		// Hook is never removed because the object is never garbage collected
-		RecamelTooltip.hook(this, "== " + this.achievement.name + " ==\n" + desc);
+		RecamelTooltip.hook(this, () => {
+			let suffix = "";
+
+
+			if (this.achievement.acquired) {
+				suffix = _("ui.achievement_state.acquired");
+
+			} else if (this.achievement._data.failed) {
+				suffix = _("ui.achievement_state.failed");
+
+			} else if (this.achievement.isRunning) {
+				suffix = _("ui.achievement_state.active");
+
+			} else {
+				suffix = _("ui.achievement_state.inactive");
+			}
+
+			return `## ${this.achievement.name} - ${suffix} ##\n\n${desc}`;
+		});
 	}
 }

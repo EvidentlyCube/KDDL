@@ -24,7 +24,6 @@ export class TWindowAchievements extends RecamelWindow {
 	}
 
 	public static destroy() {
-		TWindowAchievements._instance?.removeData();
 		TWindowAchievements._instance = undefined;
 	}
 
@@ -134,10 +133,6 @@ export class TWindowAchievements extends RecamelWindow {
 			RawInput.flushAll();
 			this.closeClicked();
 		}
-	}
-
-	public removeData() {
-		this._achievements.forEach(x => x.destroy({ baseTexture: true, children: true, texture: true}));
 	}
 
 	private shown = () => {

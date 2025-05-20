@@ -1,6 +1,8 @@
 ## 1.6.13 - ????-??-??
  - [BUGFIX] Fixed broken achievements + remade them to avoid the flicker-risking canvas texture upload
  - [BUGFIX] Fixed orb highlights not disappearing on click/move
+ - [OTHER] Achievement description tooltip now also shows its state
+ - [OTHER] Achievements window has updated description
 
 ## 1.6.12 - 2025-05-19
  - [BUGFIX] Minimap will correctly render if you first restore to a room and then use restore function without leaving the room
