@@ -79,7 +79,7 @@ function levelID(): number {
 
 
 function roomOffset() {
-	return Level.getRoomOffsetInLevel(roomID());
+	return Level.getRoomOffsetInLevel(roomPid());
 }
 
 
@@ -88,8 +88,8 @@ function room() {
 }
 
 
-function roomID(): number {
-	return room().roomId;
+function roomPid(): string {
+	return room().roomPid;
 }
 
 

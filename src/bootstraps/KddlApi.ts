@@ -8,13 +8,16 @@ import { Core } from "src/game/global/Core";
 import { CueEvents } from "src/game/global/CueEvents";
 import { DROD } from "src/game/global/DROD";
 import { Game } from "src/game/global/Game";
+import { Level } from "src/game/global/Level";
 import { Progress } from "src/game/global/Progress";
 import { Room } from "src/game/global/Room";
 import { VODemoRecord } from "src/game/managers/VODemoRecord";
+import { TStateGame } from "src/game/states/TStateGame";
 import { TStatePreloader } from "src/game/states/TStatePreloader";
 import { TStateTitle } from "src/game/states/TStateTitle";
 import { TWidgetMinimap } from "src/game/widgets/TWidgetMinimap";
 import { S } from "src/S";
+import { intAttr } from "src/XML";
 
 export const KddlApi = {
     async loadHold(holdId: HoldId): Promise<void> {
@@ -49,11 +52,11 @@ export const KddlApi = {
         return canvasToPng(levelBitmapData.canvas);
     },
 
-    async drawRoom(roomId: number) {
+    async drawRoom(roomPid: string) {
         const room = new Room();
 
         try {
-            room.loadRoom(roomId);
+            room.loadRoom(roomPid);
         } catch (e: unknown) {
             return -1;
         }
@@ -85,15 +88,15 @@ export const KddlApi = {
         const { isSpiderMode } = S;
         S.isSpiderMode = true;
 
-        const demo = new VODemoRecord(0, demoData);
+        const demo = new VODemoRecord("", demoData);
 
-        var roomID = demo.roomId;
+        const roomPid = demo.roomPid;
         var px = demo.startX;
         var py = demo.startY;
         var po = demo.startO;
 
         Progress.restoreToDemo(demo);
-        Game.loadFromRoom(roomID, px, py, po);
+        Game.loadFromRoom(roomPid, px, py, po);
         Commands.fromString(demo.demoBuffer);
 
 
@@ -139,10 +142,31 @@ export const KddlApi = {
         }
     },
     getRoomIdsWithDemos() {
-        return Progress.getRoomIdsWithDemo();
+        return Progress.getRoomPidsWithDemo();
     },
-    getDemo(roomId: number) {
-        return Progress.getRoomDemo(roomId);
+    getDemo(roomPid: string) {
+        return Progress.getRoomDemo(roomPid);
+    },
+    ingame: {
+        get Game() {
+            return Game;
+        },
+        get room() {
+            return Game.room;
+        },
+
+        restart() {
+            const state = RecamelCore.currentState;
+            if (state instanceof TStateGame) {
+                state.restartCommand();
+            }
+        },
+        inputMove(command: number) {
+            const state = RecamelCore.currentState;
+            if (state instanceof TStateGame) {
+                state.processCommand(command);
+            }
+        },
     }
 }
 

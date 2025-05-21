@@ -579,7 +579,7 @@ export class Game {
 		}
 
 		if (Game.isNewRoom) {
-			Progress.setRoomExplored(Game.room.roomId, false);
+			Progress.setRoomExplored(Game.room.roomPid, false);
 		}
 
 		Commands.freeze();
@@ -694,7 +694,7 @@ export class Game {
 			Game.room.killMonster(monster);
 		}
 
-		if (Game.isNewRoom && attr(Level.getRoom(Game.room.roomId), 'IsSecret') == '1') {
+		if (Game.isNewRoom && attr(Level.getRoom(Game.room.roomPid), 'IsSecret') == '1') {
 			CueEvents.add(C.CID_SECRET_ROOM_FOUND);
 		}
 
@@ -782,11 +782,11 @@ export class Game {
 	// ::::::::::::::::::::::::::::::::::::::::::::::
 
 	public static setCurrentRoomExplored() {
-		Progress.setRoomExplored(Game.room.roomId, true);
+		Progress.setRoomExplored(Game.room.roomPid, true);
 	}
 
 	public static setCurrentRoomConquered() {
-		Progress.setRoomConquered(Game.room.roomId, true);
+		Progress.setRoomConquered(Game.room.roomPid, true);
 	}
 
 
@@ -845,7 +845,7 @@ export class Game {
 			Progress.storeDemo();
 
 			if (!Game.isCurrentRoomConquered()) {
-				CueEvents.add(C.CID_CONQUER_ROOM, Game.room.roomId);
+				CueEvents.add(C.CID_CONQUER_ROOM, Game.room.roomPid);
 				Game.setCurrentRoomConquered();
 			}
 		}
@@ -894,7 +894,7 @@ export class Game {
 	}
 
 	public static handleLeaveRoom(orientation: number, force: boolean = false): boolean {
-		const oldRoomID: number = Game.room.roomId;
+		const oldRoomPid = Game.room.roomPid;
 
 		const roomO: number = Game.getRoomExitDirection(orientation);
 
@@ -916,13 +916,13 @@ export class Game {
 				break;
 		}
 
-		const newRoomID: number = Level.getRoomIdByNeighbourId(oldRoomID, roomO);
+		const newRoomPid = Level.getRoomPidByNeighbourPid(oldRoomPid, roomO);
 
-		if (newRoomID == -1) {
+		if (newRoomPid === undefined) {
 			return false;
 		}
 
-		if (!force && !Level.canEnterRoom(newRoomID, newX, newY)) {
+		if (!force && !Level.canEnterRoom(newRoomPid, newX, newY)) {
 			return false;
 		}
 
@@ -940,7 +940,7 @@ export class Game {
 
 			const wasLevelCompleted: boolean = Game.isCurrentLevelComplete();
 			if (!Game.isCurrentRoomConquered()) {
-				CueEvents.add(C.CID_CONQUER_ROOM, Game.room.roomId);
+				CueEvents.add(C.CID_CONQUER_ROOM, Game.room.roomPid);
 				Game.setCurrentRoomConquered();
 			}
 
@@ -957,13 +957,13 @@ export class Game {
 			Progress.isGameMastered = true;
 		}
 
-		if (!Progress.wasRoomEverVisited(newRoomID)) {
-			CueEvents.add(C.CID_ROOM_FIRST_VISIT, newRoomID);
+		if (!Progress.wasRoomEverVisited(newRoomPid)) {
+			CueEvents.add(C.CID_ROOM_FIRST_VISIT, newRoomPid);
 		}
 
 		Progress.setScriptsEnded(Game.finishedScripts, true);
 		Progress.setGameVars(Game.tempGameVars);
-		Progress.roomEntered(newRoomID, newX, newY, Game.player.o);
+		Progress.roomEntered(newRoomPid, newX, newY, Game.player.o);
 
 		new TEffectRoomSlide();
 		TEffectRoomSlide.instance.setOld(Game.room)
@@ -973,7 +973,7 @@ export class Game {
 
 		Game.checkpointTurns.length = 0;
 
-		Game.room.loadRoom(newRoomID);
+		Game.room.loadRoom(newRoomPid);
 		Game.player.setPosition(newX, newY, true);
 
 		Game.setRoomStartToPlayer();
@@ -981,18 +981,19 @@ export class Game {
 
 		Game.setMembersAfterRoomLoad();
 
-		CueEvents.add(C.CID_EXIT_ROOM, oldRoomID);
-		CueEvents.add(C.CID_ENTER_ROOM, newRoomID);
+		CueEvents.add(C.CID_EXIT_ROOM, oldRoomPid);
+		CueEvents.add(C.CID_ENTER_ROOM, newRoomPid);
 
-		TWidgetLevelName.update(Game.room.roomId, Game.room.levelId);
+		TWidgetLevelName.update(Game.room.roomPid, Game.room.levelId);
 
 		return true;
 	}
 
 	public static loadFromLevelEntrance(entranceID: number) {
 		const entrance = Level.getEntrance(entranceID);
+		const roomPid = Level.roomIdToPid(intAttr(entrance, 'RoomID'));
 
-		Progress.roomEntered(intAttr(entrance, 'RoomID'), intAttr(entrance, 'X'), intAttr(entrance, 'Y'), intAttr(entrance, 'O'));
+		Progress.roomEntered(roomPid, intAttr(entrance, 'X'), intAttr(entrance, 'Y'), intAttr(entrance, 'O'));
 
 		if (Game.room) {
 			Game.room.clear();
@@ -1003,7 +1004,7 @@ export class Game {
 		Game.checkpointTurns.length = 0;
 
 		Game.room.resetRoom();
-		Game.room.loadRoom(intAttr(entrance, 'RoomID'));
+		Game.room.loadRoom(roomPid);
 
 		Game.levelStatsLoad();
 
@@ -1020,10 +1021,10 @@ export class Game {
 
 		Game.setMembersAfterRoomLoad();
 
-		CueEvents.add(C.CID_ENTER_ROOM, intAttr(entrance, 'RoomID'));
+		CueEvents.add(C.CID_ENTER_ROOM, roomPid);
 	}
 
-	public static loadFromRoom(roomId: number, x: number, y: number, o: number) {
+	public static loadFromRoom(roomPid: string, x: number, y: number, o: number) {
 		if (Game.room) {
 			Game.room.clear();
 		}
@@ -1032,10 +1033,10 @@ export class Game {
 
 		Game.checkpointTurns.length = 0;
 
-		Progress.roomEntered(roomId, x, y, o);
-		Game.room.loadRoom(roomId);
+		Progress.roomEntered(roomPid, x, y, o);
+		Game.room.loadRoom(roomPid);
 		if (PlatformOptions.isGame) {
-			TWidgetLevelName.update(Game.room.roomId, Game.room.levelId);
+			TWidgetLevelName.update(Game.room.roomPid, Game.room.levelId);
 		}
 
 		Game.startRoomX = x;
@@ -1057,12 +1058,12 @@ export class Game {
 		if (Commands.count()) {
 			if (this.setTurn(Commands.count())) {
 				CueEvents.clear();
-				CueEvents.add(C.CID_ENTER_ROOM, roomId);
+				CueEvents.add(C.CID_ENTER_ROOM, roomPid);
 			} else {
 				this.restartRoom();
 			}
 		} else {
-			CueEvents.add(C.CID_ENTER_ROOM, roomId);
+			CueEvents.add(C.CID_ENTER_ROOM, roomPid);
 		}
 	}
 
@@ -1073,7 +1074,7 @@ export class Game {
 		Game.setPlayerToRoomStart();
 		Game.setMembersAfterRoomLoad();
 
-		CueEvents.add(C.CID_ENTER_ROOM, Game.room.roomId);
+		CueEvents.add(C.CID_ENTER_ROOM, Game.room.roomPid);
 	}
 
 	public static restartRoomFromLastCheckpoint() {
@@ -1134,10 +1135,10 @@ export class Game {
 				}
 
 				const secretRooms = Level.getAllSecretRooms();
-				for (const roomXML of secretRooms) {
+				for (const roomXml of secretRooms) {
 					secretsTotal++;
 
-					if (Progress.wasRoomEverVisited(intAttr(roomXML, 'RoomID'))) {
+					if (Progress.wasRoomEverVisited(attr(roomXml, 'RoomPID'))) {
 						secretsFound++;
 					}
 				}
@@ -1149,7 +1150,7 @@ export class Game {
 				kills += Progress.levelStats.getUint(levelId + "k", 0);
 				time += Progress.levelStats.getUint(levelId + "t", 0);
 
-				for (const roomId of Level.getSecretRoomIdsByLevelId(Game.levelId)) {
+				for (const roomId of Level.getSecretRoomPidsByLevelId(Game.levelId)) {
 					secretsTotal++;
 
 					if (Progress.wasRoomEverVisited(roomId)) {
@@ -1210,11 +1211,11 @@ export class Game {
 	}
 
 	public static isCurrentRoomConquered(): boolean {
-		return Progress.isRoomConquered(Game.room.roomId);
+		return Progress.isRoomConquered(Game.room.roomPid);
 	}
 
 	public static isCurrentRoomExplored(): boolean {
-		return Progress.isRoomExplored(Game.room.roomId);
+		return Progress.isRoomExplored(Game.room.roomPid);
 	}
 
 	public static isCurrentRoomPendingExit(): boolean {
@@ -1222,7 +1223,7 @@ export class Game {
 	}
 
 	public static isCurrentLevelComplete(): boolean {
-		return Progress.isLevelCompleted(Level.getLevelIdByRoomId(Game.room.roomId));
+		return Progress.isLevelCompleted(Level.getLevelIdByRoomPid(Game.room.roomPid));
 	}
 
 	public static setPlayerMood() {

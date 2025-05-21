@@ -38,9 +38,9 @@ export class TWidgetLevelName {
 		this.container.addChild(this._textField);
 	}
 
-	public static update(roomID: number, levelID: number) {
+	public static update(roomPid: string, levelID: number) {
 		const name = Level.getLevelNameTranslated(levelID);
-		const offset = Level.getRoomOffsetInLevel(roomID);
+		const offset = Level.getRoomOffsetInLevel(roomPid);
 
 		TWidgetLevelName._textField.text = name + ": " + TWidgetLevelName.nameFromPosition(offset.x, offset.y);
 

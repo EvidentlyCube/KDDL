@@ -41,7 +41,7 @@ export class TWidgetMoveCounter {
 			text.text = Game.playerTurn.toString();
 
 			if (PlatformOptions.isDebug) {
-				const demo = Progress.getRoomDemo(Game.room.roomId);
+				const demo = Progress.getRoomDemo(Game.room.roomPid);
 
 				if (demo.hasScore) {
 					text.text += ` (best: ${demo.score})`;

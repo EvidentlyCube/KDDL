@@ -40,7 +40,7 @@ export type RoomCoord =
 export const AchievementHelpers = {
 
 	roomConquered(): boolean {
-		return Progress.isRoomConquered(AchievementHelpers.roomID());
+		return Progress.isRoomConquered(AchievementHelpers.roomPid());
 	},
 
 	roomPos(x: number, y: number): boolean {
@@ -72,15 +72,15 @@ export const AchievementHelpers = {
 	},
 
 	roomOffset(): PIXI.IPointData {
-		return Level.getRoomOffsetInLevel(AchievementHelpers.roomID());
+		return Level.getRoomOffsetInLevel(AchievementHelpers.roomPid());
 	},
 
 	turn(): number {
 		return Game.turnNo;
 	},
 
-	roomID(): number {
-		return AchievementHelpers.room().roomId;
+	roomPid(): string {
+		return AchievementHelpers.room().roomPid;
 	},
 
 	levelID(): number {
@@ -219,7 +219,7 @@ export const AchievementHelpers = {
 	},
 
 	getPos(): PIXI.IPointData {
-		return Level.getRoomOffsetInLevel(AchievementHelpers.roomID());
+		return Level.getRoomOffsetInLevel(AchievementHelpers.roomPid());
 	},
 
 	ev(...type: number[]): boolean {
@@ -537,15 +537,15 @@ export const AchievementFactory = {
 			fakeActiveIn: () => {
 				const room = AchievementHelpers.room();
 
-				const isRequired = attr(Level.getRoom(room.roomId), 'IsRequired') === '1';
-				const isSecret = attr(Level.getRoom(room.roomId), 'IsSecret') === '1';
+				const isRequired = attr(Level.getRoom(room.roomPid), 'IsRequired') === '1';
+				const isSecret = attr(Level.getRoom(room.roomPid), 'IsSecret') === '1';
 
 				return (
 					isRequired
-					&& !Progress.wasRoomEverConquered(room.roomId)
+					&& !Progress.wasRoomEverConquered(room.roomPid)
 				) || (
 						isSecret
-						&& !Progress.wasRoomEverConquered(room.roomId)
+						&& !Progress.wasRoomEverConquered(room.roomPid)
 					);
 			},
 			icon: ['default', [[T.TI_MASTER_WALL, 0.5, 0.5]]],

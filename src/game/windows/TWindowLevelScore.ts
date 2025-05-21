@@ -96,10 +96,10 @@ export class TWindowLevelScore extends RecamelWindow {
 
 		this.removeChild(this.modal)
 
-		const demo = Progress.getRoomDemo(Game.room.roomId);
+		const demo = Progress.getRoomDemo(Game.room.roomPid);
 		this.stats.wordWrapWidth = WIDTH - PAD;
 		this.stats.htmlText = this.generateStatsString();
-		if (!boolAttr(Level.getRoom(Game.room.roomId), 'IsRequired', false)) {
+		if (!boolAttr(Level.getRoom(Game.room.roomPid), 'IsRequired', false)) {
 			this.bestScoreValue.text = _('ui.score_window.best_score.unrequired');
 
 		} else {

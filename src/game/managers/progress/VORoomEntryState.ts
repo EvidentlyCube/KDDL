@@ -3,27 +3,26 @@ import {PackedVars} from "../../global/PackedVars";
 import {UtilsBase64} from "../../../../src.framework/net/retrocade/utils/UtilsBase64";
 import {VODemoRecord} from "../VODemoRecord";
 import {Level} from "../../global/Level";
+import { set_addArray, set_clearAndAdd, set_fromJson, set_toJson } from "src.framework/net/retrocade/utils/UtilsSet";
 
 export class VORoomEntryState {
 	public x: number;
 	public y: number;
 	public o: number;
-	public roomId: number;
+	public roomPid: string;
 
 	public gameVars: PackedVars;
-	public exploredRoomIds: number[]; // @TODO - Refactor to set
-	public conqueredRoomIds: number[]; // @TODO - Refactor to set
+	public exploredRoomPids = new Set<string>();
+	public conqueredRoomPids = new Set<string>();
 	public endedScriptIds: number[]; // @TODO - Refactor to set
 
 	public constructor() {
 		this.x = Number.MAX_VALUE;
 		this.y = Number.MAX_VALUE;
 		this.o = Number.MAX_VALUE;
-		this.roomId = Number.MAX_VALUE;
+		this.roomPid = "";
 
 		this.gameVars = new PackedVars;
-		this.exploredRoomIds = [];
-		this.conqueredRoomIds = [];
 		this.endedScriptIds = [];
 	}
 
@@ -45,13 +44,13 @@ export class VORoomEntryState {
 		writer.writeByte(this.x);
 		writer.writeByte(this.y);
 		writer.writeByte(this.o);
-		writer.writeUnsignedInt(this.roomId);
+		writer.writeString(this.roomPid, Encoding.Utf8);
 
 		writer.writeUnsignedInt(vars.length);
 		writer.writeBytes(Array.from(vars));
 
-		writer.writeString(JSON.stringify(this.exploredRoomIds), Encoding.Utf8);
-		writer.writeString(JSON.stringify(this.conqueredRoomIds), Encoding.Utf8);
+		writer.writeString(set_toJson(this.exploredRoomPids), Encoding.Utf8);
+		writer.writeString(set_toJson(this.conqueredRoomPids), Encoding.Utf8);
 		writer.writeString(JSON.stringify(this.endedScriptIds), Encoding.Utf8);
 
 		writer.position = 0;
@@ -64,22 +63,15 @@ export class VORoomEntryState {
 		this.x = reader.readByte();
 		this.y = reader.readByte();
 		this.o = reader.readByte();
-		this.roomId = reader.readUnsignedInt();
+		this.roomPid = reader.readString(Encoding.Utf8);
 
 		const varsLength: number = reader.readUnsignedInt();
 		const bytes = reader.readBytes(varsLength);
 		this.gameVars.unpack(new Uint8Array(bytes));
 
-		let json: string;
-
-		json = reader.readString(Encoding.Utf8);
-		this.exploredRoomIds = JSON.parse(json) as number[];
-
-		json = reader.readString(Encoding.Utf8);
-		this.conqueredRoomIds = JSON.parse(json) as number[];
-
-		json = reader.readString(Encoding.Utf8);
-		this.endedScriptIds = JSON.parse(json) as number[];
+		this.exploredRoomPids = set_fromJson(reader.readString(Encoding.Utf8));
+		this.conqueredRoomPids = set_fromJson(reader.readString(Encoding.Utf8));
+		this.endedScriptIds = JSON.parse(reader.readString(Encoding.Utf8)) as number[];
 
 		if (this.endedScriptIds === null) {
 			throw new Error("Invalid save");
@@ -87,14 +79,14 @@ export class VORoomEntryState {
 	}
 
 	public clear() {
-		this.x = Number.MAX_VALUE;
-		this.y = Number.MAX_VALUE;
-		this.o = Number.MAX_VALUE;
-		this.roomId = Number.MAX_VALUE;
+		this.x = 0;
+		this.y = 0;
+		this.o = 0;
+		this.roomPid = "";
 
 		this.gameVars.clear();
-		this.exploredRoomIds.length = 0;
-		this.conqueredRoomIds.length = 0;
+		this.exploredRoomPids.clear();
+		this.conqueredRoomPids.clear();
 		this.endedScriptIds.length = 0;
 	}
 
@@ -102,10 +94,10 @@ export class VORoomEntryState {
 		this.x = state.x;
 		this.y = state.y;
 		this.o = state.o;
-		this.roomId = state.roomId;
+		this.roomPid = state.roomPid;
 
-		this.exploredRoomIds = state.exploredRoomIds.concat();
-		this.conqueredRoomIds = state.conqueredRoomIds.concat();
+		set_clearAndAdd(state.exploredRoomPids, this.exploredRoomPids);
+		set_clearAndAdd(state.conqueredRoomPids, this.conqueredRoomPids);
 		this.endedScriptIds = state.endedScriptIds.concat();
 		this.gameVars = state.gameVars.clone();
 	}
@@ -114,11 +106,11 @@ export class VORoomEntryState {
 		this.x = demo.startX;
 		this.y = demo.startY;
 		this.o = demo.startO;
-		this.roomId = demo.roomId;
+		this.roomPid = demo.roomPid;
 
+		set_clearAndAdd(demo.exploredRoomPids, this.exploredRoomPids);
+		set_clearAndAdd(demo.conqueredRoomPids, this.conqueredRoomPids);
 		this.endedScriptIds = [...demo.endedScripts];
-		this.conqueredRoomIds = [...demo.conqueredRoomIds];
-		this.exploredRoomIds = [...demo.exploredRoomIds];
 		this.gameVars = demo.gameVars.clone();
 	}
 
@@ -132,23 +124,21 @@ export class VORoomEntryState {
 			this.x != Number.MAX_VALUE
 			&& this.y != Number.MAX_VALUE
 			&& this.o != Number.MAX_VALUE
-			&& this.roomId != Number.MAX_VALUE
-			&& !!Level.getRoomStrict(this.roomId)
+			&& !!this.roomPid
+			&& !!Level.isValidRoomPid(this.roomPid)
 		);
 	}
 
 	/**
 	 * Returns true if full save should be forced
 	 */
-	public setRoomExplored(id: number, isExplored: boolean): boolean {
-		const index: number = this.exploredRoomIds.indexOf(id);
-
-		if (index == -1 && isExplored) {
-			this.exploredRoomIds.push(id);
+	public setRoomExplored(roomPid: string, isExplored: boolean): boolean {
+		if (isExplored && !this.exploredRoomPids.has(roomPid)) {
+			this.exploredRoomPids.add(roomPid);
 			return true;
 
-		} else if (index != -1 && !isExplored) {
-			this.exploredRoomIds.splice(index, 1);
+		} else if (!isExplored && this.exploredRoomPids.has(roomPid)) {
+			this.exploredRoomPids.delete(roomPid);
 			return true;
 		}
 
@@ -158,15 +148,13 @@ export class VORoomEntryState {
 	/**
 	 * Returns true if full save should be forced
 	 */
-	public setRoomConquered(id: number, isConquered: boolean): boolean {
-		const index: number = this.conqueredRoomIds.indexOf(id);
-
-		if (index == -1 && isConquered) {
-			this.conqueredRoomIds.push(id);
+	public setRoomConquered(roomPid: string, isConquered: boolean): boolean {
+		if (isConquered && !this.conqueredRoomPids.has(roomPid)) {
+			this.conqueredRoomPids.add(roomPid);
 			return true;
 
-		} else if (index != -1 && !isConquered) {
-			this.conqueredRoomIds.splice(index, 1);
+		} else if (!isConquered && this.conqueredRoomPids.has(roomPid)) {
+			this.conqueredRoomPids.delete(roomPid);
 			return true;
 		}
 
@@ -193,19 +181,21 @@ export class VORoomEntryState {
 
 
 	public isLevelCompleted(levelId: number): boolean {
-		return Level.getRequiredRoomIdsByLevel(levelId).every(roomId => this.isRoomConquered(roomId))
+		return Level.getRequiredRoomPidsByLevel(levelId)
+			.every(roomPid => this.isRoomConquered(roomPid))
 	}
 
 	public isLevelVisited(levelId: number): boolean {
-		return Level.getRoomIdsByLevel(levelId).some(roomId => this.isRoomExplored(roomId));
+		return Level.getRoomPidsByLevel(levelId)
+			.some(roomPid => this.isRoomExplored(roomPid));
 	}
 
-	public isRoomConquered(roomId: number): boolean {
-		return this.conqueredRoomIds.indexOf(roomId) !== -1;
+	public isRoomConquered(roomPid: string): boolean {
+		return this.conqueredRoomPids.has(roomPid);
 	}
 
-	public isRoomExplored(roomId: number): boolean {
-		return this.exploredRoomIds.indexOf(roomId) !== -1;
+	public isRoomExplored(roomPid: string): boolean {
+		return this.exploredRoomPids.has(roomPid);
 	}
 
 	public isScriptEnded(scriptId: number): boolean {
@@ -213,11 +203,11 @@ export class VORoomEntryState {
 	}
 
 	public countConqueredRooms(): number {
-		return this.conqueredRoomIds.length;
+		return this.conqueredRoomPids.size;
 	}
 
 	public countExploredRooms(): number {
-		return this.exploredRoomIds.length;
+		return this.conqueredRoomPids.size;
 	}
 
 
@@ -225,8 +215,8 @@ export class VORoomEntryState {
 	// :: Retrievers
 	// ::::::::::::::::::::::::::::::::::::::::::::::
 
-	public getExploredRoomIdsByLevel(levelID: number): number[] {
-		return Level.getRoomIdsByLevel(levelID).filter(roomId => this.isRoomExplored(roomId));
+	public getExploredRoomPidsByLevel(levelId: number): string[] {
+		return Level.getRoomPidsByLevel(levelId).filter(roomPid => this.isRoomExplored(roomPid));
 	}
 
 	public clone(): VORoomEntryState {
@@ -234,11 +224,11 @@ export class VORoomEntryState {
 		cloned.x = this.x;
 		cloned.y = this.y;
 		cloned.o = this.o;
-		cloned.roomId = this.roomId;
+		cloned.roomPid = this.roomPid;
 
 		cloned.gameVars = this.gameVars.clone();
-		cloned.exploredRoomIds = this.exploredRoomIds.concat();
-		cloned.conqueredRoomIds = this.conqueredRoomIds.concat();
+		cloned.exploredRoomPids = new Set(this.exploredRoomPids);
+		cloned.conqueredRoomPids = new Set(this.conqueredRoomPids);
 		cloned.endedScriptIds = this.endedScriptIds.concat();
 
 		return cloned;

@@ -106,9 +106,9 @@ export class TEffectRoomSlide extends RecamelEffectScreen {
 		room.renderInto(TEffectRoomSlide._newRoomTexture);
 	}
 
-	public start(prevRoom: number, newRoom: number) {
-		const oldRoomPos = Level.getRoomOffsetInLevel(prevRoom);
-		const newRoomPos = Level.getRoomOffsetInLevel(newRoom);
+	public start(prevRoomPid: string, newRoomPid: string) {
+		const oldRoomPos = Level.getRoomOffsetInLevel(prevRoomPid);
+		const newRoomPos = Level.getRoomOffsetInLevel(newRoomPid);
 
 		const offsetX = newRoomPos.x - oldRoomPos.x;
 		const offsetY = newRoomPos.y - oldRoomPos.y;

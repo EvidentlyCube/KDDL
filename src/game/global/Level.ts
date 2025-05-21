@@ -1,4 +1,3 @@
-import * as PIXI from 'pixi.js';
 import { UtilsBase64 } from "../../../src.framework/net/retrocade/utils/UtilsBase64";
 import { UtilsXPath } from "../../../src.framework/net/retrocade/utils/UtilsXPath";
 import { F } from "../../F";
@@ -15,6 +14,8 @@ import { VOCharacterCommand } from '../managers/VOCharacterCommand';
 import { assertDefined } from 'src/ASSERT';
 import { DebugConsole } from '../DebugConsole';
 import { RecamelLang } from 'src.framework/net/retrocade/camel/RecamelLang';
+import { generateRoomPid } from './RoomPidGenerator';
+import { IPointData } from "pixi.js";
 
 
 const nothingElement = document.createElement('nothingfound');
@@ -31,21 +32,23 @@ export class Level {
 	private static $holdTimestamp = 0;
 	private static $levels: Element[] = [];
 	private static $rooms: Element[] = [];
-	private static $requiredRoomIds = new Set<number>();
-	private static $secretRoomIds = new Set<number>();
+	private static $requiredRoomPids = new Set<string>();
+	private static $secretRoomPids = new Set<string>();
 	private static $levelIdToLevelMap = new Map<number, Element>();
 	private static $levelIdToRawNameMap = new Map<number, string>();
-	private static $levelIdToRoomIdsMap = new Map<number, number[]>();
-	private static $levelIdToRequiredRoomIdsMap = new Map<number, number[]>();
+	private static $levelIdToRoomPidsMap = new Map<number, string[]>();
+	private static $levelIdToRequiredRoomPidsMap = new Map<number, string[]>();
 	private static $orderIndexToLevelIdMap = new Map<number, number>();
-	private static $roomIdToRoomMap = new Map<number, Element>();
-	private static $roomIdToLevelIdMap = new Map<number, number>();
-	private static $roomPosToRoomIdMap = new Map<string, number>();
-	private static $roomIdToSquaresReader = new Map<number, BinaryReader>();
+	private static $roomPidToRoomMap = new Map<string, Element>();
+	private static $roomPidToLevelIdMap = new Map<string, number>();
+	private static $roomPosToRoomPidMap = new Map<string, string>();
+	private static $roomPidToSquaresReader = new Map<string, BinaryReader>();
+	private static $roomPidToRoomId = new Map<string, number>();
+	private static $roomIdToRoomPid = new Map<number, string>();
 
 
-	public static restoreTo(roomID: number, x: number, y: number, o: number) {
-		Game.loadFromRoom(roomID, x, y, o);
+	public static restoreTo(roomPid: string, x: number, y: number, o: number) {
+		Game.loadFromRoom(roomPid, x, y, o);
 	}
 
 	public static getHoldName(): string {
@@ -81,12 +84,12 @@ export class Level {
 		return Level.$orderIndexToLevelIdMap.get(orderIndex) ?? 0;
 	}
 
-	public static getLevelIndex(levelId: number): number {
+	public static getLevelGidIndex(levelId: number): number {
 		return intAttr(Level.getLevelByID(levelId), 'GID_LevelIndex');
 	}
 
-	public static getLevelIdByRoomId(roomId: number): number {
-		return Level.$roomIdToLevelIdMap.get(roomId) ?? 0;
+	public static getLevelIdByRoomPid(roomPid: string): number {
+		return Level.$roomPidToLevelIdMap.get(roomPid) ?? 0;
 	}
 
 	private static getRawLevelName(levelId: number): string {
@@ -117,60 +120,66 @@ export class Level {
 		return Level.$rooms;
 	}
 
-	public static isValidRoomId(roomId: number) {
-		return !!Level.getRoomStrict(roomId);
+	public static getAllRoomPids(): ReadonlyArray<string> {
+		return Level.$rooms.map(room => attr(room, 'RoomPID'));
 	}
 
-	public static getRoom(roomId: number): Element {
-		return Level.$roomIdToRoomMap.get(roomId) ?? nothingElement;
+	public static isValidRoomPid(roomPid: string) {
+		return !!Level.getRoomStrict(roomPid);
 	}
 
-	public static getRoomStrict(roomId: number): Element | undefined {
-		return Level.$roomIdToRoomMap.get(roomId);
+	public static getRoom(roomPid: string): Element {
+		return Level.$roomPidToRoomMap.get(roomPid) ?? nothingElement;
 	}
 
-	public static getRoomByPosition(x: number, y: number): Element {
-		const roomId = Level.$roomPosToRoomIdMap.get(`${x}:${y}`);
-
-		return Level.getRoom(roomId ?? -1);
+	public static getRoomStrict(roomPid: string): Element | undefined {
+		return Level.$roomPidToRoomMap.get(roomPid);
 	}
 
-	public static getRoomIdByNeighbourId(id: number, orientation: number): number {
-		const room: Element = Level.getRoom(id);
+	public static getRoomByPosition(x: number, y: number): Element | undefined {
+		const roomPid = Level.$roomPosToRoomPidMap.get(`${x}:${y}`);
+
+		return Level.getRoomStrict(roomPid ?? "0");
+	}
+
+	public static getRoomPidByNeighbourPid(roomPid: string, orientation: number): string | undefined {
+		const room: Element = Level.getRoom(roomPid);
 
 		const newRoomX: number = intAttr(room, 'RoomX') + F.getOX(orientation);
 		const newRoomY: number = intAttr(room, 'RoomY') + F.getOY(orientation);
 
-		return intAttr(Level.getRoomByPosition(newRoomX, newRoomY), 'RoomID', -1);
+		const otherRoom = Level.getRoomByPosition(newRoomX, newRoomY);
+		return otherRoom ? attr(otherRoom, 'RoomPID') : undefined;
 	}
 
-	public static getRoomIdsByLevel(levelId: number): readonly number[] {
-		return Level.$levelIdToRoomIdsMap.get(levelId) ?? [];
+	public static getRoomPidsByLevel(levelId: number): readonly string[] {
+		return Level.$levelIdToRoomPidsMap.get(levelId) ?? [];
 	}
 
-	public static getRequiredRoomIdsByLevel(levelId: number): readonly number[] {
-		return Level.$levelIdToRequiredRoomIdsMap.get(levelId) ?? [];
+	public static getRequiredRoomPidsByLevel(levelId: number): readonly string[] {
+		return Level.$levelIdToRequiredRoomPidsMap.get(levelId) ?? [];
 	}
 
 	public static getRoomsByLevel(levelID: number): readonly Element[] {
 		return UtilsXPath.getAllElements(`//Rooms[@LevelID="${levelID}"]`, Level.hold);
 	}
 
-	public static getRoomIdByOffsetInLevel(levelID: number, x: number, y: number): number {
-		const mainEntrance = Level.getEntranceMainByLevelID(levelID);
-		const mainRoom = Level.getRoom(intAttr(mainEntrance, 'RoomID', 0));
+	public static getRoomPidByOffsetInLevel(levelId: number, x: number, y: number): string | undefined {
+		const mainEntrance = Level.getEntranceMainByLevelID(levelId);
+		const mainRoom = Level.getRoom(attr(mainEntrance, 'RoomPID'));
 		const roomX = intAttr(mainRoom, 'RoomX', 0) + x;
 		const roomY = intAttr(mainRoom, 'RoomY', 0) + y;
 
-		return intAttr(Level.getRoomByPosition(roomX, roomY), 'RoomID', -1);
+		const room = Level.getRoomByPosition(roomX, roomY);
+		return room ? attr(room, 'RoomPID') : undefined;
 	}
 
-	public static getRoomOffsetInLevel(roomID: number): PIXI.IPointData {
-		const room = Level.getRoom(roomID);
-		const levelID = Level.getLevelIdByRoomId(roomID);
+	public static getRoomOffsetInLevel(roomPid: string): IPointData {
+		const room = Level.getRoom(roomPid);
+		const levelID = Level.getLevelIdByRoomPid(roomPid);
 
 		const mainEntrance = Level.getEntranceMainByLevelID(levelID);
-		const mainRoom = Level.getRoom(parseInt(mainEntrance.getAttribute('RoomID') || '0'));
+		const mainRoom = Level.getRoom(attr(mainEntrance, 'RoomPID'));
 
 		return {
 			x: parseInt(room.getAttribute('RoomX') || '0') - parseInt(mainRoom.getAttribute('RoomX') || '0'),
@@ -178,13 +187,14 @@ export class Level {
 		};
 	}
 
-	public static roomHasMonsters(roomID: number): boolean {
-		return UtilsXPath.getAllElements(`//Rooms[@RoomID="${roomID}"]/Monsters[@Type!="29"]`, Level.hold).length > 0;
+	public static roomHasMonsters(roomPid: string): boolean {
+		const roomId = Level.roomPidToId(roomPid);
+		return UtilsXPath.getAllElements(`//Rooms[@RoomID="${roomId}"]/Monsters[@Type!="29"]`, Level.hold).length > 0;
 	}
 
 	public static getAnyVisitedRoomInLevel(levelID: number): Element | null {
 		for (const room of UtilsXPath.getAllElements(`//Rooms[@LevelID=${levelID}]`, Level.hold)) {
-			if (Progress.getRoomEntranceState(intAttr(room, 'RoomID')))
+			if (Progress.getRoomEntranceState(attr(room, 'RoomPID')))
 				return room;
 		}
 
@@ -205,8 +215,9 @@ export class Level {
 		return UtilsXPath.getAnyElement(`//Entrances[@EntranceID="${entranceID}"]`, Level.hold);
 	}
 
-	public static getEntrancesByRoomID(roomID: number): Element[] {
-		return UtilsXPath.getAllElements(`//Entrances[@RoomID="${roomID}"]`, Level.hold);
+	public static getEntrancesByRoomPid(roomPid: string): Element[] {
+		const roomId = Level.roomPidToId(roomPid);
+		return UtilsXPath.getAllElements(`//Entrances[@RoomID="${roomId}"]`, Level.hold);
 	}
 
 	public static getFirstHoldEntrance(): Element {
@@ -218,10 +229,10 @@ export class Level {
 	}
 
 	public static getEntranceMainByLevelID(levelID: number): Element {
-		const roomIds = Level.getRoomIdsByLevel(levelID);
+		const roomPids = Level.getRoomPidsByLevel(levelID);
 
-		for (const roomID of roomIds) {
-			const entrances = Level.getEntrancesByRoomID(roomID);
+		for (const roomPid of roomPids) {
+			const entrances = Level.getEntrancesByRoomPid(roomPid);
 
 			for (const entrance of entrances) {
 				if (entrance.getAttribute('IsMainEntrance') == '1') {
@@ -247,8 +258,9 @@ export class Level {
 	public static getEntranceDescriptionTranslationId(entranceID: number): string {
 		const entrance = Level.getEntrance(entranceID);
 		const roomId = intAttr(entrance, 'RoomID', 0);
-		const room = Level.getRoom(roomId);
-		const roomOffset = Level.getRoomOffsetInLevel(roomId);
+		const roomPid = Level.roomIdToPid(roomId);
+		const room = Level.getRoom(roomPid);
+		const roomOffset = Level.getRoomOffsetInLevel(roomPid);
 		const levelId = intAttr(room, 'LevelID', 0);
 		const level = Level.getLevelByID(levelId);
 		const orderIndex = intAttr(level, 'OrderIndex', 0);
@@ -266,7 +278,8 @@ export class Level {
 	public static getScrollTranslationId(scroll: Element): string {
 		const room = scroll.parentElement!;
 		const roomId = intAttr(room, 'RoomID', 0);
-		const roomOffset = Level.getRoomOffsetInLevel(roomId);
+		const roomPid = Level.roomIdToPid(roomId);
+		const roomOffset = Level.getRoomOffsetInLevel(roomPid);
 		const levelId = intAttr(room, 'LevelID', 0);
 		const level = Level.getLevelByID(levelId);
 		const orderIndex = intAttr(level, 'OrderIndex', 0);
@@ -284,7 +297,8 @@ export class Level {
 	public static getMonsterContextIdForSpeech(monster: Element): string {
 		const room = monster.parentElement!;
 		const roomId = intAttr(room, 'RoomID', 0);
-		const roomOffset = Level.getRoomOffsetInLevel(roomId);
+		const roomPid = Level.roomIdToPid(roomId);
+		const roomOffset = Level.getRoomOffsetInLevel(roomPid);
 		const levelId = intAttr(room, 'LevelID', 0);
 		const level = Level.getLevelByID(levelId);
 		const monsterX = intAttr(monster, 'X', 0);
@@ -298,8 +312,8 @@ export class Level {
 			+ `(${monsterX}, ${monsterY})`;
 	}
 
-	public static getSecretRoomIdsByLevelId(levelId: number): readonly number[] {
-		return Level.getRoomIdsByLevel(levelId).filter(roomId => Level.$secretRoomIds.has(roomId));
+	public static getSecretRoomPidsByLevelId(levelId: number): readonly string[] {
+		return Level.getRoomPidsByLevel(levelId).filter(roomId => Level.$secretRoomPids.has(roomId));
 	}
 
 	public static getAllTranslatableStrings(): Record<string, unknown> {
@@ -409,8 +423,8 @@ export class Level {
 	}
 
 
-	public static canEnterRoom(roomId: number, playerX: number, playerY: number): boolean {
-		const room = Level.getRoom(roomId);
+	public static canEnterRoom(roomPid: string, playerX: number, playerY: number): boolean {
+		const room = Level.getRoom(roomPid);
 
 		let tile: number = 0;
 		let i: number = 0;
@@ -418,8 +432,8 @@ export class Level {
 
 		let square: number = 0;
 
-		const reader = Level.$roomIdToSquaresReader.get(roomId);
-		assertDefined(reader, `No binary reader cached for room "${roomId}"`);
+		const reader = Level.$roomPidToSquaresReader.get(roomPid);
+		assertDefined(reader, `No binary reader cached for room "${roomPid}"`);
 
 		reader.position = 0;
 
@@ -509,6 +523,14 @@ export class Level {
 		return true;
 	}
 
+	public static roomIdToPid(roomId: number): string {
+		return Level.$roomIdToRoomPid.get(roomId) ?? '';
+	}
+
+	public static roomPidToId(roomPid: string): number {
+		return Level.$roomPidToRoomId.get(roomPid) ?? 0;
+	}
+
 	public static prepareHold(holdElement: Element, document: Document) {
 		Level.hold = document;
 
@@ -521,13 +543,15 @@ export class Level {
 		this.$orderIndexToLevelIdMap.clear();
 		this.$levelIdToLevelMap.clear();
 		this.$levelIdToRawNameMap.clear();
-		this.$roomIdToRoomMap.clear();
-		this.$roomIdToLevelIdMap.clear();
-		this.$levelIdToRoomIdsMap.clear();
-		this.$levelIdToRequiredRoomIdsMap.clear();
-		this.$requiredRoomIds.clear();
-		this.$secretRoomIds.clear();
-		this.$roomIdToSquaresReader.clear();
+		this.$roomPidToRoomMap.clear();
+		this.$roomPidToLevelIdMap.clear();
+		this.$levelIdToRoomPidsMap.clear();
+		this.$levelIdToRequiredRoomPidsMap.clear();
+		this.$requiredRoomPids.clear();
+		this.$secretRoomPids.clear();
+		this.$roomPidToSquaresReader.clear();
+		this.$roomPidToRoomId.clear();
+		this.$roomIdToRoomPid.clear();
 
 		for (const levelXml of UtilsXPath.getAllElements(`//Levels`, Level.hold)) {
 			const levelId = intAttr(levelXml, 'LevelID');
@@ -547,28 +571,38 @@ export class Level {
 			const isRequired = boolAttr(roomXml, 'IsRequired', false);
 			const isSecret = boolAttr(roomXml, 'IsSecret', false);
 			const reader = new BinaryReader(UtilsBase64.decodeByteArray(attr(roomXml, 'Squares', '')));
+			const roomPid = generateRoomPid(roomId, Level.hold);
 
+			roomXml.setAttribute('RoomPID', roomPid);
+
+			this.$roomPidToRoomId.set(roomPid, roomId);
+			this.$roomIdToRoomPid.set(roomId, roomPid);
 			this.$rooms.push(roomXml);
-			this.$roomIdToLevelIdMap.set(roomId, levelId);
-			this.$roomIdToRoomMap.set(roomId, roomXml);
-			this.$roomPosToRoomIdMap.set(`${roomX}:${roomY}`, roomId);
-			this.$roomIdToSquaresReader.set(roomId, reader);
+			this.$roomPidToLevelIdMap.set(roomPid, levelId);
+			this.$roomPidToRoomMap.set(roomPid, roomXml);
+			this.$roomPosToRoomPidMap.set(`${roomX}:${roomY}`, roomPid);
+			this.$roomPidToSquaresReader.set(roomPid, reader);
 
 			if (isRequired) {
-				this.$requiredRoomIds.add(roomId);
+				this.$requiredRoomPids.add(roomPid);
 
-				const requiredRoomIds = this.$levelIdToRequiredRoomIdsMap.get(levelId) ?? [];
-				requiredRoomIds.push(roomId);
-				this.$levelIdToRequiredRoomIdsMap.set(levelId, requiredRoomIds);
+				const requiredRoomIds = this.$levelIdToRequiredRoomPidsMap.get(levelId) ?? [];
+				requiredRoomIds.push(roomPid);
+				this.$levelIdToRequiredRoomPidsMap.set(levelId, requiredRoomIds);
 			}
 
 			if (isSecret) {
-				this.$secretRoomIds.add(roomId);
+				this.$secretRoomPids.add(roomPid);
 			}
 
-			const roomIds = this.$levelIdToRoomIdsMap.get(levelId) ?? [];
-			roomIds.push(roomId);
-			this.$levelIdToRoomIdsMap.set(levelId, roomIds);
+			const roomPids = this.$levelIdToRoomPidsMap.get(levelId) ?? [];
+			roomPids.push(roomPid);
+			this.$levelIdToRoomPidsMap.set(levelId, roomPids);
+		}
+
+		for (const entranceXml of UtilsXPath.getAllElements('//Entrances', Level.hold)) {
+			const roomId = intAttr(entranceXml, 'RoomID');
+			entranceXml.setAttribute('RoomPID', Level.roomIdToPid(roomId));
 		}
 
 		// Retrieve data

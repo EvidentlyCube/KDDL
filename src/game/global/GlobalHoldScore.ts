@@ -1,6 +1,6 @@
 import { HoldId } from "src/C";
 import { S } from "../../S";
-import { boolAttr, intAttr } from "../../XML";
+import { attr, boolAttr, intAttr } from "../../XML";
 import { Achievements } from "../achievements/Achievements";
 import { Level } from "./Level";
 import { Progress } from "./Progress";
@@ -27,19 +27,19 @@ export const GlobalHoldScore = {
 	},
 
 	calculateCurrentHoldScoreParts() {
-		const allRoomsIds = Level.getAllRooms().map(room => intAttr(room, 'RoomID'));
+		const allRoomsPids = Level.getAllRoomPids();
 		const allRequiredRoomsIds = Level.getAllRooms()
 			.filter(xml => boolAttr(xml, 'IsRequired', false))
-			.map(room => intAttr(room, 'RoomID'));
-		const totalRooms = allRoomsIds.length;
+			.map(room => attr(room, 'RoomPID'));
+		const totalRooms = allRoomsPids.length;
 		const totalRequiredRooms = allRequiredRoomsIds.length;
 		const totalAchievements = Achievements.getAll().length;
 
-		const visitedRooms = allRoomsIds.reduce((total, roomId) => {
-			return Progress.wasRoomEverVisited(roomId) ? total + 1 : total;
+		const visitedRooms = allRoomsPids.reduce((total, roomPid) => {
+			return Progress.wasRoomEverVisited(roomPid) ? total + 1 : total;
 		}, 0);
-		const conqueredRooms = allRequiredRoomsIds.reduce((total, roomId) => {
-			return Progress.wasRoomEverConquered(roomId) ? total + 1 : total;
+		const conqueredRooms = allRequiredRoomsIds.reduce((total, roomPid) => {
+			return Progress.wasRoomEverConquered(roomPid) ? total + 1 : total;
 		}, 0);
 		const doneAchievements = Achievements.getAll().reduce((total, achievement) => {
 			return achievement.acquired ? total + 1 : total;

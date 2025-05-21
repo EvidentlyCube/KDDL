@@ -5,6 +5,7 @@ import type { HoldScores } from "../GlobalHoldScore";
 import { ValidLanguage } from "src.framework/net/retrocade/camel/RecamelLang";
 
 export const PermanentStore = {
+    version: new PermanentStoreSlot<number>(`save-version`, 1),
     shared: {
         holdScore: new PermanentStoreSlot<HoldScores>('shared/hold-scores', getEmptyHoldScores()),
     },
@@ -56,11 +57,11 @@ function getEmptyPerHoldStore(key: string) {
         globalStats: new PermanentStoreSlot(`${key}/global-stats`, ""),
         isCompleted: new PermanentStoreSlot(`${key}/is-completed`, false),
         isMastered: new PermanentStoreSlot(`${key}/is-mastered`, false),
-        globalVisitedRoomIds: new PermanentStoreSlot<number[]>(`${key}/global-visited-room-ids`, []),
-        globalConqueredRoomIds: new PermanentStoreSlot<number[]>(`${key}/global-conquered-rooms-ids`, []),
+        globalVisitedRoomPids: new PermanentStoreSlot<string[]>(`${key}/global-visited-room-pids`, []),
+        globalConqueredRoomPids: new PermanentStoreSlot<string[]>(`${key}/global-conquered-rooms-pids`, []),
         saveStates: new PermanentStoreSlot<string[]>(`${key}/save-states`, []),
         currentState: new PermanentStoreSlot<string>(`${key}/current-state`, ''),
-        currentStateCommands: new PermanentStoreSlot(`${key}/current-state-commands`, ''),
+        currentStateCommands: new PermanentStoreSlot(`${key}/current-state-commands`,  ''),
         demos: new PermanentStoreSlot<string[]>(`${key}/demo`, []),
     };
 }

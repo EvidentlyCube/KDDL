@@ -2,25 +2,29 @@ import dbStorage from "local-db-storage";
 import { S } from "src/S";
 
 export class PermanentStoreSlot<T> {
-    private static _slots: PermanentStoreSlot<unknown>[] = [];
+    private static _slots = new Map<string, PermanentStoreSlot<unknown>>;
 
     public static async waitForAllSlotsInit() {
-        return Promise.all(this._slots.map(slot => slot.waitForInit()));
+        return Promise.all(Object.values(this._slots.values()).map(slot => slot.waitForInit()));
     }
 
     public static exportAll(): string {
-        return `KDDL-SAVE-V1.0\n` + PermanentStoreSlot._slots.map(slot => {
-            return slot._key + ":" + JSON.stringify(slot.value)
+        return `KDDL-SAVE-V1.0\n` + Object.values(this._slots.values()).map(slot => {
+            return slot.key + ":" + JSON.stringify(slot.value)
         }).join("\n");
     }
 
-    public static importAll(save: string): boolean {
+    public static async deleteKey(key: string) {
+        return dbStorage.removeItem(key);
+    }
+
+    public static async importAll(save: string): Promise<boolean> {
         if (!save.startsWith("KDDL-SAVE-V1.0\n")) {
             return false;
         }
 
+        const promises: Promise<unknown>[] = [];
         const rows = save.split("\n");
-        const saveMap = new Map<string, string>();
 
         for (const row of rows) {
             const colonIndex = row.indexOf(':');
@@ -32,38 +36,40 @@ export class PermanentStoreSlot<T> {
             const key = row.substring(0, colonIndex);
             const value = row.substring(colonIndex + 1);
 
-            saveMap.set(key, value);
+            const existingSlot = PermanentStoreSlot._slots.get(key) ?? new PermanentStoreSlot<any>(key, null);
+            await existingSlot.waitForInit();
+            existingSlot.write(value, false);
+            promises.push(existingSlot.flush());
         }
 
-        for (const slot of PermanentStoreSlot._slots) {
-            const savedValue = saveMap.get(slot._key);
-
-            if (savedValue !== undefined) {
-                slot.value = JSON.parse(savedValue);
-            }
-        }
+        await Promise.all(promises);
 
         return true;
     }
 
+    public readonly key: string;
+
     private _value: T;
-    private readonly _key: string;
     private _isLoaded = false;
+    private _isReadOnly = false
 
     private _isSyncing = false;
     private _isSyncQueued = false;
 
-    public constructor(key: string, defaultValue: T) {
-        this._key = key;
+    public constructor(key: string, defaultValue: T, isReadOnly = false) {
+        this.key = key;
         this._value = defaultValue;
+        this._isReadOnly = isReadOnly;
 
         this.load();
 
-        if (PermanentStoreSlot._slots.find(slot => slot._key === key)) {
+        if (PermanentStoreSlot._slots.has(key)) {
             throw new Error(`Non unique permanent store slot - ${key}`);
         }
 
-        PermanentStoreSlot._slots.push(this);
+        if (!this._isReadOnly) {
+            PermanentStoreSlot._slots.set(key, this);
+        }
     }
 
     public get value() {
@@ -76,16 +82,19 @@ export class PermanentStoreSlot<T> {
 
     public read() {
         if (!this._isLoaded) {
-            throw new Error(`Tried to access store slot '${this._key}' before it was loaded.`);
+            throw new Error(`Tried to access store slot '${this.key}' before it was loaded.`);
         }
 
         return this._value;
     }
 
-    public write(value: T) {
+    public write(value: T, flush = true) {
         if (this._value !== value) {
             this._value = value;
-            this.flush();
+
+            if (flush) {
+                this.flush();
+            }
         }
     }
 
@@ -105,33 +114,45 @@ export class PermanentStoreSlot<T> {
 
     private async load() {
         if (!S.isSpiderMode) {
-            this._value = await load(this._key, this._value);
+            this._value = await load(this.key, this._value);
         }
         this._isLoaded = true;
     }
 
-    private async flush() {
-        if (S.isSpiderMode) {
+    private async flush(): Promise<void> {
+        if (S.isSpiderMode || this._isReadOnly) {
             return;
         }
 
         if (this._isSyncing) {
             this._isSyncQueued = true;
-            return;
+            return this.createFlushedPromise();
         }
 
         this._isSyncing = true;
         try {
-            await dbStorage.setItem(this._key, JSON.stringify(this._value));
+            await dbStorage.setItem(this.key, JSON.stringify(this._value));
         } finally {
             this._isSyncing = false;
         }
 
         if (this._isSyncQueued) {
             this._isSyncQueued = false;
-            this.flush();
+            return this.flush();
         }
+    }
 
+    private createFlushedPromise() {
+        return new Promise<void>(resolve => {
+            const interval = setInterval(() => {
+                if (this._isSyncing || this._isSyncQueued) {
+                    return;
+                }
+
+                clearInterval(interval);
+                resolve();
+            }, 10);
+        })
     }
 }
 

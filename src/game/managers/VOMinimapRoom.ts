@@ -23,7 +23,7 @@ export class VOMinimapRoom extends Sprite {
 		this.bitmapData = F.newCanvasContext(S.RoomWidth, S.RoomHeight);
 		this.texture = new Texture(new BaseTexture(this.bitmapData.canvas))
 
-		const offset = Level.getRoomOffsetInLevel(intAttr(roomXml, 'RoomID', -1));
+		const offset = Level.getRoomOffsetInLevel(attr(roomXml, 'RoomPID'));
 		this.x = offset.x * S.RoomWidth;
 		this.y = offset.y * S.RoomHeight;
 	}

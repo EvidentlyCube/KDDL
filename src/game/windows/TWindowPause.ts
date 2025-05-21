@@ -200,10 +200,10 @@ export class TWindowPause extends RecamelWindow {
 	public static clickHelpRoom() {
 		RecamelTooltip.hide();
 		const hold = Level.getHoldXml();
-		const roomPos = Level.getRoomOffsetInLevel(Game.room.roomId);
+		const roomPos = Level.getRoomOffsetInLevel(Game.room.roomPid);
 		const url: string = "http://forum.caravelgames.com/gamehints.php?hc=" + attr(hold, 'GID_Created') +
 			"&hu=" + attr(hold, 'LastUpdated') +
-			"&l=" + (Level.getLevelIndex(Game.room.levelId)) +
+			"&l=" + (Level.getLevelGidIndex(Game.room.levelId)) +
 			"&rx=" + roomPos.x +
 			"&ry=" + roomPos.y;
 

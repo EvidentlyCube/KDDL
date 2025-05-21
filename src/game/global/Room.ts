@@ -91,11 +91,8 @@ export class Room {
 	public monsterCount: number = 0;
 	public brainCount: number = 0;
 
-	public roomId: number = Number.MAX_VALUE;
+	public roomPid: string = "";
 	public levelId: number = Number.MAX_VALUE;
-
-	public lastRoomID: number = Number.MAX_VALUE; // Used to help myself with some of
-	public lastLevelID: number = Number.MAX_VALUE; // Minimap widget calculations
 
 	public currentTurn: number = 1;
 
@@ -165,20 +162,18 @@ export class Room {
 		this.pathmapAir?.clear();
 	}
 
-	public loadRoom(roomID: number) {
+	public loadRoom(roomPid: string) {
 		this.resetRoom();
 
-		this.lastRoomID = this.roomId;
-		this.roomId = roomID;
+		this.roomPid = roomPid;
 
-		const room = Level.getRoom(roomID);
+		const room = Level.getRoom(roomPid);
 
-		this.lastLevelID = this.levelId;
 		this.levelId = intAttr(room, 'LevelID');
 
 		const styleName = textAttr(room, 'StyleName', PlatformOptions.defaultStyle) as StyleName;
 
-		this.loadSquaresIntoArrays(roomID, this.tilesOpaque, this.tilesTransparent, this.tilesTransparentParam, this.tilesFloor);
+		this.loadSquaresIntoArrays(roomPid, this.tilesOpaque, this.tilesTransparent, this.tilesTransparentParam, this.tilesFloor);
 
 		// Load monsters
 		for (const monster of UtilsXPath.getAllElements('Monsters', room.ownerDocument, room)) {
@@ -235,17 +230,16 @@ export class Room {
 		this.initRoomStats();
 	}
 
-	public loadSquaresIntoArrays(roomID: number, tilesO: number[], tilesT: number[], tilesTParam: number[], tilesF: number[]) {
+	public loadSquaresIntoArrays(roomPid: string, tilesO: number[], tilesT: number[], tilesTParam: number[], tilesF: number[]) {
 		tilesO.length = S.RoomTotalTiles;
 		tilesT.length = S.RoomTotalTiles;
 		tilesTParam.length = S.RoomTotalTiles;
 		tilesF.length = S.RoomTotalTiles;
 
-		const room = Level.getRoom(roomID);
+		const room = Level.getRoom(roomPid);
 
-		ASSERT(room, "Invalid Room ID: " + roomID);
+		ASSERT(room, "Invalid Room ID: " + roomPid);
 
-		this.lastLevelID = this.levelId;
 		this.levelId = intAttr(room, 'LevelID');
 
 		const squaresReader = new BinaryReader(UtilsBase64.decodeByteArray(attr(room, 'Squares')));
@@ -321,7 +315,7 @@ export class Room {
 	}
 
 	public reload() {
-		this.loadRoom(this.roomId);
+		this.loadRoom(this.roomPid);
 	}
 
 	/** Counts all elements in the room and gathers other data **/
@@ -351,7 +345,7 @@ export class Room {
 			monsterCountAtStart = 0;
 
 		} else if (!monsterCountAtStart) {
-			CueEvents.add(C.CID_CONQUER_ROOM, this.roomId);
+			CueEvents.add(C.CID_CONQUER_ROOM, this.roomPid);
 			this.toggleGreenDoors();
 			this.clearMonsters(true);
 

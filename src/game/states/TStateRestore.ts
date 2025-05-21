@@ -9,7 +9,7 @@ import { Button } from "../../../src.framework/net/retrocade/standalone/Button";
 import { Text } from "../../../src.framework/net/retrocade/standalone/Text";
 import RawInput from "../../../src.tn/RawInput";
 import { S } from "../../S";
-import { intAttr } from "../../XML";
+import { attr, intAttr } from "../../XML";
 import { Commands } from "../global/Commands";
 import { Gfx } from "../global/Gfx";
 import { Level } from "../global/Level";
@@ -53,7 +53,7 @@ export class TStateRestore extends RecamelState {
 	private helpIcon: Button;
 
 	private _levelButtons: TRestoreLevelButton[] = [];
-	private currentRoomId: number = 0;
+	private _currentRoomPid = "";
 
 	public constructor() {
 		super();
@@ -152,10 +152,10 @@ export class TStateRestore extends RecamelState {
 			this._layer.add(this.secretsCount);
 		}
 
-		this.currentRoomId = -1;
+		this._currentRoomPid = "";
 		this.createLevels();
 
-		this.selectRoom(Progress.playerRoomID);
+		this.selectRoom(Progress.playerRoomPid);
 
 		this._layer.visible = true;
 		this._layer.moveToFront();
@@ -181,8 +181,8 @@ export class TStateRestore extends RecamelState {
 				RawInput.localMouseY - this.minimapBackground.y,
 				TWidgetMinimap.MODE_RESTORE);
 
-			if (room && Progress.wasRoomEverVisited(intAttr(room, 'RoomID'))) {
-				this.selectRoom(intAttr(room, 'RoomID'));
+			if (room && Progress.wasRoomEverVisited(attr(room, 'RoomPID'))) {
+				this.selectRoom(attr(room, 'RoomPID'));
 			}
 		}
 	}
@@ -204,7 +204,7 @@ export class TStateRestore extends RecamelState {
 	}
 
 	private onClickRestore() {
-		const newConquered = Progress.getRoomEntranceState(this.currentRoomId)!.conqueredRoomIds.length;
+		const newConquered = Progress.getRoomEntranceState(this._currentRoomPid)!.conqueredRoomPids.size;
 		const nowConquered = Progress.countRoomsConquered();
 
 		if (newConquered < nowConquered) {
@@ -215,12 +215,12 @@ export class TStateRestore extends RecamelState {
 	}
 
 	private onClickRestoreFarthest() {
-		const room: number = Progress.getBestRoomEntranceState().roomId;
+		const { roomPid } = Progress.getBestRoomEntranceState();
 		for (const level of this._levelButtons) {
 			level.unset();
 		}
 
-		this.selectRoom(room);
+		this.selectRoom(roomPid);
 	}
 
 	private onClickHelp() {
@@ -235,7 +235,7 @@ export class TStateRestore extends RecamelState {
 
 		Commands.unfreeze();
 		Commands.clear();
-		Progress.restoreToRoom(this.currentRoomId);
+		Progress.restoreToRoom(this._currentRoomPid);
 		TStateGame.restoreGame();
 
 		new RecamelEffectFade(screenshot.layer.displayObject, 1, 0, 500, screenshot.stop);
@@ -290,8 +290,8 @@ export class TStateRestore extends RecamelState {
 		}
 	}
 
-	private selectLevelByRoom(roomID: number) {
-		const levelID: number = Level.getLevelIdByRoomId(roomID);
+	private selectLevelByRoom(roomPid: string) {
+		const levelID: number = Level.getLevelIdByRoomPid(roomPid);
 
 		for (let level of this._levelButtons) {
 			if (level.levelId == levelID) {
@@ -301,36 +301,37 @@ export class TStateRestore extends RecamelState {
 		}
 	}
 
-	private selectRoom(roomID: number) {
-		if (this.currentRoomId == roomID){
-			this.selectLevelByRoom(roomID);
+	private selectRoom(roomPid: string) {
+		if (this._currentRoomPid == roomPid) {
+			this.selectLevelByRoom(roomPid);
 			return;
 		}
 
-		if (!Level.getRoomStrict(roomID)) {
+		if (!Level.getRoomStrict(roomPid)) {
 			const entrance = Level.getFirstHoldEntrance();
-			this.selectRoom(intAttr(entrance, 'RoomID'));
+			const roomId = intAttr(entrance, 'RoomID');
+			this.selectRoom(Level.roomIdToPid(roomId));
 			return;
 		}
 
 
-		this.updateMinimap(roomID);
-		this.selectLevelByRoom(roomID);
+		this.updateMinimap(roomPid);
+		this.selectLevelByRoom(roomPid);
 
-		const roomOffset = Level.getRoomOffsetInLevel(roomID);
-		const roomStateData = Progress.getRoomEntranceState(roomID);
+		const roomOffset = Level.getRoomOffsetInLevel(roomPid);
+		const roomStateData = Progress.getRoomEntranceState(roomPid);
 
 		if (!roomStateData) {
 			return;
 		}
 
-		this.currentRoomId = roomID;
+		this._currentRoomPid = roomPid;
 
 		const room = new Room();
 		const player = new TPlayer();
 
-		this._layer.add(TWidgetMinimap.container); // Hack becuase new room will retake ownership of this
-		room.loadRoom(roomID);
+		this._layer.add(TWidgetMinimap.container); // Hack because new room will retake ownership of this
+		room.loadRoom(roomPid);
 		room.drawRoom();
 		player.room = room;
 		player.prevO = player.o = roomStateData.o;
@@ -357,9 +358,9 @@ export class TStateRestore extends RecamelState {
 			return;
 		}
 
-		const levelId: number = Level.getLevelIdByRoomId(this.currentRoomId);
+		const levelId: number = Level.getLevelIdByRoomPid(this._currentRoomPid);
 
-		const secretRoomIds = Level.getSecretRoomIdsByLevelId(levelId);
+		const secretRoomIds = Level.getSecretRoomPidsByLevelId(levelId);
 		const secretsDone = secretRoomIds.filter(roomId => Progress.wasRoomEverConquered(roomId)).length;
 
 		this.secretsCount.text = _("ui.restore.info.secrets", secretsDone, secretRoomIds.length);
@@ -376,11 +377,11 @@ export class TStateRestore extends RecamelState {
 		if (!room) {
 			return;
 		}
-		this.selectRoom(intAttr(room, 'RoomID'));
+		this.selectRoom(attr(room, 'RoomPID'));
 	}
 
-	private updateMinimap(room: number) {
-		TWidgetMinimap.setRestoreScreenRoom(room);
-		TWidgetMinimap.update(room, TWidgetMinimap.MODE_RESTORE);
+	private updateMinimap(roomPid: string) {
+		TWidgetMinimap.setRestoreScreenRoom(roomPid);
+		TWidgetMinimap.update(roomPid, TWidgetMinimap.MODE_RESTORE);
 	}
 }

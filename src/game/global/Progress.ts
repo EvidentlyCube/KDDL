@@ -9,7 +9,7 @@ import { PermanentStore } from "./store/PermanentStore";
 import { VODemoRecord } from "../managers/VODemoRecord";
 import { Commands } from "./Commands";
 import { Game } from "./Game";
-import { intAttr } from "src/XML";
+import { attr, intAttr } from "src/XML";
 
 export class Progress {
 	/**
@@ -65,19 +65,19 @@ export class Progress {
 	/**
 	 * Contains all rooms that were ever visited in all plays
 	 */
-	private static _allEverVisitedRoomIDs = new Set<number>();
+	private static _allEverVisitedRoomPids = new Set<string>();
 
 	/**
 	 * Contains all rooms that were ever conquered in all plays
 	 */
-	private static _allEverConqueredRoomIDs = new Set<number>();
+	private static _allEverConqueredRoomPids = new Set<string>();
 
 	/**
 	 * Contains information about game progress for each first room visit
 	 */
 	public static _roomEntranceStates: VORoomEntryState[] = [];
 
-	private static _roomIdToDemo = new Map<number, VODemoRecord>();
+	private static _roomPidToDemo = new Map<string, VODemoRecord>();
 
 
 	// ::::::::::::::::::::::::::::::::::::::::::::::
@@ -114,12 +114,13 @@ export class Progress {
 	}
 
 	public static storeDemo() {
-		const demo = Progress.getRoomDemo(Progress._currentState.roomId);
+		const demo = Progress.getRoomDemo(Progress._currentState.roomPid);
 
 		const result = demo.saveDemo(Game.turnNo, Progress._currentState);
 
 		if (result) {
-			PermanentStore.holds[HoldInfo().id].demos.value = Array.from(Progress._roomIdToDemo.values()).map(demo => demo.serialize());
+			PermanentStore.holds[HoldInfo().id].demos.value = Array.from(Progress._roomPidToDemo.values())
+				.map(demo => demo.serialize());
 		}
 	}
 
@@ -132,18 +133,18 @@ export class Progress {
 	private static saveProgress_global() {
 		const {
 			_roomEntranceStates,
-			_allEverVisitedRoomIDs,
-			_allEverConqueredRoomIDs,
+			_allEverVisitedRoomPids: _allEverVisitedRoomIDs,
+			_allEverConqueredRoomPids: _allEverConqueredRoomIDs,
 		} = Progress;
 
 		// Room entrance states
 		PermanentStore.holds[HoldInfo().id].saveStates.value = _roomEntranceStates.map(x => x.serialize());
 
 		// Visited Rooms
-		PermanentStore.holds[HoldInfo().id].globalVisitedRoomIds.value = Array.from(_allEverVisitedRoomIDs.values());
+		PermanentStore.holds[HoldInfo().id].globalVisitedRoomPids.value = Array.from(_allEverVisitedRoomIDs.values());
 
 		// Conquered Rooms
-		PermanentStore.holds[HoldInfo().id].globalConqueredRoomIds.value = Array.from(_allEverConqueredRoomIDs.values());
+		PermanentStore.holds[HoldInfo().id].globalConqueredRoomPids.value = Array.from(_allEverConqueredRoomIDs.values());
 	}
 
 	private static saveProgress_local() {
@@ -171,10 +172,10 @@ export class Progress {
 			}
 
 			// Conquered holds
-			Progress._allEverConqueredRoomIDs = new Set(store.globalConqueredRoomIds.value);
+			Progress._allEverConqueredRoomPids = new Set(store.globalConqueredRoomPids.value);
 
 			// Visited holds
-			Progress._allEverVisitedRoomIDs = new Set(store.globalVisitedRoomIds.value);
+			Progress._allEverVisitedRoomPids = new Set(store.globalVisitedRoomPids.value);
 
 			// Entrance states
 			for (const stateData of store.saveStates.value) {
@@ -200,18 +201,18 @@ export class Progress {
 			}
 
 			// Demos
-			Progress._roomIdToDemo.clear();
+			Progress._roomPidToDemo.clear();
 
 			for (const serializedDemo of store.demos.value) {
-				const demo = new VODemoRecord(0, serializedDemo);
-				Progress._roomIdToDemo.set(demo.roomId, demo);
+				const demo = new VODemoRecord("", serializedDemo);
+				Progress._roomPidToDemo.set(demo.roomPid, demo);
 			}
 
 		} catch (e) {
 			PermanentStore.holds[HoldInfo().id].isCompleted.value = false;
 			PermanentStore.holds[HoldInfo().id].isMastered.value = false;
-			PermanentStore.holds[HoldInfo().id].globalConqueredRoomIds.value = [];
-			PermanentStore.holds[HoldInfo().id].globalVisitedRoomIds.value = [];
+			PermanentStore.holds[HoldInfo().id].globalConqueredRoomPids.value = [];
+			PermanentStore.holds[HoldInfo().id].globalVisitedRoomPids.value = [];
 			PermanentStore.holds[HoldInfo().id].saveStates.value = [];
 			PermanentStore.holds[HoldInfo().id].currentState.value = "";
 			PermanentStore.holds[HoldInfo().id].demos.value = [];
@@ -232,25 +233,29 @@ export class Progress {
 	// :: Action
 	// ::::::::::::::::::::::::::::::::::::::::::::::
 
-	public static roomEntered(roomID: number, playerX: number, playerY: number, playerO: number) {
+	public static roomEntered(roomPid: string, playerX: number, playerY: number, playerO: number) {
 		Progress._currentState.x = playerX;
 		Progress._currentState.y = playerY;
 		Progress._currentState.o = playerO;
-		Progress._currentState.roomId = roomID;
+		Progress._currentState.roomPid = roomPid;
 
-		const currentEntranceState = Progress.getRoomEntranceState(roomID);
+		const currentEntranceState = Progress.getRoomEntranceState(roomPid);
 
 		if (!currentEntranceState) {
 			const entranceState: VORoomEntryState = Progress._currentState.clone();
 			Progress._roomEntranceStates.push(entranceState);
 			Progress._forceFullSave = true;
-		} else if (!Progress.isRoomConquered(roomID) && Progress._currentState.countConqueredRooms() >= currentEntranceState.countConqueredRooms()) {
+
+		} else if (
+			!Progress.isRoomConquered(roomPid)
+			 && Progress._currentState.countConqueredRooms() >= currentEntranceState.countConqueredRooms()
+		) {
 			Progress.replaceRoomEntranceState(currentEntranceState, Progress._currentState.clone());
 			Progress._forceFullSave = true;
 		}
 
-		if (!Progress.wasRoomEverVisited(roomID) && !Progress.isRoomExplored(roomID)) {
-			Progress._allEverVisitedRoomIDs.add(roomID);
+		if (!Progress.wasRoomEverVisited(roomPid) && !Progress.isRoomExplored(roomPid)) {
+			Progress._allEverVisitedRoomPids.add(roomPid);
 			Progress._forceFullSave = true;
 		}
 
@@ -259,24 +264,33 @@ export class Progress {
 		Progress._forceFullSave = false;
 	}
 
-	public static getRoomDemo(roomId: number): VODemoRecord {
-		const demo = Progress._roomIdToDemo.get(roomId) ?? new VODemoRecord(roomId);
+	public static getRoomDemoByPid(roomPid: string): VODemoRecord {
+		const demo = Progress._roomPidToDemo.get(roomPid) ?? new VODemoRecord(roomPid);
 
-		Progress._roomIdToDemo.set(roomId, demo);
+		Progress._roomPidToDemo.set(roomPid, demo);
+
+		return demo;
+	}
+	public static getRoomDemo(roomPid: string): VODemoRecord {
+		const demo = Progress._roomPidToDemo.get(roomPid) ?? new VODemoRecord(roomPid);
+
+		if (Level.isValidRoomPid(roomPid)) {
+			Progress._roomPidToDemo.set(roomPid, demo);
+		}
 
 		return demo;
 	}
 
-	public static getRoomIdsWithDemo(): number[] {
-		return Array.from(Progress._roomIdToDemo.values())
+	public static getRoomPidsWithDemo(): string[] {
+		return Array.from(Progress._roomPidToDemo.values())
 			.filter(demo => demo.hasScore)
-			.map(demo => demo.roomId);
+			.map(demo => demo.roomPid);
 	}
 
 	public static clearProgress() {
 		Progress._roomEntranceStates.length = 0;
-		Progress._allEverConqueredRoomIDs.clear();
-		Progress._allEverVisitedRoomIDs.clear();
+		Progress._allEverConqueredRoomPids.clear();
+		Progress._allEverVisitedRoomPids.clear();
 
 		Progress.levelStats.clear();
 
@@ -290,11 +304,11 @@ export class Progress {
 		Progress._currentState.clear();
 	}
 
-	public static restoreToRoom(roomID: number) {
-		const state = Progress.getRoomEntranceState(roomID);
+	public static restoreToRoom(roomPid: string) {
+		const state = Progress.getRoomEntranceState(roomPid);
 
 		ASSERT(state);
-		ASSERT(Level.getRoom(roomID));
+		ASSERT(Level.getRoomStrict(roomPid));
 
 		if (state) {
 			Progress._currentState.setFrom(state);
@@ -315,7 +329,7 @@ export class Progress {
 	 */
 	public static hasRestoreProgress(): boolean {
 		for (const i of Progress._roomEntranceStates) {
-			if (Level.getRoomStrict(i.roomId)) {
+			if (Level.isValidRoomPid(i.roomPid)) {
 				return true;
 			}
 		}
@@ -340,8 +354,8 @@ export class Progress {
 		}
 
 		for (const roomXml of Level.getAllSecretRooms()) {
-			const roomId = intAttr(roomXml, 'RoomID');
-			if (!Progress.wasRoomEverConquered(roomId)) {
+			const roomPid = attr(roomXml, 'RoomPID');
+			if (!Progress.wasRoomEverConquered(roomPid)) {
 				return false;
 			}
 		}
@@ -371,19 +385,19 @@ export class Progress {
 		Progress._currentState.gameVars = newGameVars;
 	}
 
-	public static setRoomConquered(id: number, isConquered: boolean) {
-		if (Progress._currentState.setRoomConquered(id, isConquered)) {
+	public static setRoomConquered(roomPid: string, isConquered: boolean) {
+		if (Progress._currentState.setRoomConquered(roomPid, isConquered)) {
 			Progress._forceFullSave = true;
 		}
 
-		if (!Progress.wasRoomEverConquered(id)) {
-			Progress._allEverConqueredRoomIDs.add(id);
+		if (!Progress.wasRoomEverConquered(roomPid)) {
+			Progress._allEverConqueredRoomPids.add(roomPid);
 			Progress._forceFullSave = true;
 		}
 	}
 
-	public static setRoomExplored(id: number, isExplored: boolean) {
-		if (Progress._currentState.setRoomExplored(id, isExplored)) {
+	public static setRoomExplored(roomPid: string, isExplored: boolean) {
+		if (Progress._currentState.setRoomExplored(roomPid, isExplored)) {
 			Progress._forceFullSave = true;
 		}
 	}
@@ -423,8 +437,8 @@ export class Progress {
 		return Progress._currentState.o;
 	}
 
-	public static get playerRoomID(): number {
-		return Progress._currentState.roomId;
+	public static get playerRoomPid(): string {
+		return Progress._currentState.roomPid;
 	}
 
 	public static isLevelCompleted(id: number): boolean {
@@ -435,20 +449,20 @@ export class Progress {
 		return Progress._currentState.isLevelVisited(id);
 	}
 
-	public static isRoomConquered(id: number): boolean {
-		return Progress._currentState.isRoomConquered(id);
+	public static isRoomConquered(roomPid: string): boolean {
+		return Progress._currentState.isRoomConquered(roomPid);
 	}
 
-	public static isRoomExplored(id: number): boolean {
-		return Progress._currentState.isRoomExplored(id);
+	public static isRoomExplored(roomPid: string): boolean {
+		return Progress._currentState.isRoomExplored(roomPid);
 	}
 
-	public static isScriptEnded(id: number): boolean {
-		return Progress._currentState.isScriptEnded(id);
+	public static isScriptEnded(scriptId: number): boolean {
+		return Progress._currentState.isScriptEnded(scriptId);
 	}
 
 	public static countRoomsConquered(): number {
-		return Progress._currentState.conqueredRoomIds.length;
+		return Progress._currentState.conqueredRoomPids.size;
 	}
 
 
@@ -457,47 +471,44 @@ export class Progress {
 	// ::::::::::::::::::::::::::::::::::::::::::::::
 
 	public static wasLevelEverVisited(levelId: number): boolean {
-		return Level.getRoomIdsByLevel(levelId).some(roomId => Progress.wasRoomEverVisited(roomId));
+		return Level.getRoomPidsByLevel(levelId).some(roomId => Progress.wasRoomEverVisited(roomId));
 	}
 
-	public static wasRoomEverConquered(id: number): boolean {
-		return Progress._allEverConqueredRoomIDs.has(id);
+	public static wasRoomEverConquered(roomPid: string): boolean {
+		return Progress._allEverConqueredRoomPids.has(roomPid);
 	}
 
-	public static wasRoomEverVisited(id: number): boolean {
-		return Progress._allEverVisitedRoomIDs.has(id);
+	public static wasRoomEverVisited(roomPid: string): boolean {
+		return Progress._allEverVisitedRoomPids.has(roomPid);
 	}
 
 	// ::::::::::::::::::::::::::::::::::::::::::::::
 	// :: Retrievers
 	// ::::::::::::::::::::::::::::::::::::::::::::::
 
-	public static getExploredRoomIdsByLevel(levelID: number): readonly number[] {
-		return Progress._currentState.getExploredRoomIdsByLevel(levelID);
+	public static getExploredRoomPidsByLevel(levelID: number): readonly string[] {
+		return Progress._currentState.getExploredRoomPidsByLevel(levelID);
 	}
 
-	public static getRoomEntranceState(roomID: number): VORoomEntryState | null {
-		for (const entranceState of Progress._roomEntranceStates) {
-			if (entranceState.roomId == roomID) {
-				return entranceState;
-			}
-		}
-
-		return null;
+	public static getRoomEntranceState(roomPid: string): VORoomEntryState | undefined {
+		return Progress._roomEntranceStates.find(state => state.roomPid === roomPid);
 	}
 
 	public static getBestRoomEntranceState(): VORoomEntryState {
 		let best = Progress._currentState;
 
 		for (const state of Progress._roomEntranceStates) {
-			if (!Level.isValidRoomId(state.roomId)) {
+			if (!Level.isValidRoomPid(state.roomPid)) {
 				continue;
 			}
 
-			if (state.conqueredRoomIds.length > best.conqueredRoomIds.length) {
+			if (state.conqueredRoomPids.size > best.conqueredRoomPids.size) {
 				best = state;
-			} else if (state.conqueredRoomIds.length == best.conqueredRoomIds.length &&
-				state.exploredRoomIds.length > best.exploredRoomIds.length) {
+
+			} else if (
+				state.conqueredRoomPids.size == best.conqueredRoomPids.size
+				&& state.exploredRoomPids.size > best.exploredRoomPids.size
+			) {
 				best = state;
 			}
 		}

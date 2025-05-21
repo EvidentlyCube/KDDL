@@ -20,7 +20,7 @@ const {
 	playerIn,
 	room,
 	hasTile,
-	roomID,
+	roomPid: roomID,
 	anyMonsterIn,
 	hasMonsterAt,
 	playerAtEdge,

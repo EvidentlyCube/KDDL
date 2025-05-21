@@ -93,9 +93,9 @@ export function AchievementsListTAP(to: Achievement[]) {
 		winNeedsConquer: false,
 		winOn: () => {
 			const levelId = Level.getLevelIdByOrderIndex(5);
-			const roomId = Level.getRoomIdByOffsetInLevel(levelId, 0, -1);
+			const roomPid = Level.getRoomPidByOffsetInLevel(levelId, 0, -1);
 
-			return Progress.wasRoomEverConquered(roomId);
+			return Progress.wasRoomEverConquered(roomPid ?? "");
 		},
 	})
 

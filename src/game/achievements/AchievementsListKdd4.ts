@@ -16,7 +16,7 @@ const {
 	room,
 	evKilled,
 	getMonster,
-	roomID,
+	roomPid,
 	anyMonsterIn,
 } = AchievementHelpers;
 
@@ -357,7 +357,7 @@ export function AchievementsListKdd4(to: Achievement[]) {
 		init: data => {
 			data.$roomCoords = data.$roomCoords ?? [];
 
-			const offset = Level.getRoomOffsetInLevel(roomID());
+			const offset = Level.getRoomOffsetInLevel(roomPid());
 			const coord = TWidgetLevelName.shortNameFromPosition(offset.x, offset.y);
 
 			if (!data.$roomCoords.includes(coord)) {

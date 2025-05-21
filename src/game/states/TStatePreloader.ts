@@ -187,7 +187,8 @@ export class TStatePreloader extends RecamelState {
 		document.body.removeChild(element);
 	}
 
-	private importSave() {
+	private async importSave() {
+		// @FIXME handle async-ness!
 		const input = document.createElement('input');
 		input.style.display='none';
 		input.type='file';
@@ -196,7 +197,7 @@ export class TStatePreloader extends RecamelState {
 			if (input.files) {
 				const text = await input.files[0].text();
 
-				if (PermanentStoreSlot.importAll(text)) {
+				if (await PermanentStoreSlot.importAll(text)) {
 					const currentPage = this._holdScreens.findIndex(screen => screen.visible);
 					RecamelCore.setState(new TStatePreloader(S.pagedHoldOptions[currentPage][0], this.handleGameStart));
 				}

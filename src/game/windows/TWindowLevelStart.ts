@@ -189,9 +189,10 @@ export class TWindowLevelStart extends RecamelWindow {
 	private setEntrance(entranceID: number) {
 		const date: Date = new Date(Level.getHoldTimestamp() * 1000);
 		const roomId = intAttr(Level.getEntrance(entranceID), 'RoomID');
+		const roomPid = Level.roomIdToPid(roomId);
 
 		this.holdTitle.text = Level.getHoldName();
-		this.levelTitle.text = Level.getLevelNameTranslated(Level.getLevelIdByRoomId(roomId));
+		this.levelTitle.text = Level.getLevelNameTranslated(Level.getLevelIdByRoomPid(roomPid));
 		this.creationDate.text = _r("ingame.level_start.creation_date", {
 			day: date.getDate().toString().padStart(2, '0'),
 			month: (date.getMonth() + 1).toString().padStart(2, '0'),
