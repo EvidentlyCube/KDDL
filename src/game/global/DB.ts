@@ -81,16 +81,16 @@ export class DB {
 	/**                                                                                     SOUND LOADER  */
 	/******************************************************************************************************/
 
-	public static queueSound(id:number, packedData:string) {
-		DB._queue.push(new VODBLoader(id, packedData, DB.loadSound));
+	public static queueDataSound(id:number, packedData:string) {
+		DB._queue.push(new VODBLoader(id, packedData, DB.loadDataSound));
 
 		DB._queueTotal++;
 	}
 
-	private static async loadSound(id:number, packedData:string) {
+	private static async loadDataSound(id:number, packedData:string) {
 		const data = UtilsBase64.decodeByteArray(packedData);
 
-		const definition = await DROD.nutkaLayerSfx.loader.fromArrayBuffer(`sfx-${id}`, data.buffer);
+		const definition = await DROD.nutkaLayerSpeech.loader.fromArrayBuffer(`sfx-${id}`, data.buffer);
 
 		DB._sounds.set(id, new NutkaSfx(definition));
 		DB._queueLoaded++;

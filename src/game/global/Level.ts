@@ -615,7 +615,7 @@ export class Level {
 				case (40):
 				case (41):
 				case (42):
-					DB.queueSound(intAttr(data, 'DataID'), attr(data, 'RawData'));
+					DB.queueDataSound(intAttr(data, 'DataID'), attr(data, 'RawData'));
 					break;
 
 				case (1):
