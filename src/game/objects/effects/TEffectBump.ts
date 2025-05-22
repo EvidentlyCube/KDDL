@@ -11,12 +11,12 @@ import { Game } from "src/game/global/Game";
 export class TEffectBump extends TEffect {
 	private static _bumpTexture?: RenderTexture;
 	private static _bumpSprite?: Sprite;
-	private static _currentBump: TEffectBump;
+	private static _currentBump?: TEffectBump;
 
 	public static onCommandProcessed() {
 		if (TEffectBump._currentBump) {
-			TEffectBump._currentBump.release();
-			TStateGame.effectsUnder.nullify(TEffectBump._currentBump);
+			TEffectBump._currentBump.end();
+			TEffectBump._currentBump = undefined;
 		}
 	}
 
@@ -59,12 +59,13 @@ export class TEffectBump extends TEffect {
 
 	public update() {
 		if (Date.now() > this._hideOn) {
-			this.release();
+			this.end();
 			TStateGame.effectsUnder.nullify(this);
 		}
 	}
 
-	public release() {
+	public end() {
+		TStateGame.effectsUnder.nullify(this);
 		this.room.layerUnder.remove(this._bumpSprite);
 	}
 
