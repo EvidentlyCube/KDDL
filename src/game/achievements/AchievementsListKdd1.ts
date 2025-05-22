@@ -20,7 +20,7 @@ const {
 	playerIn,
 	room,
 	hasTile,
-	roomPid: roomID,
+	roomPid,
 	anyMonsterIn,
 	hasMonsterAt,
 	playerAtEdge,
@@ -140,7 +140,7 @@ export function AchievementsListKdd1(to: Achievement[]) {
 			data.$roomCoords = data.$roomCoords ?? [];
 
 			if (evConquered() && !data.hasTurnedSword) {
-				const offset = Level.getRoomOffsetInLevel(roomID());
+				const offset = Level.getRoomOffsetInLevel(roomPid());
 				const coord = TWidgetLevelName.shortNameFromPosition(offset.x, offset.y);
 
 				if (!data.$roomCoords.includes(coord)) {

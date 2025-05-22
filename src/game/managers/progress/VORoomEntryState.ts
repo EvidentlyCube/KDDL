@@ -32,12 +32,6 @@ export class VORoomEntryState {
 	// ::::::::::::::::::::::::::::::::::::::::::::::
 
 	public serialize(): string {
-		// FORMAT:
-		// BYTE(x) . BYTE(y) . BYTE(o) . UINT(roomID) .
-		// UINT(gameVars.length) . BYTE_ARRAY(gameVars) .
-		// UTF_STRING(exploredRoomIDs) . UTF_STRING(completedRoomIDs) .
-		// UTF_STRING(finishedScripts)
-
 		const writer = new BinaryWriter();
 		const vars: Uint8Array = this.gameVars.pack();
 

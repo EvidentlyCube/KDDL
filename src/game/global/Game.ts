@@ -991,7 +991,7 @@ export class Game {
 
 	public static loadFromLevelEntrance(entranceID: number) {
 		const entrance = Level.getEntrance(entranceID);
-		const roomPid = Level.roomIdToPid(intAttr(entrance, 'RoomID'));
+		const roomPid = attr(entrance, 'RoomPID');
 
 		Progress.roomEntered(roomPid, intAttr(entrance, 'X'), intAttr(entrance, 'Y'), intAttr(entrance, 'O'));
 
@@ -1150,10 +1150,10 @@ export class Game {
 				kills += Progress.levelStats.getUint(levelId + "k", 0);
 				time += Progress.levelStats.getUint(levelId + "t", 0);
 
-				for (const roomId of Level.getSecretRoomPidsByLevelId(Game.levelId)) {
+				for (const roomPid of Level.getSecretRoomPidsByLevelId(Game.levelId)) {
 					secretsTotal++;
 
-					if (Progress.wasRoomEverVisited(roomId)) {
+					if (Progress.wasRoomEverVisited(roomPid)) {
 						secretsFound++;
 					}
 				}

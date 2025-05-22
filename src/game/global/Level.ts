@@ -594,9 +594,9 @@ export class Level {
 			if (isRequired) {
 				this.$requiredRoomPids.add(roomPid);
 
-				const requiredRoomIds = this.$levelIdToRequiredRoomPidsMap.get(levelId) ?? [];
-				requiredRoomIds.push(roomPid);
-				this.$levelIdToRequiredRoomPidsMap.set(levelId, requiredRoomIds);
+				const requiredRoomPids = this.$levelIdToRequiredRoomPidsMap.get(levelId) ?? [];
+				requiredRoomPids.push(roomPid);
+				this.$levelIdToRequiredRoomPidsMap.set(levelId, requiredRoomPids);
 			}
 
 			if (isSecret) {

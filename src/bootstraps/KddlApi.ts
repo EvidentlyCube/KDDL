@@ -143,7 +143,7 @@ export const KddlApi = {
             S.isSpiderMode = isSpiderMode;
         }
     },
-    getRoomIdsWithDemos() {
+    getRoomPidsWithDemos() {
         return Progress.getRoomPidsWithDemo();
     },
     getDemo(roomPid: string) {
