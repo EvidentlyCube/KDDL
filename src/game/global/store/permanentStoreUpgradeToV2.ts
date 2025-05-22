@@ -11,15 +11,15 @@ export async function permanentStoreUpgradeToV2() {
     }
 
     for (const [holdId, holdStore] of Object.entries(PermanentStore.holds)) {
-        const visitedRoomIds = PermanentStoreSlot.create<string[]>(`${holdId}/global-visited-room-ids`, []);
-        const conqueredRoomIds = PermanentStoreSlot.create<string[]>(`${holdId}/global-conquered-room-ids`, []);
+        const visitedRoomIds = PermanentStoreSlot.create<number[]>(`${holdId}/global-visited-room-ids`, []);
+        const conqueredRoomIds = PermanentStoreSlot.create<number[]>(`${holdId}/global-conquered-rooms-ids`, []);
 
         await visitedRoomIds.waitForInit();
         await conqueredRoomIds.waitForInit();
 
         holdStore.currentState.value = mapSaveState(holdStore.currentState.value);
-        holdStore.globalVisitedRoomPids.value = roomIdsToRoomPids(visitedRoomIds.value).map(x => x);
-        holdStore.globalConqueredRoomPids.value = roomIdsToRoomPids(conqueredRoomIds.value).map(x => x);
+        holdStore.globalVisitedRoomPids.value = permanentStoreUpgradeToV2_mapOldRoomIdsToPidsMap(visitedRoomIds.value);
+        holdStore.globalConqueredRoomPids.value = permanentStoreUpgradeToV2_mapOldRoomIdsToPidsMap(conqueredRoomIds.value);
         holdStore.demos.value = holdStore.demos.value.map(demo => mapDemo(demo)).filter(x => x);
         holdStore.saveStates.value = holdStore.saveStates.value.map(state => mapSaveState(state)).filter(x => x);
 
@@ -118,10 +118,3 @@ function mapDemo(serializedDemo: string): string {
         return "";
     }
 }
-
-function roomIdsToRoomPids(roomIds: unknown[]): string[] {
-    return roomIds
-        .map(roomId => typeof roomId === 'number' ? permanentStoreUpgradeToV2_mapOldRoomIdToPidMap(roomId) : "")
-        .filter(x => x);
-}
-

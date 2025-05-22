@@ -26,12 +26,14 @@ import { HoldBootstrap } from "./HoldBootstrap";
 import { KddlApi } from "./KddlApi";
 import { TWidgetVolumeMuter } from "src/game/widgets/TWidgetVolumeMuter";
 import { permanentStoreUpgradeToV2 } from "src/game/global/store/permanentStoreUpgradeToV2";
+import { Progress } from "src/game/global/Progress";
 
 require('../../src.assets/font/toms-new-roman.css');
 
 export class Bootstrap {
 	public static async bootstrap() {
 		exposeValue('Bootstrap', Bootstrap);
+		exposeValue('Progress', Progress);
 
 		Bootstrap.registerMonkeyPatches();
 

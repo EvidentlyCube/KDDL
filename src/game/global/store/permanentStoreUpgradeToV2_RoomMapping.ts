@@ -615,5 +615,5 @@ export function permanentStoreUpgradeToV2_mapOldRoomIdToPidMap(roomId: number): 
 }
 
 export function permanentStoreUpgradeToV2_mapOldRoomIdsToPidsMap(roomIds: number[]): string[] {
-    return roomIds.map(roomId => permanentStoreUpgradeToV2_mapOldRoomIdToPidMap(roomId));
+    return roomIds.map(roomId => permanentStoreUpgradeToV2_mapOldRoomIdToPidMap(roomId)).filter(x => x);
 }

@@ -58,7 +58,7 @@ function getEmptyPerHoldStore(key: string) {
         isCompleted: PermanentStoreSlot.create(`${key}/is-completed`, false),
         isMastered: PermanentStoreSlot.create(`${key}/is-mastered`, false),
         globalVisitedRoomPids: PermanentStoreSlot.create<string[]>(`${key}/global-visited-room-pids`, []),
-        globalConqueredRoomPids: PermanentStoreSlot.create<string[]>(`${key}/global-conquered-rooms-pids`, []),
+        globalConqueredRoomPids: PermanentStoreSlot.create<string[]>(`${key}/global-conquered-room-pids`, []),
         saveStates: PermanentStoreSlot.create<string[]>(`${key}/save-states`, []),
         currentState: PermanentStoreSlot.create<string>(`${key}/current-state`, ''),
         currentStateCommands: PermanentStoreSlot.create(`${key}/current-state-commands`,  ''),

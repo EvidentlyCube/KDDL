@@ -1,15 +1,15 @@
 import { HoldInfo } from "src/S";
+import { attr } from "src/XML";
 import { UtilsBase64 } from "../../../src.framework/net/retrocade/utils/UtilsBase64";
 import { ASSERT } from "../../ASSERT";
 import { VORoomEntryState } from "../managers/progress/VORoomEntryState";
+import { VODemoRecord } from "../managers/VODemoRecord";
+import { Commands } from "./Commands";
+import { Game } from "./Game";
 import { GlobalHoldScore } from "./GlobalHoldScore";
 import { Level } from "./Level";
 import { PackedVars } from "./PackedVars";
 import { PermanentStore } from "./store/PermanentStore";
-import { VODemoRecord } from "../managers/VODemoRecord";
-import { Commands } from "./Commands";
-import { Game } from "./Game";
-import { attr, intAttr } from "src/XML";
 
 export class Progress {
 	/**
@@ -133,18 +133,18 @@ export class Progress {
 	private static saveProgress_global() {
 		const {
 			_roomEntranceStates,
-			_allEverVisitedRoomPids: _allEverVisitedRoomIDs,
-			_allEverConqueredRoomPids: _allEverConqueredRoomIDs,
+			_allEverVisitedRoomPids,
+			_allEverConqueredRoomPids,
 		} = Progress;
 
 		// Room entrance states
 		PermanentStore.holds[HoldInfo().id].saveStates.value = _roomEntranceStates.map(x => x.serialize());
 
 		// Visited Rooms
-		PermanentStore.holds[HoldInfo().id].globalVisitedRoomPids.value = Array.from(_allEverVisitedRoomIDs.values());
+		PermanentStore.holds[HoldInfo().id].globalVisitedRoomPids.value = Array.from(_allEverVisitedRoomPids.values());
 
 		// Conquered Rooms
-		PermanentStore.holds[HoldInfo().id].globalConqueredRoomPids.value = Array.from(_allEverConqueredRoomIDs.values());
+		PermanentStore.holds[HoldInfo().id].globalConqueredRoomPids.value = Array.from(_allEverConqueredRoomPids.values());
 	}
 
 	private static saveProgress_local() {

@@ -126,6 +126,10 @@ export class Level {
 		return Level.$rooms.map(room => attr(room, 'RoomPID'));
 	}
 
+	public static getAllRequiredRoomPids(): ReadonlySet<string> {
+		return Level.$requiredRoomPids;
+	}
+
 	public static isValidRoomPid(roomPid: string) {
 		return !!Level.getRoomStrict(roomPid);
 	}

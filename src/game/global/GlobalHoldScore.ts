@@ -28,9 +28,7 @@ export const GlobalHoldScore = {
 
 	calculateCurrentHoldScoreParts() {
 		const allRoomsPids = Level.getAllRoomPids();
-		const allRequiredRoomsIds = Level.getAllRooms()
-			.filter(xml => boolAttr(xml, 'IsRequired', false))
-			.map(room => attr(room, 'RoomPID'));
+		const allRequiredRoomsIds = Array.from(Level.getAllRequiredRoomPids());
 		const totalRooms = allRoomsPids.length;
 		const totalRequiredRooms = allRequiredRoomsIds.length;
 		const totalAchievements = Achievements.getAll().length;
