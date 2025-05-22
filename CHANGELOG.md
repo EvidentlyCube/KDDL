@@ -1,4 +1,4 @@
-## 1.6.14 - ????-??-??
+## 1.6.14 - 2025-05-22
  - [I18N] Episode 2 ⟶ Level 5: 1S1W, updated the description of the achievement
  - [BUGFIX] Speech voice clips now correctly play using the Voices layer rather than SFX layer.
  - [BUGFIX] Evil eye gazes would remain if there was more than one visible on the screen at the same time and you pressed undo/restart.
