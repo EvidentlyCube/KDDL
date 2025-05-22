@@ -1,3 +1,6 @@
+## 1.6.15 - ????-??-??
+ - [FEATURE] Improved save importing with additional screen that keeps you informed and prevents clicking buttons while import is happening
+
 ## 1.6.14 - 2025-05-22
  - [I18N] Episode 2 ⟶ Level 5: 1S1W, updated the description of the achievement
  - [BUGFIX] Speech voice clips now correctly play using the Voices layer rather than SFX layer.

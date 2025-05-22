@@ -1,11 +1,10 @@
-import * as PIXI from 'pixi.js';
 import { RecamelState } from "../../../src.framework/net/retrocade/camel/core/RecamelState";
 import { ResourcesQueue } from "../../resources/mainGame/ResourcesQueue";
-import { C } from "../../C";
+import { C, HoldId } from "../../C";
 import { RecamelEffectFadeScreen } from "../../../src.framework/net/retrocade/camel/effects/RecamelEffectFadeScreen";
 import { RecamelLayerSprite } from "../../../src.framework/net/retrocade/camel/layers/RecamelLayerSprite";
 import { Text } from "../../../src.framework/net/retrocade/standalone/Text";
-import { _ } from "../../../src.framework/_";
+import { _, _r } from "../../../src.framework/_";
 import { Make } from "../global/Make";
 import { Button } from "../../../src.framework/net/retrocade/standalone/Button";
 import { TWindowLanguage } from "../windows/TWindowLanguage";
@@ -17,28 +16,31 @@ import { PermanentStoreSlot } from '../global/store/PermanentStoreSlot';
 import { RecamelCore } from 'src.framework/net/retrocade/camel/core/RecamelCore';
 import { permanentStoreUpgradeToV2 } from '../global/store/permanentStoreUpgradeToV2';
 import { PermanentStore } from '../global/store/PermanentStore';
+import { BaseTexture, Container, Sprite, Texture } from "pixi.js";
 
 const LOGO_HEIGHT = 100;
+type TextButton = Button & { setText(value: string): void };
 
 export class TStatePreloader extends RecamelState {
 	private _loadingText: Text = null!;
 
 	private _versionText: Text = null!;
 
-	private _bgTexture: PIXI.Texture = null!;
-	private _logoTexture: PIXI.Texture = null!;
-	private _bg: PIXI.Sprite = null!;
-	private _logo: PIXI.Sprite = null!;
+	private _bgTexture: Texture = null!;
+	private _logoTexture: Texture = null!;
+	private _bg: Sprite = null!;
+	private _logo: Sprite = null!;
 
 	private _layer: RecamelLayerSprite = null!;
+	private _importOverlay: ImportOverlay = null!;
 
 	private _holdScreens: HoldsScreen[] = [];
-	private _nextScreenButton: Button = null!;
-	private _prevScreenButton: Button = null!;
+	private _nextScreenButton: TextButton = null!;
+	private _prevScreenButton: TextButton = null!;
 
-	private _exportButton: Button = null!;
-	private _importButton: Button = null!;
-	private _languageButton: Button = null!;
+	private _exportButton: TextButton = null!;
+	private _importButton: TextButton = null!;
+	private _languageButton: TextButton = null!;
 
 	private _onStartGame: (holdOptions: HoldOptions) => void;
 	private _lastHoldOptions?: HoldOptions;
@@ -52,17 +54,18 @@ export class TStatePreloader extends RecamelState {
 
 	public create() {
 		this._layer = RecamelLayerSprite.create();
-		this._bgTexture = new PIXI.Texture(new PIXI.BaseTexture(ResourcesQueue.getImg(C.RES_PRELOADER_BG)));
-		this._logoTexture = new PIXI.Texture(new PIXI.BaseTexture(ResourcesQueue.getImg(C.RES_LOGO_GAME)));
-		this._bg = new PIXI.Sprite(this._bgTexture);
-		this._logo = new PIXI.Sprite(this._logoTexture);
+		this._bgTexture = new Texture(new BaseTexture(ResourcesQueue.getImg(C.RES_PRELOADER_BG)));
+		this._logoTexture = new Texture(new BaseTexture(ResourcesQueue.getImg(C.RES_LOGO_GAME)));
+		this._bg = new Sprite(this._bgTexture);
+		this._logo = new Sprite(this._logoTexture);
 		this._loadingText = Make.shadowText("");
 		this._versionText = Make.shadowText(S.version, 12);
 		this._prevScreenButton = getShadowTextButton("<<", () => this.changePage(-1));
 		this._nextScreenButton = getShadowTextButton(">>", () => this.changePage(1));
-		this._exportButton = getShadowTextButton("Export Save", () => this.exportSave(), 20);
-		this._importButton = getShadowTextButton("Import Save", () => this.importSave(), 20);
+		this._exportButton = getShadowTextButton(_('ui.preloader.buttons.export_save'), () => this.exportSave(), 20);
+		this._importButton = getShadowTextButton(_('ui.preloader.buttons.import_save'), () => this.handleImportSave(), 20);
 		this._languageButton = getShadowTextButton("English", () => this.changeLanguage(), 20);
+		this._importOverlay = new ImportOverlay();
 
 		this._layer.add(this._bg);
 		this._layer.add(this._logo);
@@ -107,6 +110,8 @@ export class TStatePreloader extends RecamelState {
 		this._languageButton.alignCenter();
 		this._exportButton.center = S.SIZE_GAME_WIDTH / 3;
 		this._importButton.center = S.SIZE_GAME_WIDTH * 2 / 3;
+
+		this._layer.add(this._importOverlay);
 	}
 
 	public destroy() {
@@ -159,10 +164,14 @@ export class TStatePreloader extends RecamelState {
 					? S.pagedHoldOptions.findIndex(options => options.includes(lastHoldOptions))
 					: 0
 			);
+			this.refreshTexts();
 		}
 	}
 
 	public handleGameStart = (hold: HoldOptions) => {
+		if (this._importOverlay.visible) {
+			return;
+		}
 		this._layer.displayObject.interactiveChildren = this._layer.displayObject.interactive = false;
 
 		new RecamelEffectFadeScreen(1, 0, 0, 600, () => {
@@ -177,6 +186,10 @@ export class TStatePreloader extends RecamelState {
 	}
 
 	private exportSave() {
+		if (this._importOverlay.visible) {
+			return;
+		}
+
 		var element = document.createElement('a');
 		element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(PermanentStoreSlot.exportAll()));
 		element.setAttribute('download', `KingDugansDungeonLite.save`);
@@ -189,8 +202,11 @@ export class TStatePreloader extends RecamelState {
 		document.body.removeChild(element);
 	}
 
-	private importSave() {
-		// @FIXME handle async-ness!
+	private handleImportSave() {
+		if (this._importOverlay.visible) {
+			return;
+		}
+
 		const input = document.createElement('input');
 		input.style.display='none';
 		input.type='file';
@@ -200,27 +216,55 @@ export class TStatePreloader extends RecamelState {
 				const text = await input.files[0].text();
 				PermanentStore.version.value = 1;
 
-				// @FIXME - Block screen during import and upgrade
-				if (await PermanentStoreSlot.importAll(text)) {
-					await permanentStoreUpgradeToV2();
+				this._importOverlay.setImporting();
+				try {
+					if (await PermanentStoreSlot.importAll(text)) {
+						await permanentStoreUpgradeToV2();
 
-					const currentPage = this._holdScreens.findIndex(screen => screen.visible);
-					RecamelCore.setState(new TStatePreloader(S.pagedHoldOptions[currentPage][0], this.handleGameStart));
+						const currentPage = this._holdScreens.findIndex(screen => screen.visible);
+						RecamelCore.setState(new TStatePreloader(S.pagedHoldOptions[currentPage][0], this.handleGameStart));
+					} else {
+						this._importOverlay.showError(_('ui.preloader.import.error.invalid_file'));
+					}
+				} catch (e:unknown) {
+					this._importOverlay.showError(_r(
+						'ui.preloader.import.error.unknown_error',
+						{ error: String(e) }
+					));
+
 				}
+			} else {
+				this._importOverlay.hide();
 			}
 		});
 
 		document.body.appendChild(input);
 		input.click();
 		document.body.removeChild(input);
+		this._importOverlay.show();
 	}
 
 	private changeLanguage() {
+		if (this._importOverlay.visible) {
+			return;
+		}
+	}
 
+	private refreshTexts() {
+		this._importButton.setText(_('ui.preloader.buttons.import_save'));
+		this._exportButton.setText(_('ui.preloader.buttons.export_save'));
+
+		for (const holdScreen of this._holdScreens) {
+			for (const [ holdId, button ] of holdScreen.holdIdToButtonMap.entries()) {
+				button.setText(_(`ui.preloader.hold.${holdId}`));
+			}
+		}
 	}
 }
 
-class HoldsScreen extends PIXI.Container {
+class HoldsScreen extends Container {
+	public readonly holdIdToButtonMap = new Map<HoldId, TextButton>();
+
 	public constructor(holds: HoldOptions[], onGameStart: (hold: HoldOptions) => void) {
 		super();
 
@@ -238,6 +282,7 @@ class HoldsScreen extends PIXI.Container {
 			button.alignCenter();
 			button.y = nextY;
 			this.addChild(button);
+			this.holdIdToButtonMap.set(holdOptions.id, button);
 
 			nextY += buttonHeight;
 		}
@@ -250,5 +295,76 @@ function getShadowTextButton(content: string, onClick: () => void, size = 48) {
 	button.addChild(text);
 	button.alignCenter();
 
-	return button;
+	const textButton = button as TextButton;
+	textButton.setText = (value: string) => {
+		const center = button.center;
+		text.text = value;
+		button.center = center;
+	}
+
+	return textButton;
+}
+
+class ImportOverlay extends Container {
+	private _overlay: Sprite;
+	private _textField: Text;
+	private _allowClosing = true;
+
+	public constructor() {
+		super();
+
+		this.addChild(
+			this._overlay = new Sprite(Texture.WHITE),
+			this._textField = Make.text(40),
+		);
+
+		this._overlay.tint = 0;
+		this._overlay.width = S.SIZE_GAME_WIDTH;
+		this._overlay.height = S.SIZE_GAME_HEIGHT;
+		this._overlay.alpha = 0.85;
+
+		this._textField.color = 0xFFFFFF;
+		this._textField.text = ".";
+		this._textField.textAlignCenter();
+		this._textField.wordWrap = true;
+		this._textField.wordWrapWidth = S.SIZE_GAME_WIDTH - 40;
+		this.visible = false;
+
+		this.addListener('click', () => this.handleClick());
+		this.interactive = true;
+		this.interactiveChildren = true;
+	}
+
+	public show() {
+		this.visible = true;
+		this._allowClosing = true;
+		this._textField.text = _('ui.preloader.import.selecting_file');
+		this._textField.alignCenter();
+		this._textField.alignMiddle();
+	}
+
+	public hide() {
+		this.visible = false;
+	}
+
+	public showError(error: string) {
+		this._allowClosing = true;
+
+		this._textField.text = _r('ui.preloader.import.error', { error });
+		this._textField.alignCenter();
+		this._textField.alignMiddle();
+	}
+
+	public setImporting() {
+		this._allowClosing = false;
+		this._textField.text = _('ui.preloader.import.importing')
+		this._textField.alignCenter();
+		this._textField.alignMiddle();
+	}
+
+	private handleClick() {
+		if (this._allowClosing) {
+			this.visible = false;
+		}
+	}
 }

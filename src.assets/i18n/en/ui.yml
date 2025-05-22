@@ -13,6 +13,34 @@ ui.common.no: No
 # [UNUSED] ui.preloader.info.waitApi: Waiting for an API to connect...
 
 
+ui.preloader.buttons.export_save: Export Save
+ui.preloader.buttons.import_save: Import Save
+ui.preloader.import.selecting_file: |
+    Waiting for file...
+
+    Click to cancel.
+ui.preloader.import.importing: |
+    Importing...
+
+    Please wait.
+ui.preloader.import.error: |
+    %error%
+
+    Click to close.
+ui.preloader.import.error.invalid_file: Not a valid save file.
+ui.preloader.import.error.unknown_error: |
+    Unknown error:
+    %error%
+
+ui.preloader.hold.kddl1: KDDL Episode 1
+ui.preloader.hold.kddl2: KDDL Episode 2
+ui.preloader.hold.kddl3: KDDL Episode 3
+ui.preloader.hold.kddl4: KDDL Episode 4
+ui.preloader.hold.kddl5: KDDL Episode 5
+ui.preloader.hold.kddl6: KDDL Episode 6
+ui.preloader.hold.the-ancient-palace: The Ancient Palace
+
+
 # Hold Initialization
 
 ui.hold_initialize.initializing_assets: "Initializing assets: %% / %%"
