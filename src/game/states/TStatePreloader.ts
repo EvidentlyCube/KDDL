@@ -15,6 +15,8 @@ import { GlobalHoldScore } from "../global/GlobalHoldScore";
 import { printf } from "../../../src.framework/printf";
 import { PermanentStoreSlot } from '../global/store/PermanentStoreSlot';
 import { RecamelCore } from 'src.framework/net/retrocade/camel/core/RecamelCore';
+import { permanentStoreUpgradeToV2 } from '../global/store/permanentStoreUpgradeToV2';
+import { PermanentStore } from '../global/store/PermanentStore';
 
 const LOGO_HEIGHT = 100;
 
@@ -187,7 +189,7 @@ export class TStatePreloader extends RecamelState {
 		document.body.removeChild(element);
 	}
 
-	private async importSave() {
+	private importSave() {
 		// @FIXME handle async-ness!
 		const input = document.createElement('input');
 		input.style.display='none';
@@ -196,8 +198,12 @@ export class TStatePreloader extends RecamelState {
 		input.addEventListener('change', async () => {
 			if (input.files) {
 				const text = await input.files[0].text();
+				PermanentStore.version.value = 1;
 
+				// @FIXME - Block screen during import and upgrade
 				if (await PermanentStoreSlot.importAll(text)) {
+					await permanentStoreUpgradeToV2();
+
 					const currentPage = this._holdScreens.findIndex(screen => screen.visible);
 					RecamelCore.setState(new TStatePreloader(S.pagedHoldOptions[currentPage][0], this.handleGameStart));
 				}

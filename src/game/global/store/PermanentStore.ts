@@ -5,38 +5,38 @@ import type { HoldScores } from "../GlobalHoldScore";
 import { ValidLanguage } from "src.framework/net/retrocade/camel/RecamelLang";
 
 export const PermanentStore = {
-    version: new PermanentStoreSlot<number>(`save-version`, 1),
+    version: PermanentStoreSlot.create<number>(`save-version`, 1),
     shared: {
-        holdScore: new PermanentStoreSlot<HoldScores>('shared/hold-scores', getEmptyHoldScores()),
+        holdScore: PermanentStoreSlot.create<HoldScores>('shared/hold-scores', getEmptyHoldScores()),
     },
     settings: {
-        language: new PermanentStoreSlot<ValidLanguage>('settings/language', 'en'),
+        language: PermanentStoreSlot.create<ValidLanguage>('settings/language', 'en'),
 
-        volumeSfx: new PermanentStoreSlot('settings/volume-sfx',0.6),
-        volumeMusic: new PermanentStoreSlot('settings/volume-music', 0.8),
-        volumeVoices: new PermanentStoreSlot('settings/volume-voices', 1),
-        repeatRate: new PermanentStoreSlot('settings/repeat-rate', 0.25),
-        repeatDelay: new PermanentStoreSlot('settings/repeat-delay', 300),
+        volumeSfx: PermanentStoreSlot.create('settings/volume-sfx',0.6),
+        volumeMusic: PermanentStoreSlot.create('settings/volume-music', 0.8),
+        volumeVoices: PermanentStoreSlot.create('settings/volume-voices', 1),
+        repeatRate: PermanentStoreSlot.create('settings/repeat-rate', 0.25),
+        repeatDelay: PermanentStoreSlot.create('settings/repeat-delay', 300),
 
-        showMoveCount: new PermanentStoreSlot(`settings/move-count`, false),
+        showMoveCount: PermanentStoreSlot.create(`settings/move-count`, false),
     },
 
     keymap: {
-        moveNW: new PermanentStoreSlot('keymap/move_nw', '7'),
-        moveN: new PermanentStoreSlot('keymap/move_n', '8'),
-        moveNE: new PermanentStoreSlot('keymap/move_ne', '9'),
-        moveW: new PermanentStoreSlot('keymap/move_w', 'u'),
-        moveE: new PermanentStoreSlot('keymap/move_e', 'o'),
-        moveSW: new PermanentStoreSlot('keymap/move_sw', 'j'),
-        moveS: new PermanentStoreSlot('keymap/move_s', 'k'),
-        moveSE: new PermanentStoreSlot('keymap/move_se', 'l'),
-        wait: new PermanentStoreSlot('keymap/wait', 'i'),
-        turnCW: new PermanentStoreSlot('keymap/turn_cw', 'w'),
-        turnCCW: new PermanentStoreSlot('keymap/turn_ccw', 'q'),
-        undo: new PermanentStoreSlot('keymap/undo', 'Backspace'),
-        restart: new PermanentStoreSlot('keymap/restart', 'r'),
-        battle: new PermanentStoreSlot('keymap/battle', 'a'),
-        lock: new PermanentStoreSlot('keymap/lock', 'x'),
+        moveNW: PermanentStoreSlot.create('keymap/move_nw', '7'),
+        moveN: PermanentStoreSlot.create('keymap/move_n', '8'),
+        moveNE: PermanentStoreSlot.create('keymap/move_ne', '9'),
+        moveW: PermanentStoreSlot.create('keymap/move_w', 'u'),
+        moveE: PermanentStoreSlot.create('keymap/move_e', 'o'),
+        moveSW: PermanentStoreSlot.create('keymap/move_sw', 'j'),
+        moveS: PermanentStoreSlot.create('keymap/move_s', 'k'),
+        moveSE: PermanentStoreSlot.create('keymap/move_se', 'l'),
+        wait: PermanentStoreSlot.create('keymap/wait', 'i'),
+        turnCW: PermanentStoreSlot.create('keymap/turn_cw', 'w'),
+        turnCCW: PermanentStoreSlot.create('keymap/turn_ccw', 'q'),
+        undo: PermanentStoreSlot.create('keymap/undo', 'Backspace'),
+        restart: PermanentStoreSlot.create('keymap/restart', 'r'),
+        battle: PermanentStoreSlot.create('keymap/battle', 'a'),
+        lock: PermanentStoreSlot.create('keymap/lock', 'x'),
     },
 
     holds: {
@@ -53,16 +53,16 @@ export const PermanentStore = {
 
 function getEmptyPerHoldStore(key: string) {
     return {
-        achievements: new PermanentStoreSlot<EncodedAchievement[]>(`${key}/achievements`, []),
-        globalStats: new PermanentStoreSlot(`${key}/global-stats`, ""),
-        isCompleted: new PermanentStoreSlot(`${key}/is-completed`, false),
-        isMastered: new PermanentStoreSlot(`${key}/is-mastered`, false),
-        globalVisitedRoomPids: new PermanentStoreSlot<string[]>(`${key}/global-visited-room-pids`, []),
-        globalConqueredRoomPids: new PermanentStoreSlot<string[]>(`${key}/global-conquered-rooms-pids`, []),
-        saveStates: new PermanentStoreSlot<string[]>(`${key}/save-states`, []),
-        currentState: new PermanentStoreSlot<string>(`${key}/current-state`, ''),
-        currentStateCommands: new PermanentStoreSlot(`${key}/current-state-commands`,  ''),
-        demos: new PermanentStoreSlot<string[]>(`${key}/demo`, []),
+        achievements: PermanentStoreSlot.create<EncodedAchievement[]>(`${key}/achievements`, []),
+        globalStats: PermanentStoreSlot.create(`${key}/global-stats`, ""),
+        isCompleted: PermanentStoreSlot.create(`${key}/is-completed`, false),
+        isMastered: PermanentStoreSlot.create(`${key}/is-mastered`, false),
+        globalVisitedRoomPids: PermanentStoreSlot.create<string[]>(`${key}/global-visited-room-pids`, []),
+        globalConqueredRoomPids: PermanentStoreSlot.create<string[]>(`${key}/global-conquered-rooms-pids`, []),
+        saveStates: PermanentStoreSlot.create<string[]>(`${key}/save-states`, []),
+        currentState: PermanentStoreSlot.create<string>(`${key}/current-state`, ''),
+        currentStateCommands: PermanentStoreSlot.create(`${key}/current-state-commands`,  ''),
+        demos: PermanentStoreSlot.create<string[]>(`${key}/demo`, []),
     };
 }
 

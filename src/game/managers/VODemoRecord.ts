@@ -139,9 +139,7 @@ export class VODemoRecord {
         writer.writeUnsignedInt(this._demo.length);
         writer.writeString(this._demo, Encoding.Utf8);
 
-        const buffer = writer.toUint8Array();
-
-        return UtilsBase64.encodeByteArray(buffer);
+        return UtilsBase64.encodeByteArray(writer.toUint8Array());
     }
 }
 

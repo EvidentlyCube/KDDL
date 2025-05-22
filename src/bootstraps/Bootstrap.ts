@@ -25,6 +25,7 @@ import { exposeValue, S } from "../S";
 import { HoldBootstrap } from "./HoldBootstrap";
 import { KddlApi } from "./KddlApi";
 import { TWidgetVolumeMuter } from "src/game/widgets/TWidgetVolumeMuter";
+import { permanentStoreUpgradeToV2 } from "src/game/global/store/permanentStoreUpgradeToV2";
 
 require('../../src.assets/font/toms-new-roman.css');
 
@@ -70,6 +71,7 @@ export class Bootstrap {
 			Bootstrap.waitForFontsToLoad(),
 			PermanentStoreSlot.waitForAllSlotsInit(),
 		]);
+		await permanentStoreUpgradeToV2();
 		await Bootstrap.initRecamel();
 		await Bootstrap.fadeOutPrePreloader();
 

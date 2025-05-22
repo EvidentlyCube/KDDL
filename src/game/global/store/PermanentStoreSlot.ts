@@ -15,7 +15,8 @@ export class PermanentStoreSlot<T> {
     }
 
     public static async deleteKey(key: string) {
-        return dbStorage.removeItem(key);
+        await dbStorage.removeItem(key);
+        PermanentStoreSlot._slots.delete(key);
     }
 
     public static async importAll(save: string): Promise<boolean> {
@@ -38,7 +39,7 @@ export class PermanentStoreSlot<T> {
 
             const existingSlot = PermanentStoreSlot._slots.get(key) ?? new PermanentStoreSlot<any>(key, null);
             await existingSlot.waitForInit();
-            existingSlot.write(value, false);
+            existingSlot.write(JSON.parse(value), false);
             promises.push(existingSlot.flush());
         }
 
@@ -47,19 +48,22 @@ export class PermanentStoreSlot<T> {
         return true;
     }
 
+    public static create<T>(key: string, defaultValue: T): PermanentStoreSlot<T> {
+        return PermanentStoreSlot._slots.get(key) as PermanentStoreSlot<T>
+            ?? new PermanentStoreSlot<T>(key, defaultValue);
+    }
+
     public readonly key: string;
 
     private _value: T;
     private _isLoaded = false;
-    private _isReadOnly = false
 
     private _isSyncing = false;
     private _isSyncQueued = false;
 
-    public constructor(key: string, defaultValue: T, isReadOnly = false) {
+    private constructor(key: string, defaultValue: T) {
         this.key = key;
         this._value = defaultValue;
-        this._isReadOnly = isReadOnly;
 
         this.load();
 
@@ -67,9 +71,7 @@ export class PermanentStoreSlot<T> {
             throw new Error(`Non unique permanent store slot - ${key}`);
         }
 
-        if (!this._isReadOnly) {
-            PermanentStoreSlot._slots.set(key, this);
-        }
+        PermanentStoreSlot._slots.set(key, this);
     }
 
     public get value() {
@@ -120,7 +122,7 @@ export class PermanentStoreSlot<T> {
     }
 
     private async flush(): Promise<void> {
-        if (S.isSpiderMode || this._isReadOnly) {
+        if (S.isSpiderMode) {
             return;
         }
 
