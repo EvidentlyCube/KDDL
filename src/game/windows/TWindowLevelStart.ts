@@ -10,7 +10,7 @@ import {Gfx} from "../global/Gfx";
 import {PlatformOptions} from "../../platform/PlatformOptions";
 import {Level} from "../global/Level";
 import {UtilsXPath} from "../../../src.framework/net/retrocade/utils/UtilsXPath";
-import {intAttr} from "../../XML";
+import {attr, intAttr} from "../../XML";
 import RawInput from "../../../src.tn/RawInput";
 import {_, _r} from "../../../src.framework/_";
 
@@ -188,8 +188,7 @@ export class TWindowLevelStart extends RecamelWindow {
 
 	private setEntrance(entranceID: number) {
 		const date: Date = new Date(Level.getHoldTimestamp() * 1000);
-		const roomId = intAttr(Level.getEntrance(entranceID), 'RoomID');
-		const roomPid = Level.roomIdToPid(roomId);
+		const roomPid = attr(Level.getEntrance(entranceID), 'RoomPID');
 
 		this.holdTitle.text = Level.getHoldName();
 		this.levelTitle.text = Level.getLevelNameTranslated(Level.getLevelIdByRoomPid(roomPid));

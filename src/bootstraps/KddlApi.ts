@@ -156,7 +156,7 @@ export const KddlApi = {
         get room() {
             return Game.room;
         },
-        get roomId() {
+        get roomPid() {
             return Game.room.roomPid;
         },
         restart() {

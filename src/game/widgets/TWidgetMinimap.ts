@@ -161,15 +161,15 @@ export class TWidgetMinimap {
 	}
 
 	public static API_drawLevel(levelId: number) {
-		const roomIds = Level.getRoomPidsByLevel(levelId);
+		const roomPids = Level.getRoomPidsByLevel(levelId);
 
 		let minX = 0;
 		let maxX = 0;
 		let minY = 0;
 		let maxY = 0;
 
-		for (const roomId of roomIds) {
-			const pos = Level.getRoomOffsetInLevel(roomId);
+		for (const roomPid of roomPids) {
+			const pos = Level.getRoomOffsetInLevel(roomPid);
 
 			minX = Math.min(minX, pos.x);
 			maxX = Math.max(maxX, pos.x + 1);
@@ -179,9 +179,9 @@ export class TWidgetMinimap {
 
 		const bd = F.newCanvasContext(S.RoomWidth * (maxX - minX), S.RoomHeight * (maxY - minY));
 
-		for (const roomId of roomIds) {
-			const pos = Level.getRoomOffsetInLevel(roomId);
-			const room = new VOMinimapRoom(Level.getRoom(roomId));
+		for (const roomPid of roomPids) {
+			const pos = Level.getRoomOffsetInLevel(roomPid);
+			const room = new VOMinimapRoom(Level.getRoom(roomPid));
 
 			room.completed = true;
 			room.wasVisited = true;

@@ -309,8 +309,8 @@ export class TStateRestore extends RecamelState {
 
 		if (!Level.getRoomStrict(roomPid)) {
 			const entrance = Level.getFirstHoldEntrance();
-			const roomId = intAttr(entrance, 'RoomID');
-			this.selectRoom(Level.roomIdToPid(roomId));
+			const roomPid = attr(entrance, 'RoomPID');
+			this.selectRoom(roomPid);
 			return;
 		}
 
@@ -360,10 +360,10 @@ export class TStateRestore extends RecamelState {
 
 		const levelId: number = Level.getLevelIdByRoomPid(this._currentRoomPid);
 
-		const secretRoomIds = Level.getSecretRoomPidsByLevelId(levelId);
-		const secretsDone = secretRoomIds.filter(roomId => Progress.wasRoomEverConquered(roomId)).length;
+		const secretRoomPids = Level.getSecretRoomPidsByLevelId(levelId);
+		const secretsDone = secretRoomPids.filter(roomPid => Progress.wasRoomEverConquered(roomPid)).length;
 
-		this.secretsCount.text = _("ui.restore.info.secrets", secretsDone, secretRoomIds.length);
+		this.secretsCount.text = _("ui.restore.info.secrets", secretsDone, secretRoomPids.length);
 		this.secretsCount.x = (204 - this.secretsCount.textWidth) / 2;
 	}
 

@@ -471,7 +471,7 @@ export class Progress {
 	// ::::::::::::::::::::::::::::::::::::::::::::::
 
 	public static wasLevelEverVisited(levelId: number): boolean {
-		return Level.getRoomPidsByLevel(levelId).some(roomId => Progress.wasRoomEverVisited(roomId));
+		return Level.getRoomPidsByLevel(levelId).some(roomPid => Progress.wasRoomEverVisited(roomPid));
 	}
 
 	public static wasRoomEverConquered(roomPid: string): boolean {

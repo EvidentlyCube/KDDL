@@ -167,21 +167,21 @@ export class Room {
 
 		this.roomPid = roomPid;
 
-		const room = Level.getRoom(roomPid);
+		const roomXml = Level.getRoom(roomPid);
 
-		this.levelId = intAttr(room, 'LevelID');
+		this.levelId = intAttr(roomXml, 'LevelID');
 
-		const styleName = textAttr(room, 'StyleName', PlatformOptions.defaultStyle) as StyleName;
+		const styleName = textAttr(roomXml, 'StyleName', PlatformOptions.defaultStyle) as StyleName;
 
 		this.loadSquaresIntoArrays(roomPid, this.tilesOpaque, this.tilesTransparent, this.tilesTransparentParam, this.tilesFloor);
 
 		// Load monsters
-		for (const monster of UtilsXPath.getAllElements('Monsters', room.ownerDocument, room)) {
+		for (const monster of Level.getRoomMonsters(roomPid)) {
 			this.addNewMonsterFromXml(monster);
 		}
 
 		// Load orbs
-		for (const orb of UtilsXPath.getAllElements('Orbs', room.ownerDocument, room)) {
+		for (const orb of UtilsXPath.getAllElements('Orbs', roomXml.ownerDocument, roomXml)) {
 			const orbData = new VOOrb(intAttr(orb, 'X'), intAttr(orb, 'Y'));
 
 			for (const orbAgent of orb.children) {
@@ -197,17 +197,17 @@ export class Room {
 		}
 
 		// Load stairs
-		for (const exit of UtilsXPath.getAllElements('Exits', room.ownerDocument, room)) {
+		for (const exit of UtilsXPath.getAllElements('Exits', roomXml.ownerDocument, roomXml)) {
 			this.stairs.push(new VOStairs(exit));
 		}
 
 		// Load checkpoints
-		for (const checkpoint of UtilsXPath.getAllElements('Checkpoints', room.ownerDocument, room)) {
+		for (const checkpoint of UtilsXPath.getAllElements('Checkpoints', roomXml.ownerDocument, roomXml)) {
 			this.checkpoints.addCheckpoint(checkpoint);
 		}
 
 		// Load scrolls
-		for (const xml of UtilsXPath.getAllElements('Scrolls', room.ownerDocument, room)) {
+		for (const xml of UtilsXPath.getAllElements('Scrolls', roomXml.ownerDocument, roomXml)) {
 			const scrollData = new VOScroll(
 				intAttr(xml, 'X'),
 				intAttr(xml, 'Y'),
