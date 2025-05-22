@@ -19,6 +19,8 @@ import { TWidgetMinimap } from "src/game/widgets/TWidgetMinimap";
 import { S } from "src/S";
 import { intAttr } from "src/XML";
 
+let isInterruptingDemoPlayback = false;
+
 export const KddlApi = {
     async loadHold(holdId: HoldId): Promise<void> {
         const { currentState } = RecamelCore;
@@ -91,9 +93,9 @@ export const KddlApi = {
         const demo = new VODemoRecord("", demoData);
 
         const roomPid = demo.roomPid;
-        var px = demo.startX;
-        var py = demo.startY;
-        var po = demo.startO;
+        const px = demo.startX;
+        const py = demo.startY;
+        const po = demo.startO;
 
         Progress.restoreToDemo(demo);
         Game.loadFromRoom(roomPid, px, py, po);
@@ -154,7 +156,9 @@ export const KddlApi = {
         get room() {
             return Game.room;
         },
-
+        get roomId() {
+            return Game.room.roomPid;
+        },
         restart() {
             const state = RecamelCore.currentState;
             if (state instanceof TStateGame) {
@@ -167,7 +171,66 @@ export const KddlApi = {
                 state.processCommand(command);
             }
         },
-    }
+        demo: {
+            interrupt() {
+                isInterruptingDemoPlayback = true;
+            },
+            async play(inputSpeed = 100) {
+                const state = RecamelCore.currentState;
+                if (!(state instanceof TStateGame)) {
+                    return
+                }
+                const demo = Progress.getRoomDemo(Game.room.roomPid);
+
+                if (!demo.hasScore) {
+                    return;
+                }
+
+                console.log(`kddlApi.ingame.interruptDemo() to interrupt playback`);
+
+                isInterruptingDemoPlayback = false;
+                try {
+                    const roomPid = demo.roomPid;
+                    const px = demo.startX;
+                    const py = demo.startY;
+                    const po = demo.startO;
+
+                    Progress.restoreToDemo(demo);
+                    Game.loadFromRoom(roomPid, px, py, po);
+                    Commands.fromString(demo.demoBuffer);
+                    Commands.freeze();
+
+                    let nextMove = Commands.getFirst();
+
+                    do {
+                        if (F.isComplexCommand(nextMove)) {
+                            Game.processCommand(nextMove, Commands.getComplexX(), Commands.getComplexY());
+                        } else {
+                            Game.processCommand(nextMove);
+                        }
+
+                        TStateGame.instance.drawAll();
+
+                        if (
+                            CueEvents.hasOccurred(C.CID_EXIT_ROOM)
+                            || CueEvents.hasAnyOccurred(C.CIDA_PLAYER_DIED)
+                            || isInterruptingDemoPlayback
+                        ) {
+                            break;
+                        }
+
+                        nextMove = Commands.getNext();
+                        await sleep(inputSpeed);
+
+                    } while (nextMove != Number.MAX_VALUE);
+
+                } finally {
+                    Commands.unfreeze();
+                    TStateGame.isInputLocked = false;
+                }
+            }
+        }
+    },
 }
 
 async function canvasToPng(canvas: HTMLCanvasElement) {
@@ -191,6 +254,6 @@ async function waitForState(stateType: any) {
     }
 }
 
-async function sleep(): Promise<void> {
-    return new Promise(resolve => setTimeout(resolve, 100));
+async function sleep(duration = 100): Promise<void> {
+    return new Promise(resolve => setTimeout(resolve, duration));
 }

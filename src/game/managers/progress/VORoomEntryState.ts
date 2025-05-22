@@ -108,8 +108,10 @@ export class VORoomEntryState {
 		this.o = demo.startO;
 		this.roomPid = demo.roomPid;
 
-		set_clearAndAdd(demo.exploredRoomPids, this.exploredRoomPids);
-		set_clearAndAdd(demo.conqueredRoomPids, this.conqueredRoomPids);
+		this.exploredRoomPids.clear();
+		this.conqueredRoomPids.clear();
+		set_addArray(this.exploredRoomPids, demo.exploredRoomPids);
+		set_addArray(this.conqueredRoomPids, demo.conqueredRoomPids);
 		this.endedScriptIds = [...demo.endedScripts];
 		this.gameVars = demo.gameVars.clone();
 	}

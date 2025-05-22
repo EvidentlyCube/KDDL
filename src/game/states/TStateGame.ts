@@ -82,6 +82,7 @@ export class TStateGame extends RecamelState {
 		return TStateGame._instance;
 	}
 
+	public static isInputLocked = false;
 
 	public static effectsUnder = new RecamelGroup<TEffect>();
 	public static effectsAbove = new RecamelGroup<TEffect>();
@@ -149,7 +150,7 @@ export class TStateGame extends RecamelState {
 			return;
 		}
 
-		if (PlatformOptions.isDebug) {
+		if (PlatformOptions.isDebug && !TStateGame.isInputLocked) {
 			// DEBUG
 			if (RawInput.isMouseDown(0)) {
 				if (RawInput.isCtrlDown) {
@@ -285,15 +286,17 @@ export class TStateGame extends RecamelState {
 
 		}
 
-		if (!this.isStoppingEffectPlaying && RawInput.isKeyPressed('Escape')) {
-			RawInput.flushAll();
+		if (!TStateGame.isInputLocked && !this.isStoppingEffectPlaying) {
+			if (RawInput.isKeyPressed('Escape')) {
+				RawInput.flushAll();
 
-			this.waitingForEscape = true;
-		} else if (!this.isStoppingEffectPlaying && RawInput.isKeyPressed('Enter')) {
-			RawInput.flushAll();
+				this.waitingForEscape = true;
+			} else if (RawInput.isKeyPressed('Enter')) {
+				RawInput.flushAll();
 
-			TWindowLevelScore.show();
-			return;
+				TWindowLevelScore.show();
+				return;
+			}
 		}
 
 		if (!this.isStoppingEffectPlaying && this.waitingForEscape && TStateGame.offsetNow == 0) {
@@ -323,7 +326,7 @@ export class TStateGame extends RecamelState {
 			TWidgetFace.setDying(false);
 		}
 
-		if (RawInput.isKeyPressed(' ')) {
+		if (!TStateGame.isInputLocked && RawInput.isKeyPressed(' ')) {
 			TWidgetSpeech.stopAllSpeech();
 			forceFullRedraw = true;
 		}
@@ -344,7 +347,7 @@ export class TStateGame extends RecamelState {
 			return;
 		}
 
-		if (RawInput.isKeyPressed('Tab')) {
+		if (!TStateGame.isInputLocked && RawInput.isKeyPressed('Tab')) {
 			TWindowAchievements.show();
 			return;
 		}
@@ -354,17 +357,22 @@ export class TStateGame extends RecamelState {
 			TWidgetMoveCounter.toggle();
 		}
 
-		if (RawInput.isKeyPressed(Core.getKey('lock'))) {
+		if (!TStateGame.isInputLocked && RawInput.isKeyPressed(Core.getKey('lock'))) {
 			Game.isRoomLocked = !Game.isRoomLocked;
 			this.drawAfterTurn();
 
 			Sfx.roomLock();
 		}
 
-		if (RawInput.isKeyPressed('F1')) {
+		if (!TStateGame.isInputLocked && RawInput.isKeyPressed('F1')) {
 			TWindowHelp.show();
 		}
 
+
+		if (TStateGame.isInputLocked) {
+			this.drawActiveAndEffects(false);
+			return;
+		}
 
 		// COMMAND QUEUE
 
@@ -579,11 +587,11 @@ export class TStateGame extends RecamelState {
 		TWidgetSpeech.update();
 
 		if (Game.room.monsterCount && UtilsRandom.fraction() < 0.0005 * Game.room.monsterCount) {
-			const item = Game.room.monsters.getRandom();
-			if (item) {
-				item.animationFrame = item.animationFrame ? 0 : 1;
-				item.setGfx();
-				force = true;
+			const monster = Game.room.monsters.getRandom();
+			if (monster) {
+				monster.animationFrame = monster.animationFrame ? 0 : 1;
+				monster.setGfx();
+				monster.update();
 			}
 		}
 

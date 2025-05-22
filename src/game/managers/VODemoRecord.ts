@@ -94,6 +94,10 @@ export class VODemoRecord {
 
             this._demo = Commands.toString();
 
+            // There was a bug in the past where for some reason the conquered room's ID was
+            // also being stored here which caused issues during demo playback
+            this._conqueredRoomPids.delete(this._roomPid);
+
             return true;
         }
 

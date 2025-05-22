@@ -3,6 +3,7 @@ import { PermanentStore } from "./PermanentStore";
 import { PermanentStoreSlot } from "./PermanentStoreSlot";
 import { UtilsBase64 } from "src.framework/net/retrocade/utils/UtilsBase64";
 import { permanentStoreUpgradeToV2_mapOldRoomIdsToPidsMap, permanentStoreUpgradeToV2_mapOldRoomIdToPidMap } from "./permanentStoreUpgradeToV2_RoomMapping";
+import { arraySpliceElementOut } from "src.framework/net/retrocade/utils/UtilsArray";
 
 export async function permanentStoreUpgradeToV2() {
     if (PermanentStore.version.read() >= 2) {
@@ -100,6 +101,8 @@ function mapDemo(serializedDemo: string): string {
 
         const exploredRoomPids = permanentStoreUpgradeToV2_mapOldRoomIdsToPidsMap(exploredRoomIds);
         const conqueredRoomPids = permanentStoreUpgradeToV2_mapOldRoomIdsToPidsMap(conqueredRoomIds);
+
+        arraySpliceElementOut(conqueredRoomPids, roomPid);
 
 		writer.writeString(JSON.stringify(endedScriptIds), Encoding.Utf8); // Ended Script IDs
 		writer.writeString(JSON.stringify(conqueredRoomPids), Encoding.Utf8); // Conquered Rooms PIDs

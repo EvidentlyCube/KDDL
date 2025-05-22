@@ -177,7 +177,7 @@ export class Room {
 
 		// Load monsters
 		for (const monster of UtilsXPath.getAllElements('Monsters', room.ownerDocument, room)) {
-			this.addNewMonsterXML(monster);
+			this.addNewMonsterFromXml(monster);
 		}
 
 		// Load orbs
@@ -1251,7 +1251,7 @@ export class Room {
 		return monster;
 	}
 
-	public addNewMonsterXML(xml: Element): TMonster {
+	public addNewMonsterFromXml(xml: Element): TMonster {
 		return this.addNewMonster(
 			intAttr(xml, 'Type'),
 			intAttr(xml, 'X'),
