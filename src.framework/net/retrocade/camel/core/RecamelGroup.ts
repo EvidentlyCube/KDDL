@@ -245,21 +245,6 @@ export class RecamelGroup<T extends RecamelObject> extends RecamelObject {
 		}
 	}
 
-	/**
-	 * Removes the specified object from the group using splice
-	 * @param object Object to be removed
-	 */
-	public remove(object: T): void {
-		const index: number = this._items.indexOf(object);
-		if (index == -1) {
-			return;
-		}
-
-		this._length--;
-		this._items.splice(index, 1);
-	}
-
-
 	// ::::::::::::::::::::::::::::::::::::::::::::::
 	// :: Updating
 	// ::::::::::::::::::::::::::::::::::::::::::::::

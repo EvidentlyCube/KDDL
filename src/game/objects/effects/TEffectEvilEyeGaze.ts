@@ -67,7 +67,7 @@ export class TEffectEvilEyeGaze extends TEffect {
 	public end() {
 		super.end();
 
-		TStateGame.effectsAbove.remove(this);
+		TStateGame.effectsAbove.nullify(this);
 		this._container.parent?.removeChild(this._container);
 	}
 
