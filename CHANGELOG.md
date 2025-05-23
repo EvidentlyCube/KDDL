@@ -1,4 +1,5 @@
 ## 1.6.15 - ????-??-??
+ - [BUGFIX] Episode 6 ⟶ Level 25, made one room non required to fix an issue where blue doors would not go down when expected
  - [FEATURE] Improved save importing with additional screen that keeps you informed and prevents clicking buttons while import is happening
 
 ## 1.6.14 - 2025-05-22
