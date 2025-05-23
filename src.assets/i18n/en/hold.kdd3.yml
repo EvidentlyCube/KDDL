@@ -10,7 +10,6 @@ level_name_2: Tenth Level
 level_name_3: Eleventh Level
 level_name_4: Twelfth Level
 level_name_5: Mastery Level
-level_name_6: Tutorial
 
 
 # Achievements
@@ -88,8 +87,6 @@ achievement.name.level_3: Contract Exterminator
 achievement.description.level_3: Clear Eleventh Level
 achievement.name.level_4: I'm a Professional!
 achievement.description.level_4: Clear Twelfth Level
-achievement.name.level_6: Can I Read?
-achievement.description.level_6: Clear Tutorial
 
 achievement.name.tuning_fork_in_sequence: Tuning Stork
 
@@ -121,7 +118,6 @@ entrance.lvl_1.entrance.15x5: >
     Beethro wanted to drink exactly four cups of leaf juice in one uninterrupted
     gulp. He started messing around with the cups, pouring juice from one to
     another and back, but after a while gave up. "This is too much work!  Forget it!"
-entrance.lvl_1.entrance.7x17: Beethro left the tutorial floor rich with new knowledge.
 entrance.lvl_2.entrance.11x12: >
     As many experienced dungeon exterminators know, beneath dwell some beasties
     that are able to blend into their surroundings.
@@ -138,7 +134,6 @@ entrance.lvl_5.entrance.13x11: |
     Beethro descended the stairs only to find himself in an uncharted corridor...
 
     He won't get paid for clean-up here, but his professional honor urges him onward.
-entrance.lvl_6.entrance.8x12: Tutorial
 
 
 # Scrolls
@@ -163,45 +158,6 @@ scroll.lvl_5.1s.6x8: Roach queens will be killed once you step on the checkpoint
 scroll.lvl_5.1s.7x8: Here is a small reward! Kill all the eyes without stepping on the grass.
 scroll.lvl_5.entrance.12x15: Final words
 scroll.lvl_5.entrance.18x11: Other puzzles
-
-scroll.lvl_6.1e.13x16: Move to the far right and observe how the roach behaves when walking onto a corner diagonally.
-scroll.lvl_6.1e.1x12: Break these broken and secret walls with your sword.
-scroll.lvl_6.1e.21x17: If a monster moves diagonally into a corner obstacle, it prefers to slide vertically, if possible.
-scroll.lvl_6.1e.6x10: Roach queens spawn roach eggs every 30 turns (the turn after the spawn counter becomes red).
-scroll.lvl_6.1e.6x6: Eggs won't appear on arrows, trapdoors, or yellow gates. Press `%keymap.wait%` or `Numpad 5` to wait a turn.
-scroll.lvl_6.1e.6x8: Eggs will hatch into fully grown-up roaches 5 turns after being spawned.
-scroll.lvl_6.1s3e.10x16: Place yourself on the green floor and make sure the roach stands on the sand tile directly south of you...
-scroll.lvl_6.1s3e.10x8: Place yourself on the green floor and make sure the roach stands on the sand tile directly north of you...
-scroll.lvl_6.1s3e.20x12: Follow the sandy path to learn the backswipe technique! Remember about diagonal movement and don't turn your sword.
-scroll.lvl_6.1s3e.7x12: Repeat to analyze the backswipe. Master this technique, for it will prove crucial in your further endeavors.
-scroll.lvl_6.1s3e.9x15: ...then move southeast to kill it.
-scroll.lvl_6.1s3e.9x9: ...then move northeast to kill it.
-scroll.lvl_6.2e.1x12: Wraithwings, unlike roaches, run away from Beethro and try to keep themselves at a distance of five tiles.
-scroll.lvl_6.2e.5x12: They are not as shy in bigger numbers, and won't hesitate to attack if they surround their prey.
-scroll.lvl_6.3e.10x12: These pink-purple tiles are trapdoors and they fall if you or a mimic step off them.
-scroll.lvl_6.3e.4x12: After stepping on a mimic potion, use your mouse or wait key to choose the tile where you want to place the mimic.
-scroll.lvl_6.4e.11x12: Snakes move by their own, much more complex, movement rules. Their current preference is shown beneath the spawn cycle timer.
-scroll.lvl_6.4e.1x6: (this scroll contained information about CaravelNet functions that are not available in this version anymore)
-scroll.lvl_6.4e.2x4: >
-    `Escape` opens up the pause menu, where you can view `General Help` to
-    refer to the controls anytime you wish.
-scroll.lvl_6.4e.2x8: Click on elements to see what orbs do and what the evil eyes see.
-scroll.lvl_6.4e.4x3: To prevent yourself from accidentally leaving a room hit %keymap.lock% to lock and unlock it. A small lock icon on the minimap indicates that a room is locked.
-scroll.lvl_6.4e.4x9: If a monster moves diagonally into a corner obstacle, it prefers to slide vertically, if possible.
-scroll.lvl_6.4e.6x4: |
-    Shift+Key performs the key's action followed by its inverse.
-    Shift+Wait waits until the next spawn.
-    %keymap.battle% performs the opposite of your previous move.
-scroll.lvl_6.4e.6x8: All keys can be remapped from within game options.
-scroll.lvl_6.4e.7x12: Did you know that serpents can't move over scrolls?
-scroll.lvl_6.4e.7x6: F3 displays a move counter to help you optimize for better scores.
-scroll.lvl_6.entrance.11x15: >
-    Historical Note:
-
-    The original Flash version of the game had each episode released as a
-    separate game - the tutorial was aimed at people starting their
-    adventure with later episodes.
-scroll.lvl_6.entrance.5x9: You can move diagonally even through very narrow corridors.
 
 
 # Speeches
@@ -233,10 +189,6 @@ speech.10025180: That was just nasty. Maybe tar isn't so bad after all...
 speech.10025181: Ah-ha!  Gotta get up early in the morning to pull one over on Beethro!
 speech.10025182: I am not amused.
 
-# Ninth Level: Entrance -- (5, 19)
-speech.10025184: This is a tutorial area.
-speech.10025185: Visit it if you haven't played this game before.
-
 # Ninth Level: Entrance -- (8, 3)
 speech.10025183: Hot griddled roaches!  No more tar!
 
@@ -245,36 +197,6 @@ speech.10025188: A door I can't get through. I wonder what's on the other side.
 
 # Tenth Level: 3N -- (17, 1)
 speech.10025187: Hrm. This is a very strange door. I can't get through.
-
-# Tutorial: 1E -- (1, 24)
-speech.10025207: Your objective in DROD is to clear each level of all monsters.
-speech.10025208: Hit the roach with your sword to kill it.
-
-# Tutorial: 2E -- (1, 0)
-speech.10025209: Force arrows block your movement in a direction opposite to theirs.
-speech.10025210: >
-    Step on the checkpoint. You will go back to the exact moment you stepped on
-    it should you die or restart using `%keymap.restart%`.
-speech.10025211: >
-    If you die or are in a situation where each move results with death, you can
-    undo with `%keymap.undo%`.
-
-# Tutorial: 3E -- (2, 24)
-speech.10025212: This potion will allow you to place a mimic. Mimics copy every move you make and move immediately after you, but before monsters.
-speech.10025213: Place the mimic at the tile marked with a checkpoint below. Use it to drop all trapdoors and the red gate will open.
-
-# Tutorial: 4E -- (1, 24)
-speech.10025214: Serpents can't be damaged by your sword but they will shrink to death if stuck at a dead end.
-speech.10025215: Remove all of the blue living tar to reach the evil eye at the top.
-speech.10025216: Try to keep in mind that the tarstuff can only be damaged on flat edges and any tile which is not stable will turn into tar babies.
-speech.10025217: Tar is stable when it can form a square blob of at least four tiles with its neighbours.
-speech.10025218: Congratulations, you have completed this room!
-
-# Tutorial: Entrance -- (0, 24)
-speech.10025203: Turn your sword with `%keymap.turn_ccw%` and `%keymap.turn_cw%`.
-speech.10025204: Now go hit the orb with your sword.
-speech.10025205: Orbs interact with doors in three ways - they can open, close, or toggle their state.
-speech.10025206: Click on the orb with the mouse to see which doors it affects and in what way.
 
 # Twelfth Level: 1S2E -- (1, 1)
 speech.10025201: Great galloping goblins!

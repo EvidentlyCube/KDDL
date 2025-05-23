@@ -296,7 +296,7 @@ export function AchievementsListKdd2(to: Achievement[]) {
 		name: 'achievement.name.find_master_wall',
 		description: 'achievement.description.find_master_wall',
 
-		icon: ['default', T.TI_MASTER_WALL, T.TI_MASTER_WALL, T.TI_MASTER_WALL, T.TI_MASTER_WALL],
+		icon: ['default', T.TI_MASTER_WALL, 0, 0, T.TI_MASTER_WALL],
 
 		initOnConquered: true,
 
@@ -309,7 +309,6 @@ export function AchievementsListKdd2(to: Achievement[]) {
 	// :: Common Challenges
 	// ::::::::::::::::::::::::::::::::::::::::::::::
 
-	AchievementFactory.levelCleared(to, 6, "Scrolls");
 	AchievementFactory.levelCleared(to, 1, "1/4");
 	AchievementFactory.levelCleared(to, 2, "2/4");
 	AchievementFactory.levelCleared(to, 3, "3/4");

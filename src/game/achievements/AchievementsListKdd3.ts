@@ -321,7 +321,6 @@ export function AchievementsListKdd3(to: Achievement[]) {
 		failOn: () => ev(C.CID_EVIL_EYE_WOKE),
 	});
 
-	AchievementFactory.levelCleared(to, 6, "Scrolls");
 	AchievementFactory.levelCleared(to, 1, "1/4");
 	AchievementFactory.levelCleared(to, 2, "2/4");
 	AchievementFactory.levelCleared(to, 3, "3/4");

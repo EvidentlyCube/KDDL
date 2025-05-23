@@ -8,6 +8,8 @@
  - [OTHER] Minimap rendering now uses gpu rendering which is the last place that used the old method that could potentially cause flicker. Restore screen should also be faster now
  - [OTHER] Room tiles rendering speed optimization
  - [OTHER] Change line breaks in a lot of achievements to avoid long lines that are difficult to read
+ - [OTHER] Removed tutorial levels from Episodes 2 and 3 + their relevant challenges
+ - [OTHER] Neatly center the final row of the achievements list if it's not the same width as the rest
 
 ## 1.6.14 - 2025-05-22
  - [I18N] Episode 2 ⟶ Level 5: 1S1W, updated the description of the achievement

@@ -30,6 +30,7 @@ export class TWindowAchievements extends RecamelWindow {
 	private _header: Text;
 
 	private _achievements: VOAchievementBitmap[] = [];
+	private _achievementRows: VOAchievementBitmap[][] = [];
 	private _background: PIXI.NineSlicePlane;
 	private _close: Button;
 	private _info: Text;
@@ -68,6 +69,7 @@ export class TWindowAchievements extends RecamelWindow {
 
 		let previous: VOAchievementBitmap | undefined;
 
+		let row:VOAchievementBitmap[] = [];
 		for (const achievement of Achievements.getAll()) {
 			const achievementBitmap = new VOAchievementBitmap(achievement);
 
@@ -82,13 +84,22 @@ export class TWindowAchievements extends RecamelWindow {
 				achievementBitmap.y = 50;
 			}
 
-			while (achievementBitmap.x > holdOptions.achievementsInRow * 50) {
+			if (achievementBitmap.x > holdOptions.achievementsInRow * 50) {
 				achievementBitmap.x -= holdOptions.achievementsInRow * 50;
 				achievementBitmap.y += 50;
+
+				this._achievementRows.push(row);
+				row = [];
 			}
+
+			row.push(achievementBitmap);
 
 			previous = achievementBitmap;
 		}
+
+		this._achievementRows.push(row);
+
+		this.centerLastRow();
 
 		this.addChild(this._close);
 		this.addChild(this._info);
@@ -106,6 +117,18 @@ export class TWindowAchievements extends RecamelWindow {
 		this._info.alignCenterParent()
 		this._close.alignCenterParent();
 		this._close.y = this.getLocalBounds().height - this._close.getLocalBounds().height - 20;
+	}
+	centerLastRow() {
+		const rowFirst = this._achievementRows[0];
+		const rowLast = this._achievementRows[this._achievementRows.length - 1];
+
+		const rightFirst = rowFirst[rowFirst.length - 1].right;
+		const rightLast = rowLast[rowLast.length - 1].right;
+
+		const diff = rightFirst - rightLast;
+		const offset = (diff / 2) | 0;
+
+		rowLast.forEach(ach => ach.x += offset);
 	}
 
 	public show() {

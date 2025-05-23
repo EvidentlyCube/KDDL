@@ -62,8 +62,8 @@ export class TStatePreloader extends RecamelState {
 		this._versionText = Make.shadowText(S.version, 12);
 		this._prevScreenButton = getShadowTextButton("<<", () => this.changePage(-1));
 		this._nextScreenButton = getShadowTextButton(">>", () => this.changePage(1));
-		this._exportButton = getShadowTextButton(_('ui.preloader.buttons.export_save'), () => this.exportSave(), 20);
-		this._importButton = getShadowTextButton(_('ui.preloader.buttons.import_save'), () => this.handleImportSave(), 20);
+		this._exportButton = getShadowTextButton("Export Save", () => this.exportSave(), 20);
+		this._importButton = getShadowTextButton("Import Save", () => this.handleImportSave(), 20);
 		this._languageButton = getShadowTextButton("English", () => this.changeLanguage(), 20);
 		this._importOverlay = new ImportOverlay();
 
