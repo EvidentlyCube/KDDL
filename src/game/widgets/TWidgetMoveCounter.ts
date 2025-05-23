@@ -28,6 +28,8 @@ export class TWidgetMoveCounter {
 		text.visible = display;
 
 		PermanentStore.settings.showMoveCount.write(display);
+
+		this.draw();
 	}
 
 	public static draw() {
