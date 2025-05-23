@@ -13,6 +13,7 @@ import {UtilsXPath} from "../../../src.framework/net/retrocade/utils/UtilsXPath"
 import {attr, intAttr} from "../../XML";
 import RawInput from "../../../src.tn/RawInput";
 import {_, _r} from "../../../src.framework/_";
+import { TWidgetSpeech } from '../widgets/TWidgetSpeech';
 
 
 const MARGIN = 20;
@@ -179,6 +180,7 @@ export class TWindowLevelStart extends RecamelWindow {
 			new RecamelEffectFade(this, 1, 0, 500, () => {
 				this.close();
 				TStateGame.updateMusicState();
+				TWidgetSpeech.isPaused = false;
 			});
 
 			TWindowLevelStart.screenshot?.stop();

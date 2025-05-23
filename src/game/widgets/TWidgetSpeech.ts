@@ -22,8 +22,10 @@ export class TWidgetSpeech {
 	public static nextSpeechTime: number = 0;
 	public static speeches = new RecamelGroup<VOSpeechCommand>();
 
+	public static isPaused = false;
+
 	public static update() {
-		if (TEffectRoomSlide.instance || Date.now() < TWidgetSpeech.nextSpeechTime) {
+		if (TWidgetSpeech.isPaused || TEffectRoomSlide.instance || Date.now() < TWidgetSpeech.nextSpeechTime) {
 			return;
 		}
 

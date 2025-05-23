@@ -24,6 +24,7 @@ import { TWindowMessage } from "../windows/TWindowMessage";
 import { TStateGame } from "./TStateGame";
 import { TStateTitle } from "./TStateTitle";
 import { TPlayer } from "../objects/actives/TPlayer";
+import { TWidgetSpeech } from "../widgets/TWidgetSpeech";
 
 export class TStateRestore extends RecamelState {
 	private static _instance: TStateRestore;
@@ -238,7 +239,10 @@ export class TStateRestore extends RecamelState {
 		Progress.restoreToRoom(this._currentRoomPid);
 		TStateGame.restoreGame();
 
-		new RecamelEffectFade(screenshot.layer.displayObject, 1, 0, 500, screenshot.stop);
+		new RecamelEffectFade(screenshot.layer.displayObject, 1, 0, 500, () => {
+			screenshot.stop();
+			TWidgetSpeech.isPaused = false;
+		});
 		screenshot.moveForward();
 	}
 

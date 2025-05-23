@@ -508,6 +508,7 @@ export class TStateGame extends RecamelState {
 			return;
 		}
 
+		TWidgetSpeech.isPaused = false;
 		TEffectBump.onCommandProcessed();
 
 		Game.processCommand(command, wx, wy);
@@ -805,7 +806,7 @@ export class TStateGame extends RecamelState {
 		this.processSpeech();
 	}
 
-	private processSpeech() {
+	public processSpeech() {
 		for (let speech = CueEvents.getFirstPrivateData(C.CID_SPEECH); speech != null;
 			speech = CueEvents.getNextPrivateData()) {
 			TWidgetSpeech.parseSpeechEvent(speech);
@@ -1136,6 +1137,8 @@ export class TStateGame extends RecamelState {
 	}
 
 	public create() {
+		TWidgetSpeech.isPaused = true;
+
 		this.uiLayer.visible = true;
 		this.uiLayer.moveToBack();
 		this.overLayer.visible = true;
@@ -1146,8 +1149,6 @@ export class TStateGame extends RecamelState {
 		this.processEvents();
 		this.drawAfterTurn();
 		Game.room.drawPlots();
-
-		TWidgetSpeech.stopAllSpeech();
 
 		TWidgetFace.update();
 		TWidgetMinimap.changedLevel(Game.room.levelId);

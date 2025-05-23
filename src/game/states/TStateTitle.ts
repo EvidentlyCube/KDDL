@@ -25,6 +25,7 @@ import { ResourcesQueue } from "../../resources/mainGame/ResourcesQueue";
 import { RecamelSprite } from "../../../src.framework/net/retrocade/camel/core/RecamelSprite";
 import { Game } from "../global/Game";
 import { _n } from 'src.framework/_n';
+import { TWidgetSpeech } from '../widgets/TWidgetSpeech';
 
 export class TStateTitle extends RecamelState {
 	private static _instance?: TStateTitle;
@@ -310,7 +311,10 @@ export class TStateTitle extends RecamelState {
 		TStateGame.continuePlaying();
 		Sfx.buttonClick();
 
-		new RecamelEffectFade(screenshot.layer.displayObject, 1, 0, 500, screenshot.stop);
+		new RecamelEffectFade(screenshot.layer.displayObject, 1, 0, 500, () => {
+			screenshot.stop();
+			TWidgetSpeech.isPaused = false;
+		});
 		screenshot.moveForward();
 	}
 

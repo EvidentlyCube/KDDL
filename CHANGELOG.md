@@ -3,6 +3,7 @@
  - [BUGFIX] Episode 6 ⟶ Level 25, made one room non required to fix an issue where blue doors would not go down when expected
  - [BUGFIX] Episode 6 ⟶ Level 25, fixed 'Neather sprite not being removed when the character becomes invisible
  - [BUGFIX] Pressing F3 to show the move counter would not show it until a move was made + other weirdness with how it appeared
+ - [BUGFIX] Speech on turn 0 when starting new hold/continuing/restoring would not play
  - [FEATURE] Improved save importing with additional screen that keeps you informed and prevents clicking buttons while import is happening
  - [OTHER] Minimap rendering now uses gpu rendering which is the last place that used the old method that could potentially cause flicker. Restore screen should also be faster now
  - [OTHER] Room tiles rendering speed optimization
