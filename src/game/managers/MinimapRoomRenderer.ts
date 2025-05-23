@@ -36,6 +36,8 @@ class MinimapRoomRenderer_Class {
             renderTexture: this._minimapTexture,
             clear: true
         });
+
+        this._roomPidAndStateToTexture.clear();
     }
 
 
