@@ -40,21 +40,23 @@ export class TStateRestore extends RecamelState {
 
 	private header: Text;
 	private background: Sprite;
-	private minimapBackground: Graphics;
-	private levelsBackground: NineSlicePlane;
-	private levelPreview: Sprite;
+	private _minimapBackground: Graphics;
+	private _levelsListBackground: NineSlicePlane;
+	private _levelPreviewSprite: Sprite;
 	private _levelPreviewTexture: RenderTexture;
-	private buttonRestore: Button;
-	private buttonCancel: Button;
+	private _restoreButton: Button;
+	private _cancelButton: Button;
 
-	private secretsCount: Text;
-	private roomPosition: Text;
+	private _secretsCountTextCount: Text;
+	private _roomPositionTextField: Text;
 
-	private restoreFarthest: Button;
-	private helpIcon: Button;
+	private _restoreFarthestButton: Button;
+	private _helpButton: Button;
 
 	private _levelButtons: TRestoreLevelButton[] = [];
 	private _currentRoomPid = "";
+
+	private _minimap: TWidgetMinimap;
 
 	public constructor() {
 		super();
@@ -66,77 +68,82 @@ export class TStateRestore extends RecamelState {
 
 		this.header = Make.text(36);
 
-		this.minimapBackground = new Graphics();
+		this._minimap = new TWidgetMinimap(196, 196);
+		this._minimapBackground = new Graphics();
 		this._levelPreviewTexture = RenderTexture.create({
 			width: S.RoomWidthPixels,
 			height: S.RoomHeightPixels,
 		});
-		this.levelPreview = new Sprite(this._levelPreviewTexture);
-		this.levelsBackground = Make.inputGrid9();
-		this.buttonRestore = Make.buttonColor(() => this.onClickRestore(), _("ui.restore.buttons.restore"));
-		this.buttonCancel = Make.buttonColor(() => this.onClickReturnToTitle(), _("ui.common.close"));
-		this.secretsCount = Make.text(20);
-		this.roomPosition = Make.text(16);
-		this.restoreFarthest = Make.buttonColor(() => this.onClickRestoreFarthest(), _("ui.restore.buttons.farthest"));
-		this.helpIcon = Make.buttonColor(() => this.onClickHelp(), "?");
+		this._levelPreviewSprite = new Sprite(this._levelPreviewTexture);
+		this._levelsListBackground = Make.inputGrid9();
+		this._restoreButton = Make.buttonColor(() => this.onClickRestore(), _("ui.restore.buttons.restore"));
+		this._cancelButton = Make.buttonColor(() => this.onClickReturnToTitle(), _("ui.common.close"));
+		this._secretsCountTextCount = Make.text(20);
+		this._roomPositionTextField = Make.text(16);
+		this._restoreFarthestButton = Make.buttonColor(() => this.onClickRestoreFarthest(), _("ui.restore.buttons.farthest"));
+		this._helpButton = Make.buttonColor(() => this.onClickHelp(), "?");
 
 		this.header.text = _("ui.restore.header");
 		this.header.x = (S.SIZE_GAME_WIDTH - this.header.textWidth - 10) / 2;
 		this.header.y = 10;
 
-		this.minimapBackground.beginFill(0x663333);
-		this.minimapBackground.drawRect(0, 0, 200, 200);
+		this._minimapBackground.beginFill(0x663333);
+		this._minimapBackground.drawRect(0, 0, 200, 200);
 
-		this.minimapBackground.beginFill(0, 0.5);
-		this.minimapBackground.drawRect(-2, -2, 204, 2);
-		this.minimapBackground.drawRect(-2, 0, 2, 202);
+		this._minimapBackground.beginFill(0, 0.5);
+		this._minimapBackground.drawRect(-2, -2, 204, 2);
+		this._minimapBackground.drawRect(-2, 0, 2, 202);
 
-		this.minimapBackground.beginFill(0xFFFFFF, 0.5);
-		this.minimapBackground.drawRect(200, 0, 2, 202);
-		this.minimapBackground.drawRect(0, 200, 200, 2);
+		this._minimapBackground.beginFill(0xFFFFFF, 0.5);
+		this._minimapBackground.drawRect(200, 0, 2, 202);
+		this._minimapBackground.drawRect(0, 200, 200, 2);
 
-		this.minimapBackground.x = 10;
-		this.minimapBackground.y = S.SIZE_GAME_HEIGHT - 210;
+		this._minimapBackground.x = 10;
+		this._minimapBackground.y = S.SIZE_GAME_HEIGHT - 210;
 
-		this.levelsBackground.x = 8;
-		this.levelsBackground.y = 60;
-		this.levelsBackground.width = 204;
-		this.levelsBackground.height = 280;
+		this._minimap.x = this._minimapBackground.x + 4;
+		this._minimap.y = this._minimapBackground.y + 4;
 
-		this.secretsCount.x = 5;
-		this.secretsCount.y = this.levelsBackground.x + this.levelsBackground.height - 6;
+		this._levelsListBackground.x = 8;
+		this._levelsListBackground.y = 60;
+		this._levelsListBackground.width = 204;
+		this._levelsListBackground.height = 280;
 
-		this.roomPosition.x = 5;
-		this.roomPosition.y = this.levelsBackground.x + this.levelsBackground.height + 22;
+		this._secretsCountTextCount.x = 5;
+		this._secretsCountTextCount.y = this._levelsListBackground.x + this._levelsListBackground.height - 6;
 
-		this.levelPreview.x = 246;
-		this.levelPreview.y = 60;
-		this.levelPreview.scale.set(17.8 / 22, 17.8 / 22);
+		this._roomPositionTextField.x = 5;
+		this._roomPositionTextField.y = this._levelsListBackground.x + this._levelsListBackground.height + 22;
 
-		this.buttonRestore.x = 220;
-		this.buttonCancel.x = S.SIZE_GAME_WIDTH - this.buttonCancel.getLocalBounds().width - 10;
+		this._levelPreviewSprite.x = 246;
+		this._levelPreviewSprite.y = 60;
+		this._levelPreviewSprite.scale.set(17.8 / 22, 17.8 / 22);
 
-		this.buttonRestore.y = S.SIZE_GAME_HEIGHT - this.buttonRestore.getLocalBounds().height - 10;
-		this.buttonCancel.y = S.SIZE_GAME_HEIGHT - this.buttonCancel.getLocalBounds().height - 10;
+		this._restoreButton.x = 220;
+		this._cancelButton.x = S.SIZE_GAME_WIDTH - this._cancelButton.getLocalBounds().width - 10;
 
-		this.restoreFarthest.bottom = this.buttonRestore.y - 10;
-		this.restoreFarthest.x = 220;
+		this._restoreButton.y = S.SIZE_GAME_HEIGHT - this._restoreButton.getLocalBounds().height - 10;
+		this._cancelButton.y = S.SIZE_GAME_HEIGHT - this._cancelButton.getLocalBounds().height - 10;
 
-		this.helpIcon.right = this.buttonCancel.right;
-		this.helpIcon.y = this.restoreFarthest.y;
+		this._restoreFarthestButton.bottom = this._restoreButton.y - 10;
+		this._restoreFarthestButton.x = 220;
 
-		RecamelTooltip.hook(this.helpIcon, _('ui.restore.buttons.help.tooltip'));
+		this._helpButton.right = this._cancelButton.right;
+		this._helpButton.y = this._restoreFarthestButton.y;
+
+		RecamelTooltip.hook(this._helpButton, _('ui.restore.buttons.help.tooltip'));
 
 		this._layer.add(this.background);
 		this._layer.add(this.header);
-		this._layer.add(this.minimapBackground);
-		this._layer.add(this.levelsBackground);
-		this._layer.add(this.levelPreview);
-		this._layer.add(this.buttonRestore);
-		this._layer.add(this.buttonCancel);
-		this._layer.add(this.roomPosition);
-		this._layer.add(this.restoreFarthest);
-		this._layer.add(this.helpIcon);
+		this._layer.add(this._minimapBackground);
+		this._layer.add(this._minimap);
+		this._layer.add(this._levelsListBackground);
+		this._layer.add(this._levelPreviewSprite);
+		this._layer.add(this._restoreButton);
+		this._layer.add(this._cancelButton);
+		this._layer.add(this._roomPositionTextField);
+		this._layer.add(this._restoreFarthestButton);
+		this._layer.add(this._helpButton);
 
 	}
 
@@ -150,7 +157,7 @@ export class TStateRestore extends RecamelState {
 		Commands.freeze();
 
 		if (Progress.isGameCompleted) {
-			this._layer.add(this.secretsCount);
+			this._layer.add(this._secretsCountTextCount);
 		}
 
 		this._currentRoomPid = "";
@@ -163,7 +170,7 @@ export class TStateRestore extends RecamelState {
 	}
 
 	public destroy() {
-		this._layer.remove(TWidgetMinimap.container);
+		this._layer.remove(this._minimap);
 		this._layer.visible = false;
 
 		Commands.unfreeze();
@@ -177,10 +184,10 @@ export class TStateRestore extends RecamelState {
 		}
 
 		if (RawInput.isMousePressed(0)) {
-			const room = TWidgetMinimap.getRoomOnClick(
-				RawInput.localMouseX - this.minimapBackground.x,
-				RawInput.localMouseY - this.minimapBackground.y,
-				TWidgetMinimap.MODE_RESTORE);
+			const room = this._minimap.getRoomOnClick(
+				RawInput.localMouseX - this._minimapBackground.x,
+				RawInput.localMouseY - this._minimapBackground.y,
+			);
 
 			if (room && Progress.wasRoomEverVisited(attr(room, 'RoomPID'))) {
 				this.selectRoom(attr(room, 'RoomPID'));
@@ -272,8 +279,8 @@ export class TStateRestore extends RecamelState {
 			index = intAttr(levelXML, 'OrderIndex') - 1;
 
 			level = new TRestoreLevelButton(x => this.onLevelSelected(x), levelXML);
-			level.x = this.levelsBackground.x + 2;
-			level.y = this.levelsBackground.y + 2 + index * TRestoreLevelButton.HEIGHT;
+			level.x = this._levelsListBackground.x + 2;
+			level.y = this._levelsListBackground.y + 2 + index * TRestoreLevelButton.HEIGHT;
 
 			this._layer.add(level);
 
@@ -288,7 +295,7 @@ export class TStateRestore extends RecamelState {
 		for (let i: number = 0; i < this._levelButtons.length; i++) {
 			level = this._levelButtons[i];
 			if (level.visible) {
-				level.y = this.levelsBackground.y + 2 + index * TRestoreLevelButton.HEIGHT;
+				level.y = this._levelsListBackground.y + 2 + index * TRestoreLevelButton.HEIGHT;
 				index++;
 			}
 		}
@@ -334,7 +341,7 @@ export class TStateRestore extends RecamelState {
 		const room = new Room();
 		const player = new TPlayer();
 
-		this._layer.add(TWidgetMinimap.container); // Hack because new room will retake ownership of this
+		this._layer.add(this._minimap); // Hack because new room will retake ownership of this
 		room.loadRoom(roomPid);
 		room.drawRoom();
 		player.room = room;
@@ -351,8 +358,8 @@ export class TStateRestore extends RecamelState {
 
 		// Update room position
 
-		this.roomPosition.text = TWidgetLevelName.nameFromPosition(roomOffset.x, roomOffset.y);
-		this.roomPosition.x = (204 - this.roomPosition.textWidth) / 2;
+		this._roomPositionTextField.text = TWidgetLevelName.nameFromPosition(roomOffset.x, roomOffset.y);
+		this._roomPositionTextField.x = (204 - this._roomPositionTextField.textWidth) / 2;
 
 		this.updateSecretCount();
 	}
@@ -367,8 +374,8 @@ export class TStateRestore extends RecamelState {
 		const secretRoomPids = Level.getSecretRoomPidsByLevelId(levelId);
 		const secretsDone = secretRoomPids.filter(roomPid => Progress.wasRoomEverConquered(roomPid)).length;
 
-		this.secretsCount.text = _("ui.restore.info.secrets", secretsDone, secretRoomPids.length);
-		this.secretsCount.x = (204 - this.secretsCount.textWidth) / 2;
+		this._secretsCountTextCount.text = _("ui.restore.info.secrets", secretsDone, secretRoomPids.length);
+		this._secretsCountTextCount.x = (204 - this._secretsCountTextCount.textWidth) / 2;
 	}
 
 	private onLevelSelected(data: Button) {
@@ -385,7 +392,7 @@ export class TStateRestore extends RecamelState {
 	}
 
 	private updateMinimap(roomPid: string) {
-		TWidgetMinimap.setRestoreScreenRoom(roomPid);
-		TWidgetMinimap.update(roomPid, TWidgetMinimap.MODE_RESTORE);
+		this._minimap.setRestoreScreenRoom(roomPid);
+		this._minimap.update(roomPid);
 	}
 }

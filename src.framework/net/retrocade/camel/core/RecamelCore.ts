@@ -1,4 +1,3 @@
-import * as PIXI from 'pixi.js';
 import { RecamelGroup } from "./RecamelGroup";
 import { RecamelObject } from "../objects/RecamelObject";
 import { RecamelState } from "./RecamelState";
@@ -9,6 +8,7 @@ import RawInput from "../../../../../src.tn/RawInput";
 import { UtilsRandom } from "../../utils/UtilsRandom";
 import { Sfx } from "../../../../../src/game/global/Sfx";
 import { Core } from 'src/game/global/Core';
+import { Application, Container, Extract, Renderer } from "pixi.js";
 
 export class RecamelCore {
 	/**
@@ -72,21 +72,25 @@ export class RecamelCore {
 
 	public static errorCallback: (error: any) => void;
 
-	public static app: PIXI.Application;
+	public static app: Application;
 
-	public static get renderer(): PIXI.Renderer {
+	public static get renderer(): Renderer {
 		const { renderer } = RecamelCore.app;
 
-		if (!(renderer instanceof PIXI.Renderer)) {
+		if (!(renderer instanceof Renderer)) {
 			throw new Error("rendered has incorrect type");
 		}
 
 		return renderer;
 	}
+
+	public static get extract(): Extract {
+		return RecamelCore.renderer.plugins.extract as Extract;
+	}
 	/**
-	 * Initialzes the whole game
+	 * Initializes the whole game
 	 */
-	public static init(app: PIXI.Application, main: PIXI.Container) {
+	public static init(app: Application, main: Container) {
 		RecamelDisplay.initialize(main);
 		RecamelCore.app = app;
 

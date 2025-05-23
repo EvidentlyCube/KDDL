@@ -16,7 +16,7 @@ export enum VOMinimapRoomState {
 }
 export class VOMinimapRoom extends Sprite {
 	private _roomPid: string;
-	public roomXml: Element;
+	private _roomXml: Element;
 
 	public wasVisited: boolean = true;
 	public completed: boolean = false;
@@ -25,7 +25,7 @@ export class VOMinimapRoom extends Sprite {
 		super();
 
 		this._roomPid = roomPid
-		this.roomXml = roomXml;
+		this._roomXml = roomXml;
 
 		const offset = Level.getRoomOffsetInLevel(attr(roomXml, 'RoomPID'));
 		this.x = offset.x * S.RoomWidth;
@@ -42,7 +42,7 @@ export class VOMinimapRoom extends Sprite {
 		} else if (isExitPending) {
 			return VOMinimapRoomState.PendingClear;
 
-		} else if (attr(this.roomXml, 'IsRequired') === "1") {
+		} else if (attr(this._roomXml, 'IsRequired') === "1") {
 			return VOMinimapRoomState.Dangerous;
 
 		} else {
@@ -65,7 +65,7 @@ export class VOMinimapRoom extends Sprite {
 		let i: number;
 		let count: number = 0;
 
-		const squaresBA = UtilsBase64.decodeByteArray(attr(this.roomXml, 'Squares'));
+		const squaresBA = UtilsBase64.decodeByteArray(attr(this._roomXml, 'Squares'));
 		const reader = new BinaryReader(squaresBA);
 
 		const version = reader.readByte();

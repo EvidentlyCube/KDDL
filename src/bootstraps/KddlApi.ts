@@ -45,9 +45,10 @@ export const KddlApi = {
     },
 
     async drawLevel(levelId: number) {
-        const levelBitmapData = TWidgetMinimap.API_drawLevel(levelId);
+        const minimap = new TWidgetMinimap(200, 200);
+        const levelCanvas = minimap.API_drawLevel(levelId);
 
-        return canvasToPng(levelBitmapData.canvas);
+        return canvasToPng(levelCanvas);
     },
 
     async drawRoom(roomPid: string) {
@@ -71,8 +72,7 @@ export const KddlApi = {
             });
 
             room.renderInto(texture);
-            const extract = RecamelCore.renderer.plugins.extract as Extract;
-            const canvas = extract.canvas(texture);
+            const canvas = RecamelCore.extract.canvas(texture);
 
             room.clear();
 

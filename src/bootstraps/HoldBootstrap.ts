@@ -116,7 +116,6 @@ export class HoldBootstrap {
 		TWidgetLevelName.init();
 		TWidgetClock.init();
 		TWidgetFace.init();
-		TWidgetMinimap.init();
 		TWidgetMoveCounter.init();
 		TWidgetOrbHighlight.init();
 		Helper.init();
