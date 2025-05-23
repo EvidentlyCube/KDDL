@@ -69,6 +69,8 @@ export class TCharacter extends TPlayerDouble {
 	public update() {
 		if (this.visible) {
 			super.update();
+		} else {
+			this.room.roomSpritesRenderer.destroyObject(this);
 		}
 
 		if (!this.swordSheathed && this.isVisible()) {
