@@ -256,7 +256,13 @@ export class TStatePreloader extends RecamelState {
 
 		for (const holdScreen of this._holdScreens) {
 			for (const [ holdId, button ] of holdScreen.holdIdToButtonMap.entries()) {
+				const score = GlobalHoldScore.getScore(holdId);
 				button.setText(_(`ui.preloader.hold.${holdId}`));
+				button.setText(printf(
+					'%% (%%%)',
+					_(`ui.preloader.hold.${holdId}`),
+					(score * 100).toFixed(2)
+				));
 			}
 		}
 	}
