@@ -1,6 +1,5 @@
 import * as PIXI from 'pixi.js';
 import { RecamelLang } from 'src.framework/net/retrocade/camel/RecamelLang';
-import { UtilsBitmapData } from 'src.framework/net/retrocade/utils/UtilsBitmapData';
 import { ASSERT } from 'src/ASSERT';
 import { F } from 'src/F';
 import { S } from 'src/S';
@@ -8,10 +7,9 @@ import { T } from 'src/T';
 import { attr } from 'src/XML';
 import { PlatformOptions } from 'src/platform/PlatformOptions';
 import { _, _r } from "../../../src.framework/_";
-import { BitmapDataWritable, C, StyleName, StyleTilesets } from "../../C";
+import { C, StyleName } from "../../C";
 import { CueEvents } from "../global/CueEvents";
 import { Game } from "../global/Game";
-import { Gfx } from '../global/Gfx';
 import { Level } from "../global/Level";
 import { Progress } from "../global/Progress";
 import { Room } from "../global/Room";

@@ -1,12 +1,11 @@
-import { VOMinimapRoom } from "../managers/VOMinimapRoom";
-import { Progress } from "../global/Progress";
-import { Level } from "../global/Level";
-import { UtilsBitmapData } from "../../../src.framework/net/retrocade/utils/UtilsBitmapData";
-import { S } from "../../S";
-import { ASSERT } from "../../ASSERT";
-import { F } from "src/F";
 import { Container, Graphics, Sprite, Texture } from "pixi.js";
+import { F } from "src/F";
 import { intAttr } from "src/XML";
+import { ASSERT } from "../../ASSERT";
+import { exposeValue, S } from "../../S";
+import { Level } from "../global/Level";
+import { Progress } from "../global/Progress";
+import { VOMinimapRoom } from "../managers/VOMinimapRoom";
 
 const x = [14, 12];
 const y = [448, S.SIZE_GAME_HEIGHT - 208];
@@ -14,6 +13,8 @@ const width = [130, 196];
 const height = [138, 196];
 
 export class TWidgetMinimap {
+	private static _roomPidToImage = new Map<string, VOMinimapRoom>();
+
 	public static container = new Container();
 	private static mask = new Sprite();
 	private static minimapRooms = new Container();
@@ -22,7 +23,6 @@ export class TWidgetMinimap {
 	public static readonly MODE_IN_GAME: number = 0;
 	public static readonly MODE_RESTORE: number = 1;
 
-	private static roomPidToImage = new Map<string, VOMinimapRoom>();
 
 	private static lastX: number;
 	private static lastY: number;
@@ -40,18 +40,16 @@ export class TWidgetMinimap {
 		TWidgetMinimap.selectedRoom.drawRect(-2, -2, 2, S.RoomHeight + 4);
 		TWidgetMinimap.selectedRoom.drawRect(-2, S.RoomHeight, S.RoomWidth + 4, 2);
 		TWidgetMinimap.selectedRoom.drawRect(S.RoomWidth, -2, 2, S.RoomHeight + 4);
+
+		exposeValue('TWidgetMinimap', TWidgetMinimap);
 	}
 
 	public static changedLevel(newLevelId: number) {
-		for (const room of this.roomPidToImage.values()) {
-			room.teardown();
-		}
-
 		TWidgetMinimap.mask.width = width[0];
 		TWidgetMinimap.mask.height = height[0];
 		this.minimapRooms.removeChildren();
 
-		TWidgetMinimap.roomPidToImage = new Map();
+		TWidgetMinimap._roomPidToImage = new Map();
 
 		for (const roomPid of Progress.getExploredRoomPidsByLevel(newLevelId)) {
 			if (Progress.isRoomExplored(roomPid)) {
@@ -61,13 +59,13 @@ export class TWidgetMinimap {
 	}
 
 	public static addRoom(roomPid: string) {
-		if (TWidgetMinimap.roomPidToImage.has(roomPid)) {
+		if (TWidgetMinimap._roomPidToImage.has(roomPid)) {
 			return;
 		}
 
-		const minimapRoom = new VOMinimapRoom(Level.getRoom(roomPid));
+		const minimapRoom = new VOMinimapRoom(roomPid, Level.getRoom(roomPid));
 		minimapRoom.completed = Progress.isRoomConquered(roomPid);
-		TWidgetMinimap.roomPidToImage.set(roomPid, minimapRoom);
+		TWidgetMinimap._roomPidToImage.set(roomPid, minimapRoom);
 		this.minimapRooms.addChild(minimapRoom);
 
 		minimapRoom.regenerateBitmapData(false);
@@ -94,11 +92,11 @@ export class TWidgetMinimap {
 	}
 
 	public static updateRoomState(roomPid: string, isConquerPending: boolean) {
-		if (!TWidgetMinimap.roomPidToImage.has(roomPid)) {
+		if (!TWidgetMinimap._roomPidToImage.has(roomPid)) {
 			return;
 		}
 
-		const room = TWidgetMinimap.roomPidToImage.get(roomPid)!;
+		const room = TWidgetMinimap._roomPidToImage.get(roomPid)!;
 		ASSERT(room);
 
 		room.completed = Progress.isRoomConquered(roomPid);
@@ -113,10 +111,6 @@ export class TWidgetMinimap {
 			return;
 		}
 
-		for (const room of this.roomPidToImage.values()) {
-			room.teardown();
-		}
-
 		this.minimapRooms.removeChildren();
 
 		const conquered = roomState.conqueredRoomPids;
@@ -124,11 +118,11 @@ export class TWidgetMinimap {
 
 		const levelId = Level.getLevelIdByRoomPid(restoreToRoomPid);
 
-		TWidgetMinimap.roomPidToImage.clear();
+		TWidgetMinimap._roomPidToImage.clear();
 
 		for (const roomPid of Level.getRoomPidsByLevel(levelId)) {
 			if (Progress.wasRoomEverVisited(roomPid)) {
-				const minimapRoom = new VOMinimapRoom(Level.getRoom(roomPid));
+				const minimapRoom = new VOMinimapRoom(roomPid, Level.getRoom(roomPid));
 				minimapRoom.wasVisited = explored.has(roomPid) || roomState.roomPid == roomPid;
 				minimapRoom.completed = (
 					conquered.has(roomPid)
@@ -137,7 +131,7 @@ export class TWidgetMinimap {
 				);
 
 				this.minimapRooms.addChild(minimapRoom);
-				TWidgetMinimap.roomPidToImage.set(roomPid, minimapRoom);
+				TWidgetMinimap._roomPidToImage.set(roomPid, minimapRoom);
 
 				minimapRoom.regenerateBitmapData(false);
 			}
@@ -181,7 +175,7 @@ export class TWidgetMinimap {
 
 		for (const roomPid of roomPids) {
 			const pos = Level.getRoomOffsetInLevel(roomPid);
-			const room = new VOMinimapRoom(Level.getRoom(roomPid));
+			const room = new VOMinimapRoom(roomPid, Level.getRoom(roomPid));
 
 			room.completed = true;
 			room.wasVisited = true;
@@ -198,9 +192,10 @@ export class TWidgetMinimap {
 	private static API_drawRoomForLevel(room: VOMinimapRoom, bitmapData: CanvasRenderingContext2D, x: number, y: number): void {
 		room.regenerateBitmapData(false);
 
-		UtilsBitmapData.blit(room.bitmapData.canvas, bitmapData, x, y);
+		// @FIXME Implement yo
+		// UtilsBitmapData.blit(room.bitmapData.canvas, bitmapData, x, y);
 
-		room.bitmapData.canvas.width = 0;
-		room.bitmapData.canvas.height = 0;
+		// room.bitmapData.canvas.width = 0;
+		// room.bitmapData.canvas.height = 0;
 	}
 }

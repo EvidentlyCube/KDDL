@@ -1,10 +1,8 @@
-import {Room} from "../global/Room";
-import {F} from "../../F";
-import {Game} from "../global/Game";
-import {exposeValue, S} from "src/S";
-import {UtilsBitmapData} from "../../../src.framework/net/retrocade/utils/UtilsBitmapData";
-import {C} from "../../C";
 import { Container, Sprite, Texture } from "pixi.js";
+import { exposeValue, S } from "src/S";
+import { C } from "../../C";
+import { Game } from "../global/Game";
+import { Room } from "../global/Room";
 
 const COLORS = [0, 0xFF8800, 0x00FFFF, 0xFF0040];
 

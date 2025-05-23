@@ -1,5 +1,4 @@
 import { Texture } from "pixi.js";
-import { UtilsBitmapData } from "../../../src.framework/net/retrocade/utils/UtilsBitmapData";
 import { BitmapDataWritable } from "../../C";
 import { F } from "../../F";
 import { Game } from "../global/Game";

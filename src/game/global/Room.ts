@@ -149,6 +149,7 @@ export class Room {
 	public clear() {
 		this.checkpoints.clear();
 		this.roomTileRenderer.teardown();
+		this.roomSpritesRenderer.clearSprites();
 		this.monsters.clear();
 
 		if (PlatformOptions.isGame) {

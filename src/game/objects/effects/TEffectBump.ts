@@ -1,12 +1,10 @@
-import {TEffect} from "./TEffect";
-import {TStateGame} from "../../states/TStateGame";
-import {VOCoord} from "../../managers/VOCoord";
-import {F} from "../../../F";
-import {UtilsBitmapData} from "../../../../src.framework/net/retrocade/utils/UtilsBitmapData";
-import {S} from "../../../S";
-import { BaseTexture, Matrix, RenderTexture, Sprite, Texture } from "pixi.js";
+import { Matrix, RenderTexture, Sprite } from "pixi.js";
 import { RecamelCore } from "src.framework/net/retrocade/camel/core/RecamelCore";
-import { Game } from "src/game/global/Game";
+import { F } from "../../../F";
+import { S } from "../../../S";
+import { VOCoord } from "../../managers/VOCoord";
+import { TStateGame } from "../../states/TStateGame";
+import { TEffect } from "./TEffect";
 
 export class TEffectBump extends TEffect {
 	private static _bumpTexture?: RenderTexture;

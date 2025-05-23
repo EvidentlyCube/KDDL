@@ -3,6 +3,7 @@ BUGS:
  - Speeches on turn 0 (or turn 0 after entrance?) are not displayed nor played
  - Ep 3, duplicate chevo names at the start
  - Tutorial 2E, the voice says "you can undo up to 3 moves", but I can thankfully undo more than that. Although not sure there's much to be done about this, you probably aren't changing the voicelines
+ - Update README of this repo yo
 
 FUTURE IMPROVEMENTS:
  - Clicking minimap maybe?

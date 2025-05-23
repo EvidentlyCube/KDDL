@@ -1,9 +1,6 @@
 import * as PIXI from 'pixi.js';
-import {S} from "./S";
-import {BitmapDataWritable, CanvasImageSource, StyleName, StyleTilesets} from "./C";
-import {UtilsBitmapData} from "../src.framework/net/retrocade/utils/UtilsBitmapData";
-import {Gfx} from "./game/global/Gfx";
-import {F} from "./F";
+import { StyleName, StyleTilesets } from "./C";
+import { S } from "./S";
 
 export const T = {
         TILES : [] as PIXI.Rectangle[],

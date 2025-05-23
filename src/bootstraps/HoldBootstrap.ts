@@ -37,6 +37,7 @@ import { TWidgetMinimap } from "src/game/widgets/TWidgetMinimap";
 import { TEffectRoomSlide } from "src/game/objects/TEffectRoomSlide";
 import { BoltEffect } from "src/game/objects/effects/BoltEffect";
 import { TWidgetOrbHighlight } from "src/game/widgets/TWidgetOrbHighlight";
+import { MinimapRoomRenderer } from "src/game/managers/MinimapRoomRenderer";
 
 require('../../src.assets/font/toms-new-roman.css');
 
@@ -48,6 +49,7 @@ export class HoldBootstrap {
 		ResourcesQueue.queueBinary(C.holdResourceName(holdOptions), holdOptions.resources.hold);
 		ResourcesQueue.queueImage(C.subtitleResourceName(holdOptions), document.createElement('img'), holdOptions.resources.subtitle);
 		HoldBootstrap.queueLocale(holdOptions);
+		MinimapRoomRenderer.clear();
 
 		// 2. Show initialize screen
 		(new TStateInitialize()).setState();
