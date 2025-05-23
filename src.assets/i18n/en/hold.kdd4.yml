@@ -68,7 +68,8 @@ achievement.description.l2.1n3e: |
 achievement.name.l2.2n2e: Strict Policies
 achievement.description.l2.2n2e: |
     Fourteenth Level: 2N2E
-    Clear the room without letting the goblin stand on the gray road tiles
+    Clear the room without letting
+    the goblin stand on the gray road tiles
 
 achievement.name.l2.1n1e: Extreme Sacrifice
 achievement.description.l2.1n1e: |
@@ -88,10 +89,12 @@ achievement.description.l3.entrance_2: |
 achievement.name.l3.1n: Crossing Spiders
 achievement.description.l3.1n: |
     Fifteenth Level: 1N
-    After hitting the orb clear the room without orthogonal moves - \
-    you can turn, wait and move diagonally
-    You can move orthogonally again once monsters are dead to clean up \
-    the trapdoors
+    After hitting the orb clear the room
+    without orthogonal moves - you can turn, wait
+    and move diagonally
+
+    You can move orthogonally again once
+    monsters are dead to clean up the trapdoors
 
 achievement.name.l4.1s1e: Growing!
 achievement.description.l4.1s1e: |
@@ -106,7 +109,8 @@ achievement.description.l4.2s: |
 achievement.name.l5.2n: Master of Eyeion!
 achievement.description.l5.2n: |
     Mastery Level: 2N
-    Clear the room without eyes waking or roach eggs spawning
+    Clear the room without eyes
+    waking or roach eggs spawning
 
 achievement.name.l5.1n1e: Hunter Games
 achievement.description.l5.1n1e: |

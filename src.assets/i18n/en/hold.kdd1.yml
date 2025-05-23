@@ -37,12 +37,14 @@ achievement.descriptions.l1.steady_hand: |
 achievement.name.l2.2e: Queenburger
 achievement.description.l2.2e: |
     Second Level: 2E
-    Kill the roach queen before she reaches the northeast corner and clear the room
+    Kill the roach queen before she reaches
+    the northeast corner and clear the room
 
 achievement.name.l2.1s: One-way Ticket
 achievement.description.l2.1s: |
     Second Level: 1S
-    After hitting the orb do not rotate your sword and clear the room
+    After hitting the orb do not
+    rotate and clear the room
 
 achievement.name.l2.2s2e: Be Quick!
 achievement.description.l2.2s2e: |
@@ -97,7 +99,8 @@ achievement.description.l3.3n: |
 achievement.name.l4.1n: Don't Look Back
 achievement.description.l4.1n: |
     Fourth Level: 1N
-    Clear the room without returning to the entrance corridor
+    Clear the room without returning
+    to the entrance corridor
 
 achievement.name.l4.1s1e: Alone with the Roaches
 achievement.description.l4.1s1e: |
@@ -107,12 +110,14 @@ achievement.description.l4.1s1e: |
 achievement.name.l4.1s2e: Pits are Pretty
 achievement.description.l4.1s2e: |
     Fourth Level: 1S2E
-    Drop all trapdoors and clear the room on the same visit
+    Drop all trapdoors and clear
+    the room on the same visit
 
 achievement.name.l4.2s1e: Emptiness of Nothingness
 achievement.description.l4.2s1e: |
     Fourth Level: 2S1E
-    Drop all trapdoors and clear the room on the same visit
+    Drop all trapdoors and clear
+    the room on the same visit
 
 achievement.name.l4.2e: Good Style
 achievement.description.l4.2e: |

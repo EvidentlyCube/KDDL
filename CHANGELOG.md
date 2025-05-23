@@ -1,10 +1,12 @@
 ## 1.6.15 - ????-??-??
+ - [BUGFIX] Episode 3, fixed the first two achievements not displaying their title properly
  - [BUGFIX] Episode 6 ⟶ Level 25, made one room non required to fix an issue where blue doors would not go down when expected
  - [BUGFIX] Episode 6 ⟶ Level 25, fixed 'Neather sprite not being removed when the character becomes invisible
  - [BUGFIX] Pressing F3 to show the move counter would not show it until a move was made + other weirdness with how it appeared
  - [FEATURE] Improved save importing with additional screen that keeps you informed and prevents clicking buttons while import is happening
  - [OTHER] Minimap rendering now uses gpu rendering which is the last place that used the old method that could potentially cause flicker. Restore screen should also be faster now
  - [OTHER] Room tiles rendering speed optimization
+ - [OTHER] Change line breaks in a lot of achievements to avoid long lines that are difficult to read
 
 ## 1.6.14 - 2025-05-22
  - [I18N] Episode 2 ⟶ Level 5: 1S1W, updated the description of the achievement

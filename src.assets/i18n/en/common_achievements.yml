@@ -33,8 +33,10 @@ achievement.description.undo: Undo a number of times (%total_count%)
 achievement.name.mastery: Mastery
 achievement.description.mastery: |
     Master the hold
-    Find the end hold stairs and clear all the secret rooms
-    Secret rooms don't need to be cleared in one go, you can use restore
+    Take the end hold stairs and clear all secret rooms
+    Secret rooms have to be completed once in any save
+    Secret rooms can be cleared across multiple saves
+    Use restore to more easily find them
 
 achievement.name.post_mastery: Post-Mastery
 achievement.description.post_mastery: Clear all challenges in the post mastery level

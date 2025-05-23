@@ -18,7 +18,8 @@ level_name_6: Mastery Level
 achievement.name.l1.1n: The Race
 achievement.description.l1.1n: |
     Twenty-First Level: 1N
-    Drink the potion before killing any monster then clear the room
+    Drink the potion before killing any
+    monster then clear the room
 
 achievement.name.l1.1s: Last Goblin Standing
 achievement.description.l1.1s: |
@@ -28,29 +29,32 @@ achievement.description.l1.1s: |
 achievement.name.l1.1n1w: Uber Party
 achievement.description.l1.1n1w: |
     Twenty-First Level: 1N1W
-    Kill all brains before killing any roach queen, don't drop
-    any trapdoor and clear the room
+    Kill all brains before killing any roach
+    queen, don't drop any trapdoor and clear the room
 
 achievement.name.l1.1n1e: Who Let The Goblins Out
 achievement.description.l1.1n1e: |
     Twenty-First Level: 1N1E
-    Release the goblins before killing any monster then clear the room
+    Release the goblins before killing any
+    monster then clear the room
 
 achievement.name.l1.1s1e: Go East
 achievement.description.l1.1s1e: |
     Twenty-First Level: 1S1E
-    Kill the easternmost roach queen before killing any other monster
-    then clear the room
+    Kill the easternmost roach queen before killing
+    any other monster then clear the room
 
 achievement.name.l2.1e: Not Two Be
 achievement.description.l2.1e: |
     Twenty-Second Level: 1E
-    Clear the room without hitting any of the two northernmost orbs
+    Clear the room without hitting any
+    of the two northernmost orbs
 
 achievement.name.l3.1n1w: Goblin Feet
 achievement.description.l3.1n1w: |
     Twenty-Third Level: 1N1W
-    Kill a serpent in the goblin's starting alcove then clear the room
+    Kill a serpent in the goblin's
+    starting alcove then clear the room
 
 achievement.name.l3.1w: Single Purpose
 achievement.description.l3.1w: |
@@ -60,37 +64,44 @@ achievement.description.l3.1w: |
 achievement.name.l3.2s: Slowpoke
 achievement.description.l3.2s: |
     Twenty-Third Level: 2S
-    Do not drop any trapdoors until the serpent dies then clear the room
+    Do not drop any trapdoors until
+    the serpent dies then clear the room
 
 achievement.name.l3.1n: Two is Better than One...
 achievement.description.l3.1n: |
     Twenty-Third Level: 1N
-    Go past red gates with both goblins alive then clear the room
+    Go past red gates with both goblins
+    alive then clear the room
 
 achievement.name.l3.1n_2: ...But One will Suffice
 achievement.description.l3.1n_2: |
     Twenty-Third Level: 1N
-    Go past red gates with only one goblin alive then clear the room
+    Go past red gates with only one goblin
+    alive then clear the room
 
 achievement.name.l3.1s1w: iSolution
 achievement.description.l3.1s1w: |
     Twenty-Third Level: 1S1W
-    Kill all goblins before waking up any evil eye then clear the room
+    Kill all goblins before waking up any
+    evil eye then clear the room
 
 achievement.name.l3.1s2w: Keeping It Clean
 achievement.description.l3.1s2w: |
     Twenty-Third Level: 1S2W
-    Drop all trapdoors before killing any monster then clear the room
+    Drop all trapdoors before killing any
+    monster then clear the room
 
 achievement.name.l3.1s3w: Goblins Are Passe
 achievement.description.l3.1s3w: |
     Twenty-Third Level: 1S3W
-    Clear the room without letting the goblin step on a trapdoor
+    Clear the room without letting
+    the goblin step on a trapdoor
 
 achievement.name.l4.1w: Small Brain Time
 achievement.description.l4.1w: |
     Twenty-Fourth Level: 1W
-    Kill all brains before killing all serpents then clear the room
+    Kill all brains before killing
+    all serpents then clear the room
 
 achievement.name.l4.2w: Mimic-Free Zone
 achievement.description.l4.2w: |
@@ -115,7 +126,9 @@ achievement.description.l5.stuck_neather: |
 achievement.name.l5.stab_neather: Impossibly Careful
 achievement.description.l5.stab_neather: |
     Twenty-Fifth Level
-    Stab 'Neather in a room in a place where it should be impossible
+    Stab 'Neather in a room in a place
+    where it should be impossible
+
 
 # Custom names for common achievements
 

@@ -28,7 +28,7 @@ export function AchievementsListKdd3(to: Achievement[]) {
 	// Ninth Level 4N3E -- Clear the room without stepping on each of the marked areas more than once
 	addAchievement(to, {
 		id: 'bbf28d894f7431e7a64621a3bf67c2c1',
-		name: 'achievement.description.l1.4n3e',
+		name: 'achievement.name.l1.4n3e',
 		description: 'achievement.description.l1.4n3e',
 
 		icon: ['Aboveground', [
@@ -85,7 +85,7 @@ export function AchievementsListKdd3(to: Achievement[]) {
 	// Ninth Level 3N3E -- Clear the room without stepping on each of the marked areas more than once
 	addAchievement(to, {
 		id: 'faf7a3578615b1b93b91cd4c14c048a9',
-		name: 'achievement.description.l1.3n3e',
+		name: 'achievement.name.l1.3n3e',
 		description: 'achievement.description.l1.3n3e',
 
 		icon: ['Aboveground', [

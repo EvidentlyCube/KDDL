@@ -26,7 +26,8 @@ achievement.description.l1.1w: |
 achievement.name.l1.1n2w: Cleanliness
 achievement.description.l1.1n2w: |
     Fifth Level: 1N2W
-    Drop all trapdoors and clear the room on the same visit
+    Drop all trapdoors and clear
+    the room on the same visit
 
 achievement.name.l1.2n: Orb Avoider
 achievement.description.l1.2n: |
@@ -51,12 +52,14 @@ achievement.description.l1.3e: |
 achievement.name.l1.1s1w: Controlled Mimicry
 achievement.description.l1.1s1w: |
     Fifth Level: 1S1W
-    After drinking the potion don't leave the marked area and clear the room
+    After drinking the potion don't leave
+    the marked area and clear the room
 
 achievement.name.l1.2s2e: Can't Stand Yellow
 achievement.description.l1.2s2e: |
     Fifth Level: 2S2E
-    Clear the room without stepping on open yellow doors
+    Clear the room without stepping
+    on open yellow doors
 
 achievement.name.l3.1s: No-Diagonal
 achievement.description.l3.1s: |
@@ -96,7 +99,8 @@ achievement.description.l4.clear_tar: |
 achievement.name.l4.quick_tar_mother_kill: Eye Stabber
 achievement.description.l4.quick_tar_mother_kill: |
     Eighth Level
-    Kill a tar mother before she has chance to grow tar
+    Kill a tar mother before she
+    has a chance to grow tar
 
 achievement.name.do_not_wake_eyes: Ninja
 achievement.description.do_not_wake_eyes: |

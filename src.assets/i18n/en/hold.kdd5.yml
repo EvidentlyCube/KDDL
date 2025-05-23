@@ -22,7 +22,8 @@ achievement.description.l1.1w: |
 achievement.name.l1.1n1w: Obsessive Compulsive
 achievement.description.l1.1n1w: |
     Seventeenth Level: 1N1W
-    Clear all tar, drop all trapdoors, clear the room and leave north in one go
+    Clear all tar, drop all trapdoors,
+    clear the room and leave north in one go
 
 achievement.name.l1.1n1w_2: To The Heart of the Matter
 achievement.description.l1.1n1w_2: |
@@ -52,17 +53,20 @@ achievement.description.l2.2n1e: |
 achievement.name.l2.1n2e: Eastern Solutions
 achievement.description.l2.1n2e: |
     Eighteenth Level: 1N2E
-    Clear the room by entering from the east and without turning
+    Clear the room by entering from
+    the east and without turning
 
 achievement.name.l2.1e: I Can Do It Myself Mom!
 achievement.description.l2.1e: |
     Eighteenth Level: 1E
-    Use a goblin for only one of the corner serpents and clear the room
+    Use a goblin for only one of
+    the corner serpents and clear the room
 
 achievement.name.l2.1e_2: Traps First
 achievement.description.l2.1e_2: |
     Eighteenth Level: 1E
-    Drop all trapdoors before any serpent dies and clear the room
+    Drop all trapdoors before any
+    serpent dies and clear the room
 
 achievement.name.l2.1n1e: Quenched
 achievement.description.l2.1n1e: |
@@ -72,32 +76,38 @@ achievement.description.l2.1n1e: |
 achievement.name.l3.2s: South is Scary
 achievement.description.l3.2s: |
     Nineteenth Level: 2S
-    Clear the room without going past the second row of tiles
+    Clear the room without going past
+    the second row of tiles
 
 achievement.name.l4.entrance: Frozen
 achievement.description.l4.entrance: |
     Twentieth Level: Entrance
-    Don't turn your sword after killing the first monster then clear the room
+    Don't turn your sword after killing
+    the first monster then clear the room
 
 achievement.name.l4.1n: Swine Before Pearls
 achievement.description.l4.1n: |
     Twentieth Level: 1N
-    Kill the brain before killing any roach queen then clear the room
+    Kill the brain before killing any
+    roach queen then clear the room
 
 achievement.name.l4.3n1w: Pearls Before Swine
 achievement.description.l4.3n1w: |
     Twentieth Level: 3N1W
-    Kill all brains before killing any goblin then clear the room
+    Kill all brains before killing any
+    goblin then clear the room
 
 achievement.name.l4.3n: Raw Stupidity
 achievement.description.l4.3n: |
     Twentieth Level: 3N
-    Kill all brains before killing any roach queen then clear the room
+    Kill all brains before killing any
+    roach queen then clear the room
 
 achievement.name.l4.2n2w: Patient Execution
 achievement.description.l4.2n2w: |
     Twentieth Level: 2N2W
-    Kill all serpents before killing any roach queen then clear the room
+    Kill all serpents before killing any
+    roach queen then clear the room
 
 achievement.name.l4.1n2w: Slithering Elimination
 achievement.description.l4.1n2w: |
@@ -107,7 +117,8 @@ achievement.description.l4.1n2w: |
 achievement.name.l4.2n1w: Aim for the Eyes
 achievement.description.l4.2n1w: |
     Twentieth Level: 2N1W
-    Kill all evil eyes before killing any roach queen then clear the room
+    Kill all evil eyes before killing any
+    roach queen then clear the room
 
 
 
