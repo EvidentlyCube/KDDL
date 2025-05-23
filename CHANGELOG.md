@@ -1,4 +1,4 @@
-## 1.6.15 - ????-??-??
+## 1.6.15 - 2025-05-23
  - [BUGFIX] Episode 3, fixed the first two achievements not displaying their title properly
  - [BUGFIX] Episode 6 ⟶ Level 25, made one room non required to fix an issue where blue doors would not go down when expected
  - [BUGFIX] Episode 6 ⟶ Level 25, fixed 'Neather sprite not being removed when the character becomes invisible
