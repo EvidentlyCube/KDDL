@@ -68,10 +68,17 @@ import { TWindowYesNoMessage } from "../windows/TWindowYesNoMessage";
 import { TStateOutro } from "./TStateOutro";
 
 export class TStateGame extends RecamelState {
-	private static _instance: TStateGame;
+	private static _instance: TStateGame | undefined;
 
 	public static show() {
 		TStateGame.instance.setState();
+	}
+
+	public static clear() {
+		if (TStateGame._instance) {
+			TStateGame._instance.teardown();
+			TStateGame._instance = undefined;
+		}
 	}
 
 	public static get instance(): TStateGame {
@@ -1191,6 +1198,12 @@ export class TStateGame extends RecamelState {
 		Game.room.layerSprites.visible = false;
 		Game.room.layerUI.visible = false;
 		Core.lMain.clear();
+	}
+
+	public teardown() {
+		Game.room?.clear();
+		this.uiLayer.removeLayer();
+		this.overLayer.removeLayer();
 	}
 
 	public static continuePlaying() {

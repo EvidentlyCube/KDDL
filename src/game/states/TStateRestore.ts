@@ -27,13 +27,20 @@ import { TPlayer } from "../objects/actives/TPlayer";
 import { TWidgetSpeech } from "../widgets/TWidgetSpeech";
 
 export class TStateRestore extends RecamelState {
-	private static _instance: TStateRestore;
+	private static _instance: TStateRestore | undefined;
 
 	public static show() {
 		if (!TStateRestore._instance) {
 			TStateRestore._instance = new TStateRestore();
 		}
 		TStateRestore._instance.setState();
+	}
+
+	public static clear() {
+		if (TStateRestore._instance) {
+			TStateRestore._instance.teardown();
+			TStateRestore._instance = undefined;
+		}
 	}
 
 	private _layer: RecamelLayerSprite;
@@ -174,6 +181,10 @@ export class TStateRestore extends RecamelState {
 		this._layer.visible = false;
 
 		Commands.unfreeze();
+	}
+
+	public teardown() {
+		this._layer.removeLayer();
 	}
 
 	public update() {

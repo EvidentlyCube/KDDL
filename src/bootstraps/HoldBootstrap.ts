@@ -38,6 +38,8 @@ import { TEffectRoomSlide } from "src/game/objects/TEffectRoomSlide";
 import { BoltEffect } from "src/game/objects/effects/BoltEffect";
 import { TWidgetOrbHighlight } from "src/game/widgets/TWidgetOrbHighlight";
 import { MinimapRoomRenderer } from "src/game/managers/MinimapRoomRenderer";
+import { TStateRestore } from "src/game/states/TStateRestore";
+import { TStateGame } from "src/game/states/TStateGame";
 
 require('../../src.assets/font/toms-new-roman.css');
 
@@ -69,6 +71,8 @@ export class HoldBootstrap {
 		await HoldBootstrap.loadLocale(holdOptions);
 		Achievements.init(holdOptions);
 		GlobalHoldScore.updateHoldScore();
+		TStateRestore.clear();
+		TStateGame.clear();
 
 		// 6. Show title screen
 		await this.showTitle();

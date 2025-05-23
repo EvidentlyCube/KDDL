@@ -12,6 +12,7 @@
  - [OTHER] Neatly center the final row of the achievements list if it's not the same width as the rest
  - {1.6.15.1} [BUGFIX] Fix broken save export
  - {1.6.15.1} [BUGFIX] Fix missing scores on the episode selection screen
+ - {1.6.15.1} [BUGFIX] Fix issues when going between episodes could break minimap
 
 ## 1.6.14 - 2025-05-22
  - [I18N] Episode 2 ⟶ Level 5: 1S1W, updated the description of the achievement

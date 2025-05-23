@@ -1,7 +1,7 @@
 BUGS:
  - Update translation files for other languages
- - Tutorial 2E, the voice says "you can undo up to 3 moves", but I can thankfully undo more than that. Although not sure there's much to be done about this, you probably aren't changing the voicelines
  - Update README of this repo yo
+ - Sword swing effect appears over UI
 
 FUTURE IMPROVEMENTS:
  - Clicking minimap maybe?
