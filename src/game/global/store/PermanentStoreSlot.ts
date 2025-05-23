@@ -5,11 +5,11 @@ export class PermanentStoreSlot<T> {
     private static _slots = new Map<string, PermanentStoreSlot<unknown>>;
 
     public static async waitForAllSlotsInit() {
-        return Promise.all(Object.values(this._slots.values()).map(slot => slot.waitForInit()));
+        return Promise.all(Object.values(PermanentStoreSlot._slots.values()).map(slot => slot.waitForInit()));
     }
 
     public static exportAll(): string {
-        return `KDDL-SAVE-V1.0\n` + Object.values(this._slots.values()).map(slot => {
+        return `KDDL-SAVE-V1.0\n` + Array.from(PermanentStoreSlot._slots.values()).map(slot => {
             return slot.key + ":" + JSON.stringify(slot.value)
         }).join("\n");
     }
