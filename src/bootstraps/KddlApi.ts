@@ -1,12 +1,9 @@
-import { Extract, Matrix, RenderTexture } from "pixi.js";
+import { Extract, RenderTexture } from "pixi.js";
 import { RecamelCore } from "src.framework/net/retrocade/camel/core/RecamelCore";
-import { UtilsBitmapData } from "src.framework/net/retrocade/utils/UtilsBitmapData";
 import { C, HoldId } from "src/C";
 import { F } from "src/F";
 import { Commands } from "src/game/global/Commands";
-import { Core } from "src/game/global/Core";
 import { CueEvents } from "src/game/global/CueEvents";
-import { DROD } from "src/game/global/DROD";
 import { Game } from "src/game/global/Game";
 import { Level } from "src/game/global/Level";
 import { Progress } from "src/game/global/Progress";
@@ -17,7 +14,6 @@ import { TStatePreloader } from "src/game/states/TStatePreloader";
 import { TStateTitle } from "src/game/states/TStateTitle";
 import { TWidgetMinimap } from "src/game/widgets/TWidgetMinimap";
 import { S } from "src/S";
-import { intAttr } from "src/XML";
 
 let isInterruptingDemoPlayback = false;
 
@@ -148,6 +144,33 @@ export const KddlApi = {
     },
     getDemo(roomPid: string) {
         return Progress.getRoomDemo(roomPid);
+    },
+    async roomRenderStressTest(attempts = 101) {
+        const room = new Room();
+
+
+        const tries = [];
+        for (let i = 0; i < attempts; i++) {
+            const startTime = performance.now();
+            for (const roomPid of Level.getAllRoomPids()) {
+                room.resetRoom();
+                room.loadRoom(roomPid);
+            }
+            const endTime = performance.now();
+            const time = endTime - startTime;
+            tries.push(time);
+
+            console.log(`#${i+1} - ${time}ms (${(100 * i / attempts).toFixed(0)}%)`)
+            await new Promise(resolve => requestAnimationFrame(resolve));
+        }
+
+        tries.sort();
+        console.log("Average: ", tries.reduce((l, r) => l + r) / attempts + "ms");
+        console.log("Median: ", tries[50] + "ms");
+        console.log("Min: ", Math.min(...tries) + "ms");
+        console.log("Max: ", Math.max(...tries) + "ms");
+
+        room.clear();
     },
     ingame: {
         get Game() {

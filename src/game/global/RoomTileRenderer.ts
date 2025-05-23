@@ -8,6 +8,24 @@ import { VOCheckpoints } from "../managers/VOCheckpoints";
 import { Gfx } from "./Gfx";
 import { Progress } from "./Progress";
 
+const pool: Sprite[] = [];
+let poolIndex = 0;
+
+function poolGet(texture: Texture): Sprite {
+	if (poolIndex === 0) {
+		return new Sprite(texture);
+	}
+
+	const sprite = pool[--poolIndex];
+	sprite.texture = texture;
+	sprite.tint = 0xFFFFFF;
+	sprite.scale.set(1, 1);
+	return sprite;
+}
+function poolRelease(sprite: Sprite) {
+	pool[poolIndex++] = sprite;
+}
+
 export class RoomTileRenderer extends Container {
 	public tilesOpaque: number[] = null!;
 	public tilesTransparent: number[] = null!;
@@ -1442,11 +1460,19 @@ class Blitter {
 	}
 
 	public clearTile(x: number, y: number) {
+		for (const sprite of this.sprites[x][y]) {
+			poolRelease(sprite);
+		}
+
 		this.container.removeChild(...this.sprites[x][y]);
 		this.sprites[x][y].length = 0;
 	}
 
 	public clearAllTiles() {
+		for (const sprite of this.container.children) {
+			poolRelease(sprite as Sprite);
+		}
+
 		this.container.removeChildren();
 
 		for (let x = 0; x < S.RoomWidth; x++) {
@@ -1457,7 +1483,7 @@ class Blitter {
 	}
 
 	public generalTile(tileId: number, x: number, y: number, alpha = 1) {
-		const sprite = new Sprite(Gfx.getGeneralTilesTexture(tileId));
+		const sprite = poolGet(Gfx.getGeneralTilesTexture(tileId));
 
 		sprite.x = x * S.RoomTileWidth;
 		sprite.y = y * S.RoomTileHeight;
@@ -1469,16 +1495,13 @@ class Blitter {
 	}
 	public tile(baseTexture: BaseTexture, tileId: number, x: number, y: number, alpha = 1) {
 		const tile = T.TILES[tileId];
-		const texture = new Texture(
+		const sprite = poolGet(getTexture(
 			baseTexture,
-			new Rectangle(
 				tile.x,
 				tile.y,
 				S.RoomTileWidth,
 				S.RoomTileHeight,
-			),
-		);
-		const sprite = new Sprite(texture);
+		));
 
 		sprite.x = x * S.RoomTileWidth;
 		sprite.y = y * S.RoomTileHeight;
@@ -1501,25 +1524,23 @@ class Blitter {
 		textureX = (textureX ?? targetX) * S.RoomTileWidth;
 		textureY = (textureY ?? targetY) * S.RoomTileHeight;
 
-		const texture = new Texture(
+		const sprite = poolGet(getTexture(
 			baseTexture,
-			new Rectangle(
-				(textureX % baseTexture.width) | 0,
-				(textureY % baseTexture.height) | 0,
-				sourceWidth,
-				sourceHeight,
-			),
-		);
-		const sprite = new Sprite(texture);
+			(textureX % baseTexture.width) | 0,
+			(textureY % baseTexture.height) | 0,
+			sourceWidth,
+			sourceHeight,
+		));
 
 		sprite.x = targetX * S.RoomTileWidth;
 		sprite.y = targetY * S.RoomTileHeight;
+		sprite.alpha = 1;
 
 		this.addSprite(sprite);
 	}
 
 	public rect(x: number, y: number, width: number, height: number, color: number) {
-		const sprite = new Sprite(Texture.WHITE);
+		const sprite = poolGet(Texture.WHITE);
 		sprite.x = x;
 		sprite.y = y;
 		sprite.width = width;
@@ -1542,7 +1563,33 @@ class Blitter {
 
 
 	public teardown() {
+		this.clearAllTiles();
+
 		this.container.cacheAsBitmap = false;
-		this.container.removeChildren();
 	}
+}
+
+const textureToPosToSizeMap = new Map<BaseTexture, Map<number, Map<number, Texture>>>();
+function getTexture(baseTexture: BaseTexture, x: number, y: number, width: number, height: number): Texture {
+	const idPos = x + y * 1000;
+	const idSize = width + height * 1000;
+
+	if (!textureToPosToSizeMap.has(baseTexture)) {
+		textureToPosToSizeMap.set(baseTexture, new Map());
+	}
+
+	const posToSizeMap = textureToPosToSizeMap.get(baseTexture)!;
+	if (!posToSizeMap.has(idPos)) {
+		posToSizeMap.set(idPos, new Map());
+	}
+
+	const sizeMap = posToSizeMap.get(idPos)!;
+	if (!sizeMap.has(idSize)) {
+		sizeMap.set(idSize, new Texture(
+			baseTexture,
+			new Rectangle(x, y, width, height),
+		));
+	}
+
+	return sizeMap.get(idSize)!;
 }
