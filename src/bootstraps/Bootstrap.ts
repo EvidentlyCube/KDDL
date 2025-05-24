@@ -28,6 +28,7 @@ import { TWidgetVolumeMuter } from "src/game/widgets/TWidgetVolumeMuter";
 import { permanentStoreUpgradeToV2 } from "src/game/global/store/permanentStoreUpgradeToV2";
 import { Progress } from "src/game/global/Progress";
 import { PermanentStore } from "src/game/global/store/PermanentStore";
+import { Level } from "src/game/global/Level";
 
 require('../../src.assets/font/toms-new-roman.css');
 
@@ -35,6 +36,7 @@ export class Bootstrap {
 	public static async bootstrap() {
 		exposeValue('Bootstrap', Bootstrap);
 		exposeValue('Progress', Progress);
+		exposeValue('Level', Level);
 		exposeValue('PermanentStoreSlot', PermanentStoreSlot);
 		exposeValue('PermanentStore', PermanentStore);
 

@@ -72,9 +72,10 @@ export const KddlApi = {
             });
 
             room.renderInto(texture);
-            const canvas = RecamelCore.extract.canvas(texture);
-
             room.clear();
+
+            const canvas = RecamelCore.extract.canvas(texture);
+            texture.destroy(true);
 
             return canvasToPng(canvas);
 
@@ -96,7 +97,6 @@ export const KddlApi = {
         Progress.restoreToDemo(demo);
         Game.loadFromRoom(roomPid, px, py, po);
         Commands.fromString(demo.demoBuffer);
-
 
         let roomConquered = false;
         let roomExited = false;
@@ -136,6 +136,8 @@ export const KddlApi = {
         } catch (e: unknown) {
             return -3;
         } finally {
+            Game.room.clear();
+            Game.room = undefined!;
             S.isSpiderMode = isSpiderMode;
         }
     },

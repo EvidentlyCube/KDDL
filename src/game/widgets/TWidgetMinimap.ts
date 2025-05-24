@@ -1,4 +1,4 @@
-import { Container, Graphics, Matrix, RenderTexture, Sprite, Texture } from "pixi.js";
+import { Container, Graphics, Matrix, MIPMAP_MODES, RenderTexture, SCALE_MODES, Sprite, Texture } from "pixi.js";
 import { RecamelCore } from "src.framework/net/retrocade/camel/core/RecamelCore";
 import { intAttr } from "src/XML";
 import { ASSERT } from "../../ASSERT";
@@ -6,6 +6,7 @@ import { exposeValue, S } from "../../S";
 import { Level } from "../global/Level";
 import { Progress } from "../global/Progress";
 import { VOMinimapRoom } from "../managers/VOMinimapRoom";
+import { RecamelLayerSprite } from "src.framework/net/retrocade/camel/layers/RecamelLayerSprite";
 
 export class TWidgetMinimap extends Container {
 	private readonly _roomPidToImage = new Map<string, VOMinimapRoom>();
@@ -179,6 +180,9 @@ export class TWidgetMinimap extends Container {
 		const renderTexture = RenderTexture.create({
 			width: S.RoomWidth * (maxX - minX),
 			height: S.RoomHeight * (maxY - minY),
+			mipmap: MIPMAP_MODES.OFF,
+			resolution: 1,
+			scaleMode: SCALE_MODES.LINEAR,
 		});
 
 		for (const roomPid of roomPids) {
@@ -191,7 +195,12 @@ export class TWidgetMinimap extends Container {
 			const roomX = (pos.x - minX) * S.RoomWidth;
 			const roomY = (pos.y - minY) * S.RoomHeight;
 
+			room.x = 0;
+			room.y = 0;
 			this.API_drawRoomForLevel(room, renderTexture, roomX, roomY);
+			room.x = roomX + 200;
+			room.y = roomY;
+
 		}
 
 		const canvas = RecamelCore.extract.canvas(renderTexture)
