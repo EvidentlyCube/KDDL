@@ -83,8 +83,8 @@ export class TWidgetMinimap extends Container {
 
 		this._minimapRooms.x = this._visibleWidth / 2 | 0;
 		this._minimapRooms.y = this._visibleHeight / 2 | 0;
-		this._minimapRooms.x -= offset.x * S.RoomWidth + S.RoomWidth / 2;
-		this._minimapRooms.y -= offset.y * S.RoomHeight + S.RoomHeight / 2;
+		this._minimapRooms.x -= offset.x * S.RoomWidth + S.RoomWidth / 2 | 0;
+		this._minimapRooms.y -= offset.y * S.RoomHeight + S.RoomHeight / 2 | 0;
 
 		this._selectedRoomBorder.x = this._visibleWidth / 2 - S.RoomWidth / 2 | 0;
 		this._selectedRoomBorder.y = this._visibleHeight / 2 - S.RoomHeight / 2 | 0;

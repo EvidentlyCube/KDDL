@@ -1,4 +1,4 @@
-import { Container, Matrix, Rectangle, RenderTexture, Sprite, Texture } from "pixi.js";
+import { Container, Matrix, MIPMAP_MODES, Rectangle, RenderTexture, SCALE_MODES, Sprite, Texture } from "pixi.js";
 import { RecamelCore } from "src.framework/net/retrocade/camel/core/RecamelCore";
 import { exposeValue, S } from "src/S";
 import { VOMinimapRoomState } from "./VOMinimapRoom";
@@ -23,7 +23,13 @@ class MinimapRoomRenderer_Class {
     private _roomPidAndStateToTexture = new Map<string, Texture>();
 
     public constructor() {
-        this._minimapTexture = RenderTexture.create({ width: WIDTH, height: HEIGHT });
+        this._minimapTexture = RenderTexture.create({
+            width: WIDTH,
+            height: HEIGHT,
+            scaleMode: SCALE_MODES.LINEAR,
+            mipmap: MIPMAP_MODES.OFF,
+            resolution: 1,
+        });
 
         exposeValue('MinimapRoomRenderer', this);
     }
