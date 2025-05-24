@@ -133,6 +133,11 @@ export class Room {
 		this.layerEffects.add(this.mimicPlacement);
 		this.layerEffects.add(this.invisibilityRange);
 
+		this.layerUnder.addMask(S.LEVEL_OFFSET_X, S.LEVEL_OFFSET_Y, S.RoomWidthPixels, S.RoomHeightPixels);
+		this.layerSprites.addMask(S.LEVEL_OFFSET_X, S.LEVEL_OFFSET_Y, S.RoomWidthPixels, S.RoomHeightPixels);
+		this.layerEffects.addMask(S.LEVEL_OFFSET_X, S.LEVEL_OFFSET_Y, S.RoomWidthPixels, S.RoomHeightPixels);
+		this.layerUI.addMask(S.LEVEL_OFFSET_X, S.LEVEL_OFFSET_Y, S.RoomWidthPixels, S.RoomHeightPixels);
+
 		this.roomTileRenderer.x = S.LEVEL_OFFSET_X;
 		this.roomTileRenderer.y = S.LEVEL_OFFSET_Y;
 

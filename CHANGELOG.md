@@ -3,6 +3,7 @@
  - [BUGFIX] Minimap rooms no longer have the right half offset by one pixel down
  - [BUGFIX] Minimap minimap no longer uses fractional numbers for positioning the minimap which caused additional blurring
  - [BUGFIX] Hold Mastery flash message now appears as soon as you start new game/continue/restore if you fit the criteria for achieving mastery
+ - [BUGFIX] Visual effects no longer appear outside room area
  - [FEATURE] Minimap can now be clicked in-game to look at rooms
 
 ## 1.6.15 - 2025-05-23

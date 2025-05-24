@@ -1,6 +1,6 @@
 import {RecamelLayer} from "./RecamelLayer";
 import {RecamelDisplay} from "../core/RecamelDisplay";
-import { DisplayObject, Filter, Sprite } from "pixi.js";
+import { DisplayObject, Filter, Sprite, Texture } from "pixi.js";
 import { AdjustmentFilter } from "@pixi/filter-adjustment";
 
 /**
@@ -137,5 +137,22 @@ export class RecamelLayerSprite extends RecamelLayer {
 	 */
 	public remove(d: DisplayObject) {
 		this._layer.removeChild(d);
+	}
+
+	public addMask(x: number, y: number, width: number, height: number) {
+		if (this.displayObject.mask) {
+			if (this.displayObject.mask instanceof DisplayObject) {
+				this.displayObject.mask.parent?.removeChild(this.displayObject.mask);
+			}
+			this.displayObject.mask = null;
+		}
+
+		const mask = new Sprite(Texture.WHITE);
+		mask.x = x;
+		mask.y = y;
+		mask.width = width;
+		mask.height = height;
+		this.add(mask);
+		this.displayObject.mask = mask;
 	}
 }
