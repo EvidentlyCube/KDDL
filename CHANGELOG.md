@@ -1,3 +1,6 @@
+## 1.6.16 - ????-??-??
+ - [BUGFIX] Episode 6 ⟶ Level 25: 2S2W, 'Neather no longer comes close enough to be stabbed from the top arrows
+
 ## 1.6.15 - 2025-05-23
  - [BUGFIX] Episode 3, fixed the first two achievements not displaying their title properly
  - [BUGFIX] Episode 6 ⟶ Level 25, made one room non required to fix an issue where blue doors would not go down when expected

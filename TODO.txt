@@ -2,6 +2,7 @@ BUGS:
  - Update translation files for other languages
  - Update README of this repo yo
  - Sword swing effect appears over UI
+ - And hold mastery doesn't trigger on the exit stairs, only when you walk out of a room.
 
 FUTURE IMPROVEMENTS:
  - Clicking minimap maybe?
