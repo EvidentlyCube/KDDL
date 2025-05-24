@@ -676,7 +676,7 @@ export class Game {
 			Game.setCurrentRoomExplored();
 		}
 
-		const wasRoomConquered: boolean = Game.isCurrentRoomConquered();
+		const wasRoomConquered = Game.isCurrentRoomConquered();
 
 		let monsterCountAtStart: number = Game.room.monsterCount;
 		Game.room.greenDoorsOpened = false;
@@ -984,7 +984,7 @@ export class Game {
 		CueEvents.add(C.CID_EXIT_ROOM, oldRoomPid);
 		CueEvents.add(C.CID_ENTER_ROOM, newRoomPid);
 
-		TWidgetLevelName.update(Game.room.roomPid, Game.room.levelId);
+		TWidgetLevelName.update(Game.room.roomPid);
 
 		return true;
 	}
@@ -1036,7 +1036,7 @@ export class Game {
 		Progress.roomEntered(roomPid, x, y, o);
 		Game.room.loadRoom(roomPid);
 		if (PlatformOptions.isGame) {
-			TWidgetLevelName.update(Game.room.roomPid, Game.room.levelId);
+			TWidgetLevelName.update(Game.room.roomPid);
 		}
 
 		Game.startRoomX = x;

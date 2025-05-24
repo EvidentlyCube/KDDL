@@ -504,9 +504,13 @@ ui.score_window.best_score: "Best room score:"
 ui.score_window.best_score.none: "None yet!"
 ui.score_window.best_score.unrequired: Unrequired room
 
-
 ui.score_window.stats.moves_room: "Moves in room:"
 ui.score_window.stats.moves_level: "Level moves:"
 ui.score_window.stats.deaths: "Level deaths:"
 ui.score_window.stats.kills: "Level kills:"
 ui.score_window.stats.time: "Level time:"
+
+
+# Level name widget
+
+ui.level_name.room_preview: (Room Preview)

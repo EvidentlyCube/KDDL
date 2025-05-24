@@ -395,6 +395,7 @@ export class Room {
 			this.roomTileRenderer.clearTiles();
 			this.roomSpritesRenderer.clearSprites();
 			this.mimicPlacement.visible = false;
+			this.invisibilityRange.visible = false;
 		}
 
 

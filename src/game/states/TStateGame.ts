@@ -66,6 +66,7 @@ import { TWindowMessage } from "../windows/TWindowMessage";
 import { TWindowPause } from "../windows/TWindowPause";
 import { TWindowYesNoMessage } from "../windows/TWindowYesNoMessage";
 import { TStateOutro } from "./TStateOutro";
+import { TWidgetLargeMinimap } from "../widgets/TWidgetLargeMinimap";
 
 export class TStateGame extends RecamelState {
 	private static _instance: TStateGame | undefined;
@@ -99,8 +100,8 @@ export class TStateGame extends RecamelState {
 	public static offsetNow: number = 0;
 	public static offset: number = 0;
 
-	public uiLayer: RecamelLayerSprite;
-	public overLayer: RecamelLayerSprite;
+	public _uiLayer: RecamelLayerSprite;
+	public _overLayer: RecamelLayerSprite;
 	public lockIcon: Sprite;
 
 	public isScrollDisplayed: boolean = false;
@@ -133,16 +134,18 @@ export class TStateGame extends RecamelState {
 	private waitingForEscape: boolean = false;
 
 	private _minimap: TWidgetMinimap;
+	private _largeMinimap: TWidgetLargeMinimap;
 
 	public constructor() {
 		super();
 
-		this.uiLayer = RecamelLayerSprite.create();
-		this.overLayer = RecamelLayerSprite.create();
+		this._uiLayer = RecamelLayerSprite.create();
+		this._overLayer = RecamelLayerSprite.create();
 		this.lockIcon = new Sprite(Gfx.LockTexture);
 		this._minimap = new TWidgetMinimap(130, 138);
-		this.uiLayer.visible = false;
-		this.overLayer.visible = false;
+		this._largeMinimap = new TWidgetLargeMinimap();
+		this._uiLayer.visible = false;
+		this._overLayer.visible = false;
 
 		this.lockIcon.x = 84;
 		this.lockIcon.y = 522;
@@ -150,16 +153,24 @@ export class TStateGame extends RecamelState {
 		this._minimap.x = 14;
 		this._minimap.y = 448;
 
+		this._minimap.on('click', () => this._largeMinimap.show());
+		this._minimap.interactive = true;
+
 		(window as any).debugState = this;
 		(window as any).Game = Game;
 	}
 
 	public update() {
-		this.overLayer.moveToFront();
+		this._overLayer.moveToFront();
 
 		let forceFullRedraw: boolean = false;
 
 		if (TEffectRoomSlide.instance) {
+			return;
+		}
+
+		if (this._largeMinimap.visible) {
+			this._largeMinimap.update();
 			return;
 		}
 
@@ -621,7 +632,6 @@ export class TStateGame extends RecamelState {
 			Game.player.update();
 			Game.room.monsters.update();
 			Game.room.roomSpritesRenderer.renderSwords();
-
 			TStateGame.effectsAbove.update();
 
 			TWidgetMoveCounter.draw();
@@ -729,7 +739,7 @@ export class TStateGame extends RecamelState {
 
 			this._minimap.update(Game.room.roomPid);
 
-			TWidgetLevelName.update(Game.room.roomPid, Game.room.levelId);
+			TWidgetLevelName.update(Game.room.roomPid);
 
 			TStateGame.updateMusicState();
 
@@ -849,7 +859,7 @@ export class TStateGame extends RecamelState {
 			this._minimap.addRoom(Game.room.roomPid);
 			this._minimap.update(Game.room.roomPid);
 
-			TWidgetLevelName.update(Game.room.roomPid, Game.room.levelId);
+			TWidgetLevelName.update(Game.room.roomPid);
 			TWindowLevelStart.screenshot?.moveForward();
 		}
 	}
@@ -1152,10 +1162,10 @@ export class TStateGame extends RecamelState {
 	public create() {
 		TWidgetSpeech.isPaused = true;
 
-		this.uiLayer.visible = true;
-		this.uiLayer.moveToBack();
-		this.overLayer.visible = true;
-		this.overLayer.moveToBack();
+		this._uiLayer.visible = true;
+		this._uiLayer.moveToBack();
+		this._overLayer.visible = true;
+		this._overLayer.moveToBack();
 
 		HelpRoomOpener.enabled = true;
 		Game.statStartTime = Date.now();
@@ -1173,22 +1183,23 @@ export class TStateGame extends RecamelState {
 		CueEvents.clear();
 
 		if (PlatformOptions.isGame) {
-			this.uiLayer.addAt(new Sprite(Gfx.InGameScreenTexture), 0);
-			this.uiLayer.add(TWidgetFace.container);
-			this.uiLayer.add(TWidgetLevelName.container);
-			this.uiLayer.add(this._minimap);
-			this.uiLayer.add(TWidgetScroll.container);
-			this.uiLayer.add(TWidgetClock.container);
-			this.uiLayer.add(this.lockIcon);
-			this.overLayer.add(TWidgetOrbHighlight.container);
+			this._uiLayer.addAt(new Sprite(Gfx.InGameScreenTexture), 0);
+			this._uiLayer.add(TWidgetFace.container);
+			this._uiLayer.add(TWidgetLevelName.container);
+			this._uiLayer.add(this._minimap);
+			this._uiLayer.add(TWidgetScroll.container);
+			this._uiLayer.add(TWidgetClock.container);
+			this._uiLayer.add(this.lockIcon);
+			this._overLayer.add(TWidgetOrbHighlight.container);
+			this._overLayer.add(this._largeMinimap);
 		}
 	}
 
 	public destroy() {
-		this.uiLayer.clear();
-		this.uiLayer.visible = false;
-		this.overLayer.clear();
-		this.overLayer.visible = false;
+		this._uiLayer.clear();
+		this._uiLayer.visible = false;
+		this._overLayer.clear();
+		this._overLayer.visible = false;
 
 		HelpRoomOpener.enabled = false;
 		document.removeEventListener('pointermove', this.onMouseMoved);
@@ -1202,8 +1213,8 @@ export class TStateGame extends RecamelState {
 
 	public teardown() {
 		Game.room?.clear();
-		this.uiLayer.removeLayer();
-		this.overLayer.removeLayer();
+		this._uiLayer.removeLayer();
+		this._overLayer.removeLayer();
 	}
 
 	public static continuePlaying() {

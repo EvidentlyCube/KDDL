@@ -1,15 +1,15 @@
 import { Container, Graphics, Matrix, RenderTexture, Sprite, Texture } from "pixi.js";
-import { F } from "src/F";
+import { RecamelCore } from "src.framework/net/retrocade/camel/core/RecamelCore";
 import { intAttr } from "src/XML";
 import { ASSERT } from "../../ASSERT";
 import { exposeValue, S } from "../../S";
 import { Level } from "../global/Level";
 import { Progress } from "../global/Progress";
 import { VOMinimapRoom } from "../managers/VOMinimapRoom";
-import { RecamelCore } from "src.framework/net/retrocade/camel/core/RecamelCore";
 
 export class TWidgetMinimap extends Container {
 	private readonly _roomPidToImage = new Map<string, VOMinimapRoom>();
+	private readonly _background = new Sprite();
 	private readonly _maskSprite = new Sprite();
 	private readonly _minimapRooms = new Container();
 	private readonly _selectedRoomBorder = new Graphics();
@@ -26,9 +26,15 @@ export class TWidgetMinimap extends Container {
 		this._visibleWidth = visibleWidth;
 		this._visibleHeight = visibleHeight;
 
+		this.addChild(this._background);
 		this.addChild(this._maskSprite);
 		this.addChild(this._minimapRooms);
 		this.addChild(this._selectedRoomBorder);
+
+		this._background.texture = Texture.WHITE;
+		this._background.alpha = 0;
+		this._background.width = this._visibleWidth;
+		this._background.height = this._visibleHeight;
 
 		this._maskSprite.texture = Texture.WHITE;
 		this._maskSprite.width = this._visibleWidth;

@@ -38,11 +38,23 @@ export class TWidgetLevelName {
 		this.container.addChild(this._textField);
 	}
 
-	public static update(roomPid: string, levelID: number) {
-		const name = Level.getLevelNameTranslated(levelID);
+	public static update(roomPid: string) {
+		const levelId = Level.getLevelIdByRoomPid(roomPid);
+		const name = Level.getLevelNameTranslated(levelId);
 		const offset = Level.getRoomOffsetInLevel(roomPid);
 
 		TWidgetLevelName._textField.text = name + ": " + TWidgetLevelName.nameFromPosition(offset.x, offset.y);
+		TWidgetLevelName._textField.color = 0x000000;
+
+		TWidgetLevelName.draw();
+	}
+
+	public static updateForRoomPreview(roomPid: string) {
+		const offset = Level.getRoomOffsetInLevel(roomPid);
+		const roomPositionName = TWidgetLevelName.nameFromPosition(offset.x, offset.y);
+
+		TWidgetLevelName._textField.text = `${roomPositionName} ${_('ui.level_name.room_preview')}`;
+		TWidgetLevelName._textField.color = 0x0000FF;
 
 		TWidgetLevelName.draw();
 	}

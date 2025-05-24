@@ -5,6 +5,7 @@ let _CIDPrivateData: any[][] = [];
 let _nextPrivateDataIndex: number;
 let _nextCID: number;
 let _eventCount: number = 0
+let _isFrozen = false;
 
 for (let i = 0; i < C.CID_COUNT; i++) {
 	_isCIDSet[i] = false;
@@ -16,6 +17,10 @@ export class CueEvents {
 	 * Clears all events
 	 */
 	public static clear() {
+		if (_isFrozen) {
+			return;
+		}
+
 		for (let i: number = 0; i < C.CID_COUNT; i++) {
 			_isCIDSet[i] = false;
 			_CIDPrivateData[i].length = 0;
@@ -29,6 +34,10 @@ export class CueEvents {
 	 * Clears an event state
 	 */
 	public static clearEvent(eCID: number) {
+		if (_isFrozen) {
+			return;
+		}
+
 		_CIDPrivateData[eCID].length = 0;
 		if (_nextCID == eCID) {
 			_nextPrivateDataIndex = 0;
@@ -49,6 +58,10 @@ export class CueEvents {
 	}
 
 	public static add(eCID: number, data: any = null) {
+		if (_isFrozen) {
+			return;
+		}
+
 		if (!_isCIDSet[eCID]) {
 			_isCIDSet[eCID] = true;
 			_eventCount++;
@@ -125,6 +138,10 @@ export class CueEvents {
 	}
 
 	public static remove(eCID: number, data: any): boolean {
+		if (_isFrozen) {
+			return false;
+		}
+
 		let found = false;
 		let length = _CIDPrivateData[eCID].length;
 		for (let i: number = 0; i < length; i++) {
@@ -141,5 +158,13 @@ export class CueEvents {
 		}
 
 		return found;
+	}
+
+	public static freeze() {
+		_isFrozen = true;
+	}
+
+	public static unfreeze() {
+		_isFrozen = false;
 	}
 }
