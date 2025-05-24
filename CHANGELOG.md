@@ -1,5 +1,6 @@
 ## 1.6.16 - ????-??-??
  - [BUGFIX] Episode 6 ⟶ Level 25: 2S2W, 'Neather no longer comes close enough to be stabbed from the top arrows
+ - [BUGFIX] Minimap rooms no longer have the right half offset by one pixel down
 
 ## 1.6.15 - 2025-05-23
  - [BUGFIX] Episode 3, fixed the first two achievements not displaying their title properly

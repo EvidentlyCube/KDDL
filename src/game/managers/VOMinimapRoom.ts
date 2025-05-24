@@ -206,8 +206,8 @@ export class VOMinimapRoom extends Sprite {
 
 	private plot(pixels: Container, index: number, color: number) {
 		const pixel = new Sprite(Texture.WHITE);
-		pixel.x = index % S.RoomWidth;
-		pixel.y = index / S.RoomWidth;
+		pixel.x = index % S.RoomWidth | 0;
+		pixel.y = index / S.RoomWidth | 0;
 		pixel.width = 1;
 		pixel.height = 1;
 		pixel.tint = color;
