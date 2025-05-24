@@ -260,6 +260,7 @@ export class TStateRestore extends RecamelState {
 		new RecamelEffectFade(screenshot.layer.displayObject, 1, 0, 500, () => {
 			screenshot.stop();
 			TWidgetSpeech.isPaused = false;
+			TStateGame.instance.addFlashEvents();
 		});
 		screenshot.moveForward();
 	}

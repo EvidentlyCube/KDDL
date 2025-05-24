@@ -30,12 +30,12 @@ export class TEffectTextFlash extends TEffect {
 
 	public end() {
 		Game.room.layerUI.remove(this.text);
+		TStateGame.effectsAbove.nullify(this);
 	}
 
 	public update() {
 		if (this.showUntil < Date.now()) {
 			this.end();
-			TStateGame.effectsUnder.nullify(this);
 			return;
 		}
 

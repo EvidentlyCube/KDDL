@@ -10,6 +10,7 @@ import { GlobalHoldScore } from "./GlobalHoldScore";
 import { Level } from "./Level";
 import { PackedVars } from "./PackedVars";
 import { PermanentStore } from "./store/PermanentStore";
+import { DebugConsole } from "../DebugConsole";
 
 export class Progress {
 	/**
@@ -516,3 +517,27 @@ export class Progress {
 		return best;
 	}
 }
+
+
+DebugConsole.registerAction('progress', 'Commands that related to progress. Invoke with no arguments for more information', args => {
+	if (args.length === 0) {
+		DebugConsole.appendLine(' ⟶ **forget-mastery** - Remove mastery');
+		DebugConsole.appendLine(' ⟶ **forget-completion** - Remove hold completion');
+		return;
+	}
+
+	switch (args[0]) {
+		case 'forget-mastery':
+			Progress.isGameMastered = false;
+			DebugConsole.appendLine('Hold mastery removed.');
+			break;
+
+		case 'forget-completion':
+			Progress.isGameCompleted = false;
+			DebugConsole.appendLine('Hold completion removed.');
+			break;
+
+		default:
+			throw new Error("Unknown argument");
+	}
+})

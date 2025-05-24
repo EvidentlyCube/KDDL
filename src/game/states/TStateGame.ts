@@ -1251,6 +1251,11 @@ export class TStateGame extends RecamelState {
 		Game.room.layerEffects.visible = true;
 
 		TStateGame.show();
+
+		if (!Progress.isGameMastered && Progress.checkHoldMastery()) {
+			CueEvents.add(C.CID_HOLD_MASTERED);
+			Progress.isGameMastered = true;
+		}
 	}
 
 	public static restoreGame() {
@@ -1258,6 +1263,11 @@ export class TStateGame extends RecamelState {
 		Level.restoreTo(Progress.playerRoomPid, Progress.playerX, Progress.playerY, Progress.playerO);
 		TStateGame.show();
 		TStateGame.instance.processSpeech();
+
+		if (!Progress.isGameMastered && Progress.checkHoldMastery()) {
+			CueEvents.add(C.CID_HOLD_MASTERED);
+			Progress.isGameMastered = true;
+		}
 	}
 
 	private describeTile(x: number, y: number) {
