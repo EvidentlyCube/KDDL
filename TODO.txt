@@ -1,7 +1,6 @@
 BUGS:
  - Update translation files for other languages
  - Update README of this repo yo
- - Sword swing effect appears over UI
 
 FUTURE IMPROVEMENTS:
  - i18n tool - one command to update all translation files
