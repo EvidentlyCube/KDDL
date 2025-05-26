@@ -10,18 +10,22 @@ const __dirname: string = (import.meta as any).dirname;
 interface JobLevelScreenshot {
     type: 'level-screenshot';
     holdId: HoldId;
+    forumHoldId: string;
     levelGidIndex: number;
 }
 
 interface JobRoomScreenshot {
     type: 'room-screenshot';
     holdId: HoldId;
+    forumHoldId: string;
     roomPid: string;
 }
 
 interface JobValidateDemo {
     type: 'validate-demo';
     holdId: HoldId;
+    forumHoldId: string;
+    forumDemoId: string;
     serializedDemo: string;
 }
 
@@ -110,6 +114,7 @@ const CaravelNetApi = {
 
     async pollHoldNeeded() {
         const data = await CaravelNetApi.invoke('holdneeded', { gameId: '3'});
+        Log.indent++;
         const forumHoldId = await data.text();
 
         if (forumHoldId) {
@@ -124,17 +129,35 @@ const CaravelNetApi = {
             Log.info(`Queuing ${levelGidIndexes.length} level draw jobs`);
             Log.indent++;
             for (const levelGidIndex of levelGidIndexes) {
-                JobManager.addLevelScreenshot(holdId, levelGidIndex);
+                JobManager.addLevelScreenshot(forumHoldId, holdId, levelGidIndex);
             }
             Log.indent--;
             Log.info(`Queuing ${roomPids.length} room draw jobs`);
             Log.indent++;
             for (const roomPid of roomPids) {
-                JobManager.addRoomScreenshot(holdId, roomPid);
+                JobManager.addRoomScreenshot(forumHoldId, holdId, roomPid);
             }
             Log.indent--;
         }
-    }
+        Log.indent--;
+    },
+
+    async pollValidateDemos() {
+        // @FIXME implement
+    },
+
+    async uploadLevelImage(forumHoldId: string, levelPng: Buffer) {
+        // @FIXME Implement
+    },
+
+    async uploadRoomImage(forumHoldId: string, roomJpg: Buffer) {
+        // @FIXME Implement
+    },
+
+    async uploadDemoStatus(demoId: string, isValid: boolean, numMoves: number) {
+        // @FIXME Implement
+        // @FIXME - Throttle those so that they are sent in batch
+    },
 
 }
 
@@ -195,31 +218,27 @@ const Utils = {
 
 const JobManager = {
     jobQueue: [] as Job[],
-    add(job: Job) {
-        JobManager.jobQueue.push(job);
-    },
 
-    addLevelScreenshot(holdId: HoldId, levelGidIndex: number) {
+    addLevelScreenshot(forumHoldId:string, holdId: HoldId, levelGidIndex: number) {
         JobManager.jobQueue.push({
             type: 'level-screenshot',
-            holdId: holdId,
+            holdId, forumHoldId,
             levelGidIndex: parseInt(String(levelGidIndex)),
         });
     },
 
-    addRoomScreenshot(holdId: HoldId, roomPid: number) {
+    addRoomScreenshot(forumHoldId:string, holdId: HoldId, roomPid: string) {
         JobManager.jobQueue.push({
             type: 'room-screenshot',
-            holdId: holdId,
+            forumHoldId, holdId,
             roomPid: String(roomPid),
         });
     },
 
-    addValidateDemo(holdId: HoldId, serializedDemo: string) {
-
+    addValidateDemo(forumHoldId:string, holdId: HoldId, forumDemoId: string, serializedDemo: string) {
         JobManager.jobQueue.push({
             type: 'validate-demo',
-            holdId: holdId,
+            forumHoldId, holdId, forumDemoId,
             serializedDemo: String(serializedDemo),
         });
     },
@@ -233,15 +252,16 @@ const JobManager = {
                 })
             }
 
-            await Utils.inReal(async () => CaravelNetApi.pollHoldNeeded())
-
             const job = JobManager.jobQueue.shift();
 
             if (job) {
                 JobManager.logJobStart(job);
                 await JobManager.runJob(job);
             } else {
-                await Utils.sleep(1000);
+                await Utils.inReal(async () => CaravelNetApi.pollHoldNeeded());
+                await Utils.inReal(async () => CaravelNetApi.pollValidateDemos());
+
+                await Utils.sleep(60000);
             }
 
         }
@@ -290,13 +310,17 @@ const JobManager = {
         await KddlApi.ensureHoldIsRunning(job.holdId);
         try {
             const levelPngHex = await KddlApi.invoke('drawLevel', job.levelGidIndex);
+            const levelPng = Buffer.from(levelPngHex, 'hex');
 
             await Utils.inTest(async () => {
-                await writeFile('level.png', Buffer.from(levelPngHex, 'hex'));
+                await writeFile('level.png', levelPng);
                 Log.info(chalk.green("level.png written to working directory"));
             });
 
             Log.debug(`Received ${levelPngHex.length} bytes`);
+            await Utils.inReal(async () => {
+                CaravelNetApi.uploadLevelImage(job.forumHoldId, levelPng);
+            });
             Log.info(chalk.green("Done!"));
 
         } catch (e) {
@@ -308,13 +332,17 @@ const JobManager = {
         await KddlApi.ensureHoldIsRunning(job.holdId);
         try {
             const roomJpgHex = await KddlApi.invoke('drawRoom', job.roomPid);
+            const roomJpg = Buffer.from(roomJpgHex, 'hex');
 
             await Utils.inTest(async () => {
-                await writeFile('room.jpg', Buffer.from(roomJpgHex, 'hex'));
+                await writeFile('room.jpg', roomJpg);
                 Log.info(chalk.green("room.jpg written to working directory"));
             });
 
             Log.debug(`Received ${roomJpgHex.length} bytes`);
+            await Utils.inReal(async () => {
+                CaravelNetApi.uploadRoomImage(job.forumHoldId, roomJpg);
+            });
             Log.info(chalk.green("Done!"));
 
         } catch (e) {
@@ -327,7 +355,9 @@ const JobManager = {
         try {
             const result = await KddlApi.invoke('testDemo', job.serializedDemo);
 
-            Log.info(chalk.green(`Demos is valid, moves=${result}`));
+            CaravelNetApi.uploadDemoStatus(job.forumDemoId, result > 0, result > 0 ? result : 4294967295);
+
+            Log.info(chalk.green(`Demos is valid, result=${result}`));
 
         } catch (e: unknown) {
             Log.error(e);
@@ -401,22 +431,13 @@ async function start() {
 
 async function addTestJobs() {
     Log.info("Adding test jobs");
-    JobManager.add({
-        type: 'level-screenshot',
-        holdId: HoldId.KDDL1,
-        levelGidIndex: 1
-    })
-
-    JobManager.add({
-        type: 'room-screenshot',
-        holdId: HoldId.KDDL2,
-        roomPid: '3:0:0',
-    })
-
-    JobManager.add({
-        type: 'validate-demo',
-        holdId: HoldId.KDDL2,
-        serializedDemo: 'BTQ6Mzo0GAAAABgAAAABAAAAJQAAAC1bMjAsNDIsMzksNDMsNDEsMjEsMiwxLDMsNCw5LDgsNiwxMiwxMywxNCwxNV3OBFsiMTowOjAiLCI3OjA6MCIsIjc6MTowIiwiNzoyOjAiLCI3OjM6MSIsIjc6MzowIiwiMToxOjEiLCIxOjA6MSIsIjE6LTE6MSIsIjE6MDoyIiwiMToyOjEiLCIxOjI6MCIsIjE6MzowIiwiMToxOjAiLCIxOjA6LTEiLCIxOi0xOjAiLCIxOi0yOjAiLCIxOi0yOi0xIiwiMTotMjoxIiwiMTotMTotMSIsIjE6MDotMiIsIjE6LTE6LTIiLCIxOi0yOi0yIiwiMTotMTotMyIsIjE6MTotMSIsIjE6MToyIiwiMToyOjIiLCIyOjA6MCIsIjI6LTE6MCIsIjI6LTI6MCIsIjI6LTM6MCIsIjI6MDoxIiwiMjowOi0xIiwiMjowOi0yIiwiMjowOi0zIiwiMjoxOjAiLCIyOjI6MCIsIjI6MzowIiwiMzowOjAiLCIzOjE6MCIsIjM6MToxIiwiMzoyOjEiLCIzOjE6MiIsIjM6MTotMSIsIjM6MTotMiIsIjM6MjotMiIsIjM6MjotMSIsIjM6MTotMyIsIjM6MDotMyIsIjM6MDotMSIsIjM6MDotMiIsIjM6LTE6LTEiLCIzOi0xOi0yIiwiMzowOjEiLCIzOi0xOjAiLCI0OjA6MCIsIjQ6MDoxIiwiNDoxOjEiLCI0OjE6MCIsIjQ6MDoyIiwiNDowOjMiLCI0Oi0xOjMiLCI0OjE6MyIsIjQ6MjozIiwiNDozOjMiLCI0OjM6MiIsIjQ6MjoyIiwiNDoyOjQiLCI0OjM6NSJd1gRbIjE6MDowIiwiNzowOjAiLCI3OjE6MCIsIjc6MjowIiwiNzozOjAiLCI3OjM6MSIsIjE6MDoxIiwiMToxOjEiLCIxOi0xOjEiLCIxOjA6MiIsIjE6MjoxIiwiMToyOjIiLCIxOjI6MCIsIjE6MzowIiwiMToxOjAiLCIxOjA6LTEiLCIxOi0xOjAiLCIxOi0yOjAiLCIxOi0yOi0xIiwiMTotMjoxIiwiMTotMTotMSIsIjE6LTE6LTIiLCIxOjA6LTIiLCIxOi0yOi0yIiwiMTotMTotMyIsIjE6MTotMSIsIjE6MToyIiwiMjowOjAiLCIyOi0xOjAiLCIyOi0yOjAiLCIyOi0zOjAiLCIyOjA6LTEiLCIyOjA6MSIsIjI6MDotMiIsIjI6MDotMyIsIjI6MTowIiwiMjoyOjAiLCIyOjM6MCIsIjM6MDowIiwiMzoxOjAiLCIzOjE6LTEiLCIzOjE6MSIsIjM6MjoxIiwiMzoxOjIiLCIzOjE6LTIiLCIzOjI6LTIiLCIzOjI6LTEiLCIzOjE6LTMiLCIzOjA6LTMiLCIzOjA6LTIiLCIzOjA6LTEiLCIzOi0xOi0xIiwiMzotMTotMiIsIjM6MDoxIiwiMzotMTowIiwiNDowOjAiLCI0OjA6MSIsIjQ6MToxIiwiNDoxOjAiLCI0OjA6MiIsIjQ6MDozIiwiNDotMTozIiwiNDoxOjMiLCI0OjI6MyIsIjQ6MzozIiwiNDozOjIiLCI0OjI6MiIsIjQ6Mjo0IiwiNDozOjQiLCI0OjM6NSJdAE8AAABPWzExLDExLDYsMywxMSwxLDEsMSwxLDEsMyw4LDEsMSwzLDgsMSwxLDEsMSw5LDcsNyw3LDcsNyw3LDEwLDcsNyw3LDgsNSwyLDgsNyw3XQ=='
-    })
+    JobManager.addLevelScreenshot('551', HoldId.KDDL1, 1);
+    JobManager.addRoomScreenshot('552', HoldId.KDDL2, '3:1:0');
+    JobManager.addValidateDemo(
+        '552',
+        HoldId.KDDL2,
+        '-1',
+        'BTQ6Mzo0GAAAABgAAAABAAAAJQAAAC1bMjAsNDIsMzksNDMsNDEsMjEsMiwxLDMsNCw5LDgsNiwxMiwxMywxNCwxNV3OBFsiMTowOjAiLCI3OjA6MCIsIjc6MTowIiwiNzoyOjAiLCI3OjM6MSIsIjc6MzowIiwiMToxOjEiLCIxOjA6MSIsIjE6LTE6MSIsIjE6MDoyIiwiMToyOjEiLCIxOjI6MCIsIjE6MzowIiwiMToxOjAiLCIxOjA6LTEiLCIxOi0xOjAiLCIxOi0yOjAiLCIxOi0yOi0xIiwiMTotMjoxIiwiMTotMTotMSIsIjE6MDotMiIsIjE6LTE6LTIiLCIxOi0yOi0yIiwiMTotMTotMyIsIjE6MTotMSIsIjE6MToyIiwiMToyOjIiLCIyOjA6MCIsIjI6LTE6MCIsIjI6LTI6MCIsIjI6LTM6MCIsIjI6MDoxIiwiMjowOi0xIiwiMjowOi0yIiwiMjowOi0zIiwiMjoxOjAiLCIyOjI6MCIsIjI6MzowIiwiMzowOjAiLCIzOjE6MCIsIjM6MToxIiwiMzoyOjEiLCIzOjE6MiIsIjM6MTotMSIsIjM6MTotMiIsIjM6MjotMiIsIjM6MjotMSIsIjM6MTotMyIsIjM6MDotMyIsIjM6MDotMSIsIjM6MDotMiIsIjM6LTE6LTEiLCIzOi0xOi0yIiwiMzowOjEiLCIzOi0xOjAiLCI0OjA6MCIsIjQ6MDoxIiwiNDoxOjEiLCI0OjE6MCIsIjQ6MDoyIiwiNDowOjMiLCI0Oi0xOjMiLCI0OjE6MyIsIjQ6MjozIiwiNDozOjMiLCI0OjM6MiIsIjQ6MjoyIiwiNDoyOjQiLCI0OjM6NSJd1gRbIjE6MDowIiwiNzowOjAiLCI3OjE6MCIsIjc6MjowIiwiNzozOjAiLCI3OjM6MSIsIjE6MDoxIiwiMToxOjEiLCIxOi0xOjEiLCIxOjA6MiIsIjE6MjoxIiwiMToyOjIiLCIxOjI6MCIsIjE6MzowIiwiMToxOjAiLCIxOjA6LTEiLCIxOi0xOjAiLCIxOi0yOjAiLCIxOi0yOi0xIiwiMTotMjoxIiwiMTotMTotMSIsIjE6LTE6LTIiLCIxOjA6LTIiLCIxOi0yOi0yIiwiMTotMTotMyIsIjE6MTotMSIsIjE6MToyIiwiMjowOjAiLCIyOi0xOjAiLCIyOi0yOjAiLCIyOi0zOjAiLCIyOjA6LTEiLCIyOjA6MSIsIjI6MDotMiIsIjI6MDotMyIsIjI6MTowIiwiMjoyOjAiLCIyOjM6MCIsIjM6MDowIiwiMzoxOjAiLCIzOjE6LTEiLCIzOjE6MSIsIjM6MjoxIiwiMzoxOjIiLCIzOjE6LTIiLCIzOjI6LTIiLCIzOjI6LTEiLCIzOjE6LTMiLCIzOjA6LTMiLCIzOjA6LTIiLCIzOjA6LTEiLCIzOi0xOi0xIiwiMzotMTotMiIsIjM6MDoxIiwiMzotMTowIiwiNDowOjAiLCI0OjA6MSIsIjQ6MToxIiwiNDoxOjAiLCI0OjA6MiIsIjQ6MDozIiwiNDotMTozIiwiNDoxOjMiLCI0OjI6MyIsIjQ6MzozIiwiNDozOjIiLCI0OjI6MiIsIjQ6Mjo0IiwiNDozOjQiLCI0OjM6NSJdAE8AAABPWzExLDExLDYsMywxMSwxLDEsMSwxLDEsMyw4LDEsMSwzLDgsMSwxLDEsMSw5LDcsNyw3LDcsNyw3LDEwLDcsNyw3LDgsNSwyLDgsNyw3XQ=='
+    );
 }
 
