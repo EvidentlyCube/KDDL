@@ -10,54 +10,95 @@ import { Progress } from "src/game/global/Progress";
 import { Room } from "src/game/global/Room";
 import { VODemoRecord } from "src/game/managers/VODemoRecord";
 import { TStateGame } from "src/game/states/TStateGame";
+import { TStateInitialize } from "src/game/states/TStateInitialize";
 import { TStatePreloader } from "src/game/states/TStatePreloader";
 import { TStateTitle } from "src/game/states/TStateTitle";
 import { TWidgetMinimap } from "src/game/widgets/TWidgetMinimap";
 import { S } from "src/S";
+import { attr, intAttr } from "src/XML";
 
 let isInterruptingDemoPlayback = false;
 
 export const KddlApi = {
+    async waitForInit() {
+        await waitForState(TStatePreloader);
+    },
     async loadHold(holdId: HoldId): Promise<void> {
+        console.log(`kddlApi.loadHold(${holdId})`);
+
         const { currentState } = RecamelCore;
+
         if (currentState instanceof TStatePreloader) {
+            console.log(`kddlApi.loadHold() -> In preloader, trying to find hold...`);
             const hold = S.allHoldOptions.find(hold => hold.id === holdId);
 
             if (!hold) {
+                console.log(`kddlApi.loadHold() -> Hold not found`);
                 return;
             }
 
+            console.log(`kddlApi.loadHold() -> Starting game`);
             currentState.handleGameStart(hold);
             await waitForState(TStateTitle);
 
         } else if (currentState instanceof TStateTitle) {
+            console.log(`kddlApi.loadHold() -> On Title Screen...`);
+            if (S.currentHoldOptions?.id === holdId) {
+                console.log(`kddlApi.loadHold() -> And the hold is already loaded.`);
+                return;
+            }
+
+            console.log(`kddlApi.loadHold() -> Returning to hold selection`);
             currentState.API_changeHold();
             await waitForState(TStatePreloader);
 
             return this.loadHold(holdId);
 
-        } else {
-            TStateTitle.show();
+        } else if (currentState instanceof TStateInitialize) {
+            console.log(`kddlApi.loadHold() -> In Initialize state`);
             await waitForState(TStateTitle);
 
             return this.loadHold(holdId);
         }
     },
 
-    async drawLevel(levelId: number) {
-        const minimap = new TWidgetMinimap(200, 200);
-        const levelCanvas = minimap.API_drawLevel(levelId);
+    async drawLevel(levelGidIndex: number) {
+        console.log(`kddlApi.drawLevel(${levelGidIndex})`);
+        const levelId = Level.getLevelIdByGidIndex(levelGidIndex);
 
-        return canvasToPng(levelCanvas);
+        if (levelId) {
+            console.log(`kddlApi.drawLevel() -> levelId=${levelId}`);
+            const minimap = new TWidgetMinimap(1024, 1024);
+            const levelCanvas = minimap.API_drawLevel(levelId);
+
+            return canvasToPng(levelCanvas);
+
+        } else {
+            console.log(`kddlApi.drawLevel() -> No level ID found`);
+            console.log("All level GIDs are:" + Level.getAllLevels().map(level => intAttr(level, 'GID_LevelIndex')).join(", "));
+            return false;
+        }
     },
 
-    async drawRoom(roomPid: string) {
+    async drawRoom(levelGidIndex: number, roomX: number, roomY: number) {
+        console.log(`kddlApi.drawRoom(${levelGidIndex}, ${roomX}, ${roomY})`);
+        const levelId = Level.getLevelIdByGidIndex(levelGidIndex);
+        if (!levelId) {
+            throw new Error(`No level found for GID_LevelIndex='${levelGidIndex}'`);
+        }
+
+        console.log(`kddlApi.drawRoom() - LevelId = ${levelId}`);
+        const roomXml = Level.getRoomByInLevelPosition(levelId, roomX, roomY)
+        if (!roomXml) {
+            throw new Error(`No room found for GID_LevelIndex='${levelGidIndex}' at coordinates (${roomX}, ${roomY})`);
+        }
+
         const room = new Room();
 
         try {
-            room.loadRoom(roomPid);
+            room.loadRoom(attr(roomXml, 'RoomPID'));
         } catch (e: unknown) {
-            return -1;
+            throw new Error(`Failed to load room: ${String(e)}`);
         }
 
         try {
@@ -84,24 +125,54 @@ export const KddlApi = {
         }
     },
     testDemo(demoData: string) {
+        console.log(`kddlApi.testDemo([string ${demoData.length} chars])`);
+
         const { isSpiderMode } = S;
         S.isSpiderMode = true;
 
-        const demo = new VODemoRecord("", demoData);
+        let demo: VODemoRecord;
+        try {
+            demo = new VODemoRecord("", demoData);
+        } catch (e) {
+            throw new Error(`kddlApi.testDemo() -> Error when loading the demo: ${String(e)}`);
+        }
 
         const roomPid = demo.roomPid;
         const px = demo.startX;
         const py = demo.startY;
         const po = demo.startO;
 
-        Progress.restoreToDemo(demo);
-        Game.loadFromRoom(roomPid, px, py, po);
-        Commands.fromString(demo.demoBuffer);
+        if (!Level.isValidRoomPid(roomPid)) {
+            throw new Error(`kddlApi.testDemo() -> Room ${roomPid} does not exist in current hold.`);
+        }
+
+        console.log(`kddlApi.testDemo() -> Restoring to demo`);
+        try {
+            Progress.restoreToDemo(demo);
+        } catch (e) {
+            throw new Error(`kddlApi.testDemo() -> Error when restoring: ${String(e)}`);
+        }
+
+        console.log(`kddlApi.testDemo() -> Loading game`);
+        try {
+            Game.loadFromRoom(roomPid, px, py, po);
+        } catch (e) {
+            throw new Error(`kddlApi.testDemo() -> Error when loading game: ${String(e)}`);
+        }
+
+
+        console.log(`kddlApi.testDemo() -> Loading commands`);
+        try {
+            Commands.fromString(demo.demoBuffer);
+        } catch (e) {
+            throw new Error(`kddlApi.testDemo() -> Error when loading commands: ${String(e)}`);
+        }
 
         let roomConquered = false;
         let roomExited = false;
 
         try {
+            console.log(`kddlApi.testDemo() -> Starting playback`);
             Commands.freeze();
 
             let nextMove = Commands.getFirst();
@@ -134,6 +205,7 @@ export const KddlApi = {
             return 0;
 
         } catch (e: unknown) {
+            console.log(`kddlApi.testDemo() -> Playback error: ${String(e)}`);
             return -3;
         } finally {
             Game.room.clear();
@@ -266,12 +338,14 @@ async function canvasToPng(canvas: HTMLCanvasElement) {
         pngArray[i] = binary.charCodeAt(i);
     }
 
-    return pngArray;
+    return Array.from(pngArray).map(i => i.toString(16).padStart(2, '0')).join('');
 }
 
 async function waitForState(stateType: any) {
+    console.log(`kddlApi.loadHold() -> Waiting for state...`);
     while (true) {
         if (RecamelCore.currentState instanceof stateType) {
+            console.log(`kddlApi.loadHold() -> State loaded!`);
             return;
         }
 

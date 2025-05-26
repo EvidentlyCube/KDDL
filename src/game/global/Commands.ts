@@ -15,11 +15,11 @@ export class Commands {
 	private static _index: number = 0;
 
 	public static add(command: number) {
-		Commands._list.push({command});
+		Commands._list.push({ command });
 	}
 
 	public static addWithData(command: number, wx: number, wy: number) {
-		Commands._list.push({command: command, wx: wx, wy: wy});
+		Commands._list.push({ command: command, wx: wx, wy: wy });
 	}
 
 	public static clear() {
@@ -90,14 +90,43 @@ export class Commands {
 	}
 
 	public static toString(): string {
-		return JSON.stringify(this._list);
+		return JSON.stringify(this._list.map(({ command, wx, wy }) => {
+			if (wx !== undefined || wy !== undefined) {
+				return [command, wx, wy];
+			} else {
+				return command;
+			}
+		}));
 	}
 
 	public static fromString(buffer: string) {
 		try {
-			Commands._list = JSON.parse(buffer);
-			if (!Array.isArray(Commands._list)) {
-				Commands._list = [];
+			Commands._list = [];
+
+			const moves = JSON.parse(buffer)
+			if (Array.isArray(moves)) {
+				for (const move of moves) {
+					if (Array.isArray(move)) {
+						Commands._list.push({
+							command: moves[0],
+							wx: move[1] ?? undefined,
+							wy: move[2] ?? undefined,
+						});
+
+					} else if (typeof move === 'object') {
+						Commands._list.push({
+							command: move.command ?? C.CMD_WAIT,
+							wx: move.wx ?? undefined,
+							wy: move.wy ?? undefined
+						});
+
+					} else if (typeof move === 'number') {
+						Commands._list.push({ command: move });
+
+					} else {
+						throw new Error("Invalid demo");
+					}
+				}
 			}
 
 		} catch (e) {

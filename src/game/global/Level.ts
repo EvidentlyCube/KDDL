@@ -90,6 +90,13 @@ export class Level {
 		return intAttr(Level.getLevelByID(levelId), 'GID_LevelIndex');
 	}
 
+	public static getLevelIdByGidIndex(levelGidIndex: number): number | undefined {
+		const level =  Level.getAllLevels()
+			.find(level => intAttr(level, 'GID_LevelIndex') === levelGidIndex);
+
+		return level ? intAttr(level, 'LevelID') : undefined;
+	}
+
 	public static getLevelIdByRoomPid(roomPid: string): number {
 		return Level.$roomPidToLevelIdMap.get(roomPid) ?? 0;
 	}
@@ -146,6 +153,16 @@ export class Level {
 		const roomPid = Level.$roomPosToRoomPidMap.get(`${x}:${y}`);
 
 		return Level.getRoomStrict(roomPid ?? "0");
+	}
+
+	public static getRoomByInLevelPosition(levelId: number, x: number, y: number): Element | undefined {
+		const entrance = Level.getEntranceMainByLevelID(levelId);
+		const entranceRoomPid = attr(entrance, 'RoomPID');
+		const entranceRoom = Level.getRoom(entranceRoomPid);
+		const entranceRoomX = intAttr(entranceRoom, 'RoomX');
+		const entranceRoomY = intAttr(entranceRoom, 'RoomY');
+
+		return Level.getRoomByPosition(entranceRoomX + x, entranceRoomY + y);
 	}
 
 	public static getRoomPidByNeighbourPid(roomPid: string, orientation: number): string | undefined {
@@ -236,8 +253,8 @@ export class Level {
 		return variableNameToId.get(name) ?? "";
 	}
 
-	public static getEntranceMainByLevelID(levelID: number): Element {
-		const roomPids = Level.getRoomPidsByLevel(levelID);
+	public static getEntranceMainByLevelID(levelId: number): Element {
+		const roomPids = Level.getRoomPidsByLevel(levelId);
 
 		for (const roomPid of roomPids) {
 			const entrances = Level.getEntrancesByRoomPid(roomPid);

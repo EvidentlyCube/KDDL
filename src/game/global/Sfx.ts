@@ -228,8 +228,6 @@ export class Sfx {
 			return;
 		}
 
-		console.log(`CROSS FADE MUSIC ${music} DURATION=${fadeDuration}`);
-
 		for (const fade of Array.from(Sfx._musicFades.values())) {
 			Sfx._musicFades.set(fade.channel, fade.toFadeOut(fadeDuration));
 		}
@@ -263,8 +261,6 @@ export class Sfx {
 
 	private static fadeFinishedCallback(effect: RecamelEffect | undefined) {
 		if (effect) {
-			const e = effect as TEffMusicFade;
-			console.log(`${e.channel.name} -> Fade Finish V=${e.channel.volume.toFixed(2)}`);
 			Sfx._musicFades.delete((effect as TEffMusicFade).channel);
 		}
 	}

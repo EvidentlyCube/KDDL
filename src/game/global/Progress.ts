@@ -120,9 +120,23 @@ export class Progress {
 		const result = demo.saveDemo(Game.turnNo, Progress._currentState);
 
 		if (result) {
-			PermanentStore.holds[HoldInfo().id].demos.value = Array.from(Progress._roomPidToDemo.values())
-				.map(demo => demo.serialize());
+			Progress.saveProgress_demos();
 		}
+	}
+
+	public static forgetDemo(roomPid: string) {
+		if (!Progress._roomPidToDemo.has(roomPid)) {
+			return false;
+		}
+
+		Progress._roomPidToDemo.delete(roomPid);
+		this.saveProgress_demos();
+		return true;
+	}
+
+	private static saveProgress_demos() {
+		PermanentStore.holds[HoldInfo().id].demos.value = Array.from(Progress._roomPidToDemo.values())
+			.map(demo => demo.serialize());
 	}
 
 	private static saveProgress_gameCompleted() {
@@ -249,7 +263,7 @@ export class Progress {
 
 		} else if (
 			!Progress.isRoomConquered(roomPid)
-			 && Progress._currentState.countConqueredRooms() >= currentEntranceState.countConqueredRooms()
+			&& Progress._currentState.countConqueredRooms() >= currentEntranceState.countConqueredRooms()
 		) {
 			Progress.replaceRoomEntranceState(currentEntranceState, Progress._currentState.clone());
 			Progress._forceFullSave = true;
@@ -518,11 +532,11 @@ export class Progress {
 	}
 }
 
-
 DebugConsole.registerAction('progress', 'Commands that related to progress. Invoke with no arguments for more information', args => {
 	if (args.length === 0) {
 		DebugConsole.appendLine(' ⟶ **forget-mastery** - Remove mastery');
 		DebugConsole.appendLine(' ⟶ **forget-completion** - Remove hold completion');
+		DebugConsole.appendLine(' ⟶ **forget-demo** - Delete the demo for the current room');
 		return;
 	}
 
@@ -537,7 +551,45 @@ DebugConsole.registerAction('progress', 'Commands that related to progress. Invo
 			DebugConsole.appendLine('Hold completion removed.');
 			break;
 
+		case 'forget-demo':
+			if (!Game.room?.roomPid) {
+				throw new Error("Room not loaded");
+			}
+
+			if (Progress.forgetDemo(Game.room.roomPid)) {
+				DebugConsole.appendLine('Demo forgotten.');
+			} else {
+				throw new Error("Room has no demo.");
+			}
+			break;
+
 		default:
 			throw new Error("Unknown argument");
 	}
-})
+});
+
+DebugConsole.registerAction('export', 'Command for exporting something to the clipboard. Invoke with no arguments for more information', args => {
+	if (args.length === 0) {
+		DebugConsole.appendLine(" ⟶ **demo** - Export current room's demo");
+		return;
+	}
+
+	switch (args[0]) {
+		case 'demo':
+			if (!Game.room?.roomPid) {
+				throw new Error("Room not loaded");
+			}
+
+			const demo = Progress.getRoomDemo(Game.room.roomPid);
+			if (demo.hasScore) {
+				navigator.clipboard.writeText(demo.serialize());
+				DebugConsole.appendLine('Demo copied to clipboard.');
+			} else {
+				throw new Error("Room has no demo");
+			}
+			break;
+
+		default:
+			throw new Error("Unknown argument");
+	}
+});

@@ -29,6 +29,7 @@ import { permanentStoreUpgradeToV2 } from "src/game/global/store/permanentStoreU
 import { Progress } from "src/game/global/Progress";
 import { PermanentStore } from "src/game/global/store/PermanentStore";
 import { Level } from "src/game/global/Level";
+import { Game } from "src/game/global/Game";
 
 require('../../src.assets/font/toms-new-roman.css');
 
@@ -36,6 +37,7 @@ export class Bootstrap {
 	public static async bootstrap() {
 		exposeValue('Bootstrap', Bootstrap);
 		exposeValue('Progress', Progress);
+		exposeValue('Game', Game);
 		exposeValue('Level', Level);
 		exposeValue('PermanentStoreSlot', PermanentStoreSlot);
 		exposeValue('PermanentStore', PermanentStore);

@@ -1,16 +1,15 @@
-import * as PIXI from 'pixi.js';
-
 import {RecamelEffectScreen} from "./RecamelEffectScreen";
 import {RecamelCore} from "../core/RecamelCore";
 import {RecamelDisplay} from "../core/RecamelDisplay";
 import {RecamelEffectEndCallback} from "./RecamelEffect";
 import {S} from "../../../../../src/S";
+import { RenderTexture, Sprite } from "pixi.js";
 
 export class RecamelEffectScreenshot extends RecamelEffectScreen {
-	private readonly _texture: PIXI.RenderTexture;
-	private readonly _screenshot: PIXI.Sprite;
+	private readonly _texture: RenderTexture;
+	private readonly _screenshot: Sprite;
 
-	public get screenshot(): PIXI.Sprite {
+	public get screenshot(): Sprite {
 		return this._screenshot;
 	}
 
@@ -20,14 +19,20 @@ export class RecamelEffectScreenshot extends RecamelEffectScreen {
 	) {
 		super(duration, callback);
 
-		this._texture = PIXI.RenderTexture.create(S.SIZE_GAME_WIDTH, S.SIZE_GAME_HEIGHT);
+		this._texture = RenderTexture.create({
+			width: S.SIZE_GAME_WIDTH,
+			height: S.SIZE_GAME_HEIGHT
+		});
 
 		const oldScale = RecamelDisplay.application.scale.x;
 		RecamelDisplay.application.scale.set(1, 1);
-		(RecamelCore.app.renderer as PIXI.Renderer).render(RecamelDisplay.application, this._texture, true);
+		RecamelCore.renderer.render(RecamelDisplay.application, {
+			renderTexture: this._texture,
+			clear: true
+		});
 		RecamelDisplay.application.scale.set(oldScale, oldScale);
 
-		this._screenshot = new PIXI.Sprite(this._texture);
+		this._screenshot = new Sprite(this._texture);
 
 		this.layer.add(this._screenshot);
 	}

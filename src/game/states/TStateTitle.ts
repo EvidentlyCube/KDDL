@@ -360,6 +360,7 @@ export class TStateTitle extends RecamelState {
 
 		new RecamelEffectFade(screenshot.layer.displayObject, 1, 0, 500, screenshot.stop);
 		screenshot.moveForward();
+		S.currentHoldOptions = undefined;
 	}
 
 	private onLogoClicked = (e: PIXI.InteractionEvent) => {
