@@ -63,6 +63,7 @@ export const KddlApi = {
     },
 
     async drawLevel(levelGidIndex: number) {
+        levelGidIndex = parseInt(String(levelGidIndex));
         console.log(`kddlApi.drawLevel(${levelGidIndex})`);
         const levelId = Level.getLevelIdByGidIndex(levelGidIndex);
 
@@ -80,23 +81,19 @@ export const KddlApi = {
         }
     },
 
-    async drawRoom(levelGidIndex: number, roomX: number, roomY: number) {
-        console.log(`kddlApi.drawRoom(${levelGidIndex}, ${roomX}, ${roomY})`);
-        const levelId = Level.getLevelIdByGidIndex(levelGidIndex);
-        if (!levelId) {
-            throw new Error(`No level found for GID_LevelIndex='${levelGidIndex}'`);
-        }
+    async drawRoom(roomPid: string) {
+        console.log(`kddlApi.drawRoom(${roomPid})`);
 
-        console.log(`kddlApi.drawRoom() - LevelId = ${levelId}`);
-        const roomXml = Level.getRoomByInLevelPosition(levelId, roomX, roomY)
-        if (!roomXml) {
-            throw new Error(`No room found for GID_LevelIndex='${levelGidIndex}' at coordinates (${roomX}, ${roomY})`);
+        if (!Level.isValidRoomPid(roomPid)) {
+            console.log(typeof roomPid);
+            console.log(JSON.stringify(roomPid));
+            throw new Error(`Invalid RoomPID '${roomPid}'`);
         }
 
         const room = new Room();
 
         try {
-            room.loadRoom(attr(roomXml, 'RoomPID'));
+            room.loadRoom(roomPid);
         } catch (e: unknown) {
             throw new Error(`Failed to load room: ${String(e)}`);
         }
@@ -118,7 +115,7 @@ export const KddlApi = {
             const canvas = RecamelCore.extract.canvas(texture);
             texture.destroy(true);
 
-            return canvasToPng(canvas);
+            return canvasToJpg(canvas);
 
         } catch (e: unknown) {
             return -3;
@@ -212,6 +209,12 @@ export const KddlApi = {
             Game.room = undefined!;
             S.isSpiderMode = isSpiderMode;
         }
+    },
+    getAllLevelGidIndexes() {
+        return Level.getAllLevels().map(xml => intAttr(xml, 'GID_LevelIndex'));
+    },
+    getAllRoomPids() {
+        return Level.getAllRoomPids();
     },
     getRoomPidsWithDemos() {
         return Progress.getRoomPidsWithDemo();
@@ -339,6 +342,17 @@ async function canvasToPng(canvas: HTMLCanvasElement) {
     }
 
     return Array.from(pngArray).map(i => i.toString(16).padStart(2, '0')).join('');
+}
+
+async function canvasToJpg(canvas: HTMLCanvasElement) {
+    const dataUrl = canvas.toDataURL('image/jpeg', 0.8);
+    const binary = atob(dataUrl.split(',')[1]);
+    const jpgArray = new Uint8Array(binary.length);
+    for (let i = 0; i < binary.length; i++) {
+        jpgArray[i] = binary.charCodeAt(i);
+    }
+
+    return Array.from(jpgArray).map(i => i.toString(16).padStart(2, '0')).join('');
 }
 
 async function waitForState(stateType: any) {
