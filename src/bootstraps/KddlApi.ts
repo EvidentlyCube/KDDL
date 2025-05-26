@@ -52,13 +52,15 @@ export const KddlApi = {
             currentState.API_changeHold();
             await waitForState(TStatePreloader);
 
-            return this.loadHold(holdId);
+            return KddlApi.loadHold(holdId);
 
         } else if (currentState instanceof TStateInitialize) {
             console.log(`kddlApi.loadHold() -> In Initialize state`);
             await waitForState(TStateTitle);
 
-            return this.loadHold(holdId);
+            return KddlApi.loadHold(holdId);
+        } else {
+
         }
     },
 
