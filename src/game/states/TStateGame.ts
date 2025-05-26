@@ -25,7 +25,7 @@ import { Gfx } from "../global/Gfx";
 import { HelpRoomOpener } from "../global/HelpRoomOpener";
 import { Level } from "../global/Level";
 import { Progress } from "../global/Progress";
-import { Sfx } from "../global/Sfx";
+import { MusicType, Sfx } from "../global/Sfx";
 import { VOCoord } from "../managers/VOCoord";
 import { MonsterMessageType } from "../managers/VOMonsterMessage";
 import { TCharacter } from "../objects/actives/TCharacter";
@@ -305,7 +305,7 @@ export class TStateGame extends RecamelState {
 				new TStateOutro();
 				Game.isGameActive = false;
 
-				Sfx.playMusic(C.MUSIC_LEVEL_EXIT);
+				Sfx.playMusic(MusicType.LevelExit);
 			}
 
 		}
@@ -688,7 +688,7 @@ export class TStateGame extends RecamelState {
 				this.isStopEffectKeyReleased = false;
 				this.isStopEffectKeyCount = RawInput.keyDownCount;
 
-				Sfx.playMusic(C.MUSIC_LEVEL_EXIT);
+				Sfx.playMusic(MusicType.LevelExit);
 
 			} else if (CueEvents.hasOccurred(C.CID_WIN_GAME)) {
 				const screenshot = new RecamelEffectScreenshot(2500);
@@ -699,7 +699,7 @@ export class TStateGame extends RecamelState {
 				Progress.isGameCompleted = true;
 				Game.isGameActive = false;
 
-				Sfx.playMusic(C.MUSIC_LEVEL_EXIT);
+				Sfx.playMusic(MusicType.LevelExit);
 
 			} else {
 				const coords = CueEvents.getFirstPrivateData(C.CID_EXIT_LEVEL_PENDING);
@@ -995,7 +995,9 @@ export class TStateGame extends RecamelState {
 		}
 
 		if (CueEvents.hasOccurred(C.CID_TAR_BABY_FORMED)) {
-			TStateGame.updateMusicState();
+			if (Sfx.currentMusicType === MusicType.Ambient) {
+				TStateGame.updateMusicState();
+			}
 
 			if (this.isRoomClearedOnce && !this.areMonstersInRoom && Game.room.monsterCount) {
 				this.areMonstersInRoom = true;
@@ -1076,11 +1078,11 @@ export class TStateGame extends RecamelState {
 		const monsterCount: number = Game.room.monsterCount;
 
 		if (monsterCount == 0) {
-			Sfx.crossFadeMusic(C.MUSIC_AMBIENT);
+			Sfx.crossFadeMusic(MusicType.Ambient);
 		} else if (monsterCount < 30) {
-			Sfx.crossFadeMusic(C.MUSIC_PUZZLE);
+			Sfx.crossFadeMusic(MusicType.Puzzle);
 		} else {
-			Sfx.crossFadeMusic(C.MUSIC_ACTION);
+			Sfx.crossFadeMusic(MusicType.Action);
 		}
 	}
 

@@ -12,6 +12,14 @@ import { TEffMusicFade } from "../interfaces/TEffMusicFade";
 
 const soundsMap = new Map<string, NutkaDefinition>();
 
+export enum MusicType {
+	Title = "musicTitle",
+	Ambient = "musicAmbient",
+	Puzzle = "musicPuzzle",
+	Action = "musicAction",
+	Outro = "musicOutro",
+	LevelExit = "musicExit",
+}
 
 export class Sfx {
 
@@ -170,27 +178,27 @@ export class Sfx {
 		soundsMap.set('trapdoor_2', ResourcesQueue.getSound(C.RES_SFX_TRAPDOOR2)); //play("trapdoor",       3)
 		soundsMap.set('trapdoor_3', ResourcesQueue.getSound(C.RES_SFX_TRAPDOOR3)); //play("trapdoor",       3)
 
-		Sfx._musicLibrary.set(C.MUSIC_TITLE, [
+		Sfx._musicLibrary.set(MusicType.Title, [
 			new NutkaMusic(ResourcesQueue.getSound(C.RES_MUSIC_TITLE), "Title"),
 		]);
-		Sfx._musicLibrary.set(C.MUSIC_OUTRO, [
+		Sfx._musicLibrary.set(MusicType.Outro, [
 			new NutkaMusic(ResourcesQueue.getSound(C.RES_MUSIC_CREDITS), "Outro"),
 		]);
 	}
 
 	public static initializeHold(hold: HoldOptions) {
-		Sfx._musicLibrary.set(C.MUSIC_PUZZLE, [
+		Sfx._musicLibrary.set(MusicType.Puzzle, [
 			new NutkaMusic(ResourcesQueue.getSound(hold.music.puzzle1), "Puzzle 1"),
 			new NutkaMusic(ResourcesQueue.getSound(hold.music.puzzle2), "Puzzle 2"),
 		]);
-		Sfx._musicLibrary.set(C.MUSIC_ACTION, [
+		Sfx._musicLibrary.set(MusicType.Action, [
 			new NutkaMusic(ResourcesQueue.getSound(hold.music.attack1), "Attack 1"),
 			new NutkaMusic(ResourcesQueue.getSound(hold.music.attack2), "Attack 2"),
 		]);
-		Sfx._musicLibrary.set(C.MUSIC_AMBIENT, [
+		Sfx._musicLibrary.set(MusicType.Ambient, [
 			new NutkaMusic(ResourcesQueue.getSound(hold.music.ambient), "Ambient"),
 		]);
-		Sfx._musicLibrary.set(C.MUSIC_LEVEL_EXIT, [
+		Sfx._musicLibrary.set(MusicType.LevelExit, [
 			new NutkaMusic(ResourcesQueue.getSound(hold.music.winLevel), "Level Exit"),
 		]);
 
@@ -199,32 +207,36 @@ export class Sfx {
 	}
 
 
-	private static _currentMusic: string;
+	private static _currentMusicType?: MusicType;
 	private static _currentChannel: NutkaMusic | null;
 
 	private static _musicFades = new Map<NutkaMusic, TEffMusicFade>();
-	private static _musicLibrary = new Map<string, NutkaMusic[]>();
+	private static _musicLibrary = new Map<MusicType, NutkaMusic[]>();
 
-	public static getMusicInstance(musicName: string): NutkaMusic {
-		let music = Sfx._musicLibrary.get(musicName)!;
+	public static get currentMusicType() {
+		return Sfx._currentMusicType;
+	}
+
+	public static getMusicInstance(musicType: MusicType): NutkaMusic {
+		let music = Sfx._musicLibrary.get(musicType)!;
 
 		if (!music) {
-			throw new Error(`Filed to find music '${musicName}'`);
+			throw new Error(`Filed to find music '${musicType}'`);
 		}
 
 		return UtilsRandom.from(music);
 	}
 
-	public static playMusic(music: string) {
-		return this.crossFadeMusic(music, 250);
+	public static playMusic(musicType: MusicType) {
+		return this.crossFadeMusic(musicType, 250);
 	}
 
 	public static update() {
 		// Do nothing
 	}
 
-	public static crossFadeMusic(music: string, fadeDuration = 2500) {
-		if (music == Sfx._currentMusic) {
+	public static crossFadeMusic(musicType?: MusicType, fadeDuration = 2500) {
+		if (musicType == Sfx._currentMusicType) {
 			return;
 		}
 
@@ -240,14 +252,14 @@ export class Sfx {
 			Sfx._musicFades.set(Sfx._currentChannel, fade.toFadeOut(fadeDuration))
 		}
 
-		if (!music) {
-			Sfx._currentMusic = "";
+		if (!musicType) {
+			Sfx._currentMusicType = undefined;
 			Sfx._currentChannel = null;
 			return;
 		}
 
-		Sfx._currentMusic = music;
-		Sfx._currentChannel = Sfx.getMusicInstance(music);
+		Sfx._currentMusicType = musicType;
+		Sfx._currentChannel = Sfx.getMusicInstance(musicType);
 		ASSERT(Sfx._currentChannel);
 		Sfx._currentChannel.isLooping = true;
 		Sfx._currentChannel.play();

@@ -9,7 +9,7 @@ import {_} from "../../../src.framework/_";
 import {Core} from "../global/Core";
 import {RecamelEffectFade} from "../../../src.framework/net/retrocade/camel/effects/RecamelEffectFade";
 import RawInput from "../../../src.tn/RawInput";
-import {Sfx} from "../global/Sfx";
+import {MusicType, Sfx} from "../global/Sfx";
 import {C} from "../../C";
 import {Game} from "../global/Game";
 import { TStateTitle } from './TStateTitle';
@@ -61,7 +61,7 @@ export class TStateOutro extends RecamelState {
 			}
 		});
 
-		Sfx.crossFadeMusic(C.MUSIC_OUTRO);
+		Sfx.crossFadeMusic(MusicType.Outro);
 	}
 
 	public destroy() {

@@ -19,7 +19,7 @@ import { PlatformOptions } from "../../platform/PlatformOptions";
 import { TStateRestore } from "./TStateRestore";
 import { TWindowOptions } from "../windows/TWindowOptions";
 import { TWindowHelp } from "../windows/TWindowHelp";
-import { Sfx } from "../global/Sfx";
+import { MusicType, Sfx } from "../global/Sfx";
 import { C } from "../../C";
 import { ResourcesQueue } from "../../resources/mainGame/ResourcesQueue";
 import { RecamelSprite } from "../../../src.framework/net/retrocade/camel/core/RecamelSprite";
@@ -203,7 +203,7 @@ export class TStateTitle extends RecamelState {
 
 		this.update();
 
-		Sfx.playMusic(C.MUSIC_TITLE);
+		Sfx.playMusic(MusicType.Title);
 
 		// new RecamelEffectFadeScreen(0, 1, 0, 600);
 
@@ -356,7 +356,7 @@ export class TStateTitle extends RecamelState {
 			Game.room = undefined!
 		}
 
-		Sfx.crossFadeMusic("");
+		Sfx.crossFadeMusic(undefined);
 
 		new RecamelEffectFade(screenshot.layer.displayObject, 1, 0, 500, screenshot.stop);
 		screenshot.moveForward();

@@ -1,10 +1,14 @@
-## 1.6.16 - ????-??-??
+## 1.6.17 - ????-??-??
+ - [BUGFIX] Music will no longer go from Attack to Puzzle when tar babies get formed and there are less than 30 enemies in the room
+
+## 1.6.16 - 2025-05-26
  - [BUGFIX] Episode 6 ⟶ Level 25: 2S2W, 'Neather no longer comes close enough to be stabbed from the top arrows
  - [BUGFIX] Minimap rooms no longer have the right half offset by one pixel down
  - [BUGFIX] Minimap minimap no longer uses fractional numbers for positioning the minimap which caused additional blurring
  - [BUGFIX] Hold Mastery flash message now appears as soon as you start new game/continue/restore if you fit the criteria for achieving mastery
  - [BUGFIX] Visual effects no longer appear outside room area
  - [FEATURE] Minimap can now be clicked in-game to look at rooms
+ - {1.6.16.1} [BUGFIX] Episode 6, reaching the post mastery area no longer requires using a bug in scripting left for 'Neather stabbity stab achievement
 
 ## 1.6.15 - 2025-05-23
  - [BUGFIX] Episode 3, fixed the first two achievements not displaying their title properly
