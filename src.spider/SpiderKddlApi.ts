@@ -1,4 +1,4 @@
-import puppeteer, { Page } from 'puppeteer';
+import puppeteer, { Browser, Page } from 'puppeteer';
 import { SpiderLogger as Log } from './SpiderLogger';
 import chalk from 'chalk';
 import { HoldId } from 'src/C';
@@ -6,6 +6,7 @@ import { HoldId } from 'src/C';
 
 
 let gameUrl = '';
+let browser: Browser | undefined = undefined;
 let page: Page | undefined = undefined;
 
 export const SpiderKddlApi = {
@@ -15,19 +16,7 @@ export const SpiderKddlApi = {
         gameUrl = _gameUrl;
 
         await Log.withIndent(async () => {
-            const browser = await puppeteer.launch({ headless: 'shell' });
-            Log.trace("Browser launched");
-
-            page = await browser.newPage();
-            Log.trace("Page initialized");
-
-            page.on('console', msg => Log.trace(chalk.gray(`    [PAGE] ${msg.text()}`)));
-
-            await page.goto(gameUrl, { waitUntil: 'networkidle0' });
-            Log.trace("Api page loaded");
-
-            Log.debug("Waiting for KddlApi init")
-            await SpiderKddlApi.invoke('waitForInit');
+            await initPage();
 
             Log.trace("KddlApi initialized");
         });
@@ -60,4 +49,27 @@ export const SpiderKddlApi = {
     async ensureHoldIsRunning(holdId: HoldId) {
         await SpiderKddlApi.invoke('loadHold', holdId);
     }
+}
+
+
+async function initPage() {
+    if (browser) {
+        Log.trace("Restarting browser");
+        await browser.close();
+    }
+
+    browser = await puppeteer.launch({ headless: true });
+    Log.trace("Browser launched");
+
+    page = await browser.newPage();
+    Log.trace("Page initialized");
+
+    page.on('console', msg => Log.trace(chalk.gray(`    [PAGE] ${msg.text()}`)));
+
+    await page.goto(gameUrl, { waitUntil: 'networkidle0' });
+    Log.trace("Api page loaded");
+
+    Log.debug("Waiting for KddlApi init")
+    await SpiderKddlApi.invoke('waitForInit');
+
 }

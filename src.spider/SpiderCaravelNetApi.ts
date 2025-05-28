@@ -50,14 +50,14 @@ async function pollHoldNeeded() {
     return await Log.withIndent(async () => {
         const forumHoldId = await data.text();
 
-        if (!forumHoldId) {
+        if (!forumHoldId || forumHoldId === '0') {
+            Log.info(chalk.green('No hold needed'));
             return false;
         }
 
         const holdId = Utils.getHoldId(forumHoldId);
 
         Log.info(`Received request for hold #${forumHoldId} (${holdId})`);
-        await KddlApi.ensureHoldIsRunning(holdId);
 
         const levelGidIndexes = await KddlApi.invoke('getAllLevelGidIndexes');
         const roomPids = await KddlApi.invoke('getAllRoomPids');
@@ -86,7 +86,7 @@ async function pollHoldNeeded() {
         });
 
         await Log.withIndent(async () => {
-            await handleMarkAsDone(forumHoldId);
+            await handleMarkAsDone(forumHoldId, holdId);
         });
 
         return true;
@@ -145,34 +145,35 @@ async function handleRoomScreenshot(
         return;
     }
 
-    Log.info(`Handling room screenshot for ${holdId} -> ${roomPid}`);
+    Log.info(chalk.yellow(`Handling room screenshot for ${holdId} (ID=${forumHoldId}) -> ${roomPid}`));
 
-    await KddlApi.ensureHoldIsRunning(holdId);
+    await Log.withIndent(async () => {
+        await KddlApi.ensureHoldIsRunning(holdId);
 
-    await Log.catchError(async () => {
-        // -- DRAW ROOM
-        const jpgDataHex = await KddlApi.invoke('drawRoom', roomPid);
-        const jpgData = Buffer.from(jpgDataHex, 'hex');
+        await Log.catchError(async () => {
+            // -- DRAW ROOM
+            const jpgDataHex = await KddlApi.invoke('drawRoom', roomPid);
+            const jpgData = Buffer.from(jpgDataHex, 'hex');
 
-        Log.debug(`Received ${jpgData.length} bytes`);
+            Log.debug(`Received ${jpgData.length} bytes`);
 
+            // -- UPLOAD DRAWN ROOM
+            const roomUploadResult = await invoke('uploadroom', {
+                json: JSON.stringify({
+                    secret: apiSecret,
+                    holdId: forumHoldId,
+                    roomId: `${levelGidIndex}:${roomOffsetX}:${roomOffsetY}`,
+                    image: jpgData.toString('base64'),
+                })
+            });
 
-        // -- UPLOAD DRAWN ROOM
-        const roomUploadResult = await invoke('uploadroom', {
-            json: JSON.stringify({
-                secret: apiSecret,
-                holdId: forumHoldId,
-                roomId: `${levelGidIndex}:${roomOffsetX}:${roomOffsetY}`,
-                image: jpgData.toString('base64'),
-            })
+            // -- LOG
+            if (roomUploadResult) {
+                Log.trace(`STATUS CODE = ${roomUploadResult.status}`);
+                Log.trace(`BODY = ${await roomUploadResult.text()}`);
+            }
+            Log.info(chalk.green("Done!"));
         });
-
-        // -- LOG
-        if (roomUploadResult) {
-            Log.trace(`STATUS CODE = ${roomUploadResult.status}`);
-            Log.trace(`BODY = ${await roomUploadResult.text()}`);
-        }
-        Log.info(chalk.green("Done!"));
     });
 }
 
@@ -187,34 +188,35 @@ async function handleLevelScreenshot(
         return;
     }
 
-    Log.info(`Handling level screenshot for ${holdId} -> ${levelGidIndex}`);
+    Log.info(chalk.yellow(`Handling level screenshot for ${holdId} (ID=${forumHoldId}) -> ${levelGidIndex}`));
 
-    await KddlApi.ensureHoldIsRunning(holdId);
+    await Log.withIndent(async () => {
+        await KddlApi.ensureHoldIsRunning(holdId);
 
-    await Log.catchError(async () => {
-        // -- DRAW LEVEL
-        const pngDataHex = await KddlApi.invoke('drawLevel', levelGidIndex);
-        const pngData = Buffer.from(pngDataHex, 'hex');
+        await Log.catchError(async () => {
+            // -- DRAW LEVEL
+            const pngDataHex = await KddlApi.invoke('drawLevel', levelGidIndex);
+            const pngData = Buffer.from(pngDataHex, 'hex');
 
-        Log.debug(`Received ${pngData.length} bytes`);
+            Log.debug(`Received ${pngData.length} bytes`);
 
+            // -- UPLOAD DRAWN LEVEL
+            const levelUploadResult = await invoke('uploadlevel', {
+                json: JSON.stringify({
+                    secret: apiSecret,
+                    holdId: forumHoldId,
+                    levelId: levelGidIndex.toString(),
+                    image: pngData.toString('base64'),
+                })
+            });
 
-        // -- UPLOAD DRAWN LEVEL
-        const levelUploadResult = await invoke('uploadlevel', {
-            json: JSON.stringify({
-                secret: apiSecret,
-                holdId: forumHoldId,
-                levelId: levelGidIndex.toString(),
-                image: pngData.toString('base64'),
-            })
+            if (levelUploadResult) {
+                Log.trace(`STATUS CODE = ${levelUploadResult.status}`);
+                Log.trace(`BODY = ${await levelUploadResult.text()}`);
+            }
+
+            Log.info(chalk.green("Done!"));
         });
-
-        if (levelUploadResult) {
-            Log.trace(`STATUS CODE = ${levelUploadResult.status}`);
-            Log.trace(`BODY = ${await levelUploadResult.text()}`);
-        }
-
-        Log.info(chalk.green("Done!"));
     });
 }
 
@@ -237,11 +239,28 @@ async function handleValidateDemo(holdId: HoldId, serializedDemo: string) {
     }
 }
 
-async function handleMarkAsDone(forumHoldId: string) {
+async function handleMarkAsDone(forumHoldId: string, holdId: string) {
     if (SKIP_LEVEL_UPLOADS || SKIP_ROOM_UPLOADS) {
         Log.warn("Skipping marking as done because either room or level image uploads are skipped");
         return;
     }
 
-    // @FIXME
+    Log.info(chalk.yellow(`Handling marking as done for ${holdId} (ID=${forumHoldId})`));
+
+    await Log.withIndent(async () => {
+        const response = await invoke('markasdone', {
+            json: JSON.stringify({
+                secret: apiSecret,
+                holdId: forumHoldId
+            })
+        });
+
+        if (response) {
+            Log.trace(`STATUS CODE = ${response.status}`);
+            Log.trace(`BODY = ${await response.text()}`);
+        }
+
+        Log.info(chalk.green(`Marked as done.`));
+    })
+
 }
