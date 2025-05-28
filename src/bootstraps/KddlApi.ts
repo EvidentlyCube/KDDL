@@ -60,7 +60,7 @@ export const KddlApi = {
 
             return KddlApi.loadHold(holdId);
         } else {
-
+            console.log("ELSE");
         }
     },
 
@@ -221,12 +221,19 @@ export const KddlApi = {
     getRoomPidsWithDemos() {
         return Progress.getRoomPidsWithDemo();
     },
+    getLevelGidIndexForRoomPid(roomPid: string) {
+        const levelId = Level.getLevelIdByRoomPid(roomPid);
+        const level = Level.getLevelByID(levelId);
+        return intAttr(level, 'GID_LevelIndex');
+    },
     getDemo(roomPid: string) {
         return Progress.getRoomDemo(roomPid);
     },
+    getRoomOffsetInLevel(roomPid: string) {
+        return Level.getRoomOffsetInLevel(roomPid);
+    },
     async roomRenderStressTest(attempts = 101) {
         const room = new Room();
-
 
         const tries = [];
         for (let i = 0; i < attempts; i++) {
