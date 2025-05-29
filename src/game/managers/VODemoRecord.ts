@@ -1,9 +1,9 @@
-import { PackedVars } from "../global/PackedVars";
-import { Commands } from "../global/Commands";
-import { UtilsBase64 } from "../../../src.framework/net/retrocade/utils/UtilsBase64";
-import { BinaryReader, BinaryWriter, Encoding } from "csharp-binary-stream";
-import { VORoomEntryState } from "./progress/VORoomEntryState";
+import { BinaryReader, BinaryWriter } from "csharp-binary-stream";
 import { set_clearAndAdd, set_fromJson, set_toJson } from "src.framework/net/retrocade/utils/UtilsSet";
+import { UtilsBase64 } from "../../../src.framework/net/retrocade/utils/UtilsBase64";
+import { Commands } from "../global/Commands";
+import { PackedVars } from "../global/PackedVars";
+import { VORoomEntryState } from "./progress/VORoomEntryState";
 
 const UINT_MAX = 4294967295;
 
@@ -112,38 +112,36 @@ export class VODemoRecord {
 
     public unserialize(data: string) {
         const buffer: Uint8Array = UtilsBase64.decodeByteArray(data);
-
         const reader = new BinaryReader(buffer);
-        this._roomPid = reader.readString(Encoding.Utf8);
+        this._roomPid = reader.readString();
         this._startX = reader.readUnsignedInt();
         this._startY = reader.readUnsignedInt();
         this._startO = reader.readUnsignedInt();
         this._score = reader.readUnsignedInt();
-        this._endedScriptIds = JSON.parse(reader.readString(Encoding.Utf8)) as number[];
-        this._conqueredRoomPids = set_fromJson(reader.readString(Encoding.Utf8));
-        this._exploredRoomPids = set_fromJson(reader.readString(Encoding.Utf8));
-        this._gameVars = new PackedVars(UtilsBase64.decodeByteArray(reader.readString(Encoding.Utf8)));
+        this._endedScriptIds = JSON.parse(reader.readString()) as number[];
+        this._conqueredRoomPids = set_fromJson(reader.readString());
+        this._exploredRoomPids = set_fromJson(reader.readString());
+        this._gameVars = new PackedVars(UtilsBase64.decodeByteArray(reader.readString()));
 
         reader.readUnsignedInt(); // Demo length is read but not needed
-        this._demo = reader.readString(Encoding.Utf8);
+        this._demo = reader.readString();
     }
 
     public serialize(): string {
         const writer = new BinaryWriter();
 
-        writer.writeString(this._roomPid, Encoding.Utf8);
+        writer.writeString(this._roomPid, );
         writer.writeUnsignedInt(this._startX);
         writer.writeUnsignedInt(this._startY);
         writer.writeUnsignedInt(this._startO);
         writer.writeUnsignedInt(this._score);
-        writer.writeString(JSON.stringify(this._endedScriptIds), Encoding.Utf8);
-        writer.writeString(set_toJson(this._conqueredRoomPids), Encoding.Utf8);
-        writer.writeString(set_toJson(this._exploredRoomPids), Encoding.Utf8);
-        writer.writeString(UtilsBase64.encodeByteArray(this._gameVars.pack()), Encoding.Utf8);
+        writer.writeString(JSON.stringify(this._endedScriptIds), );
+        writer.writeString(set_toJson(this._conqueredRoomPids), );
+        writer.writeString(set_toJson(this._exploredRoomPids), );
+        writer.writeString(UtilsBase64.encodeByteArray(this._gameVars.pack()), );
         writer.writeUnsignedInt(this._demo.length);
-        writer.writeString(this._demo, Encoding.Utf8);
+        writer.writeString(this._demo, );
 
         return UtilsBase64.encodeByteArray(writer.toUint8Array());
     }
 }
-

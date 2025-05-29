@@ -7,16 +7,19 @@ import { SpiderKddlApi as KddlApi } from "./SpiderKddlApi";
 const SKIP_ROOM_UPLOADS = process.argv.includes('--skip-rooms');
 const SKIP_LEVEL_UPLOADS = process.argv.includes('--skip-levels');
 
-let apiUrl = "";
+let apiSpiderUrl = "";
+let apiFetchDemosUrl = "";
 let apiSecret = "";
 
 export const SpiderCaravelNetApi = {
-    async init(_apiUrl: string, _apiSecret: string) {
-        apiUrl = _apiUrl;
+    async init(_apiSpiderUrl: string, _apiFetchDemosUrl: string, _apiSecret: string) {
+        apiSpiderUrl = _apiSpiderUrl;
+        apiFetchDemosUrl = _apiFetchDemosUrl;
         apiSecret = _apiSecret;
 
-        Utils.assert(apiUrl, "Api URL is not set");
-        Utils.assert(apiSecret, "Api Secret is not set");
+        Utils.assert(apiSpiderUrl, "SPIDER_API_URL is not set");
+        Utils.assert(apiFetchDemosUrl, "SPIDER_FETCH_DEMOS_URL is not set");
+        Utils.assert(apiSecret, "SPIDER_PASS is not set");
 
     },
     async loop() {
@@ -94,10 +97,17 @@ async function pollHoldNeeded() {
 }
 
 async function pollValidateDemos() {
-    return false;
+    const data = await invoke('getflashdemos', { gameId: '3' }, apiFetchDemosUrl);
+
+    if (data) {
+        console.log(data.url);
+        console.log(await data.text());
+        console.log(data.status);
+    }
+    process.exit(1);
 }
 
-async function invoke(action: string, args: Record<string, string>) {
+async function invoke(action: string, args: Record<string, string>, url: string | undefined = undefined) {
     Log.info(`CaravelNetApi.${action}()`);
 
     await Log.withIndent(async () => {
@@ -119,7 +129,7 @@ async function invoke(action: string, args: Record<string, string>) {
         }
 
         return await Log.rethrowError(async () => {
-            return await fetch(apiUrl, {
+            return await fetch(url ?? apiSpiderUrl, {
                 method: 'POST',
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
                 body: new URLSearchParams({

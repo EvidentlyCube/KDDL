@@ -16,7 +16,7 @@ async function start() {
 
         Log.trace("Loading .env values")
 
-        await CaravelNetApi.init(env.SPIDER_URL, env.SPIDER_PASS);
+        await CaravelNetApi.init(env.SPIDER_API_URL, env.SPIDER_FETCH_DEMOS_URL, env.SPIDER_PASS);
         await SpiderKddlApi.init(env.KDDL_API_URL ?? 'http://localhost:12399')
     });
 

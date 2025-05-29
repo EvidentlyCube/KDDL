@@ -91,7 +91,7 @@ export class Level {
 	}
 
 	public static getLevelIdByGidIndex(levelGidIndex: number): number | undefined {
-		const level =  Level.getAllLevels()
+		const level = Level.getAllLevels()
 			.find(level => intAttr(level, 'GID_LevelIndex') === levelGidIndex);
 
 		return level ? intAttr(level, 'LevelID') : undefined;
