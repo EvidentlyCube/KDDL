@@ -110,22 +110,23 @@ export function AchievementsListTAP(to: Achievement[]) {
 
 	AchievementFactory.tuningFork_inSequence(to, 4);
 
-	AchievementFactory.monsterKills(to, C.M_BRAIN, T.TI_BRAIN, 21);
+	AchievementFactory.monsterKills(to, C.M_BRAIN, T.TI_BRAIN, 17);
 	AchievementFactory.monsterKills(to, C.M_ROACH, T.TI_ROACH_N, 19);
-	AchievementFactory.monsterKills(to, C.M_EYE, T.TI_EEYE_NW, 103);
+	AchievementFactory.monsterKills(to, C.M_EYE, T.TI_EEYE_NW, 101);
 	AchievementFactory.monsterKills(to, C.M_WRAITHWING, T.TI_WWING_ANW, 4);
-	AchievementFactory.monsterKills(to, C.M_TAR_MOTHER, 0, 15);
-	AchievementFactory.monsterKills(to, C.M_SERPENT_R, 0, 46);
+	AchievementFactory.monsterKills(to, C.M_TAR_MOTHER, 0, 14);
+	AchievementFactory.monsterKills(to, C.M_SERPENT_R, 0, 39);
 	AchievementFactory.monsterKills(to, C.M_ROACH_QUEEN, T.TI_RQUEEN_ANW, 23);
 	AchievementFactory.monsterKills(to, C.M_TAR_BABY, T.TI_TARBABY_NW, 100);
 	AchievementFactory.monsterKills(to, C.M_GOBLIN, T.TI_GOBLIN_NW, 17);
 
+	const requiredRooms = 50;
 
 	AchievementFactory.rooms(to, 49);
 	AchievementFactory.allKills(to, 873);
 	AchievementFactory.trapdoors(to, 'Foundation', 373);
-	AchievementFactory.steps(to, 2953);
-	AchievementFactory.undo(to, 241);
-	AchievementFactory.deaths(to, 59);
+	AchievementFactory.steps(to, requiredRooms * 40);
+	AchievementFactory.undo(to, requiredRooms * 3);
+	AchievementFactory.deaths(to, requiredRooms);
 	AchievementFactory.cutTar(to, 37);
 }

@@ -351,17 +351,19 @@ export function AchievementsListKdd5(to: Achievement[]) {
 	AchievementFactory.monsterKills(to, C.M_ROACH_EGG, T.TI_REGG_W, 3);
 	AchievementFactory.monsterKills(to, C.M_EYE, T.TI_EEYE_NW, 83);
 	AchievementFactory.monsterKills(to, C.M_SERPENT_R, 0, 53);
-	AchievementFactory.monsterKills(to, C.M_WRAITHWING, T.TI_WWING_ANW, 14);
+	AchievementFactory.monsterKills(to, C.M_WRAITHWING, T.TI_WWING_ANW, 13);
 	AchievementFactory.monsterKills(to, C.M_TAR_BABY, T.TI_TARBABY_ANW, 101);
 	AchievementFactory.monsterKills(to, C.M_TAR_MOTHER, 0, 47);
 	AchievementFactory.monsterKills(to, C.M_GOBLIN, T.TI_GOBLIN_NW, 57);
 	AchievementFactory.monsterKills(to, C.M_BRAIN, T.TI_BRAIN, 51);
 
+	const requiredRooms = 51;
+
 	AchievementFactory.rooms(to, 19);
 	AchievementFactory.allKills(to, 929);
 	AchievementFactory.trapdoors(to, 'Iceworks', 997);
 	AchievementFactory.cutTar(to, 737);
-	AchievementFactory.steps(to, 3221);
-	AchievementFactory.undo(to, 237);
-	AchievementFactory.deaths(to, 141);
+	AchievementFactory.steps(to, requiredRooms * 40);
+	AchievementFactory.undo(to, requiredRooms * 3);
+	AchievementFactory.deaths(to, requiredRooms);
 }

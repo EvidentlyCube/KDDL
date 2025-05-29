@@ -392,11 +392,13 @@ export function AchievementsListKdd4(to: Achievement[]) {
 	AchievementFactory.monsterKills(to, C.M_TAR_MOTHER, 0, 41);
 	AchievementFactory.monsterKills(to, C.M_GOBLIN, T.TI_GOBLIN_NW, 93);
 
+	const requiredRooms = 67;
+
 	AchievementFactory.rooms(to, 31);
 	AchievementFactory.allKills(to, 1221);
 	AchievementFactory.trapdoors(to, 'Foundation', 113);
 	AchievementFactory.cutTar(to, 473);
-	AchievementFactory.steps(to, 3221);
-	AchievementFactory.undo(to, 321);
-	AchievementFactory.deaths(to, 171);
+	AchievementFactory.steps(to, requiredRooms * 40);
+	AchievementFactory.undo(to, requiredRooms * 3);
+	AchievementFactory.deaths(to, requiredRooms);
 }
