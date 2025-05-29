@@ -1,6 +1,7 @@
 ## 1.6.17 - ????-??-??
  - [BUGFIX] Music will no longer go from Attack to Puzzle when tar babies get formed and there are less than 30 enemies in the room
  - [BUGFIX] The Ancient Palace ⟶ The Sewer System, added backtracking in case you enter entrance from the south without clearing it first
+ - [BUGFIX] Episode 6 ⟶ Mastery Level 2W, added 3 missing monsters
 
 ## 1.6.16 - 2025-05-26
  - [BUGFIX] Episode 6 ⟶ Level 25: 2S2W, 'Neather no longer comes close enough to be stabbed from the top arrows
