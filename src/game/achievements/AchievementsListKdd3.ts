@@ -211,7 +211,7 @@ export function AchievementsListKdd3(to: Achievement[]) {
 
 		in: [3, "1S2E"],
 
-		failOn: () => Game.turnNo >= 150
+		failOn: () => Game.turnNo > 150
 	});
 
 	// Eleventh Level -- Clear all tar in any room
