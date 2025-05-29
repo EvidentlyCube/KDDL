@@ -223,6 +223,7 @@ export function AchievementsListKdd3(to: Achievement[]) {
 		icon: ['Aboveground', T.TI_TAR_SE, T.TI_TAR_SW, T.TI_TAR_NE, T.TI_TAR_NW],
 
 		in: 3,
+		initOnConquered: true,
 		init: () => hasTile(C.T_TAR),
 
 		winNeedsConquer: false,
