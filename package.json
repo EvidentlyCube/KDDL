@@ -43,7 +43,7 @@
         "@types/pako": "^1.0.2",
         "base64-uint8": "0.0.1",
         "canvas-rich-text": "^2.0.0-alpha.1",
-        "csharp-binary-stream": "^1.1.0",
+        "csharp-binary-stream": "^2.0.0",
         "local-db-storage": "^2.0.0",
         "pako": "^2.0.3",
         "pixi.js": "^6.0.4",

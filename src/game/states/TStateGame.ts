@@ -1,4 +1,4 @@
-import { Sprite } from "pixi.js";
+import { InteractionEvent, Sprite } from "pixi.js";
 import { RecamelCore } from "src.framework/net/retrocade/camel/core/RecamelCore";
 import { RecamelLayerSprite } from "src.framework/net/retrocade/camel/layers/RecamelLayerSprite";
 import { _, _r } from "../../../src.framework/_";
@@ -153,7 +153,13 @@ export class TStateGame extends RecamelState {
 		this._minimap.x = 14;
 		this._minimap.y = 448;
 
-		this._minimap.on('click', () => this._largeMinimap.show());
+		this._minimap.on('pointerdown', (e: InteractionEvent) => {
+			if (RawInput.isMouseDown(0)) {
+				e.stopPropagation();
+				this._largeMinimap.show();
+				RawInput.flushAll();
+			}
+		});
 		this._minimap.interactive = true;
 
 		(window as any).debugState = this;
