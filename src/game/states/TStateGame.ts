@@ -153,9 +153,10 @@ export class TStateGame extends RecamelState {
 		this._minimap.x = 14;
 		this._minimap.y = 448;
 
-		this._minimap.on('pointerdown', (e: InteractionEvent) => {
+		this._minimap.on('click', (e: InteractionEvent) => {
 			if (RawInput.isMouseDown(0)) {
 				e.stopPropagation();
+				TWidgetOrbHighlight.clear();
 				this._largeMinimap.show();
 				RawInput.flushAll();
 			}

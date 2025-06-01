@@ -7,7 +7,8 @@
  - [BUGFIX] Minimap rooms should no longer display with incorrect colors when using restore or using the large minimap
  - [BUGFIX] Closing the large minimap by clicking on the small minimap should no longer cause it to immediately reopen
  - [OTHER] Readjusted values for achievements (Kill X of monster Y, Take X steps, Die X times, Undo X times) to numbers that should be automatically gotten by every (except best of the best who never die or undo) player over the course of playing the game. Also spiders which don't appear in EP 6 had an achievement, praise copy-paste.
- - [OTHER] Reworded the description of Tuning Fork achievements slightly;
+ - [OTHER] Reworded the description of Tuning Fork achievements slightly
+ - {1.6.17.1} [BUGFIX] Orb/Door highlights are now cleared when opening minimap so they don't appear over other rooms.
 
 ## 1.6.16 - 2025-05-26
  - [BUGFIX] Episode 6 ⟶ Level 25: 2S2W, 'Neather no longer comes close enough to be stabbed from the top arrows
