@@ -58,6 +58,7 @@ export class TWidgetLargeMinimap extends Container {
 
     public hide() {
         this.visible = false;
+        RawInput.flushAll();
     }
 
     public update() {
@@ -111,10 +112,10 @@ export class TWidgetLargeMinimap extends Container {
                 || RawInput.localMouseX > this._minimap.x + this._minimap.width
                 || RawInput.localMouseY > this._minimap.y + this._minimap.height
             ) {
-                this.visible = false;
+                this.hide();
             }
         } else if (RawInput.isAnyKeyDown()) {
-            this.visible = false;
+            this.hide();
         }
     }
 }

@@ -54,6 +54,7 @@ export class TWidgetMinimap extends Container {
 
 	public changedLevel(newLevelId: number) {
 		this._minimapRooms.removeChildren();
+		this._roomPidToImage.clear();
 
 		for (const roomPid of Progress.getExploredRoomPidsByLevel(newLevelId)) {
 			if (Progress.isRoomExplored(roomPid)) {
