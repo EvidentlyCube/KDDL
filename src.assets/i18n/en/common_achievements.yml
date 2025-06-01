@@ -5,8 +5,9 @@ achievement.description.hidden_with_percent: ??? (%%%)
 achievement.name.tuning_fork_in_sequence: The Tuning Fork
 achievement.description.tuning_fork_in_sequence: |
     Hit different orbs (%orbs%) in sequence, one per turn
-    You can hit the same orb multiple times but it counts only once
-    Multiple orb hits in the same turn count as one hit
+    - Hitting the same orb again does not increase the streak
+    - Hitting multiple new orbs in the same turn increases streak by one
+    - Not increasing a streak resets it
     Current streak: %count%
 
 achievement.description.monster_kills_0: Kill a number of roaches (%total_count%)

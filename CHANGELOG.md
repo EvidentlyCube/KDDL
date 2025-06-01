@@ -5,6 +5,7 @@
  - [BUGFIX] Episode 3 ⟶ Level 11, "Tar Engineer" achievement now gets enabled in cleared rooms as well
  - [BUGFIX] Episode 6 ⟶ Mastery Level 2W, added 3 missing monsters
  - [OTHER] Readjusted values for achievements (Kill X of monster Y, Take X steps, Die X times, Undo X times) to numbers that should be automatically gotten by every (except best of the best who never die or undo) player over the course of playing the game. Also spiders which don't appear in EP 6 had an achievement, praise copy-paste.
+ - [OTHER] Reworded the description of Tuning Fork achievements slightly;
 
 ## 1.6.16 - 2025-05-26
  - [BUGFIX] Episode 6 ⟶ Level 25: 2S2W, 'Neather no longer comes close enough to be stabbed from the top arrows
