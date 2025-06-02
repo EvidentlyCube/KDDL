@@ -1,5 +1,8 @@
 ## 1.6.18 - ????-??-??
- - [BUGFIX] Episode 6 ⟶ Readjusted collection achievements again because I somehow looked at ep 5's data when adjusting them last time
+ - [BUGFIX] Episode 6, Readjusted collection achievements again because I somehow looked at ep 5's data when adjusting them last time
+ - [BUGFIX] The Ancient Palace ⟶ The Outer Walls, fixed tutorial stairs leading to hold exit
+ - [BUGFIX] The Ancient Palace ⟶ Treasure Room 3E, made the room solvable
+
 
 ## 1.6.17 - 2025-06-01
  - [BUGFIX] Music will no longer go from Attack to Puzzle when tar babies get formed and there are less than 30 enemies in the room
