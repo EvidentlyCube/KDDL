@@ -1,4 +1,7 @@
-## 1.6.17 - ????-??-??
+## 1.6.18 - ????-??-??
+ - [BUGFIX] Episode 6 ⟶ Readjusted collection achievements again because I somehow looked at ep 5's data when adjusting them last time
+
+## 1.6.17 - 2025-06-01
  - [BUGFIX] Music will no longer go from Attack to Puzzle when tar babies get formed and there are less than 30 enemies in the room
  - [BUGFIX] The Ancient Palace ⟶ The Sewer System, added backtracking in case you enter entrance from the south without clearing it first
  - [BUGFIX] Episode 3 ⟶ Level 11: 1S2E, achievement now correctly fails on 151st turn so that if you solve it on 150th turn it still gets accepted
