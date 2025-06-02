@@ -98,11 +98,31 @@ async function pollHoldNeeded() {
 
 async function pollValidateDemos() {
     const data = await invoke('getflashdemos', { gameId: '3' }, apiFetchDemosUrl);
+    const demos = await data.json();
 
-    if (data) {
-        console.log(data.url);
-        console.log(await data.text());
-        console.log(data.status);
+    console.log(demos);
+
+    if (demos) {
+        Log.info(`Received ${demos.length} demo${demos.length !== 1 ? 's' : ''} for verification`);
+        const grouped = Utils.arrayGroupBy(demos, 'holdId');
+
+        for (const [holdId, demos] of Object.entries(grouped)) {
+            if (holdId === '551' || holdId === '598') {
+
+                const demoIds = demos.map(demo => demo.id);
+                console.log(demoIds);
+
+                const uploadedResult = await invoke('uploadflashdata', {
+                    data: JSON.stringify(demos.map(demo => ({
+                        id: demo.id,
+                        good: false,
+                        numMoves: 4294967295
+                    })))
+                }, apiFetchDemosUrl);
+                console.log(await uploadedResult.text());
+            }
+        }
+
     }
     process.exit(1);
 }
@@ -122,11 +142,6 @@ async function invoke(action: string, args: Record<string, string>, url: string 
 
     return await Log.withIndent(async () => {
         Log.trace("Sending request")
-
-        if (action === 'uploadflashdata') {
-            Log.info(chalk.bgYellow('skipping action'));
-            return;
-        }
 
         return await Log.rethrowError(async () => {
             return await fetch(url ?? apiSpiderUrl, {

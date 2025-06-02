@@ -47,4 +47,18 @@ export const SpiderUtils = {
             process.exit(1);
         }
     },
+
+    arrayGroupBy<TItem, TKey extends keyof TItem>(array: TItem, prop: TKey): Record<string, TItem[]> {
+        const result: Record<string, TItem[]> = {};
+
+        for (const item of array as unknown as TItem[]) {
+            const key = String(item[prop]);
+            if (!result[key]) {
+                result[key] = [];
+            }
+            result[key].push(item);
+        }
+
+        return result;
+    }
 }

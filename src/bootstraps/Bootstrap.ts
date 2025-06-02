@@ -30,6 +30,7 @@ import { Progress } from "src/game/global/Progress";
 import { PermanentStore } from "src/game/global/store/PermanentStore";
 import { Level } from "src/game/global/Level";
 import { Game } from "src/game/global/Game";
+import { CaravelApi } from "src/game/global/CaravelApi";
 
 require('../../src.assets/font/toms-new-roman.css');
 
@@ -79,6 +80,7 @@ export class Bootstrap {
 			Bootstrap.loadPreloaderResources(),
 			Bootstrap.waitForFontsToLoad(),
 			PermanentStoreSlot.waitForAllSlotsInit(),
+			CaravelApi().init(),
 		]);
 		await permanentStoreUpgradeToV2();
 		await Bootstrap.initRecamel();

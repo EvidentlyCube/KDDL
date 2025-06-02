@@ -62,7 +62,7 @@ export class DebugConsole {
         registeredActions.set(name, { name, description, invoke });
     }
 
-    private static handleKeyDown(e: KeyboardEvent) {
+    private static async handleKeyDown(e: KeyboardEvent) {
         const [command, ...args] = DebugConsole.consoleInput.value.split(" ").filter(x => x);
 
         if (e.key === 'Tab') {
@@ -100,7 +100,7 @@ export class DebugConsole {
             if (action) {
                 this.appendLine(`[DEBUG CONSOLE]> **${command}** ${args.join(" ")}`);
                 try {
-                    action.invoke(args);
+                    await action.invoke(args);
                 } catch (e: unknown) {
                     this.appendLine(`**Error:** ${String(e)}`);
                 }

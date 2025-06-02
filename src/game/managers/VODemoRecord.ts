@@ -130,17 +130,17 @@ export class VODemoRecord {
     public serialize(): string {
         const writer = new BinaryWriter();
 
-        writer.writeString(this._roomPid, );
+        writer.writeString(this._roomPid);
         writer.writeUnsignedInt(this._startX);
         writer.writeUnsignedInt(this._startY);
         writer.writeUnsignedInt(this._startO);
         writer.writeUnsignedInt(this._score);
-        writer.writeString(JSON.stringify(this._endedScriptIds), );
-        writer.writeString(set_toJson(this._conqueredRoomPids), );
-        writer.writeString(set_toJson(this._exploredRoomPids), );
-        writer.writeString(UtilsBase64.encodeByteArray(this._gameVars.pack()), );
+        writer.writeString(JSON.stringify(this._endedScriptIds));
+        writer.writeString(set_toJson(this._conqueredRoomPids));
+        writer.writeString(set_toJson(this._exploredRoomPids));
+        writer.writeString(UtilsBase64.encodeByteArray(this._gameVars.pack()));
         writer.writeUnsignedInt(this._demo.length);
-        writer.writeString(this._demo, );
+        writer.writeString(this._demo);
 
         return UtilsBase64.encodeByteArray(writer.toUint8Array());
     }

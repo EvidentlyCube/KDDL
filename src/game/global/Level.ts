@@ -558,7 +558,7 @@ export class Level {
 		Level.hold = document;
 
 		// Build cache
-		this.$holdElement = UtilsXPath.getAnyElement('//Holds[0]', Level.hold);
+		this.$holdElement = UtilsXPath.getAnyElement('//Holds[1]', Level.hold);
 		this.$holdName = UtilsBase64.decodeWChar(UtilsXPath.getAnyText('(//Holds)[1]/@NameMessage', Level.hold));
 		this.$holdTimestamp = parseInt(UtilsXPath.getAnyText('(//Holds)[1]/@LastUpdated', Level.hold));
 		this.$levels.length = 0
