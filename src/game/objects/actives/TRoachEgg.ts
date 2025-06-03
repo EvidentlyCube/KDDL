@@ -1,10 +1,12 @@
-import {TMonster} from "./TMonster";
-import {C} from "../../../C";
-import {ASSERT} from "../../../ASSERT";
-import {T} from "../../../T";
-import {CueEvents} from "../../global/CueEvents";
+import { TMonster } from "./TMonster";
+import { C } from "../../../C";
+import { ASSERT } from "../../../ASSERT";
+import { T } from "../../../T";
+import { CueEvents } from "../../global/CueEvents";
 
 export class TRoachEgg extends TMonster {
+	public hasJustSpawned = true;
+
 	public getType(): number {
 		return C.M_ROACH_EGG;
 	}
@@ -23,26 +25,30 @@ export class TRoachEgg extends TMonster {
 	}
 
 	public process(lastCommand: number) {
-		switch (this.o) {
-			case(C.SW):
-				this.o = C.W;
-				break;
+		if (this.hasJustSpawned) {
+			this.hasJustSpawned = false;
+		} else {
+			switch (this.o) {
+				case (C.SW):
+					this.o = C.W;
+					break;
 
-			case(C.W):
-				this.o = C.NW;
-				break;
+				case (C.W):
+					this.o = C.NW;
+					break;
 
-			case(C.NW):
-				this.o = C.N;
-				break;
+				case (C.NW):
+					this.o = C.N;
+					break;
 
-			case(C.N):
-				CueEvents.add(C.CID_EGG_HATCHED, this);
-				this.room.killMonster(this);
+				case (C.N):
+					CueEvents.add(C.CID_EGG_HATCHED, this);
+					this.room.killMonster(this);
 
-				const roach = this.room.addNewMonster(C.M_ROACH, this.x, this.y, 0);
-				roach.skipTurn = true;
-				return;
+					const roach = this.room.addNewMonster(C.M_ROACH, this.x, this.y, 0);
+					roach.skipTurn = true;
+					return;
+			}
 		}
 
 		this.setGfx();
