@@ -1,4 +1,4 @@
-## 1.6.18 - ????-??-??
+## 1.6.18 - 2025-06-03
  - [BUGFIX] Episode 6, Readjusted collection achievements again because I somehow looked at ep 5's data when adjusting them last time
  - [BUGFIX] The Ancient Palace ⟶ The Outer Walls, fixed tutorial stairs leading to hold exit
  - [BUGFIX] The Ancient Palace ⟶ Treasure Room 3E, made the room solvable
