@@ -157,7 +157,10 @@ export class TCharacter extends TPlayerDouble {
 				const dx = F.getOX(dir);
 				const dy = F.getOY(dir);
 
-				if (!this.doesSquareContainObstacle(x + dx, y + dy)) {
+				if (
+					!this.doesSquareContainObstacle(x + dx, y + dy)
+					&& (Game.player.x !== x + dx || Game.player.y !== y + dy)
+				) {
 					this.move(x + dx, y + dy);
 					this.setOrientation(dx, dy);
 					break;
