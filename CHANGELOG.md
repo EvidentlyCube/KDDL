@@ -1,5 +1,7 @@
 ## 1.6.19 - ????-??-??
  - [BUGFIX] Episode 5, mastery entrance room has been marked secret so hunting for it is more reasonable
+ - [BUGFIX] Episode 6, Mastery Level is now correctly blocked by master wall
+ - [BUGFIX] Episode 6 ⟶ Level 23, removed one misleading secret wall tile
 
 ## 1.6.18 - 2025-06-03
  - [BUGFIX] Episode 6, Readjusted collection achievements again because I somehow looked at ep 5's data when adjusting them last time
