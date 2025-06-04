@@ -472,5 +472,5 @@ export function AchievementsListKdd6(to: Achievement[]) {
 	AchievementFactory.cutTar(to, 73);
 	AchievementFactory.steps(to, requiredRooms * 40);
 	AchievementFactory.undo(to, requiredRooms * 3);
-	AchievementFactory.deaths(to, requiredRooms);
+	AchievementFactory.deaths(to, requiredRooms / 2 | 0);
 }
