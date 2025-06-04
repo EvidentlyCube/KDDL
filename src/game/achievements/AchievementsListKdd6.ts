@@ -396,8 +396,7 @@ export function AchievementsListKdd6(to: Achievement[]) {
 			[T.TI_ROACH_AN, 1, 1],
 		]],
 
-		in: [5, '1N2W'],
-		fakeActiveIn: 5,
+		in: 5,
 
 		winNeedsConquer: false,
 		winOn: () => getNeather()?.isFailingToMove === true

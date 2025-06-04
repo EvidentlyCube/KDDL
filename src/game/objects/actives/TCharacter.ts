@@ -428,6 +428,7 @@ export class TCharacter extends TPlayerDouble {
 								this.setOrientation(this.dxFirst, this.dyFirst);
 							}
 
+							this.isFailingToMove = true;
 							break;
 						}
 						/*STOP_COMMAND*/
