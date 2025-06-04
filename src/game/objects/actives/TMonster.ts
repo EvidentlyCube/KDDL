@@ -76,6 +76,7 @@ export class TMonster extends TActiveObject {
 	public pieces: TMonsterPiece[] | undefined;
 
 	public killDirection: number;
+	public processSequence = 1000;
 
 	// Frame of the animation
 	public animationFrame: number = 0;
@@ -109,7 +110,7 @@ export class TMonster extends TActiveObject {
 	}
 
 	public getProcessSequence(): number {
-		return 1000;
+		return this.processSequence;
 	}
 
 	public initialize(pieces: Element | null = null) {

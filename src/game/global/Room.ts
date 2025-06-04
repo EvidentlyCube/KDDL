@@ -1167,7 +1167,15 @@ export class Room {
 	// :: Monster Related
 	// ::::::::::::::::::::::::::::::::::::::::::::::
 
-	public addNewMonster(type: number, x: number, y: number, o: number, pieces: (Element | null) = null, extra: string = ''): TMonster {
+	public addNewMonster(
+		type: number,
+		x: number,
+		y: number,
+		o: number,
+		pieces?: Element,
+		extra = '',
+		processSequence = 1000
+	): TMonster {
 		let monster: TMonster;
 
 		switch (type) {
@@ -1217,6 +1225,7 @@ export class Room {
 		monster.x = monster.prevX = x;
 		monster.y = monster.prevY = y;
 		monster.o = monster.prevO = o;
+		monster.processSequence = processSequence;
 
 		monster.room = this;
 
