@@ -4,7 +4,8 @@
  - [BUGFIX] Episode 6 ⟶ Level 23, removed one misleading secret wall tile
  - [BUGFIX] Episode 6, fixed "Softlocked" achievement not being awarded in every room and not being awarded if it used a differently configured Move command than what I expected
  - [BUGFIX] Episode 6 ⟶ Level 25, updated 'Neather's processing sequence so he always moves before monsters
- - [BUGFIX] Episode 6 ⟶ Level 25: 1N1W, it's no longer possible to reach the orb below roaches before
+ - [BUGFIX] Episode 6 ⟶ Level 25: 1N1W, it's no longer possible to reach the orb below roaches before 'Neather is ready with the trap
+ - [BUGFIX] Episodes 1-6 ⟶ Mastery Level: 1S, it's no longer possible to escape through the entrance after failing the challenge room
 
 
 ## 1.6.18 - 2025-06-03
