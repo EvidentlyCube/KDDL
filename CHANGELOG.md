@@ -1,3 +1,6 @@
+## 1.6.19 - ????-??-??
+ - [BUGFIX] Episode 5, mastery entrance room has been marked secret so hunting for it is more reasonable
+
 ## 1.6.18 - 2025-06-03
  - [BUGFIX] Episode 6, Readjusted collection achievements again because I somehow looked at ep 5's data when adjusting them last time
  - [BUGFIX] The Ancient Palace ⟶ The Outer Walls, fixed tutorial stairs leading to hold exit

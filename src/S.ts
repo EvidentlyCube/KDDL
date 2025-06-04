@@ -3,7 +3,7 @@ import {HoldOptions} from "./platform/PlatformSpecific";
 
 export const S = {
 	DEBUG: false,
-	EngineVersion: 'V1.6.18-JS',
+	EngineVersion: 'V1.6.19-JS',
 	currentHoldOptions: undefined as (HoldOptions | undefined),
 
 	isSpiderMode: false,
