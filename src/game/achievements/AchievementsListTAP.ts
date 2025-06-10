@@ -127,6 +127,6 @@ export function AchievementsListTAP(to: Achievement[]) {
 	AchievementFactory.trapdoors(to, 'Foundation', 373);
 	AchievementFactory.steps(to, requiredRooms * 40);
 	AchievementFactory.undo(to, requiredRooms * 3);
-	AchievementFactory.deaths(to, requiredRooms / 2 | 0);
+	AchievementFactory.deaths(to, requiredRooms);
 	AchievementFactory.cutTar(to, 37);
 }

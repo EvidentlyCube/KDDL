@@ -334,7 +334,7 @@ export function AchievementsListKdd4(to: Achievement[]) {
 	// Original 13th Level -- Visit each room at least once (%count% / 56)
 	addAchievement(to, {
 		id: "4272760e5912bc710150ace5c9c5860b",
-		name: 'achievement.name.l5.1n1e',
+		name: 'achievement.name.l6.explore',
 		description: ach => _r('achievement.description.l6.explore', {
 				count: ach._data.$roomCoords?.length ?? 0
 		}),
@@ -400,5 +400,5 @@ export function AchievementsListKdd4(to: Achievement[]) {
 	AchievementFactory.cutTar(to, 473);
 	AchievementFactory.steps(to, requiredRooms * 40);
 	AchievementFactory.undo(to, requiredRooms * 3);
-	AchievementFactory.deaths(to, requiredRooms / 2 | 0);
+	AchievementFactory.deaths(to, requiredRooms);
 }

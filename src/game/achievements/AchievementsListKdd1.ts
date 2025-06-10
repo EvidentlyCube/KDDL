@@ -500,5 +500,5 @@ export function AchievementsListKdd1(to: Achievement[]) {
 	AchievementFactory.trapdoors(to, 'Foundation', 51);
 	AchievementFactory.steps(to, requiredRooms * 40);
 	AchievementFactory.undo(to, requiredRooms * 3);
-	AchievementFactory.deaths(to, requiredRooms / 2 | 0);
+	AchievementFactory.deaths(to, requiredRooms);
 }

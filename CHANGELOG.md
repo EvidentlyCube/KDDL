@@ -6,7 +6,8 @@
  - [BUGFIX] Episode 6 ⟶ Level 25, updated 'Neather's processing sequence so he always moves before monsters
  - [BUGFIX] Episode 6 ⟶ Level 25: 1N1W, it's no longer possible to reach the orb below roaches before 'Neather is ready with the trap
  - [BUGFIX] Episodes 1-6 ⟶ Mastery Level: 1S, it's no longer possible to escape through the entrance after failing the challenge room
- - [BUGFIX] Adjust the "Die X times" achievement in every episode to be half of the number of required rooms in each hold. Hopefully this time it's something that 99% of people can get over the course of their playthrough.
+ - [BUGFIX] Episode 5 ⟶ Original 13th, fixed achievement name for exploring all rooms
+
 
 
 ## 1.6.18 - 2025-06-03
