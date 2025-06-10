@@ -192,8 +192,16 @@ export class TEffectSubtitle extends TEffect {
 	}
 
 	private setLocation() {
-		const newX: number = this.xOffset + this.coords.x * S.RoomTileWidth + S.LEVEL_OFFSET_X;
-		const newY: number = this.yOffset + this.coords.y * S.RoomTileHeight + S.LEVEL_OFFSET_Y;
+		const newX = UtilsNumber.limit(
+			this.xOffset + this.coords.x * S.RoomTileWidth + S.LEVEL_OFFSET_X,
+			S.LEVEL_OFFSET_X,
+			S.LEVEL_OFFSET_X + S.RoomWidthPixels - this.w
+		);
+		const newY = UtilsNumber.limit(
+			this.yOffset + this.coords.y * S.RoomTileHeight + S.LEVEL_OFFSET_Y,
+			S.LEVEL_OFFSET_Y,
+			S.LEVEL_OFFSET_Y + S.RoomHeightPixels - this.h
+		);
 
 		if (!this._wasPositionSetYet) {
 			this._container.x = newX;
@@ -201,31 +209,26 @@ export class TEffectSubtitle extends TEffect {
 			this._wasPositionSetYet = true;
 
 		} else {
-			if (newX < S.RoomWidthPixels + this.xOffset) {
-				let dx = newX - this._container.x;
-				if (Math.abs(dx) > 1) {
-					dx /= UPDATE_FACTOR;
+			let dx = newX - this._container.x;
+			let dy = newY - this._container.y;
+			if (Math.abs(dx) > 1) {
+				dx /= UPDATE_FACTOR;
 
-					if (Math.abs(dx) < 1) {
-						dx = UtilsNumber.sign(dx);
-					}
+				if (Math.abs(dx) < 1) {
+					dx = UtilsNumber.sign(dx);
 				}
-
-				this._container.x += dx;
 			}
 
-			if (newY < S.RoomHeightPixels + this.yOffset) {
-				let dy: number = newY - this._container.y;
-				if (Math.abs(dy) > 1) {
-					dy /= UPDATE_FACTOR;
+			if (Math.abs(dy) > 1) {
+				dy /= UPDATE_FACTOR;
 
-					if (Math.abs(dy) < 1) {
-						dy = UtilsNumber.sign(dy);
-					}
+				if (Math.abs(dy) < 1) {
+					dy = UtilsNumber.sign(dy);
 				}
-
-				this._container.y += dy;
 			}
+
+			this._container.x += dx;
+			this._container.y += dy;
 		}
 
 
