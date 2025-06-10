@@ -206,7 +206,7 @@ export class TWidgetSpeech {
 		const index: number = TWidgetSpeech.subtitles.indexOf(subtitle);
 
 		if (index != -1) {
-			TWidgetSpeech.subtitles.splice(index);
+			TWidgetSpeech.subtitles.splice(index, 1);
 		}
 	}
 

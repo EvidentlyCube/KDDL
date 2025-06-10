@@ -8,6 +8,7 @@
  - [BUGFIX] Episodes 1-6 ⟶ Mastery Level: 1S, it's no longer possible to escape through the entrance after failing the challenge room
  - [BUGFIX] Episode 5 ⟶ Original 13th, fixed achievement name for exploring all rooms
  - [BUGFIX] When Right Clicking in the room and then trying to Right Click anywhere on the bottom or right edge of the room the info box would not slide towards that edge
+ - [BUGFIX] If a speech appeared and then you Right Clicked to open tile info, if you kept right clicking a second tile info speech bubble would appear when the original speech finished
 
 ## 1.6.18 - 2025-06-03
  - [BUGFIX] Episode 6, Readjusted collection achievements again because I somehow looked at ep 5's data when adjusting them last time
