@@ -11,6 +11,7 @@
  - [BUGFIX] Episode 6 ⟶ Level 22, fixed one door not being assigned to one orb in a secret room
  - [BUGFIX] When Right Clicking in the room and then trying to Right Click anywhere on the bottom or right edge of the room the info box would not slide towards that edge
  - [BUGFIX] If a speech appeared and then you Right Clicked to open tile info, if you kept right clicking a second tile info speech bubble would appear when the original speech finished
+ - [BUGFIX] After freshly loading the game and opening Restore screen the player would not have been rendered until you actually played a room
 
 ## 1.6.18 - 2025-06-03
  - [BUGFIX] Episode 6, Readjusted collection achievements again because I somehow looked at ep 5's data when adjusting them last time

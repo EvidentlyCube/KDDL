@@ -46,13 +46,13 @@ export class TPlayer extends TGameObject {
 	}
 
 	public update() {
-		if (this.hidePlayer || !Game.room) {
+		if (this.hidePlayer || !this.room) {
 			return;
 		}
 
 		super.update();
 
-		Game.room.roomSpritesRenderer.pullBackObject(this);
+		this.room.roomSpritesRenderer.pullBackObject(this);
 
 		this.swordVO.x = this.swordX * S.RoomTileWidth + (this.prevX - this.x) * TStateGame.offset * S.RoomTileWidth;
 		this.swordVO.y = this.swordY * S.RoomTileHeight + (this.prevY - this.y) * TStateGame.offset * S.RoomTileHeight;
