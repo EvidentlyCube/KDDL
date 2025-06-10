@@ -8,6 +8,7 @@
  - [BUGFIX] Episodes 1-6 ⟶ Mastery Level: 1S, it's no longer possible to escape through the entrance after failing the challenge room
  - [BUGFIX] Episode 5 ⟶ Original 13th, fixed achievement name for exploring all rooms
  - [BUGFIX] Episode 6 ⟶ Level 25: 1N2W, fixed scripting where 'Neather gets stuck in a loop if you try to take the west path from the entrance
+ - [BUGFIX] Episode 6 ⟶ Level 22, fixed one door not being assigned to one orb in a secret room
  - [BUGFIX] When Right Clicking in the room and then trying to Right Click anywhere on the bottom or right edge of the room the info box would not slide towards that edge
  - [BUGFIX] If a speech appeared and then you Right Clicked to open tile info, if you kept right clicking a second tile info speech bubble would appear when the original speech finished
 
